@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Classes extends React.Component {
+class Teaching extends React.Component {
 	render() {
 		return (
 			<div>
@@ -18,4 +18,4 @@ class Classes extends React.Component {
 	}
 }
 
-export {Classes}
+export {Teaching}

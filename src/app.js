@@ -10,7 +10,7 @@ import { Header } from './header';
 import { Projects } from './projects';
 import { Reading } from './reading';
 import { Advice } from './advice';
-import { Classes } from './classes';
+import { Teaching } from './teaching';
 import { Books } from './books';
 import { Vita } from './cv';
 import { CER } from './cer';
@@ -53,7 +53,7 @@ ReactDOM.render((
 			<Route path="publications(/:paper)" component={Publications}/>
 			<Route path="reading" component={Reading}/>
 			<Route path="advice" component={Advice}/>
-			<Route path="classes" component={Classes}/>
+			<Route path="teaching" component={Teaching}/>
 			<Route path="books" component={Books}/>
 			<Route path="students(/:student)" component={Students}/>
 			<Route path="cv" component={Vita}/>
