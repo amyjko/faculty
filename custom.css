@@ -1,0 +1,95 @@
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	  max-width: 730px;
+  }
+}
+
+body {
+	font-weight: 300;
+}
+
+/* Custom page header */
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.gap-bottom-right {
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.row h4 {
+	margin-top: 0;
+}
+
+/* Add a bit of extra whitespace after rows. */
+.row {
+	margin-bottom: 10px;
+}
+
+.ws-left {
+	padding-left: 20px;
+}
+.ws-bottom {
+	padding-bottom: 20px;
+}
+
+.project {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.project-detail {
+	margin-top: 10px;
+}
+
+/* External link icon. Haven't been able to find a good crossplatform unicode character. */
+/*
+a[target="_blank"]:after, a[href*="//"]:after {
+  content: " \2022";
+  margin: 0;
+}
+*/
+
+blockquote {
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+.award {
+	padding: 3px;
+	background-color: #337AB7;
+	color: white;
+	font-variant: small-caps;
+	display: inline-block;
+    margin-bottom: 3px;
+    border-radius: 3px;
+}
+
+.cv {
+	font-family: "Georgia", "Helvetica";
+}
+
+.student-mug {
+	opacity: 0.5;
+}
+
+.student-mug:hover {
+	opacity: 1.0;
+}
+
+a:hover {
+ cursor:pointer;
+}
+
+.gist-file {
+	border: none !important;
+}

@@ -1,0 +1,432 @@
+body {
+/* 	background-color: rgb(200,200,200); */
+	background-color: white;
+}
+
+
+#issueFrequencyPlot .bar, .issuerow, .quote {
+	cursor: pointer;
+}
+
+img.logo {
+	height: 2em;
+	vertical-align: -20%;
+}
+
+h1 {
+	font-size: large;
+	font-weight: bold;
+/* 	margin-top: 1em; */
+}
+
+#mainContainer {
+	padding: 1em;
+	width: 60em;
+}
+
+#plot {
+	width: 71.5em;
+	height: 12em;
+	border-bottom: 0em;
+}
+
+.periodPlot {
+	position: relative;
+	width: 100%;
+	height: 7em;
+	margin-top: 3em;
+}
+
+.range, .date {
+	font-size: xx-small;
+	color: grey;
+	background-color: white;
+}
+
+.user, .issueNumber {
+	font-size: x-small;
+	color: grey;
+	background-color: white;
+}
+
+.issueSource {
+	font-size: x-small;
+	color: black;
+}
+
+.periodPlot .bar {
+	border: solid 1px gray;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+	border-radius: 2px;
+}
+
+.periodPlot .release {
+	border-left: dotted 1px gray;
+	padding-left: 2px;
+	margin: 0;
+	margin-top: -30px;
+	display: inline-block;
+	position: absolute;
+	height: 100%;
+	top: 0px;
+	text-align: left;
+	font-size: x-small;
+}
+
+.periodPlot .bar {
+	background-color: rgb(240,240,240);
+}
+
+.selectedBar .sourceBar {
+	background-color: rgb(255,0,0);
+}
+
+/* It's important that this come after the above declaration, so that it overrides background. */
+.periodPlot .selectedBar {
+/* 	border: solid 3px red; */
+	background-color: red;
+}
+
+.periodPlot .label {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+	font-size: x-small;
+}
+
+.periodPlot .value {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+	font-size: xx-small;
+}
+
+.bar .proportionBar {
+	color: black;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-align: center;
+	font-size: small;
+	vertical-align: bottom;
+}
+
+.bar .selected {
+	padding: 2px;
+	color: white;
+	background-color: black;
+}
+
+.firstWord {
+	font-size: large;
+	font-weight: bold;
+}
+
+.listHeader {
+	font-size: small;
+/* 	font-weight: bold; */
+	margin-bottom: 1em;
+}
+
+.count {
+	font-size: x-small;
+	color: gray;
+	text-align: right;
+	width: 2em;
+}
+
+.curlyquote {
+	font-size: small;
+	color: gray;
+}
+
+.quote {
+	text-indent: -1em;
+	padding-left: 1em;
+	font-size: x-small;
+	cursor: pointer;
+/* 	margin-bottom: .5em; */
+}
+
+.borderedContent {
+/* 	border: 1px solid gray; */
+/* 	background-color: white; */
+	padding: 1em;
+	padding-top: 0em;
+	border-radius: 5px;
+	font-family: Lucida Grande, Helvetica, Arial;
+	font-size: small;
+	color: black;
+}
+
+#frequencyPlot {
+	position: fixed;
+	top: 2em;
+	left: 2em;
+}
+
+#features {
+	position: absolute;
+	width: 22em;
+	height: 28em;
+}
+
+#actions {
+	width: 22em;
+	height: 24em;
+	position: absolute;
+}
+
+#selectedIssues {
+	width: 22em;
+	position: absolute;
+	top: 2em;
+	left: 48em;
+	height: 24em;
+}
+
+#selectedIssueBody {
+	width: 18em;
+	position: absolute;
+	top: 2em;
+	left: 60em;
+	height: 38em;
+	overflow-y: scroll;
+}
+
+#sources {
+	width: 18em;
+	height: 15em;
+	position: absolute;
+	font-size: small;
+	top: 2em;
+	left: 60em;
+	overflow-x: hidden;
+}
+
+.source {
+	padding: .25em;
+	cursor: pointer;
+	border-radius: 2px;
+	font-size: x-small;
+}
+
+.scrollableList {
+	overflow-y: scroll;
+	height: 18em;	
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.paragraph {
+	margin-bottom: 1em;
+}
+
+.issueBody {
+	border-bottom: 1px solid gray;
+	padding-bottom: 1em;
+}
+
+.issueBodyText {
+}
+
+.issueBody .word {
+	color: black;
+}
+
+.clauseWord {
+	color: black;
+}
+
+.subject {
+	color: red;
+	font-weight: bold;
+}
+
+table .topic {
+	font-size: x-small;
+	text-align: left;
+}
+
+.featureWord {
+	color: red;
+	font-weight: bold;
+}
+
+.actionWord {
+	color: blue;
+	font-weight: bold;
+}
+
+.verb {
+	color: blue;
+	font-weight: bold;
+}
+
+.aspect {
+	color: green;
+	font-weight: bold;
+}
+
+.selected {
+	background-color: rgb(220,220,220);
+}
+
+.loading {
+	margin: 1em;
+}
+
+.co-occuring .topic {
+	font-size: x-small;
+}
+
+.topic .sentence {
+	font-size: x-small;
+}
+
+.issueSubtitle {
+	font-size: x-small;
+	color: gray;
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+
+.emptyMessage {
+	font-size: large;
+	text-align: center;
+	margin:0px auto;
+	line-height: 30em;
+	height: 28em;
+	border: dotted 1px lightGray;
+}
+
+.issueParagraph {
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+
+.icon {
+	height: 1.5em;
+	font-size: small;
+	font-weight: normal;
+}
+
+.table {
+	padding: 0px;	
+	margin: 0px;
+	border-spacing: 0px;
+}
+
+.td {
+	padding: 0;
+	margin: 0;
+}
+
+.number {
+}
+
+.number.emphasize {
+	font-weight: bold;
+}
+
+.tooltip {
+	border: solid 1px gray;
+	border-radius: 2px;
+	font-size: x-small;
+	padding: .25em;
+	background-color: white;
+	font-family: Lucida Grande, Helvetica, Arial;
+	max-width: 20em;
+}
+
+.increase {
+	color: green;
+}
+.decrease {
+	color: red;
+}
+
+.issueTable {
+	width: 100%;
+    border-collapse: collapse;
+}
+
+td.stat, th.stat {
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+th.count {
+	font-weight: bold;
+	color: black;
+	cursor: pointer;
+	text-align: right;
+}
+
+/* Z-index of #mask must lower than #boxes .window */
+#mask {
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  z-index:9000;
+  text-align: center;
+  background-color:rgba(0,0,0,0.5);
+  display:none;
+  font-family: Lucida Grande, Helvetica, Arial;
+  font-size: medium;
+}
+
+#periodProgress {
+	margin: auto;
+	height: 3em;
+	width: 50%;
+	margin-top: 20em;
+	background-color: black;
+	border: solid 1px black;
+	border-radius: 10px;
+}
+
+#periodBar {
+	height: 1em;
+	width: 0%;
+	background-color: white;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	padding: 1em;
+	border: solid 1px black;
+	border-radius: 10px;
+	white-space: nowrap;
+	text-align: right;
+}
+
+.flip {
+	border: solid 1px black;
+	border-radius: 5px;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-left: .5em;
+	display: inline-block;
+	background-color: white;
+	cursor: pointer;
+}
+
+/* Hack to force WebKit to show scroll bars */
+::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 7px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}

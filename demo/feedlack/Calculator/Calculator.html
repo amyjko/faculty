@@ -1,0 +1,727 @@
+
+<!-- saved from url=(0036)http://www.motionnet.com/calculator/ -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+
+	<!-- Copyright © 2002 MotionNET.com Inc. All rights reserved.  No part of this web site may be copied, altered or updated without the express written consent of MotionNET.com. -->
+	<TITLE>Calculator - Free Online Javascript Calculator</TITLE>
+	<META name="Description" content="Calculator - Free Online Calculator - No plugins or downloads required.">
+	<META name="keywords" content="calculator">
+	<META name="robots" content="ALL FOLLOW">
+	<SCRIPT language="JavaScript" src="./Calculator _files/newcalc.js"></SCRIPT>
+	<SCRIPT language="JavaScript" src="./Calculator _files/overlib.js"></SCRIPT>
+	<LINK rel="stylesheet" href="./Calculator _files/calcsheet.css" type="text/css">
+		<STYLE type="text/css">
+		BODY
+		{
+			margin: 0px;
+			background: #eeeeee;
+			font-family: "Arial", "Verdana", sans-serif;
+		}
+
+		.m0l0o
+		{
+			z-index: 30000;
+			font-family: "Arial", sans-serif;
+			font-size: 12px;
+			font-weight: bold;
+			text-decoration: none;
+			color: white;
+		}
+
+		.m0l1o
+		{
+			z-index: 30000;
+			padding-left: 5px;
+			text-decoration: none;
+		}
+
+		.m0l0i
+		{
+			z-index: 30000;
+			font-size: 12px;
+			font-family: "Arial", sans-serif;
+			text-decoration: none;
+		}
+
+		.m0l1i
+		{
+			z-index: 30000;
+			font-size: 11px;
+			font-family: "Arial", sans-serif;
+			text-decoration: none;
+		}
+
+		.pagetitle
+		{
+			font-size: 16px;
+			font-weight: bold;
+			color: white;
+		}
+	</STYLE>
+
+
+	</HEAD><BODY onload="freshstart()" onkeypress="funcKeypress()" onkeydown="funcKeydown()">
+<DIV id="overDiv" style="display: none; position: absolute; z-index: 1000; background-image: none; left: 488px; top: 244px; visibility: hidden; "><TABLE width="150" border="0" cellpadding="1" cellspacing="0" class=""><TBODY><TR><TD><TABLE width="100%" border="0" cellpadding="0" cellspacing="0"><TBODY><TR><TD><FONT class="toolcap">( )</FONT></TD></TR></TBODY></TABLE><TABLE width="100%" border="0" cellpadding="2" cellspacing="0" class="toolback"><TBODY><TR><TD valign="TOP"><FONT class="tooltext">Enclose expressions in parentheses to have them evaluated at the start rather than during their normal order of operations. Multiple parentheses can be used inside each other.<BR><BR><FONT color="red">Example:</FONT> Multiplication is evaluated before addition in the order of operations, so '2+3*5' evaluates '3*5' first, then adds 2, giving 17. However, (2+3)*5 will evaluate what is in the parentheses first, so the result is 25.</FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+</DIV>
+
+	<!-- MotionNET.com Horizontal Bar -->
+	<!-- menu_items.js must be stored locally because it contains the code for accessing the help menu (and possibly "Clear All Fields", which is not something universal). -->
+	<SCRIPT language="JavaScript" src="./Calculator _files/menu.js"></SCRIPT>
+	<SCRIPT language="JavaScript" src="./Calculator _files/menu_items.js"></SCRIPT>
+	<SCRIPT language="JavaScript" src="./Calculator _files/menu_tpl.js"></SCRIPT>
+	<SCRIPT language="JavaScript">
+		//<!--
+		new menu (MENU_ITEMS, MENU_POS, MENU_STYLES);
+		//-->
+	</SCRIPT><A id="mi_0_0" class="m0l0o" href="http://www.motionnet.com/" style="position: absolute; top: 21px; left: 15px; width: 130px; height: 17px; z-index: 3000; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; visibility: visible; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(0);" onmouseout="menus[0].onmouseout(0);" onmouseover="menus[0].onmouseover(0);" onmousedown="menus[0].onmousedown(0);"><DIV class="m0l0i">MotionNET.com</DIV></A>
+<A id="mi_0_1" class="m0l0o" href="http://www.motionnet.com/cgi-bin/search.exe?searchtype=showcategory&string=1929" style="position: absolute; top: 21px; left: 146px; width: 130px; height: 17px; z-index: 3000; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; visibility: visible; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(1);" onmouseout="menus[0].onmouseout(1);" onmouseover="menus[0].onmouseover(1);" onmousedown="menus[0].onmousedown(1);"><DIV class="m0l0i">Math and Units</DIV></A>
+<A id="mi_0_2" class="m0l1o" href="./Calculator _files/Calculator .html" style="position: absolute; top: 38px; left: 146px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(2);" onmouseout="menus[0].onmouseout(2);" onmouseover="menus[0].onmouseover(2);" onmousedown="menus[0].onmousedown(2);"><DIV class="m0l1i">Calculator</DIV></A>
+<A id="mi_0_3" class="m0l1o" href="http://www.motionnet.com/tabulator/" style="position: absolute; top: 54px; left: 146px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(3);" onmouseout="menus[0].onmouseout(3);" onmouseover="menus[0].onmouseover(3);" onmousedown="menus[0].onmousedown(3);"><DIV class="m0l1i">Tabulator</DIV></A>
+<A id="mi_0_4" class="m0l1o" href="http://www.unitsconverter.net/" style="position: absolute; top: 70px; left: 146px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(4);" onmouseout="menus[0].onmouseout(4);" onmouseover="menus[0].onmouseover(4);" onmousedown="menus[0].onmousedown(4);"><DIV class="m0l1i">UnitsConverter.net</DIV></A>
+<A id="mi_0_5" class="m0l1o" href="http://www.kitchenmath.com/" style="position: absolute; top: 86px; left: 146px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(5);" onmouseout="menus[0].onmouseout(5);" onmouseover="menus[0].onmouseover(5);" onmousedown="menus[0].onmousedown(5);"><DIV class="m0l1i">KitchenMath.com</DIV></A>
+<A id="mi_0_6" class="m0l1o" href="http://www.graphtools.com/" style="position: absolute; top: 102px; left: 146px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(6);" onmouseout="menus[0].onmouseout(6);" onmouseover="menus[0].onmouseover(6);" onmousedown="menus[0].onmousedown(6);"><DIV class="m0l1i">GraphTools.com</DIV></A>
+<A id="mi_0_7" class="m0l1o" href="http://www.motionnet.com/cgi-bin/search.exe?a=cat&no=3979" style="position: absolute; top: 118px; left: 146px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(7);" onmouseout="menus[0].onmouseout(7);" onmouseover="menus[0].onmouseover(7);" onmousedown="menus[0].onmousedown(7);"><DIV class="m0l1i">Periodic Table</DIV></A>
+<A id="mi_0_8" class="m0l1o" href="http://www.motionnet.com/cgi-bin/search.exe?searchtype=showcategory&string=1929" style="position: absolute; top: 134px; left: 146px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(8);" onmouseout="menus[0].onmouseout(8);" onmouseover="menus[0].onmouseover(8);" onmousedown="menus[0].onmousedown(8);"><DIV class="m0l1i">More References...</DIV></A>
+<A id="mi_0_9" class="m0l0o" href="http://www.motionnet.com/cgi-bin/search2.exe?a=cat&no=1925" style="position: absolute; top: 21px; left: 277px; width: 130px; height: 17px; z-index: 3000; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; visibility: visible; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(9);" onmouseout="menus[0].onmouseout(9);" onmouseover="menus[0].onmouseover(9);" onmousedown="menus[0].onmousedown(9);"><DIV class="m0l0i">Language</DIV></A>
+<A id="mi_0_10" class="m0l1o" href="http://www.spellcheck.net/" style="position: absolute; top: 38px; left: 277px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(10);" onmouseout="menus[0].onmouseout(10);" onmouseover="menus[0].onmouseover(10);" onmousedown="menus[0].onmousedown(10);"><DIV class="m0l1i">SpellCheck.net</DIV></A>
+<A id="mi_0_11" class="m0l1o" href="http://www.motionnet.com/texttools/" style="position: absolute; top: 54px; left: 277px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(11);" onmouseout="menus[0].onmouseout(11);" onmouseover="menus[0].onmouseover(11);" onmousedown="menus[0].onmousedown(11);"><DIV class="m0l1i">Text Tools</DIV></A>
+<A id="mi_0_12" class="m0l1o" href="http://www.encyclopedia.com/" style="position: absolute; top: 70px; left: 277px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(12);" onmouseout="menus[0].onmouseout(12);" onmouseover="menus[0].onmouseover(12);" onmousedown="menus[0].onmousedown(12);"><DIV class="m0l1i">Encyclopedia</DIV></A>
+<A id="mi_0_13" class="m0l1o" href="http://www.merriamwebster.com/" style="position: absolute; top: 86px; left: 277px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(13);" onmouseout="menus[0].onmouseout(13);" onmouseover="menus[0].onmouseover(13);" onmousedown="menus[0].onmousedown(13);"><DIV class="m0l1i">Dictionary</DIV></A>
+<A id="mi_0_14" class="m0l1o" href="http://www.thesaurus.com/" style="position: absolute; top: 102px; left: 277px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(14);" onmouseout="menus[0].onmouseout(14);" onmouseover="menus[0].onmouseover(14);" onmousedown="menus[0].onmousedown(14);"><DIV class="m0l1i">Thesaurus</DIV></A>
+<A id="mi_0_15" class="m0l1o" href="http://babelfish.altavista.com/translate.dyn" style="position: absolute; top: 118px; left: 277px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(15);" onmouseout="menus[0].onmouseout(15);" onmouseover="menus[0].onmouseover(15);" onmousedown="menus[0].onmousedown(15);"><DIV class="m0l1i">Language Translator</DIV></A>
+<A id="mi_0_16" class="m0l1o" href="http://www.rhymezone.com/" style="position: absolute; top: 134px; left: 277px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(16);" onmouseout="menus[0].onmouseout(16);" onmouseover="menus[0].onmouseover(16);" onmousedown="menus[0].onmousedown(16);"><DIV class="m0l1i">RhymeZone</DIV></A>
+<A id="mi_0_17" class="m0l1o" href="http://www.motionnet.com/cgi-bin/search.exe?a=showlink&no=65" style="position: absolute; top: 150px; left: 277px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(17);" onmouseout="menus[0].onmouseout(17);" onmouseover="menus[0].onmouseover(17);" onmousedown="menus[0].onmousedown(17);"><DIV class="m0l1i">ASCII Code Table</DIV></A>
+<A id="mi_0_18" class="m0l1o" href="http://www.motionnet.com/cgi-bin/search2.exe?a=cat&no=1925" style="position: absolute; top: 166px; left: 277px; width: 130px; height: 17px; visibility: hidden; z-index: 3001; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(18);" onmouseout="menus[0].onmouseout(18);" onmouseover="menus[0].onmouseover(18);" onmousedown="menus[0].onmousedown(18);"><DIV class="m0l1i">More References...</DIV></A>
+<A id="mi_0_19" class="m0l0o" href="javascript:togglevisi(helpmenu)" style="position: absolute; top: 21px; left: 408px; width: 130px; height: 17px; z-index: 3000; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: black; color: white; visibility: visible; background-position: initial initial; background-repeat: initial initial; " onclick="return menus[0].onclick(19);" onmouseout="menus[0].onmouseout(19);" onmouseover="menus[0].onmouseover(19);" onmousedown="menus[0].onmousedown(19);"><DIV class="m0l0i">Calculator Help</DIV></A>
+
+	<TABLE width="100%" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+		<TBODY><TR>
+			<TD width="15" height="21" valign="top" background="./Calculator _files/submenu_background.gif">&nbsp;</TD>
+			<TD height="21" valign="top" background="./Calculator _files/submenu_background.gif" class="pagetitle">
+				Calculator
+			</TD>
+		</TR>
+		<TR>
+			<TD width="15" height="17" valign="top">
+			<TD height="17">
+		</TR>
+	</TBODY></TABLE>
+	<!-- End Horizontal Bar -->
+
+
+	<BR>
+	<!-- Buffer For Features Menu -->
+	<IMG src="./Calculator _files/dotclear.gif" width="695" height="282" border="0">
+	<BR><BR>
+	<FORM name="scndtest"><INPUT type="hidden" name="scndinput" value="0"></FORM>
+
+
+	<!-- DIV that functions as the gray background of the calculator -->
+	<DIV style="z-index:1; position:absolute; left:16px; top:63px; width:530px; height:282px; border: 1px solid #999999; background:#dddddd"></DIV>
+
+
+	<!-- Top bar of calculator, which includes display field, base change buttons, and angle measure change buttons -->
+	<DIV style="z-index:2; position:absolute; left:21px; top:65px; width:520px; height:49px">
+		<FORM name="topbar">
+			<IMG src="./Calculator _files/dotclear.gif" width="510" height="6" border="0">
+			<INPUT type="text" name="result" style="text-align: right; width: 510px; border: 1px solid #000000" onfocus="blur()">
+			<TABLE width="510" align="center" cellpadding="0" cellspacing="0" border="0"><TBODY><TR>
+				<TD align="left" valign="top">
+					<INPUT type="radio" name="radiobase" value="hex" onmouseover="return overlib(&#39;Changes the number base to hexadecimal (base 16).&#39;, CAPTION, &#39;Hex&#39;)" onmouseout="nd();" onmousedown="setNumberBase(16)"><SPAN onmouseover="return overlib(&#39;Changes the number base to hexadecimal (base 16).&#39;, CAPTION, &#39;Hex&#39;)" onmouseout="nd();" onmousedown="setNumberBase(16)" style="cursor: default">Hex</SPAN>
+					<INPUT type="radio" name="radiobase" value="dec" onmouseover="return overlib(&#39;Changes the number base to decimal (base 10).&#39;, CAPTION, &#39;Dec&#39;)" onmouseout="nd();" onmousedown="setNumberBase(10)" checked=""><SPAN onmouseover="return overlib(&#39;Changes the number base to decimal (base 10).&#39;, CAPTION, &#39;Dec&#39;)" onmouseout="nd();" onmousedown="setNumberBase(10)" style="cursor: default">Dec</SPAN>
+					<INPUT type="radio" name="radiobase" value="oct" onmouseover="return overlib(&#39;Changes the number base to octal (base 8).&#39;, CAPTION, &#39;Oct&#39;)" onmouseout="nd();" onmousedown="setNumberBase(8)"><SPAN onmouseover="return overlib(&#39;Changes the number base to octal (base 8).&#39;, CAPTION, &#39;Oct&#39;)" onmouseout="nd();" onmousedown="setNumberBase(8)" style="cursor: default">Oct</SPAN>
+					<INPUT type="radio" name="radiobase" value="bin" onmouseover="return overlib(&#39;Changes the number base to binary (base 2).&#39;, CAPTION, &#39;Bin&#39;)" onmouseout="nd();" onmousedown="setNumberBase(2)"><SPAN onmouseover="return overlib(&#39;Changes the number base to binary (base 2).&#39;, CAPTION, &#39;Bin&#39;)" onmouseout="nd();" onmousedown="setNumberBase(2)" style="cursor: default">Bin</SPAN>
+				</TD>
+				<TD align="right" valign="top">
+					<INPUT type="radio" name="trigmeth" value="deg" onmouseover="return overlib(&#39;Sets the trigonometric input for degrees (where there are 360 degrees in a circle) when in decimal mode.&#39;, CAPTION, &#39;Deg&#39;)" onmouseout="nd();" onmousedown="if(base==10){topbar.trigmeth[0].checked=true; angleConvert(&#39;deg&#39;)}" checked=""><SPAN onmouseover="return overlib(&#39;Sets the trigonometric input for degrees (where there are 360 degrees in a circle) when in decimal mode.&#39;, CAPTION, &#39;Deg&#39;)" onmouseout="nd();" onmousedown="if(base==10){topbar.trigmeth[0].checked=true; angleConvert(&#39;deg&#39;)}" style="cursor: default">Deg</SPAN>
+					<INPUT type="radio" name="trigmeth" value="rad" onmouseover="return overlib(&#39;Sets the trigonometric input for radians (where there are 2*pi radians in a circle) when in decimal mode.&#39;, CAPTION, &#39;Rad&#39;)" onmouseout="nd();" onmousedown="if(base==10){topbar.trigmeth[1].checked=true; angleConvert(&#39;rad&#39;)}"><SPAN onmouseover="return overlib(&#39;Sets the trigonometric input for radians (where there are 2*pi radians in a circle) when in decimal mode.&#39;, CAPTION, &#39;Rad&#39;)" onmouseout="nd();" onmousedown="if(base==10){topbar.trigmeth[1].checked=true; angleConvert(&#39;rad&#39;)}" style="cursor: default">Rad</SPAN>
+					<INPUT type="radio" name="trigmeth" value="grad" onmouseover="return overlib(&#39;Sets the trigonometric input for gradians (where there are 400 gradians in a circle) when in decimal mode.&#39;, CAPTION, &#39;Grad&#39;)" onmouseout="nd();" onmousedown="if(base==10){topbar.trigmeth[2].checked=true; angleConvert(&#39;grad&#39;)}"><SPAN onmouseover="return overlib(&#39;Sets the trigonometric input for gradians (where there are 400 gradians in a circle) when in decimal mode.&#39;, CAPTION, &#39;Grad&#39;)" onmouseout="nd();" onmousedown="if(base==10){topbar.trigmeth[2].checked=true; angleConvert(&#39;grad&#39;)}" style="cursor: default">Grad&nbsp;</SPAN>
+				</TD>
+			</TR></TBODY></TABLE>
+		</FORM>
+	</DIV>
+	<!-- End top bar DIV -->
+
+
+	<!-- Horizontal dark gray line with lighter gray background buffer -->
+	<DIV style="z-index:2; position:absolute; left:16px; top:127px; width:530px; height:30px; background: #dddddd; border-top: 1px solid #999999; border-left: 1px solid #999999; border-right: 1px solid #999999"></DIV>
+
+
+	<!-- Memory -->
+	<DIV style="z-index:2; position:absolute; left:21px; top:141px; width:194px; height:176px;">
+		<FORM name="memform">
+			<SPAN class="title">Memory</SPAN> <SMALL><A href="http://www.motionnet.com/calculator/#" onclick="togglevisi(memdisp); return false">-hide/show-</A></SMALL>
+			<TABLE id="memdisp" cellpadding="0" cellspacing="0" border="0" style="display: block">
+				<TBODY><TR>
+					<!-- Memory 1 -->
+					<TD valign="middle">
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memclear1&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memclear.gif" width="20" height="22" border="0"></A>&nbsp;
+					</TD>
+					<TD valign="middle">
+						<INPUT type="text" name="meminput1" onfocus="blur()" style="width: 111px">
+					</TD>
+					<TD valign="middle">
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memplus1&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memplus.gif" width="20" height="22" border="0"></A>
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memrecall1&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memrecall.gif" width="24" height="22" border="0"></A>
+					</TD>
+					<!-- End Memory 1 -->
+				</TR>
+				<TR>
+					<!-- Memory 2-->
+					<TD valign="middle">
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memclear2&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memclear.gif" width="20" height="22" border="0"></A>&nbsp;
+					</TD>
+					<TD valign="middle">
+						<INPUT type="text" name="meminput2" onfocus="blur()" style="width: 111px">
+					</TD>
+					<TD valign="middle">
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memplus2&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memplus.gif" width="20" height="22" border="0"></A>
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memrecall2&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memrecall.gif" width="24" height="22" border="0"></A>
+					</TD>
+					<!-- End Memory 2 -->
+				</TR>
+				<TR>
+					<!-- Memory 3 -->
+					<TD valign="middle">
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memclear3&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memclear.gif" width="20" height="22" border="0"></A>&nbsp;
+					</TD>
+					<TD valign="middle">
+						<INPUT type="text" name="meminput3" onfocus="blur()" style="width: 111px">
+					</TD>
+					<TD valign="middle">
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memplus3&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memplus.gif" width="20" height="22" border="0"></A>
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memrecall3&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memrecall.gif" width="24" height="22" border="0"></A>
+					</TD>
+					<!-- End Memory 3 -->
+				</TR>
+				<TR>
+					<!-- Memory 4 -->
+					<TD valign="middle">
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memclear4&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memclear.gif" width="20" height="22" border="0"></A>&nbsp;
+					</TD>
+					<TD valign="middle">
+						<INPUT type="text" name="meminput4" onfocus="blur()" style="width: 111px">
+					</TD>
+					<TD valign="middle">
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memplus4&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memplus.gif" width="20" height="22" border="0"></A>
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memrecall4&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memrecall.gif" width="24" height="22" border="0"></A>
+					</TD>
+					<!-- End Memory 4 -->
+				</TR>
+				<TR>
+					<!-- Memory 5 -->
+					<TD valign="middle">
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memclear5&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memclear.gif" width="20" height="22" border="0"></A>&nbsp;
+					</TD>
+					<TD valign="middle">
+						<INPUT type="text" name="meminput5" onfocus="blur()" style="width: 111px">
+					</TD>
+					<TD valign="middle">
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memplus5&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memplus.gif" width="20" height="22" border="0"></A>
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memrecall5&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memrecall.gif" width="24" height="22" border="0"></A>
+					</TD>
+					<!-- End Memory 5 -->
+				</TR>
+				<TR>
+					<!-- Clear Memory -->
+					<TD colspan="3" valign="top">
+						<A href="http://www.motionnet.com/calculator/#" onclick="func(&#39;memclearall&#39;); return false" onkeypress="return false" style="cursor: default"><IMG src="./Calculator _files/memclearall.gif" width="92" height="18" border="0"></A>
+					</TD>
+					<!-- End Clear Memory -->
+				</TR>
+			</TBODY></TABLE>
+		</FORM>
+	</DIV>
+
+
+	<!-- Calculator Buttons -->
+	<FORM name="buttonname">
+		<!-- pi -->
+		<DIV style="z-index:2; position:absolute; left:213px; top:141px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="pi" name="funcPi" onmouseover="return overlib(&#39;Displays the value of pi (3.14159...), which is the ratio of a circle\&#39;s circumference to its diameter. Generally pi is used with trig functions (i.e., sin, cos, tan) in radians mode.&#39;, CAPTION, &#39;pi&#39;)" onmouseout="nd();" onclick="func(&#39;pi&#39;)">
+		</DIV>
+
+		<!-- ln -->
+		<DIV style="z-index:2; position:absolute; left:250px; top:141px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="ln" name="funcLn" onmouseover="return overlib(&#39;Calculates the natural (base e) logarithm. This is the inverse function of e^x.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; The natural log of e^3 is 3, the natural log of e^5 is 5, and the natural log of e^x is x.&#39;, CAPTION, &#39;ln&#39;)" onmouseout="nd();" onclick="func(&#39;ln&#39;)">
+		</DIV>
+
+		<!-- e^x -->
+		<DIV style="z-index:2; position:absolute; left:287px; top:141px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="e^x" name="funcEtoX" onmouseover="return overlib(&#39;Calculates e (2.718...) raised to the power of x, where x is the current number. This is the inverse function of ln.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; The keystroke sequence \&#39;4 e^x\&#39; will return 54.598&mdash;that is, e^4.&#39;, CAPTION, &#39;e^x&#39;)" onmouseout="nd();" onclick="func(&#39;etox&#39;)">
+		</DIV>
+
+		<!-- log -->
+		<DIV style="z-index:2; position:absolute; left:324px; top:141px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="log" name="funcLog" onmouseover="return overlib(&#39;Calculates the common (base 10) logarithm. This is the inverse function of 10^x.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; The common log of 100 is 2 because 100 equals 10^2, the common log of 1000 (that is, 10^3) is 3, and the common log of 1 (that is, 10^0) is 0.&#39;, CAPTION, &#39;log&#39;)" onmouseout="nd();" onclick="func(&#39;log&#39;)">
+		</DIV>
+
+		<!-- 10^x -->
+		<DIV style="z-index:2; position:absolute; left:361px; top:141px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="10^x" name="func10toX" onmouseover="return overlib(&#39;Calculates 10 raised to the power of x, where x is the current number. This is the inverse function of log.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; The keystroke sequence \&#39;4 10^x\&#39; will return 10000&mdash;that is, 10^4.&#39;, CAPTION, &#39;10^x&#39;)" onmouseout="nd();" onclick="func(&#39;10tox&#39;)">
+		</DIV>
+
+		<!-- log2 -->
+		<DIV style="z-index:2; position:absolute; left:398px; top:141px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="log2" name="funcLog2" onmouseover="return overlib(&#39;Calculates the binary (base 2) logarithm. This is the inverse function of 2^x.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; The binary log of 8 is 3 because 8 equals 2^3, the binary log of 16 (that is, 2^4) is 4, and the binary log of 2^x is x.&#39;, CAPTION, &#39;log2&#39;)" onmouseout="nd();" onclick="func(&#39;log2&#39;)">
+		</DIV>
+
+		<!-- 2^x -->
+		<DIV style="z-index:2; position:absolute; left:435px; top:141px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="2^x" name="func2toX" onmouseover="return overlib(&#39;Calculates 2 raised to the power of x, where x is the current number. This is the inverse function of log2.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example 1:&lt;/font&gt; They keystroke sequence \&#39;5 2^x\&#39; will return 32&mdash;that is, 2^5.&#39;, CAPTION, &#39;2^x&#39;)" onmouseout="nd();" onclick="func(&#39;2tox&#39;)">
+		</DIV>
+
+		<!-- AC -->
+		<DIV style="z-index:2; position:absolute; left:509px; top:141px; width:32px; height:26px; ">
+			<INPUT class="classclear" type="button" value="AC" name="clearAC" onmouseover="return overlib(&#39;Clears the current number and calculation.&#39;, CAPTION, &#39;AC&#39;)" onmouseout="nd();" onclick="clearAll()">
+		</DIV>
+
+		<!-- sin -->
+		<DIV style="z-index:2; position:absolute; left:213px; top:171px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="sin" name="funcSin" onmouseover="return overlib(&#39;Calculates the trigonometric sine of the current number. Sine (for an acute angle) is the ratio between the leg opposite the angle when considered part of a right triangle and the hypotenuse.&lt;br&gt;&lt;br&gt;&lt;center&gt;&lt;img src=\&#39;calcimages/example-sin.gif\&#39; border=0&gt;&lt;/center&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; In the example above, the sine of the red indicated angle is 3/5, or 0.6.&#39;, CAPTION, &#39;sin&#39;)" onmouseout="nd();" onclick="func(&#39;sin&#39;)">
+		</DIV>
+
+		<!-- cos -->
+		<DIV style="z-index:2; position:absolute; left:250px; top:171px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="cos" name="funcCos" onmouseover="return overlib(&#39;Calculates the trigonometric cosine of the current number. Cosine (for an acute angle) is the ratio between the leg adjacent to the angle when considered part of a right triangle and the hypotenuse.&lt;br&gt;&lt;br&gt;&lt;center&gt;&lt;img src=\&#39;calcimages/example-sin.gif\&#39; border=0&gt;&lt;/center&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; In the example above, the cosine of the red indicated angle is 4/5, or 0.8.&#39;, CAPTION, &#39;cos&#39;)" onmouseout="nd();" onclick="func(&#39;cos&#39;)">
+		</DIV>
+
+		<!-- tan -->
+		<DIV style="z-index:2; position:absolute; left:287px; top:171px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="tan" name="funcTan" onmouseover="return overlib(&#39;Calculates the trigonometric tangent of the current number. Tangent is the ratio between the leg opposite the angle when considered part of a right triangle and the adjacent leg.&lt;br&gt;&lt;br&gt;&lt;center&gt;&lt;img src=\&#39;calcimages/example-sin.gif\&#39; border=0&gt;&lt;/center&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; In the example above, the tangent of the red indicated angle is 3/4, or 0.75.&#39;, CAPTION, &#39;tan&#39;)" onmouseout="nd();" onclick="func(&#39;tan&#39;)">
+		</DIV>
+
+		<!-- 7 -->
+		<DIV style="z-index:2; position:absolute; left:324px; top:171px; width:32px; height:26px; ">
+			<INPUT class="classdigit" type="button" value="7" name="digit7" onclick="digit(7)">
+		</DIV>
+
+		<!-- 8 -->
+		<DIV style="z-index:2; position:absolute; left:361px; top:171px; width:32px; height:26px; ">
+			<INPUT class="classdigit" type="button" value="8" name="digit8" onclick="digit(8)">
+		</DIV>
+
+		<!-- 9 -->
+		<DIV style="z-index:2; position:absolute; left:398px; top:171px; width:32px; height:26px; ">
+			<INPUT class="classdigit" type="button" value="9" name="digit9" onclick="digit(9)">
+		</DIV>
+
+		<!-- / -->
+		<DIV style="z-index:2; position:absolute; left:435px; top:171px; width:32px; height:26px; ">
+			<INPUT class="classop" type="button" value="&divide;" name="opDivide" onclick="mathOp(&#39;/&#39;)">
+		</DIV>
+
+		<!-- sqrt -->
+		<DIV style="z-index:2; position:absolute; left:472px; top:171px; width:32px; height:26px; ">
+			<INPUT class="classfunc2" type="button" value="sqrt" name="func2Sqrt" onclick="func(&#39;sqrt&#39;)">
+		</DIV>
+
+		<!-- x^2 -->
+		<DIV style="z-index:2; position:absolute; left:509px; top:171px; width:32px; height:26px; ">
+			<INPUT class="classfunc2" type="button" value="x^2" name="func2Xsq" onclick="func(&#39;xsq&#39;)">
+		</DIV>
+
+		<!-- asin -->
+		<DIV style="z-index:2; position:absolute; left:213px; top:201px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="asin" name="funcArcsin" onmouseover="return overlib(&#39;Calculates the arcsine (inverse sine) of the current number. Only values between -1 and 1 may be used.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; The sine of a 36.8699&deg; angle is 3/5, or 0.6; therefore, the arcsine of 0.6 is 36.8699&deg;.&#39;, CAPTION, &#39;asin&#39;)" onmouseout="nd();" onclick="func(&#39;asin&#39;)">
+		</DIV>
+
+		<!-- acos -->
+		<DIV style="z-index:2; position:absolute; left:250px; top:201px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="acos" name="funcArccos" onmouseover="return overlib(&#39;Calculates the arccosine (inverse cosine) of the current number. Only values between -1 and 1 may be used.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; The cosine of a 36.8699&deg; angle is 4/5, or 0.8; therefore, the arccosine of 0.8 is 36.8699&deg;.&#39;, CAPTION, &#39;acos&#39;)" onmouseout="nd();" onclick="func(&#39;acos&#39;)">
+		</DIV>
+
+		<!-- atan -->
+		<DIV style="z-index:2; position:absolute; left:287px; top:201px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="atan" name="funcArctan" onmouseover="return overlib(&#39;Calculates the arctangent (inverse tangent) of the current number.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; The tangent of a 36.8699&deg; angle is 3/4, or 0.75; therefore, the arctangent of 0.75 is 36.8699&deg;.&#39;, CAPTION, &#39;atan&#39;)" onmouseout="nd();" onclick="func(&#39;atan&#39;)">
+		</DIV>
+
+		<!-- 4 -->
+		<DIV style="z-index:2; position:absolute; left:324px; top:201px; width:32px; height:26px; ">
+			<INPUT class="classdigit" type="button" value="4" name="digit4" onclick="digit(4)">
+		</DIV>
+
+		<!-- 5 -->
+		<DIV style="z-index:2; position:absolute; left:361px; top:201px; width:32px; height:26px; ">
+			<INPUT class="classdigit" type="button" value="5" name="digit5" onclick="digit(5)">
+		</DIV>
+
+		<!-- 6 -->
+		<DIV style="z-index:2; position:absolute; left:398px; top:201px; width:32px; height:26px; ">
+			<INPUT class="classdigit" type="button" value="6" name="digit6" onclick="digit(6)">
+		</DIV>
+
+		<!-- * -->
+		<DIV style="z-index:2; position:absolute; left:435px; top:201px; width:32px; height:26px; ">
+			<INPUT class="classop" type="button" value="&times;" name="opMultiply" onclick="mathOp(&#39;*&#39;)">
+		</DIV>
+
+		<!-- 1/x -->
+		<DIV style="z-index:2; position:absolute; left:472px; top:201px; width:32px; height:26px; ">
+			<INPUT class="classfunc2" type="button" value="1/x" name="func2OneOverX" onclick="func(&#39;1/x&#39;)">
+		</DIV>
+
+		<!-- x^y -->
+		<DIV style="z-index:2; position:absolute; left:509px; top:201px; width:32px; height:26px; ">
+			<INPUT class="classfunc2" type="button" value="x^y" name="func2XtoY" onclick="mathOp(&#39;pow&#39;)">
+		</DIV>
+
+		<!-- EE -->
+		<DIV style="z-index:2; position:absolute; left:213px; top:231px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="EE" name="funcEE" onmouseover="return overlib(&#39;Multiplies the first number entered by 10^x, where x is the second number entered.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; \&#39;4 EE 3\&#39; equals 4*(10^3), so the result returned is \&#39;4000\&#39;.&#39;, CAPTION, &#39;EE&#39;)" onmouseout="nd();" onclick="exp()">
+		</DIV>
+
+		<!-- n! -->
+		<DIV style="z-index:2; position:absolute; left:250px; top:231px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="n!" name="funcFactorial" onmouseover="return overlib(&#39;Calculates the factorial of the current number. The factorial of a number equals that number multiplied by all natural numbers below it.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; 5! is the same as 5*4*3*2*1, or 120.&#39;, CAPTION, &#39;n!&#39;)" onmouseout="nd();" onclick="func(&#39;n!&#39;)">
+		</DIV>
+
+		<!-- Mod -->
+		<DIV style="z-index:2; position:absolute; left:287px; top:231px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="Mod" name="funcMod" onmouseover="return overlib(&#39;Calculates the modulus (remainder) of two numbers.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; \&#39;8 Mod 3\&#39; returns \&#39;2\&#39; because 2 is the remainder of 8 divided by 3.&#39;, CAPTION, &#39;Mod&#39;)" onmouseout="nd();" onclick="mathOp(&#39;%&#39;)">
+		</DIV>
+
+		<!-- 1 -->
+		<DIV style="z-index:2; position:absolute; left:324px; top:231px; width:32px; height:26px; ">
+			<INPUT class="classdigit" type="button" value="1" name="digit1" onclick="digit(1)">
+		</DIV>
+
+		<!-- 2 -->
+		<DIV style="z-index:2; position:absolute; left:361px; top:231px; width:31px; height:26px; ">
+			<INPUT class="classdigit" type="button" value="2" name="digit2" onclick="digit(2)">
+		</DIV>
+
+		<!-- 3 -->
+		<DIV style="z-index:2; position:absolute; left:398px; top:231px; width:32px; height:26px; ">
+			<INPUT class="classdigit" type="button" value="3" name="digit3" onclick="digit(3)">
+		</DIV>
+
+		<!-- - -->
+		<DIV style="z-index:2; position:absolute; left:435px; top:231px; width:32px; height:26px; ">
+			<INPUT class="classop" type="button" value="&ndash;" name="opMinus" onclick="mathOp(&#39;-&#39;)">
+		</DIV>
+
+		<!-- ( -->
+		<DIV style="z-index:2; position:absolute; left:472px; top:231px; width:32px; height:26px; ">
+			<INPUT class="classfunc2" type="button" value="(" name="func2Openp" onmouseover="return overlib(&#39;Enclose expressions in parentheses to have them evaluated at the start rather than during their normal order of operations. Multiple parentheses can be used inside each other.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; Multiplication is evaluated before addition in the order of operations, so \&#39;2+3*5\&#39; evaluates \&#39;3*5\&#39; first, then adds 2, giving 17. However, (2+3)*5 will evaluate what is in the parentheses first, so the result is 25.&#39;, CAPTION, &#39;( )&#39;)" onmouseout="nd();" onclick="openp()">
+		</DIV>
+
+		<!-- ) -->
+		<DIV style="z-index:2; position:absolute; left:509px; top:231px; width:32px; height:26px; ">
+			<INPUT class="classfunc2" type="button" value=")" name="func2Closep" onmouseover="return overlib(&#39;Enclose expressions in parentheses to have them evaluated at the start rather than during their normal order of operations. Multiple parentheses can be used inside each other.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; Multiplication is evaluated before addition in the order of operations, so \&#39;2+3*5\&#39; evaluates \&#39;3*5\&#39; first, then adds 2, giving 17. However, (2+3)*5 will evaluate what is in the parentheses first, so the result is 25.&#39;, CAPTION, &#39;( )&#39;)" onmouseout="nd();" onclick="closep()">
+		</DIV>
+
+		<!-- And -->
+		<DIV style="z-index:2; position:absolute; left:213px; top:261px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="And" name="binAnd" onmouseover="return overlib(&#39;Calculates bitwise AND operator. That is, two strings are compared at a binary level, and for each digits place, if both strings contain a 1, then 1 is returned.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; The keystroke sequence \&#39;1011 And 1101\&#39; (in binary) will return 1001.&lt;br&gt;&lt;br&gt;&lt;big&gt;&lt;big&gt;&lt;tt&gt;&lt;font color=red&gt;1&lt;/font&gt;01&lt;font color=red&gt;1&lt;/font&gt; AND&lt;br&gt;&lt;font color=red&gt;1&lt;/font&gt;10&lt;font color=red&gt;1&lt;/font&gt;&lt;br&gt;----&lt;br&gt;&lt;font color=red&gt;1&lt;/font&gt;00&lt;font color=red&gt;1&lt;/font&gt;&lt;/tt&gt;&lt;/big&gt;&lt;/big&gt;&#39;, CAPTION, &#39;And&#39;)" onmouseout="nd();" onclick="mathOp(&#39;and&#39;)">
+		</DIV>
+
+		<!-- Or -->
+		<DIV style="z-index:2; position:absolute; left:250px; top:261px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="Or" name="binOr" onmouseover="return overlib(&#39;Calculates bitwise OR operator. That is, two strings are compared at a binary level, and for each digits place, if either string contains a 1, then 1 is returned.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; The keystroke sequence \&#39;1011 Or 1101\&#39; (in binary) will return 1111.&lt;br&gt;&lt;br&gt;&lt;big&gt;&lt;big&gt;&lt;tt&gt;&lt;font color=red&gt;1&lt;/font&gt;0&lt;font color=red&gt;11&lt;/font&gt; OR&lt;br&gt;&lt;font color=red&gt;11&lt;/font&gt;0&lt;font color=red&gt;1&lt;/font&gt;&lt;br&gt;----&lt;br&gt;&lt;font color=red&gt;1111&lt;/font&gt;&lt;/tt&gt;&lt;/big&gt;&lt;/big&gt;&#39;, CAPTION, &#39;Or&#39;)" onmouseout="nd();" onclick="mathOp(&#39;or&#39;)">
+		</DIV>
+
+		<!-- Xor -->
+		<DIV style="z-index:2; position:absolute; left:287px; top:261px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="Xor" name="binXor" onmouseover="return overlib(&#39;Calculates bitwise exclusive OR operator. That is, two strings are compared at a binary level, and for each digits place, if exactly one string contains a 1, then 1 is returned.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; The keystroke sequence \&#39;1011 Xor 1101\&#39; (in binary) will return 0110 (that is, 110).&lt;br&gt;&lt;br&gt;&lt;big&gt;&lt;big&gt;&lt;tt&gt;10&lt;font color=red&gt;1&lt;/font&gt;1 XOR&lt;br&gt;1&lt;font color=red&gt;1&lt;/font&gt;01&lt;br&gt;----&lt;br&gt;0&lt;font color=red&gt;11&lt;/font&gt;0&lt;/tt&gt;&lt;/big&gt;&lt;/big&gt;&#39;, CAPTION, &#39;Xor&#39;)" onmouseout="nd();" onclick="mathOp(&#39;xor&#39;)">
+		</DIV>
+
+		<!-- 0 -->
+		<DIV style="z-index:2; position:absolute; left:324px; top:261px; width:32px; height:26px; ">
+			<INPUT class="classdigit" type="button" value="0" name="digit0" onclick="digit(0)">
+		</DIV>
+
+		<!-- +/- -->
+		<DIV style="z-index:2; position:absolute; left:361px; top:261px; width:32px; height:26px; ">
+			<INPUT class="classdigit" type="button" value="+/&ndash;" name="digitPlusMinus" onclick="if(base==10){sign()}">
+		</DIV>
+
+		<!-- . -->
+		<DIV style="z-index:2; position:absolute; left:398px; top:261px; width:32px; height:26px; ">
+			<INPUT class="classdigit" type="button" value="." name="digitPeriod" onclick="if(base==10){period()}">
+		</DIV>
+
+		<!-- + -->
+		<DIV style="z-index:2; position:absolute; left:435px; top:261px; width:32px; height:26px; ">
+			<INPUT class="classop" type="button" value="+" name="opPlus" onclick="mathOp(&#39;+&#39;)">
+		</DIV>
+
+		<!-- = -->
+		<DIV style="z-index:2; position:absolute; left:472px; top:261px; width:69px; height:26px; ">
+			<INPUT class="classequals" type="button" value="=" name="equalssign" onclick="equals()">
+		</DIV>
+
+		<!-- Not -->
+		<DIV style="z-index:2; position:absolute; left:213px; top:291px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="Not" name="binNot" onmouseover="return overlib(&#39;Calculates bitwise inverse. That is, 0\&#39;s become 1\&#39;s, and 1\&#39;s become 0\&#39;s.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; The keystroke sequence \&#39;1011 Not\&#39; will return 1111111111110100. (Note that there are so many leading 1\&#39;s because \&#39;1011\&#39; is really \&#39;0000000000000001011\&#39;.)&lt;br&gt;&lt;br&gt;&lt;big&gt;&lt;tt&gt;000000000000&lt;font color=red&gt;1&lt;/font&gt;0&lt;font color=red&gt;11&lt;/font&gt; NOT&lt;br&gt;----------------&lt;br&gt;&lt;font color=red&gt;111111111111&lt;/font&gt;0&lt;font color=red&gt;1&lt;/font&gt;00&lt;/tt&gt;&lt;/big&gt;&#39;, CAPTION, &#39;Not&#39;, WIDTH, &#39;200&#39;)" onmouseout="nd();" onclick="func(&#39;not&#39;)">
+		</DIV>
+
+		<!-- Lsh -->
+		<DIV style="z-index:2; position:absolute; left:250px; top:291px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="Lsh" name="binLsh" onmouseover="return overlib(&#39;Shifts current number in binary representation one bit to the left, adding a 0 from the right.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; \&#39;9 Lsh\&#39; (in base 10) returns \&#39;18\&#39; because the binary representation of 9&mdash;1001&mdash;becomes 10010 (i.e., 18).&#39;, CAPTION, &#39;Lsh&#39;)" onmouseout="nd();" onclick="func(&#39;leftshift&#39;)">
+		</DIV>
+
+		<!-- Rsh -->
+		<DIV style="z-index:2; position:absolute; left:287px; top:291px; width:32px; height:26px; ">
+			<INPUT class="classfunction" type="button" value="Rsh" name="binRsh" onmouseover="return overlib(&#39;Shifts current number in binary representation one bit to the right, discarding the rightmost bit.&lt;br&gt;&lt;br&gt;&lt;font color=red&gt;Example:&lt;/font&gt; \&#39;10 Rsh\&#39; (in base 10) returns \&#39;5\&#39; because the binary representation of 10&mdash;1010&mdash;becomes 101 (i.e., 5).&#39;, CAPTION, &#39;Rsh&#39;)" onmouseout="nd();" onclick="func(&#39;rightshift&#39;)">
+		</DIV>
+	</FORM>
+
+	<!-- Hex A-F -->
+	<FORM name="formhex">
+
+		<!-- A -->
+		<DIV style="z-index:2; position:absolute; left:324px; top:291px; width:32px; height:26px; ">
+			<INPUT class="classdisabled" type="button" value="A" name="hexA" onmouseover="return overlib(&#39;Hexadecimal (base 16) equivalent of 10 (in base 10).&#39;, CAPTION, &#39;A&#39;)" onmouseout="nd();" onclick="if(checkbase(10)){digit(10)}" disabled="">
+		</DIV>
+
+		<!-- B -->
+		<DIV style="z-index:2; position:absolute; left:361px; top:291px; width:32px; height:26px; ">
+			<INPUT class="classdisabled" type="button" value="B" name="hexB" onmouseover="return overlib(&#39;Hexadecimal (base 16) equivalent of 11 (in base 10).&#39;, CAPTION, &#39;B&#39;)" onmouseout="nd();" onclick="if(checkbase(11)){digit(11)}" disabled="">
+		</DIV>
+
+		<!-- C -->
+		<DIV style="z-index:2; position:absolute; left:398px; top:291px; width:32px; height:26px; ">
+			<INPUT class="classdisabled" type="button" value="C" name="hexC" onmouseover="return overlib(&#39;Hexadecimal (base 16) equivalent of 12 (in base 10).&#39;, CAPTION, &#39;C&#39;)" onmouseout="nd();" onclick="if(checkbase(12)){digit(12)}" disabled="">
+		</DIV>
+
+		<!-- D -->
+		<DIV style="z-index:2; position:absolute; left:435px; top:291px; width:32px; height:26px; ">
+			<INPUT class="classdisabled" type="button" value="D" name="hexD" onmouseover="return overlib(&#39;Hexadecimal (base 16) equivalent of 13 (in base 10).&#39;, CAPTION, &#39;D&#39;)" onmouseout="nd();" onclick="if(checkbase(13)){digit(13)}" disabled="">
+		</DIV>
+
+		<!-- E -->
+		<DIV style="z-index:2; position:absolute; left:472px; top:291px; width:32px; height:26px; ">
+			<INPUT class="classdisabled" type="button" value="E" name="hexE" onmouseover="return overlib(&#39;Hexadecimal (base 16) equivalent of 14 (in base 10).&#39;, CAPTION, &#39;E&#39;)" onmouseout="nd();" onclick="if(checkbase(14)){digit(14)}" disabled="">
+		</DIV>
+
+		<!-- F -->
+		<DIV style="z-index:2; position:absolute; left:509px; top:291px; width:32px; height:26px; ">
+			<INPUT class="classdisabled" type="button" value="F" name="hexF" onmouseover="return overlib(&#39;Hexadecimal (base 16) equivalent of 15 (in base 10).&#39;, CAPTION, &#39;F&#39;)" onmouseout="nd();" onclick="if(checkbase(15)){digit(15)}" disabled="">
+		</DIV>
+	</FORM>
+	<!-- End Calculator Buttons -->
+
+
+	<!-- Hovering Tooltips Checkbox -->
+	<FORM name="formhover">
+		<DIV style="z-index: 2; position: absolute; left: 210px; top: 321px; width: 328px; height: 14px; font-family: &#39;Arial&#39;, sans-serif; font-size: 13px">
+			<INPUT type="checkbox" name="hoverbox" onclick="toggleOverlib()">
+			<SPAN style="cursor: default" onclick="if(formhover.hoverbox.checked==false){formhover.hoverbox.checked=true} else { formhover.hoverbox.checked=false } toggleOverlib()">Hovering tooltips</SPAN>
+		</DIV>
+	</FORM>
+	<!-- End Hovering Tooltips Checkbox -->
+
+
+	<!-- Features Menu -->
+	<TABLE cellpadding="0" cellspacing="0">
+		<TBODY><TR>
+			<TD width="15" valign="top">&nbsp;</TD>
+			<TD width="530" valign="top" style="border: 1px solid #AAAAAA; background-color: #DDDDDD">
+				<DIV id="featuresmenu" style="display:block">
+					<FONT class="title">Features</FONT> <SMALL><A href="http://www.motionnet.com/calculator/#" onclick="featuresmenu.style.display=&#39;none&#39;;featureshid.style.display=&#39;block&#39;; return false">-hide-</A></SMALL>
+					<BR><BR>
+					<LI>
+						Ability to use keyboard hotkeys for calculator buttons
+						<SMALL><A href="http://www.motionnet.com/calculator/#" onclick="toggledisplay(keybrdequiv); return false">-show/hide equivalents table-</A></SMALL>
+					</LI>
+
+					<!-- Keyboard Equivalents Table -->
+					<BR><TABLE id="keybrdequiv" width="420" cellpadding="0" cellspacing="0" style="border: 2px solid #000000; background: #FFFFFF; display: none; text-align: center">
+						<TBODY>
+						<TR>
+							<TD colspan="6" align="CENTER" valign="middle" style="border-bottom: 1px solid #000000">
+								<STRONG>Keyboard Equivalents of Calculator Buttons</STRONG>
+							</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" width="70" bgcolor="#ffffff" style="border-right: 1px solid #999999; border-bottom: 2px solid #000000"><STRONG>Button</STRONG></TD>
+							<TD valign="middle" width="70" bgcolor="#ffffff" style="border-right: 1px solid #000000; border-bottom: 2px solid #000000"><STRONG><FONT color="#FF0000">Key</FONT></STRONG></TD>
+							<TD valign="middle" width="70" bgcolor="#ffffff" style="border-bottom: 2px solid #000000"><STRONG>Button</STRONG></TD>
+							<TD valign="middle" width="70" bgcolor="#ffffff" style="border-right: 1px solid #000000; border-bottom: 2px solid #000000"><STRONG><FONT color="#FF0000">Key</FONT></STRONG></TD>
+							<TD valign="middle" width="70" bgcolor="#ffffff" style="border-right: 1px solid #999999; border-bottom: 2px solid #000000"><STRONG>Button</STRONG></TD>
+							<TD valign="middle" width="70" bgcolor="#ffffff" style="border-bottom: 2px solid #000000"><STRONG><FONT color="#FF0000">Key</FONT></STRONG></TD>
+						</TR>
+						<TR>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">sin</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #000000; border-bottom: 1px solid #999999">s</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">asin</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 2px solid #000000; border-bottom: 1px solid #999999">S</TD>
+							<TD valign="middle" width="70" bgcolor="#ff6464" style="border-right: 1px solid #000000; border-bottom: 2px solid #000000">Help menu</TD>
+							<TD valign="middle" width="70" bgcolor="#ff6464" style="border-bottom: 2px solid #000000">h</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">cos</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #000000; border-bottom: 1px solid #999999">o</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">acos</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 2px solid #000000; border-bottom: 1px solid #999999">O</TD>
+							<TD valign="middle" width="70" bgcolor="#999999" style="border-right: 1px solid #000000; border-bottom: 1px solid #000000">C</TD>
+							<TD valign="middle" width="70" bgcolor="#999999" style="border-bottom: 1px solid #000000">Esc</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">tan</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #000000; border-bottom: 1px solid #999999">t</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">atan</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 2px solid #000000; border-bottom: 1px solid #999999">T</TD>
+							<TD valign="middle" width="70" bgcolor="#999999" style="border-right: 1px solid #000000; border-bottom: 2px solid #000000">AC</TD>
+							<TD valign="middle" width="70" bgcolor="#999999" style="border-bottom: 2px solid #000000"><SMALL>Backspace/delete</SMALL></TD>
+						</TR>
+						<TR>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">pi</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #000000; border-bottom: 1px solid #999999">p</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">n!</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 2px solid #000000; border-bottom: 1px solid #999999">!</TD>
+							<TD valign="middle" width="70" bgcolor="orange" style="border-right: 1px solid #999999; border-bottom: 2px solid #000000">=</TD>
+							<TD valign="middle" width="70" bgcolor="orange" style="border-bottom: 2px solid #000000"><SMALL>Enter or =</SMALL></TD>
+						</TR>
+						<TR>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">ln</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #000000; border-bottom: 1px solid #999999">n</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">e^x</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 2px solid #000000; border-bottom: 1px solid #999999">N</TD>
+							<TD valign="middle" width="70" bgcolor="#ffdd9a" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">+</TD>
+							<TD valign="middle" width="70" bgcolor="#ffdd9a" style="border-bottom: 1px solid #999999">+</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">log</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #000000; border-bottom: 1px solid #999999">l</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">10^x</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 2px solid #000000; border-bottom: 1px solid #999999">L</TD>
+							<TD valign="middle" width="70" bgcolor="#ffdd9a" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">–</TD>
+							<TD valign="middle" width="70" bgcolor="#ffdd9a" style="border-bottom: 1px solid #999999">–</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">log2</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #000000; border-bottom: 1px solid #999999">j</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">2^x</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 2px solid #000000; border-bottom: 1px solid #999999">J</TD>
+							<TD valign="middle" width="70" bgcolor="#ffdd9a" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">×</TD>
+							<TD valign="middle" width="70" bgcolor="#ffdd9a" style="border-bottom: 1px solid #999999">*</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">Mod</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #000000; border-bottom: 1px solid #999999">%</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">EE</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 2px solid #000000; border-bottom: 1px solid #999999">x</TD>
+							<TD valign="middle" width="70" bgcolor="#ffdd9a" style="border-right: 1px solid #999999; border-bottom: 2px solid #000000">÷</TD>
+							<TD valign="middle" width="70" bgcolor="#ffdd9a" style="border-bottom: 2px solid #000000">/</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">And</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #000000; border-bottom: 1px solid #999999">&amp;</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">Or</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 2px solid #000000; border-bottom: 1px solid #999999">|</TD>
+							<TD valign="middle" width="70" bgcolor="#ffffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">+/–</TD>
+							<TD valign="middle" width="70" bgcolor="#ffffff" style="border-bottom: 1px solid #999999">m</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">Xor</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #000000; border-bottom: 1px solid #999999">^</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">Not</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 2px solid #000000; border-bottom: 1px solid #999999">~</TD>
+							<TD valign="middle" width="70" bgcolor="#ffffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999"><STRONG>.</STRONG></TD>
+							<TD valign="middle" width="70" bgcolor="#ffffff" style="border-bottom: 1px solid #999999"><STRONG>.</STRONG></TD>
+						</TR>
+						<TR>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 2px solid #000000">Lsh</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #000000; border-bottom: 2px solid #000000">&lt;</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 1px solid #999999; border-bottom: 2px solid #000000">Rsh</TD>
+							<TD valign="middle" width="70" bgcolor="#99ffff" style="border-right: 2px solid #000000; border-bottom: 2px solid #000000">&gt;</TD>
+							<TD valign="middle" width="70" bgcolor="#ffffff" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">0-9</TD>
+							<TD valign="middle" width="70" bgcolor="#ffffff" style="border-bottom: 1px solid #999999">0-9</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" width="70" bgcolor="#99ff9b" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">x^y</TD>
+							<TD valign="middle" width="70" bgcolor="#99ff9b" style="border-right: 1px solid #000000; border-bottom: 1px solid #999999">y</TD>
+							<TD valign="middle" width="70" bgcolor="#99ff9b" style="border-right: 1px solid #999999; border-bottom: 1px solid #999999">1/x</TD>
+							<TD valign="middle" width="70" bgcolor="#99ff9b" style="border-right: 2px solid #000000; border-bottom: 1px solid #999999">r</TD>
+							<TD valign="middle" width="70" bgcolor="#ffffff" style="border-right: 1px solid #999999; border-bottom: 2px solid #000000">ABCDEF</TD>
+							<TD valign="middle" width="70" bgcolor="#ffffff" style="border-bottom: 2px solid #000000">abcdef</TD>
+						</TR>
+						<TR>
+							<TD valign="middle" width="70" bgcolor="#99ff9b" style="border-right: 1px solid #999999">x^2</TD>
+							<TD valign="middle" width="70" bgcolor="#99ff9b" style="border-right: 1px solid #000000">@</TD>
+							<TD valign="middle" width="70" bgcolor="#99ff9b" style="border-right: 1px solid #999999">sqrt</TD>
+							<TD valign="middle" width="70" bgcolor="#99ff9b" style="border-right: 1px solid #000000">q</TD>
+							<TD valign="middle" width="70" bgcolor="#99ff9b" style="border-right: 1px solid #999999">( )</TD>
+							<TD valign="middle" width="70" bgcolor="#99ff9b">( )</TD>
+						</TR>
+					</TBODY></TABLE>
+					<!-- End Keyboard Equivalents Table -->
+
+					<BR>
+					<LI>Degrees, radians, and gradians modes</LI>
+					<LI>Five separate memory values</LI>
+					<LI>Binary operator functions</LI>
+					<LI>Easy converting of numbers between bases or angle measurements(just enter a value and change your base or angle measurement)</LI>
+					<LI>"Hovering tooltips" box, which can be set so that hovering over calculator buttons tells you their definitions.</LI>
+				</DIV>
+
+				<!-- Hidden Features Menu -->
+				<DIV id="featureshid" style="display:none">
+					<FONT class="title">Features</FONT> <SMALL><A href="http://www.motionnet.com/calculator/#" onclick="featuresmenu.style.display=&#39;block&#39;;featureshid.style.display=&#39;none&#39;; return false">-show-</A></SMALL>
+				</DIV>
+			</TD>
+		</TR>
+	</TBODY></TABLE>
+	<!-- End Features Menu -->
+
+	<BR><BR>
+
+	<!-- "Free Online Calculator" and MotionNet.com Link -->
+	<TABLE cellpadding="0" cellspacing="0" border="0">
+		<TBODY><TR>
+			<TD width="15" valign="top">&nbsp;</TD>
+			<TD width="270" valign="top">
+				<FONT class="title" style="color: #ff0000">Calculator</FONT>
+				<BR>
+				<FONT class="SMALL"><EM>Free Online Calculator -- Rev. 1.42</EM>
+				<BR><A href="http://www.motionnet.com/" style="font-face:arial; font-size:10; color:000000; text-decoration:none;">© MotionNET.com</A>
+				<BR><BR><FONT color="eeeeee" size="-4">
+2573140 pageloads since 07/11/2002</FONT>
+			</FONT></TD>
+		</TR>
+	</TBODY></TABLE>
+	<!-- End "Free Online Calculator" and MotionNET.com Link -->
+
+	<!-- Calculator Help Menu -->
+	<DIV id="helpmenu" style="z-index:3;position:absolute; padding: 5px; top:38px; left:298px; width:250; height:233; visibility:hidden; background-color:ffffff; border-width: 1px; border-color: #000000; border-style: solid;">
+		Calculator <STRONG>Help</STRONG>
+		<HR size="1" width="100%" color="#000000">
+		<FONT color="#FF0000">Hints:</FONT>
+		<SMALL>
+			<LI>Values in memory will be lost if page is reloaded.</LI>
+			<LI>In bases other than base 10 (decimal), fractional values will be rounded down.</LI>
+			<LI>If you click on a button and then later press the enter key for "=", the act of pressing enter might also cause the last key you have clicked on to be pressed again.</LI>
+			<LI>Check the "Hovering tooltips" box if you are unsure what some calculator functions do, then hover your mouse over the button in question.</LI>
+			<BR><BR>
+			You may email comments, suggestions, or problems to <A href="mailto:calculator@motionnet.com?subject=Calculator%20Website%20Suggestions" style="a.hover (color:ff0000; background-color:transparent;)">Calculator@MotionNET.com</A>
+		</SMALL>
+		<BR><BR>
+		<HR size="1" width="100%" color="#000000">
+		<SMALL><A href="http://www.motionnet.com/calculator/#" onmouseover="togglevisi(helpmenu)">Hide this menu.</A></SMALL>
+	</DIV>
+
+
+	<!-- HISTORY MENU (INACTIVE) //////////////////////////////////////////
+	<TABLE WIDTH="200" HEIGHT="270" BORDER="0">
+		<TR>
+			<TD WIDTH="200" HEIGHT="34" VALIGN="top">
+				HISTORY <SMALL><A HREF="#" ONCLICK="togglevisi(historymenu); return false">-hide/show-</A>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH="200" HEIGHT="236" VALIGN="bottom">
+				<DIV ID="historymenu" STYLE="font-family:'Courier New',sans-serif;font-size:10pt;background-color:eeeeee;border-style:solid;border-width:1;border-color:bbbbbb;color:000000;width:200px; height:194px;text-align:right"></DIV>
+				<BR>
+				<A HREF="#" ONCLICK="historymenu.innerHTML='&nbsp;'; return false" ONKEYPRESS="return false" STYLE="cursor: default"><IMG SRC="calcimages/historyclear.gif" BORDER="0"></A><A HREF="#" ONCLICK="historyprint(); return false" ONKEYPRESS="return false" STYLE="cursor: default"><IMG SRC="calcimages/historyprint.gif" BORDER="0"></A>
+			</TD>
+		</TR>
+	</TABLE>
+	////////////////////////////////////////////////// END HISTORY MENU -->
+
+
+	
+
+</BODY></HTML>

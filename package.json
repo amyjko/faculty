@@ -1,0 +1,26 @@
+{
+	"name": "UWFacultyPage",
+	"version": "1.0.0",
+	"scripts": {
+	    "build": "browserify -t [ babelify --presets [ react ] ] src/app.js | uglifyjs > build/app.js",
+	    "watch": "watch 'npm run build' src"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.0.0",
+		"babel-preset-es2015": "^6.3.13",
+		"browserify": "latest",
+		"watch": "latest"
+	},
+	"dependencies": {
+		"babel-preset-react": "^6.5.0",
+		"babelify": "^7.2.0",
+		"react": "^0.14.0",
+		"react-dom": "^0.14.0",
+		"react-router": "^2.0.0",
+		"history": "latest",
+		"jquery": "^1.12.0",
+		"bootstrap": "^3.3.6",
+		"lodash": "latest",
+		"uglify-js": "latest"
+	}
+}

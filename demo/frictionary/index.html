@@ -1,0 +1,1645 @@
+<html>
+	<head>
+		<meta property="og:image" content="http://faculty.washington.edu/ajko/projects/frictionary/ui/media/logo.png" />
+		<meta property="og:title" content="Frictionary" />
+
+		<link rel=stylesheet href="ui/style/style.css" type="text/css">
+
+		<title>Frictionary</title>
+
+		<script type='text/javascript' src='ui/lib/jquery-1.8.1.min.js'></script>
+		<script type='text/javascript' src='ui/lib/jquery.tools.min.js'></script>
+				
+		<script type='text/javascript'>
+		
+			var sourceColors = {
+				"mzs":"rgba(240,240,240,0.5)",
+				"mzzf":"rgba(215,215,215,0.5)",
+				"mzzg":"rgba(190,190,190,0.5)",
+				"mzzb":"rgba(165,165,165,0.5)",
+				"ffb":"rgba(140,140,140,0.5)",
+				"mzzs":"rgba(115,115,115,0.5)",
+				"su":"rgba(90,90,90,0.5)"
+			};
+		
+			$(document).ready(function() {
+			     
+				positionPanels(0);
+
+				// First load the data, which has counts.
+				$.getScript('data/data.js', function() {
+					$.getScript('data/releases.js', function() {
+
+						// Load the users and the source information.
+						$.getScript('data/users.js', function() {});
+						$.getScript('data/sources.js', function() {
+						
+							for(var source in MYOPIA.sources) {
+								if(MYOPIA.sources.hasOwnProperty(source)) {
+									
+									var sourceHTML = $('<div></div>').
+										addClass('source').
+										html(checkHTML() + "&nbsp;" + MYOPIA.sources[source].name).
+										attr('id', 'source-' + source).
+										css('backgroundColor', sourceColors[source]).
+										data('state', true).
+										data('source', source).
+										click(function() {
+											
+											var state = !$(this).data('state');
+											$(this).data('state', state);
+											$(this).html((state ? checkHTML() : exHTML()) + "&nbsp;" + MYOPIA.sources[$(this).data('source')].name);
+											
+											filter();
+										
+										});
+									
+									$('#sources').append(sourceHTML);
+								
+								}
+							}
+	
+							showOverallPeriodPlot();						
+	
+							// Finally, start loading the feature/action pairs						
+							loadPeriods();
+	
+						});
+						
+					});
+					
+				});
+
+				clearFeatures();
+				clearActions();
+				clearQuotes();
+				clearIssue();
+
+			});
+			
+			function positionPanels(delay) {
+
+				// In case there are any pending animations.			
+				$('#features').clearQueue();
+				$('#actions').clearQueue();
+				$('#selectedIssues').clearQueue();
+			
+				var padding = 10;
+
+				var featuresLeft = $('#plot').offset().left;
+				var actionsLeft = featuresLeft + $('#features').outerWidth() + padding;
+				var selectedIssuesLeft =
+					$('#actions').is(":visible") ?
+						actionsLeft + $('#actions').outerWidth() + padding :
+						featuresLeft + $('#features').outerWidth() + padding;						
+						
+				var bodyLeft = selectedIssuesLeft + $('#selectedIssues').outerWidth() + padding;
+
+				$('#features').animate({
+					left: featuresLeft,
+					top: $('#plot').offset().top + $('#plot').outerHeight()
+				}, delay);
+
+				$('#actions').animate({
+					left: actionsLeft,
+					top: $('#features').position().top
+				}, delay);
+
+				$('#selectedIssues').animate({
+					left: selectedIssuesLeft,
+					top: $('#features').position().top
+				}, delay);
+
+				$('#selectedIssueBody').animate({
+					left: bodyLeft,
+					top: $('#selectedIssues').position().top
+				}, delay);
+
+				$('#sources').animate({
+					left: $('#plot').offset().left + $('#plot').outerWidth() + padding,
+					top: $('#plot').position().top
+				}, delay);
+			
+			}
+			
+			function updateTitle() {
+			
+				var topics = {};
+				for(var period in MYOPIA.periods) {
+					if(MYOPIA.periods.hasOwnProperty(period)) {
+						var features = MYOPIA.periods[period].topics;
+						for(var featureIndex = 0; featureIndex < features.length; featureIndex++) {
+							var actionsArray = features[featureIndex].a;
+							for(var actionIndex = 0; actionIndex < actionsArray.length; actionIndex++) {
+								topics[features[featureIndex].f + actionsArray[actionIndex].a] = true;
+							}
+						}
+					}
+				}
+				
+				var count = 0;
+				for(var topic in topics)
+					if(topics.hasOwnProperty(topic))
+						count++;
+			
+				$('#plotHeader').html($("<img class='logo' src='ui/media/logo.png'>&nbsp;&nbsp;<span>" + numberHTML(totalCounts(MYOPIA.r)) + " people wrote " + numberHTML(totalCounts(MYOPIA.i)) + " posts, mentioning " + numberHTML(count) + " topics</span>"));
+			
+			}
+			
+			function showOverallPeriodPlot() {
+			
+				createPeriodPlot($('#plot'), 
+					"issueFrequencyPlot",
+					"This plot shows issue frequency in each period. Click over a period to see the topics in this period.",
+					function() {
+
+						$('.selectedBar').removeClass('selectedBar');
+						$(this).addClass('selectedBar');
+
+						// Show the period when the bar is hovered over.								
+						showPeriod($(this).data('period'));
+						
+					}
+				);
+			
+			}
+			
+			function filter() {
+			
+				var selectedBarID = $('.selectedBar').attr('id');
+				showOverallPeriodPlot();			
+				$('#' + selectedBarID).click();
+				
+				var period = $('#features').data('period');
+				if(period !== undefined)
+					showPeriod(period);
+
+				var feature = $('#actions').data('feature');
+				var period = $('#actions').data('period');
+				if(feature !== undefined && period !== undefined)
+					showActions(feature, period);
+					
+				updateTitle();
+			
+			}
+			
+			function checkHTML() { return '<span class="increase">&#x2713</span>'; }
+			function exHTML() { return '<span class="decrease">&#x2717</span>'; }
+			
+			function periodIsLoaded(period) {
+			
+				return MYOPIA.periods.hasOwnProperty(period) && MYOPIA.periods[period].topics !== null;
+			
+			}
+			
+			function isSourceIncluded(sourceID) {
+			
+				return $('#source-' + sourceID).data('state');
+			
+			}
+			
+			function totalCounts(counts) {
+			
+				var total = 0;
+				for(var sourceID in counts) {
+					if(counts.hasOwnProperty(sourceID) && isSourceIncluded(sourceID)) {
+						total += counts[sourceID];
+					}
+				}
+				return total;
+			
+			}
+			
+			function computeVocality(userNumbers) {
+			
+				if(userNumbers.length < 3)
+					return "-";
+			
+				var userCounts = [];
+				for(var userIndex = 0; userIndex < userNumbers.length; userIndex++) {
+					userCounts.push(MYOPIA.users[userNumbers[userIndex]].i.length);
+				}
+				userCounts.sort();
+				var vocality = userCounts[Math.floor(userCounts.length / 2)];
+				
+				return vocality;
+
+			}
+			
+			function clearFeatures() { $('#features').empty().append($("<div class='emptyMessage'>&uarr; select a period</div>")); }
+			function clearActions() { $('#actions').empty().append($("<div class='emptyMessage'>&larr; select a feature or topic</div>")); }
+			function clearQuotes() { $('#selectedIssues').empty().append($("<div class='emptyMessage'>&larr; select an action</div>")); }
+			function clearIssue() { $('#selectedIssueBody').empty().append($("<div class='emptyMessage'>&larr; select a quote</div>")); }
+			
+			function loadPeriods(whenDone) {
+
+		        //Get the screen height and width
+		        var maskHeight = $(document).height();
+		        var maskWidth = $(window).width();
+		        $('#mask').css({'width':maskWidth,'height':maskHeight});
+		        $('#mask').show();    
+
+				var periods = [];
+
+				for(var period in MYOPIA.periods) {
+					if(MYOPIA.periods.hasOwnProperty(period)) {
+						periods.push(period);
+					}
+				}
+				
+				var total = periods.length;
+			
+				function loadPeriod() {
+				
+					period = periods.shift();
+				
+					$.getScript('data/periods/period' + period + '.js', function(data, textStatus) {
+						
+						var percent = 100 - Math.round(100 * periods.length / total);
+						
+						$('#periodBar').html(percent + "% of data loaded");
+
+						// Animate, then move onto the next.						
+						$('#periodBar').animate({ width: (percent - 5) + "%"}, 100, function() {
+						
+							if(periods.length > 0) {
+							
+								loadPeriod();
+							
+							}
+							// Otherwise, we're done! Hide the mask.
+							else {
+	
+						        $('#mask').fadeOut(500);
+						        updateTitle();
+							
+							}
+							
+						});
+					
+					});
+				
+				}
+
+				loadPeriod();
+						
+			}
+			
+			function createPeriodPlot(parent, id, tooltipText, hoverCallback) {
+
+				var periods = MYOPIA.periods;
+
+				var plot = $('<div></div>')
+					.addClass('periodPlot')
+					.attr('id', id)
+					.attr('title', tooltipText)
+					.tooltip({ position: "bottom center" })
+					;
+
+				// Add the plot so that it gets its size.
+				parent.children('.periodPlot').remove();
+				parent.append(plot);
+
+				var numberOfPeriods = 0;
+				var maxCount = -1;
+				var minPeriod = -1;
+				for(var period in periods) {
+					if(periods.hasOwnProperty(period)) {
+						numberOfPeriods++;
+						var issueCount = totalCounts(periods[period].i);
+						if(maxCount < 0 || issueCount > maxCount)
+							maxCount = issueCount;
+						if(minPeriod < 0 || parseInt(period) < minPeriod)
+							minPeriod = parseInt(period);
+					}
+				}
+
+				var totalWidth = plot.width();
+				var totalHeight = plot.height();
+				var width = Math.round(totalWidth / numberOfPeriods) - 1;
+				var hPadding = (plot.innerWidth() - totalWidth) / 2;
+				var vPadding = (plot.outerHeight() - totalHeight) / 2;
+				var labelHeight = 30;
+				
+				for(var period in periods) {
+					if(periods.hasOwnProperty(period)) {
+
+						var issueCount = totalCounts(periods[period].i);
+						var left = Math.round(totalWidth * ((parseInt(period) - minPeriod) / numberOfPeriods)) + hPadding;
+						var height = Math.max(0, Math.round(totalHeight * (issueCount / maxCount)) - labelHeight);
+						var barTop = (totalHeight - height + vPadding - labelHeight);
+						
+						var bar = $('<div></div>').
+							addClass('bar').
+							attr('id', id + "-bar-period" + period).
+							css('width', width + "px").
+							css('left', left + "px").
+							css('top', barTop + "px").
+							data('period', period).
+							css('height', height + "px");
+
+						// Create a bar for each source inside the bar.
+						for(var sourceID in periods[period].i) {
+							if(periods[period].i.hasOwnProperty(sourceID) && isSourceIncluded(sourceID)) {
+							
+								var proportion = Math.round(100 * periods[period].i[sourceID] / issueCount);
+
+								var sourceBar = createSourceBar(sourceID, proportion);							
+									
+								bar.append(sourceBar);
+							}
+						}
+
+						var value = $('<div></div>').
+							addClass('value').
+							attr('id', id + "-value-period" + period).
+							css('width', width + "px").
+							css('left', left + "px").
+							css('top', (barTop - 15) + "px").
+							data('period', period).
+							html(numberHTML(totalCounts(periods[period].i)) + " posts");
+
+						var startDate = new Date(periods[period].startTime);
+						var endDate = new Date(periods[period].endTime);
+
+						var label = $('<div></div>').
+							addClass('label').
+							attr('id', id + "-label-period" + period).
+							css('width', 1000 + "px").	// We give it as much space as is necessary to lay out the date.
+							css('left', left + "px").
+							css('top', (totalHeight + vPadding - labelHeight + 6) + "px").
+							data('period', period).
+							css('height', "2em");
+
+						var date = $(createDateRangeHTML(startDate, endDate, true));
+
+						// Add the date
+						label.append(date);
+
+						plot.append(value);
+						plot.append(label);
+						plot.append(bar);
+
+						// If the date, given infinite space, is greater than the width of the bar, shrink it.
+						if(date.width() + 4 >= width) {
+							label.empty();
+							label.append($(createDateHTML(startDate, true)));
+						}
+
+						label.css('width', width + "px");
+						
+						value.css('top', barTop - value.height() - 1);
+						
+						bar.click(hoverCallback);
+
+					}				
+				}
+				
+				// Order the dates.
+				var periodDates = [];
+				for(var period in periods) {
+					if(periods.hasOwnProperty(period)) {
+						periodDates.push({ period: period, date: new Date(periods[period].startTime) });
+					}
+				}
+				periodDates.sort(function(a, b) { return a.date.getTime() - b.date.getTime(); });
+				
+				// Now add vertical lines for the releases
+				for(var ri = 0; ri < MYOPIA.releases.length; ri++) {
+				
+					var release = MYOPIA.releases[ri];
+					var date = new Date();
+					date.setFullYear(release.year, release.month - 1, release.day);
+	
+					// Find which period this is after			
+					var previousDate = undefined;
+					var chosenDate = undefined;
+					var chosenPeriod = undefined;
+					for(var pi = 0; pi < periodDates.length; pi++) {
+
+						var startDate = new Date(periodDates[pi].date);
+							
+						if(startDate.getTime() > date.getTime()) {
+							chosenDate = previousDate;
+							chosenPeriod = periodDates[pi].period;
+							break;
+						}
+								
+						previousDate = startDate;
+							
+					}
+					
+					// If there's no previous period, this is outside the range of the periods and we can ignore it.
+					if(chosenDate !== undefined) {
+
+						// Compute the differences in the dates and the time in a period.
+						var releaseDelta = date.getTime() - chosenDate.getTime();
+						var periodDelta = startDate.getTime() - chosenDate.getTime();
+						
+						// What proportion through this period is the release?
+						var proportion = releaseDelta / periodDelta;
+					
+						// Find the left of the period bar.
+						var periodLeft = Math.round(totalWidth * ((parseInt(chosenPeriod) - minPeriod) / numberOfPeriods)) + hPadding;
+						var releaseDelta = width * proportion;
+											
+						var bar = $('<div></div>')
+							.addClass('release')
+							.css('left', (periodLeft + releaseDelta) + "px")
+							.css('top', 0 + "px")
+							.html("v " + release.version)
+							;
+							
+						// Prepend so it's behind the bars.
+						plot.prepend(bar);
+					
+					}
+
+				}
+
+				return plot;
+
+			}
+						
+			// Action is optional.
+			function plotFeatureFrequency(showProportion, prefix, feature, action) {
+
+				var periods = MYOPIA.periods;
+				var plot = $('#' + prefix);
+			
+				// Find the max proportion
+				var periodProportions = {};
+				var periodCounts = {};
+				var periodCountsBySource = {};
+				var maxProportion = null;
+				var maxCount = null;
+				
+				for(var period in periods) {
+					if(periods.hasOwnProperty(period)) {
+
+						var periodIssueCount = totalCounts(MYOPIA.periods[period].i);
+						var features = MYOPIA.periods[period].topics;
+						var featureIssueCount = 0;
+						for(var featureIndex = 0; featureIndex < features.length; featureIndex++) {
+							if(features[featureIndex].f === feature.f) {
+	
+								// If we were given an action, find it's frequency.						
+								if(action !== undefined) {
+									var actionsArray = features[featureIndex].a;
+									for(var actionIndex = 0; actionIndex < actionsArray.length; actionIndex++) {
+										if(actionsArray[actionIndex].a === action.a) {
+											featureIssueCount = totalCounts(actionsArray[actionIndex].i);
+											periodCountsBySource[period] = actionsArray[actionIndex].i;
+											break;
+										}
+									}
+								}
+								else {
+									featureIssueCount = totalCounts(features[featureIndex].i);
+									periodCountsBySource[period] = features[featureIndex].i;
+								}
+								break;
+							}
+						}
+						
+						var featureProportion = periodIssueCount === 0 ? 0 : featureIssueCount / periodIssueCount;
+						
+						periodProportions[period] = featureProportion;
+						periodCounts[period] = featureIssueCount;
+
+						if(maxProportion === null || maxProportion < featureProportion)
+							maxProportion = featureProportion;
+
+						if(maxCount === null || maxCount < featureIssueCount)
+							maxCount = featureIssueCount;
+						
+					}
+				}
+
+				var totalHeight = plot.height();
+				var labelHeight = 30;
+				var vPadding = (plot.outerHeight() - totalHeight) / 2;
+			
+				for(var period in periods) {
+					if(periods.hasOwnProperty(period)) {
+					
+						var periodBar = $('#' + prefix + '-bar-period' + period);
+
+						// Add two bars inside the bar, one for the feature and one for everything else.
+						var proportion = 
+							showProportion ? 
+								periodProportions[period] / maxProportion :
+								periodCounts[period] / maxCount;
+
+						var height = Math.max(0, Math.round(totalHeight * proportion - labelHeight));
+						var barTop = totalHeight - height + vPadding - labelHeight;
+
+						periodBar.animate({
+							height : height,
+							top: barTop + "px"
+						}, 200);
+						
+						// Empty the bar and add bars corresponding to the proportion from each source.						
+						periodBar.empty();
+						var counts = periodCountsBySource[period];
+						for(var sourceID in counts) {
+							if(counts.hasOwnProperty(sourceID) && isSourceIncluded(sourceID)) {
+							
+								var proportion = Math.round(100 * counts[sourceID] / periodCounts[period]);
+								var sourceBar = createSourceBar(sourceID, proportion);									
+								periodBar.append(sourceBar);
+								
+							}
+						}
+
+						var value = $('#' + prefix + '-value-period' + period).
+							html(showProportion ? numberHTML(Math.round(100 * periodProportions[period]), false) + "%" : numberHTML(periodCounts[period], false));
+						value.animate({'top' : (barTop - value.height() - 1) + "px"}, 200);
+
+					}
+				}			
+			
+				// Highlight the selected period.
+				var selectedBars = $('.periodPlot .selectedBar');
+				if(selectedBars.length >= 1) {
+				
+					// What period is selected?
+					var period = selectedBars.attr('id');
+					period = period.substring(period.indexOf('period') + 6);
+					$('#' + prefix + '-bar-period' + period).addClass('selectedBar');
+				
+				}
+			
+			}
+			
+			function showPeriod(period) {
+
+				clearFeatures();
+				$('#features .emptyMessage').html("loading...");
+				$('#features').show();
+				
+				setTimeout(function() {
+			
+				clearActions();
+				clearQuotes();
+				clearIssue();
+
+			
+				// If we haven't loaded the period yet, load it and then call this again.
+				if(!MYOPIA.periods[period].hasOwnProperty('topics')) {
+					console.log("Haven't finished loading periods, so can't show period " + period);
+					return;
+				}
+				
+				var index;
+				var features = MYOPIA.periods[period].topics;
+				var group;
+				var count;
+				
+				// Count all of the topics
+				var totalTopics = 0;
+				for(var featureIndex = 0; featureIndex < features.length; featureIndex++)
+					totalTopics += features[featureIndex].a.length;
+
+				// Make a ranked list of phrases.				
+				var phrases = [];
+				for(var featureIndex = 0; featureIndex < features.length; featureIndex++) {
+					var actionsArray = features[featureIndex].a;
+					var issueCount = totalCounts(features[featureIndex].i);
+					// There can't be phrases of frequency > 50 if the total number of issues in this feature is <= 50
+					if(issueCount > 50) {
+						for(var actionIndex = 0; actionIndex < actionsArray.length; actionIndex++) {
+							var issueCount = totalCounts(actionsArray[actionIndex].i);
+							if(issueCount > 20) {
+								var userCount = totalCounts(actionsArray[actionIndex].r);
+								var phrase = { 
+									f: features[featureIndex], 
+									a: actionsArray[actionIndex],
+									issueCount: issueCount, 
+									userCount: userCount
+								};
+								phrases.push(phrase);
+							}
+						}
+					}
+				}
+				
+				// Now sort the array of phrases by decreasing issue count.
+				phrases.sort(function(a, b) {
+					return b.issueCount - a.issueCount;
+				});
+								
+				// Create a heading for the block of information.				
+				var heading = peopleHTML(totalCounts(MYOPIA.periods[period].r), true) + " wrote " + numberHTML(totalCounts(MYOPIA.periods[period].i)) + " " + issueHTML(true) + " in this period, mentioning " + numberHTML(totalTopics) + " topics. Below are topics that appeared &gt;<b>20<b> times.";
+
+				$('#features').empty();
+				$('#features').append("<h1>topics</h1>");				
+				$('#features').append("<div class='listHeader'>" + heading + "</div>");
+				$('#features').data('period', period);
+
+				// Ho wmany total issues were there?				
+				var periodIssueCount = totalCounts(MYOPIA.periods[period].i);
+
+				// Add the phrases table.
+				var phraseList = $('<div></div>').addClass('scrollableList');			
+				var phraseTable = $('<table></table>').addClass('issueTable');
+				phraseTable.append(createIssueTableHeaderHTML(phraseTable[0]));
+				phraseList.append(phraseTable);
+				$('#features').append(phraseList);
+				phraseList.css('height', '11em');				
+
+				var numberToShow = Math.min(phrases.length, 250);
+
+				for(var phraseIndex = 0; phraseIndex < numberToShow; phraseIndex++) {
+
+					(function() {
+						
+						var phraseObject = phrases[phraseIndex];
+
+						var addPhraseRow = function() {
+	
+							var feature = phraseObject.f.f;
+							var action = phraseObject.a.a;
+							var issueCount = phraseObject.issueCount;
+							var userCount = phraseObject.userCount;
+							var vocality = '-';//computeVocality(featureObject.u);					
+		
+							// What was the previous period's count?
+							var delta = undefined;
+							var previousPeriod = parseInt(period) - 1;
+							var previousPeriodIssueCount = 0;
+							if(MYOPIA.periods.hasOwnProperty(previousPeriod)) {
+							
+								var previousPeriodFeatures = MYOPIA.periods[previousPeriod].topics;
+								for(var pfi = 0; pfi < previousPeriodFeatures.length; pfi++) {
+									if(previousPeriodFeatures[pfi].f === feature) {
+										var previousPeriodFeaturesActions = previousPeriodFeatures[pfi].a;
+										for(var pai = 0; pai < previousPeriodFeaturesActions.length; pai++) {
+											if(previousPeriodFeaturesActions[pai].a === action) {
+												previousPeriodIssueCount = totalCounts(previousPeriodFeaturesActions[pai].i);
+												break;
+											}
+										}
+									}
+								}
+								delta = issueCount - previousPeriodIssueCount;
+							}
+							
+							var topicHTML = createTopicStatsHTML(feature, action, issueCount, periodIssueCount, userCount, delta, vocality);
+
+							topicHTML.addClass('feature');
+							topicHTML.data('feature', phraseObject.f);
+							topicHTML.data('action', phraseObject.a);
+							topicHTML.data('period', period);
+	
+							// Show all of the quotes that match this feature/action pair.						
+							topicHTML.click(function() {
+								$('.feature').removeClass('selected');
+								$(this).addClass('selected');
+								$('#actions').hide();
+								showQuotes($(this).data('period'), $(this).data("feature"), $(this).data("action"));
+							});
+	
+							phraseTable.append(topicHTML);
+												
+							$(this).dequeue();
+													
+						};
+					
+						// Add these asynchronously to improve interactivity.
+						$(phraseTable).queue(addPhraseRow);
+						$(phraseTable).delay(10);
+						
+					})();
+
+				}
+
+				var heading = peopleHTML("");
+
+				$('#features').append("<h1>features</h1>");				
+				$('#features').append("<div class='listHeader'>Below are the top <b>1,000</b> features.</div>");
+
+				// Next, add the features table.
+				var list = $('<div></div>').addClass('scrollableList');			
+				var table = $('<table></table>').addClass('issueTable');
+				table.append(createIssueTableHeaderHTML(table[0]));
+				list.append(table);
+				$('#features').append(list);
+				list.css('height', '11em');
+				
+				var numberToShow = Math.min(features.length, 1000);
+
+				for(var featureIndex = 0; featureIndex < numberToShow; featureIndex++) {
+
+					(function() {
+						
+						var featureObject = features[featureIndex];
+
+						var addRow = function() {
+	
+							var feature = featureObject.f;
+							var actions = featureObject.a;
+							var issueCount = totalCounts(featureObject.i);
+							var userCount = totalCounts(featureObject.r);
+							var vocality = computeVocality(featureObject.u);					
+		
+							if(issueCount > 0) {
+							
+								// What was the previous period's count?
+								var delta = undefined;
+								var previousPeriod = parseInt(period) - 1;
+								if(MYOPIA.periods.hasOwnProperty(previousPeriod)) {
+									var previousPeriodFeatures = MYOPIA.periods[previousPeriod].topics;
+									var previousPeriodIssueCount = 0;
+									for(var pfi = 0; pfi < previousPeriodFeatures.length; pfi++) {
+										if(previousPeriodFeatures[pfi].f === feature) {
+											previousPeriodIssueCount = totalCounts(previousPeriodFeatures[pfi].i);
+											break;
+										}
+									}
+									delta = issueCount - previousPeriodIssueCount;
+								}
+								
+								var topicHTML = createTopicStatsHTML(feature, undefined, issueCount, periodIssueCount, userCount, delta, vocality);
+		
+								topicHTML.addClass('action');
+								topicHTML.data('feature', featureObject);
+								topicHTML.data('period', period);
+			
+								topicHTML.click(function() {
+									$('.action').removeClass('selected');
+									$(this).addClass('selected');
+									showActions($(this).data("feature"), $(this).data("period"));
+								});
+	
+								table.append(topicHTML);
+													
+								$(this).dequeue();
+													
+							}
+						};
+					
+						// Add these asynchronously to improve interactivity.
+						$(table).queue(addRow);
+						$(table).delay(10);
+						
+					})();
+					
+				}
+				
+				}, 0);
+
+			}
+
+			function makeFlip(plotID, feature, action) {
+			
+				var flip = $('<span></span>').
+					html("plot &Sigma;").
+					addClass("flip").
+					data('showProportion', true).
+					click(function() {
+						var showProportion = !$(this).data('showProportion');
+						$(this).data('showProportion', showProportion);
+						$(this).html(showProportion ? "plot &Sigma;" : "plot %");
+						plotFeatureFrequency($(this).data('showProportion'), plotID, feature, action);
+					});
+					
+				return flip;
+			
+			}
+
+			function showActions(feature, period) {
+			
+				clearQuotes();
+				clearIssue();
+
+				clearActions();
+				$('#actions .emptyMessage').html("loading...");
+				$('#actions').show();
+				
+				setTimeout(function() {
+
+				$('#actions').empty();			
+
+				positionPanels(0);
+
+				var header = peopleHTML(totalCounts(feature.r), true) + " wrote " + numberHTML(totalCounts(feature.i)) + " " + createTopicHTML(feature.f) + " " + issueHTML(true) + " in this period, mentioning " + numberHTML(feature.a.length) + " topics. Below are the top <b>1,000</b> actions.";
+
+				$('#actions').append("<h1>" + createTopicHTML(feature.f) + " actions</h1>");				
+				$('#actions').append("<div class='listHeader'>" + header + "</div>");
+				
+				$('#actions .listHeader').append(makeFlip('featureFrequencyPlot', feature, undefined));
+
+				$('#actions').data('feature', feature);
+				$('#actions').data('period', period);
+
+				var plot = $('<div></div>').attr('id', 'featurePlot');
+				$('#actions').append(plot);
+				createPeriodPlot(plot, "featureFrequencyPlot", "This plot shows feature frequency (number of times the feature appeared in a post) or proportion (the % of posts that contained the feature) across each period.", function() {});
+				
+				plotFeatureFrequency(true, "featureFrequencyPlot", feature);
+
+				var actionsArray = feature.a;
+
+				var list = $('<div></div>').addClass('scrollableList');			
+				var table = $('<table></table>').addClass('issueTable');
+				table.append(createIssueTableHeaderHTML(table[0]));
+				list.append(table);
+				$('#actions').append(list);
+				list.css('height', '18em');
+
+				for(var actionIndex = 0; actionIndex < actionsArray.length; actionIndex++) {
+								
+					(function() {
+
+						var actionObject = actionsArray[actionIndex];
+						
+						function addRow() {
+						
+							var action = actionObject.a;					
+							var clauseIDs = actionObject.c;
+							var issueCount = totalCounts(actionObject.i);
+							var userCount = totalCounts(actionObject.r);
+							var vocality = computeVocality(actionObject.u);
+	
+							if(issueCount > 0) {
+
+								// What was the previous period's issue count?
+								var delta = undefined;
+								var previousPeriod = parseInt(period) - 1;
+								if(MYOPIA.periods.hasOwnProperty(previousPeriod)) {
+									var previousPeriodFeatures = MYOPIA.periods[previousPeriod].topics;
+									var previousPeriodIssueCount = 0;
+									for(var pfi = 0; pfi < previousPeriodFeatures.length; pfi++) {
+										if(previousPeriodFeatures[pfi].f === feature.f) {
+											var previousPeriodFeaturesActions = previousPeriodFeatures[pfi].a;
+											for(var pai = 0; pai < previousPeriodFeaturesActions.length; pai++) {
+												if(previousPeriodFeaturesActions[pai].a === action) {
+													previousPeriodIssueCount = totalCounts(previousPeriodFeaturesActions[pai].i);
+													break;
+												}
+											}
+										}
+									}
+									delta = issueCount - previousPeriodIssueCount;
+								}
+		
+		
+								var actionHTML = createTopicStatsHTML(feature.f, action, issueCount, totalCounts(feature.i), userCount, delta, vocality)
+									
+								actionHTML.addClass('feature');
+								actionHTML.data('feature', feature);
+								actionHTML.data('action', actionObject);
+								actionHTML.data('period', period);
+		
+								// Show all of the quotes that match this feature/action pair.						
+								actionHTML.click(function() {
+									$('.feature').removeClass('selected');
+									$(this).addClass('selected');
+									showQuotes($(this).data('period'), $(this).data("feature"), $(this).data("action"));
+		/* 							$('#selectedIssues').css('top', $(this).offset().top - 20); */
+								});
+		
+								table.append(actionHTML);
+								
+								$(this).dequeue();
+								
+							}
+
+						}
+						
+						// Add these asynchronously to improve interactivity.
+						$(table).queue(addRow);
+						$(table).delay(10);
+
+					})();				
+				
+				}
+				
+				}, 0);
+							
+			}
+			
+			function showQuotes(period, feature, action) {
+
+				positionPanels(0);
+
+				clearQuotes();
+				$('#selectedIssues .emptyMessage').html("loading...");
+				$('#selectedIssues').show();
+
+				setTimeout(function() {
+
+				var clauseIDs = action.c;
+
+				clearIssue();
+
+				$('#selectedIssues').empty();
+				
+				
+				////////////////////////////////
+				// find co-occurring phrases
+				////////////////////////////////
+				
+				// What are all of the issues that this phrase occurred in?
+				var issuesContainingPhrase = {};
+				for(var i = 0; i < action.c.length; i++) {
+					var clauseID = action.c[i];
+					var issueID = getIssueIDFromClauseID(clauseID);
+					issuesContainingPhrase[issueID] = true;
+				}
+				
+				// Go through all of the other actions
+				var currentPhrase = feature.f + " " + action.a;
+				var phrases = {};
+				var features = MYOPIA.periods[period].topics;
+				var featureIssueCount = 0;
+				for(var featureIndex = 0; featureIndex < features.length; featureIndex++) {
+					var actionsArray = features[featureIndex].a;
+					var f = features[featureIndex].f;
+					for(var actionIndex = 0; actionIndex < actionsArray.length; actionIndex++) {
+						// Does this phrase appear in any of the issues the current phrase does?
+						var a = actionsArray[actionIndex].a;
+						var phrase = f + " " + a;
+						if(currentPhrase !== phrase) {
+							var clauses = actionsArray[actionIndex].c;
+							for(var i = 0; i < clauses.length; i++) {
+								var issueID = getIssueIDFromClauseID(clauses[i]);
+								if(issuesContainingPhrase.hasOwnProperty(issueID)) {
+									if(!phrases.hasOwnProperty(phrase))
+										phrases[phrase] = {f: f, a: a, count: 0};
+									phrases[phrase].count++;
+								}
+							}
+						}
+					}
+				}
+				
+				var phraseList = [];
+				for(var phrase in phrases)
+					if(phrases.hasOwnProperty(phrase) && phrases[phrase].count > 1)
+						phraseList.push(phrases[phrase]);
+				phraseList.sort(function(a, b) {
+					return b.count - a.count;
+				});
+
+				////////////////////////////////////////				
+				// Show the plot, etc.				
+				var header = peopleHTML(totalCounts(action.r), true) + " wrote " + createTopicHTML(feature.f, action.a) + " posts " + numberHTML(clauseIDs.length) + " times in this period.";
+
+				$('#selectedIssues').append("<h1>" + createTopicHTML(feature.f, action.a) + "</h1>");				
+				$('#selectedIssues').append("<div class='listHeader'>" + header + "</div>");
+
+				$('#selectedIssues .listHeader').append(makeFlip('actionFrequencyPlot', feature, action));
+
+				var plot = $('<div></div>').attr('id', 'actionPlot');
+				$('#selectedIssues').append(plot);
+				createPeriodPlot(plot, "actionFrequencyPlot", "This plot shows feature/action frequency (number of times the topic appeared in a post) or proportion (the % of posts that contained the topic) across each period.", function() {});
+				plotFeatureFrequency(true, "actionFrequencyPlot", feature, action);
+
+				//////////////////////////////////////////
+				// Add co-occuring topics
+				$('#selectedIssues').append("<h1>top 10 co-occuring topics");
+				for(var i = 0; i < Math.min(phraseList.length, 10); i++) {
+					$('#selectedIssues').append($("<div class='co-occuring'>" + createTopicHTML(phraseList[i].f, phraseList[i].a) + "</div>"));
+				}
+
+				//////////////////////////////////////////////
+				// Show the quotes
+				$('#selectedIssues').append("<h1>quotes</h1>");
+
+				var list = $('<div></div>').addClass('scrollableList');			
+				list.css('height', '6em');
+				$('#selectedIssues').append(list);
+
+				$('#selectedIssues').clearQueue();
+
+				var i;
+				for(i = 0; i < clauseIDs.length; i++) {
+				
+					// Capture this scope so we can remember ids.
+					(function() { 
+				
+						var clauseID = clauseIDs[i];
+	
+						var issueHTML = $("<div id='" + clauseID + "' class='sentence'>Loading sentence " + clauseID + "...</div>");					
+						
+						issueHTML.data('clauseID', clauseID);
+	
+						issueHTML.click(function() {
+							$('.sentence').removeClass('selected');
+							$(this).addClass('selected');
+							var clauseID = $(this).data('clauseID');
+							var issueID = clauseID.substring(0, clauseID.indexOf('-'));
+							showIssue(issueID);
+/* 							$('#selectedIssueBody').css('top', $(this).offset().top); */
+							
+						});
+	
+						// If we haven't loaded it, load it.						
+						if(!MYOPIA.clauses.hasOwnProperty(clauseID)) {
+						
+							function addQuote() {
+								var issueID = clauseID.substr(0, clauseID.indexOf("-"));
+								// TODO MySQL database call
+/* 								$.getScript(getIssueIDFolder(issueID) + "/" + issueID + "/" + clauseID + '.js', function(data, textStatus) { */
+								$.ajax({ url: 'getissue.php', dataType: 'script', data: { path: getIssueIDFolder(issueID) + "/" + issueID + "/" + clauseID + '.js'}})
+								.done(function(data, textStatus) {
+									$('#' + clauseID).html(createQuoteHTML(clauseID));
+									$('#selectedIssues').dequeue();
+								})
+								.fail(function(jqXHR, textStatus) {
+									console.log(textStatus);
+								});
+							}
+							
+							$('#selectedIssues').queue(addQuote);
+							$('#selectedIssues').delay(10);
+
+						}
+						else {
+							issueHTML.html(createQuoteHTML(clauseID));
+						}
+						
+						list.append(issueHTML);
+												
+					})();
+									
+				}
+				
+				$('#selectedIssues').show();
+			
+				}, 0);
+			
+			}
+						
+			function showIssue(id) {
+			
+				$('#selectedIssueBody').show();
+				if(MYOPIA.issues.hasOwnProperty(id)) {
+					displayIssue(id);
+				}
+				else {
+
+					// We organize issues 1,000 at a time, since folders full of 1000 files are much more efficient
+					// than folders full of 100,000.				
+					// TODO Convert to MySQL database call
+/* 					$.getScript(getIssueIDFolder(id) + id + '.js', function(data, textStatus) { */
+					$.ajax({ url: 'getissue.php', dataType: 'script', data: { path: getIssueIDFolder(id) + '/' + id + '.js'}})
+					.done(function(data, textStatus) {
+						displayIssue(id);
+					})
+					.fail(function(jqXHR, textStatus) {
+						console.log(textStatus);
+					});
+				}
+			
+			}
+			
+			function isDigit(ch) { 
+	
+			    var digits = "0123456789";
+			    return (digits.indexOf(ch.toLowerCase()) != -1);
+			
+			}
+			 
+			function getIssueIDFromClauseID(clauseID) {
+			
+				return clauseID.substring(0, clauseID.indexOf('-'));
+
+			}
+			 
+			function getIssueIDSource(id) {
+			
+				var source = "";
+				for(var i = 0; i < id.length; i++) {
+					var c = id.charAt(i);
+					if(!isDigit(c))
+						source = source + c;
+					else break;
+				}
+				
+				return source;
+				
+			}
+			
+			function getIssueIDNumber(id) {
+			
+				var number = "";
+				for(var i = 0; i < id.length; i++) {
+					var c = id.charAt(i);
+					if(isDigit(c))
+						number = number + c;
+				}
+				
+				return parseInt(number);
+			
+			}
+			
+			function getIssueIDFolder(id) {
+			
+				var source = getIssueIDSource(id);
+				var thousand = Math.floor(getIssueIDNumber(id) / 1000);
+				
+				return 'data/issues/' + source + "/" + thousand;
+			
+			}
+			
+			function displayIssue(id) {
+			
+				var userID = MYOPIA.issues[id].user;
+							
+				var clauseList = $("<div><h1>topics in this post</h1></div>");
+
+				// Load all of the clauses for highlighting. This happens asynchronously, so the paragraph will initially not be highlighted.
+				var clauses = [];
+				for(var clauseIndex = 0; clauseIndex < MYOPIA.issues[id].clauses; clauseIndex++) {
+
+					(function() {
+
+						var clauseID = id + "-" + clauseIndex;
+						if(!MYOPIA.clauses.hasOwnProperty()) {
+						
+							// TODO Convert to MySQL database call
+/* 							$.getScript(getIssueIDFolder(id) + id + "/" + clauseID + '.js', function(data, textStatus) { */
+							$.ajax({ url: 'getissue.php', dataType: 'script', data: { path: getIssueIDFolder(id) + '/' + id + "/" + clauseID + '.js'}})
+							.done(function(data, textStatus) {
+								
+								highlightClause(id, clauseID);
+								
+								var clause = MYOPIA.clauses[clauseID];
+								clauseList.append($("<div><span class='featureWord'>" + clause.feature + "</span> <span class='actionWord'>" + clause.action + "</span></div>"));
+								
+							})
+							.fail(function(jqXHR, textStatus) {
+								console.log(textStatus);
+							});
+						}
+					})();
+
+				}
+
+				var sentences = MYOPIA.issues[id].sentences;
+				
+				// Copy the breaks array so we can manipulate it.
+				var breaks = $.extend(true, [], MYOPIA.issues[id].breaks);
+
+				var html = "<div class='paragraph'>";
+
+				for(var sentenceNumber = 0 ; sentenceNumber < sentences.length; sentenceNumber++) {
+
+					var words = sentences[sentenceNumber];
+				
+					html = html + "<span class='sentence' id='sentence" + sentenceNumber + "'>"
+				
+					for(var i = 0; i < words.length; i++) {
+
+						var classes = "word";
+						
+						var whitespace = " ";
+						if(i === 0) whitespace = "";
+						else if(words[i] === '.') whitespace = "";
+						else if(words[i] === ',') whitespace = "";
+						else if(i - 1 >= 0 && words[i - 1] === '(') whitespace = "";
+						else if(words[i] === ')') whitespace = "";
+						else if(words[i].indexOf("'") >= 0) whitespace = "";
+						
+/* 						if(sentenceNumber === 1 && i === 0) classes = classes + " firstWord"; */
+						
+						if(breaks.length > 0 && breaks[0][0] == sentenceNumber && breaks[0][1] == i) {
+							whitespace = whitespace + "</div><div class='paragraph'>";
+							breaks.shift();							
+						}
+						
+						html = html + whitespace + "<span class='" + classes +  "' id='word" + i + "'>" + words[i] + "</span>";
+												
+					}
+
+					if(sentenceNumber === 0) {
+					
+						var date = "<div>" + createDateHTML(new Date(MYOPIA.issues[id].time)) + "</div>";
+						var source = createIssueIDHTML(id);
+						var user = "<div><span class='user'>" + userID + "</span></div>";
+					
+						html = "<h1 class='issueTitle'>" + html + "</h1>";
+						html = html + "<div class='issueSubtitle'>" + date + source + user + "</div><div class='issueBodyText'><div class='paragraph'>";
+						
+					}
+					else {
+					
+						html = html + "&nbsp";
+					}
+					
+					html = html + "</span>";
+
+				}
+
+				html = html + "</div></div>";
+
+				$('#selectedIssueBody').html("<div class='issueBody' id='" + id + "'>" + html + "</div>");
+				
+				$('#selectedIssueBody').append(clauseList);
+	
+				// If we're done loading the users, then find the other issues by this user.		
+				if(MYOPIA.hasOwnProperty('users')) {
+
+					var otherIssueIDs = [];				
+					for(var i = 0; i < MYOPIA.users.length; i++) {
+					
+						if(MYOPIA.users[i].n === userID) {
+							for(var ii = 0; ii < MYOPIA.users[i].i.length; ii++) {
+								var issueID = MYOPIA.users[i].s + MYOPIA.users[i].i[ii];
+								if(issueID !== id)
+									otherIssueIDs.push(issueID);
+							}
+						}
+					}
+
+					$('#selectedIssueBody').append("<h1>user's other topics</h1>");
+
+					if(otherIssueIDs.length === 0) {
+						$('#selectedIssueBody').append("<p>no other posts by user</p>");
+					}
+					else {
+						for(i = 0; i < otherIssueIDs.length; i++) {
+
+							// Scope the issueID.
+							(function() {
+
+								var issueID = otherIssueIDs[i];
+								
+								var showTopics = function() {
+
+									var clauses = [];
+									for(var clauseIndex = 0; clauseIndex < MYOPIA.issues[issueID].clauses; clauseIndex++) {
+					
+										(function() {
+					
+											var clauseID = issueID + "-" + clauseIndex;
+											// TODO MySQL database call
+/* 											$.getScript(getIssueIDFolder(issueID) + issueID + "/" + clauseID + '.js', function(data, textStatus) { */
+											$.ajax({ url: 'getissue.php', dataType: 'script', data: { path: getIssueIDFolder(issueID) + '/' + issueID + "/" + clauseID + '.js'}})
+											.done(function(data, textStatus) {
+
+												var clause = MYOPIA.clauses[clauseID];													
+												$('#selectedIssueBody').append(
+													$("<div><span class='featureWord'>" + clause.feature + "</span> <span class='actionWord'>" + clause.action + "</span></div>"));
+												
+											})
+											.fail(function(jqXHR, textStatus) {
+												console.log(textStatus);
+											});
+											
+										})();
+					
+									}
+
+/*								
+									var addSentence = function() {
+										var title = MYOPIA.issues[issueID].sentences[0];
+										var sentence = $('<p></p>')
+											.attr('class', 'title')
+											.click(function() {
+												displayIssue(issueID);
+											});
+										
+										for(var ti = 0; ti < title.length; ti++)
+											sentence.append("" + title[ti] + " ");									
+										
+										$('#selectedIssueBody').append(sentence);
+									};
+	
+									var issueID = otherIssueIDs[i];
+									
+									if(MYOPIA.issues.hasOwnProperty(issueID)) {
+										addSentence();
+									}
+									else {
+										$.getScript(getIssueIDFolder(issueID) + issueID + '.js', function(data, textStatus) {
+											addSentence();
+										});
+									}
+*/								
+								};
+								
+								if(MYOPIA.issues.hasOwnProperty(issueID)) {
+									showTopics();
+								}
+								else {
+									// TODO MySQL call
+/* 									$.getScript(getIssueIDFolder(issueID) + issueID + '.js', function(data, textStatus) { */
+									$.ajax({ url: 'getissue.php', dataType: 'script', data: { path: getIssueIDFolder(issueID) + '/' + issueID + '.js'}})
+									.done(function(data, textStatus) {
+										showTopics();
+									})
+									.fail(function(jqXHR, textStatus) {
+										console.log(textStatus);
+									});
+
+								}
+								
+							})();
+						
+						}
+					}
+					
+				}
+			
+			}	
+			
+			function highlightClause(id, clauseID) {
+				
+				var clause = MYOPIA.clauses[clauseID];
+				var sentenceIndex = clause.sentenceIndex;
+				var startIndex = clause.startIndex;
+				var stopIndex = clause.stopIndex;
+				var selected = clause.selected;
+
+				for(var i = 0; i < MYOPIA.issues[id].sentences[sentenceIndex].length; i++) {
+					if(i >= startIndex && i <= stopIndex)
+						$('#' + id + " #sentence" + sentenceIndex + " #word" + i).removeClass('word').addClass('clauseWord');					
+				}
+
+				for(var i = 0; i < selected.length; i++) {
+
+					var classToAdd = null;
+					var word = clause.words[selected[i]].toLowerCase();
+					
+					if(longestSubstring(clause.feature, word) > longestSubstring(clause.action, word))
+						classToAdd = "featureWord";
+					else
+						classToAdd = "actionWord";
+
+					$('#' + id + " #sentence" + sentenceIndex + " #word" + (startIndex + selected[i])).addClass(classToAdd);
+				
+				}
+			
+			}
+			
+			var monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec" ];
+
+			function createDateHTML(date, includeYear) {
+			
+				var year = "" + date.getFullYear();
+				year = year.substr(2);
+			
+				return "<span class='date'>" + (monthNames[date.getMonth()]) + " " + date.getDate() + (includeYear === false ? "" : " '" + year) + "</span>";
+				
+			}
+						
+			function createDateRangeHTML(date1, date2, includeDate) {
+
+				return "<span class='range'>" + createDateHTML(date1, includeDate) + "-" + createDateHTML(date2, includeDate) + "</span>";
+				
+			}
+			
+			
+			function createIssueIDHTML(id) {
+			
+				return "<span class='issueSource'>" + 
+					MYOPIA.sources[getIssueIDSource(id)].name + 
+					"</span> #<span class='issueNumber'>" + 
+					getIssueIDNumber(id) + 
+					"</span>";
+
+			}
+			
+			function createTopicStatsHTML(feature, action, issueCount, issueTotal, userCount, delta, vocality) {
+			
+				var topicHTML = createTopicHTML(feature, action);
+
+				var proportion = Math.ceil(100 * issueCount / issueTotal);
+
+				var deltaHTML = 
+					delta === undefined ? "-" :
+					delta < 0 ?
+						"<span class='decrease'>" + numberHTML(delta) + "</span>" :
+						delta > 0 ?
+						"<span class='increase'>+" + numberHTML(delta) + "</span>" :
+						"+0";
+						
+				var row = $("<tr></tr>").addClass('issuerow');
+				row.append($('<td></td>').html(topicHTML));
+				
+				row.append(createValueTableCell(issueCount, numberHTML(issueCount)));
+				row.append(createValueTableCell(proportion, numberHTML(proportion)));
+				row.append(createValueTableCell(delta, deltaHTML));
+				row.append(createValueTableCell(userCount, numberHTML(userCount)));
+				row.append(createValueTableCell(vocality, numberHTML(vocality)));
+								
+				return row;
+			
+			}
+			
+			function createValueTableCell(value, valueHTML) {
+	
+				var span = $('<span></span>').addClass('count').html(valueHTML);
+				var cell = $('<td></td>').addClass('stat');
+				cell.data('value', value);
+				cell.append(span);
+				return cell;
+		
+			}
+			
+			function createTopicHTML(feature, action) {
+			
+				return "<span class='topic'><span class='featureWord'>" + feature + "</span>" + (action === undefined ? "" : " <span class='actionWord'>" + action + "</span></span>");
+			
+			}
+			
+			function peopleHTML(number, showText) {
+			
+				return numberHTML(number) + " <span class='icon'>" + (showText === true ? (number > 1 ? "people " : "person ") : "") + peopleUnicode() + "</span>";
+				
+			}
+			
+			function peopleUnicode() { return "&#x263a;" }
+
+			function vocalUnicode() { return "&#x203C"; }
+			
+			function issueHTML(showText) {
+			
+				return "<span class='icon'>" + (showText === true ? "posts " : "") + "&#x2717;</span>";
+				
+			}
+			
+			function numberHTML(number, emphasize) {
+
+				return "<span class='number" + (emphasize === false ? "" : " emphasize") + "'>" + addCommasToNumber("" + number) + "</span>";
+			
+			}
+
+			function createSourceBar(sourceID, proportion) {			
+			
+				var sourceBar = $('<div></div>').
+					addClass('sourceBar').
+					attr('title', MYOPIA.sources[sourceID].name).
+					tooltip({ position: "center left" }).
+					css('width', '100%').
+					css('height', proportion + "%").
+					css('backgroundColor', sourceColors[sourceID]);
+					
+				return sourceBar;
+	
+			}
+
+			function addCommasToNumber(nStr) {
+				nStr += '';
+				x = nStr.split('.');
+				x1 = x[0];
+				x2 = x.length > 1 ? '.' + x[1] : '';
+				var rgx = /(\d+)(\d{3})/;
+				while (rgx.test(x1)) {
+					x1 = x1.replace(rgx, '$1' + ',' + '$2');
+				}
+				return x1 + x2;
+			}			
+
+			function createQuoteHTML(clauseID) {
+			
+				var clause = MYOPIA.clauses[clauseID];
+				var words = clause.words;
+				var startIndex = clause.startIndex;
+				var stopIndex = clause.stopIndex;
+			
+				var html = "<div class='quote'><span class='curlyquote'>&#8220;</span>...";
+				for(var i = 0; i < words.length; i++) {
+
+					var classes = "word";
+					var word = words[i];
+					
+					// If this word is one of the selected words, is it the feature or the action?
+					if($.inArray(i, clause.selected) >= 0) {
+					
+						var lowerWord = word.toLowerCase();
+					
+						if(longestSubstring(clause.feature, lowerWord) > longestSubstring(clause.action, lowerWord))
+							classes = classes + " featureWord";
+						else
+							classes = classes + " actionWord";
+					}
+
+					var whitespace = " ";
+					if(i === 0) whitespace = "";
+					else if(word === '.') whitespace = "";
+					else if(word === ',') whitespace = "";
+					else if(word.indexOf("'") >= 0) whitespace = "";
+					
+					html = html + whitespace + "<span class='" + classes +  "'>" + word + "</span>";
+
+				}
+			
+				return html + "...</div>";
+				
+			}
+			
+			function longestSubstring(containingString, string) {
+			
+				for(var len = 2; len < string.length; len++) {
+					var sub = string.substring(0, len);
+					if(containingString.indexOf(sub) < 0)
+						return len - 1;
+				
+				}
+				return string.length;
+			
+			}
+				
+			function createIssueTableHeaderHTML(tableView) {
+			
+				var row = $('<tr></tr>');
+				
+				var issueCount = $('<th></th>').addClass('count').html('#').click(function() { sortByCount(tableView, 1) });
+				var proportion = $('<th></th>').addClass('count').html('%').click(function() { sortByCount(tableView, 2) });
+				var delta = $('<th></th>').addClass('count').html('+/-').click(function() { sortByCount(tableView, 3) });
+				var userCount = $('<th></th>').addClass('count').html(peopleUnicode()).click(function() { sortByCount(tableView, 4) });
+				var vocality = $('<th></th>').addClass('count').html(vocalUnicode()).click(function() { sortByCount(tableView, 5) });
+				
+				issueCount.attr('title', "The number of posts in this period that mention this topic. Click to sort in decreasing order.").tooltip();
+				proportion.attr('title', "The proportion of posts in this period that mention this topic. Click to sort in decreasing order.").tooltip();
+				delta.attr('title', "The difference in the number of posts mentioning this topic between this and the previous period. Click to sort in decreasing order.").tooltip();
+				userCount.attr('title', "The number of users mentioning this topic in this period. Click to sort in decreasing order.").tooltip();
+				userCount.attr('title', "This number represents to what extent the people mentioning this issue mention other posts. It is the median number of posts written of the people mentioning this topic. If there are fewer than 3 people who mention this, the number is not calculated, since it would be subject to outliers.").tooltip();
+				
+				row.append($("<th></th>"));
+				row.append(issueCount);
+				row.append(proportion);
+				row.append(delta);
+				row.append(userCount);
+				row.append(vocality);
+
+				return row;
+			
+			}
+			
+			function sortByCount(table, column) {
+
+				var rows = $(table).find('tr.issuerow');
+				
+				// Find an ordering for these rows, so we avoid calling data() thousands of times.
+				var rowIndexValueArray = [];
+				for(var i = 0; i < rows.length; i++)
+					rowIndexValueArray.push([i, $(rows[i].children[column]).data('value')]);
+				
+				rowIndexValueArray.sort(function(a, b) {
+				
+					return b[1] - a[1];
+				
+				});
+
+				// This ensures we don't unbind all the handlers in the table.				
+				rows.detach();
+				
+				for(var i = 0; i < rowIndexValueArray.length; i++)
+					$(table).find("tbody").append(rows[rowIndexValueArray[i][0]]);
+							
+			}
+				
+		</script>
+
+
+		<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-10917999-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>		
+
+	</head>
+
+	<body>
+	
+		<div id='mainContainer'>
+
+			<div class='borderedContent'>
+				<span style='font-size: x-small'>This is demo of Frictionary, a system for extracting and aggregating problems from help requests, bug reports, discussion boards, and any other textual source of software problem discussions. This demo shows data help requests, bug reports, and other types of discussion board posts about Firefox based on ~103,000 posts between November 2009 and July 2010, from <a href="http://support.mozilla.org">support.mozilla.org</a>, <a href="http://superuser.com">superuser.com</a>, <a href="http://forums.mozillazine.org/">Firefox forums on mozillaZine</a>, and <a href="http://bugzilla.mozilla.org/">Mozilla bug reports</a>. Frictionary uses natural language processing and information extraction techniques to identify <b>problem topics</b> in each post. Questions? Consult <a href="http://dl.acm.org/citation.cfm?id=2212797">the research article on Frictionary</a>a> or contact <a href="http://faculty.washington.edu/ajko">Andrew J. Ko, Assistant Professor at the University of Washington Information School</a>.</span>
+	        	<a href="http://dub.washington.edu/"><img style="border:none; height:1em;" src="media/dub.png"></a>
+				<a href="http://www.washington.edu/"><img style="border:none; height:1em;" src="media/uw.png"></a>
+				<a href="http://ischool.uw.edu/"><img style="border:none; height:1em;" src="media/ischool.png"></a>
+			</div>
+			<div class='borderedContent' id='plot'><h1 id='plotHeader'><img class='logo' src='ui/media/logo.png'>&nbsp;&nbsp;</h1></div>
+			<div class='borderedContent' id='sources'><h1>sources</h1></div>
+			<div class='borderedContent' id='features'></div>	
+			<div class='borderedContent' id='actions'></div>	
+			<div class='borderedContent' id='selectedIssues'></div>	
+			<div class='borderedContent' id='selectedIssueBody'></div>
+	
+		</div>
+		
+	    <!-- Do not remove div#mask, because you'll need it to fill the whole screen --> 
+	    <div id="mask">
+	    
+	    	<div id='periodProgress'><div id='periodBar'>Loading feature/action data...</div></div>
+
+	    </div>
+
+	</body>
+
+</html>

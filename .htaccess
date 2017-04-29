@@ -1,0 +1,17 @@
+ExpiresActive On
+ExpiresDefault "access"
+
+# Support cache manifest for the Budget app.
+AddType text/cache-manifest .manifest
+
+# Rewrite any non-existent files and directories to the index.html file, allowing
+# our single page web app to do the routing on the front end.
+RewriteEngine On
+RewriteBase /ajko
+RewriteRule (^index\.html$) - [L] 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) index.html [N,L,QSA]
+# Need an explicit rule to redirect the books path to the app, otherwise we get the Apache directory listing.
+# But we don't want to match anything on the path, since we don't use the app for the books.
+RewriteRule ^books/?$ index.html [N,L,QSA]

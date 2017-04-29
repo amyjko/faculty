@@ -1,0 +1,60 @@
+<html>
+
+<head>
+
+	<script type='text/javascript' src='cleanroom.php?source=code.js&username=INSERTUSERNAMEHERE'></script>
+	<link href='cleanroom.php?source=style.css&username=INSERTUSERNAMEHERE' type='text/css' rel='stylesheet'>
+
+</head>
+
+<!-- Clear the calculator -->
+<body onload='calculator.clear()'>
+
+<div class='calculatorBody'>
+
+	<div id='display'></div>
+
+	<!-- Press digit 1 -->
+	<button id='one' onclick='calculator.pressDigit(1);'>1</button>
+	<!-- Press digit 2 -->
+	<button onclick='calculator.pressDigit(2);'>2</button>
+	<!-- Press digit 3 -->
+	<button onclick='calculator.pressDigit(3);'>3</button>
+	<!-- Press operation + -->
+	<button onclick='calculator.pressOperation("add");'>+</button>
+	<br>
+	<!-- Press digit 4 -->
+	<button onclick='calculator.pressDigit(4);'>4</button>
+	<!-- Press digit 5 -->
+	<button onclick='calculator.pressDigit(5);'>5</button>
+	<!-- Press digit 6 -->
+	<button onclick='calculator.pressDigit(6);'>6</button>
+	<!-- Press operation - -->
+	<button onclick='calculator.pressOperation("subtract");'>&ndash;</button>
+	<br>
+	<!-- Press digit 7 -->
+	<button onclick='calculator.pressDigit(7);'>7</button>
+	<!-- Press digit 8 -->
+	<button onclick='calculator.pressDigit(8);'>8</button>
+	<!-- Press digit 9 -->
+	<button onclick='calculator.pressDigit(9);'>9</button>
+	<!-- Press operation / -->
+	<button onclick='calculator.pressOperation("divide");'>&divide;</button>
+	<br>
+	<!-- Press digit 0 -->
+	<button style='width: 6.6em' onclick='calculator.pressDigit(0);'>0</button>
+	<!-- Press decimal point -->
+	<button onclick='calculator.pressDigit('.');'>.</button>
+	<!-- Press operation * -->
+	<button onclick='calculator.pressOperation("multiply");'>&times;</button>
+	<br>
+	<!-- Clear the calculator -->
+	<button style='width: 10.2em' onclick='calculator.clear();'>clear</button>
+	<!-- Press operation = -->
+	<button onclick='calculator.pressOperation("equals");'>=</button>
+
+</div>
+
+</body>
+
+</html>

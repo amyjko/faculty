@@ -1,0 +1,106 @@
+body					{ font-family: "Century Gothic", sans-serif; }
+textarea				{ font-family: "Century Gothic", sans-serif; font-size: small; }
+p,ul,button,table		{ font-size: small; }
+pre						{ font-size: small; font-family: "Century Gothic", sans-serif; }
+h1						{ font-size: medium; margin-top: 0em; margin-bottom: 1em; font-weight: bold; }
+table td				{ padding-left: 1em; padding-right: 1em; }
+ol, li					{ font-size: small; }
+
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	width: 65em;
+}
+
+.bespin { 
+	width: 100%;
+	height: 35em;
+	padding: 0em;
+	border: none;
+/*  	border: 1px solid black;  */
+/*
+	-moz-border-radius-topleft: 5px; 
+	-moz-border-radius-topright: 5px; 
+	-webkit-border-top-left-radius: 5px; 
+	-webkit-border-top-right-radius: 5px; 
+*/
+}
+
+.error {
+	background: black;
+	width: 100%;
+	border: 1px solid black; 
+	-moz-border-radius-bottomleft: 5px; 
+	-moz-border-radius-bottomright: 5px; 
+	-webkit-border-bottom-left-radius: 5px; 
+	-webkit-border-bottom-right-radius: 5px; 
+}
+
+#errorWindow {
+	font-size: small;
+	padding: 1em;
+	background: none;
+}
+
+.log {
+	font-size:8pt;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	height: 500px;
+}
+
+.hiddenSource {
+	display: none;		
+}
+
+a {
+	border:none;
+}
+
+/* TABS */
+.tabsList              { padding: 0; }
+.tabsList li           { list-style: none; font-size: small; padding: .5em; margin-right: 0em; -moz-border-radius: 10px; -webkit-border-radius: 10px; cursor: pointer; }
+.tab				   { background: #fff; border: solid 4px #fff; }
+.selectedTab           { background: rgb(220,220,220); border: solid 4px rgb(220,220,220); }
+.cleanroomCount        { font-size: 10pt; color: rgb(0,128,0); }
+.syntaxCount           { font-size: 10pt; color: rgb(128,0,0); }
+.jslintCount           { font-size: 10pt; color: rgb(128,128,0); }
+
+.name				   { color: white; }
+.consoleWarning        { font-size: small; padding-bottom: .5em; padding-top: .5em; }
+
+
+.popup {
+	border: solid 4px rgb(220,220,220);
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	background-color: white;
+	position:absolute;
+	padding: 2em;
+	width: 20em;
+	left: 50%;
+	margin-left: -12em;
+	top:5em;
+	z-index:999;
+	opacity: .95;
+}
+
+.test {
+	width:100%;
+	height:1.5em;
+	background-color:rgb(200,200,200);
+	border:solid 1px gray;
+	font-size: x-small;
+	padding: .5em;
+	margin-bottom: .5em;
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+}
+
+/* JEROEN ADDED */
+
+.hidden { display: none; }

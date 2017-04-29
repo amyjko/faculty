@@ -1,0 +1,103 @@
+<html>
+	<head>
+
+		<meta property="og:image" content="http://faculty.washington.edu/ajko/thumbnails/feedlack.jpg" />
+		<meta property="og:title" content="FeedLack" />
+
+		<title>FeedLack</title>
+
+		<style type='text/css'>
+		
+			body {
+				font-family: Verdana;
+				font-size: x-small;
+				margin: 2em;
+			}
+		
+			#structure {
+				width: 100%;
+				height: 90%;
+				margin: 0em;
+			}
+			
+			#structure td {
+				padding-top: 1em;
+				padding-right: 1em;
+			}
+			
+			#summary {
+				height: 5em;
+			}
+			#subject {
+				width: 100%;
+				height: 100%;
+			}
+			
+			#results {
+				width: 100%;
+				height: 100%;
+			}
+			
+			h1 {
+				margin: 0em;
+				padding: 0em;
+			}
+			p {
+				margin: 0;
+				margin-top: 1em;
+				font-size: small;
+			}
+			
+			iframe {
+				border: 1px solid gray;
+			}
+			
+			a {
+				color: black;
+				text-decoration: underline;
+			}
+		
+		</style>
+
+		<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-10917999-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>		
+	
+	</head>
+	
+	<body>
+	
+	</body>
+
+	<h1>FeedLack</h1>
+	<table id='structure'>
+		<tr>
+			<td id='summary'>
+			
+			<p>FeedLack finds scenarios where web applications ignore user input by applying static program analysis to JavaScript, HTML, and CSS. For example, the calculator below (archived from <a href="http://www.unitsconverter.net/calculator/">here</a>) is rife with interactions that accept user input, but fail to provide output explaining what action the calculator took. These interactions are difficult to find by just reading code, but FeedLack can automatically analyzing the way that the application handles input. In this case, it found <b>54 situations</b> in which the calculator might lack feedback. Click on the warnings and use the <b>up</b> and <b>down</b> arrow keys to read through the warning details.
+			
+			<p>See <a href="http://faculty.washington.edu/ajko/papers/Ko2011FeedLack.pdf">the research paper from CHI 2010</a> for details on how the analysis works. Questions? Contact <a href="http://faculty.washington.edu/ajko">Andrew J. Ko, Assistant Professor at the University of Washington Information School</a>.</span>
+	        	<a href="http://dub.washington.edu/"><img style="border:none; height:1em;" src="media/dub.png"></a>
+				<a href="http://www.washington.edu/"><img style="border:none; height:1em;" src="media/uw.png"></a>
+				<a href="http://ischool.uw.edu/"><img style="border:none; height:1em;" src="media/ischool.png"></a></td>
+
+			<td rowspan=2 style='width: 60%'><iframe id='results' src='FeedLack/Calculator.html'></iframe></td>			
+
+		</tr>
+		<tr>
+			<!-- This is archived from http://www.unitsconverter.net/calculator/ -->
+			<td style='width: 40%'><iframe id='subject' src='Calculator/Calculator.html'></iframe></td>
+		</tr>
+	</table>
+
+</html>

@@ -1,0 +1,61 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	min-width: 60em;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana;
+	font-size: medium;
+}
+
+#container {
+	margin: 2em;
+}
+
+#heading {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+#map_canvas {
+	width: 70%;
+	height: 50%;
+	float: left;
+}
+
+#storyDisplay {
+	display: block;
+	float: left;
+	width: 25%;
+	margin-left: 2em;
+	font-size: 16px;
+	overflow: auto;
+	height: 30em;
+	overflow-y: scroll;
+}
+
+#title {
+	font-weight: bold;
+	font-size: medium;
+}
+
+#timeline {
+	display: block;
+}
+
+#instructions {
+	font-size: 14px;
+	width: 75%;
+	margin: auto;
+	text-align: justify
+}
+
+hr {
+	border: 0;
+	color: gray;
+	background-color: gray;
+	height: 1px;
+}

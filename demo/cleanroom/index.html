@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Cleanroom</title>
+    <!-- CSS -->
+	<link type="text/css" rel="stylesheet" href="ide.css"/>
+	<link type="text/css" rel="stylesheet" href="bespin/BespinEmbedded.css"/>
+	
+	<link id="bespin_base" href="bespin"/>
+		
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-10917999-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>		
+
+</head>
+<body>
+
+<!--
+    THE EDITOR
+-->
+<table style='width: 100%;'>
+
+    <!-- EDITOR ROW -->
+    <tr>
+        <!-- LEFT PANE -->
+        <td style='width:20%;vertical-align:top;'>
+	
+        	<div id='legend'>
+
+            	<h1 style='font-size:x-large'>Cleanroom</h1>
+
+            	<p>Cleanroom detects errors in your web application by finding <b>unique identifiers</b>: any identifier or string literal that appears only once is <u style='color: green'>underlined</u> in <span style="color:rgb(0,180,0)">green</span>.
+            	
+            	<p>Give it a try! See if you can fix the warnings in the calculator code to the right, or add a .js file and write your own buggy code.</p>
+
+	        	<h1>legend</h1>  <!-- Still relevant -->
+	
+	        	<p><span style='color:rgb(0,180,0)'><u>Names that appear once</u></span>, including HTML classes and ids and JavaScript identifiers and strings.</p>
+	        	<p><span style='color:rgb(180,0,0)'><u>Invalid CSS and HTML</u></span>, such as unsupported tag names and style properties.</p>
+	        	<p><a style='color:rgb(180,180,0)' href="http://www.jslint.com/"><u>JSLint warnings</u></a>. Problems in JavaScript code, such as implied global variables and missing semi-colons.</p>
+
+        	</div>
+
+        </td>
+
+        <!-- EDITOR PANE in center -->
+        <td style='width: 55%; vertical-align: top;'>
+
+        	<div id="editor" class="bespin" data-bespinoptions='{ "stealFocus": true, "syntax" : "js" }'></div>
+
+        	<div class='error'>
+        	
+        	<div id='errorWindow'></div>
+        	
+        	</div>
+
+        </td>
+
+        <!-- RIGHT PANE & FILE "TABS" -->
+        <td style='vertical-align:top; width:20%;'>
+        
+        	<h1>files</h1>
+        
+            <ul class='tabsList' id='fileTabs'>
+            </ul>
+                
+            <p><button id='btnAddNewFile'>add new file</button>        
+			<p><button onclick='CleanroomHandler.loadNewUser();'>reset the demo</button>
+
+			<hr>
+
+			<p style='font-size:x-small'>Ko, A.J. and Wobbrock, J.O. (2010). <a href="http://faculty.washington.edu/ajko/papers/Ko2010Cleanroom.pdf">Cleanroom: Edit-Time Error Detection with the Uniqueness Heuristic</a>. <i>IEEE Symposium on Visual Languages and Human-Centric Computing</i>, Madrid, Spain, September 21-24, 7-14.
+
+            <!--
+            ## REMOVED: Contains some instructions and test DIVs, not needed
+            <div id='instructions' style='visibility:hidden'><h1>earn $15 at Amazon!</h1><img style='float:right; width:4em; margin-left: .5em;' src='calculator.png' /><p>Help us improve Cleanroom by finishing this calculator!<p>We've provided <b>three source files</b>, one in each tab:<p><img style='height: 2em' src='tabs.png'/></p><p>The <b>comments</b> in each file specify its intended behavior. Use whatever resources you want to finish the task (but write all of your code with Cleanroom).</p><p>Use these buttons to save and preview your code (saves also happen on preview and every minute automatically):<br><button type='button' onclick='save()' id='savebutton'><u>s</u>ave</button><button type='button' id='previewbutton' onclick='showPreview(CLEANROOM.username)'>preview</button><div style='float:right;width:7em;'><div id='clearResult' class='test'>clear test not run</div><div id='addResult' class='test'>+ test not run</div><div id='subtractResult' class='test'>&ndash; test not run</div><div id='multiplyResult' class='test'>&times; test not run</div><div id='divideResult' class='test'>&divide; test not run</div></div><p>Each time you preview, Cleanroom will run these automated tests. When you've passed them all, you can submit your e-mail address for the gift certificate. </div>
+            -->
+        
+			<div>
+        	<p style='font-size:x-small'>Thanks to the <a href="https://bespin.mozilla.com/">Bespin</a> team for a great editor and Douglas Crockford for <a href="http://www.jslint.com/">JSLint</a>. Also thanks to the <a href="http://www.antlr.org/">ANTLR</a> team and the various users who've contributed to HTML/CSS/ECMAScript token grammars. The rest of the code on this site is property of the <a href='http://www.uw.edu'>University of Washington</a>. Thanks to MSIM student Jeroen van den Eijkhof for adding the local storage support. Contact <a href="http://faculty.washington.edu/ajko">Andy Ko</a> with questions or comments.
+        	<p style='font-size:x-small'>This material is based in part upon work supported by the National Science Foundation under Grant Number CCF-0952733. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</p>
+        	<p>
+        	<a href="http://dub.washington.edu/"><img style="border:none; height:1em;" src="media/dub.png"></a>
+			<a href="http://www.washington.edu/"><img style="border:none; height:1em;" src="media/uw.png"></a>
+			<a href="http://ischool.uw.edu/"><img style="border:none; height:1em;" src="media/ischool.png"></a>
+			</p>
+			</div>
+        
+        </td>
+    </tr>
+</table>
+
+
+<!--
+    THE POP UP DIVs
+-->
+
+<!-- 
+## CLEANUP: This is only for when the tests have been cleared and 
+for submitting an email address to recieve Amazon coupon
+        
+<div id='successDialog' class='popup' style='visibility:hidden'>
+
+    <p>Congratulations! You're finished. If you enter your e-mail address, I'll send you the Amazon gift certificate <b>by March 22nd, 2010.</b> (blame arcane accounting practices for the delays!).</p>
+    <center><input type='text' id='email' style='width:12em'></center>
+    <p>I won't share your e-mail or use it for any other purpose. (Trust me: I'm <a href="http://faculty.washington.edu/ajko">a professor at UW</a> and have a reputation to maintain!)</p>
+    <center><button type='button' onclick='document.getElementById("successDialog").style.visibility="hidden";'>cancel</button><button type='button' onclick='submitSuccess()'>submit</button></center>
+
+</div>
+-->
+
+<div id='newuser' class='popup hiddenSource'>
+    <h1>Welcome to Cleanroom!</h1>
+
+    <p><b>Cleanroom</b> is an experimental code editor that highlights potential errors <b>as you type</b>. It supports HTML, CSS, and JavaScript.</p>
+    <p>All data is stored on your local machine and by pressing "Load Environment" you will start storing files in the browser. Note that browsers don't share storage so you will need to use the same browser application to access these files.</p>
+    
+    <center>
+        <button type='submit' id='startBtn'>Load Environment</button>
+    </center>
+
+</div>
+
+<div id='returninguser' class='popup hiddenSource'>
+    <h1>Welcome back to Cleanroom!</h1>
+    
+    <p>This time simply start by choosing from one of the many file you have saved. They will appear to the right of the editor after loading...</p>
+    <h2>In case you forgot...</h2>
+    <p><b>Cleanroom</b> is an experimental code editor that highlights potential errors <b>as you type</b>. It supports HTML, CSS, and JavaScript.</p>
+    <p>All data is stored on your local machine and by pressing "Load Environment" you will start storing files in the browser. Note that browsers don't share storage so you will need to use the same browser application to access these files.</p>
+    
+</div>
+
+<div id='savingFiles' class='popup' style='visibility:hidden'>
+<center>saving...</center>
+</div>
+
+<div id='loadingFiles' class='popup' style='visibility:hidden'>
+<center>Loading...</center>
+</div>
+
+<div id='fileHolders'></div>
+
+<!-- This button loads the source at the URL in the text field.
+<center>
+<input id='editorURL' type="text" size="25" value="demo/index.html"><button type='button' onclick="loadURL()">load</button>
+</center>
+-->
+
+	<!-- Load JavaScripts -->
+	<script type="text/javascript" src="ide.js"></script>
+	<script type="text/javascript" src="detect.js"></script>
+	<script type="text/javascript" src="ajax.js"></script>
+	<script type="text/javascript" src="antlr3-all-min.js"></script>
+	<script type="text/javascript" src="parsers/jsLexer.js"></script>
+	<script type="text/javascript" src="parsers/cssLexer.js"></script>
+	<script type="text/javascript" src="parsers/htmlParser.js"></script>
+	<script type="text/javascript" src="jslint/fulljslint.js"></script>
+	<script type="text/javascript" src="dictionaries.js"></script>
+	<!-- LOAD FUNCTIONS: This was part of the document before -->
+	<script src="bespin/BespinEmbedded.js"></script>
+	<script type='text/javascript' src='cleanroom.functions.js'></script>
+
+	<!-- Browser detection script -->
+	<script type="text/javascript">
+		if(BrowserDetect.browser != "Safari" && BrowserDetect.browser != "Firefox" && BrowserDetect.browser != "Chrome") window.location = "unsupported.html";
+		var serversidescript = 'cleanroom.php';
+	</script>
+
+
+</body>
+
+</html>

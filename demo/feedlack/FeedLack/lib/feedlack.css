@@ -1,0 +1,118 @@
+body { 
+	font-family: "Century Gothic";
+	background-color: rgb(250,250,250);
+	margin: 2em; 
+	width: 15em;
+	font-size: small;
+}
+
+h1 { 
+	font-size: x-large; 
+}
+
+h2 { 
+	font-size: small; 
+}
+
+#project {
+	font-size: x-small;
+}
+
+.result { 
+	color: red 
+}
+
+.assumption {
+	color: rgb(150,150,150);
+	font-size:x-small;
+	margin-left:1em;
+}
+
+.file {
+	position: fixed;
+	left: 22em;
+	top: 5em;
+	right: 2em;
+	bottom: 50%;
+	background-color:white;
+	padding:2em; 
+	border: solid 1px gray; 
+	margin-bottom: 2em;
+	overflow: auto;
+}
+
+.code {
+	font-family: "Courier New";
+	font-size: small;
+}
+
+.line {
+	font-family: "Courier New"; 
+	font-size: small; 
+	margin:0em; 
+	padding: 0em; 
+	margin-bottom: 0.0em; 
+	white-space: pre;
+}
+
+.linenumber {
+	color: rgb(150,150,150);
+	font-size: x-small;
+}
+
+.handler, .cluster {
+	margin-bottom: 1em;	
+	margin-left: 1em;
+}
+
+#handlers {
+	
+	
+}
+
+ol,ul {
+	margin: 1em;	
+	margin-left: 2em;
+	padding-left: 1em;
+}	
+
+li {
+	list-style-position: outside;
+	margin-bottom: .5em;
+	margin-top: .5em;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+
+ol li {
+	list-style-type: decimal;
+}
+		
+.location {
+	cursor: hand;			
+	text-decoration: underline;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+.selectable {
+	padding: .25em;
+}
+
+.selected {
+	background-color: rgb(200,200,200);
+	padding: .25em;
+}
+		
+#detail {
+	position:fixed;
+	width: auto;
+	left: 22em;
+	top: 50%;
+	right: 2em;
+	bottom: 2em;			
+	overflow: auto;
+	border: solid 1px gray; 
+	padding: 2em;
+	background-color:white;
+}
