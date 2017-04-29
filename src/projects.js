@@ -113,9 +113,9 @@ class Projects extends React.Component {
 		
 		return (
 			<div>
-				<p className="lead">My mission is to <em>discover effective, equitable, and scalable ways for humanity to learn computing</em>. To achieve this, I direct the <strong>Code & Cognition Lab</strong>, working with many talented <Link to={"students"}>students</Link> to <Link to={"publications"}>publish research</Link> on <Link to={"cer"}>computing education</Link> (<Link to={"cer"}>see my FAQ on this field</Link>), human-computer interaction, and software engineering.</p>
+				<p className="lead">My mission is to <em>discover effective, equitable, and scalable ways for humanity to learn computing</em>. To achieve this, I direct the <strong>Code & Cognition Lab</strong>, working with many wonderful <Link to={"students"}>students</Link> to <Link to={"publications"}>publish</Link> and <Link to={"impact"}>share</Link> research on <Link to={"cer"}>computing education</Link> (<Link to={"cer"}>what's this?</Link>), human-computer interaction, and software engineering.</p>
 				
-				<p>I do this with the help of several communities:</p>
+				<p className="lead">I do this with the help of several communities:</p>
 
 				<ul>
 					<li>I lead <a target="_blank" href="http://soundcsed.org">Sound CS Ed</a>, a regional community of computing education researchers and practioners.</li>
@@ -123,10 +123,6 @@ class Projects extends React.Component {
 					<li>I'm a member of <a target="_blank" href="http://uwplse.org/">PLSE</a>, UW CSE's Programming Languages and Software Engineering group.</li>
 					<li>I'm a member of the <a href="https://digitalyouth.ischool.uw.edu/" target="_blank">Digital Youth Lab</a>, which explores the role of technology in the lives of young people</li>
 				</ul>
-
-				<p>Listen to my my thoughts on industry on the <a target="_blank" href="http://softwareengineeringdaily.com/2016/02/24/academia-to-industry-in-computer-science-with-andy-ko/">my interview on the Software Engineering Daily podcast</a>.</p>
-
-				<p>Watch my SPLASH 2016 keynote on <a href="https://www.youtube.com/watch?v=TjkzAls5fsI">a human view of programming langauges</a>.</p>
 
 				<h3>Active Projects</h3>
 

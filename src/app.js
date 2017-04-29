@@ -5,6 +5,7 @@ import { createHistory, useBasename} from 'history';
 
 import { Biography } from './bio';
 import { Publications } from './publications';
+import { Impact } from './impact';
 import { Students } from './students';
 import { Header } from './header';
 import { Projects } from './projects';
@@ -51,6 +52,7 @@ ReactDOM.render((
 			<IndexRoute component={Projects}/>
 			<Route path="bio" component={Biography}/>
 			<Route path="publications(/:paper)" component={Publications}/>
+			<Route path="impact" component={Impact}/>
 			<Route path="reading" component={Reading}/>
 			<Route path="advice" component={Advice}/>
 			<Route path="teaching" component={Teaching}/>
