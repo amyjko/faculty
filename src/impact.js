@@ -18,7 +18,7 @@ class Impact extends React.Component {
 					<li>My lab's work on help retrieval was the basis for <a href="https://answerdash.com">AnswerDash</a>, a company I co-founded with former Ph.D. student <a href="http://hci.cs.sfu.ca/">Parmit Chilana</a> and my colleague <a href="https://faculty.washington.edu/wobbrock/">Jacob Wobbrock</a>.</li> 
 					<li>My former student <a href="http://brrian.org/">Brian Burg</a> has been upstreaming his work on deterministic replay to WebKit, supporting new ways of reproducing and debugging failures.</li>
 					<li><a href="http://helpgidget.org" target="_blank">Gidget</a> has been played by tens of thousands of people online, in summer camps, and in high schools. It has directly impacted the design of puzzle-based computing education online, including those offered by <a href="https://code.org" target="_blank">code.org</a>.</li>
-					<li>My research on development environments partially inspiredthe <a href='http://research.microsoft.com/en-us/projects/debuggercanvas/'>Debugger Canvas</a> plugin for Visual Studio.</li>
+					<li>My research on development environments partially inspired the <a href='http://research.microsoft.com/en-us/projects/debuggercanvas/'>Debugger Canvas</a> plugin for Visual Studio.</li>
 				</ul>
 				
 			</div>
