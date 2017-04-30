@@ -231,6 +231,16 @@
 		"contribution":"Teaching novice programmers the structure of programming problem solving activities and to be aware of which activity they are conducting and whether they are succeeding has a substantial impact on their productivity, self-efficacy, independence, and growth mindset."
 	},
 	{
+		"id":null,
+		"kind":"whitepaper",
+		"authors":"Cooper, S., Forbes, J., Fox, A., Hambrusch, S., Ko, A.J., Simon B.",
+		"year":2016,
+		"title":"The Importance of Computing Education Research",
+		"source":"CRA Computing Community Consortium",
+		"digital library url":"http://cra.org/ccc/resources/ccc-led-whitepapers/",
+		"contribution":"Argues for the foundational role of computing education research in computer science departments."
+	},
+	{
 		"id":"scry",
 		"kind":"refereed conference paper",
 		"authors":"Burg, B., Ko, A.J., and Ernst, M.D.",
