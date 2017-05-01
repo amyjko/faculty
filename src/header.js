@@ -23,6 +23,7 @@ class Header extends React.Component {
 							<li role="presentation" className={path.startsWith("teaching") ? "active" : ""}><Link to="teaching">Teaching</Link></li>
 							<li role="presentation" className={path.startsWith("books") ? "active" : ""}><Link to="books">Books</Link></li>
 							<li role="presentation" className={path.startsWith("bio") ? "active" : ""}><Link to="bio">Bio</Link></li>
+							<li role="presentation"><Link to="cv">CV</Link></li>
 						</ul>
 			        </nav>
 			    </div>
