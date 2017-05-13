@@ -58,7 +58,7 @@ class ContactInfo extends React.Component {
 				
 				<p><a target="_blank" href="https://github.com/andyjko"><img style={{height: "1em"}} src="images/GitHub-Mark-120px-plus.png" /> andyjko</a></p>
 
-				<p><a href="http://blogs.uw.edu/ajko" target='_blank'>Blog</a></p>
+				<p><a href="https://medium.com/bits-and-behavior" target='_blank'>Blog</a></p>
 				
 			</div>		
 		</div>
