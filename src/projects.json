@@ -41,7 +41,7 @@
 		"video": null,
 		"startdate": 2013,
 		"stopdate": null,
-		"impact": "These discoveries are being used to frame soft skills instruction in the <a href='http://www.afsenyc.org/'>Academy for Software Engineering</a> curriculum in New York and have also reached over 10,000 academics and software engineers through an <a href='https://www.youtube.com/watch?v=OBlmLjeORUQ&feature=youtu.be&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU'>ACM Learning Center Webinar</a>."
+		"impact": "Our research on software engineering experience have been used to frame soft skills instruction in the <a href='http://www.afsenyc.org/'>Academy for Software Engineering</a> curriculum in New York and have also reached over 10,000 academics and software engineers through an <a href='https://www.youtube.com/watch?v=OBlmLjeORUQ&feature=youtu.be&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU'>ACM Learning Center Webinar</a>."
 	},
 	{
 		"id": "learningtocode",
@@ -55,7 +55,7 @@
 		"video": null,
 		"startdate": 2004,
 		"stopdate": null,
-		"impact": "By mapping the challenges posed by programming languages and tools, this work has shaped the investigation of several new tools to support end-user and novice programming."
+		"impact": "This work has mapped the challenges posed by programming languages and tools, shaping the investigation of several new tools to support end-user and novice programming."
 	},
 	{
 		"id": "gidget",
@@ -69,7 +69,7 @@
 		"video": null,
 		"startdate": 2010,
 		"stopdate": null,
-		"impact": "Gidget has been played by thousands of people online, in summer camps, and in high schools. It has directly impacted the design of puzzle-based computing education online, including those offered by code.org."
+		"impact": "Gidget has been played by thousands of people online, in summer camps, and in high schools. It has directly informed the design of Code.org's <a href='https://studio.code.org'>Code Studio</a> and Apple's <a href='https://www.apple.com/swift/playgrounds/'>Swift Playgrounds</a>."
 	},
 	{
 		"id": "methods",
@@ -83,7 +83,7 @@
 		"video": null,
 		"startdate": 2003,
 		"stopdate": null,
-		"impact": "This work is widely read by new Ph.D. students to inform how they evaluate new technologies for software development."
+		"impact": "Our work on research methods is widely read by new Ph.D. students across computer science to inform how they evaluate new developer tools."
 	},
 	{
 		"id": "errors",
@@ -111,7 +111,7 @@
 		"video": null,			
 		"startdate": 2004,
 		"stopdate": 2006,
-		"impact": "This work was the partially the basis of the <a href='http://research.microsoft.com/en-us/projects/debuggercanvas/'>Debugger Canvas</a> plugin for Visual Studio."
+		"impact": "Our studies on program understanding and ideas for program understanding tools was the partially the basis of the <a href='http://research.microsoft.com/en-us/projects/debuggercanvas/'>Debugger Canvas</a> plugin for Visual Studio."
 	},
 	{
 		"id": "softwareteams",
@@ -154,7 +154,7 @@
 		],
 		"startdate": 2010,
 		"stopdate": 2011,
-		"impact": "This work was used in one of the features in <a href='http://www.answerdash.com'>AnswerDash</a>."
+		"impact": "Frictionary was used in one of the features in <a href='http://www.answerdash.com'>AnswerDash</a>, the company I co-founded based on my CAREER grant."
 	},
 	{
 		"id": "timelapse",
@@ -171,7 +171,7 @@
 		],
 		"startdate": 2012,
 		"stopdate": 2015,
-		"impact": "This work is being upstreamed to WebKit and will likely appear in the Safari Web Inspector developer tools."
+		"impact": "Timelapse is being upstreamed to WebKit and will likely appear in the Safari Web Inspector developer tools."
 	},
 	{
 		"id": "lemonaid",
@@ -187,7 +187,7 @@
 		],			
 		"startdate": 2010,
 		"stopdate": 2015,
-		"impact": "This work was the basis for <a href='http://www.answerdash.com'>AnswerDash</a>, a company that I co-founded with Jacob Wobbrock and Parmit Chilana that offers an instant self-service answers product for web applications and e-commerce sites."
+		"impact": "Lemonaid was the basis for <a href='http://www.answerdash.com'>AnswerDash</a>, a company that I co-founded with Jacob Wobbrock and Parmit Chilana that offers an instant self-service answers product for web applications and e-commerce sites."
 	},
 	{
 		"id": "feedlack",
@@ -220,7 +220,7 @@
 		"code": "https://github.com/andyjko/whyline",
 		"startdate": 2004,
 		"stopdate": 2008,
-		"impact": "Although the idea has not yet appeared in products, I disseminated the idea broadly, giving several talks at Microsoft, Apple, and Adobe. Many of the foundations of the tool, including execution traces, record/replay, and higher level dynamic analysis are beginning to make it into sophisticated development platforms."
+		"impact": "Although the Whyline has not yet appeared in products, I disseminated the idea broadly, giving several talks at Microsoft, Apple, and Adobe. Many of the foundations of the tool, including execution traces, record/replay, and higher level dynamic analysis are beginning to make it into sophisticated development platforms."
 	},
 	{
 		"id": "cleanroom",
