@@ -1,5 +1,5 @@
 import React from 'react';
-
+import _ from "lodash";
 import {Paper} from "./paper";
 
 var cv = require('./cv.json');

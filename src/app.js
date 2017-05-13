@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, useRouterHistory } from 'react-router';
-import { createHistory, useBasename} from 'history';
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 import { Biography } from './bio';
 import { Publications } from './publications';
@@ -31,36 +30,33 @@ if (!String.prototype.startsWith) {
 
 class App extends React.Component {
 	render() {
-
-		var currentRoute = this.props.routes[this.props.routes.length - 1];
-
+		
+		var currentRoute = this.props.location.pathname;
+		
 		return (
 			<div className="container">
-				{currentRoute.path === "cv" ? null : <Header path={currentRoute.path}/>}
-				{this.props.children}
+				{currentRoute === "/cv" ? null : <Header path={currentRoute}/>}
+				<Switch>
+					<Route exact path="/" component={Projects}/>
+					<Route path="/bio" component={Biography}/>
+					<Route path="/publications/:paper?" component={Publications}/>
+					<Route path="/impact" component={Impact}/>
+					<Route path="/reading" component={Reading}/>
+					<Route path="/advice" component={Advice}/>
+					<Route path="/teaching" component={Teaching}/>
+					<Route path="/books" component={Books}/>
+					<Route path="/students/:student?" component={Students}/>
+					<Route path="/cv" component={Vita}/>
+					<Route path="/cer" component={CER}/>
+					<Route path="*" component={Unknown}/>
+				</Switch>
 			</div>
 		)
 	}
 }
 
-// We make a browser history that prefixes the "ajko" subdirectory to every URL.
-const browserHistory = useRouterHistory(createHistory)({ basename: webRoot });
-
 ReactDOM.render((
-	<Router history={browserHistory}>
-		<Route path="/" component={App}>
-			<IndexRoute component={Projects}/>
-			<Route path="bio" component={Biography}/>
-			<Route path="publications(/:paper)" component={Publications}/>
-			<Route path="impact" component={Impact}/>
-			<Route path="reading" component={Reading}/>
-			<Route path="advice" component={Advice}/>
-			<Route path="teaching" component={Teaching}/>
-			<Route path="books" component={Books}/>
-			<Route path="students(/:student)" component={Students}/>
-			<Route path="cv" component={Vita}/>
-			<Route path="cer" component={CER}/>
-			<Route path="*" component={Unknown}/>
-		</Route>
-	</Router>
+	<BrowserRouter basename={webRoot}>
+		<Route path="/" component={App} />
+	</BrowserRouter>
 ), document.getElementById('app'));

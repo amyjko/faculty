@@ -1,6 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 import { Paper }  from './paper';
 
@@ -13,7 +13,7 @@ class Publications extends React.Component {
 
 	componentDidMount() {
 		
-		var paperToHighlight = this.props.location.query.id;
+		var paperToHighlight = this.props.match.params.paper;
 
 		var highlight = $('[name=' + paperToHighlight + ']');
 		
@@ -25,7 +25,7 @@ class Publications extends React.Component {
 
 	render() {
 
-		var paperToHighlight = this.props.location.query.id;
+		var paperToHighlight = this.props.match.params.paper;
 
 		// Create a list of publications, inserting year headers.
 		var lastYear = null;

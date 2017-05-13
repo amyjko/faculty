@@ -32,7 +32,7 @@ class Students extends React.Component {
 
 	componentDidMount() {
 		
-		var personToHighlight = this.props.routeParams.student;
+		var personToHighlight = this.props.match.params.student;
 
 		var highlight = $('[name=' + personToHighlight + ']');
 		
@@ -44,7 +44,7 @@ class Students extends React.Component {
 
 	render() {
 		
-		var personToHighlight = this.props.routeParams.student;
+		var personToHighlight = this.props.match.params.student;
 
 		// Render the active people.
 		var activePeople = _.map(_.filter(people, ['active', true]), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id}/>; });

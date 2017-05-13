@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 class Paper extends React.Component {
 	
@@ -34,7 +34,7 @@ class Paper extends React.Component {
 			return (
 				<small>
 					<p title={this.props.contribution}>
-						<Link to={"publications?id=" + this.props.id}>{this.props.title}</Link> ({this.props.year})&nbsp;<small>{award}</small>
+						<Link to={"publications/" + this.props.id}>{this.props.title}</Link> ({this.props.year})&nbsp;<small>{award}</small>
 					</p>
 				</small>
 			);

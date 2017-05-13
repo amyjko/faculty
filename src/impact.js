@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 
 var projects = require('./projects.json');
 
@@ -14,7 +15,7 @@ class Impact extends React.Component {
 			// Filter the empty impacts
 			_.filter(projects, (project) => { return project.impact }), 
 			(project, index) => { 
-				return <p><strong>{project.name}</strong>. <span dangerouslySetInnerHTML={{__html: project.impact}}></span></p>;
+				return <p key={index}><strong>{project.name}</strong>. <span dangerouslySetInnerHTML={{__html: project.impact}}></span></p>;
 			}
 		);
 		

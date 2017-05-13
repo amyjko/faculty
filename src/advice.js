@@ -1,5 +1,6 @@
 import React from 'react';
 import {Paper} from './paper';
+import _ from "lodash";
 
 var pubs = require('./pubs.json');
 
