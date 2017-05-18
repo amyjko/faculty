@@ -34,7 +34,7 @@ class Paper extends React.Component {
 			return (
 				<small>
 					<p title={this.props.contribution}>
-						<Link to={"publications/" + this.props.id}>{this.props.title}</Link> ({this.props.year})&nbsp;<small>{award}</small>
+						<Link to={"/publications/" + this.props.id}>{this.props.title}</Link> ({this.props.year})&nbsp;<small>{award}</small>
 					</p>
 				</small>
 			);
