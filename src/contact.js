@@ -27,12 +27,10 @@ class ContactInfo extends React.Component {
 				<span className="lead">Andrew J. Ko, Ph.D.</span>
 				<small>
 					<br/>Associate Professor
+					<br/>Chair, <a href="https://ischool.uw.edu/academics/informatics">Informatics</a>, <a href="https://mhcid.washington.edu/">HCI+Design</a>
 					<br/><a href="http://ischool.uw.edu" target="_blank">The Information School</a>
 					<br/><a href='http://cs.washington.edu' target="_blank">Computer Science & Engr.</a> (adjunct)
 					<br/><a href="http://www.washington.edu" target="_blank">University of Washington</a>
-					<br/>
-					<br/>Chair, <a href="https://mhcid.washington.edu/">Masters in HCI+Design</a>
-					<br/>Co-Chair, <a href="https://ischool.uw.edu/academics/informatics">Informatics</a>
 					<br/>
 					<br/>Chief Scientist + Co-Founder
 					<br/><a href="http://www.answerdash.com" target="_blank">AnswerDash</a>
@@ -43,23 +41,21 @@ class ContactInfo extends React.Component {
 
 				<small>
 
-				<p>ajko@uw.edu
-					<br/><a href="https://www.google.com/maps/place/Mary+Gates+Hall.+University+of+Washington/@47.6549552,-122.3101087,994m/data=!3m2!1e3!4b1!4m2!3m1!1s0x549014f2a95c2899:0xb2525ccd291489c!6m1!1e1" target="_blank">Mary Gates Hall 015E</a>
-					<br/>Box 352840
-					<br/>Seattle, WA 98195
-
-				</p>
-				
-				<p>Office hours: Thu 9-11</p>
+					<p>ajko@uw.edu
+						<br/><a href="https://www.google.com/maps/place/Mary+Gates+Hall.+University+of+Washington/@47.6549552,-122.3101087,994m/data=!3m2!1e3!4b1!4m2!3m1!1s0x549014f2a95c2899:0xb2525ccd291489c!6m1!1e1" target="_blank">Mary Gates Hall 015E</a>
+						<br/>Box 352840
+						<br/>Seattle, WA 98195
+	
+					</p>
+					
+					<p>Office hours: Thu 9-11</p>
 
 				</small>
 				
 				<a href="https://twitter.com/andyjko" className="twitter-follow-button" data-show-count="false" ref="follow"></a>
 				
-				<p><a target="_blank" href="https://github.com/andyjko"><img style={{height: "1em"}} src="images/GitHub-Mark-120px-plus.png" /> andyjko</a></p>
-
-				<p><a href="https://medium.com/bits-and-behavior" target='_blank'>Blog</a></p>
-				
+				<p><a target="_blank" href="https://github.com/andyjko"><img style={{height: "1em"}} src="images/GitHub-Mark-120px-plus.png" /> GitHub</a></p>
+		
 			</div>		
 		</div>
 	}
