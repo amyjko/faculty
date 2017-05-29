@@ -415,6 +415,12 @@
 		{
 			title: "Design Thinking (INFO 360)",
 			count: "35 undergraduates", 
+			date: "Winter 2017",
+			score: "5.0/5.0"
+		},
+		{
+			title: "Design Thinking (INFO 360)",
+			count: "35 undergraduates", 
 			date: "Fall 2016",
 			score: "4.9/5.0"
 		},
@@ -532,7 +538,8 @@
 			name: "Parmit Chilana",
 			department: "Information School (Co-advised with Jacob O. Wobbrock)",
 			notes: [
-				"Assistant Professor, University of Waterloo, Management Sciences, 2013-present",
+				"Assistant Professor, Simon Fraser University, Computer Science, 2016-present",
+				"Assistant Professor, University of Waterloo, Management Sciences, 2013-2016",
 				"Facebook PhD Fellowship, 2010",
 				"Canadian Social Sciences and Humanities Research Council (SSHRC) Doctoral Award (2009)"
 			],
@@ -562,19 +569,25 @@
 		{
 			name: "Paul Li",
 			department: "Information School",
+			notes: [
+				"Senior Data Scientist, Microsoft (2016-present)"
+			],
 			startdate: 2010,
-			enddate: null
-		},
-		{
-			name: "Zakariya Dehlawi",
-			department: "Information School",
-			startdate: 2015,
-			enddate: null
+			enddate: 2016
 		},
 		{
 			name: "Dastyni Loksa",
 			department: "Information School",
 			startdate: 2013,
+			enddate: null
+		},
+		{
+			name: "Greg Nelson",
+			department: "Computer Science & Engineering",
+			notes: [
+				"NSF Graduate Research Fellowship"
+			],
+			startdate: 2016,
 			enddate: null
 		},
 		{
@@ -584,6 +597,27 @@
 				"NSF Graduate Research Fellowship"
 			],
 			startdate: 2015,
+			enddate: null
+		},
+		{
+			name: "Zakariya Dehlawi",
+			department: "Information School",
+			startdate: 2015,
+			enddate: null
+		},
+		{
+			name: "Kyle Thayer",
+			department: "Computer Science & Engineering (Co-advised with Katharina Reinecke)",
+			startdate: 2016,
+			enddate: null
+		},
+		{
+			name: "Benjamin Xie",
+			department: "Information School",
+			notes: [
+				"NSF Graduate Research Fellowship"
+			],
+			startdate: 2016,
 			enddate: null
 		},
 		{
