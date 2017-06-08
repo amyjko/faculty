@@ -629,6 +629,12 @@
 	],
 	doctoralCommittee: [	
 		{
+			name: "Elena Agapie",
+			department: "Human-Centered Design and Engineering",
+			startdate: 2017,
+			enddate: null
+		},
+		{
 			name: "James Bornholt",
 			department: "Computer Science & Engineering",
 			startdate: 2017,
@@ -759,12 +765,22 @@
 		{
 			title: "Program Chair, iSchool's undergraduate major, ~425+ students",
 			program: "Informatics", 
-			dates: "2017-present"
+			dates: "2017-present",
+			notes: [
+				"Reframed curriculum around the study, design, and development of information technology",
+				"Reduced reliance on guest faculty by 25%",
+				"Increased inclusiveness and scalability of admissions"
+			]
 		},
 		{
 			title: "Program Chair, UW's interdisciplinary professional degree, ~35 students",
 			program: "Masters in HCI+Design", 
-			dates: "2016-2017"
+			dates: "2016-2017",
+			notes: [
+				"Renewed memorandum of agreement between four units and graduate school", 
+				"Hired new director, Michael Smith", 
+				"Secured design studio"
+			]
 		}
 	],
 	programChair: [
@@ -915,6 +931,11 @@
 	],
 	otherService: [
 		{
+			title: "Member",
+			committee: "Washington State Computer Science Leadership Team",
+			dates: "2017-present"	
+		},
+		{
 			title: "Curriculum design committee member",
 			committee: "Global Innovation Exchange (GIX), University of Washington",
 			dates: "2015"
@@ -940,7 +961,7 @@
 			dates: "2014"
 		},
 		{
-			title: "Panel member",
+			title: "Panel member (CISE, EHR)",
 			committee: "National Science Foundation Proposal Review Panel",
 			dates: "2012, 2014, 2017"
 		},

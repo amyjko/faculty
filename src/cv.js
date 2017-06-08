@@ -17,7 +17,7 @@ class Chunk extends React.Component {
 
 		var three = this.props.three;
 		if(three && _.isArray(three))
-			three = _.map(three, (entry, index) => { return <small key={"note" + index}><br/>{entry}</small>; });
+			three = _.map(three, (entry, index) => { return <small key={"note" + index}><br/>&ndash;{entry}</small>; });
 
 		return (
 			<div className="row">
@@ -80,7 +80,7 @@ class Vita extends React.Component {
 				
 				<p>
 					Associate Professor, The Information School
-					<br/>Adjunct Associate Professor, Computer Science & Engineering
+					<br/>Adjunct Associate Professor, Paul G. Allen School of Computer Science & Engineering
 					<br/>University of Washington
 				</p>
 				
@@ -187,7 +187,7 @@ class Vita extends React.Component {
 
 				<h3>Academic Program Chair</h3>
 				
-				{this.getChunkList(cv.academicChair, "academicChair", "dates", null, "program", "title")}
+				{this.getChunkList(cv.academicChair, "academicChair", "dates", null, "program", "title", "notes")}
 
 				<h3>Technical Program Chair</h3>
 
