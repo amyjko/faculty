@@ -1,5 +1,19 @@
 [
 	{
+		"id": "codingtutorials",
+		"active": true,
+		"name": "Programming Language Learning",
+		"description": "We're exploring new pedagogies and learning technologies to rapidly teach programming languages.",
+		"funding": [],
+		"people": ["bxie", "glnelson", "ajko"],
+		"papers": ["pltutor1","tutorialeval"],
+		"demo": null,
+		"video": null,
+		"startdate": 2016,
+		"stopdate": null,
+		"impact": null
+	},
+	{
 		"id": "problemsolving",
 		"active": true,
 		"name": "Programming Problem Solving",
@@ -12,6 +26,48 @@
 		"startdate": 2015,
 		"stopdate": null,
 		"impact": null
+	},
+	{
+		"id": "learningtocode",
+		"active": true,
+		"name": "Learning Barriers in Programming",
+		"description": "Why is learning to code so difficult? In this series of studies, we've investigated several barriers, including programming environments, learning trajectories, and documentation. Our latest work is investigating social and identity factors that pose barriers to learning.",
+		"funding": [],
+		"people": ["ajko", "kthayer"],
+		"papers": ["barriers", "codebios", "feasibility", "statscomprehension", "bootcamps", "mentors"],
+		"demo": null,
+		"video": null,
+		"startdate": 2004,
+		"stopdate": null,
+		"impact": "This work has mapped the challenges posed by programming languages and tools, shaping the investigation of several new tools to support end-user and novice programming."
+	},
+	{
+		"id": "expertise",
+		"active": true,
+		"name": "Software Engineering Expertise",
+		"description": "What combination of technical, tactical, and social skills make software engineers effective? Through a series of interviews, surveys, and field work, we're uncovering the fundamental attributes of software engineering expertise.",
+		"funding": ["NSF CAREER"],
+		"people": ["ajko", "plli"],
+		"papers": ["greatengineer1", "answerdash","nonengineers"],
+		"demo": null,
+		"video": null,
+		"startdate": 2013,
+		"stopdate": null,
+		"impact": "Our research on software engineering experience have been used to frame soft skills instruction in the <a href='http://www.afsenyc.org/'>Academy for Software Engineering</a> curriculum in New York and have also reached over 10,000 academics and software engineers through an <a href='https://www.youtube.com/watch?v=OBlmLjeORUQ&feature=youtu.be&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU'>ACM Learning Center Webinar</a>."
+	},
+	{
+		"id": "gidget",
+		"active": true,
+		"name": "Gidget + Programming Games",
+		"description": "Can a game teach programming and debugging skills and also be fun? We say yes. Our recent work has shown that personifying an interpreter in a puzzle game significantly increases engagement and learning over conventional web-based tutorials.",
+		"funding": ["NSF CE21", "Microsoft"],
+		"people": ["ajko", "mjslee"],
+		"papers": ["gidget1", "gidget2", "gidget3", "gidget4", "gidget5", "gidget6", "adultattitudes"],
+		"demo": "http://helpgidget.org",
+		"video": null,
+		"startdate": 2010,
+		"stopdate": null,
+		"impact": "Gidget has been played by thousands of people online, in summer camps, and in high schools. It has directly informed the design of Code.org's <a href='https://studio.code.org'>Code Studio</a> and Apple's <a href='https://www.apple.com/swift/playgrounds/'>Swift Playgrounds</a>."
 	},
 	{
 		"id": "uimining",
@@ -30,50 +86,8 @@
 		"impact": null
 	},
 	{
-		"id": "expertise",
-		"active": true,
-		"name": "Software Engineering Expertise",
-		"description": "What combination of technical, tactical, and social skills make software engineers effective? Through a series of interviews, surveys, and field work, we're uncovering the fundamental attributes of software engineering expertise.",
-		"funding": ["NSF CAREER"],
-		"people": ["ajko", "plli"],
-		"papers": ["greatengineer1", "answerdash","nonengineers"],
-		"demo": null,
-		"video": null,
-		"startdate": 2013,
-		"stopdate": null,
-		"impact": "Our research on software engineering experience have been used to frame soft skills instruction in the <a href='http://www.afsenyc.org/'>Academy for Software Engineering</a> curriculum in New York and have also reached over 10,000 academics and software engineers through an <a href='https://www.youtube.com/watch?v=OBlmLjeORUQ&feature=youtu.be&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU'>ACM Learning Center Webinar</a>."
-	},
-	{
-		"id": "learningtocode",
-		"active": true,
-		"name": "Learning Barriers in Programming",
-		"description": "Why is learning to code so difficult? In this series of studies, we've investigated several barriers, including programming environments, learning trajectories, and documentation. Our latest work is investigating social and identity factors that pose barriers to learning.",
-		"funding": [],
-		"people": ["ajko"],
-		"papers": ["barriers", "codebios", "feasibility", "statscomprehension"],
-		"demo": null,
-		"video": null,
-		"startdate": 2004,
-		"stopdate": null,
-		"impact": "This work has mapped the challenges posed by programming languages and tools, shaping the investigation of several new tools to support end-user and novice programming."
-	},
-	{
-		"id": "gidget",
-		"active": true,
-		"name": "Gidget / Programming Games",
-		"description": "Can a game teach programming and debugging skills and also be fun? We say yes. Our recent work has shown that personifying an interpreter in a puzzle game significantly increases engagement and learning over conventional web-based tutorials.",
-		"funding": ["NSF CE21", "Microsoft"],
-		"people": ["ajko", "mjslee"],
-		"papers": ["gidget1", "gidget2", "gidget3", "gidget4", "gidget5", "gidget6", "adultattitudes", "tutorialeval"],
-		"demo": "http://helpgidget.org",
-		"video": null,
-		"startdate": 2010,
-		"stopdate": null,
-		"impact": "Gidget has been played by thousands of people online, in summer camps, and in high schools. It has directly informed the design of Code.org's <a href='https://studio.code.org'>Code Studio</a> and Apple's <a href='https://www.apple.com/swift/playgrounds/'>Swift Playgrounds</a>."
-	},
-	{
 		"id": "methods",
-		"active": true,
+		"active": false,
 		"name": "Research Methods for Empirical Software Engineering",
 		"description": "I actively write about research methods for studying programming, software development, and software engineering.",
 		"funding": [],
@@ -115,7 +129,7 @@
 	},
 	{
 		"id": "softwareteams",
-		"active": true,
+		"active": false,
 		"name": "Software Team Dynamics",
 		"description": "How do developers work together to write software? Over the years, I have investigated several aspects of teamwork, including their use of diagrams, how they seek information, and how they make engineering decisions about diverse communities.",
 		"funding": [],
@@ -187,7 +201,7 @@
 		],			
 		"startdate": 2010,
 		"stopdate": 2015,
-		"impact": "Lemonaid was the basis for <a href='http://www.answerdash.com'>AnswerDash</a>, a company that I co-founded with Jacob Wobbrock and Parmit Chilana that offers an instant self-service answers product for web applications and e-commerce sites."
+		"impact": "Lemonaid was the basis for <a href='http://www.answerdash.com'>AnswerDash</a>, a company that I co-founded with Jacob Wobbrock and Parmit Chilana that offers an instant self-service answers product for web applications and e-commerce sites. The company has impacted other company's product offerings, including <a href='https://www.zendesk.com/'>Zendesk</a>'s self-service technologies."
 	},
 	{
 		"id": "feedlack",
