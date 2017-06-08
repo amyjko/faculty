@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 var projects = require('./projects.json');
 
-projects.sort((a, b) => {
+projects = projects.slice(0).sort((a, b) => {
 	return b.startdate - a.startdate;
 });
 

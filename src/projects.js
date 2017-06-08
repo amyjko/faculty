@@ -7,9 +7,11 @@ var projects = require('./projects.json');
 var pubs = require('./pubs.json');
 
 // Sort the projects by decreasing start date.
-projects.sort((a, b) => {
+/*
+projects = projects.slice(0).sort((a, b) => {
 	return b.startdate - a.startdate;
 });
+*/
 
 class Project extends React.Component {
 	
