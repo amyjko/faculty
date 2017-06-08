@@ -7,7 +7,12 @@ import { Paper }  from './paper';
 var pubs = require('./pubs');
 
 // Sort the publications by decreasing year.
-pubs = pubs.sort((a, b)=>{ return b["year"] - a["year"]; });
+pubs = pubs.slice(0).sort((a, b)=>{ 
+	if(b["year"] !== a["year"])
+		return b["year"] - a["year"]; 
+	else
+		return a["source"].localeCompare(b["source"]); 
+});
 
 class Publications extends React.Component {
 
