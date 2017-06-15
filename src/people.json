@@ -15,7 +15,7 @@
 		"active": true,
 		"advised": false,
 		"level": "phd",
-		"bio": "Annie worked with Andy on predicting dropout in a coding tutorial.",
+		"bio": "Annie is a Ph.D. student in the Information School working with Carol Palmer. Annie worked with Andy on predicting dropout in a coding tutorial.",
 		"url": "https://ischool.uw.edu/people/phd/yanan15",
 		"startdate": 2016
 	},
@@ -25,7 +25,7 @@
 		"active": true,
 		"advised": false,
 		"level": "phd",
-		"bio": "Ada worked with Andy on a pedagogical analysis of coding tutorials.",
+		"bio": "Ada is a Ph.D. student in the Information School working with Katie Davis. Ada worked with Andy on a pedagogical analysis of coding tutorials as part of a research practicum.",
 		"url": "http://students.washington.edu/kimsk/",
 		"startdate": 2016
 	},
@@ -35,7 +35,7 @@
 		"active": true,
 		"advised": false,
 		"level": "phd",
-		"bio": "Saba is a PhD student in the Information School. She worked with Andy on a nationwide survey of higher education instruction on accessibility",
+		"bio": "Saba is a PhD student in the Information School working with Katie Davis. Saba worked with Andy on a nationwide survey of the teaching of accessibility in higher education in the United States.",
 		"url": "https://www.linkedin.com/in/saba-kawas-7b82b582",
 		"startdate": 2016
 	},
@@ -45,7 +45,7 @@
 		"active": true,
 		"advised": true,
 		"level": "phd",
-		"bio": "Benji is a PhD student in the College of Education interested in learning analytics for computing education. Before joining UW, he studied App Inventor and MOOCs with Hal Abelson at MIT.",
+		"bio": "Benji is a PhD student in the Information School interested in learning analytics for computing education. Before joining UW, he studied App Inventor and MOOCs with Hal Abelson at MIT.",
 		"url": "https://www.linkedin.com/in/benjamin-xie-6b657747",
 		"startdate": 2016
 	},
@@ -55,7 +55,7 @@
 		"active": true,
 		"advised": true,
 		"level": "phd",
-		"bio": "Greg is a PhD student in Computer Science and Engineering at the University of Washington. He studies and conducts research in human computer interaction and computing education.",
+		"bio": "Greg is a PhD student in Computer Science and Engineering. He's interested in HCI and computing education broadly, and has focused on programming language learning and augmented and virtual reality.",
 		"url": "http://www.greglnelson.info/",
 		"startdate": 2013
 	},
@@ -65,18 +65,8 @@
 		"active": true,
 		"advised": true,
 		"level": "phd",
-		"bio": "Kyle is a PhD student in Computer Science and Engineering, also working with Katharina Reinecke. He studies diversity and learning technologies in computing education.",
+		"bio": "Kyle is a PhD student in Computer Science and Engineering, also advised by Katharina Reinecke. He studies the intersection of diversity and learning in computing education.",
 		"url": "https://www.linkedin.com/in/kyle-thayer-b8489735",
-		"startdate": 2015
-	},
-	{
-		"id": "zilouchi",
-		"name": "Roshanak Zilouichian",
-		"active": false,
-		"advised": true,
-		"level": "postdoc",
-		"bio": "Roshanak was a postdoc in my lab working on collaboration, consensus, information visualization, and creativity support tools. She received her Ph.D. from the University of Illinois at Urbana-Champaign and investigated social aspects of online coding tutorials while at UW.",
-		"url": "http://staff.washington.edu/zilouchi/",
 		"startdate": 2015
 	},
 	{
@@ -85,41 +75,9 @@
 		"active": true,
 		"advised": true,
 		"level": "phd",
-		"bio": "Amanda is interested in Software Engineering, HCI, and making software easier to learn, use, and make. She is investigating how web sites change and how we can reveal and explain those changes to end users.",
+		"bio": "Amanda is a Ph.D. student in Computer Science & Engineeering and is interested in Software Engineering, HCI, and making software easier to learn, use, and make. She is investigating a range of techniques for reverse engineering useful models of user interfaces.",
 		"url": "http://homes.cs.washington.edu/~amaswea/",
 		"startdate": 2015
-	},
-	{
-		"id": "mjslee",
-		"name": "Michael J. Lee",
-		"active": false,
-		"advised": true,
-		"level": "phd",
-		"bio": "Michael Lee, now faculty at New Jersey Institute of Technology, was a PhD student in the Information School at the University of Washington, advised by Andrew Ko. His research interests include the social aspects of software development and maintenance, and computer programming education. He has published articles for multi-modal programming environments for children, receiving a best paper award at the ACM Conference on Creativity & Cognition (C&C). He received his Masters degree in 2007 from the School of Information at UC Berkeley, advised by Kimiko Ryokai and Robert Glushko. He received his Bachelors of Science with Distinction in 2005 from the Cognitive Science Department at UC San Diego, advised by David Kirsh and Edwin Hutchins. He is now an Assistant Professor at the New Jersey Institute of Technology in Information Systems.",
-		"url": "http://pixel42.com/",
-		"startdate": 2009,
-		"thesis": "papers/Lee2015Dissertation.pdf"
-	},
-	{
-		"id": "plli",
-		"name": "Paul Luo Li",
-		"active": false,
-		"level": "phd",
-		"bio": "Paul Luo Li, now a Senior Data Scientist at Microsoft, was a Ph.D. student in the Information School at the University of Washington, advised by Andrew Ko. His research area is Software Engineering Processes. His research interests include user experiences in software engineering activities. He has publications on reliability engineering and metrics in conferences like ICSE and ISSRE. He has a Masters in Software Engineering from Carnegie Mellon University, and a B.S. in Statistics with a minor in Computer Science from the University of Virginia.",
-		"url": "http://students.washington.edu/plli/",
-		"startdate": 2009,
-		"thesis": "papers/Li2016Dissertation.pdf"
-	},
-	{
-		"id": "burg",
-		"name": "Brian Burg",
-		"active": false,
-		"advised": true,
-		"level": "phd",
-		"bio": "Brian Burg, now a Senior Software Engineer at Apple, was a Ph.D. student in the CSE Department at the University of Washington, advised by Andrew Ko. His research areas include improving developer productivity, quantifying and furthering application and runtime performance, and understanding languages and software at scale. Brian received his Bachelor of Science with Honors in Computer Science from Purdue University. He is now a Senior Software Engineer at Apple.",
-		"url": "http://brrian.org/",
-		"startdate": 2011,
-		"thesis": "papers/Burg2015Dissertation.pdf"
 	},
 	{
 		"id": "dloksa",
@@ -141,6 +99,38 @@
 		"url": "https://www.linkedin.com/in/zakariya-dehlawi-7836a515",
 		"startdate": 2014
 	},
+		{
+		"id": "plli",
+		"name": "Paul Luo Li",
+		"active": false,
+		"level": "senior data scientist",
+		"bio": "Paul Luo Li, now a Senior Data Scientist at Microsoft, was a Ph.D. student in the Information School at the University of Washington, advised by Andrew Ko. His research area is Software Engineering Processes. His research interests include user experiences in software engineering activities. He has publications on reliability engineering and metrics in conferences like ICSE and ISSRE. He has a Masters in Software Engineering from Carnegie Mellon University, and a B.S. in Statistics with a minor in Computer Science from the University of Virginia.",
+		"url": "http://students.washington.edu/plli/",
+		"startdate": 2009,
+		"thesis": "papers/Li2016Dissertation.pdf"
+	},
+	{
+		"id": "mjslee",
+		"name": "Michael J. Lee",
+		"active": false,
+		"advised": true,
+		"level": "faculty",
+		"bio": "Michael Lee, now faculty at New Jersey Institute of Technology, was a PhD student in the Information School at the University of Washington, advised by Andrew Ko. His research interests include the social aspects of software development and maintenance, and computer programming education. He has published articles for multi-modal programming environments for children, receiving a best paper award at the ACM Conference on Creativity & Cognition (C&C). He received his Masters degree in 2007 from the School of Information at UC Berkeley, advised by Kimiko Ryokai and Robert Glushko. He received his Bachelors of Science with Distinction in 2005 from the Cognitive Science Department at UC San Diego, advised by David Kirsh and Edwin Hutchins. He is now an Assistant Professor at the New Jersey Institute of Technology in Information Systems.",
+		"url": "http://pixel42.com/",
+		"startdate": 2009,
+		"thesis": "papers/Lee2015Dissertation.pdf"
+	},
+	{
+		"id": "burg",
+		"name": "Brian Burg",
+		"active": false,
+		"advised": true,
+		"level": "senior software engineer",
+		"bio": "Brian Burg, now a Senior Software Engineer at Apple, was a Ph.D. student in the CSE Department at the University of Washington, advised by Andrew Ko. His research areas include improving developer productivity, quantifying and furthering application and runtime performance, and understanding languages and software at scale. Brian received his Bachelor of Science with Honors in Computer Science from Purdue University. He is now a Senior Software Engineer at Apple.",
+		"url": "http://brrian.org/",
+		"startdate": 2011,
+		"thesis": "papers/Burg2015Dissertation.pdf"
+	},
 	{
 		"id": "pchilana",
 		"name": "Parmit K. Chilana",
@@ -151,5 +141,15 @@
 		"url": "http://hci.cs.sfu.ca/",
 		"startdate": 2008,
 		"thesis": "papers/Chilana2013Dissertation.pdf"
+	},
+		{
+		"id": "zilouchi",
+		"name": "Roshanak Zilouichian",
+		"active": false,
+		"advised": true,
+		"level": "data scientist",
+		"bio": "Roshanak was a postdoc in the lab working on collaboration, consensus, information visualization, and creativity support tools. She received her Ph.D. from the University of Illinois at Urbana-Champaign and investigated social aspects of online coding tutorials while at UW. She is now a Data Scientist at Microsoft.",
+		"url": "https://www.linkedin.com/in/roshanak-zilouchian-757385a/",
+		"startdate": 2015
 	}
 ]
