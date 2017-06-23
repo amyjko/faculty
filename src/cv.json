@@ -413,6 +413,12 @@
 	],
 	courses: [
 		{
+			title: "Cooperative Software Development Thinking (INFO 461)",
+			count: "35 undergraduates", 
+			date: "Spring 2017",
+			score: "4.8/5.0"
+		},
+		{
 			title: "Design Thinking (INFO 360)",
 			count: "35 undergraduates", 
 			date: "Winter 2017",
