@@ -48,7 +48,7 @@ class ContactInfo extends React.Component {
 	
 					</p>
 					
-					<p>Office hours: Thu 9-11</p>
+					<p>Office hours: by appt.</p>
 
 				</small>
 				
