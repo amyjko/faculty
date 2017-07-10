@@ -938,6 +938,11 @@
 	otherService: [
 		{
 			title: "Member",
+			committee: "ACM Education Council",
+			dates: "2017-present"	
+		},
+		{
+			title: "Member",
 			committee: "Washington State Computer Science Leadership Team",
 			dates: "2017-present"	
 		},
