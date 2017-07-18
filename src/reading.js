@@ -134,6 +134,8 @@ class Reading extends React.Component {
 				
 				<h3 id="toc_7">Theory</h3>
 				
+				<p><a href="https://homes.cs.washington.edu/~jfogarty/publications/workshop-chi2017-codeandcontribution.pdf">Code and Contribution in Interactive Systems Research</a>, James Fogarty.</p>
+				
 				<p>A behavioral model of rational choice. Simon, H. A. The Quarterly Journal of Economics, 69(1), 99-118, 1995.</p>
 				
 				<blockquote>Bounded rationality, at the foundation of decision making.</blockquote>
