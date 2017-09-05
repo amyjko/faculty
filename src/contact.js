@@ -27,7 +27,7 @@ class ContactInfo extends React.Component {
 				<span className="lead">Andrew J. Ko, Ph.D.</span>
 				<small>
 					<br/>Associate Professor
-					<br/>Chair, <a href="https://ischool.uw.edu/academics/informatics">Informatics</a>, <a href="https://mhcid.washington.edu/">HCI+Design</a>
+					<br/>Chair, <a href="https://ischool.uw.edu/academics/informatics">Informatics</a>
 					<br/><a href="http://ischool.uw.edu" target="_blank">The Information School</a>
 					<br/><a href='http://cs.washington.edu' target="_blank">Computer Science & Engr.</a> (adjunct)
 					<br/><a href="http://www.washington.edu" target="_blank">University of Washington</a>

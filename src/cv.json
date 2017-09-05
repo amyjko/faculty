@@ -60,6 +60,24 @@
 	],
 	funding: [
 		{
+			title: "Programming Strategies",
+			funder: "National Science Foundation",
+			investigators: "Thomas LaToza (PI, George Mason University), Andrew J. Ko (Co-PI, University of Washington)",
+			amount: "$1,199,555",
+			startdate: 2017,
+			enddate: 2021,
+			description: "Develop of a new science of programming strategies."
+		},
+		{
+			title: "Automatically Synthesizing Valid, Personalized, Formative Assessments of CS1 Concepts",
+			funder: "National Science Foundation",
+			investigators: "Andrew J. Ko (PI, University of Washington), Min Li (Co-PI, University of Washington)",
+			amount: "$549,857",
+			startdate: 2017,
+			enddate: 2020,
+			description: "New model of CS1 concepts, new approaches to formative assessment and feedback, new techniques problem synthesis, and a new paradigm for intelligent tutoring of programming."
+		},
+		{
 			title: "AccessComputing",
 			funder: "National Science Foundation",
 			investigators: "Richard Ladner (PI, University of Washington), Sheryl Burgstahler (Co-PI), Andrew J. Ko (Co-PI), Jacob O. Wobbrock (Co-PI)",
@@ -170,6 +188,12 @@
 	],
 
 	patents: [
+		{
+			title: "Context- and Activity-Aware Content Selection",
+			year: "2017",
+			number: "U.S. Patent No. 9,727,561",
+			inventors: "Andrew J. Ko and Victor Medina"
+		},
 		{
 			title: "Systems and Methods for Selection-Based Contextual Help Retrieval",
 			year: "2012",
@@ -316,13 +340,18 @@
 	],
 	invitedtalks: [
 		{
+			title: "Three Years in the Startup Trenches: Reflections on People, Product, and Software Evolution",
+			venue: "ACM Learning Center Webinar (130+ attendees)",
+			date: "August 4th, 2017"
+		},
+		{
 			title: "Three Years in the Startup Trenches",
-			venue: "Amazon Stackhouse Talks",
+			venue: "Amazon Stackhouse Talks (150+ attendees)",
 			date: "February 21, 2017"
 		},
 		{
 			title: "What makes a great software engineer?",
-			venue: "ACM Learning Center Webinar",
+			venue: "ACM Learning Center Webinar (2,000+ attendees)",
 			date: "October 9th, 2015"
 		},
 		{
@@ -635,6 +664,12 @@
 	],
 	doctoralCommittee: [	
 		{
+			name: "Aaron Bauer",
+			department: "Computer Science and Engineering",
+			startdate: 2017,
+			enddate: null
+		},
+		{
 			name: "Elena Agapie",
 			department: "Human-Centered Design and Engineering",
 			startdate: 2017,
@@ -774,7 +809,7 @@
 			dates: "2017-present",
 			notes: [
 				"Reframed curriculum around the study, design, and development of information technology",
-				"Reduced reliance on guest faculty by 25%",
+				"Reduced reliance on guest faculty",
 				"Increased inclusiveness and scalability of admissions"
 			]
 		},
@@ -785,7 +820,7 @@
 			notes: [
 				"Renewed memorandum of agreement between four units and graduate school", 
 				"Hired new director, Michael Smith", 
-				"Secured design studio"
+				"Secured design studio space"
 			]
 		}
 	],
