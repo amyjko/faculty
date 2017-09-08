@@ -234,7 +234,7 @@
 		"code": "https://github.com/andyjko/whyline",
 		"startdate": 2004,
 		"stopdate": 2008,
-		"impact": "Although the Whyline has not yet appeared in products, I disseminated the idea broadly, giving several talks at Microsoft, Apple, and Adobe. Many of the foundations of the tool, including execution traces, record/replay, and higher level dynamic analysis are beginning to make it into sophisticated development platforms."
+		"impact": "The Whyline has impacted several projects, including Microsoft's <a href='https://docs.microsoft.com/en-us/visualstudio/debugger/intellitrace-features'>IntelliTrace</a> feature in Visual Studio, it's <a href='https://marketplace.visualstudio.com/items?itemName=DebuggerCanvasTeam.DebuggerCanvas'>Debugger Canvas</a> Visual Studio plugin, and the record-replay features in it's latest <a href='https://www.microsoft.com/en-us/research/project/javascript-time-travel-debugger/'>Chakra JavaScript runtime</a>. Other projects, including <a href='http://rr-project.org/'>Mozilla's rr</a> and the <a href='http://debug.elm-lang.org/'>Elm Debugger</a> have also incorporated time-travel debugging features. None have implemented the full vision of Whyline's interface or analysis, but many are getting close, as the infrastructure for execution tracing, record/replay, and dynamic analysis are becoming scalable enough for production use."
 	},
 	{
 		"id": "cleanroom",
