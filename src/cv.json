@@ -210,6 +210,18 @@
 	
 	awards: [
 		{
+			title: "ACM SIGCHI Exceptional Reviewer (CHI 2017)",
+			year: 2017
+		},
+		{
+			title: "ACM SIGCHI Exceptional Reviewer (CHI 2016)",
+			year: 2016
+		},
+		{
+			title: "ACM SIGCHI Exceptional Reviewer (UIST 2016)",
+			year: 2015
+		},
+		{
 			title: "UW Presidential Entrepreneurial Faculty Fellows Awardee",
 			year: 2014
 		},
@@ -927,7 +939,11 @@
 		},
 		{
 			venue: "ACM Symposium on User Interface and Software Technology (UIST)",
-			dates: "2005-2007, 2009, 2010, 2013, 2016, 2017"
+			dates: "2005-present"
+		},
+		{
+			venue: "Proceedings of the ACM on Human-Computer Interaction (Engineering Interactive Computing Systems)",
+			dates: "2017-present"
 		},
 		{
 			venue: "ACM Transactions on Computing Education (TOCE)",

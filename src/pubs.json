@@ -1,5 +1,26 @@
 [
 	{
+		"id":"pstutor1",
+		"kind":"refereed workshop paper",
+		"authors":"Dastyni Loksa and Andrew J. Ko",
+		"year": 2017,
+		"title":"Modeling Programming Problem Solving Through Interactive Worked Examples",
+		"source":"Workshop on Evaluation and Usability of Programming Languages and Tools (PLATEAU)",
+		"location": "Vancouver, B.C., Canada",
+		"pages":"to appear",
+		"acceptance rate":null,
+		"authorizer":"",
+		"digital library url":null,
+		"local url":null,
+		"talk url":null,
+		"award":"",
+		"volume":null,
+		"issue":null,
+		"article":null,
+		"publisher":"",
+		"contribution":""
+	},
+	{
 		"id":"gidgetabandoment",
 		"kind":"refereed conference paper",
 		"authors":"An Yan, Michael Lee, and Andrew J. Ko",

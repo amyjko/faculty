@@ -151,7 +151,7 @@ class Vita extends React.Component {
 
 				{this.getChunkList(_.sortBy(_.filter(pubs, (pub) => { return pub.award && pub.award.length > 0 }), "year").reverse(), "paperAward", "year", null, "title", "award")}
 			
-				<h3>Fellowships and Awards</h3>
+				<h3>Awards and Recognitions</h3>
 
 				{this.getChunkList(cv.awards, "award", "year", null, "title")}
 
