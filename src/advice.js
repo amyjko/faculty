@@ -21,6 +21,12 @@ class Advice extends React.Component {
 					<li><a href="http://www.cs.washington.edu/homes/mernst/advice/">Mike Ernst's advice collection</a> software engineering slant</li>
 					<li><a href="http://www.cs.cmu.edu/~jasonh/advice.html">Jason Hong's advice collection</a> HCI slant</li>
 				</ul>
+
+				<h3>How do I get into a Ph.D. program?</h3>
+				
+				<ul>
+					<li>A <a href="http://www.pgbovine.net/PhD-application-tips.htm">brutally honest glimpse</a> into how Philip and many others review Ph.D. applicants.</li>
+				</ul>
 				
 				<h3>How do I be a good Ph.D. student?</h3>
 
