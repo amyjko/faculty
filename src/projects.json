@@ -125,7 +125,7 @@
 		"video": null,			
 		"startdate": 2004,
 		"stopdate": 2006,
-		"impact": "Our studies on program understanding and ideas for program understanding tools was the partially the basis of the <a href='http://research.microsoft.com/en-us/projects/debuggercanvas/'>Debugger Canvas</a> plugin for Visual Studio."
+		"impact": "Our studies on program understanding and ideas for program understanding tools was partially the basis of the <a href='http://research.microsoft.com/en-us/projects/debuggercanvas/'>Debugger Canvas</a> plugin for Visual Studio."
 	},
 	{
 		"id": "softwareteams",
@@ -138,7 +138,8 @@
 		"demo": null,
 		"video": null,
 		"startdate": 2004,
-		"stopdate": null
+		"stopdate": null,
+		"impact": "This work has been read widely in industry, including by product teams at Microsoft, Adobe, Google, and ABB."
 	},
 	{
 		"id": "debuggingclassifiers",
