@@ -2,16 +2,17 @@
 	degrees: [
 		{
 			institution: "Carnegie Mellon University",
-			degree: "Ph.D. in Human-Computer Interaction",
+			degree: "Doctorate in Human-Computer Interaction",
 			year: 2008,
-			thesis: "Asking and Answering Questions about the Causes of Software Behaviors",
-			committee: "Brad Myers (Chair), Bonnie John (CMU), Jonathan Aldrich (CMU), Gail Murphy (UBC)"
+			thesis: "Thesis: Asking and Answering Questions about the Causes of Software Behaviors",
+			committee: "Brad Myers (CMU, Chair), Bonnie John (CMU), Jonathan Aldrich (CMU), Gail Murphy (UBC)"
 		},
 		{
 			institution: "Oregon State University",
-			degree: "Honors B.S. in Computer Science and Psychology",
+			degree: "Honors Bachelor of Science in Computer Science and Psychology",
 			year: 2002,
-			thesis: "Individual Differences in Programming, Testing, and Debugging in a Statistical End-User Programming Environment",					committee: "Margaret Burnett (Computer Science) and Bob Uttl (Psychology)"
+			thesis: "Thesis: Individual Differences in Programming, Testing, and Debugging in a Statistical End-User Programming Environment",
+			committee: "Margaret Burnett (Computer Science) and Bob Uttl (Psychology)"
 		},
 	],
 	jobs: [
@@ -987,6 +988,11 @@
 		}
 	],
 	otherService: [
+		{
+			title: "Co-Chair",
+			committee: "ICER Doctoral Consortium",
+			dates: "2018-2019"
+		},
 		{
 			title: "Member",
 			committee: "ACM Education Council",
