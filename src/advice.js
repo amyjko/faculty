@@ -34,7 +34,7 @@ class Advice extends React.Component {
 					<li><a href="http://pgbovine.net/PhD-memoir.htm"> A nice Ph.D. memoir</a> by Philip Guo, who was at Stanford CS. It has a definite slant toward CS and software engineering academic culture, but it's a useful read to anyone thinking about a Ph.D.</li>
 					<li><a href="http://www.pgbovine.net/guo-faculty-job-search.pdf">A nice memoir on faculty job searches</a>, also by Philip Guo. This is also oriented toward a CS audience, but has many similar elements to other fields.</li>
 					<li><a href="http://matt.might.net/articles/successful-phd-students/">Matt Might's advice on being a successful Ph.D. student</a></li>
-					<li><a href="http://www.freedom-to-tinker.com/blog/jrex">Jennifer Rexford's view of Ph.D. life as individual growth by leveraging the group</a></li>
+					<li><a href="https://freedom-to-tinker.com/2010/09/27/advice-new-graduate-students/">Jennifer Rexford's view of Ph.D. life as individual growth by leveraging the group</a></li>
 					<li>The Economist on <a href="http://www.economist.com/node/17723223?fsrc=scn/fb/wl/ar/mr/disposableacademic">Why doing a PhD is often a waste of time</a></li>
 										<li>On saying <a href="http://chronicle.com/blogs/onhiring/right-of-refusal/31609?sid=at&utm_source=at&utm_medium=en">no</a></li>
 					<li>Schwartz MA. <a href="http://jcs.biologists.org/cgi/content/full/121/11/1771">The importance of stupidity in scientific research</a>. J Cell Sci. 2008 Jun 1;121(Pt 11):1771.</li>
@@ -55,7 +55,6 @@ class Advice extends React.Component {
 
 				<ul>			
 					<li><a href="http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/">Matt Might's advice on technical writing</a></li>
-					<li>A great analysis of <a href="http://oulasvirta.posterous.com/86113982">a wide range of reasons for CHI papers being rejected</a></li>
 					<li>A deconstruction of <a href="https://sites.umiacs.umd.edu/elm/2016/11/19/writing-rebuttals/">what makes a good rebuttal to conference reviews</a></li>
 				</ul>
 				
