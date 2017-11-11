@@ -2,7 +2,7 @@
 	{
 		"id": "kshino",
 		"name": "Kristen Shinohara",
-		"active": true,
+		"active": false,
 		"advised": false,
 		"level": "phd",
 		"bio": "Kristen was a PhD student advised by Jake Wobbrock and Wanda Pratt. She worked with Andy multiple times as a teaching assistant, and later on nationwide survey of higher education instruction on accessibility. She graduated in 2017 and joined the faculty at Rochester Institute of Technology.",
@@ -103,7 +103,8 @@
 		"id": "plli",
 		"name": "Paul Luo Li",
 		"active": false,
-		"level": "senior data scientist",
+		"advised": true,
+		"level": "phd",
 		"bio": "Paul Luo Li, now a Senior Data Scientist at Microsoft, was a Ph.D. student in the Information School at the University of Washington, advised by Andrew Ko. His research area is Software Engineering Processes. His research interests include user experiences in software engineering activities. He has publications on reliability engineering and metrics in conferences like ICSE and ISSRE. He has a Masters in Software Engineering from Carnegie Mellon University, and a B.S. in Statistics with a minor in Computer Science from the University of Virginia.",
 		"url": "http://students.washington.edu/plli/",
 		"startdate": 2009,
@@ -114,7 +115,7 @@
 		"name": "Michael J. Lee",
 		"active": false,
 		"advised": true,
-		"level": "faculty",
+		"level": "phd",
 		"bio": "Michael Lee, now faculty at New Jersey Institute of Technology, was a PhD student in the Information School at the University of Washington, advised by Andrew Ko. His research interests include the social aspects of software development and maintenance, and computer programming education. He has published articles for multi-modal programming environments for children, receiving a best paper award at the ACM Conference on Creativity & Cognition (C&C). He received his Masters degree in 2007 from the School of Information at UC Berkeley, advised by Kimiko Ryokai and Robert Glushko. He received his Bachelors of Science with Distinction in 2005 from the Cognitive Science Department at UC San Diego, advised by David Kirsh and Edwin Hutchins. He is now an Assistant Professor at the New Jersey Institute of Technology in Information Systems.",
 		"url": "http://pixel42.com/",
 		"startdate": 2009,
@@ -125,7 +126,7 @@
 		"name": "Brian Burg",
 		"active": false,
 		"advised": true,
-		"level": "senior software engineer",
+		"level": "phd",
 		"bio": "Brian Burg, now a Senior Software Engineer at Apple, was a Ph.D. student in the CSE Department at the University of Washington, advised by Andrew Ko. His research areas include improving developer productivity, quantifying and furthering application and runtime performance, and understanding languages and software at scale. Brian received his Bachelor of Science with Honors in Computer Science from Purdue University. He is now a Senior Software Engineer at Apple.",
 		"url": "http://brrian.org/",
 		"startdate": 2011,
@@ -136,7 +137,7 @@
 		"name": "Parmit K. Chilana",
 		"active": false,
 		"advised": true,
-		"level": "faculty",
+		"level": "phd",
 		"bio": "Parmit K. Chilana, now faculty at Simon Fraser University, was a PhD student at the Information School. Her research interests span different aspects of software development, usability, and software support. In recent projects, she has looked at how users express unwanted software behaviors and how support professionals and developers diagnose and respond to user-reported software issues in open source and commercial software development contexts. She is currently exploring the design of contextual-help tools for web applications which leverage crowdsourced solutions from users. Parmit has also collaborated on various projects within UW Medicine and biomedical and health informatics related to improving design of software used for scientific research. Parmit received her MS in Library and Information Science from the University of Illinois at Urbana-Champaign and BSc in Computing Science from Simon Fraser University, Canada. She was a recipient of Canada's SSHRC doctoral fellowship in 2009 and a Facebook PhD fellowship in 2010.",
 		"url": "http://hci.cs.sfu.ca/",
 		"startdate": 2008,
@@ -147,9 +148,219 @@
 		"name": "Roshanak Zilouichian",
 		"active": false,
 		"advised": true,
-		"level": "data scientist",
+		"level": "postdoc",
 		"bio": "Roshanak was a postdoc in the lab working on collaboration, consensus, information visualization, and creativity support tools. She received her Ph.D. from the University of Illinois at Urbana-Champaign and investigated social aspects of online coding tutorials while at UW. She is now a Data Scientist at Microsoft.",
 		"url": "https://www.linkedin.com/in/roshanak-zilouchian-757385a/",
 		"startdate": 2015
-	}
+	},
+	{
+		"id": "kwikh",
+		"name": "Harrison Kwik",
+		"active": true,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Harrison is an undergraduate in computer science interested in equitable learning of computing. He's been supporting the lab's research on programming tutors while independently investigating the experiences of CS transfer students.",
+		"url": "https://www.linkedin.com/in/harrison-kwik/",
+		"startdate": 2016
+	},
+	{
+		"id": "lkhwa",
+		"name": "Leanne Hwa",
+		"active": true,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Leanne is an Informatics undergraduate in computing education, mentorship, and identity. She's supported the lab's research on programming tutors while independently investigating the role of informal computing mentors amongst south Seattle teens.",
+		"url": "https://github.com/lkhwa",
+		"startdate": 2016
+	},	
+	{
+		"id": "alextan",
+		"name": "Alex Tan",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Alex is an Informatics undergraduate in computing education. He's supported the lab's research on programming tutors.",
+		"url": "https://www.linkedin.com/in/alexhtan/",
+		"startdate": 2016
+	},
+	{
+		"id": "besweth",
+		"name": "Michael Beswetherick",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Michael helped engineer Gidget while an Informatics undergrad. He now helps engineer NY Times.",
+		"url": "https://www.linkedin.com/in/michael-beswetherick-8b924944/",
+		"startdate": 2012
+	},
+	{
+		"id": "stackhouse",
+		"name": "Andre Stackhouse",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Andre helped engineer Gidget while an Informatics undergrad, then at Code.org. He now helps engineer Bing at Microsoft.",
+		"url": "https://www.linkedin.com/in/captainstack/",
+		"startdate": 2012
+	},
+	{
+		"id": "charters",
+		"name": "Polina Charters",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Polina was a Psychology student who helped develop many of the instruments for our studies of Gidget, and also ran a study evaluating attitude shifts among adults who played Gidget. She went on to our Masters in HCI+Design. helped engineer Gidget while an Informatics undergrad, then at Code.org. He now helps engineer Bing at Microsoft.",
+		"url": "https://www.linkedin.com/in/polinacharters/",
+		"startdate": 2013
+	},
+	{
+		"id": "fanny",
+		"name": "Fanny Luor",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Fanny was a Design student who illustrated all of the art for Gidget. She went on to design and illustrate at Airbnb and Dropbox.",
+		"url": "https://www.linkedin.com/in/fanny-luor-946aab2b/",
+		"startdate": 2013
+	},
+	{
+		"id": "nadav",
+		"name": "Nadav Ashkenazi",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Nadav was a Computer Science and Informatics student who helped engineer Gidget. He went on to Google to help build Earth VR.",
+		"url": "https://www.linkedin.com/in/nadavash/",
+		"startdate": 2013
+	},
+	{
+		"id": "staffan",
+		"name": "Staffan Hellman",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Staffan was an Informatics student who helped engineer Gidget. He went on to work at Weebly.",
+		"url": "https://www.linkedin.com/in/hellmans/",
+		"startdate": 2014
+	},
+	{
+		"id": "raden",
+		"name": "Steven Raden",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Steven was an Informatics student who helped design and engineer Gidget. He went on to work at IBM as a UX designer.",
+		"url": "https://www.linkedin.com/in/steven-raden-76031a62/",
+		"startdate": 2014
+	},
+	{
+		"id": "menten",
+		"name": "William Menten-Weil",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Liam was an Informatics student who helped design and engineer our work on programming problem solving tutors, focusing specifically on an advanced tutorial authoring interface.",
+		"url": "https://www.linkedin.com/in/william-menten-weil-944a15ab/",
+		"startdate": 2016
+	},
+	{
+		"id": "dakota",
+		"name": "Datoka Miller",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Dakota was an Informatics student who helped design and engineer our work on programming problem solving tutors, focusing specifically on an advanced tutorial authoring interface.",
+		"url": "https://www.linkedin.com/in/dakota-miller-01010954/",
+		"startdate": 2016
+	},
+	{
+		"id": "rowell",
+		"name": "Alexandra Rowell",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Alex was an Informatics student who helped design and engineer our work on programming problem solving tutors, focusing specifically on how to present expert identity.",
+		"url": "https://www.linkedin.com/in/alexandrarowell",
+		"startdate": 2016
+	},
+	{
+		"id": "xing",
+		"name": "Xing Zhang",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Xing was an Electrical Engineering student that helped evaluate Feedlack, our verification tool for finding missing feedback in interfaces.",
+		"url": "https://www.linkedin.com/in/xingz2/",
+		"startdate": 2011
+	},
+	{
+		"id": "stephenip",
+		"name": "Stephen Ip",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Stephen was an Informatics student who helped with our studies of bug triage.",
+		"url": "https://www.linkedin.com/in/stevenip/",
+		"startdate": 2011
+	},
+	{
+		"id": "charlie",
+		"name": "Charlie Tran",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Charlie was an Informatics student who helped with our studies of bug triage. He went on to become a program manager at Microsoft.",
+		"url": "https://www.linkedin.com/in/stevenip/",
+		"startdate": 2011
+	},
+	{
+		"id": "ferrari",
+		"name": "Valentina Ferrari",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Valentina was an Informatics student who helped with our studies of bug triage. She went on to become a UX designer at Adobe.",
+		"url": "https://www.linkedin.com/in/valentinaferrariux/",
+		"startdate": 2011
+	},
+	{
+		"id": "neeraja",
+		"name": "Neeraja Duriseti",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Neeraja was an Informatics and Applied Math student who helped analyze a corpus of tens of thousands of news articles about software failures.",
+		"url": "https://www.linkedin.com/in/neeraja-duriseti-0734054b/",
+		"startdate": 2010
+	},
+	{
+		"id": "dosono",
+		"name": "Bryan Dosono",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Bryan was an Informatics student who helped analyze a corpus of tens of thousands of news articles about software failures. He went on to do a Ph.D. in Information Science at Syracuse University.",
+		"url": "http://www.bdosono.com/",
+		"startdate": 2010
+	},
+	{
+		"id": "padma",
+		"name": "Padma Vaithyam",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Padma was an Informatics student who helped design and engineer Gidget. She went on to Microsoft as a software engineer.",
+		"url": "https://www.linkedin.com/in/padma-vaithyam-137b6739/",
+		"startdate": 2012
+	},
+	{
+		"id": "jiang",
+		"name": "Diana Jiang",
+		"active": false,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Diana was an Informatics student who helped design and engineer Gidget.",
+		"url": "https://www.linkedin.com/in/jiangdiana/",
+		"startdate": 2012
+	}	
 ]

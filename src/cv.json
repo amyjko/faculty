@@ -62,7 +62,7 @@
 	funding: [
 		{
 			title: "Programming Strategies",
-			funder: "National Science Foundation",
+			funder: "National Science Foundation, award 1703304",
 			investigators: "Thomas LaToza (PI, George Mason University), Andrew J. Ko (Co-PI, University of Washington)",
 			amount: "$1,199,555",
 			startdate: 2017,
@@ -71,7 +71,7 @@
 		},
 		{
 			title: "Automatically Synthesizing Valid, Personalized, Formative Assessments of CS1 Concepts",
-			funder: "National Science Foundation",
+			funder: "National Science Foundation, award 1735123",
 			investigators: "Andrew J. Ko (PI, University of Washington), Min Li (Co-PI, University of Washington)",
 			amount: "$549,857",
 			startdate: 2017,
@@ -80,7 +80,7 @@
 		},
 		{
 			title: "AccessComputing",
-			funder: "National Science Foundation",
+			funder: "National Science Foundation, award 1539179",
 			investigators: "Richard Ladner (PI, University of Washington), Sheryl Burgstahler (Co-PI), Andrew J. Ko (Co-PI), Jacob O. Wobbrock (Co-PI)",
 			amount: "$3,797,990",
 			startdate: 2015,
@@ -89,7 +89,7 @@
 		},
 		{
 			title: "HCC: Large: Variations to Support Exploratory Programming",
-			funder: "National Science Foundation",
+			funder: "National Science Foundation, award 	1314399",
 			investigators: "Brad Myers (PI, Carnegie Mellon University), Andrew J. Ko (Co-PI), Margaret Burnett (Co-PI, Oregon State University), Martin Erwig (Co-PI, Oregon State University), Anita Sarma (Co-PI, University of Nebraska, Lincoln), Gregg Rothermel (Co-PI, University of Nebraska, Lincoln)",
 			amount: "$2,999,991",
 			startdate: 2013,
@@ -98,7 +98,7 @@
 		},
 		{
 			title: "CER: Computing Education through Collaborative Debugging",
-			funder: "National Science Foundation",
+			funder: "National Science Foundation, award 1240786",
 			investigators: "Andrew J. Ko (PI), Margaret Burnett (Co-PI, Oregon State University), Catherine Law (Co-PI, Oregon State University)",
 			amount: "$599,999",
 			startdate: 2012,
@@ -107,7 +107,7 @@
 		},
 		{
 			title: "CAREER: Enabling and Exploiting Evidence-Based Bug Triage",
-			funder: "National Science Foundation",
+			funder: "National Science Foundation, award 1153625",
 			investigators: "Andrew J. Ko (PI)",
 			amount: "$592,456",
 			startdate: 2010,

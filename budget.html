@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html manifest="cache_manifest.manifest">
+<head>
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="media/budget.png"/>
+
+	<title>Budget</title>
+
+	<style type="text/css">
+	
+		body {
+		    overflow:hidden;
+		    background:#000;
+		    margin:0;
+		    padding:0;
+		    background-color: white;
+		    color: black;
+		    font-family: "Helvetica Neue";
+		    font-weight: 100;
+		    height: 100%;
+		    width: 100%;
+		}
+		
+		#budget {
+		    width: 100%;
+		}
+		
+		#keypad {
+			width: 100%;
+			height: 50%;
+			position: fixed;
+			top: 33%;
+			left: 0;
+		}
+		
+		.key {
+			width: 32%;
+			height: 32%;
+			display: inline-block;
+			margin: 0px;
+			text-align: center;
+			vertical-align: middle;
+			font-size: 16vw;
+			color: black;
+		}
+		
+		#remaining, #amount {
+			text-align: right;
+			font-size: 56pt;
+			margin-right: .25em;
+			margin-bottom: .25em;
+		}
+
+		#info {
+			position: absolute;
+			width: 33%;
+			height: 33%;
+			top: 1em;
+			left: 1em;
+		}
+
+		#perday, #spent {
+			font-size: 9pt;
+			text-align: center;
+			color: black;
+		}
+		
+		#plot {
+			width: 100%;
+			height: 35%;
+		}
+				
+		#categoryBox {
+			position: absolute;
+			width: 33%;
+			height: 10%;
+			top: 18%;
+			left: 1em;
+			color: white;
+		}
+		
+		#category {
+			display: inline-block;	
+			width: 100%;
+			height: 1.25em;
+			padding-top: .25em;
+			padding-bottom: .25em;
+			text-align: center;
+			font-size: 32pt;
+			margin-bottom: 4px;
+			color: white;
+		}
+		
+		#history {
+			margin-top: 20px;
+			display: none;
+			padding: 3px;
+			text-align: right;
+			color: black;
+		}
+
+		.entry {
+			margin-bottom: 5px;		
+		}
+		
+		.category {
+			font-size: 20pt;
+			padding: 5px;
+			width: 100%;
+			text-align: center;
+			text-shadow: 1px 1px 1px #000;
+			display: inline-block;
+		}
+		
+		.amount {
+			padding-left: 5px;
+			font-size: 26pt;
+		}
+
+		#reset {
+			width:318px;
+			margin-top: 25px;
+			text-align: center;
+			font-size: 48pt;
+			display: none;
+			border: 1px solid white;
+		}
+		
+		#history table {
+			border: none;
+			width: 100%;
+		}
+		
+		#history table td:nth-child(2) {
+			color: white;
+		}
+		
+		#confirm {
+			position: fixed;
+			display: none;
+			top: 0px;
+			left: 0px;
+		    width: 400px;
+		    height: 480px;
+			background-color: white;
+			color: black
+			z-index: 2;
+		}
+		
+	</style>
+
+	<script type='text/javascript'>
+
+		var categoryColors = {
+			eat: 'rgb(255,128,128)',
+			groc: 'rgb(255,255,128)',
+			misc: 'rgb(255,128,255)',
+			car: 'rgb(128,128,255)',
+			fun: 'rgb(128,255,128)',
+			inc: 'rgb(128,255,255)'
+		};
+	
+		var amount = "";
+		var sign = "-";
+		var category = "eat";
+
+		window.onload = function() {
+		
+			if(localStorage.getItem("remaining") === null) {
+				localStorage.remaining = "0";
+			}
+			if(localStorage.getItem("history") === null) {
+				localStorage.history = "[]";
+			}
+
+			update();
+		
+		};
+		
+		function reset() {
+		
+			localStorage.remaining = "0";
+			localStorage.history = "[]";
+			amount = "";
+			sign = "-";
+			var category = "eat";
+
+			update();
+		
+		}
+		
+		function appendDigit(digit) {
+
+			if(amount.length >= 4)
+				return;
+
+			if(amount === "" && digit === 0)
+				return;
+				
+			amount = amount + digit;
+			update();
+		
+		}
+		
+		function deleteLastDigit() {
+		
+			if(amount.length > 0) {
+			
+				amount = amount.substring(0, amount.length - 1);
+				update();
+			
+			}
+		
+		}
+		
+		function addHistory(category, amount) {
+		
+			var history = JSON.parse(localStorage.getItem('history'));
+			
+			history.push([ getDate(), category, amount ]);
+			
+			localStorage.history = JSON.stringify(history);
+		
+		}
+		
+		function getAmountRemaining() {
+		
+			return parseInt(localStorage.getItem("remaining"));
+		
+		}
+		
+		function enter() {
+		
+			if(amount === "")
+				return;
+		
+			var remainingNumber = getAmountRemaining();
+			var amountNumber = parseInt(amount);
+
+			if(remainingNumber === NaN || amountNumber === NaN)
+				return;
+
+			if(sign === "-")
+				amountNumber = -amountNumber;
+
+			addHistory(category, amountNumber);
+
+			remainingNumber += amountNumber;
+			
+			localStorage.setItem("remaining", remainingNumber);
+			
+			amount = "";
+			sign = "-";
+			
+			update();
+		
+		}
+		
+		function toggleSign() {
+		
+			if(sign === "+") sign = "-";
+			else sign = "+";
+			
+			update();
+		
+		}
+
+		function getPayDay() {
+			
+			return [25,25,25,25,25,25,25,25,25,25,25,25][(new Date()).getMonth()];
+			
+		}
+
+		function getDaysInMonth() {
+		
+			today = new Date();
+
+			// If we're past pay day, return the number of days in the next month.
+			if(today.getDate() >= getPayDay())
+				today.setMonth(today.getMonth() + 1);
+		
+			return new Date(today.getYear(), today.getMonth(), 0).getDate();
+			
+		}
+		
+		function getDaysRemaining() {
+		
+			var payday = getPayDay();
+			var daysInMonth = getDaysInMonth();
+		
+			var date = (new Date()).getDate();
+			var daysRemaining = date < payday ? (payday - date - 1) : (daysInMonth - date) + payday;
+			
+			return daysRemaining;
+		
+		}
+		
+		function update() {
+		
+			var signtext = sign === "+" ? "+" : "&minus;";
+		
+			document.getElementById('remaining').innerHTML = "$" + localStorage.getItem("remaining");
+			document.getElementById('amount').innerHTML = (amount === "" ? "" : signtext) + "$" + (amount === "" ? "0" : amount);
+			document.getElementById('keysign').innerHTML = signtext;
+
+			document.getElementById('remaining').style.color = 
+				(parseInt(localStorage.getItem("remaining")) < 0) ? "red" : "green";
+
+			document.getElementById('amount').style.color = 
+				(amount === "" ? "white" : sign === "-" ? "red" : "green");
+		
+			var daysLeft = getDaysRemaining();
+		
+			var perDayText = "$" + (Math.floor(getAmountRemaining() / daysLeft)) + "/day, " + daysLeft + " days";
+
+			var net = Math.floor(getAmountRemaining() - (getTotalIncome() / getDaysInMonth()) * daysLeft);
+
+			var extraAmountText = "<span style='color:" + (net < 0 ? "red" : "green") + "'>$" + net  + ", " + daysLeft + " days left</span>";
+		
+			document.getElementById('perday').innerHTML = extraAmountText;
+
+			document.getElementById('category').innerHTML = category;
+			document.getElementById('category').style.backgroundColor = categoryColors[category];
+		
+			if(!keypadIsVisible()) {
+
+				var history = JSON.parse(localStorage.history);
+				var newHTML = "";
+				
+				for(var i = 0; i < history.length; i++) {
+				
+					newHTML = 
+						"<tr>" + 
+						"<td width='100px'>" +
+						"<span class='date'>" + dayToString(history[i][0]) + "</span>" +
+						"</td>" +
+						"<td width='100px'>" + 
+						"<span style='background-color: " + categoryColors[history[i][1]] + "' class='category'>" + history[i][1] + "</span>" +
+						"</td>" +
+						"<td>" +
+						"<span class='amount'>$" + history[i][2] + "</span>" +
+						"</td>" +
+						"</tr>" +
+						newHTML;
+				
+				}
+				
+				newHTML = "<table>" + newHTML + "</table>";
+
+				document.getElementById('history').innerHTML = newHTML;
+			
+			}
+			
+			drawPlot();
+		
+		}
+		
+		function drawPlot() {
+			
+			drawSpentText();
+			drawStackedPlot();
+			
+		}
+		
+		function drawSpentText() {
+			
+			// Update spent text
+			var history = JSON.parse(localStorage.history);
+
+			// Prepare a dictionary to store the category totals			
+			var total = 0;
+			var totals = {};
+			for(var cat in categoryColors)
+				totals[cat] = 0;
+			
+			// Go through each transaction and accumulate the totals
+			for(var i = 0; i < history.length; i++) {
+				var amount = parseInt(history[i][2]);
+				totals[history[i][1]] += amount;
+				// We don't include the income in the graph.
+				if(history[i][1] !== 'inc')
+					total += amount;
+			}
+		
+			// Now update spent text
+			var amount = totals[category];
+			document.getElementById('spent').innerHTML = "$" + Math.abs(amount) + (amount < 0 ? ' spent' : ' earned');
+
+		}
+		
+		function getTotalIncome() {
+			
+			var history = JSON.parse(localStorage.history);
+			var totalIncome = 0;
+			for(var i = 0; i < history.length; i++) {
+				if(history[i][1] == 'inc')
+					totalIncome += parseInt(history[i][2]);
+			}
+			return totalIncome;
+			
+		}
+		
+		function drawStackedPlot() {
+			
+			var history = JSON.parse(localStorage.history);
+
+			var totalIncome = getTotalIncome();
+						
+			var plot = document.getElementById('plot');
+			
+			var daysInMonth = getDaysInMonth();
+			var daysRemaining = getDaysRemaining();
+
+			var verticalPadding = 10;
+			
+			var width = plot.width;
+			var height = plot.height - verticalPadding * 2;
+			var ctx = plot.getContext("2d");
+			var left = 0;
+			var top = verticalPadding;
+			var barWidth = width / daysInMonth + 2;
+			
+			ctx.clearRect(0, 0, width, height);
+
+			var lastTop = {};
+			for(var cat in categoryColors)
+				lastTop[cat] = null;
+
+			// Loop through the days, drawing a stack for each day
+			for(var day = 0; day < daysInMonth; day++) {
+
+				// Go through each transaction and accumulate the totals until we reach the current day
+				var lastDay = null;
+				var daysElapsed = 0;
+
+				// Initialize this day's totals
+				var total = 0;
+				var totals = {};
+				for(var cat in categoryColors)
+					totals[cat] = 0;
+
+				var reachedPayDay = false;
+
+				for(var i = 0; i < history.length; i++) {
+				
+					// If the number of days we've passed is greater than the number of days elapsed in this month, stop.
+					if(daysElapsed > day)
+						break;
+						
+					if(history[i][0] < getPayDay() || history[i][0] < lastDay)
+						reachedPayDay = true;
+
+					var amount = parseInt(history[i][2]);
+
+					// If the current last date is different than this transaction's date, then we've reached a new day.
+					if(lastDay != null && lastDay != history[i][0]) {
+					
+						// We ignore everything before the last pay day since it doesn't count in this month's budget.
+						if(reachedPayDay) {
+							// Ignore days before pay period
+							if(history[i][0] > lastDay)
+								daysElapsed += history[i][0] - lastDay;
+							else {
+								daysInLastMonth = (new Date((new Date()).getYear(),(new Date()).getMonth() - 1,0)).getDate();
+								daysElapsed += (daysInLastMonth - lastDay) + history[i][0];
+							}
+						}
+						
+					}
+						
+					// Remember the previous date
+					lastDay = history[i][0];
+										
+					// We don't include the income in the graph.
+					if(history[i][1] !== 'inc') {
+						totals[history[i][1]] += amount;
+						total += amount;
+					}
+						
+				}
+				
+				// Draw the stacked bars
+				var left = width * (day / (1.0 * daysInMonth));
+				var top = height;
+				var totalBarHeight = height * Math.abs(total / totalIncome);
+
+				for(var cat in categoryColors) {
+			
+					// Skip the income category
+					if(cat !== 'inc') {
+				
+						var amount = totals[cat];
+						var barHeight = totalBarHeight * Math.abs(amount / total);
+
+						ctx.fillStyle = categoryColors[cat];
+						ctx.fillRect(left, top - barHeight, barWidth, barHeight);
+						
+						top -= barHeight;
+						
+					}
+				
+				}
+
+				// Then draw the smoothed tops of the bars
+				var left = width * (day / daysInMonth);
+				var top = height;
+				var totalBarHeight = height * Math.abs(total / totalIncome);
+
+				for(var cat in categoryColors) {
+			
+					// Skip the income category
+					if(cat !== 'inc') {
+				
+						var amount = totals[cat];
+						var barHeight = totalBarHeight * Math.abs(amount / total);
+
+						ctx.fillStyle = categoryColors[cat];
+						
+						top -= barHeight;
+					
+						var currentTop = top;
+
+						// Draw the sloped stack to smooth the graph
+						if(lastTop[cat] != null) {
+		
+							var lastLeft = Math.round(width * ((day - 1) / daysInMonth));
+							var currentLeft = Math.round(width * (day / daysInMonth));
+							var heightDelta = Math.abs(currentTop - lastTop[cat]);
+							
+							for(var x = lastLeft; x <= currentLeft; x++) {
+		
+								if(currentTop < lastTop[cat]) {
+									var padbarheight = heightDelta * ((x - lastLeft) / (currentLeft - lastLeft));
+									ctx.fillRect(x, currentTop - padbarheight + heightDelta + 1, 1, padbarheight);
+								}
+								else {
+									var padbarheight = heightDelta * (1 - ((x - lastLeft) / (currentLeft - lastLeft)));
+									ctx.fillRect(x + barWidth, currentTop - padbarheight + 1, 1, padbarheight);
+								}
+								
+							}
+							
+						}
+						
+						lastTop[cat] = currentTop;
+	
+					}
+				
+				}
+
+				// If we've reached the end of history, stop plotting.
+				if(day >= daysInMonth - daysRemaining - 1)
+					break;
+				
+			}		
+			
+			ctx.strokeStyle = "rgb(0,0,0)";
+
+			// Diagonal
+			ctx.beginPath();
+			ctx.moveTo(0, height);
+			ctx.lineTo(width, 0);
+			ctx.stroke();
+
+			// Halfway vertical
+			ctx.beginPath();
+			ctx.moveTo(width / 2, height);
+			ctx.lineTo(width / 2, 0);
+			ctx.stroke();
+						
+		}
+		
+		
+		function drawHorizontalPlot() {
+				
+			var history = JSON.parse(localStorage.history);
+
+			// Prepare a dictionary to store the category totals			
+			var total = 0;
+			var totals = {};
+			for(var cat in categoryColors)
+				totals[cat] = 0;
+			
+			// Go through each transaction and accumulate the totals
+			for(var i = 0; i < history.length; i++) {
+				var amount = parseInt(history[i][2]);
+				totals[history[i][1]] += amount;
+				// We don't include the income in the graph.
+				if(history[i][1] !== 'inc')
+					total += amount;
+			}
+
+			// Now draw plot
+			var plot = document.getElementById('plot');
+			
+			var widthElapsed = plot.width * (1 - getAmountRemaining() / totals['inc']);
+			var daysInMonth = getDaysInMonth();
+			var widthExpectedElapsed = plot.width * ((daysInMonth - getDaysRemaining()) / daysInMonth);
+
+			var verticalPadding = 10;
+			
+			var width = widthElapsed;
+			var height = plot.height - verticalPadding * 2;
+			var ctx = plot.getContext("2d");
+			var left = 0;
+			var top = verticalPadding;
+			
+			ctx.clearRect(0, 0, width, height);
+			
+			for(var cat in categoryColors) {
+			
+				// Skip the income category
+				if(cat !== 'inc') {
+			
+					var amount = totals[cat];
+					var length = width * (amount / total);
+					
+					ctx.fillStyle = categoryColors[cat];
+					ctx.fillRect(left, top, length, height);
+					
+					left += length;
+					
+				}
+			
+			}
+
+			// How ahead of the budget are we?
+			var expected = plot.width * (daysInMonth - getDaysRemaining()) / daysInMonth;
+			
+			var thickness = 5;
+			ctx.fillStyle = "rgb(255,255,255)";
+			ctx.fillRect(widthExpectedElapsed, top - verticalPadding, thickness, height + verticalPadding * 2);
+			ctx.fillRect(plot.width - thickness, top - verticalPadding, thickness, height + verticalPadding * 2);
+		
+		}
+		
+		function keypadIsVisible() {
+
+			return document.getElementById('keypad').style.display == "block";		
+		
+		}
+		
+		function getDate() {
+		
+			return (new Date()).getDate();
+		
+		}
+		
+		function dayToString(day) {
+
+			if(day == getDate()) return "today";
+			else if(day == getDate() - 1) return "yesterday";
+
+			if(day == 11) return "11th";
+			else if(day == 12) return "11th";
+			else if(day == 13) return "11th";
+		
+			var mod = day % 10;
+			switch(mod) {
+				case 0: return day + "th";
+				case 1: return day + "st";
+				case 2: return day + "nd";
+				case 3: return day + "rd";
+				case 4: return day + "th";
+				case 5: return day + "th";
+				case 6: return day + "th";
+				case 7: return day + "th";
+				case 8: return day + "th";
+				case 9: return day + "th";
+			}
+		
+		}
+		
+		function toggleCategory() {
+		
+			var found = false;
+			var foundFirst = false;
+			var assigned = false;
+			var firstCategory = null;
+			for(var cat in categoryColors) {
+
+				if(!foundFirst) {
+					firstCategory = cat;
+					foundFirst = true;
+				}
+
+				if(found) {
+					category = cat;
+					assigned = true;
+					break;
+				}
+				else if(cat === category)
+					found = true;
+			
+			}
+			if(!assigned)
+				category = firstCategory;		
+		
+			update();
+		
+		}
+		
+		function toggleKeypad() {
+		
+			var keypad = document.getElementById('keypad');
+			var history = document.getElementById('history');
+			var reset = document.getElementById('reset');
+			
+			if(keypad.style.display == "") {
+				keypad.style.display = "none";
+				history.style.display = "block";
+				reset.style.display = "block";
+			}
+			else {
+				keypad.style.display = "";
+				history.style.display = "none";
+				reset.style.display = "none";
+			}
+		
+			update();
+		
+		}
+		
+		function confirm() {
+		
+			document.getElementById('budget').style.display = "none";
+			document.getElementById('confirm').style.display = "block";
+		
+			update();
+
+			scroll(0,0);
+		
+		}
+		
+		function hideConfirm() {
+			
+			document.getElementById("budget").style.display = "block"; 
+			document.getElementById("confirm").style.display = "none"
+
+			update();
+			
+		}
+	
+	
+	</script>
+
+</head>
+
+<body>
+
+	<div id='budget'>
+	
+		<div id='info'>
+			<canvas id='plot'></canvas>
+			<div id='perday'></div>
+		</div>
+		<div id='remaining' ontouchstart='toggleKeypad();'></div>
+		<div id='categoryBox'>
+			<div class='category' id='category' ontouchstart='toggleCategory();'></div>
+			<div id='spent'></div>
+		</div>
+		<div class='amount' id='amount' ontouchstart='enter();'></div>
+
+		<div id='history'></div>
+		<div class='key' id='reset' ontouchstart='confirm()'>reset</div>
+	
+		<div id='keypad'>
+		
+			<!-- The non-breaking spaces are here because the iPhone thinks these consecutive digits are a phone number! -->
+			<span class='key' id='key1' ontouchstart='appendDigit(1);'>&nbsp;1&nbsp;</span>
+			<span class='key' id='key2' ontouchstart='appendDigit(2);'>&nbsp;2&nbsp;</span>
+			<span class='key' id='key3' ontouchstart='appendDigit(3);'>&nbsp;3&nbsp;</span>
+			<span class='key' id='key4' ontouchstart='appendDigit(4);'>&nbsp;4&nbsp;</span>
+			<span class='key' id='key5' ontouchstart='appendDigit(5);'>&nbsp;5&nbsp;</span>
+			<span class='key' id='key6' ontouchstart='appendDigit(6);'>&nbsp;6&nbsp;</span>
+			<span class='key' id='key7' ontouchstart='appendDigit(7);'>&nbsp;7&nbsp;</span>
+			<span class='key' id='key8' ontouchstart='appendDigit(8);'>&nbsp;8&nbsp;</span>
+			<span class='key' id='key9' ontouchstart='appendDigit(9);'>&nbsp;9&nbsp;</span>
+			<span class='key' id='keysign' ontouchstart='toggleSign();'>+</span>
+			<span class='key' id='key0' ontouchstart='appendDigit(0);'>&nbsp;0&nbsp;</span>
+			<span class='key' id='keydelete' ontouchstart='deleteLastDigit();'>del</span>
+		
+		</div>
+		
+		<div id='debug'>
+		</div>
+		
+	</div>
+
+	<div id='confirm'>
+		<br>
+		<br>
+		<div style='font-size: 36pt;text-align:center'>are you sure?</div>
+		<br>
+		<div style='text-align:center'>
+			<div class='key' ontouchstart='reset();hideConfirm()'>yes</div>
+			<div class='key' ontouchstart='hideConfirm();'>no</div>
+		</div>
+	</div>
+
+</body>

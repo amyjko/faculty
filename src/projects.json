@@ -20,7 +20,7 @@
 		"description": "We're exploring new ways to teach programming problem solving, including the process, strategies, and self-awareness required to successfully solve programming problems.",
 		"funding": ["NSF Exploratory Programming"],
 		"people": ["dloksa", "ajko"],
-		"papers": ["csproblemsolving1","csproblemsolving2","ideagardenjvlc","gidget6"],
+		"papers": ["csproblemsolving1","csproblemsolving2","ideagardenjvlc","gidget6", "pstutor1"],
 		"demo": null,
 		"video": null,
 		"startdate": 2015,
