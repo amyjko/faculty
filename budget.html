@@ -85,6 +85,17 @@
 			font-weight: bold;
 		}
 
+		#confirm {
+			position: fixed;
+			display: none;
+			top: 16%;
+			left: 20px;
+			right: 20px;
+			height: 10%;
+			text-align: center;
+			z-index: 2;
+		}
+
 		#amount {
 			text-align: right;
 			font-size: 48pt;
@@ -109,22 +120,24 @@
 			color: white;
 			border-radius: 25px;
 		}
-				
-		#confirm {
-			position: fixed;
-			display: none;
-			top: 0px;
-			left: 0px;
-		    width: 400px;
-		    height: 480px;
-			background-color: black;
-			color: white
-			z-index: 2;
-		}
 		
 		.label {
 			font-size: 12px;
 			font-weight: bold;
+		}
+			
+		.good {
+			color: #00AFB5;
+		}
+		
+		.bad {
+			color: #A30000;
+		}
+		
+		.button {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 48px;
 		}
 				
 	</style>
@@ -345,7 +358,7 @@
 			
 			// Make a bar for the last amount for feedback and to facilitate undo.
 			if(maxAmount >= 0)
-				chart = chart + " <div class='lastAmount'>$" + Math.abs(amount) + "</div>";			
+				chart = chart + " <div class='lastAmount'>$" + Math.abs(amount) + "</div>";
 
 			document.getElementById('chart').innerHTML = chart;
 			
@@ -450,20 +463,22 @@
 		
 		}
 		
-		function confirm() {
+		function showConfirm(event) {
+
+			event.stopPropagation();
 		
-			document.getElementById('budget').style.display = "none";
+			document.getElementById('chart').style.display = "none";
 			document.getElementById('confirm').style.display = "block";
 		
 			update();
-
-			scroll(0,0);
 		
 		}
 		
-		function hideConfirm() {
+		function hideConfirm(event) {
+
+			event.stopPropagation();
 			
-			document.getElementById("budget").style.display = "block"; 
+			document.getElementById("chart").style.display = "block"; 
 			document.getElementById("confirm").style.display = "none"
 
 			update();
@@ -487,7 +502,7 @@
 		
 		<div class='amount' id='amount' ontouchstart='enter();'></div>
 
-		<div id='chart' ontouchstart='confirm()'></div>
+		<div id='chart' ontouchstart='showConfirm(event)'></div>
 
 		<div id='keypad'>
 		
@@ -510,14 +525,9 @@
 	</div>
 
 	<div id='confirm'>
-		<br>
-		<br>
-		<div style='font-size: 36pt;text-align:center'>reset history?</div>
-		<br>
-		<div style='text-align:center'>
-			<div class='key' ontouchstart='reset();hideConfirm()'>yes</div>
-			<div class='key' ontouchstart='hideConfirm();'>no</div>
-		</div>
+		<div class='button bad' ontouchstart='hideConfirm(event);'>keep</div>
+		&nbsp;
+		<div class='button good' ontouchstart='reset(); hideConfirm(event);'>reset</div>
 	</div>
 
 </body>
