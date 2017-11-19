@@ -73,6 +73,7 @@
 			width: 3px;
 			vertical-align: middle;
 			border-radius: 25px;
+			margin-right: 2px;
 		}
 		
 		.lastAmount {
@@ -80,6 +81,7 @@
 			vertical-align: middle;
 			font-size: 12px;
 			color: white;
+			font-weight: bold;
 		}
 
 		#amount {
@@ -121,6 +123,7 @@
 		
 		.label {
 			font-size: 12px;
+			font-weight: bold;
 		}
 				
 	</style>
@@ -128,14 +131,17 @@
 	<script type='text/javascript'>
 
 		var categoryColors = {
-			eat: 'rgb(255,32,32)',
-			groc: 'rgb(220,220,0)',
-			misc: 'rgb(255,32,255)',
-			car: 'rgb(32,32,255)',
-			fun: 'rgb(32,255,32)',
-			inc: 'rgb(32,255,255)'
+			eat: '#A30000',
+			groc: '#004777',
+			misc: '#FF7700',
+			car: '#EFD28D',
+			fun: '#00AFB5',
+			inc: '#000000'
 		};
-	
+
+		var goodColor = "#00AFB5";
+		var badColor = "#A30000";
+
 		var amount = "";
 		var sign = "-";
 		var category = "eat";
@@ -272,10 +278,7 @@
 		}
 		
 		function update() {
-		
-			var goodColor = "rgb(32,255,32)";
-			var badColor = "rgb(255,32,32)";
-		
+				
 			var signtext = sign === "+" ? "+" : "&minus;";
 		
 			var daysLeft = getDaysRemaining();
