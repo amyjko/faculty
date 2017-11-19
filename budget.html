@@ -74,6 +74,13 @@
 			vertical-align: middle;
 			border-radius: 25px;
 		}
+		
+		.lastAmount {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 12px;
+			color: white;
+		}
 
 		#amount {
 			text-align: right;
@@ -271,7 +278,9 @@
 		
 			var signtext = sign === "+" ? "+" : "&minus;";
 		
-			document.getElementById('remaining').innerHTML = "<span>$" + localStorage.getItem("remaining") + "<div class='label'>this month</div></span>";
+			var daysLeft = getDaysRemaining();
+
+			document.getElementById('remaining').innerHTML = "<span>$" + localStorage.getItem("remaining") + "<div class='label'>" + daysLeft + " days left</div></span>";
 			document.getElementById('amount').innerHTML = (amount === "" ? "" : signtext) + "$" + (amount === "" ? "0" : amount);
 			document.getElementById('keysign').innerHTML = signtext;
 
@@ -280,9 +289,7 @@
 
 			document.getElementById('amount').style.color = 
 				(amount === "" ? "white" : sign === "-" ? badColor : goodColor);
-		
-			var daysLeft = getDaysRemaining();
-		
+				
 			var perDayText = "$" + (Math.floor(getAmountRemaining() / daysLeft)) + "/day, " + daysLeft + " days";
 
 			var net = Math.floor(getAmountRemaining() - (getTotalIncome() / getDaysInMonth()) * daysLeft);
@@ -308,9 +315,11 @@
 				if(history[i][1] !== 'inc')
 					maxAmount = Math.max(Math.abs(history[i][2]), maxAmount);
 			}
+
+			// Spread the entries across the width of the plot, leaving room for the label at the end.			
+			var width = Math.max(1, Math.floor(95 / history.length));
 			
-			var width = Math.max(1, Math.floor(100 / history.length));
-			
+			// Make a bar for each of the entries.
 			for(var i = 0; i < history.length; i++) {
 
 				var category = history[i][1];
@@ -329,6 +338,9 @@
 				}
 			
 			}
+			
+			// Make a bar for the last amount for feedback and to facilitate undo.
+			chart = chart + " <div class='lastAmount'>$" + Math.abs(amount) + "</div>";			
 
 			document.getElementById('chart').innerHTML = chart;
 			
