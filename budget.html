@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html manifest="cache_manifest.manifest">
 <head>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,viewport-fit=cover,user-scalable=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#black-translucent" />
-    <link rel="apple-touch-icon" href="media/budget.png"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon" href="budget.png"/>
 
 	<title>Budget</title>
 
@@ -313,7 +314,7 @@
 			var history = JSON.parse(localStorage.history);
 			var chart = "";
 
-			var maxAmount = 0;
+			var maxAmount = -1;
 			for(var i = 0; i < history.length; i++) {
 				if(history[i][1] !== 'inc')
 					maxAmount = Math.max(Math.abs(history[i][2]), maxAmount);
@@ -343,7 +344,8 @@
 			}
 			
 			// Make a bar for the last amount for feedback and to facilitate undo.
-			chart = chart + " <div class='lastAmount'>$" + Math.abs(amount) + "</div>";			
+			if(maxAmount >= 0)
+				chart = chart + " <div class='lastAmount'>$" + Math.abs(amount) + "</div>";			
 
 			document.getElementById('chart').innerHTML = chart;
 			
