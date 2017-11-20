@@ -12,7 +12,6 @@
 	<style type="text/css">
 	
 		body {
-		    overflow:hidden;
 		    background-color:#000;
 		    margin:0;
 		    padding:0;
@@ -115,7 +114,6 @@
 			padding-bottom: .25em;
 			text-align: center;
 			font-size: 32pt;
-			font-weight: bold;
 			margin-bottom: 4px;
 			color: white;
 			border-radius: 25px;
@@ -162,9 +160,6 @@
 
 		window.onload = function() {
 		
-			if(localStorage.getItem("remaining") === null) {
-				localStorage.remaining = "0";
-			}
 			if(localStorage.getItem("history") === null) {
 				localStorage.history = "[]";
 			}
@@ -175,7 +170,6 @@
 		
 		function reset() {
 		
-			localStorage.remaining = "0";
 			localStorage.history = "[]";
 			amount = "";
 			sign = "-";
@@ -221,7 +215,13 @@
 		
 		function getAmountRemaining() {
 		
-			return parseInt(localStorage.getItem("remaining"));
+			var history = JSON.parse(localStorage.getItem('history'));
+			var amount = 0;
+			
+			for(var i = 0; i < history.length; i++)
+				amount += history[i][2];		
+		
+			return amount;
 		
 		}
 		
@@ -230,20 +230,12 @@
 			if(amount === "")
 				return;
 		
-			var remainingNumber = getAmountRemaining();
 			var amountNumber = parseInt(amount);
-
-			if(remainingNumber === NaN || amountNumber === NaN)
-				return;
 
 			if(sign === "-")
 				amountNumber = -amountNumber;
 
 			addHistory(category, amountNumber);
-
-			remainingNumber += amountNumber;
-			
-			localStorage.setItem("remaining", remainingNumber);
 			
 			amount = "";
 			sign = "-";
@@ -252,6 +244,17 @@
 		
 		}
 		
+		function undo() {
+		
+
+			var history = JSON.parse(localStorage.getItem('history'));
+			history.pop();
+			localStorage.history = JSON.stringify(history);
+					
+			update();
+
+		}
+
 		function toggleSign() {
 		
 			if(sign === "+") sign = "-";
@@ -296,20 +299,19 @@
 			var signtext = sign === "+" ? "+" : "&minus;";
 		
 			var daysLeft = getDaysRemaining();
+			var amountRemaining = getAmountRemaining();
 
-			document.getElementById('remaining').innerHTML = "<span>$" + localStorage.getItem("remaining") + "<div class='label'>" + daysLeft + " days left</div></span>";
+			document.getElementById('remaining').innerHTML = "<span>$" + amountRemaining + "<div class='label'>" + daysLeft + " days left</div></span>";
 			document.getElementById('amount').innerHTML = (amount === "" ? "" : signtext) + "$" + (amount === "" ? "0" : amount);
 			document.getElementById('keysign').innerHTML = signtext;
 
-			document.getElementById('remaining').style.color = 
-				(parseInt(localStorage.getItem("remaining")) < 0) ? badColor : goodColor;
+			document.getElementById('remaining').style.color = amountRemaining < 0 ? badColor : goodColor;
 
-			document.getElementById('amount').style.color = 
-				(amount === "" ? "white" : sign === "-" ? badColor : goodColor);
+			document.getElementById('amount').style.color = amount === "" ? "white" : sign === "-" ? badColor : goodColor;
 				
-			var perDayText = "$" + (Math.floor(getAmountRemaining() / daysLeft)) + "/day, " + daysLeft + " days";
+			var perDayText = "$" + (Math.floor(amountRemaining / daysLeft)) + "/day, " + daysLeft + " days";
 
-			var net = Math.floor(getAmountRemaining() - (getTotalIncome() / getDaysInMonth()) * daysLeft);
+			var net = Math.floor(amountRemaining - (getTotalIncome() / getDaysInMonth()) * daysLeft);
 
 			var extraAmountText = "<span style='color:" + (net < 0 ? badColor : goodColor) + "'>$" + net + "<div class='label'>today</div></span>";
 		
@@ -334,7 +336,7 @@
 			}
 
 			// Spread the entries across the width of the plot, leaving room for the label at the end.			
-			var width = Math.max(1, Math.floor(95 / history.length));
+			var width = Math.max(1, Math.floor(90 / history.length));
 			
 			// Make a bar for each of the entries.
 			for(var i = 0; i < history.length; i++) {
@@ -359,6 +361,8 @@
 			// Make a bar for the last amount for feedback and to facilitate undo.
 			if(maxAmount >= 0)
 				chart = chart + " <div class='lastAmount'>$" + Math.abs(amount) + "</div>";
+			else
+				chart = "<div class='button'>no purchases</div>";
 
 			document.getElementById('chart').innerHTML = chart;
 			
@@ -526,6 +530,8 @@
 
 	<div id='confirm'>
 		<div class='button bad' ontouchstart='hideConfirm(event);'>keep</div>
+		&nbsp;
+		<div class='button' ontouchstart='undo();hideConfirm(event);'>undo</div>
 		&nbsp;
 		<div class='button good' ontouchstart='reset(); hideConfirm(event);'>reset</div>
 	</div>
