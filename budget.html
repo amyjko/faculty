@@ -336,7 +336,7 @@
 			}
 
 			// Spread the entries across the width of the plot, leaving room for the label at the end.			
-			var width = Math.max(1, Math.floor(90 / history.length));
+			var width = Math.min(10, Math.max(1, Math.floor(90 / history.length)));
 			
 			// Make a bar for each of the entries.
 			for(var i = 0; i < history.length; i++) {
