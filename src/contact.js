@@ -55,6 +55,8 @@ class ContactInfo extends React.Component {
 				<a href="https://twitter.com/andyjko" className="twitter-follow-button" data-show-count="false" ref="follow"></a>
 				
 				<p><a target="_blank" href="https://github.com/andyjko"><img style={{height: "1em"}} src="images/GitHub-Mark-120px-plus.png" /> GitHub</a></p>
+
+				<p><a href="https://medium.com/bits-and-behavior" target='_blank'>Blog</a></p>
 		
 			</div>		
 		</div>

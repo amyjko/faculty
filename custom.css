@@ -9,6 +9,7 @@
 
 body {
 	font-weight: 300;
+	font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Custom page header */
@@ -72,10 +73,6 @@ blockquote {
 	display: inline-block;
     margin-bottom: 3px;
     border-radius: 3px;
-}
-
-.cv {
-	font-family: "Georgia", "Helvetica";
 }
 
 .student-mug {

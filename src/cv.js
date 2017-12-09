@@ -28,7 +28,7 @@ class Chunk extends React.Component {
 					<p>
 						<strong>{this.props.header}</strong>
 						{this.props.two ? <span><br/>{this.props.two}</span> : null}
-						{three ? <span>, {three}</span> : null}
+						{three ? <span>{three}</span> : null}
 						{this.props.four ? <small><br/>{this.props.four}</small> : null}
 						{this.props.five ? <small><br/>{this.props.five}</small> : null}
 					</p>

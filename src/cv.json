@@ -211,6 +211,10 @@
 	
 	awards: [
 		{
+			title: "UW Information School PROF award, Nominee (for evidence-based design education and faculty mentoring)",
+			year: 2017
+		},
+		{
 			title: "ACM SIGCHI Exceptional Reviewer (CHI 2017)",
 			year: 2017
 		},
@@ -838,6 +842,11 @@
 		}
 	],
 	programChair: [
+		{
+			title: "Program Co-Chair",
+			venue: "International Conference on Software Engineering (ICSE), Software Engineering Education and Training Track", 
+			dates: "2020"
+		},
 		{
 			title: "Program Sub-Committee Chair",
 			venue: "ACM Conference on Human Factors in Computing (CHI)", 
