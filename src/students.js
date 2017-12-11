@@ -62,8 +62,11 @@ class Students extends React.Component {
 		
 		return (
 			<div>
-				<div className="lead">Are you interested in doing a Ph.D. with me? Apply to the <a href="http://ischool.uw.edu/phd" target="_blank">iSchool</a> or <a href="http://www.cs.washington.edu/education/grad/prospective.html" target="_blank">CSE</a>. I work with students in both units as part of <a href="http://dub.washington.edu/" target="_blank">dub</a>. Below are all of the students I'm currently working with, and all those who've graduated.</div>
+			
+				<p>My lab includes doctoral and undergraduate students from the Information School, Computer Science & Engineering, and other units on campus. I run the lab in a student-centered manner: students define their own projects within the scope of my interests, and often move me into new research areas. I typically write grants to support students' research, rather than make students work within the grant money I've raised. Students frequently collaborate with each other and with students outside of the lab.</p>
 
+				<p>Are you interested in doing a Ph.D. with me? Apply to the <a href="http://ischool.uw.edu/phd" target="_blank">iSchool</a> or <a href="http://www.cs.washington.edu/education/grad/prospective.html" target="_blank">CSE</a>, but note that I have much more control over iSchool admissions. Below are all of the students I'm currently working with, and all those who've graduated.</p>
+				
 				<h3>Current Advisees</h3>
 				{activePeople}
 
