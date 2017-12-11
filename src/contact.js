@@ -48,15 +48,15 @@ class ContactInfo extends React.Component {
 	
 					</p>
 					
-					<p>Office hours: Tue/Thu 330-430, but verify by email.</p>
-
-				</small>
+					<p>Office hours: Wed 330-430</p>
 				
 				<a href="https://twitter.com/andyjko" className="twitter-follow-button" data-show-count="false" ref="follow"></a>
 				
 				<p><a target="_blank" href="https://github.com/andyjko"><img style={{height: "1em"}} src="images/GitHub-Mark-120px-plus.png" /> GitHub</a></p>
 
-				<p><a href="https://medium.com/bits-and-behavior" target='_blank'>Blog</a></p>
+				<p><a href="https://medium.com/bits-and-behavior" target='_blank'>Blog</a> | <Link to="/cv">CV</Link></p>
+
+				</small>
 		
 			</div>		
 		</div>
