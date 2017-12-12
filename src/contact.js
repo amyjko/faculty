@@ -35,25 +35,15 @@ class ContactInfo extends React.Component {
 			</div>
 
 			<div className="col-xs-6 col-sm-4 col-md-4">
-
-				<span className="lead">&nbsp;</span>
-
 				<small>
-
-					<p><a href="https://twitter.com/andyjko" className="twitter-follow-button" data-show-count="false" ref="follow"></a></p>
-						
-					<p><a target="_blank" href="https://github.com/andyjko"><img style={{height: "1em"}} src="images/GitHub-Mark-120px-plus.png" /> GitHub</a></p>
-
-					<p>ajko@uw.edu</p>
-
-					<p><a href="https://medium.com/bits-and-behavior" target='_blank'>Blog</a> &sdot; <Link to="/cv">CV</Link></p>
-					
-					<p><a href="https://www.google.com/maps/place/Mary+Gates+Hall.+University+of+Washington/@47.6549552,-122.3101087,994m/data=!3m2!1e3!4b1!4m2!3m1!1s0x549014f2a95c2899:0xb2525ccd291489c!6m1!1e1" target="_blank">Mary Gates Hall 015E</a></p>
-					
-					<p>Office hours: Wed 330-430</p>
-
-				</small>
-				
+					<br/>Office hours: W 330-430
+					<br/><a href="https://www.google.com/maps/place/Mary+Gates+Hall.+University+of+Washington/@47.6549552,-122.3101087,994m/data=!3m2!1e3!4b1!4m2!3m1!1s0x549014f2a95c2899:0xb2525ccd291489c!6m1!1e1" target="_blank">Mary Gates Hall 015E</a>
+					<br/><a href="https://twitter.com/andyjko" className="twitter-follow-button" data-show-count="false" ref="follow"></a>
+					<br/>ajko@uw.edu
+					<br/><a target="_blank" href="https://github.com/andyjko"><img style={{height: "1em"}} src="images/GitHub-Mark-120px-plus.png" /> GitHub</a>
+					<br/><a href="https://medium.com/bits-and-behavior" target='_blank'>Blog</a>
+					<br/><Link to="/cv">CV</Link>
+				</small>				
 			</div>
 			
 			<div className="col-xs-6 col-sm-4 col-md-4">
