@@ -34,7 +34,7 @@
 		"description": "Why is learning to code so difficult? In this series of studies, we've investigated several barriers, including programming environments, learning trajectories, and documentation. Our latest work is investigating social and identity factors that pose barriers to learning.",
 		"funding": [],
 		"people": ["ajko", "kthayer"],
-		"papers": ["barriers", "codebios", "feasibility", "statscomprehension", "bootcamps"],
+		"papers": ["barriers", "codebios", "feasibility", "statscomprehension", "bootcamps", "ellblockstudio"],
 		"demo": null,
 		"video": null,
 		"startdate": 2004,
@@ -47,7 +47,7 @@
 		"name": "Informal Mentorship in Computing",
 		"description": "Teachers and formal mentors can play a large role in shaping student learning, but informal mentors such as friends, siblings, parents, and even online acquaintences can play an equally important role. Our work investigates the role of these relationships on identity and interest development, specifically in computing.",
 		"funding": [],
-		"people": ["ajko"],
+		"people": ["ajko", "lkhwa"],
 		"papers": ["mentors1", "mentors2"],
 		"demo": null,
 		"video": null,
@@ -90,7 +90,7 @@
 		"description": "User interfaces are structured documents, allowing us to analyze, reverse engineer, and transform them. We're using techniques from program analysis and synthesis to create powerful techniques for making the web more accessible, usable, and useful.",
 		"funding": ["NSF Exploratory Programming"],
 		"people": ["amaswea", "ajko"],
-		"papers": ["genie"],
+		"papers": ["genie", "rewire"],
 		"demo": null,
 		"video": [
 			{ title: "See Genie", url: "https://www.youtube.com/watch?v=Ivtvyy7m-qc" }

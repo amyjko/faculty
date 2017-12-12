@@ -1,5 +1,47 @@
 [
 	{
+		"id":"rewire",
+		"kind":"refereed conference paper",
+		"authors":"Amanda Swearngin, Wil Li, Mira Dontcheva, Morgan Dixon, and Andrew J. Ko",
+		"year": 2018,
+		"title":"Rewire: Interface Design Assistance from Examples",
+		"source": "ACM SIGCHI Conference on Human Factors in Computing Systems (CHI)",
+		"location": "Montreal, Canada",
+		"pages":"to appear",
+		"acceptance rate":null,
+		"authorizer":"",
+		"digital library url":null,
+		"local url":null,
+		"talk url":null,
+		"award":"",
+		"volume":null,
+		"issue":null,
+		"article":null,
+		"publisher":"",
+		"contribution":"Presents a technique for automatically converting screenshots of imagines into vector representations for use by designers. Demonstrates that designers find the technique accurate enough and superior to replicating user interfaces manually."
+	},
+	{
+		"id":"ellblockstudio",
+		"kind":"refereed conference paper",
+		"authors":"Rahul Banerjee, Jason C. Yip, Andrew J. Ko, Caroline Pit, Kiley R. Sobel, Kung Lee, Leanne Liu, Meng Wang, and Zoran Popovic",
+		"year": 2018,
+		"title": "Empowering Families Facing English Literacy Challenges to Jointly Engage in Computer Programming",
+		"source":"ACM SIGCHI Conference on Human Factors in Computing Systems (CHI)",
+		"location": "Montreal, Canada",
+		"pages":"to appear",
+		"acceptance rate":null,
+		"authorizer":"",
+		"digital library url":null,
+		"local url":null,
+		"talk url":null,
+		"award":"",
+		"volume":null,
+		"issue":null,
+		"article":null,
+		"publisher":"",
+		"contribution":"Investigates how a programming-by-demonstration programming environment with no English text can facilitate joint-media engagement between children and their parents."
+	},
+	{
 		"id":"mentors2",
 		"kind":"refereed conference paper",
 		"authors":"Andrew J. Ko, Leanne Hwa, Katie Davis, and Jason Yip",
@@ -18,7 +60,7 @@
 		"issue":null,
 		"article":null,
 		"publisher":"",
-		"contribution":""
+		"contribution":"Investigates the nature of informal computing mentoring relationships amongst students seeking to be the first in their family to attend college. Demonstrates that mentorship occurs even in low-resource settings with little CS expertise, and most often amongst peers and siblings."
 	},
 	{
 		"id":"tracing",
@@ -39,7 +81,7 @@
 		"issue":null,
 		"article":null,
 		"publisher":"",
-		"contribution":""
+		"contribution":"Describes and evaluates a simple but powerful strategy for scaffolding the tracing of program execution. With less than 30 minutes of practice, novices in a CS1 course had midterm grades 7% higher."
 	},
 	{
 		"id":"teachaccess1",
@@ -60,7 +102,7 @@
 		"issue":null,
 		"article":null,
 		"publisher":"",
-		"contribution":""
+		"contribution":"Investigates the prevelance of instruction on accessibility among computing and information science faculty. Finds that nearly all HCI faculty teach something about accessibility, that most faculty want to teach it, but don't have the experience, and don't know how it fits into their course content."
 	},
 	{
 		"id":"pstutor1",
@@ -81,7 +123,7 @@
 		"issue":null,
 		"article":null,
 		"publisher":"",
-		"contribution":""
+		"contribution":"Briefly overviews a vision for programming process worked examples that demonstrate an expert working through a programming problem."
 	},
 	{
 		"id":"gidgetabandoment",
