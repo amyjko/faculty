@@ -70,7 +70,6 @@
 
 		.bar {
 			display: inline-block;
-			width: 3px;
 			vertical-align: middle;
 			border-radius: 25px;
 			margin-right: 2px;
@@ -336,7 +335,7 @@
 			}
 
 			// Spread the entries across the width of the plot, leaving room for the label at the end.			
-			var width = Math.min(10, Math.max(1, Math.floor(90 / history.length)));
+			var width = Math.min(10, 90.0 / history.length);
 			
 			// Make a bar for each of the entries.
 			for(var i = 0; i < history.length; i++) {
@@ -350,7 +349,7 @@
 					var amount = history[i][2];
 					var height = Math.floor((100 * Math.abs(amount)) / maxAmount);
 				
-					var bar = "<div class='bar' style='background-color: " + color + ";width:" + width + "%;height:" + height + "%'>&nbsp;</div>";
+					var bar = "<div class='bar' style='background-color: " + color + ";width:calc(" + width + "%-2px);height:" + height + "%'>&nbsp;</div>";
 					
 					chart = chart + bar;
 					
