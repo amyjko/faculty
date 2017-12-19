@@ -115,20 +115,20 @@ class Projects extends React.Component {
 		
 		return (
 			<div>
-				<p>My mission is to <em>discover effective, equitable, and scalable ways for humanity to learn computing</em>. To achieve this, I direct the <Link to={"/students"}>Code & Cognition Lab</Link>, working with many wonderful <Link to={"/students"}>students</Link> to <Link to={"/publications"}>publish</Link> and <Link to={"/impact"}>share</Link> research on <Link to={"/cer"}>computing education</Link> (<Link to={"/cer"}>what's this?</Link>), human-computer interaction, and software engineering.</p>
+				<p>I research <strong>effective, equitable, and scalable ways for humanity to learn computing</strong>. To achieve this, I direct the <Link to={"/students"}>Code & Cognition Lab</Link>, working with many wonderful <Link to={"/students"}>students</Link> to <Link to={"/publications"}>publish</Link> and <Link to={"/impact"}>share</Link> research on computing education, human-computer interaction, and software engineering. Want to know more about the vibrant computing education research community? Read <Link to={"/cer"}>my FAQ</Link>.</p>
 				
-				<p>I do this with the help of several communities:</p>
+				<p>I do this work with several communities:</p>
 
 				<ul>
-					<li>I lead <a target="_blank" href="http://soundcsed.org">Sound CS Ed</a>, a regional community of computing education researchers and practioners.</li>
-					<li>I'm a co-founder of <a target="_blank" href="http://dub.washington.edu/">DUB</a>, a grassroots alliance of HCI+Design faculty, students, and industry partners.</li>
-					<li>I'm a member of <a target="_blank" href="http://uwplse.org/">PLSE</a>, UW CSE's Programming Languages and Software Engineering group.</li>
-					<li>I'm a member of the <a href="https://digitalyouth.ischool.uw.edu/" target="_blank">Digital Youth Lab</a>, which explores the role of technology in the lives of young people</li>
+					<li>I lead <a target="_blank" href="http://soundcsed.org">Sound CS Ed</a>, a community of Puget Sound computing education researchers and practioners. We have <a href="https://sites.google.com/uw.edu/soundcsed/meetups">quarterly meetups</a>.</li>
+					<li>I'm a co-founder of <a target="_blank" href="http://dub.washington.edu/">DUB</a>, a grassroots alliance of HCI+Design faculty, student, and industry researchers. We have <a href="http://dub.washington.edu/calendar.html">weekly seminars</a>.</li>
+					<li>I'm a member of <a target="_blank" href="http://uwplse.org/">PLSE</a>, UW CSE's Programming Languages and Software Engineering group. We have <a href="http://uwplse.org/colloquia/">frequent seminars</a>.</li>
+					<li>I'm a member of the <a href="https://digitalyouth.ischool.uw.edu/" target="_blank">Digital Youth Lab</a>, which includes faculty and students studying the role of technology in the lives of young people. We hold quarterly meetups.</li>
 				</ul>
 
 				<h3>Active Projects</h3>
 
-				<p>This is what I'm working on now, but new projects are always in the works!</p>
+				<p>These are areas we're actively investigating, but I'm always exploring new topics!</p>
 						
 				{active}
 	
