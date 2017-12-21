@@ -11,61 +11,40 @@ class Advice extends React.Component {
 		return (
 			<div>
 				<div className='lead'>
-					When I was in grad school, I always found collections of advice to be incredibly helpful. These are some of my favorite resources, along with some of my own advice.
+					When I was in grad school, I always found advice pages on faculty websites to be incredibly helpful. Some of my favorites include those by <a href="http://www.cs.washington.edu/homes/mernst/advice/">Mike Ernst</a> (software engineering), <a href="http://people.engr.ncsu.edu/txie/advice.htm">Tao Xie</a> (software engineering) and <a href="http://www.cs.cmu.edu/~jasonh/advice.html">Jason Hong</a> (HCI). Below I include some of my own advice.
 				</div>
 
-				<h3>Other advice collections</h3>
-				
 				<ul>
-					<li><a href="http://people.engr.ncsu.edu/txie/advice.htm">Tao Xie's advice collection</a> software engineering slant</li>
-					<li><a href="http://www.cs.washington.edu/homes/mernst/advice/">Mike Ernst's advice collection</a> software engineering slant</li>
-					<li><a href="http://www.cs.cmu.edu/~jasonh/advice.html">Jason Hong's advice collection</a> HCI slant</li>
+					<li><a href="#csis">What is the difference between computer science and information science?</a></li>
+					<li><a href="#phdadmissions">How do I get into a Ph.D. program?</a></li>
+					<li><a href="#phdstudent">What is it like to be a Ph.D. student?</a></li>
+					<li><a href="#goodquestion">What makes a good research question?</a></li>
+					<li><a href="#goodpaper">What makes a good research paper?</a></li>
+					<li><a href="#goodwriting">How can I become a good technical writer?</a></li>
+					<li><a href="#review">I was asked to review a paper. Should I?</a></li>
+					<li><a href="#wheretopublish">Where should I publish work at the intersection of HCI and software engineering?</a></li>
+					<li><a href="#evaluation">How should I evaluate this developer tool I invented?</a></li>
+					<li><a href="#copyright">My paper was accepted. Which ACM copyright option should I choose?</a></li>
 				</ul>
 
-				<h3>How do I get into a Ph.D. program?</h3>
+				<h3 id="csis">What is the difference between computer science and information science?</h3>
 				
-				<ul>
-					<li>A <a href="http://www.pgbovine.net/PhD-application-tips.htm">brutally honest glimpse</a> into how Philip and many others review Ph.D. applicants.</li>
-				</ul>
-				
-				<h3>How do I be a good Ph.D. student?</h3>
-
-				<ul>			
-					<li><a href="http://pgbovine.net/PhD-memoir.htm"> A nice Ph.D. memoir</a> by Philip Guo, who was at Stanford CS. It has a definite slant toward CS and software engineering academic culture, but it's a useful read to anyone thinking about a Ph.D.</li>
-					<li><a href="http://www.pgbovine.net/guo-faculty-job-search.pdf">A nice memoir on faculty job searches</a>, also by Philip Guo. This is also oriented toward a CS audience, but has many similar elements to other fields.</li>
-					<li><a href="http://matt.might.net/articles/successful-phd-students/">Matt Might's advice on being a successful Ph.D. student</a></li>
-					<li><a href="https://freedom-to-tinker.com/2010/09/27/advice-new-graduate-students/">Jennifer Rexford's view of Ph.D. life as individual growth by leveraging the group</a></li>
-					<li>The Economist on <a href="http://www.economist.com/node/17723223?fsrc=scn/fb/wl/ar/mr/disposableacademic">Why doing a PhD is often a waste of time</a></li>
-										<li>On saying <a href="http://chronicle.com/blogs/onhiring/right-of-refusal/31609?sid=at&utm_source=at&utm_medium=en">no</a></li>
-					<li>Schwartz MA. <a href="http://jcs.biologists.org/cgi/content/full/121/11/1771">The importance of stupidity in scientific research</a>. J Cell Sci. 2008 Jun 1;121(Pt 11):1771.</li>
-					<li><a href="http://www.phdcomics.com/comics.php">Ph.D. comics</a></li>
-
-				</ul>
-
-				<h3>How do I do statistics?</h3>
-				
-				<p>Never fear, my excellent friend and colleague <a href="https://faculty.washington.edu/wobbrock/">Jacob Wobbrock</a> is here to help:</p>
-				
-				<ul>
-					<li>Read Wobbrock, J. O., & Kay, M. (2016). <a href="http://link.springer.com/chapter/10.1007/978-3-319-26633-6_7">Nonparametric Statistics in Human-Computer Interaction</a>. In Modern Statistical Methods for HCI (pp. 135-170). Springer International Publishing.</li>
-					<li>Take his MOOC, <a href="https://www.coursera.org/learn/designexperiments">Designing, Running, and Analyzing Experiments</a></li>				
-				</ul>
-				
-				<h3>How do I get things published?</h3>
-
-				<ul>			
-					<li><a href="http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/">Matt Might's advice on technical writing</a></li>
-					<li>A deconstruction of <a href="https://sites.umiacs.umd.edu/elm/2016/11/19/writing-rebuttals/">what makes a good rebuttal to conference reviews</a></li>
-				</ul>
-				
-				<h3>Should I major in Computer Science or Informatics?</h3>
-				
-				<p>When UW undergraduates ask me to compare the majors, here's what I send them:</p>
+				<p>When people ask me this, here's what I usually say:</p>
 
 				<blockquote>
 				I think of Computer Science and Informatics like we think about Physics versus Engineering: the former concerns itself with a phenomenon as it occurs in nature and the latter is concerned with applications of it for humanity. CS fundamentally asks what is computing, what can be computed, how can it be computed. Informatics fundamentally asks what should be computed, how should computation be used, what role does computing play in society. If you find computing intrinsically interesting and wouldn't mind talking about it endlessly, CS is a great major for you. If you just want use it as a tool to solve the world's problems, Informatics is a great major for you. Some people are interested in both. Maybe that's you! Both are competitive majors, both lead to wonderful jobs, and both will teach you a lot about the world, one from the perspective of computing, one from the perspective of humanity. Both perspectives are necessary and valuable.
 				</blockquote>
+
+				<h3 id="phdadmissions">How do I get into a Ph.D. program?</h3>
 				
+				<p>Philip Guo gives a <a href="http://www.pgbovine.net/PhD-application-tips.htm">brutally honest glimpse</a> into how he and others review Ph.D. applicants in HCI and other areas of computing. I do similar things, but also look for glimpses of potential and common interest.</p>	
+
+				
+				<h3 id="phdstudent">What is it like to be a Ph.D. student?</h3>
+
+				<p>There are many, many resources on this. Philip Guo write a <a href="http://pgbovine.net/PhD-memoir.htm"> a nice Ph.D. memoir</a> about his experiences at Stanford. It has a definite slant toward CS and software engineering academic culture, but it's a useful read to anyone thinking about a Ph.D. <a href="http://matt.might.net/articles/successful-phd-students/">Matt Might's advice</a> is similar sobering, but practical. I also like <a href="https://freedom-to-tinker.com/2010/09/27/advice-new-graduate-students/">Jennifer Rexford's view of Ph.D. life as individual growth by leveraging the group</a>, because it complements more pragmatic views. The Economist also has some practical advice on <a href="http://www.economist.com/node/17723223?fsrc=scn/fb/wl/ar/mr/disposableacademic">Why doing a PhD is often a waste of time</a>. And, for a lighter glimpse into Ph.D. life, there is always <a href="http://www.phdcomics.com/comics.php">Ph.D. comics</a>.</p>
+
+
 				<h3 id="goodquestion">What makes a good research question?</h3>
 				
 				<p>Good questions are <b>feasible</b> to answer (you have some method by which you can answer it), <b>novel</b> (you've read enough prior work to know that the answer isn't known), and <b>important</b> (human beings in the world would care about the answer). It's non-trivial to find a question that satisfies all three.</p>
@@ -77,6 +56,7 @@ class Advice extends React.Component {
 				<p>To assess importance, you have to know something about what the academic world and broader society thinks is important. Developing this sense takes time, and often requires submitting research for peer review. Trust your advisors instincts, but also develop your own. Go to conferences, discuss the ideas with people in your community and see how they react to your question. Do they find it interesting or important?</p>
 				
 				<p>If these three activities weren't hard enough, most of them lead to failure, requiring iteration: you may find out a question isn't feasible, that it's already been answered, or that no one thinks the question is important. This is why Ph.D. students, who may be expected to answer multiple "good" research questions to get a Ph.D., may take 5-7 years to complete their dissertation.</p>
+				
 				
 				<h3 id="goodpaper">How do I write a good research paper?</h3>
 				
@@ -118,7 +98,7 @@ class Advice extends React.Component {
 						
 				<p>Now, this is not the process that every researcher follows. Some people do the above in an entirely different order, and sometimes that works out. This is particularly true of invention, where you might just start with an interesting "what if", spend months or years inventing, and then return to the rest of the steps above to figure out what the problem was, what the related work is, etc. All of these alternatives are a perfectly reasonable alternative to the process I sketch out above, but I find that any deviation from the process above tends to be less reliable at producing good research. I use the approach above, and out of the ~90 papers I've submitted in my career so far, only 10 were never published. Something's working!</p>
 				
-				<p>Bured in the advice above is also the small matter how to actually go about drafting a paper. Here are some steps that I follow.</p>
+				<p>Buried in the advice above is also the small matter how to actually go about drafting a paper. Here are some steps that I follow.</p>
 				
 				<ol>
 					<li><b>Outline</b>. Start by creating a detailed outline of the paper with top level headers for each major section and, for each section, a bulleted list containing the topic sentences of each paragraph you would write. Live in this document. Treat it like a prototype. Get feedback on the argumentation and topic sentences from experts and iterate on it like hell. Make sure every argument is clear before ever try to write a complete paragraph. Cut everything that doesn't support the central claim of the paper, which is that you have rigorously answered the questions you posed. Estimate if you're going to go over length by counting your topic sentences throughout the paper. Each one will be about 200 words and a typical conference paper is 10,000 words. If you're working on an outline full time, you should be able to have a solid one in a few days.</li>
@@ -126,21 +106,10 @@ class Advice extends React.Component {
 					<li><b>Polish</b>. Now that you have a draft, get feedback on the words and on better ways of presenting and supporting arguments other than words (e.g., figures, tables). Keep giving it to coauthors and addressing their feedback until the only thing they're finding is spelling and grammar problems. The polish phase can go on forever. Give it at least a week of full-time writing effort to get into submittable shape. It sometimes takes 2-3 weeks, especially if you're rendering complex figures or tables.</li>
 				</ol>
 
-				<h3>How should I evaluate the fancy new developer tool I invented?</h3>
-				
-				<p>I often get questions from CS and software engineering researchers asking for help to design studies to evaluate what they've built. I could write a whole book on this (and <a href="http://www.amazon.com/Research-Methods-Statistics-Psychology-Coolican/dp/0340812583">several</a> <a href="http://www.amazon.com/Research-Methods-Psychology-John-Shaughnessy/dp/007128351X/ref=sr_1_1?s=books&ie=UTF8&qid=1281625862&sr=1-1">people</a> <a href="http://www.socialresearchmethods.net/">have</a>, just not on the topic of CS research).</p>
-				
-				<p>For my part, I wrote a journal paper that walks through several practical details of evaluating developer tools:</p>
 
-				<hr/>
-				<Paper {...practicalToolEvaluations} />				
-				<hr/>
+				<h3 id="goodwriting">How can I become a good technical writer?</h3>
 				
-				<p>Several of my colleagues in software engineering and programming languages also wrote a well reasoned analysis of <em>claims</em> in evaluations called <a href="http://dl.acm.org/citation.cfm?id=2983574">The Truth, The Whole Truth, and Nothing But the Truth: A Pragmatic Guide to Assessing Empirical Evaluations</a>. This is a great lens through which to evaluate the validity of your evaluation.</p>
-				
-				<h3>Common mistakes in technical writing</h3>
-				
-				<p>When writing and reviewing scientific papers, there are a lot of mistakes one can make. I've been trying to gather a list of these mistakes, both for my benefit and yours. Disagree with any of these? Have any other scientific reporting pet peeves? Let me know!</p>
+				<p>When writing and reviewing scientific papers, there are a lot of mistakes one can make. <a href="http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/">Matt Might's advice on technical writing</a> is a helpful guide, as is this deconstruction of <a href="https://sites.umiacs.umd.edu/elm/2016/11/19/writing-rebuttals/">what makes a good rebuttal to conference reviews</a>. As someone who's reviewed hundreds of papers, I find many common mistakes:</p>
 				
 				<ul>
 				
@@ -161,12 +130,9 @@ class Advice extends React.Component {
 					<li><b>Tentative language</b>. Perhaps, maybe, might, could, may. Words like these usually mean that the author is speculating. Speculation is fine, as long as it occurs in a section of the paper that deserves spectulation.</li>
 				
 				</ul>
-				
-				<h3>How do I write a paper on simple system?</h3>
-				
-				<p>I've been asked a few times for advice on publishing work on techniques with subtle, but simple design choices. I'm definitely not the expert on this, but I have a few pointers. First, publishing this work is all about setting up your claims and supporting them. Which subtle design decisions were important and what evidence do you have of this? One class of work that comes to mind is Luis von Ahn's human computation work. None of the games he's written about have intrinsically interesting technical properties, but most are subtle design choices (see <a href="http://portal.acm.org/citation.cfm?id=1124782">Peekaboom</a>). I also think of Julie Kientz work, since most of her papers are about applications with fairly simple features, but composed in domain-significant ways (see <a href="http://portal.acm.org/citation.cfm?id=1180909">Abaris</a>). Caitlin Kelleher's dissertation work also had several nice measurements. She was interested in motivating middle school girls to program and made several subtle design choices to do this. The key to her work was finding ways to measure motivation; she decided to inject breaks into her sessions and see if the kids would sneak in extra time, sacrificing their breaks (see <a href="http://portal.acm.org/citation.cfm?id=1240844">Storytelling Alice</a>).</p>
-								
-				<h3>Should I review this paper?</h3>
+
+
+				<h3 id="review">I was asked to review a paper. Should I?</h3>
 				
 				<p>My Ph.D. students often ask me whether they should accept a paper review request. Here's some of the advice I give them for doing or not doing it:</p>
 				
@@ -188,20 +154,34 @@ class Advice extends React.Component {
 					<li>You honestly don't have the time because of some exceptional circumstance.</li>
 					<li>You're overloaded on other service commitments.</li>
 				</ul>
-								
-				<h3>I have some work at the intersection of HCI and software engineering; where should I submit it?</h3>
+
+
+				<h3 id="wheretopublish">Where should I publish work at the intersection of HCI and software engineering?</h3>
 				
 				<p>There is single no premier venue dedicated for this work, but there are many fantastic conferences that are open to submissions on this work:</p>
 				
 				<ul>
-					<li><b>ACM/IEEE International Conference on Software Engineering (ICSE)</b>. One of the top software engineering conferences, this community is mostly interested in human aspects of professional software engineering and innovative new software development tools.</li>
+					<li><b>ACM/IEEE International Conference on Software Engineering (ICSE)</b>. One of the top software engineering conferences, this community is mostly interested in human aspects of professional software engineering and innovative interactive developer tools.</li>
 					<li><b>IEEE Visual Languages and Human-Centric Computing (VL/HCC)</b>. This community is mostly interested in innovative interactive programming tools, whether for novices, end-user programmers, or professionals.</li>
-					<li><b>ACM Conference on Human Factors in Computing (CHI)</b>. This is a massive, top tier HCI conference that really covers anything related to people interacting with computers.</li>
-					<li><b>ACM Symposium on User Interface Software and Technology (UIST)</b>. This community is most interested in new ways of interacting with computers, including innovative new ways to interact with programs.</li>
-					<li><b>ACM International Conference on Computing Education (ICER)</b>. This community is strictly interested in the teaching and learning of computing construed broadly. If your research is related to learning, this is the premier venue for it.</li>
+					<li><b>ACM Conference on Human Factors in Computing (CHI)</b>. This is a massive, top-tier HCI conference that really covers anything related to people interacting with computers. There are often two or three sessions dedicated to interactive aspects of software development, whether by professionals, novices, or end-user programmers.</li>
+					<li><b>ACM Symposium on User Interface Software and Technology (UIST)</b>. This community is most interested in new ways of interacting with computers, including innovative new ways to interact with code.</li>
+					<li><b>ACM International Conference on Computing Education (ICER)</b>. This community is strictly interested in the teaching and learning of computing construed broadly. If your research is related to learning to code, this is the premier venue for it.</li>
 				</ul>
 
-				<h3>Which ACM copyright option should I choose?</h3>
+
+				<h3 id="evaluation">How should I evaluate this developer tool I invented?</h3>
+				
+				<p>I often get questions from researchers asking for help to design studies to evaluate the developer tool what they've built. I could write a whole book on this (and <a href="http://www.amazon.com/Research-Methods-Statistics-Psychology-Coolican/dp/0340812583">several</a> <a href="http://www.amazon.com/Research-Methods-Psychology-John-Shaughnessy/dp/007128351X/ref=sr_1_1?s=books&ie=UTF8&qid=1281625862&sr=1-1">people</a> <a href="http://www.socialresearchmethods.net/">have</a>, just not on the topic of CS research).</p>
+				
+				<p>For my part, I wrote a journal paper that walks through several practical details of evaluating developer tools:</p>
+
+				<hr/>
+				<Paper {...practicalToolEvaluations} />				
+				<hr/>
+				
+				<p>Several of my colleagues in software engineering and programming languages also wrote a well reasoned analysis of <em>claims</em> in evaluations called <a href="http://dl.acm.org/citation.cfm?id=2983574">The Truth, The Whole Truth, and Nothing But the Truth: A Pragmatic Guide to Assessing Empirical Evaluations</a>. This is a great lens through which to evaluate the validity of your evaluation.</p>
+
+				<h3 id="copyright">Which ACM copyright option should I choose?</h3>
 				
 				<p>Casey Fiesler has <a href="http://caseyfiesler.com/2014/10/02/acm-publication-copyright/">a helpful blog post</a> about this decision.</p>
 
