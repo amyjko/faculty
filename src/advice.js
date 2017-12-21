@@ -201,6 +201,10 @@ class Advice extends React.Component {
 					<li><b>ACM International Conference on Computing Education (ICER)</b>. This community is strictly interested in the teaching and learning of computing construed broadly. If your research is related to learning, this is the premier venue for it.</li>
 				</ul>
 
+				<h3>Which ACM copyright option should I choose?</h3>
+				
+				<p>Casey Fiesler has <a href="http://caseyfiesler.com/2014/10/02/acm-publication-copyright/">a helpful blog post</a> about this decision.</p>
+
 			</div>
 		);
 	}
