@@ -29,9 +29,15 @@ class Biography extends React.Component {
 
 				<p>I have a relatively short academic lineage. I was advised by...</p>
 				<ul>
-					<li>Brad Myers, Ph.D., Carnegie Mellon University, who was advised by...</li>
-					<li>Ronald Baecker, Ph.D., University of Toronto (and Bill Buxton, unofficially), who was advised by...</li>
-					<li>Edward L. Glaser., A.B., Dartmouth College, who taught Ron at MIT.</li>
+					<li><a href="http://www.cs.cmu.edu/~bam/">Brad Myers</a>, (Ph.D., University of Toronto), who was advised by...</li>
+					<li><a href="http://ron.taglab.ca/">Ronald Baecker</a>, (Ph.D., MIT) and Bill Buxton (unofficially), who was advised by...</li>
+					<li>Edward L. Glaser., A.B., (Dartmouth College), who taught Ron at MIT.</li>
+				</ul>
+				
+				<p>As an undergraduate, I was also advised by...</p>
+				<ul>
+					<li><a href="http://web.engr.oregonstate.edu/~burnett/">Margaret Burnett</a> (Ph.D., University of Kansas), who was advised by...</li>
+					<li>Allen Ambler, University of Kansas</li>
 				</ul>
 				
 			</div>

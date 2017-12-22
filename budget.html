@@ -73,6 +73,7 @@
 			vertical-align: middle;
 			border-radius: 25px;
 			margin-right: 2px;
+			min-width: 2px;
 		}
 		
 		.lastAmount {
@@ -349,7 +350,7 @@
 					var amount = history[i][2];
 					var height = Math.floor((100 * Math.abs(amount)) / maxAmount);
 				
-					var bar = "<div class='bar' style='background-color: " + color + ";width:calc(" + width + "%-2px);height:" + height + "%'>&nbsp;</div>";
+					var bar = "<div class='bar' style='background-color: " + color + ";width:calc(" + width + "%-2px);height:" + height + "%'></div>";
 					
 					chart = chart + bar;
 					
