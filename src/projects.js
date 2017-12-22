@@ -115,7 +115,7 @@ class Projects extends React.Component {
 		
 		return (
 			<div>
-				<p>I research <strong>effective, equitable, and scalable ways for humanity to learn computing</strong>. To achieve this, I direct the <Link to={"/students"}>Code & Cognition Lab</Link>, working with many wonderful <Link to={"/students"}>students</Link> to <Link to={"/publications"}>publish</Link> and <Link to={"/impact"}>share</Link> research on computing education, human-computer interaction, and software engineering. Want to know more about the vibrant computing education research community? Read <Link to={"/cer"}>my FAQ</Link>.</p>
+				<div className="lead">I research <strong>effective, equitable, and scalable ways for humanity to learn computing</strong>. To achieve this, I direct the <Link to={"/students"}>Code & Cognition Lab</Link>, working with many wonderful <Link to={"/students"}>students</Link> to <Link to={"/publications"}>publish</Link> and <Link to={"/impact"}>share</Link> research on computing education, human-computer interaction, and software engineering. Want to know more about the vibrant computing education research community? Read <Link to={"/cer"}>my computing education research FAQ</Link>.</div>
 				
 				<p>I do this work with several communities:</p>
 
