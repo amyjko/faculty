@@ -10,7 +10,7 @@ class Books extends React.Component {
 
 				<div className="project row">
 					<div className="col-md-3">
-						<img className='img-responsive gap-bottom-right' src="/books/design-methods/images/cover.jpg" style={{width: 140}} />
+						<img className='img-responsive gap-bottom-right' src="/ajko/books/design-methods/images/cover.jpg" style={{width: 140}} />
 					</div>
 					<div className="col-md-9">
 						<div className='lead'><a target="_blank" href="/ajko/books/design-methods">Design Methods</a>. <small>This short book covers interaction design, design methods, and HCI fundamentals. I have my students read it in the first five weeks of class, then launch into a five week design project.</small></div>	
@@ -19,7 +19,7 @@ class Books extends React.Component {
 
 				<div className="project row">
 					<div className="col-md-3">
-						<img className='img-responsive gap-bottom-right' src="/books/cooperative-software-development/images/cover.jpg" style={{width: 140}} />
+						<img className='img-responsive gap-bottom-right' src="/ajko/books/cooperative-software-development/images/cover.jpg" style={{width: 140}} />
 					</div>
 					<div className="col-md-9">
 						<div className='lead'><a target="_blank" href="/ajko/books/design-methods">Cooperative Software Development</a>. <small>This short book covers software engineering fundamentals, but from a human, social, collaborative, and organizational perspective, rather than from a technical perspective. </small></div>	
