@@ -22,7 +22,7 @@ class Books extends React.Component {
 						<img className='img-responsive gap-bottom-right' src="/ajko/books/cooperative-software-development/images/cover.jpg" style={{width: 140}} />
 					</div>
 					<div className="col-md-9">
-						<div className='lead'><a target="_blank" href="/ajko/books/design-methods">Cooperative Software Development</a>. <small>This short book covers software engineering fundamentals, but from a human, social, collaborative, and organizational perspective, rather than from a technical perspective. </small></div>	
+						<div className='lead'><a target="_blank" href="/ajko/books/cooperative-software-development/">Cooperative Software Development</a>. <small>This short book covers software engineering fundamentals, but from a human, social, collaborative, and organizational perspective, rather than from a technical perspective. </small></div>	
 					</div>
 				</div>
 				
