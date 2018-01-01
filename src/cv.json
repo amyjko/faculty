@@ -882,6 +882,10 @@
 	],
 	programCommittee: [
 		{
+			venue: "International Conference on Software Engineering (ICSE), Program Board",
+			dates: "2019"
+		},
+		{
 			venue: "Programming Experience Workshop (PX)",
 			dates: "2017"
 		},
@@ -898,7 +902,7 @@
 			dates: "2017"
 		},
 		{
-			venue: "International Conference on Software Engineering (ICSE)",
+			venue: "International Conference on Software Engineering (ICSE), Program Committee",
 			dates: "2014, 2016, 2018"
 		},
 		{
