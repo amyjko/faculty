@@ -1,40 +1,12 @@
 [
 	{
-		"id": "codingtutorials",
-		"active": true,
-		"name": "Programming Language Learning",
-		"description": "We're exploring new pedagogies and learning technologies to rapidly teach programming languages.",
-		"funding": ["NSF Cyberlearning"],
-		"people": ["bxie", "glnelson", "ajko"],
-		"papers": ["pltutor1","tutorialeval", "tracing"],
-		"demo": null,
-		"video": null,
-		"startdate": 2016,
-		"stopdate": null,
-		"impact": null
-	},
-	{
-		"id": "problemsolving",
-		"active": true,
-		"name": "Programming Problem Solving",
-		"description": "We're exploring new ways to teach programming problem solving, including the process, strategies, and self-awareness required to successfully solve programming problems.",
-		"funding": ["NSF Exploratory Programming"],
-		"people": ["dloksa", "ajko"],
-		"papers": ["csproblemsolving1","csproblemsolving2","ideagardenjvlc","gidget6", "pstutor1"],
-		"demo": null,
-		"video": null,
-		"startdate": 2015,
-		"stopdate": null,
-		"impact": null
-	},
-	{
 		"id": "learningtocode",
 		"active": true,
 		"name": "Learning Barriers in Programming",
-		"description": "Why is learning to code so difficult? In this series of studies, we've investigated several barriers, including programming environments, learning trajectories, and documentation. Our latest work is investigating social and identity factors that pose barriers to learning.",
-		"funding": [],
-		"people": ["ajko", "kthayer"],
-		"papers": ["barriers", "codebios", "feasibility", "statscomprehension", "bootcamps", "ellblockstudio"],
+		"description": "Why is learning to code so difficult and how can we make it easier? In this series of studies, we've investigated several barriers, including programming environments, learning trajectories, and documentation. Our latest work is investigating social and identity factors that pose barriers to learning, new pedagogies and technologies to rapidly learn programming languages, and new ways to learn programming problem solving.",
+		"funding": ["NSF Exploratory Programming", "NSF Cyberlearning"],
+		"people": ["bxie", "glnelson", "ajko", "dloksa", "kthayer"],
+		"papers": ["csproblemsolving1","csproblemsolving2","ideagardenjvlc","gidget6", "pstutor1", "pltutor1","tutorialeval", "tracing", "barriers", "codebios", "feasibility", "statscomprehension", "bootcamps", "ellblockstudio"],
 		"demo": null,
 		"video": null,
 		"startdate": 2004,
@@ -54,6 +26,23 @@
 		"startdate": 2016,
 		"stopdate": null,
 		"impact": "This work has been done in partnership with the University of Washington's Upward Bound and Summer Youth programs, engaging over 150 students in summer learning computing and participation in research on computing."
+	},
+	{
+		"id": "uimining",
+		"active": true,
+		"name": "User Interface Mining",
+		"description": "User interfaces are structured documents, allowing us to analyze, reverse engineer, and transform them. We're using techniques from program analysis and synthesis to create powerful techniques for making the web more accessible, usable, and useful.",
+		"funding": ["NSF Exploratory Programming"],
+		"people": ["amaswea", "ajko"],
+		"papers": ["genie", "rewire"],
+		"demo": null,
+		"video": [
+			{ title: "See Genie", url: "https://www.youtube.com/watch?v=Ivtvyy7m-qc" },
+			{ title: "See Rewire", url: "https://www.youtube.com/watch?v=9LA8feFOsOo"}
+		],
+		"startdate": 2016,
+		"stopdate": null,
+		"impact": null
 	},
 	{
 		"id": "expertise",
@@ -82,22 +71,6 @@
 		"startdate": 2010,
 		"stopdate": null,
 		"impact": "Gidget has been played by thousands of people online, in summer camps, and in high schools. It has directly informed the design of Code.org's <a href='https://studio.code.org'>Code Studio</a> and Apple's <a href='https://www.apple.com/swift/playgrounds/'>Swift Playgrounds</a>."
-	},
-	{
-		"id": "uimining",
-		"active": true,
-		"name": "User Interface Mining",
-		"description": "User interfaces are structured documents, allowing us to analyze, reverse engineer, and transform them. We're using techniques from program analysis and synthesis to create powerful techniques for making the web more accessible, usable, and useful.",
-		"funding": ["NSF Exploratory Programming"],
-		"people": ["amaswea", "ajko"],
-		"papers": ["genie", "rewire"],
-		"demo": null,
-		"video": [
-			{ title: "See Genie", url: "https://www.youtube.com/watch?v=Ivtvyy7m-qc" }
-		],
-		"startdate": 2016,
-		"stopdate": null,
-		"impact": null
 	},
 	{
 		"id": "methods",

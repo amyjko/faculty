@@ -124,6 +124,7 @@ class Projects extends React.Component {
 					<li>I'm a co-founder of <a target="_blank" href="http://dub.washington.edu/">DUB</a>, a grassroots alliance of HCI+Design faculty, student, and industry researchers. We have <a href="http://dub.washington.edu/calendar.html">weekly seminars</a>.</li>
 					<li>I'm a member of <a target="_blank" href="http://uwplse.org/">PLSE</a>, UW CSE's Programming Languages and Software Engineering group. We have <a href="http://uwplse.org/colloquia/">frequent seminars</a>.</li>
 					<li>I'm a member of the <a href="https://digitalyouth.ischool.uw.edu/" target="_blank">Digital Youth Lab</a>, which includes faculty and students studying the role of technology in the lives of young people. We hold quarterly meetups.</li>
+					<li>I'm a former member and director of the <a href="http://eusesconsortium.org/" target="_blank">EUSES consortium</a>, a multi-institution collaboration on <a href="http://faculty.washington.edu/ajko/publications/eusessurvey">end-user software engineering</a>.</li>
 				</ul>
 
 				<h3>Active Projects</h3>
