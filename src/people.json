@@ -1,5 +1,15 @@
 [
 	{
+		"id": "banerjee",
+		"name": "Rahul Banerjee",
+		"active": true,
+		"advised": false,
+		"level": "phd",
+		"bio": "Rahul works in the Center for Game Science and has worked with the lab on programming by demonstration systems for creating interactive games.",
+		"url": "https://homes.cs.washington.edu/~banerjee/",
+		"startdate": 2015
+	},
+	{
 		"id": "kshino",
 		"name": "Kristen Shinohara",
 		"active": false,

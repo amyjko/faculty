@@ -681,6 +681,12 @@
 	],
 	doctoralCommittee: [	
 		{
+			name: "Alex Kale",
+			department: "The Information School",
+			startdate: 2017,
+			enddate: null
+		},
+		{
 			name: "Aaron Bauer",
 			department: "Computer Science and Engineering",
 			startdate: 2017,

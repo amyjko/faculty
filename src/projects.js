@@ -115,30 +115,27 @@ class Projects extends React.Component {
 		
 		return (
 			<div>
-				<div className="lead">I research <strong>effective, equitable, and scalable ways for humanity to learn computing</strong>. To achieve this, I direct the <Link to={"/students"}>Code & Cognition Lab</Link>, working with many wonderful <Link to={"/students"}>students</Link> to <Link to={"/publications"}>publish</Link> and <Link to={"/impact"}>share</Link> research on computing education, human-computer interaction, and software engineering. Want to know more about the vibrant computing education research community? Read <Link to={"/cer"}>my computing education research FAQ</Link>.</div>
-				
-				<p>I do this work with several communities:</p>
+				<div className="lead">I research <strong>effective, equitable, scalable ways for humanity to learn computing</strong>. To achieve this, I direct the <Link to={"/students"}>Code & Cognition Lab</Link>, working with many wonderful <Link to={"/students"}>students</Link> to <Link to={"/publications"}>publish</Link> and <Link to={"/impact"}>share</Link> research on computing education, human-computer interaction, and software engineering. I do this work with several communities, including <a target="_blank" href="http://soundcsed.org">Sound CS Ed</a>, <a target="_blank" href="http://dub.washington.edu/">DUB</a>, <a target="_blank" href="http://uwplse.org/">UW CSE's PLSE group</a>, the iSchool's <a href="https://digitalyouth.ischool.uw.edu/" target="_blank">Digital Youth Lab</a>, and the <a href="http://eusesconsortium.org/" target="_blank">EUSES consortium</a>.
+			</div>
 
-				<ul>
-					<li>I lead <a target="_blank" href="http://soundcsed.org">Sound CS Ed</a>, a community of Puget Sound computing education researchers and practioners. We have <a href="https://sites.google.com/uw.edu/soundcsed/meetups">quarterly meetups</a>.</li>
-					<li>I'm a co-founder of <a target="_blank" href="http://dub.washington.edu/">DUB</a>, a grassroots alliance of HCI+Design faculty, student, and industry researchers. We have <a href="http://dub.washington.edu/calendar.html">weekly seminars</a>.</li>
-					<li>I'm a member of <a target="_blank" href="http://uwplse.org/">PLSE</a>, UW CSE's Programming Languages and Software Engineering group. We have <a href="http://uwplse.org/colloquia/">frequent seminars</a>.</li>
-					<li>I'm a member of the <a href="https://digitalyouth.ischool.uw.edu/" target="_blank">Digital Youth Lab</a>, which includes faculty and students studying the role of technology in the lives of young people. We hold quarterly meetups.</li>
-					<li>I'm a former member and director of the <a href="http://eusesconsortium.org/" target="_blank">EUSES consortium</a>, a multi-institution collaboration on <a href="http://faculty.washington.edu/ajko/publications/eusessurvey">end-user software engineering</a>.</li>
-				</ul>
+			<p>Want to know more about the vibrant computing education research community? Read <Link to={"/cer"}>my computing education research FAQ</Link>.</p>
 
-				<h3>Active Projects</h3>
+			<h3>Recent Talks</h3>
+			
+			<p>In 2017 I gave the talk "Learning to code why we fail, how we flourish" (<a href="talks/LearningToCode.pdf">PDF</a>) at <a href="https://medium.com/bits-and-behavior/a-visit-to-northwestern-university-cs-for-all-cs-x-and-interdisciplinary-learning-2d4b56fe709b">Northwestern</a>, the <a href="https://medium.com/bits-and-behavior/a-visit-to-the-university-of-michigans-interactive-and-social-computing-group-526b32a9970a">University of Michigan</a>, and <a href="https://medium.com/bits-and-behavior/a-visit-to-stanford-hci-8a392a8b774c">Stanford</a>.</p>
 
-				<p>These are areas we're actively investigating, but I'm always exploring new topics!</p>
-						
-				{active}
-	
-				<br/>
-				<h3>Past Projects</h3>
-				
-				<p>I'm no longer working on these projects, but I'm happy to answer questions about them.</p>
+			<h3>Active Projects</h3>
 
-				{inactive}
+			<p>These are areas we're actively investigating, but I'm always exploring new topics!</p>
+					
+			{active}
+
+			<br/>
+			<h3>Past Projects</h3>
+			
+			<p>I'm no longer working on these projects, but I'm happy to answer questions about them.</p>
+
+			{inactive}
 				
 			</div>
 	    )
