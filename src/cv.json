@@ -915,8 +915,8 @@
 			dates: "2014-2015, 2017-2018"
 		},
 		{
-			venue: "ACM Technical Symposium on Computer Science Education (SIGCSE)",
-			dates: "2016"
+			venue: "ACM Technical Symposium on Computer Science Education (SIGCSE), Meta-reviewer",
+			dates: "2016-2018"
 		},
 		{
 			venue: "Summit on Advances in Programming Languages (SNAPL)",
@@ -1024,8 +1024,8 @@
 	otherService: [
 		{
 			title: "Co-Chair",
-			committee: "ICER Doctoral Consortium",
-			dates: "2018-2019"
+			committee: "Doctoral Consortium, ACM International Computing Education Research Conference",
+			dates: "2018, 2019"
 		},
 		{
 			title: "Member",
