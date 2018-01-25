@@ -357,6 +357,21 @@
 	],
 	invitedtalks: [
 		{
+			title: "Learning to code: how we fail, how we flourish",
+			venue: "Stanford University, Department of Computer Science, HCI Seminar (60+ attendees)",
+			date: "January 12th, 2018"
+		},
+		{
+			title: "Learning to code: how we fail, how we flourish",
+			venue: "University of Michigan, MISC Seminar (60+ attendees)",
+			date: "December 4th, 2017"
+		},
+		{
+			title: "Learning to code: how we fail, how we flourish",
+			venue: "Northwestern University, CS+X Colloqium (60+ attendees)",
+			date: "October 30th, 2017"
+		},
+		{
 			title: "Three Years in the Startup Trenches: Reflections on People, Product, and Software Evolution",
 			venue: "ACM Learning Center Webinar (130+ attendees)",
 			date: "August 4th, 2017"
