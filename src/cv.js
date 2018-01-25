@@ -171,6 +171,8 @@ class Vita extends React.Component {
 			
 				<h3>Courses</h3>
 
+				<p>All scores are <a href="http://www.washington.edu/assessment/course-evaluations/reports/course-reports/adjusted-medians/">adjusted combined medians</a> of responses to the statements <em>The course as a whole was</em>, <em>The course content was</em>, <em>The instructor's contribution to the course was</em>, and <em>The instructor's effectiveness in teaching the subject matter was</em> on a scale from "Very Poor" (0) to "Excellent" (5).</p>
+
 				{this.getChunkList(cv.courses, "course", "date", null, "title", "count", "score")}
 
 				<h2>Doctoral Student Supervision</h2>
