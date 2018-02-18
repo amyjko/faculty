@@ -211,6 +211,10 @@
 	
 	awards: [
 		{
+			title: "ICSE Most Influential Paper Award (of papers published in 2008)",
+			year: 2018
+		},
+		{
 			title: "UW Information School PROF award, Nominee (for evidence-based design education and faculty mentoring)",
 			year: 2017
 		},
@@ -225,6 +229,14 @@
 		{
 			title: "ACM SIGCHI Exceptional Reviewer (UIST 2016)",
 			year: 2015
+		},
+		{
+			title: "VL/HCC Most Influential Paper Award (of papers published in 2004)",
+			year: 2004
+		},
+		{
+			title: "VL/HCC Most Influential Paper Award (of papers published in 2003)",
+			year: 2003
 		},
 		{
 			title: "UW Presidential Entrepreneurial Faculty Fellows Awardee",
