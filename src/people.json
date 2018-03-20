@@ -102,10 +102,10 @@
 	{
 		"id": "zaxim",
 		"name": "Zakariya Dehlawi",
-		"active": true,
+		"active": false,
 		"advised": true,
 		"level": "phd",
-		"bio": "Zak is a Ph.D. student in the the Information School, co-advised by Andrew Ko and Barbara Endicott-Popovsky. He received his Master of Science in Security Informatics from Johns Hopkins in 2011 and bachelor degrees in Computer Engineering and Political Science from the University of Washington in 2009. His research focuses on security practices in software teams and organizations and he serves as a Senior Security Engineer at Security Innovation, Inc.",
+		"bio": "Zak was a Ph.D. student in the the Information School, co-advised by Andrew Ko and Barbara Endicott-Popovsky. He received his Master of Science in Security Informatics from Johns Hopkins in 2011 and bachelor degrees in Computer Engineering and Political Science from the University of Washington in 2009. His research focused on security practices in software teams and organizations. He now works as a Senior Security Engineer at Security Innovation, Inc.",
 		"url": "https://www.linkedin.com/in/zakariya-dehlawi-7836a515",
 		"startdate": 2014
 	},

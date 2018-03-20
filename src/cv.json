@@ -167,24 +167,6 @@
 			startdate: 2010,
 			enddate: 2011,
 			description: "Gift to support research on developer help seeking."	
-		},
-		{
-			title: "Workshop: Democratizing Access to Computational Tools",
-			funder: "National Science Foundation",
-			investigators: "Andrew J. Ko (PI)",
-			amount: "$19,040",
-			startdate: 2010,
-			enddate: 2009,
-			description: "Funding for the 2010 VL/HCC doctoral consortium."	
-		},
-		{
-			title: "Workshop: Democratizing Access to Computational Tools",
-			funder: "National Science Foundation",
-			investigators: "Andrew J. Ko (PI)",
-			amount: "$14,880",
-			startdate: 2008,
-			enddate: 2009,
-			description: "Funding for the 2009 VL/HCC doctoral consortium."	
 		}
 	],
 
@@ -714,6 +696,12 @@
 	],
 	doctoralCommittee: [	
 		{
+			name: "Justin Smith",
+			department: "North Carolina State University, Computer Science",
+			startdate: 2018,
+			enddate: null
+		},
+		{
 			name: "Alex Kale",
 			department: "The Information School",
 			startdate: 2017,
@@ -982,6 +970,10 @@
 		}
 	],
 	reviewer: [
+		{
+			venue: "Empirical Software Engineering",
+			dates: "2018-present"
+		},	
 		{
 			venue: "ACM Conference on Human Factors in Computing (CHI)",
 			dates: "2005-present"

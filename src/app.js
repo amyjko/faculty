@@ -11,6 +11,7 @@ import { Projects } from './projects';
 import { Reading } from './reading';
 import { Advice } from './advice';
 import { Teaching } from './teaching';
+import { Talks } from './talks';
 import { Books } from './books';
 import { Vita } from './cv';
 import { CER } from './cer';
@@ -44,6 +45,7 @@ class App extends React.Component {
 					<Route path="/reading" component={Reading}/>
 					<Route path="/advice" component={Advice}/>
 					<Route path="/teaching" component={Teaching}/>
+					<Route path="/talks" component={Talks}/>
 					<Route path="/books" component={Books}/>
 					<Route path="/students/:student?" component={Students}/>
 					<Route path="/cv" component={Vita}/>
