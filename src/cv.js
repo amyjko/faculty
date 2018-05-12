@@ -95,13 +95,19 @@ class Vita extends React.Component {
 				
 				{this.getChunkList(cv.jobs, "job", "startdate", "enddate", "title", "organization")}
 
+				<h2>Honors and Awards</h2>
+			
+				<h3>Paper Awards</h3>
+
+				{this.getChunkList(_.sortBy(_.filter(pubs, (pub) => { return pub.award && pub.award.length > 0 }), "year").reverse(), "paperAward", "year", null, "title", "award")}
+			
+				<h3>Awards and Recognitions</h3>
+
+				{this.getChunkList(cv.awards, "award", "year", null, "title")}
+
 				<h2>Grants, Gifts, and Other Funding</h2>
 
 				{this.getChunkList(cv.funding, "funding", "startdate", "enddate", "title", "amount", "funder", "investigators", "description")}
-
-				<h2>Patents</h2>
-			
-				{this.getChunkList(cv.patents, "patent", "year", null, "title", "number", "inventors")}
 
 				<h2>Publications</h2>
 				
@@ -145,16 +151,6 @@ class Vita extends React.Component {
 				
 				{this.getPapers("technical report")}
 				
-				<h2>Honors and Awards</h2>
-			
-				<h3>Paper Awards</h3>
-
-				{this.getChunkList(_.sortBy(_.filter(pubs, (pub) => { return pub.award && pub.award.length > 0 }), "year").reverse(), "paperAward", "year", null, "title", "award")}
-			
-				<h3>Awards and Recognitions</h3>
-
-				{this.getChunkList(cv.awards, "award", "year", null, "title")}
-
 				<h2>Press</h2>
 
 				{this.getChunkList(cv.press, "press", "date", null, "title", "source", "author", "link")}
@@ -166,6 +162,10 @@ class Vita extends React.Component {
 				<h2>Invited Talks</h2>
 
 				{this.getChunkList(cv.invitedtalks, "invited", "date", null, "title", "venue")}
+
+				<h2>Patents</h2>
+			
+				{this.getChunkList(cv.patents, "patent", "year", null, "title", "number", "inventors")}
 
 				<h2>Teaching</h2>
 			

@@ -196,22 +196,17 @@
 			title: "ICSE Most Influential Paper Award (of papers published in 2008)",
 			year: 2018
 		},
+/*
 		{
-			title: "UW Information School PROF award, Nominee (for evidence-based design education and faculty mentoring)",
+			title: "UW Information School PROF award (nominee), for excellence in teaching and mentoring",
 			year: 2017
 		},
+*/
 		{
-			title: "ACM SIGCHI Exceptional Reviewer (CHI 2017)",
-			year: 2017
+			title: "ACM SIGCHI Exceptional Reviewer (UIST 2016, CHI 2016, CHI 2017)",
+			year: "2016-2017"
 		},
-		{
-			title: "ACM SIGCHI Exceptional Reviewer (CHI 2016)",
-			year: 2016
-		},
-		{
-			title: "ACM SIGCHI Exceptional Reviewer (UIST 2016)",
-			year: 2015
-		},
+/*
 		{
 			title: "VL/HCC Most Influential Paper Award (of papers published in 2004)",
 			year: 2004
@@ -220,14 +215,17 @@
 			title: "VL/HCC Most Influential Paper Award (of papers published in 2003)",
 			year: 2003
 		},
+*/
 		{
-			title: "UW Presidential Entrepreneurial Faculty Fellows Awardee",
+			title: "UW Presidential Entrepreneurial Faculty Fellow",
 			year: 2014
 		},
+/*
 		{
 			title: "Intel Early Career Faculty Honor Program, Nominee",
 			year: 2012
 		},
+*/
 		{
 			title: "National Science Foundation CAREER award",
 			year: 2010
@@ -237,9 +235,15 @@
 			year: 2004
 		},
 		{
+			title: "National Defense Science & Engineering Graduate Fellowship",
+			year: 2004
+		},
+/*
+		{
 			title: "National Science Foundation Graduate Research Fellowship, Honorable Mention",
 			year: 2003
 		},
+*/
 		{
 			title: "CRA Outstanding Undergraduate, Honorable Mention",
 			year: 2001
