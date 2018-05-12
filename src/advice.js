@@ -180,6 +180,8 @@ class Advice extends React.Component {
 				<hr/>
 				
 				<p>Several of my colleagues in software engineering and programming languages also wrote a well reasoned analysis of <em>claims</em> in evaluations called <a href="http://dl.acm.org/citation.cfm?id=2983574">The Truth, The Whole Truth, and Nothing But the Truth: A Pragmatic Guide to Assessing Empirical Evaluations</a>. This is a great lens through which to evaluate the validity of your evaluation.</p>
+				
+				<p>I also like <a href="http://pgbovine.net/running-user-studies.htm">Philip Guo's exceedingly practical experiment checklist</a>, which helps prevent data collection catastrophes.</p> 
 
 				<h3 id="copyright">Which ACM copyright option should I choose?</h3>
 				

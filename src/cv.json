@@ -324,6 +324,11 @@
 	],
 	keynotes: [
 		{
+			title: "Mining the Mind, Minding the Mine: Grand Challenges in Comprehension and Mining",
+			venue: "Joint keynote at the International Conference on Mining Software Repositories and the IEEE International Conference on Program Comprehension, Gothenburg, Sweden",
+			date: "May 28th, 2018",
+		},
+		{
 			title: "A Human View of Programming Languages",
 			venue: "ACM SIGPLAN Conference on Systems, Programming, Languages and Applications: Software for Humanity (SPLASH), Amsterdam, The Netherlands",
 			date: "November 4th, 2016",
@@ -350,6 +355,11 @@
 		}
 	],
 	invitedtalks: [
+		{
+			title: "Big ideas behind the Whyline",
+			venue: "International Conference on Software Engineering, Most Influential Paper Award Talk, Gothenburg, Sweden",
+			date: "June 1st, 2018"
+		},
 		{
 			title: "Learning to code: how we fail, how we flourish",
 			venue: "Stanford University, Department of Computer Science, HCI Seminar (60+ attendees)",
@@ -467,6 +477,18 @@
 		}
 	],
 	courses: [
+		{
+			title: "User Interface Software and Technology (HCID 520)",
+			count: "33 master's students",
+			date: "Winter 2018",
+			score: "4.8/5.0"
+		},
+		{
+			title: "Design Methods (INFO 360)",
+			count: "35 undergraduates",
+			date: "Winter 2018",
+			score: "4.8/5.0"
+		},
 		{
 			title: "Design Methods (INFO 360)",
 			count: "36 undergraduates",
@@ -917,7 +939,7 @@
 			dates: "2017"
 		},
 		{
-			venue: "ACM International Conference on Computing Education (ICER)",
+			venue: "ACM International Conference on Computing Education (ICER), Senior Program Committee Member",
 			dates: "2014-2015, 2017-2018"
 		},
 		{
@@ -970,6 +992,10 @@
 		}
 	],
 	reviewer: [
+		{
+			venue: "VL/HCC Workshop on Desiging Technologies to Support Human Problem Solving",
+			dates: "2018"
+		},	
 		{
 			venue: "Empirical Software Engineering",
 			dates: "2018-present"

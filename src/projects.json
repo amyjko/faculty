@@ -13,7 +13,7 @@
 		],
 		"startdate": 2004,
 		"stopdate": null,
-		"impact": "This work has mapped the challenges posed by programming languages and tools, shaping the investigation of several new tools to support end-user and novice programming. Findings on coding bootcamps have been discussed broadly on <a href='https://www.reddit.com/r/programming/comments/6kgi7p/what_i_learned_from_researching_coding_bootcamps/'>Reddit</a> and <a href='https://news.ycombinator.com/item?id=14679061'>Hacker News</a>, including a blog post read nearly 10,000 times in four days."
+		"impact": "This work has mapped the challenges posed by programming languages and tools, shaping the investigation of several new tools to support end-user and novice programming. Findings on coding bootcamps have been discussed broadly on <a href='https://www.reddit.com/r/programming/comments/6kgi7p/what_i_learned_from_researching_coding_bootcamps/'>Reddit</a> and Hacker News [<a href='https://news.ycombinator.com/item?id=14679061'>1</a>, <a href='https://news.ycombinator.com/item?id=16961716'>2</a>], including a blog post read nearly 10,000 times in four days."
 	},
 	{
 		"id": "mentorship",
