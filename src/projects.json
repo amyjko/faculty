@@ -19,15 +19,15 @@
 		"id": "mentorship",
 		"active": true,
 		"name": "Informal Mentorship in Computing",
-		"description": "Teachers and formal mentors can play a large role in shaping student learning, but informal mentors such as friends, siblings, parents, and even online acquaintences can play an equally important role. Our work investigates the role of these relationships on identity and interest development, specifically in computing.",
+		"description": "Teachers and formal mentors can play a large role in shaping student learning, but informal mentors such as peers, friends, siblings, parents, and even online acquaintences can play an equally important role. Our work investigates the role of these relationships on identity and interest development, specifically in computing.",
 		"funding": [],
-		"people": ["ajko", "lkhwa"],
-		"papers": ["mentors1", "mentors2"],
+		"people": ["ajko", "lkhwa", "kwikh"],
+		"papers": ["mentors1", "mentors2", "transfer"],
 		"demo": null,
 		"video": null,
 		"startdate": 2016,
 		"stopdate": null,
-		"impact": "This work has been done in partnership with the University of Washington's Upward Bound and Summer Youth programs, engaging over 150 students in summer learning computing and participation in research on computing."
+		"impact": "This work has been done partly in partnership with the University of Washington's Upward Bound and Summer Youth programs, engaging over 150 students in summer learning computing and participation in research on computing."
 	},
 	{
 		"id": "uimining",
