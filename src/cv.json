@@ -722,6 +722,12 @@
 	],
 	doctoralCommittee: [	
 		{
+			name: "David Gonzalez",
+			department: "George Mason University, Computer Science",
+			startdate: 2018,
+			enddate: null
+		},
+		{
 			name: "Justin Smith",
 			department: "North Carolina State University, Computer Science",
 			startdate: 2018,
