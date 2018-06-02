@@ -19,9 +19,8 @@ class Person extends React.Component {
 					{ this.props.id ? <img className='img-responsive img-thumbnail gap-bottom-right' alt={this.props.name} src={"/ajko/images/mug-" + this.props.id + ".jpg"} style={{width: 140}} /> : null }
 				</div>
 				<div className="col-md-9">
-					<p><strong>{this.props.name}</strong> <mark>{this.props.level}</mark> { this.props.url ? <small><a href={this.props.url} target="_blank">homepage</a></small> : null }</p>
+					<p><strong>{this.props.name}</strong> <mark>{this.props.level}</mark> { this.props.url ? <small><a href={this.props.url} target="_blank">Website</a></small> : null } { this.props.thesis ? <small>&ndash; <a href={this.props.thesis}>Dissertation</a></small> : null }</p>
 					<p>{this.props.bio}</p>
-					{ this.props.thesis ? <p><a href={this.props.thesis}>Dissertation</a></p> : null }
 				</div>
 			</div>
 		);
