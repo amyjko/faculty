@@ -62,17 +62,17 @@
 	},
 	{
 		"id": "methods",
-		"active": false,
-		"name": "Research Methods for Empirical Software Engineering",
-		"description": "I actively write about research methods for studying programming, software development, and software engineering.",
+		"active": true,
+		"name": "Research Methods for Code & Cognition",
+		"description": "My lab actively contributes new methods and new perspectives on methods studying how people program.",
 		"funding": [],
-		"people": ["ajko"],
-		"papers": ["walkthrough1", "walkthrough2", "practicalguide"],
+		"people": ["ajko", "glnelson"],
+		"papers": ["walkthrough1", "walkthrough2", "practicalguide", "certheory"],
 		"demo": null,
 		"video": null,
 		"startdate": 2003,
 		"stopdate": null,
-		"impact": "Our work on research methods is widely read by new Ph.D. students across computer science to inform how they evaluate new developer tools."
+		"impact": "Our work on research methods is widely read by new Ph.D. students across computer science to inform how they evaluate new developer tools and how they use theory."
 	},
 	{
 		"id": "gidget",

@@ -1,5 +1,26 @@
 [
 	{
+		"id": "certheory",
+		"kind": "refereed conference paper",
+		"authors": "Greg L. Nelson and Andrew J. Ko",
+		"year": 2018,
+		"title": "On Use of Theory in Computing Education Research",
+		"source": "ACM International Computing Education Research Conference (ICER)",
+		"location": "Espoo, Finland",
+		"pages": "to appear",
+		"acceptance rate": "22%",
+		"authorizer": null,
+		"digital library url": null,
+		"local url": null,
+		"talk url": null,
+		"award": "",
+		"volume": null,
+		"issue": null,
+		"article": null,
+		"publisher": "",
+		"contribution": "Argues that our desire to both advance explanatory theory and advance design splits our attention, which prevents us from excelling at both; that our emphasis on applying and refining general theories of learning is done at the expense of domain-specific theories of computer science knowledge; and our use of theory as a critical lens in peer review prevents the publication of designs that may accelerate design progress."
+	},
+	{
 		"id": "inclusivepck",
 		"kind": "refereed conference paper",
 		"authors": "Alannah Oleson, Christopher Mendez, Zoe Steine-Hanson, Claudia Hilderbrand, Christopher Perdriau, Margaret Burnett, and Andrew J. Ko",
