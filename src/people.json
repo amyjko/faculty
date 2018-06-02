@@ -2,10 +2,10 @@
 	{
 		"id": "laurav4",
 		"name": "Laura Vonessen",
-		"active": true,
+		"active": false,
 		"advised": false,
 		"level": "phd",
-		"bio": "Laura led a project on faculty professional development for teaching accessibility, sponsored by AccessComputing.",
+		"bio": "For her qualifying exam, Laura led a project on faculty professional development for teaching accessibility, sponsored by AccessComputing, with help from Saba Kaways.",
 		"url": "https://homes.cs.washington.edu/~laurav4/",
 		"startdate": 2018
 	},
