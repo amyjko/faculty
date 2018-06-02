@@ -30,6 +30,20 @@
 		"impact": "This work has been done partly in partnership with the University of Washington's Upward Bound and Summer Youth programs, engaging over 150 students in summer learning computing and participation in research on computing."
 	},
 	{
+		"id": "expertise",
+		"active": true,
+		"name": "Software Engineering Expertise",
+		"description": "What combination of technical, tactical, and social skills make software engineers effective? Through a series of interviews, surveys, and field work, we're uncovering the fundamental attributes of software engineering expertise.",
+		"funding": ["NSF CAREER"],
+		"people": ["ajko", "plli"],
+		"papers": ["greatengineer1", "answerdash","nonengineers"],
+		"demo": null,
+		"video": null,
+		"startdate": 2013,
+		"stopdate": null,
+		"impact": "Our research on software engineering experience have been used to frame soft skills instruction in the <a href='http://www.afsenyc.org/'>Academy for Software Engineering</a> curriculum in New York and have also reached over 10,000 academics and software engineers through an <a href='https://www.youtube.com/watch?v=OBlmLjeORUQ&feature=youtu.be&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU'>ACM Learning Center Webinar</a>."
+	},
+	{
 		"id": "uimining",
 		"active": true,
 		"name": "User Interface Mining",
@@ -47,34 +61,6 @@
 		"impact": null
 	},
 	{
-		"id": "expertise",
-		"active": true,
-		"name": "Software Engineering Expertise",
-		"description": "What combination of technical, tactical, and social skills make software engineers effective? Through a series of interviews, surveys, and field work, we're uncovering the fundamental attributes of software engineering expertise.",
-		"funding": ["NSF CAREER"],
-		"people": ["ajko", "plli"],
-		"papers": ["greatengineer1", "answerdash","nonengineers"],
-		"demo": null,
-		"video": null,
-		"startdate": 2013,
-		"stopdate": null,
-		"impact": "Our research on software engineering experience have been used to frame soft skills instruction in the <a href='http://www.afsenyc.org/'>Academy for Software Engineering</a> curriculum in New York and have also reached over 10,000 academics and software engineers through an <a href='https://www.youtube.com/watch?v=OBlmLjeORUQ&feature=youtu.be&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU'>ACM Learning Center Webinar</a>."
-	},
-	{
-		"id": "gidget",
-		"active": true,
-		"name": "Gidget + Programming Games",
-		"description": "Can a game teach programming and debugging skills and also be fun? We say yes. Our recent work has shown that personifying an interpreter in a puzzle game significantly increases engagement and learning over conventional web-based tutorials.",
-		"funding": ["NSF CE21", "Microsoft"],
-		"people": ["ajko", "mjslee", "yanan15"],
-		"papers": ["gidget1", "gidget2", "gidget3", "gidget4", "gidget5", "gidget6", "adultattitudes", "gidgetabandoment"],
-		"demo": "http://helpgidget.org",
-		"video": null,
-		"startdate": 2010,
-		"stopdate": null,
-		"impact": "Gidget has been played by thousands of people online, in summer camps, and in high schools. It has directly informed the design of Code.org's <a href='https://studio.code.org'>Code Studio</a> and Apple's <a href='https://www.apple.com/swift/playgrounds/'>Swift Playgrounds</a>."
-	},
-	{
 		"id": "methods",
 		"active": false,
 		"name": "Research Methods for Empirical Software Engineering",
@@ -87,6 +73,20 @@
 		"startdate": 2003,
 		"stopdate": null,
 		"impact": "Our work on research methods is widely read by new Ph.D. students across computer science to inform how they evaluate new developer tools."
+	},
+	{
+		"id": "gidget",
+		"active": false,
+		"name": "Gidget + Programming Games",
+		"description": "Can a game teach programming and debugging skills and also be fun? We say yes. Our recent work has shown that personifying an interpreter in a puzzle game significantly increases engagement and learning over conventional web-based tutorials.",
+		"funding": ["NSF CE21", "Microsoft"],
+		"people": ["ajko", "mjslee", "yanan15"],
+		"papers": ["gidget1", "gidget2", "gidget3", "gidget4", "gidget5", "gidget6", "adultattitudes", "gidgetabandoment"],
+		"demo": "http://helpgidget.org",
+		"video": null,
+		"startdate": 2010,
+		"stopdate": null,
+		"impact": "Gidget has been played by thousands of people online, in summer camps, and in high schools. It has directly informed the design of Code.org's <a href='https://studio.code.org'>Code Studio</a> and Apple's <a href='https://www.apple.com/swift/playgrounds/'>Swift Playgrounds</a>."
 	},
 	{
 		"id": "errors",
