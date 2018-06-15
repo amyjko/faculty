@@ -1,5 +1,35 @@
 [
 	{
+		"id": "janeq97",
+		"name": "Jane Quichocho",
+		"active": true,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Jane is an Informatics student working in the summer of 2018 on various learning to code projects.",
+		"url": "https://www.linkedin.com/in/jane-quichocho-08a9b714b/",
+		"startdate": 2018
+	},
+	{
+		"id": "wkwok16",
+		"name": "William Kwok",
+		"active": true,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "William is an Informatics student working in the summer of 2018 on various learning to code projects.",
+		"url": "https://www.linkedin.com/in/william-w-kwok/",
+		"startdate": 2018
+	},
+	{
+		"id": "akkarh",
+		"name": "Harshitha Akkaraju",
+		"active": true,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Harshitha is an Informatics student working in the summer of 2018 on various learning to code projects.",
+		"url": "https://www.linkedin.com/in/harshitha-akkaraju/",
+		"startdate": 2018
+	},
+	{
 		"id": "laurav4",
 		"name": "Laura Vonessen",
 		"active": false,
