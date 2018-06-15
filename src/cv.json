@@ -722,6 +722,12 @@
 	],
 	doctoralCommittee: [	
 		{
+			name: "Srinivasan Iyer",
+			department: "George Mason University, Computer Science",
+			startdate: 2018,
+			enddate: null
+		},
+		{
 			name: "David Gonzalez",
 			department: "George Mason University, Computer Science",
 			startdate: 2018,
