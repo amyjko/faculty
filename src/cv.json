@@ -1075,6 +1075,11 @@
 	],
 	otherService: [
 		{
+			title: "Committee member",
+			committee: "Computing Research Association Undergraduate Research Award",
+			dates: "2018"
+		},
+		{
 			title: "Co-Chair",
 			committee: "Doctoral Consortium, ACM International Computing Education Research Conference",
 			dates: "2018, 2019"
