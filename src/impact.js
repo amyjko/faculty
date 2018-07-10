@@ -40,7 +40,7 @@ class Impact extends React.Component {
 					<li><em>Software Engineering Daily</em>: <a target="_blank" href="http://softwareengineeringdaily.com/2016/02/24/academia-to-industry-in-computer-science-with-andy-ko/">Applying Software Research to Industry with Andy Ko</a>.</li>
 					<li><em>Changing Academic Life</em>: <a target="_blank" href="http://www.changingacademiclife.com/blog/2017/6/18/andy-ko">Andy Ko on being reflectively self-aware, deliberately structured, & amazingly productive</a></li>
 				</ul>
-				<p><strong><a href="/talks">Keynotes</a></strong>. I share larger visions about my work in keynotes at various conferences.</p>
+				<p><strong><a href="talks">Keynotes</a></strong>. I share larger visions about my work in keynotes at various conferences.</p>
 
 				{impacts}
 
