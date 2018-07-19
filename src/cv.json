@@ -722,6 +722,12 @@
 	],
 	doctoralCommittee: [	
 		{
+			name: "Meen Chul Kim",
+			department: "Drexel University, Information Science",
+			startdate: 2018,
+			enddate: null
+		},
+		{
 			name: "Srinivasan Iyer",
 			department: "George Mason University, Computer Science",
 			startdate: 2018,
@@ -1122,7 +1128,7 @@
 		{
 			title: "Panel member (CISE, EHR)",
 			committee: "National Science Foundation Proposal Review Panel",
-			dates: "2012, 2014, 2017"
+			dates: "2012, 2014, 2016-2018"
 		},
 		{
 			title: "Co-founder",
