@@ -46,7 +46,7 @@ class Students extends React.Component {
 		var personToHighlight = this.props.match.params.student;
 
 		// Render the active people.
-		var activePeople = _.map(_.filter(people, { 'active': true, 'advised': true }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id}/>; });
+		var activePeople = _.map(_.sortBy(_.filter(people, { 'active': true, 'advised': true }), ['level', 'startdate']), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id}/>; });
 
 		// Render the affiliated people.
 		var affiliatedPeople = _.map(_.filter(people, { 'active': true, 'advised': false }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id}/>; });
