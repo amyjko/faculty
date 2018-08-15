@@ -4,6 +4,7 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 import { Biography } from './bio';
 import { Publications } from './publications';
+import { Posts } from './posts';
 import { Impact } from './impact';
 import { Students } from './students';
 import { Header } from './header';
@@ -41,6 +42,7 @@ class App extends React.Component {
 					<Route exact path="/" component={Projects}/>
 					<Route path="/bio" component={Biography}/>
 					<Route path="/publications/:paper?" component={Publications}/>
+					<Route path="/posts" component={Posts}/>
 					<Route path="/impact" component={Impact}/>
 					<Route path="/reading" component={Reading}/>
 					<Route path="/advice" component={Advice}/>
