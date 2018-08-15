@@ -137,6 +137,7 @@ class Posts extends React.Component {
 				<h2 id="trips">Trip reports</h2>
 
 				<ul>
+					<li><a href="https://medium.com/bits-and-behavior/the-2018-acm-international-computing-education-research-conference-espoo-finland-ed548572cca5">The 2018 ACM International Computing Education Research Conference in Espoo, Finland</a> (August 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/2018-acm-education-council-meeting-a8d371e62034">2018 ACM Education Council meeting</a> (August 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/icse-2018-trip-report-50-years-of-software-engineering-4944992c5b" target="_blank">ICSE 2018 trip report: 50 years of software engineering</a> (June 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/iconference-2018-trip-report-information-science-computing-education-and-hci-converge-fe521ba42b99" target="_blank">iConference 2018 trip report: information science, computing education, and HCI converge</a> (March 2018)</li>
