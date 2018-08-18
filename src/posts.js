@@ -9,7 +9,7 @@ class Posts extends React.Component {
 
 		/*
 		
-		Person posts that probably don't belong here:
+		Personal posts that probably don't belong here:
 		
 		https://medium.com/bits-and-behavior/a-better-fit-cf25ec180115			
 		https://medium.com/bits-and-behavior/my-iphone-hates-you-599c39a9258f			
@@ -114,6 +114,7 @@ class Posts extends React.Component {
 				<h2 id="society">Software and society</h2>
 				
 				<ul>
+					<li><a href="https://medium.com/bits-and-behavior/2018-masters-in-hci-design-commencement-speech-design-values-and-organizations-fd122b612563" target="_blank">2018 Masters in HCI+Design commencement speech: design, values, and organizations</a> (August 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/meow-wolf-the-art-of-immersive-ubiquitous-computing-c00d27323ace" target="_blank">Meow Wolf: the art of immersive, ubiquitous computing</a> (April 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/what-makes-software-valuable-36a1335ad1f7" target="_blank">What makes software valuable?</a> (November 2017)</li>
 					<li><a href="https://medium.com/bits-and-behavior/automation-education-and-the-looming-skills-deficit-a509c7647afb" target="_blank">Automation, education, and the looming skills deficit</a> (June 2017)</li>
