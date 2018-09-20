@@ -1,5 +1,25 @@
 [
 	{
+		"id": "andrewhu",
+		"name": "Andrew Hu",
+		"active": true,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Andrew is a CS & Education double major interested in pedagogical techniques and student motivation in CS Ed.",
+		"url": "http://students.washington.edu/andrewhu",
+		"startdate": 2018
+	},
+	{
+		"id": "olesona",
+		"name": "Alannah Oleson",
+		"active": true,
+		"advised": true,
+		"level": "phd",
+		"bio": "Alannah is a PhD student in the Information School, broadly interested in the learning and teaching of inclusive software design methods. Before joining UW, she studied gender-inclusive software at Oregon State University.",
+		"url": "https://www.linkedin.com/in/aoleson/",
+		"startdate": 2018
+	},
+	{
 		"id": "janeq97",
 		"name": "Jane Quichocho",
 		"active": true,

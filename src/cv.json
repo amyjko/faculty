@@ -61,6 +61,15 @@
 	],
 	funding: [
 		{
+			title: "Formal Verification of Accessibility",
+			funder: "National Science Foundation, award 1836813",
+			investigators: "Michael Ernst (PI), Andrew J. Ko (Co-PI), Jennifer Mankoff (Co-PI), Zach Tatlock (Co-PI)",
+			amount: "$738,125",
+			startdate: 2019,
+			enddate: 2022,
+			description: "New techniques to formally verify a range of accessbility properties of web applications."
+		},
+		{
 			title: "Programming Strategies",
 			funder: "National Science Foundation, award 1703304",
 			investigators: "Thomas LaToza (PI, George Mason University), Andrew J. Ko (Co-PI, University of Washington)",
