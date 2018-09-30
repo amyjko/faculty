@@ -176,7 +176,8 @@ class Posts extends React.Component {
 				<h2 id="academia">Academia</h2>
 
 				<ul>
-					<li><a href="How should one year of academic work be judged?" target="_blank">How should one year of academic work be judged?</a> (March 2018)</li>
+					<li><a href="https://medium.com/bits-and-behavior/reflections-on-a-decade-of-professoring-2b996ee75af7" target="_blank">Reflections on a decade of professoring</a> (September 2018)</li>
+					<li><a href="https://medium.com/bits-and-behavior/how-should-one-year-of-academic-work-be-judged-796ca1847680" target="_blank">How should one year of academic work be judged?</a> (March 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/on-academic-split-attention-d64e5533f32" target="_blank">On academic split attention</a> (April 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/the-joys-and-perils-of-teaching-doctoral-students-bad67cb76701" target="_blank">The joys and perils of teaching doctoral students</a> (April 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/defending-truth-one-dissertation-at-a-time-83f87b6e8626" target="_blank">Defending truth, one dissertation at a time</a> (May 2018)</li>

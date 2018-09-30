@@ -35,8 +35,8 @@
 		"active": true,
 		"advised": true,
 		"level": "undergrad",
-		"bio": "William is an Informatics student working in the summer of 2018 on various learning to code projects.",
-		"url": "https://www.linkedin.com/in/william-w-kwok/",
+		"bio": "William is an undergraduate in the Information School. He's supporting the lab's research on programming tutors by advancing design, development, instruction, and ideation relation to expressing agency when learning computing online.",
+		"url": "http://williamk.info/?q=cc",
 		"startdate": 2018
 	},
 	{
@@ -55,7 +55,7 @@
 		"active": false,
 		"advised": false,
 		"level": "phd",
-		"bio": "For her qualifying exam, Laura led a project on faculty professional development for teaching accessibility, sponsored by AccessComputing, with help from Saba Kaways.",
+		"bio": "For her qualifying exam, Laura led a project on faculty professional development for teaching accessibility, sponsored by AccessComputing, with help from Saba Kawas.",
 		"url": "https://homes.cs.washington.edu/~laurav4/",
 		"startdate": 2018
 	},
@@ -249,7 +249,7 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
-		"bio": "Alex is an Informatics undergraduate in computing education. He's supported the lab's research on programming tutors.",
+		"bio": "Alex is an Informatics undergraduate in computing education. He supported the lab's research on programming tutors.",
 		"url": "https://www.linkedin.com/in/alexhtan/",
 		"startdate": 2017
 	},
