@@ -118,7 +118,10 @@ class Projects extends React.Component {
 				<div className="lead">I research <strong>effective, equitable, scalable ways for humanity to learn computing</strong>. To achieve this, I direct the <Link to={"/students"}>Code & Cognition Lab</Link>, working with many wonderful <Link to={"/students"}>students</Link> to <Link to={"/publications"}>publish</Link> and <Link to={"/impact"}>share</Link> research on computing education, human-computer interaction, and software engineering. I do this work with several communities, including <a target="_blank" href="http://soundcsed.org">Sound CS Ed</a>, <a target="_blank" href="http://dub.washington.edu/">DUB</a>, <a target="_blank" href="http://uwplse.org/">UW CSE's PLSE group</a>, the iSchool's <a href="https://digitalyouth.ischool.uw.edu/" target="_blank">Digital Youth Lab</a>, and the <a href="http://eusesconsortium.org/" target="_blank">EUSES consortium</a>.
 			</div>
 
-			<p>Want to know more about the vibrant computing education research community? Read <Link to={"/cer"}>my computing education research FAQ</Link>.</p>
+			<ul>
+				<li>Want to know more about <strong>computing education research</strong>? Read <Link to={"/cer"}>my computing education research FAQ</Link>.</li>
+				<li>Want to work with me? Read my <Link to="/students">students</Link> page.</li>
+			</ul>
 			
 			<h3>Active Projects</h3>
 
