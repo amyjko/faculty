@@ -1,5 +1,15 @@
 [
 	{
+		"id": "patold",
+		"name": "Patrick Old",
+		"active": true,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Patrick is an undergraduate studying Informatics and Oceanography. He is working on a project to observe his growth as a teacher via participant observation. The classes he is teaching are in the University of Washington Oceanography Department and involve teaching the basics of programming in oceanographic research.",
+		"url": "https://www.linkedin.com/in/pat-old/",
+		"startdate": 2018
+	},
+	{
 		"id": "andrewhu",
 		"name": "Andrew Hu",
 		"active": true,
@@ -16,7 +26,17 @@
 		"advised": true,
 		"level": "phd",
 		"bio": "Alannah is a PhD student in the Information School, broadly interested in the learning and teaching of inclusive software design methods. Before joining UW, she studied gender-inclusive software at Oregon State University.",
-		"url": "https://www.linkedin.com/in/aoleson/",
+		"url": "https://alannaholeson.com/",
+		"startdate": 2018
+	},
+	{
+		"id": "jennareg",
+		"name": "Yim Register",
+		"active": true,
+		"advised": true,
+		"level": "phd",
+		"bio": "Yim is a PhD student in the Information School, broadly interested in machine learning literacy. Before joining UW, they studied cognitive science at the University of Rochester.",
+		"url": "http://students.washington.edu/jennareg/",
 		"startdate": 2018
 	},
 	{
@@ -45,8 +65,8 @@
 		"active": true,
 		"advised": true,
 		"level": "undergrad",
-		"bio": "Harshitha is an Informatics student working in the summer of 2018 on various learning to code projects.",
-		"url": "https://www.linkedin.com/in/harshitha-akkaraju/",
+		"bio": "Harshitha is an Informatics student working on various learning to code projects.",
+		"url": "https://harshitha-akkaraju.github.io/",
 		"startdate": 2018
 	},
 	{
@@ -230,7 +250,7 @@
 		"advised": true,
 		"level": "undergrad",
 		"bio": "Harrison is an undergraduate in computer science interested in equitable learning of computing. He's been supporting the lab's research on programming tutors while independently investigating the experiences of CS transfer students.",
-		"url": "https://www.linkedin.com/in/harrison-kwik/",
+		"url": "https://resprit.com/",
 		"startdate": 2016
 	},
 	{

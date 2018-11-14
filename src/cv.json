@@ -1088,8 +1088,13 @@
 	],
 	otherService: [
 		{
+			title: "State leader",
+			committee: "Leading policy, community organizing, and advocacy for Washington state's K-12 CS for All efforts via the NSF Funded Exploring Computing Education Pathways project (https://ecepalliance.org).",
+			dates: "2018"
+		},
+		{
 			title: "Committee member",
-			committee: "Computing Research Association Undergraduate Research Award",
+			committee: "Computing Research Association (CRA) Undergraduate Research Award",
 			dates: "2018"
 		},
 		{
