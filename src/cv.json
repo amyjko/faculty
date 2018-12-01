@@ -1088,9 +1088,14 @@
 	],
 	otherService: [
 		{
-			title: "State leader",
-			committee: "Leading policy, community organizing, and advocacy for Washington state's K-12 CS for All efforts via the NSF Funded Exploring Computing Education Pathways project (https://ecepalliance.org).",
-			dates: "2018"
+			title: "Director",
+			committee: "CS for All Washington. Leading policy, community organizing, and advocacy for Washington state's K-12 CS for All efforts via the NSF Funded Exploring Computing Education Pathways project (https://cseforallwa.org, https://ecepalliance.org).",
+			dates: "2018-present"
+		},
+		{
+			title: "Secretary",
+			committee: "Seattle Public Schools CS Advisory Board.",
+			dates: "2018-present"
 		},
 		{
 			title: "Committee member",
