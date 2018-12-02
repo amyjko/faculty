@@ -37,7 +37,7 @@ class Teaching extends React.Component {
 
 				<div className="project row">
 					<div className="col-md-3">
-						<img className='img-responsive gap-bottom-right' src="/ajko/info200/icon.png" style={{width: 140}} />
+						<img className='img-responsive gap-bottom-right' src="/ajko/images/info200.png" style={{width: 140}} />
 					</div>
 					<div className="col-md-9">
 						<div className='lead'><a target="_blank" href="https://canvas.uw.edu/courses/1223117">INFO 200 Intellectual Foundations of Informatics</a>. <small>This introductory course covers big ideas in information, information technology, and information systems. Students learn the history of information, foundational concepts in information, the relationship between information and computing, skills in analyzing and designing information systems, and the role of information systems in society.</small></div>	
