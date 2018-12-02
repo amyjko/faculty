@@ -8,9 +8,10 @@
 		"build": "browserify -t [ babelify --presets [ react ] ] src/app.js | uglifyjs > build/app.js",
 		"watch": "watch 'npm run build' src"
 	},
+	"presets": ["env"],
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
-		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-env": "^6.24.1",
 		"browserify": "^14.5.0",
 		"watch": "^1.0.2"
 	},
