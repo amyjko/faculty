@@ -5,8 +5,10 @@
         "license": "Creative Commons Attribution-NonCommercial 4.0 International",
         "repository": "https://github.com/andyjko/faculty.git",
 	"scripts": {
+		"watch": "watch 'npm run build' src",
 		"build": "browserify -t [ babelify --presets [ react ] ] src/app.js | uglifyjs > build/app.js",
-		"watch": "watch 'npm run build' src"
+		"test-ship": "rsync --dry-run -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html",
+		"ship": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html"
 	},
 	"presets": ["env"],
 	"devDependencies": {
