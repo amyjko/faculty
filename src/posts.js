@@ -52,6 +52,7 @@ class Posts extends React.Component {
 				<h2 id="csed">Computing education</h2>
 				
 				<ul>
+					<li><a href="https://medium.com/bits-and-behavior/a-rant-about-journalism-on-learning-to-code-da9a11dd9866" target="_blank">A rant about journalism on learning to code</a> (December 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/the-invisible-work-of-equity-in-higher-education-computing-and-information-science-6d0d36d78cf8" target="_blank">The invisible work of equity in higher education computing and information science</a> (June 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/how-i-learned-to-code-2acb503c9f84" target="_blank">How I learned to code</a> (February 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/why-people-shouldnt-learn-to-code-1aaa43c31c9d" target="_blank">Why people shouldn't learn to code</a> (January 2018)</li>
