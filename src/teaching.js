@@ -40,7 +40,7 @@ class Teaching extends React.Component {
 						<img className='img-responsive gap-bottom-right' src="/ajko/images/info200.png" style={{width: 140}} />
 					</div>
 					<div className="col-md-9">
-						<div className='lead'><a target="_blank" href="https://canvas.uw.edu/courses/1223117">INFO 200 Intellectual Foundations of Informatics</a>. <small>This survey course covers big ideas in information, information technology, information systems, and human-computer interaction. Students learn the history of information, foundational concepts in information, the relationship between information and computing, skills in analyzing and designing information systems, and the role of information systems in society.</small></div>	
+						<div className='lead'><a target="_blank" href="https://canvas.uw.edu/courses/1223117">INFO 200 Intellectual Foundations of Informatics</a>. <small>This survey course covers big ideas in information, information technology, information systems, and human-computer interaction. Students learn the history of information, foundational concepts in information, the relationship between information and computing, skills in analyzing and designing information systems, and the role of information systems in society. See <a href="https://medium.com/bits-and-behavior/big-ideas-about-information-c09e4d9c60bd">my Medium post on the course's big ideas</a>.</small></div>	
 					</div>
 				</div>
 
