@@ -6,7 +6,7 @@
 		"description": "Why is learning to code so difficult? How can we make it easier? We've investigated several barriers, including programming environments, learning trajectories, and documentation. Our latest work is investigating social and identity factors that pose barriers to learning, new pedagogies and technologies to rapidly learn programming languages, and new ways to learn programming problem solving.",
 		"funding": ["NSF Exploratory Programming", "NSF Cyberlearning"],
 		"people": ["bxie", "glnelson", "ajko", "dloksa", "kthayer", "banerjee", "kwikh"],
-		"papers": ["csproblemsolving1","csproblemsolving2","ideagardenjvlc","gidget6", "pstutor1", "pltutor1","tutorialeval", "tracing", "barriers", "codebios", "feasibility", "statscomprehension", "bootcamps", "ellblockstudio", "transfer"],
+		"papers": ["csproblemsolving1","csproblemsolving2","ideagardenjvlc","gidget6", "pstutor1", "pltutor1","tutorialeval", "tracing", "barriers", "codebios", "feasibility", "statscomprehension", "bootcamps", "ellblockstudio", "transfer", "teachingstrategies"],
 		"demo": null,
 		"video": [
 			{ title: "See WeCode", url: "https://youtu.be/t56g4DYIuUA" }
@@ -56,6 +56,20 @@
 			{ title: "See Genie", url: "https://www.youtube.com/watch?v=Ivtvyy7m-qc" },
 			{ title: "See Rewire", url: "https://www.youtube.com/watch?v=9LA8feFOsOo" }
 		],
+		"startdate": 2016,
+		"stopdate": null,
+		"impact": null
+	},
+	{
+		"id": "teachingaccessibility",
+		"active": true,
+		"name": "Teaching Accessibility",
+		"description": "Nearly 1 in 7 people globally have a disability which makes it hard for them to use computers, but few of the graduates in computing and information sciences learn anything about accessibility. We're investigating faculty interest and barriers in integrating accessibility topics into computing and design classes.",
+		"funding": ["NSF AccessComputing"],
+		"people": ["kshino", "laurav4", "skawas", "ajko"],
+		"papers": ["teachaccess1", "teachaccess2"],
+		"demo": null,
+		"video": [],
 		"startdate": 2016,
 		"stopdate": null,
 		"impact": null
