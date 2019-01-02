@@ -489,6 +489,12 @@
 	],
 	courses: [
 		{
+			title: "Intellectual Foundations of Informatics (INFO 200)",
+			count: "150 undergraduates",
+			date: "Autumn 2018",
+			score: "4.8/5.0"
+		},
+		{
 			title: "User Interface Software and Technology (HCID 520)",
 			count: "33 master's students",
 			date: "Winter 2018",
