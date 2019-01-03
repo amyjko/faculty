@@ -31,7 +31,7 @@ class Teaching extends React.Component {
 						<img className='img-responsive gap-bottom-right' src="/ajko/hcid520/images/AVIDAC.jpg" style={{width: 140}} />
 					</div>
 					<div className="col-md-9">
-						<div className='lead'><a target="_blank" href="/ajko/hcid520">HCID 520 User Interface Software and Technology</a>. <small> This graduate course teaches students they history, theory, and foundations of user interfaces. Students acquire a literacy for communicating and reasoning about interfaces.</small></div>	
+						<div className='lead'><a target="_blank" href="https://canvas.uw.edu/courses/1256337">HCID 520 User Interface Software and Technology</a>. <small> This graduate course teaches students they history, theory, and foundations of user interfaces. Students acquire a literacy for communicating and reasoning about interfaces.</small></div>	
 					</div>
 				</div>
 
