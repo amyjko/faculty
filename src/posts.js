@@ -178,6 +178,7 @@ class Posts extends React.Component {
 				<h2 id="academia">Academia</h2>
 
 				<ul>
+					<li><a href="‪https://medium.com/bits-and-behavior/a-critique-of-academic-criticism-fce30c73947d‬" target="_blank">A critique of academic criticism</a> (January 2019)</li>
 					<li><a href="https://medium.com/bits-and-behavior/credit-versus-discovery-in-academia-f4312ac7f596" target="_blank">Credit versus discovery in academia</a> (November 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/my-peer-review-wishlist-e783c1eccd61" target="_blank">My peer review wishlist</a> (November 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/the-state-of-dub-human-computer-interaction-at-the-university-of-washington-17abaa954566" target="_blank">The State of DUB: Human-Computer Interaction at the University of Washington</a> (October 2018)</li>
