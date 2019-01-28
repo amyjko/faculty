@@ -52,6 +52,7 @@ class Posts extends React.Component {
 				<h2 id="csed">Computing education</h2>
 				
 				<ul>
+					<li><a href="https://medium.com/bits-and-behavior/cs-education-policymaking-how-a-state-bill-becomes-a-state-law-839f62a6977c" target="_blank">CS education policy: how a (state) bill becomes a (state) law</a> (January 2019)</li>
 					<li><a href="https://medium.com/bits-and-behavior/big-ideas-about-information-c09e4d9c60bd" target="_blank">Big ideas about information</a> (December 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/a-rant-about-journalism-on-learning-to-code-da9a11dd9866" target="_blank">A rant about journalism on learning to code</a> (December 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/the-invisible-work-of-equity-in-higher-education-computing-and-information-science-6d0d36d78cf8" target="_blank">The invisible work of equity in higher education computing and information science</a> (June 2018)</li>
@@ -178,6 +179,7 @@ class Posts extends React.Component {
 				<h2 id="academia">Academia</h2>
 
 				<ul>
+					<li><a href="https://medium.com/bits-and-behavior/competing-tensions-in-doctoral-student-advising-9ebf6af0c626" target="_blank">Competing priorities in doctoral student advising</a> (January 2019)</li>
 					<li><a href="‪https://medium.com/bits-and-behavior/a-critique-of-academic-criticism-fce30c73947d‬" target="_blank">A critique of academic criticism</a> (January 2019)</li>
 					<li><a href="https://medium.com/bits-and-behavior/credit-versus-discovery-in-academia-f4312ac7f596" target="_blank">Credit versus discovery in academia</a> (November 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/my-peer-review-wishlist-e783c1eccd61" target="_blank">My peer review wishlist</a> (November 2018)</li>

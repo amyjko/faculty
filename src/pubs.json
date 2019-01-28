@@ -1,5 +1,26 @@
 [
 	{
+		"id": "cs1theory",
+		"kind":"refereed journal paper",
+		"authors": "Benjamin Xie, Dastyni Loksa, Greg L. Nelson, Matthew J. Davidson, Dongsheng Dong, Harrison Kwik, Alex Hui Tan, Leanne Hwa, Min Li, Andrew J. Ko",
+		"year": 2019,
+		"title": "A Theory of Instruction for Introductory Programming Skills",
+		"source": "Computer Science Education",
+		"location": null,
+		"pages": "49 pages",
+		"acceptance rate": null,
+		"authorizer": null,
+		"digital library url": "https://doi.org/10.1080/08993408.2019.1565235",
+		"local url": "Xie2019IntroCSTheoryOfInstruction.pdf",
+		"talk url": null,
+		"award":null,
+		"volume": null,
+		"issue": null,
+		"article": null,
+		"publisher": "Apress",
+		"contribution": "Proposes a theory that identifies four distinct skills that novices learn incrementally: tracing, writing syntax, comprehending reusable abstractions of programming knowledge (templates). Demonstrates that teaching these skills incrementally can result in improved completion rate on practice exercises and decreased error rate and improved understanding of the post-test."
+	},
+	{
 		"id": "",
 		"kind": "book chapter",
 		"authors": "Brad A Myers, Andrew J. Ko, Thomas D. LaToza, YoungSeok Yoon",

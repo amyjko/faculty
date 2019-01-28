@@ -6,7 +6,7 @@
 		"description": "Why is learning to code so difficult? How can we make it easier? We've investigated several barriers, including programming environments, learning trajectories, and documentation. Our latest work is investigating social and identity factors that pose barriers to learning, new pedagogies and technologies to rapidly learn programming languages, and new ways to learn programming problem solving.",
 		"funding": ["NSF Exploratory Programming", "NSF Cyberlearning"],
 		"people": ["bxie", "glnelson", "ajko", "dloksa", "kthayer", "banerjee", "kwikh"],
-		"papers": ["csproblemsolving1","csproblemsolving2","ideagardenjvlc","gidget6", "pstutor1", "pltutor1","tutorialeval", "tracing", "barriers", "codebios", "feasibility", "statscomprehension", "bootcamps", "ellblockstudio", "transfer", "teachingstrategies", "irteval"],
+		"papers": ["cs1theory", "csproblemsolving1","csproblemsolving2","ideagardenjvlc","gidget6", "pstutor1", "pltutor1","tutorialeval", "tracing", "barriers", "codebios", "feasibility", "statscomprehension", "bootcamps", "ellblockstudio", "transfer", "teachingstrategies", "irteval"],
 		"demo": null,
 		"video": [
 			{ title: "See WeCode", url: "https://youtu.be/t56g4DYIuUA" }
