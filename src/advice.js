@@ -109,7 +109,7 @@ class Advice extends React.Component {
 
 				<h3 id="goodwriting">How can I become a good technical writer?</h3>
 				
-				<p>When writing and reviewing scientific papers, there are a lot of mistakes one can make. <a href="http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/">Matt Might's advice on technical writing</a> is a helpful guide, as is this deconstruction of <a href="https://sites.umiacs.umd.edu/elm/2016/11/19/writing-rebuttals/">what makes a good rebuttal to conference reviews</a>. As someone who's reviewed hundreds of papers, I find many common mistakes:</p>
+				<p>When writing and reviewing scientific papers, there are a lot of mistakes one can make. <a href="http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/">Matt Might's advice on technical writing</a> is a helpful guide, as is this deconstruction of <a href="https://sites.umiacs.umd.edu/elm/2016/11/19/writing-rebuttals/">what makes a good rebuttal to conference reviews</a>. I also like Chris Parnin's <a href="https://medium.com/@gameweld/error-codes-for-paper-introductions-8deb0d6825c2?fbclid=IwAR0SziEHps-ZD24FqLzG-yAGbk0wMblZ8dmC3r8KwsRsYdthVC6R0ylvWSg">Error Codes for Paper Introductions</a>. As someone who's reviewed hundreds of papers, I find many common mistakes:</p>
 				
 				<ul>
 				
