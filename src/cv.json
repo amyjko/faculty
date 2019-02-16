@@ -954,63 +954,78 @@
 	],
 	programCommittee: [
 		{
-			venue: "International Conference on Software Engineering (ICSE), Program Board",
+			venue: "International Conference on Software Engineering (ICSE)",
+			role: "Program Board",
 			dates: "2019"
 		},
 		{
 			venue: "Programming Experience Workshop (PX)",
+			role: "Member",
 			dates: "2017"
 		},
 		{
-			venue: "ACM International Conference on Computing Education (ICER), Senior Program Committee Member",
+			venue: "ACM International Conference on Computing Education (ICER)",
+			role: "Senior Member",
 			dates: "2014-2015, 2017-2019"
 		},
 		{
-			venue: "ACM Technical Symposium on Computer Science Education (SIGCSE), Senior Program Committee Member",
+			venue: "ACM Technical Symposium on Computer Science Education (SIGCSE)",
+			role: "Senior Member",
 			dates: "2016-2019"
 		},
 		{
 			venue: "Summit on Advances in Programming Languages (SNAPL)",
+			role: "Member",
 			dates: "2017"
 		},
 		{
-			venue: "International Conference on Software Engineering (ICSE), Program Committee",
+			venue: "International Conference on Software Engineering (ICSE)",
+			role: "Member",
 			dates: "2014, 2016, 2018"
 		},
 		{
 			venue: "Workshop on Evaluation and Usability of Programming Languages and Tools (PLATEAU)",
+			role: "Member",
 			dates: "2016"
 		},
 		{
 			venue: "ACM Conference on Human Factors in Computing (CHI)",
+			role: "Associate Chair",
 			dates: "2010-2013"
 		},
 		{
 			venue: "ACM Symposium on User Interface Software and Technology (UIST)",
+			role: "Associate Chair",
 			dates: "2011"
 		},
 		{
 			venue: "ACM Symposium on the Foundations of Software Engineering",
+			role: "Member",
 			dates: "2011"
 		},
 		{
 			venue: "IEEE Visual Languages and Human-Centric Computing",
+			role: "Member",
 			dates: "2009-2010, 2012-2013, 2015"
 		},
 		{
-			venue: "Int'l Workshop on Search-Driven Development",
+			venue: "International Workshop on Search-Driven Development",
+			role: "Member",
 			dates: "2009-2010"
 		},
 		{
 			venue: "Workshop on User Evaluation for Software Engineering Researchers",
+			role: "Member",
 			dates: "2012, 2013"
 		},
 		{
 			venue: "International Workshop on Live Programming",
+			role: "Member",
 			dates: "2013, 2017, 2018"
 		},
 		{
 			venue: "Future Programming Workshop",
+			role: "Member",
 			dates: "2014"
 		}
 	],
