@@ -46,7 +46,7 @@ class Paper extends React.Component {
 				<b><a href={url} target="_blank">{this.props.title}</a></b>;
 
 			return (
-				<div className="paper" name={ this.props.id } className={"ws-bottom " + (this.props.highlight ? "bg-info" : "")}>
+				<div name={ this.props.id } className={"paper ws-bottom " + (this.props.highlight ? "bg-info" : "")}>
 					{award}
 					{award ? <br/> : null}
 					{title}

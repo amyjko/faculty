@@ -108,7 +108,7 @@ a:hover {
 		break-after: avoid-page;
 	}
 
-	p, .ws-bottom {
+	p, .paper {
 		orphans: 2;
 		widows: 2;
 	}
