@@ -71,6 +71,26 @@ class Vita extends React.Component {
 		
 	}
 	
+	getTable(list, prefix, start, stop, header, detail) {
+		
+		var rows = _.map(list, (entry, index) => {
+
+			var end = "";
+			if(entry[stop] !== "none" && entry[start] !== entry[stop])
+				end = "-" + (entry[stop] === null ? "present" : entry[stop]);
+			
+			return <tr key={prefix+index}>
+				<td>{entry[start]}{end}</td>
+				<td>{entry[header]}</td>
+				<td>{entry[detail]}</td>
+			</tr>;
+			
+		});
+			
+		return <table>{rows}</table>;	
+				
+	}
+	
 	render() {
 		
 		return (
@@ -186,7 +206,7 @@ class Vita extends React.Component {
 				
 				<h3>Committee Member</h3>
 
-				{this.getChunkList(cv.doctoralCommittee, "doctoralCommittee", "startdate", "enddate", "name", "department")}
+				{this.getTable(cv.doctoralCommittee, "doctoralCommittee", "startdate", "enddate", "name", "department")}
 				
 				<h2>Service</h2>
 
