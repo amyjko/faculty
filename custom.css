@@ -108,9 +108,9 @@ a:hover {
 		break-after: avoid-page;
 	}
 
-	p, .paper {
-		orphans: 2;
-		widows: 2;
+	/* Don't let any chunk of information get broken.
+	.paper, .row {
+		break-inside: avoid;
 	}
 	
 	@page {
