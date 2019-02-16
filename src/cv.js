@@ -76,7 +76,7 @@ class Vita extends React.Component {
 		return (
 			<div className="cv">
 			
-				<h1>Andrew J. Ko</h1>
+				<h1>Andrew J. Ko, Ph.D.</h1>
 				
 				<p>
 					Associate Professor, The Information School
