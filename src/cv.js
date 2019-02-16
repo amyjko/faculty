@@ -127,7 +127,7 @@ class Vita extends React.Component {
 			
 				<h3>Awards and Recognitions</h3>
 
-				{this.getChunkList(cv.awards, "award", "year", null, "title")}
+				{this.getTable(cv.awards, "award", "year", null, "title")}
 
 				<h2>Funding</h2>
 

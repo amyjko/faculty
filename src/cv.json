@@ -202,20 +202,20 @@
 	
 	awards: [
 		{
-			title: "ICSE Most Influential Paper Award (of papers published in 2008)",
+			title: "ICSE Most Influential Paper Award",
 			year: 2018
 		},
 		{
-			title: "ACM SIGCHI Exceptional Reviewer (UIST 2016, CHI 2016, CHI 2017)",
+			title: "ACM SIGCHI Exceptional Reviewer (UIST, CHI)",
 			year: "2016-2017"
 		},
 		{
-			title: "VL/HCC Most Influential Paper Award (of papers published in 2004)",
-			year: 2004
+			title: "VL/HCC Most Influential Paper Award",
+			year: 2014
 		},
 		{
-			title: "VL/HCC Most Influential Paper Award (of papers published in 2003)",
-			year: 2003
+			title: "VL/HCC Most Influential Paper Award",
+			year: 2013
 		},
 		{
 			title: "University of Washington Presidential Entrepreneurial Faculty Fellow",
@@ -244,7 +244,7 @@
 			year: 2001
 		},
 		{
-			title: "Waldo Cummings Outstanding Student Award (1 of 10 in undergraduate class)",
+			title: "Waldo Cummings Outstanding Student Award (of ~5,000 undergrads)",
 			year: 2001
 		},
 		{
@@ -252,7 +252,7 @@
 			year: 2000
 		},
 		{
-			title: "Waldo Cummings Outstanding Student Award (1 of 5 in undergraduate class)",
+			title: "Waldo Cummings Outstanding Student Award (1 of ~5,000 undergrads)",
 			year: 1999
 		}
 	],
