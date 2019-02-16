@@ -18,15 +18,15 @@
 	jobs: [
 		{
 			title: "Associate Professor",
-			organization: "University of Washington, The Information School",
-			startdate: 2008,
+			organization: "University of Washington, The Information School and Paul G. Allen School of Computer Science & Engineering (courtesy)",
+			startdate: 2014,
 			enddate: null
 		},
 		{
-			title: "Adjunct Associate Professor",
-			organization: "University of Washington, Computer Science & Engineering",
+			title: "Assistant Professor",
+			organization: "University of Washington, The Information School and Paul G. Allen School of Computer Science & Engineering (courtesy)",
 			startdate: 2008,
-			enddate: null	
+			enddate: 2014
 		},
 		{
 			title: "Co-founder and Chief Scientist",
