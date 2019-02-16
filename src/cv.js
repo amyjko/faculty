@@ -76,14 +76,14 @@ class Vita extends React.Component {
 		var rows = _.map(list, (entry, index) => {
 
 			var end = "";
-			if(entry[stop] !== "none" && entry[start] !== entry[stop])
+			if(stop !== undefined && entry[start] !== entry[stop])
 				end = "-" + (entry[stop] === null ? "present" : entry[stop]);
 			
 			return <tr key={prefix+index}>
 				<td><span className="date">{entry[start]}{end}</span></td>
 				<td><strong>{entry[header]}</strong></td>
 				<td>{entry[detail]}</td>
-				{ entry[secondDetail] ? entry[secondDetail] : undefined }
+				{ entry[secondDetail] ? <td>{entry[secondDetail]}</td> : undefined }
 			</tr>;
 			
 		});
@@ -197,7 +197,7 @@ class Vita extends React.Component {
 
 				<p>All scores are <a href="http://www.washington.edu/assessment/course-evaluations/reports/course-reports/adjusted-medians/">adjusted combined medians</a>, which attempts to measure students' perceptions of the effectiveness of an instructor's teaching. The scale is from "Very Poor" (0) to "Excellent" (5).</p>
 
-				{this.getTable(cv.courses, "course", "date", null, "title", "count", "score")}
+				{this.getTable(cv.courses, "course", "date", undefined, "title", "count", "score")}
 
 				<h2>Doctoral Student Supervision</h2>
 				

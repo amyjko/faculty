@@ -478,151 +478,151 @@
 	courses: [
 		{
 			title: "Intellectual Foundations of Informatics (INFO 200)",
-			count: "150 undergraduates",
+			count: "150 undergrads",
 			date: "Autumn 2018",
 			score: "4.8/5.0"
 		},
 		{
 			title: "User Interface Software and Technology (HCID 520)",
-			count: "33 master's students",
+			count: "33 masters",
 			date: "Winter 2018",
 			score: "4.8/5.0"
 		},
 		{
 			title: "Design Methods (INFO 360)",
-			count: "35 undergraduates",
+			count: "35 undergrads",
 			date: "Winter 2018",
 			score: "4.8/5.0"
 		},
 		{
 			title: "Design Methods (INFO 360)",
-			count: "36 undergraduates",
+			count: "36 undergrads",
 			date: "Autumn 2017",
 			score: "4.5/5.0"
 		},
 		{
 			title: "Cooperative Software Development (INFO 461)",
-			count: "35 undergraduates", 
+			count: "35 undergrads", 
 			date: "Spring 2017",
 			score: "4.8/5.0"
 		},
 		{
 			title: "Design Thinking (INFO 360)",
-			count: "35 undergraduates", 
+			count: "35 undergrads", 
 			date: "Winter 2017",
 			score: "5.0/5.0"
 		},
 		{
 			title: "Design Thinking (INFO 360)",
-			count: "35 undergraduates", 
+			count: "35 undergrads", 
 			date: "Fall 2016",
 			score: "4.9/5.0"
 		},
 		{
 			title: "Design Thinking (INFO 360)",
-			count: "37 undergraduates", 
+			count: "37 undergrads", 
 			date: "Fall 2015",
 			score: "4.2/5.0"
 		},
 		{
 			title: "Capstone (INFO 491)",
-			count: "96 undergraduates", 
+			count: "96 undergrads", 
 			date: "Spring 2013",
 			score: "4.1/5.0"
 		},
 		{
 			title: "Capstone (INFO 490)",
-			count: "96 undergraduates", 
+			count: "96 undergrads", 
 			date: "Winter 2013",
 			score: "4.0/5.0"
 		},
 		{
 			title: "Design Thinking (INFO 360)",
-			count: "40 undergraduates", 
+			count: "40 undergrads", 
 			date: "Autumn 2012",
 			score: "4.3/5.0"
 		},
 		{
 			title: "Design Thinking (INFO 360)",
-			count: "39 undergraduates", 
+			count: "39 undergrads", 
 			date: "Autumn 2012",
 			score: "4.7/5.0"
 		},
 		{
 			title: "Capstone (INFO 490)",
-			count: "18 undergraduates", 
+			count: "18 undergrads", 
 			date: "Spring 2012",
 			score: "4.7/5.0"
 		},
 		{
 			title: "Collaborative Software Design (INFO 461)",
-			count: "38 undergraduates", 
+			count: "38 undergrads", 
 			date: "Winter 2012",
 			score: "4.5/5.0"
 		},
 		{
 			title: "Design Thinking (INFO 360)",
-			count: "38 undergraduates", 
+			count: "38 undergrads", 
 			date: "Autumn 2011",
 			score: "4.4/5.0"
 		},
 		{
 			title: "Design Thinking (INFO 360)",
-			count: "39 undergraduates", 
+			count: "39 undergrads", 
 			date: "Autumn 2011",
 			score: "4.3/5.0"
 		},
 		{
 			title: "Human-Computer Interaction and Design Fundamentals (INSC 541)",
-			count: "15 graduate students", 
+			count: "15 masters", 
 			date: "Spring 2011",
 			score: "4.7/5.0"
 		},
 		{
 			title: "Design Thinking (INFO 360)",
-			count: "37 undergraduates", 
+			count: "37 undergrads", 
 			date: "Spring 2011",
 			score: "4.3/5.0"
 		},
 		{
 			title: "Capstone (INFO 490)",
-			count: "22 undergraduates", 
+			count: "22 undergrads", 
 			date: "Winter 2011",
 			score: "3.5/5.0"
 		},
 		{
 			title: "Collaborative Software Design (INFO 461)",
-			count: "26 undergraduates", 
+			count: "26 undergrads", 
 			date: "Autumn 2010",
 			score: "4.5/5.0"
 		},
 		{
 			title: "User-Centered Design (INFO 360)",
-			count: "37 undergraduates", 
+			count: "37 undergrads", 
 			date: "Spring 2010",
 			score: "4.3/5.0"
 		},
 		{
 			title: "User-Centered Design (INFO 360)",
-			count: "37 undergraduates", 
+			count: "37 undergrads", 
 			date: "Spring 2010",
 			score: "4.6/5.0"
 		},
 		{
 			title: "Human-Computer Interaction and Design Fundamentals (INSC 541)",
-			count: "15 graduate students", 
+			count: "15 graduates", 
 			date: "Winter 2010",
 			score: "4.8/5.0"
 		},
 		{
 			title: "User-Centered Design (INFO 440)",
-			count: "35 undergraduates", 
+			count: "35 undergrads", 
 			date: "Autumn 2008",
 			score: "4.5/5.0"
 		},
 		{
 			title: "User-Centered Design (INFO 440)",
-			count: "35 undergraduates", 
+			count: "35 undergrads", 
 			date: "Autumn 2008",
 			score: "4.6/5.0"
 		}
