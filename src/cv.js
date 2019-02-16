@@ -202,7 +202,7 @@ class Vita extends React.Component {
 
 				{this.getChunkList(cv.programChair, "programChair", "dates", null, "venue", "title")}
 
-				<h3>Program Committee Member</h3>
+				<h3>Conference Program Committee Member</h3>
 
 				{this.getChunkList(cv.programCommittee, "programCommittee", "dates", null, "venue")}
 
