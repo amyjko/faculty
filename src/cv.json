@@ -768,7 +768,7 @@
 			name: "James Bornholt",
 			department: "Computer Science & Engineering",
 			startdate: 2017,
-			enddate: null
+			enddate: 2018
 		},
 		{
 			name: "Abdullah Ali",
@@ -786,19 +786,19 @@
 			name: "Lauren Milne",
 			department: "Computer Science & Engineering",
 			startdate: 2016,
-			enddate: null
+			enddate: 2018
 		},
 		{
 			name: "Eric Butler",
 			department: "Computer Science & Engineering",
 			startdate: 2016,
-			enddate: null
+			enddate: 2018
 		},
 		{
 			name: "Justin Huang",
 			department: "Computer Science & Engineering",
 			startdate: 2016,
-			enddate: null
+			enddate: 2018
 		},
 		{
 			name: "Elena Agapie",
@@ -810,7 +810,7 @@
 			name: "Jonathan Bragg",
 			department: "Computer Science & Engineering",
 			startdate: 2016,
-			enddate: null
+			enddate: 2018
 		},
 		{
 			name: "Nan-Chen Chen",
@@ -828,7 +828,7 @@
 			name: "Catherine Baker",
 			department: "Computer Science & Engineering",
 			startdate: 2012,
-			enddate: null
+			enddate: 2017
 		},
 		{
 			name: "Roshanak Zilouchian",
@@ -846,7 +846,7 @@
 			name: "Jared Bauer",
 			department: "Information School",
 			startdate: 2011,
-			enddate: null
+			enddate: 2016
 		},
 		{
 			name: "Paul Gross",
