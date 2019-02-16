@@ -27,7 +27,7 @@ class Paper extends React.Component {
 
 		var award = this.props.award ? <span className="award">&#x2605; {this.props.award}</span> : undefined;
 		
-		var contribution = this.props.contribution ? <i className="text-muted small">{this.props.contribution}</i> : undefined;
+		var contribution = this.props.contribution && !this.props.hideContribution ? <i className="text-muted small">{this.props.contribution}</i> : undefined;
 
 		if(this.props.link) {
 
