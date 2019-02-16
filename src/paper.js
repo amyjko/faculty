@@ -27,7 +27,7 @@ class Paper extends React.Component {
 
 		var award = this.props.award ? <span className="award">&#x2605; {this.props.award}</span> : undefined;
 		
-		var contribution = this.props.contribution ? <div><i className="text-muted small">{this.props.contribution}</i></div> : undefined;
+		var contribution = this.props.contribution ? <i className="text-muted small">{this.props.contribution}</i> : undefined;
 
 		if(this.props.link) {
 
@@ -50,10 +50,9 @@ class Paper extends React.Component {
 					{award}
 					{award ? <br/> : null}
 					{title}
-					<div className="details">
-						{authors} ({this.props.year})
-						<br/><small><i>{this.props.source}</i>{this.props.pages == '' ? "." : ", " + this.props.pages + "."}</small>						{contribution}
-					</div>
+					{authors} ({this.props.year})
+					<br/><small><i>{this.props.source}</i>{this.props.pages == '' ? "." : ", " + this.props.pages + "."}</small>
+					<br/>{contribution}
 				</div>
 			)
 			
