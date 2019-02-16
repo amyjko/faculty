@@ -50,7 +50,7 @@ class Paper extends React.Component {
 					{award}
 					{award ? <br/> : null}
 					{title}
-					{authors} ({this.props.year})
+					<br/>{authors} ({this.props.year})
 					<br/><small><i>{this.props.source}</i>{this.props.pages == '' ? "." : ", " + this.props.pages + "."}</small>
 					<br/>{contribution}
 				</div>
