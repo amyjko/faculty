@@ -715,6 +715,21 @@
 			enddate: null
 		},
 		{
+			name: "Yim Register",
+			department: "Information School",
+			startdate: 2018,
+			enddate: null
+		},
+		{
+			name: "Alannah Oleson",
+			department: "Information School",
+			notes: [
+				"NSF Graduate Research Fellowship"
+			],
+			startdate: 2018,
+			enddate: null
+		},
+		{
 			name: "Casey Hickerson",
 			department: "Information School",
 			startdate: 2009,
