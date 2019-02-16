@@ -21,7 +21,7 @@ class Chunk extends React.Component {
 
 		return (
 			<div className="row">
-				<div className="col-md-2">
+				<div className="col-md-2 date">
 					{this.props.start}{end}
 				</div>
 				<div className="col-md-10">
