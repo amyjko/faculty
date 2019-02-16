@@ -80,14 +80,14 @@ class Vita extends React.Component {
 				end = "-" + (entry[stop] === null ? "present" : entry[stop]);
 			
 			return <tr key={prefix+index}>
-				<td>{entry[start]}{end}</td>
-				<td>{entry[header]}</td>
+				<td><span className="date">{entry[start]}{end}</span></td>
+				<td><strong>{entry[header]}</strong></td>
 				<td>{entry[detail]}</td>
 			</tr>;
 			
 		});
 			
-		return <table>{rows}</table>;	
+		return <table className="table table-striped">{rows}</table>;	
 				
 	}
 	
