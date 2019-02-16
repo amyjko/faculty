@@ -87,7 +87,7 @@ class Vita extends React.Component {
 			
 		});
 			
-		return <table className="table table-striped">{rows}</table>;	
+		return <table className="table table-striped"><tbody>{rows}<tbody></table>;	
 				
 	}
 	
