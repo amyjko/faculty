@@ -84,7 +84,7 @@ class Vita extends React.Component {
 					<br/>University of Washington, Seattle, USA
 				</p>
 				
-				<h2>Research Areas</h2>
+				<h2>Interests</h2>
 				
 				<p>
 					I research effective, equitable, scalable ways for humanity to harness the power of computing. This work spans human-computer interaction, software engineering, and computing education.
