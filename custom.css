@@ -108,7 +108,7 @@ a:hover {
 		break-after: avoid-page;
 	}
 
-	/* Don't let any chunk of information get broken.
+	/* Don't let any chunk of information get broken. */
 	.paper, .row {
 		break-inside: avoid;
 	}
