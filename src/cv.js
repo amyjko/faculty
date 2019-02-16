@@ -85,7 +85,10 @@ class Vita extends React.Component {
 				</p>
 				
 				<h2>Research Areas</h2>
-				<p>My research concerns interactions between people and code. I invent better developer tools, I study software teams, I design better ways to learn to code, and new ways to learn how software works. My interests span human-computer interaction, software engineering, and computing education.</p>
+				
+				<p>
+					I research effective, equitable, scalable ways for humanity to harness the power of computing. This work spans human-computer interaction, software engineering, and computing education.
+				</p>
 
 				<h2>Education</h2>
 
