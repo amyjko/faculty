@@ -81,7 +81,7 @@ class Vita extends React.Component {
 				<p>
 					Associate Professor, The Information School
 					<br/>Adjunct Associate Professor, Paul G. Allen School of Computer Science & Engineering
-					<br/>University of Washington
+					<br/>University of Washington, Seattle, USA
 				</p>
 				
 				<h2>Research Areas</h2>
