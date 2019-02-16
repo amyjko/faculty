@@ -194,17 +194,17 @@ class Vita extends React.Component {
 				
 				{this.getChunkList(cv.academicChair, "academicChair", "dates", null, "program", "title", "notes")}
 
-				<h3>Technical Program Chair</h3>
+				<h3>Journal Editorial Boards</h3>
+			
+				{this.getChunkList(cv.editor, "editor", "dates", null, "venue", "title")}
+
+				<h3>Conference Program Chair</h3>
 
 				{this.getChunkList(cv.programChair, "programChair", "dates", null, "venue", "title")}
 
 				<h3>Program Committee Member</h3>
 
 				{this.getChunkList(cv.programCommittee, "programCommittee", "dates", null, "venue")}
-
-				<h3>Editorial Boards</h3>
-			
-				{this.getChunkList(cv.editor, "editor", "dates", null, "venue", "title")}
 
 				<h3>Reviewer</h3>
 
