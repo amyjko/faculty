@@ -555,7 +555,7 @@
 			score: "4.7/5.0"
 		},
 		{
-			title: "Collaborative Software Design (INFO 461)",
+			title: "Collaborative Software Development (INFO 461)",
 			count: "38 undergrads", 
 			date: "Winter 2012",
 			score: "4.5/5.0"
@@ -573,7 +573,7 @@
 			score: "4.3/5.0"
 		},
 		{
-			title: "Human-Computer Interaction and Design Fundamentals (INSC 541)",
+			title: "HCI and Design Fundamentals (INSC 541)",
 			count: "15 masters", 
 			date: "Spring 2011",
 			score: "4.7/5.0"
@@ -609,7 +609,7 @@
 			score: "4.6/5.0"
 		},
 		{
-			title: "Human-Computer Interaction and Design Fundamentals (INSC 541)",
+			title: "HCI and Design Fundamentals (INSC 541)",
 			count: "15 graduates", 
 			date: "Winter 2010",
 			score: "4.8/5.0"
