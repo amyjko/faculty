@@ -101,3 +101,20 @@ a:hover {
 .nav > li > a {
 	padding: 10px 10px;
 }
+
+@media print {
+	
+	h2, h3 {
+		break-after: avoid-page;
+	}
+
+	p {
+		orphans: 2;
+		widows: 2;
+	}
+	
+	@page {
+		margin: 6em;
+	}
+	
+}
