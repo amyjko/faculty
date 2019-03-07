@@ -931,6 +931,11 @@
 	programChair: [
 		{
 			title: "Program Co-Chair",
+			venue: "International Computing Education Research Conference (ICER)", 
+			dates: "2021"
+		},
+		{
+			title: "Program Co-Chair",
 			venue: "International Conference on Software Engineering (ICSE), Software Engineering Education and Training Track", 
 			dates: "2020"
 		},

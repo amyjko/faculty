@@ -85,6 +85,7 @@ class Posts extends React.Component {
 				<h2 id="softengr">On software engineering and design</h2>
 				
 				<ul>
+					<li><a href="https://medium.com/bits-and-behavior/the-problem-with-learnability-in-human-computer-interaction-91e598aed795" target="_blank">‪The problem with learnability in human-computer interaction</a> (February 2019)</li>
 					<li><a href="https://medium.com/bits-and-behavior/ten-years-after-the-whyline-a965d3233909" target="_blank">Ten years after the Whyline</a> (June 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/grand-challenges-in-program-comprehension-and-software-repository-mining-my-keynote-on-7bf2cfc182a5" target="_blank">Grand challenges in program comprehension and software repository mining: my keynote on interdisciplinarity and research relevance</a> (May 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/designing-learnable-teachable-and-productive-programming-languages-dagstuhl-trip-report-81e41bde84bd" target="_blank">Designing and evaluating programming languages: Dagstuhl trip report</a> (February 2018)</li>
@@ -141,6 +142,7 @@ class Posts extends React.Component {
 				<h2 id="trips">Trip reports</h2>
 
 				<ul>
+					<li><a href="https://medium.com/bits-and-behavior/sigcse-2019-trip-report-celebrating-50-years-b3460835a09a‬">SIGCSE 2019 Trip Report</a> (March 2019)</li>
 					<li><a href="https://medium.com/bits-and-behavior/the-2018-acm-international-computing-education-research-conference-espoo-finland-ed548572cca5">The 2018 ACM International Computing Education Research Conference in Espoo, Finland</a> (August 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/2018-acm-education-council-meeting-a8d371e62034">2018 ACM Education Council meeting</a> (August 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/icse-2018-trip-report-50-years-of-software-engineering-4944992c5b" target="_blank">ICSE 2018 trip report: 50 years of software engineering</a> (June 2018)</li>
