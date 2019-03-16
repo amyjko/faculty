@@ -168,6 +168,7 @@ class Posts extends React.Component {
 				<h2 id="teaching">Teaching</h2>
 				
 				<ul>
+					<li><a href="https://medium.com/bits-and-behavior/grading-is-ineffective-harmful-and-unjust-lets-stop-doing-it-52d2ef8ffc47" target="_blank">Grading is ineffective, harmful, and unjust &mdash; let's stop doing it</a> (March 2019)</li>
 					<li><a href="https://medium.com/bits-and-behavior/its-easier-to-ignore-diversity-in-schools-22eb20d56667" target="_blank">It's easier to ignore diversity in schools</a> (July 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/how-to-design-a-class-a1c8b419b9f5" target="_blank">How to design a class</a> (July 2017)</li>
 					<li><a href="https://medium.com/bits-and-behavior/how-to-be-a-great-cs-teacher-b8a0a2a3600f" target="_blank">How to be a great (CS) teacher</a> (May 2017)</li>
