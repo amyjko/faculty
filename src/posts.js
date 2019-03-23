@@ -118,6 +118,7 @@ class Posts extends React.Component {
 				<h2 id="society">Software and society</h2>
 				
 				<ul>
+					<li><a href="https://medium.com/bits-and-behavior/my-evolving-relationship-with-video-games-884559ba9180" target="_blank">My evolving relationship with video games</a>n (March 2019)</li>
 					<li><a href="https://medium.com/bits-and-behavior/2018-masters-in-hci-design-commencement-speech-design-values-and-organizations-fd122b612563" target="_blank">2018 Masters in HCI+Design commencement speech: design, values, and organizations</a> (August 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/meow-wolf-the-art-of-immersive-ubiquitous-computing-c00d27323ace" target="_blank">Meow Wolf: the art of immersive, ubiquitous computing</a> (April 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/what-makes-software-valuable-36a1335ad1f7" target="_blank">What makes software valuable?</a> (November 2017)</li>
