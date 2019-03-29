@@ -67,7 +67,7 @@
 			amount: "$738,125",
 			startdate: 2019,
 			enddate: 2022,
-			description: "New techniques to formally verify a range of accessbility properties of web applications."
+			description: "New techniques to formally verify a range of accessibility properties of web applications."
 		},
 		{
 			title: "Programming Strategies",

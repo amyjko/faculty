@@ -2,7 +2,7 @@
 	{
 		"id": "",
 		"kind": "book chapter",
-		"authors": "Andrew J. Ko, Sally Fincher",
+		"authors": "Andrew J. Ko and Sally Fincher",
 		"year": 2019,
 		"title": "A Study Design Process",
 		"source": "Cambridge Handbook on Computing Education Research (Sally Fincher, Anthony Robin, Eds.)",
@@ -528,7 +528,7 @@
 	},
 	{
 		"id":"nonengineers",
-		"kind":"refereed conference paper",
+		"kind":"refereed workshop paper",
 		"authors":"Paul Luo Li, Andrew J. Ko, and Andrew Begel",
 		"year":2017,
 		"title":"Cross-Disciplinary Perspectives on Collaborations with Software Engineers",
@@ -613,7 +613,7 @@
 	{
 		"id":"tutorialeval",
 		"kind":"refereed conference paper",
-		"authors":"Kim, A. and Ko, A.J.",
+		"authors":"Ada Kim and Andrew J. Ko",
 		"year":2017,
 		"title":"A Pedagogical Analysis of Online Coding Tutorials",
 		"source":"ACM Technical Symposium on Computer Science Education (SIGCSE)",
@@ -634,7 +634,7 @@
 	{
 		"id":"",
 		"kind":"refereed workshop paper",
-		"authors":"Ko, A.J.",
+		"authors":"Andrew J. Ko",
 		"year":2016,
 		"title":"What is a Programming Language, Really?",
 		"source":"ACM Workshop on Workshop on Evaluation and Usability of Programming Languages and Tools (PLATEAU)",
@@ -655,7 +655,7 @@
 	{
 		"id":"",
 		"kind":"refereed magazine article",
-		"authors":"Ko, A.J. and Ladner, R.",
+		"authors":"Andrew J. Ko, Richard Ladner",
 		"year":2016,
 		"title":"AccessComputing Promotes Teaching Accessibility",
 		"source":"ACM Inroads",
@@ -676,7 +676,7 @@
 	{
 		"id":"csproblemsolving2",
 		"kind":"refereed conference paper",
-		"authors":"Loksa, D., Ko, A.J.",
+		"authors":"Dastyni Loksa, Andrew J. Ko",
 		"year":2016,
 		"title":"The Role of Self-Regulation in Programming Problem Solving Process and Success",
 		"source":"ACM International Computing Education Research Conference (ICER)",
@@ -697,7 +697,7 @@
 	{
 		"id":"",
 		"kind":"book chapter",
-		"authors":"Ko, A.J.",
+		"authors":"Andrew J. Ko",
 		"year":2016,
 		"title":"The World is Your Test Suite",
 		"source":"Perspectives on Data Science for Software Engineering, 1st Edition",
@@ -718,7 +718,7 @@
 	{
 		"id":"",
 		"kind":"refereed magazine article",
-		"authors":"Myers, B.A., Ko, A.J., LaToza, T., Yoon, Y.",
+		"authors":"Brad A. Myers, Andrew J. Ko, Thomas LaToza, YoungSeok Yoon",
 		"year":2016,
 		"title":"Programmers are Users Too: Human Centered Methods for Improving Tools for Programming",
 		"source":"IEEE Computer",
@@ -739,7 +739,7 @@
 	{
 		"id":"csproblemsolving1",
 		"kind":"refereed conference paper",
-		"authors":"Loksa, D., Ko, A.J., Jernigan, W., Oleson, A., Mendez, C., Burnett, M.M.",
+		"authors":"Dastyni Loksa, Andrew J. Ko, William Jernigan, Alannah Oleson, Chris Mendez, Margaret M. Burnett",
 		"year":2016,
 		"title":"Programming, Problem Solving, and Self-Awareness: Effects of Explicit Guidance",
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -760,7 +760,7 @@
 	{
 		"id":null,
 		"kind":"whitepaper",
-		"authors":"Cooper, S., Forbes, J., Fox, A., Hambrusch, S., Ko, A.J., Simon B.",
+		"authors":"Steve Cooper, Jeff Forbes, Armando Fox, Susan Hambrusch, Andrew J. Ko, Beth Simon",
 		"year":2016,
 		"title":"The Importance of Computing Education Research",
 		"source":"CRA Computing Community Consortium",
@@ -771,7 +771,7 @@
 	{
 		"id":"scry",
 		"kind":"refereed conference paper",
-		"authors":"Burg, B., Ko, A.J., and Ernst, M.D.",
+		"authors":"Brian Burg, Andrew J. Ko, and Michael D. Ernst",
 		"year":2015,
 		"title":"Explaining Visual Changes in Web Interfaces",
 		"source":"ACM Symposium on User Interface Software and Technology",
@@ -792,7 +792,7 @@
 	{
 		"id":"gidget6",
 		"kind":"refereed conference paper",
-		"authors":"Jernigan, W., Horvath, A., Lee, J.J., Burnett, M.M., Cuilty, T., Kuttal, S., Peters, A., Kwan, I., Bahmani, F. and Ko, A.J.",
+		"authors":"William Jernigan, Amber Horvath, Michael J. Lee, Margaret M. Burnett, Taylor Cuilty, Sandeep Kuttal, Anicia N. Peters, Irwin Kwan, Faezeh Bahmani, and Andrew J. Ko",
 		"year":2015,
 		"title":"A Principled Evaluation for a Principled Idea Garden",
 		"source":"IEEE Symposium on Visual Languages and Human-Centered Computing",
@@ -813,10 +813,10 @@
 	{
 		"id":"gidget5",
 		"kind":"refereed conference paper",
-		"authors":"Lee, M.J. and Ko, A.J.",
+		"authors":"Michael J. Lee and Andrew J. Ko",
 		"year":2015,
 		"title":"Comparing the Effectiveness of Online Learning Approaches on CS1 Learning Outcomes",
-		"source":"ACM International Computing Education Research Conference",
+		"source":"ACM International Computing Education Research Conference (ICER)",
 		"location":"",
 		"pages":"237-246",
 		"acceptance rate":"26%",
@@ -834,7 +834,7 @@
 	{
 		"id":"greatengineer1",
 		"kind":"refereed conference paper",
-		"authors":"Li, P., Ko, A.J., and Zhu, J.",
+		"authors":"Paul Li, Andrew J. Ko, and Jiamin Zhu",
 		"year":2015,
 		"title":"What Makes a Great Software Engineer?",
 		"source":"International Conference on Software Engineering (ICSE)",
@@ -855,7 +855,7 @@
 	{
 		"id":"lemonaid3",
 		"kind":"refereed conference paper",
-		"authors":"Chilana, P.K., Ko, A.J., and Wobbrock, J.O.",
+		"authors":"Parmit K. Chilana, Andrew J. Ko, and Jacob O. Wobbrock",
 		"year":2015,
 		"title":"From User-Centered Design to Adoption-Centered Design: A Case Study of a Research System Becoming a Product",
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -876,7 +876,7 @@
 	{
 		"id":"",
 		"kind":"poster paper",
-		"authors":"Lee, M.J. and Ko, A.J.",
+		"authors":"Michael J. Lee and Andrew J. Ko",
 		"year":2014,
 		"title":"Gidget: An Online Debugging Game for Learning and Engagement in Computing Education",
 		"source":"IEEE Symposium on Visual Languages and Human-Centric Computing",
@@ -897,7 +897,7 @@
 	{
 		"id":"gidget4",
 		"kind":"refereed conference paper",
-		"authors":"Lee, M.J., Bahmani, F., Kwan, I., LaFerte, J., Charters, P., Horvath, A., Luor, F., Cao, J., Law, C., Beswetherick, M., Long, S., Burnett, M.M., Ko, A.J.",
+		"authors":"Michael J. Lee, Faezeh Bahmani, Irwin Kwan, Jillian LaFerte, Polina Charters, Amber Horvath, Fanny Luor, Jill Cao, Catherine Law, Michael Beswetherick, Sheridan Long, Margaret M. Burnett, and Andrew J. Ko",
 		"year":2014,
 		"title":"Principles of a Debugging-First Puzzle Game for Computing Education",
 		"source":"IEEE Symposium on Visual Languages and Human-Centric Computing",
@@ -918,7 +918,7 @@
 	  {
 		"id":"newsproblems",
 		"kind":"refereed workshop paper",
-		"authors":"Ko, A.J., Dosono, B., Duriseti, N.",
+		"authors":"Andrew J. Ko, Brian Dosono, and Neeraja Duriseti",
 		"year":2014,
 		"title":"Thirty Years of Software Problems in the News",
 		"source":"International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
@@ -939,7 +939,7 @@
   {
 	"id":"adultattitudes",
 	"kind":"refereed conference paper",
-	"authors":"Charters, P., Lee, M.J., Ko, A.J., Loksa, D.",
+	"authors":"Polina Charters, Michael J. Lee, Andrew J. Ko, and Dastyni Loksa",
 	"year":2014,
 	"title":"Challenging Stereotypes and Changing Attitudes: The Effect of a Brief Programming Encounter on Adults' Attitudes toward Programming",
 	"source":"ACM Symposium on Computer Science Education",
@@ -960,7 +960,7 @@
   {
 	"id":"practicalguide",
 	"kind":"journal article",
-	"authors":"Ko, A.J., LaToza, T., Burnett, M. M.",
+	"authors":"Andrew J. Ko, Thomas LaToza, and Margaret M. Burnett",
 	"year":2013,
 	"title":"A Practical Guide to Controlled Experiments of Software Engineering Tools with Human Participants",
 	"source":"Empirical Software Engineering",
@@ -981,7 +981,7 @@
   {
 	"id":"timelapse",
 	"kind":"refereed conference paper",
-	"authors":"Burg, B., Bailey, R., Ko, A.J., Ernst, M.D.",
+	"authors":"Brian Burg, Richard Bailey, Andrew J. Ko, and Michael D. Ernst",
 	"year":2013,
 	"title":"Interactive Record/Replay for Web Application Debugging",
 	"source":"ACM Symposium on User Interface Software and Technology (UIST)",
@@ -1002,10 +1002,10 @@
   {
 	"id":"gidget3",
 	"kind":"refereed conference paper",
-	"authors":"Lee, M.J., Ko, A.J., Kwan, I.",
+	"authors":"Michael J. Lee, Andrew J. Ko, and Irwin Kwan",
 	"year":2013,
 	"title":"In-Game Assessments Increase Novice Programmers' Engagement and Learning Efficiency",
-	"source":"ACM International Computing Education Research Conference",
+	"source":"ACM International Computing Education Research Conference (ICER)",
 	"location":"",
 	"pages":"153-160",
 	"acceptance rate":"30%",
@@ -1023,7 +1023,7 @@
   {
 	"id":"lemonaid2",
 	"kind":"refereed conference paper",
-	"authors":"Chilana, P.K., Ko, A.J., Wobbrock, J.",
+	"authors":"Parmit K. Chilana, Andrew J. Ko, and Jacob O. Wobbrock",
 	"year":2013,
 	"title":"A Multi-Site Field Study of Crowdsourced Contextual Help: Usage and Perspectives of End-Users and Software Teams",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -1044,7 +1044,7 @@
   {
 	"id":"",
 	"kind":"non-refereed workshop paper",
-	"authors":"Chilana, P.K., Ko, A.J., Wobbrock, J.",
+	"authors":"Parmmit K. Chilana, Andrew J. Ko, and Jacob O. Wobbrock",
 	"year":2013,
 	"title":"Crowdsourced Q&A-based Contextual Help for Web Applications: Challenges and Opportunities",
 	"source":"CSCW Workshop on Social Media Question Asking",
@@ -1065,7 +1065,7 @@
   {
 	"id":"lemonaid1",
 	"kind":"refereed conference paper",
-	"authors":"Chilana, P.K., Ko, A.J., Wobbrock, J.",
+	"authors":"Parmit K. Chilana, Andrew J. Ko, and Jacob O. Wobbrock",
 	"year":2012,
 	"title":"LemonAid: Selection-Based Crowdsourced Contextual Help for Web Applications",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -1086,7 +1086,7 @@
   {
 	"id":"",
 	"kind":"refereed conference paper",
-	"authors":"Kriplean, T., Toomim, M., Morgan, J., Borning, A., & Ko, A.J.",
+	"authors":"Travis Kriplean, Michael Toomim, Jonathan Morgan, Alan Borning, and Andrew J. Ko",
 	"year":2012,
 	"title":"Is This What You Meant? Promoting Listening on the Web with Reflect",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -1107,7 +1107,7 @@
   {
 	"id":"frictionary",
 	"kind":"juried conference paper",
-	"authors":"Ko, A.J.",
+	"authors":"Andrew J. Ko",
 	"year":2012,
 	"title":"Mining Whining in Support Forums with Frictionary",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI), alt.chi",
@@ -1128,7 +1128,7 @@
   {
 	"id":"facebookcasestudy",
 	"kind":"juried conference paper",
-	"authors":"Chilana, P.K., Holsberry, C., Oliveira, F., and Ko, A.J.",
+	"authors":"Parmit K. Chilana, Christina Holsberry, Flavio Oliveira, and Andrew J. Ko",
 	"year":2012,
 	"title":"Designing for a Billion Users: A Case Study of Facebook",
 	"source":"ACM Conference on Human Factors in Computing Systems, Case Studies (CHI)",
@@ -1149,7 +1149,7 @@
   {
 	"id":"gidget1",
 	"kind":"refereed conference paper",
-	"authors":"Lee, M.J. and Ko, A.J.",
+	"authors":"Michael J. Lee and Andrew J. Ko",
 	"year":2011,
 	"title":"Personifying Programming Tool Feedback Improves Novice Programmers' Learning",
 	"source":"International Computing Education Research Workshop (ICER)",
@@ -1170,7 +1170,7 @@
   {
 	"id":"feedlack",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J. and Zhang, X.",
+	"authors":"Andrew J. Ko and Xing Zhang",
 	"year":2011,
 	"title":"FeedLack Detects Missing Feedback in Web Applications",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -1191,7 +1191,7 @@
   {
 	"id":"beta",
 	"kind":"refereed conference paper",
-	"authors":"Li, P., Kivett, R. Zhan T., Jeon S., Nagappan, N., Murphy, B., and Ko, A.J.",
+	"authors":"Paul L. Li, Ryan Kivett, Zhiyuan Zhan, Sung-eok Jeon, Nachiappan Nagappan, Brendan Murphy, and Andrew J. Ko",
 	"year":2011,
 	"title":"Characterizing the Differences Between Pre- and Post- release Versions of Software",
 	"source":"International Conference on Software Engineering (ICSE), Software Engineering in Practice",
@@ -1212,7 +1212,7 @@
   {
 	"id":"openbugs2",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J. and Chilana, P.K.",
+	"authors":"Andrew J. Ko and Parmit K. Chilana",
 	"year":2011,
 	"title":"Design, Discussion, and Dissent in Open Bug Reports",
 	"source":"iConference",
@@ -1233,7 +1233,7 @@
   {
 	"id":"gestalt",
 	"kind":"refereed conference paper",
-	"authors":"Patel, K., Bancroft, N., Drucker, S., Fogarty, J., Ko, A.J., Landay, J.A.",
+	"authors":"Kayer Patel, Naomi Bancroft, Steven M. Drucker, James Fogarty, Andrew J. Ko, and James A. Landay",
 	"year":2010,
 	"title":"Gestalt: Integrated Support for Implementation and Analysis in Machine Learning Processes",
 	"source":"ACM Symposium on User Interface Software and Technology (UIST)",
@@ -1254,7 +1254,7 @@
   {
 	"id":"cleanroom",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J. and Wobbrock, J.O.",
+	"authors":"Andrew J. Ko and Jacob O. Wobbrock",
 	"year":2010,
 	"title":"Cleanroom: Edit-Time Error Detection with the Uniqueness Heuristic",
 	"source":"IEEE Symposium on Visual Languages and Human-Centric Computing",
@@ -1275,7 +1275,7 @@
   {
 	"id":"openbugs1",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J. and Chilana, P.K.",
+	"authors":"Andrew J. Ko and Parmit K. Chilana",
 	"year":2010,
 	"title":"How Power Users Help and Hinder Open Bug Reporting",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -1296,7 +1296,7 @@
   {
 	"id":"complexdomains",
 	"kind":"refereed conference paper",
-	"authors":"Chilana P., Wobbrock, J.O., and Ko, A.J.",
+	"authors":"Parmit K. Chilana, Jacob O. Wobbrock, and Andrew J. Ko",
 	"year":2010,
 	"title":"Understanding Usability Practices in Complex Domains: Implications for Training the Next Generation of Usability Professionals",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -1317,7 +1317,7 @@
   {
 	"id":"codebios",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J.",
+	"authors":"Andrew J. Ko",
 	"year":2009,
 	"title":"Attitudes and Self-Efficacy in Young Adults' Computing Autobiographies",
 	"source":"IEEE Symposium on Visual Languages and Human-Centric Computing",
@@ -1338,7 +1338,7 @@
   {
 	"id":"whyline3",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J. and Myers, B.A.",
+	"authors":"Andrew J. Ko and Brad A. Myers",
 	"year":2009,
 	"title":"Finding Causes of Program Output with the Java Whyline",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -1359,7 +1359,7 @@
   {
 	"id":"whydebugclassifier2",
 	"kind":"refereed conference paper",
-	"authors":"Kuleza T., Wong W.K., Stumpf S., Perona S., White R., Burnett M.M., Oberst I., and Ko, A.J.",
+	"authors":"Todd Kuleza, Weng-Keen Wong, Simone Stumpf, Stephen Perona, Rachel White	, Margaret M. Burnett, Ian Oberst	, and Andrew J. Ko",
 	"year":2009,
 	"title":"Fixing the Program My Computer Learned: Barriers for End Users, Challenges for the Machine",
 	"source":"International Conference on Intelligent User Interfaces (IUI)",
@@ -1380,7 +1380,7 @@
   {
 	"id":"",
 	"kind":"refereed conference paper",
-	"authors":"Myers B.A., Park S., Nakano Y., Mueller G., and Ko, A.J.",
+	"authors":"Brad A. Myers, Sun Young Park, Yoko Nakano, Greg Mueller, and Andrew J. Ko",
 	"year":2008,
 	"title":"How Designers Design and Program Interactive Behaviors",
 	"source":"IEEE Symposium on Visual Languages and Human-Centric Computing",
@@ -1401,7 +1401,7 @@
   {
 	"id":"whyline2",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J. and Myers, B.A.",
+	"authors":"Andrew J. Ko and Brad A. Myers",
 	"year":2008,
 	"title":"Debugging Reinvented: Asking and Answering Why and Why Not Questions about Program Behavior",
 	"source":"International Conference on Software Engineering (ICSE)",
@@ -1422,7 +1422,7 @@
   {
 	"id":"informationneeds",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J., DeLine, R., and Venolia, G.",
+	"authors":"Andrew J. Ko, Rob DeLine, and Gina Venolia",
 	"year":2007,
 	"title":"Information Needs in Collocated Software Development Teams",
 	"source":"International Conference on Software Engineering (ICSE)",
@@ -1443,7 +1443,7 @@
   {
 	"id":"devwhiteboards",
 	"kind":"refereed conference paper",
-	"authors":"Cherubini, M., Venolia, G. DeLine, R. and Ko, A.J.",
+	"authors":"Mauro Cherubini, Gina Venolia, Rob DeLine, and Andrew J. Ko",
 	"year":2007,
 	"title":"Let's Go to the Whiteboard: How and Why Software Developers Draw Code",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -1464,7 +1464,7 @@
   {
 	"id":"linguisticbugs",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J., Myers, B.A., and Chau, D.H.",
+	"authors":"Andrew J. Ko, Brad A. Myers, and Duen Horng Chau",
 	"year":2006,
 	"title":"A Linguistic Analysis of How People Describe Software Problems in Bug Reports",
 	"source":"Visual Languages and Human-Centric Computing",
@@ -1485,7 +1485,7 @@
   {
 	"id":"crystal",
 	"kind":"refereed conference paper",
-	"authors":"Myers, B. A., Weitzman, D., Ko, A.J., and Chau, D. H.",
+	"authors":"Brad A. Myers, David Weitzman, Andrew J. Ko, and Duen Horng Chau",
 	"year":2006,
 	"title":"Answering Why and Why Not Questions in User Interfaces",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -1506,7 +1506,7 @@
   {
 	"id":"barista",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J. and Myers, B.A.",
+	"authors":"Andrew J. Ko and Brad A. Myers",
 	"year":2006,
 	"title":"Barista: An Implementation Framework for Enabling New Tools, Interaction Techniques and Views for Code Editors",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -1527,7 +1527,7 @@
   {
 	"id":"citrus",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J. and Myers, B.A.",
+	"authors":"Andrew J. Ko and Brad A. Myers",
 	"year":2005,
 	"title":"Citrus: A Language and Toolkit for Simplifying the Creation of Structured Editors for Code and Data",
 	"source":"ACM Symposium on User Interface Software and Technology (UIST)",
@@ -1548,7 +1548,7 @@
   {
 	"id":"devinterrupt",
 	"kind":"refereed conference paper",
-	"authors":"Fogarty, J., Ko, A.J., Aung, H.H., Golden, E., Tang, K.P., and Hudson, S.E.",
+	"authors":"James Fogarty, Andrew J. Ko, Htet Htet Aung, Elspeth Golden, Karen P. Tang, and Scott E. Hudson",
 	"year":2005,
 	"title":"Examining Task Engagement in Sensor-Based Statistical Models of Human Interruptibility",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -1569,7 +1569,7 @@
   {
 	"id":"maintenancetasks",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J., Aung, H., and Myers, B.A.",
+	"authors":"Andrew J. Ko, Htet Htet Aung, and Brad A. Myers",
 	"year":2005,
 	"title":"Eliciting Design Requirements for Maintenance-Oriented IDEs: A Detailed Study of Corrective and Perfective Maintenance Tasks",
 	"source":"International Conference on Software Engineering (ICSE)",
@@ -1590,7 +1590,7 @@
   {
 	"id":"barriers",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J., Myers, B.A., and Aung, H.",
+	"authors":"Andrew J. Ko, Brad A. Myers, and Htet Htet Aung",
 	"year":2004,
 	"title":"Six Learning Barriers in End-User Programming Systems",
 	"source":"IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
@@ -1611,7 +1611,7 @@
   {
 	"id":"whyline1",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J. and Myers, B.A.",
+	"authors":"Andrew J. Ko and Brad A. Myers",
 	"year":2004,
 	"title":"Designing the Whyline: A Debugging Interface for Asking Questions About Program Failures",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -1632,7 +1632,7 @@
   {
 	"id":"errormodel",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J. and Myers, B.A.",
+	"authors":"Andrew J. Ko and Brad A. Myers",
 	"year":2003,
 	"title":"Development and Evaluation of a Model of Programming Errors",
 	"source":"IEEE Symposia on Human-Centric Computing Languages and Environments (VL/HCC)",
@@ -1653,7 +1653,7 @@
   {
 	"id":"statscomprehension",
 	"kind":"refereed conference paper",
-	"authors":"Ko, A.J. and Uttl, B.",
+	"authors":"Andrew J. Ko and Bob Uttl",
 	"year":2003,
 	"title":"Individual Differences in Program Comprehension Strategies in Unfamiliar Environments",
 	"source":"IEEE International Workshop on Program Comprehension (IWPC)",
@@ -1674,7 +1674,7 @@
   {
 	"id":"",
 	"kind":"refereed conference paper",
-	"authors":"Burnett, M.M., Ren, B., and Ko, A.J.",
+	"authors":"Margaret M. Burnett, Bing Ren, Andrew J. Ko, Curtis Cook, and Gregg Rothermel",
 	"year":2001,
 	"title":"Visually Testing Recursive Programs in Spreadsheet Languages",
 	"source":"IEEE Symposia on Human-Centric Computing Languages and Environments",
@@ -1695,7 +1695,7 @@
   {
 	"id":"walkthrough1",
 	"kind":"refereed conference paper",
-	"authors":"Green, T.R.G., Burnett, M.M., Ko, A.J.",
+	"authors":"Thomas R.G. Green, Margaret M. Burnett, and Andrew J. Ko",
 	"year":2000,
 	"title":"Using the Cognitive Walkthrough to Improve the Design of a Visual Programming Experiment",
 	"source":"IEEE Symposium on Visual Languages (VL)",
@@ -1716,7 +1716,7 @@
   {
 	"id":"whydebugclassifier1",
 	"kind":"journal article",
-	"authors":"Kulesza, T., Stumpf, S., Wong, W., Burnett, M.M., Perona, S., and Ko, A.J.",
+	"authors":"Todd Kulesza, Simone Stumpf, Weng-Keen Wong, Margatet M. Burnett, Stephen Perona, Andrew J. Ko, and Ian Oberst",
 	"year":2011,
 	"title":"Why-Oriented End-User Debugging of Naive Bayes Text Classification",
 	"source":"ACM Transactions on Interactive Intelligent Systems, 1(1), Article 2",
@@ -1737,7 +1737,7 @@
   {
 	"id":"eusessurvey",
 	"kind":"journal article",
-	"authors":"Ko, A.J., Abraham, R., Beckwith, L., Blackwell, A., Burnett, M.M., Erwig, M., Scaffidi, C., Lawrance, J., Lieberman, H., Myers, B.A., Rosson, M.B., Rothermel, G., Shaw, M., and Wiedenbeck, S.",
+	"authors":"Andrew J. Ko, Robin Abraham, Laura Beckwith, Alan Blackwell, Margaret M. Burnett, Martin Erwig, Chris Scaffidi, Joseph Lawrance, Henry Lieberman, Brad A. Myers, Mary Beth Rosson, Gregg Rothermel, Mary Shaw, and Susan Wiedenbeck",
 	"year":2011,
 	"title":"The State of the Art in End-User Software Engineering",
 	"source":"ACM Computing Surveys, 43(3), Article 21",
@@ -1758,7 +1758,7 @@
   {
 	"id":"whyline4",
 	"kind":"journal article",
-	"authors":"Ko, A.J. and Myers, B.A.",
+	"authors":"Andrew J. Ko and Brad A. Myers",
 	"year":2010,
 	"title":"Extracting and Answering Why and Why Not Questions about Java Program Output",
 	"source":"ACM Transactions on Software Engineering and Methodology, 22(2), Article 4",
@@ -1779,7 +1779,7 @@
   {
 	"id":"seekrelatecollect",
 	"kind":"journal article",
-	"authors":"Ko, A.J., Myers, B.A., Coblenz, M.J., and Aung, H.H.",
+	"authors":"Andrew J. Ko, Brad A. Myers, Michael J. Coblenz, and Htet Htet Aung",
 	"year":2006,
 	"title":"An Exploratory Study of How Developers Seek, Relate, and Collect Relevant Information during Software Maintenance Tasks",
 	"source":"IEEE Transactions on Software Engineering, 32(12)",
@@ -1800,7 +1800,7 @@
   {
 	"id":"errorframework",
 	"kind":"journal article",
-	"authors":"Ko, A.J. and Myers, B.A.",
+	"authors":"Andrew J. Ko and Brad A. Myers",
 	"year":2005,
 	"title":"A Framework and Methodology for Studying the Causes of Software Errors in Programming Systems",
 	"source":"Journal of Visual Languages and Computing, 16(1-2)",
@@ -1821,7 +1821,7 @@
   {
 	"id":"walkthrough2",
 	"kind":"journal article",
-	"authors":"Ko, A.J., Burnett, M.M., Green, T.R.G., Rothermel, K.J., and Cook, C.R.",
+	"authors":"Andrew J. Ko, Margaret M. Burnett, Thomas R.G. Green, Karen J. Rothermel, and Curtis R. Cook",
 	"year":2002,
 	"title":"Using the Cognitive Walkthrough to Improve the Design of a Visual Programming Experiment",
 	"source":"Journal of Visual Languages and Computing, 13(5)",
@@ -1842,7 +1842,7 @@
   {
 	"id":"feasibility",
 	"kind":"refereed short conference paper",
-	"authors":"Ko, A.J. and Riche, Y.",
+	"authors":"Andrew J. Ko and Yann Riche",
 	"year":2011,
 	"title":"The Role of Conceptual Knowledge in API Usability",
 	"source":"IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
@@ -1863,7 +1863,7 @@
   {
 	"id":"postusability",
 	"kind":"refereed short conference paper",
-	"authors":"Chilana, P.K., Ko, A.J., Wobbrock, J.O., Grossman, T., and Fitzmaurice, G.",
+	"authors":"Parmit K. Chilana, Andrew J. Ko, Jacob O. Wobbrock, Tovi Grossman, and George Fitzmaurice",
 	"year":2011,
 	"title":"Post-Deployment Usability: A Survey of Current Practices",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -1884,7 +1884,7 @@
   {
 	"id":"openbugs3",
 	"kind":"refereed short conference paper",
-	"authors":"Chilana, P.K., Ko, A.J., Wobbrock, J.O.",
+	"authors":"Parmit K. Chilana, Andrew J. Ko, and Jacob O. Wobbrock",
 	"year":2010,
 	"title":"Understanding Expressions of Unwanted Behaviors in Open Bug Reporting",
 	"source":"IEEE Symposium on Visual Languages and Human-Centric Computing",
@@ -1905,7 +1905,7 @@
   {
 	"id":"",
 	"kind":"refereed short conference paper",
-	"authors":"Myers, B.A. and Ko, A.J.",
+	"authors":"Brad A. Myers and Andrew J. Ko",
 	"year":2009,
 	"title":"The Past, Present and Future of Programming in HCI",
 	"source":"Human-Computer Interaction Consortium (HCIC)",
@@ -1926,7 +1926,7 @@
   {
 	"id":"",
 	"kind":"refereed short conference paper",
-	"authors":"Park S., Myers B.A., Ko, A.J.",
+	"authors":"Sunyoung Park, Brad A. Myers, and Andrew J. Ko",
 	"year":2008,
 	"title":"Designers' Natural Descriptions of Interactive Behaviors",
 	"source":"IEEE Symposium on Visual Languages and Human-Centric Computing",
@@ -1947,7 +1947,7 @@
   {
 	"id":"",
 	"kind":"refereed short conference paper",
-	"authors":"Scaffidi, C., Ko, A.J., Myers, B. A., and Shaw, M.",
+	"authors":"Chris Scaffidi, Andrew J. Ko, Brad A. Myers, and Mary Shaw",
 	"year":2006,
 	"title":"Dimensions Characterizing Programming Feature Usage by Information Workers",
 	"source":"IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
@@ -1968,7 +1968,7 @@
   {
 	"id":"",
 	"kind":"refereed short conference paper",
-	"authors":"Ko, A.J.",
+	"authors":"Andrew J. Ko",
 	"year":2006,
 	"title":"Debugging by Asking Questions About Program Output",
 	"source":"International Conference on Software Engineering (ICSE)",
@@ -1989,7 +1989,7 @@
   {
 	"id":"",
 	"kind":"refereed short conference paper",
-	"authors":"Myers, B.A., Ko, A.J., Burnett, M.M. ",
+	"authors":"Brad A. Myers, Andrew J. Ko, and Margaret M. Burnett",
 	"year":2006,
 	"title":"Invited Research Overview: End-User Programming",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI), Extended Abstracts",
@@ -2010,7 +2010,7 @@
   {
 	"id":"slate",
 	"kind":"refereed short conference paper",
-	"authors":"Coblenz, M.J., Ko, A.J., and Myers. B.A.",
+	"authors":"Michael J. Coblenz, Andrew J. Ko, and Brad A. Myers",
 	"year":2005,
 	"title":"Using Objects of Measurement to Detect Spreadsheet Errors",
 	"source":"IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
@@ -2031,7 +2031,7 @@
   {
 	"id":"textediting",
 	"kind":"refereed short conference paper",
-	"authors":"Ko, A.J., Aung, H., and Myers, B.A.",
+	"authors":"Andrew J. Ko, Htet Htet Aung, and Brad A. Myers",
 	"year":2005,
 	"title":"Design Requirements for More Flexible Structured Editors from a Study of Programmers' Text Editing",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -2052,7 +2052,7 @@
   {
 	"id":"",
 	"kind":"refereed short conference paper",
-	"authors":"Ko, A.J.",
+	"authors":"Andrew J. Ko",
 	"year":2004,
 	"title":"Designing a Flexible and Supportive Direct-Manipulation Programming Environment",
 	"source":"IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
@@ -2073,7 +2073,7 @@
   {
 	"id":"",
 	"kind":"refereed short conference paper",
-	"authors":"Ko, A.J.",
+	"authors":"Andrew J. Ko",
 	"year":2003,
 	"title":"Preserving Non-Programmers Motivation with Error-Prevention and Debugging Support Tools",
 	"source":"IEEE Symposia Human-Centric Computing Languages and Environments",
@@ -2094,7 +2094,7 @@
   {
 	"id":"",
 	"kind":"refereed short conference paper",
-	"authors":"Ko, A.J.",
+	"authors":"Andrew J. Ko",
 	"year":2003,
 	"title":"A Contextual Inquiry of Expert Programmers in an Event-Based Programming Environment",
 	"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
@@ -2115,7 +2115,7 @@
   {
 	"id":"userfeedback",
 	"kind":"refereed workshop paper",
-	"authors":"Lee, M.J. and Ko, A.J.",
+	"authors":"Michael J. Lee and Andrew J. Ko",
 	"year":2012,
 	"title":"Representations of User Feedback in an Agile, Collocated Software Team",
 	"source":"International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
@@ -2136,7 +2136,7 @@
   {
 	"id":"userfeedback2",
 	"kind":"refereed workshop paper",
-	"authors":"Ko, A.J., Lee, M.J., Ferrari, V., Ip, S., and Tran, C.",
+	"authors":"Andrew J. Ko, Michael J. Lee, Valentina Ferrarri, Stephen Ip, and Casey Tran",
 	"year":2011,
 	"title":"A Case Study of Post-Deployment User Feedback Triage",
 	"source":"International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
@@ -2157,7 +2157,7 @@
   {
 	"id":"",
 	"kind":"refereed workshop paper",
-	"authors":"Chilana, P.K., Palmer, C., and Ko, A.J.",
+	"authors":"Parmit K. Chilana, Carole Palmer, and Andrew J. Ko",
 	"year":2009,
 	"title":"Comparing Bioinformatics Software Development by Computer Scientists and Biologists: An Exploratory Study",
 	"source":"Workshop on Software Engineering for Computational Science and Engineering",
@@ -2178,7 +2178,7 @@
   {
 	"id":"jasper",
 	"kind":"refereed workshop paper",
-	"authors":"Coblenz, M.J., Ko, A.J., and Myers. B.A.",
+	"authors":"Michael J. Coblenz, Andrew J. Ko, and Brad A. Myers",
 	"year":2006,
 	"title":"JASPER: An Eclipse Plug-In to Facilitate Software Maintenance Tasks",
 	"source":"Proceedings of the 2006 OOPSLA Workshop on Eclipse Technology eXchange",
@@ -2199,7 +2199,7 @@
   {
 	"id":"",
 	"kind":"juried conference paper",
-	"authors":"Kriplean, T., Toomim, M., Morgan, J.T., Borning, A., and Ko, A.J.",
+	"authors":"Travis Kriplean, Michael M. Toomim, Jonathan T. Morgan, Alan Borning, and Andrew J. Ko",
 	"year":2011,
 	"title":"Supporting Active Listening and Grounding on the Web through Restatement",
 	"source":"ACM Conference on Computer Supported Cooperative Work (CSCW), Horizons",
@@ -2220,7 +2220,7 @@
   {
 	"id":"",
 	"kind":"non-refereed workshop paper",
-	"authors":"Chilana, P.K., Ko, A.J., and Wobbrock, J.O.",
+	"authors":"Parmit K. Chilana, Andrew J. Ko, and Jacob O. Wobbrock",
 	"year":2011,
 	"title":"Designing Crowdsourced, Context-Sensitive Help for Web Applications",
 	"source":"Workshop on Crowdsourcing and Human Computation",
@@ -2241,7 +2241,7 @@
   {
 	"id":"",
 	"kind":"non-refereed workshop paper",
-	"authors":"Ko, A.J. and Chilana, P.K.",
+	"authors":"Andrew J. Ko and Parmit K. Chilana",
 	"year":2010,
 	"title":"How Do Open Source Developers Talk about Users?",
 	"source":"CHI 2010 Workshop on The Future of FLOSS in CHI Research and Practice",
@@ -2262,7 +2262,7 @@
   {
 	"id":"",
 	"kind":"non-refereed workshop paper",
-	"authors":"Chilana, P.K., Ko, A.J., and Wobbrock, J.O.",
+	"authors":"Parmit K. Chilana, Andrew J. Ko, and Jacob O. Wobbrock",
 	"year":2009,
 	"title":"Designing Software for Unfamiliar Domains",
 	"source":"Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
@@ -2283,7 +2283,7 @@
   {
 	"id":"",
 	"kind":"non-refereed workshop paper",
-	"authors":"Ko, A.J. and Myers, B.A.",
+	"authors":"Andrew J. Ko and Brad A. Myers",
 	"year":2008,
 	"title":"Source-Level Debugging with the Whyline",
 	"source":"Cooperative and Human Aspects of Software Engineering",
@@ -2304,7 +2304,7 @@
   {
 	"id":"",
 	"kind":"non-refereed workshop paper",
-	"authors":"Ko, A.J. and Myers, B.A.",
+	"authors":"Andrew J. Ko and Brad A. Myers",
 	"year":2005,
 	"title":"Human Factors Affecting Dependability in End-User Programming",
 	"source":"1st Workshop on End-User Software Engineering (WEUSE)",
@@ -2325,7 +2325,7 @@
   {
 	"id":"",
 	"kind":"non-refereed workshop paper",
-	"authors":"Ko, A.J., Myers, B.A., Coblenz, M., and Stylos, J.",
+	"authors":"Andrew J. Ko, Brad A. Myers, Michael J. Coblenz, and Jeffrey Stylos",
 	"year":2006,
 	"title":"End-User Programming Productivity Tools",
 	"source":"2nd Workshop on End-User Software Engineering (WEUSE)",
@@ -2346,7 +2346,7 @@
   {
 	"id":"",
 	"kind":"non-refereed workshop paper",
-	"authors":"Myers, B.A., Ko, A.J., Park, S.Y., Stylos, J., LaToza, T.D., and Beaton, J.",
+	"authors":"Brad A. Myers, Andrew J. Ko, SunYoung Park, Jeffrey Stylos, Thomas D. LaToza, and Jack Beaton",
 	"year":2008,
 	"title":"More Natural End-User Software Engineering",
 	"source":"International workshop on End-User Software Engineering",
@@ -2367,7 +2367,7 @@
   {
 	"id":"",
 	"kind":"non-refereed workshop paper",
-	"authors":"Ko, A.J.",
+	"authors":"Andrew J. Ko",
 	"year":2006,
 	"title":"The Role of Science in Supporting Software Development",
 	"source":"Workshop on Supporting the Social Side of Large-Scale Software Development, at the 2006 ACM Conference on Computer Supported Cooperative Work",
@@ -2388,7 +2388,7 @@
   {
 	"id":"",
 	"kind":"non-refereed workshop paper",
-	"authors":"Myers, B.A. and Ko, A.J.",
+	"authors":"Brad A. Myers and Andrew J. Ko",
 	"year":2005,
 	"title":"More Natural and Open User Interface Tools",
 	"source":"Workshop on the Future of User Interface Design Tools",
@@ -2409,7 +2409,7 @@
   {
 	"id":"",
 	"kind":"non-refereed workshop paper",
-	"authors":"Myers, B.A. and Ko, A.J.",
+	"authors":"Brad A. Myers and Andrew J. Ko",
 	"year":2003,
 	"title":"Studying Development and Debugging To Help Create a Better Programming Environment",
 	"source":"Workshop on Perspectives in End User Development",
@@ -2430,7 +2430,7 @@
   {
 	"id":"",
 	"kind":"book chapter",
-	"authors":"Ko, A.J.",
+	"authors":"Andrew J. Ko",
 	"year":2010,
 	"title":"Software Engineering Through Qualitative Methods",
 	"source":"Making Software: What Really Works, and Why We Believe It",
@@ -2451,7 +2451,7 @@
   {
 	"id":"",
 	"kind":"refereed invited article",
-	"authors":"Wobbrock, J.O., Ko, A.J., and Kientz, J.A.",
+	"authors":"Jacob O. Wobbrock, Andrew J. Ko, and Julie A. Kientz",
 	"year":2009,
 	"title":"New to the Movement: Reflections on the Future of Information Schools from Inspired Junior Faculty",
 	"source":"Interactions",
@@ -2472,7 +2472,7 @@
   {
 	"id":"",
 	"kind":"refereed invited article",
-	"authors":"Myers, B.A., Pane, J.F., and Ko, A.J.",
+	"authors":"Brad A. Myers, John F. Pane, and Andrew J. Ko",
 	"year":2004,
 	"title":"Natural Programming Languages and Environments",
 	"source":"Communications of the ACM, Special Issue on End-User Development",
@@ -2493,7 +2493,7 @@
   {
 	"id":"",
 	"kind":"technical report",
-	"authors":"Ko, A.J., Myers, B.A., and Shaw, M.",
+	"authors":"Andrew J. Ko, Brad A. Myers, and Mary Shaw",
 	"year":2005,
 	"title":"Identifying Types of End Users: Hints from an Informal Survey",
 	"source":"Carnegie Mellon University ISRI Technical Report, no. CMU-HCII-05-101 and Human Computer Interaction Institute Technical Report, no CMU-ISRI-05-110",
@@ -2514,7 +2514,7 @@
   {
 	"id":"gidget2",
 	"kind":"refereed short conference paper",
-	"authors":"Lee, M.J. and Ko, A.J.",
+	"authors":"Michael J. Lee and Andrew J. Ko",
 	"year":2012,
 	"title":"Investigating the Role of Purposeful Goals on Novices' Engagement in a Programming Game",
 	"source":"IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
@@ -2535,7 +2535,7 @@
   {
 	"id":"",
 	"kind":"technical report",
-	"authors":"Ko, A.J.",
+	"authors":"Andrew J. Ko",
 	"year":2008,
 	"title":"Asking and Answering Questions about the Causes of Software Behavior",
 	"source":"Carnegie Mellon University Dissertation",
