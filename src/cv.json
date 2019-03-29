@@ -202,20 +202,8 @@
 	
 	awards: [
 		{
-			title: "ICSE Most Influential Paper Award",
-			year: 2018
-		},
-		{
 			title: "ACM SIGCHI Exceptional Reviewer (UIST, CHI)",
 			year: "2016-2017"
-		},
-		{
-			title: "VL/HCC Most Influential Paper Award",
-			year: 2014
-		},
-		{
-			title: "VL/HCC Most Influential Paper Award",
-			year: 2013
 		},
 		{
 			title: "University of Washington Presidential Entrepreneurial Faculty Fellow",
