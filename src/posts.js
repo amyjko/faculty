@@ -52,6 +52,8 @@ class Posts extends React.Component {
 				<h2 id="csed">Computing education</h2>
 				
 				<ul>
+					<li><a href="https://medium.com/bits-and-behavior/teaching-accessibility-in-higher-education-computing-courses-b1ac22bcec6f" target="_blank">Teaching accessibility in higher education computing courses</a> (April 2019)</li>
+					<li><a href="https://medium.com/bits-and-behavior/tips-for-implement-cs-for-all-in-radically-decentralized-public-k-12-education-4e2ee1b396d7" target="_blank">Tips for implementing CS for All in radically decentralized public K-12 education</a> (April 2019)</li>
 					<li><a href="https://medium.com/bits-and-behavior/cs-education-policymaking-how-a-state-bill-becomes-a-state-law-839f62a6977c" target="_blank">CS education policy: how a (state) bill becomes a (state) law</a> (January 2019)</li>
 					<li><a href="https://medium.com/bits-and-behavior/big-ideas-about-information-c09e4d9c60bd" target="_blank">Big ideas about information</a> (December 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/a-rant-about-journalism-on-learning-to-code-da9a11dd9866" target="_blank">A rant about journalism on learning to code</a> (December 2018)</li>
@@ -118,7 +120,7 @@ class Posts extends React.Component {
 				<h2 id="society">Software and society</h2>
 				
 				<ul>
-					<li><a href="https://medium.com/bits-and-behavior/my-evolving-relationship-with-video-games-884559ba9180" target="_blank">My evolving relationship with video games</a>n (March 2019)</li>
+					<li><a href="https://medium.com/bits-and-behavior/my-evolving-relationship-with-video-games-884559ba9180" target="_blank">My evolving relationship with video games</a> (March 2019)</li>
 					<li><a href="https://medium.com/bits-and-behavior/2018-masters-in-hci-design-commencement-speech-design-values-and-organizations-fd122b612563" target="_blank">2018 Masters in HCI+Design commencement speech: design, values, and organizations</a> (August 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/meow-wolf-the-art-of-immersive-ubiquitous-computing-c00d27323ace" target="_blank">Meow Wolf: the art of immersive, ubiquitous computing</a> (April 2018)</li>
 					<li><a href="https://medium.com/bits-and-behavior/what-makes-software-valuable-36a1335ad1f7" target="_blank">What makes software valuable?</a> (November 2017)</li>
