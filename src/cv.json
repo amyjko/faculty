@@ -711,6 +711,9 @@
 		{
 			name: "Yim Register",
 			department: "Information School",
+			notes: [
+				"NSF Graduate Research Fellowship"
+			],
 			startdate: 2018,
 			enddate: null
 		},
