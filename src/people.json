@@ -1,5 +1,15 @@
 [
 	{
+		"id": "meron",
+		"name": "Meron Solomon",
+		"active": true,
+		"advised": true,
+		"level": "undergrad",
+		"bio": "Meron is an undergraduate student and her intended major is Informatics. She hopes to become a UX Designer and seeks to create solutions that are inclusive to all users.",
+		"url": "https://www.linkedin.com/in/meron-solomon-aa81a5169/",
+		"startdate": 2019
+	},
+	{
 		"id": "patold",
 		"name": "Patrick Old",
 		"active": true,

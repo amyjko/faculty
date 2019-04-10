@@ -9,7 +9,7 @@
 		"build": "browserify -t [ babelify --presets [ react ] ] src/app.js | uglifyjs > build/app.js",
 		"test-ship": "rsync --dry-run -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html",
 		"ship": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html",
-		"all": "npm run build; npm run ship; git add ."
+		"all": "npm run build; npm run ship"
 	},
 	"presets": ["env"],
 	"devDependencies": {
