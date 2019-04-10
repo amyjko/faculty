@@ -52,10 +52,10 @@
 	{
 		"id": "janeq97",
 		"name": "Jane Quichocho",
-		"active": true,
+		"active": false,
 		"advised": true,
 		"level": "undergrad",
-		"bio": "Jane is an Informatics student working in the summer of 2018 on various learning to code projects.",
+		"bio": "Jane helped the lab on various learning to code projects.",
 		"url": "https://www.linkedin.com/in/jane-quichocho-08a9b714b/",
 		"startdate": 2018
 	},
@@ -122,10 +122,10 @@
 	{
 		"id": "kimsk",
 		"name": "Ada Kim",
-		"active": true,
+		"active": false,
 		"advised": false,
 		"level": "phd",
-		"bio": "Ada is a Ph.D. student in the Information School working with Katie Davis. Ada worked with Andy on a pedagogical analysis of coding tutorials as part of a research practicum.",
+		"bio": "Ada was a Ph.D. student in the Information School working with Katie Davis. Ada worked with Andy on a pedagogical analysis of coding tutorials as part of a research practicum.",
 		"url": "http://students.washington.edu/kimsk/",
 		"startdate": 2016
 	},
@@ -256,20 +256,20 @@
 	{
 		"id": "kwikh",
 		"name": "Harrison Kwik",
-		"active": true,
+		"active": false,
 		"advised": true,
 		"level": "undergrad",
-		"bio": "Harrison is an undergraduate in computer science interested in equitable learning of computing. He's been supporting the lab's research on programming tutors while independently investigating the experiences of CS transfer students.",
+		"bio": "Harrison was an undergraduate in computer science interested in equitable learning of computing. He's supported the lab's research on programming tutors while independently investigating the experiences of CS transfer students. He's now a doctoral student at Northwestern University.",
 		"url": "https://resprit.com/",
 		"startdate": 2016
 	},
 	{
 		"id": "lkhwa",
 		"name": "Leanne Hwa",
-		"active": true,
+		"active": false,
 		"advised": true,
 		"level": "undergrad",
-		"bio": "Leanne is an Informatics undergraduate in computing education, mentorship, and identity. She's supported the lab's research on programming tutors while independently investigating the role of informal computing mentors amongst south Seattle teens.",
+		"bio": "Leanne was an Informatics undergraduate interested in computing education, mentorship, and identity. She supported the lab's research on programming tutors while independently investigating the role of informal computing mentors amongst south Seattle teens.",
 		"url": "https://github.com/lkhwa",
 		"startdate": 2016
 	},	
