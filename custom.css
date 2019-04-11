@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400');
 
 /* Customize container */
 @media (min-width: 768px) {
@@ -11,8 +11,13 @@
 
 body {
 	font-weight: 300;
-	font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12pt;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13pt;
+	line-height: 1.5em;
+}
+
+b, strong {
+	font-weight: 400;
 }
 
 .date {
@@ -21,7 +26,7 @@ body {
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+    font-weight: 400;
 }
 
 /* Custom page header */

@@ -22,7 +22,7 @@ class ContactInfo extends React.Component {
 			</div>
 
 			<div className="col-xs-12 col-sm-5 col-md-5">
-				<span className="lead">Andrew J. Ko, Ph.D. <small>aka Andy</small></span>
+				<span className="lead"><strong>Andrew J. Ko</strong>, Ph.D. <small>aka Andy</small></span>
 				<small>
 					<br/>Associate Professor
 					<br/>Program Chair, <a href="https://ischool.uw.edu/academics/informatics">Informatics</a>
