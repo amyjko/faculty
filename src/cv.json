@@ -181,22 +181,22 @@
 
 	patents: [
 		{
-			title: "Systems and Methods for Selection-Based Contextual Help Retrieval",
-			year: "2012",
-			number: "U.S. Patent No. 9,811,583",
-			inventors: "Chilana, P., Ko, A.J., and Wobbrock, J.O."
-		},
-		{
 			title: "Context- and Activity-Aware Content Selection",
 			year: "2017",
 			number: "U.S. Patent No. 9,727,561",
 			inventors: "Andrew J. Ko and Victor Medina"
 		},
 		{
+			title: "Systems and Methods for Selection-Based Contextual Help Retrieval",
+			year: "2012",
+			number: "U.S. Patent No. 9,811,583",
+			inventors: "Parmit K. Chilana, Andrew J. Ko, and Wobbrock, J.O."
+		},
+		{
 			title: "A Debugging Interface",
 			year: "2010",
 			number: "U.S. Patent No. 7,735,066",
-			inventors: "Andrew J. Ko and Myers, B.A."
+			inventors: "Andrew J. Ko and Brad A. Myers"
 		}
 	],
 	
