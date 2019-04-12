@@ -1904,7 +1904,7 @@
   },
   {
 	"id":"",
-	"kind":"refereed short conference paper",
+	"kind":"non-refereed workshop paper",
 	"authors":"Brad A. Myers and Andrew J. Ko",
 	"year":2009,
 	"title":"The Past, Present and Future of Programming in HCI",
@@ -1967,7 +1967,7 @@
   },
   {
 	"id":"",
-	"kind":"refereed short conference paper",
+	"kind":"non-refereed workshop paper",
 	"authors":"Andrew J. Ko",
 	"year":2006,
 	"title":"Debugging by Asking Questions About Program Output",
@@ -1988,7 +1988,7 @@
   },
   {
 	"id":"",
-	"kind":"refereed short conference paper",
+	"kind":"non-refereed workshop paper",
 	"authors":"Brad A. Myers, Andrew J. Ko, and Margaret M. Burnett",
 	"year":2006,
 	"title":"Invited Research Overview: End-User Programming",
@@ -2051,7 +2051,7 @@
   },
   {
 	"id":"",
-	"kind":"refereed short conference paper",
+	"kind":"non-refereed workshop paper",
 	"authors":"Andrew J. Ko",
 	"year":2004,
 	"title":"Designing a Flexible and Supportive Direct-Manipulation Programming Environment",
@@ -2072,7 +2072,7 @@
   },
   {
 	"id":"",
-	"kind":"refereed short conference paper",
+	"kind":"non-refereed workshop paper",
 	"authors":"Andrew J. Ko",
 	"year":2003,
 	"title":"Preserving Non-Programmers Motivation with Error-Prevention and Debugging Support Tools",
@@ -2093,7 +2093,7 @@
   },
   {
 	"id":"",
-	"kind":"refereed short conference paper",
+	"kind":"non-refereed workshop paper",
 	"authors":"Andrew J. Ko",
 	"year":2003,
 	"title":"A Contextual Inquiry of Expert Programmers in an Event-Based Programming Environment",
