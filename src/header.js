@@ -14,14 +14,14 @@ class Header extends React.Component {
 			        <nav>
 						<ul className="nav nav-pills">
 							<li role="presentation" className={path === "/" ? "active" : ""}><Link to="/">Research</Link></li>
+							<li role="presentation" className={path.startsWith("/students") ? "active" : ""}><Link to="/students">Students</Link></li>
 							<li role="presentation" className={path.startsWith("/publications") ? "active" : ""}><Link to="/publications">Papers</Link></li>
 							<li role="presentation" className={path.startsWith("/posts") ? "active" : ""}><Link to="/posts">Posts</Link></li>
 							<li role="presentation" className={path.startsWith("/talks") ? "active" : ""}><Link to="/talks">Talks</Link></li>
-							<li role="presentation" className={path.startsWith("/impact") ? "active" : ""}><Link to="/impact">Impact</Link></li>
-							<li role="presentation" className={path.startsWith("/students") ? "active" : ""}><Link to="/students">Students</Link></li>
-							<li role="presentation" className={path.startsWith("/advice") ? "active" : ""}><Link to="/advice">Advice</Link></li>
 							<li role="presentation" className={path.startsWith("/teaching") ? "active" : ""}><Link to="/teaching">Teaching</Link></li>
 							<li role="presentation" className={path.startsWith("/books") ? "active" : ""}><Link to="/books">Books</Link></li>
+							<li role="presentation" className={path.startsWith("/impact") ? "active" : ""}><Link to="/impact">Impact</Link></li>
+							<li role="presentation" className={path.startsWith("/advice") ? "active" : ""}><Link to="/advice">Advice</Link></li>
 							<li role="presentation" className={path.startsWith("/bio") ? "active" : ""}><Link to="/bio">Bio</Link></li>
 						</ul>
 			        </nav>
