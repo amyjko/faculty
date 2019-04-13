@@ -115,26 +115,34 @@ class Projects extends React.Component {
 		
 		return (
 			<div>
-				<div className="lead">I research <strong>effective, equitable, scalable ways for humanity to learn computing</strong>. To achieve this, I direct the <Link to={"/students"}>Code & Cognition Lab</Link>, working with many wonderful <Link to={"/students"}>students</Link> to <Link to={"/publications"}>publish</Link> and <Link to={"/impact"}>share</Link> research on computing education, human-computer interaction, and software engineering. I do this work with several communities, including <a target="_blank" href="http://soundcsed.org">Sound CS Ed</a>, <a target="_blank" href="http://dub.washington.edu/">DUB</a>, <a target="_blank" href="http://uwplse.org/">UW CSE's PLSE group</a>, the iSchool's <a href="https://digitalyouth.ischool.uw.edu/" target="_blank">Digital Youth Lab</a>, the <a target="_blank" href="http://pscsta.org">Puget Sound CS Teachers Association</a>, and the <a href="http://eusesconsortium.org/" target="_blank">EUSES consortium</a>.
-			</div>
+				<div className="lead">
+					I study <em>effective, equitable, scalable ways for humanity to learn computing</em> with the my many wonderful <Link to={"/students"}>students</Link>.
+					We <Link to={"/publications"}>publish</Link>, <Link to={"/posts"}>blog</Link>, and <Link to={"/impact"}>broadly share</Link> our research on computing education, human-computer interaction, and software engineering with researchers, industry, government, and the public.
+				</div>
+				
+				<p>
+					I do this work with several communities, including <a target="_blank" href="http://dub.washington.edu/">DUB</a>, <a target="_blank" href="http://uwplse.org/">UW CSE's PLSE group</a>, the iSchool's <a href="https://digitalyouth.ischool.uw.edu/" target="_blank">Digital Youth Lab</a>.
+					I also lead two communities outside the university: <a target="_blank" href="http://soundcsed.org">Sound CS Ed</a>, a regional community of teachers, researchers, and inventors passionate about computing education, and <a target="_blank" href="http://csforallwa.org">CS for All Washington</a>, a statewide advocacy coalition championing K-12 computing education in Washington state.
+					I formerly directed the <a href="http://eusesconsortium.org/" target="_blank">EUSES consortium</a>, an academic and industry coalition focused on end-user programming.
+				</p>
 
-			<ul>
-				<li>Want to know more about <strong>computing education research</strong>? Read <Link to={"/cer"}>my computing education research FAQ</Link>.</li>
-				<li>Want to work with me? Read my <Link to="/students">students</Link> page.</li>
-			</ul>
-			
-			<h3>Active Projects</h3>
-
-			<p>These are areas we're actively investigating, but I'm always exploring new topics!</p>
-					
-			{active}
-
-			<br/>
-			<h3>Past Projects</h3>
-			
-			<p>I'm no longer working on these projects, but I'm happy to answer questions about them.</p>
-
-			{inactive}
+				<ul>
+					<li>Read <Link to={"/cer"}>my computing education research FAQ</Link> to learn more about the field.</li>
+					<li>Read my <Link to="/students">students</Link> page to learn how to work with me.</li>
+				</ul>
+				
+				<h3>Active Projects</h3>
+	
+				<p>These are areas we're actively investigating, but I'm always exploring new topics!</p>
+						
+				{active}
+	
+				<br/>
+				<h3>Past Projects</h3>
+				
+				<p>I'm no longer working on these projects, but I'm happy to answer questions about them.</p>
+	
+				{inactive}
 				
 			</div>
 	    )
