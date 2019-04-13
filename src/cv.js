@@ -4,10 +4,27 @@ import {Paper} from "./paper";
 
 var cv = require('./cv.json');
 var pubs = require('./pubs.json');
+var people = require('./people.json');
 
 pubs = _.sortBy(pubs, 'year').reverse();
 
+// Get the students and annotate the metadata for presentation.
+var doctoralStudents = _.sortBy(_.filter(people, { 'level': 'phd' }), 'startdate');
+_.forEach(doctoralStudents, (value) => {
+	if(value.coadvisor !== null)
+		value.coadvisor = "Co-advisor: " + value.coadvisor;
+});
+
 class Chunk extends React.Component {
+	
+	convertArrayToNote(data) {
+		
+		if(data && _.isArray(data))
+				return _.map(data, (entry, index) => { return <small key={"note" + index}>&ndash;{entry}<br/></small>; });
+		else
+			return data;
+		
+	}
 		
 	render() {
 	
@@ -15,9 +32,9 @@ class Chunk extends React.Component {
 		if(this.props.stop !== "none" && this.props.start !== this.props.stop)
 			end = "-" + (this.props.stop === null ? "present" : this.props.stop);
 
-		var three = this.props.three;
-		if(three && _.isArray(three))
-			three = _.map(three, (entry, index) => { return <small key={"note" + index}><br/>&ndash;{entry}</small>; });
+		var three = this.convertArrayToNote(this.props.three);
+		var four = this.convertArrayToNote(this.props.four);
+		var five = this.convertArrayToNote(this.props.five);
 
 		return (
 			<div className="row">
@@ -28,9 +45,9 @@ class Chunk extends React.Component {
 					<p>
 						<strong>{this.props.header}</strong>
 						{this.props.two ? <span><br/>{this.props.two} </span> : null}
-						{three ? <span>{three}</span> : null}
-						{this.props.four ? <small><br/>{this.props.four}</small> : null}
-						{this.props.five ? <small><br/>{this.props.five}</small> : null}
+						{three ? <div><small>{three}</small></div> : null}
+						{four ? <div><small>{four}</small></div> : null}
+						{five ? <div><small>{five}</small></div> : null}
 					</p>
 				</div>
 			</div>
@@ -213,7 +230,7 @@ class Vita extends React.Component {
 				
 				<h3>Chair</h3>
 
-				{this.getChunkList(cv.doctoralChair, "doctoralChair", "startdate", "enddate", "name", "department", "notes")}
+				{this.getChunkList(doctoralStudents, "doctoralChair", "startdate", "enddate", "name", "dept", "coadvisor", "achievements")}
 				
 				<h3>Committee Member</h3>
 

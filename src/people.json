@@ -5,9 +5,13 @@
 		"active": true,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "pre-major",
+		"coadvisor": null,
 		"bio": "Meron is an undergraduate student and her intended major is Informatics. She hopes to become a UX Designer and seeks to create solutions that are inclusive to all users.",
 		"url": "https://www.linkedin.com/in/meron-solomon-aa81a5169/",
-		"startdate": 2019
+		"startdate": 2019,
+		"enddate": null,
+		"achievements": []
 	},
 	{
 		"id": "patold",
@@ -15,9 +19,13 @@
 		"active": true,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Patrick is an undergraduate studying Informatics and Oceanography. He is working on a project to observe his growth as a teacher via participant observation. The classes he is teaching are in the University of Washington Oceanography Department and involve teaching the basics of programming in oceanographic research.",
 		"url": "https://www.linkedin.com/in/pat-old/",
-		"startdate": 2018
+		"startdate": 2018,
+		"enddate": 2019,
+		"achievements": []
 	},
 	{
 		"id": "andrewhu",
@@ -25,9 +33,13 @@
 		"active": true,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Computer Science and Education",
+		"coadvisor": null,
 		"bio": "Andrew is a CS & Education double major interested in pedagogical techniques and student motivation in CS Ed.",
 		"url": "http://students.washington.edu/andrewhu",
-		"startdate": 2018
+		"startdate": 2018,
+		"enddate": null,
+		"achievements": []
 	},
 	{
 		"id": "olesona",
@@ -35,9 +47,13 @@
 		"active": true,
 		"advised": true,
 		"level": "phd",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Alannah is a PhD student in the Information School, broadly interested in the learning and teaching of inclusive software design methods. Before joining UW, she studied gender-inclusive software at Oregon State University.",
 		"url": "https://alannaholeson.com/",
-		"startdate": 2018
+		"startdate": 2018,
+		"enddate": null,
+		"achievements": [ "NSF Graduate Research Fellowship (2018)" ]
 	},
 	{
 		"id": "jennareg",
@@ -45,9 +61,13 @@
 		"active": true,
 		"advised": true,
 		"level": "phd",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Yim is a PhD student in the Information School, broadly interested in machine learning literacy. Before joining UW, they studied cognitive science at the University of Rochester.",
 		"url": "http://students.washington.edu/yreg/",
-		"startdate": 2018
+		"startdate": 2018,
+		"enddate": null,
+		"achievements": [ "NSF Graduate Research Fellowship (2019)" ]
 	},
 	{
 		"id": "janeq97",
@@ -55,9 +75,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Jane helped the lab on various learning to code projects.",
 		"url": "https://www.linkedin.com/in/jane-quichocho-08a9b714b/",
-		"startdate": 2018
+		"startdate": 2018,
+		"enddate": null,
+		"achievements": []
 	},
 	{
 		"id": "wkwok16",
@@ -65,9 +89,13 @@
 		"active": true,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "William is an undergraduate in the Information School. He's supporting the lab's research on programming tutors by advancing design, development, instruction, and ideation relation to expressing agency when learning computing online.",
 		"url": "http://williamk.info/?q=cc",
-		"startdate": 2018
+		"startdate": 2018,
+		"enddate": null,
+		"achievements": []
 	},
 	{
 		"id": "akkarh",
@@ -75,9 +103,13 @@
 		"active": true,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Harshitha is an Informatics student working on various learning to code projects.",
 		"url": "https://harshitha-akkaraju.github.io/",
-		"startdate": 2018
+		"startdate": 2018,
+		"enddate": null,
+		"achievements": []
 	},
 	{
 		"id": "laurav4",
@@ -85,9 +117,13 @@
 		"active": false,
 		"advised": false,
 		"level": "phd",
+		"dept": "Computer Science",
+		"coadvisor": "Katharina Reinecke",
 		"bio": "For her qualifying exam, Laura led a project on faculty professional development for teaching accessibility, sponsored by AccessComputing, with help from Saba Kawas.",
 		"url": "https://homes.cs.washington.edu/~laurav4/",
-		"startdate": 2018
+		"startdate": 2018,
+		"enddate": 2019,
+		"achievements": []
 	},
 	{
 		"id": "banerjee",
@@ -95,9 +131,13 @@
 		"active": true,
 		"advised": false,
 		"level": "phd",
+		"dept": "Computer Science",
+		"coadvisor": null,
 		"bio": "Rahul works in the Center for Game Science and has worked with the lab on programming by demonstration systems for creating interactive games.",
 		"url": "https://homes.cs.washington.edu/~banerjee/",
-		"startdate": 2015
+		"startdate": 2015,
+		"enddate": null,
+		"achievements": []
 	},
 	{
 		"id": "kshino",
@@ -105,9 +145,13 @@
 		"active": false,
 		"advised": false,
 		"level": "phd",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Kristen was a PhD student advised by Jake Wobbrock and Wanda Pratt. She worked with Andy multiple times as a teaching assistant, and later on nationwide survey of higher education instruction on accessibility. She graduated in 2017 and joined the faculty at Rochester Institute of Technology.",
 		"url": "http://www.kristenshinohara.com/",
-		"startdate": 2008
+		"startdate": 2008,
+		"enddate": 2017,
+		"achievements": []
 	},
 	{
 		"id": "yanan15",
@@ -115,9 +159,13 @@
 		"active": true,
 		"advised": false,
 		"level": "phd",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Annie is a Ph.D. student in the Information School working with Carol Palmer. Annie worked with Andy on predicting dropout in a coding tutorial.",
 		"url": "https://ischool.uw.edu/people/phd/yanan15",
-		"startdate": 2016
+		"startdate": 2016,
+		"enddate": null,
+		"achievements": []
 	},
 	{
 		"id": "kimsk",
@@ -125,9 +173,13 @@
 		"active": false,
 		"advised": false,
 		"level": "phd",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Ada was a Ph.D. student in the Information School working with Katie Davis. Ada worked with Andy on a pedagogical analysis of coding tutorials as part of a research practicum.",
 		"url": "http://students.washington.edu/kimsk/",
-		"startdate": 2016
+		"startdate": 2016,
+		"enddate": 2018,
+		"achievements": []
 	},
 	{
 		"id": "skawas",
@@ -135,9 +187,13 @@
 		"active": true,
 		"advised": false,
 		"level": "phd",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Saba is a PhD student in the Information School working with Katie Davis. Saba worked with Andy on a nationwide survey of the teaching of accessibility in higher education in the United States.",
 		"url": "https://www.linkedin.com/in/saba-kawas-7b82b582",
-		"startdate": 2016
+		"startdate": 2016,
+		"enddate": null,
+		"achievements": []
 	},
 	{
 		"id": "bxie",
@@ -145,9 +201,13 @@
 		"active": true,
 		"advised": true,
 		"level": "phd",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Benji is a PhD student in the Information School interested in learning analytics for computing education. Before joining UW, he studied App Inventor and MOOCs with Hal Abelson at MIT.",
 		"url": "http://benjixie.com/",
-		"startdate": 2016
+		"startdate": 2016,
+		"enddate": null,
+		"achievements": [ "NSF Graduate Research Fellowship (2017)" ]
 	},
 	{
 		"id": "glnelson",
@@ -155,9 +215,16 @@
 		"active": true,
 		"advised": true,
 		"level": "phd",
+		"dept": "Computer Science",
+		"coadvisor": null,
 		"bio": "Greg is a PhD student in Computer Science and Engineering. He's interested in HCI and computing education broadly, and has focused on programming language learning and augmented and virtual reality.",
 		"url": "http://www.greglnelson.info/",
-		"startdate": 2013
+		"startdate": 2013,
+		"enddate": null,
+		"achievements": [ 
+			"ACM ICER John Henry Best Paper Award (2018)", 
+			"NSF Graduate Research Fellowship (2015)" 
+		]
 	},
 	{
 		"id": "kthayer",
@@ -165,9 +232,15 @@
 		"active": true,
 		"advised": true,
 		"level": "phd",
+		"dept": "Computer Science",
+		"coadvisor": "Katharina Reinecke",
 		"bio": "Kyle is a PhD student in Computer Science and Engineering, also advised by Katharina Reinecke. He studies the intersection of diversity and learning in computing education.",
 		"url": "http://www.kylethayer.com",
-		"startdate": 2015
+		"startdate": 2015,
+		"enddate": 2019,
+		"achievements": [
+			"Lecturer, The Information School, University of Washington (2019-present)"
+		]
 	},
 	{
 		"id": "amaswea",
@@ -175,9 +248,13 @@
 		"active": true,
 		"advised": true,
 		"level": "phd",
+		"dept": "Computer Science",
+		"coadvisor": "James Fogarty",
 		"bio": "Amanda is a Ph.D. student in Computer Science & Engineeering and is interested in Software Engineering, HCI, and making software easier to learn, use, and make. She is investigating a range of techniques for reverse engineering useful models of user interfaces.",
 		"url": "http://homes.cs.washington.edu/~amaswea/",
-		"startdate": 2015
+		"startdate": 2015,
+		"enddate": 2019,
+		"achievements": [ "NSF Graduate Research Fellowship (2016)" ]
 	},
 	{
 		"id": "dloksa",
@@ -185,9 +262,13 @@
 		"active": true,
 		"advised": true,
 		"level": "phd",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Dastyni is a Ph.D. student in the the Information School. His research focuses on problem solving in programming, with a particular focus on self-regulated learning, spanning the fields of HCI and computing education. Dastyni completed his bachelors in Informatics at the University of California, Irvine.",
 		"url": "http://students.washington.edu/dloksa/",
-		"startdate": 2013
+		"startdate": 2013,
+		"enddate": 2019,
+		"achievements": []
 	},
 	{
 		"id": "zaxim",
@@ -195,9 +276,13 @@
 		"active": false,
 		"advised": true,
 		"level": "phd",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Zak was a Ph.D. student in the the Information School, co-advised by Andrew Ko and Barbara Endicott-Popovsky. He received his Master of Science in Security Informatics from Johns Hopkins in 2011 and bachelor degrees in Computer Engineering and Political Science from the University of Washington in 2009. His research focused on security practices in software teams and organizations. After leaving the Ph.D. program, he worked as Senior Security Engineer at Security Innovation, Inc.",
 		"url": "https://www.linkedin.com/in/zakariya-dehlawi-7836a515",
-		"startdate": 2014
+		"startdate": 2014,
+		"enddate": 2017,
+		"achievements": []
 	},
 		{
 		"id": "plli",
@@ -205,10 +290,14 @@
 		"active": false,
 		"advised": true,
 		"level": "phd",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Paul Luo Li was a Ph.D. student in the Information School at the University of Washington, advised by Andrew Ko. His dissertatino work focused on software engineering expertise. After graduating, Paul continued his full-time role as a Senior Data Scientist at Microsoft.",
 		"url": "https://www.linkedin.com/in/paul-li-7387903/",
 		"startdate": 2009,
-		"thesis": "papers/Li2016Dissertation.pdf"
+		"enddate": 2016,
+		"thesis": "papers/Li2016Dissertation.pdf",
+		"achievements": []
 	},
 	{
 		"id": "mjslee",
@@ -216,10 +305,17 @@
 		"active": false,
 		"advised": true,
 		"level": "phd",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Michael Lee was a PhD student in the Information School at the University of Washington, advised by Andrew Ko. His dissertation work focused on educational programming games, and game design factors that affect learning and engagement. After graduating, Mike began as an Assistant Professor at the New Jersey Institute of Technology in Information Systems.",
 		"url": "http://pixel42.com/",
 		"startdate": 2009,
-		"thesis": "papers/Lee2015Dissertation.pdf"
+		"enddate": 2015,
+		"thesis": "papers/Lee2015Dissertation.pdf",
+		"achievements": [
+			"Assistant Professor, New Jersey Institute of Technology, Information Systems (2015-present)",
+			"ACM ICER John Henry Best Paper Award (2013)"
+		]
 	},
 	{
 		"id": "burg",
@@ -227,10 +323,16 @@
 		"active": false,
 		"advised": true,
 		"level": "phd",
+		"dept": "Computer Science",
+		"coadvisor": "Michael Ernst",
 		"bio": "Brian Burg was a Ph.D. student in the CSE Department at the University of Washington, co-advised with Mike Ernst. His dissertation focused on web development productivity tools to support debugging, program comprehension, and reverse engineering tool. After graduating, Brian joined Apple's WebKit team.",
 		"url": "http://brrian.org/",
 		"startdate": 2011,
-		"thesis": "papers/Burg2015Dissertation.pdf"
+		"enddate": 2015,
+		"thesis": "papers/Burg2015Dissertation.pdf",
+		"achievements": [
+			"ACM UIST Best Paper Nominee (2015)"
+		]
 	},
 	{
 		"id": "pchilana",
@@ -238,20 +340,33 @@
 		"active": false,
 		"advised": true,
 		"level": "phd",
+		"dept": "Information School",
+		"coadvisor": "Jacob Wobbrock",
 		"bio": "Parmit K. Chilana was a PhD student at the Information School co-advised by Jake Wobbrock. Her dissertation focused on crowdsourced help systems and organizational factors in gathering and understanding user feedback about software. After graduating, Parmit began as an Assistant Professor at the University of Waterloo.",
 		"url": "http://hci.cs.sfu.ca/",
 		"startdate": 2008,
-		"thesis": "papers/Chilana2013Dissertation.pdf"
+		"enddate": 2013,
+		"thesis": "papers/Chilana2013Dissertation.pdf",
+		"achievements": [
+				"Assistant Professor, Simon Fraser University, Computer Science (2016-present)",
+				"Assistant Professor, University of Waterloo, Management Sciences, (2013-2016)",
+				"Facebook PhD Fellowship (2010)",
+				"Canadian Social Sciences and Humanities Research Council (SSHRC) Doctoral Award (2009)"
+		]
 	},
-		{
+	{
 		"id": "zilouchi",
 		"name": "Roshanak Zilouichian",
 		"active": false,
 		"advised": true,
 		"level": "postdoc",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Roshanak was a postdoc in the lab working on collaboration, consensus, information visualization, and creativity support tools. After completing her postdoc, she began as a Data Scientist at Microsoft.",
 		"url": "https://www.linkedin.com/in/roshanak-zilouchian-757385a/",
-		"startdate": 2015
+		"startdate": 2015,
+		"enddate": 2016,
+		"achievements": []
 	},
 	{
 		"id": "kwikh",
@@ -259,9 +374,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Computer Science",
+		"coadvisor": null,
 		"bio": "Harrison was an undergraduate in computer science interested in equitable learning of computing. He's supported the lab's research on programming tutors while independently investigating the experiences of CS transfer students. After graduating, he began a Ph.D. at Northwestern University.",
 		"url": "https://resprit.com/",
-		"startdate": 2016
+		"startdate": 2016,
+		"enddate": 2018,
+		"achievements": []
 	},
 	{
 		"id": "lkhwa",
@@ -269,9 +388,15 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Leanne was an Informatics undergraduate interested in computing education, mentorship, and identity. She supported the lab's research on programming tutors while independently investigating the role of informal computing mentors amongst south Seattle teens.",
 		"url": "https://github.com/lkhwa",
-		"startdate": 2016
+		"startdate": 2016,
+		"enddate": 2018,
+		"achievements": [
+			"UW Husky 100, recognizing top UW undergrad and graduates (2019)"
+		]
 	},	
 	{
 		"id": "alextan",
@@ -279,9 +404,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Alex is an Informatics undergraduate in computing education. He supported the lab's research on programming tutors.",
 		"url": "https://www.linkedin.com/in/alexhtan/",
-		"startdate": 2017
+		"startdate": 2017,
+		"enddate": 2018,
+		"achievements": []
 	},
 	{
 		"id": "besweth",
@@ -289,9 +418,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Michael helped engineer Gidget while an Informatics undergrad. He now helps engineer NY Times.",
 		"url": "https://www.linkedin.com/in/michael-beswetherick-8b924944/",
-		"startdate": 2012
+		"startdate": 2012,
+		"enddate": 2013,
+		"achievements": []
 	},
 	{
 		"id": "stackhouse",
@@ -299,9 +432,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Andre helped engineer Gidget while an Informatics undergrad, then at Code.org. He now helps engineer Bing at Microsoft.",
 		"url": "https://www.linkedin.com/in/captainstack/",
-		"startdate": 2012
+		"startdate": 2012,
+		"enddate": 2013,
+		"achievements": []
 	},
 	{
 		"id": "charters",
@@ -309,9 +446,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Polina was a Psychology student who helped develop many of the instruments for our studies of Gidget, and also ran a study evaluating attitude shifts among adults who played Gidget. She went on to our Masters in HCI+Design.",
 		"url": "https://www.linkedin.com/in/polinacharters/",
-		"startdate": 2013
+		"startdate": 2013,
+		"enddate": 2014,
+		"achievements": []
 	},
 	{
 		"id": "fanny",
@@ -319,9 +460,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Fanny was a Design student who illustrated all of the art for Gidget. She went on to design and illustrate at Airbnb and Dropbox.",
 		"url": "https://www.linkedin.com/in/fanny-luor-946aab2b/",
-		"startdate": 2013
+		"startdate": 2013,
+		"enddate": 2014,
+		"achievements": []
 	},
 	{
 		"id": "nadav",
@@ -329,9 +474,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Nadav was a Computer Science and Informatics student who helped engineer Gidget. He went on to Google to help build Earth VR.",
 		"url": "https://www.linkedin.com/in/nadavash/",
-		"startdate": 2013
+		"startdate": 2013,
+		"enddate": 2014,
+		"achievements": []
 	},
 	{
 		"id": "staffan",
@@ -339,9 +488,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Staffan was an Informatics student who helped engineer Gidget. He went on to work at Weebly.",
 		"url": "https://www.linkedin.com/in/hellmans/",
-		"startdate": 2014
+		"startdate": 2014,
+		"enddate": 2015,
+		"achievements": []
 	},
 	{
 		"id": "raden",
@@ -349,9 +502,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Steven was an Informatics student who helped design and engineer Gidget. He went on to work at IBM as a UX designer.",
 		"url": "https://www.linkedin.com/in/steven-raden-76031a62/",
-		"startdate": 2014
+		"startdate": 2014,
+		"enddate": 2015,
+		"achievements": []
 	},
 	{
 		"id": "menten",
@@ -359,9 +516,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Liam was an Informatics student who helped design and engineer our work on programming problem solving tutors, focusing specifically on an advanced tutorial authoring interface.",
 		"url": "https://www.linkedin.com/in/william-menten-weil-944a15ab/",
-		"startdate": 2016
+		"startdate": 2016,
+		"enddate": 2017,
+		"achievements": []
 	},
 	{
 		"id": "dakota",
@@ -369,9 +530,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Dakota was an Informatics student who helped design and engineer our work on programming problem solving tutors, focusing specifically on an advanced tutorial authoring interface.",
 		"url": "https://www.linkedin.com/in/dakota-miller-01010954/",
-		"startdate": 2016
+		"startdate": 2016,
+		"enddate": 2017,
+		"achievements": []
 	},
 	{
 		"id": "rowell",
@@ -379,9 +544,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Alex was an Informatics student who helped design and engineer our work on programming problem solving tutors, focusing specifically on how to present expert identity.",
 		"url": "https://www.linkedin.com/in/alexandrarowell",
-		"startdate": 2016
+		"startdate": 2016,
+		"enddate": 2017,
+		"achievements": []
 	},
 	{
 		"id": "xing",
@@ -389,9 +558,12 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Xing was an Electrical Engineering student that helped evaluate Feedlack, our verification tool for finding missing feedback in interfaces.",
 		"url": "https://www.linkedin.com/in/xingz2/",
-		"startdate": 2011
+		"startdate": 2011,
+		"enddate": 2012
 	},
 	{
 		"id": "stephenip",
@@ -399,9 +571,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Stephen was an Informatics student who helped with our studies of bug triage.",
 		"url": "https://www.linkedin.com/in/stevenip/",
-		"startdate": 2011
+		"startdate": 2011,
+		"enddate": 2012,
+		"achievements": []
 	},
 	{
 		"id": "charlie",
@@ -409,9 +585,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Charlie was an Informatics student who helped with our studies of bug triage. He went on to become a program manager at Microsoft.",
 		"url": "https://www.linkedin.com/in/ctran7/",
-		"startdate": 2011
+		"startdate": 2011,
+		"enddate": 2012,
+		"achievements": []
 	},
 	{
 		"id": "ferrari",
@@ -419,9 +599,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Valentina was an Informatics student who helped with our studies of bug triage. She went on to become a UX designer at Adobe.",
 		"url": "https://www.linkedin.com/in/valentinaferrariux/",
-		"startdate": 2011
+		"startdate": 2011,
+		"enddate": 2012,
+		"achievements": []
 	},
 	{
 		"id": "neeraja",
@@ -429,9 +613,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Neeraja was an Informatics and Applied Math student who helped analyze a corpus of tens of thousands of news articles about software failures.",
 		"url": "https://www.linkedin.com/in/neeraja-duriseti-0734054b/",
-		"startdate": 2010
+		"startdate": 2010,
+		"enddate": 2011,
+		"achievements": []
 	},
 	{
 		"id": "dosono",
@@ -439,9 +627,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Bryan was an Informatics student who helped analyze a corpus of tens of thousands of news articles about software failures. He went on to do a Ph.D. in Information Science at Syracuse University.",
 		"url": "http://www.bdosono.com/",
-		"startdate": 2010
+		"startdate": 2010,
+		"enddate": 2011,
+		"achievements": []
 	},
 	{
 		"id": "padma",
@@ -449,9 +641,13 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Padma was an Informatics student who helped design and engineer Gidget. She went on to Microsoft as a software engineer.",
 		"url": "https://www.linkedin.com/in/padma-vaithyam-137b6739/",
-		"startdate": 2012
+		"startdate": 2012,
+		"enddate": 2013,
+		"achievements": []
 	},
 	{
 		"id": "jiang",
@@ -459,8 +655,26 @@
 		"active": false,
 		"advised": true,
 		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
 		"bio": "Diana was an Informatics student who helped design and engineer Gidget.",
 		"url": "https://www.linkedin.com/in/jiangdiana/",
-		"startdate": 2012
+		"startdate": 2012,
+		"enddate": 2013,
+		"achievements": []
+	},
+	{
+		"id": "crhxn",
+		"name": "Casey Hickerson",
+		"active": false,
+		"advised": true,
+		"level": "phd",
+		"dept": "Information School",
+		"coadvisor": null,
+		"bio": "Casey was a doctoral student that studied design practices.",
+		"url": "https://www.linkedin.com/in/crhickerson",
+		"startdate": 2009,
+		"enddate": 2011,
+		"achievements": []
 	}	
 ]
