@@ -123,7 +123,7 @@
 		"issue": null,
 		"article": null,
 		"publisher": "Apress",
-		"contribution": "Discusses several levels of abstraction useful for reasoning about software engingeering productivity."
+		"contribution": "Discusses several levels of abstraction useful for reasoning about software engineering productivity."
 	},
 	{
 		"id": "",
@@ -165,7 +165,7 @@
 		"issue": null,
 		"article": null,
 		"publisher": "",
-		"contribution": "Attempts to teach explicit strategies for reuse and debugging, finding that adolescents struggle to follow systemtic approches to problem solving."
+		"contribution": "Attempts to teach explicit strategies for reuse and debugging, finding that adolescents struggle to follow systematic approaches to problem solving."
 	},
 	{
 		"id": "teachaccess2",
@@ -186,7 +186,7 @@
 		"issue": null,
 		"article": null,
 		"publisher": "",
-		"contribution": "Describes and evaluates a vision for teaching higher education CS faculty how to integrate accessibility topics into their classes, discovering many personal and organizationl barriers to adoption."
+		"contribution": "Describes and evaluates a vision for teaching higher education CS faculty how to integrate accessibility topics into their classes, discovering many personal and organizational barriers to adoption."
 	},
 	{
 		"id": "irteval",
@@ -251,7 +251,7 @@
 		"issue": null,
 		"article": null,
 		"publisher": "",
-		"contribution": "Describes early work on a system to support rapid design exploratino of user interface layouts."
+		"contribution": "Describes early work on a system to support rapid design exploration of user interface layouts."
 	},
 	{
 		"id": "certheory",
@@ -419,7 +419,7 @@
 		"issue":null,
 		"article":null,
 		"publisher":"",
-		"contribution":"Investigates the prevalance of instruction on accessibility among computing and information science faculty. Finds that nearly all HCI faculty teach something about accessibility, that most faculty want to teach it, but don't have the experience, and don't know how it fits into their course content."
+		"contribution":"Investigates the prevalence of instruction on accessibility among computing and information science faculty. Finds that nearly all HCI faculty teach something about accessibility, that most faculty want to teach it, but don't have the experience, and don't know how it fits into their course content."
 	},
 	{
 		"id":"pstutor1",
@@ -461,7 +461,7 @@
 		"issue":null,
 		"article":null,
 		"publisher":"",
-		"contribution":"Investigates the feasibility of predicting when a learner will abandon a coding tutorial, finding that account activation and help-seeking behavior predict continued learning, while tutorial features indicating struggle predicted abandoment."
+		"contribution":"Investigates the feasibility of predicting when a learner will abandon a coding tutorial, finding that account activation and help-seeking behavior predict continued learning, while tutorial features indicating struggle predicted abandonment."
 	},
 	{
 		"id":"pltutor1",
@@ -524,7 +524,7 @@
 		"issue":null,
 		"article":null,
 		"publisher":"",
-		"contribution":"Finds that interest in computing was strongly related to having a mentoring relationship and not to gender or socioeconomic status, that teens with mentors also engaged in signifcantly more computing education and had more diverse beliefs about peers who engaged in computing education, and that teens who took a class from an instructor who aimed to become students’ teacher-mentor had signicantly greater positive changes in interest in computing than those who already had a mentor."
+		"contribution":"Finds that interest in computing was strongly related to having a mentoring relationship and not to gender or socioeconomic status, that teens with mentors also engaged in significantly more computing education and had more diverse beliefs about peers who engaged in computing education, and that teens who took a class from an instructor who aimed to become students’ teacher-mentor had significantly greater positive changes in interest in computing than those who already had a mentor."
 	},
 	{
 		"id":"nonengineers",
@@ -871,7 +871,7 @@
 		"issue":null,
 		"article":null,
 		"publisher":"",
-		"contribution":"Research prototypes and evidence of their usablity and usefulness are only a tiny part of creating a successful whole product."
+		"contribution":"Research prototypes and evidence of their usability and usefulness are only a tiny part of creating a successful whole product."
 	},
 	{
 		"id":"",
@@ -997,7 +997,7 @@
 	"issue":null,
 	"article":null,
 	"publisher":"",
-	"contribution":"A system for recording inputs to a web application and replaying them determinstically with minimal time or space overhead."
+	"contribution":"A system for recording inputs to a web application and replaying them deterministically with minimal time or space overhead."
   },
   {
 	"id":"gidget3",
@@ -1207,7 +1207,7 @@
 	"issue":null,
 	"article":null,
 	"publisher":"",
-	"contribution":"Beta-testers use more applications, engage in more self-install, come from non-representative countries, and use more advanced hardware, skewing data on crashes, hangs, and kernal panics that is used for bug triage."
+	"contribution":"Beta-testers use more applications, engage in more self-install, come from non-representative countries, and use more advanced hardware, skewing data on crashes, hangs, and kernel panics that is used for bug triage."
   },
   {
 	"id":"openbugs2",
@@ -1354,7 +1354,7 @@
 	"issue":null,
 	"article":null,
 	"publisher":"",
-	"contribution":"A user interface for debugging that supports why and why not questions that enables developers to localize faults signficantly faster than breakpoint debuggers."
+	"contribution":"A user interface for debugging that supports why and why not questions that enables developers to localize faults significantly faster than breakpoint debuggers."
   },
   {
 	"id":"whydebugclassifier2",
@@ -1459,7 +1459,7 @@
 	"issue":null,
 	"article":null,
 	"publisher":"",
-	"contribution":"Most of the diagrams that software developers make are transient and faciliate interpersonal communication and decision making and not for specifying or documenting program behavior."
+	"contribution":"Most of the diagrams that software developers make are transient and facilitate interpersonal communication and decision making and not for specifying or documenting program behavior."
   },
   {
 	"id":"linguisticbugs",
@@ -1585,7 +1585,7 @@
 	"issue":null,
 	"article":null,
 	"publisher":"",
-	"contribution":"When developers fix a big or enhance a feature, they find a set of task-relevant code fragments and navigate dependencies between these fragements, but spend up to 35% of their time simply operating navigational controls in IDEs."
+	"contribution":"When developers fix a big or enhance a feature, they find a set of task-relevant code fragments and navigate dependencies between these fragments, but spend up to 35% of their time simply operating navigational controls in IDEs."
   },
   {
 	"id":"barriers",
@@ -1711,7 +1711,7 @@
 	"issue":null,
 	"article":null,
 	"publisher":"",
-	"contribution":"An adapation of the cognitive walkthrough technique that helps identify uncontrolled source of variations in experiments on developers tools."
+	"contribution":"An adaptation of the cognitive walkthrough technique that helps identify uncontrolled source of variations in experiments on developers tools."
   },
   {
 	"id":"whydebugclassifier1",
@@ -1795,7 +1795,7 @@
 	"issue":12,
 	"article":null,
 	"publisher":"",
-	"contribution":"Developers work on software maintiance tasks by searching for relevant code, navigating dependencies, and constructing a mental model of the dependencies of a feature, suggesting the need for environments that explicitly support feature location through dependency navigation."
+	"contribution":"Developers work on software maintenance tasks by searching for relevant code, navigating dependencies, and constructing a mental model of the dependencies of a feature, suggesting the need for environments that explicitly support feature location through dependency navigation."
   },
   {
 	"id":"errorframework",
@@ -1837,7 +1837,7 @@
 	"issue":null,
 	"article":null,
 	"publisher":"",
-	"contribution":"An adaption of the cognitive walkthrough for finding potential diffculties of novice users in an evaluation of a developer tool."
+	"contribution":"An adaption of the cognitive walkthrough for finding potential difficulties of novice users in an evaluation of a developer tool."
   },
   {
 	"id":"feasibility",
@@ -1858,7 +1858,7 @@
 	"issue":null,
 	"article":null,
 	"publisher":"",
-	"contribution":"Test the feasability of a feature in an API requires architectural and terminology knowledge of the API, which is often missing from documentation."
+	"contribution":"Test the feasibility of a feature in an API requires architectural and terminology knowledge of the API, which is often missing from documentation."
   },
   {
 	"id":"postusability",
@@ -2446,7 +2446,7 @@
 	"issue":null,
 	"article":null,
 	"publisher":"O'Reilly Media, Inc.",
-	"contribution":"Amazon"
+	"contribution":""
   },
   {
 	"id":"",
