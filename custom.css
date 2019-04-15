@@ -29,6 +29,10 @@ b, strong {
     font-weight: 400;
 }
 
+.table > tbody > tr > td {
+     vertical-align: top;
+}
+
 /* Custom page header */
 .header {
   padding-top: 10px;
@@ -110,6 +114,23 @@ a:hover {
 
 .nav > li > a {
 	padding: 10px 10px;
+}
+
+.topic {
+	display: inline-block;
+	background-color: rgb(250, 250, 250);
+	border-radius: 3px;
+	padding: 3px;
+	margin: 3px;
+	cursor: pointer;
+}
+
+.topic:hover {
+	background-color: rgb(230, 230, 230);
+}
+
+.topic.selected {
+	background-color: rgb(200, 200, 200);
 }
 
 @media print {
