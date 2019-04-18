@@ -119,8 +119,6 @@ class Posts extends React.Component {
 			}
 		);
 		
-		console.log("Filtering by " + this.state.filter);
-
 		var tagFilters = _.map(sortedTags, (tag, index) => {
 			return (
 				<Topic topic={tag} key={"topic" + index} posts={this} selected={this.state.filter === tag} />
