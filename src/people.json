@@ -1,5 +1,19 @@
 [
 	{
+		"id": "mattjd",
+		"name": "Matt Davidson",
+		"active": true,
+		"advised": false,
+		"level": "phd",
+		"dept": "College of Education",
+		"coadvisor": null,
+		"bio": "Matt is a doctoral in measurement & statistics who has collaborated closely on the lab's work on assessments of programming skills.",
+		"url": "https://www.linkedin.com/in/matt-davidson-92379916/",
+		"startdate": 2018,
+		"enddate": null,
+		"achievements": []
+	},
+	{
 		"id": "meron",
 		"name": "Meron Solomon",
 		"active": true,
@@ -56,7 +70,7 @@
 		"achievements": [ "NSF Graduate Research Fellowship (2018)" ]
 	},
 	{
-		"id": "jennareg",
+		"id": "yreg",
 		"name": "Yim Register",
 		"active": true,
 		"advised": true,

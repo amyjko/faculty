@@ -37,7 +37,7 @@ class Project extends React.Component {
 
 		// Find the publications that are in this project's list of papers and render a paper.
 		var papers = _.map(
-			_.filter(pubs, (paper) => { return _.indexOf(this.props.papers, paper.id) >= 0; }),
+			_.reverse(_.sortBy(_.filter(pubs, (paper) => { return _.indexOf(this.props.papers, paper.id) >= 0; }), (paper) => { return paper.year; })),
 			(paper) => { return <Paper {...paper} key={paper.id} link={true} />; }
 		);
 		
@@ -48,30 +48,20 @@ class Project extends React.Component {
 		
 		var buttonStyle = "btn btn-xs btn-default";
 		
-		// A "try it" button if there's a demo.
-		var demo = this.props.demo ? 
-			<a className={buttonStyle} href={this.props.demo} target="_blank">Try it</a> : 
-			null;
-
 		// A "see it" button if there's a video.
-		var videos = this.props.video ? 
-			_.map(this.props.video, (video, index) => {
-				return <span key={this.props.id + "video" + index}><a className={buttonStyle} href={video.url} target="_blank">{video.title}</a>&nbsp;</span>;
+		var links = this.props.links ? 
+			_.map(this.props.links, (link, index) => {
+				return <span key={this.props.id + "link" + index}><a className={buttonStyle} href={link.url} target="_blank">{link.title}</a>&nbsp;</span>;
 			}) : 
 			null;
 
 		// A papers button if we have more than a few
 		var showRemainingPapers = remainingPapers.length > 0 ?
 			<small><a className="" onClick={this.showDetail}>Show {remainingPapers.length} more...</a></small> : null;
-						
-		// A "code" button if there's code.
-		var code = this.props.code ? 
-			<a className={buttonStyle} href={this.props.code} target="_blank">Source code</a> :
-			null;
 
 		// Information if there's impact.
 		var impact = this.props.impact ? 
-			<p><b>Impact</b> <span dangerouslySetInnerHTML={{__html: this.props.impact}}></span></p> : 
+			<p><small><b>Impact</b> <span dangerouslySetInnerHTML={{__html: this.props.impact}}></span></small></p> : 
 			null;
 		
 		// Find the people on this project
@@ -83,13 +73,13 @@ class Project extends React.Component {
 		
 		return (
 			<div className="project row">
-				<div className="col-md-3">
-					<img className='img-responsive img-thumbnail gap-bottom-right' alt={this.props.name} src={"images/project-" + this.props.id + ".jpg"} style={{width: 140}} />
+				<div className="col-md-2">
+					<img className='img-responsive img-thumbnail gap-bottom-right' alt={this.props.name} src={"images/project-" + this.props.id + ".png"} style={{width: 140}} />
 				</div>
-				<div className="col-md-9">
-					<h4>{this.props.name} <small>({this.props.startdate}&ndash;{this.props.stopdate})</small> {people}
-						<br/>{demo} {videos} {code}
-					</h4>
+				<div className="col-md-10">
+					<h4>{this.props.name} <small>({this.props.startdate}&ndash;{this.props.stopdate})</small></h4>
+					<p>{links}</p>
+					<p>{people}</p>
 					<p>{this.props.description}</p>
 					{impact}
 					{firstPapers}
@@ -133,14 +123,14 @@ class Projects extends React.Component {
 				
 				<h3>Active Projects</h3>
 	
-				<p>These are areas we're actively investigating, but I'm always exploring new topics!</p>
+				<p>These are areas we've recently published in.</p>
 						
 				{active}
 	
 				<br/>
 				<h3>Past Projects</h3>
 				
-				<p>I'm no longer working on these projects, but I'm happy to answer questions about them.</p>
+				<p>I'm not actively working on the topics below, but I'm happy to answer questions about them. And who knows, new students might join my lab and bring them back to life!</p>
 	
 				{inactive}
 				

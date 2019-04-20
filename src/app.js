@@ -17,6 +17,7 @@ import { Books } from './books';
 import { Vita } from './cv';
 import { CER } from './cer';
 import { Unknown } from './unknown';
+import { Footer } from './footer';
 
 import 'bootstrap';
 
@@ -54,6 +55,7 @@ class App extends React.Component {
 					<Route path="/cer" component={CER}/>
 					<Route path="*" component={Unknown}/>
 				</Switch>
+				<Footer/>
 			</div>
 		)
 	}

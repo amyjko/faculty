@@ -149,3 +149,8 @@ a:hover {
 	}
 	
 }
+
+.img-thumbnail {
+	padding: 0;
+	border: none;
+}
