@@ -1,5 +1,11 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/on-being-introverted-in-academia-9fb5ad9fb808",
+		title: "On being an introvert in academia",
+		date: "2019.4",
+		tags: ["academia", "diversity", "personal"]
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/teaching-accessibility-in-higher-education-computing-courses-b1ac22bcec6f",
 		title: "Teaching accessibility in higher education computing courses",
 		date: "2019.4",

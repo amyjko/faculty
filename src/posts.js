@@ -109,7 +109,7 @@ class Posts extends React.Component {
 							<small>{ month + "/" + year }</small>
 						</td>
 						<td>
-							<a href="{post.url}" target="_blank">{post.title}</a>
+							<a href={post.url} target="_blank">{post.title}</a>
 						</td>
 						<td>
 							<small>{ post.tags.sort().join(", ")}</small>
