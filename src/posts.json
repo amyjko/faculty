@@ -1,5 +1,11 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/email-slack-and-messaging-oh-my-how-i-triage-written-requests-9431f76d4b5",
+		title: "Email, Slack, and messaging, oh my! How I triage email and other requests",
+		date: "2019.4",
+		tags: ["academia", "productivity", "tutorial"]
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/on-being-introverted-in-academia-9fb5ad9fb808",
 		title: "On being an introvert in academia",
 		date: "2019.4",
