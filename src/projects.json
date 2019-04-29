@@ -87,11 +87,13 @@
 		"name": "User interface mining",
 		"description": "User interfaces are structured documents, allowing us to analyze, reverse engineer, and transform them. My lab is applying techniques from program analysis and synthesis to automatically transform interfaces to be more accessible, usable, and useful.",
 		"funding": ["NSF Exploratory Programming"],
-		"people": ["amaswea", "ajko"],
-		"papers": ["genie", "rewire"],
+		"people": ["amaswea", "ajko", "burg"],
+		"papers": ["genie", "rewire", "frictionary", "scry", "feedlack"],
 		"links": [
 			{ title: "See Genie", url: "https://www.youtube.com/watch?v=Ivtvyy7m-qc" },
-			{ title: "See Rewire", url: "https://www.youtube.com/watch?v=9LA8feFOsOo" }
+			{ title: "See Rewire", url: "https://www.youtube.com/watch?v=9LA8feFOsOo" },
+			{ title: "Try Frictionary", url: "demo/frictionary" },
+			{ title: "See Scry", url: "https://www.youtube.com/watch?v=J-KlZ3hzuWg" }
 		],
 		"startdate": 2016,
 		"stopdate": null,
@@ -118,16 +120,14 @@
 		"description": "Finding and fixing defects is one of the most challenging aspects of programming, and that requires understanding how a program is built. My lab studies this problem extensively and invents tools that make program understanding easier by combining human intelligence with machine intelligence, including time-travel debugging tools like the Whyline and Timelapse, testing tools like Cleanroom, Feedlack, and Frictionary, and editors that improve program understanding like Jasper and Barista.",
 		"funding": ["NSF Fellowship", "NSF CAREER", "NDSEG Fellowship", "DARPA"],
 		"people": ["ajko", "burg"],
-		"papers": ["seekrelatecollect", "maintenancetasks", "devinterrupt", "jasper", "frictionary", "timelapse", "scry", "feedlack", "cleanroom", "barista", "textediting", "whyline1", "whyline2", "whyline3", "whyline4"],
+		"papers": ["seekrelatecollect", "maintenancetasks", "devinterrupt", "jasper", "timelapse", "cleanroom", "barista", "textediting", "whyline1", "whyline2", "whyline3", "whyline4"],
 		"links": [
 			{ title: "See Timelapse", url: "https://www.youtube.com/watch?v=tgTGy_P2Grw" },
-			{ title: "See Scry", url: "https://www.youtube.com/watch?v=J-KlZ3hzuWg" },
 			{ title: "See Barista", url: "https://www.youtube.com/watch?v=gAxjUh9d2YI" },
 			{ title: "See Whyline for Alice", url: "https://www.youtube.com/watch?v=wcy4JEmiQzI" },
 			{ title: "See Whyline for Java", url: "https://www.youtube.com/watch?v=t6gVZ-qZ4sI" },
 			{ title: "Whyline for Java source", url: "https://github.com/andyjko/whyline"},
 			{ title: "Try Cleanroom", url: "demo/cleanroom" },
-			{ title: "Try Frictionary", url: "demo/frictionary" },
 			{ title: "Feedlack source", url: "https://github.com/andyjko/feedlack" }
 		],
 		"startdate": 2004,
