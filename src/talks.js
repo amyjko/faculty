@@ -13,7 +13,7 @@ class Talks extends React.Component {
 						<a href="https://www.youtube.com/watch?v=-crfoC6NtaE"><img className='img-responsive gap-bottom-right' src="/ajko/images/eth2019programming.jpg" style={{width: 140}} /></a>
 					</div>
 					<div className="col-md-9">
-						<div className='lead'><a href="https://www.youtube.com/watch?v=-crfoC6NtaE">Programming: What it is and how to teach it.</a> (2019). <small>This was an invited talk at ETH Zurich's CS department. I shared my lab's latest research on programming, including programming language learning, API learning, programming problem solving, and programming strategies. See <a href="slides/ETHZurich2019Programming.pdf">the slides</a>.</small></div>
+						<div className='lead'><a href="https://www.youtube.com/watch?v=-crfoC6NtaE">Programming: What it is and how to teach it.</a> (2019). <small>This was an invited talk at ETH Zurich's CS department. I shared my lab's latest research on programming, including programming language learning, API learning, programming problem solving, and programming strategies. See <a href="slides/ETHZurich2019Programming.pdf">the slides</a> or the <a href="https://www.video.ethz.ch/speakers/d-infk/2019/spring/251-0100-00L.html">recording of my ETH talk</a>.</small></div>
 					</div>
 				</div>
 
