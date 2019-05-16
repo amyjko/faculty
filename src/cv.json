@@ -311,6 +311,11 @@
 	],
 	keynotes: [
 		{
+			title: "Topic TBD",
+			venue: "Koli Calling International Conference on Computing Education Research",
+			date: "November 22, 2019",
+		},
+		{
 			title: "Mining the Mind, Minding the Mine: Grand Challenges in Comprehension and Mining",
 			venue: "Joint keynote at the International Conference on Mining Software Repositories and the IEEE International Conference on Program Comprehension, Gothenburg, Sweden",
 			date: "May 28th, 2018",
@@ -342,6 +347,11 @@
 		}
 	],
 	invitedtalks: [
+		{
+			title: "Programming: what it is and how to teach it",
+			venue: "ETH Zurich, Department of Computer Science, Seminar (100+ attendees)",
+			date: "May 13th, 2019"
+		},
 		{
 			title: "Big ideas behind the Whyline",
 			venue: "International Conference on Software Engineering, Most Influential Paper Award Talk, Gothenburg, Sweden",

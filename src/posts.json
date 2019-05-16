@@ -1,5 +1,17 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/a-visit-to-eth-zurich-computer-science-f09c49fa7da",
+		title: "A visit to ETH Zurich Computer Science",
+		date: "2019.5",
+		tags: ["academia", "trip report", "computing education", "K-12", "ed tech"]
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/chi-2019-trip-report-the-interlocking-threats-of-hci-and-learning-2f83b5118e1d",
+		title: "CHI 2019 trip report: the interlocking threats of HCI and learning",
+		date: "2019.5",
+		tags: ["academia", "trip report", "ed tech", "computing education", "automation", "accessibility"]
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/email-slack-and-messaging-oh-my-how-i-triage-written-requests-9431f76d4b5",
 		title: "Email, Slack, and messaging, oh my! How I triage email and other requests",
 		date: "2019.4",
