@@ -1,5 +1,11 @@
 [
 	{
+		url: "https://medium.com/@andyjko/on-the-academic-quantified-self-b9bd174ccc69",
+		title: "On the academic quantified self",
+		date: "2019.5",
+		tags: ["academia", "higher education"]
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/a-visit-to-eth-zurich-computer-science-f09c49fa7da",
 		title: "A visit to ETH Zurich Computer Science",
 		date: "2019.5",
