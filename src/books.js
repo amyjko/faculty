@@ -5,7 +5,7 @@ class Books extends React.Component {
 		return (
 			<div>
 				<div className='lead'>
-					After my first sabbatical in 2014, I started writing short, accessible online books as an alternative to lectures. Feel free to use them for your classes. These are living documents, so if you see something that I should fix or add, let me know!
+					Below are web accessible books I maintain to support my teaching.
 				</div>
 
 				<div className="project row">

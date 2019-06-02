@@ -5,7 +5,7 @@ class Teaching extends React.Component {
 		return (
 			<div>
 				<div className='lead'>
-					These are the courses I teach regularly. My focus is on HCI, design, software engineering, and foundations of information science.
+					These are courses I teach regularly at the University of Washington.
 				</div>
 
 				<div className="project row">

@@ -5,7 +5,7 @@ class Talks extends React.Component {
 		return (
 			<div>
 				<div className='lead'>
-					I've given a few keynotes and invited talks that share my thoughts at a bigger level than my papers.
+					Below are keynotes and invited talks I've given.
 				</div>
 
 				<div className="project row">

@@ -11,7 +11,7 @@ class Advice extends React.Component {
 		return (
 			<div>
 				<div className='lead'>
-					When I was in grad school, I always found advice pages on faculty websites to be incredibly helpful. Some of my favorites include those by <a href="http://www.cs.washington.edu/homes/mernst/advice/">Mike Ernst</a> (software engineering), <a href="http://people.engr.ncsu.edu/txie/advice.htm">Tao Xie</a> (software engineering) and <a href="http://www.cs.cmu.edu/~jasonh/advice.html">Jason Hong</a> (HCI). Below I include some of my own advice.
+					Below are some of the questions I'm frequently asked.
 				</div>
 
 				<ul>
@@ -24,6 +24,10 @@ class Advice extends React.Component {
 					<li><a href="#evaluation">How should I evaluate this developer tool I invented?</a></li>
 					<li><a href="#copyright">My paper was accepted. Which ACM copyright option should I choose?</a></li>
 				</ul>
+				
+				<p>
+					Also see the excellent pages by <a href="http://www.cs.washington.edu/homes/mernst/advice/">Mike Ernst</a> (software engineering), <a href="http://people.engr.ncsu.edu/txie/advice.htm">Tao Xie</a> (software engineering) and <a href="http://www.cs.cmu.edu/~jasonh/advice.html">Jason Hong</a> (HCI).
+				</p>
 
 				<h3 id="csis">What is the difference between computer science and information science?</h3>
 				

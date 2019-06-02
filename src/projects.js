@@ -106,12 +106,12 @@ class Projects extends React.Component {
 		return (
 			<div>
 				<div className="lead">
-					I study <strong>effective, equitable, scalable ways for humanity to learn computing</strong>, contributing to the fields of computing education, human-computer interaction, and software engineering.
-					I work with many outstanding <Link to={"/students"}>students</Link> on this work to <Link to={"/publications"}>publish</Link>, <Link to={"/posts"}>blog</Link>, and <Link to={"/impact"}>communicate</Link> our research with academia, industry, government, and the public.
+					I study effective, equitable, scalable ways for humanity to learn computing.
 				</div>
 				
 				<p>
-					We do this work with several communities at UW, including <a target="_blank" href="http://dub.washington.edu/">DUB</a> (a community of HCI researchers), <a target="_blank" href="http://uwplse.org/">PLSE</a> (a community of programming languages and software engineering researchers), and the iSchool's <a href="https://digitalyouth.ischool.uw.edu/" target="_blank">Digital Youth Lab</a>.
+					My work contributes to the fields of computing education, human-computer interaction, and software engineering.
+					I do this work with many outstanding <Link to={"/students"}>students</Link> on this work to <Link to={"/publications"}>publish</Link>, <Link to={"/posts"}>blog</Link>, and <Link to={"/impact"}>communicate</Link> our research with academia, industry, government, and the public. We do this work with several communities at UW, including <a target="_blank" href="http://dub.washington.edu/">DUB</a> (a community of HCI researchers), <a target="_blank" href="http://uwplse.org/">PLSE</a> (a community of programming languages and software engineering researchers), and the iSchool's <a href="https://digitalyouth.ischool.uw.edu/" target="_blank">Digital Youth Lab</a>.
 					I also lead two communities outside the university: <a target="_blank" href="http://soundcsed.org">Sound CS Ed</a>, a regional community of teachers, researchers, and inventors passionate about computing education, and <a target="_blank" href="http://csforallwa.org">CS for All Washington</a>, a statewide advocacy coalition championing K-12 computing education in Washington state.
 					I formerly directed the <a href="http://eusesconsortium.org/" target="_blank">EUSES consortium</a>, an academic and industry coalition focused on end-user programming.
 				</p>

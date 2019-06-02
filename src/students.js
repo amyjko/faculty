@@ -62,9 +62,16 @@ class Students extends React.Component {
 		return (
 			<div>
 			
-				<div className="lead">My research group, the <strong>Code & Cognition Lab</strong>, includes doctoral and undergraduate students from <a href="http://ischool.uw.edu">The Information School</a>, <a href="http://cs.washington.edu">The Paul G. Allen School of Computer Science & Engineering</a>, and occasionally other units on campus.</div>
+				<div className="lead">
+					I direct the <em>Code & Cognition Lab</em>.
+				</div>
 				
-				<div className="lead">I run the lab in a doctoral student-centered manner: students define their own projects within the scope of my interests, and often move me into new research areas. I typically write grants to support students' research, rather than make students work within the grant money I've raised. Students frequently collaborate with each other and with students outside of the lab.</div>
+				<p>
+					My lab includes doctoral and undergraduate students from <a href="http://ischool.uw.edu">The Information School</a>, <a href="http://cs.washington.edu">The Paul G. Allen School of Computer Science & Engineering</a>, and occasionally other units on campus.
+					I run the lab in a doctoral student-centered manner: students define their own projects within the scope of my interests, and often move me into new research areas. 
+					I typically write grants to support students' research, rather than make students work within the grant money I've raised. 
+					Students frequently collaborate with each other and with students outside of the lab.
+				</p>
 
 				<ul>
 					<li>Are you a <strong>current Ph.D. student</strong> at UW interested in working with me? Lurk on the <i>#codeandcognition</i> channel on <a target="_blank" href="https://uwdub.slack.com">DUB's Slack</a>. Write me an email and let's chat about your interests.</li>

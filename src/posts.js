@@ -128,8 +128,12 @@ class Posts extends React.Component {
 		return (
 			<div>
 				<div className="lead">
-					I <a href="https://medium.com/@andyjko/">blog on Medium</a> and generally post all of my content on lab's publication, <a href="https://medium.com/bits-and-behavior">Bits and Behavior</a>, where you can also find my students' writing. I've also organized my posts below by topic, in case you want to find content on a particular topic.
+					I <a href="https://medium.com/@andyjko/">blog</a> on my lab's Medium publication, <a href="https://medium.com/bits-and-behavior">Bits and Behavior</a>.
 				</div>
+				
+				<p>
+					I've also organized my posts below by topic.
+				</p>
 	
 				<p>
 					Filter: { tagFilters }
