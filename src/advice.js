@@ -29,13 +29,18 @@ class Advice extends React.Component {
 					Also see the excellent pages by <a href="http://www.cs.washington.edu/homes/mernst/advice/">Mike Ernst</a> (software engineering), <a href="http://people.engr.ncsu.edu/txie/advice.htm">Tao Xie</a> (software engineering) and <a href="http://www.cs.cmu.edu/~jasonh/advice.html">Jason Hong</a> (HCI).
 				</p>
 
-				<h3 id="csis">What is the difference between computer science and information science?</h3>
+				<h3 id="csis">What is the difference between computer science and informatics at UW</h3>
 				
-				<p>When people ask me this, here's what I usually say:</p>
-
-				<blockquote>
-				I think of Computer Science and Informatics like we think about Physics versus Engineering: the former concerns itself with a phenomenon as it occurs in nature and the latter is concerned with applications of it for humanity. CS fundamentally asks what is computing, what can be computed, how can it be computed. Informatics fundamentally asks what should be computed, how should computation be used, what role does computing play in society. If you find computing intrinsically interesting and wouldn't mind talking about it endlessly, CS is a great major for you. If you just want use it as a tool to solve the world's problems, Informatics is a great major for you. Some people are interested in both. Maybe that's you! Both are competitive majors, both lead to wonderful jobs, and both will teach you a lot about the world, one from the perspective of computing, one from the perspective of humanity. Both perspectives are necessary and valuable.
-				</blockquote>
+				<p>
+					I think of Computer Science and Informatics like we think about Physics versus Engineering: the former concerns itself with a phenomenon as it occurs in nature and the latter is concerned with applications of it for humanity.
+					CS fundamentally asks what is computing, what can be computed, how can it be computed. 
+					Informatics fundamentally asks what should be computed, how should computation be used, what role does computing play in society. 
+					If you find computing intrinsically interesting and wouldn't mind talking about it endlessly, CS is a great major for you. 
+					If you just want use it as a tool to solve the world's problems, Informatics is a great major for you. 
+					Some people are interested in both. Maybe that's you! 
+					Both are competitive majors, both lead to wonderful jobs, and both will teach you a lot about the world, one from the perspective of computing, one from the perspective of people and society. 
+					Both perspectives are necessary and valuable.
+				</p>
 				
 				<p>
 					You can read more about my view of information and computing in a blog post I wrote about <a target="_blank" href="https://medium.com/bits-and-behavior/big-ideas-about-information-c09e4d9c60bd">big ideas about information</a>.
