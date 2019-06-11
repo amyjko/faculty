@@ -1,5 +1,11 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/some-amateur-thoughts-on-change-3abde7005d56",
+		title: "Some amateur thoughts on change",
+		date: "2019.6",
+		tags: ["academia", "society"]
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/finding-time-to-read-in-academia-3df53d81caad",
 		title: "Finding time to read in academia",
 		date: "2019.6",
@@ -9,7 +15,7 @@
 		url: "https://medium.com/@andyjko/on-the-academic-quantified-self-b9bd174ccc69",
 		title: "On the academic quantified self",
 		date: "2019.5",
-		tags: ["academia", "higher education"]
+		tags: ["academia"]
 	},
 	{
 		url: "https://medium.com/bits-and-behavior/a-visit-to-eth-zurich-computer-science-f09c49fa7da",
@@ -39,7 +45,7 @@
 		url: "https://medium.com/bits-and-behavior/teaching-accessibility-in-higher-education-computing-courses-b1ac22bcec6f",
 		title: "Teaching accessibility in higher education computing courses",
 		date: "2019.4",
-		tags: ["accessibility", "higher education", "computing education"]
+		tags: ["accessibility", "academia", "computing education"]
 	},
 	{
 		url: "https://medium.com/bits-and-behavior/tips-for-implement-cs-for-all-in-radically-decentralized-public-k-12-education-4e2ee1b396d7",
@@ -57,7 +63,7 @@
 		url: "https://medium.com/bits-and-behavior/big-ideas-about-information-c09e4d9c60bd",
 		title: "Big ideas about information",
 		date: "2018.12",
-		tags: ["information", "computing education", "higher education"]
+		tags: ["information", "computing education", "academia"]
 	},
 	{
 		url: "https://medium.com/bits-and-behavior/a-rant-about-journalism-on-learning-to-code-da9a11dd9866",
@@ -69,7 +75,7 @@
 		url: "https://medium.com/bits-and-behavior/the-invisible-work-of-equity-in-higher-education-computing-and-information-science-6d0d36d78cf8",
 		title: "The invisible work of equity in higher education computing and information science",
 		date: "2018.6",
-		tags: ["higher education", "computing education", "diversity"]
+		tags: ["academia", "computing education", "diversity"]
 	},
 	{
 		url: "https://medium.com/bits-and-behavior/how-i-learned-to-code-2acb503c9f84",
@@ -111,7 +117,7 @@
 		url: "https://medium.com/bits-and-behavior/how-upward-bound-guides-bootstrapping-teens-into-higher-education-a87cb34367ac",
 		title: "How Upward Bound guides bootstrapping U.S. teens into higher education",
 		date: "2017.8",
-		tags: ["K-12", "diversity", "computing education", "higher education"]
+		tags: ["K-12", "diversity", "computing education", "academia"]
 	},
 	{
 		url: "https://medium.com/bits-and-behavior/the-role-of-informal-computing-mentors-in-teens-interest-in-computing-9ae642f42ba8",
@@ -189,7 +195,7 @@
 		url: "https://medium.com/bits-and-behavior/privilege-and-cs1-70f9298272c4",
 		title: "Privilege and CS1",
 		date: "2015.12",
-		tags: ["diversity", "higher education", "computing education"]
+		tags: ["diversity", "academia", "computing education"]
 	},
 	{
 		url: "https://medium.com/bits-and-behavior/gidget-a-21st-century-approach-to-programming-literacy-85d74dd5a368",
@@ -645,7 +651,7 @@
 		url: "https://medium.com/bits-and-behavior/how-i-applied-learning-sciences-to-undergraduate-design-education-f0c46846ca13",
 		title: "How I applied learning sciences to undergraduate design education",
 		date: "2017.1",
-		tags: ["teaching", "higher education", "tutorial"]
+		tags: ["teaching", "academia", "tutorial"]
 	},
 	{
 		url: "https://medium.com/bits-and-behavior/textbooks-are-awesome-b0f9b6af7105",
