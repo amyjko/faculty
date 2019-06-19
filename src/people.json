@@ -1,5 +1,19 @@
 [
 	{
+		"id": "neilryan",
+		"name": "Neil Ryan",
+		"active": true,
+		"advised": true,
+		"level": "phd",
+		"dept": "Computer Science",
+		"coadvisor": null,
+		"bio": "Neil is a PhD student in Computer Science and Engineering, curiously pursuing connections between between debugging, self-regulation, meta-cognition, tacit knowledge, and programming strategies.",
+		"url": "https://neildryan.com/",
+		"startdate": 2018,
+		"enddate": null,
+		"achievements": []
+	},
+	{
 		"id": "chriszh",
 		"name": "Christina Zhang",
 		"active": true,
@@ -23,7 +37,7 @@
 		"coadvisor": null,
 		"bio": "Matt is a doctoral in measurement & statistics who has collaborated closely on the lab's work on assessments of programming skills.",
 		"url": "https://www.linkedin.com/in/matt-davidson-92379916/",
-		"startdate": 2018,
+		"startdate": 2017,
 		"enddate": null,
 		"achievements": []
 	},
