@@ -33,7 +33,7 @@
 		"name": "Broadening participation in computing",
 		"description": "The world is full of structural barriers to developing interest in and learning computing. My lab investigates these barriers and ways to eradicate them, including issues around accessibility, mentorship, culture, identity, and resources, with the goal of increasing the diversity of people in computing disciplines.",
 		"funding": ["NSF AccessComputing", "NSF CE21", "NSF Cyberlearning"],
-		"people": ["ajko", "kthayer", "banerjee", "kwikh", "kshino", "laurav4", "skawas", "lkhwa", "kwikh"],
+		"people": ["ajko", "kthayer", "banerjee", "kwikh", "kshino", "laurav4", "skawas", "lkhwa"],
 		"papers": ["codebios", "bootcamps", "ellblockstudio", "transfer", "mentors1", "mentors2", "teachaccess1", "teachaccess2"],
 		"links": [
 			{ title: "See WeCode", url: "https://youtu.be/t56g4DYIuUA" }

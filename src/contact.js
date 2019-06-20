@@ -38,8 +38,9 @@ class ContactInfo extends React.Component {
 				<small>
 					<br/>Office hours: by appt
 					<br/><a href="https://www.google.com/maps/place/Mary+Gates+Hall.+University+of+Washington/@47.6549552,-122.3101087,994m/data=!3m2!1e3!4b1!4m2!3m1!1s0x549014f2a95c2899:0xb2525ccd291489c!6m1!1e1" target="_blank">Mary Gates Hall 015E</a>
-					<br/>ajko&nbsp;@&nbsp;uw.edu
+					<br/>ajko&nbsp;@&nbsp;uw&nbsp;.&nbsp;edu
 					<br/><a href="https://twitter.com/andyjko" className="twitter-follow-button" data-show-screen-name="false" data-show-count="false" ref="follow"></a>
+					<br/><a href="https://orcid.org/0000-0001-7461-4783" target='_blank'>ORCID iD</a>
 					<br/><a href="https://medium.com/bits-and-behavior" target='_blank'>Blog</a>
 					<br/><Link to="/cv">CV</Link>
 					<br/><a target="_blank" href="https://github.com/andyjko"><img style={{height: "1em"}} src="images/GitHub-Mark-120px-plus.png" /></a>
