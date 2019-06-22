@@ -6,7 +6,7 @@
         "repository": "https://github.com/andyjko/faculty.git",
 	"scripts": {
 		"watch": "watch 'npm run build' src",
-		"build": "browserify -t [ babelify --presets [ react ] ] src/app.js | uglifyjs > build/app.js",
+		"build": "browserify -t [ babelify --presets [ react ] ] app.js | uglifyjs > build/app.js",
 		"diff": "rsync --dry-run -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html",
 		"test": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' --exclude '.htaccess' . ~/public_html/test",
 		"ship": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' --exclude 'test' . ~/public_html",

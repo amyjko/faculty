@@ -1,0 +1,154 @@
+[
+	{
+		"id": "pllearning",
+		"active": true,
+		"name": "Programming language learning",
+		"description": "Robust understanding of a programming language is a key foundation for being able to create software. My lab investigates what it means to know a programming language, invents and evaluates educational technologies that streamline learning of a programming language, and invents and evaluates assessments that help identify what learners do and do not know about a programming language.",
+		"funding": ["NSF Cyberlearning", "NSF CE21", "Microsoft"],
+		"people": ["bxie", "glnelson", "ajko", "kwikh", "mjslee", "yanan15"],
+		"papers": ["cs1theory", "gidget6", "pltutor1","tutorialeval", "tracing", "statscomprehension", "irteval", "gidget1", "gidget2", "gidget3", "gidget4", "gidget5", "gidget6", "adultattitudes", "gidgetabandoment"],
+		"links": [
+			{ title: "Try Gidget", url: "http://helpgidget.org" }
+		],
+		"startdate": 2010,
+		"stopdate": null,
+		"impact": "This work has shaped the curriculum designed by Code.org, which is used by thousands of U.S. teachers and hundreds of thousands of youth. Gidget has been played by thousands of people online, in summer camps, and in high schools. It has directly informed the design of Code.org's <a href='https://studio.code.org'>Code Studio</a> and Apple's <a href='https://www.apple.com/swift/playgrounds/'>Swift Playgrounds</a>."
+	},
+	{
+		"id": "problemsolving",
+		"active": true,
+		"name": "Programming problem solving",
+		"description": "A critical part of creating software is being able to understand programming problems, identify solutions to solve them, and systematically implement, verify, and debug programs, and avoid mistakes throughout. My lab investigates effective ways of learning these skills, and orchestrating them with self-regulation, process, and strategy.",
+		"funding": ["NSF Exploratory Programming", "NSF Cyberlearning", "NSF Programming Strategies"],
+		"people": ["dloksa", "ajko", "bxie", "olesona"],
+		"papers": ["csproblemsolving1","csproblemsolving2", "ideagardenjvlc", "tracing", "teachingstrategies", "errormodel", "errorframework"],
+		"links": [],
+		"startdate": 2003,
+		"stopdate": null,
+		"impact": "This work has shaped the curriculum designed by Code.org, which is used by thousands of U.S. teachers and hundreds of thousands of youth."
+	},
+	{
+		"id": "csdiversity",
+		"active": true,
+		"name": "Broadening participation in computing",
+		"description": "The world is full of structural barriers to developing interest in and learning computing. My lab investigates these barriers and ways to eradicate them, including issues around accessibility, mentorship, culture, identity, and resources, with the goal of increasing the diversity of people in computing disciplines.",
+		"funding": ["NSF AccessComputing", "NSF CE21", "NSF Cyberlearning"],
+		"people": ["ajko", "kthayer", "banerjee", "kwikh", "kshino", "laurav4", "skawas", "lkhwa"],
+		"papers": ["codebios", "bootcamps", "ellblockstudio", "transfer", "mentors1", "mentors2", "teachaccess1", "teachaccess2"],
+		"links": [
+			{ title: "See WeCode", url: "https://youtu.be/t56g4DYIuUA" }
+		],
+		"startdate": 2009,
+		"stopdate": null,
+		"impact": "We apply our work and others to working directly with local communities to make change, including lowering barriers to transfer students at the University of Washington, connecting with marginalized communities in South Seattle, teaching in the University of Washington's Upward Bound program, and developing statewide coalitions to ensure CS for All."
+	},
+	{
+		"id": "apilearning",
+		"active": true,
+		"name": "API learning",
+		"description": "Most modern software is built by reusing APIs, libraries, frameworks, and other code that others have carefully designed and tested. Unfortunately, such reuse often requires robust learning of API features. My lab investigates barriers to learning API's robustly and invents more effective ways of leanring APIs.",
+		"funding": ["NSF Cyberlearning", "NSF Exploratory Programming"],
+		"people": ["ajko", "kthayer"],
+		"papers": ["barriers", "bootcamps", "feasibility"],
+		"links": [],
+		"startdate": 2004,
+		"stopdate": null,
+		"impact": "Findings on coding bootcamps have been discussed broadly on <a href='https://www.reddit.com/r/programming/comments/6kgi7p/what_i_learned_from_researching_coding_bootcamps/'>Reddit</a> and Hacker News [<a href='https://news.ycombinator.com/item?id=14679061'>1</a>, <a href='https://news.ycombinator.com/item?id=16961716'>2</a>], including a blog post read nearly 10,000 times in four days."
+	},
+	{
+		"id": "softexpertise",
+		"active": false,
+		"name": "Software engineering expertise",
+		"description": "Engineering software in professional contexts requires far more than knowing foundations of computing. My lab investigates all of the advanced skills, soft and hard, that are required for developers to be great engineers, including communication skills, collaboration skills, and design skills.",
+		"funding": ["NSF Exploratory Programming", "NSF CAREER"],
+		"people": ["ajko", "plli", "pchilana"],
+		"papers": ["greatengineer1", "answerdash","nonengineers", "informationneeds","facebookcasestudy", "devwhiteboards", "complexdomains", "answerdash"],
+		"links": [],
+		"startdate": 2013,
+		"stopdate": null,
+		"impact": "This work has been read widely in industry, including by product teams at Microsoft, Adobe, Google, and ABB. Our research on software engineering experience have been used to frame soft skills instruction in the <a href='http://www.afsenyc.org/'>Academy for Software Engineering</a> curriculum in New York and have also reached over 10,000 academics and software engineers through an <a href='https://www.youtube.com/watch?v=OBlmLjeORUQ&feature=youtu.be&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU'>ACM Learning Center Webinar</a>."
+	},
+	{
+		"id": "mlliteracy",
+		"active": true,
+		"name": "Understanding machine learning",
+		"description": "While most programs are still written by software developers, many are now built by gathering large amounts of data and automatically creating machine learned programs. My lab is investigating the immense comprehension challenges imposed by these probablistic forms of program behavior, as well as the literacy required to understand how they are shaping program behavior and society.",
+		"funding": [],
+		"people": ["ajko", "yreg"],
+		"papers": ["gestalt", "whydebugclassifier2", "whydebugclassifier1"],
+		"links": [],
+		"startdate": 2004,
+		"stopdate": null,
+		"impact": ""
+	},
+	{
+		"id": "uimining",
+		"active": true,
+		"name": "User interface mining",
+		"description": "User interfaces are structured documents, allowing us to analyze, reverse engineer, and transform them. My lab is applying techniques from program analysis and synthesis to automatically transform interfaces to be more accessible, usable, and useful.",
+		"funding": ["NSF Exploratory Programming"],
+		"people": ["amaswea", "ajko", "burg"],
+		"papers": ["genie", "rewire", "frictionary", "scry", "feedlack"],
+		"links": [
+			{ title: "See Genie", url: "https://www.youtube.com/watch?v=Ivtvyy7m-qc" },
+			{ title: "See Rewire", url: "https://www.youtube.com/watch?v=9LA8feFOsOo" },
+			{ title: "Try Frictionary", url: "demo/frictionary" },
+			{ title: "See Scry", url: "https://www.youtube.com/watch?v=J-KlZ3hzuWg" }
+		],
+		"startdate": 2016,
+		"stopdate": null,
+		"impact": null
+	},
+	{
+		"id": "methods",
+		"active": true,
+		"name": "Theory and methods for investigating programming",
+		"description": "My lab actively contributes new methods and perspectives on research on programming.",
+		"funding": [],
+		"people": ["ajko", "glnelson"],
+		"papers": ["walkthrough1", "walkthrough2", "practicalguide", "certheory"],
+		"links": null,
+		"startdate": 2003,
+		"stopdate": null,
+		"impact": "Our work on research methods is widely read by new Ph.D. students across computer science to inform how they evaluate new developer tools and how they use theory."
+	},
+	
+	{
+		"id": "understanding",
+		"active": false,
+		"name": "Understanding program behavior",
+		"description": "Finding and fixing defects is one of the most challenging aspects of programming, and that requires understanding how a program is built. My lab studies this problem extensively and invents tools that make program understanding easier by combining human intelligence with machine intelligence, including time-travel debugging tools like the Whyline and Timelapse, testing tools like Cleanroom, Feedlack, and Frictionary, and editors that improve program understanding like Jasper and Barista.",
+		"funding": ["NSF Fellowship", "NSF CAREER", "NDSEG Fellowship", "DARPA"],
+		"people": ["ajko", "burg"],
+		"papers": ["seekrelatecollect", "maintenancetasks", "devinterrupt", "jasper", "timelapse", "cleanroom", "barista", "textediting", "whyline1", "whyline2", "whyline3", "whyline4"],
+		"links": [
+			{ title: "See Timelapse", url: "https://www.youtube.com/watch?v=tgTGy_P2Grw" },
+			{ title: "See Barista", url: "https://www.youtube.com/watch?v=gAxjUh9d2YI" },
+			{ title: "See Whyline for Alice", url: "https://www.youtube.com/watch?v=wcy4JEmiQzI" },
+			{ title: "See Whyline for Java", url: "https://www.youtube.com/watch?v=t6gVZ-qZ4sI" },
+			{ title: "Whyline for Java source", url: "https://github.com/andyjko/whyline"},
+			{ title: "Try Cleanroom", url: "demo/cleanroom" },
+			{ title: "Feedlack source", url: "https://github.com/andyjko/feedlack" }
+		],
+		"startdate": 2004,
+		"stopdate": null,
+		"impact": "Our studies on program understanding and ideas for program understanding tools was partially the basis of the <a href='http://research.microsoft.com/en-us/projects/debuggercanvas/'>Debugger Canvas</a> plugin for Visual Studio. Frictionary was used in one of the features in <a href='http://www.answerdash.com'>AnswerDash</a>, the company I co-founded based on my CAREER grant. Timelapse is being upstreamed to WebKit and will likely appear in the Safari Web Inspector developer tools. Many of the ideas in Barista have made it into more modern environments like <a href='http://scratch.mit.edu'>Scratch</a> and <a href='http://www.greenfoot.org/'>Greenfoot</a>. The Whyline has impacted several projects, including Microsoft's <a href='https://docs.microsoft.com/en-us/visualstudio/debugger/intellitrace-features'>IntelliTrace</a> feature in Visual Studio, it's <a href='https://marketplace.visualstudio.com/items?itemName=DebuggerCanvasTeam.DebuggerCanvas'>Debugger Canvas</a> Visual Studio plugin, and the record-replay features in it's latest <a href='https://www.microsoft.com/en-us/research/project/javascript-time-travel-debugger/'>Chakra JavaScript runtime</a>. Other projects, including <a href='http://rr-project.org/'>Mozilla's rr</a> and the <a href='http://debug.elm-lang.org/'>Elm Debugger</a> have also incorporated time-travel debugging features. None have implemented the full vision of Whyline's interface or analysis, but many are getting close, as the infrastructure for execution tracing, record/replay, and dynamic analysis are becoming scalable enough for production use."
+	},
+	{
+		"id": "triage",
+		"active": false,
+		"name": "Bug triage and user feedback",
+		"description": "When software gets shared with the world, helping people use it, and understanding their struggles in using it, are critical to improving it. My lab has studied challenges in gathering user feedback, and invented several tools that both provide better technical support, while also gathering data to improve software.",
+		"funding": ["NSF CAREER", "Google"],
+		"people": ["ajko", "pchilana", "mjslee", "dosono", "padma"],
+		"papers": ["beta", "postusability", "openbugs1", "openbugs2", "openbugs3", "userfeedback", "userfeedback2", "newsproblems", "linguisticbugs", "lemonaid1", "lemonaid2", "lemonaid3", "crystal"],
+		"links": [
+			{ title: "See 30 years of news", url: "demo/news" },
+			{ title: "See Crystal", url: "https://www.youtube.com/watch?v=9jFYVts7zB4" },
+			{ title: "Try AnswerDash", url: "https://www.youtube.com/watch?v=fw18aYKgd6k" }
+		],
+		"startdate": 2004,
+		"stopdate": null,
+		"impact": "Lemonaid, our crowdsourced help tool, was the basis for <a href='http://www.answerdash.com'>AnswerDash</a>, a company that I co-founded with Jacob Wobbrock and Parmit Chilana that offers an instant self-service answers product for web applications and e-commerce sites. The company has impacted other company's product offerings, including <a href='https://www.zendesk.com/'>Zendesk</a>'s self-service technologies."
+	}
+];
