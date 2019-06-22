@@ -21,7 +21,7 @@ import { Footer } from './footer';
 
 import 'bootstrap';
 
-var webRoot = "/ajko";
+var webRoot = window.location.pathname;
 
 // Polyfill startsWith
 if (!String.prototype.startsWith) {

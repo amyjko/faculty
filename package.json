@@ -7,8 +7,9 @@
 	"scripts": {
 		"watch": "watch 'npm run build' src",
 		"build": "browserify -t [ babelify --presets [ react ] ] src/app.js | uglifyjs > build/app.js",
-		"test-ship": "rsync --dry-run -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html",
-		"ship": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html",
+		"diff": "rsync --dry-run -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html",
+		"test": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' --exclude '.htaccess' . ~/public_html/test",
+		"ship": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' --exclude 'test' . ~/public_html",
 		"all": "npm run build; npm run ship"
 	},
 	"presets": ["env"],
