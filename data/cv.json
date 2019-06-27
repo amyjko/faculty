@@ -475,6 +475,12 @@
 	],
 	courses: [
 		{
+			title: "Cooperative Software Development (INFO 442)",
+			count: "37 undergraduates",
+			date: "Spring 2019",
+			score: "4.8/5.0"
+		},
+		{
 			title: "User Interface Software and Technology (HCID 520)",
 			count: "34 masters",
 			date: "Winter 2019",

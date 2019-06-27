@@ -50,7 +50,7 @@ class App extends React.Component {
 					<Route path="/teaching" component={Teaching}/>
 					<Route path="/talks" component={Talks}/>
 					<Route path="/books" component={Books}/>
-					<Route path="/students/:student?" component={Students}/>
+					<Route path="/students/:student?" render={(props) => <Students {...props} root={webRoot} />}/>
 					<Route path="/cv" component={Vita}/>
 					<Route path="/cer" component={CER}/>
 					<Route path="*" component={Unknown}/>
