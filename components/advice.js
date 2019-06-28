@@ -58,7 +58,7 @@ class Advice extends React.Component {
 
 				<h3 id="goodquestion">What makes a good research paper?</h3>
 				
-				<p>Learning to do research is hard! Developing good questions is just one of the many challenges in research. I wrote a book chapter that <a href="http://faculty.washington.edu/ajko/papers/Ko2019StudyDesign.pdf">covers many aspects of developing good research questions</a>. I use the same practices with the students in my lab.</p>
+				<p>Learning to do research is hard! Developing good questions is just one of the many challenges in research. I wrote a book chapter that <a href={this.props.app.getWebRoot() + "/papers/Ko2019StudyDesign.pdf"}>covers many aspects of developing good research questions</a>. I use the same practices with the students in my lab.</p>
 
 				<h3 id="goodwriting">How can I become a good technical writer?</h3>
 				

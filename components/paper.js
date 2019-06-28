@@ -10,7 +10,7 @@ class Paper extends React.Component {
 			return this.props.authorizer;
 		// If there's a local URL, show it.
 		else if(this.props['local url'])
-			return "/ajko/papers/" + this.props['local url'];
+			return this.props.app.getWebRoot() + "/papers/" + this.props['local url'];
 		// Lastly, include the digital library URL, which will not be easily accessible
 		else if(this.props["digital library url"])
 			return this.props["digital library url"];

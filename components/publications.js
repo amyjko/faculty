@@ -43,7 +43,7 @@ class Publications extends React.Component {
 				rows.push(<h3 key={pub.year}>{pub.year}</h3>);
 			lastYear = pub.year;
 			
-			rows.push(<Paper {...pubs[i]} key={i} highlight={ paperToHighlight === pubs[i].id } />);
+			rows.push(<Paper {...pubs[i]} key={i} highlight={ paperToHighlight === pubs[i].id } app={this.props.app} />);
 		}
 		return (
 			<div>

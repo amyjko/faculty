@@ -32,25 +32,28 @@ if (!String.prototype.startsWith) {
 }
 
 class App extends React.Component {
+	
+	getWebRoot() { return this.props.root; }
+	
 	render() {
 		
 		var currentRoute = this.props.location.pathname;
 		
 		return (
 			<div className="container">
-				{currentRoute === "/cv" ? null : <Header path={currentRoute}/>}
+				{currentRoute === "/cv" ? null : <Header path={currentRoute} app={this} />}
 				<Switch>
-					<Route exact path="/" component={Projects}/>
+					<Route exact path="/" render={(props) => <Projects {...props} app={this} />} />
 					<Route path="/bio" component={Biography}/>
-					<Route path="/publications/:paper?" component={Publications}/>
+					<Route path="/publications/:paper?" render={(props) => <Publications {...props} app={this} />} />
 					<Route path="/posts" component={Posts}/>
 					<Route path="/impact" component={Impact}/>
 					<Route path="/reading" component={Reading}/>
-					<Route path="/advice" component={Advice}/>
+					<Route path="/advice" render={(props) => <Advice {...props} app={this} />} />
 					<Route path="/teaching" component={Teaching}/>
-					<Route path="/talks" component={Talks}/>
+					<Route path="/talks" render={(props) => <Talks {...props} app={this} />} />
 					<Route path="/books" component={Books}/>
-					<Route path="/students/:student?" render={(props) => <Students {...props} root={webRoot} />}/>
+					<Route path="/students/:student?" render={(props) => <Students {...props} app={this} />} />
 					<Route path="/cv" component={Vita}/>
 					<Route path="/cer" component={CER}/>
 					<Route path="*" component={Unknown}/>
@@ -63,6 +66,6 @@ class App extends React.Component {
 
 ReactDOM.render((
 	<BrowserRouter basename={webRoot}>
-		<Route path="/" component={App} />
+		<Route path="/" render={(props) => <App {...props} root={webRoot}/>} />
 	</BrowserRouter>
 ), document.getElementById('app'));

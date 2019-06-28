@@ -9,7 +9,7 @@ class Header extends React.Component {
 		
 		return (
 			<div>
-				<ContactInfo/>
+				<ContactInfo app={this.props.app} />
 				<div className="header">
 			        <nav>
 						<ul className="nav nav-pills">

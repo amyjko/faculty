@@ -39,7 +39,7 @@ class Project extends React.Component {
 		// Find the publications that are in this project's list of papers and render a paper.
 		var papers = _.map(
 			_.reverse(_.sortBy(_.filter(pubs, (paper) => { return _.indexOf(this.props.papers, paper.id) >= 0; }), (paper) => { return paper.year; })),
-			(paper) => { return <Paper {...paper} key={paper.id} link={true} />; }
+			(paper) => { return <Paper {...paper} key={paper.id} link={true} app={this.props.app} />; }
 		);
 		
 		var initialCount = 3;
@@ -99,10 +99,10 @@ class Projects extends React.Component {
 	render() {
 		
 		// Get the active projects
-		var active = _.map(_.filter(projects, { 'active': true }), (project) => { return <Project {...project} key={project.name} /> });
+		var active = _.map(_.filter(projects, { 'active': true }), (project) => { return <Project {...project} key={project.name} app={this.props.app} /> });
 
 		// Get the inactive projects.
-		var inactive = _.map(_.filter(projects, { 'active': false }), (project) => { return <Project  {...project} key={project.name} /> });
+		var inactive = _.map(_.filter(projects, { 'active': false }), (project) => { return <Project  {...project} key={project.name}  app={this.props.app} /> });
 		
 		return (
 			<div>

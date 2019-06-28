@@ -21,7 +21,7 @@ class Person extends React.Component {
 		return (
 			<div className={"row " + (this.props.highlight ? "bg-info" : "")} name={this.props.id}>
 				<div className="col-md-3">
-					{ this.props.id ? <img className='img-responsive img-thumbnail gap-bottom-right' alt={this.props.name} src={imagePath + "mug-" + this.props.id + ".jpg"} style={{width: 140}} /> : null }
+					{ this.props.id ? <img className='img-responsive img-thumbnail gap-bottom-right' alt={this.props.name} src={this.props.app.getWebRoot() + "/images/mug-" + this.props.id + ".jpg"} style={{width: 140}} /> : null }
 				</div>
 				<div className="col-md-9">
 					<p><strong>{this.props.name}</strong> <mark>{this.props.level}</mark> { this.props.url ? <small><a href={this.props.url} target="_blank">Website</a></small> : null } { this.props.thesis ? <small>&ndash; <a href={this.props.thesis}>Dissertation</a></small> : null }</p>
@@ -51,18 +51,18 @@ class Students extends React.Component {
 		var personToHighlight = this.props.match.params.student;
 
 		// Render the active people.
-		var activePeople = _.map(_.sortBy(_.filter(people, { 'active': true, 'advised': true }), ['level', 'startdate']), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id}/>; });
+		var activePeople = _.map(_.sortBy(_.filter(people, { 'active': true, 'advised': true }), ['level', 'startdate']), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app}/>; });
 
 		// Render the affiliated people.
-		var affiliatedPeople = _.map(_.filter(people, { 'active': true, 'advised': false }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id}/>; });
+		var affiliatedPeople = _.map(_.filter(people, { 'active': true, 'advised': false }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app}/>; });
 
 		// Render the former Ph.D. students.
-		var formerPhD = _.map(_.filter(people, { 'active': false, 'level': 'phd' }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} />; });
+		var formerPhD = _.map(_.filter(people, { 'active': false, 'level': 'phd' }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
 
 		// Render the former postdoc students.
-		var formerPostdocs = _.map(_.filter(people, { 'active': false, 'level': 'postdoc' }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} />; });
+		var formerPostdocs = _.map(_.filter(people, { 'active': false, 'level': 'postdoc' }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
 
-		var inactiveUndergrad = _.map(_.filter(people, { 'active': false, 'level': 'undergrad'}), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} />; });
+		var inactiveUndergrad = _.map(_.filter(people, { 'active': false, 'level': 'undergrad'}), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
 		
 		return (
 			<div>

@@ -18,7 +18,7 @@ class ContactInfo extends React.Component {
 		return <div className='row'>
 		
 			<div className="col-xs-6 col-sm-3 col-md-3">
-				<img className='img-thumbnail' alt='Photograph of Andrew J. Ko' src='/ajko/images/mug-ajko.jpg'/>
+				<img className='img-thumbnail' alt='Photograph of Andrew J. Ko' src={this.props.app.getWebRoot() + "/images/mug-ajko.jpg"} />
 			</div>
 
 			<div className="col-xs-12 col-sm-5 col-md-5">
