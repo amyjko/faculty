@@ -50,7 +50,7 @@ class App extends React.Component {
 					<Route path="/impact" component={Impact}/>
 					<Route path="/reading" component={Reading}/>
 					<Route path="/advice" render={(props) => <Advice {...props} app={this} />} />
-					<Route path="/teaching" component={Teaching}/>
+					<Route path="/teaching" render={(props) => <Teaching {...props} app={this} />} />
 					<Route path="/talks" render={(props) => <Talks {...props} app={this} />} />
 					<Route path="/books" component={Books}/>
 					<Route path="/students/:student?" render={(props) => <Students {...props} app={this} />} />

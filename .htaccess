@@ -23,4 +23,4 @@ RewriteRule (.*) index.html [N,L,QSA]
 
 # Need an explicit rule to redirect the books path to the app, otherwise we get the Apache directory listing.
 # But we don't want to match anything on the path, since we don't use the app for the books.
-RewriteRule ^books/?$ index.html [N,L,QSA]
+RewriteRule (^books/?$) index.html [N,L]
