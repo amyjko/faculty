@@ -23,7 +23,7 @@ class Paper extends React.Component {
 
 		var url = this.getURL();
 		
-		var authors = this.props.authors;
+		var authors = this.props.authors.join(", ");
 
 		var award = this.props.award ? <span className="award">&#x2605; {this.props.award}</span> : undefined;
 		
