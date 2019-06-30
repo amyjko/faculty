@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import _ from "lodash";
 
 class Paper extends React.Component {
 	
@@ -25,7 +26,7 @@ class Paper extends React.Component {
 		
 		var authors = this.props.authors.join(", ");
 
-		var award = this.props.award ? <span className="award">&#x2605; {this.props.award}</span> : undefined;
+		var award = this.props.award ? <span className="award">&#x2605; {_.join(this.props.award, " + ")}</span> : undefined;
 		
 		var contribution = this.props.contribution && !this.props.hideContribution ? <i className="text-muted small">{this.props.contribution}</i> : undefined;
 
