@@ -26,7 +26,7 @@ class Paper extends React.Component {
 		
 		var authors = this.props.authors.join(", ");
 
-		var award = this.props.award ? <span className="award">&#x2605; {_.join(this.props.award, " + ")}</span> : undefined;
+		var award = this.props.award && this.props.award.length > 0 ? <span className="award">&#x2605; {_.join(this.props.award, " + ")}</span> : undefined;
 		
 		var contribution = this.props.contribution && !this.props.hideContribution ? <i className="text-muted small">{this.props.contribution}</i> : undefined;
 
