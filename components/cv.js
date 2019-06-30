@@ -42,13 +42,11 @@ class Chunk extends React.Component {
 					{this.props.start}{end}
 				</div>
 				<div className="col-md-10">
-					<p>
-						<strong>{this.props.header}</strong>
-						{this.props.two ? <span><br/>{this.props.two} </span> : null}
-						{three ? <div><small>{three}</small></div> : null}
-						{four ? <div><small>{four}</small></div> : null}
-						{five ? <div><small>{five}</small></div> : null}
-					</p>
+					<strong>{this.props.header}</strong>
+					{this.props.two ? <span><br/>{this.props.two} </span> : null}
+					{three ? <div><small>{three}</small></div> : null}
+					{four ? <div><small>{four}</small></div> : null}
+					{five ? <div><small>{five}</small></div> : null}
 				</div>
 			</div>
 		);
@@ -60,7 +58,7 @@ class Vita extends React.Component {
 	getPapers(kind) {
 		
 		return _.map(_.filter(pubs, { kind: kind }), (paper, index) => {
-			return <Paper {...paper} key={kind + index} hideLink={true} hideContribution={true} />
+			return <Paper {...paper} app={this.props.app} key={kind + index} hideLink={true} hideContribution={true} />
 		});
 
 	}
@@ -132,9 +130,13 @@ class Vita extends React.Component {
 
 				{this.getChunkList(cv.degrees, "degree", "year", null, "degree", "institution", "thesis", "committee")}
 	
-				<h2>Professional Experience</h2>
+				<h2>Academic experience</h2>
 				
-				{this.getChunkList(cv.jobs, "job", "startdate", "enddate", "title", "organization")}
+				{this.getChunkList(cv.academicJobs, "academicJob", "startdate", "enddate", "title", "organization")}
+
+				<h2>Industry experience</h2>
+				
+				{this.getChunkList(cv.industryJobs, "industryJob", "startdate", "enddate", "title", "organization")}
 
 				<h2>Honors, Awards, and Recognitions</h2>
 			

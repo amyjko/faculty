@@ -55,7 +55,7 @@ class App extends React.Component {
 					<Route path="/talks" render={(props) => <Talks {...props} app={this} />} />
 					<Route path="/books" component={Books}/>
 					<Route path="/students/:student?" render={(props) => <Students {...props} app={this} />} />
-					<Route path="/cv" component={Vita}/>
+					<Route path="/cv" render={(props) => <Vita {...props} app={this} />} />
 					<Route path="/cer" component={CER}/>
 					<Route path="*" component={Unknown}/>
 				</Switch>

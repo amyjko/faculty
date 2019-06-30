@@ -15,7 +15,7 @@
 			committee: "Margaret Burnett (Computer Science) and Bob Uttl (Psychology)"
 		},
 	],
-	jobs: [
+	academicJobs: [
 		{
 			title: "Associate Professor",
 			organization: "University of Washington, The Information School and Paul G. Allen School of Computer Science & Engineering (courtesy)",
@@ -27,18 +27,6 @@
 			organization: "University of Washington, The Information School and Paul G. Allen School of Computer Science & Engineering (courtesy)",
 			startdate: 2008,
 			enddate: 2014
-		},
-		{
-			title: "Co-founder and Chief Scientist",
-			organization: "AnswerDash, Inc.",
-			startdate: 2015,
-			enddate: null
-		},
-		{
-			title: "Co-founder and Chief Technology Officer",
-			organization: "AnswerDash, Inc.",
-			startdate: 2013,
-			enddate: 2015
 		},
 		{
 			title: "Research Intern",
@@ -57,6 +45,20 @@
 			organization: "Oregon State University, Department of Computer Science",
 			startdate: 1999,
 			enddate: 2002	
+		}
+	],
+	industryJobs: [
+		{
+			title: "Co-founder and Chief Scientist",
+			organization: "AnswerDash, Inc.",
+			startdate: 2015,
+			enddate: null
+		},
+		{
+			title: "Co-founder and Chief Technology Officer",
+			organization: "AnswerDash, Inc.",
+			startdate: 2013,
+			enddate: 2015
 		}
 	],
 	funding: [
