@@ -9,7 +9,7 @@ class Footer extends React.Component {
 			<div>
 				<hr/>
 				<small>
-					Copyright Andy J. Ko. 
+					Copyright Andy J. Ko.
 					Computing diversity and equity icon "Diversity" by Stephen Plaster from the Noun Project. 
 					Understanding program behavior icon "Dependency" by Knut M. Synstad from the Noun Project.
 					Programming problem solving icon "Thinking" icon by AomAm from the Noun Project.

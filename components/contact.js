@@ -18,7 +18,7 @@ class ContactInfo extends React.Component {
 		return <div className='row'>
 		
 			<div className="col-xs-6 col-sm-3 col-md-3">
-				<img className='img-thumbnail' alt='Photograph of Andrew J. Ko' src={this.props.app.getWebRoot() + "/images/mug-ajko.jpg"} />
+				<img className='img-thumbnail' alt="Headshot of Andrew J. Ko" src={this.props.app.getWebRoot() + "/images/mug-ajko.jpg"} />
 			</div>
 
 			<div className="col-xs-12 col-sm-5 col-md-5">
@@ -28,7 +28,7 @@ class ContactInfo extends React.Component {
 					<br/>Program Chair, <a href="https://ischool.uw.edu/academics/informatics">Informatics</a>
 					<br/><a href="http://ischool.uw.edu" target="_blank">The Information School</a>
 					<br/><a href='http://cs.washington.edu' target="_blank">Computer Science & Engr.</a> (adjunct)
-					<br/><a href="http://www.washington.edu" target="_blank">University of Washington</a>
+					<br/><a href="http://www.washington.edu" target="_blank">University of Washington, Seattle</a>
 					<br/>Chief Scientist + Co-Founder
 					<br/><a href="http://www.answerdash.com" target="_blank">AnswerDash</a>
 				</small>

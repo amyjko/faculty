@@ -39,6 +39,7 @@ class App extends React.Component {
 		
 		var currentRoute = this.props.location.pathname;
 		
+		// Return the single page app.
 		return (
 			<div className="container">
 				{currentRoute === "/cv" ? null : <Header path={currentRoute} app={this} />}

@@ -5,12 +5,12 @@
         "license": "Creative Commons Attribution-NonCommercial 4.0 International",
         "repository": "https://github.com/andyjko/faculty.git",
 	"scripts": {
-		"watch": "watchify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js | uglifyjs > build/app.js",
+		"watch": "watchify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js -o \"> build/app.js; npm run test\" -v --poll",
 		"build": "browserify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js | uglifyjs > build/app.js",
 		"diff": "rsync --dry-run -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html",
 		"test": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' --exclude '.htaccess' . ~/public_html/test",
 		"ship": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' --exclude 'test' . ~/public_html",
-		"all": "npm run build; npm run ship"
+		"deploy": "npm run build; npm run ship"
 	},
 	"devDependencies": {
 		"browserify": "^16.2",
