@@ -5,23 +5,24 @@
         "license": "Creative Commons Attribution-NonCommercial 4.0 International",
         "repository": "https://github.com/andyjko/faculty.git",
 	"scripts": {
-		"watch": "watch 'npm run build' src",
-		"build": "browserify -t [ babelify --presets [ react ] ] app.js | uglifyjs > build/app.js",
+		"watch": "watchify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js | uglifyjs > build/app.js",
+		"build": "browserify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js | uglifyjs > build/app.js",
 		"diff": "rsync --dry-run -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html",
 		"test": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' --exclude '.htaccess' . ~/public_html/test",
 		"ship": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' --exclude 'test' . ~/public_html",
 		"all": "npm run build; npm run ship"
 	},
-	"presets": ["env"],
 	"devDependencies": {
-		"babel-cli": "^6.26.0",
-		"babel-preset-env": "^6.24.1",
-		"browserify": "^14.5.0",
-		"watch": "^1.0.2"
+		"browserify": "^16.2",
+		"watchify": "^3.11",
+		"@babel/core": "^7.4",
+		"@babel/cli": "^7.4",
+		"@babel/preset-react": "^7.0",
+		"@babel/preset-env": "^7.4",
+		"babelify": "^10.0",
+		"uglify-js": "^3.4.7"
 	},
 	"dependencies": {
-		"babel-preset-react": "^6.24.1",
-		"babelify": "^7.3.0",
 		"bootstrap": "^3.3.7",
 		"history": "^4.7.2",
 		"jquery": "^3.0.0",
@@ -29,7 +30,6 @@
 		"npm": "^5.10.0",
 		"react": "^15.6.2",
 		"react-dom": "^15.6.2",
-		"react-router-dom": "^4.3.1",
-		"uglify-js": "^3.4.7"
+		"react-router-dom": "^4.3.1"
 	}
 }
