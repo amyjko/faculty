@@ -68,7 +68,7 @@ class Students extends React.Component {
 			<div>
 			
 				<div className="lead">
-					I direct the <em>Code & Cognition Lab</em>.
+					I direct the <strong>Code & Cognition Lab</strong>.
 				</div>
 				
 				<p>
@@ -81,7 +81,7 @@ class Students extends React.Component {
 				<ul>
 					<li>Are you a <strong>current Ph.D. student</strong> at UW interested in working with me? Lurk on the <i>#codeandcognition</i> channel on <a target="_blank" href="https://uwdub.slack.com">DUB's Slack</a>. Write me an email and let's chat about your interests.</li>
 					<li>Are you a <strong>prospective Ph.D. student</strong> interested in working with me? Write me an email, share your interests, and ask if I'm taking new students. Reach out to my current students and ask about their experiences. Apply to the <a href="http://ischool.uw.edu/phd" target="_blank">Information School</a> or <a href="http://www.cs.washington.edu/education/grad/prospective.html" target="_blank">CSE</a>, but note that I have much more control over iSchool admissions.</li>
-					<li>Are you a <strong>UW undergrad</strong> interested in working with me on research? Send me an email with your resume, a description of your research interests, and your reasons for wanting to do research. Alternatively, at the beginning of each Winter quarter, I post a competitive application for full-time, paid undergraduate summer research positions.</li>
+					<li>Are you a <strong>UW undergrad</strong> interested in working with me on research? First, read <a href="https://ischool.uw.edu/programs/informatics/research">this page</a> about engaging in research as an undergraduate. If you're still interested, send me an email with your resume, a description of your research interests, and your reasons for wanting to do research. I usually recruit in Winter quarter for summer undergrad research assistants.</li>
 				</ul>
 				
 				<h3>Current Advisees</h3>

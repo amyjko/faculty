@@ -23,7 +23,7 @@ class Biography extends React.Component {
 
 				<p>I was tenured in 2015. I finished my last day AnswerDash in December of 2015, resuming full-time faculty life, and began a new focus on computing education research, inventing more effective, equitable, and scalable technologies and pedagogies for learning computer science. My goal post-tenure was to do more than just research, however. I aimed to help grow the field of computing education, help shape state and federal policy on computing education, and have impact by aggressively disseminating my lab's research.</p>
 				
-				<p>In Spring of 2017, our former Dean, Harry Bruce, asked my to chair our undergraduate major, Informatics. I accepted. While this was a big role, it only constitutes 20% of my time and comes with a healthy amount of teaching release to compensate. My job therefore expanded from research, teaching, service, and impact, to also include administrative duties. This has brought a new dimension of impact to my work, allowing me to impact not only the UW iSchool's vision of undergraduate educations in information, but other iSchools as well.</p>
+				<p>In Spring of 2017, our former Dean, Harry Bruce, asked me to chair our undergraduate major, Informatics. I accepted. While this was a big role, it only constitutes 20% of my time and comes with a healthy amount of teaching release to compensate. My job therefore expanded from research, teaching, service, and impact, to also include administrative duties. This has brought a new dimension of impact to my work, allowing me to impact not only the UW iSchool's vision of undergraduate educations in information, but other iSchools as well.</p>
 
 				<h3>Academic Lineage</h3>
 
