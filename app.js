@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 import { Biography } from './components/bio';
+import { ContactInfo } from './components/contact';
 import { Publications } from './components/publications';
 import { Posts } from './components/posts';
 import { Impact } from './components/impact';
@@ -54,6 +55,7 @@ class App extends React.Component {
 					<Route path="/teaching" render={(props) => <Teaching {...props} app={this} />} />
 					<Route path="/talks" render={(props) => <Talks {...props} app={this} />} />
 					<Route path="/books" component={Books}/>
+					<Route path="/contact" render={(props) => <ContactInfo {...props} app={this} />} />
 					<Route path="/students/:student?" render={(props) => <Students {...props} app={this} />} />
 					<Route path="/cv" render={(props) => <Vita {...props} app={this} />} />
 					<Route path="/cer" component={CER}/>
