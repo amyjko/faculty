@@ -39,6 +39,7 @@ class App extends React.Component {
 	render() {
 		
 		var currentRoute = this.props.location.pathname;
+
 		
 		// Return the single page app.
 		return (
