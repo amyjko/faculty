@@ -14,13 +14,17 @@ RewriteEngine On
 RewriteBase /ajko
 
 # If we're processing index.html, leave it alone and stop.
-RewriteRule (^index\.html$) - [L] 
+RewriteRule ^index\.html$ - [L] 
 
-# If we're processing a path that isn't a file or a directory, rewrite to index but preserve the path.
+# Need an explicit rule to redirect the books directory to the app, otherwise we get the Apache directory listing.
+# But we don't want to match anything inside the directory since we don't use the app for the books.
+# Moreover, the redirect rule breaks the relative paths in index.html, so we need to explicitly
+# rewrite the broken relative paths that are requested.
+RewriteRule ^books/custom\.css$ custom.css [L]
+RewriteRule ^books/build/app\.js$ build/app.js [L]
+RewriteRule ^books/?$ index.html [L]
+
+# If we're processing a path that isn't a real file or a directory, rewrite to index but preserve the query string.
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule (.*) index.html [N,L,QSA]
-
-# Need an explicit rule to redirect the books path to the app, otherwise we get the Apache directory listing.
-# But we don't want to match anything on the path, since we don't use the app for the books.
-RewriteRule (^books/?$) index.html [N,L]
+RewriteRule (.*) index.html [L,QSA]

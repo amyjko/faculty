@@ -1,5 +1,19 @@
 [
 	{
+		"id": "zcolah",
+		"name": "Zoshua Colah",
+		"active": true,
+		"advised": true,
+		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
+		"bio": "Zoshua is an Informatics major specializing in UX Design and Data Science who spends his time helping freshman and sophomore students learn more about tech.",
+		"url": "https://zcolah.myportfolio.com/",
+		"startdate": 2019,
+		"enddate": 2019,
+		"achievements": []
+	},
+	{
 		"id": "neilryan",
 		"name": "Neil Ryan",
 		"active": true,

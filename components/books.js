@@ -34,6 +34,15 @@ class Books extends React.Component {
 						<div className='lead'><a target="_blank" href="/ajko/books/uist/">User Interface Software and Technology</a>. <small>This book covers the history, theory, and innovations in user interface software and technology. </small></div>	
 					</div>
 				</div>
+
+				<div className="project row">
+					<div className="col-md-3">
+						<img className='img-responsive gap-bottom-right' src="/ajko/books/informatics-teaching-guide/images/cover.jpg" style={{width: 140}} />
+					</div>
+					<div className="col-md-9">
+						<div className='lead'><a target="_blank" href="/ajko/books/informatics-teaching-guide/">Informatics Teaching Guide</a>. <small>I wrote this book to support teachers new to the iSchool and/or new to teaching, including new faculty, guest faculty, doctoral student teachers, and teaching assistants.</small></div>	
+					</div>
+				</div>
 				
 			</div>
 		);
