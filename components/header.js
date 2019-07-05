@@ -19,7 +19,7 @@ class Header extends React.Component {
 					<div className="col-xs-5 col-sm-5 col-md-5">
 						<span className="lead"><strong>Andrew J. Ko</strong>, Ph.D. <small>aka Andy</small></span>
 						<small>
- 							<br/>Associate Professor
+ 							<br/>Associate Professor, <Link to="/cv">CV</Link>
 							<br/><a href="https://ischool.uw.edu/academics/informatics">Informatics</a> Program Chair
 						</small>
 					</div>
@@ -38,16 +38,15 @@ class Header extends React.Component {
 			        <nav>
 						<ul className="nav nav-pills">
 							<li role="presentation" className={path === "/" ? "active" : ""}><Link to="/">Projects</Link></li>
-							<li role="presentation" className={path.startsWith("/students") ? "active" : ""}><Link to="/students">Students</Link></li>
+							<li role="presentation" className={path.startsWith("/students") ? "active" : ""}><Link to="/students">Lab</Link></li>
 							<li role="presentation" className={path.startsWith("/publications") ? "active" : ""}><Link to="/publications">Papers</Link></li>
 							<li role="presentation" className={path.startsWith("/posts") ? "active" : ""}><Link to="/posts">Blog</Link></li>
 							<li role="presentation" className={path.startsWith("/talks") ? "active" : ""}><Link to="/talks">Talks</Link></li>
-							<li role="presentation" className={path.startsWith("/teaching") ? "active" : ""}><Link to="/teaching">Courses</Link></li>
+							<li role="presentation" className={path.startsWith("/teaching") ? "active" : ""}><Link to="/teaching">Classes</Link></li>
 							<li role="presentation" className={path.startsWith("/books") ? "active" : ""}><Link to="/books">Books</Link></li>
 							<li role="presentation" className={path.startsWith("/impact") ? "active" : ""}><Link to="/impact">Impact</Link></li>
-							<li role="presentation" className={path.startsWith("/advice") ? "active" : ""}><Link to="/advice">Advice</Link></li>
+							<li role="presentation" className={path.startsWith("/advice") ? "active" : ""}><Link to="/advice">Tips</Link></li>
 							<li role="presentation" className={path.startsWith("/bio") ? "active" : ""}><Link to="/bio">Bio</Link></li>
-							<li role="presentation" className={path.startsWith("/cv") ? "active" : ""}><Link to="/cv">CV</Link></li>
 							<li role="presentation" className={path.startsWith("/contact") ? "active" : ""}><Link to="/contact">Contact</Link></li>
 						</ul>
 			        </nav>
