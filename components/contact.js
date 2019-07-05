@@ -24,25 +24,25 @@ class ContactInfo extends React.Component {
 
 				<ul>
 					<li>
-					Write me an email at <strong>ajko&nbsp;@&nbsp;uw&nbsp;.&nbsp;edu</strong>. I try read in the morning each weekday, but I don't read on weekends.
+					<strong>ajko&nbsp;@&nbsp;uw&nbsp;.&nbsp;edu</strong>. I read email once in the morning each weekday. I don't read on weekends.
 					</li>
 					<li>
-						My office is <a href="https://www.google.com/maps/place/Mary+Gates+Hall.+University+of+Washington/@47.6549552,-122.3101087,994m/data=!3m2!1e3!4b1!4m2!3m1!1s0x549014f2a95c2899:0xb2525ccd291489c!6m1!1e1" target="_blank">Mary Gates Hall 015E</a>. It's a locked suite, but you can knock and a friendly student will let you in. My office hours are currently <strong>by appointment</strong>.
+						<a href="https://www.google.com/maps/place/Mary+Gates+Hall.+University+of+Washington/@47.6549552,-122.3101087,994m/data=!3m2!1e3!4b1!4m2!3m1!1s0x549014f2a95c2899:0xb2525ccd291489c!6m1!1e1" target="_blank">Mary Gates Hall 015E</a>. It's a locked suite, but you can knock and a friendly student will let you in. My office hours are currently <strong>by appointment</strong>, but you can always stop by to see if my door is open.
 					</li>					
 					<li>
-						Write me on <a href="https://uwdub.slack.com/" target="_blank">DUB Slack</a>. I'm usually pretty responsive throughout the day.
+						<a href="https://uwdub.slack.com/" target="_blank">DUB Slack</a>. DM me; I'm usually pretty responsive throughout the day.
 					</li>
 					<li>
-						Direct message me on <a href="https://twitter.com/andyjko" target="_blank">Twitter</a>.
+						<a href="https://twitter.com/andyjko" target="_blank">Twitter</a>. DM me or reply to one of my tweets.
 					</li>
 					<li>
-						Submit issues and PRs to my <a href="http://github.com/andyjko" target="_blank">GitHub</a>.
+						<a href="http://github.com/andyjko" target="_blank">GitHub</a>. Submit issues and PRs to my various repositories.
 					</li>
 					<li>
-						Write me on <a href="https://www.linkedin.com/in/ajko/" target="_blank">LinkedIn</a>. I usually only accept connections from people I've met IRL and have a professional relationship with (students, collaborators, professional colleagues).
+						<a href="https://www.linkedin.com/in/ajko/" target="_blank">LinkedIn</a>. I usually only accept connections from people I've met IRL and have a professional relationship with (students, collaborators, professional colleagues).
 					</li>
 					<li>
-						Write me on <a href="https://www.facebook.com/andyjko" target="_blank">Facebook</a>. I usually only accept connections from people I've met IRL and have a social relationship with (friends, family, Ph.D. students I advise, though many of my professional colleagues are also friends!).
+						<a href="https://www.facebook.com/andyjko" target="_blank">Facebook</a>. I usually only accept connections from people I've met IRL and have a social relationship with (friends, family, Ph.D. students I advise, though many of my professional colleagues are also friends!).
 					</li>
 				</ul>
 			</div>
