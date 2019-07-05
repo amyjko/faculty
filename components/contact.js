@@ -1,19 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 class ContactInfo extends React.Component {
-	
-	componentDidMount() {
 		
-		var follow = this.refs.follow;
-		
-		// Inject the Twitter script for the follow widget.
-		var script = document.createElement("script");
-		script.innerHTML = '!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");';
-		follow.parentNode.appendChild(script);
-
-	}
-	
 	render() {
 		return (
 			<div>
