@@ -391,6 +391,21 @@
 		]
 	},
 	{
+		"id": "kayur",
+		"name": "Kayur Patel",
+		"active": false,
+		"advised": false,
+		"level": "phd",
+		"dept": "Computer Science",
+		"coadvisor": "James Fogarty and James Landay",
+		"bio": "Kayur Patel was a Ph.D. student in Computer Science at the University of Washington, co-advised by James Fogarty and James Landay. His dissertation focused on tools for supporting the development of machine learned classifiers.",
+		"url": "http://www.kayur.org/",
+		"startdate": 2007,
+		"enddate": 2012,
+		"thesis": "papers/Patel2012Dissertation.pdf",
+		"achievements": []
+	},
+	{
 		"id": "pchilana",
 		"name": "Parmit K. Chilana",
 		"active": false,
