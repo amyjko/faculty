@@ -57,7 +57,10 @@ class Students extends React.Component {
 		var affiliatedPeople = _.map(_.filter(people, { 'active': true, 'advised': false }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app}/>; });
 
 		// Render the former Ph.D. students.
-		var formerPhD = _.map(_.filter(people, { 'active': false, 'level': 'phd' }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
+		var formerPhD = _.map(_.filter(people, { 'active': false, 'advised': true, 'level': 'phd' }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
+
+		// Render the former Ph.D. students.
+		var formerAffiliatedPhD = _.map(_.filter(people, { 'active': false, 'advised': false, 'level': 'phd' }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
 
 		// Render the former postdoc students.
 		var formerPostdocs = _.map(_.filter(people, { 'active': false, 'level': 'postdoc' }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
@@ -92,6 +95,9 @@ class Students extends React.Component {
 
 				<h3>Former Ph.D. students</h3>
 				{formerPhD}
+
+				<h3>Former Affiliated Ph.D. students</h3>
+				{formerAffiliatedPhD}
 
 				<h3>Former Postdocs</h3>
 				{formerPostdocs}
