@@ -12,23 +12,18 @@ class Header extends React.Component {
 
 				<div className='row'>
 		
-					<div className="col-xs-2 col-sm-2 col-md-2">
+					<div className="col-xs-5 col-sm-3 col-md-3">
 						<img className='img-thumbnail' alt="Headshot of Andrew J. Ko" src={this.props.app.getWebRoot() + "/images/mug-ajko.jpg"} />
 					</div>
 		
-					<div className="col-xs-5 col-sm-5 col-md-5">
-						<span className="lead"><strong>Andrew J. Ko</strong>, Ph.D. <small>aka Andy</small></span>
+					<div className="col-xs-7 col-sm-9 col-md-9" style={{lineHeight: "1.15em"}}>
+						<strong>Andrew J. Ko</strong>, Ph.D. <small>aka Andy</small>
 						<small>
- 							<br/>Associate Professor, <Link to="/cv">CV</Link>
+ 							<br/>Associate Professor
 							<br/><a href="https://ischool.uw.edu/academics/informatics">Informatics</a> Program Chair
-						</small>
-					</div>
-
-					<div className="col-xs-5 col-sm-5 col-md-5">
-						<small>
-							<a href="http://ischool.uw.edu" target="_blank">The Information School</a>
-							<br/><a href='http://cs.washington.edu' target="_blank">Computer Science & Engineering</a>
-							<br/><a href="http://www.washington.edu" target="_blank">University of Washington, Seattle</a>
+							<br/><a href="http://ischool.uw.edu" target="_blank">iSchool</a> + <a href='http://cs.washington.edu' target="_blank">CSE</a>
+							<br/><a href="http://www.washington.edu" target="_blank">UW Seattle</a>
+							<br/><Link to="/cv">CV</Link>
 						</small>
 					</div>
 					

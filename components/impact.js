@@ -23,7 +23,7 @@ class Impact extends React.Component {
 			<div>
 
 				<div className="lead">
-					Below are examples of impact my research has had on the world.
+					This is the impact my research has had on the world.
 				</div>
 
 				<p><strong>Books</strong>. I synthesize my research and others into books that summarize our best knowledge. I have written short books about <a href="books/design-methods">HCI+Design</a> and <a href="books/cooperative-software-development">Cooperative Software Development</a></p> 

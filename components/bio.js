@@ -5,7 +5,7 @@ class Biography extends React.Component {
 		return (
 			<div>
 			
-				<div className="lead">Below are my short and long bios, handy for learning about my path to professordom.</div>
+				<div className="lead">These are my short and long bios, and academic lineage.</div>
 			
 				<h3>Short Bio</h3>
 

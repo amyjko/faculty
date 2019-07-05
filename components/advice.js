@@ -11,7 +11,7 @@ class Advice extends React.Component {
 		return (
 			<div>
 				<div className='lead'>
-					Below are some of the questions I'm frequently asked.
+					These are questions I'm frequently asked.
 				</div>
 
 				<ul>
@@ -29,7 +29,7 @@ class Advice extends React.Component {
 					Also see the excellent pages by <a href="http://www.cs.washington.edu/homes/mernst/advice/">Mike Ernst</a> (software engineering), <a href="http://people.engr.ncsu.edu/txie/advice.htm">Tao Xie</a> (software engineering) and <a href="http://www.cs.cmu.edu/~jasonh/advice.html">Jason Hong</a> (HCI).
 				</p>
 
-				<h3 id="csis">What is the difference between computer science and informatics at UW</h3>
+				<h3 id="csis">What is the difference between computer science and informatics at UW?</h3>
 				
 				<p>
 					I think of Computer Science and Informatics like we think about Physics versus Engineering: the former concerns itself with a phenomenon as it occurs in nature and the latter is concerned with applications of it for humanity.
