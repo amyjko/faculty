@@ -1,5 +1,11 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/the-academic-freedom-behind-american-freedom-1b201daa45a4",
+		title: "The academic freedom behind American freedom",
+		date: "2019.7",
+		tags: ["academia", "society"]
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/preparing-future-stem-teachers-for-our-computational-future-c4bc1b64013d",
 		title: "Preparing future STEM teachers for our computational future",
 		date: "2019.6",

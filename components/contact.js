@@ -38,6 +38,12 @@ class ContactInfo extends React.Component {
 					<li>
 						Submit issues and PRs to my <a href="http://github.com/andyjko" target="_blank">GitHub</a>.
 					</li>
+					<li>
+						Write me on <a href="https://www.linkedin.com/in/ajko/" target="_blank">LinkedIn</a>. I usually only accept connections from people I've met IRL and have a professional relationship with (students, collaborators, professional colleagues).
+					</li>
+					<li>
+						Write me on <a href="https://www.facebook.com/andyjko" target="_blank">Facebook</a>. I usually only accept connections from people I've met IRL and have a social relationship with (friends, family, Ph.D. students I advise, though many of my professional colleagues are also friends!).
+					</li>
 				</ul>
 			</div>
 			
