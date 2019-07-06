@@ -47,7 +47,7 @@ class Publications extends React.Component {
 		}
 		return (
 			<div>
-				<div className="lead">These are all of my publications. See <a href="https://scholar.google.com/citations?user=otmdDLoAAAAJ&hl=en" target="_blank">who's citing them.</a></div>
+				<div className="lead">These are all of my academic publications. See <a href="https://scholar.google.com/citations?user=otmdDLoAAAAJ&hl=en" target="_blank">who's citing them.</a></div>
 				<div>{rows}</div>
 			</div>
 		);
