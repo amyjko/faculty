@@ -216,7 +216,7 @@ class Vita extends React.Component {
 				
 				<h2>Press</h2>
 
-				{this.getChunkList(cv.press, "press", "date", null, "title", "source", "author", "link")}
+				{this.getChunkList(cv.press, "press", "date", null, "title", "source", "author")}
 				
 				<h2>Invited Keynotes</h2>
 
