@@ -9,7 +9,7 @@ var people = require('../data/people.json');
 pubs = _.sortBy(pubs, 'year').reverse();
 
 // Get the students and annotate the metadata for presentation.
-var doctoralStudents = _.sortBy(_.filter(people, { 'level': 'phd' }), 'startdate');
+var doctoralStudents = _.sortBy(_.filter(people, { level: 'phd', advised: true }), 'startdate');
 _.forEach(doctoralStudents, (value) => {
 	if(value.coadvisor !== null)
 		value.coadvisor = "Co-advisor: " + value.coadvisor;
