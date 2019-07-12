@@ -1,5 +1,11 @@
 [
 	{
+		url: "https://medium.com/@andyjko/dagstuhl-trip-report-learning-and-teaching-programming-language-semantics-b8d8d9007380",
+		title: "Dagstuhl trip report: learning and teaching programming language semantics",
+		date: "2019.7",
+		tags: ["computing education", "K-12", "trip report", "programming languages", "HCI"]	
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/the-academic-freedom-behind-american-freedom-1b201daa45a4",
 		title: "The academic freedom behind American freedom",
 		date: "2019.7",
