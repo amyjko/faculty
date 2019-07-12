@@ -15,11 +15,11 @@
 	"devDependencies": {
 		"browserify": "^16.2",
 		"watchify": "^3.11",
-		"@babel/core": "^7.4",
-		"@babel/cli": "^7.4",
-		"@babel/preset-react": "^7.0",
-		"@babel/preset-env": "^7.4",
-		"babelify": "^10.0",
+		"babelify": "^10",
+		"@babel/core": "^7",
+		"@babel/cli": "^7",
+		"@babel/preset-react": "^7",
+		"@babel/preset-env": "^7",
 		"uglify-js": "^3.4.7"
 	},
 	"dependencies": {
@@ -28,8 +28,8 @@
 		"jquery": "^3.0.0",
 		"lodash": "^4.17.10",
 		"npm": "^5.10.0",
-		"react": "^15.6.2",
-		"react-dom": "^15.6.2",
+		"react": "^16.3",
+		"react-dom": "^16.3",
 		"react-router-dom": "^4.3.1"
 	}
 }

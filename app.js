@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { Route, BrowserRouter, Switch, withRouter } from 'react-router-dom';
 
 import { Biography } from './components/bio';
 import { ContactInfo } from './components/contact';
@@ -33,17 +33,62 @@ if (!String.prototype.startsWith) {
 }
 
 class App extends React.Component {
+
+	constructor(props) {
+
+		super(props);
+		this.ref = React.createRef();
+
+		this.handleKeyPress = this.handleKeyPress.bind(this);
+		
+		this.links = [
+			"/",
+			"/students",
+			"/publications",
+			"/posts",
+			"/talks",
+			"/teaching",
+			"/books",
+			"/impact",
+			"/bio",
+			"/contact"
+		];
+		
+	}
 	
 	getWebRoot() { return this.props.root; }
 	
+	handleKeyPress(event) {
+
+		var index = this.links.indexOf(this.props.location.pathname);
+
+		if(event.keyCode === 37) { index = index === 0 ? index = this.links.length - 1 : index - 1; }
+		if(event.keyCode === 39) { index = index === this.links.length - 1 ? index = 0 : index + 1; }
+
+		this.props.history.push(this.links[index]);
+		
+	}
+	
+	componentDidMount() {
+		this.focusApp();
+	}
+	
+	componentDidUpdate() {
+	    this.focusApp();
+	}
+	
+	focusApp() {
+		if(this.ref.current)
+			this.ref.current.focus();
+	}
+
 	render() {
 		
 		var currentRoute = this.props.location.pathname;
-
 		
 		// Return the single page app.
 		return (
-			<div className="container">
+			<div className="container" onKeyDown={this.handleKeyPress} tabIndex="0" ref={this.ref}>
 				{currentRoute === "/cv" ? null : <Header path={currentRoute} app={this} />}
 				<Switch>
 					<Route exact path="/" render={(props) => <Projects {...props} app={this} />} />
@@ -68,8 +113,10 @@ class App extends React.Component {
 	}
 }
 
+var AppWithRouter = withRouter(App);
+
 ReactDOM.render((
 	<BrowserRouter basename={webRoot}>
-		<Route path="/" render={(props) => <App {...props} root={webRoot}/>} />
+		<Route path="/" render={(props) => <AppWithRouter {...props} root={webRoot}/> } />
 	</BrowserRouter>
 ), document.getElementById('app'));
