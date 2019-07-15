@@ -9,6 +9,10 @@
   }
 }
 
+.container:focus {
+  outline: none;
+}
+
 body {
 	font-weight: 300;
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
