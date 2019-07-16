@@ -476,7 +476,7 @@
 	courses: [
 		{
 			title: "Cooperative Software Development (INFO 442)",
-			count: "37 undergraduates",
+			count: "37 undergrads",
 			date: "Spring 2019",
 			score: "4.8/5.0"
 		},
