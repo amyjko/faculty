@@ -51,6 +51,8 @@ class Impact extends React.Component {
 					<li><em>Changing Academic Life</em>: <a target="_blank" href="http://www.changingacademiclife.com/blog/2017/6/18/andy-ko">Andy Ko on being reflectively self-aware, deliberately structured, & amazingly productive</a></li>
 				</ul>
 				<p><strong><a href="talks">Keynotes</a></strong>. I share larger visions about my work in keynotes at various conferences.</p>
+				
+				<p><strong>Press</strong>. I regularly talk to the press to inform on matters related to learning to code, automation, and software engineering. I've worked with reporters in the Associated Press, NPR, APM's Marketplace, PC Magazine, Huffington Post, among other local news.</p>
 
 				{impacts}
 
