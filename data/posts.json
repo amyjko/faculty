@@ -1,5 +1,11 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/the-transfer-problem-in-computing-education-501d4f129897",
+		title: "The transfer problem in computing education",
+		date: "2019.7",
+		tags: ["computing education", "academia"]
+	},
+	{
 		url: "https://medium.com/@andyjko/dagstuhl-trip-report-learning-and-teaching-programming-language-semantics-b8d8d9007380",
 		title: "Dagstuhl trip report: learning and teaching programming language semantics",
 		date: "2019.7",
