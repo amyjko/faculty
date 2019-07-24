@@ -639,6 +639,12 @@
 	],
 	doctoralCommittee: [	
 		{
+			name: "Chenglong Wang",
+			department: "Computer Science & Engineering",
+			startdate: 2019,
+			enddate: null
+		},
+		{
 			name: "Meen Chul Kim",
 			department: "Drexel University, Information Science",
 			startdate: 2018,
@@ -670,7 +676,7 @@
 		},
 		{
 			name: "Aaron Bauer",
-			department: "Computer Science and Engineering",
+			department: "Computer Science & Engineering",
 			startdate: 2017,
 			enddate: null
 		},
