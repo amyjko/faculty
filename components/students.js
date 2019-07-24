@@ -1,6 +1,8 @@
 import React from 'react';
 import _ from 'lodash';
 
+import {Block} from './block';
+
 var people = require('../data/people.json');
 
 // Sort active students by increasing start date, inactive by decreasing start date.
@@ -14,10 +16,7 @@ people.sort((a, b) => {
 class Person extends React.Component {
 	render() {
 		
-		// TODO Ugly hack, need to use web root instead
-		var imagePath = 
-			(window.location.pathname.includes("/test") ? "images/" : "images/");
-		
+/*		
 		return (
 			<div className={"row " + (this.props.highlight ? "bg-info" : "")} name={this.props.id}>
 				<div className="col-md-3">
@@ -29,6 +28,19 @@ class Person extends React.Component {
 				</div>
 			</div>
 		);
+*/		
+		return (
+			<div className={(this.props.highlight ? "bg-info" : "")} name={this.props.id}>
+				<Block 
+					image={this.props.app.getWebRoot() + "/images/mug-" + this.props.id + ".jpg"}
+					alt={"Photograph of " + this.props.name}
+					link={this.props.url}
+					header={null}
+					content=<span><strong>{this.props.name}</strong> <mark>{this.props.level}</mark> <small><a href={this.props.url} target="_blank">Website</a></small> { this.props.thesis ? <small><a href={this.props.thesis}>Dissertation</a></small> : null }. {this.props.bio}</span>
+				/>
+			</div>
+		);
+		
 	}
 }
 
