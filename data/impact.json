@@ -2,6 +2,7 @@
 	{
 		"id": "public",
 		"population": "The public",
+		"alt": "A picture of Andy being interviewed for a television segment.",
 		"description": "The press often reports on my research, interviews me, or consults with me on my expertise",
 		"impacts": [
 			"I consulted with <a href='https://www.marketplace.org/shows/marketplace-tech/'>APM's Marketplace Tech</a> on automation (2019)",
@@ -17,6 +18,7 @@
 	{
 		"id": "industry",
 		"population": "The software industry",
+		"alt": "A photograph of the 2016 team at AnswerDash",
 		"description": "My research often impacts policy and processes in software companies; I have also co-founded and consulted with startups",
 		"impacts": [
 			"Our research on Lemonaid, our crowdsourced help tool, was the basis for <a href='http://www.answerdash.com/'>AnswerDash</a>, a company that I co-founded with Jacob Wobbrock and Parmit Chilana that offers an instant self-service answers product for web applications and e-commerce sites. The company has impacted other company's product offerings, including <a href='https://www.zendesk.com/'>Zendesk</a>'s self-service technologies.",
@@ -26,6 +28,7 @@
 	{
 		"id": "engineers",
 		"population": "Software engineers",
+		"alt": "A photograph of the 2010 Mozilla Summit",
 		"description": "My research often reaches software developers through podcasts, news, and social media",
 		"impacts": [
 			"I was interviewed for the <a href='http://softwareengineeringdaily.com/2016/02/24/academia-to-industry-in-computer-science-with-andy-ko/'>Software Engineering Daily podcast</a>, which has an audience of hundreds of thousands.",
@@ -37,6 +40,7 @@
 	{
 		"id": "tools",
 		"population": "Software development tools",
+		"alt": "A screenshot of the Visual Studio IDE.",
 		"description": "Many of my innovations have made it into software development tools products",
 		"impacts": [
 			"Our studies on program understanding and ideas for program understanding tools was partially the basis of the <a href='http://research.microsoft.com/en-us/projects/debuggercanvas/'>Debugger Canvas</a> plugin for Visual Studio.",
@@ -49,6 +53,7 @@
 	{
 		"id": "learningtech",		
 		"population": "Technologies for Learning to Code",
+		"alt": "A screenshot of Apple's Swift Playgrounds.",
 		"description": "Many of my discoveries have impacted the design of educational technologies for learning to code",
 		"impacts": [
 			"In 2016 I consulted with Microsoft on their <a href='https://makecode.com/'>MakeCode</a> project, sharing evidence from computing education research to inform the design of their learning technologies.",
@@ -58,6 +63,7 @@
 	{
 		"id": "academia",
 		"population": "Higher education",
+		"alt": "A photograph of a CHI 2019 coffee break.",
 		"description": "I share much of my experience, both of my research areas and of my practice as an scholars, in books, blog posts, podcasts, and other media",
 		"impacts": [
 			"As part of my teaching, I enjoy writing short web accessible books that summarize the state of knowledge in my academic fields. I have written short books about <a href='http://faculty.washington.edu/ajko/books/design-methods'>Design</a>, <a href='http://faculty.washington.edu/ajko/books/cooperative-software-development'>Cooperative Software Development</a>, and <a href='http://faculty.washington.edu/ajko/books/uist/'>User Interface Software and Technology</a>. Many faculty at other universities have used my short books in their classes.",
@@ -68,6 +74,7 @@
 	{
 		"id": "cer",
 		"population": "The computing education research community",
+		"alt": "A photograph of my lab at SIGCSE 2019.",
 		"description": "I actively seek ways to help build the computing education research community by improving or creating new infrastructure",
 		"impacts": [
 			"I've consulted with Google, NSF, CRA, and <a href='https://code.org'>Code.org</a> about strategies for strengthening the pipeline of computing education research, researchers, and research funding.",
@@ -80,6 +87,7 @@
 	{
 		"id": "k12cs",
 		"population": "National K-12 CS education",
+		"alt": "A photograph of Andy at a national meeting of CS for All state advocates.",
 		"description": "I've used my research and expertise to inform national policy and national curricula",
 		"impacts": [
 			"I've coordinated with House representatives on policies that will expand the numbers of CS teachers nationwide.",
@@ -90,6 +98,7 @@
 	{
 		"id": "k12cswa",
 		"population": "Washington state K-12 CS education",
+		"alt": "A photograph of an education committee meeting at the Washington state legislature.",
 		"description": "I've used my research and expertise to inform Washington state policy on K-12 CS education",
 		"impacts": [
 			"I direct <a href='http://csforallwa.org'>CS for All Washington</a>, a statewide CS for All advocacy group.",
@@ -100,6 +109,7 @@
 	{
 		"id": "k12csps",
 		"population": "Puget Sound K-12 CS education",
+		"alt": "A photograph a 2019 Sound CS Ed community meetup.",
 		"description": "I've used my research and expertise to build community and educate youth in Puget Sound",
 		"impacts": [
 			"I've run a quarterly meetup, Sound CS Ed, to bring together a community of hundreds of CS education teachers, researchers, policy makers, and product designers.",

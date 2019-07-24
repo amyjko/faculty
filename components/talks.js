@@ -12,6 +12,7 @@ class Talks extends React.Component {
 
 				<Block
 					image={this.props.app.getWebRoot() + "/images/eth2019programming.jpg"}
+					alt="A screenshot of the first slide of the keynote."
 					link="https://www.youtube.com/watch?v=-crfoC6NtaE"
 					header="Programming: What it is and how to teach it"
 					content=
@@ -22,7 +23,7 @@ class Talks extends React.Component {
 
 				<Block
 					image={this.props.app.getWebRoot() + "/images/icse2018mip.png"}
-					link="https://www.youtube.com/watch?v=lx7g-T10WxQ"
+					alt="A screenshot of the first slide of the keynote."					link="https://www.youtube.com/watch?v=lx7g-T10WxQ"
 					header="Big Ideas Behind the Whyline"
 					content=
 						<span>
@@ -32,7 +33,7 @@ class Talks extends React.Component {
 
 				<Block
 					image={this.props.app.getWebRoot() + "/images/msricpc18.png"}
-					link="https://youtu.be/Oh5NuyTMB4A"
+					alt="A screenshot of the first slide of the keynote."					link="https://youtu.be/Oh5NuyTMB4A"
 					header="Mining the Mind, Minding the Mine: Grand Challenges in Comprehension and Mining"
 					content=
 						<span>
@@ -42,6 +43,7 @@ class Talks extends React.Component {
 
 				<Block
 					image={this.props.app.getWebRoot() + "/images/stanford18.png"}
+					alt="An image of me presenting at Stanford."	
 					link="https://www.youtube.com/watch?v=mkzHIhKaUX4&feature=youtu.be"
 					header="Learning to Code: Why We Fail, How We Flourish"
 					content=
@@ -52,6 +54,7 @@ class Talks extends React.Component {
 
 				<Block
 					image={this.props.app.getWebRoot() + "/images/splash16.png"}
+					alt="A screenshot of the first slide of the keynote."
 					link="https://www.youtube.com/watch?v=TjkzAls5fsI&t=84s"
 					header="A Human View of Programming Languages"
 					content=

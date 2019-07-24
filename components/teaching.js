@@ -11,6 +11,7 @@ class Teaching extends React.Component {
 
 				<Block
 					image={this.props.app.getWebRoot() + "/images/course-info360.png"}
+					alt="A line drawing of two people discussing a sketch"
 					link = "https://canvas.uw.edu/courses/1118283"
 					header="INFO 360 Design Methods"
 					content="This undergraduate class teaches students design thinking skills in the domain of information and computing. It leverages multiple forms of active learning, involves a significant amount of studio-based learning, and helps students develop creative confidence."
@@ -18,6 +19,7 @@ class Teaching extends React.Component {
 
 				<Block
 					image={this.props.app.getWebRoot() + "/images/course-info442.jpg"}
+					alt="A tesselation of squares and triangles"
 					link="https://canvas.uw.edu/courses/1273825"
 					header="INFO 442 Cooperative Software Development"
 					content="This undergraduate software engineering class teaches foundations of team-based software development, leveraging the latest research on coordination, cooperation, and human cognition in software development. Students leave ready to become meaningful contributors to teams big and small, but also to understand the processes that teams use and how they can improve them."
@@ -25,6 +27,7 @@ class Teaching extends React.Component {
 
 				<Block
 					image={this.props.app.getWebRoot() + "/images/course-hcid520.jpg"}
+					alt="A black and white photograph of a woman operating the ENIAC, the first computer"
 					link="https://canvas.uw.edu/courses/1256337"
 					header="HCID 520 User Interface Software and Technology"
 					content="This graduate course teaches students they history, theory, and foundations of user interfaces. Students acquire a literacy for communicating and reasoning about interfaces."
@@ -32,6 +35,7 @@ class Teaching extends React.Component {
 
 				<Block
 					image={this.props.app.getWebRoot() + "/images/course-info200.png"}
+					alt="A black and white version of an old painting with a child reading a newspaper"
 					link="https://canvas.uw.edu/courses/1223117"
 					header="INFO 200 Intellectual Foundations of Informatics"
 					content=

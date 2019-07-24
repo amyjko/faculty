@@ -15,6 +15,7 @@ class Impact extends React.Component {
 					<Block 
 						key={population.id}
 						image={"images/population-" + population.id + ".jpg"}
+						alt={population.alt}
 						link={null}
 						header=<span><strong>{population.population}</strong>. {population.description}</span>
 						content=

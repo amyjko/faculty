@@ -21,7 +21,7 @@ class Person extends React.Component {
 		return (
 			<div className={"row " + (this.props.highlight ? "bg-info" : "")} name={this.props.id}>
 				<div className="col-md-3">
-					{ this.props.id ? <img className='img-responsive img-thumbnail gap-bottom-right' alt={this.props.name} src={this.props.app.getWebRoot() + "/images/mug-" + this.props.id + ".jpg"} style={{width: 140}} /> : null }
+					{ this.props.id ? <img className='img-responsive img-thumbnail gap-bottom-right' alt={"Photograph of " + this.props.name} src={this.props.app.getWebRoot() + "/images/mug-" + this.props.id + ".jpg"} style={{width: 140}} /> : null }
 				</div>
 				<div className="col-md-9">
 					<p><strong>{this.props.name}</strong> <mark>{this.props.level}</mark> { this.props.url ? <small><a href={this.props.url} target="_blank">Website</a></small> : null } { this.props.thesis ? <small>&ndash; <a href={this.props.thesis}>Dissertation</a></small> : null }</p>

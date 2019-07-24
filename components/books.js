@@ -10,7 +10,8 @@ class Books extends React.Component {
 				</div>
 
 				<Block 
-					image="/ajko/books/design-methods/images/cover.jpg" 
+					image="/ajko/books/design-methods/images/cover.jpg"
+					alt="A stylized rendering of website mockups"
 					link="/ajko/books/design-methods"
 					header="Design Methods"
 					content="This book covers interaction design, design methods, and HCI fundamentals. I have my students read it in the first five weeks of class, then launch into a five week design project."					
@@ -18,6 +19,7 @@ class Books extends React.Component {
 
 				<Block
 					image="/ajko/books/cooperative-software-development/images/cover.jpg"
+					alt="A stylized rendering of syntax highlighted code"
 					link="/ajko/books/cooperative-software-development/"
 					header="Cooperative Software Development"
 					content="This book covers software engineering fundamentals, but from a human, social, collaborative, and organizational perspective, rather than from a technical perspective."
@@ -25,6 +27,7 @@ class Books extends React.Component {
 
 				<Block
 					image="/ajko/books/uist/images/cover.jpg"
+					alt="An illustration of a stick figure person sitting on a grid of 1's and 0's"
 					link="/ajko/books/uist/"
 					header="User Interface Software and Technology"
 					content="This book covers the history, theory, and innovations in user interface software and technology."
@@ -32,6 +35,7 @@ class Books extends React.Component {
 
 				<Block
 					image="/ajko/books/informatics-teaching-guide/images/cover.jpg"
+					alt="Four stick figure drawings of teachers teaching differently sized groups of students."
 					link="/ajko/books/informatics-teaching-guide/"
 					header="Informatics Teaching Guide"
 					content="I wrote this book to support teachers new to the iSchool and/or new to teaching, including new faculty, guest faculty, doctoral student teachers, and teaching assistants."
