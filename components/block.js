@@ -10,7 +10,10 @@ class Block extends React.Component {
 					<a href={this.props.link} target="_blank"><img className='img-responsive img-thumbnail gap-bottom-right' src={this.props.image} style={{width: 140}} /></a>
 				</div>
 				<div className="col-md-9">
-					<a href={this.props.link} target="_blank">{this.props.header}</a>. {this.props.content}
+					{this.props.link ? 
+						<a href={this.props.link} target="_blank">{this.props.header}</a> :
+						this.props.header
+					}. {this.props.content}
 				</div>
 			</div>
 		);

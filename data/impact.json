@@ -1,0 +1,111 @@
+[
+	{
+		"id": "public",
+		"population": "The public",
+		"description": "The press often reports on my research, interviews me, or consults with me on my expertise",
+		"impacts": [
+			"I consulted with <a href='https://www.marketplace.org/shows/marketplace-tech/'>APM's Marketplace Tech</a> on automation (2019)",
+			"I wrote for the <a href='http://www.huffingtonpost.com/entry/5829cf4ce4b02b1f5257a638'>Huffington Post</a> about the software industry's need need for computing education research (2016).",
+			"<a href='http://www.livescience.com/53963-are-coding-toys-useful.html'>LiveScience</a> interviewed me about the efficacy of coding toys (2016).",
+			"<a href='http://www.newscientist.com/blogs/onepercent/2012/05/frictionary.html'>NewScientist</a> featured my work on Frictionary (2012)",
+			"<a href='http://www.pcworld.com/businesscenter/article/255340/study_facebook_relies_on_good_design_to_retain_users.html#tk.rss_news'>IDG news</a> featured our work Facebook's design culture (2012)",
+			"<a href='http://www.king5.com/news/technology/Hourglass-Syndrome-106739108.html'>Seattle's King5 News</a> interviewed me about software failures (2010)",
+			"<a href='http://www.pcmag.com/article2/0,2817,1842864,00.asp'>PC Magazine</a> featured my research on debugging tools (2005).",
+			"The Associated Press featured my research on the Whyline (2004)."
+		]
+	},
+	{
+		"id": "industry",
+		"population": "The software industry",
+		"description": "My research often impacts policy and processes in software companies; I have also co-founded and consulted with startups",
+		"impacts": [
+			"Our research on Lemonaid, our crowdsourced help tool, was the basis for <a href='http://www.answerdash.com/'>AnswerDash</a>, a company that I co-founded with Jacob Wobbrock and Parmit Chilana that offers an instant self-service answers product for web applications and e-commerce sites. The company has impacted other company's product offerings, including <a href='https://www.zendesk.com/'>Zendesk</a>'s self-service technologies.",
+			"Our research on bug reporting has been read widely in industry, including by product teams at Microsoft, Adobe, Google, and ABB.",
+		]
+	},
+	{
+		"id": "engineers",
+		"population": "Software engineers",
+		"description": "My research often reaches software developers through podcasts, news, and social media",
+		"impacts": [
+			"I was interviewed for the <a href='http://softwareengineeringdaily.com/2016/02/24/academia-to-industry-in-computer-science-with-andy-ko/'>Software Engineering Daily podcast</a>, which has an audience of hundreds of thousands.",
+			"Our <a href='https://www.youtube.com/watch?v=OBlmLjeORUQ&feature=youtu.be&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU'>ACM Learning Webinar on software engineering expertise</a> was viewed by hundreds of thousands of developers.",
+			"Our research on coding bootcamps has been read by hundreds of thousands of software developers on sites like <a href='https://www.reddit.com/r/programming/comments/6kgi7p/what_i_learned_from_researching_coding_bootcamps/'>Reddit and <a href='https://news.ycombinator.com/item?id=14679061'>Hacker News<a/>.",
+			"Our work evaluating coding tutorials has been discussed on <a href='https://news.ycombinator.com/item?id=16961716'>Hacker News</a>."			
+		]
+	},
+	{
+		"id": "tools",
+		"population": "Software development tools",
+		"description": "Many of my innovations have made it into software development tools products",
+		"impacts": [
+			"Our studies on program understanding and ideas for program understanding tools was partially the basis of the <a href='http://research.microsoft.com/en-us/projects/debuggercanvas/'>Debugger Canvas</a> plugin for Visual Studio.",
+			"Frictionary was used in one of the features in <a href='http://www.answerdash.com/'>AnswerDash</a>, the company I co-founded based on my CAREER grant",
+			"Timelapse is being upstreamed to WebKit and will likely appear in the Safari Web Inspector developer tools.",
+			"Many of the ideas in Barista have made it into more modern environments like <a href='http://scratch.mit.edu/'>Scratch</a> and <a href='http://www.greenfoot.org/'>Greenfoot</a>.",
+			"My research on the Whyline has impacted several projects, including <a href='https://docs.microsoft.com/en-us/visualstudio/debugger/intellitrace-features'>Microsoft's IntelliTrace</a> feature in Visual Studio, it's <a href='https://marketplace.visualstudio.com/items?itemName=DebuggerCanvasTeam.DebuggerCanvas'>Debugger Canvas</a> Visual Studio plugin, and the record-replay features in it's latest <a href='https://www.microsoft.com/en-us/research/project/javascript-time-travel-debugger/'>Chakra JavaScript</a> runtime. Other projects, including <a href='http://rr-project.org/'>Mozilla's rr</a> and the <a href='http://debug.elm-lang.org/'>Elm Debugger</a> have also incorporated time-travel debugging features."
+		]	
+	},
+	{
+		"id": "learningtech",		
+		"population": "Technologies for Learning to Code",
+		"description": "Many of my discoveries have impacted the design of educational technologies for learning to code",
+		"impacts": [
+			"In 2016 I consulted with Microsoft on their <a href='https://makecode.com/'>MakeCode</a> project, sharing evidence from computing education research to inform the design of their learning technologies.",
+			"Our work on Gidget influenced the design of Code.org's <a href='https://studio.code.org/'>CodeStudio</a> and <a href='https://www.apple.com/swift/playgrounds/'>Apple's Swift Playgrounds</a>."
+		]
+	},	
+	{
+		"id": "academia",
+		"population": "Higher education",
+		"description": "I share much of my experience, both of my research areas and of my practice as an scholars, in books, blog posts, podcasts, and other media",
+		"impacts": [
+			"As part of my teaching, I enjoy writing short web accessible books that summarize the state of knowledge in my academic fields. I have written short books about <a href='http://faculty.washington.edu/ajko/books/design-methods'>Design</a>, <a href='http://faculty.washington.edu/ajko/books/cooperative-software-development'>Cooperative Software Development</a>, and <a href='http://faculty.washington.edu/ajko/books/uist/'>User Interface Software and Technology</a>. Many faculty at other universities have used my short books in their classes.",
+			"The <a href='http://www.changingacademiclife.com/blog/2017/6/18/andy-ko'>Changing Academic Life</a> podcast interviewed me about productivity.",
+			"My <a href='https://medium.com/bits-and-behavior/tagged/academia'>blog posts</a> about academia and professor life are read by hundreds of thousands of academics."
+		]
+	},
+	{
+		"id": "cer",
+		"population": "The computing education research community",
+		"description": "I actively seek ways to help build the computing education research community by improving or creating new infrastructure",
+		"impacts": [
+			"I've consulted with Google, NSF, CRA, and <a href='https://code.org'>Code.org</a> about strategies for strengthening the pipeline of computing education research, researchers, and research funding.",
+			"I've co-authored <a href='http://cra.org/ccc/wp-content/uploads/sites/2/2015/01/CSEdResearchWhitePaper2016.pdf'>a whitepaper</a> discussing the importance of computing education research.",
+			"Since 2016 I've maintained a <a href='http://faculty.washington.edu/ajko/cer'>popular FAQ</a> for newcomers to the community.",
+			"I've helped shape the peer review processes for the <a href='https://toce.acm.org/'>ACM Transactions on Computing Education</a>, the <a href='https://sigcse.org/sigcse/events/symposia'>ACM SIGCSE Technical Symposium</a>'s Research Track, and the <a href='https://icer.acm.org'>ACM International Computing Education Research Conference</a>.",
+			"My <a href='https://medium.com/bits-and-behavior/tagged/computing-education'>blog posts</a> about computing education are read widely amongst researchers and CS teachers."
+		]
+	},
+	{
+		"id": "k12cs",
+		"population": "National K-12 CS education",
+		"description": "I've used my research and expertise to inform national policy and national curricula",
+		"impacts": [
+			"I've coordinated with House representatives on policies that will expand the numbers of CS teachers nationwide.",
+			"Our research on programming problem solving and programming language learning has shaped <a href='https://code.org'>Code.org</a>'s teacher professional development and it's secondary curricula.",
+			"Our research on software engineering expertise informed the curriculum at New York's <a href='http://www.afsenyc.org/'>Academy for Software Engineering</a>."
+		]
+	},
+	{
+		"id": "k12cswa",
+		"population": "Washington state K-12 CS education",
+		"description": "I've used my research and expertise to inform Washington state policy on K-12 CS education",
+		"impacts": [
+			"I direct <a href='http://csforallwa.org'>CS for All Washington</a>, a statewide CS for All advocacy group.",
+			"I've worked with leaders around Washington state to <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1625224'>help it's colleges and universities to prepare K-12 CS teachers</a>.",
+			"Our work on problem solving and program tracing has influenced the design of <a href='https://code.org'>Code.org</a>'s curiculum and teacher professional development."
+		]
+	},
+	{
+		"id": "k12csps",
+		"population": "Puget Sound K-12 CS education",
+		"description": "I've used my research and expertise to build community and educate youth in Puget Sound",
+		"impacts": [
+			"I've run a quarterly meetup, Sound CS Ed, to bring together a community of hundreds of CS education teachers, researchers, policy makers, and product designers.",
+			"Since 2016 I've taught in the university's Upward Bound program, which primarily reaches low-income immigrant and refugee high school students in South Seattle. The students learn about computing, information, and design.",
+			"I have served on the Seattle Public Schools CS Advisory board, shaping strategic goals."		
+		]
+	}
+
+]
