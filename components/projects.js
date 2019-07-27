@@ -3,6 +3,7 @@ import _ from "lodash";
 
 import { Paper } from "./paper";
 import { Link } from 'react-router-dom';
+import {Block} from './block';
 
 var projects = require('../data/projects.json');
 var pubs = require('../data/pubs.json');
@@ -71,6 +72,29 @@ class Project extends React.Component {
 			var path = person === "ajko" ? "bio" : "students/" + person;
 			people.push(<Link key={person} to={path}><img src={"images/mug-" + person + ".jpg"} className="student-mug img-circle" style={{width:32}} /></Link>);
 		});
+
+		return (
+			<Block 
+				image={this.props.app.getWebRoot() + "/images/project-" + this.props.id + ".png"}
+				alt={this.props.name}
+				link={this.props.url}
+				header={null}
+				content=<span>
+					<h4>{this.props.name} <small>({this.props.startdate}&ndash;{this.props.stopdate})</small></h4>
+					<p>{links}</p>
+					<p>{people}</p>
+					<p>{this.props.description}</p>
+					{impact}
+					{firstPapers}
+					{ 
+						this.state.collapsed ? 
+						showRemainingPapers : 
+						remainingPapers
+					}
+				</span>
+
+			/>
+		);
 		
 		return (
 			<div className="project row">

@@ -16,19 +16,6 @@ people.sort((a, b) => {
 class Person extends React.Component {
 	render() {
 		
-/*		
-		return (
-			<div className={"row " + (this.props.highlight ? "bg-info" : "")} name={this.props.id}>
-				<div className="col-md-3">
-					{ this.props.id ? <img className='img-responsive img-thumbnail gap-bottom-right' alt={"Photograph of " + this.props.name} src={this.props.app.getWebRoot() + "/images/mug-" + this.props.id + ".jpg"} style={{width: 140}} /> : null }
-				</div>
-				<div className="col-md-9">
-					<p><strong>{this.props.name}</strong> <mark>{this.props.level}</mark> { this.props.url ? <small><a href={this.props.url} target="_blank">Website</a></small> : null } { this.props.thesis ? <small>&ndash; <a href={this.props.thesis}>Dissertation</a></small> : null }</p>
-					<p>{this.props.bio}</p>
-				</div>
-			</div>
-		);
-*/		
 		return (
 			<div className={(this.props.highlight ? "bg-info" : "")} name={this.props.id}>
 				<Block 
@@ -36,7 +23,7 @@ class Person extends React.Component {
 					alt={"Photograph of " + this.props.name}
 					link={this.props.url}
 					header={null}
-					content=<span><strong>{this.props.name}</strong> <mark>{this.props.level}</mark> <small>[<a href={this.props.url} target="_blank">Website</a>{ this.props.thesis ? <span>, <a href={this.props.thesis}>Dissertation</a></span> : null }]</small>. {this.props.bio}</span>
+					content=<span><a href={this.props.url}>{this.props.name}</a> <mark>{this.props.level}</mark> { this.props.thesis ? <small><a href={this.props.thesis}>Dissertation</a></small> : null }. {this.props.bio}</span>
 				/>
 			</div>
 		);
