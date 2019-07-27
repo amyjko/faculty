@@ -36,7 +36,7 @@ class Person extends React.Component {
 					alt={"Photograph of " + this.props.name}
 					link={this.props.url}
 					header={null}
-					content=<span><strong>{this.props.name}</strong> <mark>{this.props.level}</mark> <small><a href={this.props.url} target="_blank">Website</a></small> { this.props.thesis ? <small><a href={this.props.thesis}>Dissertation</a></small> : null }. {this.props.bio}</span>
+					content=<span><strong>{this.props.name}</strong> <mark>{this.props.level}</mark> <small>[<a href={this.props.url} target="_blank">Website</a>{ this.props.thesis ? <span>, <a href={this.props.thesis}>Dissertation</a></span> : null }]</small>. {this.props.bio}</span>
 				/>
 			</div>
 		);
