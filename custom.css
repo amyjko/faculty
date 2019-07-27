@@ -162,3 +162,11 @@ a:hover {
 	padding: 0;
 	border: none;
 }
+
+.img-float {
+	margin-top: 0.5em;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	border-radius: 4px;
+	max-width: 20%;
+}

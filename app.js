@@ -93,7 +93,7 @@ class App extends React.Component {
 				{currentRoute === "/cv" ? null : <Header path={currentRoute} app={this} />}
 				<Switch>
 					<Route exact path="/" render={(props) => <Projects {...props} app={this} />} />
-					<Route path="/bio" component={Biography}/>
+					<Route path="/bio" render={(props) => <Biography {...props} app={this} />} />
 					<Route path="/publications/:paper?" render={(props) => <Publications {...props} app={this} />} />
 					<Route path="/posts" component={Posts}/>
 					<Route path="/impact" component={Impact}/>
