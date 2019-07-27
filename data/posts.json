@@ -1,5 +1,11 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/managing-overcommitment-in-academia-8d281a2df09",
+		title: "Managing overcommitment in academia",
+		date: "2019.7",
+		tags: ["academia", "productivity"]
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/the-transfer-problem-in-computing-education-501d4f129897",
 		title: "The transfer problem in computing education",
 		date: "2019.7",
