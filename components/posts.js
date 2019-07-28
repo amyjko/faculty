@@ -2,13 +2,20 @@ import React from 'react';
 import _ from 'lodash';
 
 import { Link } from 'react-router-dom';
-
+import { Block } from './block';
 
 var posts = require('../data/posts.json');
 
+// Compute months and dates from strings.
+posts = _.each(posts, (post) => {
+	var parts = post.date.split(".");
+	post.year = parseInt(parts[0]);
+	post.month = parseInt(parts[1]);
+});
+
 // Sort the posts by date
 posts = posts.sort((a, b) => {
-	return b.date.localeCompare(a.date);
+	return (b.year * 12 + b.month) - (a.year * 12 + a.month);
 });
 
 // Find the tag frequency
@@ -43,7 +50,7 @@ class Topic extends React.Component {
 
 	render() {
 		return (
-			<span className={"topic" + (this.props.selected ? " selected" : "")} onClick={this.filter}>
+			<span className={"clickable topic" + (this.props.selected ? " selected" : "")} onClick={this.filter}>
 				{this.props.topic}
 			</span>
 		);
@@ -102,20 +109,18 @@ class Posts extends React.Component {
 				var date = post.date.split(".");
 				var year = date[0];
 				var month = date[1];
-				
+
 				return (
-					<tr key={ "post-" + index}>
-						<td>
-							<small>{ month + "/" + year }</small>
-						</td>
-						<td>
-							<a href={post.url} target="_blank">{post.title}</a>
-						</td>
-						<td>
-							<small>{ post.tags.sort().join(", ")}</small>
-						</td>
-					</tr>
+				<Block
+					key={"post-" + index}
+					image={post.img === null ? null : this.props.app.getWebRoot() + "/images/post-" + post.img + ".jpg"}
+					alt={post.alt}
+					link={post.url}
+					header={post.title}
+					content=<p><small>{ month + "/" + year }</small><br/>{_.map(post.tags, (tag) => { return <small className={"topic" + (this.state.filter === tag ? " selected" : "")}>{tag}</small> })}</p>
+				/>
 				);
+				
 			}
 		);
 		
@@ -132,18 +137,14 @@ class Posts extends React.Component {
 				</div>
 				
 				<p>
-					I've also organized my posts below by topic.
+					Click a topic below to filter.
 				</p>
 	
 				<p>
-					Filter: { tagFilters }
+					{ tagFilters }
 				</p>
 	
-				<table className="table table-striped">
-					<tbody>
-						{ rows }
-					</tbody>
-				</table>
+				{ rows }
 				
 			</div>
 		);

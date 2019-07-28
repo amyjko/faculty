@@ -95,7 +95,7 @@ class App extends React.Component {
 					<Route exact path="/" render={(props) => <Projects {...props} app={this} />} />
 					<Route path="/bio" render={(props) => <Biography {...props} app={this} />} />
 					<Route path="/publications/:paper?" render={(props) => <Publications {...props} app={this} />} />
-					<Route path="/posts" component={Posts}/>
+					<Route path="/posts" render={(props) => <Posts {...props} app={this} />} />
 					<Route path="/impact" component={Impact}/>
 					<Route path="/reading" component={Reading}/>
 					<Route path="/advice" render={(props) => <Advice {...props} app={this} />} />

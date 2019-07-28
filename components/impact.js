@@ -17,7 +17,7 @@ class Impact extends React.Component {
 						image={"images/population-" + population.id + ".jpg"}
 						alt={population.alt}
 						link={null}
-						header=<span><strong>{population.population}</strong>. {population.description}</span>
+						header=<span><strong>{population.population}</strong>. {population.description}. </span>
 						content=
 							<ul>
 							{

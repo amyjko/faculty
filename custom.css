@@ -130,11 +130,10 @@ a:hover {
 	border-radius: 3px;
 	padding: 3px;
 	margin: 3px;
-	cursor: pointer;
 }
 
-.topic:hover {
-	background-color: rgb(230, 230, 230);
+.topic.clickable {
+	cursor: pointer;
 }
 
 .topic.selected {

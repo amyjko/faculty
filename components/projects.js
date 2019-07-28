@@ -3,7 +3,7 @@ import _ from "lodash";
 
 import { Paper } from "./paper";
 import { Link } from 'react-router-dom';
-import {Block} from './block';
+import { Block } from './block';
 
 var projects = require('../data/projects.json');
 var pubs = require('../data/pubs.json');

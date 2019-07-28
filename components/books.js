@@ -14,7 +14,7 @@ class Books extends React.Component {
 					alt="A stylized rendering of website mockups"
 					link="/ajko/books/design-methods"
 					header="Design Methods"
-					content="This book covers interaction design, design methods, and HCI fundamentals. I have my students read it in the first five weeks of class, then launch into a five week design project."					
+					content=". This book covers interaction design, design methods, and HCI fundamentals. I have my students read it in the first five weeks of class, then launch into a five week design project."					
 				/>
 
 				<Block
@@ -22,7 +22,7 @@ class Books extends React.Component {
 					alt="A stylized rendering of syntax highlighted code"
 					link="/ajko/books/cooperative-software-development/"
 					header="Cooperative Software Development"
-					content="This book covers software engineering fundamentals, but from a human, social, collaborative, and organizational perspective, rather than from a technical perspective."
+					content=". This book covers software engineering fundamentals, but from a human, social, collaborative, and organizational perspective, rather than from a technical perspective."
 				/>
 
 				<Block
@@ -30,7 +30,7 @@ class Books extends React.Component {
 					alt="An illustration of a stick figure person sitting on a grid of 1's and 0's"
 					link="/ajko/books/uist/"
 					header="User Interface Software and Technology"
-					content="This book covers the history, theory, and innovations in user interface software and technology."
+					content=". This book covers the history, theory, and innovations in user interface software and technology."
 				/>
 
 				<Block
@@ -38,7 +38,7 @@ class Books extends React.Component {
 					alt="Four stick figure drawings of teachers teaching differently sized groups of students."
 					link="/ajko/books/informatics-teaching-guide/"
 					header="Informatics Teaching Guide"
-					content="I wrote this book to support teachers new to the iSchool and/or new to teaching, including new faculty, guest faculty, doctoral student teachers, and teaching assistants."
+					content=". I wrote this book to support teachers new to the iSchool and/or new to teaching, including new faculty, guest faculty, doctoral student teachers, and teaching assistants."
 				/>
 				
 			</div>
