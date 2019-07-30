@@ -40,6 +40,35 @@ class Books extends React.Component {
 					header="Informatics Teaching Guide"
 					content=". I wrote this book to support teachers new to the iSchool and/or new to teaching, including new faculty, guest faculty, doctoral student teachers, and teaching assistants."
 				/>
+
+				<div className='lead'>
+					These are books I've contributed to.
+				</div>
+
+				<Block 
+					image={this.props.app.getWebRoot() + "/images/book-computingedhandbook.jpg"}
+					alt="The cover of The Cambridge Handbook of Computing Education Research, a strange arrangement of sharp objects pointing at a window."
+					link="https://www.cambridge.org/core/books/cambridge-handbook-of-computing-education-research/F8CFAF7B81A8F6BF5C663412BA0A943D"
+					header="The Cambridge Handbook of Computing Education Research"
+					content=". This book surveys the entire history of computing education research up to 2018, and also covers research methods necessary for conducting computing education research. I contributed chapters on study design, informal learning, and tools and environments to support learning. If you're new to the field, it's a great way to rapidly learn most of what we know about teaching and learning computing concepts."					
+				/>
+
+				<Block 
+					image={this.props.app.getWebRoot() + "/images/book-productivity.jpg"}
+					alt="The cover of the Rethinking Productivity in Software Engineering book, a picture of space."
+					link="https://www.apress.com/gp/book/9781484242209"
+					header="Rethinking Productivity in Software Engineering"
+					content=". This book takes both a broad and deep look about what productivity on software development means and how we can productively think about it. I authored or co-authored chapters on human-centered methods for developing tools to boost productivity, a conceptual chapter on individual, team, organization, and market perspectives on productivity, and an analysis of why we shouldn't even try to measure productivity."
+				/>
+
+				<Block 
+					image={this.props.app.getWebRoot() + "/images/book-makingsoftware.jpg"}
+					alt="The cover of the Making Software book, showing a bridge, staring from the bottom looking up."
+					link="https://www.amazon.com/Making-Software-Really-Works-Believe/dp/0596808321"
+					header="Making Software: What Really Works, and Why We Believe It"
+					content=". This book summarizes a collection of studies about software engineering, presenting them for a practitioner audience interested in the science of software development. I contributed a chapter on qualitative methods and why would should trust them, relative to quantitative methods."
+				/>
+
 				
 			</div>
 		);
