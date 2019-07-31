@@ -36,7 +36,7 @@ _.each(pubs, (pub) => {
 	// Annotate the paper with all the projects that reference it.
 	_.each(projects, (project) => {
 		if(project.papers.indexOf(pub.id) >= 0)
-			pub.tags.push(project.name.toLowerCase());		
+			pub.tags.push(project.name);		
 	});
 
 	// Tally tags.

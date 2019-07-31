@@ -102,8 +102,8 @@
 	{
 		"id": "methods",
 		"active": true,
-		"name": "Theory and methods for investigating programming",
-		"description": "My lab actively contributes new methods and perspectives on research on programming.",
+		"name": "Theory and methods",
+		"description": "My lab actively contributes new methods for studying programming.",
 		"funding": [],
 		"people": ["ajko", "glnelson"],
 		"papers": ["walkthrough1", "walkthrough2", "practicalguide", "certheory"],
