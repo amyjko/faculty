@@ -120,19 +120,6 @@
 		"local url":"Xie2019IRTEvaluation.pdf",
 		"contribution": "Evaluates the SCS1 language independent concept inventory, demonstrating how to use IRT to evaluate assessments, and that the SCS1 has several items that may be too hard to be useful."
 	},
-/* Not really a paper
-	{
-		"id": "programmingknowledge",
-		"kind": "juried conference paper",
-		"authors": ["Matt J. Davidson", "Dongsheng Dong", "Benjamin Xie", "Dastyni Loksa", "Min Li", "Andrew J. Ko"],
-		"year": 2018,
-		"title": "Assessing Programming Knowledge and Skills: A Theory-Based Approach",
-		"source": "11th International Test Commission Conference",
-		"pages": "",
-		"award": null,
-		"contribution": "Presents preliminary work on a framework of assessable programming skills."
-	},
-*/
 	{
 		"id": "scoutdemo",
 		"kind": "juried demo paper",

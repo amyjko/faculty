@@ -37,7 +37,7 @@ class Topic extends React.Component {
 	
 	constructor(props) {
 
-    		super(props);
+		super(props);
 		this.filter = this.filter.bind(this);
 		
 	}
@@ -62,7 +62,7 @@ class Posts extends React.Component {
 
 	constructor(props) {
 		
-    		super(props);
+		super(props);
     		
 	    this.state = {filter: null};
 
@@ -117,7 +117,7 @@ class Posts extends React.Component {
 					alt={post.alt}
 					link={post.url}
 					header={post.title}
-					content=<p><small>{ month + "/" + year }</small><br/>{_.map(post.tags, (tag) => { return <small className={"topic" + (this.state.filter === tag ? " selected" : "")}>{tag}</small> })}</p>
+					content=<p><small>{ month + "/" + year }</small><br/>{_.map(post.tags, (tag, index) => { return <small key={index} className={"topic" + (this.state.filter === tag ? " selected" : "")}>{tag}</small> })}</p>
 				/>
 				);
 				
@@ -137,7 +137,7 @@ class Posts extends React.Component {
 				</div>
 				
 				<p>
-					Click a topic below to filter.
+					Choose a topic below to filter.
 				</p>
 	
 				<p>
