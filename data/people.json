@@ -1,5 +1,19 @@
 [
 	{
+		"id": "chandrashree",
+		"name": "Chandrashree Karnani",
+		"active": true,
+		"advised": true,
+		"level": "undergrad",
+		"dept": "Information School",
+		"coadvisor": null,
+		"bio": "Chandrashree is studying data science in the Informatics program. She's interested in how data can be used to make informed decisions. She's helping with Yim's work on machine learning literacy.",
+		"url": "http://www.linkedin.com/in/chandrashree-karnani-4824b0178",
+		"startdate": 2019,
+		"enddate": null,
+		"achievements": []
+	},
+	{
 		"id": "zcolah",
 		"name": "Zoshua Colah",
 		"active": true,
