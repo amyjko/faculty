@@ -1,5 +1,13 @@
 [
 	{
+		url: "‪https://medium.com/bits-and-behavior/teaching-power-consent-and-paternalism-b9c226152caa‬",
+		title: "Teaching, power, consent, and paternalism",
+		date: "2019.7",
+		tags: ["academia", "K-12", "teaching", "computing education"],
+		img: "teacherpower",
+		alt: "A stick figure teacher with green good intentions in their mind, perceived as oppressive red lines by a row of scared students."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/managing-overcommitment-in-academia-8d281a2df09",
 		title: "Managing overcommitment in academia",
 		date: "2019.7",
