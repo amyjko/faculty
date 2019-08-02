@@ -61,12 +61,14 @@ class App extends React.Component {
 	
 	handleKeyPress(event) {
 
-		var index = this.links.indexOf(this.props.location.pathname);
+		var oldIndex = this.links.indexOf(this.props.location.pathname);
+		var newIndex = oldIndex;
 
-		if(event.keyCode === 37) { index = index === 0 ? index = this.links.length - 1 : index - 1; }
-		if(event.keyCode === 39) { index = index === this.links.length - 1 ? index = 0 : index + 1; }
+		if(event.keyCode === 37) { newIndex = oldIndex === 0 ? index = this.links.length - 1 : oldIndex - 1; }
+		if(event.keyCode === 39) { newIndex = oldIndex === this.links.length - 1 ? oldIndex = 0 : oldIndex + 1; }
 
-		this.props.history.push(this.links[index]);
+		if(oldIndex !== newIndex)
+			this.props.history.push(this.links[newIndex]);
 		
 	}
 	
