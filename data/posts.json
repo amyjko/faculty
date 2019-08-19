@@ -1,9 +1,17 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/acm-icer-2019-trip-report-leveling-up-on-theory-statistics-and-significance-876b6d74148d",
+		title: "ACM ICER 2019 trip report: leveling up on theory, statistics, and significance",
+		date: "2019.8",
+		tags: ["computing education", "trip report"],
+		img: "icer19",
+		alt: "A photograph of the ICER 2019 audience, sitting around round tables."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/2019-acm-education-advisory-council-meeting-its-complicated-b715fba0c8c",
 		title: "2019 ACM Education Advisory Council meeting: it’s complicated!",
 		date: "2019.8",
-		tags: ["academia", "K-12", "teaching", "computing education"],
+		tags: ["academia", "K-12", "teaching", "computing education", "trip report"],
 		img: "acmed19",
 		alt: "A photograph of the ACM Education Advisory Council meeting."
 	},

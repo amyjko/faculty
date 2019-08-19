@@ -1,6 +1,19 @@
 [
 	{
 		"id": "",
+		"kind": "refereed journal paper",
+		"authors": ["Qiang Hao", "David H. Smith IV", "Naitra Iriumi", "Michaeil Tsikerdekis", "Andrew J. Ko"],
+		"year": 2019,
+		"title": "A Systematic Investigation of Replications in Computing Education Research",
+		"source": "ACM Transactions on Computing Education, 19(4)",
+		"pages": "Article 42",
+		"digital library url": "https://doi.org/10.1145/3345328",
+		"local url":"Hao2019Replications.pdf",
+		"publisher": "ACM",
+		"contribution": "Analyzed the replication rate and trends in computing education, finding that only about 2% of studies were replicated in the field in the last decade."
+	},
+	{
+		"id": "",
 		"kind": "book chapter",
 		"authors": ["Andrew J. Ko", "Sally Fincher"],
 		"year": 2019,
