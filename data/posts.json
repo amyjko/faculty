@@ -1,5 +1,12 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/changes-coming-to-the-acm-icer-conference-494c808766dd",
+		title: "Changes coming to the ACM ICER conference",
+		date: "2019.8",
+		img: "icerchanges",
+		alt: "An illustration of a smiley face evolving from a shriveled raisin to a happy face."	
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/acm-icer-2019-trip-report-leveling-up-on-theory-statistics-and-significance-876b6d74148d",
 		title: "ACM ICER 2019 trip report: leveling up on theory, statistics, and significance",
 		date: "2019.8",
