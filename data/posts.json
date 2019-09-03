@@ -3,6 +3,7 @@
 		url: "https://medium.com/@andyjko/a-graduation-speech-on-responsible-design-a6fb329299a5",
 		title: "A graduation speech on responsible design",
 		date: "2019.8",
+		tags: ["software engineering", "society", "HCI", "industry", "diversity"],
 		img: "mhcid19",
 		alt: "A photograph of the standing 2019 graduating class of the MHCI+D program"	
 	},
@@ -10,6 +11,7 @@
 		url: "https://medium.com/bits-and-behavior/changes-coming-to-the-acm-icer-conference-494c808766dd",
 		title: "Changes coming to the ACM ICER conference",
 		date: "2019.8",
+		tags: ["academia", "computing education"],
 		img: "icerchanges",
 		alt: "An illustration of a smiley face evolving from a shriveled raisin to a happy face."	
 	},
