@@ -3,8 +3,6 @@
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-	  margin-top: 100px;
-	  margin-bottom: 100px;
 	  max-width: 38em;
   }
 }
@@ -18,6 +16,8 @@ body {
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13pt;
 	line-height: 1.5em;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .lead {
