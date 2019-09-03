@@ -8,7 +8,12 @@
 }
 
 .container:focus {
-  outline: none;
+	outline: none;
+}
+
+.container {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 body {
@@ -16,8 +21,6 @@ body {
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13pt;
 	line-height: 1.5em;
-	padding-top: 50px;
-	padding-bottom: 50px;
 }
 
 .lead {
