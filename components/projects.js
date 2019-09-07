@@ -135,16 +135,21 @@ class Projects extends React.Component {
 				</div>
 				
 				<p>
-					My work contributes to the fields of computing education, human-computer interaction, and software engineering.
-					I do this work with many outstanding <Link to={"/students"}>students</Link> on this work to <Link to={"/publications"}>publish</Link>, <Link to={"/posts"}>blog</Link>, and <Link to={"/impact"}>communicate</Link> our research with academia, industry, government, and the public. We do this work with several communities at UW, including <a target="_blank" href="http://dub.washington.edu/">DUB</a> (a community of HCI researchers), <a target="_blank" href="http://uwplse.org/">PLSE</a> (a community of programming languages and software engineering researchers), and the iSchool's <a href="https://digitalyouth.ischool.uw.edu/" target="_blank">Digital Youth Lab</a>.
-					I also lead two communities outside the university: <a target="_blank" href="http://soundcsed.org">Sound CS Ed</a>, a regional community of teachers, researchers, and inventors passionate about computing education, and <a target="_blank" href="http://csforallwa.org">CS for All Washington</a>, a statewide advocacy coalition championing K-12 computing education in Washington state.
-					I formerly directed the <a href="http://eusesconsortium.org/" target="_blank">EUSES consortium</a>, an academic and industry coalition focused on end-user programming.
+					I share my work with three research communities: <em>computing education</em> (see <Link to={"/cer"}>my FAQ</Link>), <em>human-computer interaction</em>, and <em>software engineering</em>.
+					I work with many outstanding <Link to={"/students"}>students</Link> to <Link to={"/publications"}>publish</Link> our research, <Link to={"/posts"}>share it online</Link>, and <Link to={"/impact"}>apply it to practice</Link>. We do this work with several local communities:
 				</p>
-
+				
 				<ul>
-					<li>Read <Link to={"/cer"}>my computing education research FAQ</Link> to learn more about the field.</li>
-					<li>Read my <Link to="/students">students</Link> page to learn how to work with me.</li>
+					<li><a target="_blank" href="http://computinged.uw.edu/">ComputingEd@UW</a>. Computing education researchers + teachers @ UW.</li>
+					<li><a target="_blank" href="http://dub.uw.edu/">DUB</a>. HCI+Design researchers + teachers @ UW.</li>
+					<li><a target="_blank" href="http://uwplse.org/">PLSE</a>. Programming languages + software engineering researchers @ UW.</li>
+					<li><a href="https://digitalyouth.ischool.uw.edu/" target="_blank">Digital Youth Lab</a>. Youth + tech researchers @ UW.</li>
+					<li><a target="_blank" href="http://soundcsed.org">Sound CS Ed</a>. CS teachers + researchers + makers in Puget Sound.</li>
+					<li><a target="_blank" href="http://csforallwa.org">CS for All Washington</a>. A K-12 CS advocacy coalition for Washington state.</li>
+					<li>And formerly, the <a href="http://eusesconsortium.org/" target="_blank">EUSES consortium</a>. End-user programming researchers.</li>
 				</ul>
+
+				<p>Read my <Link to="/students">lab</Link> page to learn how to work with me.</p>
 				
 				<h3>Active Projects</h3>
 	
