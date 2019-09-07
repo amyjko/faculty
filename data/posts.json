@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/@andyjko/human-centered-definitions-of-computer-science-for-public-education-42238ff6a3c1",
+		title: "Human-centered definitions of computer science for public education",
+		date: "2019.9",
+		tags: ["K-12", "policy", "computing education"],
+		img: "csdefinition",
+		alt: "A pink cloud outlined by a sharp pink line."	
+	},
+	{
 		url: "https://medium.com/@andyjko/a-graduation-speech-on-responsible-design-a6fb329299a5",
 		title: "A graduation speech on responsible design",
 		date: "2019.8",
