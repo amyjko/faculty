@@ -817,16 +817,17 @@
 	},
 	{
 		"id":"",
-		"kind":"refereed conference paper",
+		"kind": "refereed conference paper",
 		"authors": ["Brad A. Myers", "Sun Young Park", "Yoko Nakano", "Greg Mueller", "Andrew J. Ko"],
-		"year":2008,
+		"year": 2008,
 		"title":"How Designers Design and Program Interactive Behaviors",
 		"source":"IEEE Symposium on Visual Languages and Human-Centric Computing",
 		"pages":"177-184",
 		"acceptance rate":"29%",
 		"digital library url":"http://dx.doi.org/10.1109/VLHCC.2008.4639081",
 		"local url":"Myers2008InteractiveBehaviors.pdf",
-		"contribution":"Designers report that behavior is much more difficult to define than appearance, that it requires collaborating with developers, and that communicating behavior to developers is of particular difficulty."
+		"contribution":"Designers report that behavior is much more difficult to define than appearance, that it requires collaborating with developers, and that communicating behavior to developers is of particular difficulty.",
+		"award": ["most influential paper honorable mention"]
 	},
 	{
 		"id":"whyline2",
