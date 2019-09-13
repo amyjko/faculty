@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/csedcon-2019-trip-report-a-deep-dive-into-cs-education-policy-98efb62eb341",
+		title: "CSEdCon 2019 trip report: a deep dive into CS education policy",
+		date: "2019.9",
+		tags: ["K-12", "policy", "computing education"],
+		img: "csedcon19",
+		alt: "A photograph of a ballroom of CSEdCon attendees."	
+	},
+	{
 		url: "https://medium.com/@andyjko/human-centered-definitions-of-computer-science-for-public-education-42238ff6a3c1",
 		title: "Human-centered definitions of computer science for public education",
 		date: "2019.9",
