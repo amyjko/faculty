@@ -133,7 +133,7 @@ class Posts extends React.Component {
 		return (
 			<div>
 				<div className="lead">
-					I <a href="https://medium.com/@andyjko/">blog</a> on my lab's Medium publication, <a href="https://medium.com/bits-and-behavior">Bits and Behavior</a>.
+					I <a href="https://medium.com/@amyjko/">blog</a> on my lab's Medium publication, <a href="https://medium.com/bits-and-behavior">Bits and Behavior</a>.
 				</div>
 				
 				<p>

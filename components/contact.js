@@ -38,7 +38,7 @@ class ContactInfo extends React.Component {
 				<Block 
 					image={this.props.app.getWebRoot() + "/images/logo-twitter.jpg"}
 					alt="The Twitter logo."
-					link="https://twitter.com/andyjko"
+					link="https://twitter.com/amyjko"
 					header="Twitter"
 					content=". I mostly broadcast on Twitter, and reply to other people's posts, but I do respond to direct messages. It's a good place to learn what's on my mind and when I have new writing to share."
 				/>

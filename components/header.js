@@ -13,11 +13,11 @@ class Header extends React.Component {
 				<div className='row'>
 		
 					<div className="col-xs-5 col-sm-3 col-md-3">
-						<img className='img-thumbnail' alt="Headshot of Andrew J. Ko" src={this.props.app.getWebRoot() + "/images/mug-ajko.jpg"} />
+						<img className='img-thumbnail' alt="Headshot of Amy J. Ko" src={this.props.app.getWebRoot() + "/images/mug-ajko.jpg"} />
 					</div>
 		
 					<div className="col-xs-7 col-sm-9 col-md-9" style={{lineHeight: "1.15em"}}>
-						<strong>Andrew J. Ko</strong>, Ph.D. <small>aka Andy</small>
+						<strong>Amy J. Ko</strong>, Ph.D. <small>(<a href="https://medium.com/bits-and-behavior/im-trans-call-me-amy-8a72a3951964" target="_blank">formerly Andrew</a>)</small>
 						<small>
  							<br/>Associate Professor
 							<br/><a href="https://ischool.uw.edu/academics/informatics">Informatics</a> Program Chair

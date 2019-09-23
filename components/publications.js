@@ -138,6 +138,13 @@ class Publications extends React.Component {
 		return (
 			<div>
 				<div className="lead">These are my academic publications. See <a href="https://scholar.google.com/citations?user=otmdDLoAAAAJ&hl=en" target="_blank">who's citing them.</a></div>
+				
+				<p>
+					<small>My publications prior to 2020 are under my former name Andrew J. Ko. However, I prefer that you <strong>cite all of my publications with my new name</strong>, as I do below. Don’t worry about reviewers getting confused; citation metadata will be otherwise identical, and you can always include a DOI to help bots identify the work. Thank you for respecting my gender identity and name.</small>					
+				</p>	
+				
+				<hr/>
+				
 				<p>
 					Choose a topic below to filter.
 				</p>

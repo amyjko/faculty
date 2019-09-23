@@ -8,7 +8,7 @@
 		alt: "A photograph of a ballroom of CSEdCon attendees."	
 	},
 	{
-		url: "https://medium.com/@andyjko/human-centered-definitions-of-computer-science-for-public-education-42238ff6a3c1",
+		url: "https://medium.com/@amyjko/human-centered-definitions-of-computer-science-for-public-education-42238ff6a3c1",
 		title: "Human-centered definitions of computer science for public education",
 		date: "2019.9",
 		tags: ["K-12", "policy", "computing education"],
@@ -16,7 +16,7 @@
 		alt: "A pink cloud outlined by a sharp pink line."	
 	},
 	{
-		url: "https://medium.com/@andyjko/a-graduation-speech-on-responsible-design-a6fb329299a5",
+		url: "https://medium.com/@amyjko/a-graduation-speech-on-responsible-design-a6fb329299a5",
 		title: "A graduation speech on responsible design",
 		date: "2019.8",
 		tags: ["software engineering", "society", "HCI", "industry", "diversity"],
@@ -72,7 +72,7 @@
 		alt: "A sketch of arrows aiming for targets and missing their mark."
 	},
 	{
-		url: "https://medium.com/@andyjko/dagstuhl-trip-report-learning-and-teaching-programming-language-semantics-b8d8d9007380",
+		url: "https://medium.com/@amyjko/dagstuhl-trip-report-learning-and-teaching-programming-language-semantics-b8d8d9007380",
 		title: "Dagstuhl trip report: learning and teaching programming language semantics",
 		date: "2019.7",
 		tags: ["computing education", "K-12", "trip report", "programming languages", "HCI"],
@@ -112,7 +112,7 @@
 		alt: "An illustration of Pac Man eating a series of research papers."
 	},
 	{
-		url: "https://medium.com/@andyjko/on-the-academic-quantified-self-b9bd174ccc69",
+		url: "https://medium.com/@amyjko/on-the-academic-quantified-self-b9bd174ccc69",
 		title: "On the academic quantified self",
 		date: "2019.5",
 		tags: ["academia"],

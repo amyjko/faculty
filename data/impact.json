@@ -2,7 +2,7 @@
 	{
 		"id": "public",
 		"population": "The public",
-		"alt": "A picture of Andy being interviewed for a television segment.",
+		"alt": "A picture of Amy being interviewed for a television segment.",
 		"description": "The press often reports on my research, interviews me, or consults with me on my expertise",
 		"impacts": [
 			"I consulted with <a href='https://www.marketplace.org/shows/marketplace-tech/'>APM's Marketplace Tech</a> on automation (2019)",
@@ -87,7 +87,7 @@
 	{
 		"id": "k12cs",
 		"population": "National K-12 CS education",
-		"alt": "A photograph of Andy at a national meeting of CS for All state advocates.",
+		"alt": "A photograph of Amy at a national meeting of CS for All state advocates.",
 		"description": "I've used my research and expertise to inform national policy and national curricula",
 		"impacts": [
 			"I've coordinated with House representatives on policies that will expand the numbers of CS teachers nationwide.",

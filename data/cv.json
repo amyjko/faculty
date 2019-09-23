@@ -65,7 +65,7 @@
 		{
 			title: "Formal Verification of Accessibility",
 			funder: "National Science Foundation, award 1836813",
-			investigators: "Michael Ernst (PI), Andrew J. Ko (Co-PI), Jennifer Mankoff (Co-PI), Zach Tatlock (Co-PI)",
+			investigators: "Michael Ernst (PI), Amy J. Ko (Co-PI), Jennifer Mankoff (Co-PI), Zach Tatlock (Co-PI)",
 			amount: "$738,125",
 			startdate: 2019,
 			enddate: 2022,
@@ -74,7 +74,7 @@
 		{
 			title: "Programming Strategies",
 			funder: "National Science Foundation, award 1703304",
-			investigators: "Thomas LaToza (PI, George Mason University), Andrew J. Ko (Co-PI, University of Washington)",
+			investigators: "Thomas LaToza (PI, George Mason University), Amy J. Ko (Co-PI, University of Washington)",
 			amount: "$1,199,555",
 			startdate: 2017,
 			enddate: 2021,
@@ -83,7 +83,7 @@
 		{
 			title: "Automatically Synthesizing Valid, Personalized, Formative Assessments of CS1 Concepts",
 			funder: "National Science Foundation, award 1735123",
-			investigators: "Andrew J. Ko (PI, University of Washington), Min Li (Co-PI, University of Washington)",
+			investigators: "Amy J. Ko (PI, University of Washington), Min Li (Co-PI, University of Washington)",
 			amount: "$549,857",
 			startdate: 2017,
 			enddate: 2020,
@@ -92,7 +92,7 @@
 		{
 			title: "AccessComputing",
 			funder: "National Science Foundation, award 1539179",
-			investigators: "Richard Ladner (PI, University of Washington), Sheryl Burgstahler (Co-PI), Andrew J. Ko (Co-PI), Jacob O. Wobbrock (Co-PI)",
+			investigators: "Richard Ladner (PI, University of Washington), Sheryl Burgstahler (Co-PI), Amy J. Ko (Co-PI), Jacob O. Wobbrock (Co-PI)",
 			amount: "$3,797,990",
 			startdate: 2015,
 			enddate: 2020,
@@ -101,7 +101,7 @@
 		{
 			title: "HCC: Large: Variations to Support Exploratory Programming",
 			funder: "National Science Foundation, award 	1314399",
-			investigators: "Brad Myers (PI, Carnegie Mellon University), Andrew J. Ko (Co-PI), Margaret Burnett (Co-PI, Oregon State University), Martin Erwig (Co-PI, Oregon State University), Anita Sarma (Co-PI, University of Nebraska, Lincoln), Gregg Rothermel (Co-PI, University of Nebraska, Lincoln)",
+			investigators: "Brad Myers (PI, Carnegie Mellon University), Amy J. Ko (Co-PI), Margaret Burnett (Co-PI, Oregon State University), Martin Erwig (Co-PI, Oregon State University), Anita Sarma (Co-PI, University of Nebraska, Lincoln), Gregg Rothermel (Co-PI, University of Nebraska, Lincoln)",
 			amount: "$2,999,991",
 			startdate: 2013,
 			enddate: 2017,
@@ -110,7 +110,7 @@
 		{
 			title: "CER: Computing Education through Collaborative Debugging",
 			funder: "National Science Foundation, award 1240786",
-			investigators: "Andrew J. Ko (PI), Margaret Burnett (Co-PI, Oregon State University), Catherine Law (Co-PI, Oregon State University)",
+			investigators: "Amy J. Ko (PI), Margaret Burnett (Co-PI, Oregon State University), Catherine Law (Co-PI, Oregon State University)",
 			amount: "$599,999",
 			startdate: 2012,
 			enddate: 2015,
@@ -119,7 +119,7 @@
 		{
 			title: "CAREER: Enabling and Exploiting Evidence-Based Bug Triage",
 			funder: "National Science Foundation, award 1153625",
-			investigators: "Andrew J. Ko (PI)",
+			investigators: "Amy J. Ko (PI)",
 			amount: "$592,456",
 			startdate: 2010,
 			enddate: 2014,
@@ -128,7 +128,7 @@
 		{
 			title: "W Fund Early Stage Capital Investment",
 			funder: "W Fund",
-			investigators: "Jacob O. Wobbrock (CEO), Andrew J. Ko (CTO)",
+			investigators: "Jacob O. Wobbrock (CEO), Amy J. Ko (CTO)",
 			amount: "$500,000",
 			startdate: 2013,
 			enddate: 2014,
@@ -137,7 +137,7 @@
 		{
 			title: "Mobile/Social Debugging Games for Computing Education",
 			funder: "Microsoft Research Software Engineering Innovation Foundation Award",
-			investigators: "Andrew J. Ko (PI)",
+			investigators: "Amy J. Ko (PI)",
 			amount: "$25,000",
 			startdate: 2013,
 			enddate: 2014,			
@@ -146,7 +146,7 @@
 		{
 			title: "Selection-Based Contextual Help in the Wild",
 			funder: "Google Faculty Research Award",
-			investigators: "Andrew J. Ko (PI)",
+			investigators: "Amy J. Ko (PI)",
 			amount: "$47,359",
 			startdate: 2012,
 			enddate: 2013,
@@ -155,7 +155,7 @@
 		{
 			title: "Automatic, Individualized Instructional Feedback to Improve Learning in an Online Programming Game",
 			funder: "University of Washington, Royalty Research Fund",
-			investigators: "Andrew J. Ko (PI)",
+			investigators: "Amy J. Ko (PI)",
 			amount: "$32,122",
 			startdate: 2012,
 			enddate: 2013,
@@ -164,7 +164,7 @@
 		{
 			title: "Chime: Bringing Crowdsourced Contextual Help to the Masses",
 			funder: "UW Center for Commercialization",
-			investigators: "Jacob O. Wobbrock (PI) and Andrew J. Ko (Co-PI)",
+			investigators: "Jacob O. Wobbrock (PI) and Amy J. Ko (Co-PI)",
 			amount: "$50,000",
 			startdate: 2012,
 			enddate: 2012,
@@ -173,7 +173,7 @@
 		{
 			title: "Software Developer Help Seeking on the Web",
 			funder: "Microsoft",
-			investigators: "Andrew J. Ko (PI)",
+			investigators: "Amy J. Ko (PI)",
 			amount: "$6,200",
 			startdate: 2010,
 			enddate: 2011,
@@ -186,19 +186,19 @@
 			title: "Context- and Activity-Aware Content Selection",
 			year: "2017",
 			number: "U.S. Patent No. 9,727,561",
-			inventors: "Andrew J. Ko and Victor Medina"
+			inventors: "Amy J. Ko and Victor Medina"
 		},
 		{
 			title: "Systems and Methods for Selection-Based Contextual Help Retrieval",
 			year: "2012",
 			number: "U.S. Patent No. 9,811,583",
-			inventors: "Parmit K. Chilana, Andrew J. Ko, and Wobbrock, J.O."
+			inventors: "Parmit K. Chilana, Amy J. Ko, and Wobbrock, J.O."
 		},
 		{
 			title: "A Debugging Interface",
 			year: "2010",
 			number: "U.S. Patent No. 7,735,066",
-			inventors: "Andrew J. Ko and Brad A. Myers"
+			inventors: "Amy J. Ko and Brad A. Myers"
 		}
 	],
 	
@@ -247,7 +247,7 @@
 	press: [
 		{
 			title: "Why the Software Industry Needs Computing Education Research",
-			author: "Andrew J. Ko and Susanne Hambrusch",
+			author: "Amy J. Ko and Susanne Hambrusch",
 			source: "Huffington Post",
 			date: "November 14th, 2016",
 			link: "http://www.huffingtonpost.com/entry/5829cf4ce4b02b1f5257a638"
