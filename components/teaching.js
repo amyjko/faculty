@@ -12,7 +12,7 @@ class Teaching extends React.Component {
 				<Block
 					image={this.props.app.getWebRoot() + "/images/course-info360.png"}
 					alt="A line drawing of two people discussing a sketch"
-					link = "https://github.com/andyjko/info360/"
+					link = "https://github.com/amyjko/info360/"
 					header="INFO 360 Design Methods"
 					content=". This undergraduate class teaches students design thinking skills in the domain of information and computing. It leverages multiple forms of active learning, involves a significant amount of studio-based learning, and helps students develop creative confidence."
 				/>

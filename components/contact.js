@@ -46,7 +46,7 @@ class ContactInfo extends React.Component {
 				<Block 
 					image={this.props.app.getWebRoot() + "/images/logo-github.jpg"}
 					alt="The Github logo."
-					link="http://github.com/andyjko"
+					link="http://github.com/amyjko"
 					header="GitHub"
 					content=". I host a lot of my content and software projects on GitHub. Feel free to submit issues and pull requests to my various repositories."
 				/>
@@ -62,7 +62,7 @@ class ContactInfo extends React.Component {
 				<Block 
 					image={this.props.app.getWebRoot() + "/images/logo-facebook.jpg"}
 					alt="The Facebook logo."
-					link="https://www.facebook.com/andyjko"
+					link="https://www.facebook.com/amyjko"
 					header="Facebook"
 					content=". I primarily use Facebook for non-work relationships (though that boundary is blurry). I usually only accept connections from people I've met IRL and have a social relationship with, so if I have a purely professional relationship with you, please don't be offended if I decline your friend request. Add me on LinkedIn instead."
 				/>

@@ -126,9 +126,9 @@
 			{ title: "See Barista", url: "https://www.youtube.com/watch?v=gAxjUh9d2YI" },
 			{ title: "See Whyline for Alice", url: "https://www.youtube.com/watch?v=wcy4JEmiQzI" },
 			{ title: "See Whyline for Java", url: "https://www.youtube.com/watch?v=t6gVZ-qZ4sI" },
-			{ title: "Whyline for Java source", url: "https://github.com/andyjko/whyline"},
+			{ title: "Whyline for Java source", url: "https://github.com/amyjko/whyline"},
 			{ title: "Try Cleanroom", url: "demo/cleanroom" },
-			{ title: "Feedlack source", url: "https://github.com/andyjko/feedlack" }
+			{ title: "Feedlack source", url: "https://github.com/amyjko/feedlack" }
 		],
 		"startdate": 2004,
 		"stopdate": null,

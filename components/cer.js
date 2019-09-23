@@ -78,7 +78,7 @@ class CER extends React.Component {
 
 	render() {
 		
-		return <EmbeddedGist gist="andyjko/689837b8eefccb3a8a28ff0aa5300615" />
+		return <EmbeddedGist gist="amyjko/689837b8eefccb3a8a28ff0aa5300615" />
 		
 	}
 }
