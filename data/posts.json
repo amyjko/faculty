@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/im-trans-call-me-amy-8a72a3951964",
+		title: "I'm trans! Call me Amy.",
+		date: "2019.9",
+		tags: ["academia", "personal"],
+		img: "comingout",
+		alt: "A fuzzy trans pride flag, with a small face peeking out of it."	
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/csedcon-2019-trip-report-a-deep-dive-into-cs-education-policy-98efb62eb341",
 		title: "CSEdCon 2019 trip report: a deep dive into CS education policy",
 		date: "2019.9",
