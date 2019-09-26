@@ -2,6 +2,19 @@
 	{
 		"id": "",
 		"kind": "refereed journal paper",
+		"authors": ["Greg L. Nelson", "Amy J. Ko"],
+		"year": 2019,
+		"title": "Towards validity for a formative assessment for language-specific program tracing skills",
+		"source": "ACM Koli Calling International Conference on Computing Education Research",
+		"pages": "to appear",
+		"digital library url": null,
+		"local url": null,
+		"publisher": "ACM",
+		"contribution": "Contributes theoretical perspectives on how to assess program tracing skills, and how to think about assessment validity."
+	},
+	{
+		"id": "",
+		"kind": "refereed journal paper",
 		"authors": ["Qiang Hao", "David H. Smith IV", "Naitra Iriumi", "Michaeil Tsikerdekis", "Amy J. Ko"],
 		"year": 2019,
 		"title": "A Systematic Investigation of Replications in Computing Education Research",
