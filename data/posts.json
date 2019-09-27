@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/what-coming-out-as-trans-should-look-like-395f31beeddb",
+		title: "What coming out as trans should look like",
+		date: "2019.9",
+		tags: ["academia", "personal"],
+		img: "comingoutresponse",
+		alt: "A photograph of Amy smiling at her desk."	
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/im-trans-call-me-amy-8a72a3951964",
 		title: "I'm trans! Call me Amy.",
 		date: "2019.9",
