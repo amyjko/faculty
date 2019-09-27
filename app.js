@@ -110,7 +110,7 @@ class App extends React.Component {
 					<Route path="/cer" component={CER}/>
 					<Route path="*" component={Unknown}/>
 				</Switch>
-				<Footer/>
+				{currentRoute === "/cv" ? null : <Footer/>}
 			</div>
 		)
 	}
