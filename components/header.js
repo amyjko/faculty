@@ -21,7 +21,7 @@ class Header extends React.Component {
 						<small>
  							<br/>Associate Professor
 							<br/><a href="https://ischool.uw.edu/academics/informatics">Informatics</a> Program Chair
-							<br/><a href="http://ischool.uw.edu" target="_blank">iSchool</a> + <a href='http://cs.washington.edu' target="_blank">CSE</a>
+							<br/><a href="http://ischool.uw.edu" target="_blank">iSchool</a> + <a href='http://cs.washington.edu' target="_blank">CSE</a> <small>(courtesy)</small>
 							<br/><a href="http://www.washington.edu" target="_blank">UW Seattle</a>
 							<br/><Link to="/cv">CV</Link>
 						</small>
