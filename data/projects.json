@@ -62,10 +62,10 @@
 		"description": "Engineering software in professional contexts requires far more than knowing foundations of computing. My lab investigates all of the advanced skills, soft and hard, that are required for developers to be great engineers, including communication skills, collaboration skills, and design skills.",
 		"funding": ["NSF Exploratory Programming", "NSF CAREER"],
 		"people": ["ajko", "plli", "pchilana"],
-		"papers": ["greatengineer1", "answerdash","nonengineers", "informationneeds","facebookcasestudy", "devwhiteboards", "complexdomains", "answerdash"],
+		"papers": ["greatengineer2", "greatengineer1", "answerdash","nonengineers", "informationneeds","facebookcasestudy", "devwhiteboards", "complexdomains", "answerdash"],
 		"links": [],
 		"startdate": 2013,
-		"stopdate": null,
+		"stopdate": 2019,
 		"impact": "This work has been read widely in industry, including by product teams at Microsoft, Adobe, Google, and ABB. Our research on software engineering experience have been used to frame soft skills instruction in the <a href='http://www.afsenyc.org/'>Academy for Software Engineering</a> curriculum in New York and have also reached over 10,000 academics and software engineers through an <a href='https://www.youtube.com/watch?v=OBlmLjeORUQ&feature=youtu.be&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU'>ACM Learning Center Webinar</a>."
 	},
 	{

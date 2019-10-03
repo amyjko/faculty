@@ -1,5 +1,18 @@
 [
 	{
+		"id": "greatengineer2",
+		"kind": "refereed journal paper",
+		"authors": ["Paul Luo Li", "Amy J. Ko", "Andrew Begel"],
+		"year": 2019,
+		"title": "What Distinguishes Great Software Engineers?",
+		"source": "Empirical Software Engineering",
+		"pages": "to appear",
+		"digital library url": null,
+		"local url": null,
+		"publisher": "Springer",
+		"contribution": "Via a survey of nearly 2,000 developers, finds that great engineers are distinguished by writing good code, adapting to future business value and costs, being great decision-makers, avoiding making others’ jobs harder, and continuously learning."
+	},
+	{
 		"id": "traceassess",
 		"kind": "refereed journal paper",
 		"authors": ["Greg L. Nelson", "Andrew Hu", "Benjamin Xie", "Amy J. Ko"],
