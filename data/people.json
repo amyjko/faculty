@@ -321,7 +321,7 @@
 		"dept": "Computer Science",
 		"coadvisor": "James Fogarty",
 		"bio": "Amanda is a Ph.D. student in Computer Science & Engineeering and is interested in Software Engineering, HCI, and making software easier to learn, use, and make. She is investigating a range of techniques for reverse engineering useful models of user interfaces.",
-		"url": "http://homes.cs.washington.edu/~amaswea/",
+		"url": "https://amaswea.github.io/",
 		"startdate": 2015,
 		"enddate": 2019,
 		"achievements": [ "NSF Graduate Research Fellowship (2016)" ]
