@@ -6,7 +6,7 @@
 		"description": "Robust understanding of a programming language is a key foundation for being able to create software. My lab investigates what it means to know a programming language, invents and evaluates educational technologies that streamline learning of a programming language, and invents and evaluates assessments that help identify what learners do and do not know about a programming language.",
 		"funding": ["NSF Cyberlearning", "NSF CE21", "Microsoft"],
 		"people": ["bxie", "glnelson", "ajko", "kwikh", "mjslee", "yanan15"],
-		"papers": ["cs1theory", "gidget6", "pltutor1","tutorialeval", "tracing", "statscomprehension", "irteval", "gidget1", "gidget2", "gidget3", "gidget4", "gidget5", "gidget6", "adultattitudes", "gidgetabandoment"],
+		"papers": ["traceassess", "cs1theory", "gidget6", "pltutor1","tutorialeval", "tracing", "statscomprehension", "irteval", "gidget1", "gidget2", "gidget3", "gidget4", "gidget5", "gidget6", "adultattitudes", "gidgetabandoment"],
 		"links": [
 			{ title: "Try Gidget", url: "http://helpgidget.org" }
 		],
