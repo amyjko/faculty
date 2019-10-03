@@ -2,13 +2,13 @@
 	{
 		"id": "",
 		"kind": "refereed journal paper",
-		"authors": ["Greg L. Nelson", "Amy J. Ko"],
+		"authors": ["Greg L. Nelson", "Andrew Hu", "Benjamin Xie", "Amy J. Ko"],
 		"year": 2019,
 		"title": "Towards validity for a formative assessment for language-specific program tracing skills",
 		"source": "ACM Koli Calling International Conference on Computing Education Research",
 		"pages": "to appear",
 		"digital library url": null,
-		"local url": null,
+		"local url": "Nelson2019TracingValidity.pdf",
 		"publisher": "ACM",
 		"contribution": "Contributes theoretical perspectives on how to assess program tracing skills, and how to think about assessment validity."
 	},
