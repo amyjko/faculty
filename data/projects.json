@@ -21,7 +21,7 @@
 		"description": "A critical part of creating software is being able to understand programming problems, identify solutions to solve them, and systematically implement, verify, and debug programs, and avoid mistakes throughout. My lab investigates effective ways of learning these skills, and orchestrating them with self-regulation, process, and strategy.",
 		"funding": ["NSF Exploratory Programming", "NSF Cyberlearning", "NSF Programming Strategies"],
 		"people": ["dloksa", "ajko", "bxie", "olesona"],
-		"papers": ["csproblemsolving1","csproblemsolving2", "ideagardenjvlc", "tracing", "teachingstrategies", "errormodel", "errorframework"],
+		"papers": ["csproblemsolving1","csproblemsolving2", "ideagardenjvlc", "tracing", "teachingstrategies", "errormodel", "errorframework", "metajournaling"],
 		"links": [],
 		"startdate": 2003,
 		"stopdate": null,

@@ -1,5 +1,18 @@
 [
 	{
+		"id": "metajournaling",
+		"kind": "refereed conference paper",
+		"authors": ["Dastyni Loksa", "Benjamin Xie", "Harrison Kwik", "Amy J. Ko"],
+		"year": 2020,
+		"title": "Investigating Novices' In Situ Reflections on Their Programming Process",
+		"source": "ACM Technical Symposium on Computer Science Education (SIGCSE), Research Track",
+		"pages": "to appear",
+		"digital library url": null,
+		"local url": null,
+		"publisher": "ACM",
+		"contribution": "Presents evidence that self-regulation during programming is highly variable in practice, and that teaching self-regulation skills to improve programming outcomes may require differentiated instruction based on students self-awareness and existing programming practices."
+	},
+	{
 		"id": "greatengineer2",
 		"kind": "refereed journal paper",
 		"authors": ["Paul Luo Li", "Amy J. Ko", "Andrew Begel"],
@@ -14,7 +27,7 @@
 	},
 	{
 		"id": "traceassess",
-		"kind": "refereed journal paper",
+		"kind": "refereed conference paper",
 		"authors": ["Greg L. Nelson", "Andrew Hu", "Benjamin Xie", "Amy J. Ko"],
 		"year": 2019,
 		"title": "Towards Validity for a Formative Assessment for Language-Specific Program Tracing Skills",
