@@ -1,5 +1,21 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/plateau-2019-trip-report-building-community-around-human-aspects-of-programming-languages-c70e893930ce",
+		title: "PLATEAU 2019 trip report: building community around human aspects of programming languages",
+		date: "2019.10",
+		tags: ["academia", "design", "HCI", "programming languages"],
+		img: "plateau19",
+		alt: "A photograph of attendees chatting after the workshop."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/100-hours-of-name-change-labor-c652c22a89b9",
+		title: "100 hours of name change labor",
+		date: "2019.10",
+		tags: ["academia", "personal", "information", "HCI"],
+		img: "namechange",
+		alt: "An illustration showing a stick figure yelling the name 'Amy' at a wall, but it's bouncing off into a pile. A set of corporate logos behind the wall."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/what-coming-out-as-trans-should-look-like-395f31beeddb",
 		title: "What coming out as trans should look like",
 		date: "2019.9",
