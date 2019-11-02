@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/trip-report-bridging-cs-for-all-across-western-and-eastern-washington-60e9543535e6",
+		title: "Trip report: Bridging CS for All across western and eastern Washington",
+		date: "2019.11",
+		tags: ["academia", "computing education", "policy", "trip report"],
+		img: "spokane19",
+		alt: "A photograph of the Spokane sunset."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/plateau-2019-trip-report-building-community-around-human-aspects-of-programming-languages-c70e893930ce",
 		title: "PLATEAU 2019 trip report: building community around human aspects of programming languages",
 		date: "2019.10",
