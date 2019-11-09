@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/what-counts-as-computer-science-in-k-12-education-a7173ff87801",
+		title: "What counts as computer science in K-12 education?",
+		date: "2019.11",
+		tags: ["computing education", "policy", "trip report"],
+		img: "csdefinitionworkshop",
+		alt: "A photograph of Janet Gordon in front of a slide of CS definitions."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/trip-report-bridging-cs-for-all-across-western-and-eastern-washington-60e9543535e6",
 		title: "Trip report: Bridging CS for All across western and eastern Washington",
 		date: "2019.11",
