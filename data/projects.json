@@ -93,7 +93,7 @@
 			{ title: "See Genie", url: "https://www.youtube.com/watch?v=Ivtvyy7m-qc" },
 			{ title: "See Rewire", url: "https://www.youtube.com/watch?v=9LA8feFOsOo" },
 			{ title: "Try Frictionary", url: "demo/frictionary" },
-			{ title: "See Scry", url: "https://www.youtube.com/watch?v=J-KlZ3hzuWg" }
+			{ title: "See Scry", url: "https://www.youtube.com/watch?v=pUvtbn_Ldu0" }
 		],
 		"startdate": 2016,
 		"stopdate": null,
@@ -122,10 +122,10 @@
 		"people": ["ajko", "burg"],
 		"papers": ["seekrelatecollect", "maintenancetasks", "devinterrupt", "jasper", "timelapse", "cleanroom", "barista", "textediting", "whyline1", "whyline2", "whyline3", "whyline4"],
 		"links": [
-			{ title: "See Timelapse", url: "https://www.youtube.com/watch?v=tgTGy_P2Grw" },
-			{ title: "See Barista", url: "https://www.youtube.com/watch?v=gAxjUh9d2YI" },
-			{ title: "See Whyline for Alice", url: "https://www.youtube.com/watch?v=wcy4JEmiQzI" },
-			{ title: "See Whyline for Java", url: "https://www.youtube.com/watch?v=t6gVZ-qZ4sI" },
+			{ title: "See Timelapse", url: "https://www.youtube.com/watch?v=Uw0PP00xafs" },
+			{ title: "See Barista", url: "https://www.youtube.com/watch?v=rR8glIsliSo" },
+			{ title: "See Whyline for Alice", url: "https://www.youtube.com/watch?v=fP8swbzeDuY" },
+			{ title: "See Whyline for Java", url: "https://www.youtube.com/watch?v=pbElN8nfe3k" },
 			{ title: "Whyline for Java source", url: "https://github.com/amyjko/whyline"},
 			{ title: "Try Cleanroom", url: "demo/cleanroom" },
 			{ title: "Feedlack source", url: "https://github.com/amyjko/feedlack" }
@@ -144,8 +144,8 @@
 		"papers": ["beta", "postusability", "openbugs1", "openbugs2", "openbugs3", "userfeedback", "userfeedback2", "newsproblems", "linguisticbugs", "lemonaid1", "lemonaid2", "lemonaid3", "crystal"],
 		"links": [
 			{ title: "See 30 years of news", url: "demo/news" },
-			{ title: "See Crystal", url: "https://www.youtube.com/watch?v=9jFYVts7zB4" },
-			{ title: "Try AnswerDash", url: "https://www.youtube.com/watch?v=fw18aYKgd6k" }
+			{ title: "See Crystal", url: "https://www.youtube.com/watch?v=XqkLlKHQeKI" },
+			{ title: "See AnswerDash", url: "https://www.youtube.com/watch?v=Lay6EWYVhjY" }
 		],
 		"startdate": 2004,
 		"stopdate": null,
