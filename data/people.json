@@ -1,22 +1,8 @@
 [
 	{
-		"id": "st3f",
-		"name": "Stefania Druga",
-		"active": true,
-		"advised": false,
-		"level": "phd",
-		"dept": "Information School",
-		"coadvisor": null,
-		"bio": "Stefania Druga is the creator of http://cognimates.me, a platform for AI education for kids, which started as her Master Thesis at MIT Media Lab. Currently is a Ph.D. student at the University of Washington in the Digital Youth Lab. She has observed in longitudinal studies how 450 children from 7 countries are growing up with AI and how hey can acquire AI literacy concepts through creative learning activities.",
-		"url": "http://www.drugastefania.com",
-		"startdate": 2019,
-		"enddate": null,
-		"achievements": []
-	},
-	{
 		"id": "chandrashree",
 		"name": "Chandrashree Karnani",
-		"active": true,
+		"active": false,
 		"advised": true,
 		"level": "undergrad",
 		"dept": "Information School",
@@ -30,7 +16,7 @@
 	{
 		"id": "zcolah",
 		"name": "Zoshua Colah",
-		"active": true,
+		"active": false,
 		"advised": true,
 		"level": "undergrad",
 		"dept": "Information School",
@@ -49,7 +35,7 @@
 		"level": "phd",
 		"dept": "Computer Science",
 		"coadvisor": null,
-		"bio": "Neil is a PhD student in Computer Science and Engineering, curiously pursuing connections between debugging, self-regulation, meta-cognition, tacit knowledge, and programming strategies.",
+		"bio": "Neil is a PhD student in Computer Science and Engineering, curiously pursuing connections between between debugging, self-regulation, meta-cognition, tacit knowledge, and programming strategies.",
 		"url": "https://neildryan.com/",
 		"startdate": 2018,
 		"enddate": null,
@@ -58,7 +44,7 @@
 	{
 		"id": "chriszh",
 		"name": "Christina Zhang",
-		"active": true,
+		"active": false,
 		"advised": true,
 		"level": "undergrad",
 		"dept": "Computer Science and the Information School",
@@ -240,7 +226,7 @@
 	{
 		"id": "yanan15",
 		"name": "Annie Yan",
-		"active": true,
+		"active": false,
 		"advised": false,
 		"level": "phd",
 		"dept": "Information School",
