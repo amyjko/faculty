@@ -143,7 +143,6 @@
 		"people": ["ajko", "pchilana", "mjslee", "dosono", "padma"],
 		"papers": ["beta", "postusability", "openbugs1", "openbugs2", "openbugs3", "userfeedback", "userfeedback2", "newsproblems", "linguisticbugs", "lemonaid1", "lemonaid2", "lemonaid3", "crystal"],
 		"links": [
-			{ title: "See 30 years of news", url: "demo/news" },
 			{ title: "See Crystal", url: "https://www.youtube.com/watch?v=XqkLlKHQeKI" },
 			{ title: "See AnswerDash", url: "https://www.youtube.com/watch?v=Lay6EWYVhjY" }
 		],
