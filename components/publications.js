@@ -24,7 +24,7 @@ _.each(pubs, (pub) => {
 
 	pub.tags = [];
 	// If there's one or more award...
-	if(pub.award && pub.award.length > 0) pub.tags.push("award-winning");
+	if(pub.award && pub.award.length > 0) pub.tags.push("Award-winning");
 	
 	// If there's an acronymn in the source name
 	if(pub.source.indexOf("(SIGCSE)") >= 0) pub.tags.push("SIGCSE");
@@ -140,7 +140,7 @@ class Publications extends React.Component {
 				<div className="lead">These are my academic publications. See <a href="https://scholar.google.com/citations?user=otmdDLoAAAAJ&hl=en" target="_blank">who's citing them.</a></div>
 				
 				<p>
-					<small>My publications prior to 2020 are under my former name Andrew J. Ko. However, I prefer that you <strong>cite all of my publications with my new name</strong>, as I do below. Don’t worry about reviewers getting confused; citation metadata will be otherwise identical, and you can always include a DOI to help bots identify the work. Thank you for respecting my gender identity and name.</small>					
+					<small>My publications prior to 2020 are under my former name. However, I prefer that you <strong>cite all of my publications with my new name</strong>, <em>Amy J. Ko</em>, as I do below. Why? Names represent people, not people <em>at a point in time</em>. My name is Amy now, so credit my work with my name. If you are worried about bots getting confused, include a DOI in your citation, which you should always do anyway. Thank you for respecting my gender identity, name, and pronouns.</small>
 				</p>	
 				
 				<hr/>
