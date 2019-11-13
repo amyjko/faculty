@@ -144,6 +144,7 @@
 		"papers": ["beta", "postusability", "openbugs1", "openbugs2", "openbugs3", "userfeedback", "userfeedback2", "newsproblems", "linguisticbugs", "lemonaid1", "lemonaid2", "lemonaid3", "crystal"],
 		"links": [
 			{ title: "See Crystal", url: "https://www.youtube.com/watch?v=XqkLlKHQeKI" },
+			{ title: "See LemonAid", url: "https://www.youtube.com/watch?v=IkKObjGv42o" },
 			{ title: "See AnswerDash", url: "https://www.youtube.com/watch?v=Lay6EWYVhjY" }
 		],
 		"startdate": 2004,
