@@ -23,7 +23,7 @@ class Teaching extends React.Component {
 				<Block
 					image={this.props.app.getWebRoot() + "/images/course-info442.jpg"}
 					alt="A tesselation of squares and triangles"
-					link="https://canvas.uw.edu/courses/1273825"
+					link="https://canvas.uw.edu/courses/1345618"
 					header="INFO 442 Cooperative Software Development"
 					content=". This undergraduate software engineering class teaches foundations of team-based software development, leveraging the latest research on coordination, cooperation, and human cognition in software development. Students leave ready to become meaningful contributors to teams big and small, but also to understand the processes that teams use and how they can improve them."
 				/>
