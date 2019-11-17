@@ -1,5 +1,13 @@
 [
 	{
+		url: "http://medium.com/@amyjko/finding-my-voice-literally-13d2c06eb3f7",
+		title: "Finding my voice (literally)",
+		date: "2019.11",
+		tags: ["personal", "academia"],
+		img: "voice",
+		alt: "Blue tendrils interleaved with pink ones."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/what-counts-as-computer-science-in-k-12-education-a7173ff87801",
 		title: "What counts as computer science in K-12 education?",
 		date: "2019.11",
