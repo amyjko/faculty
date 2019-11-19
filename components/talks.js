@@ -13,10 +13,10 @@ class Talks extends React.Component {
 					image={this.props.app.getWebRoot() + "/images/talk-koli2019.jpg"}
 					alt="A screenshot of the first slide of the keynote, showing title and Koli national park."
 					link="https://www.youtube.com/watch?v=m9sqJz1oM-M"
-					header="21st century grand challenges in computing education"
+					header="21st Century Grand Challenges in Computing Education"
 					content=
 						<span>
-							. I gave this keynote at the 2019 Koli Calling conference, a computing education research conference. In it, I argue that to address epistemic challenges such as climate change and stabilizing democracies, everyone in the world needs to learn the limits of computing, social responsibility with computing, data literacy, and diversity literacy. This video is a rehearsal I recorded prior to the keynote.
+							. I gave this keynote at the 2019 <a href="http://kolicalling.fi">Koli Calling</a> conference, a computing education research conference in beautiful Koli National Park. In it, I argue that to address epistemic challenges such as climate change and stabilizing democracies, everyone in the world needs to learn the limits of computing, social responsibility with computing, data literacy, and diversity literacy. This video is a rehearsal I recorded prior to the keynote.
 						</span>
 				/>
 
@@ -24,7 +24,7 @@ class Talks extends React.Component {
 					image={this.props.app.getWebRoot() + "/images/eth2019programming.jpg"}
 					alt="A screenshot of the first slide of the keynote."
 					link="https://www.youtube.com/watch?v=-crfoC6NtaE"
-					header="Programming: What it is and how to teach it"
+					header="Programming: What it is and How to Teach it"
 					content=
 						<span>
 							. I gave this invited talk in 2019 at ETH Zurich's CS department. I shared my lab's latest research on programming, including programming language learning, API learning, programming problem solving, and programming strategies. See <a href="slides/ETHZurich2019Programming.pdf">the slides</a> or the <a href="https://www.video.ethz.ch/speakers/d-infk/2019/spring/251-0100-00L.html">recording of my ETH talk</a>.
