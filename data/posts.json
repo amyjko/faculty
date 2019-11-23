@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/21st-grand-challenges-for-computing-education-f5e937d57155",
+		title: "21st Century Grand Challenges for Computing Education",
+		date: "2019.11",
+		tags: ["computing education", "academia", "policy", "diversity", "science"],
+		img: "koli19",
+		alt: "A photograph of me presenting at Koli in front of my slide."
+	},
+	{
 		url: "http://medium.com/@amyjko/finding-my-voice-literally-13d2c06eb3f7",
 		title: "Finding my voice (literally)",
 		date: "2019.11",

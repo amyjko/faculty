@@ -12,11 +12,11 @@ class Talks extends React.Component {
 				<Block
 					image={this.props.app.getWebRoot() + "/images/talk-koli2019.jpg"}
 					alt="A screenshot of the first slide of the keynote, showing title and Koli national park."
-					link="https://www.youtube.com/watch?v=m9sqJz1oM-M"
+					link="https://www.youtube.com/watch?v=mjX3yLPKjvE"
 					header="21st Century Grand Challenges in Computing Education"
 					content=
 						<span>
-							. I gave this keynote at the 2019 <a href="http://kolicalling.fi">Koli Calling</a> conference, a computing education research conference in beautiful Koli National Park. In it, I argue that to address epistemic challenges such as climate change and stabilizing democracies, everyone in the world needs to learn the limits of computing, social responsibility with computing, data literacy, and diversity literacy. This video is a rehearsal I recorded prior to the keynote.
+							. I gave this keynote at the 2019 <a href="http://kolicalling.fi">Koli Calling</a> conference, a computing education research conference in beautiful Koli National Park. In it, I argue that to address epistemic challenges such as climate change and stabilizing democracies, everyone in the world needs to learn the limits of computing, social responsibility with computing, data literacy, and diversity literacy. Watch the <a href="https://www.youtube.com/watch?v=mjX3yLPKjvE">recorded talk</a>, <a href="https://www.youtube.com/watch?v=m9sqJz1oM-M">a rehearsal</a> I recorded prior to the keynote, view <a href="slides/Koli2019Keynote.pdf">the slides</a>, or <a href="https://medium.com/bits-and-behavior/21st-grand-challenges-for-computing-education-f5e937d57155"> read the blog post</a>.
 						</span>
 				/>
 
