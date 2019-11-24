@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/koli-calling-2019-trip-report-computing-education-research-at-the-limits-572da5218414",
+		title: "Koli Calling 2019 trip report: Computing education research at the limits",
+		date: "2019.11",
+		tags: ["computing education", "trip report"],
+		img: "kolitrip19",
+		alt: "A panoramic of the Koli National Park."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/21st-grand-challenges-for-computing-education-f5e937d57155",
 		title: "21st Century Grand Challenges for Computing Education",
 		date: "2019.11",
