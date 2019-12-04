@@ -32,9 +32,9 @@
 		"year": 2019,
 		"title": "What Distinguishes Great Software Engineers?",
 		"source": "Empirical Software Engineering",
-		"pages": "to appear",
-		"digital library url": null,
-		"local url": null,
+		"pages": "1-31",
+		"digital library url": "https://doi.org/10.1007/s10664-019-09773-y",
+		"local url": "Li2019WhatDistinguishesEngineers.pdf",
 		"publisher": "Springer",
 		"contribution": "Via a survey of nearly 2,000 developers, finds that great engineers are distinguished by writing good code, adapting to future business value and costs, being great decision-makers, avoiding making others’ jobs harder, and continuously learning."
 	},
