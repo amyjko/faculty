@@ -39,7 +39,7 @@ class Impact extends React.Component {
 			<div>
 
 				<div className="lead">
-					This is the impact of my research and expertise.
+					I actively share my research and expertise with the world.
 				</div>
 
 				{ blocks }
