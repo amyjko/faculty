@@ -23,6 +23,11 @@ class Paper extends React.Component {
 	render() {
 
 		var url = this.getURL();
+		var pdf = 
+			this.props.authorizer ? <small><a href={this.props.authorizer} target="_blank">PDF</a></small> : 
+			this.props["local url"] ? <small><a href={"papers/" + this.props["local url"]} target="_blank">PDF</a></small> : 
+			null;
+		var dl = this.props["digital library url"] ? <small><a href={this.props["digital library url"]} target="_blank">Digital library</a></small> : null;
 		
 		var authors = this.props.authors.join(", ");
 
@@ -50,7 +55,7 @@ class Paper extends React.Component {
 				<div name={ this.props.id } className={"paper ws-bottom " + (this.props.highlight ? "bg-info" : "")}>
 					{award}
 					{award ? <br/> : null}
-					{title}
+					{title} {this.props.hideLink ? null : <small>{pdf} {dl}</small>}
 					<br/>{authors} ({this.props.year})
 					<br/><small><i>{this.props.source}</i>{this.props.pages == '' ? "." : ", " + this.props.pages + "."}</small>
 					<br/>{contribution}
