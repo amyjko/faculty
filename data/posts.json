@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/a-modern-vision-for-peer-review-d5f73f0fae07",
+		title: "A modern vision for peer review",
+		date: "2019.12",
+		tags: ["academia"],
+		img: "newpeerreview",
+		alt: "An illustration of hundreds of papers being sorted past a red peer review line."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/koli-calling-2019-trip-report-computing-education-research-at-the-limits-572da5218414",
 		title: "Koli Calling 2019 trip report: Computing education research at the limits",
 		date: "2019.11",
