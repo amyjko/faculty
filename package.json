@@ -2,7 +2,7 @@
 	"name": "UWFacultyPage",
 	"version": "1.0.0",
         "description": "The webpage for University of Washington professor Andy J. Ko.",
-        "license": "Creative Commons Attribution-NonCommercial 4.0 International",
+        "license": "MIT License",
         "repository": "https://github.com/andyjko/faculty.git",
 	"scripts": {
 		"watch": "watchify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js -o \"> build/app.js; npm run test\" -v --poll",
