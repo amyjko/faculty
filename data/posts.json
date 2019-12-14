@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/making-time-to-transition-cf2096a037b3",
+		title: "Transition and overcommitment",
+		date: "2019.12",
+		tags: ["academia", "personal"],
+		img: "overcommitment2",
+		alt: "An erratic, sharply jumping plot of ups and downs, with watercolor backdrop."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/a-modern-vision-for-peer-review-d5f73f0fae07",
 		title: "A modern vision for peer review",
 		date: "2019.12",
