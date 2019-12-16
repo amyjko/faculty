@@ -16,7 +16,7 @@ class ContactInfo extends React.Component {
 					alt="The UW block logo."
 					link="mailto:ajko@uw.edu"
 					header="Email"
-					content=". I primarily use email to communicate with people outside UW. I read email once in the morning each weekday, and sometimes in the middle of the day if I'm in transit. I don't read on weekends unless I'm super engaged on a project."
+					content=". I primarily use email to communicate with people I don't know, and occasionally with collaborators who refuse to use anything else. If you're a student, a potential collaborator, or anyone else, write me an email to connect. I read email once in the morning each weekday. I don't read on weekends unless I'm super engaged on a project."
 				/>
 
 				<Block 
@@ -32,7 +32,7 @@ class ContactInfo extends React.Component {
 					alt="The Slack logo."
 					link="https://uwdub.slack.com/"
 					header="Slack"
-					content=". I use Slack for all of my internal lab communications, and for much of my UW communication with colleagues and PhD students. During the work day I treat Slack like instant messaging, and after hours I treat it like email, reading it in the morning. If you're at UW, join DUB Slack and DM me. I'm usually pretty responsive throughout the day."
+					content=". Slack is my preferred medium for collaboration with my Ph.D. students and other collaborators at UW and beyond. During the work day I treat Slack like instant messaging, and after hours I treat it like email, reading it in the morning. If you're at UW, join DUB Slack and DM me. I'm usually pretty responsive throughout the day."
 				/>
 
 				<Block 
@@ -40,7 +40,7 @@ class ContactInfo extends React.Component {
 					alt="The Twitter logo."
 					link="https://twitter.com/amyjko"
 					header="Twitter"
-					content=". I mostly broadcast on Twitter, and reply to other people's posts, but I do respond to direct messages. It's a good place to learn what's on my mind and when I have new writing to share."
+					content=". I mostly broadcast on Twitter, and reply to other people's posts, but I do respond to direct messages from non-trolls. It's a good place to learn what's on my mind and when I have new writing to share."
 				/>
 
 				<Block 
