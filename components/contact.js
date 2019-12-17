@@ -16,7 +16,7 @@ class ContactInfo extends React.Component {
 					alt="The UW block logo."
 					link="mailto:ajko@uw.edu"
 					header="Email"
-					content=". I primarily use email to communicate with people I don't know, and occasionally with collaborators who refuse to use anything else. If you're a student, a potential collaborator, or anyone else, write me an email to connect. I read email once in the morning each weekday. I don't read on weekends unless I'm super engaged on a project."
+					content=". I primarily use email to communicate with people I don't know and occasionally with collaborators who refuse to use anything else. If you're a student, a potential collaborator, or anyone else, write me an email to connect. I read email once in the morning each weekday. I don't read on weekends unless I'm super engaged on a project."
 				/>
 
 				<Block 
