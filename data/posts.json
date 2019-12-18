@@ -1,9 +1,17 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/a-lifetime-of-dealing-with-difference-6683ccbc5ce8",
+		title: "A lifetime of dealing with difference",
+		date: "2019.12",
+		tags: ["academia", "personal", "society", "diversity"],
+		img: "dealingwithdifference",
+		alt: "A pre-school class photo showing several white kids and me, the half-Asian one in the corner."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/making-time-to-transition-cf2096a037b3",
 		title: "Transition and overcommitment",
 		date: "2019.12",
-		tags: ["academia", "personal"],
+		tags: ["academia", "personal", "diversity"],
 		img: "overcommitment2",
 		alt: "An erratic, sharply jumping plot of ups and downs, with watercolor backdrop."
 	},
