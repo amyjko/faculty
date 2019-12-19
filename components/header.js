@@ -22,7 +22,7 @@ class Header extends React.Component {
 							<br/><small><a href="https://medium.com/bits-and-behavior/im-trans-call-me-amy-8a72a3951964" target="_blank">formerly Andrew</a></small>
  							<br/>Associate Professor
 							<br/><a href="https://ischool.uw.edu/academics/informatics">Informatics</a> Program Chair
-							<br/><a href="http://ischool.uw.edu" target="_blank">iSchool</a> + <a href='http://cs.washington.edu' target="_blank">CSE</a> <small>(courtesy)</small>
+							<br/><a href="http://ischool.uw.edu" target="_blank">The Information School</a>
 							<br/><a href="http://www.washington.edu" target="_blank">UW Seattle</a>
 							<br/><Link to="/cv">CV</Link>
 						</small>

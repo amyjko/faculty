@@ -83,7 +83,7 @@
 	},
 	{
 		"id": "uimining",
-		"active": true,
+		"active": false,
 		"name": "User interface mining",
 		"description": "User interfaces are structured documents, allowing us to analyze, reverse engineer, and transform them. My lab is applying techniques from program analysis and synthesis to automatically transform interfaces to be more accessible, usable, and useful.",
 		"funding": ["NSF Exploratory Programming"],
