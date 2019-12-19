@@ -1,5 +1,18 @@
 [
 	{
+		"id": "hcidifficulties",
+		"kind": "refereed conference paper",
+		"authors": ["Alannah Oleson", "Meron Solomon", "Amy J. Ko"],
+		"year": 2020,
+		"title": "Computing Students’ Learning Difficulties in HCI Education",
+		"source": "ACM SIGCHI Conference on Human Factors in Computing Systems (CHI)",
+		"pages": "to appear",
+		"digital library url": null,
+		"local url": null,
+		"publisher": "ACM",
+		"contribution": "Investigates the challenges that computing students face in learning HCI, finding challenges in understanding design as distinct from engineering, understanding design methods, finding resources to support design, interpreting feedback, scoping design problems, choosing between alternatives, and designing for diversity."
+	},
+	{
 		"id": "scout",
 		"kind": "refereed conference paper",
 		"authors": ["Amanda Swearngin", "Chenglong Wang", "James Fogarty", "Amy J. Ko"],
