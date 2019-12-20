@@ -46,7 +46,7 @@
 		"id": "apilearning",
 		"active": true,
 		"name": "API learning",
-		"description": "Most modern software is built by reusing APIs, libraries, frameworks, and other code that others have carefully designed and tested. Unfortunately, such reuse often requires robust learning of API features. My lab investigates barriers to learning API's robustly and invents more effective ways of leanring APIs.",
+		"description": "Most modern software is built by reusing APIs, libraries, frameworks, and other code that others have carefully designed and tested. Unfortunately, such reuse often requires robust learning of API features. My lab investigates barriers to learning API's robustly and invents more effective ways of learning APIs.",
 		"funding": ["NSF Cyberlearning", "NSF Exploratory Programming"],
 		"people": ["ajko", "kthayer"],
 		"papers": ["barriers", "bootcamps", "feasibility"],
@@ -59,7 +59,7 @@
 		"id": "softexpertise",
 		"active": false,
 		"name": "Software engineering expertise",
-		"description": "Engineering software in professional contexts requires far more than knowing foundations of computing. My lab investigates all of the advanced skills, soft and hard, that are required for developers to be great engineers, including communication skills, collaboration skills, and design skills.",
+		"description": "Engineering production software requires far more than knowing how to code. We've investigated the skills that are required for developers to be great engineers, including not only technical skills, but communication, collaboration, design, and business skills as well.",
 		"funding": ["NSF Exploratory Programming", "NSF CAREER"],
 		"people": ["ajko", "plli", "pchilana"],
 		"papers": ["greatengineer2", "greatengineer1", "answerdash","nonengineers", "informationneeds","facebookcasestudy", "devwhiteboards", "complexdomains", "answerdash"],
@@ -72,14 +72,14 @@
 		"id": "mlliteracy",
 		"active": true,
 		"name": "Understanding machine learning",
-		"description": "While most programs are still written by software developers, many are now built by gathering large amounts of data and automatically creating machine learned programs. My lab is investigating the immense comprehension challenges imposed by these probablistic forms of program behavior, as well as the literacy required to understand how they are shaping program behavior and society.",
+		"description": "While most programs are still written by developers, many are now built by gathering large amounts of data and automatically creating machine learned programs. My lab is investigating the immense comprehension challenges imposed by these probablistic forms of program behavior, as well as the literacy required to understand how they are shaping program behavior and society.",
 		"funding": [],
 		"people": ["ajko", "yreg", "kayur", "chandrashree"],
 		"papers": ["gestalt", "whydebugclassifier2", "whydebugclassifier1"],
 		"links": [],
 		"startdate": 2004,
 		"stopdate": null,
-		"impact": ""
+		"impact": "Our work on understanding machine learning has indirectly shaped several of the tools used in industry to develop and debug machine learned programs."
 	},
 	{
 		"id": "uimining",
@@ -92,18 +92,18 @@
 		"links": [
 			{ title: "See Genie", url: "https://www.youtube.com/watch?v=Ivtvyy7m-qc" },
 			{ title: "See Rewire", url: "https://www.youtube.com/watch?v=9LA8feFOsOo" },
-			{ title: "Try Frictionary", url: "demo/frictionary" },
+			{ title: "Try Frictionary", url: "http://faculty.uw.edu/ajko/demo/frictionary" },
 			{ title: "See Scry", url: "https://www.youtube.com/watch?v=pUvtbn_Ldu0" }
 		],
 		"startdate": 2016,
 		"stopdate": null,
-		"impact": null
+		"impact": "Our work on interface mining has been replicated in several indusry projects focused on supporting interface development."
 	},
 	{
 		"id": "methods",
 		"active": true,
 		"name": "Theory and methods",
-		"description": "My lab actively contributes new methods for studying programming.",
+		"description": "Studying programming is hard. We invent new methods for studying programming, and reflect on the science of studying programming, to help accelerate progress on improving it.",
 		"funding": [],
 		"people": ["ajko", "glnelson"],
 		"papers": ["walkthrough1", "walkthrough2", "practicalguide", "certheory"],
@@ -117,7 +117,7 @@
 		"id": "understanding",
 		"active": false,
 		"name": "Understanding program behavior",
-		"description": "Finding and fixing defects is one of the most challenging aspects of programming, and that requires understanding how a program is built. My lab studies this problem extensively and invents tools that make program understanding easier by combining human intelligence with machine intelligence, including time-travel debugging tools like the Whyline and Timelapse, testing tools like Cleanroom, Feedlack, and Frictionary, and editors that improve program understanding like Jasper and Barista.",
+		"description": "Finding and fixing bugs is challenging. My lab studies debugging and invents tools that it make program understanding easier by combining human intelligence with machine intelligence.",
 		"funding": ["NSF Fellowship", "NSF CAREER", "NDSEG Fellowship", "DARPA"],
 		"people": ["ajko", "burg"],
 		"papers": ["seekrelatecollect", "maintenancetasks", "devinterrupt", "jasper", "timelapse", "cleanroom", "barista", "textediting", "whyline1", "whyline2", "whyline3", "whyline4"],
@@ -127,7 +127,7 @@
 			{ title: "See Whyline for Alice", url: "https://www.youtube.com/watch?v=fP8swbzeDuY" },
 			{ title: "See Whyline for Java", url: "https://www.youtube.com/watch?v=pbElN8nfe3k" },
 			{ title: "Whyline for Java source", url: "https://github.com/amyjko/whyline"},
-			{ title: "Try Cleanroom", url: "demo/cleanroom" },
+			{ title: "Try Cleanroom", url: "http://facult.uw.edu/ajko/demo/cleanroom" },
 			{ title: "Feedlack source", url: "https://github.com/amyjko/feedlack" }
 		],
 		"startdate": 2004,

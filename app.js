@@ -10,6 +10,7 @@ import { Impact } from './components/impact';
 import { Students } from './components/students';
 import { Header } from './components/header';
 import { Projects } from './components/projects';
+import { Project } from './components/project';
 import { Reading } from './components/reading';
 import { Advice } from './components/advice';
 import { Teaching } from './components/teaching';
@@ -107,6 +108,7 @@ class App extends React.Component {
 					<Route path="/contact" render={(props) => <ContactInfo {...props} app={this} />} />
 					<Route path="/lab" render={(props) => <Students {...props} app={this} />} />
 					<Route path="/students/:student?" render={(props) => <Students {...props} app={this} />} />
+					<Route path="/projects/:id" render={(props) => <Project {...props} app={this} />} />
 					<Route path="/cv" render={(props) => <Vita {...props} app={this} />} />
 					<Route path="/cer" component={CER}/>
 					<Route path="*" component={Unknown}/>
