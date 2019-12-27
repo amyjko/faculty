@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/reflections-on-my-2019-academic-reflections-be495e344b19",
+		title: "Reflections on my 2019 academic reflections",
+		date: "2019.12",
+		tags: ["academia"],
+		img: "2019reflections",
+		alt: "An illustration of a mountain reflecting on a lake."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/a-lifetime-of-dealing-with-difference-6683ccbc5ce8",
 		title: "A lifetime of dealing with difference",
 		date: "2019.12",
