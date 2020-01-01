@@ -12,7 +12,7 @@ class Teaching extends React.Component {
 				<Block
 					image={this.props.app.getWebRoot() + "/images/course-info200.png"}
 					alt="A black and white version of an old painting with a child reading a newspaper"
-					link="https://canvas.uw.edu/courses/1223117"
+					link="https://canvas.uw.edu/courses/1355747"
 					header="INFO 200 Intellectual Foundations of Informatics"
 					content=
 						<span>
