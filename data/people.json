@@ -291,7 +291,9 @@
 		"url": "http://benjixie.com/",
 		"startdate": 2016,
 		"enddate": null,
-		"achievements": [ "NSF Graduate Research Fellowship (2017)" ]
+		"achievements": [ 
+			"NSF Graduate Research Fellowship (2017)" 
+		]
 	},
 	{
 		"id": "glnelson",
@@ -338,7 +340,9 @@
 		"url": "https://amaswea.github.io/",
 		"startdate": 2015,
 		"enddate": 2019,
-		"achievements": [ "NSF Graduate Research Fellowship (2016)" ]
+		"achievements": [ 
+			"NSF Graduate Research Fellowship (2016)" 
+		]
 	},
 	{
 		"id": "dloksa",
@@ -381,7 +385,9 @@
 		"startdate": 2009,
 		"enddate": 2016,
 		"thesis": "papers/Li2016Dissertation.pdf",
-		"achievements": []
+		"achievements": [
+			"Senior Data Scientist, Microsoft (2016-present)"
+		]
 	},
 	{
 		"id": "mjslee",
@@ -415,6 +421,7 @@
 		"enddate": 2015,
 		"thesis": "papers/Burg2015Dissertation.pdf",
 		"achievements": [
+			"Senior Software Engineer, Apple (2015-present)",
 			"ACM UIST Best Paper Nominee (2015)"
 		]
 	},
@@ -431,7 +438,10 @@
 		"startdate": 2007,
 		"enddate": 2012,
 		"thesis": "papers/Patel2012Dissertation.pdf",
-		"achievements": []
+		"achievements": [
+			"Research Scientist, Apple (2018-present)",
+			"Research Scientist, Google (2013-2018)",
+		]
 	},
 	{
 		"id": "pchilana",
