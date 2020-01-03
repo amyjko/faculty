@@ -82,7 +82,7 @@ class Projects extends React.Component {
 				
 				<p>
 					I share my work with three research communities: <em>computing education</em> (see <Link to={"/cer"}>my FAQ</Link>), <em>human-computer interaction</em>, and <em>software engineering</em>.
-					I work with many outstanding <Link to={"/students"}>students</Link> to <Link to={"/publications"}>publish</Link> our research, <Link to={"/posts"}>share it online</Link>, and <Link to={"/impact"}>apply it to practice</Link>. We do this work with several local communities:
+					I work with many outstanding <Link to={"/students"}>students</Link> to <Link to={"/publications"}>publish</Link> our research, then <Link to={"/posts"}>blog it</Link>, <Link to={"/talks"}>present it</Link>, <Link to={"/teaching"}>teach it</Link>, <Link to={"/books"}>synthesize it</Link>, and <Link to={"/impact"}>apply it to practice</Link>. We do this work with several local communities:
 				</p>
 				
 				<ul>
