@@ -345,17 +345,17 @@
 	{
 		"id": "amaswea",
 		"name": "Amanda Swearngin",
-		"active": true,
+		"active": false,
 		"advised": true,
 		"level": "phd",
 		"dept": "Computer Science",
 		"coadvisor": "James Fogarty",
-		"bio": "Amanda is a Ph.D. student in Computer Science & Engineeering. She invents design tools that exploit program analysis, program synthesis, constraint solving, and machine learning.",
+		"bio": "Amanda was a Ph.D. student in Computer Science & Engineeering. In her dissertation work contributed design tools that leverage program analysis, program synthesis, constraint solving, and machine learning.",
 		"url": "https://amaswea.github.io/",
 		"startdate": 2015,
 		"enddate": 2019,
 		"achievements": [ 
-			"NSF Graduate Research Fellowship (2016)" 
+			"NSF Graduate Research Fellowship (2016)"
 		]
 	},
 	{
