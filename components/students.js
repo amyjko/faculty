@@ -19,7 +19,7 @@ class Person extends React.Component {
 		return (
 			<div className={(this.props.highlight ? "bg-info" : "")} name={this.props.id}>
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/mug-" + this.props.id + ".jpg"}
+					image={this.props.app.getWebRoot() + "/images/headshots/mug-" + this.props.id + ".jpg"}
 					alt={"Photograph of " + this.props.name}
 					link={this.props.url}
 					header={null}

@@ -46,7 +46,7 @@ class Books extends React.Component {
 				</div>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/book-computingedhandbook.jpg"}
+					image={this.props.app.getWebRoot() + "/images/books/book-computingedhandbook.jpg"}
 					alt="The cover of The Cambridge Handbook of Computing Education Research, a strange arrangement of sharp objects pointing at a window."
 					link="https://www.cambridge.org/core/books/cambridge-handbook-of-computing-education-research/F8CFAF7B81A8F6BF5C663412BA0A943D"
 					header="The Cambridge Handbook of Computing Education Research"
@@ -54,7 +54,7 @@ class Books extends React.Component {
 				/>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/book-productivity.jpg"}
+					image={this.props.app.getWebRoot() + "/images/books/book-productivity.jpg"}
 					alt="The cover of the Rethinking Productivity in Software Engineering book, a picture of space."
 					link="https://www.apress.com/gp/book/9781484242209"
 					header="Rethinking Productivity in Software Engineering"
@@ -62,7 +62,7 @@ class Books extends React.Component {
 				/>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/book-makingsoftware.jpg"}
+					image={this.props.app.getWebRoot() + "/images/books/book-makingsoftware.jpg"}
 					alt="The cover of the Making Software book, showing a bridge, staring from the bottom looking up."
 					link="https://www.amazon.com/Making-Software-Really-Works-Believe/dp/0596808321"
 					header="Making Software: What Really Works, and Why We Believe It"

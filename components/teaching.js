@@ -10,7 +10,7 @@ class Teaching extends React.Component {
 				</div>
 
 				<Block
-					image={this.props.app.getWebRoot() + "/images/course-info200.png"}
+					image={this.props.app.getWebRoot() + "/images/courses/info200.png"}
 					alt="A black and white version of an old painting with a child reading a newspaper"
 					link="https://canvas.uw.edu/courses/1355747"
 					header="INFO 200 Intellectual Foundations of Informatics"
@@ -21,7 +21,7 @@ class Teaching extends React.Component {
 				/>
 
 				<Block
-					image={this.props.app.getWebRoot() + "/images/course-info360.png"}
+					image={this.props.app.getWebRoot() + "/images/courses/info360.png"}
 					alt="A line drawing of two people discussing a sketch"
 					link = "courses/info360/"
 					header="INFO 360 Design Methods"
@@ -32,7 +32,7 @@ class Teaching extends React.Component {
 				/>
 
 				<Block
-					image={this.props.app.getWebRoot() + "/images/course-info442.jpg"}
+					image={this.props.app.getWebRoot() + "/images/courses/info442.jpg"}
 					alt="A tesselation of squares and triangles"
 					link="https://canvas.uw.edu/courses/1345618"
 					header="INFO 442 Cooperative Software Development"
@@ -40,7 +40,7 @@ class Teaching extends React.Component {
 				/>
 
 				<Block
-					image={this.props.app.getWebRoot() + "/images/course-hcid520.jpg"}
+					image={this.props.app.getWebRoot() + "/images/courses/hcid520.jpg"}
 					alt="A black and white photograph of a woman operating the ENIAC, the first computer"
 					link="https://canvas.uw.edu/courses/1256337"
 					header="HCID 520 User Interface Software and Technology"

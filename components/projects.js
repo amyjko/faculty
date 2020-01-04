@@ -41,14 +41,14 @@ class ProjectSummary extends React.Component {
 		var people = [];
 		_.each(this.props.people, (person) => {
 			var path = person === "ajko" ? "bio" : this.props.app.getWebRoot() + "/students/" + person;
-			people.push(<Link key={person} to={path}><img src={this.props.app.getWebRoot() + "/images/mug-" + person + ".jpg"} className="student-mug img-circle" style={{width:32}} /></Link>);
+			people.push(<Link key={person} to={path}><img src={this.props.app.getWebRoot() + "/images/headshots/mug-" + person + ".jpg"} className="student-mug img-circle" style={{width:32}} /></Link>);
 		});
 		
 		var link = this.props.app.getWebRoot() + "/projects/" + this.props.id;
 
 		return (
 			<Block 
-				image={this.props.app.getWebRoot() + "/images/project-" + this.props.id + ".png"}
+				image={this.props.app.getWebRoot() + "/images/projects/project-" + this.props.id + ".png"}
 				alt={this.props.name}
 				link={link}
 				header={null}

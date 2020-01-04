@@ -61,14 +61,14 @@ class ProjectDetails extends React.Component {
 		var people = [];
 		_.each(this.props.people, (person) => {
 			var path = person === "ajko" ? "bio" : "students/" + person;
-			people.push(<Link key={person} to={path}><img src={this.props.app.getWebRoot() + "/images/mug-" + person + ".jpg"} className="student-mug img-circle" style={{width:32}} /></Link>);
+			people.push(<Link key={person} to={path}><img src={this.props.app.getWebRoot() + "/images/headshots/mug-" + person + ".jpg"} className="student-mug img-circle" style={{width:32}} /></Link>);
 		});
 
 		return (
 			<div>
 				<div className="lead"><em>{this.props.name}</em> <small>({this.props.startdate}&ndash;{this.props.stopdate})</small></div>
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/project-" + this.props.id + ".png"}
+					image={this.props.app.getWebRoot() + "/images/projects/project-" + this.props.id + ".png"}
 					alt={this.props.name}
 					header={null}
 					content=<span>

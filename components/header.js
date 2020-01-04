@@ -13,7 +13,7 @@ class Header extends React.Component {
 				<div className='row'>
 		
 					<div className="col-xs-5 col-sm-3 col-md-3">
-						<img className='img-thumbnail' alt="Headshot of Amy J. Ko" src={this.props.app.getWebRoot() + "/images/mug-ajko.jpg"} />
+						<img className='img-thumbnail' alt="Headshot of Amy J. Ko" src={this.props.app.getWebRoot() + "/images/headshots/mug-ajko.jpg"} />
 					</div>
 		
 					<div className="col-xs-7 col-sm-9 col-md-9" style={{lineHeight: "1.15em"}}>

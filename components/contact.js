@@ -12,7 +12,7 @@ class ContactInfo extends React.Component {
 				</div>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/logo-uw.jpg"}
+					image={this.props.app.getWebRoot() + "/images/contact/uw.jpg"}
 					alt="The UW block logo."
 					link="mailto:ajko@uw.edu"
 					header="Email"
@@ -20,7 +20,7 @@ class ContactInfo extends React.Component {
 				/>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/logo-mgh.jpg"}
+					image={this.props.app.getWebRoot() + "/images/contact/mgh.jpg"}
 					alt="A photograph of the front of Mary Gates Hall."
 					link="https://www.google.com/maps/place/Mary+Gates+Hall.+University+of+Washington/@47.6549552,-122.3101087,994m/data=!3m2!1e3!4b1!4m2!3m1!1s0x549014f2a95c2899:0xb2525ccd291489c!6m1!1e1"
 					header="Mary Gates Hall 015E"
@@ -28,7 +28,7 @@ class ContactInfo extends React.Component {
 				/>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/logo-slack.jpg"}
+					image={this.props.app.getWebRoot() + "/images/contact/slack.jpg"}
 					alt="The Slack logo."
 					link="https://uwdub.slack.com/"
 					header="Slack"
@@ -36,7 +36,7 @@ class ContactInfo extends React.Component {
 				/>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/logo-twitter.jpg"}
+					image={this.props.app.getWebRoot() + "/images/contact/twitter.jpg"}
 					alt="The Twitter logo."
 					link="https://twitter.com/amyjko"
 					header="Twitter"
@@ -44,7 +44,7 @@ class ContactInfo extends React.Component {
 				/>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/logo-github.jpg"}
+					image={this.props.app.getWebRoot() + "/images/contact/github.jpg"}
 					alt="The Github logo."
 					link="http://github.com/amyjko"
 					header="GitHub"
@@ -52,7 +52,7 @@ class ContactInfo extends React.Component {
 				/>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/logo-linkedin.jpg"}
+					image={this.props.app.getWebRoot() + "/images/contact/linkedin.jpg"}
 					alt="The LinkedIn logo."
 					link="https://www.linkedin.com/in/ajko/"
 					header="LinkedIn"
@@ -60,7 +60,7 @@ class ContactInfo extends React.Component {
 				/>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/logo-facebook.jpg"}
+					image={this.props.app.getWebRoot() + "/images/contact/facebook.jpg"}
 					alt="The Facebook logo."
 					link="https://www.facebook.com/amyjko"
 					header="Facebook"
