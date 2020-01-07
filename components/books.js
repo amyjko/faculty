@@ -37,8 +37,8 @@ class Books extends React.Component {
 					image="/ajko/books/informatics-teaching-guide/images/cover.jpg"
 					alt="Four stick figure drawings of teachers teaching differently sized groups of students."
 					link="/ajko/books/informatics-teaching-guide/"
-					header="Informatics Teaching Guide"
-					content=". I wrote this book to support teachers new to the iSchool and/or new to teaching, including new faculty, guest faculty, doctoral student teachers, and teaching assistants."
+					header="Higher Education Teaching Guide"
+					content=". I wrote this book to support new higher education teachers, including new faculty, guest faculty, doctoral student teachers, and teaching assistants. It uses our undergraduate Informatics program for examples, but is in essence a practical, but also research-informed introduction to teaching in a university."
 				/>
 
 				<div className='lead'>
