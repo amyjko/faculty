@@ -21,7 +21,7 @@
 		"source": "ACM SIGCHI Conference on Human Factors in Computing Systems (CHI)",
 		"pages": "to appear",
 		"digital library url": null,
-		"local url": null,
+		"local url": "Swearngin2020Scout.pdf",
 		"publisher": "ACM",
 		"contribution": "Presents a system to support designers ideation of user interface layouts, allowing designers to provide high-level preferences, obtain a set of layouts that meet those preferences, provide feedback on those preferences, and iteratively converge towards preferred layouts. An evaluation showed that designers who used Scout accelerated ideation and found more diverse designs that designers without it."
 	},
