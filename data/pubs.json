@@ -15,7 +15,7 @@
 	{
 		"id": "scout",
 		"kind": "refereed conference paper",
-		"authors": ["Amanda Swearngin", "Chenglong Wang", "James Fogarty", "Amy J. Ko"],
+		"authors": ["Amanda Swearngin", "Chenglong Wang", "Alannah Oleson", "James Fogarty", "Amy J. Ko"],
 		"year": 2020,
 		"title": "Scout: Rapid Exploration of Interface Layout Alternatives through High-Level Design Constraints",
 		"source": "ACM SIGCHI Conference on Human Factors in Computing Systems (CHI)",
