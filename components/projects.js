@@ -94,8 +94,12 @@ class Projects extends React.Component {
 					<li><a target="_blank" href="http://csforallwa.org">CS for All Washington</a>. A K-12 CS advocacy coalition for Washington state.</li>
 					<li>And formerly, the <a href="http://eusesconsortium.org/" target="_blank">EUSES consortium</a>. End-user programming researchers.</li>
 				</ul>
-
-				<p>Read my <Link to="/students">lab</Link> page to learn how to work with me.</p>
+				
+				<p>
+					In addition to my current focus on computing education, I also have expertise in <strong>HCI</strong>, <strong>software engineering</strong>, <strong>debugging</strong>, <strong>end-user programming</strong>, and <strong>explainability</strong>.
+				</p>
+					
+				<p>Want to work with me? Read about my <Link to="/students">lab</Link>.</p>
 				
 				<h3>Active Projects</h3>
 	
