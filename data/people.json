@@ -1,5 +1,19 @@
 [
 	{
+ 		"id": "jliang9",
+ 		"name": "Jenny Liang",
+ 		"active": true,
+ 		"advised": true,
+ 		"level": "undergrad",
+ 		"dept": "Computer Science & The Information School",
+ 		"coadvisor": null,
+ 		"bio": "Jenny is an undergrad studying computer science and informatics. She is working with Amy to study how to use explicit programming strategies to improve collaboration and learning of developers.",
+ 		"url": "https://www.linkedin.com/in/jenny-liang/",
+ 		"startdate": 2020,
+ 		"enddate": null,
+ 		"achievements": []
+ 	},
+	{
  		"id": "eboris",
  		"name": "Emilia Borisova",
  		"active": true,
