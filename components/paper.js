@@ -25,7 +25,7 @@ class Paper extends React.Component {
 		var url = this.getURL();
 		var pdf = 
 			this.props.authorizer ? <small><a href={this.props.authorizer} target="_blank">PDF</a></small> : 
-			this.props["local url"] ? <small><a href={"papers/" + this.props["local url"]} target="_blank">PDF</a></small> : 
+			this.props["local url"] ? <small><a href={this.props.app.getWebRoot() + "/papers/" + this.props["local url"]} target="_blank">PDF</a></small> : 
 			null;
 		var dl = this.props["digital library url"] ? <small><a href={this.props["digital library url"]} target="_blank">Digital library</a></small> : null;
 		
@@ -40,7 +40,7 @@ class Paper extends React.Component {
 			return (
 				<small>
 					<p title={this.props.contribution}>
-						<Link to={"/publications/" + this.props.id}>{this.props.title}</Link> ({this.props.year})&nbsp;<small>{award}</small>
+						<Link to={this.props.app.getWebRoot() + "/publications/" + this.props.id}>{this.props.title}</Link> ({this.props.year})&nbsp;<small>{award}</small>
 					</p>
 				</small>
 			);

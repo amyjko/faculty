@@ -60,7 +60,7 @@ class ProjectDetails extends React.Component {
 		// Find the people on this project
 		var people = [];
 		_.each(this.props.people, (person) => {
-			var path = person === "ajko" ? "bio" : "students/" + person;
+			var path = (person === "ajko" ? "/bio" : ("/students/" + person));
 			people.push(<Link key={person} to={path}><img src={this.props.app.getWebRoot() + "/images/headshots/mug-" + person + ".jpg"} className="student-mug img-circle" style={{width:32}} /></Link>);
 		});
 
