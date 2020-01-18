@@ -1113,7 +1113,7 @@
 	{
 		"id":"whydebugclassifier1",
 		"kind":"journal article",
-		"authors": ["Todd Kulesza", "Simone Stumpf", "Weng-Keen Wong", "Margatet M. Burnett", "Stephen Perona", "Amy J. Ko", "Ian Oberst"],
+		"authors": ["Todd Kulesza", "Simone Stumpf", "Weng-Keen Wong", "Margaret M. Burnett", "Stephen Perona", "Amy J. Ko", "Ian Oberst"],
 		"year":2011,
 		"title":"Why-Oriented End-User Debugging of Naive Bayes Text Classification",
 		"source":"ACM Transactions on Interactive Intelligent Systems, 1(1), Article 2",
