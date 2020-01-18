@@ -40,7 +40,7 @@
 	},
 	{
 		"id": "programmingstrategies",
-		"kind": "refereed journal paper",
+		"kind": "journal article",
 		"authors": ["Thomas D. LaToza", "Maryam Arab", "Dastyni Loksa", "Amy J. Ko"],
 		"year": 2020,
 		"title": "Explicit Programming Strategies",
@@ -53,7 +53,7 @@
 	},
 	{
 		"id": "greatengineer2",
-		"kind": "refereed journal paper",
+		"kind": "journal article",
 		"authors": ["Paul Luo Li", "Amy J. Ko", "Andrew Begel"],
 		"year": 2019,
 		"title": "What Distinguishes Great Software Engineers?",
@@ -79,7 +79,7 @@
 	},
 	{
 		"id": "",
-		"kind": "refereed journal paper",
+		"kind": "journal article",
 		"authors": ["Qiang Hao", "David H. Smith IV", "Naitra Iriumi", "Michaeil Tsikerdekis", "Amy J. Ko"],
 		"year": 2019,
 		"title": "A Systematic Investigation of Replications in Computing Education Research",
@@ -128,7 +128,7 @@
 	},
 	{
 		"id": "cs1theory",
-		"kind":"refereed journal paper",
+		"kind":"journal article",
 		"authors": ["Benjamin Xie", "Dastyni Loksa", "Greg L. Nelson", "Matthew J. Davidson", "Dongsheng Dong", "Harrison Kwik", "Alex Hui Tan", "Leanne Hwa", "Min Li", "Amy J. Ko"],
 		"year": 2019,
 		"title": "A Theory of Instruction for Introductory Programming Skills",
@@ -432,7 +432,7 @@
 	},
 	{
 		"id":"ideagardenjvlc",
-		"kind":"refereed journal paper",
+		"kind":"journal article",
 		"authors": ["Will Jernigan", "Amber Horvath", "Michael J. Lee", "Margaret M. Burnett", "Taylor Cuilty", "Sandeep Kuttal", "Anicia Peters", "Irwin Kwan", "Faezeh Bahmani", "Amy J. Ko", "Christopher J. Mendez", "Alannah Oleson"],
 		"year":2017,
 		"title":"General Principles for a Generalized Idea Garden",
