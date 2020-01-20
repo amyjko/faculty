@@ -1,41 +1,17 @@
 [
 	{
-		url: "https://medium.com/bits-and-behavior/writing-for-myself-and-others-a-reflection-on-academic-blogging-8abdfda6b50b",
-		title: "Writing for myself and others: a reflection on academic blogging",
+		url: "https://medium.com/bits-and-behavior/what-is-the-role-of-academia-in-a-post-truth-world-26ce3bfc116d",
+		title: "What is the role of academia in a post-truth world?",
 		date: "2020.1",
-		tags: ["academia", "personal"],
-		img: "blogging",
-		alt: "An illustration of a locked personal diary with colors leaking out."
-	},
-	{
-		url: "https://medium.com/bits-and-behavior/a-autobiographical-synopsis-of-morgan-ames-the-charisma-machine-68792c7987fa",
-		title: "A autobiographical synopsis  of Morgan Ames' \"The Charisma Machine\"",
-		date: "2020.1",
-		tags: ["computing education", "ed tech", "K-12"],
-		img: "charismamachine",
-		alt: "A photograph of me at age 16 using a computer."
-	},
-	{
-		url: "https://medium.com/bits-and-behavior/reflections-on-my-2019-academic-reflections-be495e344b19",
-		title: "Reflections on my 2019 academic reflections",
-		date: "2019.12",
-		tags: ["academia"],
-		img: "2019reflections",
-		alt: "An illustration of a mountain reflecting on a lake."
-	},
-	{
-		url: "https://medium.com/bits-and-behavior/a-lifetime-of-dealing-with-difference-6683ccbc5ce8",
-		title: "A lifetime of dealing with difference",
-		date: "2019.12",
-		tags: ["academia", "personal", "society", "diversity"],
-		img: "dealingwithdifference",
-		alt: "A pre-school class photo showing several white kids and me, the half-Asian one in the corner."
+		tags: ["academia", "society"],
+		img: "posttruth",
+		alt: "A pencil sketch of a rectangle fading from dark solid black to a diffuse fog."
 	},
 	{
 		url: "https://medium.com/bits-and-behavior/making-time-to-transition-cf2096a037b3",
 		title: "Transition and overcommitment",
 		date: "2019.12",
-		tags: ["academia", "personal", "diversity"],
+		tags: ["academia", "personal"],
 		img: "overcommitment2",
 		alt: "An erratic, sharply jumping plot of ups and downs, with watercolor backdrop."
 	},
