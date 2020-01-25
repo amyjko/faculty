@@ -56,7 +56,7 @@ class Students extends React.Component {
 		var affiliatedPeople = _.map(_.filter(people, { 'active': true, 'advised': false }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app}/>; });
 
 		// Render the former Ph.D. students.
-		var formerPhD = _.map(_.sortBy(_.filter(people, { 'active': false, 'advised': true, 'level': 'phd' }), ['startdate']), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
+		var formerPhD = _.map(_.sortBy(_.filter(_.reject(people, {'enddate': null}), { 'active': false, 'advised': true, 'level': 'phd' }), ['enddate']), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
 
 		// Render the former Ph.D. students.
 		var formerAffiliatedPhD = _.map(_.filter(people, { 'active': false, 'advised': false, 'level': 'phd' }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
