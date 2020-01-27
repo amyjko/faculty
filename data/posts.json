@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/@amyjko/the-fuel-of-discovery-2c580ffd1d39",
+		title: "The fuel of discovery",
+		date: "2020.1",
+		tags: ["academia", "personal"],
+		img: "fuel",
+		alt: "An illustration of a fuel gauge on empty."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/what-is-the-role-of-academia-in-a-post-truth-world-26ce3bfc116d",
 		title: "What is the role of academia in a post-truth world?",
 		date: "2020.1",
