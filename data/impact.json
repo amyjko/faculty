@@ -52,10 +52,11 @@
 	},
 	{
 		"id": "learningtech",		
-		"population": "Technologies for Learning to Code",
+		"population": "Technologies for learning to code",
 		"alt": "A screenshot of Apple's Swift Playgrounds.",
 		"description": "Many of my discoveries have impacted the design of educational technologies for learning to code",
 		"impacts": [
+			"In 2020, I consulted with Microsoft's VS Code, VS Online, and GitHub Education teams about how to support CS educators.",
 			"In 2016 I consulted with Microsoft on their <a href='https://makecode.com/'>MakeCode</a> project, sharing evidence from computing education research to inform the design of their learning technologies.",
 			"Our work on Gidget influenced the design of Code.org's <a href='https://studio.code.org/'>CodeStudio</a> and <a href='https://www.apple.com/swift/playgrounds/'>Apple's Swift Playgrounds</a>."
 		]
