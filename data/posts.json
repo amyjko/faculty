@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/the-false-dichotomy-of-teaching-and-research-739f85458bdf",
+		title: "The false dichotomy of teaching and research",
+		date: "2020.2",
+		tags: ["academia", "teaching", "science"],
+		img: "dichotomy",
+		alt: "An illustration of a stick figure's thought bubble, with a faded mirror of the bubble in grey."
+	},
+	{
 		url: "https://medium.com/@amyjko/the-fuel-of-discovery-2c580ffd1d39",
 		title: "The fuel of discovery",
 		date: "2020.1",
