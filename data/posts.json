@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/dealing-with-academic-criticism-ebac8ee934a9",
+		title: "Dealing with academic critcism",
+		date: "2020.2",
+		tags: ["academia", "personal"],
+		img: "feedback",
+		alt: "A person being electrocuted by red tendrils, but those tendrils transform into straight lines after passing through."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/the-false-dichotomy-of-teaching-and-research-739f85458bdf",
 		title: "The false dichotomy of teaching and research",
 		date: "2020.2",
