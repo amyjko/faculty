@@ -171,7 +171,7 @@
 		"id": "yreg",
 		"name": "Yim Register",
 		"active": true,
-		"advised": true,
+		"advised": false,
 		"level": "phd",
 		"dept": "Information School",
 		"coadvisor": null,
