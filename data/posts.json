@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/dealing-with-demands-for-change-8c10fd0ba77e",
+		title: "Dealing with demands for change",
+		date: "2020.3",
+		tags: ["academia", "personal"],
+		img: "demands",
+		alt: "Several punctuation marks flying towards a stick figure protected by a blue orb."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/dealing-with-academic-criticism-ebac8ee934a9",
 		title: "Dealing with academic critcism",
 		date: "2020.2",
