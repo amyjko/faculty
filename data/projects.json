@@ -43,6 +43,19 @@
 		"impact": "We apply our work and others to working directly with local communities to make change, including lowering barriers to transfer students at the University of Washington, connecting with marginalized communities in South Seattle, teaching in the University of Washington's Upward Bound program, and developing statewide coalitions to ensure CS for All."
 	},
 	{
+		"id": "designlearning",
+		"active": true,
+		"name": "Design education",
+		"description": "Whereas programming is about how to make software, design is about what to make, and just as important to ensuring just, equitable software. My lab investigates how to teach inclusive design to computing students.",
+		"funding": ["NSF Cyberlearning"],
+		"people": ["olesona"],
+		"papers": ["hcidifficulties", "inclusivepck"],
+		"links": [],
+		"startdate": 2019,
+		"stopdate": null,
+		"impact": "This work has impacted the teaching of many higher education HCI educators."
+	},
+	{
 		"id": "apilearning",
 		"active": true,
 		"name": "API learning",
