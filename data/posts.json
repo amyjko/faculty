@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/the-fragile-refuge-of-routines-in-a-time-of-uncertainty-4ecce13a99d0",
+		title: "The fragile refuge of routines in a time of uncertainty",
+		date: "2020.3",
+		tags: ["academia", "personal"],
+		img: "routine",
+		alt: "Many fuzzy coronaviruses falling upon a calendar laying flat, with me hanging on the edge of the calendar trying to escape."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/dealing-with-demands-for-change-8c10fd0ba77e",
 		title: "Dealing with demands for change",
 		date: "2020.3",
