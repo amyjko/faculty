@@ -54,7 +54,7 @@
 				// Maximum hours I prefer to work.
 				preferredHours: 50,
 				// Maximum hours possible to work.
-				maxHours: 65,
+				maxHours: 75,
 				// CSS color names by category names.
 				colors: {
 					"funding": "rgb(120,120,255)",
@@ -216,17 +216,12 @@
 				var warning = (totalHours > profile.preferredHours ? " warning" : "");
 				
 				return '<div class="row' + warning + '">' +
-					'<div class="col-1 large">' + 
-						(showYear ?
-							year :
-							showMonth ?
-								month :
-								""
-						) + "</div>" +
-					'<div class="col-1">' + date.getDate() + '</div>' +
-					'<div class="col-5">' + bars + '</div>' +
-					'<div class="col-1 large">' + totalHours + '</div>' +
-					'<div class="col-4">' + descriptions + '</div>' +
+						'<div class="col-1 large">' + 
+							(showMonth? month + "</br>" + year : "") +
+						"</div>" +
+						'<div class="col-1">' + date.getDate() + '</div>' +
+						'<div class="col-9">' + bars + '</br>' + descriptions + '</div>' +
+						'<div class="col-1 large">' + totalHours + '</div>' +
 					'</div>'
 					;
 				
