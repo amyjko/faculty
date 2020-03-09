@@ -93,19 +93,34 @@
 					// Add a new week.
 					var weeksPromises = [];
 					
+					var nextDate = new Date(currentDate.getTime() + 7 * 24 * 60 * 60 * 1000);					
+					
 					// Which promises occur in this week?
 					_.forEach(promises, function(promise) {
 						
 						var start = new Date(promise.start);
 						var end = promise.end === "" ? null : new Date(promise.end);
 						
-						if(	currentDate.getTime() > start.getTime() && 
-							(end === null || currentDate.getTime() < end.getTime())) {
+						// If the start of the promise is within this week OR
+						// The promise starts before and ends after ||
+						// The promise started earlier and has no end OR
+						// The end of the promise is within this week
+						if(	(start.getTime() >= currentDate.getTime() && start.getTime() <= nextDate.getTime()) ||
+							(end !== null && start.getTime() <= currentDate.getTime() && end.getTime() >= nextDate.getTime()) ||
+							(start.getTime() < currentDate.getTime() && end === null) ||
+							(end !== null && end.getTime() >= currentDate.getTime() && end.getTime() <= nextDate.getTime())) {
+						
+							var proportionOfWeek = Math.min(1,
+								end === null ? 
+									1 : 
+									start.getTime() < currentDate.getTime() ? 
+										(end.getTime() - currentDate.getTime()) / 1000 / 60 / 60 / 24 / 7 :
+										(nextDate.getTime() - start.getTime()) / 1000 / 60 / 60/ 24 / 7);
 						
 							weeksPromises.push(
 								{
 									description: promise.description,
-									hours: promise.weeklyHours,
+									hours: Math.round(promise.weeklyHours * proportionOfWeek),
 									category: promise.category,
 									strength: promise.strength,
 									rank: profile.ranks[promise.category],
@@ -130,7 +145,7 @@
 					});
 
 					// Add a week to the date.					
-					currentDate = new Date(currentDate.getTime() + 7 * 24 * 60 * 60 * 1000);
+					currentDate = nextDate;
 					
 				}
 				
