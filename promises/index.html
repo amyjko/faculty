@@ -216,10 +216,12 @@
 				var warning = (totalHours > profile.preferredHours ? " warning" : "");
 				
 				return '<div class="row' + warning + '">' +
-						'<div class="col-1 large">' + 
-							(showMonth? month + "</br>" + year : "") +
+						'<div class="col-1">' + 
+							(
+								showMonth ? ("<span class='large'>" + year + "</br>" + month + " " + date.getDate() + "</span>") :
+								date.getDate()								
+							) +
 						"</div>" +
-						'<div class="col-1">' + date.getDate() + '</div>' +
 						'<div class="col-9">' + bars + '</br>' + descriptions + '</div>' +
 						'<div class="col-1 large">' + totalHours + '</div>' +
 					'</div>'
