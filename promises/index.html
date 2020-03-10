@@ -75,6 +75,22 @@
 					"travel": 6
 				}
 			};			
+						
+			function getPreviousMonday() {
+				
+			    var date = new Date();
+			    var day = date.getDay();
+			    var prevMonday;
+			    if(date.getDay() === 1) {
+			        prevMonday = new Date().setDate(date.getDate() - 7);
+			    }
+			    else{
+			        prevMonday = new Date().setDate(date.getDate() - day + 1);
+			    }
+			
+			    return new Date(prevMonday);
+
+			}
 									
 			// Takes a list of promises and splits them into per week
 			// promises.
@@ -83,9 +99,8 @@
 				// Start a list of weeks to return.
 				var weeks = [];
 				
-				// Start a date counter with next Monday.
-				var currentDate = new Date();
-				currentDate.setDate(currentDate.getDate() + (1 + 7 - currentDate.getDay()) % 7);
+				// Start a date counter with last Monday.
+				var currentDate = getPreviousMonday();
 
 				// Iterate through the next 3 years.
 				for(var count = 1; count < 52 * 3; count++) {
