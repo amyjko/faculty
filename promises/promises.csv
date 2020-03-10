@@ -1,6 +1,6 @@
 Reading,			research,	2020-01-01,	,			3, -1
 PhDs, 				research, 	2020-01-01,	, 			8, 0
-PhD admissions, 	research, 	2020-01-01, 2020-03-15, 2, 0
+PhD admissions, 	research, 	2020-01-01, 2020-04-01, 2, 0
 NSF Strategies, 	research, 	2020-01-01, 2022-06-15, 2, -1
 NSF Cyberlearning, 	research, 	2020-01-01, 2020-07-15, 2, -1
 NSF RPP, 			research, 	2020-10-01, 2023-10-01, 3, -1
@@ -8,19 +8,19 @@ iSchool, 			service, 	2019-09-15,	2020-06-15, 5, -1
 iSchool, 			service, 	2020-09-15,	2021-06-15, 5, -1
 iSchool, 			service, 	2022-09-15,	2023-06-15, 5, -1
 CS for All WA, 		service, 	2020-01-01,	, 			1, -1
-HCID 520, 			teaching, 	2019-12-10, 2020-03-23, 10, -1
-INFO 200, 			teaching, 	2019-12-10, 2020-03-23, 10, -1
-INFO 442, 			teaching, 	2020-09-02, 2020-12-15, 8, -1
-HCID 520, 			teaching, 	2020-12-15, 2021-03-15, 8, -1
-INFO 360, 			teaching, 	2021-03-15, 2021-06-15, 8, -1
-Teaching, 			teaching, 	2022-09-02, 2022-12-15, 8, -1
-Teaching, 			teaching, 	2022-12-15, 2023-03-15, 8, -1
-Teaching, 			teaching, 	2023-03-15, 2023-06-15, 8, -1
+HCID 520, 			teaching, 	2019-12-10, 2020-03-23, 10, 0
+INFO 200, 			teaching, 	2019-12-10, 2020-03-23, 10, 0
+INFO 442, 			teaching, 	2020-09-02, 2020-12-15, 8, 0
+HCID 520, 			teaching, 	2020-12-15, 2021-03-15, 8, 0
+INFO 360, 			teaching, 	2021-03-15, 2021-06-15, 8, 0
+Teaching, 			teaching, 	2022-09-02, 2022-12-15, 8, 0
+Teaching, 			teaching, 	2022-12-15, 2023-03-15, 8, 0
+Teaching, 			teaching, 	2023-03-15, 2023-06-15, 8, 0
 ICER 20 PC, 		reviewing, 	2020-01-01, 2020-09-05, 2, -1
-ICER 21 PC, 		reviewing, 	2020-08-01, 2021-09-05, 3, -1
+ICER 21 PC, 		reviewing, 	2020-08-01, 2021-09-05, 3, 0
 TOCE AE, 			reviewing, 	2020-01-01, 2020-09-05, 2, -1
 NSF RPP, 			funding, 	2020-01-01, 2020-04-12, 5, 0
-CS justice, 		research, 	2020-06-15, 2020-09-15, 20, -1
+CS justice, 		research, 	2020-06-15, 2020-09-03, 20, -1
 ACM EAC, 			service, 	2020-01-01, 2020-07-01, 1, -1
 CRA-E, 				service, 	2020-07-01, 2022-07-01, 1, -1
 INFO, 				service, 	2020-01-01, 2021-06-15, 8, 0
