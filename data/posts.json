@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/sigcse-2020-trip-report-viral-edition-6d5f3c9a31bf",
+		title: "SIGCSE 2020 Trip report: viral edition",
+		date: "2020.3",
+		tags: ["academia", "computing education"],
+		img: "sigcse20",
+		alt: "A photograph of the Oregon Convention Center."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/the-fragile-refuge-of-routines-in-a-time-of-uncertainty-4ecce13a99d0",
 		title: "The fragile refuge of routines in a time of uncertainty",
 		date: "2020.3",
