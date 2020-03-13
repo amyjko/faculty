@@ -191,18 +191,18 @@
 			function renderMonth(date) {
 				
 				return [
-					"Jan",
-					"Feb",
-					"Mar",
-					"Apr",
-					"May",
-					"Jun",
-					"Jul",
-					"Aug",
-					"Sept",
-					"Oct",
-					"Nov",
-					"Dec"
+					"1/",
+					"2/",
+					"3/",
+					"4/",
+					"5/",
+					"6/",
+					"7/",
+					"8/",
+					"9/",
+					"10/",
+					"11/",
+					"12/"
 				][date];
 
 				
@@ -213,7 +213,7 @@
 				
 				var date = new Date(week.start);
 				var month = renderMonth(date.getMonth());
-				var year = date.getFullYear();
+				var year = date.getFullYear() - 2000;
 				
 				// Convert all of this week's promises into a series of bars.
 				var bars = _.map(
@@ -247,7 +247,7 @@
 				return '<div class="row" style="background-color: rgb(255, ' + backgroundColor + ',' + backgroundColor + ')">' +
 						'<div class="col-1">' + 
 							(
-								showMonth ? ("<span class='large'>" + year + "</br>" + month + " " + date.getDate() + "</span>") :
+								showMonth ? ("<span class='large'>'" + year + "</br>" + month + date.getDate() + "</span>") :
 								date.getDate()								
 							) +
 						"</div>" +
