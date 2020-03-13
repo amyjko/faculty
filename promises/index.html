@@ -195,18 +195,18 @@
 			function renderMonth(date) {
 				
 				return [
-					"1/",
-					"2/",
-					"3/",
-					"4/",
-					"5/",
-					"6/",
-					"7/",
-					"8/",
-					"9/",
-					"10/",
-					"11/",
-					"12/"
+					"Jan ",
+					"Feb ",
+					"Mar ",
+					"Apr ",
+					"May ",
+					"Jun ",
+					"Jul ",
+					"Aug ",
+					"Sep ",
+					"Oct ",
+					"Nov ",
+					"Dec "
 				][date];
 
 				
@@ -217,7 +217,7 @@
 				
 				var date = new Date(week.start);
 				var month = renderMonth(date.getMonth());
-				var year = date.getFullYear() - 2000;
+				var year = date.getFullYear();
 				
 				// Convert all of this week's promises into a series of bars.
 				var bars = _.map(
@@ -249,9 +249,9 @@
 						Math.max(200, Math.round(255 - 55.0 * ((totalHours - profile.preferredHours) / (profile.maxHours - profile.preferredHours))));
 
 				return '<div class="row" style="background-color: rgb(255, ' + backgroundColor + ',' + backgroundColor + ')">' +
-						'<div class="col-1">' + 
+						'<div class="col-2">' + 
 							(
-								showMonth ? ("<span class='large'>'" + year + "</br>" + month + date.getDate() + "</span>") :
+								showMonth ? ("<span class='large'>" + year + "</br>" + month + date.getDate() + "</span>") :
 								date.getDate()								
 							) +
 						"</div>" +
