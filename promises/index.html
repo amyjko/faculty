@@ -27,6 +27,10 @@
 			.large {
 				font-size: x-large;
 			}
+
+			.medium {
+				font-size: large;
+			}
 			
 			.row {
 				min-height: 4em;
@@ -251,11 +255,12 @@
 				return '<div class="row" style="background-color: rgb(255, ' + backgroundColor + ',' + backgroundColor + ')">' +
 						'<div class="col-2">' + 
 							(
-								showMonth ? ("<span class='large'>" + year + "</br>" + month + date.getDate() + "</span>") :
-								date.getDate()								
+								showMonth ? 
+									("<span class='medium'>" + year + "</br>" + month + date.getDate() + "</span>") :
+									date.getDate()
 							) +
 						"</div>" +
-						'<div class="col-9">' + bars + '</br>' + descriptions + '</div>' +
+						'<div class="col-8">' + bars + '</br>' + descriptions + '</div>' +
 						'<div class="col-1 large">' + totalHours + '</div>' +
 					'</div>'
 					;
