@@ -27,10 +27,6 @@
 			.large {
 				font-size: x-large;
 			}
-
-			.warning {
-				background-color: rgb(255,230,230);
-			}
 			
 			.row {
 				min-height: 4em;
@@ -52,7 +48,7 @@
 
 			var profile = {
 				// Maximum hours I prefer to work.
-				preferredHours: 50,
+				preferredHours: 45,
 				// Maximum hours possible to work.
 				maxHours: 75,
 				// CSS color names by category names.
@@ -243,9 +239,12 @@
 					function(sum, n) { return sum + n; }
 				);
 				
-				var warning = (totalHours > profile.preferredHours ? " warning" : "");
-				
-				return '<div class="row' + warning + '">' +
+				var backgroundColor = 
+					totalHours < profile.preferredHours ?
+						255 :
+						Math.max(200, Math.round(255 - 55.0 * ((totalHours - profile.preferredHours) / (profile.maxHours - profile.preferredHours))));
+
+				return '<div class="row" style="background-color: rgb(255, ' + backgroundColor + ',' + backgroundColor + ')">' +
 						'<div class="col-1">' + 
 							(
 								showMonth ? ("<span class='large'>" + year + "</br>" + month + " " + date.getDate() + "</span>") :
