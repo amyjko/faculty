@@ -33,6 +33,10 @@
 				padding: 0.5em;
 			}
 			
+			.description {
+				font-size: small;
+			}
+			
 		</style>
 				
 	</head>
@@ -230,7 +234,7 @@
 				var descriptions = _.map(
 					week.promises, 
 					function(promise) { 
-						return "<span style='color:" + profile.colors[promise.category] + "'>" + promise.description + "</span>";
+						return "<span class='description' style='color:" + profile.colors[promise.category] + "'>" + promise.description + "</span>";
 					}
 				).join(", ");
 				
