@@ -155,7 +155,7 @@
 						_.remove(weeksPromises, function(promise) { return promise.strength < 0; });
 					
 					// Sort the remaining promises by rank.
-					weeksPromises = _.sortBy(weeksPromises, "rank");
+					weeksPromises = _.orderBy(weeksPromises, ["rank", "hours"], ['asc', 'desc']);
 
 					// Add this week.
 					weeks.push({
@@ -237,7 +237,7 @@
 				// Convert this week's promises into a list of promises.
 				var descriptions = _.map(
 					week.promises, 
-					function(promise) { 
+					function(promise) {
 						return "<span class='description' style='color:" + profile.colors[promise.category] + "'>" + promise.description + "</span>";
 					}
 				).join(", ");
