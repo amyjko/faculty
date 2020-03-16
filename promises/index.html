@@ -237,10 +237,13 @@
 				// Convert this week's promises into a list of promises.
 				var descriptions = _.map(
 					week.promises, 
-					function(promise) {
-						return "<span class='description' style='color:" + profile.colors[promise.category] + "'>" + promise.description + "</span>";
+					function(promise, index, promises) {
+						return "<span class='description' style='color:" + profile.colors[promise.category] + "'>" + 
+							promise.description + 
+							"</span>" + 
+							(index === promises.length - 1 ? "" : promise.category === promises[index + 1].category ? ", " : "</br>");
 					}
-				).join(", ");
+				).join("");
 				
 				var totalHours = _.reduce(
 					_.map(week.promises, "hours"),
