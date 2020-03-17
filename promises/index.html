@@ -246,7 +246,7 @@
 					function(promise, index, promises) {
 						return "<span class='description' style='color:" + profile.colors[promise.category] + 
 							"; font-size:" + 
-							(Math.min(20, Math.min(1.0, promise.hours / totalHours) * profile.preferredHours + 8)) + "px'>" + 
+							(Math.min(20, Math.min(1.0, promise.hours / totalHours) * profile.preferredHours + 10)) + "px'>" + 
 							promise.description + 
 							"</span>" + 
 							(index === promises.length - 1 ? "" : promise.category === promises[index + 1].category ? " <span style='color: lightGrey'>&bull;</span> " : "</br>");
