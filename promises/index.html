@@ -41,6 +41,14 @@
 				font-size: small;
 			}
 			
+			table .bar {
+				height: 8px;
+			}
+			
+			table th {
+				font-size: x-small;
+			}
+			
 		</style>
 				
 	</head>
@@ -48,9 +56,10 @@
 	
 	<body>
 
+		<div class="container-fluid" id="timeline"></div>
 		
-		<div class="container-fluid" id="rows">
-		</div>				
+		<div class="container-fluid" id="weeks">
+		</div>
 				
 		<script>
 
@@ -80,6 +89,83 @@
 				}
 			};			
 						
+			function promisesToTimeline(promises, profile) {
+				
+				
+				var headers = [];
+				var rows = [];
+
+				var months = [];
+				var now = new Date();
+				var next = null;
+
+				// Start on the first of this month.
+				now = new Date(now.getFullYear(), now.getMonth(), 1);
+
+				// Iterate through the next 12 months.
+				for(var count = 0; count < 12; count++) {
+
+					months.push(new Date(now.getTime()));
+					
+					if (now.getMonth() == 11) {
+					    next = new Date(now.getFullYear() + 1, 0, 1);
+					} else {
+					    next = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+					}
+					
+					now = next;					
+					
+				}
+				
+				// Create the headers for each month.
+				var headers = _.map(months, function(month) { return "<th>" + renderMonth(month.getMonth()) + "</th>"; });
+
+				_.forEach(promises, function(promise) { promise.rank = profile.ranks[promise.category]; });
+
+				// Sort the remaining promises by rank.
+				promises = _.orderBy(promises, ["rank"], ["asc"]);
+
+				// Create the rows for each promise.
+				_.forEach(promises, function(promise) {
+
+					var start = new Date(promise.start);
+					var end = promise.end === "" ? null : new Date(promise.end);
+					
+					var columns = [];
+					var happens = false;
+					
+					_.forEach(months, function(month, index, months) {
+						
+						var content = "";
+						
+						if(index + 1 < months.length && datesIntersect(month, months[index + 1], start, end)) {
+							content = renderBar(1, profile.colors[promise.category]);
+							happens = true;
+						}
+
+						columns.push("<td>" + content + "</td>");
+						
+					});
+					
+					if(happens)
+						rows.push("<tr>" + "<td>" + promise.description + "</td>" + columns.join("") + "</tr>");
+
+				});
+				
+				
+				var timelineRows = rows.join("");
+				
+				return '<table id="timeline" class="table table-sm">' +
+					'<thead>' +
+					'<tr>' + "<th>Promise</th>" + headers.join("") + '</tr>' +
+					'</thead>' +
+					'<tbody>' +
+					rows.join("") + 
+					'</tbody>' +
+				'</table>';
+	
+			}
+						
 			function getPreviousMonday() {
 				
 			    var date = new Date();
@@ -94,6 +180,15 @@
 			
 			    return new Date(prevMonday);
 
+			}
+			
+			function datesIntersect(date1Start, date1End, date2Start, date2End) {
+				
+				return (date2Start.getTime() >= date1Start.getTime() && date2Start.getTime() <= date1End.getTime()) ||
+						(date2End !== null && date2Start.getTime() <= date1Start.getTime() && date2End.getTime() >= date1End.getTime()) ||
+						(date2Start.getTime() < date1Start.getTime() && date2End === null) ||
+						(date2End !== null && date2End.getTime() >= date1Start.getTime() && date2End.getTime() <= date1End.getTime());
+				
 			}
 									
 			// Takes a list of promises and splits them into per week
@@ -124,10 +219,13 @@
 						// The promise starts before and ends after ||
 						// The promise started earlier and has no end OR
 						// The end of the promise is within this week
+/*
 						if(	(start.getTime() >= currentDate.getTime() && start.getTime() <= nextDate.getTime()) ||
 							(end !== null && start.getTime() <= currentDate.getTime() && end.getTime() >= nextDate.getTime()) ||
 							(start.getTime() < currentDate.getTime() && end === null) ||
 							(end !== null && end.getTime() >= currentDate.getTime() && end.getTime() <= nextDate.getTime())) {
+*/
+						if(datesIntersect(currentDate, nextDate, start, end)) {
 						
 							var proportionOfWeek = Math.min(1,
 								end === null ? 
@@ -302,21 +400,21 @@
 			xhr.open('GET', 'promises.csv');
 			xhr.onload = function() {
 			    if (xhr.status === 200) {
-			        // Render everything.
-					document.getElementById("rows").innerHTML = weeksToRows(promisesToWeeks(parseCSV(xhr.responseText)), profile).join("");
+
+			        var promises = parseCSV(xhr.responseText);
+			        
+			     	document.getElementById("timeline").innerHTML = promisesToTimeline(promises, profile);   
+					document.getElementById("weeks").innerHTML = weeksToRows(promisesToWeeks(promises), profile).join("");
+					
 			    }
 			    else {
-			        document.getElementById("rows").innerHTML = "Couldn't load";
+			        document.getElementById("weeks").innerHTML = "Couldn't load promises.csv :(";
 			    }
 			};
 			xhr.send();
 
-
-
-			
 		</script>
 		
 	</body>
-	
 	
 </html>
