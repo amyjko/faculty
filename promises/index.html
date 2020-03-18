@@ -45,7 +45,7 @@
 				height: 8px;
 			}
 			
-			table th {
+			#timeline th, #timeline td {
 				font-size: x-small;
 			}
 			
@@ -102,8 +102,8 @@
 				// Start on the first of this month.
 				now = new Date(now.getFullYear(), now.getMonth(), 1);
 
-				// Iterate through the next 12 months.
-				for(var count = 0; count < 12; count++) {
+				// Iterate through the next months.
+				for(var count = 0; count < 9; count++) {
 
 					months.push(new Date(now.getTime()));
 					
