@@ -343,15 +343,16 @@
 	{
 		"id": "kthayer",
 		"name": "Kyle Thayer",
-		"active": true,
+		"active": false,
 		"advised": true,
 		"level": "phd",
 		"dept": "Computer Science",
 		"coadvisor": "Katharina Reinecke",
-		"bio": "Kyle is a PhD student in Computer Science and Engineering, also advised by Katharina Reinecke. He studies the intersection of diversity and learning in computing education.",
+		"bio": "Kyle was a PhD student in Computer Science and Engineering, co-advised by Katharina Reinecke. His dissertation investigated barriers to learning to code knowledge through bootcamps, developed a novel theory of API knowledge, and contributed a new way to mine the web for API usage patterns. He is now a Lecturer at the University of Washington Information school, where he continues investigating the intersection of diversity and computing education as a teacher and researcher.",
 		"url": "http://www.kylethayer.com",
 		"startdate": 2015,
-		"enddate": 2019,
+		"enddate": 2020,
+		"thesis": "papers/Thayer2020Dissertation.pdf",
 		"achievements": [
 			"Lecturer, The Information School, University of Washington (2019-present)"
 		]
