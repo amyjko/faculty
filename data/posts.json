@@ -1,5 +1,21 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/im-a-professor-d732ba26c522",
+		title: "I'm a Professor!",
+		date: "2020.3",
+		tags: ["academia", "personal"],
+		img: "professor",
+		alt: "40 small thumbnails of my research, teaching, and service statements and my CV."
+	},
+	{
+		url: "https://medium.com/@amyjko/gender-transition-in-a-pandemic-a1f7f09d7077",
+		title: "Gender transition in a pandemic",
+		date: "2020.3",
+		tags: ["personal"],
+		img: "distance",
+		alt: "A grid of black rectangles with people inside each, doing different activities. In the center, a woman cross-legged."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/sigcse-2020-trip-report-viral-edition-6d5f3c9a31bf",
 		title: "SIGCSE 2020 Trip report: viral edition",
 		date: "2020.3",
