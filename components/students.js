@@ -23,7 +23,13 @@ class Person extends React.Component {
 					alt={"Photograph of " + this.props.name}
 					link={this.props.url}
 					header={null}
-					content=<span><a target="_blank" href={this.props.url}>{this.props.name}</a> <mark>{this.props.level}</mark> <small>{ this.props.thesis ? <a href={this.props.thesis}>Dissertation</a> : null } { this.props.enddate ? " (" + this.props.enddate + ")" : null }</small><br/>{this.props.bio}</span>
+					content=<span>
+						<a target="_blank" href={this.props.url}>{this.props.name}</a>
+						<mark>{this.props.level}</mark>
+						<small>{ this.props.dissertation ? <a href={this.props.app.getWebRoot() + "/dissertations/" + this.props.dissertation}>Dissertation</a> : null } { this.props.enddate ? " (" + this.props.enddate + ")" : null }</small>
+						<br/>
+						{this.props.bio}
+					</span>
 				/>
 			</div>
 		);

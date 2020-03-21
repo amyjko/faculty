@@ -352,7 +352,7 @@
 		"url": "http://www.kylethayer.com",
 		"startdate": 2015,
 		"enddate": 2020,
-		"thesis": "papers/Thayer2020Dissertation.pdf",
+		"dissertation": "Thayer2020Dissertation.pdf",
 		"achievements": [
 			"Lecturer, The Information School, University of Washington (2019-present)"
 		]
@@ -369,7 +369,7 @@
 		"url": "https://amaswea.github.io/",
 		"startdate": 2015,
 		"enddate": 2019,
-		"thesis": "papers/Swearngin2019Dissertation.pdf",
+		"dissertation": "Swearngin2019Dissertation.pdf",
 		"achievements": [ 
 			"NSF Graduate Research Fellowship (2016)"
 		]
@@ -414,7 +414,7 @@
 		"url": "https://www.linkedin.com/in/paul-li-7387903/",
 		"startdate": 2009,
 		"enddate": 2016,
-		"thesis": "papers/Li2016Dissertation.pdf",
+		"dissertation": "Li2016Dissertation.pdf",
 		"achievements": [
 			"Senior Data Scientist, Microsoft (2016-present)"
 		]
@@ -431,7 +431,7 @@
 		"url": "http://pixel42.com/",
 		"startdate": 2009,
 		"enddate": 2015,
-		"thesis": "papers/Lee2015Dissertation.pdf",
+		"dissertation": "Lee2015Dissertation.pdf",
 		"achievements": [
 			"Assistant Professor, New Jersey Institute of Technology, Information Systems (2015-present)",
 			"ACM ICER John Henry Best Paper Award (2013)"
@@ -449,7 +449,7 @@
 		"url": "http://brrian.org/",
 		"startdate": 2011,
 		"enddate": 2015,
-		"thesis": "papers/Burg2015Dissertation.pdf",
+		"dissertation": "Burg2015Dissertation.pdf",
 		"achievements": [
 			"Senior Software Engineer, Apple (2015-present)",
 			"ACM UIST Best Paper Nominee (2015)"
@@ -467,7 +467,7 @@
 		"url": "http://www.kayur.org/",
 		"startdate": 2007,
 		"enddate": 2012,
-		"thesis": "papers/Patel2012Dissertation.pdf",
+		"dissertation": "Patel2012Dissertation.pdf",
 		"achievements": [
 			"Research Scientist, Apple (2018-present)",
 			"Research Scientist, Google (2013-2018)",
@@ -485,7 +485,7 @@
 		"url": "http://hci.cs.sfu.ca/",
 		"startdate": 2008,
 		"enddate": 2013,
-		"thesis": "papers/Chilana2013Dissertation.pdf",
+		"dissertation": "Chilana2013Dissertation.pdf",
 		"achievements": [
 				"Assistant Professor, Simon Fraser University, Computer Science (2016-present)",
 				"Assistant Professor, University of Waterloo, Management Sciences, (2013-2016)",
