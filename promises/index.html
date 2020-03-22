@@ -102,8 +102,8 @@
 				// Start on the first of this month.
 				now = new Date(now.getFullYear(), now.getMonth(), 1);
 
-				// Iterate through the next months.
-				for(var count = 0; count < 9; count++) {
+				// Iterate through the next months, adding one extra for comparison to the second to last month.
+				for(var count = 0; count < 10; count++) {
 
 					months.push(new Date(now.getTime()));
 					
@@ -118,7 +118,12 @@
 				}
 				
 				// Create the headers for each month.
-				var headers = _.map(months, function(month) { return "<th>" + renderMonth(month.getMonth()) + "</th>"; });
+				var headers = _.map(months, function(month, index, months) { 
+				
+					if(index < months.length - 1)
+						return "<th>" + renderMonth(month.getMonth()) + "</th>"; 
+					
+				});
 
 				_.forEach(promises, function(promise) { promise.rank = profile.ranks[promise.category]; });
 
@@ -138,12 +143,16 @@
 						
 						var content = "";
 						
-						if(index + 1 < months.length && datesIntersect(month, months[index + 1], start, end)) {
-							content = renderBar(1, profile.colors[promise.category]);
-							happens = true;
+						if(index < months.length - 1) {
+						
+							if(datesIntersect(month, months[index + 1], start, end)) {
+								content = renderBar(1, profile.colors[promise.category]);
+								happens = true;
+							}
+	
+							columns.push("<td>" + content + "</td>");
+							
 						}
-
-						columns.push("<td>" + content + "</td>");
 						
 					});
 					
