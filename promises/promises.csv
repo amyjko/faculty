@@ -1,37 +1,42 @@
-Reading,			research,	2020-01-01,	,			3, -1
-PhDs, 				research, 	2020-01-01,	, 			8, -1
-PhD admissions, 	research, 	2020-01-01, 2020-03-20, 2, 0
-PhD admissions, 	research, 	2021-01-01, 2021-03-20, 2, 0
-PhD admissions, 	research, 	2022-01-01, 2022-03-20, 2, 0
-Strategies, 		research, 	2020-01-01, 2022-06-15, 2, -1
-Cyberlearning, 		research, 	2020-01-01, 2020-07-15, 1, -1
-ICER 20 writing, 	research, 	2020-03-23, 2020-03-27, 25, 0
-Just CS Ed, 		research, 	2020-04-28, 2020-06-15, 5, -1
-iSchool, 			service, 	2019-09-15,	2020-06-15, 5, -1
-iSchool, 			service, 	2020-09-15,	2021-06-15, 5, -1
-iSchool, 			service, 	2022-09-15,	2023-06-15, 5, -1
-CS for All WA, 		service, 	2020-01-01,	, 			1, -1
-HCID 520, 			teaching, 	2019-12-10, 2020-03-23, 10, 0
-INFO 200, 			teaching, 	2019-12-10, 2020-03-23, 10, 0
-INFO 442, 			teaching, 	2020-09-02, 2020-12-15, 8, 0
-HCID 520, 			teaching, 	2020-12-15, 2021-03-15, 8, 0
-INFO 360, 			teaching, 	2021-03-15, 2021-06-15, 8, 0
-Teaching, 			teaching, 	2022-09-02, 2022-12-15, 8, 0
-Teaching, 			teaching, 	2022-12-15, 2023-03-15, 8, 0
-Teaching, 			teaching, 	2023-03-15, 2023-06-15, 8, 0
-ICER 20 PC, 		reviewing, 	2020-01-01, 2020-09-05, 2, -1
-ICER 21 PC, 		reviewing, 	2020-08-01, 2021-09-05, 3, 0
-TOCE AE, 			reviewing, 	2020-01-01, 2020-09-05, 2, -1
-NSF CS for All, 	funding, 	2020-01-01, 2020-04-12, 5, 0
-NSF Expeditions, 	funding, 	2020-03-15, 2020-06-15, 2, 0
-ACM EAC, 			service, 	2020-01-01, 2020-07-01, 1, -1
-CRA-E, 				service, 	2020-07-01, 2022-07-01, 1, -1
-INFO, 				service, 	2020-01-01, 2021-06-15, 8, 0
-NSF review,			service,	2020-04-13, 2020-04-19, 3, 0
-CRA-E (ORD), 		travel, 	2020-06-22, 2020-06-23, 20, 1
-Snowbird, 			travel, 	2020-07-21, 2020-07-24, 30, 1
-ICER 20 (NZ),		travel, 	2020-08-04, 2020-08-15, 40, 1
-Dagstuhl, 			travel, 	2020-08-24, 2020-08-28, 50,	1
-Xmas,				personal, 	2020-12-20, 2021-01-02, 30,	1
-Xmas,	 			personal, 	2021-12-20, 2022-01-02, 30,	1
-Xmas,	 			personal, 	2022-12-20, 2023-01-02, 30,	1
+NSF Assess (10/3),		funding, 	2019-08-01, 2020-10-03, 2, 0
+Google CS (3/10),		funding, 	2020-02-01, 2020-03-10, 2, 0
+NSF CS for All (4/22),	funding, 	2020-01-01, 2020-04-22, 5, 0
+NSF Expeditions (6/15),	funding, 	2020-03-15, 2020-06-15, 1, 0
+ICER Careers (4/10),	research, 	2020-03-23, 2020-04-10, 10, 0
+ICER Cognimates (4/10),	research, 	2020-03-23, 2020-04-10, 3, 0		
+ASSETS Triage (5/7),	research, 	2020-03-23, 2020-05-07, 2, 0		
+TOCE Interests (5/1),	research, 	2020-03-23, 2020-05-01, 2, 0
+Reading,				research,	2020-01-01,	,			2, -1
+PhDs, 					research, 	2020-01-01,	, 			5, -1
+PhD admissions, 		research, 	2020-01-01, 2020-03-20, 2, 0
+PhD admissions, 		research, 	2021-01-01, 2021-03-20, 2, 0
+PhD admissions, 		research, 	2022-01-01, 2022-03-20, 2, 0
+Strategies, 			research, 	2020-01-01, 2022-06-15, 2, -1
+Cyberlearning, 			research, 	2020-01-01, 2020-07-15, 1, -1
+Just CS Ed, 			research, 	2020-04-28, 2020-06-15, 5, -1
+iSchool, 				service, 	2019-09-15,	2020-06-15, 5, -1
+iSchool, 				service, 	2020-09-15,	2021-06-15, 5, -1
+iSchool, 				service, 	2022-09-15,	2023-06-15, 5, -1
+CS for All WA,			service, 	2020-01-01,	, 			1, -1
+HCID 520, 				teaching, 	2019-12-10, 2020-03-22, 10, 0
+INFO 200, 				teaching, 	2019-12-10, 2020-03-22, 10, 0
+INFO 442, 				teaching, 	2020-09-02, 2020-12-15, 8, 0
+HCID 520, 				teaching, 	2020-12-15, 2021-03-15, 8, 0
+INFO 360, 				teaching, 	2021-03-15, 2021-06-15, 8, 0
+Teaching, 				teaching, 	2022-09-02, 2022-12-15, 8, 0
+Teaching, 				teaching, 	2022-12-15, 2023-03-15, 8, 0
+Teaching, 				teaching, 	2023-03-15, 2023-06-15, 8, 0
+ICER 20 PC, 			reviewing, 	2020-01-01, 2020-09-05, 2, -1
+ICER 21 PC, 			reviewing, 	2020-08-01, 2021-09-05, 3, 0
+TOCE AE, 				reviewing, 	2020-01-01, 2020-09-05, 2, -1
+ACM EAC, 				service, 	2020-01-01, 2020-07-01, 1, -1
+CRA-E, 					service, 	2020-07-01, 2022-07-01, 1, -1
+INFO, 					service, 	2020-01-01, 2021-06-15, 8, 0
+NSF review,				service,	2020-04-13, 2020-04-19, 3, 0
+CRA-E (ORD), 			travel, 	2020-06-22, 2020-06-23, 20, 1
+Snowbird, 				travel, 	2020-07-21, 2020-07-24, 30, 1
+ICER 20 (NZ),			travel, 	2020-08-04, 2020-08-15, 40, 1
+Dagstuhl, 				travel, 	2020-08-24, 2020-08-28, 50,	1
+Xmas,					personal, 	2020-12-20, 2021-01-02, 30,	1
+Xmas,	 				personal, 	2021-12-20, 2022-01-02, 30,	1
+Xmas,	 				personal, 	2022-12-20, 2023-01-02, 30,	1
