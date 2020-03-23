@@ -391,17 +391,25 @@
 			
 			function parseCSV(text) {
 				
-				return _.map(text.split("\n"), function(promise) {
-					promise = promise.split(",");
-					return {
-						description: promise[0].trim(),
-						category: promise[1].trim(),
-						start: promise[2].trim(),
-						end: promise[3].trim(),
-						weeklyHours: parseInt(promise[4].trim()),
-						strength: parseInt(promise[5].trim()),
+				return _.map(
+					_.filter(
+						text.split("\n"), 
+						function(line) {
+							return line.indexOf("#") !== 0 && line.trim().length > 0;
+						}
+					), 
+					function(promise) {
+						promise = promise.split(",");
+						return {
+							description: promise[0].trim(),
+							category: promise[1].trim(),
+							start: promise[2].trim(),
+							end: promise[3].trim(),
+							weeklyHours: parseInt(promise[4].trim()),
+							strength: parseInt(promise[5].trim()),
+						}
 					}
-				});
+				);
 				
 			}
 
