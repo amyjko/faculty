@@ -146,7 +146,7 @@
 						if(index < months.length - 1) {
 						
 							if(datesIntersect(month, months[index + 1], start, end)) {
-								content = renderBar(1, profile.colors[promise.category]);
+								content = renderBar(Math.min(1, promise.weeklyHours / (profile.preferredHours / 4)), profile.colors[promise.category]);
 								happens = true;
 							}
 	
