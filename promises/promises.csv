@@ -1,60 +1,60 @@
 # Forever promises
-Reading,				research,	2020-01-01,	,			2, -1
-PhDs, 					research, 	2020-01-01,	, 			5, -1
-CS for All WA,			service, 	2020-01-01,	, 			1, -1
+Read,					Papers, books, reviews, research,	2020-01-01,	,			2, -1
+PhDs, 					Weekly meetings,		research, 	2020-01-01,	, 			5, -1
+CS for All WA,			Meetings + networking,	service, 	2020-01-01,	, 			1, -1
 
 # Annual recurring promises
-PhD admissions, 		research, 	2020-01-01, 2020-03-20, 2, 0
-PhD admissions, 		research, 	2021-01-01, 2021-03-20, 2, 0
-PhD admissions, 		research, 	2022-01-01, 2022-03-20, 2, 0
-iSchool, 				service, 	2019-09-15,	2020-06-15, 3, -1
-iSchool, 				service, 	2020-09-15,	2021-06-15, 3, -1
-iSchool, 				service, 	2022-09-15,	2023-06-15, 3, -1
-Xmas,					personal, 	2020-12-20, 2021-01-02, 30,	1
-Xmas,	 				personal, 	2021-12-20, 2022-01-02, 30,	1
-Xmas,	 				personal, 	2022-12-20, 2023-01-02, 30,	1
-TOCE AE, 				reviewing, 	2020-01-01, 		  , 2, -1
+PhD admissions, 		Reviews + meetings, 	research, 	2020-01-01, 2020-03-20, 2, 0
+PhD admissions, 		Reviews + meetings, 	research, 	2021-01-01, 2021-03-20, 2, 0
+PhD admissions, 		Reviews + meetings, 	research, 	2022-01-01, 2022-03-20, 2, 0
+iSchool, 				Faculty meetings,		service, 	2019-09-15,	2020-06-15, 3, -1
+iSchool, 				Faculty meetings,		service, 	2020-09-15,	2021-06-15, 3, -1
+iSchool, 				Faculty meetings,		service, 	2022-09-15,	2023-06-15, 3, -1
+Xmas,					Vacation + travel,		personal, 	2020-12-20, 2021-01-02, 30,	1
+Xmas,	 				Vacation + travel,		personal, 	2021-12-20, 2022-01-02, 30,	1
+Xmas,	 				Vacation + travel,		personal, 	2022-12-20, 2023-01-02, 30,	1
+TOCE AE, 				Assign reviews,			reviewing, 	2020-01-01, 		  , 2, -1
 
 # Multi-year commitments
-Strategies, 			research, 	2020-01-01, 2022-06-15, 2, -1
-Cyberlearning, 			research, 	2020-01-01, 2020-07-15, 1, -1
-CRA-E, 					service, 	2020-07-01, 2022-07-01, 1, -1
-INFO, 					service, 	2019-09-01, 2021-08-31, 8, 0
-ACM EAC, 				service, 	2018-01-01, 2020-07-01, 1, -1
+Strategies, 			Meetings + critique,	research, 	2020-01-01, 2022-06-15, 2, -1
+Cyberlearning, 			Meetings + critique, 	research, 	2020-01-01, 2020-07-15, 1, -1
+CRA-E, 					Meetings,				service, 	2020-07-01, 2022-07-01, 1, -1
+INFO, 					Administration, 		service, 	2019-09-01, 2021-08-31, 8, 0
+ACM EAC, 				Meetings,				service, 	2018-01-01, 2020-07-01, 1, -1
 
 # 2019-20
-NSF Assess (10/3),		funding, 	2019-08-01, 2020-10-03, 2, 0
-Google CS (3/10),		funding, 	2020-02-01, 2020-03-10, 2, 0
-NSF CS for All (4/22),	funding, 	2020-01-01, 2020-04-22, 5, 0
-NSF Expeditions (6/15),	funding, 	2020-03-15, 2020-06-15, 1, 0
+NSF Assess (10/3),		Submitted 10/3,			funding, 	2019-08-01, 2019-10-03, 2, 0
+Google CS (3/10),		Submitted 3/10,			funding, 	2020-02-01, 2020-03-10, 2, 0
+NSF CS for All (4/22),	4/16, 4/22, 4/27,		funding, 	2020-01-01, 2020-04-22, 5, 0
+NSF Expeditions (6/15),	Grant writing,			funding, 	2020-03-15, 2020-06-15, 1, 0
 
-ICER Careers (4/10),	research, 	2020-03-23, 2020-04-10, 10, 0
-ICER Cognimates (4/10),	research, 	2020-03-23, 2020-04-10, 3, 0		
-ASSETS Triage (5/7),	research, 	2020-03-23, 2020-05-07, 2, 0		
-TOCE Interests (5/1),	research, 	2020-03-23, 2020-05-01, 2, 0
-Just CS Ed, 			research, 	2020-04-28, 2020-06-15, 5, -1
+ICER Careers,			Neil; abstract 4/3,		research, 	2020-03-23, 2020-04-10, 10, 0
+ICER Cognimates,		Stef; abstract 4/3,		research, 	2020-03-23, 2020-04-10, 3, 0		
+ASSETS Triage,			Saba,					research, 	2020-03-23, 2020-05-07, 2, 0		
+TOCE Interests,			Andrew,					research, 	2020-03-23, 2020-05-01, 2, 0
+Just CS Ed, 			Book writing,			research, 	2020-04-28, 2020-06-15, 5, -1
 
-HCID 520, 				teaching, 	2019-12-10, 2020-03-22, 10, 0
-INFO 200, 				teaching, 	2019-12-10, 2020-03-22, 10, 0
+HCID 520, 				Teaching + grading,		teaching, 	2019-12-10, 2020-03-22, 10, 0
+INFO 200, 				Teaching + grading,		teaching, 	2019-12-10, 2020-03-22, 10, 0
 
-ICER 20 PC, 			reviewing, 	2020-01-01, 2020-09-05, 2, -1
-NSF review,				service,	2020-04-13, 2020-04-19, 3, 0
+ICER 20 PC, 			Conference planning,	reviewing, 	2020-01-01, 2020-09-05, 2, -1
+NSF review,				Proposal review,		service,	2020-04-13, 2020-04-19, 3, 0
 
-CRA-E (ORD), 			travel, 	2020-06-22, 2020-06-23, 20, 1
-Snowbird, 				travel, 	2020-07-21, 2020-07-24, 30, 1
-ICER 2020,				travel, 	2020-08-10, 2020-08-12, 12, 1
-Dagstuhl, 				travel, 	2020-08-24, 2020-08-28, 50,	1
+CRA-E (ORD), 			Mentorship,				travel, 	2020-06-22, 2020-06-23, 20, 1
+Snowbird, 				Mentorship + impact,	travel, 	2020-07-21, 2020-07-24, 30, 1
+ICER 2020,				Conference,				travel, 	2020-08-10, 2020-08-12, 12, 1
+Dagstuhl, 				Retreat,				travel, 	2020-08-24, 2020-08-28, 50,	1
 
 # 2020-21
-INFO 442, 				teaching, 	2020-09-02, 2020-12-15, 8, 0
-HCID 520, 				teaching, 	2020-12-15, 2021-03-15, 8, 0
-INFO 360, 				teaching, 	2021-03-15, 2021-06-15, 8, 0
+INFO 442, 				Teaching + grading,		teaching, 	2020-09-02, 2020-12-15, 8, 0
+HCID 520, 				Teaching + grading,		teaching, 	2020-12-15, 2021-03-15, 8, 0
+INFO 360, 				Teaching + grading,		teaching, 	2021-03-15, 2021-06-15, 8, 0
 
-ICER 21 PC, 			reviewing, 	2020-08-01, 2021-09-05, 3, 0
+ICER 21 PC, 			Conference planning,	reviewing, 	2020-08-01, 2021-09-05, 3, 0
 
 # 2021-22 - Sabbatical
 
 # 2022-23
-Teaching, 				teaching, 	2022-09-02, 2022-12-15, 8, 0
-Teaching, 				teaching, 	2022-12-15, 2023-03-15, 8, 0
-Teaching, 				teaching, 	2023-03-15, 2023-06-15, 8, 0
+Teaching, 				Teaching + grading,		teaching, 	2022-09-02, 2022-12-15, 8, 0
+Teaching, 				Teaching + grading,		teaching, 	2022-12-15, 2023-03-15, 8, 0
+Teaching, 				Teaching + grading,		teaching, 	2023-03-15, 2023-06-15, 8, 0

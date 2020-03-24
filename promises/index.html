@@ -18,7 +18,7 @@
 			
 			.bar {
 				display: inline-block;
-				height: 3em;
+				height: 2em;
 				overflow: hidden;
 				margin: 1px;
 				border-radius: 3px;
@@ -41,8 +41,13 @@
 				font-size: small;
 			}
 			
+			.detail {
+				font-size: x-small;
+				color: grey;
+			}
+			
 			table .bar {
-				height: 8px;
+				height: 2em;
 			}
 			
 			#timeline th, #timeline td {
@@ -157,7 +162,16 @@
 					});
 					
 					if(happens)
-						rows.push("<tr>" + "<td>" + promise.description + "</td>" + columns.join("") + "</tr>");
+						rows.push(
+							"<tr>" + 
+								"<td>" + 
+									promise.description + 
+									"</br>" +
+									"<span class='detail'>" + promise.detail + (promise.end ? " &bullet; " + promise.end + "</span>" : "") +
+								"</td>" + 
+								columns.join("") + 
+							"</tr>"
+						);
 
 				});
 				
@@ -402,11 +416,12 @@
 						promise = promise.split(",");
 						return {
 							description: promise[0].trim(),
-							category: promise[1].trim(),
-							start: promise[2].trim(),
-							end: promise[3].trim(),
-							weeklyHours: parseInt(promise[4].trim()),
-							strength: parseInt(promise[5].trim()),
+							detail: promise[1].trim(),
+							category: promise[2].trim(),
+							start: promise[3].trim(),
+							end: promise[4].trim(),
+							weeklyHours: parseInt(promise[5].trim()),
+							strength: parseInt(promise[6].trim()),
 						}
 					}
 				);
