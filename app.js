@@ -54,8 +54,8 @@ class App extends React.Component {
 			"/impact",
 			"/advice",
 			"/bio",
-			"/contact",
-			"/funding"
+			"/funding",
+			"/contact"
 		];
 		
 	}
