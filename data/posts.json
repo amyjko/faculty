@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/@amyjko/work-ethic-and-hygge-in-a-time-of-social-distancing-b76c0413a8c2",
+		title: "Work ethic and hygge in a time of social distancing",
+		date: "2020.3",
+		tags: ["academia", "personal"],
+		img: "hygge",
+		alt: "A water color illustration of the Danish geographic silhouette wrestling the Chinese geographic silhouette."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/im-a-professor-d732ba26c522",
 		title: "I'm a Professor!",
 		date: "2020.3",
