@@ -15,8 +15,8 @@ class ContactInfo extends React.Component {
 					image={this.props.app.getWebRoot() + "/images/contact/office.jpg"}
 					alt="A photograph of my office."
 					link="https://goo.gl/maps/7c3irRBubGvXYEtZ8"
-					header="Office"
-					content=". Each quarter I hold office hours in my office, Mary Gates Hall 015E (Winter quarter 2020, Thursdays 3:10-4:00 pm). They're primarily to serve students I'm in classes I'm teaching, but anyone else is also free to visit. I have a bluetooth doorbell you can press that will chime in my office. If I don't come, that means I'm not in. You can write me an email instead."
+					header="Office hours"
+					content=". Spring 2020 my office hours are on Zoom, Fridays 4:30-5 Pacific, at https://washington.zoom.us/my/amyjko. Normally, my office hours are in Mary Gates Hall 015E, where I have a bluetooth doorbell you can press that will chime in my office. If I don't come, that means I'm not in. You can write me an email instead."
 				/>
 
 				<Block 
