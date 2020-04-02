@@ -1,5 +1,18 @@
 [
 	{
+		"id": "hcipckchallenge",
+		"kind": "refereed workshop paper",
+		"authors": ["Alannah Oleson", "Amy J. Ko"],
+		"year": 2020,
+		"title": "Toward the Development of HCI Pedagogical Content Knowledge",
+		"source": "ACM SIGCHI Symposium on HCI Education (EduCHI 2020)",
+		"pages": "to appear",
+		"digital library url": null,
+		"local url": "Oleson2020HCIPCK.pdf",
+		"publisher": "ACM",
+		"contribution": "Discusses the need for research on HCI educator's pedagogical content knowledge."
+	},
+	{
 		"id": "hcidifficulties",
 		"kind": "refereed conference paper",
 		"authors": ["Alannah Oleson", "Meron Solomon", "Amy J. Ko"],
