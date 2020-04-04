@@ -46,6 +46,8 @@ class ProjectSummary extends React.Component {
 				</Link>
 			);
 		});
+
+		var moreDetails = "See " + (this.props.papers.length) + " papers" + (this.props.links.length > 0 ? ", " + this.props.links.length + " demo" + (this.props.links.length > 1 ? "s" : "") + ", " : "") + " and impact details..."
 		
 		var link = this.props.app.getWebRoot() + "/projects/" + this.props.id;
 
@@ -59,7 +61,7 @@ class ProjectSummary extends React.Component {
 					<h4>{this.props.name} <small>({this.props.startdate}&ndash;{this.props.stopdate})</small></h4>
 					<p>{people}</p>
 					<p>{this.props.description}</p>
-					<p><a href={link}>More details...</a></p>
+					<p><a href={link}>{moreDetails}</a></p>
 				</span>
 
 			/>

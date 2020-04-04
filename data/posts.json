@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/an-autobiographical-synopsis-of-kentaro-toyamas-geek-heresy-3b3251c23cd1",
+		title: "An autobiographical synopsis of Kentaro Toyama's \"Geek Heresy\"",
+		date: "2020.4",
+		tags: ["computing education", "personal", "diversity", "society"],
+		img: "heresy",
+		alt: "A blue sky with red fragments of digital devices being sucked into a grey cloud."
+	},
+	{
 		url: "https://medium.com/@amyjko/work-ethic-and-hygge-in-a-time-of-social-distancing-b76c0413a8c2",
 		title: "Work ethic and hygge in a time of social distancing",
 		date: "2020.3",

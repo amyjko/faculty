@@ -120,7 +120,7 @@
 		"funding": [],
 		"people": ["ajko", "glnelson"],
 		"papers": ["walkthrough1", "walkthrough2", "practicalguide", "certheory"],
-		"links": null,
+		"links": [],
 		"startdate": 2003,
 		"stopdate": null,
 		"impact": "Our work on research methods is widely read by new Ph.D. students across computer science to inform how they evaluate new developer tools and how they use theory."
