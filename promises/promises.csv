@@ -1,60 +1,54 @@
-# Forever promises
-Read,					Papers, books, reviews, research,	2020-01-01,	,			2, -1
-PhDs, 					Weekly meetings,		research, 	2020-01-01,	, 			5, -1
-CS for All WA,			Meetings + networking,	service, 	2020-01-01,	, 			1, -1
+# SHORT					LONG					CATEGORY	START		HRS	MIDDLE	HRS	END PRIORITY
+
+# Indefinite promises
+Read,					Papers+books+reviews, 	research,	2020-01-01,	2,	,		,		, -1
+PhDs, 					Weekly meetings,		research, 	2020-01-01, 5,	,		,		, -1
+CS for All WA,			Meetings + networking,	service, 	2020-01-01, 1,	,		,		, -1
+TOCE AE, 				Assign reviews,			reviewing, 	2020-01-01, 2,	,		,		, -1
 
 # Annual recurring promises
-PhD admissions, 		Reviews + meetings, 	research, 	2020-01-01, 2020-03-20, 2, 0
-PhD admissions, 		Reviews + meetings, 	research, 	2021-01-01, 2021-03-20, 2, 0
-PhD admissions, 		Reviews + meetings, 	research, 	2022-01-01, 2022-03-20, 2, 0
-iSchool, 				Faculty meetings,		service, 	2019-09-15,	2020-06-15, 3, -1
-iSchool, 				Faculty meetings,		service, 	2020-09-15,	2021-06-15, 3, -1
-iSchool, 				Faculty meetings,		service, 	2022-09-15,	2023-06-15, 3, -1
-Xmas,					Vacation + travel,		personal, 	2020-12-20, 2021-01-02, 30,	1
-Xmas,	 				Vacation + travel,		personal, 	2021-12-20, 2022-01-02, 30,	1
-Xmas,	 				Vacation + travel,		personal, 	2022-12-20, 2023-01-02, 30,	1
-TOCE AE, 				Assign reviews,			reviewing, 	2020-01-01, 		  , 2, -1
+PhD admissions, 		Reviews + meetings, 	research, 	2020-01-01, 2, 2020-03-20, 2, 	2020-03-20, 0
+PhD admissions, 		Reviews + meetings, 	research, 	2020-12-10, 3, 2021-01-01, 2, 	2021-03-20, 0
+PhD admissions, 		Reviews + meetings, 	research, 	2021-12-10, 3, 2022-01-01, 2, 	2022-03-20, 0
+iSchool, 				Faculty meetings,		service, 	2019-09-15,	3,,,				2020-06-15, -1
+iSchool, 				Faculty meetings,		service, 	2020-09-15,	3,,,				2021-06-15, -1
+iSchool, 				Faculty meetings,		service, 	2021-09-15,	3,,,				2022-06-15, -1
+Xmas,					Vacation + travel,		personal, 	2020-12-20, 30,,,				2021-01-02, 1
+Xmas,					Vacation + travel,		personal, 	2021-12-20, 30,,,				2022-01-02, 1
+Xmas,					Vacation + travel,		personal, 	2022-12-20, 30,,,				2023-01-02, 1
 
-# Multi-year commitments
-Strategies, 			Meetings + critique,	research, 	2020-01-01, 2022-06-15, 2, -1
-Cyberlearning, 			Meetings + critique, 	research, 	2020-01-01, 2020-07-15, 1, -1
-CRA-E, 					Meetings,				service, 	2020-07-01, 2022-07-01, 1, -1
-INFO, 					Administration, 		service, 	2019-09-01, 2021-08-31, 8, 0
-ACM EAC, 				Meetings,				service, 	2018-01-01, 2020-07-01, 1, -1
+# Multi-year commitments	
+Strategies, 			Meetings + critique,	research, 	2020-01-01, 2,,,				2022-06-15, -1
+Cyberlearning, 			Meetings + critique, 	research, 	2020-01-01, 1, 2020-07-01, 4, 	2020-07-15, -1
+CRA-E, 					Meetings,				service, 	2020-07-01, 1,,,				2022-07-01, -1
+INFO, 					Administration, 		service, 	2019-09-01, 8,,,				2021-08-31, -1
+ACM EAC, 				Meetings,				service, 	2018-01-01, 1,,,				2020-07-01, -1
 
 # 2019-20
-NSF Assess,				Submitted 10/3,			funding, 	2019-08-01, 2019-10-03, 2, 0
-Google CS,				Submitted 3/10,			funding, 	2020-02-01, 2020-03-10, 2, 0
-NSF CS for All,			UW 3-day 4/22,			funding, 	2020-01-01, 2020-04-22, 5, 0
-NSF Expeditions,		UW 3-day 6/10,			funding, 	2020-03-15, 2020-06-15, 1, 0
+NSF Assess,				Submitted 10/3,			funding, 	2019-08-01, 2, 2019-09-15, 5, 	2019-10-03, 0
+Google CS,				Submitted 3/10,			funding, 	2020-02-01, 1, 2020-03-01, 3, 	2020-03-10, 0
+NSF CS for All,			UW 3-day 4/22,			funding, 	2020-01-01, 2, 2020-03-15, 6, 	2020-04-22, 0
+NSF Expeditions,		UW 3-day 6/10,			funding, 	2020-03-15, 2, 2020-05-01, 3, 	2020-06-15, 0
 
-TOCE Careers,			Neil; 5/1,				research, 	2020-03-23, 2020-05-01, 5, 0
-ICER Cognimates,		Stef; abstract 4/3,		research, 	2020-03-23, 2020-04-10, 3, 0		
-ASSETS Triage,			Saba,					research, 	2020-03-23, 2020-05-07, 2, 0		
-TOCE Interests,			Andrew,					research, 	2020-03-23, 2020-05-01, 2, 0
-Just CS Ed, 			Book writing,			research, 	2020-04-28, 2020-06-15, 5, -1
+TOCE Careers,			Neil; 5/1,				research, 	2020-03-23, 2, 2020-04-15, 3, 	2020-05-01, 0
+ICER Cognimates,		Stef; abstract 4/3,		research, 	2020-03-23, 2, 2020-04-01, 4, 	2020-04-10, 0
+ASSETS Triage,			Saba,					research, 	2020-03-23, 1, 2020-04-15, 2, 	2020-05-07, 0
+TOCE Interests,			Andrew,					research, 	2020-03-23, 1, 2020-04-15, 2, 	2020-05-01, 0
+Just CS Ed, 			Book writing,			research, 	2020-04-15, 1, 2020-05-01, 5, 	2020-06-15, -1
 
-HCID 520, 				Teaching + grading,		teaching, 	2019-12-10, 2020-03-22, 10, 0
-INFO 200, 				Teaching + grading,		teaching, 	2019-12-10, 2020-03-22, 10, 0
+HCID 520, 				Teaching + grading,		teaching, 	2019-12-10, 10,,,				2020-03-22, 0
+INFO 200, 				Teaching + grading,		teaching, 	2019-12-10, 10,,,				2020-03-22, 0
 
-ICER 20 PC, 			Conference planning,	reviewing, 	2020-01-01, 2020-09-05, 2, -1
-NSF review,				Proposal review,		service,	2020-04-13, 2020-04-19, 3, 0
+ICER 20 PC, 			Conference planning,	reviewing, 	2020-01-01, 3, 2020-05-15, 5, 	2020-09-05, -1
 
-CRA-E (ORD), 			Mentorship,				travel, 	2020-06-22, 2020-06-23, 20, 1
-Snowbird, 				Mentorship + impact,	travel, 	2020-07-21, 2020-07-24, 30, 1
-ICER 2020,				Conference,				travel, 	2020-08-10, 2020-08-12, 12, 1
-Dagstuhl, 				Retreat,				travel, 	2020-08-24, 2020-08-28, 50,	1
+ICER 2020,				Conference,				travel, 	2020-08-10, 12,,,				2020-08-12, 0
+Dagstuhl, 				Retreat,				travel, 	2020-08-24, 50,,,				2020-08-28, 1
 
 # 2020-21
-INFO 442, 				Teaching + grading,		teaching, 	2020-09-02, 2020-12-15, 8, 0
-HCID 520, 				Teaching + grading,		teaching, 	2020-12-15, 2021-03-15, 8, 0
-INFO 360, 				Teaching + grading,		teaching, 	2021-03-15, 2021-06-15, 8, 0
+INFO 442, 				Teaching + grading,		teaching, 	2020-09-02, 8,,, 				2020-12-15, 0
+HCID 520, 				Teaching + grading,		teaching, 	2020-12-15, 8,,,				2021-03-15, 0
+INFO 360, 				Teaching + grading,		teaching, 	2021-03-15, 8,,,				2021-06-15, 0
 
-ICER 21 PC, 			Conference planning,	reviewing, 	2020-08-01, 2021-09-05, 3, 0
+ICER 21 PC, 			Conference planning,	reviewing, 	2020-08-01, 3, 2021-04-05, 5, 	2021-09-05, -1
 
 # 2021-22 - Sabbatical
-
-# 2022-23
-Teaching, 				Teaching + grading,		teaching, 	2022-09-02, 2022-12-15, 8, 0
-Teaching, 				Teaching + grading,		teaching, 	2022-12-15, 2023-03-15, 8, 0
-Teaching, 				Teaching + grading,		teaching, 	2023-03-15, 2023-06-15, 8, 0

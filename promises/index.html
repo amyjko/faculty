@@ -96,7 +96,29 @@
 					"reviewing": 5,
 					"travel": 6
 				}
-			};			
+			};
+			
+			function computeWeeklyHoursOnDate(promise, currentDate) {
+				
+				if(promise.middle && promise.endWeeklyHours && promise.end) {
+
+					var startDate = new Date(promise.start);
+					var middleDate = new Date(promise.middle);
+					var endDate = new Date(promise.end);
+
+					if(currentDate.getTime() < startDate.getTime())
+						return 0;
+					else if(currentDate.getTime() < middleDate.getTime())
+						return promise.startWeeklyHours;
+					else if(currentDate.getTime() < endDate.getTime())
+						return promise.endWeeklyHours;
+					else
+						return 0;					
+					
+				} else
+					return promise.startWeeklyHours;
+				
+			}	
 						
 			function promisesToTimeline(promises, profile) {
 				
@@ -155,7 +177,7 @@
 						if(index < months.length - 1) {
 						
 							if(datesIntersect(month, months[index + 1], start, end)) {
-								content = renderBar(Math.min(1, promise.weeklyHours / (profile.preferredHours / 4)), profile.colors[promise.category]);
+								content = renderBar(Math.min(1, computeWeeklyHoursOnDate(promise, month) / (profile.preferredHours / 4)), profile.colors[promise.category]);
 								happens = true;
 							}
 	
@@ -242,16 +264,7 @@
 						var start = new Date(promise.start);
 						var end = promise.end === "" ? null : new Date(promise.end);
 						
-						// If the start of the promise is within this week OR
-						// The promise starts before and ends after ||
-						// The promise started earlier and has no end OR
-						// The end of the promise is within this week
-/*
-						if(	(start.getTime() >= currentDate.getTime() && start.getTime() <= nextDate.getTime()) ||
-							(end !== null && start.getTime() <= currentDate.getTime() && end.getTime() >= nextDate.getTime()) ||
-							(start.getTime() < currentDate.getTime() && end === null) ||
-							(end !== null && end.getTime() >= currentDate.getTime() && end.getTime() <= nextDate.getTime())) {
-*/
+						// If this promise occurs this week...
 						if(datesIntersect(currentDate, nextDate, start, end)) {
 						
 							var proportionOfWeek = Math.min(1,
@@ -260,11 +273,11 @@
 									start.getTime() < currentDate.getTime() ? 
 										(end.getTime() - currentDate.getTime()) / 1000 / 60 / 60 / 24 / 7 :
 										(nextDate.getTime() - start.getTime()) / 1000 / 60 / 60/ 24 / 7);
-						
+
 							weeksPromises.push(
 								{
 									description: promise.description,
-									hours: Math.round(promise.weeklyHours * proportionOfWeek),
+									hours: Math.round(computeWeeklyHoursOnDate(promise, currentDate) * proportionOfWeek),
 									category: promise.category,
 									strength: promise.strength,
 									rank: profile.ranks[promise.category],
@@ -275,9 +288,12 @@
 						
 					});
 					
-					// Are there any suppressing promises?
+					// Are there any suppressing promises? If so, remove weak promises.
 					if(_.includes(_.map(weeksPromises, "strength"), 1))
-						_.remove(weeksPromises, function(promise) { return promise.strength < 0; });
+						_.remove(weeksPromises, function(promise) { 
+							console.log(promise);
+							console.log(promise.strength);
+							return promise.strength < 0; });
 					
 					// Sort the remaining promises by rank.
 					weeksPromises = _.orderBy(weeksPromises, ["rank", "hours"], ['asc', 'desc']);
@@ -423,9 +439,11 @@
 							detail: promise[1].trim(),
 							category: promise[2].trim(),
 							start: promise[3].trim(),
-							end: promise[4].trim(),
-							weeklyHours: parseInt(promise[5].trim()),
-							strength: parseInt(promise[6].trim()),
+							startWeeklyHours: parseInt(promise[4].trim()),
+							middle: promise[5].trim(),
+							endWeeklyHours: parseInt(promise[6].trim()),
+							end: promise[7].trim(),
+							strength: parseInt(promise[8].trim()),
 						}
 					}
 				);
