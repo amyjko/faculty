@@ -291,8 +291,6 @@
 					// Are there any suppressing promises? If so, remove weak promises.
 					if(_.includes(_.map(weeksPromises, "strength"), 1))
 						_.remove(weeksPromises, function(promise) { 
-							console.log(promise);
-							console.log(promise.strength);
 							return promise.strength < 0; });
 					
 					// Sort the remaining promises by rank.
