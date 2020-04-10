@@ -10,7 +10,8 @@ class Footer extends React.Component {
 				<hr/>
 				<small>
 					Copyright Amy J. Ko.
-					Computing diversity and equity icon "Diversity" by Stephen Plaster from the Noun Project. 
+					<br/>See <a href="https://github.com/amyjko/faculty" target="_blank">this site's GitHub repository</a> to view source and provide feedback.
+					<br/>Computing diversity and equity icon "Diversity" by Stephen Plaster from the Noun Project. 
 					Understanding program behavior icon "Dependency" by Knut M. Synstad from the Noun Project.
 					Programming problem solving icon "Thinking" icon by AomAm from the Noun Project.
 					Software engineering expertise icon "Teamwork" by Maxim Kulikov from the Noun Project.
