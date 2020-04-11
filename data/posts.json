@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/my-new-appreciation-for-history-28db2577e488",
+		title: "My new appreciation for history",
+		date: "2020.4",
+		tags: ["personal", "diversity", "society"],
+		img: "history",
+		alt: "A photograph of Amy as an infant reaching for books on a bookshelf."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/an-autobiographical-synopsis-of-kentaro-toyamas-geek-heresy-3b3251c23cd1",
 		title: "An autobiographical synopsis of Kentaro Toyama's \"Geek Heresy\"",
 		date: "2020.4",
