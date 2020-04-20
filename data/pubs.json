@@ -84,8 +84,8 @@
 		"year": 2019,
 		"title": "Towards Validity for a Formative Assessment for Language-Specific Program Tracing Skills",
 		"source": "ACM Koli Calling International Conference on Computing Education Research",
-		"pages": null,
-		"digital library url": null,
+		"pages": "1-10",
+		"digital library url": "https://doi.org/10.1145/3364510.3364525",
 		"local url": "Nelson2019TracingValidity.pdf",
 		"publisher": "ACM",
 		"contribution": "Contributes theoretical perspectives on how to assess program tracing skills, and how to think about assessment validity."
