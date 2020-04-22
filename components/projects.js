@@ -82,7 +82,7 @@ class Projects extends React.Component {
 		return (
 			<div>
 				<div className="lead">
-					I study effective, equitable, scalable ways for humanity to learn computing.
+					I study equitable and just ways for humanity to learn computing, whether youth expressing themselves with code, teachers educating a computing-literate future, or adults learning an API to start a new career. I'm fascinated by people's struggle to make sense of what computing means for their identity, their communities, and the world.
 				</div>
 				
 				<p>
