@@ -1,5 +1,19 @@
 [
 	{
+ 		"id": "minatari",
+ 		"name": "Mina Tari",
+ 		"active": true,
+ 		"advised": false,
+ 		"level": "phd",
+ 		"dept": "The Information School",
+ 		"coadvisor": null,
+ 		"bio": "Mina is PhD student in the Information School exploring women of color's experiences in introductory computing courses. She's a homegrown UW student, coming from the Informatics and Gender, Women, and Sexuality Studies programs. Mina works with Amy and the lab to apply a critical feminist lens to questions regarding equity in computing education.",
+ 		"url": "http://minatari.com/",
+ 		"startdate": 2018,
+ 		"enddate": null,
+ 		"achievements": []
+ 	},
+	{
  		"id": "jliang9",
  		"name": "Jenny Liang",
  		"active": true,
