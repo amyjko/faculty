@@ -104,6 +104,14 @@
 		alt: "A pencil sketch of a rectangle fading from dark solid black to a diffuse fog."
 	},
 	{
+		url: "https://medium.com/bits-and-behavior/writing-for-myself-and-others-a-reflection-on-academic-blogging-8abdfda6b50b",
+		title: "Writing for myself and others: a reflection on academic blogging",
+		date: "2020.1",
+		tags: ["academia"],
+		img: "blogging",
+		alt: "A locked diary with words 'KEEP OUT'"
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/a-autobiographical-synopsis-of-morgan-ames-the-charisma-machine-68792c7987fa",
 		title: "A autobiographical synopsis of Morgan Ames’ “The Charisma Machine",
 		date: "2020.1",
