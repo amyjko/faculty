@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/the-motive-is-the-message-e464933f505d",
+		title: "The motive is the message",
+		date: "2020.4",
+		tags: ["personal", "HCI"],
+		img: "communication",
+		alt: "A comic strip of a stick person pushing the world hello to another person, but it collapses, jumbled."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/my-new-appreciation-for-history-28db2577e488",
 		title: "My new appreciation for history",
 		date: "2020.4",
