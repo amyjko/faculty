@@ -103,6 +103,7 @@
 		"people": ["amaswea", "ajko", "burg"],
 		"papers": ["genie", "rewire", "frictionary", "scry", "feedlack", "scout"],
 		"links": [
+			{ title: "See Scout", url: "https://www.youtube.com/watch?v=y8pTC6FEsKc" },
 			{ title: "See Genie", url: "https://www.youtube.com/watch?v=Ivtvyy7m-qc" },
 			{ title: "See Rewire", url: "https://www.youtube.com/watch?v=9LA8feFOsOo" },
 			{ title: "Try Frictionary", url: "http://faculty.uw.edu/ajko/demo/frictionary" },
