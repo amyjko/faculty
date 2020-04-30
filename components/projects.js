@@ -102,7 +102,7 @@ class Projects extends React.Component {
 				</ul>
 				
 				<p>
-					In addition to my current focus on computing education, I also have expertise in <strong>HCI</strong>, <strong>software engineering</strong>, <strong>debugging</strong>, <strong>end-user programming</strong>, and <strong>explainability</strong>.
+					In addition to my current focus on learning about computation, I also have extensive expertise in <em>debugging</em>, <em>end-user programming</em>, <em>explainability</em>, <em>design education</em>, and <em>human aspects of software engineering</em>.
 				</p>
 					
 				<p>Want to work with me? Read about my <Link to="/students">lab</Link>.</p>
