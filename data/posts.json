@@ -1,5 +1,21 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/paulo-freires-pedagogy-of-the-oppressed-a-manifesto-on-education-and-social-change-dbd63cd9fc17",
+		title: "Paulo Freire’s “Pedagogy of the Oppressed”: a manifesto on education and social change",
+		date: "2020.5",
+		tags: ["society", "diversity", "teaching"],
+		img: "oppressed",
+		alt: "Multiple layers of faded colors surrounding a struggling person, with a smear through the top pointing a way out."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/on-the-future-of-academic-conferences-c0a54f027423",
+		title: "On the future of academic conferences",
+		date: "2020.5",
+		tags: ["academia"],
+		img: "conferences",
+		alt: "Four groups of stick figures chatting in a hallway, but with dashed grey borders around each person."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/the-motive-is-the-message-e464933f505d",
 		title: "The motive is the message",
 		date: "2020.4",
