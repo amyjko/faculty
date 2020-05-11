@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/on-the-inherent-injustice-of-admissions-ccada556409",
+		title: "On the inherent injustice of admissions",
+		date: "2020.5",
+		tags: ["academia", "diversity"],
+		img: "admissions",
+		alt: "A crowd of people rushing to a locked safe space to escape a firey cloud."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/paulo-freires-pedagogy-of-the-oppressed-a-manifesto-on-education-and-social-change-dbd63cd9fc17",
 		title: "Paulo Freire’s “Pedagogy of the Oppressed”: a manifesto on education and social change",
 		date: "2020.5",
