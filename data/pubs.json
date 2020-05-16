@@ -1,5 +1,18 @@
 [
 	{
+		"id": "codeitzagency",
+		"kind": "refereed conference paper",
+		"authors": ["Benjamin Xie", "Greg L. Nelson", "Harshitha Akkaraju", "William Kwok", "Amy J. Ko"],
+		"year": 2020,
+		"title": "The Effect of Informing Agency in Self-Directed Online Learning Environments",
+		"source": "ACM Learning at Scale (L@S)",
+		"pages": "to appear",
+		"digital library url": null,
+		"local url": "Xie2020Agency.pdf",
+		"publisher": "ACM",
+		"contribution": "Finds that affording more agency in learning environments may increase motivation, but may not improve learning because of the increased burden on decision-making."
+	},
+	{
 		"id": "hcipckchallenge",
 		"kind": "refereed workshop paper",
 		"authors": ["Alannah Oleson", "Amy J. Ko"],
