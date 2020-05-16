@@ -57,7 +57,7 @@ class Paper extends React.Component {
 					{award ? <br/> : null}
 					{title} {this.props.hideLink ? null : <small>{pdf} {dl}</small>}
 					<br/>{authors} ({this.props.year})
-					<br/><small><i>{this.props.source}</i>{this.props.pages == '' ? "." : ", " + this.props.pages + "."}</small>
+					<br/><small><i>{this.props.source}</i>{(this.props.pages === '' || this.props.pages === null) ? "." : ", " + this.props.pages + "."}</small>
 					<br/>{contribution}
 				</div>
 			)
