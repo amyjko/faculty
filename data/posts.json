@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/@amyjko/my-slow-escape-from-gendered-self-loathing-482e54977c88",
+		title: "My slow escape from gendered self-loathing",
+		date: "2020.5",
+		tags: ["personal", "diversity"],
+		img: "loathing",
+		alt: "A beast on the left, squatting, and a woman on the right, sitting, with her arm around its back."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/on-the-inherent-injustice-of-admissions-ccada556409",
 		title: "On the inherent injustice of admissions",
 		date: "2020.5",
