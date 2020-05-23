@@ -74,7 +74,7 @@
 		"source": "Empirical Software Engineering",
 		"pages": null,
 		"digital library url": "https://doi.org/10.1007/s10664-020-09810-1",
-		"local url": null,
+		"local url": "Latoza2020ExplicitProgrammingStrategies.pdf",
 		"publisher": "Springer",
 		"contribution": "Presents the concept of explicit programming strategies, the idea of encoding manual procedures for solving programming programmers to accelerate software development problem solving. Presents a notation for encoding strategies and evidence that developers using explicit strategies, independent of expertise, were more successful at the design and debugging tasks."
 	},
