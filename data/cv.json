@@ -1047,6 +1047,11 @@
 			dates: "2018-present"
 		},
 		{
+			title: "Committee Member",
+			committee: "Computing Research Association’s Education Committee (CRA-E)",
+			dates: "2020-present"	
+		},
+		{
 			title: "Secretary",
 			committee: "Seattle Public Schools CS Advisory Board.",
 			dates: "2018-present"

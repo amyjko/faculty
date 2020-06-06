@@ -1,5 +1,21 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/my-strained-relationship-with-radicalism-and-pragmatism-495fba42ae5e",
+		title: "Ideas from the Code and Cognition Lab (2020 edition)",
+		date: "2020.6",
+		tags: ["computing education", "diversity", "personal"],
+		img: "radicalism",
+		alt: "Three grey-blue blobs, one vertical, one circular in slight motion, and one oblong, racing to the future."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/ideas-from-the-code-and-cognition-lab-2020-edition-b5f2f752bb65",
+		title: "Ideas from the Code and Cognition Lab (2020 edition)",
+		date: "2020.6",
+		tags: ["computing education", "diversity", "programming languages"],
+		img: "2020ideas",
+		alt: "A red, green, and blue thread, squiggly and overlapping, terminating in a point on the right."
+	},
+	{
 		url: "https://medium.com/@amyjko/my-slow-escape-from-gendered-self-loathing-482e54977c88",
 		title: "My slow escape from gendered self-loathing",
 		date: "2020.5",
