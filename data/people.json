@@ -1,5 +1,19 @@
 [
 	{
+ 		"id": "anael",
+ 		"name": "Anael Kuperwajs Cohen",
+ 		"active": true,
+ 		"advised": true,
+ 		"level": "undergrad",
+ 		"dept": "Macalester College",
+ 		"coadvisor": null,
+ 		"bio": "Anael is a CS and applied mathematics and statistics double major with a cognitive science concentration at Macalester College. She is interested in breaking down barriers for women and other minorities within the field of CS by pursuing a career in CS education.",
+ 		"url": "https://anaelkuperwajs.github.io/",
+ 		"startdate": 2020,
+ 		"enddate": null,
+ 		"achievements": []
+ 	},
+	{
  		"id": "minatari",
  		"name": "Mina Tari",
  		"active": true,
