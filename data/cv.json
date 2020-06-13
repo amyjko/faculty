@@ -64,120 +64,146 @@
 	funding: [
 		{
 			title: "Formal Verification of Accessibility",
-			funder: "National Science Foundation, award 1836813",
+			funder: "National Science Foundation",
+			award: "1836813",
 			investigators: "Michael Ernst (PI), Amy J. Ko (Co-PI), Jennifer Mankoff (Co-PI), Zach Tatlock (Co-PI)",
 			amount: "$738,125",
 			startdate: 2019,
 			enddate: 2022,
-			description: "New techniques to formally verify a range of accessibility properties of web applications."
+			description: "New techniques to formally verify a range of accessibility properties of web applications.",
+			url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1836813"
 		},
 		{
 			title: "Programming Strategies",
-			funder: "National Science Foundation, award 1703304",
+			funder: "National Science Foundation",
+			award: "1703304",
 			investigators: "Thomas LaToza (PI, George Mason University), Amy J. Ko (Co-PI, University of Washington)",
 			amount: "$1,199,555",
 			startdate: 2017,
 			enddate: 2021,
-			description: "Develop of a new science of programming strategies."
+			description: "Develop of a new science of programming strategies.",
+			url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1703734"
 		},
 		{
 			title: "Automatically Synthesizing Valid, Personalized, Formative Assessments of CS1 Concepts",
-			funder: "National Science Foundation, award 1735123",
+			funder: "National Science Foundation",
+			award: "1735123",
 			investigators: "Amy J. Ko (PI, University of Washington), Min Li (Co-PI, University of Washington)",
 			amount: "$549,857",
 			startdate: 2017,
 			enddate: 2020,
-			description: "New model of CS1 concepts, new approaches to formative assessment and feedback, new techniques problem synthesis, and a new paradigm for intelligent tutoring of programming."
+			description: "New model of CS1 concepts, new approaches to formative assessment and feedback, new techniques problem synthesis, and a new paradigm for intelligent tutoring of programming.",
+			url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1735123"
 		},
 		{
-			title: "AccessComputing",
-			funder: "National Science Foundation, award 1539179",
+			title: "BPC-AE: AcessComputing - Third Extension",
+			funder: "National Science Foundation",
+			award: "1539179",
 			investigators: "Richard Ladner (PI, University of Washington), Sheryl Burgstahler (Co-PI), Amy J. Ko (Co-PI), Jacob O. Wobbrock (Co-PI)",
 			amount: "$3,797,990",
 			startdate: 2015,
 			enddate: 2020,
-			description: "Increases access to computing for students with disabilities."
+			description: "Increases access to computing for students with disabilities.",
+			url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1539179"
 		},
 		{
 			title: "HCC: Large: Variations to Support Exploratory Programming",
-			funder: "National Science Foundation, award 	1314399",
+			funder: "National Science Foundation",
+			award: "1314399",
 			investigators: "Brad Myers (PI, Carnegie Mellon University), Amy J. Ko (Co-PI), Margaret Burnett (Co-PI, Oregon State University), Martin Erwig (Co-PI, Oregon State University), Anita Sarma (Co-PI, University of Nebraska, Lincoln), Gregg Rothermel (Co-PI, University of Nebraska, Lincoln)",
 			amount: "$2,999,991",
 			startdate: 2013,
 			enddate: 2017,
-			description: "New theory, tools, and techniques for supporting multiple versions and variations of programs."
+			description: "New theory, tools, and techniques for supporting multiple versions and variations of programs.",
+			url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1559657"
 		},
 		{
 			title: "CER: Computing Education through Collaborative Debugging",
-			funder: "National Science Foundation, award 1240786",
+			funder: "National Science Foundation",
+			award: "1240786",
 			investigators: "Amy J. Ko (PI), Margaret Burnett (Co-PI, Oregon State University), Catherine Law (Co-PI, Oregon State University)",
 			amount: "$599,999",
 			startdate: 2012,
 			enddate: 2015,
-			description: "Debugging puzzle games as a new method for engaging, efficient learning of computer programming."
+			description: "Debugging puzzle games as a new method for engaging, efficient learning of computer programming.",
+			url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1240786"
 		},
 		{
 			title: "CAREER: Enabling and Exploiting Evidence-Based Bug Triage",
-			funder: "National Science Foundation, award 1153625",
+			funder: "National Science Foundation",
+			award: "1153625",
 			investigators: "Amy J. Ko (PI)",
 			amount: "$592,456",
 			startdate: 2010,
 			enddate: 2014,
-			description: "Studies and tools for supporting analyzing and prioritizing bug reports."
+			description: "Studies and tools for supporting analyzing and prioritizing bug reports.",
+			nsf: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0952733"
 		},
 		{
 			title: "W Fund Early Stage Capital Investment",
 			funder: "W Fund",
+			award: null,
 			investigators: "Jacob O. Wobbrock (CEO), Amy J. Ko (CTO)",
 			amount: "$500,000",
 			startdate: 2013,
 			enddate: 2014,
-			description: "Gap fund to support the commercialization of the LemonAid research project."
+			description: "Gap fund to support the commercialization of the LemonAid research project.",
+			url: null
 		},
 		{
 			title: "Mobile/Social Debugging Games for Computing Education",
 			funder: "Microsoft Research Software Engineering Innovation Foundation Award",
+			award: null,
 			investigators: "Amy J. Ko (PI)",
 			amount: "$25,000",
 			startdate: 2013,
 			enddate: 2014,			
-			description: "Gift to support the Gidget research project."
+			description: "Gift to support the Gidget research project.",
+			url: null
 		},
 		{
 			title: "Selection-Based Contextual Help in the Wild",
 			funder: "Google Faculty Research Award",
+			award: null,
 			investigators: "Amy J. Ko (PI)",
 			amount: "$47,359",
 			startdate: 2012,
 			enddate: 2013,
-			description: "Gift to support the LemonAid research project."	
+			description: "Gift to support the LemonAid research project.",
+			url: null
 		},
 		{
 			title: "Automatic, Individualized Instructional Feedback to Improve Learning in an Online Programming Game",
 			funder: "University of Washington, Royalty Research Fund",
+			award: null,
 			investigators: "Amy J. Ko (PI)",
 			amount: "$32,122",
 			startdate: 2012,
 			enddate: 2013,
-			description: "Early stage internal grant to support Gidget."	
+			description: "Early stage internal grant to support Gidget.",
+			url: null
 		},
 		{
 			title: "Chime: Bringing Crowdsourced Contextual Help to the Masses",
 			funder: "UW Center for Commercialization",
+			award: null,
 			investigators: "Jacob O. Wobbrock (PI) and Amy J. Ko (Co-PI)",
 			amount: "$50,000",
 			startdate: 2012,
 			enddate: 2012,
-			description: "Early stage internal grant to support the commercialization of LemonAid."	
+			description: "Early stage internal grant to support the commercialization of LemonAid.",
+			url: null
 		},
 		{
 			title: "Software Developer Help Seeking on the Web",
 			funder: "Microsoft",
+			award: null,
 			investigators: "Amy J. Ko (PI)",
 			amount: "$6,200",
 			startdate: 2010,
 			enddate: 2011,
-			description: "Gift to support research on developer help seeking."	
+			description: "Gift to support research on developer help seeking.",
+			url: null
 		}
 	],
 

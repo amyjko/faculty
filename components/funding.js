@@ -1,5 +1,9 @@
 import React from 'react';
 import {Block} from './block';
+import _ from 'lodash';
+
+var cv = require('../data/cv.json');
+var nsfLinks = _.map(_.filter(cv.funding, { "funder" : "National Science Foundation" }), (award) => { return <li><a href={award.url} target="_blank">{award.title}</a></li>; });
 
 class Funding extends React.Component {
 		
@@ -24,7 +28,11 @@ class Funding extends React.Component {
 					alt="The NSF logo."
 					link="https://nsf.gov"
 					header="National Science Foundation"
-					content=". The majority of my sponsored research is funded by the U.S. National Science Foundation, which is tax-funded. I write proposals, which are confidentially evaluated by my peers, and when my peers and NSF find my proposals to have compelling intellectual merit and potential for broader impact, I receive grants. I use these grants to support my summer salary, my doctoral students stipends, benefits, and tuition, my lab's research expenses, hourly undergraduate research assistants, and our travel. My doctoral students also write their own proposals, often winning NSF graduate research fellowships to support the first 3 years of their doctoral work."
+					content=
+						<span>
+							. The majority of my sponsored research is funded by the U.S. National Science Foundation, which is tax-funded. I write proposals, which are confidentially evaluated by my peers, and when my peers and NSF find my proposals to have compelling intellectual merit and potential for broader impact, I receive grants. I use these grants to support my summer salary, my doctoral students stipends, benefits, and tuition, my lab's research expenses, hourly undergraduate research assistants, and our travel. My doctoral students also write their own proposals, often winning NSF graduate research fellowships to support the first 3 years of their doctoral work. My NSF awards include:
+							<ul>{nsfLinks}</ul>
+						</span>
 				/>
 
 				<Block 
