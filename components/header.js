@@ -25,6 +25,7 @@ class Header extends React.Component {
 							<br/><a href="http://cs.uw.edu" target="_blank">Computer Science &amp; Engineering (courtesy)</a>
 							<br/><a href="http://www.washington.edu" target="_blank">University of Washington, Seattle</a>
 							<br/><Link to="/cv">CV</Link>, <a href="http://faculty.uw.edu/ajko/promises">Commitments</a>
+							<br/><strong><a href="https://twitter.com/search?q=%23BlackLivesMatter">#BlackLivesMatter</a></strong>
 						</small>
 					</div>
 					
