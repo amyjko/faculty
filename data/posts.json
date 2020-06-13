@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/a-synopsis-of-costanza-chocks-design-justice-e00a476008fa",
+		title: "A synopsis of Costanza-Chock’s “Design Justice”: nothing for us without us",
+		date: "2020.6",
+		tags: ["computing education", "design", "diversity", "society"],
+		img: "designjustice",
+		alt: "A group of stick figures collaborating in various ways, with a green stick figure in the middle (the designer) participating."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/my-strained-relationship-with-radicalism-and-pragmatism-495fba42ae5e",
 		title: "My strained relationship with radicalism and pragmatism",
 		date: "2020.6",
