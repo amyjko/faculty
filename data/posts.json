@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/@amyjko/what-it-feels-like-to-lose-civil-rights-cfe38c6b2468",
+		title: "What it feels like to lose civil rights",
+		date: "2020.6",
+		tags: ["personal", "diversity", "society"],
+		img: "civilrights",
+		alt: "Angry red white and blue squiggles."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/a-synopsis-of-costanza-chocks-design-justice-e00a476008fa",
 		title: "A synopsis of Costanza-Chock’s “Design Justice”: nothing for us without us",
 		date: "2020.6",
