@@ -3,7 +3,7 @@
 		url: "https://medium.com/@amyjko/what-it-feels-like-to-lose-civil-rights-cfe38c6b2468",
 		title: "What it feels like to lose civil rights",
 		date: "2020.6",
-		tags: ["personal", "diversity", "society"],
+		tags: ["personal", "diversity", "society", "gender"],
 		img: "civilrights",
 		alt: "Angry red white and blue squiggles."
 	},
@@ -35,7 +35,7 @@
 		url: "https://medium.com/@amyjko/my-slow-escape-from-gendered-self-loathing-482e54977c88",
 		title: "My slow escape from gendered self-loathing",
 		date: "2020.5",
-		tags: ["personal", "diversity"],
+		tags: ["personal", "diversity", "gender"],
 		img: "loathing",
 		alt: "A beast on the left, squatting, and a woman on the right, sitting, with her arm around its back."
 	},
@@ -107,7 +107,7 @@
 		url: "https://medium.com/@amyjko/gender-transition-in-a-pandemic-a1f7f09d7077",
 		title: "Gender transition in a pandemic",
 		date: "2020.3",
-		tags: ["personal"],
+		tags: ["personal", "gender"],
 		img: "distance",
 		alt: "A grid of black rectangles with people inside each, doing different activities. In the center, a woman cross-legged."
 	},
@@ -179,7 +179,7 @@
 		url: "https://medium.com/bits-and-behavior/a-autobiographical-synopsis-of-morgan-ames-the-charisma-machine-68792c7987fa",
 		title: "A autobiographical synopsis of Morgan Ames’ “The Charisma Machine",
 		date: "2020.1",
-		tags: ["computing education", "diversity", "K-12"],
+		tags: ["computing education", "diversity", "K-12", "gender"],
 		img: "charismamachine",
 		alt: "A photograph of adolescent Amy programming at her computer."
 	},
@@ -187,7 +187,7 @@
 		url: "https://medium.com/bits-and-behavior/making-time-to-transition-cf2096a037b3",
 		title: "Transition and overcommitment",
 		date: "2019.12",
-		tags: ["academia", "personal"],
+		tags: ["academia", "personal", "gender"],
 		img: "overcommitment2",
 		alt: "An erratic, sharply jumping plot of ups and downs, with watercolor backdrop."
 	},
@@ -219,7 +219,7 @@
 		url: "http://medium.com/@amyjko/finding-my-voice-literally-13d2c06eb3f7",
 		title: "Finding my voice (literally)",
 		date: "2019.11",
-		tags: ["personal", "academia"],
+		tags: ["personal", "academia", "gender"],
 		img: "voice",
 		alt: "Blue tendrils interleaved with pink ones."
 	},
@@ -251,7 +251,7 @@
 		url: "https://medium.com/bits-and-behavior/100-hours-of-name-change-labor-c652c22a89b9",
 		title: "100 hours of name change labor",
 		date: "2019.10",
-		tags: ["academia", "personal", "information", "HCI"],
+		tags: ["academia", "personal", "information", "HCI", "gender"],
 		img: "namechange",
 		alt: "An illustration showing a stick figure yelling the name 'Amy' at a wall, but it's bouncing off into a pile. A set of corporate logos behind the wall."
 	},
@@ -259,7 +259,7 @@
 		url: "https://medium.com/bits-and-behavior/what-coming-out-as-trans-should-look-like-395f31beeddb",
 		title: "What coming out as trans should look like",
 		date: "2019.9",
-		tags: ["academia", "personal"],
+		tags: ["academia", "personal", "gender"],
 		img: "comingoutresponse",
 		alt: "A photograph of Amy smiling at her desk."	
 	},
@@ -267,7 +267,7 @@
 		url: "https://medium.com/bits-and-behavior/im-trans-call-me-amy-8a72a3951964",
 		title: "I'm trans! Call me Amy.",
 		date: "2019.9",
-		tags: ["academia", "personal"],
+		tags: ["academia", "personal", "gender"],
 		img: "comingout",
 		alt: "A fuzzy trans pride flag, with a small face peeking out of it."	
 	},
