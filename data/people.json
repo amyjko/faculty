@@ -405,15 +405,15 @@
 	{
 		"id": "dloksa",
 		"name": "Dastyni Loksa",
-		"active": true,
+		"active": false,
 		"advised": true,
 		"level": "phd",
 		"dept": "Information School",
 		"coadvisor": null,
-		"bio": "Dastyni is a Ph.D. student in the the Information School. His research focuses on problem solving in programming, with a particular focus on self-regulated learning, spanning the fields of HCI and computing education. Dastyni completed his bachelors in Informatics at the University of California, Irvine.",
+		"bio": "Dastyni was a Ph.D. student in the the Information School. His dissertation focused on problem solving in programming, with a particular focus on self-regulated learning, spanning the fields of HCI and computing education. He is now tenure-track faculty at Towson University, teaching CS and preparing CS teachers.",
 		"url": "http://students.washington.edu/dloksa/",
 		"startdate": 2013,
-		"enddate": null,
+		"enddate": 2020,
 		"achievements": []
 	},
 	{
