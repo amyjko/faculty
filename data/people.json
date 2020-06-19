@@ -1,5 +1,19 @@
 [
 	{
+ 		"id": "perdriau",
+ 		"name": "Chris  Perdriau",
+ 		"active": true,
+ 		"advised": true,
+ 		"level": "undergrad",
+ 		"dept": "Oregon State University",
+ 		"coadvisor": null,
+ 		"bio": "Chris is a CS student at Oregon State University studying HCI and psychology. He is interested in making technology more inclusive for underserved communities.",
+ 		"url": "https://github.com/ChristopherPerdriau",
+ 		"startdate": 2020,
+ 		"enddate": null,
+ 		"achievements": []
+ 	},
+	{
  		"id": "anael",
  		"name": "Anael Kuperwajs Cohen",
  		"active": true,
