@@ -10,6 +10,17 @@ class Talks extends React.Component {
 				</div>
 
 				<Block
+					image={this.props.app.getWebRoot() + "/images/talks/msftcsed.jpg"}
+					alt="A photograph of students on the campus of Howard University, 1870"
+					link="https://docs.google.com/presentation/d/15UxfJnjI8P0N33xGlTqY1A39SQdxBUwQ2jflkVMmF7Q/edit#slide=id.gc6f980f91_0_0"
+					header="CS education in higher education"
+					content=
+						<span>
+							. I gave this presentation to Microsoft on June 15th; they were engaging in design envisioning to support CS teaching and wanted some background on it and how the pandemic was affecting it. I used it as an opportunity to talk about the racist and sexist history of higher education, of CS in higher education, the ways that CS pedagogy have failed to include all students, and how the pandemic has amplified these failures. I <a href="https://twitter.com/amyjko/status/1272929048188956672?s=20">shared it on Twitter</a>, which led to considerable sharing, solidatory, and outrage. I intentionally did not include citations for my claims because scientific evidence tends to be weaponized by those do not believe that racism or sexism exists; instead, I included a link pointing to the body of literature supporting the claims.
+						</span>
+				/>
+
+				<Block
 					image={this.props.app.getWebRoot() + "/images/talks/koli2019.jpg"}
 					alt="A screenshot of the first slide of the keynote, showing title and Koli national park."
 					link="https://www.youtube.com/watch?v=mjX3yLPKjvE"
