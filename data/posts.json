@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/why-our-academic-major-is-racist-d42725592af7",
+		title: "Our undergraduate program is racist",
+		date: "2020.6",
+		tags: ["academia", "computing education", "diversity"],
+		img: "racistinfo",
+		alt: "A top row with a series of dots being filtered by narrow funnels, and a bottom row with a series of dots not being filtered.."
+	},
+	{
 		url: "https://medium.com/@amyjko/what-it-feels-like-to-lose-civil-rights-cfe38c6b2468",
 		title: "What it feels like to lose civil rights",
 		date: "2020.6",
