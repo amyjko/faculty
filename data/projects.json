@@ -88,7 +88,7 @@
 		"description": "While most programs are still written by developers, many are now built by gathering large amounts of data and automatically creating machine learned programs. My lab is investigating the immense comprehension challenges imposed by these probablistic forms of program behavior, as well as the literacy required to understand how they are shaping program behavior and society.",
 		"funding": [],
 		"people": ["ajko", "yreg", "kayur", "chandrashree"],
-		"papers": ["gestalt", "whydebugclassifier2", "whydebugclassifier1"],
+		"papers": ["mladvocacy", "gestalt", "whydebugclassifier2", "whydebugclassifier1"],
 		"links": [],
 		"startdate": 2004,
 		"stopdate": null,
