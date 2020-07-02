@@ -1,11 +1,19 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/reflections-on-ruha-benjamins-race-after-technology-87f737a69e62",
+		title: "Reflections on Ruha Benjamin’s “Race After Technology",
+		date: "2020.7",
+		tags: ["academia", "computing education", "diversity", "personal"],
+		img: "raceaftertech",
+		alt: "An interpretation of Rodin’s “The Thinker”, a top Ruha Benjamin’s stunning book."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/why-our-academic-major-is-racist-d42725592af7",
 		title: "Our undergraduate program is racist",
 		date: "2020.6",
 		tags: ["academia", "computing education", "diversity"],
 		img: "racistinfo",
-		alt: "A top row with a series of dots being filtered by narrow funnels, and a bottom row with a series of dots not being filtered.."
+		alt: "A top row with a series of dots being filtered by narrow funnels, and a bottom row with a series of dots not being filtered."
 	},
 	{
 		url: "https://medium.com/@amyjko/what-it-feels-like-to-lose-civil-rights-cfe38c6b2468",
