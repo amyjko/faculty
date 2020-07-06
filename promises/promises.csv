@@ -2,7 +2,7 @@
 
 # Indefinite promises
 Read,					Papers+books+reviews, 	research,	2020-01-01,	2,	,		,		, -1
-PhDs, 					Weekly meetings,		research, 	2020-01-01, 5,	,		,		, -1
+PhDs, 					Meetings, feedback,		research, 	2020-01-01, 6,	,		,		, -1
 CS for All WA,			Meetings + networking,	service, 	2020-01-01, 1,	,		,		, -1
 TOCE AE, 				Assign reviews,			reviewing, 	2020-01-01, 2,	,		,		, -1
 
@@ -20,21 +20,16 @@ Xmas,					Vacation + travel,		personal, 	2022-12-20, 30,,,				2023-01-02, 1
 # Multi-year commitments	
 Strategies, 			Meetings + critique,	research, 	2020-01-01, 2,,,				2022-06-15, -1
 Cyberlearning, 			Meetings + critique, 	research, 	2020-01-01, 1, 2020-07-01, 4, 	2020-07-15, -1
-STEP RPP, 				Research + teaching, 	research, 	2020-11-03, 5,,, 				2023-11-03, -1
+STEP RPP, 				Research + teaching, 	research, 	2020-11-03, 6,,, 				2023-11-03, -1
 CRA-E, 					Meetings,				service, 	2020-07-01, 1,,,				2022-07-01, -1
 INFO, 					Administration, 		service, 	2019-09-01, 8,,,				2021-08-31, -1
-ACM EAC, 				Meetings,				service, 	2018-01-01, 1,,,				2020-07-01, -1
+ACM EAC, 				Meetings,				service, 	2018-01-01, 1,,,				2020-08-01, -1
 
 # 2019-20
 NSF Assess,				Submitted 10/3,			funding, 	2019-08-01, 2, 2019-09-15, 5, 	2019-10-03, 0
 Google CS,				Submitted 3/10,			funding, 	2020-02-01, 1, 2020-03-01, 3, 	2020-03-10, 0
 NSF CS for All,			UW 3-day 4/22,			funding, 	2020-01-01, 2, 2020-03-15, 6, 	2020-04-22, 0
 NSF Expeditions,		UW 3-day 6/10,			funding, 	2020-03-15, 2, 2020-05-01, 3, 	2020-05-15, 0
-
-TOCE Careers,			Neil; 5/1,				research, 	2020-03-23, 2, 2020-04-15, 3, 	2020-05-01, 0
-ICER Cognimates,		Stef; abstract 4/3,		research, 	2020-03-23, 2, 2020-04-01, 4, 	2020-04-10, 0
-ASSETS Triage,			Saba,					research, 	2020-03-23, 1, 2020-04-15, 2, 	2020-05-07, 0
-TOCE Interests,			Andrew,					research, 	2020-03-23, 1, 2020-04-15, 2, 	2020-05-01, 0
 
 HCID 520, 				Teaching + grading,		teaching, 	2019-12-10, 10,,,				2020-03-22, 0
 INFO 200, 				Teaching + grading,		teaching, 	2019-12-10, 10,,,				2020-03-22, 0
@@ -45,8 +40,6 @@ ICER 2020,				Conference,				travel, 	2020-08-10, 12,,,				2020-08-12, 0
 CSTA 2020, 				Conference,				travel,		2020-07-13, 12,,,				2020-07-14, 0
 
 # 2020-21
-Just CS Ed,				Book writing,			research, 	2020-06-15, 10,,,				2020-09-02, 0
-
 INFO 442, 				Teaching + grading,		teaching, 	2020-09-02, 20, 2020-09-06, 10, 2020-12-15, 0
 HCID 520, 				Teaching + grading,		teaching, 	2020-12-15, 8,,,				2021-03-15, 0
 INFO 360, 				Teaching + grading,		teaching, 	2021-03-15, 8,,,				2021-06-15, 0
