@@ -230,6 +230,10 @@
 	
 	awards: [
 		{
+			title: "ACM Senior Member",
+			year: "2020"
+		},
+		{
 			title: "ACM SIGCHI Exceptional Reviewer (UIST, CHI)",
 			year: "2016-2017"
 		},
