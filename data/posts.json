@@ -1,5 +1,13 @@
 [
 	{
+		url: "	https://medium.com/@amyjko/i-turned-40-heres-what-i-ve-learned-101f892cfa82",
+		title: "I turned 40; here’s what I’ve learned",
+		date: "2020.7",
+		tags: ["personal", "diversity"],
+		img: "turned40",
+		alt: "A photograph of Amy when she was an infant, laying on her belly"
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/reflections-on-ruha-benjamins-race-after-technology-87f737a69e62",
 		title: "Reflections on Ruha Benjamin’s \"Race After Technology\"",
 		date: "2020.7",
