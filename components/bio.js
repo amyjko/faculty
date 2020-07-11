@@ -7,6 +7,29 @@ class Biography extends React.Component {
 			
 				<div className="lead">These are my short and long bios, and academic lineage.</div>
 			
+				<h3>Identity</h3>
+				
+				<p>
+					I am not huge fan of labels, since they are often used to stereotype, categorize, and oppress.
+					However, when we use them to describe ourselves, they can be powerful ways of develop cultural competency, preventing stereotyping and assumptions.
+					So here are a few labels that I use to describe myself at this point in my life and what they mean to me, roughly in order of how much they shape my identity:
+				</p>
+				
+				<ul>
+					<li><strong>I am an Oregonian</strong>. Growing up in a suburb of Portland, Oregon in the 80's and 90's, my values were shaped by environmental sustainability, native sovereignty, natural beauty, angst, whiteness, and weirdness.</li>
+					<li><strong>I am a Seattleite</strong>. Having frequented Seattle since childhood and lived here since 2008, I experience this as being progressive, modestly ambitious, perpetually insecure about my wokeness, and civically engaged.</li>
+					<li><strong>I am a professor</strong>. I center curiosity, discovery, knowlege, learning, and teaching, in work and in life.</li>
+					<li><strong>I am a parent</strong>. I embrace lifelong responsibility for the love and wellbeing of my daughter.</li>
+					<li><strong>I am a partner</strong>. I devote my life to cultivating love, joy, laughter, shared dreams with my wife.</li>
+					<li><strong>I am a technophile</strong>. Technology is my obsession, both its wondrous powers and its potential for destruction.</li>
+					<li><strong>I am a foodophile</strong>. Food shapes my travel, my experiences, my conversations. I love food!</li>
+					<li><strong>I am transgender</strong>. I experience dissonance between my body and my experience of gender; with this comes unequal treatment by people and law, which compels me to advocate for my basic human rights.</li>
+					<li><strong>I am a woman</strong>. I share experiences and solidarity with other women, including dismantling sexist cultures, assumptions, and traditions that limit my opportunities and rights.</li>
+					<li><strong>I am gay</strong>. I am attracted to people who share my gender identity.</li>
+					<li><strong>I am Chinese</strong>, at least in ancestry; my father's parents came to the United States in the early 20th century, and brought with them cultural traditions in food, frugality, and financial security, which shaped my own traditions.</li>
+					<li><strong>I am Danish</strong>, at least in ancestry; my mother's parents came to the United States in early 20th century, and brought with them  humilty, privacy, and piety.</li>
+				</ul>
+							
 				<h3>Short Bio</h3>
 
 				<p>Amy J. Ko is an Associate Professor at the <a href="http://www.washington.edu">University of Washington</a> <a href="http://ischool.uw.edu/">Information School</a> and an Adjunct Associate Professor at the <a href="http://cs.washington.edu">Paul G. Allen School of Computer Science and Engineering</a>. She directs the Code &amp; Cognition Lab, where she studies human aspects of programming. Her earliest work included techniques for automatically answering questions about program behavior to support debugging, program understanding, and reuse. Her later work studied interactions between developers and users, and techniques for web scale aggregation of user intent through help systems; she co-founded <a href="http://www.answerdash.com">AnswerDash</a> to commercialize these ideas. Her latest work investigates effective, equitable, scalable ways for humanity to learn computing, including programming languages, APIs, programming strategies, design, and machine learning. Her work spans over 100 peer-reviewed publications, 11 receiving best paper awards and 4 receiving most influential paper awards. She is an ACM Senior Member, and member of ACM SIGCHI, SIGCSE, and SIGSOFT. She received her Ph.D. at the <a href="http://www.hcii.cs.cmu.edu">Human-Computer Interaction Institute</a> at <a href="http://www.cmu.edu">Carnegie Mellon University</a> in 2008, and degrees in Computer Science and Psychology with Honors from <a href="http://www.oregonstate.edu">Oregon State University</a> in 2002.</p>
