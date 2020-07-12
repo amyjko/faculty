@@ -115,7 +115,7 @@ class Vita extends React.Component {
 				<h1>Amy J. Ko, Ph.D.</h1>
 				
 				<p>
-					Associate Professor
+					Professor
 					<br/>The Information School
 					<br/>Paul G. Allen School of Computer Science & Engineering <small>(courtesy)</small>
 					<br/>University of Washington, Seattle, USA

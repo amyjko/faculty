@@ -17,6 +17,12 @@
 	],
 	academicJobs: [
 		{
+			title: "Professor",
+			organization: "University of Washington, The Information School and Paul G. Allen School of Computer Science & Engineering (courtesy)",
+			startdate: 2020,
+			enddate: null
+		},
+		{
 			title: "Associate Professor",
 			organization: "University of Washington, The Information School and Paul G. Allen School of Computer Science & Engineering (courtesy)",
 			startdate: 2014,

@@ -19,7 +19,7 @@ class Header extends React.Component {
 					<div className="col-xs-7 col-sm-9 col-md-9" style={{lineHeight: "1.15em"}}>
 						<div className="lead" style={{marginBottom: 0}}>Amy J. Ko, Ph.D. <small><small><em><a href="https://www.mypronouns.org/she-her">she/her/hers</a></em></small></small></div>
 						<small>
- 							Associate Professor
+ 							Professor
 							<br/><a href="https://ischool.uw.edu/academics/informatics">Informatics</a> Program Chair
 							<br/><a href="http://ischool.uw.edu" target="_blank">The Information School</a>
 							<br/><a href="http://cs.uw.edu" target="_blank">Computer Science &amp; Engineering (courtesy)</a>
