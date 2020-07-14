@@ -143,7 +143,7 @@
 			startdate: 2010,
 			enddate: 2014,
 			description: "Studies and tools for supporting analyzing and prioritizing bug reports.",
-			nsf: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0952733"
+			url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0952733"
 		},
 		{
 			title: "W Fund Early Stage Capital Investment",
