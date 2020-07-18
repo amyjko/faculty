@@ -16,7 +16,7 @@ class ContactInfo extends React.Component {
 					alt="A photograph of my office."
 					link="https://goo.gl/maps/7c3irRBubGvXYEtZ8"
 					header="Office hours"
-					content=". Spring 2020 my office hours are on Zoom, Fridays 4:30-5 Pacific, at https://washington.zoom.us/my/amyjko. Normally, my office hours are in Mary Gates Hall 015E, where I have a bluetooth doorbell you can press that will chime in my office. If I don't come, that means I'm not in. You can write me an email instead."
+					content=". I'm not holding Summer 2020 office hours, but you're welcome to email me requesting a meeting."
 				/>
 
 				<Block 

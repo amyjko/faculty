@@ -19,13 +19,12 @@ class Header extends React.Component {
 					<div className="col-xs-7 col-sm-9 col-md-9" style={{lineHeight: "1.15em"}}>
 						<div className="lead" style={{marginBottom: 0}}>Amy J. Ko, Ph.D. <small><small><em><a href="https://www.mypronouns.org/she-her">she/her/hers</a></em></small></small></div>
 						<small>
- 							Professor
-							<br/><a href="https://ischool.uw.edu/academics/informatics">Informatics</a> Program Chair
+ 							Professor &sdot; <a href="https://ischool.uw.edu/academics/informatics">Informatics</a> Program Chair
 							<br/><a href="http://ischool.uw.edu" target="_blank">The Information School</a>
 							<br/><a href="http://cs.uw.edu" target="_blank">Computer Science &amp; Engineering (courtesy)</a>
 							<br/><a href="http://www.washington.edu" target="_blank">University of Washington, Seattle</a>
-							<br/><Link to="/cv">CV</Link>, <a href="http://faculty.uw.edu/ajko/promises">Commitments</a>
-							<br/><strong><a href="https://twitter.com/search?q=%23BlackLivesMatter">#BlackLivesMatter</a></strong>
+							<br/><Link to="/cv">Curriculum vitae</Link> &sdot; <a href="http://faculty.uw.edu/ajko/promises">Commitments</a>
+							<br/><a href="mailto:ajko@uw.edu">ajko@uw.edu</a> &sdot; <a href="https://twitter.com/amyjko" target="_blank">@amyjko</a>
 						</small>
 					</div>
 					
