@@ -124,7 +124,7 @@ class Vita extends React.Component {
 				<h2>Interests</h2>
 				
 				<p>
-					I research effective, equitable, scalable ways for humanity to harness the power of computing. This work spans human-computer interaction, software engineering, and computing education.
+					I study equitable ways for humanity to learn the power and perils of computing. Whether it is youth discovering the limits of machine learning, adults grasping a new API, or teachers shaping learners' conceptions of code, I'm fascinated by our individual and collective struggle to make sense of computing and harness it for good.
 				</p>
 
 				<h2>Education</h2>
