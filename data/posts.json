@@ -1,6 +1,14 @@
 [
 	{
-		url: "	https://medium.com/@amyjko/i-turned-40-heres-what-i-ve-learned-101f892cfa82",
+		url: "https://medium.com/bits-and-behavior/computer-science-taught-me-that-books-werent-important-it-was-wrong-63ead2fdad7a",
+		title: "Computer science taught me that books weren't important. It was wrong.",
+		date: "2020.7",
+		tags: ["academia", "personal", "computing education"],
+		img: "books",
+		alt: "Dark Matters, Artificial Unintelligence, Joy of Search, Automating Inequality, Algorithms of Oppression, Black Software"
+	},
+	{
+		url: "https://medium.com/@amyjko/i-turned-40-heres-what-i-ve-learned-101f892cfa82",
 		title: "I turned 40; here’s what I’ve learned",
 		date: "2020.7",
 		tags: ["personal", "diversity"],
