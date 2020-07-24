@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/taking-refuge-from-the-internet-9c1c521a5a56",
+		title: "Taking refuge from the internet",
+		date: "2020.7",
+		tags: ["personal", "diversity", "information", "society"],
+		img: "speech",
+		alt: "A woman in a bubble, staring out at three angry men yelling at her."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/computer-science-taught-me-that-books-werent-important-it-was-wrong-63ead2fdad7a",
 		title: "Computer science taught me that books weren't important. It was wrong.",
 		date: "2020.7",
