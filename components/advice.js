@@ -62,28 +62,16 @@ class Advice extends React.Component {
 
 				<h3 id="goodwriting">How can I become a good technical writer?</h3>
 				
-				<p>When writing and reviewing scientific papers, there are a lot of mistakes one can make. <a href="http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/">Matt Might's advice on technical writing</a> is a helpful guide, as is this deconstruction of <a href="https://sites.umiacs.umd.edu/elm/2016/11/19/writing-rebuttals/">what makes a good rebuttal to conference reviews</a>. I also like Chris Parnin's <a href="https://medium.com/@gameweld/error-codes-for-paper-introductions-8deb0d6825c2?fbclid=IwAR0SziEHps-ZD24FqLzG-yAGbk0wMblZ8dmC3r8KwsRsYdthVC6R0ylvWSg">Error Codes for Paper Introductions</a>. As someone who's reviewed hundreds of papers, I find many common mistakes:</p>
+				<p>
+					When writing and reviewing scientific papers, there are a lot of mistakes one can make. Several have written helpful guide:
+				</p> 
 				
 				<ul>
-				
-					<li><b>Normal distributions</b>. Do the authors cite means of distributions that may not be normally distributed? Skew, floor effects, ceiling affects, and multi-modal distributions can make some aggregate statistics meaningless. My favorite solution is to put a distribution inline in text, such as a histogram or box plot.</li>
-							
-					<li><b>Correlation vs. causation</b>. Do the authors use causality language like "influence", "causes", or "leads to" for an experiment in which they can make no causal claims? If so, they should use language such as "correlates" or "is related" instead.</li>
-							
-					<li><b>Unsubstantiated claims</b>. Do the authors make statements about non-obvious phenomena without sufficient evidence (either data or some citation)? Scour the paper for these statements and point them all out. It's a bit nit-picky, but this is science. We're supposed to obsess about these things!</li>
-	
-					<li><b>Assumptions of statistical tests</b>. Do the authors violate any assumptions of the statistical tests that they use? For example, do they use linear regression on categorical data or chi-squared tests on variables that are not independent? If so, see if you can find a more appropriate test for them.</li>
-					
-					<li><b>Care with qualifiers</b>. When it comes to descriptions of numerical distributions, be careful with words like "some", "many", "several", and "few". Any use of adjectives and adverbs should be backed up with evidence, if stated as evidence.</li>
-					
-					<li><b>Tense indicates generality</b>. When describing results, especially of studies involving people, tense is the difference between what <i>happened</i> in the experiment and what <i>happens</i> in general. Make sure the tense matches the claim.</li>
-					
-					<li><b>Theory, model, framework, etc.</b>. People don't seem to have a common understanding of what these words mean from a scientific perspective. If used, be sure to say precisely what you mean.</li>
-					
-					<li><b>Tentative language</b>. Perhaps, maybe, might, could, may. Words like these usually mean that the author is speculating. Speculation is fine, as long as it occurs in a section of the paper that deserves spectulation.</li>
-				
+					<li>Matt Might's <a href="http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/">advice on technical writing</a> is a helpful guide</li>
+					<li>I like Niklas Elmqvist's deconstruction of <a href="https://sites.umiacs.umd.edu/elm/2016/11/19/writing-rebuttals/">what makes a good rebuttal to conference reviews</a>.</li>
+					<li>Chris Parnin's <a href="https://medium.com/@gameweld/error-codes-for-paper-introductions-8deb0d6825c2?fbclid=IwAR0SziEHps-ZD24FqLzG-yAGbk0wMblZ8dmC3r8KwsRsYdthVC6R0ylvWSg">Error Codes for Paper Introductions</a> is a fun and helpful guide.</li>
+					<li>Morgan Klause Scheuerman has an excellent guide on <a href="https://www.morgan-klaus.com/gender-guidelines.html">reporting gender</a>.</li>
 				</ul>
-
 
 				<h3 id="review">I was asked to review a paper. Should I?</h3>
 				

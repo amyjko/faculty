@@ -1,9 +1,81 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/taking-refuge-from-the-internet-9c1c521a5a56",
+		title: "Taking refuge from the internet",
+		date: "2020.7",
+		tags: ["personal", "diversity", "information", "society"],
+		img: "speech",
+		alt: "A woman in a bubble, staring out at three angry men yelling at her."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/computer-science-taught-me-that-books-werent-important-it-was-wrong-63ead2fdad7a",
+		title: "Computer science taught me that books weren't important. It was wrong.",
+		date: "2020.7",
+		tags: ["academia", "personal", "computing education"],
+		img: "books",
+		alt: "Dark Matters, Artificial Unintelligence, Joy of Search, Automating Inequality, Algorithms of Oppression, Black Software"
+	},
+	{
+		url: "https://medium.com/@amyjko/i-turned-40-heres-what-i-ve-learned-101f892cfa82",
+		title: "I turned 40; here’s what I’ve learned",
+		date: "2020.7",
+		tags: ["personal", "diversity"],
+		img: "turned40",
+		alt: "A photograph of Amy when she was an infant, laying on her belly"
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/reflections-on-ruha-benjamins-race-after-technology-87f737a69e62",
+		title: "Reflections on Ruha Benjamin’s \"Race After Technology\"",
+		date: "2020.7",
+		tags: ["academia", "computing education", "diversity", "personal"],
+		img: "raceaftertech",
+		alt: "An interpretation of Rodin’s “The Thinker”, a top Ruha Benjamin’s stunning book."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/why-our-academic-major-is-racist-d42725592af7",
+		title: "Our undergraduate program is racist",
+		date: "2020.6",
+		tags: ["academia", "computing education", "diversity"],
+		img: "racistinfo",
+		alt: "A top row with a series of dots being filtered by narrow funnels, and a bottom row with a series of dots not being filtered."
+	},
+	{
+		url: "https://medium.com/@amyjko/what-it-feels-like-to-lose-civil-rights-cfe38c6b2468",
+		title: "What it feels like to lose civil rights",
+		date: "2020.6",
+		tags: ["personal", "diversity", "society", "gender"],
+		img: "civilrights",
+		alt: "Angry red white and blue squiggles."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/a-synopsis-of-costanza-chocks-design-justice-e00a476008fa",
+		title: "A synopsis of Costanza-Chock’s “Design Justice”: nothing for us without us",
+		date: "2020.6",
+		tags: ["computing education", "design", "diversity", "society"],
+		img: "designjustice",
+		alt: "A group of stick figures collaborating in various ways, with a green stick figure in the middle (the designer) participating."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/my-strained-relationship-with-radicalism-and-pragmatism-495fba42ae5e",
+		title: "My strained relationship with radicalism and pragmatism",
+		date: "2020.6",
+		tags: ["computing education", "diversity", "personal", "society", "policy"],
+		img: "radicalism",
+		alt: "Three grey-blue blobs, one vertical, one circular in slight motion, and one oblong, racing to the future."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/ideas-from-the-code-and-cognition-lab-2020-edition-b5f2f752bb65",
+		title: "Ideas from the Code and Cognition Lab (2020 edition)",
+		date: "2020.6",
+		tags: ["computing education", "diversity", "programming languages"],
+		img: "2020ideas",
+		alt: "A red, green, and blue thread, squiggly and overlapping, terminating in a point on the right."
+	},
+	{
 		url: "https://medium.com/@amyjko/my-slow-escape-from-gendered-self-loathing-482e54977c88",
 		title: "My slow escape from gendered self-loathing",
 		date: "2020.5",
-		tags: ["personal", "diversity"],
+		tags: ["personal", "diversity", "gender"],
 		img: "loathing",
 		alt: "A beast on the left, squatting, and a woman on the right, sitting, with her arm around its back."
 	},
@@ -75,7 +147,7 @@
 		url: "https://medium.com/@amyjko/gender-transition-in-a-pandemic-a1f7f09d7077",
 		title: "Gender transition in a pandemic",
 		date: "2020.3",
-		tags: ["personal"],
+		tags: ["personal", "gender"],
 		img: "distance",
 		alt: "A grid of black rectangles with people inside each, doing different activities. In the center, a woman cross-legged."
 	},
@@ -147,7 +219,7 @@
 		url: "https://medium.com/bits-and-behavior/a-autobiographical-synopsis-of-morgan-ames-the-charisma-machine-68792c7987fa",
 		title: "A autobiographical synopsis of Morgan Ames’ “The Charisma Machine",
 		date: "2020.1",
-		tags: ["computing education", "diversity", "K-12"],
+		tags: ["computing education", "diversity", "K-12", "gender"],
 		img: "charismamachine",
 		alt: "A photograph of adolescent Amy programming at her computer."
 	},
@@ -155,7 +227,7 @@
 		url: "https://medium.com/bits-and-behavior/making-time-to-transition-cf2096a037b3",
 		title: "Transition and overcommitment",
 		date: "2019.12",
-		tags: ["academia", "personal"],
+		tags: ["academia", "personal", "gender"],
 		img: "overcommitment2",
 		alt: "An erratic, sharply jumping plot of ups and downs, with watercolor backdrop."
 	},
@@ -187,7 +259,7 @@
 		url: "http://medium.com/@amyjko/finding-my-voice-literally-13d2c06eb3f7",
 		title: "Finding my voice (literally)",
 		date: "2019.11",
-		tags: ["personal", "academia"],
+		tags: ["personal", "academia", "gender"],
 		img: "voice",
 		alt: "Blue tendrils interleaved with pink ones."
 	},
@@ -219,7 +291,7 @@
 		url: "https://medium.com/bits-and-behavior/100-hours-of-name-change-labor-c652c22a89b9",
 		title: "100 hours of name change labor",
 		date: "2019.10",
-		tags: ["academia", "personal", "information", "HCI"],
+		tags: ["academia", "personal", "information", "HCI", "gender"],
 		img: "namechange",
 		alt: "An illustration showing a stick figure yelling the name 'Amy' at a wall, but it's bouncing off into a pile. A set of corporate logos behind the wall."
 	},
@@ -227,7 +299,7 @@
 		url: "https://medium.com/bits-and-behavior/what-coming-out-as-trans-should-look-like-395f31beeddb",
 		title: "What coming out as trans should look like",
 		date: "2019.9",
-		tags: ["academia", "personal"],
+		tags: ["academia", "personal", "gender"],
 		img: "comingoutresponse",
 		alt: "A photograph of Amy smiling at her desk."	
 	},
@@ -235,7 +307,7 @@
 		url: "https://medium.com/bits-and-behavior/im-trans-call-me-amy-8a72a3951964",
 		title: "I'm trans! Call me Amy.",
 		date: "2019.9",
-		tags: ["academia", "personal"],
+		tags: ["academia", "personal", "gender"],
 		img: "comingout",
 		alt: "A fuzzy trans pride flag, with a small face peeking out of it."	
 	},
