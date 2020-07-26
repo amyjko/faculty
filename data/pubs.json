@@ -175,6 +175,7 @@
 		"source": "Sadowski C., Zimmermann T. (eds) Rethinking Productivity in Software Engineering. Apress, Berkeley, CA",
 		"pages": "to appear",
 		"digital library url": "https://doi.org/10.1007/978-1-4842-4221-6_13",
+		"local url": "Sadowski2019RethinkingProductivityInSoftwareEngineering.pdf",
 		"publisher": "Apress",
 		"contribution": "Describes several methods for understanding how to increase developer productivity."
 	},
@@ -187,6 +188,7 @@
 		"source": "Sadowski C., Zimmermann T. (Eds) Rethinking Productivity in Software Engineering. Apress, Berkeley, CA",
 		"pages": "to appear",
 		"digital library url": "https://doi.org/10.1007/978-1-4842-4221-6_6",
+		"local url": "Sadowski2019RethinkingProductivityInSoftwareEngineering.pdf",
 		"publisher": "Apress",
 		"contribution": "Discusses several levels of abstraction useful for reasoning about software engineering productivity."
 	},
@@ -199,6 +201,7 @@
 		"source": "Sadowski C., Zimmermann T. (eds) Rethinking Productivity in Software Engineering. Apress, Berkeley, CA",
 		"pages": "to appear",
 		"digital library url": "https://doi.org/10.1007/978-1-4842-4221-6_3",
+		"local url": "Sadowski2019RethinkingProductivityInSoftwareEngineering.pdf",
 		"publisher": "Apress",
 		"contribution": "Presents several arguments for the dangers of measuring software developer productivity."
 	},
@@ -466,6 +469,7 @@
 		"source":"Journal of Visual Languages and Computing (JVLC)",
 		"pages":"51-65",
 		"digital library url":"http://dx.doi.org/10.1016/j.jvlc.2017.04.005",
+		"local url": "Jernigan2017IdeaGarden.pdf"
 		"contribution":"Describes the general architecture for the Idea Garden paradigm and a series of studies that suggest it's effectiveness at unblocking learners' problem solving."
 	},
 	{
@@ -478,6 +482,7 @@
 		"pages":"321-326",
 		"acceptance rate":"30%",
 		"digital library url":"https://doi.org/10.1145/3017680.3017728",
+		"local url": "Kim2017CodingTutorialEvaluation.pdf",
 		"contribution":"Using a set of pedagogical principles, evaluates the current state of tutorial instruction, finding that only a few tutorials follow best practices."
 	},
 	{
@@ -497,10 +502,11 @@
 		"kind":"refereed magazine article",
 		"authors": ["Amy J. Ko", "Richard Ladner"],
 		"year":2016,
-		"title":"AccessComputing Promotes Teaching Accessibility",
+		"title": "AccessComputing Promotes Teaching Accessibility",
 		"source":"ACM Inroads",
 		"pages":"65-68",
 		"authorizer":"http://dl.acm.org/authorize?N27707",
+		"local url": "Ko2016TeachingAccessibility.pdf",
 		"contribution":"Discusses AccessComputing efforts to implement and disseminate curriculum on accessibility into academia and industry."
 	},
 	{
@@ -513,6 +519,7 @@
 		"pages":"83-91",
 		"acceptance rate":"25%",
 		"authorizer":"http://dl.acm.org/authorize?N10039",
+		"local url": "Loksa2016SelfRegulation.pdf",
 		"contribution":"Finds that while most novices engage in self-regulation to navigate and inform their problem solving efforts, these self-regulation efforts are only effective when accompanied by programming knowledge adequate to succeed at solving a given problem."
 	},
 	{
@@ -551,15 +558,16 @@
 		"contribution":"Teaching novice programmers the structure of programming problem solving activities and to be aware of which activity they are conducting and whether they are succeeding has a substantial impact on their productivity, self-efficacy, independence, and growth mindset."
 	},
 	{
-		"id":null,
-		"kind":"whitepaper",
+		"id": null,
+		"kind": "whitepaper",
 		"authors": ["Steve Cooper", "Jeff Forbes", "Armando Fox", "Susan Hambrusch", "Amy J. Ko", "Beth Simon"],
-		"year":2016,
-		"title":"The Importance of Computing Education Research",
-		"source":"CRA Computing Community Consortium",
-		"pages":"",
-		"digital library url":"http://cra.org/ccc/resources/ccc-led-whitepapers/",
-		"contribution":"Argues for the foundational role of computing education research in computer science departments."
+		"year": 2016,
+		"title": "The Importance of Computing Education Research",
+		"source": "CRA Computing Community Consortium",
+		"pages": "",
+		"digital library url": "http://cra.org/ccc/resources/ccc-led-whitepapers/",
+		"local url": "Cooper2016ImportanceofCSEd.pdf",
+		"contribution": "Argues for the foundational role of computing education research in computer science departments."
 	},
 	{
 		"id":"scry",
@@ -570,6 +578,8 @@
 		"source":"ACM Symposium on User Interface Software and Technology",
 		"pages":"259-268",
 		"authorizer":"http://dl.acm.org/authorize?N08341",
+		"digital library url": "https://doi.org/10.1145/2807442.2807473",
+		"local url": "Burg2015ExplainingWebChanges.pdf",
 		"contribution":"An algorithm and interface that allows web developers to select a before and after state of a web site to see the code that caused the changes."
 	},
 	{
@@ -581,7 +591,8 @@
 		"source":"IEEE Symposium on Visual Languages and Human-Centered Computing",
 		"pages":"235-243",
 		"acceptance rate":"29%",
-		"digital library url":"http://dx.doi.org/10.1109/VLHCC.2015.7357222",
+		"digital library url": "http://dx.doi.org/10.1109/VLHCC.2015.7357222",
+		"local url": "Jernigan2015PrincipledEvaluationIdeaGarden.pdf",
 		"contribution":"In-context help on programming problem solving helps learners with diverse learning strategies work more independently."
 	},
 	{
@@ -594,7 +605,8 @@
 		"pages":"237-246",
 		"acceptance rate":"26%",
 		"authorizer":"http://dl.acm.org/authorize?N05630",
-		"digital library url":"http://dx.doi.org/10.1145/2787622.2787709",
+		"digital library url": "http://dx.doi.org/10.1145/2787622.2787709",
+		"local url": "Lee2015EvaluatingGidget.pdf",
 		"contribution":"Mastery learning approaches to teaching programming produce better skills in program tracing than task-free open-ended creative environments."
 	},
 	{
@@ -615,23 +627,15 @@
 		"kind":"refereed conference paper",
 		"authors": ["Parmit K. Chilana", "Amy J. Ko", "Jacob O. Wobbrock"],
 		"year":2015,
-		"title":"From User-Centered Design to Adoption-Centered Design: A Case Study of a Research System Becoming a Product",
+		"title": "From User-Centered Design to Adoption-Centered Design: A Case Study of a Research System Becoming a Product",
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 		"pages":"1749-1758",
 		"acceptance rate":"24%",
+		"digital library url": "https://doi.org/10.1145/2702123.2702412",
 		"authorizer":"http://dl.acm.org/authorize?N98647",
+		"local url": "Chilana2015Adoption.pdf",
 		"award": ["best paper"],
 		"contribution":"Research prototypes and evidence of their usability and usefulness are only a tiny part of creating a successful whole product."
-	},
-	{
-		"id":"",
-		"kind":"poster paper",
-		"authors": ["Michael J. Lee and Amy J. Ko"],
-		"year":2014,
-		"title":"Gidget: An Online Debugging Game for Learning and Engagement in Computing Education",
-		"source":"IEEE Symposium on Visual Languages and Human-Centric Computing",
-		"pages":"193-194",
-		"contribution":null
 	},
 	{
 		"id":"gidget4",
@@ -668,6 +672,8 @@
 		"pages":"653-658",
 		"acceptance rate":"39%",
 		"authorizer":"http://dl.acm.org/authorize?N89370",
+		"digital library url": "https://doi.org/10.1145/2538862.2538938",
+		"local url": "Charters2014ChangingAttitudes.pdf",
 		"contribution":"Adult attitudes toward programming, while generally negative, can be quickly turned positive with a brief exposure to a debugging game."
 	},
 	{
@@ -678,7 +684,8 @@
 		"title":"A Practical Guide to Controlled Experiments of Software Engineering Tools with Human Participants",
 		"source":"Empirical Software Engineering",
 		"pages":"110-141",
-		"digital library url":"https://doi.org/10.1007/s10664-013-9279-3",
+		"digital library url": "https://doi.org/10.1007/s10664-013-9279-3",
+		"local url": "Ko2013SEToolEvaluations.pdf",
 		"volume":20,
 		"issue":1,
 		"contribution":"Software engineering researchers rarely evaluate new tools with software developers, but there are several best practices that can make such evaluations less risky and difficult to conduct."
@@ -691,7 +698,9 @@
 		"title":"Interactive Record/Replay for Web Application Debugging",
 		"source":"ACM Symposium on User Interface Software and Technology (UIST)",
 		"pages":"473-484",
+		"digital library url": "https://doi.org/10.1145/2501988.2502050",
 		"authorizer":"http://dl.acm.org/authorize?N89371",
+		"local url": "Burg2013Timelapse.pdf",
 		"award": ["best paper honorable mention"],
 		"contribution":"A system for recording inputs to a web application and replaying them deterministically with minimal time or space overhead."
 	},
@@ -704,7 +713,9 @@
 		"source":"ACM International Computing Education Research Conference (ICER)",
 		"pages":"153-160",
 		"acceptance rate":"30%",
+		"digital library url": "https://doi.org/10.1145/2493394.2493410",
 		"authorizer":"http://dl.acm.org/authorize?N89372",
+		"local url": "Lee2013Assessments.pdf",
 		"award": ["best paper"],
 		"contribution":"Including brief assessments in a programming game improves engagement and learning efficiency."
 	},
@@ -717,7 +728,9 @@
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 		"pages":"217-226",
 		"acceptance rate":"20%",
+		"digital library url": "https://doi.org/10.1145/2470654.2470685",
 		"authorizer":"http://dl.acm.org/authorize?N89373",
+		"local url": "Chilana2013LemonAidFieldStudy.pdf",
 		"contribution":"Contextual help is well-liked by both end-users and software teams in real world use."
 	},
 	{
@@ -726,6 +739,7 @@
 		"authors": ["Parmmit K. Chilana", "Amy J. Ko", "Jacob O. Wobbrock"],
 		"year":2013,
 		"title":"Crowdsourced Q&A-based Contextual Help for Web Applications: Challenges and Opportunities",
+		"local url": "Chilana2013LemonAidWorkshop.pdf",
 		"source":"CSCW Workshop on Social Media Question Asking",
 		"pages":"",
 		"contribution":null
@@ -739,7 +753,9 @@
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 		"pages":"1549-1558",
 		"acceptance rate":"25%",
+		"digital library url": "https://doi.org/10.1145/2207676.2208620",
 		"authorizer":"http://dl.acm.org/authorize?N89385",
+		"local url": "Chilana2012LemonAid.pdf",
 		"contribution":"A technique for extracting queries from selections of user interface elements that provides reliable, relevant help retrieval."
 	},
 	{
@@ -751,7 +767,9 @@
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 		"pages":"1559-1568",
 		"acceptance rate":"25%",
+		"digital library url": "https://doi.org/10.1145/2207676.2208621",
 		"authorizer":"http://dl.acm.org/authorize?N89386",
+		"local url": "Kriplean2012Reflect.pdf",
 		"contribution":"A technique for demonstrating listening on the web through restatement that engages lurkers in supporting common ground in groups."
 	},
 	{
@@ -762,7 +780,9 @@
 		"title":"Mining Whining in Support Forums with Frictionary",
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI), alt.chi",
 		"pages":"191-200",
+		"digital library url": "https://doi.org/10.1145/2212776.2212797",
 		"authorizer":"http://dl.acm.org/authorize?N89374",
+		"local url": "Ko2012Frictionary.pdf",
 		"contribution":"A technique for extracting aggregate patterns in software problems by analyzing the natural language text of technical support discussion forums."
 	},
 	{
@@ -773,7 +793,9 @@
 		"title":"Designing for a Billion Users: A Case Study of Facebook",
 		"source":"ACM Conference on Human Factors in Computing Systems, Case Studies (CHI)",
 		"pages":"419-431",
+		"digital library url": "https://doi.org/10.1145/2212776.2212819",
 		"authorizer":"http://dl.acm.org/authorize?N89387",
+		"local url": "Chilana2012Facebook.pdf",
 		"contribution":"Efforts to make a universal product can limit innovation, both because of the diversity of user knowledge and the limits of interpreting data science patterns."
 	},
 	{
@@ -837,7 +859,9 @@
 		"source":"ACM Symposium on User Interface Software and Technology (UIST)",
 		"pages":"37-46",
 		"acceptance rate":"18%",
+		"digital library url": "https://doi.org/10.1145/1866029.1866038",
 		"authorizer":"http://dl.acm.org/authorize?N89396",
+		"local url": "Patel2010Gestalt.pdf",
 		"contribution":"A development environment that supports the translation of data into machine learned classifier  that improves the ability of developers to find and fix defects."
 	},
 	{
@@ -859,10 +883,11 @@
 		"kind":"refereed conference paper",
 		"authors": ["Amy J. Ko", "Parmit K. Chilana"],
 		"year":2010,
-		"title":"How Power Users Help and Hinder Open Bug Reporting",
+		"title": "How Power Users Help and Hinder Open Bug Reporting",
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 		"pages":"1665-1674",
 		"acceptance rate":"24%",
+		"digital library url": "https://doi.org/10.1145/1753326.1753576",
 		"authorizer":"http://dl.acm.org/authorize?N89398",
 		"local url":"Ko2010HowPowerUsersHelpAndHinderOpenBugReporting.pdf",
 		"award":["best paper honorable mention"],
@@ -877,8 +902,9 @@
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 		"pages":"2337-2346",
 		"acceptance rate":"24%",
-		"authorizer":"http://dl.acm.org/authorize?N89399",
 		"digital library url":"http://doi.acm.org/10.1145/1753326.1753678",
+		"authorizer":"http://dl.acm.org/authorize?N89399",
+		"local url": "Chilana2010ComplexDomains.pdf",
 		"contribution":"Lack of domain expertise can be a significant hurdle for conducting effective user research and usability testing."
 	},
 	{
@@ -943,6 +969,7 @@
 		"source":"International Conference on Software Engineering (ICSE)",
 		"pages":"301-310",
 		"acceptance rate":"15%",
+		"digital library url": "https://doi.org/10.1145/1368088.1368130",
 		"authorizer":"http://dl.acm.org/authorize?N89305",
 		"local url":"Ko2008JavaWhyline.pdf",
 		"award": ["best paper", "most influential paper"],
@@ -970,7 +997,9 @@
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 		"pages":"557-566",
 		"acceptance rate":"26%",
+		"digital library url": "https://doi.org/10.1145/1240624.1240714",
 		"authorizer":"http://dl.acm.org/authorize?N89309",
+		"local url": "Cherubini2007DevelopersDrawCode.pdf",
 		"contribution":"Most of the diagrams that software developers make are transient and facilitate interpersonal communication and decision making and not for specifying or documenting program behavior."
 	},
 	{
@@ -995,7 +1024,9 @@
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 		"pages":"397-406",
 		"acceptance rate":"23%",
+		"digital library url": "https://doi.org/10.1145/1124772.1124832",
 		"authorizer":"http://dl.acm.org/authorize?N89304",
+		"local url": "Myers2006Crystal.pdf",
 		"contribution":"Algorithms and user interfaces that allow end users to ask 'why' questions about unexpected application behavior."
 	},
 	{
@@ -1007,6 +1038,7 @@
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 		"pages":"387-396",
 		"acceptance rate":"23%",
+		"digital library url": "https://doi.org/10.1145/1124772.1124831",
 		"authorizer":"http://dl.acm.org/authorize?N89303",
 		"local url":"Ko2006Barista.pdf",
 		"contribution":"Abstractions that make it easy to build rich multimedia interfaces in a code editor without sacrificing the ability to write code as text."
@@ -1020,6 +1052,7 @@
 		"source":"ACM Symposium on User Interface Software and Technology (UIST)",
 		"pages":"",
 		"acceptance rate":"19%",
+		"digital library url": "https://doi.org/10.1145/1095034.1095037",
 		"authorizer":"http://dl.acm.org/authorize?887034",
 		"local url":"Ko2005Citrus.pdf",
 		"contribution":"A programming language and library with language-level support for constraints, restrictions and change notifications on primitive and aggregate data."
@@ -1033,6 +1066,7 @@
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 		"pages":"331-340",
 		"acceptance rate":"25%",
+		"digital library url": "https://doi.org/10.1145/1054972.1055018",
 		"authorizer":"http://dl.acm.org/authorize?N89310",
 		"local url":"Fogarty2005ProgrammersInterruptibility.pdf",
 		"award": ["best paper"],
@@ -1047,6 +1081,7 @@
 		"source":"International Conference on Software Engineering (ICSE)",
 		"pages":"126-135",
 		"acceptance rate":"14%",
+		"digital library url": "https://doi.org/10.1145/1062455.1062492",
 		"authorizer":"http://dl.acm.org/authorize?N89318",
 		"local url":"Ko2005MaintenanceTasks.pdf",
 		"slides":"talks/ICSE2005MaintenanceTasks.pdf",
@@ -1145,7 +1180,9 @@
 		"title":"Why-Oriented End-User Debugging of Naive Bayes Text Classification",
 		"source":"ACM Transactions on Interactive Intelligent Systems, 1(1), Article 2",
 		"pages":"31 pages",
+		"digital library url": "https://doi.org/10.1145/2030365.2030367",
 		"authorizer":"http://dl.acm.org/authorize?N89388",
+		"local url": "Kulesza2011EndUserDebugging.pdf",
 		"volume":1,
 		"issue":1,
 		"article":2,
@@ -1159,6 +1196,7 @@
 		"title":"The State of the Art in End-User Software Engineering",
 		"source":"ACM Computing Surveys, 43(3), Article 21",
 		"pages":"44 pages",
+		"digital library url": "https://doi.org/10.1145/1922649.1922658",
 		"authorizer":"http://dl.acm.org/authorize?N89384",
 		"local url":"Ko2011EndUserSoftwareEngineering.pdf",
 		"volume":43,
@@ -1173,7 +1211,8 @@
 		"year":2010,
 		"title":"Extracting and Answering Why and Why Not Questions about Java Program Output",
 		"source":"ACM Transactions on Software Engineering and Methodology, 22(2), Article 4",
-		"pages":"",
+		"pages":"Article 4",
+		"digital library url": "https://doi.org/10.1145/1824760.1824761",
 		"authorizer":"http://dl.acm.org/authorize?N89397",
 		"local url":"Ko2010WhylineImplementation.pdf",
 		"volume":20,
@@ -1244,6 +1283,7 @@
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 		"pages":"2243-2246",
 		"acceptance rate":"25%",
+		"digital library url": "https://doi.org/10.1145/1978942.1979270",
 		"authorizer":"http://dl.acm.org/authorize?N89383",
 		"local url":"Chilana2011PostDeploymentUsability.pdf",
 		"contribution":"Technical support and design are rarely linked in software companies despite significant opportunities for user research, usability feedback, and feature ideas."
@@ -1282,6 +1322,7 @@
 		"pages":"185-188",
 		"acceptance rate":"29%",
 		"digital library url":"http://dx.doi.org/10.1109/VLHCC.2008.4639082",
+		"local url": "Park2008DesignersDescriptions.pdf",
 		"contribution":"Designers use consistent natural language to describe the behavior of interaction techniques, suggesting the feasibility of programming languages for expressing these behaviors."
 	},
 	{
@@ -1292,6 +1333,7 @@
 		"title":"Dimensions Characterizing Programming Feature Usage by Information Workers",
 		"source":"IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
 		"pages":"59-62",
+		"digital library url": "https://doi.org/10.1109/VLHCC.2006.21",
 		"local url":"Scaffidi2006InformationWorkers.pdf",
 		"contribution":"End user programmers use of programming is typically limited to one of three language features: macros for automation, linked structure queries, or imperative features."
 	},
@@ -1303,6 +1345,7 @@
 		"title":"Debugging by Asking Questions About Program Output",
 		"source":"International Conference on Software Engineering (ICSE)",
 		"pages":"989-992",
+		"digital library url": "https://doi.org/10.1145/1134285.1134471",
 		"authorizer":"http://dl.acm.org/authorize?N89302",
 		"local url":"Ko2006DoctoralConsortium.pdf",
 		"contribution":null
@@ -1315,7 +1358,9 @@
 		"title":"Invited Research Overview: End-User Programming",
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI), Extended Abstracts",
 		"pages":"75-80",
+		"digital library url": "https://doi.org/10.1145/1125451.1125472",
 		"authorizer":"http://dl.acm.org/authorize?N89315",
+		"local url": "Myers2006ResearchOverview.pdf",
 		"contribution":null
 	},
 	{
@@ -1338,6 +1383,7 @@
 		"title":"Design Requirements for More Flexible Structured Editors from a Study of Programmers' Text Editing",
 		"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 		"pages":"1557-1560",
+		"digital library url": "https://doi.org/10.1145/1056808.1056965",
 		"authorizer":"http://dl.acm.org/authorize?N89319",
 		"local url":"Ko2005TextEditing.pdf",
 		"slides":"talks/CHI2005TextEditing.pdf",
@@ -1388,6 +1434,7 @@
 		"source":"International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
 		"pages":"76-82",
 		"digital library url":"http://dx.doi.org/10.1109/CHASE.2012.6223028",
+		"local url": "Lee2012UserFeedback.pdf",
 		"contribution":"As issues reported by end users are transformed from emails, to support ticket, to discussion, to bug report, to feature specification, information from the original request is lost, but remains in the distributed memory of the team."
 	},
 	{
@@ -1398,6 +1445,7 @@
 		"title":"A Case Study of Post-Deployment User Feedback Triage",
 		"source":"International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
 		"pages":"8-Jan",
+		"digital library url": "https://doi.org/10.1145/1984642.1984644",
 		"authorizer":"http://dl.acm.org/authorize?N89381",
 		"local url":"Ko2011UserFeedbackTriage.pdf",
 		"contribution":"User feedback is often ignored in because software teams perceive most feedback as minority opinion that conflicts with prior architectural decisions."
@@ -1422,6 +1470,7 @@
 		"title":"JASPER: An Eclipse Plug-In to Facilitate Software Maintenance Tasks",
 		"source":"Proceedings of the 2006 OOPSLA Workshop on Eclipse Technology eXchange",
 		"pages":"65-69",
+		"digital library url": "https://doi.org/10.1145/1188835.1188849",
 		"authorizer":"http://dl.acm.org/authorize?N89301",
 		"local url":"Coblenz2006Jasper.pdf",
 		"contribution":"A tool for organizing related code fragments during software maintenance tasks."
@@ -1432,7 +1481,7 @@
 		"authors": ["Travis Kriplean", "Michael M. Toomim", "Jonathan T. Morgan", "Alan Borning", "Amy J. Ko"],
 		"year":2011,
 		"title":"Supporting Active Listening and Grounding on the Web through Restatement",
-		"source":"ACM Conference on Computer Supported Cooperative Work (CSCW), Horizons",
+		"source":"ACM Conference on Computer Supported Cooperative Work (CSCW), Horizons Workshop",
 		"pages":"",
 		"local url":"Kriplean2011Reflect.pdf",
 		"contribution":null
@@ -1444,6 +1493,7 @@
 		"year":2011,
 		"title":"Designing Crowdsourced, Context-Sensitive Help for Web Applications",
 		"source":"Workshop on Crowdsourcing and Human Computation",
+		"local url": "Chilana2011CrowdsourcingHelp.pdf",
 		"pages":"",
 		"contribution":null
 	},
@@ -1478,6 +1528,7 @@
 		"title":"Source-Level Debugging with the Whyline",
 		"source":"Cooperative and Human Aspects of Software Engineering",
 		"pages":"69-72",
+		"digital library url": "https://doi.org/10.1145/1370114.1370132",
 		"authorizer":"http://dl.acm.org/authorize?N89306",
 		"local url":"Ko2008SourceLevelDebugging.pdf",
 		"contribution":null
@@ -1490,6 +1541,7 @@
 		"title":"Human Factors Affecting Dependability in End-User Programming",
 		"source":"1st Workshop on End-User Software Engineering (WEUSE)",
 		"pages":"4-Jan",
+		"digital library url": "https://doi.org/10.1145/1083231.1083245",
 		"authorizer":"http://dl.acm.org/authorize?N89317",
 		"local url":"Ko2005HumanFactorsInEUP.pdf",
 		"contribution":null
@@ -1511,9 +1563,11 @@
 		"authors": ["Brad A. Myers", "Amy J. Ko", "SunYoung Park", "Jeffrey Stylos", "Thomas D. LaToza", "Jack Beaton"],
 		"year":2008,
 		"title":"More Natural End-User Software Engineering",
-		"source":"International workshop on End-User Software Engineering",
+		"source":"International Workshop on End-User Software Engineering",
 		"pages":"30-34",
+		"digital library url": "https://doi.org/10.1145/1370847.1370854",
 		"authorizer":"http://dl.acm.org/authorize?N89307",
+		"local url": "Myers2008MoreNaturalEUSE.pdf",
 		"contribution":null
 	},
 	{
@@ -1531,22 +1585,12 @@
 		"id":"",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Brad A. Myers", "Amy J. Ko"],
-		"year":2005,
-		"title":"More Natural and Open User Interface Tools",
-		"source":"Workshop on the Future of User Interface Design Tools",
-		"pages":"",
-		"local url":"Myers2008MoreNaturalEUSE.pdf",
-		"contribution":null
-	},
-	{
-		"id":"",
-		"kind":"non-refereed workshop paper",
-		"authors": ["Brad A. Myers", "Amy J. Ko"],
 		"year":2003,
 		"title":"Studying Development and Debugging To Help Create a Better Programming Environment",
 		"source":"Workshop on Perspectives in End User Development",
 		"pages":"65-68",
 		"digital library url":"http://giove.cnuce.cnr.it/chi-eud.html",
+		"local url": "Myers2003StudyingDebugging.pdf",
 		"contribution":null
 	},
 	{
@@ -1571,6 +1615,7 @@
 		"pages":"69-71",
 		"authorizer":"http://dl.acm.org/authorize?N89391",
 		"digital library url":"http://doi.acm.org/10.1145/1572626.1572641",
+		"local url": "Wobbrock2009InformationSchools.pdf",
 		"volume":16,
 		"issue":5,
 		"contribution":null
