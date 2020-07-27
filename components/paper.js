@@ -6,13 +6,13 @@ class Paper extends React.Component {
 	
 	getURL() {
 	
-		// If there's an ACM URL, return it, because people will be able to access it.
-		if(this.props.authorizer)
-			return this.props.authorizer;
-		// If there's a local URL, show it.
-		else if(this.props['local url'])
+		// If there's a local URL, show it first, since digital libraries have my deadname.
+		if(this.props['local url'])
 			return this.props.app.getWebRoot() + "/papers/" + this.props['local url'];
-		// Lastly, include the digital library URL, which will not be easily accessible
+		// If we don't have one, but there's an ACM authorizer URL, return it, because visitors will be able to bypass the paywall.
+		else if(this.props.authorizer)
+			return this.props.authorizer;
+		// Lastly, include the digital library URL, which will not be as easily accessible.
 		else if(this.props["digital library url"])
 			return this.props["digital library url"];
 		else
@@ -53,11 +53,11 @@ class Paper extends React.Component {
 
 			return (
 				<div name={ this.props.id } className={"paper ws-bottom " + (this.props.highlight ? "bg-info" : "")}>
-					{award}
-					{award ? <br/> : null}
-					{title} {this.props.hideLink ? null : <small>{pdf}</small>}
-					<br/>{authors} ({this.props.year})
-					<br/><small><i>{this.props.source}</i>{(this.props.pages === '' || this.props.pages === null) ? "." : ", " + this.props.pages + "."}</small>
+					{ award }
+					{ award ? <br/> : null }
+					<small>{authors} ({this.props.year})</small>
+					<br/>{title}
+					<br/><small><em>{this.props.source}</em>{(this.props.pages === '' || this.props.pages === null) ? "." : ", " + this.props.pages + "."}</small>
 					<br/>{contribution}
 				</div>
 			)
