@@ -103,7 +103,7 @@ class Advice extends React.Component {
 				<p>For my part, I wrote a journal paper that walks through several practical details of evaluating developer tools:</p>
 
 				<hr/>
-				<Paper {...practicalToolEvaluations} />				
+				<Paper {...practicalToolEvaluations} app={this.props.app} />				
 				<hr/>
 				
 				<p>Several of my colleagues in software engineering and programming languages also wrote a well reasoned analysis of <em>claims</em> in evaluations called <a href="http://dl.acm.org/citation.cfm?id=2983574">The Truth, The Whole Truth, and Nothing But the Truth: A Pragmatic Guide to Assessing Empirical Evaluations</a>. This is a great lens through which to evaluate the validity of your evaluation.</p>
