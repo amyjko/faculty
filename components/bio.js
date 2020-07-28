@@ -6,7 +6,11 @@ class Biography extends React.Component {
 			<div>
 			
 				<div className="lead">These are my short and long bios, and academic lineage.</div>
-			
+										
+				<h3>Short Bio</h3>
+
+				<p>Amy J. Ko is a Professor at the <a href="http://www.washington.edu">University of Washington</a> <a href="http://ischool.uw.edu/">Information School</a> and an Adjunct Professor at the <a href="http://cs.washington.edu">Paul G. Allen School of Computer Science and Engineering</a>. She directs the Code &amp; Cognition Lab, where she studies human aspects of programming. Her earliest work included techniques for automatically answering questions about program behavior to support debugging, program understanding, and reuse. Her later work studied interactions between developers and users, and techniques for web scale aggregation of user intent through help systems; she co-founded <a href="http://www.answerdash.com">AnswerDash</a> to commercialize these ideas. Her latest work investigates effective, equitable, scalable ways for humanity to learn computing, including programming languages, APIs, programming strategies, design, and machine learning. Her work spans over 100 peer-reviewed publications, 11 receiving best paper awards and 4 receiving most influential paper awards. She is an ACM Senior Member, and member of ACM SIGCHI, SIGCSE, and SIGSOFT. She received her Ph.D. at the <a href="http://www.hcii.cs.cmu.edu">Human-Computer Interaction Institute</a> at <a href="http://www.cmu.edu">Carnegie Mellon University</a> in 2008, and degrees in Computer Science and Psychology with Honors from <a href="http://www.oregonstate.edu">Oregon State University</a> in 2002.</p>
+
 				<h3>Identity</h3>
 				
 				<p>
@@ -29,10 +33,6 @@ class Biography extends React.Component {
 					<li><strong>I am Chinese</strong>, at least in ancestry; my father's parents came to the United States in the early 20th century, and brought with them cultural traditions in food, frugality, and financial security, which shaped my own traditions.</li>
 					<li><strong>I am Danish</strong>, at least in ancestry; my mother's parents came to the United States in early 20th century, and brought with them  humilty, privacy, and piety.</li>
 				</ul>
-							
-				<h3>Short Bio</h3>
-
-				<p>Amy J. Ko is a Professor at the <a href="http://www.washington.edu">University of Washington</a> <a href="http://ischool.uw.edu/">Information School</a> and an Adjunct Professor at the <a href="http://cs.washington.edu">Paul G. Allen School of Computer Science and Engineering</a>. She directs the Code &amp; Cognition Lab, where she studies human aspects of programming. Her earliest work included techniques for automatically answering questions about program behavior to support debugging, program understanding, and reuse. Her later work studied interactions between developers and users, and techniques for web scale aggregation of user intent through help systems; she co-founded <a href="http://www.answerdash.com">AnswerDash</a> to commercialize these ideas. Her latest work investigates effective, equitable, scalable ways for humanity to learn computing, including programming languages, APIs, programming strategies, design, and machine learning. Her work spans over 100 peer-reviewed publications, 11 receiving best paper awards and 4 receiving most influential paper awards. She is an ACM Senior Member, and member of ACM SIGCHI, SIGCSE, and SIGSOFT. She received her Ph.D. at the <a href="http://www.hcii.cs.cmu.edu">Human-Computer Interaction Institute</a> at <a href="http://www.cmu.edu">Carnegie Mellon University</a> in 2008, and degrees in Computer Science and Psychology with Honors from <a href="http://www.oregonstate.edu">Oregon State University</a> in 2002.</p>
 
 				<h3>Long Bio</h3>
 
