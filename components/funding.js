@@ -32,6 +32,7 @@ class Funding extends React.Component {
 						<span>
 							. The majority of my sponsored research is funded by the U.S. National Science Foundation, which is tax-funded. I write proposals, which are confidentially evaluated by my peers, and when my peers and NSF find my proposals to have compelling intellectual merit and potential for broader impact, I receive grants. I use these grants to support my summer salary, my doctoral students stipends, benefits, and tuition, my lab's research expenses, hourly undergraduate research assistants, and our travel. My doctoral students also write their own proposals, often winning NSF graduate research fellowships to support the first 3 years of their doctoral work. My NSF awards include:
 							<ul>{nsfLinks}</ul>
+							Six of my 13 past and present doctoral students have also won NSF Graduate Research Fellowships, which support three years of their research.
 						</span>
 				/>
 
