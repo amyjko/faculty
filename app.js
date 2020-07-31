@@ -4,6 +4,7 @@ import { Route, BrowserRouter, Switch, withRouter } from 'react-router-dom';
 
 import { Biography } from './components/bio';
 import { ContactInfo } from './components/contact';
+import { Communities } from './components/communities';
 import { Funding } from './components/funding';
 import { Publications } from './components/publications';
 import { Posts } from './components/posts';
@@ -46,6 +47,7 @@ class App extends React.Component {
 		this.links = [
 			"/",
 			"/students",
+			"/communities",
 			"/publications",
 			"/posts",
 			"/talks",
@@ -108,6 +110,7 @@ class App extends React.Component {
 					<Route path="/talks" render={(props) => <Talks {...props} app={this} />} />
 					<Route path="/books" render={(props) => <Books {...props} app={this} />} />
 					<Route path="/contact" render={(props) => <ContactInfo {...props} app={this} />} />
+					<Route path="/communities" render={(props) => <Communities {...props} app={this} />} />
 					<Route path="/funding" render={(props) => <Funding {...props} app={this} />} />
 					<Route path="/lab" render={(props) => <Students {...props} app={this} />} />
 					<Route path="/students/:student?" render={(props) => <Students {...props} app={this} />} />
