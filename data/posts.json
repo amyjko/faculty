@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/fifty-trans-hurdles-7bb4e859f860",
+		title: "Fifty trans hurdles",
+		date: "2020.8",
+		tags: ["personal", "diversity", "academia", "society"],
+		img: "hurdles",
+		alt: "A perspective drawing of a 2-lane track, with a racer on the right with 3 hurdles and a racer on the right with fifty."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/taking-refuge-from-the-internet-9c1c521a5a56",
 		title: "Taking refuge from the internet",
 		date: "2020.7",
