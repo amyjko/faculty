@@ -12,39 +12,39 @@ class ContactInfo extends React.Component {
 				</div>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/logo-uw.jpg"}
+					image={this.props.app.getWebRoot() + "/images/contact/office.jpg"}
+					alt="A photograph of my office."
+					link="https://goo.gl/maps/7c3irRBubGvXYEtZ8"
+					header="Office hours"
+					content=". I'm not holding Summer 2020 office hours, but you're welcome to email me requesting a meeting."
+				/>
+
+				<Block 
+					image={this.props.app.getWebRoot() + "/images/contact/uw.jpg"}
 					alt="The UW block logo."
 					link="mailto:ajko@uw.edu"
 					header="Email"
-					content=". I primarily use email to communicate with people outside UW. I read email once in the morning each weekday, and sometimes in the middle of the day if I'm in transit. I don't read on weekends unless I'm super engaged on a project."
+					content=". I primarily use email to communicate with people I don't know and occasionally with collaborators who refuse to use anything else. If you're a student, a potential collaborator, or anyone else, write me an email to connect. I read email once in the morning each weekday. I don't read on weekends unless I'm super engaged on a project."
 				/>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/logo-mgh.jpg"}
-					alt="A photograph of the front of Mary Gates Hall."
-					link="https://www.google.com/maps/place/Mary+Gates+Hall.+University+of+Washington/@47.6549552,-122.3101087,994m/data=!3m2!1e3!4b1!4m2!3m1!1s0x549014f2a95c2899:0xb2525ccd291489c!6m1!1e1"
-					header="Mary Gates Hall 015E"
-					content=". My office is in a locked suite on the ground floor of Mary Gates. If you knock, a friendly student will let you in (unless they all have their noise-canceling headphones on!) My office hours are currently by appointment, but you can always stop by to see if my door is open, which means I'm available to chat."
-				/>
-
-				<Block 
-					image={this.props.app.getWebRoot() + "/images/logo-slack.jpg"}
+					image={this.props.app.getWebRoot() + "/images/contact/slack.jpg"}
 					alt="The Slack logo."
 					link="https://uwdub.slack.com/"
 					header="Slack"
-					content=". I use Slack for all of my internal lab communications, and for much of my UW communication with colleagues and PhD students. During the work day I treat Slack like instant messaging, and after hours I treat it like email, reading it in the morning. If you're at UW, join DUB Slack and DM me. I'm usually pretty responsive throughout the day."
+					content=". Slack is my preferred medium for collaboration with my Ph.D. students and other collaborators at UW and beyond. During the work day I treat Slack like instant messaging, and after hours I treat it like email, reading it in the morning. If you're at UW, join DUB Slack and DM me. I'm usually pretty responsive throughout the day."
 				/>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/logo-twitter.jpg"}
+					image={this.props.app.getWebRoot() + "/images/contact/twitter.jpg"}
 					alt="The Twitter logo."
 					link="https://twitter.com/amyjko"
 					header="Twitter"
-					content=". I mostly broadcast on Twitter, and reply to other people's posts, but I do respond to direct messages. It's a good place to learn what's on my mind and when I have new writing to share."
+					content=". I mostly broadcast on Twitter, and reply to other people's posts, but I do respond to direct messages from non-trolls. It's a good place to learn what's on my mind and when I have new writing to share."
 				/>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/logo-github.jpg"}
+					image={this.props.app.getWebRoot() + "/images/contact/github.jpg"}
 					alt="The Github logo."
 					link="http://github.com/amyjko"
 					header="GitHub"
@@ -52,7 +52,7 @@ class ContactInfo extends React.Component {
 				/>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/logo-linkedin.jpg"}
+					image={this.props.app.getWebRoot() + "/images/contact/linkedin.jpg"}
 					alt="The LinkedIn logo."
 					link="https://www.linkedin.com/in/ajko/"
 					header="LinkedIn"
@@ -60,7 +60,7 @@ class ContactInfo extends React.Component {
 				/>
 
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/logo-facebook.jpg"}
+					image={this.props.app.getWebRoot() + "/images/contact/facebook.jpg"}
 					alt="The Facebook logo."
 					link="https://www.facebook.com/amyjko"
 					header="Facebook"

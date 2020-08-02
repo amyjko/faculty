@@ -502,38 +502,38 @@
 
 		<div id='perday'></div>
 
-		<div class='category' id='category' ontouchstart='toggleCategory();'></div>
+		<div class='category' id='category' ontouchend='toggleCategory();'></div>
 		
-		<div class='amount' id='amount' ontouchstart='enter();'></div>
+		<div class='amount' id='amount' ontouchend='enter();'></div>
 
-		<div id='chart' ontouchstart='showConfirm(event)'></div>
+		<div id='chart' ontouchend='showConfirm(event)'></div>
 
 		<div id='keypad'>
 		
 			<!-- The non-breaking spaces are here because the iPhone thinks these consecutive digits are a phone number! -->
-			<span class='key' id='key1' ontouchstart='appendDigit(1);'>&nbsp;1&nbsp;</span>
-			<span class='key' id='key2' ontouchstart='appendDigit(2);'>&nbsp;2&nbsp;</span>
-			<span class='key' id='key3' ontouchstart='appendDigit(3);'>&nbsp;3&nbsp;</span>
-			<span class='key' id='key4' ontouchstart='appendDigit(4);'>&nbsp;4&nbsp;</span>
-			<span class='key' id='key5' ontouchstart='appendDigit(5);'>&nbsp;5&nbsp;</span>
-			<span class='key' id='key6' ontouchstart='appendDigit(6);'>&nbsp;6&nbsp;</span>
-			<span class='key' id='key7' ontouchstart='appendDigit(7);'>&nbsp;7&nbsp;</span>
-			<span class='key' id='key8' ontouchstart='appendDigit(8);'>&nbsp;8&nbsp;</span>
-			<span class='key' id='key9' ontouchstart='appendDigit(9);'>&nbsp;9&nbsp;</span>
-			<span class='key' id='keysign' ontouchstart='toggleSign();'>+</span>
-			<span class='key' id='key0' ontouchstart='appendDigit(0);'>&nbsp;0&nbsp;</span>
-			<span class='key' id='keydelete' ontouchstart='deleteLastDigit();'>del</span>
+			<span class='key' id='key1' ontouchend='appendDigit(1);'>&nbsp;1&nbsp;</span>
+			<span class='key' id='key2' ontouchend='appendDigit(2);'>&nbsp;2&nbsp;</span>
+			<span class='key' id='key3' ontouchend='appendDigit(3);'>&nbsp;3&nbsp;</span>
+			<span class='key' id='key4' ontouchend='appendDigit(4);'>&nbsp;4&nbsp;</span>
+			<span class='key' id='key5' ontouchend='appendDigit(5);'>&nbsp;5&nbsp;</span>
+			<span class='key' id='key6' ontouchend='appendDigit(6);'>&nbsp;6&nbsp;</span>
+			<span class='key' id='key7' ontouchend='appendDigit(7);'>&nbsp;7&nbsp;</span>
+			<span class='key' id='key8' ontouchend='appendDigit(8);'>&nbsp;8&nbsp;</span>
+			<span class='key' id='key9' ontouchend='appendDigit(9);'>&nbsp;9&nbsp;</span>
+			<span class='key' id='keysign' ontouchend='toggleSign();'>+</span>
+			<span class='key' id='key0' ontouchend='appendDigit(0);'>&nbsp;0&nbsp;</span>
+			<span class='key' id='keydelete' ontouchend='deleteLastDigit();'>del</span>
 		
 		</div>
 		
 	</div>
 
 	<div id='confirm'>
-		<div class='button bad' ontouchstart='hideConfirm(event);'>keep</div>
+		<div class='button bad' ontouchend='hideConfirm(event);'>keep</div>
 		&nbsp;
-		<div class='button' ontouchstart='undo();hideConfirm(event);'>undo</div>
+		<div class='button' ontouchend='undo();hideConfirm(event);'>undo</div>
 		&nbsp;
-		<div class='button good' ontouchstart='reset(); hideConfirm(event);'>reset</div>
+		<div class='button good' ontouchend='reset(); hideConfirm(event);'>reset</div>
 	</div>
 
 </body>

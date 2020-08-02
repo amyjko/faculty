@@ -1,5 +1,245 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/fifty-trans-hurdles-7bb4e859f860",
+		title: "Fifty trans hurdles",
+		date: "2020.8",
+		tags: ["personal", "diversity", "academia", "society"],
+		img: "hurdles",
+		alt: "A perspective drawing of a 2-lane track, with a racer on the right with 3 hurdles and a racer on the right with fifty."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/taking-refuge-from-the-internet-9c1c521a5a56",
+		title: "Taking refuge from the internet",
+		date: "2020.7",
+		tags: ["personal", "diversity", "information", "society"],
+		img: "speech",
+		alt: "A woman in a bubble, staring out at three angry men yelling at her."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/computer-science-taught-me-that-books-werent-important-it-was-wrong-63ead2fdad7a",
+		title: "Computer science taught me that books weren't important. It was wrong.",
+		date: "2020.7",
+		tags: ["academia", "personal", "computing education"],
+		img: "books",
+		alt: "Dark Matters, Artificial Unintelligence, Joy of Search, Automating Inequality, Algorithms of Oppression, Black Software"
+	},
+	{
+		url: "https://medium.com/@amyjko/i-turned-40-heres-what-i-ve-learned-101f892cfa82",
+		title: "I turned 40; here’s what I’ve learned",
+		date: "2020.7",
+		tags: ["personal", "diversity"],
+		img: "turned40",
+		alt: "A photograph of Amy when she was an infant, laying on her belly"
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/reflections-on-ruha-benjamins-race-after-technology-87f737a69e62",
+		title: "Reflections on Ruha Benjamin’s \"Race After Technology\"",
+		date: "2020.7",
+		tags: ["academia", "computing education", "diversity", "personal"],
+		img: "raceaftertech",
+		alt: "An interpretation of Rodin’s “The Thinker”, a top Ruha Benjamin’s stunning book."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/why-our-academic-major-is-racist-d42725592af7",
+		title: "Our undergraduate program is racist",
+		date: "2020.6",
+		tags: ["academia", "computing education", "diversity"],
+		img: "racistinfo",
+		alt: "A top row with a series of dots being filtered by narrow funnels, and a bottom row with a series of dots not being filtered."
+	},
+	{
+		url: "https://medium.com/@amyjko/what-it-feels-like-to-lose-civil-rights-cfe38c6b2468",
+		title: "What it feels like to lose civil rights",
+		date: "2020.6",
+		tags: ["personal", "diversity", "society", "gender"],
+		img: "civilrights",
+		alt: "Angry red white and blue squiggles."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/a-synopsis-of-costanza-chocks-design-justice-e00a476008fa",
+		title: "A synopsis of Costanza-Chock’s “Design Justice”: nothing for us without us",
+		date: "2020.6",
+		tags: ["computing education", "design", "diversity", "society"],
+		img: "designjustice",
+		alt: "A group of stick figures collaborating in various ways, with a green stick figure in the middle (the designer) participating."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/my-strained-relationship-with-radicalism-and-pragmatism-495fba42ae5e",
+		title: "My strained relationship with radicalism and pragmatism",
+		date: "2020.6",
+		tags: ["computing education", "diversity", "personal", "society", "policy"],
+		img: "radicalism",
+		alt: "Three grey-blue blobs, one vertical, one circular in slight motion, and one oblong, racing to the future."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/ideas-from-the-code-and-cognition-lab-2020-edition-b5f2f752bb65",
+		title: "Ideas from the Code and Cognition Lab (2020 edition)",
+		date: "2020.6",
+		tags: ["computing education", "diversity", "programming languages"],
+		img: "2020ideas",
+		alt: "A red, green, and blue thread, squiggly and overlapping, terminating in a point on the right."
+	},
+	{
+		url: "https://medium.com/@amyjko/my-slow-escape-from-gendered-self-loathing-482e54977c88",
+		title: "My slow escape from gendered self-loathing",
+		date: "2020.5",
+		tags: ["personal", "diversity", "gender"],
+		img: "loathing",
+		alt: "A beast on the left, squatting, and a woman on the right, sitting, with her arm around its back."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/on-the-inherent-injustice-of-admissions-ccada556409",
+		title: "On the inherent injustice of admissions",
+		date: "2020.5",
+		tags: ["academia", "diversity"],
+		img: "admissions",
+		alt: "A crowd of people rushing to a locked safe space to escape a firey cloud."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/paulo-freires-pedagogy-of-the-oppressed-a-manifesto-on-education-and-social-change-dbd63cd9fc17",
+		title: "Paulo Freire’s “Pedagogy of the Oppressed”: a manifesto on education and social change",
+		date: "2020.5",
+		tags: ["society", "diversity", "teaching"],
+		img: "oppressed",
+		alt: "Multiple layers of faded colors surrounding a struggling person, with a smear through the top pointing a way out."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/on-the-future-of-academic-conferences-c0a54f027423",
+		title: "On the future of academic conferences",
+		date: "2020.5",
+		tags: ["academia"],
+		img: "conferences",
+		alt: "Four groups of stick figures chatting in a hallway, but with dashed grey borders around each person."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/the-motive-is-the-message-e464933f505d",
+		title: "The motive is the message",
+		date: "2020.4",
+		tags: ["personal", "HCI"],
+		img: "communication",
+		alt: "A comic strip of a stick person pushing the world hello to another person, but it collapses, jumbled."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/my-new-appreciation-for-history-28db2577e488",
+		title: "My new appreciation for history",
+		date: "2020.4",
+		tags: ["personal", "diversity", "society"],
+		img: "history",
+		alt: "A photograph of Amy as an infant reaching for books on a bookshelf."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/an-autobiographical-synopsis-of-kentaro-toyamas-geek-heresy-3b3251c23cd1",
+		title: "An autobiographical synopsis of Kentaro Toyama's \"Geek Heresy\"",
+		date: "2020.4",
+		tags: ["computing education", "personal", "diversity", "society"],
+		img: "heresy",
+		alt: "A blue sky with red fragments of digital devices being sucked into a grey cloud."
+	},
+	{
+		url: "https://medium.com/@amyjko/work-ethic-and-hygge-in-a-time-of-social-distancing-b76c0413a8c2",
+		title: "Work ethic and hygge in a time of social distancing",
+		date: "2020.3",
+		tags: ["academia", "personal"],
+		img: "hygge",
+		alt: "A water color illustration of the Danish geographic silhouette wrestling the Chinese geographic silhouette."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/im-a-professor-d732ba26c522",
+		title: "I'm a Professor!",
+		date: "2020.3",
+		tags: ["academia", "personal"],
+		img: "professor",
+		alt: "40 small thumbnails of my research, teaching, and service statements and my CV."
+	},
+	{
+		url: "https://medium.com/@amyjko/gender-transition-in-a-pandemic-a1f7f09d7077",
+		title: "Gender transition in a pandemic",
+		date: "2020.3",
+		tags: ["personal", "gender"],
+		img: "distance",
+		alt: "A grid of black rectangles with people inside each, doing different activities. In the center, a woman cross-legged."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/sigcse-2020-trip-report-viral-edition-6d5f3c9a31bf",
+		title: "SIGCSE 2020 Trip report: viral edition",
+		date: "2020.3",
+		tags: ["academia", "computing education"],
+		img: "sigcse20",
+		alt: "A photograph of the Oregon Convention Center."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/the-fragile-refuge-of-routines-in-a-time-of-uncertainty-4ecce13a99d0",
+		title: "The fragile refuge of routines in a time of uncertainty",
+		date: "2020.3",
+		tags: ["academia", "personal"],
+		img: "routine",
+		alt: "Many fuzzy coronaviruses falling upon a calendar laying flat, with me hanging on the edge of the calendar trying to escape."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/dealing-with-demands-for-change-8c10fd0ba77e",
+		title: "Dealing with demands for change",
+		date: "2020.3",
+		tags: ["academia", "personal"],
+		img: "demands",
+		alt: "Several punctuation marks flying towards a stick figure protected by a blue orb."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/dealing-with-academic-criticism-ebac8ee934a9",
+		title: "Dealing with academic critcism",
+		date: "2020.2",
+		tags: ["academia", "personal"],
+		img: "feedback",
+		alt: "A person being electrocuted by red tendrils, but those tendrils transform into straight lines after passing through."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/the-false-dichotomy-of-teaching-and-research-739f85458bdf",
+		title: "The false dichotomy of teaching and research",
+		date: "2020.2",
+		tags: ["academia", "teaching", "science"],
+		img: "dichotomy",
+		alt: "An illustration of a stick figure's thought bubble, with a faded mirror of the bubble in grey."
+	},
+	{
+		url: "https://medium.com/@amyjko/the-fuel-of-discovery-2c580ffd1d39",
+		title: "The fuel of discovery",
+		date: "2020.1",
+		tags: ["academia", "personal"],
+		img: "fuel",
+		alt: "An illustration of a fuel gauge on empty."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/what-is-the-role-of-academia-in-a-post-truth-world-26ce3bfc116d",
+		title: "What is the role of academia in a post-truth world?",
+		date: "2020.1",
+		tags: ["academia", "society"],
+		img: "posttruth",
+		alt: "A pencil sketch of a rectangle fading from dark solid black to a diffuse fog."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/writing-for-myself-and-others-a-reflection-on-academic-blogging-8abdfda6b50b",
+		title: "Writing for myself and others: a reflection on academic blogging",
+		date: "2020.1",
+		tags: ["academia"],
+		img: "blogging",
+		alt: "A locked diary with words 'KEEP OUT'"
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/a-autobiographical-synopsis-of-morgan-ames-the-charisma-machine-68792c7987fa",
+		title: "A autobiographical synopsis of Morgan Ames’ “The Charisma Machine",
+		date: "2020.1",
+		tags: ["computing education", "diversity", "K-12", "gender"],
+		img: "charismamachine",
+		alt: "A photograph of adolescent Amy programming at her computer."
+	},
+	{
+		url: "https://medium.com/bits-and-behavior/making-time-to-transition-cf2096a037b3",
+		title: "Transition and overcommitment",
+		date: "2019.12",
+		tags: ["academia", "personal", "gender"],
+		img: "overcommitment2",
+		alt: "An erratic, sharply jumping plot of ups and downs, with watercolor backdrop."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/a-modern-vision-for-peer-review-d5f73f0fae07",
 		title: "A modern vision for peer review",
 		date: "2019.12",
@@ -27,7 +267,7 @@
 		url: "http://medium.com/@amyjko/finding-my-voice-literally-13d2c06eb3f7",
 		title: "Finding my voice (literally)",
 		date: "2019.11",
-		tags: ["personal", "academia"],
+		tags: ["personal", "academia", "gender"],
 		img: "voice",
 		alt: "Blue tendrils interleaved with pink ones."
 	},
@@ -59,7 +299,7 @@
 		url: "https://medium.com/bits-and-behavior/100-hours-of-name-change-labor-c652c22a89b9",
 		title: "100 hours of name change labor",
 		date: "2019.10",
-		tags: ["academia", "personal", "information", "HCI"],
+		tags: ["academia", "personal", "information", "HCI", "gender"],
 		img: "namechange",
 		alt: "An illustration showing a stick figure yelling the name 'Amy' at a wall, but it's bouncing off into a pile. A set of corporate logos behind the wall."
 	},
@@ -67,7 +307,7 @@
 		url: "https://medium.com/bits-and-behavior/what-coming-out-as-trans-should-look-like-395f31beeddb",
 		title: "What coming out as trans should look like",
 		date: "2019.9",
-		tags: ["academia", "personal"],
+		tags: ["academia", "personal", "gender"],
 		img: "comingoutresponse",
 		alt: "A photograph of Amy smiling at her desk."	
 	},
@@ -75,7 +315,7 @@
 		url: "https://medium.com/bits-and-behavior/im-trans-call-me-amy-8a72a3951964",
 		title: "I'm trans! Call me Amy.",
 		date: "2019.9",
-		tags: ["academia", "personal"],
+		tags: ["academia", "personal", "gender"],
 		img: "comingout",
 		alt: "A fuzzy trans pride flag, with a small face peeking out of it."	
 	},

@@ -19,11 +19,17 @@ class Person extends React.Component {
 		return (
 			<div className={(this.props.highlight ? "bg-info" : "")} name={this.props.id}>
 				<Block 
-					image={this.props.app.getWebRoot() + "/images/mug-" + this.props.id + ".jpg"}
+					image={this.props.app.getWebRoot() + "/images/headshots/mug-" + this.props.id + ".jpg"}
 					alt={"Photograph of " + this.props.name}
 					link={this.props.url}
 					header={null}
-					content=<span><a target="_blank" href={this.props.url}>{this.props.name}</a> <mark>{this.props.level}</mark> { this.props.thesis ? <small><a href={this.props.thesis}>Dissertation</a></small> : null }<br/>{this.props.bio}</span>
+					content=<span>
+						<a target="_blank" href={this.props.url}>{this.props.name}</a>
+						<mark>{this.props.level}</mark>
+						<small>{ this.props.dissertation ? <a href={this.props.app.getWebRoot() + "/dissertations/" + this.props.dissertation}>Dissertation</a> : null } { this.props.enddate ? " (" + this.props.enddate + ")" : null }</small>
+						<br/>
+						{this.props.bio}
+					</span>
 				/>
 			</div>
 		);
@@ -56,7 +62,7 @@ class Students extends React.Component {
 		var affiliatedPeople = _.map(_.filter(people, { 'active': true, 'advised': false }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app}/>; });
 
 		// Render the former Ph.D. students.
-		var formerPhD = _.map(_.sortBy(_.filter(people, { 'active': false, 'advised': true, 'level': 'phd' }), ['startdate']), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
+		var formerPhD = _.map(_.orderBy(_.filter(_.reject(people, {'enddate': null}), { 'active': false, 'advised': true, 'level': 'phd' }), ['enddate'], ['desc']), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
 
 		// Render the former Ph.D. students.
 		var formerAffiliatedPhD = _.map(_.filter(people, { 'active': false, 'advised': false, 'level': 'phd' }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
@@ -74,14 +80,13 @@ class Students extends React.Component {
 				</div>
 				
 				<p>
-					My lab includes doctoral and undergraduate students from <a href="http://ischool.uw.edu">The Information School</a>, <a href="http://cs.washington.edu">The Paul G. Allen School of Computer Science & Engineering</a>, and occasionally other units on campus.
+					My lab includes students from <a href="http://ischool.uw.edu">The Information School</a>, <a href="http://cs.washington.edu">The Paul G. Allen School of Computer Science & Engineering</a>, the <a href="https://education.uw.edu">College of Education</a>, and occasionally other units on campus.
 					I run the lab in a doctoral student-centered manner: students define their own projects within the scope of my interests, and often move me into new research areas. 
-					I typically write grants to support students' research, rather than make students work within the grant money I've raised. 
-					Students frequently collaborate with each other and with students outside of the lab.
+					Read our <a href="https://docs.google.com/document/d/1LMHv0HdxXEgSNqICt3wtq8xWuH73kP7plZ_KeXyP6qM/edit?usp=sharing">onboarding document</a> for more details about the ever evolving culture of the lab.
 				</p>
 
 				<ul>
-					<li>Are you a <strong>current Ph.D. student</strong> at UW interested in working with me? Lurk on the <i>#codeandcognitionlab</i> channel on <a target="_blank" href="https://uwdub.slack.com">DUB's Slack</a>. Write me an email and let's chat about your interests.</li>
+					<li>Are you a <strong>current Ph.D. student</strong> at UW interested in working with me? Lurk on the <i>#codeandcognitionlab</i> channel on <a target="_blank" href="https://computinged-uw.slack.com">ComputingEd @ UW Slack</a>. Write me an email and let's chat about your interests.</li>
 					<li>Are you a <strong>prospective Ph.D. student</strong> interested in working with me? Write me an email, share your interests, and ask if I'm taking new students. Reach out to my current students and ask about their experiences. Apply to the <a href="http://ischool.uw.edu/phd" target="_blank">Information School</a> or <a href="http://www.cs.washington.edu/education/grad/prospective.html" target="_blank">CSE</a>, but note that I have much more control over iSchool admissions.</li>
 					<li>
 						Are you a <strong>UW undergrad</strong> interested in working with me on research? Read <a href="https://ischool.uw.edu/programs/informatics/research">this page</a> about engaging in research as an undergraduate, and if you're still interested, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjcrMFAMUEv3SXXggXscg17sIZ6p7YFSpCkFPADkBZ8BZB9g/viewform?usp=sf_link" target="_blank">fill out an application</a>. I recruit year round for part-time researchers, and in Winter quarter for full-time summer research assistant positions.

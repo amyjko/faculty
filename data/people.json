@@ -1,13 +1,83 @@
 [
 	{
- 		"id": "st3f",
- 		"name": "Stefania Druga",
+ 		"id": "perdriau",
+ 		"name": "Chris  Perdriau",
+ 		"active": true,
+ 		"advised": true,
+ 		"level": "undergrad",
+ 		"dept": "Oregon State University",
+ 		"coadvisor": null,
+ 		"bio": "Chris is a CS student at Oregon State University studying HCI and psychology. He is interested in making technology more inclusive for underserved communities.",
+ 		"url": "https://github.com/ChristopherPerdriau",
+ 		"startdate": 2020,
+ 		"enddate": null,
+ 		"achievements": []
+ 	},
+	{
+ 		"id": "anael",
+ 		"name": "Anael Kuperwajs Cohen",
+ 		"active": true,
+ 		"advised": true,
+ 		"level": "undergrad",
+ 		"dept": "Macalester College",
+ 		"coadvisor": null,
+ 		"bio": "Anael is a CS and applied mathematics and statistics double major with a cognitive science concentration at Macalester College. She is interested in breaking down barriers for women and other minorities within the field of CS by pursuing a career in CS education.",
+ 		"url": "https://anaelkuperwajs.github.io/",
+ 		"startdate": 2020,
+ 		"enddate": null,
+ 		"achievements": []
+ 	},
+	{
+ 		"id": "minatari",
+ 		"name": "Mina Tari",
  		"active": true,
  		"advised": false,
  		"level": "phd",
+ 		"dept": "The Information School",
+ 		"coadvisor": null,
+ 		"bio": "Mina is PhD student in the Information School exploring women of color's experiences in introductory computing courses. She's a homegrown UW student, coming from the Informatics and Gender, Women, and Sexuality Studies programs. Mina works with Amy and the lab to apply a critical feminist lens to questions regarding equity in computing education.",
+ 		"url": "http://minatari.com/",
+ 		"startdate": 2018,
+ 		"enddate": null,
+ 		"achievements": []
+ 	},
+	{
+ 		"id": "jliang9",
+ 		"name": "Jenny Liang",
+ 		"active": true,
+ 		"advised": true,
+ 		"level": "undergrad",
+ 		"dept": "Computer Science & The Information School",
+ 		"coadvisor": null,
+ 		"bio": "Jenny is an undergrad studying computer science and informatics. She is working with Amy to study how to use explicit programming strategies to improve collaboration and learning of developers.",
+ 		"url": "https://www.linkedin.com/in/jenny-liang/",
+ 		"startdate": 2020,
+ 		"enddate": null,
+ 		"achievements": []
+ 	},
+	{
+ 		"id": "eboris",
+ 		"name": "Emilia Borisova",
+ 		"active": true,
+ 		"advised": true,
+ 		"level": "undergrad",
+ 		"dept": "Pre-major",
+ 		"coadvisor": null,
+ 		"bio": "Emilia is an undergraduate student pursuing Informatics. She is interested in computing education and is helping with Neil's research on understanding the personal and interpersonal factors influencing computing career choices. ",
+ 		"url": "https://www.linkedin.com/in/emilia-borisova",
+ 		"startdate": 2020,
+ 		"enddate": null,
+ 		"achievements": []
+ 	},
+	{
+ 		"id": "st3f",
+ 		"name": "Stefania Druga",
+ 		"active": true,
+ 		"advised": true,
+ 		"level": "phd",
  		"dept": "Information School",
  		"coadvisor": null,
- 		"bio": "Stefania Druga is the creator of http://cognimates.me, a platform for AI education for kids, which started as her Master Thesis at MIT Media Lab. Currently is a Ph.D. student at the University of Washington in the Digital Youth Lab. She has observed in longitudinal studies how 450 children from 7 countries are growing up with AI and how hey can acquire AI literacy concepts through creative learning activities.",
+ 		"bio": "Stefania Druga is the creator of http://cognimates.me, a platform for AI education for kids, which started as her Master Thesis at MIT Media Lab. Currently is a Ph.D. student at the University of Washington. She has observed in longitudinal studies how 450 children from 7 countries are growing up with AI and how hey can acquire AI literacy concepts through creative learning activities. She is co-advised by Benjamin Mako Hill.",
  		"url": "http://www.drugastefania.com",
  		"startdate": 2019,
  		"enddate": null,
@@ -24,7 +94,7 @@
 		"bio": "Chandrashree is studying data science in the Informatics program. She's interested in how data can be used to make informed decisions. She's helping with Yim's work on machine learning literacy.",
 		"url": "http://www.linkedin.com/in/chandrashree-karnani-4824b0178",
 		"startdate": 2019,
-		"enddate": null,
+		"enddate": 2019,
 		"achievements": []
 	},
 	{
@@ -66,7 +136,7 @@
 		"bio": "Christina is an undergraduate majoring in Computer Science and Informatics. She's working on supporting research on intelligent programmin tutors.",
 		"url": "https://www.linkedin.com/in/christina9/",
 		"startdate": 2019,
-		"enddate": null,
+		"enddate": 2019,
 		"achievements": []
 	},
 	{
@@ -143,7 +213,7 @@
 		"id": "yreg",
 		"name": "Yim Register",
 		"active": true,
-		"advised": true,
+		"advised": false,
 		"level": "phd",
 		"dept": "Information School",
 		"coadvisor": null,
@@ -164,7 +234,7 @@
 		"bio": "Jane helped the lab on various learning to code projects.",
 		"url": "https://www.linkedin.com/in/jane-quichocho-08a9b714b/",
 		"startdate": 2018,
-		"enddate": null,
+		"enddate": 2019,
 		"achievements": []
 	},
 	{
@@ -291,7 +361,9 @@
 		"url": "http://benjixie.com/",
 		"startdate": 2016,
 		"enddate": null,
-		"achievements": [ "NSF Graduate Research Fellowship (2017)" ]
+		"achievements": [ 
+			"NSF Graduate Research Fellowship (2017)" 
+		]
 	},
 	{
 		"id": "glnelson",
@@ -313,15 +385,16 @@
 	{
 		"id": "kthayer",
 		"name": "Kyle Thayer",
-		"active": true,
+		"active": false,
 		"advised": true,
 		"level": "phd",
 		"dept": "Computer Science",
 		"coadvisor": "Katharina Reinecke",
-		"bio": "Kyle is a PhD student in Computer Science and Engineering, also advised by Katharina Reinecke. He studies the intersection of diversity and learning in computing education.",
+		"bio": "Kyle was a PhD student in Computer Science and Engineering, co-advised by Katharina Reinecke. His dissertation investigated barriers to learning to code knowledge through bootcamps, developed a novel theory of API knowledge, and contributed a new way to mine the web for API usage patterns. He is now a Lecturer at the University of Washington Information school, where he continues investigating the intersection of diversity and computing education as a teacher and researcher.",
 		"url": "http://www.kylethayer.com",
 		"startdate": 2015,
-		"enddate": 2019,
+		"enddate": 2020,
+		"dissertation": "Thayer2020Dissertation.pdf",
 		"achievements": [
 			"Lecturer, The Information School, University of Washington (2019-present)"
 		]
@@ -329,29 +402,33 @@
 	{
 		"id": "amaswea",
 		"name": "Amanda Swearngin",
-		"active": true,
+		"active": false,
 		"advised": true,
 		"level": "phd",
 		"dept": "Computer Science",
 		"coadvisor": "James Fogarty",
-		"bio": "Amanda is a Ph.D. student in Computer Science & Engineeering. She invents design tools that exploit program analysis, program synthesis, constraint solving, and machine learning.",
+		"bio": "Amanda was a Ph.D. student in Computer Science & Engineeering. Her dissertation contributed design tools that leverage program analysis, program synthesis, constraint solving, and machine learning. She is now a Research Engineer at Apple in Accessibility and Machine Learning.",
 		"url": "https://amaswea.github.io/",
 		"startdate": 2015,
 		"enddate": 2019,
-		"achievements": [ "NSF Graduate Research Fellowship (2016)" ]
+		"dissertation": "Swearngin2019Dissertation.pdf",
+		"achievements": [ 
+			"NSF Graduate Research Fellowship (2016)"
+		]
 	},
 	{
 		"id": "dloksa",
 		"name": "Dastyni Loksa",
-		"active": true,
+		"active": false,
 		"advised": true,
 		"level": "phd",
 		"dept": "Information School",
 		"coadvisor": null,
-		"bio": "Dastyni is a Ph.D. student in the the Information School. His research focuses on problem solving in programming, with a particular focus on self-regulated learning, spanning the fields of HCI and computing education. Dastyni completed his bachelors in Informatics at the University of California, Irvine.",
+		"bio": "Dastyni was a Ph.D. student in the the Information School. His dissertation focused on problem solving in programming, with a particular focus on self-regulated learning, spanning the fields of HCI and computing education. He is now tenure-track faculty at Towson University, teaching CS and preparing CS teachers.",
 		"url": "http://students.washington.edu/dloksa/",
 		"startdate": 2013,
-		"enddate": 2019,
+		"enddate": 2020,
+		"dissertation": "Loksa2020Dissertation.pdf",
 		"achievements": []
 	},
 	{
@@ -365,7 +442,7 @@
 		"bio": "Zak was a Ph.D. student in the the Information School, co-advised by Amy Ko and Barbara Endicott-Popovsky. He received his Master of Science in Security Informatics from Johns Hopkins in 2011 and bachelor degrees in Computer Engineering and Political Science from the University of Washington in 2009. His research focused on security practices in software teams and organizations. After leaving the Ph.D. program, he worked as Senior Security Engineer at Security Innovation, Inc.",
 		"url": "https://www.linkedin.com/in/zakariya-dehlawi-7836a515",
 		"startdate": 2014,
-		"enddate": 2017,
+		"enddate": null,
 		"achievements": []
 	},
 		{
@@ -376,12 +453,14 @@
 		"level": "phd",
 		"dept": "Information School",
 		"coadvisor": null,
-		"bio": "Paul Luo Li was a Ph.D. student in the Information School at the University of Washington, advised by Amy. His dissertatino work focused on software engineering expertise. After graduating, Paul continued his full-time role as a Senior Data Scientist at Microsoft.",
+		"bio": "Paul Luo Li was a Ph.D. student in the Information School at the University of Washington, advised by Amy. His dissertation work focused on software engineering expertise. After graduating, Paul continued his full-time role as a Senior Data Scientist at Microsoft.",
 		"url": "https://www.linkedin.com/in/paul-li-7387903/",
 		"startdate": 2009,
 		"enddate": 2016,
-		"thesis": "papers/Li2016Dissertation.pdf",
-		"achievements": []
+		"dissertation": "Li2016Dissertation.pdf",
+		"achievements": [
+			"Senior Data Scientist, Microsoft (2016-present)"
+		]
 	},
 	{
 		"id": "mjslee",
@@ -395,7 +474,7 @@
 		"url": "http://pixel42.com/",
 		"startdate": 2009,
 		"enddate": 2015,
-		"thesis": "papers/Lee2015Dissertation.pdf",
+		"dissertation": "Lee2015Dissertation.pdf",
 		"achievements": [
 			"Assistant Professor, New Jersey Institute of Technology, Information Systems (2015-present)",
 			"ACM ICER John Henry Best Paper Award (2013)"
@@ -413,8 +492,9 @@
 		"url": "http://brrian.org/",
 		"startdate": 2011,
 		"enddate": 2015,
-		"thesis": "papers/Burg2015Dissertation.pdf",
+		"dissertation": "Burg2015Dissertation.pdf",
 		"achievements": [
+			"Senior Software Engineer, Apple (2015-present)",
 			"ACM UIST Best Paper Nominee (2015)"
 		]
 	},
@@ -430,8 +510,11 @@
 		"url": "http://www.kayur.org/",
 		"startdate": 2007,
 		"enddate": 2012,
-		"thesis": "papers/Patel2012Dissertation.pdf",
-		"achievements": []
+		"dissertation": "Patel2012Dissertation.pdf",
+		"achievements": [
+			"Research Scientist, Apple (2018-present)",
+			"Research Scientist, Google (2013-2018)",
+		]
 	},
 	{
 		"id": "pchilana",
@@ -445,7 +528,7 @@
 		"url": "http://hci.cs.sfu.ca/",
 		"startdate": 2008,
 		"enddate": 2013,
-		"thesis": "papers/Chilana2013Dissertation.pdf",
+		"dissertation": "Chilana2013Dissertation.pdf",
 		"achievements": [
 				"Assistant Professor, Simon Fraser University, Computer Science (2016-present)",
 				"Assistant Professor, University of Waterloo, Management Sciences, (2013-2016)",
@@ -773,7 +856,7 @@
 		"bio": "Casey was a doctoral student that studied design practices.",
 		"url": "https://www.linkedin.com/in/crhickerson",
 		"startdate": 2009,
-		"enddate": 2011,
+		"enddate": null,
 		"achievements": []
 	}	
 ]

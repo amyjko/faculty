@@ -21,7 +21,7 @@
 		"alt": "A photograph of the 2016 team at AnswerDash",
 		"description": "My research often impacts policy and processes in software companies; I have also co-founded and consulted with startups",
 		"impacts": [
-			"Our research on Lemonaid, our crowdsourced help tool, was the basis for <a href='http://www.answerdash.com/'>AnswerDash</a>, a company that I co-founded with Jacob Wobbrock and Parmit Chilana that offers an instant self-service answers product for web applications and e-commerce sites. The company has impacted other company's product offerings, including <a href='https://www.zendesk.com/'>Zendesk</a>'s self-service technologies.",
+			"Our research on Lemonaid, our crowdsourced help tool, was the basis for <a href='http://www.answerdash.com/'>AnswerDash</a>, a company that I co-founded with Jacob Wobbrock and Parmit Chilana that offers an instant self-service answers product for web applications and e-commerce sites. The company has impacted other company's product offerings, including <a href='https://www.zendesk.com/'>Zendesk</a>'s self-service technologies. AnswerDash was <a href='https://www.geekwire.com/2020/uw-spinout-answerdash-contextual-qa-service-customer-support-acquired-cloudengage/'>acquired in 2020 by CloudEngage</a>, a platform for customer personalization.",
 			"Our research on bug reporting has been read widely in industry, including by product teams at Microsoft, Adobe, Google, and ABB.",
 		]
 	},
@@ -52,10 +52,11 @@
 	},
 	{
 		"id": "learningtech",		
-		"population": "Technologies for Learning to Code",
+		"population": "Technologies for learning to code",
 		"alt": "A screenshot of Apple's Swift Playgrounds.",
 		"description": "Many of my discoveries have impacted the design of educational technologies for learning to code",
 		"impacts": [
+			"In 2020, I consulted with Microsoft's VS Code, VS Online, and GitHub Education teams about how to support CS educators.",
 			"In 2016 I consulted with Microsoft on their <a href='https://makecode.com/'>MakeCode</a> project, sharing evidence from computing education research to inform the design of their learning technologies.",
 			"Our work on Gidget influenced the design of Code.org's <a href='https://studio.code.org/'>CodeStudio</a> and <a href='https://www.apple.com/swift/playgrounds/'>Apple's Swift Playgrounds</a>."
 		]

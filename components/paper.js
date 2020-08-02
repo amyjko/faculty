@@ -6,13 +6,13 @@ class Paper extends React.Component {
 	
 	getURL() {
 	
-		// If there's an ACM URL, return it, because people will be able to access it.
-		if(this.props.authorizer)
-			return this.props.authorizer;
-		// If there's a local URL, show it.
-		else if(this.props['local url'])
+		// If there's a local URL, show it first, since digital libraries have my deadname.
+		if(this.props['local url'])
 			return this.props.app.getWebRoot() + "/papers/" + this.props['local url'];
-		// Lastly, include the digital library URL, which will not be easily accessible
+		// If we don't have one, but there's an ACM authorizer URL, return it, because visitors will be able to bypass the paywall.
+		else if(this.props.authorizer)
+			return this.props.authorizer;
+		// Lastly, include the digital library URL, which will not be as easily accessible.
 		else if(this.props["digital library url"])
 			return this.props["digital library url"];
 		else
@@ -24,8 +24,8 @@ class Paper extends React.Component {
 
 		var url = this.getURL();
 		var pdf = 
+			this.props["local url"] ? <small><a href={this.props.app.getWebRoot() + "/papers/" + this.props["local url"]} target="_blank">PDF</a></small> : 
 			this.props.authorizer ? <small><a href={this.props.authorizer} target="_blank">PDF</a></small> : 
-			this.props["local url"] ? <small><a href={"papers/" + this.props["local url"]} target="_blank">PDF</a></small> : 
 			null;
 		var dl = this.props["digital library url"] ? <small><a href={this.props["digital library url"]} target="_blank">Digital library</a></small> : null;
 		
@@ -40,7 +40,7 @@ class Paper extends React.Component {
 			return (
 				<small>
 					<p title={this.props.contribution}>
-						<Link to={"/publications/" + this.props.id}>{this.props.title}</Link> ({this.props.year})&nbsp;<small>{award}</small>
+						<Link to={this.props.app.getWebRoot() + "/publications/" + this.props.id}>{this.props.title}</Link> ({this.props.year})&nbsp;<small>{award}</small>
 					</p>
 				</small>
 			);
@@ -53,11 +53,11 @@ class Paper extends React.Component {
 
 			return (
 				<div name={ this.props.id } className={"paper ws-bottom " + (this.props.highlight ? "bg-info" : "")}>
-					{award}
-					{award ? <br/> : null}
-					{title} {this.props.hideLink ? null : <small>{pdf} {dl}</small>}
-					<br/>{authors} ({this.props.year})
-					<br/><small><i>{this.props.source}</i>{this.props.pages == '' ? "." : ", " + this.props.pages + "."}</small>
+					{ award }
+					{ award ? <br/> : null }
+					<small>{authors} ({this.props.year})</small>
+					<br/>{title}
+					<br/><small><em>{this.props.source}</em>{(this.props.pages === '' || this.props.pages === null) ? "." : ", " + this.props.pages + "."}</small>
 					<br/>{contribution}
 				</div>
 			)

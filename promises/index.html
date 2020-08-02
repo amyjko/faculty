@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+
+	
+	<head>
+	
+        <title>Amy J. Ko, Ph.D. | Promises</title>        
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+		<style>
+			
+			.bar {
+				display: inline-block;
+				height: 2em;
+				overflow: hidden;
+				margin: 1px;
+				border-radius: 3px;
+			}
+			
+			.large {
+				font-size: x-large;
+			}
+
+			.medium {
+				font-size: large;
+			}
+			
+			.row {
+				min-height: 4em;
+				padding: 0.5em;
+			}
+			
+			.description {
+				font-size: small;
+			}
+			
+			.detail {
+				font-size: x-small;
+				color: grey;
+			}
+			
+			table .bar {
+				height: 2em;
+			}
+			
+			#timeline th, #timeline td {
+				font-size: x-small;
+			}
+			
+			#timeline td:nth-child(1) {  
+				width: 20em;
+			}
+			
+		</style>
+				
+	</head>
+	
+	
+	<body>
+
+		<div class="container-fluid" id="timeline"></div>
+		
+		<div class="container-fluid" id="weeks">
+		</div>
+				
+		<script>
+
+			var profile = {
+				// Maximum hours I prefer to work.
+				preferredHours: 45,
+				// Maximum hours possible to work.
+				maxHours: 75,
+				// CSS color names by category names.
+				colors: {
+					"funding": "rgb(120,120,255)",
+					"research": "rgb(160,160,255)",
+					"reviewing": "rgb(255,210,40)",
+					"teaching": "rgb(120,200,120)",
+					"service": "orange",
+					"travel": "rgb(255,120,120)",
+					"personal": "lightGrey"
+				},
+				ranks: {
+					"personal": 0,
+					"funding": 1,
+					"research": 2,
+					"teaching": 3,
+					"service": 4,
+					"reviewing": 5,
+					"travel": 6
+				}
+			};
+			
+			function computeWeeklyHoursOnDate(promise, currentDate) {
+				
+				if(promise.middle && promise.endWeeklyHours && promise.end) {
+
+					var startDate = new Date(promise.start);
+					var middleDate = new Date(promise.middle);
+					var endDate = new Date(promise.end);
+
+					if(currentDate.getTime() < startDate.getTime())
+						return 0;
+					else if(currentDate.getTime() < middleDate.getTime())
+						return promise.startWeeklyHours;
+					else if(currentDate.getTime() < endDate.getTime())
+						return promise.endWeeklyHours;
+					else
+						return 0;					
+					
+				} else
+					return promise.startWeeklyHours;
+				
+			}	
+						
+			function promisesToTimeline(promises, profile) {
+				
+				
+				var headers = [];
+				var rows = [];
+
+				var months = [];
+				var now = new Date();
+				var next = null;
+
+				// Start on the first of this month.
+				now = new Date(now.getFullYear(), now.getMonth(), 1);
+
+				// Iterate through the next months, adding one extra for comparison to the second to last month.
+				for(var count = 0; count < 10; count++) {
+
+					months.push(new Date(now.getTime()));
+					
+					if (now.getMonth() == 11) {
+					    next = new Date(now.getFullYear() + 1, 0, 1);
+					} else {
+					    next = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+					}
+					
+					now = next;					
+					
+				}
+				
+				// Create the headers for each month.
+				var headers = _.map(months, function(month, index, months) { 
+				
+					if(index < months.length - 1)
+						return "<th>" + renderMonth(month.getMonth()) + "</th>"; 
+					
+				});
+
+				_.forEach(promises, function(promise) { promise.rank = profile.ranks[promise.category]; });
+
+				// Sort the remaining promises by rank.
+				promises = _.orderBy(promises, ["rank"], ["asc"]);
+
+				// Create the rows for each promise.
+				_.forEach(promises, function(promise) {
+
+					var start = new Date(promise.start);
+					var end = promise.end === "" ? null : new Date(promise.end);
+					
+					var columns = [];
+					var happens = false;
+					
+					_.forEach(months, function(month, index, months) {
+						
+						var content = "";
+						
+						if(index < months.length - 1) {
+						
+							if(datesIntersect(month, months[index + 1], start, end)) {
+								content = renderBar(Math.min(1, computeWeeklyHoursOnDate(promise, month) / (profile.preferredHours / 4)), profile.colors[promise.category]);
+								happens = true;
+							}
+	
+							columns.push("<td>" + content + "</td>");
+							
+						}
+						
+					});
+					
+					if(happens)
+						rows.push(
+							"<tr>" + 
+								"<td>" + 
+									promise.description + 
+									"</br>" +
+									"<span class='detail'>" + promise.detail + (promise.end ? " &bullet; " + promise.end + "</span>" : "") +
+								"</td>" + 
+								columns.join("") + 
+							"</tr>"
+						);
+
+				});
+				
+				
+				var timelineRows = rows.join("");
+				
+				return '<table id="timeline" class="table table-sm">' +
+					'<thead>' +
+					'<tr>' + "<th>Promise</th>" + headers.join("") + '</tr>' +
+					'</thead>' +
+					'<tbody>' +
+					rows.join("") + 
+					'</tbody>' +
+				'</table>';
+	
+			}
+						
+			function getPreviousMonday() {
+				
+			    var date = new Date();
+			    var day = date.getDay();
+			    var prevMonday;
+			    if(date.getDay() === 1) {
+			        prevMonday = new Date().setDate(date.getDate() - 7);
+			    }
+			    else{
+			        prevMonday = new Date().setDate(date.getDate() - day + 1);
+			    }
+			
+			    return new Date(prevMonday);
+
+			}
+			
+			function datesIntersect(date1Start, date1End, date2Start, date2End) {
+				
+				return (date2Start.getTime() >= date1Start.getTime() && date2Start.getTime() <= date1End.getTime()) ||
+						(date2End !== null && date2Start.getTime() <= date1Start.getTime() && date2End.getTime() >= date1End.getTime()) ||
+						(date2Start.getTime() < date1Start.getTime() && date2End === null) ||
+						(date2End !== null && date2End.getTime() >= date1Start.getTime() && date2End.getTime() <= date1End.getTime());
+				
+			}
+									
+			// Takes a list of promises and splits them into per week
+			// promises.
+			function promisesToWeeks(promises) {
+				
+				// Start a list of weeks to return.
+				var weeks = [];
+				
+				// Start a date counter with last Monday.
+				var currentDate = getPreviousMonday();
+
+				// Iterate through the next 3 years.
+				for(var count = 1; count < 52 * 3; count++) {
+					
+					// Add a new week.
+					var weeksPromises = [];
+					
+					var nextDate = new Date(currentDate.getTime() + 7 * 24 * 60 * 60 * 1000);					
+					
+					// Which promises occur in this week?
+					_.forEach(promises, function(promise) {
+						
+						var start = new Date(promise.start);
+						var end = promise.end === "" ? null : new Date(promise.end);
+						
+						// If this promise occurs this week...
+						if(datesIntersect(currentDate, nextDate, start, end)) {
+						
+							var proportionOfWeek = Math.min(1,
+								end === null ? 
+									1 : 
+									start.getTime() < currentDate.getTime() ? 
+										(end.getTime() - currentDate.getTime()) / 1000 / 60 / 60 / 24 / 7 :
+										(nextDate.getTime() - start.getTime()) / 1000 / 60 / 60/ 24 / 7);
+
+							weeksPromises.push(
+								{
+									description: promise.description,
+									hours: Math.round(computeWeeklyHoursOnDate(promise, currentDate) * proportionOfWeek),
+									category: promise.category,
+									strength: promise.strength,
+									rank: profile.ranks[promise.category],
+								}
+							);									
+								
+						}
+						
+					});
+					
+					// Are there any suppressing promises? If so, remove weak promises.
+					if(_.includes(_.map(weeksPromises, "strength"), 1))
+						_.remove(weeksPromises, function(promise) { 
+							return promise.strength < 0; });
+					
+					// Sort the remaining promises by rank.
+					weeksPromises = _.orderBy(weeksPromises, ["rank", "hours"], ['asc', 'desc']);
+
+					// Add this week.
+					weeks.push({
+						start: currentDate,	
+						promises: weeksPromises
+					});
+
+					// Add a week to the date.					
+					currentDate = nextDate;
+					
+				}
+				
+				// Iterate through the promises and generate a list of 
+				// promises by week.
+				return weeks;
+				
+			}
+			
+			// Takes a list of promises according to a week and
+			// converts them into Bootstrap rows for rendering.
+			function weeksToRows(weeks, profile) {
+				
+				var rows = [];
+				var lastYear = null;
+				var lastMonth = null;
+				
+				for(var i = 0; i < weeks.length; i++) {
+					var week = weeks[i];
+					var date = new Date(week.start);
+					var nextYear = date.getFullYear();
+					var nextMonth = date.getMonth();
+					rows.push(renderRow(week, profile, lastMonth !== nextMonth, lastYear !== nextYear));
+					lastYear = nextYear;
+					lastMonth = nextMonth;
+				}
+				
+				return rows;
+								
+			}
+	
+			function renderMonth(date) {
+				
+				return [
+					"Jan ",
+					"Feb ",
+					"Mar ",
+					"Apr ",
+					"May ",
+					"Jun ",
+					"Jul ",
+					"Aug ",
+					"Sep ",
+					"Oct ",
+					"Nov ",
+					"Dec "
+				][date];
+
+				
+			}
+	
+			// Takes a promise and renders a row
+			function renderRow(week, profile, showMonth, showYear) {
+				
+				var date = new Date(week.start);
+				var month = renderMonth(date.getMonth());
+				var year = date.getFullYear();
+				
+				// Convert all of this week's promises into a series of bars.
+				var bars = _.map(
+					week.promises, 
+					function(promise) { 
+						return renderBar(
+							promise.hours / profile.maxHours, 
+							profile.colors[promise.category]
+						);
+					}
+				).join("");
+
+				// How many estimated hours this week?
+				var totalHours = _.reduce(
+					_.map(week.promises, "hours"),
+					function(sum, n) { return sum + n; }
+				);
+
+				// Convert this week's promises into a list of promises.
+				var descriptions = _.map(
+					week.promises, 
+					function(promise, index, promises) {
+						return "<span class='description' style='color:" + profile.colors[promise.category] + 
+							"; font-size:" + 
+							(Math.min(20, Math.min(1.0, promise.hours / totalHours) * profile.preferredHours + 10)) + "px'>" + 
+							promise.description + 
+							"</span>" + 
+							(index === promises.length - 1 ? "" : promise.category === promises[index + 1].category ? " <span style='color: lightGrey'>&bull;</span> " : "</br>");
+					}
+				).join("");
+								
+				var backgroundColor = 
+					totalHours < profile.preferredHours ?
+						255 :
+						Math.max(200, Math.round(255 - 55.0 * ((totalHours - profile.preferredHours) / (profile.maxHours - profile.preferredHours))));
+
+				return '<div class="row" style="background-color: rgb(255, ' + backgroundColor + ',' + backgroundColor + ')">' +
+						'<div class="col-2">' + 
+							(
+								showMonth ? 
+									("<span class='medium'>" + year + "</br>" + month + date.getDate() + "</span>") :
+									date.getDate()
+							) +
+						"</div>" +
+						'<div class="col-8">' + bars + '</br>' + descriptions + '</div>' +
+						'<div class="col-1 large">' + totalHours + '</div>' +
+					'</div>'
+					;
+				
+			}
+			
+			// Returns a bar
+			function renderBar(percent, color) {
+				
+				return '<div class="bar" style="width:' + 
+					Math.round(100 * percent) + 
+					'%; background-color:' + color + '"></div>';
+				
+			}
+			
+			function parseCSV(text) {
+				
+				return _.map(
+					_.filter(
+						text.split("\n"), 
+						function(line) {
+							return line.indexOf("#") !== 0 && line.trim().length > 0;
+						}
+					), 
+					function(promise) {
+						promise = promise.split(",");
+						return {
+							description: promise[0].trim(),
+							detail: promise[1].trim(),
+							category: promise[2].trim(),
+							start: promise[3].trim(),
+							startWeeklyHours: parseInt(promise[4].trim()),
+							middle: promise[5].trim(),
+							endWeeklyHours: parseInt(promise[6].trim()),
+							end: promise[7].trim(),
+							strength: parseInt(promise[8].trim()),
+						}
+					}
+				);
+				
+			}
+
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', 'promises.csv');
+			xhr.onload = function() {
+			    if (xhr.status === 200) {
+
+			        var promises = parseCSV(xhr.responseText);
+			        
+			     	document.getElementById("timeline").innerHTML = promisesToTimeline(promises, profile);   
+					document.getElementById("weeks").innerHTML = weeksToRows(promisesToWeeks(promises), profile).join("");
+					
+			    }
+			    else {
+			        document.getElementById("weeks").innerHTML = "Couldn't load promises.csv :(";
+			    }
+			};
+			xhr.send();
+
+		</script>
+		
+	</body>
+	
+</html>

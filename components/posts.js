@@ -113,7 +113,7 @@ class Posts extends React.Component {
 				return (
 				<Block
 					key={"post-" + index}
-					image={post.img === null ? null : this.props.app.getWebRoot() + "/images/post-" + post.img + ".jpg"}
+					image={post.img === null ? null : this.props.app.getWebRoot() + "/images/posts/post-" + post.img + ".jpg"}
 					alt={post.alt}
 					link={post.url}
 					header={post.title}
