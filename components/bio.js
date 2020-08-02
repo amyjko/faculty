@@ -5,13 +5,22 @@ class Biography extends React.Component {
 		return (
 			<div>
 			
-				<div className="lead">These are my short and long bios, and academic lineage.</div>
+				<div className="lead">These are my <a href="short">short bio</a>, <a href="#identity">identity statement</a>, <a href="#long">long bio</a>, <a href="lineage">academic lineage</a>, and <a href="#promotion">promotion documents</a>, to help junior scholars.</div>
 										
-				<h3>Short Bio</h3>
+				<h3 id="short">Short Bio</h3>
 
-				<p>Amy J. Ko is a Professor at the <a href="http://www.washington.edu">University of Washington</a> <a href="http://ischool.uw.edu/">Information School</a> and an Adjunct Professor at the <a href="http://cs.washington.edu">Paul G. Allen School of Computer Science and Engineering</a>. She directs the Code &amp; Cognition Lab, where she studies human aspects of programming. Her earliest work included techniques for automatically answering questions about program behavior to support debugging, program understanding, and reuse. Her later work studied interactions between developers and users, and techniques for web scale aggregation of user intent through help systems; she co-founded <a href="http://www.answerdash.com">AnswerDash</a> to commercialize these ideas. Her latest work investigates effective, equitable, scalable ways for humanity to learn computing, including programming languages, APIs, programming strategies, design, and machine learning. Her work spans over 100 peer-reviewed publications, 11 receiving best paper awards and 4 receiving most influential paper awards. She is an ACM Senior Member, and member of ACM SIGCHI, SIGCSE, and SIGSOFT. She received her Ph.D. at the <a href="http://www.hcii.cs.cmu.edu">Human-Computer Interaction Institute</a> at <a href="http://www.cmu.edu">Carnegie Mellon University</a> in 2008, and degrees in Computer Science and Psychology with Honors from <a href="http://www.oregonstate.edu">Oregon State University</a> in 2002.</p>
+				<p>
+					Amy J. Ko is a Professor at the <a href="http://www.washington.edu">University of Washington</a> <a href="http://ischool.uw.edu/">Information School</a> and an Adjunct Professor at the <a href="http://cs.washington.edu">Paul G. Allen School of Computer Science and Engineering</a>. 
+					She directs the Code &amp; Cognition Lab, where she studies human aspects of programming. 
+					Her earliest work included techniques for automatically answering questions about program behavior to support debugging, program understanding, and reuse. 
+					Her later work studied interactions between developers and users, and techniques for web scale aggregation of user intent through help systems; she co-founded <a href="http://www.answerdash.com">AnswerDash</a> to commercialize these ideas. 
+					Her latest work investigates effective, equitable, scalable ways for humanity to learn computing, including programming languages, APIs, programming strategies, design, and machine learning. 
+					Her work spans over 100 peer-reviewed publications, 11 receiving best paper awards and 4 receiving most influential paper awards. 
+					She is an ACM Senior Member, and member of ACM SIGCHI, SIGCSE, and SIGSOFT. 
+					She received her Ph.D. at the <a href="http://www.hcii.cs.cmu.edu">Human-Computer Interaction Institute</a> at <a href="http://www.cmu.edu">Carnegie Mellon University</a> in 2008, and degrees in Computer Science and Psychology with Honors from <a href="http://www.oregonstate.edu">Oregon State University</a> in 2002.
+				</p>
 
-				<h3>Identity</h3>
+				<h3 id="identity">Identity</h3>
 				
 				<p>
 					I am not huge fan of labels, since they are often used to stereotype, categorize, and oppress.
@@ -34,7 +43,7 @@ class Biography extends React.Component {
 					<li><strong>I am Danish</strong>, at least in ancestry; my mother's parents came to the United States in early 20th century, and brought with them  humilty, privacy, and piety.</li>
 				</ul>
 
-				<h3>Long Bio</h3>
+				<h3 id="long">Long Bio</h3>
 
 				<p><img src={this.props.app.getWebRoot() + "/images/bio/bio-childhood.jpg"} className="pull-right img-float" />I was born in <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Ontario,+Oregon&sll=37.788081,-104.501953&sspn=38.763291,54.931641&ie=UTF8&z=13&iwloc=addr">Ontario, Oregon</a>, but grew up primarily in <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=west+linn&sll=44.024804,-116.975703&sspn=0.069492,0.107288&ie=UTF8&z=12&iwloc=addr">West Linn, Oregon</a>, a suburb of Portland, and went to <a href="http://www.wlhs.wlwv.k12.or.us/">West Linn High School</a>. The school was fantastic and I had wonderful teachers, especially in math, science, and English. I spent much of my free time playing video games with friends, drawing, and writing code in BASIC, Pascal, C, and my  TI-85 to make visualizations, games, and user interface toolkits.</p>
 
@@ -52,7 +61,7 @@ class Biography extends React.Component {
 				
 				<p><img src={this.props.app.getWebRoot() + "/images/posts/post-comingoutresponse.jpg"} className="pull-right img-float" />In Autumn 2019, I <a href="https://medium.com/bits-and-behavior/im-trans-call-me-amy-8a72a3951964" target="_blank">came out as a trans woman</a>, finally accepting my identity and having the confidence to share it with the world. My academic communities were <a href="https://medium.com/bits-and-behavior/what-coming-out-as-trans-should-look-like-395f31beeddb" target="_blank">incredibly supportive</a>, which gave me to confidence to be out and proud. Around the same time, much of my work in computing education began to a more critical stance, exploring literacies in both the powers and perils of computing and investigating CS teacher education.</p>
 
-				<h3>Academic Lineage</h3>
+				<h3 id="lineage">Academic Lineage</h3>
 
 				<p>I have a relatively short academic lineage. I was advised by...</p>
 				<ul>
@@ -65,6 +74,22 @@ class Biography extends React.Component {
 				<ul>
 					<li><a href="http://web.engr.oregonstate.edu/~burnett/">Margaret Burnett</a> (Ph.D., University of Kansas), who was advised by...</li>
 					<li>Allen Ambler, University of Kansas</li>
+				</ul>
+				
+				<h3 id="promotion">Promotion documents</h3>
+				
+				<p>
+					These are the documents I submitted for my tenure and promotion to Associate Professor and my later promotion to Professor.
+					I hope they're helpful to anyone pursuing a career in academia.
+					While you read them, remmeber: careers come together one day at a time, one paper at a time, not all at once!
+					I've felt imposter syndrome most of my life because people didn't tell me this.
+				</p>
+				
+				<ul>
+					<li><a href="promotion/Associate-Statements.pdf">Research, teaching, and service statements</a> for tenure and promotion to Associate Professor.</li>
+					<li><a href="promotion/Associate-CV.pdf">Curriculum vita</a> for tenure and promotion to Associate Professor.</li>
+					<li><a href="promotion/Full-Statements.pdf">Research, teaching, service, and diversity statements</a> for tenure and promotion to Professor.</li>
+					<li><a href="promotion/Full-CV.pdf">Curriculum vita</a> for tenure and promotion to Professor.</li>
 				</ul>
 				
 			</div>
