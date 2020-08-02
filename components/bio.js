@@ -79,13 +79,14 @@ class Biography extends React.Component {
 				<h3 id="promotion">Promotion documents</h3>
 				
 				<p>
-					These are the documents I submitted for my tenure and promotion to Associate Professor and my later promotion to Professor.
+					These are the documents I submitted for tenure-track faculty positions in 2008, for my tenure and promotion to Associate Professor, and for my later promotion to Professor.
 					I hope they're helpful to anyone pursuing a career in academia.
 					While you read them, remmeber: careers come together one day at a time, one paper at a time, not all at once!
 					I've felt imposter syndrome most of my life because people didn't tell me this.
 				</p>
 				
 				<ul>
+					<li><a href="promotion/Assistant-Statements.pdf">Research and teaching statements</a> for my 2008 academic job search.</li>
 					<li><a href="promotion/Associate-Statements.pdf">Research, teaching, and service statements</a> for tenure and promotion to Associate Professor.</li>
 					<li><a href="promotion/Associate-CV.pdf">Curriculum vita</a> for tenure and promotion to Associate Professor.</li>
 					<li><a href="promotion/Full-Statements.pdf">Research, teaching, service, and diversity statements</a> for tenure and promotion to Professor.</li>
