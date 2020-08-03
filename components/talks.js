@@ -10,6 +10,17 @@ class Talks extends React.Component {
 				</div>
 
 				<Block
+					image={this.props.app.getWebRoot() + "/images/talks/studyingmaking.jpg"}
+					alt="A screenshot of the first slide of the presentation, with the title Studying Programming through Making"
+					link="https://docs.google.com/presentation/d/1L72wv7Lv7oWqbHbw62mISiSWFKFSSyYl65HNXpSmjCU/edit?usp=sharing"
+					header="Studying Programming through Making"
+					content=
+						<span>
+							. I gave this invited presentation on August 3rd, to open the <a href="https://shriram.github.io/pl-hci-school-2020/">2020 PL+HCI "Swimmer" School</a>. The overarching goal was to explain how user studies shape our understanding of what we make; it also surved as a retrospective of my dissertation work on the Whyline.
+						</span>
+				/>
+
+				<Block
 					image={this.props.app.getWebRoot() + "/images/talks/msftcsed.jpg"}
 					alt="A photograph of students on the campus of Howard University, 1870"
 					link="https://docs.google.com/presentation/d/15UxfJnjI8P0N33xGlTqY1A39SQdxBUwQ2jflkVMmF7Q/edit#slide=id.gc6f980f91_0_0"
