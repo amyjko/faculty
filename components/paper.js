@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import _ from "lodash";
 
+import { Block } from './block';
+
 class Paper extends React.Component {
 	
 	getURL() {
@@ -51,7 +53,7 @@ class Paper extends React.Component {
 				<b>{this.props.title}</b> : 
 				<b><a href={url} target="_blank">{this.props.title}</a></b>;
 
-			return (
+			var paper = (
 				<div name={ this.props.id } className={"paper ws-bottom " + (this.props.highlight ? "bg-info" : "")}>
 					{ award }
 					{ award ? <br/> : null }
@@ -61,6 +63,14 @@ class Paper extends React.Component {
 					<br/>{contribution}
 				</div>
 			)
+			
+			return <Block 
+					image={this.props.app.getWebRoot() + "/images/papers/paper-" + this.props.id + ".jpg"}
+					alt="A snippet from the paper PDF."
+					link={url}
+					header={null}
+					content={paper}
+				/>
 			
 		}
 
