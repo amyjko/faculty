@@ -184,7 +184,7 @@
 		"description": "Many people write code to support their own work (e.g., teachers write grading spreadsheets, scientists write scripts to process data, people automate their homes). In these end-user programming contexts, people face many of the same challenges that arise in professional software engineering, just without the same incentives to be systematic in testing, debugging, and maintenance. Our work has investigated these contexts and invented tools to support them.",
 		"funding": [],
 		"people": ["ajko"],
-		"papers": ["eupoverview", "eusessurvey", "interactivebehaviors", "morenaturaleuse", "designerdescriptions", "identifyingendusers", "infowork", "ellblockstudio", "ideagardenjvlc", "gidget6", "whydebugclassifier1", "gestalt", "whydebugclassifier2", "productivitytools", "slate", "whyline1", "barriers", "aliceinquiry", "vldcabstract", "errormodel", "visuallytesting"],
+		"papers": ["eupoverview", "eusessurvey", "interactivebehaviors", "morenaturaleuse", "designerdescriptions", "identifyingendusers", "infowork", "ellblockstudio", "ideagardenjvlc", "gidget6", "whydebugclassifier1", "gestalt", "whydebugclassifier2", "productivitytools", "slate", "whyline1", "barriers", "aliceinquiry", "vldcabstract", "errormodel", "visuallytesting", "eupfactors"],
 		"links": [],
 		"startdate": 2004,
 		"stopdate": null,
