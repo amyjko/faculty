@@ -384,6 +384,21 @@
 	],
 	invitedtalks: [
 		{
+			title: "Topic TBD",
+			venue: "University of Pennsylvania, Department of Computer and Information Science, Colloqium Lecture Series",
+			date: "November 10th, 2020"
+		},
+		{
+			title: "Topic TBD",
+			venue: "Carnegie Mellon University, Human-Computer Interaction Institute Seminar",
+			date: "October 30th, 2020"
+		},
+		{
+			title: "Topic TBD",
+			venue: "University of Colorado, Boulder, Information Science Colloquim",
+			date: "October 7th, 2020"
+		},
+		{
 			title: "Programming: what it is and how to teach it",
 			venue: "ETH Zurich, Department of Computer Science, Seminar (100+ attendees)",
 			date: "May 13th, 2019"
