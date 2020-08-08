@@ -1,0 +1,56 @@
+[
+	{
+		url: "https://www.cis.upenn.edu/events/",
+		title: "University of Pennsylvania, Computer and Information Science Colloqium",
+		details: "Invited research talk.",
+		date: "2020.11.10"
+	},
+	{
+		url: "https://www.hcii.cmu.edu/seminar-series",
+		title: "Carnegie Mellon University, HCI Institute Seminar",
+		details: "Invited research talk.",
+		date: "2020.10.30"
+	},
+	{
+		url: "https://www.colorado.edu/cmci/infoscience",
+		title: "University of Colorado Boulder Information Science Colloquium",
+		details: "Invited research talk.",
+		date: "2020.10.07"
+	},
+	{
+		url: "https://icer.acm.org",
+		title: "ICER 2020",
+		details: "The 2020 ACM International Computing Education Research conference, held online. I was the junior program chair and led the planning of the event.",
+		date: "2020.08.10"
+	},
+	{
+		url: null,
+		title: "ISAT/DARPA End-User Mashup Workshop",
+		details: "This brought together experts in end-user programming and 'low-code' programming to inform future research opportunities in the U.S. government. I contributed as one of the experts.",
+		date: "2020.07.16"
+	},
+	{
+		url: "https://www.jhuapl.edu",
+		title: "APL LGBTQ+ Panel",
+		details: "This brought together a diverse panel of LGBTQ people in science and engineering to discuss their experiences in academia, research, and engineering. I served as a panelist.",
+		date: "2020.07.16"
+	},
+	{
+		url: "https://web.cvent.com/event/c6254b47-740f-4232-a896-064f09fd0ab1/summary",
+		title: "CSTA 2020",
+		details: "The 2020 CSTA Conference brought together CS teachers from across North America for two days, online. I attended several sessions and met many teachers through the random chat feature.",
+		date: "2020.07.13"
+	},
+	{
+		url: "https://cra.org/crae/",
+		title: "CRA-E Annual Meeting",
+		details: "I joined the Computing Research Associatin's Education board; this was my first full board meeting.",
+		date: "2020.06.23"
+	},
+	{
+		url: "http://sigcse2020.sigcse.org/",
+		title: "SIGCSE 2020",
+		details: "I traveled to Portland, fully masked and distance, ready to speak in about seven sessions. The conference was canceled the morning of the first day.",
+		date: "2020.03.11"
+	}	
+]

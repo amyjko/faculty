@@ -18,6 +18,7 @@ import { Advice } from './components/advice';
 import { Teaching } from './components/teaching';
 import { Talks } from './components/talks';
 import { Books } from './components/books';
+import { Travel } from './components/travel';
 import { Vita } from './components/cv';
 import { CER } from './components/cer';
 import { Unknown } from './components/unknown';
@@ -53,6 +54,7 @@ class App extends React.Component {
 			"/talks",
 			"/teaching",
 			"/books",
+			"/travel",
 			"/impact",
 			"/advice",
 			"/bio",
@@ -109,6 +111,7 @@ class App extends React.Component {
 					<Route path="/teaching" render={(props) => <Teaching {...props} app={this} />} />
 					<Route path="/talks" render={(props) => <Talks {...props} app={this} />} />
 					<Route path="/books" render={(props) => <Books {...props} app={this} />} />
+					<Route path="/travel" render={(props) => <Travel {...props} app={this} />} />
 					<Route path="/contact" render={(props) => <ContactInfo {...props} app={this} />} />
 					<Route path="/communities" render={(props) => <Communities {...props} app={this} />} />
 					<Route path="/funding" render={(props) => <Funding {...props} app={this} />} />
