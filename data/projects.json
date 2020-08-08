@@ -109,7 +109,7 @@
 			{ title: "Try Frictionary", url: "http://faculty.uw.edu/ajko/demo/frictionary" },
 			{ title: "See Scry", url: "https://www.youtube.com/watch?v=pUvtbn_Ldu0" }
 		],
-		"startdate": 2016,
+		"startdate": 2006,
 		"stopdate": null,
 		"impact": "Our work on interface mining has been replicated in several indusry projects focused on supporting interface development."
 	},
@@ -126,7 +126,19 @@
 		"stopdate": null,
 		"impact": "Our work on research methods is widely read by new Ph.D. students across computer science to inform how they evaluate new developer tools and how they use theory."
 	},
-	
+	{
+		"id": "reviews",
+		"active": true,
+		"name": "Literature reviews and surveys",
+		"description": "A critical part of scholarly progress is synthesizing and explaining what we've learned. Sometimes this results in robust discussions of prior work; other times we go further, publishing standalone papers and book chapters that help newcomers make sense of what we know.",
+		"funding": [],
+		"people": ["ajko"],
+		"papers": ["cerhandbooktools", "eusessurvey", "cerhandoutside", "cerhandbooktools", "boostingproductivity", "fourlenses", "noproductivity"],
+		"links": [],
+		"startdate": 2009,
+		"stopdate": null,
+		"impact": "Our surveys are widely-cited and used by doctoral students to quickly learn about the state of the art and knowledge."
+	},
 	{
 		"id": "understanding",
 		"active": false,
@@ -164,5 +176,18 @@
 		"startdate": 2004,
 		"stopdate": null,
 		"impact": "Lemonaid, our crowdsourced help tool, was the basis for <a href='http://www.answerdash.com'>AnswerDash</a>, a company that I co-founded with Jacob Wobbrock and Parmit Chilana that offers an instant self-service answers product for web applications and e-commerce sites. The company has impacted other company's product offerings, including <a href='https://www.zendesk.com/'>Zendesk</a>'s self-service technologies."
-	}
+	},
+	{
+		"id": "euse",
+		"active": false,
+		"name": "End-user software engineering",
+		"description": "Many people write code to support their own work (e.g., teachers write grading spreadsheets, scientists write scripts to process data, people automate their homes). In these end-user programming contexts, people face many of the same challenges that arise in professional software engineering, just without the same incentives to be systematic in testing, debugging, and maintenance. Our work has investigated these contexts and invented tools to support them.",
+		"funding": [],
+		"people": ["ajko"],
+		"papers": ["eupoverview", "eusessurvey", "interactivebehaviors", "morenaturaleuse", "designerdescriptions", "identifyingendusers", "infowork", "ellblockstudio", "ideagardenjvlc", "gidget6", "whydebugclassifier1", "gestalt", "whydebugclassifier2", "productivitytools", "slate", "whyline1", "barriers", "aliceinquiry", "vldcabstract", "errormodel", "visuallytesting"],
+		"links": [],
+		"startdate": 2004,
+		"stopdate": null,
+		"impact": "Our work on end-user software engineering has inspired hundreds of commercial tools for supporting end-user programming and impacted research efforts in professional software engineering."
+	}	
 ];
