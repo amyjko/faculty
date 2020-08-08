@@ -120,7 +120,7 @@
 		"contribution": "Contributes theoretical perspectives on how to assess program tracing skills, and how to think about assessment validity."
 	},
 	{
-		"id": "",
+		"id": "replication",
 		"kind": "journal article",
 		"authors": ["Qiang Hao", "David H. Smith IV", "Naitra Iriumi", "Michaeil Tsikerdekis", "Amy J. Ko"],
 		"year": 2019,
@@ -133,7 +133,7 @@
 		"contribution": "Analyzed the replication rate and trends in computing education, finding that only about 2% of studies were replicated in the field in the last decade."
 	},
 	{
-		"id": "",
+		"id": "studydesign",
 		"kind": "book chapter",
 		"authors": ["Amy J. Ko", "Sally Fincher"],
 		"year": 2019,
@@ -145,7 +145,7 @@
 		"contribution": "Describes a process for designing studies in the domain of computing education research, though the process is more broadly useful for empirical study design in general."
 	},
 	{
-		"id": "",
+		"id": "cerhandoutside",
 		"kind": "book chapter",
 		"authors": ["Andrew Begel", "Amy J. Ko"],
 		"year": 2019,
@@ -157,7 +157,7 @@
 		"contribution": "Surveys the small but growing literature on informal learning of computing and the contexts, technologies, and skills that support it. Identifies a several open questions about how to support informal learning and integrate it with more formal learning."
 	},
 	{
-		"id": "",
+		"id": "cerhandbooktools",
 		"kind": "book chapter",
 		"authors": ["Lauri Malmi", "Ian Utting", "Amy J. Ko"],
 		"year": 2019,
@@ -182,7 +182,7 @@
 		"contribution": "Proposes a theory that identifies four distinct skills that novices learn incrementally: tracing, writing syntax, comprehending reusable abstractions of programming knowledge (templates). Demonstrates that teaching these skills incrementally can result in improved completion rate on practice exercises and decreased error rate and improved understanding of the post-test."
 	},
 	{
-		"id": "",
+		"id": "boostingproductivity",
 		"kind": "book chapter",
 		"authors": ["Brad A Myers", "Amy J. Ko", "Thomas D. LaToza", "YoungSeok Yoon"],
 		"year": 2019,
@@ -195,7 +195,7 @@
 		"contribution": "Describes several methods for understanding how to increase developer productivity."
 	},
 	{
-		"id": "",
+		"id": "fourlenses",
 		"kind": "book chapter",
 		"authors": ["Amy J. Ko"],
 		"year": 2019,
@@ -208,7 +208,7 @@
 		"contribution": "Discusses several levels of abstraction useful for reasoning about software engineering productivity."
 	},
 	{
-		"id": "",
+		"id": "noproductivity",
 		"kind": "book chapter",
 		"authors": ["Amy J. Ko"],
 		"year": 2019,
@@ -501,7 +501,7 @@
 		"contribution":"Using a set of pedagogical principles, evaluates the current state of tutorial instruction, finding that only a few tutorials follow best practices."
 	},
 	{
-		"id":"",
+		"id":"plreally",
 		"kind":"refereed workshop paper",
 		"authors": ["Amy J. Ko"],
 		"year":2016,
@@ -513,7 +513,7 @@
 		"contribution":"Reflects on the implications of various definitions of programming languages on research and practice."
 	},
 	{
-		"id":"",
+		"id":"accesscomputingteachaccess",
 		"kind":"refereed magazine article",
 		"authors": ["Amy J. Ko", "Richard Ladner"],
 		"year":2016,
@@ -549,7 +549,7 @@
 		"contribution":"Discusses the importance of monitoring, bug reporting, and user feedback in verifying requirements."
 	},
 	{
-		"id":"",
+		"id":"studyingprogramming",
 		"kind":"refereed magazine article",
 		"authors": ["Brad A. Myers", "Amy J. Ko", "Thomas LaToza", "YoungSeok Yoon"],
 		"year":2016,
@@ -573,7 +573,7 @@
 		"contribution":"Teaching novice programmers the structure of programming problem solving activities and to be aware of which activity they are conducting and whether they are succeeding has a substantial impact on their productivity, self-efficacy, independence, and growth mindset."
 	},
 	{
-		"id": null,
+		"id": "ccccer",
 		"kind": "whitepaper",
 		"authors": ["Steve Cooper", "Jeff Forbes", "Armando Fox", "Susan Hambrusch", "Amy J. Ko", "Beth Simon"],
 		"year": 2016,
@@ -749,7 +749,7 @@
 		"contribution":"Contextual help is well-liked by both end-users and software teams in real world use."
 	},
 	{
-		"id":"",
+		"id":"lemonaidworkshop",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Parmmit K. Chilana", "Amy J. Ko", "Jacob O. Wobbrock"],
 		"year":2013,
@@ -774,7 +774,7 @@
 		"contribution":"A technique for extracting queries from selections of user interface elements that provides reliable, relevant help retrieval."
 	},
 	{
-		"id":"",
+		"id":"reflect",
 		"kind":"refereed conference paper",
 		"authors": ["Travis Kriplean", "Michael Toomim", "Jonathan Morgan", "Alan Borning", "Amy J. Ko"],
 		"year":2012,
@@ -962,7 +962,7 @@
 		"contribution":"Enabling end users to debug machined learned programs by asking why questions about classifications causes end-users to locally optimize one class at the expense of other classes."
 	},
 	{
-		"id":"",
+		"id":"interactivebehaviors",
 		"kind": "refereed conference paper",
 		"authors": ["Brad A. Myers", "Sun Young Park", "Yoko Nakano", "Greg Mueller", "Amy J. Ko"],
 		"year": 2008,
@@ -1162,7 +1162,7 @@
 		"contribution":"Programming expertise shapes strategy, but domain expertise is a better predictor of bug fixing success than strategy."
 	},
 	{
-		"id":"",
+		"id":"visuallytesting",
 		"kind":"refereed conference paper",
 		"authors": ["Margaret M. Burnett", "Bing Ren", "Amy J. Ko", "Curtis Cook", "Gregg Rothermel"],
 		"year":2001,
@@ -1317,7 +1317,7 @@
 		"contribution":"The more a bug reporter expresses the issue in terms of a violation of community expectations of program behavior rather than individual expectations, the more likely it is to be fixed."
 	},
 	{
-		"id":"",
+		"id":"futureofprogramming",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Brad A. Myers", "Amy J. Ko"],
 		"year":2009,
@@ -1328,7 +1328,7 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"designerdescriptions",
 		"kind":"refereed short conference paper",
 		"authors": ["Sunyoung Park", "Brad A. Myers", "Amy J. Ko"],
 		"year":2008,
@@ -1341,7 +1341,7 @@
 		"contribution":"Designers use consistent natural language to describe the behavior of interaction techniques, suggesting the feasibility of programming languages for expressing these behaviors."
 	},
 	{
-		"id":"",
+		"id":"infowork",
 		"kind":"refereed short conference paper",
 		"authors": ["Chris Scaffidi", "Amy J. Ko", "Brad A. Myers", "Mary Shaw"],
 		"year":2006,
@@ -1353,12 +1353,12 @@
 		"contribution":"End user programmers use of programming is typically limited to one of three language features: macros for automation, linked structure queries, or imperative features."
 	},
 	{
-		"id":"",
+		"id":"icsedc",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Amy J. Ko"],
 		"year":2006,
 		"title":"Debugging by Asking Questions About Program Output",
-		"source":"International Conference on Software Engineering (ICSE)",
+		"source":"International Conference on Software Engineering (ICSE), Doctoral Consortium",
 		"pages":"989-992",
 		"digital library url": "https://doi.org/10.1145/1134285.1134471",
 		"authorizer":"http://dl.acm.org/authorize?N89302",
@@ -1366,7 +1366,7 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"eupoverview",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Brad A. Myers", "Amy J. Ko", "Margaret M. Burnett"],
 		"year":2006,
@@ -1405,7 +1405,7 @@
 		"contribution":"When writing code in a text editor, developers regularly pass through invalid syntactic states, making strict structured editors infeasible."
 	},
 	{
-		"id":"",
+		"id":"vldcabstract2",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Amy J. Ko"],
 		"year":2004,
@@ -1417,7 +1417,7 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"vldcabstract",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Amy J. Ko"],
 		"year":2003,
@@ -1429,7 +1429,7 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"aliceinquiry",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Amy J. Ko"],
 		"year":2003,
@@ -1466,7 +1466,7 @@
 		"contribution":"User feedback is often ignored in because software teams perceive most feedback as minority opinion that conflicts with prior architectural decisions."
 	},
 	{
-		"id":"",
+		"id":"bioinformatics",
 		"kind":"refereed workshop paper",
 		"authors": ["Parmit K. Chilana", "Carole Palmer", "Amy J. Ko"],
 		"year":2009,
@@ -1491,7 +1491,7 @@
 		"contribution":"A tool for organizing related code fragments during software maintenance tasks."
 	},
 	{
-		"id":"",
+		"id":"reflectbeta",
 		"kind":"juried conference paper",
 		"authors": ["Travis Kriplean", "Michael M. Toomim", "Jonathan T. Morgan", "Alan Borning", "Amy J. Ko"],
 		"year":2011,
@@ -1502,7 +1502,7 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"prelemonaid",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Parmit K. Chilana", "Amy J. Ko", "Jacob O. Wobbrock"],
 		"year":2011,
@@ -1513,7 +1513,7 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"talkingaboutusers",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Amy J. Ko", "Parmit K. Chilana"],
 		"year":2010,
@@ -1524,7 +1524,7 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"unfamiliar",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Parmit K. Chilana", "Amy J. Ko", "Jacob O. Wobbrock"],
 		"year":2009,
@@ -1536,12 +1536,12 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"whylinebeta",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Amy J. Ko", "Brad A. Myers"],
 		"year":2008,
 		"title":"Source-Level Debugging with the Whyline",
-		"source":"Cooperative and Human Aspects of Software Engineering",
+		"source":"Workshop on Cooperative and Human Aspects of Software Engineering",
 		"pages":"69-72",
 		"digital library url": "https://doi.org/10.1145/1370114.1370132",
 		"authorizer":"http://dl.acm.org/authorize?N89306",
@@ -1549,7 +1549,7 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"eupfactors",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Amy J. Ko", "Brad A. Myers"],
 		"year":2005,
@@ -1562,7 +1562,7 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"productivitytools",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Amy J. Ko", "Brad A. Myers", "Michael J. Coblenz", "Jeffrey Stylos"],
 		"year":2006,
@@ -1573,7 +1573,7 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"morenaturaleuse",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Brad A. Myers", "Amy J. Ko", "SunYoung Park", "Jeffrey Stylos", "Thomas D. LaToza", "Jack Beaton"],
 		"year":2008,
@@ -1586,7 +1586,20 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"morenaturalui",
+		"kind":"non-refereed workshop paper",
+		"authors": ["Brad A. Myers", "Amy J. Ko"],
+		"year":2005,
+		"title":"More Natural and Open User Interface Tools",
+		"source":"Workshop on the Future of User Interface Design Tools",
+		"pages": "1-2"
+		"digital library url": null,
+		"authorizer": null,
+		"local url": "Myers2005InterfaceTools.pdf",
+		"contribution": "A 2 page abstract on progress on Brad Myer's Natural Programming project."
+	},
+	{
+		"id":"softwarescience",
 		"kind":"non-refereed workshop paper",
 		"authors": ["Amy J. Ko"],
 		"year":2006,
@@ -1594,18 +1607,6 @@
 		"source":"Workshop on Supporting the Social Side of Large-Scale Software Development, at the 2006 ACM Conference on Computer Supported Cooperative Work",
 		"pages":"",
 		"local url":"Ko2006RoleOfScience.pdf",
-		"contribution":null
-	},
-	{
-		"id":"",
-		"kind":"non-refereed workshop paper",
-		"authors": ["Brad A. Myers", "Amy J. Ko"],
-		"year":2003,
-		"title":"Studying Development and Debugging To Help Create a Better Programming Environment",
-		"source":"Workshop on Perspectives in End User Development",
-		"pages":"65-68",
-		"digital library url":"http://giove.cnuce.cnr.it/chi-eud.html",
-		"local url": "Myers2003StudyingDebugging.pdf",
 		"contribution":null
 	},
 	{
@@ -1621,7 +1622,7 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"ischoolmovement",
 		"kind":"refereed invited article",
 		"authors": ["Jacob O. Wobbrock", "Amy J. Ko", "Julie A. Kientz"],
 		"year":2009,
@@ -1650,7 +1651,7 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"identifyingendusers",
 		"kind":"technical report",
 		"authors": ["Amy J. Ko", "Brad A. Myers", "Mary Shaw"],
 		"year":2005,
@@ -1674,10 +1675,32 @@
 		"contribution":"Representing data as animate, vertebrate objects instead of abstract, inanimate objects greatly increases engagement in online coding tutorials."
 	},
 	{
-		"id":"",
+		"id":"honorsthesis",
 		"kind":"technical report",
 		"authors": ["Amy J. Ko"],
 		"year":2008,
+		"title":"Individual Differences in Programming, Testing, and Debugging Strategies in a Statistical End-User Programming Environment",
+		"source":"Oregon State University, Honors Thesis",
+		"pages":"",
+		"local url":"Ko2002HonorsThesis.pdf",
+		"contribution":"Programming expertise shapes strategy, but domain expertise is a better predictor of bug fixing success than strategy"
+	},
+	{
+		"id":"dissertationproposal",
+		"kind":"technical report",
+		"authors": ["Amy J. Ko"],
+		"year":2006,
+		"title":"Asking and Answering Questions about the Causes of Software Behaivors",
+		"source":"Carnegie Mellon University, Thesis Proposal",
+		"pages":"",
+		"local url":"Ko2006ThesisProposal.pdf",
+		"contribution":"Proposes the Java Whyline."
+	},
+	{
+		"id":"dissertation",
+		"kind":"technical report",
+		"authors": ["Amy J. Ko"],
+		"year":2002,
 		"title":"Asking and Answering Questions about the Causes of Software Behavior",
 		"source":"Carnegie Mellon University Dissertation",
 		"pages":"",
