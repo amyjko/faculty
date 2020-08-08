@@ -42,7 +42,7 @@ class Paper extends React.Component {
 			return (
 				<small>
 					<p title={this.props.contribution}>
-						<Link to={this.props.app.getWebRoot() + "/publications/" + this.props.id}>{this.props.title}</Link> ({this.props.year})&nbsp;<small>{award}</small>
+						<Link to={"/publications/" + this.props.id}>{this.props.title}</Link> ({this.props.year})&nbsp;<small>{award}</small>
 					</p>
 				</small>
 			);
@@ -50,8 +50,8 @@ class Paper extends React.Component {
 		} else {
 
 			let title = this.props.hideLink || !url ? 
-				<b>{this.props.title}</b> : 
-				<b><a href={url} target="_blank">{this.props.title}</a></b>;
+				<strong>{this.props.title}</strong> : 
+				<span><strong><a href={url} target="_blank">{this.props.title}</a></strong> <Link to={"/publications/" + this.props.id}><img className="link" src={this.props.app.getWebRoot() + "/images/icons/link.png"} /></Link></span>;
 
 			var paper = (
 				<div name={ this.props.id } className={"paper ws-bottom " + (this.props.highlight ? "bg-info" : "")}>
