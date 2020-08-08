@@ -538,7 +538,7 @@
 		"contribution":"Finds that while most novices engage in self-regulation to navigate and inform their problem solving efforts, these self-regulation efforts are only effective when accompanied by programming knowledge adequate to succeed at solving a given problem."
 	},
 	{
-		"id":"",
+		"id":"monitoring",
 		"kind":"book chapter",
 		"authors": ["Amy J. Ko"],
 		"year":2016,
@@ -1610,7 +1610,7 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"sequalitative",
 		"kind":"book chapter",
 		"authors": ["Amy J. Ko"],
 		"year":2010,
@@ -1637,7 +1637,7 @@
 		"contribution":null
 	},
 	{
-		"id":"",
+		"id":"naturalprogramming",
 		"kind":"refereed invited article",
 		"authors": ["Brad A. Myers", "John F. Pane", "Amy J. Ko"],
 		"year":2004,
