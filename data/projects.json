@@ -34,7 +34,7 @@
 		"description": "The world is full of structural barriers to developing interest in and learning computing. My lab investigates these barriers and ways to eradicate them, including issues around accessibility, mentorship, culture, identity, and resources, with the goal of increasing the diversity of people in computing disciplines.",
 		"funding": ["NSF AccessComputing", "NSF CE21", "NSF Cyberlearning"],
 		"people": ["ajko", "kthayer", "banerjee", "kwikh", "kshino", "laurav4", "skawas", "lkhwa"],
-		"papers": ["codebios", "bootcamps", "ellblockstudio", "transfer", "mentors1", "mentors2", "teachaccess1", "teachaccess2"],
+		"papers": ["codebios", "bootcamps", "ellblockstudio", "transfer", "mentors1", "mentors2"],
 		"links": [
 			{ title: "See WeCode", url: "https://youtu.be/t56g4DYIuUA" }
 		],
@@ -45,11 +45,11 @@
 	{
 		"id": "designlearning",
 		"active": true,
-		"name": "Design education",
-		"description": "Whereas programming is about how to make software, design is about what to make, and just as important to ensuring just, equitable software. My lab investigates how to teach inclusive design to computing students.",
+		"name": "Teaching inclusive design",
+		"description": "Design should work for everyone. We investigate ways of teaching design that ensure that designers, and especially software developers, understand how to create software that is inclusive, especially to people with disabilities.",
 		"funding": ["NSF Cyberlearning"],
-		"people": ["olesona"],
-		"papers": ["hcidifficulties", "inclusivepck", "hcipckchallenge"],
+		"people": ["olesona", "kshino", "skawas", "laurav4", "meron"],
+		"papers": ["hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess"],
 		"links": [],
 		"startdate": 2019,
 		"stopdate": null,
