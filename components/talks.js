@@ -16,7 +16,7 @@ class Talks extends React.Component {
 					header="Studying Programming through Making"
 					content=
 						<span>
-							. I gave this invited presentation on August 3rd, to open the <a href="https://shriram.github.io/pl-hci-school-2020/">2020 PL+HCI "Swimmer" School</a>. The overarching goal was to explain how user studies shape our understanding of what we make; it also surved as a retrospective of my dissertation work on the Whyline.
+							. I gave this invited presentation on August 3rd, to open the <a href="https://shriram.github.io/pl-hci-school-2020/">2020 PL+HCI "Swimmer" School</a>. The overarching goal was to explain how user studies shape our understanding of what we make; it also served as a retrospective of my dissertation work on the Whyline.
 						</span>
 				/>
 
