@@ -24,6 +24,12 @@
 		date: "2020.08.10"
 	},
 	{
+		url: "https://shriram.github.io/pl-hci-school-2020/",
+		title: "PL+HCI Swimmer School",
+		details: "A summer school that brought together perspectives on HCI and programming languages research. I gave the first invited talk on how to discover things about programming by making and evaluating tools.",
+		date: "2020.08.10"
+	},
+	{
 		url: null,
 		title: "ISAT/DARPA End-User Mashup Workshop",
 		details: "This brought together experts in end-user programming and 'low-code' programming to inform future research opportunities in the U.S. government. I contributed as one of the experts.",
