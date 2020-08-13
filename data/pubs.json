@@ -7,7 +7,7 @@
 		"title": "Learning Machine Learning with Personal Data Helps Stakeholders Ground Advocacy Arguments in Model Mechanics",
 		"source": "ACM International Computing Education Research Conference (ICER)",
 		"pages": "67–78",
-		"digital library url": null,
+		"digital library url": "https://doi.org/10.1145/3372782.3406252",
 		"local url": "Register2020PersonalData.pdf",
 		"publisher": "ACM",
 		"contribution": "Finds that teaching machine learning by leveraging learners' personal data increases the extent to which they leverage model construction in their self-advocacy arguments."
@@ -19,8 +19,8 @@
 		"year": 2020,
 		"title": "The Effect of Informing Agency in Self-Directed Online Learning Environments",
 		"source": "ACM Learning at Scale (L@S)",
-		"pages": "to appear",
-		"digital library url": null,
+		"pages": "77–89",
+		"digital library url": "https://doi.org/10.1145/3386527.3405928",
 		"local url": "Xie2020Agency.pdf",
 		"publisher": "ACM",
 		"contribution": "Finds that affording more agency in learning environments may increase motivation, but may not improve learning because of the increased burden on decision-making."
