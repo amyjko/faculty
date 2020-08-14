@@ -46,7 +46,10 @@ INFO 200, 				Teaching + grading,		teaching, 	2021-02-01, 5, 2021-03-15, 15,	202
 INFO lecturer, 			Interviews,				service, 	2020-08-01, 3,,,				2021-03-01, -1
 ICER 21 PC, 			Conference planning,	reviewing, 	2020-07-01, 3, 2021-04-05, 5, 	2021-09-05, -1
 
-# 2021-22 - Sabbatical
+RE Keynote,				Talk prep,				research,	2021-06-15, 1,,,				2021-09-20, 0
+RE 2021,				Conference,				travel,		2021-09-19, 40,,,				2021-09-24, 0
+
+# 2022-23 - Sabbatical
 
 
 

@@ -43,7 +43,7 @@
 		url: "https://medium.com/bits-and-behavior/reflections-on-ruha-benjamins-race-after-technology-87f737a69e62",
 		title: "Reflections on Ruha Benjamin’s \"Race After Technology\"",
 		date: "2020.7",
-		tags: ["academia", "computing education", "diversity", "personal"],
+		tags: ["academia", "computing education", "diversity", "personal", "book summary"],
 		img: "raceaftertech",
 		alt: "An interpretation of Rodin’s “The Thinker”, a top Ruha Benjamin’s stunning book."
 	},
@@ -67,7 +67,7 @@
 		url: "https://medium.com/bits-and-behavior/a-synopsis-of-costanza-chocks-design-justice-e00a476008fa",
 		title: "A synopsis of Costanza-Chock’s “Design Justice”: nothing for us without us",
 		date: "2020.6",
-		tags: ["computing education", "design", "diversity", "society"],
+		tags: ["computing education", "design", "diversity", "society", "book summary"],
 		img: "designjustice",
 		alt: "A group of stick figures collaborating in various ways, with a green stick figure in the middle (the designer) participating."
 	},
@@ -107,7 +107,7 @@
 		url: "https://medium.com/bits-and-behavior/paulo-freires-pedagogy-of-the-oppressed-a-manifesto-on-education-and-social-change-dbd63cd9fc17",
 		title: "Paulo Freire’s “Pedagogy of the Oppressed”: a manifesto on education and social change",
 		date: "2020.5",
-		tags: ["society", "diversity", "teaching"],
+		tags: ["society", "diversity", "teaching", "book summary"],
 		img: "oppressed",
 		alt: "Multiple layers of faded colors surrounding a struggling person, with a smear through the top pointing a way out."
 	},
@@ -139,7 +139,7 @@
 		url: "https://medium.com/bits-and-behavior/an-autobiographical-synopsis-of-kentaro-toyamas-geek-heresy-3b3251c23cd1",
 		title: "An autobiographical synopsis of Kentaro Toyama's \"Geek Heresy\"",
 		date: "2020.4",
-		tags: ["computing education", "personal", "diversity", "society"],
+		tags: ["computing education", "personal", "diversity", "society", "book summary"],
 		img: "heresy",
 		alt: "A blue sky with red fragments of digital devices being sucked into a grey cloud."
 	},
@@ -235,7 +235,7 @@
 		url: "https://medium.com/bits-and-behavior/a-autobiographical-synopsis-of-morgan-ames-the-charisma-machine-68792c7987fa",
 		title: "A autobiographical synopsis of Morgan Ames’ “The Charisma Machine",
 		date: "2020.1",
-		tags: ["computing education", "diversity", "K-12", "gender"],
+		tags: ["computing education", "diversity", "K-12", "gender", "book summary"],
 		img: "charismamachine",
 		alt: "A photograph of adolescent Amy programming at her computer."
 	},
@@ -827,7 +827,7 @@
 		url: "https://medium.com/bits-and-behavior/whats-wrong-with-blocks-languages-according-to-ben-shapiro-7a74dd77b43b",
 		title: "What's wrong with blocks languages according to Ben Shapiro",
 		date: "2017.9",
-		tags: ["K-12", "computing education", "review"],
+		tags: ["K-12", "computing education"],
 		img: "blocks",
 		alt: "A screenshot of the first slide of Ben's keynote."
 	},
@@ -1035,7 +1035,7 @@
 		url: "https://medium.com/bits-and-behavior/review-of-grudins-from-tool-to-partner-the-evolution-of-hci-8e2155feeffd",
 		title: "Review of Grudin's \"From Tool to Partner: The Evolution of HCI\"",
 		date: "2017.1",
-		tags: ["HCI", "review"],
+		tags: ["HCI", "book summary"],
 		img: "grudin",
 		alt: "The book cover of Jonathan Grudin's book on the history of HCI."
 	},
