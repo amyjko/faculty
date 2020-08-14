@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/acm-icer-2020-trip-report-virtual-serendipity-6134c8ddb9d8",
+		title: "ACM ICER 2020 trip report: virtual serendipity",
+		date: "2020.8",
+		tags: ["academia", "diversity", "computing education", "trip report"],
+		img: "icer2020",
+		alt: "A screenshot of the ICER 2020 Discord, showing people introducing themselves."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/fifty-trans-hurdles-7bb4e859f860",
 		title: "Fifty trans hurdles",
 		date: "2020.8",
