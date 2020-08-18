@@ -163,6 +163,7 @@ a:hover {
 .img-thumbnail {
 	padding: 0;
 	border: none;
+	margin-top: 0.5em;
 }
 
 .img-float {

@@ -60,6 +60,14 @@ class Communities extends React.Component {
 				/>
 
 				<Block 
+					image={this.props.app.getWebRoot() + "/images/communities/accesscomputing.jpg"}
+					alt="The AccessComputing logo."
+					link="https://www.washington.edu/accesscomputing/"
+					header="AccessComputing"
+					content=". First funded by NSF and led by Richard Ladner and Sheryl Burgstahler, AccessComputing creates pathways for students with disabilities into computing. Amy joined as a co-PI in 2016, and brought leadership in teaching accessibility. I help make strategic decision for the project and give talks regularly about the alliance's activities."
+				/>
+
+				<Block 
 					image={this.props.app.getWebRoot() + "/images/communities/euses.jpg"}
 					alt="The EUSES Washington logo."
 					link="http://www.eusesconsortium.org"
