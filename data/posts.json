@@ -1,5 +1,13 @@
 [
 	{
+		url: "https://medium.com/bits-and-behavior/a-generational-reflection-on-virginia-eubankss-automating-inequality-3740751d3ab9",
+		title: "A generational reflection on Virginia Eubanks’s \"Automating Inequality\"",
+		date: "2020.8",
+		tags: ["diversity", "book summary", "policy", "society"],
+		img: "eubanks",
+		alt: "A screenshot of the book cover of Automating Inequality."
+	},
+	{
 		url: "https://medium.com/bits-and-behavior/acm-icer-2020-trip-report-virtual-serendipity-6134c8ddb9d8",
 		title: "ACM ICER 2020 trip report: virtual serendipity",
 		date: "2020.8",
