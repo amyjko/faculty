@@ -5,15 +5,7 @@ import { Paper } from "./paper";
 import { Link } from 'react-router-dom';
 import { Block } from './block';
 
-var projects = require('../data/projects.json');
 var pubs = require('../data/pubs.json');
-
-// Sort the projects by decreasing start date.
-/*
-projects = projects.slice(0).sort((a, b) => {
-	return b.startdate - a.startdate;
-});
-*/
 
 class ProjectSummary extends React.Component {
 	
@@ -74,10 +66,10 @@ class Projects extends React.Component {
 	render() {
 		
 		// Get the active projects
-		var active = _.map(_.filter(projects, { 'active': true }), (project) => { return <ProjectSummary {...project} key={project.name} app={this.props.app} /> });
+		var active = _.map(_.filter(this.props.app.getProjects(), { 'active': true }), (project) => { return <ProjectSummary {...project} key={project.name} app={this.props.app} /> });
 
 		// Get the inactive projects.
-		var inactive = _.map(_.filter(projects, { 'active': false }), (project) => { return <ProjectSummary  {...project} key={project.name}  app={this.props.app} /> });
+		var inactive = _.map(_.filter(this.props.app.getProjects(), { 'active': false }), (project) => { return <ProjectSummary  {...project} key={project.name}  app={this.props.app} /> });
 		
 		return (
 			<div>

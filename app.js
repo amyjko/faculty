@@ -129,6 +129,7 @@ class App extends React.Component {
 	
 	getPeople() { return this.props.data.people; }	
 	getTravel() { return this.props.data.travel; }	
+	getProjects() { return this.props.data.projects; }
 	
 }
 

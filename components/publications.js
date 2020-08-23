@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import { Paper }  from './paper';
 
 var pubs = require('../data/pubs.json');
-var projects = require('../data/projects.json');
 
 // Sort the publications by decreasing year.
 pubs = pubs.slice(0).sort((a, b)=>{ 
@@ -15,45 +14,7 @@ pubs = pubs.slice(0).sort((a, b)=>{
 	else
 		return a["source"].localeCompare(b["source"]); 
 });
-
-var tags = {};
-
-// Annotate publications with tags, including projects that reference a paper,
-// award winning papers, papers published at particular conferences, journal/conference/chapter
-_.each(pubs, (pub) => {
-
-	pub.tags = [];
-	// If there's one or more award...
-	if(pub.award && pub.award.length > 0) pub.tags.push("Award-winning");
-	
-	// If there's an acronymn in the source name
-	if(pub.source.indexOf("(SIGCSE)") >= 0) pub.tags.push("SIGCSE");
-	if(pub.source.indexOf("(CHI)") >= 0) pub.tags.push("CHI");
-	if(pub.source.indexOf("(ICSE)") >= 0) pub.tags.push("ICSE");
-	if(pub.source.indexOf("(ICER)") >= 0) pub.tags.push("ICER");
-	if(pub.source.indexOf("(UIST)") >= 0) pub.tags.push("UIST");
-
-	// Annotate the paper with all the projects that reference it.
-	_.each(projects, (project) => {
-		if(project.papers.indexOf(pub.id) >= 0)
-			pub.tags.push(project.name);		
-	});
-
-	// Tally tags.
-	_.each(pub.tags, (tag) => {
-		if (!(tag in tags))
-			tags[tag] = 1;
-		else
-			tags[tag]++;
-	});
-	
-});
-
-// Sort the display of tags by decreasing frequency.
-var sortedTags = _.keys(tags).sort(function(a, b) {
-    return a.toLowerCase().localeCompare(b.toLowerCase());
-});
-
+		
 class Topic extends React.Component {
 	
 	constructor(props) {
@@ -108,6 +69,44 @@ class Publications extends React.Component {
 	}
 
 	render() {
+		
+		var tags = {};
+
+		// Annotate publications with tags, including projects that reference a paper,
+		// award winning papers, papers published at particular conferences, journal/conference/chapter
+		_.each(pubs, (pub) => {
+		
+			pub.tags = [];
+			// If there's one or more award...
+			if(pub.award && pub.award.length > 0) pub.tags.push("Award-winning");
+			
+			// If there's an acronymn in the source name
+			if(pub.source.indexOf("(SIGCSE)") >= 0) pub.tags.push("SIGCSE");
+			if(pub.source.indexOf("(CHI)") >= 0) pub.tags.push("CHI");
+			if(pub.source.indexOf("(ICSE)") >= 0) pub.tags.push("ICSE");
+			if(pub.source.indexOf("(ICER)") >= 0) pub.tags.push("ICER");
+			if(pub.source.indexOf("(UIST)") >= 0) pub.tags.push("UIST");
+		
+			// Annotate the paper with all the projects that reference it.
+			_.each(this.props.app.getProjects(), (project) => {
+				if(project.papers.indexOf(pub.id) >= 0)
+					pub.tags.push(project.name);		
+			});
+		
+			// Tally tags.
+			_.each(pub.tags, (tag) => {
+				if (!(tag in tags))
+					tags[tag] = 1;
+				else
+					tags[tag]++;
+			});
+			
+		});
+		
+		// Sort the display of tags by decreasing frequency.
+		var sortedTags = _.keys(tags).sort(function(a, b) {
+		    return a.toLowerCase().localeCompare(b.toLowerCase());
+		});
 
 		var tagFilters = _.map(sortedTags, (tag, index) => {
 			return (

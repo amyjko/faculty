@@ -5,7 +5,6 @@ import { Paper } from "./paper";
 import { Link } from 'react-router-dom';
 import { Block } from './block';
 
-var projects = require('../data/projects.json');
 var pubs = require('../data/pubs.json');
 
 class ProjectDetails extends React.Component {
@@ -97,11 +96,10 @@ class Project extends React.Component {
 		var projectIDToHighlight = this.props.match.params.id;
 
 		// Find the project
-		var project = _.find(projects, { 'id': projectIDToHighlight });
+		var project = _.find(this.props.app.getProjects(), { 'id': projectIDToHighlight });
 		
 		if(project) {
-			return <ProjectDetails {...project} app={this.props.app} />
-			
+			return <ProjectDetails {...project} app={this.props.app} />	
 		}
 		else {
 			return <div className="alert alert-danger">I could not find a matching project.</div>;
