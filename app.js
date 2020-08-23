@@ -26,8 +26,6 @@ import { Footer } from './components/footer';
 
 import 'bootstrap';
 
-var webRoot = "/ajko" + (window.location.pathname.includes("/test") ? "/test" : "");
-
 // Polyfill startsWith
 if (!String.prototype.startsWith) {
     String.prototype.startsWith = function(searchString, position){
@@ -71,8 +69,8 @@ class App extends React.Component {
 		var oldIndex = this.links.indexOf(this.props.location.pathname);
 		var newIndex = oldIndex;
 
-		if(event.keyCode === 37) { newIndex = oldIndex === 0 ? index = this.links.length - 1 : oldIndex - 1; }
-		if(event.keyCode === 39) { newIndex = oldIndex === this.links.length - 1 ? oldIndex = 0 : oldIndex + 1; }
+		if(event.keyCode === 37) { newIndex = oldIndex === 0 ? this.links.length - 1 : oldIndex - 1; }
+		if(event.keyCode === 39) { newIndex = oldIndex === this.links.length - 1 ? 0 : oldIndex + 1; }
 
 		if(oldIndex !== newIndex)
 			this.props.history.push(this.links[newIndex]);
@@ -140,26 +138,20 @@ class App extends React.Component {
 
 var AppWithRouter = withRouter(App);
 
-// Get the data, then render it.
-var request = new XMLHttpRequest();
-request.overrideMimeType("application/json");
-request.open('GET', 'data/data.json', true);
-request.onreadystatechange = function () {
-	// Did it come back?
-	if(request.readyState == 4) {
-		// If it was successful, render it!
-		if(request.status == "200") {
-			// Construct the app, passing it the data.
-			ReactDOM.render((
-				<BrowserRouter basename={webRoot}>
-					<Route path="/" render={(props) => <AppWithRouter {...props} root={webRoot} data={JSON.parse(request.responseText)} /> } />
-				</BrowserRouter>
-			), document.getElementById('app'));
-		}
-		// If not, say something was wrong.
-		else {
-			document.getElementById("app").innerHTML = "Something went badly wrong, and I couldn't load the app's data..."
-		}
-	}
-};
-request.send(null);
+fetch('data/data.json')
+	.then(response => response.json())
+	.then(data => {
+
+		var webRoot = "/ajko" + (window.location.pathname.includes("/test") ? "/test" : "");
+		
+		// Construct the app, passing it the data.
+		ReactDOM.render((
+			<BrowserRouter basename={webRoot}>
+				<Route path="/" render={(props) => <AppWithRouter {...props} root={webRoot} data={data} /> } />
+			</BrowserRouter>
+		), document.getElementById('app'));
+
+	})
+	.catch(err => { 
+		document.getElementById("app").innerHTML = "Something went badly wrong, and I couldn't load the app's data..." ;
+	});
