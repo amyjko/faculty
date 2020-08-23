@@ -2,7 +2,6 @@ import React from 'react';
 import _ from "lodash";
 import {Paper} from "./paper";
 
-var cv = require('../data/cv.json');
 var pubs = require('../data/pubs.json');
 
 pubs = _.sortBy(pubs, 'year').reverse();
@@ -100,6 +99,8 @@ class Vita extends React.Component {
 	}
 	
 	render() {
+		
+		var cv = this.props.app.getCV();
 		
 		return (
 			<div className="cv">

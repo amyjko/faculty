@@ -2,12 +2,19 @@ import React from 'react';
 import {Block} from './block';
 import _ from 'lodash';
 
-var cv = require('../data/cv.json');
-var nsfLinks = _.map(_.filter(cv.funding, { "funder" : "National Science Foundation" }), (award, index) => { return <li key={index}><a href={award.url} target="_blank">{award.title}</a></li>; });
-
 class Funding extends React.Component {
 		
 	render() {
+
+		var nsfLinks = 
+			_.map(
+				_.filter(
+					this.props.app.getCV().funding, 
+					{ "funder" : "National Science Foundation" }
+				), 
+				(award, index) => { return <li key={index}><a href={award.url} target="_blank">{award.title}</a></li>; }
+			);
+
 		return (
 			<div>
 			
