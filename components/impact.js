@@ -3,13 +3,11 @@ import _ from 'lodash';
 
 import {Block} from './block';
 
-var populations = require('../data/impact.json');
-
 class Impact extends React.Component {
 	render() {
 
 		var blocks = _.map(
-			populations,
+			this.props.app.getImpacts(),
 			(population, index) => {
 				return (
 					<Block 

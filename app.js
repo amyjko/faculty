@@ -105,7 +105,7 @@ class App extends React.Component {
 					<Route path="/bio" render={(props) => <Biography {...props} app={this} />} />
 					<Route path="/publications/:paper?" render={(props) => <Publications {...props} app={this} />} />
 					<Route path="/posts" render={(props) => <Posts {...props} app={this} />} />
-					<Route path="/impact" component={Impact}/>
+					<Route path="/impact" render={(props) => <Impact {...props} app={this} />} />
 					<Route path="/reading" component={Reading}/>
 					<Route path="/advice" render={(props) => <Advice {...props} app={this} />} />
 					<Route path="/teaching" render={(props) => <Teaching {...props} app={this} />} />
@@ -130,6 +130,7 @@ class App extends React.Component {
 	getPeople() { return this.props.data.people; }	
 	getTravel() { return this.props.data.travel; }	
 	getProjects() { return this.props.data.projects; }
+	getImpacts() { return this.props.data.impacts; }
 	
 }
 
