@@ -11,7 +11,7 @@
 			"digital library url": "https://doi.org/10.1145/3372782.3406252",
 			"local url": "Register2020PersonalData.pdf",
 			"publisher": "ACM",
-			"contribution": "Finds that teaching machine learning by leveraging learners' personal data increases the extent to which they leverage model construction in their self-advocacy arguments."
+			"contribution": "Finds that teaching machine learning by tracing an algorithmwith with learners' personal data increases the extent to which they can identify bias in in self-advocacy arguments."
 		},
 		{
 			"id": "codeitzagency",
@@ -666,7 +666,7 @@
 			"local url":"Lee2014GidgetPrinciples.pdf",
 			"contribution":"Teaching debugging first, while redirecting blame to the computer instead of the learner, can increase learning efficiency and engage learners of all genders equally."
 		  },
-		  {
+		{
 			"id":"newsproblems",
 			"kind":"refereed workshop paper",
 			"authors": ["Amy J. Ko", "Brian Dosono", "Neeraja Duriseti"],
