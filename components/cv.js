@@ -4,16 +4,8 @@ import {Paper} from "./paper";
 
 var cv = require('../data/cv.json');
 var pubs = require('../data/pubs.json');
-var people = require('../data/people.json');
 
 pubs = _.sortBy(pubs, 'year').reverse();
-
-// Get the students and annotate the metadata for presentation.
-var doctoralStudents = _.sortBy(_.filter(people, { level: 'phd', advised: true }), 'startdate');
-_.forEach(doctoralStudents, (value) => {
-	if(value.coadvisor !== null)
-		value.coadvisor = "Co-advisor: " + value.coadvisor;
-});
 
 class Chunk extends React.Component {
 	
@@ -243,7 +235,23 @@ class Vita extends React.Component {
 				
 				<h3>Chair</h3>
 
-				{this.getChunkList(doctoralStudents, "doctoralChair", "startdate", "enddate", "name", "dept", "coadvisor", "achievements")}
+
+				{
+					// Get the students and annotate the metadata for presentation.
+					this.getChunkList(
+						_.forEach(_.sortBy(_.filter(this.props.app.getPeople(), { level: 'phd', advised: true }), 'startdate'), (value) => {
+							if(value.coadvisor !== null)
+								value.coadvisor = "Co-advisor: " + value.coadvisor;
+						}), 
+						"doctoralChair", 
+						"startdate", 
+						"enddate", 
+						"name", 
+						"dept", 
+						"coadvisor", 
+						"achievements"
+					)
+				}
 				
 				<h3>Committee Member</h3>
 

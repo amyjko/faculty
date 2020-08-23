@@ -3,16 +3,6 @@ import _ from 'lodash';
 
 import {Block} from './block';
 
-var people = require('../data/people.json');
-
-// Sort active students by increasing start date, inactive by decreasing start date.
-people.sort((a, b) => {
-	if(a.active)
-		return a.startdate - b.startdate;
-	else
-		return b.startdate - a.startdate;
-});
-
 class Person extends React.Component {
 	render() {
 		
@@ -54,6 +44,16 @@ class Students extends React.Component {
 	render() {
 		
 		var personToHighlight = this.props.match.params.student;
+
+		var people = _.clone(this.props.app.getPeople());
+
+		// Sort active students by increasing start date, inactive by decreasing start date.
+		people.sort((a, b) => {
+			if(a.active)
+				return a.startdate - b.startdate;
+			else
+				return b.startdate - a.startdate;
+		});
 
 		// Render the active people.
 		var activePeople = _.map(_.sortBy(_.filter(people, { 'active': true, 'advised': true }), ['level', 'startdate']), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app}/>; });

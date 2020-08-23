@@ -126,12 +126,35 @@ class App extends React.Component {
 			</div>
 		)
 	}
+	
+	getPeople() { return this.props.data.people; }	
+	
+	
 }
+
 
 var AppWithRouter = withRouter(App);
 
-ReactDOM.render((
-	<BrowserRouter basename={webRoot}>
-		<Route path="/" render={(props) => <AppWithRouter {...props} root={webRoot}/> } />
-	</BrowserRouter>
-), document.getElementById('app'));
+// Get the data, then render it.
+var request = new XMLHttpRequest();
+request.overrideMimeType("application/json");
+request.open('GET', 'data/data.json', true);
+request.onreadystatechange = function () {
+	// Did it come back?
+	if(request.readyState == 4) {
+		// If it was successful, render it!
+		if(request.status == "200") {
+			// Construct the app, passing it the data.
+			ReactDOM.render((
+				<BrowserRouter basename={webRoot}>
+					<Route path="/" render={(props) => <AppWithRouter {...props} root={webRoot} data={JSON.parse(request.responseText)} /> } />
+				</BrowserRouter>
+			), document.getElementById('app'));
+		}
+		// If not, say something was wrong.
+		else {
+			document.getElementById("app").innerHTML = "Something went badly wrong, and I couldn't load the app's data..."
+		}
+	}
+};
+request.send(null);
