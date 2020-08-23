@@ -5,8 +5,6 @@ import { Paper } from "./paper";
 import { Link } from 'react-router-dom';
 import { Block } from './block';
 
-var pubs = require('../data/pubs.json');
-
 class ProjectDetails extends React.Component {
 	
 	constructor() {
@@ -31,7 +29,7 @@ class ProjectDetails extends React.Component {
 
 		// Find the publications that are in this project's list of papers and render a paper.
 		var papers = _.map(
-			_.reverse(_.sortBy(_.filter(pubs, (paper) => { return _.indexOf(this.props.papers, paper.id) >= 0; }), (paper) => { return paper.year; })),
+			_.reverse(_.sortBy(_.filter(this.props.app.getPublications(), (paper) => { return _.indexOf(this.props.papers, paper.id) >= 0; }), (paper) => { return paper.year; })),
 			(paper) => { return <Paper {...paper} key={paper.id} app={this.props.app} />; }
 		);
 	

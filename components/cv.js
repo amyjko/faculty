@@ -2,10 +2,6 @@ import React from 'react';
 import _ from "lodash";
 import {Paper} from "./paper";
 
-var pubs = require('../data/pubs.json');
-
-pubs = _.sortBy(pubs, 'year').reverse();
-
 class Chunk extends React.Component {
 	
 	convertArrayToNote(data) {
@@ -46,7 +42,7 @@ class Chunk extends React.Component {
 
 class Vita extends React.Component {
 	
-	getPapers(kind) {
+	getPapers(pubs, kind) {
 		
 		return _.map(_.filter(pubs, { kind: kind }), (paper, index) => {
 			return <Paper {...paper} app={this.props.app} key={kind + index} hideLink={true} hideContribution={true} />
@@ -101,6 +97,7 @@ class Vita extends React.Component {
 	render() {
 		
 		var cv = this.props.app.getCV();
+		var pubs = _.sortBy(this.props.app.getPublications(), 'year').reverse();
 		
 		return (
 			<div className="cv">
@@ -174,39 +171,39 @@ class Vita extends React.Component {
 
 				<h3>Refereed Conference Papers</h3>
 
-				{this.getPapers("refereed conference paper")}				
+				{this.getPapers(pubs, "refereed conference paper")}				
 
 				<h3>Journal Articles</h3>
 				
-				{this.getPapers("journal article")}				
+				{this.getPapers(pubs, "journal article")}				
 				
 				<h3>Short Refereed Conference Papers</h3>
 				
-				{this.getPapers("refereed short conference paper")}				
+				{this.getPapers(pubs, "refereed short conference paper")}				
 			
 				<h3>Refereed Workshop Papers</h3>
 				
-				{this.getPapers("refereed workshop paper")}				
+				{this.getPapers(pubs, "refereed workshop paper")}				
 
 				<h3>Juried Conference Papers</h3>
 				
-				{this.getPapers("juried conference paper")}				
+				{this.getPapers(pubs, "juried conference paper")}				
 
 				<h3>Book Chapters</h3>
 				
-				{this.getPapers("book chapter")}				
+				{this.getPapers(pubs, "book chapter")}				
 
 				<h3>Refereed Invited Articles</h3>
 				
-				{this.getPapers("refereed invited article")}				
+				{this.getPapers(pubs, "refereed invited article")}
 
 				<h3>Non-Refereed Workshop Papers</h3>
 				
-				{this.getPapers("non-refereed workshop paper")}				
+				{this.getPapers(pubs, "non-refereed workshop paper")}				
 
 				<h3>Technical Reports</h3>
 				
-				{this.getPapers("technical report")}
+				{this.getPapers(pubs, "technical report")}
 				
 				<h2>Press</h2>
 

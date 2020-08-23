@@ -2,10 +2,6 @@ import React from 'react';
 import {Paper} from './paper';
 import _ from "lodash";
 
-var pubs = require('../data/pubs.json');
-
-var practicalToolEvaluations = _.find(pubs, { id: "practicalguide" });
-
 class Advice extends React.Component {
 	render() {
 		return (
@@ -103,7 +99,7 @@ class Advice extends React.Component {
 				<p>For my part, I wrote a journal paper that walks through several practical details of evaluating developer tools:</p>
 
 				<hr/>
-				<Paper {...practicalToolEvaluations} app={this.props.app} />				
+				<Paper {..._.find(this.props.app.getPublications(), { id: "practicalguide" })} app={this.props.app} />				
 				<hr/>
 				
 				<p>Several of my colleagues in software engineering and programming languages also wrote a well reasoned analysis of <em>claims</em> in evaluations called <a href="http://dl.acm.org/citation.cfm?id=2983574">The Truth, The Whole Truth, and Nothing But the Truth: A Pragmatic Guide to Assessing Empirical Evaluations</a>. This is a great lens through which to evaluate the validity of your evaluation.</p>

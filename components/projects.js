@@ -5,8 +5,6 @@ import { Paper } from "./paper";
 import { Link } from 'react-router-dom';
 import { Block } from './block';
 
-var pubs = require('../data/pubs.json');
-
 class ProjectSummary extends React.Component {
 	
 	constructor() {

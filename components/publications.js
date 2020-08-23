@@ -4,16 +4,6 @@ import _ from 'lodash';
 import { Link } from 'react-router-dom';
 
 import { Paper }  from './paper';
-
-var pubs = require('../data/pubs.json');
-
-// Sort the publications by decreasing year.
-pubs = pubs.slice(0).sort((a, b)=>{ 
-	if(b["year"] !== a["year"])
-		return b["year"] - a["year"]; 
-	else
-		return a["source"].localeCompare(b["source"]); 
-});
 		
 class Topic extends React.Component {
 	
@@ -69,6 +59,14 @@ class Publications extends React.Component {
 	}
 
 	render() {
+		
+		// Sort the publications by decreasing year.
+		var pubs = this.props.app.getPublications().slice(0).sort((a, b)=>{ 
+			if(b["year"] !== a["year"])
+				return b["year"] - a["year"]; 
+			else
+				return a["source"].localeCompare(b["source"]); 
+		});
 		
 		var tags = {};
 

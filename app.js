@@ -133,6 +133,7 @@ class App extends React.Component {
 	getImpacts() { return this.props.data.impacts; }
 	getPosts() { return this.props.data.posts; }
 	getCV() { return this.props.data.cv; }
+	getPublications() { return this.props.data.pubs; }
 	
 }
 
