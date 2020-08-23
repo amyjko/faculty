@@ -4,35 +4,6 @@ import _ from 'lodash';
 import { Link } from 'react-router-dom';
 import { Block } from './block';
 
-var posts = require('../data/posts.json');
-
-// Compute months and dates from strings.
-posts = _.each(posts, (post) => {
-	var parts = post.date.split(".");
-	post.year = parseInt(parts[0]);
-	post.month = parseInt(parts[1]);
-});
-
-// Sort the posts by date
-posts = posts.sort((a, b) => {
-	return (b.year * 12 + b.month) - (a.year * 12 + a.month);
-});
-
-// Find the tag frequency
-var tags = {};
-_.each(posts, (post) => {
-	_.each(post.tags, (tag) => {
-		if (!(tag in tags))
-			tags[tag] = 1;
-		else
-			tags[tag]++;
-	});
-});
-
-var sortedTags = _.keys(tags).sort(function(a, b) {
-    return a.toLowerCase().localeCompare(b.toLowerCase());
-});
-
 class Topic extends React.Component {
 	
 	constructor(props) {
@@ -75,6 +46,33 @@ class Posts extends React.Component {
 	}
 
 	render() {
+
+		// Compute months and dates from strings.
+		var posts = _.each(this.props.app.getPosts(), (post) => {
+			var parts = post.date.split(".");
+			post.year = parseInt(parts[0]);
+			post.month = parseInt(parts[1]);
+		});
+		
+		// Sort the posts by date
+		posts = posts.sort((a, b) => {
+			return (b.year * 12 + b.month) - (a.year * 12 + a.month);
+		});
+		
+		// Find the tag frequency
+		var tags = {};
+		_.each(posts, (post) => {
+			_.each(post.tags, (tag) => {
+				if (!(tag in tags))
+					tags[tag] = 1;
+				else
+					tags[tag]++;
+			});
+		});
+		
+		var sortedTags = _.keys(tags).sort(function(a, b) {
+		    return a.toLowerCase().localeCompare(b.toLowerCase());
+		});
 
 		/*
 		
