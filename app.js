@@ -67,7 +67,7 @@ class App extends React.Component {
 			data: undefined
 		};
 		
-		fetch('data/data.json')
+		fetch(this.getWebRoot() + "/data/data.json")
 			.then(response => response.json())
 			.then(data => {
 				// Yay, we got data! Set the state so the page renders.
