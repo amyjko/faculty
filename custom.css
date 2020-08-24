@@ -41,17 +41,17 @@ b, strong {
 }
 
 .table > tbody > tr > td {
-     vertical-align: top;
+    vertical-align: top;
 }
 
 /* Custom page header */
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .gap-bottom-right {

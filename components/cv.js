@@ -102,20 +102,9 @@ class Vita extends React.Component {
 		return (
 			<div className="cv">
 			
-				<h1>Amy J. Ko, Ph.D.</h1>
-				
-				<p>
-					Professor
-					<br/>The Information School
-					<br/>Paul G. Allen School of Computer Science & Engineering <small>(courtesy)</small>
-					<br/>University of Washington, Seattle, USA
-				</p>
-				
-				<h2>Interests</h2>
-				
-				<p>
-					I study equitable ways for humanity to learn the power and perils of computing. Whether it is youth discovering the limits of machine learning, adults grasping a new API, or teachers shaping learners' conceptions of code, I'm fascinated by our individual and collective struggle to make sense of computing and harness it for good.
-				</p>
+				<div className="lead">
+					I study equitable ways for humanity to learn the power and perils of computing and harness it for good.
+				</div>
 
 				<h2>Education</h2>
 

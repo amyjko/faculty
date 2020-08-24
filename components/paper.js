@@ -65,7 +65,7 @@ class Paper extends React.Component {
 			)
 			
 			return <Block 
-					image={this.props.app.getWebRoot() + "/images/papers/paper-" + this.props.id + ".jpg"}
+					image={this.props.hideImage ? null : this.props.app.getWebRoot() + "/images/papers/paper-" + this.props.id + ".jpg"}
 					alt="A snippet from the paper PDF."
 					link={url}
 					header={null}
