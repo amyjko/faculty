@@ -39,6 +39,7 @@ class App extends React.Component {
 	constructor(props) {
 
 		super(props);
+		
 		this.ref = React.createRef();
 
 		this.handleKeyPress = this.handleKeyPress.bind(this);
@@ -59,6 +60,23 @@ class App extends React.Component {
 			"/funding",
 			"/contact"
 		];
+		
+		// Start data as undefined, rending a loading state until it changes.
+		this.state = {
+			data: undefined
+		};
+		
+		fetch('data/data.json')
+			.then(response => response.json())
+			.then(data => {
+				// Yay, we got data! Set the state so the page renders.
+				this.setState({ data: data });
+			})
+			.catch(err => { 
+				// Uh oh, something bad happened. Set data to null to render an error.
+				this.setState({ data: null });
+				console.error(err);
+			});
 		
 	}
 	
@@ -98,60 +116,57 @@ class App extends React.Component {
 		return (
 			<div className="container" onKeyDown={this.handleKeyPress} tabIndex="0" ref={this.ref}>
 				{currentRoute === "/cv" ? null : <Header path={currentRoute} app={this} />}
-				<Switch>
-					<Route exact path="/" render={(props) => <Projects {...props} app={this} />} />
-					<Route path="/bio" render={(props) => <Biography {...props} app={this} />} />
-					<Route path="/publications/:paper?" render={(props) => <Publications {...props} app={this} />} />
-					<Route path="/posts" render={(props) => <Posts {...props} app={this} />} />
-					<Route path="/impact" render={(props) => <Impact {...props} app={this} />} />
-					<Route path="/reading" component={Reading}/>
-					<Route path="/advice" render={(props) => <Advice {...props} app={this} />} />
-					<Route path="/teaching" render={(props) => <Teaching {...props} app={this} />} />
-					<Route path="/talks" render={(props) => <Talks {...props} app={this} />} />
-					<Route path="/books" render={(props) => <Books {...props} app={this} />} />
-					<Route path="/travel" render={(props) => <Travel {...props} app={this} />} />
-					<Route path="/contact" render={(props) => <ContactInfo {...props} app={this} />} />
-					<Route path="/communities" render={(props) => <Communities {...props} app={this} />} />
-					<Route path="/funding" render={(props) => <Funding {...props} app={this} />} />
-					<Route path="/lab" render={(props) => <Students {...props} app={this} />} />
-					<Route path="/students/:student?" render={(props) => <Students {...props} app={this} />} />
-					<Route path="/projects/:id" render={(props) => <Project {...props} app={this} />} />
-					<Route path="/cv" render={(props) => <Vita {...props} app={this} />} />
-					<Route path="/cer" component={CER}/>
-					<Route path="*" component={Unknown}/>
-				</Switch>
+				{
+					this.state.data === undefined ? 
+						<center><img src="images/icons/loading.gif" /></center> :
+					this.state.data === null ?
+						<div className='alert alert-danger'>There was a problem loading the site content. Amy will fix it right away!</div> :
+						<Switch>
+							<Route exact path="/" render={(props) => <Projects {...props} app={this} />} />
+							<Route path="/bio" render={(props) => <Biography {...props} app={this} />} />
+							<Route path="/publications/:paper?" render={(props) => <Publications {...props} app={this} />} />
+							<Route path="/posts" render={(props) => <Posts {...props} app={this} />} />
+							<Route path="/impact" render={(props) => <Impact {...props} app={this} />} />
+							<Route path="/reading" component={Reading}/>
+							<Route path="/advice" render={(props) => <Advice {...props} app={this} />} />
+							<Route path="/teaching" render={(props) => <Teaching {...props} app={this} />} />
+							<Route path="/talks" render={(props) => <Talks {...props} app={this} />} />
+							<Route path="/books" render={(props) => <Books {...props} app={this} />} />
+							<Route path="/travel" render={(props) => <Travel {...props} app={this} />} />
+							<Route path="/contact" render={(props) => <ContactInfo {...props} app={this} />} />
+							<Route path="/communities" render={(props) => <Communities {...props} app={this} />} />
+							<Route path="/funding" render={(props) => <Funding {...props} app={this} />} />
+							<Route path="/lab" render={(props) => <Students {...props} app={this} />} />
+							<Route path="/students/:student?" render={(props) => <Students {...props} app={this} />} />
+							<Route path="/projects/:id" render={(props) => <Project {...props} app={this} />} />
+							<Route path="/cv" render={(props) => <Vita {...props} app={this} />} />
+							<Route path="/cer" component={CER}/>
+							<Route path="*" component={Unknown}/>
+						</Switch>					
+				}
 				{currentRoute === "/cv" ? null : <Footer/>}
 			</div>
 		)
 	}
 	
-	getPeople() { return this.props.data.people; }	
-	getTravel() { return this.props.data.travel; }	
-	getProjects() { return this.props.data.projects; }
-	getImpacts() { return this.props.data.impacts; }
-	getPosts() { return this.props.data.posts; }
-	getCV() { return this.props.data.cv; }
-	getPublications() { return this.props.data.pubs; }
+	getPeople() { return this.state.data.people; }	
+	getTravel() { return this.state.data.travel; }	
+	getProjects() { return this.state.data.projects; }
+	getImpacts() { return this.state.data.impacts; }
+	getPosts() { return this.state.data.posts; }
+	getCV() { return this.state.data.cv; }
+	getPublications() { return this.state.data.pubs; }
 	
 }
 
 
 var AppWithRouter = withRouter(App);
-
-fetch('data/data.json')
-	.then(response => response.json())
-	.then(data => {
-
-		var webRoot = "/ajko" + (window.location.pathname.includes("/test") ? "/test" : "");
-		
-		// Construct the app, passing it the data.
-		ReactDOM.render((
-			<BrowserRouter basename={webRoot}>
-				<Route path="/" render={(props) => <AppWithRouter {...props} root={webRoot} data={data} /> } />
-			</BrowserRouter>
-		), document.getElementById('app'));
-
-	})
-	.catch(err => { 
-		document.getElementById("app").innerHTML = "Something went badly wrong, and I couldn't load the app's data..." ;
-	});
+	
+var webRoot = "/ajko" + (window.location.pathname.includes("/test") ? "/test" : "");	
+	
+// Construct the app, passing it the data.
+ReactDOM.render((
+	<BrowserRouter basename={webRoot}>
+		<Route path="/" render={(props) => <AppWithRouter {...props} root={webRoot} /> } />
+	</BrowserRouter>
+), document.getElementById('app'));

@@ -233,7 +233,6 @@ class Vita extends React.Component {
 				
 				<h3>Chair</h3>
 
-
 				{
 					// Get the students and annotate the metadata for presentation.
 					this.getChunkList(
