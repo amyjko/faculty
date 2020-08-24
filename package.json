@@ -10,7 +10,9 @@
 		"diff": "rsync --dry-run -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html",
 		"test": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' --exclude '.htaccess' . ~/public_html/test",
 		"ship": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' --exclude 'test' . ~/public_html",
-		"deploy": "npm run build; npm run ship"
+		"lint" : "jsonlint -q data/data.json",
+		"shipdata": "npm run lint && npm run test && npm run ship",
+		"shipall": "npm run build && npm run lint && npm run test && npm run ship"
 	},
 	"devDependencies": {
 		"browserify": "^16.2",
@@ -20,7 +22,8 @@
 		"@babel/cli": "^7",
 		"@babel/preset-react": "^7",
 		"@babel/preset-env": "^7",
-		"uglify-js": "^3.4.7"
+		"uglify-js": "^3.4.7",
+		"jsonlint": "^1.6"
 	},
 	"dependencies": {
 		"bootstrap": "^3.3.7",
