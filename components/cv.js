@@ -45,7 +45,7 @@ class Vita extends React.Component {
 	getPapers(pubs, kind) {
 		
 		return _.map(_.filter(pubs, { kind: kind }), (paper, index) => {
-			return <Paper {...paper} app={this.props.app} key={kind + index} hideLink={true} hideContribution={true} />
+			return <Paper {...paper} app={this.props.app} key={kind + index} hideImage={true} hideLink={true} hideContribution={true} />
 		});
 
 	}
