@@ -53,11 +53,12 @@ class App extends React.Component {
 			"/talks",
 			"/teaching",
 			"/books",
-			"/travel",
 			"/impact",
+			"/funding",
+			"/travel",
 			"/advice",
 			"/bio",
-			"/funding",
+			"/cer",
 			"/contact",
 			"/cv"
 		];

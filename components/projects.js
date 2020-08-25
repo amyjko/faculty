@@ -77,20 +77,15 @@ class Projects extends React.Component {
 				</div>
 								
 				<p>
-					I share my work with three research communities: <em>computing education</em>, <em>human-computer interaction</em>, and <em>software engineering</em>.
-					I work with many outstanding <Link to={"/students"}>students</Link> and <Link to={"/communities"}>communities</Link> to <Link to={"/publications"}>publish</Link> our research, then <Link to={"/posts"}>blog it</Link>, <Link to={"/talks"}>present it</Link>, <Link to={"/teaching"}>teach it</Link>, <Link to={"/books"}>synthesize it</Link>, and <Link to={"/impact"}>apply it to practice</Link>. 
+					I share my work with three research communities: <em>computing education</em> (see my <Link to={"/cer"}>Computing Education Research FAQ</Link>), <em>human-computer interaction</em>, and <em>software engineering</em>.
+					I work with many outstanding <Link to={"/students"}>students</Link> and <Link to={"/communities"}>communities</Link> to <Link to={"/publications"}>publish</Link>, <Link to={"/posts"}>blog</Link>, <Link to={"/talks"}>present</Link>, <Link to={"/teaching"}>teach</Link>, <Link to={"/books"}>synthesize</Link>, and <Link to={"/impact"}>apply</Link> our research. Throughout, I leverage my expertise in <em>debugging</em>, <em>explainability</em>, <em>end-user programming</em>, <em>software engineering</em>, and <em>design education</em>.
 				</p>
 				
 				<p>
 					Want to join us? 
 					Read about my <Link to="/students">lab</Link>.
 				</p>
-				
-				<p>
-					Read my <Link to={"/cer"}>Computing Education Research FAQ</Link> for more on the field.
-					In addition to my focus on learning, I also have expertise in <em>debugging</em>, <em>end-user programming</em>, <em>explainability</em>, <em>design education</em>, and <em>human aspects of software engineering</em>.
-				</p>
-				
+								
 				<h3>Active Projects</h3>
 	
 				<p>These are areas we've recently published in.</p>
