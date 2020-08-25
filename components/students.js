@@ -15,7 +15,9 @@ class Person extends React.Component {
 					header={null}
 					content=<span>
 						<a target="_blank" href={this.props.url}>{this.props.name}</a>
+						&nbsp;
 						<mark>{this.props.level}</mark>
+						&nbsp;
 						<small>{ this.props.dissertation ? <a href={this.props.app.getWebRoot() + "/dissertations/" + this.props.dissertation}>Dissertation</a> : null } { this.props.enddate ? " (" + this.props.enddate + ")" : null }</small>
 						<br/>
 						{this.props.bio}
