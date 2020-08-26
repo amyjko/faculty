@@ -78,7 +78,14 @@ class CER extends React.Component {
 
 	render() {
 		
-		return <EmbeddedGist gist="amyjko/689837b8eefccb3a8a28ff0aa5300615" />
+		return (
+			<div>
+				<div className="lead">
+					Below is my computing education research FAQ, hosted on <a href="https://gist.github.com/amyjko/689837b8eefccb3a8a28ff0aa5300615#file-cer-md">GitHub Gist</a> and embedded here.
+				</div>		
+				<EmbeddedGist gist="amyjko/689837b8eefccb3a8a28ff0aa5300615" />
+			</div>
+		);
 		
 	}
 }
