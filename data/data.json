@@ -5795,6 +5795,7 @@
 	],
 	"talks": [
 		{
+			"date": "2020.08.03",
 			"image": "studyingmaking.jpg",
 			"alt": "A screenshot of the first slide of the presentation, with the title Studying Programming through Making",
 			"slides": "https://docs.google.com/presentation/d/1L72wv7Lv7oWqbHbw62mISiSWFKFSSyYl65HNXpSmjCU/edit?usp=sharing",
@@ -5807,6 +5808,7 @@
 			"keynote": false
 		},
 		{
+			"date": "2020.06.15",
 			"image": "msftcsed.jpg",
 			"alt": "A photograph of students on the campus of Howard University, 1870",
 			"slides": "https://docs.google.com/presentation/d/15UxfJnjI8P0N33xGlTqY1A39SQdxBUwQ2jflkVMmF7Q/edit#slide=id.gc6f980f91_0_0",
@@ -5819,6 +5821,7 @@
 			"keynote": false
 		},
 		{
+			"date": "2019.11.19",
 			"image": "koli2019.jpg",
 			"alt": "A screenshot of the first slide of the keynote, showing title and Koli national park.",
 			"slides": "slides/Koli2019Keynote.pdf",
@@ -5831,6 +5834,7 @@
 			"keynote": true
 		},
 		{
+			"date": "2019.05.01",
 			"image": "eth2019.jpg",
 			"alt": "A screenshot of the first slide of the keynote.",
 			"slides": "slides/ETHZurich2019Programming.pdf",
@@ -5843,6 +5847,7 @@
 			"keynote": false
 		},
 		{
+			"date": "2020.06.01",
 			"image": "icse2018.png",
 			"alt": "A screenshot of the first slide of the talk.",
 			"slides": "slides/ICSE2018MIP.pdf",
@@ -5855,6 +5860,7 @@
 			"keynote": false
 		},
 		{
+			"date": "2020.05.29",
 			"image": "msricpc18.png",
 			"alt": "A screenshot of the first slide of the keynote.",
 			"slides": "slides/MSRICPC2018Keynote.pdf",
@@ -5867,6 +5873,7 @@
 			"keynote": true
 		},
 		{
+			"date": "2018.01.12",
 			"image": "stanford18.png",
 			"alt": "An image of me presenting at Stanford.",
 			"slides": "/slides/LearningToCode.pdf",
@@ -5879,6 +5886,7 @@
 			"keynote": false
 		},
 		{
+			"date": "2016.11.04",
 			"image": "splash16.png",
 			"alt": "A screenshot of the first slide of the keynote.",
 			"slides": "/slides/SPLASH2016Keynote.pdf",
