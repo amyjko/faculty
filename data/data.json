@@ -5821,7 +5821,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2019.11.19",
+			"date": "2019.11.22",
 			"image": "koli2019.jpg",
 			"alt": "A screenshot of the first slide of the keynote, showing title and Koli national park.",
 			"slides": "slides/Koli2019Keynote.pdf",
@@ -5860,7 +5860,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2020.05.29",
+			"date": "2020.05.28",
 			"image": "msricpc18.png",
 			"alt": "A screenshot of the first slide of the keynote.",
 			"slides": "slides/MSRICPC2018Keynote.pdf",
@@ -5889,13 +5889,39 @@
 			"date": "2016.11.04",
 			"image": "splash16.png",
 			"alt": "A screenshot of the first slide of the keynote.",
-			"slides": "/slides/SPLASH2016Keynote.pdf",
+			"slides": "slides/SPLASH2016Keynote.pdf",
 			"title": "A Human View of Programming Languages",
 			"venue": "SPLASH 2016",
 			"url": "https://2016.splashcon.org/details/splash-2016-keynotes/11/SPLASH-2016-Keynote-A-Human-View-of-Programming-Languages",
 			"recording": "https://www.youtube.com/watch?v=TjkzAls5fsI&t=84s",
 			"practice": null,
 			"description": "I gave this invited keynote at SPLASH 2016, in which I built upon Seymour Papert's arguments about computing culture and the need for embracing multiple views of what programming is.",
+			"keynote": true
+		},
+		{
+			"date": "2009.11.23",
+			"image": "choose2009.jpg",
+			"alt": "A photograph of a cloudy day in Bern, Switzerland.",
+			"slides": "slides/CHOOSE2009HCISE.pdf",
+			"title": "Where HCI and Software Engineering Meet",
+			"venue": "CHOOSE Forum, Bern Switzerland",
+			"url": "https://choose.swissinformatics.org",
+			"recording": null,
+			"practice": null,
+			"description": "I was invited to give a keynote to the Swiss Group for Original and Outside-the-box Software Engineering (CHOOSE), a group that meets to bridge technology and industry. I talked about my dissertation research.",
+			"keynote": true
+		},
+		{
+			"date": "2009.02.24",
+			"image": "isec2009.jpg",
+			"alt": "A photograph of a panelist table at ISEC 2009.",
+			"slides": "slides/ISEC2009Java Whyline.pdf",
+			"title": "Asking and Answering Questions about the Causes of Software Behavior",
+			"venue": "India Software Engineering Conference, Pune, India",
+			"url": "https://isoft.acm.org/isec2009/",
+			"recording": null,
+			"practice": null,
+			"description": "I was invited to give a keynote on my ICSE distinguished paper award on the Whyline. I had an amazing trip to Pune and Mumbia.",
 			"keynote": true
 		}
 	]

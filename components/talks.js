@@ -17,14 +17,15 @@ class Talks extends React.Component {
 			
 				return <Block
 					key={"talk" + index}
-					image={this.props.app.getWebRoot() + "/images/talks/" + talk.image}
+					image={talk.image ? this.props.app.getWebRoot() + "/images/talks/" + talk.image: null}
 					alt={talk.alt}
 					link={talk.recording ? talk.recording : talk.practice ? talk.practice : talk.slides }
 					header={talk.title}
 					content=
 						<span>
 							&nbsp; { talk.keynote ? <mark>keynote</mark> : null }
-							<br/><small><em>{talk.url ? <a href={talk.url}>{talk.venue}</a> : talk.venue}, {talk.date}</em></small>
+							<br/><small><em>{talk.url ? <a href={talk.url}>{talk.venue}</a> : talk.venue}</em></small>
+							<br/><small>{talk.date}</small>
 							<br/>{talk.description} 
 							<br/>
 							<small>
