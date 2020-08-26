@@ -5792,5 +5792,103 @@
 			"details": "I traveled to Portland, fully masked and distance, ready to speak in about seven sessions. The conference was canceled the morning of the first day.",
 			"date": "2020.03.11"
 		}
+	],
+	"talks": [
+		{
+			"image": "studyingmaking.jpg",
+			"alt": "A screenshot of the first slide of the presentation, with the title Studying Programming through Making",
+			"slides": "https://docs.google.com/presentation/d/1L72wv7Lv7oWqbHbw62mISiSWFKFSSyYl65HNXpSmjCU/edit?usp=sharing",
+			"title": "Studying Programming through Making",
+			"venue": "2020 PL+HCI Swimmer School",
+			"url": "https://shriram.github.io/pl-hci-school-2020/",
+			"recording": "https://www.youtube.com/watch?v=SSCeLlbk2eo",
+			"practice": null,
+			"description": "I gave this invited presentation on August 3rd, to at the 2020 PL+HCI \"Swimmer School\". The overarching goal was to explain how user studies shape our understanding of what we make; it also served as a retrospective of my dissertation work on the Whyline.",
+			"keynote": false
+		},
+		{
+			"image": "msftcsed.jpg",
+			"alt": "A photograph of students on the campus of Howard University, 1870",
+			"slides": "https://docs.google.com/presentation/d/15UxfJnjI8P0N33xGlTqY1A39SQdxBUwQ2jflkVMmF7Q/edit#slide=id.gc6f980f91_0_0",
+			"title": "CS Education in Higher Education",
+			"venue": "Microsoft",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I gave this presentation to Microsoft on June 15th; they were engaging in design envisioning to support CS teaching and wanted some background on it and how the pandemic was affecting it. I used it as an opportunity to talk about the racist and sexist history of higher education, of CS in higher education, the ways that CS pedagogy have failed to include all students, and how the pandemic has amplified these failures. I shared it on Twitter, which led to considerable sharing, solidatory, and outrage. I intentionally did not include citations for my claims because scientific evidence tends to be weaponized by those do not believe that racism or sexism exists; instead, I included a link pointing to the body of literature supporting the claims.",
+			"keynote": false
+		},
+		{
+			"image": "koli2019.jpg",
+			"alt": "A screenshot of the first slide of the keynote, showing title and Koli national park.",
+			"slides": "slides/Koli2019Keynote.pdf",
+			"title": "21st Century Grand Challenges in Computing Education",
+			"venue": "2019 Koli Calling Computing Education Research Conference",
+			"url": "http://kolicalling.fi",
+			"recording": "https://www.youtube.com/watch?v=mjX3yLPKjvE",
+			"practice": "https://www.youtube.com/watch?v=m9sqJz1oM-M",
+			"description": "I gave this keynote at the 2019 Koli Calling conference, a computing education research conference in beautiful Koli National Park. In it, I argued that to address epistemic challenges such as climate change and stabilizing democracies, everyone in the world needs to learn the limits of computing, social responsibility with computing, data literacy, and diversity literacy.",
+			"keynote": true
+		},
+		{
+			"image": "eth2019.jpg",
+			"alt": "A screenshot of the first slide of the keynote.",
+			"slides": "slides/ETHZurich2019Programming.pdf",
+			"title": "Programming: What it is and How to Teach it",
+			"venue": "ETH Zurich Computer Science",
+			"url": "https://www.video.ethz.ch/speakers/d-infk/2019/spring/251-0100-00L.html",
+			"recording": "https://www.video.ethz.ch/speakers/d-infk/2019/spring/251-0100-00L.html",
+			"practice": "https://www.youtube.com/watch?v=-crfoC6NtaE",
+			"description": "I gave this invited talk in 2019 at ETH Zurich's CS department. I shared my lab's latest research on programming, including programming language learning, API learning, programming problem solving, and programming strategies.",
+			"keynote": false
+		},
+		{
+			"image": "icse2018.png",
+			"alt": "A screenshot of the first slide of the talk.",
+			"slides": "slides/ICSE2018MIP.pdf",
+			"title": "Big Ideas Behind the Whyline",
+			"venue": "2018 International Conference on Software Engineering",
+			"url": "https://www.icse2018.org",
+			"recording": "https://www.youtube.com/watch?v=lx7g-T10WxQ",
+			"practice": null,
+			"description": "I gave this talk in 2018 in recognition for my most influential paper award on my dissertation work on the Whyline. I reflected on the ideas, both technical, scientific, and otherwise that have shaped my discoveries.",
+			"keynote": false
+		},
+		{
+			"image": "msricpc18.png",
+			"alt": "A screenshot of the first slide of the keynote.",
+			"slides": "slides/MSRICPC2018Keynote.pdf",
+			"title": "Mining the Mind, Minding the Mine: Grand Challenges in Comprehension and Mining",	
+			"venue": "2018 International Conference on Mining Software Repositories and International Conference on Program Comprehension",
+			"url": "https://conf.researchr.org/home/msr-2018",
+			"recording": null,
+			"practice": "https://youtu.be/Oh5NuyTMB4A",
+			"description": "I gave this invited joint keynote at the 2018 International Conference on Mining Software Repositories, and the International Conference on Program Comprehension. I argued that the two areas need each other, that they both need theory, and that they both need to ask more relevant questions.",
+			"keynote": true
+		},
+		{
+			"image": "stanford18.png",
+			"alt": "An image of me presenting at Stanford.",
+			"slides": "/slides/LearningToCode.pdf",
+			"title": "Learning to Code: Why We Fail, How We Flourish",
+			"venue": "Northwestern University + University of Michigan + Stanford University",
+			"url": null,
+			"recording": "https://www.youtube.com/watch?v=mkzHIhKaUX4&feature=youtu.be",
+			"practice": null,
+			"description": "In 2017 and early 2018 I gave a series of invited talks at Northwestern, University of Michigan, and Stanford, in which I summarized our latest research on the learning to code.",
+			"keynote": false
+		},
+		{
+			"image": "splash16.png",
+			"alt": "A screenshot of the first slide of the keynote.",
+			"slides": "/slides/SPLASH2016Keynote.pdf",
+			"title": "A Human View of Programming Languages",
+			"venue": "SPLASH 2016",
+			"url": "https://2016.splashcon.org/details/splash-2016-keynotes/11/SPLASH-2016-Keynote-A-Human-View-of-Programming-Languages",
+			"recording": "https://www.youtube.com/watch?v=TjkzAls5fsI&t=84s",
+			"practice": null,
+			"description": "I gave this invited keynote at SPLASH 2016, in which I built upon Seymour Papert's arguments about computing culture and the need for embracing multiple views of what programming is.",
+			"keynote": true
+		}
 	]
 }
