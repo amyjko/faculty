@@ -44,6 +44,19 @@ b, strong {
     vertical-align: top;
 }
 
+table > tbody > tr > td {
+	vertical-align: top;
+	padding: 0.25em;
+}
+
+tr {
+	border-bottom: 1px solid #EEEEEE;
+}
+
+tr:nth-child(odd) {
+	background: #FAFAFA;
+}
+
 /* Custom page header */
 .header {
 	padding-top: 10px;

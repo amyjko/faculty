@@ -46,7 +46,7 @@ class EmbeddedGist extends React.Component {
 				loading: false,
 				src: gist.div
 			});
-	        this.addStylesheet(gist.stylesheet);
+// 	        this.addStylesheet(gist.stylesheet);
 	    }.bind(this);
 
 		// Construct the URL for the data
