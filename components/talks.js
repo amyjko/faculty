@@ -30,9 +30,9 @@ class Talks extends React.Component {
 							<br/>
 							<small>
 								{talk.recording ? <a href={talk.recording}>Recording</a> : null } 
-								&nbsp;
+								{talk.recording ? <span>&nbsp;&sdot;&nbsp;</span> : null }
 								{talk.practice ? <a href={talk.practice}>Rehearsal</a> : null } 
-								&nbsp;
+								{talk.practice ? <span>&nbsp;&sdot;&nbsp;</span> : null }
 								{talk.slides ? <a href={talk.slides}>Slides</a> : null } 
 							</small>
 						</span>
