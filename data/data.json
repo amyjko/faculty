@@ -1769,12 +1769,12 @@
 		{
 	 		"id": "eboris",
 	 		"name": "Emilia Borisova",
-	 		"active": true,
+	 		"active": false,
 	 		"advised": true,
 	 		"level": "undergrad",
 	 		"dept": "Pre-major",
 	 		"coadvisor": null,
-	 		"bio": "Emilia is an undergraduate student pursuing Informatics. She is interested in computing education and is helping with Neil's research on understanding the personal and interpersonal factors influencing computing career choices. ",
+	 		"bio": "Emilia was an undergraduate student pursuing Informatics and helped with Neil's research on understanding the personal and interpersonal factors influencing computing career choices.",
 	 		"url": "https://www.linkedin.com/in/emilia-borisova",
 	 		"startdate": 2020,
 	 		"enddate": null,
@@ -1895,15 +1895,15 @@
 		{
 			"id": "andrewhu",
 			"name": "Andrew Hu",
-			"active": true,
+			"active": false,
 			"advised": true,
 			"level": "undergrad",
 			"dept": "Computer Science and Education",
 			"coadvisor": null,
-			"bio": "Andrew is a CS & Education double major interested in pedagogical techniques and student motivation in CS Ed.",
+			"bio": "Andrew was a CS & Education double major interested in pedagogical techniques and student motivation in CS Ed. He's now a Ph.D. student at Michigan State University's College of Education.",
 			"url": "http://students.washington.edu/andrewhu",
 			"startdate": 2018,
-			"enddate": null,
+			"enddate": 2020,
 			"achievements": []
 		},
 		{
