@@ -2766,6 +2766,14 @@
 	],	
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/i-led-an-anti-racist-cs-education-reading-group-this-summer-93e4adc78c24",
+			"title": "I led an anti-racist CS education reading group this summer",
+			"date": "2020.8",
+			"tags": ["diversity", "policy", "society"],
+			"img": "antiracistreading",
+			"alt": "“University of Washington Cherry Blossoms"
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/a-generational-reflection-on-virginia-eubankss-automating-inequality-3740751d3ab9",
 			"title": "A generational reflection on Virginia Eubanks’s \"Automating Inequality\"",
 			"date": "2020.8",
