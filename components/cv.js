@@ -206,7 +206,9 @@ class Vita extends React.Component {
 				
 				<h2>Invited Talks</h2>
 
-				{this.getChunkList(cv.invitedtalks, "invited", "date", null, "title", "venue")}
+				{this.getChunkList(
+					_.filter(this.props.app.getTalks(), (talk) => { return !talk.keynote; }), 
+					"invitedtalk", "date", null, "title", "venue")}				
 
 				<h2>Patents</h2>
 			

@@ -4896,185 +4896,6 @@
 				"link": null
 			}
 		],
-		"keynotes": [
-			{
-				"title": "21st Century Grand Challenges in Computing Education",
-				"venue": "Koli Calling International Conference on Computing Education Research",
-				"date": "November 22, 2019"
-			},
-			{
-				"title": "Mining the Mind, Minding the Mine: Grand Challenges in Comprehension and Mining",
-				"venue": "Joint keynote at the International Conference on Mining Software Repositories and the IEEE International Conference on Program Comprehension, Gothenburg, Sweden",
-				"date": "May 28th, 2018"
-			},
-			{
-				"title": "A Human View of Programming Languages",
-				"venue": "ACM SIGPLAN Conference on Systems, Programming, Languages and Applications: Software for Humanity (SPLASH), Amsterdam, The Netherlands",
-				"date": "November 4th, 2016"
-			},
-			{
-				"title": "Nine Things I Learned in Startup Land",
-				"venue": "DUB Retreat, Seattle, WA",
-				"date": "October 14th, 2016"
-			},
-			{
-				"title": "Where HCI and Software Engineering Meet",
-				"venue": "CHOOSE Forum, Bern, Switzerland",
-				"date": "November 23rd, 2009"
-			},
-			{
-				"title": "Where HCI and Software Engineering Meet",
-				"venue": "iEDGE Conference, Seattle, WA",
-				"date": "April 2nd, 2009"
-			},
-			{
-				"title": "Asking and Answering Questions about the Causes of Software Behavior",
-				"venue": "India Software Engineering Conference, Pune, India",
-				"date": "Feb. 24th, 2009"
-			}
-		],
-		"invitedtalks": [
-			{
-				"title": "Topic TBD",
-				"venue": "University of Pennsylvania, Department of Computer and Information Science, Colloqium Lecture Series",
-				"date": "November 10th, 2020"
-			},
-			{
-				"title": "Topic TBD",
-				"venue": "Carnegie Mellon University, Human-Computer Interaction Institute Seminar",
-				"date": "October 30th, 2020"
-			},
-			{
-				"title": "Topic TBD",
-				"venue": "University of Colorado, Boulder, Information Science Colloquim",
-				"date": "October 7th, 2020"
-			},
-			{
-				"title": "Programming: what it is and how to teach it",
-				"venue": "ETH Zurich, Department of Computer Science, Seminar (100+ attendees)",
-				"date": "May 13th, 2019"
-			},
-			{
-				"title": "Big ideas behind the Whyline",
-				"venue": "International Conference on Software Engineering, Most Influential Paper Award Talk, Gothenburg, Sweden",
-				"date": "June 1st, 2018"
-			},
-			{
-				"title": "Learning to code: how we fail, how we flourish",
-				"venue": "Stanford University, Department of Computer Science, HCI Seminar (60+ attendees)",
-				"date": "January 12th, 2018"
-			},
-			{
-				"title": "Learning to code: how we fail, how we flourish",
-				"venue": "University of Michigan, MISC Seminar (60+ attendees)",
-				"date": "December 4th, 2017"
-			},
-			{
-				"title": "Learning to code: how we fail, how we flourish",
-				"venue": "Northwestern University, CS+X Colloquium (60+ attendees)",
-				"date": "October 30th, 2017"
-			},
-			{
-				"title": "Three Years in the Startup Trenches: Reflections on People, Product, and Software Evolution",
-				"venue": "ACM Learning Center Webinar (130+ attendees)",
-				"date": "August 4th, 2017"
-			},
-			{
-				"title": "Three Years in the Startup Trenches",
-				"venue": "Amazon Stackhouse Talks (150+ attendees)",
-				"date": "February 21, 2017"
-			},
-			{
-				"title": "What makes a great software engineer?",
-				"venue": "ACM Learning Center Webinar (2,000+ attendees)",
-				"date": "October 9th, 2015"
-			},
-			{
-				"title": "Defect Detection for the Wayward Web",
-				"venue": "Microsoft, Redmond, WA", 
-				"date": "May 4th, 2012"
-			},
-			{
-				"title": "Defect Detection for the Wayward Web",
-				"venue": "Coverity, San Francisco, CA", 
-				"date": "June 17th, 2011"
-			},
-			{
-				"title": "Defect Detection for the Wayward Web",
-				"venue": "MIT, Cambridge, MA", 
-				"date": "April 15th, 2011"
-			},
-			{
-				"title": "Defect Detection for the Wayward Web",
-				"venue": "UNC Charlotte, Charlotte, NC", 
-				"date": "February 24th, 2011"
-			},
-			{
-				"title": "Human Factors in Software Development Tools",
-				"venue": "Schloss Dagstuhl, Wadern, Germany", 
-				"date": "March 15th, 2010"
-			},
-			{
-				"title": "Where HCI and Software Engineering Meet",
-				"venue": "Conference on Software User Assistance, Seattle, WA", 
-				"date": "March 2010"
-			},
-			{
-				"title": "Where is the User in Software Evolution?",
-				"venue": "IBM T.J. Watson Research Center, Hawthorne, NY", 
-				"date": "Sept. 30th, 2010"
-			},
-			{
-				"title": "Asking and Answering Questions about the Causes of Software Behavior",
-				"venue": "IIT Mumbai, Mumbai, India", 
-				"date": "Feb. 27th, 2009"
-			},
-			{
-				"title": "Asking and Answering Questions about the Causes of Software Behavior",
-				"venue": "Intel Research Seattle, Seattle, WA", 
-				"date": "Jan. 14th, 2009"
-			},
-			{
-				"title": "Asking and Answering Questions about the Causes of Software Behavior",
-				"venue": "Accenture, Chicago, Illinois", 
-				"date": "May 30th, 2008"
-			},
-			{
-				"title": "Asking and Answering Questions about the Causes of Software Behavior",
-				"venue": "SRI International, Menlo Park, CA", 
-				"date": "Jan. 31st, 2008"
-			},
-			{
-				"title": "Asking and Answering Questions about the Causes of Software Behavior",
-				"venue": "Washington University in St. Louis, St. Louis, MO", 
-				"date": "Feb. 25th, 2008"
-			},
-			{
-				"title": "Asking and Answering Questions about the Causes of Software Behavior",
-				"venue": "IBM T.J. Watson Research Center, Hawthorne, NY", 
-				"date": "Nov. 30th, 2006"
-			},
-			{
-				"title": "Asking and Answering Questions about the Causes of Software Behavior",
-				"venue": "Oregon State University, CS Department, Corvallis, OR", 
-				"date": "Oct. 24th, 2006"
-			},
-			{
-				"title": "Information Needs in Software Development Work",
-				"venue": "Microsoft Visual Studio User Experience Group, Microsoft, Redmond, WA", 
-				"date": "Aug. 25th, 2006"
-			},
-			{
-				"title": "Information Needs in Software Development Work",
-				"venue": "Microsoft Research, Redmond, WA", 
-				"date": "Aug. 22nd, 2006"
-			},
-			{
-				"title": "Human-Centered Approaches to Software Engineering Research",
-				"venue": "University of British Columbia, CS Department, Vancouver, B.C.", 
-				"date": "July 16th, 2006"
-			}
-		],
 		"courses": [
 			{
 				"title": "User Interface Software and Technology (HCID 520)",
@@ -5878,11 +5699,63 @@
 			"alt": "An image of me presenting at Stanford.",
 			"slides": "/slides/LearningToCode.pdf",
 			"title": "Learning to Code: Why We Fail, How We Flourish",
-			"venue": "Northwestern University + University of Michigan + Stanford University",
+			"venue": "Stanford University, HCI Seminar",
 			"url": null,
 			"recording": "https://www.youtube.com/watch?v=mkzHIhKaUX4&feature=youtu.be",
 			"practice": null,
-			"description": "In 2017 and early 2018 I gave a series of invited talks at Northwestern, University of Michigan, and Stanford, in which I summarized our latest research on the learning to code.",
+			"description": "I summarized our latest research on the learning to code and visited with the HCI faculty at Stanford.",
+			"keynote": false
+		},
+		{
+			"date": "2017.12.04",
+			"image": null,
+			"alt": null,
+			"slides": "/slides/LearningToCode.pdf",
+			"title": "Learning to Code: Why We Fail, How We Flourish",
+			"venue": "University of Michigan, MISC Seminar",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I summarized my lab's latest research on the learning to code.",
+			"keynote": false
+		},
+		{
+			"date": "2018.10.30",
+			"image": null,
+			"alt": "An image of me presenting at Stanford.",
+			"slides": "/slides/LearningToCode.pdf",
+			"title": "Learning to Code: Why We Fail, How We Flourish",
+			"venue": "Northwestern University, CS+X Colloquium",
+			"url": null,
+			"recording": "https://www.youtube.com/watch?v=mkzHIhKaUX4&feature=youtu.be",
+			"practice": null,
+			"description": "I summarized our latest research on the learning to code and visited with HCI, CS education, and learning sciences faculty.",
+			"keynote": false
+		},
+		{
+			"date": "2015.10.09",
+			"image": null,
+			"alt": null,
+			"slides": null,
+			"title": "Three Years in the Startup Trenches: Reflections on People, Product, and Software Evolution",
+			"venue": "ACM Learning Center Webinar",
+			"url": "https://www.sigsoft.org/resources/webinars.html",
+			"recording": null,
+			"practice": null,
+			"description": "I gave this invited talk to about 130 engineers who attended the webinar live.",
+			"keynote": false
+		},
+		{
+			"date": "2017.02.21",
+			"image": null,
+			"alt": null,
+			"slides": null,
+			"title": "Three Years in the Startup Trenches",
+			"venue": "Amazon Stackhouse Talks",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "Amazon UX designers invited me to give a talk at the Stackhouse series; there were about 150 UX designers and engineers in attendance.",
 			"keynote": false
 		},
 		{
@@ -5897,6 +5770,71 @@
 			"practice": null,
 			"description": "I gave this invited keynote at SPLASH 2016, in which I built upon Seymour Papert's arguments about computing culture and the need for embracing multiple views of what programming is.",
 			"keynote": true
+		},
+		{
+			"date": "2015.10.09",
+			"image": "ACM2015GreatEngineers.jpg",
+			"alt": "The title slide of the talk.",
+			"slides": "https://learning.acm.org/binaries/content/assets/leaning-center/webinar-slides/2015/whatmakesagreatsoftwareengineer_slides.pdf",
+			"title": "What makes a great software engineer?",
+			"venue": "ACM Learning Center Webinar",
+			"url": "https://learning.acm.org/techtalks",
+			"recording": "https://www.youtube.com/watch?v=OBlmLjeORUQ&feature=youtu.be&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU",
+			"practice": null,
+			"description": "I gave this invited talk with my student Paul Li to over 2,000 attendees, describing our work on software engineering expertise.",
+			"keynote": false
+		},
+		{
+			"date": "2012.05.04",
+			"image": null,
+			"alt": null,
+			"slides": null,
+			"title": "Defect Detection for the Wayward Web",
+			"venue": "Microsoft, Redmond, WA",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I described my work on software help and bug triage to the Developer Division's head of UX.",
+			"keynote": false
+		},
+		{
+			"date": "2011.06.17",
+			"image": null,
+			"alt": null,
+			"slides": null,
+			"title": "Defect Detection for the Wayward Web",
+			"venue": "Coverity, San Francisco, CA",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I described my work on software help and bug triage to the R&D and engineering team at Coverity.",
+			"keynote": false
+		},
+		{
+			"date": "",
+			"image": null,
+			"alt": null,
+			"slides": null,
+			"title": "Defect Detection for the Wayward Web",
+			"venue": "MIT, Cambridge, MA",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I described my work on software help and bug triage to the HCI lab at MIT CSAIL",
+			"keynote": false
+		},
+		{
+			"date": "2011.02.24",
+			"image": null,
+			"alt": null,
+			"slides": null,
+			"title": "Defect Detection for the Wayward Web",
+			"venue": "UNC Charlotte, Charlotte, NC",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I described my work on software help and bug triage to HCI and Software Engineering researchers.",
+			"keynote": false
 		},
 		{
 			"date": "2009.11.23",
@@ -5915,7 +5853,7 @@
 			"date": "2009.02.24",
 			"image": "isec2009.jpg",
 			"alt": "A photograph of a panelist table at ISEC 2009.",
-			"slides": "slides/ISEC2009Java Whyline.pdf",
+			"slides": "slides/ISEC2009JavaWhyline.pdf",
 			"title": "Asking and Answering Questions about the Causes of Software Behavior",
 			"venue": "India Software Engineering Conference, Pune, India",
 			"url": "https://isoft.acm.org/isec2009/",
@@ -5923,6 +5861,123 @@
 			"practice": null,
 			"description": "I was invited to give a keynote on my ICSE distinguished paper award on the Whyline. I had an amazing trip to Pune and Mumbia.",
 			"keynote": true
+		},
+		{
+			"date": "2010.09.30",
+			"image": null,
+			"alt": null,
+			"slides": null,
+			"title": "Where is the User in Software Evolution?",
+			"venue": "IBM T.J. Watson Research Center, Hawthorne, NY",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I gave an invited talk at a workshop on human-centered software development.",
+			"keynote": false
+		},
+		{
+			"date": "2009.02.27",
+			"image": null,
+			"alt": null,
+			"slides": null,
+			"title": "Asking and Answering Questions about the Causes of Software Behavior",
+			"venue": "IIT Mumbai, India",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I described my dissertation work on the Whyline to CS department.",
+			"keynote": false
+		},
+		{
+			"date": "2009.01.14",
+			"image": null,
+			"alt": null,
+			"slides": null,
+			"title": "Asking and Answering Questions about the Causes of Software Behavior",
+			"venue": "Intel Research Seattle, Seattle, WA",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I described my dissertation work to the research team at Intel Research Seattle.",
+			"keynote": false
+		},
+		{
+			"date": "2008.05.30",
+			"image": null,
+			"alt": null,
+			"slides": null,
+			"title": "Asking and Answering Questions about the Causes of Software Behavior",
+			"venue": "Accenture, Chicago, Illinois",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I described my dissertation work to the research team at Accenture in Chicago.",
+			"keynote": false
+		},
+		{
+			"date": "2008.02.25",
+			"image": null,
+			"alt": null,
+			"slides": null,
+			"title": "Asking and Answering Questions about the Causes of Software Behavior",
+			"venue": "Washington University in St. Louis, St. Louis, MO",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I described my dissertation work to the research team at SRI.",
+			"keynote": false
+		},
+		{
+			"date": "2008.01.31",
+			"image": null,
+			"alt": null,
+			"slides": null,
+			"title": "Asking and Answering Questions about the Causes of Software Behavior",
+			"venue": "SRI International, Menlo Park, CA",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I described my dissertation work to the research team at SRI.",
+			"keynote": false
+		},
+		{
+			"date": "2006.11.30",
+			"image": null,
+			"alt": null,
+			"slides": null,
+			"title": "Asking and Answering Questions about the Causes of Software Behavior",
+			"venue": "IBM T.J. Watson Research Center, Hawthorne, NY",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I described my dissertation work to the research team at SRI.",
+			"keynote": false
+		},
+		{
+			"date": "2006.10.06",
+			"image": null,
+			"alt": null,
+			"slides": null,
+			"title": "Asking and Answering Questions about the Causes of Software Behavior",
+			"venue": "IBM T.J. Watson Research Center, Hawthorne, NY",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I described my dissertation work to the research team at SRI.",
+			"keynote": false
+		},
+		{
+			"date": "2006.07.16",
+			"image": "ubc2006.jpg",
+			"alt": "The title slide of the presentation.",
+			"slides": "slides/UBC2006Overview.pdf",
+			"title": "Human-Centered Approaches to Software Engineering Research",
+			"venue": "University of British Columbia, CS Department, Vancouver, B.C.",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I was invited to visit UBC and give a talk to the software engineering and programming languages group.",
+			"keynote": false
 		}
 	]
 }
