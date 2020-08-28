@@ -21,9 +21,9 @@ class Topic extends React.Component {
 
 	render() {
 		return (
-			<span className={"clickable topic" + (this.props.selected ? " selected" : "")} onClick={this.filter}>
+			<mark className={"clickable topic" + (this.props.selected ? " selected" : "")} onClick={this.filter}>
 				{this.props.topic}
-			</span>
+			</mark>
 		);
 	}
 	
@@ -115,7 +115,7 @@ class Posts extends React.Component {
 					alt={post.alt}
 					link={post.url}
 					header={post.title}
-					content=<p><small>{ month + "/" + year }</small><br/>{_.map(post.tags, (tag, index) => { return <small key={index} className={"topic" + (this.state.filter === tag ? " selected" : "")}>{tag}</small> })}</p>
+					content=<p><small>{ month + "/" + year }</small><br/>{_.map(post.tags, (tag, index) => { return <mark key={index} className={"topic" + (this.state.filter === tag ? " selected" : "")}>{tag}</mark> })}</p>
 				/>
 				);
 				
