@@ -24,7 +24,7 @@ class Header extends React.Component {
 							<br/><a href="http://ischool.uw.edu" target="_blank">The Information School</a>
 							<br/><a href="http://cs.uw.edu" target="_blank">Paul G. Allen Computer Science &amp; Engineering (courtesy)</a>
 							<br/><a href="http://www.washington.edu" target="_blank">University of Washington, Seattle</a>
-							<br/><a href="http://faculty.uw.edu/ajko/promises">Commitments</a>
+							<br/><a href="http://faculty.uw.edu/ajko/promises">Commitments</a> &sdot; <Link to="/cv" target="_blank">Vita</Link>
 							<br/><a href="mailto:ajko@uw.edu">ajko@uw.edu</a> &sdot; <a href="https://twitter.com/amyjko" target="_blank">@amyjko</a>
 						</small>
 					</div>
@@ -50,9 +50,8 @@ class Header extends React.Component {
 									<li role="presentation" className={path.startsWith("/travel") ? "active" : ""}><Link to="/travel">Travel</Link></li>
 									<li role="presentation" className={path.startsWith("/advice") ? "active" : ""}><Link to="/advice">Advice</Link></li>
 									<li role="presentation" className={path.startsWith("/bio") ? "active" : ""}><Link to="/bio">Bio</Link></li>
-									<li role="presentation" className={path.startsWith("/cer") ? "active" : ""}><Link to="/cer">CER FAQ</Link></li>
 									<li role="presentation" className={path.startsWith("/contact") ? "active" : ""}><Link to="/contact">Contact</Link></li>
-									<li role="presentation" className={path.startsWith("/cv") ? "active" : ""}><Link to="/cv">CV</Link></li>
+									<li role="presentation" className={path.startsWith("/cer") ? "active" : ""}><Link to="/cer">CER FAQ</Link></li>
 								</ul>
 					        </nav>
 						</div>

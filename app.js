@@ -58,9 +58,8 @@ class App extends React.Component {
 			"/travel",
 			"/advice",
 			"/bio",
-			"/cer",
 			"/contact",
-			"/cv"
+			"/cer"
 		];
 		
 		// Start data as undefined, rending a loading state until it changes.
@@ -117,7 +116,7 @@ class App extends React.Component {
 		// Return the single page app.
 		return (
 			<div className="container" onKeyDown={this.handleKeyPress} tabIndex="0" ref={this.ref}>
-				<Header path={currentRoute} app={this} />
+				{currentRoute === "/cv" ? null : <Header path={currentRoute} app={this} />}				
 				{
 					this.state.data === undefined ? 
 						<center><img src="images/icons/loading.gif" /></center> :

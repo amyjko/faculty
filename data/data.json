@@ -5402,9 +5402,14 @@
 		],
 		"programChair": [
 			{
-				"title": "Program Co-Chair",
+				"title": "Program Co-Chair, General Co-Chair",
 				"venue": "International Computing Education Research Conference (ICER)", 
 				"dates": "2021"
+			},
+			{
+				"title": "Program Co-Chair, General Co-Chair",
+				"venue": "International Computing Education Research Conference (ICER)", 
+				"dates": "2020"
 			},
 			{
 				"title": "Program Co-Chair",
