@@ -308,6 +308,10 @@
 					"date": {
 						"type": "string",
 						"required": true
+					},
+					"report": {
+						"type": ["string", "null"],
+						"required": true
 					}
 				}
 			}

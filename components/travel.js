@@ -7,7 +7,10 @@ function mapTrips(trips) {
 	return _.map(trips, (trip, index) => {
 		return (
 			<Block 
-				image=<em>{["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][trip.month - 1] + " " + trip.day + ", " + trip.year}</em>
+				image=<span>
+					<em>{["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][trip.month - 1] + " " + trip.day + ", " + trip.year}</em>
+					{trip.report !== null ? <span><br/><a href={trip.report} target="_blank">trip report</a></span> : null}
+				</span>
 				alt={null}
 				key={"trip-" + index}
 				link={trip.url}
