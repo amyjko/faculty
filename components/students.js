@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import { Link } from 'react-router-dom';
 
 import {Block} from './block';
 
@@ -87,13 +88,30 @@ class Students extends React.Component {
 					Read our <a href="https://docs.google.com/document/d/1LMHv0HdxXEgSNqICt3wtq8xWuH73kP7plZ_KeXyP6qM/edit?usp=sharing">onboarding document</a> for more details about the ever evolving culture of the lab.
 				</p>
 
-				<ul>
-					<li>Are you a <strong>current Ph.D. student</strong> at UW interested in working with me? Lurk on the <i>#codeandcognitionlab</i> channel on <a target="_blank" href="https://computinged-uw.slack.com">ComputingEd @ UW Slack</a>. Write me an email and let's chat about your interests.</li>
-					<li>Are you a <strong>prospective Ph.D. student</strong> interested in working with me? Write me an email, share your interests, and ask if I'm taking new students. Reach out to my current students and ask about their experiences. Apply to the <a href="http://ischool.uw.edu/phd" target="_blank">Information School</a> or <a href="http://www.cs.washington.edu/education/grad/prospective.html" target="_blank">CSE</a>, but note that I have much more control over iSchool admissions.</li>
-					<li>
-						Are you a <strong>UW undergrad</strong> interested in working with me on research? Read <a href="https://ischool.uw.edu/programs/informatics/research">this page</a> about engaging in research as an undergraduate, and if you're still interested, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjcrMFAMUEv3SXXggXscg17sIZ6p7YFSpCkFPADkBZ8BZB9g/viewform?usp=sf_link" target="_blank">fill out an application</a>. I recruit year round for part-time researchers, and in Winter quarter for full-time summer research assistant positions.
-					</li>
-				</ul>
+				<div className="row">
+					<div className="col-sm-4">
+						<strong>Current Ph.D. student?</strong>
+						<ul>
+							<li>Lurk on the <i>#codeandcognitionlab</i> channel on <a target="_blank" href="https://computinged-uw.slack.com">ComputingEd@UW Slack</a>.</li>
+							<li>DM or email me about your interests.</li>
+						</ul>
+					</div>
+					<div className="col-sm-4">
+						<strong>Prospective Ph.D. student?</strong>
+						<ul>
+							<li>Read my <Link to="/cer">CER FAQ</Link> to ensure we share interests.</li>
+							<li>Talk to my current students about their experiences.</li>
+							<li>Apply to the <a href="http://ischool.uw.edu/phd" target="_blank">iSchool</a> or <a href="http://www.cs.washington.edu/education/grad/prospective.html" target="_blank">CSE</a> in Autumn.</li>
+						</ul>
+					</div>
+					<div className="col-sm-4">
+						<strong>Current UW undergrad?</strong>
+						<ul>
+							<li>Read about <a href="https://ischool.uw.edu/programs/informatics/research">engaging in undergrad research </a>.</li>
+							<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdjcrMFAMUEv3SXXggXscg17sIZ6p7YFSpCkFPADkBZ8BZB9g/viewform?usp=sf_link" target="_blank">Apply</a> to my lab. I recruit for part-time researchers and in Winter for summer positions.</li>
+						</ul>
+					</div>
+				</div>
 				
 				<h3>Current Advisees</h3>
 				{activePeople}
