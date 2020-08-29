@@ -3,7 +3,7 @@
 	"version": "1.0.0",
         "description": "The webpage for University of Washington professor Amy J. Ko.",
         "license": "MIT License",
-        "repository": "https://github.com/andyjko/faculty.git",
+        "repository": "https://github.com/amyjko/faculty.git",
 	"scripts": {
 		"watch": "watchify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js -o \"> build/app.js; npm run test\" -v --poll",
 		"build": "browserify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js | uglifyjs > build/app.js",
