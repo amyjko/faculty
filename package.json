@@ -1,7 +1,7 @@
 {
 	"name": "UWFacultyPage",
 	"version": "1.0.0",
-        "description": "The webpage for University of Washington professor Andy J. Ko.",
+        "description": "The webpage for University of Washington professor Amy J. Ko.",
         "license": "MIT License",
         "repository": "https://github.com/andyjko/faculty.git",
 	"scripts": {
