@@ -22,9 +22,9 @@ class Topic extends React.Component {
 
 	render() {
 		return (
-			<span className={"clickable topic" + (this.props.selected ? " selected" : "")} onClick={this.filter}>
+			<mark className={"clickable topic" + (this.props.selected ? " selected" : "")} onClick={this.filter}>
 				{this.props.topic}
-			</span>
+			</mark>
 		);
 	}
 	
