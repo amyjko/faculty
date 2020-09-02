@@ -23,7 +23,7 @@ class Talks extends React.Component {
 					header={talk.title}
 					content=
 						<span>
-							&nbsp; { talk.keynote ? <mark>keynote</mark> : null }
+							&nbsp; { talk.keynote ? <span className="award">&#x2605; Keynote</span> : null }
 							<br/><small><em>{talk.url ? <a href={talk.url}>{talk.venue}</a> : talk.venue}</em></small>
 							<br/><small>{talk.date}</small>
 							<br/>{talk.description} 
