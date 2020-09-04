@@ -12,7 +12,8 @@
 		"ship": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' --exclude 'test' . ~/public_html",
 		"lint": "jsonlint -q data/data.json --validate data/schema.json",
 		"data": "set -e; npm run lint; npm run test; npm run ship",
-		"all": "set -e; npm run build; npm run lint; npm run test; npm run ship"
+		"all": "set -e; npm run build; npm run lint; npm run test; npm run ship",
+		"deploy": "ssh ajko@ovid.u.washington.edu \"cd faculty && npm run all\""
 	},
 	"devDependencies": {
 		"browserify": "^16.2",
