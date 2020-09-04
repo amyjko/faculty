@@ -5,15 +5,14 @@
 	"license": "MIT License",
 	"repository": "https://github.com/amyjko/faculty.git",
 	"scripts": {
-		"watch": "watchify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js -o \"> build/app.js; npm run test\" -v --poll",
 		"build": "browserify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js | uglifyjs > build/app.js",
 		"diff": "rsync --dry-run -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html",
-		"test": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' --exclude '.htaccess' . ~/public_html/test",
-		"ship": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' --exclude 'test' . ~/public_html",
+		"ship": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html",
 		"lint": "jsonlint -q data/data.json --validate data/schema.json",
-		"data": "set -e; npm run lint; npm run test; npm run ship",
-		"all": "set -e; npm run build; npm run lint; npm run test; npm run ship",
-		"deploy": "ssh ajko@ovid.u.washington.edu \"cd faculty && npm run all\""
+		"data": "set -e; npm run lint; npm run ship",
+		"all": "set -e; npm run build; npm run lint; npm run ship",
+		"deploy": "ssh ajko@ovid.u.washington.edu \"cd faculty && git pull && npm run all\"",
+		"deploydata": "ssh ajko@ovid.u.washington.edu \"cd faculty && git pull && npm run data\""	
 	},
 	"devDependencies": {
 		"browserify": "^16.2",
