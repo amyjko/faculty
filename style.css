@@ -112,8 +112,6 @@ blockquote {
 
 .award {
 	padding: 3px;
-	background-color: #337AB7;
-	color: white;
 	font-variant: small-caps;
 	display: inline-block;
     margin-bottom: 3px;
@@ -148,8 +146,9 @@ a:hover {
 	cursor: pointer;
 }
 
-.topic.selected {
-	background-color: rgb(200, 200, 200);
+.topic.selected, .award {
+	background-color: #337AB7;
+	color: white;
 }
 
 mark {
