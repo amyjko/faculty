@@ -23,11 +23,11 @@ RewriteRule ^index\.html$ - [L]
 RewriteRule ^books/?$ index.html [L]
 
 # Since this htaccess files applies to any subdirectory, even ones that don't exist,
-# make sure any path pointing to app.js or custom.css always points to the one in the root, not a path
+# make sure any path pointing to app.js or style.css always points to the one in the root, not a path
 # in any subdirectories. This works around the problem that HTML doesn't allow us to refer to a base
 # directory on the server.
 RewriteRule ^.*app\.js$ build/app.js [L]
-RewriteRule ^.*custom\.css$ custom.css [L]
+RewriteRule ^.*style\.css$ style.css [L]
 
 # If we're processing a path that isn't a real file or a directory, rewrite to index but preserve the query string.
 RewriteCond %{REQUEST_FILENAME} !-f
