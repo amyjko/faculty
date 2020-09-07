@@ -4746,6 +4746,17 @@
 		],
 		"funding": [
 			{
+				"title": " Justice-Focused Secondary CS Teacher Education",
+				"funder": "National Science Foundation",
+				"award": "2031265",
+				"investigators": "Amy J. Ko (PI), Anne Beitlers (Co-PI)",
+				"amount": "$999,723",
+				"startdate": 2020,
+				"enddate": 2023,
+				"description": "Designing and launching a justice-focused CS education masters program and studying teacher learning about CS from a justice lens.",
+				"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2031265"
+			},
+			{
 				"title": "Formal Verification of Accessibility",
 				"funder": "National Science Foundation",
 				"award": "1836813",
