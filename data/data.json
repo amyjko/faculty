@@ -5215,6 +5215,12 @@
 		],
 		"doctoralCommittee": [	
 			{
+				"name": "Jean Salac",
+				"department": "Computer Science",
+				"startdate": 2020,
+				"enddate": null
+			},
+			{
 				"name": "Chenglong Wang",
 				"department": "Computer Science & Engineering",
 				"startdate": 2019,
