@@ -1826,6 +1826,20 @@
 	],
 	"people": [
 		{
+			"id": "jayne",
+			"name": "Jayne Everson",
+			"active": true,
+			"advised": true,
+			"level": "phd",
+			"dept": "Computer Science",
+			"coadvisor": null,
+			"bio": "Jayne is a PhD student in Computer Science and Engineering. She is interested in tools to support computer science in project based learning settings.",
+			"url": "https://jayneeverson.com",
+			"startdate": 2020,
+			"enddate": null,
+			"achievements": []
+		},
+		{
 	 		"id": "perdriau",
 	 		"name": "Chris Perdriau",
 	 		"active": true,
