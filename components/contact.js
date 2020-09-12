@@ -16,12 +16,7 @@ class ContactInfo extends React.Component {
 					alt="A photograph of my office."
 					link="https://goo.gl/maps/7c3irRBubGvXYEtZ8"
 					header="Office hours"
-					content={<span>
-						". My Autumn 2020 office hours are Tuesdays at 4:30-5:00 pm in my "
-						<a href="https://washington.zoom.us/my/amyjko">personal Zoom room</a>
-						. Students take turn asking questions and sometimes lurk.
-						</span>
-					}
+					content={<span>. My Autumn 2020 office hours are Tuesdays at 4:30-5:00 pm in my <a href="https://washington.zoom.us/my/amyjko">personal Zoom room</a>. Students take turn asking questions and sometimes lurk.</span>}
 				/>
 
 				<Block 
