@@ -1,6 +1,19 @@
 {
 	"pubs": [
 		{
+			"id": "criticalcsed",
+			"kind": "refereed magazine article",
+			"authors": ["Amy J. Ko", "Alannah Oleson", "Neil Ryan", "Yim Register", "Benjamin Xie", "Mina Tari", "Matt Davidson", "Stefania Druga", "Dastyni Loksa", "Greg Nelson"],
+			"year": 2020,
+			"title": "It’s time for more critical CS education",
+			"source": "Communications of the ACM (CACM)",
+			"pages": "to appear",
+			"digital library url": null,
+			"local url": null,
+			"publisher": "ACM",
+			"contribution": "Argues that CS educators at all levels have the responsibility of the role of computing in injustice."
+		},
+		{
 			"id": "mladvocacy",
 			"kind": "refereed conference paper",
 			"authors": ["Yim Register", "Amy J. Ko"],
@@ -2702,6 +2715,19 @@
 		}	
 	],
 	"projects": [
+		{
+			"id": "csjustice",
+			"active": true,
+			"name": "Justice-focused CS education",
+			"description": "Computing is powerful, but that power is often used by dominant groups in ways that disregard, exclude, or even harm marginalized groups, amplifying and reinforcing sexist, racist, and ableist structures and ideas. My lab is exploring teaching methods, learning technologies, and teacher education paradigms that center these power dynamics in in CS education.",
+			"funding": ["NSF CS for All RPP"],
+			"people": ["jayne", "olesona"],
+			"papers": ["criticalcsed"],
+			"links": [],
+			"startdate": 2020,
+			"stopdate": null,
+			"impact": "This project has helped open discourse in the CS education community about the responsibility of CS educators to address the role of CS in injustice. Future impact will include a book on teaching CS from a justice lens, teaching materials to support this teaching, and research on preparing CS teachers from a justice lens."
+		},
 		{
 			"id": "pllearning",
 			"active": true,
