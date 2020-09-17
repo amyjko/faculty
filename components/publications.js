@@ -60,10 +60,14 @@ class Publications extends React.Component {
 
 	render() {
 		
-		// Sort the publications by decreasing year.
+		// Sort the publications by decreasing year, then by decreasing pages
 		var pubs = this.props.app.getPublications().slice(0).sort((a, b)=>{ 
 			if(b["year"] !== a["year"])
-				return b["year"] - a["year"]; 
+				return b["year"] - a["year"];
+			else if(b["pages"] === "to appear")
+				return 1;
+			else if(a["pages"] === "to appear")
+				return -1;
 			else
 				return a["source"].localeCompare(b["source"]); 
 		});
