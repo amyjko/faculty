@@ -47,13 +47,14 @@ class ProjectSummary extends React.Component {
 				alt={this.props.name}
 				link={link}
 				header={null}
-				content=<span>
-					<h4>{this.props.name} <small>({this.props.startdate}&ndash;{this.props.stopdate})</small></h4>
-					<p>{people}</p>
-					<p>{this.props.description}</p>
-					<p><a href={link}>{moreDetails}</a></p>
-				</span>
-
+				content={
+					<span>
+						<h4>{this.props.name} <small>({this.props.startdate}&ndash;{this.props.stopdate})</small></h4>
+						<p>{people}</p>
+						<p>{this.props.description}</p>
+						<p><a href={link}>{moreDetails}</a></p>
+					</span>
+				}
 			/>
 		);
 		
@@ -78,7 +79,7 @@ class Projects extends React.Component {
 								
 				<p>
 					I share my work with three research communities: <em>computing education</em> (see my <Link to={"/cer"}>Computing Education Research FAQ</Link>), <em>human-computer interaction</em>, and <em>software engineering</em>.
-					I work with many outstanding <Link to={"/students"}>students</Link> and <Link to={"/communities"}>communities</Link> to <Link to={"/publications"}>publish</Link>, <Link to={"/posts"}>blog</Link>, <Link to={"/talks"}>present</Link>, <Link to={"/teaching"}>teach</Link>, <Link to={"/books"}>synthesize</Link>, and <Link to={"/impact"}>apply</Link> our research. Throughout, I leverage my expertise in <em>debugging</em>, <em>explainability</em>, <em>end-user programming</em>, <em>software engineering</em>, and <em>design education</em>.
+					I work with many outstanding <Link to={"/students"}>students</Link> and <Link to={"/communities"}>communities</Link> to <Link to={"/publications"}>publish</Link>, <Link to={"/posts"}>blog</Link>, <Link to={"/talks"}>present</Link>, <Link to={"/teaching"}>teach</Link>, <Link to={"/books"}>synthesize</Link>, and <Link to={"/impact"}>apply</Link> our research. Throughout, I leverage my expertise in <em>debugging</em>, <em>explainability</em>, <em>end-user programming</em>, <em>program understanding</em>, <em>design education</em>, <em>software engineering teamwork</em>, and <em>broadening participation in computing</em>.
 				</p>
 				
 				<p>
