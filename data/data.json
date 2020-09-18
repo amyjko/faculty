@@ -2720,13 +2720,13 @@
 			"active": true,
 			"name": "Justice-focused CS education",
 			"description": "Computing is powerful, but that power is often used by dominant groups in ways that disregard, exclude, or even harm marginalized groups, amplifying and reinforcing sexist, racist, and ableist structures and ideas. My lab is exploring teaching methods, learning technologies, and teacher education paradigms that center these power dynamics in in CS education.",
-			"funding": ["NSF CS for All RPP"],
-			"people": ["jayne", "olesona"],
-			"papers": ["criticalcsed"],
+			"funding": ["NSF CS for All RPP", "NSF Cyberlearning"],
+			"people": ["jayne", "olesona", "kshino", "skawas", "laurav4", "meron", "perdriau"],
+			"papers": ["criticalcsed","hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess"],
 			"links": [],
-			"startdate": 2020,
+			"startdate": 2019,
 			"stopdate": null,
-			"impact": "This project has helped open discourse in the CS education community about the responsibility of CS educators to address the role of CS in injustice. Future impact will include a book on teaching CS from a justice lens, teaching materials to support this teaching, and research on preparing CS teachers from a justice lens."
+			"impact": "This project has helped open discourse in the CS education community about the responsibility of CS educators to address the role of CS in injustice. The work has also impacted the teaching of many higher education HCI educators.Future impact will include a book on teaching CS from a justice lens, teaching materials to support this teaching, and research on preparing CS teachers from a justice lens."
 		},
 		{
 			"id": "pllearning",
@@ -2770,19 +2770,6 @@
 			"startdate": 2009,
 			"stopdate": null,
 			"impact": "We apply our work and others to working directly with local communities to make change, including lowering barriers to transfer students at the University of Washington, connecting with marginalized communities in South Seattle, teaching in the University of Washington's Upward Bound program, and developing statewide coalitions to ensure CS for All."
-		},
-		{
-			"id": "designlearning",
-			"active": true,
-			"name": "Teaching inclusive design",
-			"description": "Design should work for everyone. We investigate ways of teaching design that ensure that designers, and especially software developers, understand how to create software that is inclusive, especially to people with disabilities.",
-			"funding": ["NSF Cyberlearning"],
-			"people": ["olesona", "kshino", "skawas", "laurav4", "meron"],
-			"papers": ["hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess"],
-			"links": [],
-			"startdate": 2019,
-			"stopdate": null,
-			"impact": "This work has impacted the teaching of many higher education HCI educators."
 		},
 		{
 			"id": "apilearning",
