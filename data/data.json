@@ -2909,13 +2909,21 @@
 	],	
 	"posts": [
 		{
+			"url": "https://medium.com/@amyjko/what-a-year-to-transition-253831b4c643",
+			"title": "What a year for a gender transition",
+			"date": "2020.9",
+			"tags": ["personal", "gender"],
+			"img": "eggirl",
+			"alt": "An illustration of an egg, cracking."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/studying-programming-language-learning-a-3-year-recap-bda469e5be04",
 			"title": "Studying programming language learning: a 3-year recap",
 			"date": "2020.9",
 			"tags": ["computing education", "grant report", "programming languages"],
 			"img": "cyberlearning",
 			"alt": "A figure showing four types of programming language knowledge"
-		},		
+		},
 		{
 			"url": "https://medium.com/bits-and-behavior/i-led-an-anti-racist-cs-education-reading-group-this-summer-93e4adc78c24",
 			"title": "I led an anti-racist CS education reading group this summer",
