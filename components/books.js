@@ -26,9 +26,9 @@ class Books extends React.Component {
 				/>
 
 				<Block
-					image="/ajko/books/uist/images/cover.jpg"
+					image="/ajko/books/user-interface-software-and-technology/images/cover.jpg"
 					alt="An illustration of a stick figure person sitting on a grid of 1's and 0's"
-					link="/ajko/books/uist/"
+					link="/ajko/books/user-interface-software-and-technology/"
 					header="User Interface Software and Technology"
 					content=". This book covers the history, theory, and innovations in user interface software and technology."
 				/>
