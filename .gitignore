@@ -1,6 +1,6 @@
-books/
-courses/
-node_modules/
+/books/
+/courses/
+/node_modules/
 app.min.js
 .DS_Store
 ajko
