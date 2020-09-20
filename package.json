@@ -1,7 +1,7 @@
 {
-	"name": "UWFacultyPage",
-	"version": "1.0.0",
-	"description": "The webpage for University of Washington professor Amy J. Ko.",
+	"name": "uw-faculty-page",
+	"version": "1.0.5",
+	"description": "The webpage for University of Washington Professor Amy J. Ko.",
 	"license": "MIT License",
 	"repository": "https://github.com/amyjko/faculty.git",
 	"scripts": {
@@ -9,7 +9,6 @@
 		"build": "set -e -o pipefail; npm run lint; browserify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js | uglifyjs > app.min.js",
 		"dry": "rsync --dry-run -avz --delete --exclude-from='deploy-excludes' . ajko@ovid.u.washington.edu:~/public_html",
 		"ship": "rsync -avz --delete --exclude-from='deploy-excludes' . ajko@ovid.u.washington.edu:~/public_html"
-
 	},
 	"devDependencies": {
 		"browserify": "^16.2",
