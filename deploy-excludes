@@ -1,9 +1,9 @@
-.git/
-books/
-peruse/
-courses/
-node_modules/
-components/
+/.git/
+/books/
+/peruse/
+/courses/
+/node_modules/
+/components/
 .DS_Store
 .gitignore
 deploy-excludes
@@ -11,3 +11,4 @@ package.json
 package-lock.json
 README.md
 app.js
+ajko
