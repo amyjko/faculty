@@ -68,9 +68,7 @@ class ProjectDetails extends React.Component {
 					image={this.props.app.getWebRoot() + "/images/projects/project-" + this.props.id + ".png"}
 					alt={this.props.name}
 					header={null}
-					content=<span>
-					<p>{this.props.description}</p>
-					</span>
+					content={<span><p>{this.props.description}</p></span>}
 				/>
 				<h3>Contributors</h3>
 				<p>{people}</p>
