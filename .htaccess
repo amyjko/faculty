@@ -10,6 +10,10 @@ AddType text/cache-manifest .manifest
 # Turn the rewrite engine on.
 RewriteEngine On
 
+# Redirect to https before rewriting anything
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 # Set the path to prepend to all rewrites.
 RewriteBase /ajko
 
