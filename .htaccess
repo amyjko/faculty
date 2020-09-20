@@ -30,7 +30,7 @@ RewriteRule ^books/?$ index.html [L]
 # make sure any path pointing to app.js or style.css always points to the one in the root, not a path
 # in any subdirectories. This works around the problem that HTML doesn't allow us to refer to a base
 # directory on the server.
-RewriteRule ^.*app\.js$ build/app.js [L]
+RewriteRule ^.*app\.min\.js$ app.min.js [L]
 RewriteRule ^.*style\.css$ style.css [L]
 
 # If we're processing a path that isn't a real file or a directory, rewrite to index but preserve the query string.
