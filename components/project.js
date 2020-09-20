@@ -35,13 +35,13 @@ class ProjectDetails extends React.Component {
 	
 		var buttonStyle = "btn btn-xs btn-default";
 		
-		var videos = _.map(_.filter(this.props.links, (link) => { return link.url.indexOf("www.youtube.com") >= 0; }), (link, index) => {
+		var videos = _.map(_.filter(this.props.links, (link) => { return link.url.indexOf("youtube.com") >= 0; }), (link, index) => {
 			return <p key={"video-" + index} className="embed-responsive embed-responsive-16by9">
 				<iframe width="560" height="315" src={"https://www.youtube.com/embed/" + link.url.substring(link.url.indexOf("=") + 1)} frameBorder="0" allowFullScreen=""></iframe>
 			</p>;
 		});
 
-		var code = _.map(_.filter(this.props.links, (link) => { return link.url.indexOf("www.github.com") >= 0; }), (link, index) => {
+		var code = _.map(_.filter(this.props.links, (link) => { return link.url.indexOf("github.com") >= 0; }), (link, index) => {
 			return <span key={this.props.id + "link" + index}><a className={buttonStyle} href={link.url} target="_blank">{link.title}</a>&nbsp;</span>;
 		});
 
