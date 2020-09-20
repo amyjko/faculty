@@ -5,14 +5,11 @@
 	"license": "MIT License",
 	"repository": "https://github.com/amyjko/faculty.git",
 	"scripts": {
-		"build": "set -e -o pipefail; browserify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js | uglifyjs > build/app.js",
-		"diff": "rsync --dry-run -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html",
-		"ship": "rsync -avz --delete --include 'build' --exclude-from='.gitignore' --exclude '.git' . ~/public_html",
-		"lint": "set -e -o pipefail; jsonlint -q data/data.json --validate data/schema.json",
-		"data": "npm run lint; npm run ship",
-		"all": "npm run build; npm run lint; npm run ship",
-		"deploy": "ssh -t ajko@ovid.u.washington.edu \"cd faculty && git pull && npm run all\"",
-		"deploydata": "ssh -t ajko@ovid.u.washington.edu \"cd faculty && git pull && npm run data\""	
+		"lint": "jsonlint -q data/data.json --validate data/schema.json",
+		"build": "set -e -o pipefail; npm run lint; browserify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js | uglifyjs > app.min.js",
+		"dry": "rsync --dry-run -avz --delete --exclude-from='deploy-excludes' . ajko@ovid.u.washington.edu:~/public_html",
+		"ship": "rsync -avz --delete --exclude-from='deploy-excludes' . ajko@ovid.u.washington.edu:~/public_html"
+
 	},
 	"devDependencies": {
 		"browserify": "^16.2",
