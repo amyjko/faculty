@@ -456,7 +456,10 @@
 					}
 				}
 			}
-		}	
-		
+		},
+		"years": {
+			"type": "object",
+			"description": "Metadata about years."
+		}
 	}
 }

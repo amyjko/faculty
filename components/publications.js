@@ -130,7 +130,8 @@ class Publications extends React.Component {
 			var pub = filteredPubs[i];
 			
 			if(lastYear === null || lastYear !== pub.year)
-				rows.push(<h3 key={pub.year}>{pub.year}</h3>);
+				rows.push(
+					<h3 key={pub.year}>{pub.year}{this.props.app.getYearContexts()[pub.year] ? <small> &mdash; <em>{this.props.app.getYearContexts()[pub.year]}</em></small> : null}</h3>);
 			lastYear = pub.year;
 			
 			rows.push(<Paper {...pub} key={"paper" + i} highlight={ paperToHighlight === pub.id } app={this.props.app} />);

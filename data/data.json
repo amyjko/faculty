@@ -6365,5 +6365,28 @@
 			"description": "This book summarizes a collection of studies about software engineering, presenting them for a practitioner audience interested in the science of software development. I contributed a chapter on qualitative methods and why would should trust them, relative to quantitative methods.",
 			"editor": false
 		}
-	]
+	],
+	"years": {
+		"2000": "Sophomore year of college",
+		"2001": "Junior year of college",
+		"2002": "Graduated from college; 1st year of PhD",
+		"2003": null,
+		"2004": null,
+		"2005": null,
+		"2006": "MSR intern",
+		"2007": null,
+		"2008": "Job search, finished PhD, started at UW",
+		"2009": null,
+		"2010": null,
+		"2011": null,
+		"2012": "Founded AnswerDash",
+		"2013": "On leave at AnswerDash",
+		"2014": "Promoted to Associate with tenure; returned from AnswerDash",
+		"2015": "Sabbatical",
+		"2016": "Started chairing Informatics",
+		"2017": null,
+		"2018": null,
+		"2019": "Gender transition",
+		"2020": "Promoted to Professor; COVID-19"
+	}
 }

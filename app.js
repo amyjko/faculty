@@ -112,6 +112,7 @@ class App extends React.Component {
 	getTalks() { return this.state.data.talks; }
 	getClasses() { return this.state.data.classes; }
 	getBooks() { return this.state.data.books; }
+	getYearContexts() { return this.state.data.years; }
 	
 }
 
