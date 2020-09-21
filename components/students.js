@@ -90,20 +90,13 @@ class Students extends React.Component {
 
 				<div className="row">
 					<div className="col-sm-4">
-						<strong>Current Ph.D. student?</strong>
-						<p>Lurk on the <i>#codeandcognitionlab</i> channel on <a target="_blank" href="https://computinged-uw.slack.com">ComputingEd@UW Slack</a>.</p>
-						<p>DM or email me about your interests.</p>
+						<p><strong>Current UW Ph.D. student?</strong> Lurk in <i>#codeandcognitionlab</i> on <a target="_blank" href="https://computinged-uw.slack.com">ComputingEd@UW</a> Slack. DM or email me about your interests and perhaps we'll meet.</p>
 					</div>
 					<div className="col-sm-4">
-						<strong>Prospective Ph.D. student?</strong>
-						<p>Read my <Link to="/cer">CER FAQ</Link> to ensure we share interests.</p>
-						<p>Talk to my current students about their experiences.</p>
-						<p>Apply to the <a href="http://ischool.uw.edu/phd" target="_blank">iSchool</a> or <a href="http://www.cs.washington.edu/education/grad/prospective.html" target="_blank">CSE</a> in Autumn.</p>
+						<p><strong>Future UW Ph.D. student?</strong> Read my <Link to="/cer">CER FAQ</Link> to ensure we share interests. Talk to my current students about their experiences. Apply to the <a href="http://ischool.uw.edu/phd" target="_blank">iSchool</a> or <a href="http://www.cs.washington.edu/education/grad/prospective.html" target="_blank">CSE</a> in Autumn.</p>
 					</div>
 					<div className="col-sm-4">
-						<strong>Current UW undergrad?</strong>
-						<p>Read about <a href="https://ischool.uw.edu/programs/informatics/research">engaging in undergrad research </a>.</p>
-						<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdjcrMFAMUEv3SXXggXscg17sIZ6p7YFSpCkFPADkBZ8BZB9g/viewform?usp=sf_link" target="_blank">Apply</a> to my lab. I recruit for part-time researchers and in Winter for summer positions.</p>
+						<p><strong>Current UW undergrad?</strong> Read about <a href="https://ischool.uw.edu/programs/informatics/research">engaging in undergrad research </a>. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjcrMFAMUEv3SXXggXscg17sIZ6p7YFSpCkFPADkBZ8BZB9g/viewform?usp=sf_link" target="_blank">Apply</a> to my lab. I recruit for part-time researchers and in Winter for summer positions.</p>
 					</div>
 				</div>
 				
