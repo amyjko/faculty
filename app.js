@@ -130,7 +130,8 @@ class App extends React.Component {
 							<Route path="/advice" render={(props) => <Advice {...props} app={this} />} />
 							<Route path="/teaching" render={(props) => <Teaching {...props} app={this} />} />
 							<Route path="/talks" render={(props) => <Talks {...props} app={this} />} />
-							<Route path="/books" render={(props) => <Books {...props} app={this} />} />
+							<Route exact path="/books" render={(props) => <Books {...props} app={this} />} />
+							<Route path="/books/:unknown" component={Unknown} />
 							<Route path="/travel" render={(props) => <Travel {...props} app={this} />} />
 							<Route path="/contact" render={(props) => <ContactInfo {...props} app={this} />} />
 							<Route path="/communities" render={(props) => <Communities {...props} app={this} />} />
@@ -140,8 +141,9 @@ class App extends React.Component {
 							<Route path="/projects/:id" render={(props) => <Project {...props} app={this} />} />
 							<Route path="/cv" render={(props) => <Vita {...props} app={this} />} />
 							<Route path="/cer" component={CER}/>
+							<Route path="404" component={Unknown}/>
 							<Route path="*" component={Unknown}/>
-						</Switch>					
+						</Switch>	
 				}
 				{currentRoute === "/cv" ? null : <Footer/>}
 			</div>
