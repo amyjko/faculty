@@ -38,28 +38,6 @@ class App extends React.Component {
 
 		super(props);
 		
-		this.ref = React.createRef();
-
-		this.handleKeyPress = this.handleKeyPress.bind(this);
-		
-		this.links = [
-			"/",
-			"/students",
-			"/communities",
-			"/publications",
-			"/posts",
-			"/talks",
-			"/teaching",
-			"/books",
-			"/impact",
-			"/funding",
-			"/travel",
-			"/advice",
-			"/bio",
-			"/contact",
-			"/cer"
-		];
-		
 		// Start data as undefined, rending a loading state until it changes.
 		this.state = {
 			data: undefined
@@ -80,32 +58,6 @@ class App extends React.Component {
 	}
 	
 	getWebRoot() { return this.props.root; }
-	
-	handleKeyPress(event) {
-
-		var oldIndex = this.links.indexOf(this.props.location.pathname);
-		var newIndex = oldIndex;
-
-		if(event.keyCode === 37) { newIndex = oldIndex === 0 ? this.links.length - 1 : oldIndex - 1; }
-		if(event.keyCode === 39) { newIndex = oldIndex === this.links.length - 1 ? 0 : oldIndex + 1; }
-
-		if(oldIndex !== newIndex)
-			this.props.history.push(this.links[newIndex]);
-		
-	}
-	
-	componentDidMount() {
-		this.focusApp();
-	}
-	
-	componentDidUpdate() {
-	    this.focusApp();
-	}
-	
-	focusApp() {
-		if(this.ref.current)
-			this.ref.current.focus();
-	}
 
 	render() {
 		
@@ -113,7 +65,7 @@ class App extends React.Component {
 		
 		// Return the single page app.
 		return (
-			<div className="container" onKeyDown={this.handleKeyPress} tabIndex="0" ref={this.ref}>
+			<div className="container">
 				{currentRoute === "/cv" ? null : <Header path={currentRoute} app={this} />}				
 				{
 					this.state.data === undefined ? 
