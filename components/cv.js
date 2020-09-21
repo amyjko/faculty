@@ -22,6 +22,7 @@ class Chunk extends React.Component {
 		var three = this.convertArrayToNote(this.props.three);
 		var four = this.convertArrayToNote(this.props.four);
 		var five = this.convertArrayToNote(this.props.five);
+		var six = this.convertArrayToNote(this.props.six);
 
 		return (
 			<div className="row">
@@ -34,6 +35,7 @@ class Chunk extends React.Component {
 					{three ? <div><small>{three}</small></div> : null}
 					{four ? <div><small>{four}</small></div> : null}
 					{five ? <div><small>{five}</small></div> : null}
+					{six ? <div><small>{six}</small></div> : null}
 				</div>
 			</div>
 		);
@@ -50,7 +52,7 @@ class Vita extends React.Component {
 
 	}
 	
-	getChunkList(list, prefix, start, stop, header, two, three, four, five) {
+	getChunkList(list, prefix, start, stop, header, two, three, four, five, six) {
 		
 		return _.map(list, (entry, index) => {
 			return this.getChunk(
@@ -61,15 +63,16 @@ class Vita extends React.Component {
 				entry[two],
 				entry[three],
 				entry[four],
-				entry[five]
+				entry[five],
+				entry[six]
 			);
 		});
 		
 	}
 	
-	getChunk(key, start, stop, header, two, three, four, five) {
+	getChunk(key, start, stop, header, two, three, four, five, six) {
 		
-		return <Chunk key={key} start={start} stop={stop} header={header} two={two} three={three} four={four} five={five}/>;
+		return <Chunk key={key} start={start} stop={stop} header={header} two={two} three={three} four={four} five={five} six={six}/>;
 		
 	}
 	
@@ -159,7 +162,7 @@ class Vita extends React.Component {
 
 				<h2>Funding</h2>
 
-				{this.getChunkList(cv.funding, "funding", "startdate", "enddate", "title", "amount", "funder", "investigators", "description")}
+				{this.getChunkList(cv.funding, "funding", "startdate", "enddate", "title", "amount", "funder", "award", "investigators", "description")}
 
 				<h2>Publications</h2>
 				

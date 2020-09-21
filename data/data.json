@@ -4799,7 +4799,7 @@
 			{
 				"title": " Justice-Focused Secondary CS Teacher Education",
 				"funder": "National Science Foundation",
-				"award": "2031265",
+				"award": "#2031265",
 				"investigators": "Amy J. Ko (PI), Anne Beitlers (Co-PI)",
 				"amount": "$999,723",
 				"startdate": 2020,
@@ -4810,7 +4810,7 @@
 			{
 				"title": "Formal Verification of Accessibility",
 				"funder": "National Science Foundation",
-				"award": "1836813",
+				"award": "#1836813",
 				"investigators": "Michael Ernst (PI), Amy J. Ko (Co-PI), Jennifer Mankoff (Co-PI), Zach Tatlock (Co-PI)",
 				"amount": "$738,125",
 				"startdate": 2019,
@@ -4821,7 +4821,7 @@
 			{
 				"title": "Programming Strategies",
 				"funder": "National Science Foundation",
-				"award": "1703304",
+				"award": "#1703304",
 				"investigators": "Thomas LaToza (PI, George Mason University), Amy J. Ko (Co-PI, University of Washington)",
 				"amount": "$1,199,555",
 				"startdate": 2017,
@@ -4832,7 +4832,7 @@
 			{
 				"title": "Automatically Synthesizing Valid, Personalized, Formative Assessments of CS1 Concepts",
 				"funder": "National Science Foundation",
-				"award": "1735123",
+				"award": "#1735123",
 				"investigators": "Amy J. Ko (PI, University of Washington), Min Li (Co-PI, University of Washington)",
 				"amount": "$549,857",
 				"startdate": 2017,
@@ -4843,7 +4843,7 @@
 			{
 				"title": "BPC-AE: AcessComputing - Third Extension",
 				"funder": "National Science Foundation",
-				"award": "1539179",
+				"award": "#1539179",
 				"investigators": "Richard Ladner (PI, University of Washington), Sheryl Burgstahler (Co-PI), Amy J. Ko (Co-PI), Jacob O. Wobbrock (Co-PI)",
 				"amount": "$3,797,990",
 				"startdate": 2015,
@@ -4854,7 +4854,7 @@
 			{
 				"title": "HCC: Large: Variations to Support Exploratory Programming",
 				"funder": "National Science Foundation",
-				"award": "1314399",
+				"award": "#1314399",
 				"investigators": "Brad Myers (PI, Carnegie Mellon University), Amy J. Ko (Co-PI), Margaret Burnett (Co-PI, Oregon State University), Martin Erwig (Co-PI, Oregon State University), Anita Sarma (Co-PI, University of Nebraska, Lincoln), Gregg Rothermel (Co-PI, University of Nebraska, Lincoln)",
 				"amount": "$2,999,991",
 				"startdate": 2013,
@@ -4865,7 +4865,7 @@
 			{
 				"title": "CER: Computing Education through Collaborative Debugging",
 				"funder": "National Science Foundation",
-				"award": "1240786",
+				"award": "#1240786",
 				"investigators": "Amy J. Ko (PI), Margaret Burnett (Co-PI, Oregon State University), Catherine Law (Co-PI, Oregon State University)",
 				"amount": "$599,999",
 				"startdate": 2012,
@@ -4876,7 +4876,7 @@
 			{
 				"title": "CAREER: Enabling and Exploiting Evidence-Based Bug Triage",
 				"funder": "National Science Foundation",
-				"award": "1153625",
+				"award": "#1153625",
 				"investigators": "Amy J. Ko (PI)",
 				"amount": "$592,456",
 				"startdate": 2010,
