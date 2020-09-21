@@ -24,8 +24,6 @@ import { CER } from './components/cer';
 import { Unknown } from './components/unknown';
 import { Footer } from './components/footer';
 
-import 'bootstrap';
-
 // Polyfill startsWith
 if (!String.prototype.startsWith) {
     String.prototype.startsWith = function(searchString, position){
