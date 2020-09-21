@@ -421,6 +421,42 @@
 					}
 				}
 			}
-	    }
+		},
+		"books": {
+			"type": "array",
+			"description": "List of books.",
+			"required": true,
+			"items": {
+				"type": "object",
+				"description": "A class.",
+				"properties": {
+					"image": {
+						"type": "string",
+						"required": true
+					},
+					"alt": {
+						"type": "string",
+						"required": true
+					},
+					"link": {
+						"type": "string",
+						"required": true
+					},
+					"title": {
+						"type": "string",
+						"required": true
+					},
+					"description": {
+						"type": "string",
+						"required": true
+					},
+					"editor": {
+						"type": "boolean",
+						"required": true
+					}
+				}
+			}
+		}	
+		
 	}
 }
