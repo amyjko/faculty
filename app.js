@@ -158,6 +158,7 @@ class App extends React.Component {
 	getCV() { return this.state.data.cv; }
 	getPublications() { return this.state.data.pubs; }
 	getTalks() { return this.state.data.talks; }
+	getClasses() { return this.state.data.classes; }
 	
 }
 

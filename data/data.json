@@ -6245,5 +6245,67 @@
 			"description": "I was invited to visit UBC and give a talk to the software engineering and programming languages group.",
 			"keynote": false
 		}
+	],
+	"classes": [
+		{
+			"id": "info200",
+			"alt": "A black and white version of an old painting with a child reading a newspaper",
+			"link": "https://canvas.uw.edu/courses/1355747",
+			"title": "INFO 200 Intellectual Foundations of Informatics",
+			"date": "Winter 2020",
+			"description": "This survey course covers big ideas in information, information technology, and information systems. Students learn the history of information, foundational concepts in information, the relationship between information and computing, skills in analyzing and designing information systems, and the role of information systems in society.",
+			"links": [
+				{
+					"description": "Medium post on the big ideas in the course",
+					"link": "https://medium.com/bits-and-behavior/big-ideas-about-information-c09e4d9c60bd"
+				}
+			]
+		},
+		{
+			"id": "info360",
+			"alt": "A line drawing of two people discussing a sketch",
+			"link": "courses/info360/",
+			"date": "Autumn 2016",
+			"title": "INFO 360 Design Methods",
+			"description": "This undergraduate class teaches students design thinking skills in the domain of information and computing. It leverages multiple forms of active learning, involves a significant amount of studio-based learning, and helps students develop creative confidence.",
+			"links": [
+				{
+					"description": "Amy's online book for the course",
+					"link": "https://faculty.washington.edu/ajko/courses/info360/"
+				},
+				{
+					"description": "Course activities on GitHub",
+					"link": "https://github.com/amyjko/info360/"
+				}
+			]
+		},
+		{
+			"id": "info442",
+			"alt": "A photograph of Margaret Hamilton standing next to source code.",
+			"link": "https://canvas.uw.edu/courses/1345618",
+			"date": "Autumn 2019",
+			"title": "INFO 442 Cooperative Software Development",
+			"description": "This undergraduate software engineering class teaches foundations of team-based software development, leveraging the latest research on coordination, cooperation, and human cognition in software development. Students leave ready to become meaningful contributors to teams big and small, but also to understand the processes that teams use and how they can improve them.",
+			"links": [
+				{
+					"description": "Amy's online book for the course",
+					"link": "https://faculty.washington.edu/ajko/books/cooperative-software-development/"
+				}
+			]
+		},
+		{
+			"id": "hcid520",
+			"alt": "A black and white photograph of a woman operating the ENIAC, the first computer",
+			"link": "https://canvas.uw.edu/courses/1256337",
+			"date": "Winter 2020",
+			"title": "HCID 520 User Interface Software and Technology",
+			"description": "This core course in our Masters of HCI+Design teaches students they history, theory, and foundations of user interfaces. Students acquire a literacy for communicating and reasoning about interfaces.",
+			"links": [
+				{
+					"description": "Amy's online book for the course",
+					"link": "https://faculty.washington.edu/ajko/books/user-interface-software-and-technology/"
+				}
+			]
+		}
 	]
 }

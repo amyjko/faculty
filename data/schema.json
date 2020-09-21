@@ -366,6 +366,61 @@
 					}
 				}
 			}
+		},
+		"classes": {
+			"type": "array",
+			"description": "List of classes.",
+			"required": true,
+			"items": {
+				"type": "object",
+				"description": "A class.",
+				"properties": {
+					"id": {
+						"type": "string",
+						"required": true
+					},
+					"alt": {
+						"type": "string",
+						"required": true
+					},
+					"link": {
+						"type": "string",
+						"required": true
+					},
+					"date": {
+						"type": "string",
+						"required": true
+					},
+					"title": {
+						"type": "string",
+						"required": true
+					},
+					"description": {
+						"type": ["string", "null"],
+						"required": true
+					},
+					"links": {
+						"type": "array",
+						"description": "List of posts.",
+						"required": true,
+						"items": {
+							"type": "object",
+							"required": true,
+							"description": "A trip.",
+							"properties": {
+								"description": {
+									"type": "string",
+									"required": true
+								},
+								"link": {
+									"type": "string",
+									"required": true
+								}
+							}
+						}
+					}
+				}
+			}
 	    }
 	}
 }
