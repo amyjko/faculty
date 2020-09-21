@@ -24,7 +24,7 @@ class Books extends React.Component {
 				}
 
 				<div className='lead'>
-					These are books I've contributed to.
+					These are edited books I've contributed to.
 				</div>
 
 				{
