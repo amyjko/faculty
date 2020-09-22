@@ -143,9 +143,8 @@ class Publications extends React.Component {
 				
 				<p>
 					<small>
-						My publications prior to 2020 are under my former name because most publishers refuse to let me fix it. 
-						<strong>Cite all of my publications with my new name</strong>, as I do below. 
-						Names represent people, not people <em>at a point in time</em>, so credit me with my name.
+						Of these, {pubs.filter(pub => pub.deadname).length} are still under my former name because publishers refuse to let me fix it. 
+						Instead of perpetuating this unjust disregard for my name, <strong>cite all of my publications as Amy J. Ko</strong>, as I do below. 
 						Include a DOI in your citation if you are worried about helping academic search engines.
 						Thank you for respecting my gender, name, and pronouns in your work.
 					</small>
