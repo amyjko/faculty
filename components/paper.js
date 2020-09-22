@@ -8,15 +8,15 @@ class Paper extends React.Component {
 	
 	getURL() {
 	
-		// If there's a local URL, show it first, since digital libraries have my deadname.
-		if(this.props['local url'])
-			return this.props.app.getWebRoot() + "/papers/" + this.props['local url'];
+		// If there's a local, show it first, since digital libraries have my deadname.
+		if(this.props['local'])
+			return this.props.app.getWebRoot() + "/papers/" + this.props['local'];
 		// If we don't have one, but there's an ACM authorizer URL, return it, because visitors will be able to bypass the paywall.
 		else if(this.props.authorizer)
 			return this.props.authorizer;
-		// Lastly, include the digital library URL, which will not be as easily accessible.
-		else if(this.props["digital library url"])
-			return this.props["digital library url"];
+		// Lastly, include the doi, which will not be as easily accessible.
+		else if(this.props["doi"])
+			return this.props["doi"];
 		else
 			return "";
 		
@@ -26,10 +26,10 @@ class Paper extends React.Component {
 
 		var url = this.getURL();
 		var pdf = 
-			this.props["local url"] ? <small><a href={this.props.app.getWebRoot() + "/papers/" + this.props["local url"]} target="_blank">PDF</a></small> : 
+			this.props["local"] ? <small><a href={this.props.app.getWebRoot() + "/papers/" + this.props["local"]} target="_blank">PDF</a></small> : 
 			this.props.authorizer ? <small><a href={this.props.authorizer} target="_blank">PDF</a></small> : 
 			null;
-		var dl = this.props["digital library url"] ? <small><a href={this.props["digital library url"]} target="_blank">Digital library</a></small> : null;
+		var dl = this.props["doi"] ? <small><a href={this.props["doi"]} target="_blank">Digital library</a></small> : null;
 		
 		var authors = this.props.authors.join(", ");
 

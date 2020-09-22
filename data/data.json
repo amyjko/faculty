@@ -9,8 +9,8 @@
 			"title": "It’s Time for More Critical CS Education",
 			"source": "Communications of the ACM (CACM)",
 			"pages": "to appear",
-			"digital library url": null,
-			"local url": null,
+			"doi": null,
+			"local": null,
 			"publisher": "ACM",
 			"contribution": "Argues that CS educators at all levels have the responsibility of the role of computing in injustice."
 		},
@@ -23,8 +23,8 @@
 			"title": "Learning Machine Learning with Personal Data Helps Stakeholders Ground Advocacy Arguments in Model Mechanics",
 			"source": "ACM International Computing Education Research Conference (ICER)",
 			"pages": "67–78",
-			"digital library url": "https://doi.org/10.1145/3372782.3406252",
-			"local url": "Register2020PersonalData.pdf",
+			"doi": "https://doi.org/10.1145/3372782.3406252",
+			"local": "Register2020PersonalData.pdf",
 			"publisher": "ACM",
 			"contribution": "Finds that teaching machine learning by tracing an algorithmwith with learners' personal data increases the extent to which they can identify bias in in self-advocacy arguments."
 		},
@@ -37,8 +37,8 @@
 			"title": "The Effect of Informing Agency in Self-Directed Online Learning Environments",
 			"source": "ACM Learning at Scale (L@S)",
 			"pages": "77–89",
-			"digital library url": "https://doi.org/10.1145/3386527.3405928",
-			"local url": "Xie2020Agency.pdf",
+			"doi": "https://doi.org/10.1145/3386527.3405928",
+			"local": "Xie2020Agency.pdf",
 			"publisher": "ACM",
 			"contribution": "Finds that affording more agency in learning environments may increase motivation, but may not improve learning because of the increased burden on decision-making."
 		},
@@ -51,8 +51,8 @@
 			"title": "Toward the Development of HCI Pedagogical Content Knowledge",
 			"source": "ACM SIGCHI Symposium on HCI Education (EduCHI 2020)",
 			"pages": "to appear",
-			"digital library url": null,
-			"local url": "Oleson2020HCIPCK.pdf",
+			"doi": null,
+			"local": "Oleson2020HCIPCK.pdf",
 			"publisher": "ACM",
 			"contribution": "Discusses the need for research on HCI educator's pedagogical content knowledge."
 		},
@@ -65,9 +65,9 @@
 			"title": "Computing Students' Learning Difficulties in HCI Education",
 			"source": "ACM SIGCHI Conference on Human Factors in Computing Systems (CHI)",
 			"pages": "1-14",
-			"digital library url": "https://doi.org/10.1145/3313831.3376149",
+			"doi": "https://doi.org/10.1145/3313831.3376149",
 			"authorizer": "https://dl.acm.org/doi/10.1145/3313831.3376149?cid=81100500360",
-			"local url": "Oleson2020HCILearningDifficulties.pdf",
+			"local": "Oleson2020HCILearningDifficulties.pdf",
 			"publisher": "ACM",
 			"contribution": "Investigates the challenges that computing students face in learning HCI, finding challenges in understanding design as distinct from engineering, understanding design methods, finding resources to support design, interpreting feedback, scoping design problems, choosing between alternatives, and designing for diversity."
 		},
@@ -80,9 +80,9 @@
 			"title": "Scout: Rapid Exploration of Interface Layout Alternatives through High-Level Design Constraints",
 			"source": "ACM SIGCHI Conference on Human Factors in Computing Systems (CHI)",
 			"pages": "1-13",
-			"digital library url": "https://doi.org/10.1145/3313831.3376593",
+			"doi": "https://doi.org/10.1145/3313831.3376593",
 			"authorizer": "https://dl.acm.org/doi/10.1145/3313831.3376593?cid=81100500360",
-			"local url": "Swearngin2020Scout.pdf",
+			"local": "Swearngin2020Scout.pdf",
 			"publisher": "ACM",
 			"contribution": "Presents a system to support designers ideation of user interface layouts, allowing designers to provide high-level preferences, obtain a set of layouts that meet those preferences, provide feedback on those preferences, and iteratively converge towards preferred layouts. An evaluation showed that designers who used Scout accelerated ideation and found more diverse designs that designers without it."
 		},
@@ -95,9 +95,9 @@
 			"title": "Investigating Novices' In Situ Reflections on Their Programming Process",
 			"source": "ACM Technical Symposium on Computer Science Education (SIGCSE), Research Track",
 			"pages": "149-155",
-			"digital library url": "https://doi.org/10.1145/3328778.3366846",
+			"doi": "https://doi.org/10.1145/3328778.3366846",
 			"authorizer": "https://dl.acm.org/doi/10.1145/3328778.3366846?cid=81100500360",
-			"local url": "Loksa2020SelfRegulationJournals.pdf",
+			"local": "Loksa2020SelfRegulationJournals.pdf",
 			"publisher": "ACM",
 			"contribution": "Presents evidence that self-regulation during programming is highly variable in practice, and that teaching self-regulation skills to improve programming outcomes may require differentiated instruction based on students self-awareness and existing programming practices."
 		},
@@ -110,8 +110,8 @@
 			"title": "Explicit Programming Strategies",
 			"source": "Empirical Software Engineering",
 			"pages": null,
-			"digital library url": "https://doi.org/10.1007/s10664-020-09810-1",
-			"local url": "Latoza2020ExplicitProgrammingStrategies.pdf",
+			"doi": "https://doi.org/10.1007/s10664-020-09810-1",
+			"local": "Latoza2020ExplicitProgrammingStrategies.pdf",
 			"publisher": "Springer",
 			"contribution": "Presents the concept of explicit programming strategies, the idea of encoding manual procedures for solving programming programmers to accelerate software development problem solving. Presents a notation for encoding strategies and evidence that developers using explicit strategies, independent of expertise, were more successful at the design and debugging tasks."
 		},
@@ -124,8 +124,8 @@
 			"title": "What Distinguishes Great Software Engineers?",
 			"source": "Empirical Software Engineering",
 			"pages": "1-31",
-			"digital library url": "https://doi.org/10.1007/s10664-019-09773-y",
-			"local url": "Li2019WhatDistinguishesEngineers.pdf",
+			"doi": "https://doi.org/10.1007/s10664-019-09773-y",
+			"local": "Li2019WhatDistinguishesEngineers.pdf",
 			"publisher": "Springer",
 			"contribution": "Via a survey of nearly 2,000 developers, finds that great engineers are distinguished by writing good code, adapting to future business value and costs, being great decision-makers, avoiding making others’ jobs harder, and continuously learning."
 		},
@@ -138,8 +138,8 @@
 			"title": "Towards Validity for a Formative Assessment for Language-Specific Program Tracing Skills",
 			"source": "ACM Koli Calling International Conference on Computing Education Research",
 			"pages": "1-10",
-			"digital library url": "https://doi.org/10.1145/3364510.3364525",
-			"local url": "Nelson2019TracingValidity.pdf",
+			"doi": "https://doi.org/10.1145/3364510.3364525",
+			"local": "Nelson2019TracingValidity.pdf",
 			"publisher": "ACM",
 			"contribution": "Contributes theoretical perspectives on how to assess program tracing skills, and how to think about assessment validity."
 		},
@@ -152,8 +152,8 @@
 			"title": "A Systematic Investigation of Replications in Computing Education Research",
 			"source": "ACM Transactions on Computing Education, 19(4)",
 			"pages": "Article 42",
-			"digital library url": "https://doi.org/10.1145/3345328",
-			"local url":"Hao2019Replications.pdf",
+			"doi": "https://doi.org/10.1145/3345328",
+			"local":"Hao2019Replications.pdf",
 			"publisher": "ACM",
 			"contribution": "Analyzed the replication rate and trends in computing education, finding that only about 2% of studies were replicated in the field in the last decade."
 		},
@@ -166,7 +166,7 @@
 			"title": "A Study Design Design Process",
 			"source": "Cambridge Handbook on Computing Education Research (Sally Fincher, Anthony Robin, Eds.)",
 			"pages": null,
-			"local url":"Ko2019StudyDesign.pdf",
+			"local":"Ko2019StudyDesign.pdf",
 			"publisher": "Cambridge Press",
 			"contribution": "Describes a process for designing studies in the domain of computing education research, though the process is more broadly useful for empirical study design in general."
 		},
@@ -179,7 +179,7 @@
 			"title": "Learning Outside the Classroom",
 			"source": "Cambridge Handbook on Computing Education Research (Sally Fincher, Anthony Robin, Eds.)",
 			"pages": null,
-			"local url":"Begel2019OutsideClassroom.pdf",
+			"local":"Begel2019OutsideClassroom.pdf",
 			"publisher": "Cambridge Press",
 			"contribution": "Surveys the small but growing literature on informal learning of computing and the contexts, technologies, and skills that support it. Identifies a several open questions about how to support informal learning and integrate it with more formal learning."
 		},
@@ -192,7 +192,7 @@
 			"title": "Tools and Environments",
 			"source": "Cambridge Handbook on Computing Education Research (Sally Fincher, Anthony Robin, Eds.)",
 			"pages": null,
-			"local url":"Malmi2019ToolsEnvironments.pdf",
+			"local":"Malmi2019ToolsEnvironments.pdf",
 			"publisher": "Cambridge Press",
 			"contribution": "Surveys the role of tools in learning computing, and the genres of tools that researchers have explored, including IDEs, e-books, automated assessment and feedback, and visualization. Identifies a range of open questions."
 		},
@@ -205,8 +205,8 @@
 			"title": "A Theory of Instruction for Introductory Programming Skills",
 			"source": "Computer Science Education",
 			"pages": "49 pages",
-			"digital library url": "https://doi.org/10.1080/08993408.2019.1565235",
-			"local url":"Xie2019IntroCSTheoryOfInstruction.pdf",
+			"doi": "https://doi.org/10.1080/08993408.2019.1565235",
+			"local":"Xie2019IntroCSTheoryOfInstruction.pdf",
 			"publisher": "Apress",
 			"contribution": "Proposes a theory that identifies four distinct skills that novices learn incrementally: tracing, writing syntax, comprehending reusable abstractions of programming knowledge (templates). Demonstrates that teaching these skills incrementally can result in improved completion rate on practice exercises and decreased error rate and improved understanding of the post-test."
 		},
@@ -219,8 +219,8 @@
 			"title": "Human-Centered Methods to Boost Productivity",
 			"source": "Sadowski C., Zimmermann T. (eds) Rethinking Productivity in Software Engineering. Apress, Berkeley, CA",
 			"pages": "to appear",
-			"digital library url": "https://doi.org/10.1007/978-1-4842-4221-6_13",
-			"local url": "Sadowski2019RethinkingProductivityInSoftwareEngineering.pdf",
+			"doi": "https://doi.org/10.1007/978-1-4842-4221-6_13",
+			"local": "Sadowski2019RethinkingProductivityInSoftwareEngineering.pdf",
 			"publisher": "Apress",
 			"contribution": "Describes several methods for understanding how to increase developer productivity."
 		},
@@ -233,8 +233,8 @@
 			"title": "Individual, Team, Organization, and Market: Four Lenses of Productivity",
 			"source": "Sadowski C., Zimmermann T. (Eds) Rethinking Productivity in Software Engineering. Apress, Berkeley, CA",
 			"pages": "to appear",
-			"digital library url": "https://doi.org/10.1007/978-1-4842-4221-6_6",
-			"local url": "Sadowski2019RethinkingProductivityInSoftwareEngineering.pdf",
+			"doi": "https://doi.org/10.1007/978-1-4842-4221-6_6",
+			"local": "Sadowski2019RethinkingProductivityInSoftwareEngineering.pdf",
 			"publisher": "Apress",
 			"contribution": "Discusses several levels of abstraction useful for reasoning about software engineering productivity."
 		},
@@ -247,8 +247,8 @@
 			"title": "Why Not to Measure Productivity",
 			"source": "Sadowski C., Zimmermann T. (eds) Rethinking Productivity in Software Engineering. Apress, Berkeley, CA",
 			"pages": "to appear",
-			"digital library url": "https://doi.org/10.1007/978-1-4842-4221-6_3",
-			"local url": "Sadowski2019RethinkingProductivityInSoftwareEngineering.pdf",
+			"doi": "https://doi.org/10.1007/978-1-4842-4221-6_3",
+			"local": "Sadowski2019RethinkingProductivityInSoftwareEngineering.pdf",
 			"publisher": "Apress",
 			"contribution": "Presents several arguments for the dangers of measuring software developer productivity."
 		},
@@ -263,8 +263,8 @@
 			"pages": "469-475",
 			"publisher": "ACM",
 			"authorizer":"https://dl.acm.org/authorize?N677481",
-			"digital library url": "https://doi.org/10.1145/3287324.3287371",
-			"local url":"Ko2019TeachingExplicitStrategies.pdf",
+			"doi": "https://doi.org/10.1145/3287324.3287371",
+			"local":"Ko2019TeachingExplicitStrategies.pdf",
 			"contribution": "Attempts to teach explicit strategies for reuse and debugging, finding that adolescents struggle to follow systematic approaches to problem solving."
 		},
 		{
@@ -277,9 +277,9 @@
 			"source": "ACM Technical Symposium on Computer Science Education (SIGCSE), Research Track",
 			"pages": "983-989",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/3287324.3287399",
+			"doi": "https://doi.org/10.1145/3287324.3287399",
 			"authorizer":"https://dl.acm.org/authorize?N677482",
-			"local url":"Kawas2019AccessibilityMicroPD.pdf",
+			"local":"Kawas2019AccessibilityMicroPD.pdf",
 			"contribution": "Describes and evaluates a vision for teaching higher education CS faculty how to integrate accessibility topics into their classes, discovering many personal and organizational barriers to adoption."
 		},
 		{
@@ -292,9 +292,9 @@
 			"source": "ACM Technical Symposium on Computer Science Education (SIGCSE), Research Track",
 			"pages": "699-705",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/3287324.3287370",
+			"doi": "https://doi.org/10.1145/3287324.3287370",
 			"authorizer":"https://dl.acm.org/authorize?N677495",
-			"local url":"Xie2019IRTEvaluation.pdf",
+			"local":"Xie2019IRTEvaluation.pdf",
 			"contribution": "Evaluates the SCS1 language independent concept inventory, demonstrating how to use IRT to evaluate assessments, and that the SCS1 has several items that may be too hard to be useful."
 		},
 		{
@@ -307,7 +307,7 @@
 			"source": "ACM Symposium on User Interface Software and Technology (UIST)",
 			"pages": "to appear",
 			"publisher": "ACM",
-			"local url":"Swearngin2018Scout.pdf",
+			"local":"Swearngin2018Scout.pdf",
 			"contribution": "Describes early work on a system to support rapid design exploration of user interface layouts."
 		},
 		{
@@ -321,9 +321,9 @@
 			"pages": "31-39",
 			"acceptance rate":"22%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/3230977.3230992",
+			"doi": "https://doi.org/10.1145/3230977.3230992",
 			"authorizer":"https://dl.acm.org/authorize?N677498",
-			"local url":"Nelson2018Theory.pdf",
+			"local":"Nelson2018Theory.pdf",
 			"award": ["best paper"],
 			"contribution": "Argues that our desire to both advance explanatory theory and advance design splits our attention, which prevents us from excelling at both; that our emphasis on applying and refining general theories of learning is done at the expense of domain-specific theories of computer science knowledge; and our use of theory as a critical lens in peer review prevents the publication of designs that may accelerate design progress."
 		},
@@ -338,9 +338,9 @@
 			"pages": "69-77",
 			"acceptance rate":"22%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/3230977.3230998",
+			"doi": "https://doi.org/10.1145/3230977.3230998",
 			"authorizer":"https://dl.acm.org/authorize?N677496",
-			"local url":"Oleson2018InclusivePCK.pdf",
+			"local":"Oleson2018InclusivePCK.pdf",
 			"contribution": "Through interviews and observations, identifies 11 components of pedagogical content knowledge required to teach inclusive design in HCI education, including strategies for anticipating and addressing resistance to the topic of inclusion, strategies for modeling and scaffolding perspective taking, and strategies for tailoring instruction to students’ prior beliefs and biases."
 		},
 		{
@@ -354,9 +354,9 @@
 			"pages": "115-123",
 			"acceptance rate":"22%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/3230977.3231004",
+			"doi": "https://doi.org/10.1145/3230977.3231004",
 			"authorizer":"https://dl.acm.org/authorize?N677497",
-			"local url":"Kwik2018Transfers.pdf",
+			"local":"Kwik2018Transfers.pdf",
 			"contribution": "Finds that while transfer students in one university were more diverse demographically, the support of the university for transfer student orientation mitigated any social effects of transferring, but did not eliminate gaps in academic performance."
 		},
 		{
@@ -370,9 +370,9 @@
 			"pages": "Paper 504",
 			"publisher": "ACM",
 			"acceptance rate":"25%",
-			"digital library url": "https://doi.org/10.1145/3173574.3174078",
+			"doi": "https://doi.org/10.1145/3173574.3174078",
 			"authorizer":"https://dl.acm.org/authorize?N658027",
-			"local url":"Swearngin2018Rewire.pdf",
+			"local":"Swearngin2018Rewire.pdf",
 			"contribution": "Presents a technique for automatically converting screenshots of imagines into vector representations for use by designers. Demonstrates that designers find the technique accurate enough and superior to replicating user interfaces manually."
 		},
 		{
@@ -386,9 +386,9 @@
 			"pages": "Paper 602",
 			"acceptance rate":"25%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/3173574.3174196",
+			"doi": "https://doi.org/10.1145/3173574.3174196",
 			"authorizer":"https://dl.acm.org/authorize?N658026",
-			"local url":"Banerjee2018WeCode.pdf",
+			"local":"Banerjee2018WeCode.pdf",
 			"award": ["best paper honorable mention"],
 			"contribution": "Investigates how a programming-by-demonstration programming environment with no English text can facilitate joint-media engagement between children and their parents."
 		},
@@ -403,9 +403,9 @@
 			"pages": "236-244",
 			"acceptance rate":"37%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/3159450.3159475",
+			"doi": "https://doi.org/10.1145/3159450.3159475",
 			"authorizer":"https://dl.acm.org/authorize?N658190",
-			"local url":"Ko2018Mentorship.pdf",
+			"local":"Ko2018Mentorship.pdf",
 			"contribution": "Investigates the nature of informal computing mentoring relationships amongst students seeking to be the first in their family to attend college. Demonstrates that mentorship occurs even in low-resource settings with little CS expertise, and most often amongst peers and siblings."
 		},
 		{
@@ -419,9 +419,9 @@
 			"pages":"344-349",
 			"publisher": "ACM",
 			"acceptance rate":"37%",
-			"digital library url": "https://doi.org/10.1145/3159450.3159527",
+			"doi": "https://doi.org/10.1145/3159450.3159527",
 			"authorizer":"https://dl.acm.org/authorize?N658959",
-			"local url":"Xie2018TracingStrategies.pdf",
+			"local":"Xie2018TracingStrategies.pdf",
 			"contribution":"Describes and evaluates a simple but powerful strategy for scaffolding the tracing of program execution. With less than 30 minutes of practice, novices in a CS1 course had midterm grades 7% higher."
 		},
 		{
@@ -435,9 +435,9 @@
 			"pages":"197-202",
 			"acceptance rate":"37%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/3159450.3159484",
+			"doi": "https://doi.org/10.1145/3159450.3159484",
 			"authorizer":"https://dl.acm.org/authorize?N658199",
-			"local url":"Shinohara2018AccessComputingSurvey.pdf",
+			"local":"Shinohara2018AccessComputingSurvey.pdf",
 			"contribution":"Investigates the prevalence of instruction on accessibility among computing and information science faculty. Finds that nearly all HCI faculty teach something about accessibility, that most faculty want to teach it, but don't have the experience, and don't know how it fits into their course content."
 		},
 		{
@@ -449,7 +449,7 @@
 			"title":"Modeling Programming Problem Solving Through Interactive Worked Examples",
 			"source":"Workshop on Evaluation and Usability of Programming Languages and Tools (PLATEAU)",
 			"pages":"",
-			"local url":"Loksa2017PLATEAU.pdf",
+			"local":"Loksa2017PLATEAU.pdf",
 			"publisher": "ACM",
 			"contribution":"Briefly overviews a vision for programming process worked examples that demonstrate an expert working through a programming problem."
 		},
@@ -464,8 +464,8 @@
 			"pages":"191-199",
 			"acceptance rate":"29%",
 			"publisher": "IEEE",
-			"digital library url":"https://doi.org/10.1109/VLHCC.2017.8103467",
-			"local url":"Yan2017GidgetAbandonment.pdf",
+			"doi":"https://doi.org/10.1109/VLHCC.2017.8103467",
+			"local":"Yan2017GidgetAbandonment.pdf",
 			"contribution":"Investigates the feasibility of predicting when a learner will abandon a coding tutorial, finding that account activation and help-seeking behavior predict continued learning, while tutorial features indicating struggle predicted abandonment."
 		},
 		{
@@ -480,8 +480,8 @@
 			"acceptance rate":"27%",
 			"publisher": "ACM",
 			"authorizer":"http://dl.acm.org/authorize?N42754",
-			"digital library url":"https://doi.org/10.1145/3105726.3106178",
-			"local url":"Nelson2017PLTutor.pdf",
+			"doi":"https://doi.org/10.1145/3105726.3106178",
+			"local":"Nelson2017PLTutor.pdf",
 			"contribution":"Contributes a new theory of what it means to know a programming language, a novel pedagogy and computer-based tutorial for teaching this knowledge, and evidence that 1) the tutorial promotes significantly higher learning gains over conventional programming language tutorials, and 2) that these gains predict the majority of the variance in CS1 midterm grades."
 		},
 		{
@@ -496,8 +496,8 @@
 			"acceptance rate":"27%",
 			"publisher": "ACM",
 			"authorizer":"http://dl.acm.org/authorize?N42766",
-			"digital library url":"https://doi.org/10.1145/3105726.3106176",
-			"local url":"Thayer2017CodingBootcamps.pdf",
+			"doi":"https://doi.org/10.1145/3105726.3106176",
+			"local":"Thayer2017CodingBootcamps.pdf",
 			"contribution":"Finds that bootcamps can be an alternate path into the software industry for people who missed earlier computing education opportunities, particularly for women, but students face great personal costs and risks, including significant time, money, and effort before, during, and after bootcamps."
 		},
 		{
@@ -512,8 +512,8 @@
 			"acceptance rate":"27%",
 			"publisher": "ACM",
 			"authorizer":"http://dl.acm.org/authorize?N42765",
-			"digital library url":"https://doi.org/10.1145/3105726.3106177",
-			"local url":"Ko2017Mentorship.pdf",
+			"doi":"https://doi.org/10.1145/3105726.3106177",
+			"local":"Ko2017Mentorship.pdf",
 			"contribution":"Finds that interest in computing was strongly related to having a mentoring relationship and not to gender or socioeconomic status, that teens with mentors also engaged in significantly more computing education and had more diverse beliefs about peers who engaged in computing education, and that teens who took a class from an instructor who aimed to become students’ teacher-mentor had significantly greater positive changes in interest in computing than those who already had a mentor."
 		},
 		{
@@ -526,8 +526,8 @@
 			"source":"International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
 			"pages":"2-8",
 			"publisher": "ACM",
-			"digital library url":"https://doi.org/10.1109/CHASE.2017.3",
-			"local url":"Li2017CrossDisciplinary.pdf",
+			"doi":"https://doi.org/10.1109/CHASE.2017.3",
+			"local":"Li2017CrossDisciplinary.pdf",
 			"contribution":"Finds that non-software developers who collaborate with software developers described great software engineers as masters of their own technical domain, open-minded to the input of others, proactively informing everyone, and seeing the big picture of how pieces fit together."
 		},
 		{
@@ -540,9 +540,9 @@
 			"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 			"pages":"4703-4714",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/3025453.3025506",
+			"doi": "https://doi.org/10.1145/3025453.3025506",
 			"authorizer":"http://dl.acm.org/authorize?N37843",
-			"local url":"Swearngin2017Genie.pdf",
+			"local":"Swearngin2017Genie.pdf",
 			"contribution":"Presents Genie, a system to reverse engineer and retarget interactive commands on a website, which allows users to engage with the web via arbitrary input modalities, including speech, keyboard, and command-line input."
 		},
 		{
@@ -555,8 +555,8 @@
 			"source":"International Conference on Software Engineering (ICSE), Software Engineering in Practice",
 			"pages":"3-12",
 			"publisher": "IEEE",
-			"digital library url":"https://doi.org/10.1109/ICSE-SEIP.2017.29",
-			"local url":"Ko2017AnswerDashReflection.pdf",
+			"doi":"https://doi.org/10.1109/ICSE-SEIP.2017.29",
+			"local":"Ko2017AnswerDashReflection.pdf",
 			"contribution":"Describes an analysis my personal diary reflecting on 9,000 hours of software startup work, presenting nine claims about software engineering work."
 		},
 		{
@@ -569,8 +569,8 @@
 			"source":"Journal of Visual Languages and Computing (JVLC)",
 			"pages":"51-65",
 			"publisher": "Elsvier",
-			"digital library url":"http://dx.doi.org/10.1016/j.jvlc.2017.04.005",
-			"local url": "Jernigan2017IdeaGarden.pdf",
+			"doi":"http://dx.doi.org/10.1016/j.jvlc.2017.04.005",
+			"local": "Jernigan2017IdeaGarden.pdf",
 			"contribution":"Describes the general architecture for the Idea Garden paradigm and a series of studies that suggest it's effectiveness at unblocking learners' problem solving."
 		},
 		{
@@ -584,8 +584,8 @@
 			"pages":"321-326",
 			"acceptance rate":"30%",
 			"publisher": "ACM",
-			"digital library url":"https://doi.org/10.1145/3017680.3017728",
-			"local url": "Kim2017CodingTutorialEvaluation.pdf",
+			"doi":"https://doi.org/10.1145/3017680.3017728",
+			"local": "Kim2017CodingTutorialEvaluation.pdf",
 			"contribution":"Using a set of pedagogical principles, evaluates the current state of tutorial instruction, finding that only a few tutorials follow best practices."
 		},
 		{
@@ -598,9 +598,9 @@
 			"source":"ACM Workshop on Workshop on Evaluation and Usability of Programming Languages and Tools (PLATEAU)",
 			"pages":"32-33",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/3001878.3001880",
+			"doi": "https://doi.org/10.1145/3001878.3001880",
 			"authorizer":"http://dl.acm.org/authorize?N26205",
-			"local url":"Ko2016WhatAreProgrammingLanguages.pdf",
+			"local":"Ko2016WhatAreProgrammingLanguages.pdf",
 			"contribution":"Reflects on the implications of various definitions of programming languages on research and practice."
 		},
 		{
@@ -613,9 +613,9 @@
 			"source":"ACM Inroads",
 			"pages":"65-68",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/2968453",
+			"doi": "https://doi.org/10.1145/2968453",
 			"authorizer":"http://dl.acm.org/authorize?N27707",
-			"local url": "Ko2016TeachingAccessibility.pdf",
+			"local": "Ko2016TeachingAccessibility.pdf",
 			"contribution":"Discusses AccessComputing efforts to implement and disseminate curriculum on accessibility into academia and industry."
 		},
 		{
@@ -629,9 +629,9 @@
 			"pages":"83-91",
 			"acceptance rate":"25%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/2960310.2960334",
+			"doi": "https://doi.org/10.1145/2960310.2960334",
 			"authorizer":"http://dl.acm.org/authorize?N10039",
-			"local url": "Loksa2016SelfRegulation.pdf",
+			"local": "Loksa2016SelfRegulation.pdf",
 			"contribution":"Finds that while most novices engage in self-regulation to navigate and inform their problem solving efforts, these self-regulation efforts are only effective when accompanied by programming knowledge adequate to succeed at solving a given problem."
 		},
 		{
@@ -644,8 +644,8 @@
 			"source":"Perspectives on Data Science for Software Engineering, 1st Edition",
 			"pages":"",
 			"publisher": "ACM",
-			"local url": null,
-			"digital library url":"http://www.amazon.com/Perspectives-Data-Science-Software-Engineering/dp/0128042060/ref=sr_1_3?s=books&ie=UTF8&qid=1455825322&sr=1-3",
+			"local": null,
+			"doi":"http://www.amazon.com/Perspectives-Data-Science-Software-Engineering/dp/0128042060/ref=sr_1_3?s=books&ie=UTF8&qid=1455825322&sr=1-3",
 			"contribution":"Discusses the importance of monitoring, bug reporting, and user feedback in verifying requirements."
 		},
 		{
@@ -658,7 +658,7 @@
 			"source":"IEEE Computer",
 			"pages":"44-52",
 			"publisher": "IEEE",
-			"local url":"Myers2016ProgrammersAreUsers.pdf",
+			"local":"Myers2016ProgrammersAreUsers.pdf",
 			"contribution":"Argues that HCI methods are directly applicable to designing and developing software development tools, and provides an overview of several methods that have been used in research to invent and evaluate new developer tools."
 		},
 		{
@@ -672,9 +672,9 @@
 			"pages":"1449-1461",
 			"acceptance rate":"23%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/2858036.2858252",
+			"doi": "https://doi.org/10.1145/2858036.2858252",
 			"authorizer":"http://dl.acm.org/authorize?N04874",
-			"local url":"Loksa2016ProgrammingProblemSolving.pdf",
+			"local":"Loksa2016ProgrammingProblemSolving.pdf",
 			"contribution":"Teaching novice programmers the structure of programming problem solving activities and to be aware of which activity they are conducting and whether they are succeeding has a substantial impact on their productivity, self-efficacy, independence, and growth mindset."
 		},
 		{
@@ -688,8 +688,8 @@
 			"source": "CRA Computing Community Consortium",
 			"pages": "",
 			"publisher": "Computing Research Association",
-			"digital library url": "http://cra.org/ccc/resources/ccc-led-whitepapers/",
-			"local url": "Cooper2016ImportanceofCSEd.pdf",
+			"doi": "http://cra.org/ccc/resources/ccc-led-whitepapers/",
+			"local": "Cooper2016ImportanceofCSEd.pdf",
 			"contribution": "Argues for the foundational role of computing education research in computer science departments."
 		},
 		{
@@ -703,8 +703,8 @@
 			"pages":"259-268",
 			"publisher": "ACM",
 			"authorizer":"http://dl.acm.org/authorize?N08341",
-			"digital library url": "https://doi.org/10.1145/2807442.2807473",
-			"local url": "Burg2015ExplainingWebChanges.pdf",
+			"doi": "https://doi.org/10.1145/2807442.2807473",
+			"local": "Burg2015ExplainingWebChanges.pdf",
 			"contribution":"An algorithm and interface that allows web developers to select a before and after state of a web site to see the code that caused the changes."
 		},
 		{
@@ -718,8 +718,8 @@
 			"pages":"235-243",
 			"acceptance rate":"29%",
 			"publisher": "IEEE",
-			"digital library url": "http://dx.doi.org/10.1109/VLHCC.2015.7357222",
-			"local url": "Jernigan2015PrincipledEvaluationIdeaGarden.pdf",
+			"doi": "http://dx.doi.org/10.1109/VLHCC.2015.7357222",
+			"local": "Jernigan2015PrincipledEvaluationIdeaGarden.pdf",
 			"contribution":"In-context help on programming problem solving helps learners with diverse learning strategies work more independently."
 		},
 		{
@@ -734,8 +734,8 @@
 			"acceptance rate":"26%",
 			"publisher": "ACM",
 			"authorizer":"http://dl.acm.org/authorize?N05630",
-			"digital library url": "http://dx.doi.org/10.1145/2787622.2787709",
-			"local url": "Lee2015EvaluatingGidget.pdf",
+			"doi": "http://dx.doi.org/10.1145/2787622.2787709",
+			"local": "Lee2015EvaluatingGidget.pdf",
 			"contribution":"Mastery learning approaches to teaching programming produce better skills in program tracing than task-free open-ended creative environments."
 		},
 		{
@@ -749,8 +749,8 @@
 			"pages":"700-710",
 			"acceptance rate":"18%",
 			"publisher": "IEEE",
-			"digital library url":"http://dx.doi.org/10.1109/ICSE.2015.335",
-			"local url":"Li2015GreatEngineers.pdf",
+			"doi":"http://dx.doi.org/10.1109/ICSE.2015.335",
+			"local":"Li2015GreatEngineers.pdf",
 			"contribution":"Software engineering expertise is much more about personality, interpersonal skills, and decision-making expertise than about technical knowledge and ability."
 		},
 		{
@@ -764,9 +764,9 @@
 			"pages":"1749-1758",
 			"acceptance rate":"24%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/2702123.2702412",
+			"doi": "https://doi.org/10.1145/2702123.2702412",
 			"authorizer":"http://dl.acm.org/authorize?N98647",
-			"local url": "Chilana2015Adoption.pdf",
+			"local": "Chilana2015Adoption.pdf",
 			"award": ["best paper"],
 			"contribution":"Research prototypes and evidence of their usability and usefulness are only a tiny part of creating a successful whole product."
 		},
@@ -781,8 +781,8 @@
 			"pages":"57-64",
 			"acceptance rate":"30%",
 			"publisher": "IEEE",
-			"digital library url":"http://dx.doi.org/10.1109/VLHCC.2014.6883023",
-			"local url":"Lee2014GidgetPrinciples.pdf",
+			"doi":"http://dx.doi.org/10.1109/VLHCC.2014.6883023",
+			"local":"Lee2014GidgetPrinciples.pdf",
 			"contribution":"Teaching debugging first, while redirecting blame to the computer instead of the learner, can increase learning efficiency and engage learners of all genders equally."
 		  },
 		{
@@ -795,9 +795,9 @@
 			"source":"International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
 			"pages":"32-39",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/2593702.2593719",
+			"doi": "https://doi.org/10.1145/2593702.2593719",
 			"authorizer":"http://dl.acm.org/authorize?N89379",
-			"local url":"Ko2014News.pdf",
+			"local":"Ko2014News.pdf",
 			"contribution":"Software failures reported in the news describe mostly minor consequences, though reports of death, injury, or loss of access to basic needs is increasing."
 		},
 		{
@@ -812,8 +812,8 @@
 			"acceptance rate":"39%",
 			"publisher": "ACM",
 			"authorizer":"http://dl.acm.org/authorize?N89370",
-			"digital library url": "https://doi.org/10.1145/2538862.2538938",
-			"local url": "Charters2014ChangingAttitudes.pdf",
+			"doi": "https://doi.org/10.1145/2538862.2538938",
+			"local": "Charters2014ChangingAttitudes.pdf",
 			"contribution":"Adult attitudes toward programming, while generally negative, can be quickly turned positive with a brief exposure to a debugging game."
 		},
 		{
@@ -826,8 +826,8 @@
 			"source":"Empirical Software Engineering",
 			"pages":"110-141",
 			"publisher": "Springer",
-			"digital library url": "https://doi.org/10.1007/s10664-013-9279-3",
-			"local url": "Ko2013SEToolEvaluations.pdf",
+			"doi": "https://doi.org/10.1007/s10664-013-9279-3",
+			"local": "Ko2013SEToolEvaluations.pdf",
 			"volume":20,
 			"issue":1,
 			"contribution":"Software engineering researchers rarely evaluate new tools with software developers, but there are several best practices that can make such evaluations less risky and difficult to conduct."
@@ -842,9 +842,9 @@
 			"source":"ACM Symposium on User Interface Software and Technology (UIST)",
 			"pages":"473-484",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/2501988.2502050",
+			"doi": "https://doi.org/10.1145/2501988.2502050",
 			"authorizer":"http://dl.acm.org/authorize?N89371",
-			"local url": "Burg2013Timelapse.pdf",
+			"local": "Burg2013Timelapse.pdf",
 			"award": ["best paper honorable mention"],
 			"contribution":"A system for recording inputs to a web application and replaying them deterministically with minimal time or space overhead."
 		},
@@ -859,9 +859,9 @@
 			"pages":"153-160",
 			"acceptance rate":"30%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/2493394.2493410",
+			"doi": "https://doi.org/10.1145/2493394.2493410",
 			"authorizer":"http://dl.acm.org/authorize?N89372",
-			"local url": "Lee2013Assessments.pdf",
+			"local": "Lee2013Assessments.pdf",
 			"award": ["best paper"],
 			"contribution":"Including brief assessments in a programming game improves engagement and learning efficiency."
 		},
@@ -876,9 +876,9 @@
 			"pages":"217-226",
 			"acceptance rate":"20%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/2470654.2470685",
+			"doi": "https://doi.org/10.1145/2470654.2470685",
 			"authorizer":"http://dl.acm.org/authorize?N89373",
-			"local url": "Chilana2013LemonAidFieldStudy.pdf",
+			"local": "Chilana2013LemonAidFieldStudy.pdf",
 			"contribution":"Contextual help is well-liked by both end-users and software teams in real world use."
 		},
 		{
@@ -888,7 +888,7 @@
 			"deadname": true,
 			"year": 2013,
 			"title":"Crowdsourced Q&A-based Contextual Help for Web Applications: Challenges and Opportunities",
-			"local url": "Chilana2013LemonAidWorkshop.pdf",
+			"local": "Chilana2013LemonAidWorkshop.pdf",
 			"publisher": "ACM",
 			"source":"CSCW Workshop on Social Media Question Asking",
 			"pages":"",
@@ -905,9 +905,9 @@
 			"pages":"1549-1558",
 			"acceptance rate":"25%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/2207676.2208620",
+			"doi": "https://doi.org/10.1145/2207676.2208620",
 			"authorizer":"http://dl.acm.org/authorize?N89385",
-			"local url": "Chilana2012LemonAid.pdf",
+			"local": "Chilana2012LemonAid.pdf",
 			"contribution":"A technique for extracting queries from selections of user interface elements that provides reliable, relevant help retrieval."
 		},
 		{
@@ -921,9 +921,9 @@
 			"pages":"1559-1568",
 			"acceptance rate":"25%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/2207676.2208621",
+			"doi": "https://doi.org/10.1145/2207676.2208621",
 			"authorizer":"http://dl.acm.org/authorize?N89386",
-			"local url": "Kriplean2012Reflect.pdf",
+			"local": "Kriplean2012Reflect.pdf",
 			"contribution":"A technique for demonstrating listening on the web through restatement that engages lurkers in supporting common ground in groups."
 		},
 		{
@@ -936,9 +936,9 @@
 			"source":"ACM Conference on Human Factors in Computing Systems (CHI), alt.chi",
 			"pages":"191-200",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/2212776.2212797",
+			"doi": "https://doi.org/10.1145/2212776.2212797",
 			"authorizer":"http://dl.acm.org/authorize?N89374",
-			"local url": "Ko2012Frictionary.pdf",
+			"local": "Ko2012Frictionary.pdf",
 			"contribution":"A technique for extracting aggregate patterns in software problems by analyzing the natural language text of technical support discussion forums."
 		},
 		{
@@ -951,9 +951,9 @@
 			"source":"ACM Conference on Human Factors in Computing Systems, Case Studies (CHI)",
 			"pages":"419-431",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/2212776.2212819",
+			"doi": "https://doi.org/10.1145/2212776.2212819",
 			"authorizer":"http://dl.acm.org/authorize?N89387",
-			"local url": "Chilana2012Facebook.pdf",
+			"local": "Chilana2012Facebook.pdf",
 			"contribution":"Efforts to make a universal product can limit innovation, both because of the diversity of user knowledge and the limits of interpreting data science patterns."
 		},
 		{
@@ -967,9 +967,9 @@
 			"pages":"109-116",
 			"acceptance rate":"30%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/2016911.2016934",
+			"doi": "https://doi.org/10.1145/2016911.2016934",
 			"authorizer":"http://dl.acm.org/authorize?N89389",
-			"local url":"Lee2011Gidget.pdf",
+			"local":"Lee2011Gidget.pdf",
 			"contribution":"Giving a computer eyes and having it use personal pronouns that double the amount of time that learners engaging in discretionary computing education by focusing their attention on instructional material."
 		},
 		{
@@ -983,9 +983,9 @@
 			"pages":"2177-2186",
 			"acceptance rate":"25%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/1978942.1979260",
+			"doi": "https://doi.org/10.1145/1978942.1979260",
 			"authorizer":"http://dl.acm.org/authorize?N89382",
-			"local url":"Ko2011FeedLack.pdf",
+			"local":"Ko2011FeedLack.pdf",
 			"contribution":"A static program analysis for finding all inputs in a user interface that do not produce some form of feedback."
 		},
 		{
@@ -999,9 +999,9 @@
 			"pages":"716-725",
 			"acceptance rate":"18%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/1985793.1985894",
+			"doi": "https://doi.org/10.1145/1985793.1985894",
 			"authorizer":"http://dl.acm.org/authorize?N89380",
-			"local url":"Li2011PrePostDefects.pdf",
+			"local":"Li2011PrePostDefects.pdf",
 			"contribution":"Beta-testers use more applications, engage in more self-install, come from non-representative countries, and use more advanced hardware, skewing data on crashes, hangs, and kernel panics that is used for bug triage."
 		},
 		{
@@ -1015,9 +1015,9 @@
 			"pages":"106-113",
 			"acceptance rate":"63%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/1940761.1940776",
+			"doi": "https://doi.org/10.1145/1940761.1940776",
 			"authorizer":"http://dl.acm.org/authorize?N89395",
-			"local url":"Ko2011ContentiousBugReports.pdf",
+			"local":"Ko2011ContentiousBugReports.pdf",
 			"contribution":"Developers in open source can be passionate about making decisions that positively impact users, but often lack the information necessary to do this objectively, instead relying on anecdote, speculation, and hyperbole."
 		},
 		{
@@ -1031,9 +1031,9 @@
 			"pages":"37-46",
 			"acceptance rate":"18%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/1866029.1866038",
+			"doi": "https://doi.org/10.1145/1866029.1866038",
 			"authorizer":"http://dl.acm.org/authorize?N89396",
-			"local url": "Patel2010Gestalt.pdf",
+			"local": "Patel2010Gestalt.pdf",
 			"contribution":"A development environment that supports the translation of data into machine learned classifier  that improves the ability of developers to find and fix defects."
 		},
 		{
@@ -1047,8 +1047,8 @@
 			"pages":"7-14",
 			"acceptance rate":"29%",
 			"publisher": "IEEE",
-			"digital library url":"http://dx.doi.org/10.1109/VLHCC.2010.11",
-			"local url":"Ko2010Cleanroom.pdf",
+			"doi":"http://dx.doi.org/10.1109/VLHCC.2010.11",
+			"local":"Ko2010Cleanroom.pdf",
 			"award": ["best paper"],
 			"contribution":"Detecting and highlighting identifiers that only appear once in dynamic languages helps developers find and fix challenging defects more quickly."
 		},
@@ -1063,9 +1063,9 @@
 			"pages":"1665-1674",
 			"acceptance rate":"24%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/1753326.1753576",
+			"doi": "https://doi.org/10.1145/1753326.1753576",
 			"authorizer":"http://dl.acm.org/authorize?N89398",
-			"local url":"Ko2010HowPowerUsersHelpAndHinderOpenBugReporting.pdf",
+			"local":"Ko2010HowPowerUsersHelpAndHinderOpenBugReporting.pdf",
 			"award":["best paper honorable mention"],
 			"contribution":"Most bug reports submitted from non-core open source contributors describe non-issues that devolve into technical support, providing little valuable information to the core community."
 		},
@@ -1080,9 +1080,9 @@
 			"pages":"2337-2346",
 			"publisher": "ACM",
 			"acceptance rate":"24%",
-			"digital library url":"http://doi.acm.org/10.1145/1753326.1753678",
+			"doi":"http://doi.acm.org/10.1145/1753326.1753678",
 			"authorizer":"http://dl.acm.org/authorize?N89399",
-			"local url": "Chilana2010ComplexDomains.pdf",
+			"local": "Chilana2010ComplexDomains.pdf",
 			"contribution":"Lack of domain expertise can be a significant hurdle for conducting effective user research and usability testing."
 		},
 		{
@@ -1096,8 +1096,8 @@
 			"pages":"67-74",
 			"acceptance rate":"25%",
 			"publisher": "IEEE",
-			"digital library url":"http://dx.doi.org/10.1109/VLHCC.2009.5295297",
-			"local url":"Ko2009CodeAutobiographies.pdf",
+			"doi":"http://dx.doi.org/10.1109/VLHCC.2009.5295297",
+			"local":"Ko2009CodeAutobiographies.pdf",
 			"contribution":"First encounters with code must be accessible, error-tolerant and socially engaging, and must occur repeatedly across a lifetime to lead to deeper investment in computing education."
 		},
 		{
@@ -1111,9 +1111,9 @@
 			"pages":"1569-1578",
 			"acceptance rate":"24%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/1518701.1518942",
+			"doi": "https://doi.org/10.1145/1518701.1518942",
 			"authorizer":"http://dl.acm.org/authorize?N89392",
-			"local url":"Ko2009JavaWhylineUI.pdf",
+			"local":"Ko2009JavaWhylineUI.pdf",
 			"contribution":"A user interface for debugging that supports why and why not questions that enables developers to localize faults significantly faster than breakpoint debuggers."
 		},
 		{
@@ -1127,9 +1127,9 @@
 			"pages":"187-196",
 			"acceptance rate":"29%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/1502650.1502678",
+			"doi": "https://doi.org/10.1145/1502650.1502678",
 			"authorizer":"http://dl.acm.org/authorize?N89394",
-			"local url":"Kulesza2009FixingTheProgram.pdf",
+			"local":"Kulesza2009FixingTheProgram.pdf",
 			"contribution":"Enabling end users to debug machined learned programs by asking why questions about classifications causes end-users to locally optimize one class at the expense of other classes."
 		},
 		{
@@ -1143,8 +1143,8 @@
 			"pages":"177-184",
 			"acceptance rate":"29%",
 			"publisher": "IEEE",
-			"digital library url":"http://dx.doi.org/10.1109/VLHCC.2008.4639081",
-			"local url":"Myers2008InteractiveBehaviors.pdf",
+			"doi":"http://dx.doi.org/10.1109/VLHCC.2008.4639081",
+			"local":"Myers2008InteractiveBehaviors.pdf",
 			"contribution":"Designers report that behavior is much more difficult to define than appearance, that it requires collaborating with developers, and that communicating behavior to developers is of particular difficulty.",
 			"award": ["most influential paper honorable mention"]
 		},
@@ -1159,9 +1159,9 @@
 			"pages":"301-310",
 			"acceptance rate":"15%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/1368088.1368130",
+			"doi": "https://doi.org/10.1145/1368088.1368130",
 			"authorizer":"http://dl.acm.org/authorize?N89305",
-			"local url":"Ko2008JavaWhyline.pdf",
+			"local":"Ko2008JavaWhyline.pdf",
 			"award": ["best paper", "most influential paper"],
 			"contribution":"Static and dynamic program slicing algorithms for extracting and answering developers questions about program output that substantially decrease fault localization time."
 		},
@@ -1176,8 +1176,8 @@
 			"pages":"344-353",
 			"acceptance rate":"14%",
 			"publisher": "IEEE",
-			"digital library url":"http://dx.doi.org/10.1109/ICSE.2007.45",
-			"local url":"Ko2007InformationNeeds.pdf",
+			"doi":"http://dx.doi.org/10.1109/ICSE.2007.45",
+			"local":"Ko2007InformationNeeds.pdf",
 			"contribution":"Developers have many distinct information needs to be productive; some are frequent and well-served, such as information about changes to artifacts and coworker progress, but others are infrequent but critical, such as information about requirements, design rationale, and reproduction steps."
 		},
 		{
@@ -1191,9 +1191,9 @@
 			"pages":"557-566",
 			"acceptance rate":"26%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/1240624.1240714",
+			"doi": "https://doi.org/10.1145/1240624.1240714",
 			"authorizer":"http://dl.acm.org/authorize?N89309",
-			"local url": "Cherubini2007DevelopersDrawCode.pdf",
+			"local": "Cherubini2007DevelopersDrawCode.pdf",
 			"contribution":"Most of the diagrams that software developers make are transient and facilitate interpersonal communication and decision making and not for specifying or documenting program behavior."
 		},
 		{
@@ -1207,8 +1207,8 @@
 			"pages":"127-134",
 			"acceptance rate":"28%",
 			"publisher": "IEEE",
-			"digital library url":"http://dx.doi.org/10.1109/VLHCC.2006.3",
-			"local url":"Ko2006LinguisticsOfBugReports.pdf",
+			"doi":"http://dx.doi.org/10.1109/VLHCC.2006.3",
+			"local":"Ko2006LinguisticsOfBugReports.pdf",
 			"contribution":"There is regularity in the grammar of bug report titles, suggesting the potential for applying natural language processing to searching, filtering, mining, and aggregating bug reports."
 		},
 		{
@@ -1222,9 +1222,9 @@
 			"pages":"397-406",
 			"publisher": "ACM",
 			"acceptance rate":"23%",
-			"digital library url": "https://doi.org/10.1145/1124772.1124832",
+			"doi": "https://doi.org/10.1145/1124772.1124832",
 			"authorizer":"http://dl.acm.org/authorize?N89304",
-			"local url": "Myers2006Crystal.pdf",
+			"local": "Myers2006Crystal.pdf",
 			"contribution":"Algorithms and user interfaces that allow end users to ask 'why' questions about unexpected application behavior."
 		},
 		{
@@ -1238,9 +1238,9 @@
 			"pages":"387-396",
 			"acceptance rate":"23%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/1124772.1124831",
+			"doi": "https://doi.org/10.1145/1124772.1124831",
 			"authorizer":"http://dl.acm.org/authorize?N89303",
-			"local url":"Ko2006Barista.pdf",
+			"local":"Ko2006Barista.pdf",
 			"contribution":"Abstractions that make it easy to build rich multimedia interfaces in a code editor without sacrificing the ability to write code as text."
 		},
 		{
@@ -1254,9 +1254,9 @@
 			"pages":"",
 			"acceptance rate":"19%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/1095034.1095037",
+			"doi": "https://doi.org/10.1145/1095034.1095037",
 			"authorizer":"http://dl.acm.org/authorize?887034",
-			"local url":"Ko2005Citrus.pdf",
+			"local":"Ko2005Citrus.pdf",
 			"contribution":"A programming language and library with language-level support for constraints, restrictions and change notifications on primitive and aggregate data."
 		},
 		{
@@ -1270,9 +1270,9 @@
 			"pages":"331-340",
 			"publisher": "ACM",
 			"acceptance rate":"25%",
-			"digital library url": "https://doi.org/10.1145/1054972.1055018",
+			"doi": "https://doi.org/10.1145/1054972.1055018",
 			"authorizer":"http://dl.acm.org/authorize?N89310",
-			"local url":"Fogarty2005ProgrammersInterruptibility.pdf",
+			"local":"Fogarty2005ProgrammersInterruptibility.pdf",
 			"award": ["best paper"],
 			"contribution":"Developers' interruptibility can be predicted with high certainty by observing and classifying features of programming activity."
 		},
@@ -1287,9 +1287,9 @@
 			"pages":"126-135",
 			"acceptance rate":"14%",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/1062455.1062492",
+			"doi": "https://doi.org/10.1145/1062455.1062492",
 			"authorizer":"http://dl.acm.org/authorize?N89318",
-			"local url":"Ko2005MaintenanceTasks.pdf",
+			"local":"Ko2005MaintenanceTasks.pdf",
 			"slides":"talks/ICSE2005MaintenanceTasks.pdf",
 			"award": ["best paper"],
 			"contribution":"When developers fix a big or enhance a feature, they find a set of task-relevant code fragments and navigate dependencies between these fragments, but spend up to 35% of their time simply operating navigational controls in IDEs."
@@ -1305,8 +1305,8 @@
 			"pages":"199-206",
 			"acceptance rate":"32%",
 			"publisher": "IEEE",
-			"digital library url":"http://dx.doi.org/10.1109/VLHCC.2004.47",
-			"local url":"Ko2004LearningBarriers.pdf",
+			"doi":"http://dx.doi.org/10.1109/VLHCC.2004.47",
+			"local":"Ko2004LearningBarriers.pdf",
 			"slides":"talks/VLHCC2004LearningBarriers.pdf",
 			"award": ["most influential paper"],
 			"contribution":"When people write programs, they face at least six distinct problems: 1) identifying a solution, 2) finding abstractions to implement the solution, 3) coordinating these abstractions, 4) properly configuring these abstractions, 5) identifying possible causes of program failures, and 6) getting information about program execution."
@@ -1323,7 +1323,7 @@
 			"publisher": "IEEE",
 			"acceptance rate":"16%",
 			"authorizer":"http://dl.acm.org/authorize?N89312",
-			"local url":"Ko2004Whyline.pdf",
+			"local":"Ko2004Whyline.pdf",
 			"slides":"talks/CHI2004Whyline.pdf",
 			"contribution":"Algorithms and user interfaces for extracting and answering why and why not questions about program behavior."
 		},
@@ -1338,8 +1338,8 @@
 			"pages":"7-14",
 			"publisher": "IEEE",
 			"acceptance rate":"33%",
-			"digital library url":"http://dx.doi.org/10.1109/HCC.2003.1260196",
-			"local url":"Ko2003ModelOfErrors.pdf",
+			"doi":"http://dx.doi.org/10.1109/HCC.2003.1260196",
+			"local":"Ko2003ModelOfErrors.pdf",
 			"slides":"talks/VLHCC2003ProgrammingErrors.pdf",
 			"award": ["best paper", "most influential paper"],
 			"contribution":"Software defects are caused by cognitive breakdowns in specification, implementation and debugging activities and analysis of these breakdowns can be used to identify tools that prevent these breakdowns."
@@ -1355,8 +1355,8 @@
 			"pages":"175-184",
 			"publisher": "IEEE",
 			"acceptance rate":"40%",
-			"digital library url":"http://dx.doi.org/10.1109/WPC.2003.1199201",
-			"local url":"Ko2003ComprehensionStrategies.pdf",
+			"doi":"http://dx.doi.org/10.1109/WPC.2003.1199201",
+			"local":"Ko2003ComprehensionStrategies.pdf",
 			"slides":"talks/IWPC2003ComprehensionStrategies.pdf",
 			"contribution":"Programming expertise shapes strategy, but domain expertise is a better predictor of bug fixing success than strategy."
 		},
@@ -1371,8 +1371,8 @@
 			"pages":"288-295",
 			"publisher": "IEEE",
 			"acceptance rate":"30%",
-			"digital library url":"http://dx.doi.org/10.1109/HCC.2001.995276",
-			"local url":"Burnett2001TestingVisualRecursion.pdf",
+			"doi":"http://dx.doi.org/10.1109/HCC.2001.995276",
+			"local":"Burnett2001TestingVisualRecursion.pdf",
 			"contribution":"Two technique for testing recursive spreadsheets, neither of which can be understood by spreadsheet users."
 		},
 		{
@@ -1386,8 +1386,8 @@
 			"pages":"172-179",
 			"publisher": "IEEE",
 			"acceptance rate":"32%",
-			"digital library url":"http://dx.doi.org/10.1109/VL.2000.874381",
-			"local url":"Green2000UsingCWsForStudies.pdf",
+			"doi":"http://dx.doi.org/10.1109/VL.2000.874381",
+			"local":"Green2000UsingCWsForStudies.pdf",
 			"contribution":"An adaptation of the cognitive walkthrough technique that helps identify uncontrolled source of variations in experiments on developers tools."
 		},
 		{
@@ -1400,9 +1400,9 @@
 			"source":"ACM Transactions on Interactive Intelligent Systems, 1(1), Article 2",
 			"pages":"31 pages",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/2030365.2030367",
+			"doi": "https://doi.org/10.1145/2030365.2030367",
 			"authorizer":"http://dl.acm.org/authorize?N89388",
-			"local url": "Kulesza2011EndUserDebugging.pdf",
+			"local": "Kulesza2011EndUserDebugging.pdf",
 			"volume":1,
 			"issue":1,
 			"article":2,
@@ -1418,9 +1418,9 @@
 			"source":"ACM Computing Surveys, 43(3), Article 21",
 			"pages":"44 pages",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/1922649.1922658",
+			"doi": "https://doi.org/10.1145/1922649.1922658",
 			"authorizer":"http://dl.acm.org/authorize?N89384",
-			"local url":"Ko2011EndUserSoftwareEngineering.pdf",
+			"local":"Ko2011EndUserSoftwareEngineering.pdf",
 			"volume":43,
 			"issue":3,
 			"article":21,
@@ -1436,9 +1436,9 @@
 			"source":"ACM Transactions on Software Engineering and Methodology, 22(2), Article 4",
 			"pages":"Article 4",
 			"publisher": "ACM",
-			"digital library url": "https://doi.org/10.1145/1824760.1824761",
+			"doi": "https://doi.org/10.1145/1824760.1824761",
 			"authorizer":"http://dl.acm.org/authorize?N89397",
-			"local url":"Ko2010WhylineImplementation.pdf",
+			"local":"Ko2010WhylineImplementation.pdf",
 			"volume":20,
 			"issue":2,
 			"article":4,
@@ -1453,9 +1453,9 @@
 			"title":"An Exploratory Study of How Developers Seek, Relate, and Collect Relevant Information during Software Maintenance Tasks",
 			"source":"IEEE Transactions on Software Engineering, 32(12)",
 			"pages":"971-987",
-			"digital library url":"http://dx.doi.org/10.1109/TSE.2006.116",
+			"doi":"http://dx.doi.org/10.1109/TSE.2006.116",
 			"publisher": "IEEE",
-			"local url":"Ko2006SeekRelateCollect.pdf",
+			"local":"Ko2006SeekRelateCollect.pdf",
 			"volume":33,
 			"issue":12,
 			"contribution":"Developers work on software maintenance tasks by searching for relevant code, navigating dependencies, and constructing a mental model of the dependencies of a feature, suggesting the need for environments that explicitly support feature location through dependency navigation."
@@ -1470,8 +1470,8 @@
 			"source":"Journal of Visual Languages and Computing, 16(1-2)",
 			"pages":"41-84",
 			"publisher":"Elsvier",
-			"digital library url":"http://dx.doi.org/10.1016/j.jvlc.2004.08.003",
-			"local url":"Ko2004SoftwareErrorsFramework.pdf",
+			"doi":"http://dx.doi.org/10.1016/j.jvlc.2004.08.003",
+			"local":"Ko2004SoftwareErrorsFramework.pdf",
 			"volume":16,
 			"issue":1,
 			"contribution":"Software defects arise from latent errors in specifications, developer knowledge, tool support, and program implementation, ultimately producing runtime failures."
@@ -1486,8 +1486,8 @@
 			"source":"Journal of Visual Languages and Computing, 13(5)",
 			"pages":"517-544",
 			"publisher":"IEEE",
-			"digital library url":"http://dx.doi.org/10.1006/jvlc.2002.0245",
-			"local url":"Ko2002CWExperiments.pdf",
+			"doi":"http://dx.doi.org/10.1006/jvlc.2002.0245",
+			"local":"Ko2002CWExperiments.pdf",
 			"volume":13,
 			"contribution":"An adaption of the cognitive walkthrough for finding potential difficulties of novice users in an evaluation of a developer tool."
 		},
@@ -1502,8 +1502,8 @@
 			"pages":"173-176",
 			"acceptance rate":"35%",
 			"publisher":"IEEE",
-			"digital library url":"http://dx.doi.org/10.1109/VLHCC.2011.6070395",
-			"local url":"Ko2011FeasibilityAssessments.pdf",
+			"doi":"http://dx.doi.org/10.1109/VLHCC.2011.6070395",
+			"local":"Ko2011FeasibilityAssessments.pdf",
 			"contribution":"Test the feasibility of a feature in an API requires architectural and terminology knowledge of the API, which is often missing from documentation."
 		},
 		{
@@ -1517,9 +1517,9 @@
 			"pages":"2243-2246",
 			"acceptance rate":"25%",
 			"publisher":"ACM",
-			"digital library url": "https://doi.org/10.1145/1978942.1979270",
+			"doi": "https://doi.org/10.1145/1978942.1979270",
 			"authorizer":"http://dl.acm.org/authorize?N89383",
-			"local url":"Chilana2011PostDeploymentUsability.pdf",
+			"local":"Chilana2011PostDeploymentUsability.pdf",
 			"contribution":"Technical support and design are rarely linked in software companies despite significant opportunities for user research, usability feedback, and feature ideas."
 		},
 		{
@@ -1533,8 +1533,8 @@
 			"pages":"203-206",
 			"acceptance rate":"29%",
 			"publisher":"IEEE",
-			"digital library url":"http://doi.acm.org/10.1145/1753326.1753678",
-			"local url":"Chilana2010ExpectationViolation.pdf",
+			"doi":"http://doi.acm.org/10.1145/1753326.1753678",
+			"local":"Chilana2010ExpectationViolation.pdf",
 			"contribution":"The more a bug reporter expresses the issue in terms of a violation of community expectations of program behavior rather than individual expectations, the more likely it is to be fixed."
 		},
 		{
@@ -1547,7 +1547,7 @@
 			"source":"Human-Computer Interaction Consortium (HCIC)",
 			"pages":"",
 			"publisher": "HCI Consortium",
-			"local url":"Myers2009FutureOfProgrammingInHCI.pdf",
+			"local":"Myers2009FutureOfProgrammingInHCI.pdf",
 			"contribution": "Summarizes past work on programming interfaces and open challenges in supporting the broader set of programming activities."
 		},
 		{
@@ -1561,8 +1561,8 @@
 			"pages":"185-188",
 			"acceptance rate":"29%",
 			"publisher":"IEEE",
-			"digital library url":"http://dx.doi.org/10.1109/VLHCC.2008.4639082",
-			"local url": "Park2008DesignersDescriptions.pdf",
+			"doi":"http://dx.doi.org/10.1109/VLHCC.2008.4639082",
+			"local": "Park2008DesignersDescriptions.pdf",
 			"contribution":"Designers use consistent natural language to describe the behavior of interaction techniques, suggesting the feasibility of programming languages for expressing these behaviors."
 		},
 		{
@@ -1575,8 +1575,8 @@
 			"source":"IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
 			"pages":"59-62",
 			"publisher":"IEEE",
-			"digital library url": "https://doi.org/10.1109/VLHCC.2006.21",
-			"local url":"Scaffidi2006InformationWorkers.pdf",
+			"doi": "https://doi.org/10.1109/VLHCC.2006.21",
+			"local":"Scaffidi2006InformationWorkers.pdf",
 			"contribution":"End user programmers use of programming is typically limited to one of three language features: macros for automation, linked structure queries, or imperative features."
 		},
 		{
@@ -1589,9 +1589,9 @@
 			"source":"International Conference on Software Engineering (ICSE), Doctoral Consortium",
 			"pages":"989-992",
 			"publisher":"IEEE",
-			"digital library url": "https://doi.org/10.1145/1134285.1134471",
+			"doi": "https://doi.org/10.1145/1134285.1134471",
 			"authorizer":"http://dl.acm.org/authorize?N89302",
-			"local url":"Ko2006DoctoralConsortium.pdf",
+			"local":"Ko2006DoctoralConsortium.pdf",
 			"contribution": "A doctoral consortium abstract, summarizing progress on the Whyline for Java."
 		},
 		{
@@ -1604,9 +1604,9 @@
 			"source":"ACM Conference on Human Factors in Computing Systems (CHI), Extended Abstracts",
 			"pages":"75-80",
 			"publisher":"ACM",
-			"digital library url": "https://doi.org/10.1145/1125451.1125472",
+			"doi": "https://doi.org/10.1145/1125451.1125472",
 			"authorizer":"http://dl.acm.org/authorize?N89315",
-			"local url": "Myers2006ResearchOverview.pdf",
+			"local": "Myers2006ResearchOverview.pdf",
 			"contribution": "A brief summary of the research area of end-user programming."
 		},
 		{
@@ -1619,8 +1619,8 @@
 			"source":"IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
 			"pages":"314-316",
 			"publisher":"IEEE",
-			"digital library url":"http://dx.doi.org/10.1109/VLHCC.2005.67",
-			"local url":"Coblenz2005Slate.pdf",
+			"doi":"http://dx.doi.org/10.1109/VLHCC.2005.67",
+			"local":"Coblenz2005Slate.pdf",
 			"contribution":"A language feature for specifying the unit of analysis for values in a spreadsheet, allowing the language to identify type errors as unit of analysis mismatch."
 		},
 		{
@@ -1633,9 +1633,9 @@
 			"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 			"pages":"1557-1560",
 			"publisher":"ACM",
-			"digital library url": "https://doi.org/10.1145/1056808.1056965",
+			"doi": "https://doi.org/10.1145/1056808.1056965",
 			"authorizer":"http://dl.acm.org/authorize?N89319",
-			"local url":"Ko2005TextEditing.pdf",
+			"local":"Ko2005TextEditing.pdf",
 			"slides":"talks/CHI2005TextEditing.pdf",
 			"contribution":"When writing code in a text editor, developers regularly pass through invalid syntactic states, making strict structured editors infeasible."
 		},
@@ -1649,8 +1649,8 @@
 			"source":"IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
 			"pages":"277-278",
 			"publisher":"IEEE",
-			"digital library url":"http://dx.doi.org/10.1109/VLHCC.2004.18",
-			"local url":"Ko2004FlexibleAndSupportive.pdf",
+			"doi":"http://dx.doi.org/10.1109/VLHCC.2004.18",
+			"local":"Ko2004FlexibleAndSupportive.pdf",
 			"contribution": "Finds that structured editors need some room for passing between unstructured phases to flexibly support editing."
 		},
 		{
@@ -1663,8 +1663,8 @@
 			"source":"IEEE Symposia Human-Centric Computing Languages and Environments",
 			"pages":"271-272",
 			"publisher":"IEEE",
-			"digital library url":"http://dx.doi.org/10.1109/10.1109/HCC.2003.1260245",
-			"local url":"Ko2003NonProgrammerMotivation.pdf",
+			"doi":"http://dx.doi.org/10.1109/10.1109/HCC.2003.1260245",
+			"local":"Ko2003NonProgrammerMotivation.pdf",
 			"contribution": "Summarizes Amy's early thoughts on her dissertation work."
 		},
 		{
@@ -1677,9 +1677,9 @@
 			"source":"ACM Conference on Human Factors in Computing Systems (CHI)",
 			"pages":"1036-1037",
 			"publisher":"ACM",
-			"digital library url": "https://doi.org/10.1145/765891.766135",
+			"doi": "https://doi.org/10.1145/765891.766135",
 			"authorizer":"http://dl.acm.org/authorize?N89313",
-			"local url":"Ko2003AliceContextualInquiry.pdf",
+			"local":"Ko2003AliceContextualInquiry.pdf",
 			"contribution": "Summarizes preliminary insights on debugging, showing that end-user programmers often start from faulty assumptions about runtime behavior."
 		},
 		{
@@ -1692,8 +1692,8 @@
 			"source":"International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
 			"pages":"76-82",
 			"publisher":"ACM",
-			"digital library url":"http://dx.doi.org/10.1109/CHASE.2012.6223028",
-			"local url": "Lee2012UserFeedback.pdf",
+			"doi":"http://dx.doi.org/10.1109/CHASE.2012.6223028",
+			"local": "Lee2012UserFeedback.pdf",
 			"contribution":"As issues reported by end users are transformed from emails, to support ticket, to discussion, to bug report, to feature specification, information from the original request is lost, but remains in the distributed memory of the team."
 		},
 		{
@@ -1706,9 +1706,9 @@
 			"source":"International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
 			"pages":"8-Jan",
 			"publisher":"IEEE",
-			"digital library url": "https://doi.org/10.1145/1984642.1984644",
+			"doi": "https://doi.org/10.1145/1984642.1984644",
 			"authorizer":"http://dl.acm.org/authorize?N89381",
-			"local url":"Ko2011UserFeedbackTriage.pdf",
+			"local":"Ko2011UserFeedbackTriage.pdf",
 			"contribution":"User feedback is often ignored in because software teams perceive most feedback as minority opinion that conflicts with prior architectural decisions."
 		},
 		{
@@ -1721,8 +1721,8 @@
 			"source":"Workshop on Software Engineering for Computational Science and Engineering",
 			"pages":"",
 			"publisher":"ACM",
-			"digital library url":"http://dx.doi.org/10.1109/SECSE.2009.5069165",
-			"local url":"Chilana2009BioinformaticsDevelopment.pdf",
+			"doi":"http://dx.doi.org/10.1109/SECSE.2009.5069165",
+			"local":"Chilana2009BioinformaticsDevelopment.pdf",
 			"contribution":"Colleagues play a significant role in information seeking activities by developers in bioinformatics because of the high demand for domain knowledge."
 		},
 		{
@@ -1734,10 +1734,10 @@
 			"title":"JASPER: An Eclipse Plug-In to Facilitate Software Maintenance Tasks",
 			"source":"Proceedings of the 2006 OOPSLA Workshop on Eclipse Technology eXchange",
 			"pages":"65-69",
-			"digital library url": "https://doi.org/10.1145/1188835.1188849",
+			"doi": "https://doi.org/10.1145/1188835.1188849",
 			"authorizer":"http://dl.acm.org/authorize?N89301",
 			"publisher":"ACM",
-			"local url":"Coblenz2006Jasper.pdf",
+			"local":"Coblenz2006Jasper.pdf",
 			"contribution":"A tool for organizing related code fragments during software maintenance tasks."
 		},
 		{
@@ -1750,7 +1750,7 @@
 			"source":"ACM Conference on Computer Supported Cooperative Work (CSCW), Horizons Workshop",
 			"pages":"",
 			"publisher":"ACM",
-			"local url":"Kriplean2011Reflect.pdf",
+			"local":"Kriplean2011Reflect.pdf",
 			"contribution": "Shares preliminary work on a vision for an internet that incentivizes listening."
 		},
 		{
@@ -1762,7 +1762,7 @@
 			"title":"Designing Crowdsourced, Context-Sensitive Help for Web Applications",
 			"source":"Workshop on Crowdsourcing and Human Computation",
 			"publisher":"ACM",
-			"local url": "Chilana2011CrowdsourcingHelp.pdf",
+			"local": "Chilana2011CrowdsourcingHelp.pdf",
 			"pages":"",
 			"contribution": "Summarizes progress on the LemonAid help system."
 		},
@@ -1776,7 +1776,7 @@
 			"source":"CHI 2010 Workshop on The Future of FLOSS in CHI Research and Practice",
 			"pages":"",
 			"publisher":"ACM",
-			"local url":"Ko2010HowDevelopersTalkAboutUsers.pdf",
+			"local":"Ko2010HowDevelopersTalkAboutUsers.pdf",
 			"contribution": "Shows that many open source developers speak in generalities about users and their needs, leaning on stereotypes and instinct instead of evidence."
 		},
 		{
@@ -1788,9 +1788,9 @@
 			"title":"Designing Software for Unfamiliar Domains",
 			"source":"Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
 			"pages":"",
-			"digital library url":"http://dx.doi.org/10.1109/CHASE.2009.5071405",
+			"doi":"http://dx.doi.org/10.1109/CHASE.2009.5071405",
 			"publisher":"ACM",
-			"local url":"Chilana2009UnfamiliarDomains.pdf",
+			"local":"Chilana2009UnfamiliarDomains.pdf",
 			"contribution": "A brief abstract summarizing progress on how designers work with domain experts, finding that learning about a domain is the biggest challenge."
 		},
 		{
@@ -1802,10 +1802,10 @@
 			"title":"Source-Level Debugging with the Whyline",
 			"source":"Workshop on Cooperative and Human Aspects of Software Engineering",
 			"pages":"69-72",
-			"digital library url": "https://doi.org/10.1145/1370114.1370132",
+			"doi": "https://doi.org/10.1145/1370114.1370132",
 			"authorizer":"http://dl.acm.org/authorize?N89306",
 			"publisher":"ACM",
-			"local url":"Ko2008SourceLevelDebugging.pdf",
+			"local":"Ko2008SourceLevelDebugging.pdf",
 			"contribution": "Describes a pilot study of the Whyline for Java, showing that users were twice as fast at fixing a particular defect than without the Whyline."
 		},
 		{
@@ -1817,10 +1817,10 @@
 			"title":"Human Factors Affecting Dependability in End-User Programming",
 			"source":"1st Workshop on End-User Software Engineering (WEUSE)",
 			"pages":"4-Jan",
-			"digital library url": "https://doi.org/10.1145/1083231.1083245",
+			"doi": "https://doi.org/10.1145/1083231.1083245",
 			"authorizer":"http://dl.acm.org/authorize?N89317",
 			"publisher":"ACM",
-			"local url":"Ko2005HumanFactorsInEUP.pdf",
+			"local":"Ko2005HumanFactorsInEUP.pdf",
 			"contribution": "Enumerates many cognitive biases that shape the mistake that people make when engaging in end user programming."
 		},
 		{
@@ -1833,7 +1833,7 @@
 			"source":"2nd Workshop on End-User Software Engineering (WEUSE)",
 			"pages":"",
 			"publisher":"ACM",
-			"local url":"Ko2005ProductivityTools.pdf",
+			"local":"Ko2005ProductivityTools.pdf",
 			"contribution": "Shares examples of research from the Natural Programming project."
 		},
 		{
@@ -1845,10 +1845,10 @@
 			"title":"More Natural End-User Software Engineering",
 			"source":"International Workshop on End-User Software Engineering",
 			"pages":"30-34",
-			"digital library url": "https://doi.org/10.1145/1370847.1370854",
+			"doi": "https://doi.org/10.1145/1370847.1370854",
 			"publisher":"ACM",
 			"authorizer":"http://dl.acm.org/authorize?N89307",
-			"local url": "Myers2008MoreNaturalEUSE.pdf",
+			"local": "Myers2008MoreNaturalEUSE.pdf",
 			"contribution": "Shares recent progress on the Natural Programming project."
 		},
 		{
@@ -1860,10 +1860,10 @@
 			"title":"More Natural and Open User Interface Tools",
 			"source":"Workshop on the Future of User Interface Design Tools",
 			"pages": "1-2",
-			"digital library url": null,
+			"doi": null,
 			"authorizer": null,
 			"publisher":"ACM",
-			"local url": "Myers2005InterfaceTools.pdf",
+			"local": "Myers2005InterfaceTools.pdf",
 			"contribution": "A 2 page abstract on progress on Brad Myer's Natural Programming project."
 		},
 		{
@@ -1876,7 +1876,7 @@
 			"source":"Workshop on Supporting the Social Side of Large-Scale Software Development, at the 2006 ACM Conference on Computer Supported Cooperative Work",
 			"pages":"",
 			"publisher":"ACM",
-			"local url":"Ko2006RoleOfScience.pdf",
+			"local":"Ko2006RoleOfScience.pdf",
 			"contribution": "Argues that progress on inventions requires scientific, theoretical explanations of their value."
 		},
 		{
@@ -1888,8 +1888,8 @@
 			"title":"Software Engineering Through Qualitative Methods",
 			"source":"Making Software: What Really Works, and Why We Believe It",
 			"pages":"55-63",
-			"local url": "Ko2010QualitativeMethods.pdf",
-			"digital library url":"http://www.amazon.com/Making-Software-Really-Works-Believe/dp/0596808321",
+			"local": "Ko2010QualitativeMethods.pdf",
+			"doi":"http://www.amazon.com/Making-Software-Really-Works-Believe/dp/0596808321",
 			"publisher":"O'Reilly Media, Inc.",
 			"contribution": "Argues that qualitative methods are essential for understanding the dynamics of software engineering teamwork."
 		},
@@ -1903,8 +1903,8 @@
 			"source":"Interactions",
 			"pages":"69-71",
 			"authorizer":"http://dl.acm.org/authorize?N89391",
-			"digital library url":"http://doi.acm.org/10.1145/1572626.1572641",
-			"local url": "Wobbrock2009InformationSchools.pdf",
+			"doi":"http://doi.acm.org/10.1145/1572626.1572641",
+			"local": "Wobbrock2009InformationSchools.pdf",
 			"publisher": "ACM",
 			"volume":16,
 			"issue":5,
@@ -1919,9 +1919,9 @@
 			"title":"Natural Programming Languages and Environments",
 			"source":"Communications of the ACM, Special Issue on End-User Development",
 			"pages":"47-52",
-			"digital library url": "https://doi.org/10.1145/1015864.1015888",
+			"doi": "https://doi.org/10.1145/1015864.1015888",
 			"authorizer":"http://dl.acm.org/authorize?N89311",
-			"local url":"Myers2004NaturalProgramming.pdf",
+			"local":"Myers2004NaturalProgramming.pdf",
 			"publisher": "ACM",
 			"volume":47,
 			"issue":9,
@@ -1937,7 +1937,7 @@
 			"source":"Carnegie Mellon University ISRI Technical Report, no. CMU-HCII-05-101 and Human Computer Interaction Institute Technical Report, no CMU-ISRI-05-110",
 			"pages":"",
 			"publisher": "ACM",
-			"local url":"Scaffidi2005IdentifyingEndUsers.pdf",
+			"local":"Scaffidi2005IdentifyingEndUsers.pdf",
 			"contribution": "Presents a clustering of end user programming activities, finding revealing variation in advanced feature usage."
 		},
 		{
@@ -1951,8 +1951,8 @@
 			"pages":"163-166",
 			"acceptance rate":"25%",
 			"publisher": "IEEE",
-			"digital library url":"http://dx.doi.org/10.1109/VLHCC.2012.6344507",
-			"local url":"Lee2012GidgetGoals.pdf",
+			"doi":"http://dx.doi.org/10.1109/VLHCC.2012.6344507",
+			"local":"Lee2012GidgetGoals.pdf",
 			"contribution":"Representing data as animate, vertebrate objects instead of abstract, inanimate objects greatly increases engagement in online coding tutorials."
 		},
 		{
@@ -1965,7 +1965,7 @@
 			"source":"Oregon State University, Honors Thesis",
 			"pages":"",
 			"publisher": "Oregon State University",
-			"local url":"Ko2002HonorsThesis.pdf",
+			"local":"Ko2002HonorsThesis.pdf",
 			"contribution":"Programming expertise shapes strategy, but domain expertise is a better predictor of bug fixing success than strategy"
 		},
 		{
@@ -1978,7 +1978,7 @@
 			"source":"Carnegie Mellon University, Thesis Proposal",
 			"pages":"",
 			"publisher": "Carnegie Mellon University",
-			"local url":"Ko2006ThesisProposal.pdf",
+			"local":"Ko2006ThesisProposal.pdf",
 			"contribution":"Proposes the Java Whyline."
 		},
 		{
@@ -1991,7 +1991,7 @@
 			"source":"Carnegie Mellon University Dissertation",
 			"pages":"",
 			"publisher": "Carnegie Mellon University",
-			"local url":"Ko2008Dissertation.pdf",
+			"local":"Ko2008Dissertation.pdf",
 			"contribution": "Describes the discoveries of several investigations into debugging and presents the concept, implementation, and evaluation of interrogtative debugging, and the several prototypes that embody it, including the Whyline for Alice, the Whyline for Java, and Crystal."
 		}
 	],

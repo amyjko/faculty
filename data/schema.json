@@ -47,11 +47,11 @@
 						"type": ["string", "null"],
 						"required": true
 					},
-					"digital library url": {
+					"doi": {
 						"type": ["string", "null"],
 						"required": false
 					},
-					"local url": {
+					"local": {
 						"type": ["string", "null"],
 						"required": true
 					},
