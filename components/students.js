@@ -59,7 +59,7 @@ class Students extends React.Component {
 		});
 
 		// Render the active people.
-		var activePeople = _.map(_.sortBy(_.filter(people, { 'active': true, 'advised': true }), ['level', 'startdate']), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app}/>; });
+		var activePeople = _.map(_.sortBy(_.filter(people, person => person.active && person.advised && person.id !== "ajko"), ['level', 'startdate']), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app}/>; });
 
 		// Render the affiliated people.
 		var affiliatedPeople = _.map(_.filter(people, { 'active': true, 'advised': false }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app}/>; });

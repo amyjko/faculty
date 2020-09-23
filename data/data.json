@@ -3,7 +3,7 @@
 		{
 			"id": "criticalcsed",
 			"kind": "refereed magazine article",
-			"authors": ["Amy J. Ko", "Alannah Oleson", "Neil Ryan", "Yim Register", "Benjamin Xie", "Mina Tari", "Matt Davidson", "Stefania Druga", "Dastyni Loksa", "Greg Nelson"],
+			"authors": ["@ajko", "@olesona", "@neilryan", "@yreg", "@bxie", "@minatari", "@mattjd", "Stefania Druga", "@dloksa", "@glnelson"],
 			"deadname": false,
 			"year": 2020,
 			"title": "It’s Time for More Critical CS Education",
@@ -17,7 +17,7 @@
 		{
 			"id": "mladvocacy",
 			"kind": "refereed conference paper",
-			"authors": ["Yim Register", "Amy J. Ko"],
+			"authors": ["@yreg", "@ajko"],
 			"deadname": false,
 			"year": 2020,
 			"title": "Learning Machine Learning with Personal Data Helps Stakeholders Ground Advocacy Arguments in Model Mechanics",
@@ -31,7 +31,7 @@
 		{
 			"id": "codeitzagency",
 			"kind": "refereed conference paper",
-			"authors": ["Benjamin Xie", "Greg L. Nelson", "Harshitha Akkaraju", "William Kwok", "Amy J. Ko"],
+			"authors": ["@bxie", "@glnelson", "@akkarh", "@wkwok16", "@ajko"],
 			"deadname": false,
 			"year": 2020,
 			"title": "The Effect of Informing Agency in Self-Directed Online Learning Environments",
@@ -45,7 +45,7 @@
 		{
 			"id": "hcipckchallenge",
 			"kind": "refereed workshop paper",
-			"authors": ["Alannah Oleson", "Amy J. Ko"],
+			"authors": ["@olesona", "@ajko"],
 			"deadname": false,
 			"year": 2020,
 			"title": "Toward the Development of HCI Pedagogical Content Knowledge",
@@ -59,7 +59,7 @@
 		{
 			"id": "hcidifficulties",
 			"kind": "refereed conference paper",
-			"authors": ["Alannah Oleson", "Meron Solomon", "Amy J. Ko"],
+			"authors": ["@olesona", "@meron", "@ajko"],
 			"deadname": false,
 			"year": 2020,
 			"title": "Computing Students' Learning Difficulties in HCI Education",
@@ -74,7 +74,7 @@
 		{
 			"id": "scout",
 			"kind": "refereed conference paper",
-			"authors": ["Amanda Swearngin", "Chenglong Wang", "Alannah Oleson", "James Fogarty", "Amy J. Ko"],
+			"authors": ["@amaswea", "Chenglong Wang", "@olesona", "James Fogarty", "@ajko"],
 			"deadname": false,
 			"year": 2020,
 			"title": "Scout: Rapid Exploration of Interface Layout Alternatives through High-Level Design Constraints",
@@ -89,7 +89,7 @@
 		{
 			"id": "metajournaling",
 			"kind": "refereed conference paper",
-			"authors": ["Dastyni Loksa", "Benjamin Xie", "Harrison Kwik", "Amy J. Ko"],
+			"authors": ["@dloksa", "@bxie", "@kwikh", "@ajko"],
 			"deadname": false,
 			"year": 2020,
 			"title": "Investigating Novices' In Situ Reflections on Their Programming Process",
@@ -104,7 +104,7 @@
 		{
 			"id": "programmingstrategies",
 			"kind": "journal article",
-			"authors": ["Thomas D. LaToza", "Maryam Arab", "Dastyni Loksa", "Amy J. Ko"],
+			"authors": ["Thomas D. LaToza", "Maryam Arab", "@dloksa", "@ajko"],
 			"deadname": false,
 			"year": 2020,
 			"title": "Explicit Programming Strategies",
@@ -118,7 +118,7 @@
 		{
 			"id": "greatengineer2",
 			"kind": "journal article",
-			"authors": ["Paul Luo Li", "Amy J. Ko", "Andrew Begel"],
+			"authors": ["@plli", "@ajko", "Andrew Begel"],
 			"deadname": false,
 			"year": 2019,
 			"title": "What Distinguishes Great Software Engineers?",
@@ -132,7 +132,7 @@
 		{
 			"id": "traceassess",
 			"kind": "refereed conference paper",
-			"authors": ["Greg L. Nelson", "Andrew Hu", "Benjamin Xie", "Amy J. Ko"],
+			"authors": ["@glnelson", "@andrewhu", "@bxie", "@ajko"],
 			"deadname": false,
 			"year": 2019,
 			"title": "Towards Validity for a Formative Assessment for Language-Specific Program Tracing Skills",
@@ -146,7 +146,7 @@
 		{
 			"id": "replication",
 			"kind": "journal article",
-			"authors": ["Qiang Hao", "David H. Smith IV", "Naitra Iriumi", "Michaeil Tsikerdekis", "Amy J. Ko"],
+			"authors": ["Qiang Hao", "David H. Smith IV", "Naitra Iriumi", "Michaeil Tsikerdekis", "@ajko"],
 			"deadname": true,
 			"year": 2019,
 			"title": "A Systematic Investigation of Replications in Computing Education Research",
@@ -160,7 +160,7 @@
 		{
 			"id": "studydesign",
 			"kind": "book chapter",
-			"authors": ["Amy J. Ko", "Sally Fincher"],
+			"authors": ["@ajko", "Sally Fincher"],
 			"deadname": true,
 			"year": 2019,
 			"title": "A Study Design Design Process",
@@ -173,7 +173,7 @@
 		{
 			"id": "cerhandoutside",
 			"kind": "book chapter",
-			"authors": ["Andrew Begel", "Amy J. Ko"],
+			"authors": ["Andrew Begel", "@ajko"],
 			"deadname": true,
 			"year": 2019,
 			"title": "Learning Outside the Classroom",
@@ -186,7 +186,7 @@
 		{
 			"id": "cerhandbooktools",
 			"kind": "book chapter",
-			"authors": ["Lauri Malmi", "Ian Utting", "Amy J. Ko"],
+			"authors": ["Lauri Malmi", "Ian Utting", "@ajko"],
 			"deadname": true,
 			"year": 2019,
 			"title": "Tools and Environments",
@@ -199,7 +199,7 @@
 		{
 			"id": "cs1theory",
 			"kind":"journal article",
-			"authors": ["Benjamin Xie", "Dastyni Loksa", "Greg L. Nelson", "Matthew J. Davidson", "Dongsheng Dong", "Harrison Kwik", "Alex Hui Tan", "Leanne Hwa", "Min Li", "Amy J. Ko"],
+			"authors": ["@bxie", "@dloksa", "@glnelson", "@mattjd", "Dongsheng Dong", "@kwikh", "@alextan", "@lkhwa", "Min Li", "@ajko"],
 			"deadname": true,
 			"year": 2019,
 			"title": "A Theory of Instruction for Introductory Programming Skills",
@@ -213,7 +213,7 @@
 		{
 			"id": "boostingproductivity",
 			"kind": "book chapter",
-			"authors": ["Brad A Myers", "Amy J. Ko", "Thomas D. LaToza", "YoungSeok Yoon"],
+			"authors": ["Brad A Myers", "@ajko", "Thomas D. LaToza", "YoungSeok Yoon"],
 			"deadname": true,
 			"year": 2019,
 			"title": "Human-Centered Methods to Boost Productivity",
@@ -227,7 +227,7 @@
 		{
 			"id": "fourlenses",
 			"kind": "book chapter",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2019,
 			"title": "Individual, Team, Organization, and Market: Four Lenses of Productivity",
@@ -241,7 +241,7 @@
 		{
 			"id": "noproductivity",
 			"kind": "book chapter",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2019,
 			"title": "Why Not to Measure Productivity",
@@ -255,7 +255,7 @@
 		{
 			"id": "teachingstrategies",
 			"kind": "refereed conference paper",
-			"authors": ["Amy J. Ko", "Thomas LaToza", "Stephen Hull", "Ellen Ko", "William Kwok", "Jane Quichocho", "Harshitha Akkaraju", "Rishin Pandit"],
+			"authors": ["@ajko", "Thomas LaToza", "Stephen Hull", "Ellen Ko", "@wkwok16", "@janeq97", "@akkarh", "Rishin Pandit"],
 			"deadname": true,
 			"year": 2019,
 			"title": "Teaching Explicit Programming Strategies to Adolescents",
@@ -270,7 +270,7 @@
 		{
 			"id": "teachaccess2",
 			"kind": "refereed conference paper",
-			"authors": ["Saba Kawas", "Laura Vonessen", "Amy J. Ko"],
+			"authors": ["@skawas", "@laurav4", "@ajko"],
 			"deadname": true,
 			"year": 2019,
 			"title": "Teaching Accessibility: A Design Exploration of Faculty Professional Development at Scale",
@@ -285,7 +285,7 @@
 		{
 			"id": "irteval",
 			"kind": "refereed conference paper",
-			"authors": ["Benjamin Xie", "Matthew J. Davidson", "Min Li", "Amy J. Ko"],
+			"authors": ["@bxie", "@mattjd", "Min Li", "@ajko"],
 			"deadname": true,
 			"year": 2019,
 			"title": "An Item Response Theory Evaluation of a Language-Independent CS1 Knowledge Assessment",
@@ -300,7 +300,7 @@
 		{
 			"id": "scoutdemo",
 			"kind": "juried conference paper",
-			"authors": ["Amanda Swearngin", "Amy J. Ko", "James Fogarty"],
+			"authors": ["@amaswea", "@ajko", "James Fogarty"],
 			"deadname": true,
 			"year": 2018,
 			"title": "Scout: Mixed-Initiative Exploration of Design Variations through High-Level Design Constraints",
@@ -313,7 +313,7 @@
 		{
 			"id": "certheory",
 			"kind": "refereed conference paper",
-			"authors": ["Greg L. Nelson", "Amy J. Ko"],
+			"authors": ["@glnelson", "@ajko"],
 			"deadname": true,
 			"year": 2018,
 			"title": "On Use of Theory in Computing Education Research",
@@ -330,7 +330,7 @@
 		{
 			"id": "inclusivepck",
 			"kind": "refereed conference paper",
-			"authors": ["Alannah Oleson", "Christopher Mendez", "Zoe Steine-Hanson", "Claudia Hilderbrand", "Christopher Perdriau", "Margaret Burnett", "Amy J. Ko"],
+			"authors": ["@olesona", "Christopher Mendez", "Zoe Steine-Hanson", "Claudia Hilderbrand", "Christopher Perdriau", "Margaret Burnett", "@ajko"],
 			"deadname": true,
 			"year": 2018,
 			"title": "Pedagogical Content Knowledge for Teaching Inclusive Design",
@@ -346,7 +346,7 @@
 		{
 			"id": "transfer",
 			"kind": "refereed conference paper",
-			"authors": ["Harrison Kwik", "Benjamin Xie", "Amy J. Ko"],
+			"authors": ["@kwikh", "@bxie", "@ajko"],
 			"deadname": true,
 			"year": 2018,
 			"title": "Experiences of Computer Science Transfer Students",
@@ -362,7 +362,7 @@
 		{
 			"id": "rewire",
 			"kind": "refereed conference paper",
-			"authors": ["Amanda Swearngin", "Wil Li", "Mira Dontcheva", "Morgan Dixon", "Amy J. Ko"],
+			"authors": ["@amaswea", "Wil Li", "Mira Dontcheva", "Morgan Dixon", "@ajko"],
 			"deadname": true,
 			"year": 2018,
 			"title": "Rewire: Interface Design Assistance from Examples",
@@ -378,7 +378,7 @@
 		{
 			"id": "ellblockstudio",
 			"kind": "refereed conference paper",
-			"authors": ["Rahul Banerjee", "Jason C. Yip", "Amy J. Ko", "Caroline Pitt", "Kiley R. Sobel", "Kung Lee", "Leanne Liu", "Meng Wang", "Zoran Popovic"],
+			"authors": ["@banerjee", "Jason C. Yip", "@ajko", "Caroline Pitt", "Kiley R. Sobel", "Kung Lee", "Leanne Liu", "Meng Wang", "Zoran Popovic"],
 			"deadname": true,
 			"year": 2018,
 			"title": "Empowering Families Facing English Literacy Challenges to Jointly Engage in Computer Programming",
@@ -395,7 +395,7 @@
 		{
 			"id": "mentors2",
 			"kind": "refereed conference paper",
-			"authors": ["Amy J. Ko", "Leanne Hwa", "Katie Davis", "Jason Yip"],
+			"authors": ["@ajko", "@lkhwa", "Katie Davis", "Jason Yip"],
 			"deadname": true,
 			"year": 2018,
 			"title": "Informal Mentoring of Adolescents about Computing: Relationships, Roles, Qualities, and Impact",
@@ -411,7 +411,7 @@
 		{
 			"id":"tracing",
 			"kind":"refereed conference paper",
-			"authors": ["Benjamin Xie", "Greg Nelson", "Amy J. Ko"],
+			"authors": ["@bxie", "@glnelson", "@ajko"],
 			"deadname": true,
 			"year": 2018,
 			"title":"An Explicit Strategy to Scaffold Novice Program Tracing",
@@ -427,7 +427,7 @@
 		{
 			"id":"teachaccess1",
 			"kind":"refereed conference paper",
-			"authors": ["Kristen Shinohara", "Saba Kawas", "Amy J. Ko", "Richard E. Ladner "],
+			"authors": ["@kshino", "@skawas", "@ajko", "Richard E. Ladner "],
 			"deadname": true,
 			"year": 2018,
 			"title":"Who Teaches Accessibility? A Survey of U.S. Computing Faculty",
@@ -443,7 +443,7 @@
 		{
 			"id":"msrkeynote",
 			"kind":"abstract",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2018,
 			"title":"Mining the Mind, Minding the Mine: Grand Challenges in Comprehension and Mining",
@@ -457,7 +457,7 @@
 		{
 			"id":"pstutor1",
 			"kind":"refereed workshop paper",
-			"authors": ["Dastyni Loksa", "Amy J. Ko"],
+			"authors": ["@dloksa", "@ajko"],
 			"deadname": true,
 			"year": 2017,
 			"title":"Modeling Programming Problem Solving Through Interactive Worked Examples",
@@ -470,7 +470,7 @@
 		{
 			"id":"gidgetabandoment",
 			"kind":"refereed conference paper",
-			"authors": ["An Yan", "Michael J. Lee", "Amy J. Ko"],
+			"authors": ["@yanan15", "@mjslee", "@ajko"],
 			"deadname": true,
 			"year": 2017,
 			"title":"Predicting Abandonment in Online Coding Tutorials",
@@ -485,7 +485,7 @@
 		{
 			"id":"pltutor1",
 			"kind":"refereed conference paper",
-			"authors": ["Greg Nelson", "Benjamin Xie", "Amy J. Ko"],
+			"authors": ["@glnelson", "@bxie", "@ajko"],
 			"deadname": true,
 			"year": 2017,
 			"title":"Comprehension First: Evaluating a Novel Pedagogy and Tutoring System for Program Tracing in CS1",
@@ -501,7 +501,7 @@
 		{
 			"id":"bootcamps",
 			"kind":"refereed conference paper",
-			"authors": ["Kyle Thayer", "Amy J. Ko"],
+			"authors": ["@kthayer", "@ajko"],
 			"deadname": true,
 			"year": 2017,
 			"title":"Barriers Faced by Coding Bootcamp Students",
@@ -517,7 +517,7 @@
 		{
 			"id":"mentors1",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Katie Davis"],
+			"authors": ["@ajko", "Katie Davis"],
 			"deadname": true,
 			"year": 2017,
 			"title":"Computing Mentorship in a Software Boomtown: Relationships to Adolescent Interest and Beliefs",
@@ -533,7 +533,7 @@
 		{
 			"id":"nonengineers",
 			"kind":"refereed workshop paper",
-			"authors": ["Paul Luo Li", "Amy J. Ko", "Andrew Begel"],
+			"authors": ["@plli", "@ajko", "Andrew Begel"],
 			"deadname": true,
 			"year": 2017,
 			"title":"Cross-Disciplinary Perspectives on Collaborations with Software Engineers",
@@ -547,7 +547,7 @@
 		{
 			"id":"genie",
 			"kind":"refereed conference paper",
-			"authors": ["Amanda Swearngin", "Amy J. Ko", "James Fogarty"],
+			"authors": ["@amaswea", "@ajko", "James Fogarty"],
 			"deadname": true,
 			"year": 2017,
 			"title":"Genie: Input Retargeting on the Web through Command Reverse Engineering",
@@ -562,7 +562,7 @@
 		{
 			"id":"answerdash",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2017,
 			"title":"A Three-Year Participant Observation of Software Startup Software Evolution",
@@ -576,7 +576,7 @@
 		{
 			"id":"ideagardenjvlc",
 			"kind":"journal article",
-			"authors": ["Will Jernigan", "Amber Horvath", "Michael J. Lee", "Margaret M. Burnett", "Taylor Cuilty", "Sandeep Kuttal", "Anicia Peters", "Irwin Kwan", "Faezeh Bahmani", "Amy J. Ko", "Christopher J. Mendez", "Alannah Oleson"],
+			"authors": ["Will Jernigan", "Amber Horvath", "@mjslee", "Margaret M. Burnett", "Taylor Cuilty", "Sandeep Kuttal", "Anicia Peters", "Irwin Kwan", "Faezeh Bahmani", "@ajko", "Christopher J. Mendez", "@olesona"],
 			"deadname": true,
 			"year": 2017,
 			"title":"General Principles for a Generalized Idea Garden",
@@ -590,7 +590,7 @@
 		{
 			"id":"tutorialeval",
 			"kind":"refereed conference paper",
-			"authors": ["Ada Kim", "Amy J. Ko"],
+			"authors": ["@kimsk", "@ajko"],
 			"deadname": true,
 			"year": 2017,
 			"title":"A Pedagogical Analysis of Online Coding Tutorials",
@@ -605,7 +605,7 @@
 		{
 			"id":"plreally",
 			"kind":"refereed workshop paper",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2016,
 			"title":"What is a Programming Language, Really?",
@@ -620,7 +620,7 @@
 		{
 			"id":"accesscomputingteachaccess",
 			"kind":"refereed magazine article",
-			"authors": ["Amy J. Ko", "Richard Ladner"],
+			"authors": ["@ajko", "Richard Ladner"],
 			"deadname": true,
 			"year": 2016,
 			"title": "AccessComputing Promotes Teaching Accessibility",
@@ -635,7 +635,7 @@
 		{
 			"id":"csproblemsolving2",
 			"kind":"refereed conference paper",
-			"authors": ["Dastyni Loksa", "Amy J. Ko"],
+			"authors": ["@dloksa", "@ajko"],
 			"deadname": true,
 			"year": 2016,
 			"title":"The Role of Self-Regulation in Programming Problem Solving Process and Success",
@@ -651,7 +651,7 @@
 		{
 			"id":"monitoring",
 			"kind":"book chapter",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2016,
 			"title":"The World is Your Test Suite",
@@ -665,7 +665,7 @@
 		{
 			"id":"studyingprogramming",
 			"kind":"refereed magazine article",
-			"authors": ["Brad A. Myers", "Amy J. Ko", "Thomas LaToza", "YoungSeok Yoon"],
+			"authors": ["Brad A. Myers", "@ajko", "Thomas LaToza", "YoungSeok Yoon"],
 			"deadname": true,
 			"year": 2016,
 			"title":"Programmers are Users Too: Human Centered Methods for Improving Tools for Programming",
@@ -678,7 +678,7 @@
 		{
 			"id":"csproblemsolving1",
 			"kind":"refereed conference paper",
-			"authors": ["Dastyni Loksa", "Amy J. Ko", "William Jernigan", "Alannah Oleson", "Chris Mendez", "Margaret M. Burnett"],
+			"authors": ["@dloksa", "@ajko", "William Jernigan", "@olesona", "Chris Mendez", "Margaret M. Burnett"],
 			"deadname": true,
 			"year": 2016,
 			"title":"Programming, Problem Solving, and Self-Awareness: Effects of Explicit Guidance",
@@ -694,7 +694,7 @@
 		{
 			"id": "ccccer",
 			"kind": "whitepaper",
-			"authors": ["Steve Cooper", "Jeff Forbes", "Armando Fox", "Susan Hambrusch", "Amy J. Ko", "Beth Simon"],
+			"authors": ["Steve Cooper", "Jeff Forbes", "Armando Fox", "Susan Hambrusch", "@ajko", "Beth Simon"],
 			"deadname": true,
 			"deadname": true,
 			"year":  2016,
@@ -709,7 +709,7 @@
 		{
 			"id":"scry",
 			"kind":"refereed conference paper",
-			"authors": ["Brian Burg", "Amy J. Ko", "Michael D. Ernst"],
+			"authors": ["@burg", "@ajko", "Michael D. Ernst"],
 			"deadname": true,
 			"year": 2015,
 			"title":"Explaining Visual Changes in Web Interfaces",
@@ -724,7 +724,7 @@
 		{
 			"id":"gidget6",
 			"kind":"refereed conference paper",
-			"authors": ["William Jernigan", "Amber Horvath", "Michael J. Lee", "Margaret M. Burnett", "Taylor Cuilty", "Sandeep Kuttal", "Anicia N. Peters", "Irwin Kwan", "Faezeh Bahmani", "Amy J. Ko"],
+			"authors": ["William Jernigan", "Amber Horvath", "@mjslee", "Margaret M. Burnett", "Taylor Cuilty", "Sandeep Kuttal", "Anicia N. Peters", "Irwin Kwan", "Faezeh Bahmani", "@ajko"],
 			"deadname": true,
 			"year": 2015,
 			"title":"A Principled Evaluation for a Principled Idea Garden",
@@ -739,7 +739,7 @@
 		{
 			"id":"gidget5",
 			"kind":"refereed conference paper",
-			"authors": ["Michael J. Lee and Amy J. Ko"],
+			"authors": ["@mjslee", "@ajko"],
 			"deadname": true,
 			"year": 2015,
 			"title":"Comparing the Effectiveness of Online Learning Approaches on CS1 Learning Outcomes",
@@ -755,7 +755,7 @@
 		{
 			"id":"greatengineer1",
 			"kind":"refereed conference paper",
-			"authors": ["Paul Li", "Amy J. Ko", "Jiamin Zhu"],
+			"authors": ["@plli", "@ajko", "Jiamin Zhu"],
 			"deadname": true,
 			"year": 2015,
 			"title":"What Makes a Great Software Engineer?",
@@ -770,7 +770,7 @@
 		{
 			"id":"lemonaid3",
 			"kind":"refereed conference paper",
-			"authors": ["Parmit K. Chilana", "Amy J. Ko", "Jacob O. Wobbrock"],
+			"authors": ["@pchilana", "@ajko", "Jacob O. Wobbrock"],
 			"deadname": true,
 			"year": 2015,
 			"title": "From User-Centered Design to Adoption-Centered Design: A Case Study of a Research System Becoming a Product",
@@ -787,7 +787,7 @@
 		{
 			"id":"gidget4",
 			"kind":"refereed conference paper",
-			"authors": ["Michael J. Lee", "Faezeh Bahmani", "Irwin Kwan", "Jillian LaFerte", "Polina Charters", "Amber Horvath", "Fanny Luor", "Jill Cao", "Catherine Law", "Michael Beswetherick", "Sheridan Long", "Margaret M. Burnett", "Amy J. Ko"],
+			"authors": ["@mjslee", "Faezeh Bahmani", "Irwin Kwan", "Jillian LaFerte", "@charters", "Amber Horvath", "@fanny", "Jill Cao", "Catherine Law", "@besweth", "Sheridan Long", "Margaret M. Burnett", "@ajko"],
 			"deadname": true,
 			"year": 2014,
 			"title":"Principles of a Debugging-First Puzzle Game for Computing Education",
@@ -802,7 +802,7 @@
 		{
 			"id":"newsproblems",
 			"kind":"refereed workshop paper",
-			"authors": ["Amy J. Ko", "Brian Dosono", "Neeraja Duriseti"],
+			"authors": ["@ajko", "@dosono", "@neeraja"],
 			"deadname": true,
 			"year": 2014,
 			"title":"Thirty Years of Software Problems in the News",
@@ -817,7 +817,7 @@
 		{
 			"id":"adultattitudes",
 			"kind":"refereed conference paper",
-			"authors": ["Polina Charters", "Michael J. Lee", "Amy J. Ko", "Dastyni Loksa"],
+			"authors": ["@charters", "@mjslee", "@ajko", "@dloksa"],
 			"deadname": true,
 			"year": 2014,
 			"title":"Challenging Stereotypes and Changing Attitudes: The Effect of a Brief Programming Encounter on Adults' Attitudes toward Programming",
@@ -833,7 +833,7 @@
 		{
 			"id":"practicalguide",
 			"kind":"journal article",
-			"authors": ["Amy J. Ko", "Thomas LaToza", "Margaret M. Burnett"],
+			"authors": ["@ajko", "Thomas LaToza", "Margaret M. Burnett"],
 			"deadname": true,
 			"year": 2013,
 			"title":"A Practical Guide to Controlled Experiments of Software Engineering Tools with Human Participants",
@@ -849,7 +849,7 @@
 		{
 			"id":"timelapse",
 			"kind":"refereed conference paper",
-			"authors": ["Brian Burg", "Richard Bailey", "Amy J. Ko", "Michael D. Ernst"],
+			"authors": ["@burg", "Richard Bailey", "@ajko", "Michael D. Ernst"],
 			"deadname": true,
 			"year": 2013,
 			"title":"Interactive Record/Replay for Web Application Debugging",
@@ -865,7 +865,7 @@
 		{
 			"id":"gidget3",
 			"kind":"refereed conference paper",
-			"authors": ["Michael J. Lee", "Amy J. Ko", "Irwin Kwan"],
+			"authors": ["@mjslee", "@ajko", "Irwin Kwan"],
 			"deadname": true,
 			"year": 2013,
 			"title":"In-Game Assessments Increase Novice Programmers' Engagement and Learning Efficiency",
@@ -882,7 +882,7 @@
 		{
 			"id":"lemonaid2",
 			"kind":"refereed conference paper",
-			"authors": ["Parmit K. Chilana", "Amy J. Ko", "Jacob O. Wobbrock"],
+			"authors": ["@pchilana", "@ajko", "Jacob O. Wobbrock"],
 			"deadname": true,
 			"year": 2013,
 			"title":"A Multi-Site Field Study of Crowdsourced Contextual Help: Usage and Perspectives of End-Users and Software Teams",
@@ -898,7 +898,7 @@
 		{
 			"id":"lemonaidworkshop",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Parmmit K. Chilana", "Amy J. Ko", "Jacob O. Wobbrock"],
+			"authors": ["@pchilana", "@ajko", "Jacob O. Wobbrock"],
 			"deadname": true,
 			"year": 2013,
 			"title":"Crowdsourced Q&A-based Contextual Help for Web Applications: Challenges and Opportunities",
@@ -911,7 +911,7 @@
 		{
 			"id":"lemonaid1",
 			"kind":"refereed conference paper",
-			"authors": ["Parmit K. Chilana", "Amy J. Ko", "Jacob O. Wobbrock"],
+			"authors": ["@pchilana", "@ajko", "Jacob O. Wobbrock"],
 			"deadname": true,
 			"year": 2012,
 			"title":"LemonAid: Selection-Based Crowdsourced Contextual Help for Web Applications",
@@ -927,7 +927,7 @@
 		{
 			"id":"reflect",
 			"kind":"refereed conference paper",
-			"authors": ["Travis Kriplean", "Michael Toomim", "Jonathan Morgan", "Alan Borning", "Amy J. Ko"],
+			"authors": ["Travis Kriplean", "Michael Toomim", "Jonathan Morgan", "Alan Borning", "@ajko"],
 			"deadname": true,
 			"year": 2012,
 			"title":"Is This What You Meant? Promoting Listening on the Web with Reflect",
@@ -943,7 +943,7 @@
 		{
 			"id":"frictionary",
 			"kind":"juried conference paper",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2012,
 			"title":"Mining Whining in Support Forums with Frictionary",
@@ -958,7 +958,7 @@
 		{
 			"id":"facebookcasestudy",
 			"kind":"juried conference paper",
-			"authors": ["Parmit K. Chilana", "Christina Holsberry", "Flavio Oliveira", "Amy J. Ko"],
+			"authors": ["@pchilana", "Christina Holsberry", "Flavio Oliveira", "@ajko"],
 			"deadname": true,
 			"year": 2012,
 			"title":"Designing for a Billion Users: A Case Study of Facebook",
@@ -973,7 +973,7 @@
 		{
 			"id":"gidget1",
 			"kind":"refereed conference paper",
-			"authors": ["Michael J. Lee", "Amy J. Ko"],
+			"authors": ["Michael J. Lee", "@ajko"],
 			"deadname": true,
 			"year": 2011,
 			"title":"Personifying Programming Tool Feedback Improves Novice Programmers' Learning",
@@ -989,7 +989,7 @@
 		{
 			"id":"feedlack",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Xing Zhang"],
+			"authors": ["@ajko", "@xing"],
 			"deadname": true,
 			"year": 2011,
 			"title":"FeedLack Detects Missing Feedback in Web Applications",
@@ -1005,7 +1005,7 @@
 		{
 			"id":"beta",
 			"kind":"refereed conference paper",
-			"authors": ["Paul L. Li", "Ryan Kivett", "Zhiyuan Zhan", "Sung-eok Jeon", "Nachiappan Nagappan", "Brendan Murphy", "Amy J. Ko"],
+			"authors": ["@plli", "Ryan Kivett", "Zhiyuan Zhan", "Sung-eok Jeon", "Nachiappan Nagappan", "Brendan Murphy", "@ajko"],
 			"deadname": true,
 			"year": 2011,
 			"title":"Characterizing the Differences Between Pre- and Post- release Versions of Software",
@@ -1021,7 +1021,7 @@
 		{
 			"id":"openbugs2",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Parmit K. Chilana"],
+			"authors": ["@ajko", "@pchilana"],
 			"deadname": true,
 			"year": 2011,
 			"title":"Design, Discussion, and Dissent in Open Bug Reports",
@@ -1037,7 +1037,7 @@
 		{
 			"id":"gestalt",
 			"kind":"refereed conference paper",
-			"authors": ["Kayer Patel", "Naomi Bancroft", "Steven M. Drucker", "James Fogarty", "Amy J. Ko", "James A. Landay"],
+			"authors": ["@kayur", "Naomi Bancroft", "Steven M. Drucker", "James Fogarty", "@ajko", "James A. Landay"],
 			"deadname": true,
 			"year": 2010,
 			"title":"Gestalt: Integrated Support for Implementation and Analysis in Machine Learning Processes",
@@ -1053,7 +1053,7 @@
 		{
 			"id":"cleanroom",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Jacob O. Wobbrock"],
+			"authors": ["@ajko", "Jacob O. Wobbrock"],
 			"deadname": true,
 			"year": 2010,
 			"title":"Cleanroom: Edit-Time Error Detection with the Uniqueness Heuristic",
@@ -1069,7 +1069,7 @@
 		{
 			"id":"openbugs1",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Parmit K. Chilana"],
+			"authors": ["@ajko", "@pchilana"],
 			"deadname": true,
 			"year": 2010,
 			"title": "How Power Users Help and Hinder Open Bug Reporting",
@@ -1086,7 +1086,7 @@
 		{
 			"id":"complexdomains",
 			"kind":"refereed conference paper",
-			"authors": ["Parmit K. Chilana", "Jacob O. Wobbrock", "Amy J. Ko"],
+			"authors": ["@pchilana", "Jacob O. Wobbrock", "@ajko"],
 			"deadname": true,
 			"year": 2010,
 			"title":"Understanding Usability Practices in Complex Domains: Implications for Training the Next Generation of Usability Professionals",
@@ -1102,7 +1102,7 @@
 		{
 			"id":"codebios",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2009,
 			"title":"Attitudes and Self-Efficacy in Young Adults' Computing Autobiographies",
@@ -1117,7 +1117,7 @@
 		{
 			"id":"whyline3",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Brad A. Myers"],
+			"authors": ["@ajko", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2009,
 			"title":"Finding Causes of Program Output with the Java Whyline",
@@ -1133,7 +1133,7 @@
 		{
 			"id":"whydebugclassifier2",
 			"kind":"refereed conference paper",
-			"authors": ["Todd Kuleza", "Weng-Keen Wong", "Simone Stumpf", "Stephen Perona", "Rachel White", "Margaret M. Burnett", "Ian Oberst", "Amy J. Ko"],
+			"authors": ["Todd Kuleza", "Weng-Keen Wong", "Simone Stumpf", "Stephen Perona", "Rachel White", "Margaret M. Burnett", "Ian Oberst", "@ajko"],
 			"deadname": true,
 			"year": 2009,
 			"title":"Fixing the Program My Computer Learned: Barriers for End Users, Challenges for the Machine",
@@ -1149,7 +1149,7 @@
 		{
 			"id":"interactivebehaviors",
 			"kind": "refereed conference paper",
-			"authors": ["Brad A. Myers", "Sun Young Park", "Yoko Nakano", "Greg Mueller", "Amy J. Ko"],
+			"authors": ["Brad A. Myers", "Sun Young Park", "Yoko Nakano", "Greg Mueller", "@ajko"],
 			"deadname": true,
 			"year":  2008,
 			"title":"How Designers Design and Program Interactive Behaviors",
@@ -1165,7 +1165,7 @@
 		{
 			"id":"whyline2",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Brad A. Myers"],
+			"authors": ["@ajko", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2008,
 			"title":"Debugging Reinvented: Asking and Answering Why and Why Not Questions about Program Behavior",
@@ -1182,7 +1182,7 @@
 		{
 			"id":"informationneeds",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Rob DeLine", "Gina Venolia"],
+			"authors": ["@ajko", "Rob DeLine", "Gina Venolia"],
 			"deadname": true,
 			"year": 2007,
 			"title":"Information Needs in Collocated Software Development Teams",
@@ -1197,7 +1197,7 @@
 		{
 			"id":"devwhiteboards",
 			"kind":"refereed conference paper",
-			"authors": ["Mauro Cherubini", "Gina Venolia", "Rob DeLine", "Amy J. Ko"],
+			"authors": ["Mauro Cherubini", "Gina Venolia", "Rob DeLine", "@ajko"],
 			"deadname": true,
 			"year": 2007,
 			"title":"Let's Go to the Whiteboard: How and Why Software Developers Draw Code",
@@ -1213,7 +1213,7 @@
 		{
 			"id":"linguisticbugs",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Brad A. Myers", "Duen Horng Chau"],
+			"authors": ["@ajko", "Brad A. Myers", "Duen Horng Chau"],
 			"deadname": true,
 			"year": 2006,
 			"title":"A Linguistic Analysis of How People Describe Software Problems in Bug Reports",
@@ -1228,7 +1228,7 @@
 		{
 			"id":"crystal",
 			"kind":"refereed conference paper",
-			"authors": ["Brad A. Myers", "David Weitzman", "Amy J. Ko", "Duen Horng Chau"],
+			"authors": ["Brad A. Myers", "David Weitzman", "@ajko", "Duen Horng Chau"],
 			"deadname": true,
 			"year": 2006,
 			"title":"Answering Why and Why Not Questions in User Interfaces",
@@ -1244,7 +1244,7 @@
 		{
 			"id":"barista",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Brad A. Myers"],
+			"authors": ["@ajko", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2006,
 			"title":"Barista: An Implementation Framework for Enabling New Tools, Interaction Techniques and Views for Code Editors",
@@ -1260,7 +1260,7 @@
 		{
 			"id":"citrus",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Brad A. Myers"],
+			"authors": ["@ajko", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2005,
 			"title":"Citrus: A Language and Toolkit for Simplifying the Creation of Structured Editors for Code and Data",
@@ -1276,7 +1276,7 @@
 		{
 			"id":"devinterrupt",
 			"kind":"refereed conference paper",
-			"authors": ["James Fogarty", "Amy J. Ko", "Htet Htet Aung", "Elspeth Golden", "Karen P. Tang", "Scott E. Hudson"],
+			"authors": ["James Fogarty", "@ajko", "Htet Htet Aung", "Elspeth Golden", "Karen P. Tang", "Scott E. Hudson"],
 			"deadname": true,
 			"year": 2005,
 			"title":"Examining Task Engagement in Sensor-Based Statistical Models of Human Interruptibility",
@@ -1293,7 +1293,7 @@
 		{
 			"id":"maintenancetasks",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Htet Htet Aung", "Brad A. Myers"],
+			"authors": ["@ajko", "Htet Htet Aung", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2005,
 			"title":"Eliciting Design Requirements for Maintenance-Oriented IDEs: A Detailed Study of Corrective and Perfective Maintenance Tasks",
@@ -1311,7 +1311,7 @@
 		{
 			"id":"barriers",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Brad A. Myers", "Htet Htet Aung"],
+			"authors": ["@ajko", "Brad A. Myers", "Htet Htet Aung"],
 			"deadname": true,
 			"year": 2004,
 			"title":"Six Learning Barriers in End-User Programming Systems",
@@ -1328,7 +1328,7 @@
 		{
 			"id":"whyline1",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Brad A. Myers"],
+			"authors": ["@ajko", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2004,
 			"title":"Designing the Whyline: A Debugging Interface for Asking Questions About Program Failures",
@@ -1344,7 +1344,7 @@
 		{
 			"id":"errormodel",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Brad A. Myers"],
+			"authors": ["@ajko", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2003,
 			"title":"Development and Evaluation of a Model of Programming Errors",
@@ -1361,7 +1361,7 @@
 		{
 			"id":"statscomprehension",
 			"kind":"refereed conference paper",
-			"authors": ["Amy J. Ko", "Bob Uttl"],
+			"authors": ["@ajko", "Bob Uttl"],
 			"deadname": true,
 			"year": 2003,
 			"title":"Individual Differences in Program Comprehension Strategies in Unfamiliar Environments",
@@ -1377,7 +1377,7 @@
 		{
 			"id":"visuallytesting",
 			"kind":"refereed conference paper",
-			"authors": ["Margaret M. Burnett", "Bing Ren", "Amy J. Ko", "Curtis Cook", "Gregg Rothermel"],
+			"authors": ["Margaret M. Burnett", "Bing Ren", "@ajko", "Curtis Cook", "Gregg Rothermel"],
 			"deadname": true,
 			"year": 2001,
 			"title":"Visually Testing Recursive Programs in Spreadsheet Languages",
@@ -1392,7 +1392,7 @@
 		{
 			"id":"walkthrough1",
 			"kind":"refereed conference paper",
-			"authors": ["Thomas R.G. Green", "Margaret M. Burnett", "Amy J. Ko"],
+			"authors": ["Thomas R.G. Green", "Margaret M. Burnett", "@ajko"],
 			"deadname": true,
 			"year": 2000,
 			"title":"Using the Cognitive Walkthrough to Improve the Design of a Visual Programming Experiment",
@@ -1407,7 +1407,7 @@
 		{
 			"id":"whydebugclassifier1",
 			"kind":"journal article",
-			"authors": ["Todd Kulesza", "Simone Stumpf", "Weng-Keen Wong", "Margaret M. Burnett", "Stephen Perona", "Amy J. Ko", "Ian Oberst"],
+			"authors": ["Todd Kulesza", "Simone Stumpf", "Weng-Keen Wong", "Margaret M. Burnett", "Stephen Perona", "@ajko", "Ian Oberst"],
 			"deadname": true,
 			"year": 2011,
 			"title":"Why-Oriented End-User Debugging of Naive Bayes Text Classification",
@@ -1425,7 +1425,7 @@
 		{
 			"id":"eusessurvey",
 			"kind":"journal article",
-			"authors": ["Amy J. Ko", "Robin Abraham", "Laura Beckwith", "Alan Blackwell", "Margaret M. Burnett", "Martin Erwig", "Chris Scaffidi", "Joseph Lawrance", "Henry Lieberman", "Brad A. Myers", "Mary Beth Rosson", "Gregg Rothermel", "Mary Shaw", "Susan Wiedenbeck"],
+			"authors": ["@ajko", "Robin Abraham", "Laura Beckwith", "Alan Blackwell", "Margaret M. Burnett", "Martin Erwig", "Chris Scaffidi", "Joseph Lawrance", "Henry Lieberman", "Brad A. Myers", "Mary Beth Rosson", "Gregg Rothermel", "Mary Shaw", "Susan Wiedenbeck"],
 			"deadname": true,
 			"year": 2011,
 			"title":"The State of the Art in End-User Software Engineering",
@@ -1443,7 +1443,7 @@
 		{
 			"id":"whyline4",
 			"kind":"journal article",
-			"authors": ["Amy J. Ko", "Brad A. Myers"],
+			"authors": ["@ajko", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2010,
 			"title":"Extracting and Answering Why and Why Not Questions about Java Program Output",
@@ -1461,7 +1461,7 @@
 		{
 			"id":"seekrelatecollect",
 			"kind":"journal article",
-			"authors": ["Amy J. Ko", "Brad A. Myers", "Michael J. Coblenz", "Htet Htet Aung"],
+			"authors": ["@ajko", "Brad A. Myers", "Michael J. Coblenz", "Htet Htet Aung"],
 			"deadname": true,
 			"year": 2006,
 			"title":"An Exploratory Study of How Developers Seek, Relate, and Collect Relevant Information during Software Maintenance Tasks",
@@ -1477,7 +1477,7 @@
 		{
 			"id":"errorframework",
 			"kind":"journal article",
-			"authors": ["Amy J. Ko", "Brad A. Myers"],
+			"authors": ["@ajko", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2005,
 			"title":"A Framework and Methodology for Studying the Causes of Software Errors in Programming Systems",
@@ -1493,7 +1493,7 @@
 		{
 			"id":"walkthrough2",
 			"kind":"journal article",
-			"authors": ["Amy J. Ko", "Margaret M. Burnett", "Thomas R.G. Green", "Karen J. Rothermel", "Curtis R. Cook"],
+			"authors": ["@ajko", "Margaret M. Burnett", "Thomas R.G. Green", "Karen J. Rothermel", "Curtis R. Cook"],
 			"deadname": true,
 			"year": 2002,
 			"title":"Improving the Design of Visual Programming Language Experiments Using Cognitive Walkthroughs",
@@ -1508,7 +1508,7 @@
 		{
 			"id":"feasibility",
 			"kind":"refereed short conference paper",
-			"authors": ["Amy J. Ko", "Yann Riche"],
+			"authors": ["@ajko", "Yann Riche"],
 			"deadname": true,
 			"year": 2011,
 			"title":"The Role of Conceptual Knowledge in API Usability",
@@ -1523,7 +1523,7 @@
 		{
 			"id":"postusability",
 			"kind":"refereed short conference paper",
-			"authors": ["Parmit K. Chilana", "Amy J. Ko", "Jacob O. Wobbrock", "Tovi Grossman", "George Fitzmaurice"],
+			"authors": ["@pchilana", "@ajko", "Jacob O. Wobbrock", "Tovi Grossman", "George Fitzmaurice"],
 			"deadname": true,
 			"year": 2011,
 			"title":"Post-Deployment Usability: A Survey of Current Practices",
@@ -1539,7 +1539,7 @@
 		{
 			"id":"openbugs3",
 			"kind":"refereed short conference paper",
-			"authors": ["Parmit K. Chilana", "Amy J. Ko", "Jacob O. Wobbrock"],
+			"authors": ["@pchilana", "@ajko", "Jacob O. Wobbrock"],
 			"deadname": true,
 			"year": 2010,
 			"title":"Understanding Expressions of Unwanted Behaviors in Open Bug Reporting",
@@ -1554,7 +1554,7 @@
 		{
 			"id":"futureofprogramming",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Brad A. Myers", "Amy J. Ko"],
+			"authors": ["Brad A. Myers", "@ajko"],
 			"deadname": true,
 			"year": 2009,
 			"title":"The Past, Present and Future of Programming in HCI",
@@ -1567,7 +1567,7 @@
 		{
 			"id":"infowork",
 			"kind":"refereed short conference paper",
-			"authors": ["Chris Scaffidi", "Amy J. Ko", "Brad A. Myers", "Mary Shaw"],
+			"authors": ["Chris Scaffidi", "@ajko", "Brad A. Myers", "Mary Shaw"],
 			"deadname": true,
 			"year": 2006,
 			"title":"Dimensions Characterizing Programming Feature Usage by Information Workers",
@@ -1581,7 +1581,7 @@
 		{
 			"id":"icsedc",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2006,
 			"title":"Debugging by Asking Questions About Program Output",
@@ -1596,7 +1596,7 @@
 		{
 			"id":"eupoverview",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Brad A. Myers", "Amy J. Ko", "Margaret M. Burnett"],
+			"authors": ["Brad A. Myers", "@ajko", "Margaret M. Burnett"],
 			"deadname": true,
 			"year": 2006,
 			"title":"Invited Research Overview: End-User Programming",
@@ -1611,7 +1611,7 @@
 		{
 			"id":"slate",
 			"kind":"refereed short conference paper",
-			"authors": ["Michael J. Coblenz", "Amy J. Ko", "Brad A. Myers"],
+			"authors": ["Michael J. Coblenz", "@ajko", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2005,
 			"title":"Using Objects of Measurement to Detect Spreadsheet Errors",
@@ -1625,7 +1625,7 @@
 		{
 			"id":"textediting",
 			"kind":"refereed short conference paper",
-			"authors": ["Amy J. Ko", "Htet Htet Aung", "Brad A. Myers"],
+			"authors": ["@ajko", "Htet Htet Aung", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2005,
 			"title":"Design Requirements for More Flexible Structured Editors from a Study of Programmers' Text Editing",
@@ -1641,7 +1641,7 @@
 		{
 			"id":"vldcabstract2",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2004,
 			"title":"Designing a Flexible and Supportive Direct-Manipulation Programming Environment",
@@ -1655,7 +1655,7 @@
 		{
 			"id":"vldcabstract",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2003,
 			"title":"Preserving Non-Programmers Motivation with Error-Prevention and Debugging Support Tools",
@@ -1669,7 +1669,7 @@
 		{
 			"id":"aliceinquiry",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2003,
 			"title":"A Contextual Inquiry of Expert Programmers in an Event-Based Programming Environment",
@@ -1684,7 +1684,7 @@
 		{
 			"id":"userfeedback",
 			"kind":"refereed workshop paper",
-			"authors": ["Michael J. Lee", "Amy J. Ko"],
+			"authors": ["@mjslee", "@ajko"],
 			"deadname": true,
 			"year": 2012,
 			"title":"Representations of User Feedback in an Agile, Collocated Software Team",
@@ -1698,7 +1698,7 @@
 		{
 			"id":"userfeedback2",
 			"kind":"refereed workshop paper",
-			"authors": ["Amy J. Ko", "Michael J. Lee", "Valentina Ferrarri", "Stephen Ip", "Casey Tran"],
+			"authors": ["@ajko", "@mjslee", "@ferrari", "@stephenip", "@charlie"],
 			"deadname": true,
 			"year": 2011,
 			"title":"A Case Study of Post-Deployment User Feedback Triage",
@@ -1713,7 +1713,7 @@
 		{
 			"id":"bioinformatics",
 			"kind":"refereed workshop paper",
-			"authors": ["Parmit K. Chilana", "Carole Palmer", "Amy J. Ko"],
+			"authors": ["@pchilana", "Carole Palmer", "@ajko"],
 			"deadname": true,
 			"year": 2009,
 			"title":"Comparing Bioinformatics Software Development by Computer Scientists and Biologists: An Exploratory Study",
@@ -1727,7 +1727,7 @@
 		{
 			"id":"jasper",
 			"kind":"refereed workshop paper",
-			"authors": ["Michael J. Coblenz", "Amy J. Ko", "Brad A. Myers"],
+			"authors": ["Michael J. Coblenz", "@ajko", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2006,
 			"title":"JASPER: An Eclipse Plug-In to Facilitate Software Maintenance Tasks",
@@ -1742,7 +1742,7 @@
 		{
 			"id":"reflectbeta",
 			"kind":"juried conference paper",
-			"authors": ["Travis Kriplean", "Michael M. Toomim", "Jonathan T. Morgan", "Alan Borning", "Amy J. Ko"],
+			"authors": ["Travis Kriplean", "Michael M. Toomim", "Jonathan T. Morgan", "Alan Borning", "@ajko"],
 			"deadname": true,
 			"year": 2011,
 			"title":"Supporting Active Listening and Grounding on the Web through Restatement",
@@ -1755,7 +1755,7 @@
 		{
 			"id":"prelemonaid",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Parmit K. Chilana", "Amy J. Ko", "Jacob O. Wobbrock"],
+			"authors": ["@pchilana", "@ajko", "Jacob O. Wobbrock"],
 			"deadname": true,
 			"year": 2011,
 			"title":"Designing Crowdsourced, Context-Sensitive Help for Web Applications",
@@ -1768,7 +1768,7 @@
 		{
 			"id":"talkingaboutusers",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Amy J. Ko", "Parmit K. Chilana"],
+			"authors": ["@ajko", "Parmit K. Chilana"],
 			"deadname": true,
 			"year": 2010,
 			"title":"How Do Open Source Developers Talk about Users?",
@@ -1781,7 +1781,7 @@
 		{
 			"id":"unfamiliar",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Parmit K. Chilana", "Amy J. Ko", "Jacob O. Wobbrock"],
+			"authors": ["@pchilana", "@ajko", "Jacob O. Wobbrock"],
 			"deadname": true,
 			"year": 2009,
 			"title":"Designing Software for Unfamiliar Domains",
@@ -1795,7 +1795,7 @@
 		{
 			"id":"whylinebeta",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Amy J. Ko", "Brad A. Myers"],
+			"authors": ["@ajko", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2008,
 			"title":"Source-Level Debugging with the Whyline",
@@ -1810,7 +1810,7 @@
 		{
 			"id":"eupfactors",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Amy J. Ko", "Brad A. Myers"],
+			"authors": ["@ajko", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2005,
 			"title":"Human Factors Affecting Dependability in End-User Programming",
@@ -1825,7 +1825,7 @@
 		{
 			"id":"productivitytools",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Amy J. Ko", "Brad A. Myers", "Michael J. Coblenz", "Jeffrey Stylos"],
+			"authors": ["@ajko", "Brad A. Myers", "Michael J. Coblenz", "Jeffrey Stylos"],
 			"deadname": true,
 			"year": 2006,
 			"title":"End-User Programming Productivity Tools",
@@ -1838,7 +1838,7 @@
 		{
 			"id":"morenaturaleuse",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Brad A. Myers", "Amy J. Ko", "SunYoung Park", "Jeffrey Stylos", "Thomas D. LaToza", "Jack Beaton"],
+			"authors": ["Brad A. Myers", "@ajko", "SunYoung Park", "Jeffrey Stylos", "Thomas D. LaToza", "Jack Beaton"],
 			"deadname": true,
 			"year": 2008,
 			"title":"More Natural End-User Software Engineering",
@@ -1853,7 +1853,7 @@
 		{
 			"id":"morenaturalui",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Brad A. Myers", "Amy J. Ko"],
+			"authors": ["Brad A. Myers", "@ajko"],
 			"deadname": true,
 			"year": 2005,
 			"title":"More Natural and Open User Interface Tools",
@@ -1868,7 +1868,7 @@
 		{
 			"id":"softwarescience",
 			"kind":"non-refereed workshop paper",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2006,
 			"title":"The Role of Science in Supporting Software Development",
@@ -1881,7 +1881,7 @@
 		{
 			"id":"sequalitative",
 			"kind":"book chapter",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2010,
 			"title":"Software Engineering Through Qualitative Methods",
@@ -1895,7 +1895,7 @@
 		{
 			"id":"ischoolmovement",
 			"kind":"refereed invited article",
-			"authors": ["Jacob O. Wobbrock", "Amy J. Ko", "Julie A. Kientz"],
+			"authors": ["Jacob O. Wobbrock", "@ajko", "Julie A. Kientz"],
 			"deadname": true,
 			"year": 2009,
 			"title":"New to the Movement: Reflections on the Future of Information Schools from Inspired Junior Faculty",
@@ -1912,7 +1912,7 @@
 		{
 			"id":"naturalprogramming",
 			"kind":"refereed invited article",
-			"authors": ["Brad A. Myers", "John F. Pane", "Amy J. Ko"],
+			"authors": ["Brad A. Myers", "John F. Pane", "@ajko"],
 			"deadname": true,
 			"year": 2004,
 			"title":"Natural Programming Languages and Environments",
@@ -1929,7 +1929,7 @@
 		{
 			"id":"identifyingendusers",
 			"kind":"technical report",
-			"authors": ["Amy J. Ko", "Brad A. Myers", "Mary Shaw"],
+			"authors": ["@ajko", "Brad A. Myers", "Mary Shaw"],
 			"deadname": true,
 			"year": 2005,
 			"title":"Identifying Types of End Users: Hints from an Informal Survey",
@@ -1942,7 +1942,7 @@
 		{
 			"id":"gidget2",
 			"kind":"refereed short conference paper",
-			"authors": ["Michael J. Lee", "Amy J. Ko"],
+			"authors": ["@mjslee", "@ajko"],
 			"deadname": true,
 			"year": 2012,
 			"title":"Investigating the Role of Purposeful Goals on Novices' Engagement in a Programming Game",
@@ -1957,7 +1957,7 @@
 		{
 			"id":"honorsthesis",
 			"kind":"technical report",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2002,
 			"title":"Individual Differences in Programming, Testing, and Debugging Strategies in a Statistical End-User Programming Environment",
@@ -1970,7 +1970,7 @@
 		{
 			"id":"dissertationproposal",
 			"kind":"technical report",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2006,
 			"title":"Asking and Answering Questions about the Causes of Software Behaivors",
@@ -1983,7 +1983,7 @@
 		{
 			"id":"dissertation",
 			"kind":"technical report",
-			"authors": ["Amy J. Ko"],
+			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2008,
 			"title":"Asking and Answering Questions about the Causes of Software Behavior",
@@ -2867,6 +2867,20 @@
 			"bio": "Casey was a doctoral student that studied design practices.",
 			"url": "https://www.linkedin.com/in/crhickerson",
 			"startdate": 2009,
+			"enddate": null,
+			"achievements": []
+		},
+		{
+			"id": "ajko",
+			"name": "Amy J. Ko",
+			"active": true,
+			"advised": true,
+			"level": "director",
+			"dept": "Information School",
+			"coadvisor": null,
+			"bio": "Amy is the director of the lab.",
+			"url": "https://faculty.washington.edu/ajko",
+			"startdate": 2008,
 			"enddate": null,
 			"achievements": []
 		}	

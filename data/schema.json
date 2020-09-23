@@ -96,7 +96,7 @@
 					"level": {
 						"type": "string",
 						"required": true,
-						"enum": ["undergrad", "phd", "postdoc"]
+						"enum": ["undergrad", "phd", "postdoc", "director"]
 					},
 					"dept": {
 						"type": "string",

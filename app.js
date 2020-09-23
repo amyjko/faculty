@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, BrowserRouter, Switch, withRouter } from 'react-router-dom';
+import _ from 'lodash';
 
 import { Biography } from './components/bio';
 import { ContactInfo } from './components/contact';
@@ -102,7 +103,10 @@ class App extends React.Component {
 		)
 	}
 	
-	getPeople() { return this.state.data.people; }	
+	getPeople() { return this.state.data.people; }
+	getPerson(id) {
+		return _.find(this.state.data.people, person => person.id === id);
+	}
 	getTravel() { return this.state.data.travel; }	
 	getProjects() { return this.state.data.projects; }
 	getImpacts() { return this.state.data.impacts; }

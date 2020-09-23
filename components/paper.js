@@ -31,7 +31,19 @@ class Paper extends React.Component {
 			null;
 		var dl = this.props["doi"] ? <small><a href={this.props["doi"]} target="_blank">Digital library</a></small> : null;
 		
-		var authors = this.props.authors.join(", ");
+		// Convert linked authors.
+		var authors = _.map(this.props.authors, (author, index) => {
+			var comma = index < this.props.authors.length - 1 ? ", " : "";
+			if(author.charAt(0) === "@") {
+				var id = author.substring(1);
+				var person = this.props.app.getPerson(id);
+				return person ? 
+					<span key={index}><Link to={id === "ajko" ? "/bio" : "/students/" + id}>{person.name}</Link>{comma}</span> : 
+					<span key={index} className="alert alert-danger">unknown <code>{author}</code></span>;
+			}
+			else
+				return author + comma;
+		});
 
 		var award = this.props.award && this.props.award.length > 0 ? <span className="award">&#x2605; {_.join(this.props.award, " + ")}</span> : undefined;
 		
