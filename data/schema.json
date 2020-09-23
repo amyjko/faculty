@@ -18,7 +18,7 @@
 					"kind": {
 						"type": "string",
 						"required": true,
-						"enum": ["refereed conference paper", "refereed workshop paper", "journal article", "refereed short conference paper", "juried conference paper", "book chapter", "refereed invited article", "non-refereed workshop paper", "technical report", "refereed magazine article", "whitepaper"]
+						"enum": ["refereed conference paper", "refereed workshop paper", "journal article", "refereed short conference paper", "juried conference paper", "book chapter", "refereed invited article", "non-refereed workshop paper", "technical report", "refereed magazine article", "whitepaper", "abstract"]
 					},
 					"authors": {
 						"type": "array",

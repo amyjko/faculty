@@ -441,6 +441,20 @@
 			"contribution":"Investigates the prevalence of instruction on accessibility among computing and information science faculty. Finds that nearly all HCI faculty teach something about accessibility, that most faculty want to teach it, but don't have the experience, and don't know how it fits into their course content."
 		},
 		{
+			"id":"msrkeynote",
+			"kind":"abstract",
+			"authors": ["Amy J. Ko"],
+			"deadname": true,
+			"year": 2018,
+			"title":"Mining the Mind, Minding the Mine: Grand Challenges in Comprehension and Mining",
+			"source":"ACM International Conference on Mining Software Repositories",
+			"pages":"118",
+			"publisher": "ACM",
+			"doi": "https://doi.org/10.1145/3196398.3196477",
+			"local": null,
+			"contribution": "Argues that program comprehension and mining software repositories research are mutually relevant in surprising ways."
+		},
+		{
 			"id":"pstutor1",
 			"kind":"refereed workshop paper",
 			"authors": ["Dastyni Loksa", "Amy J. Ko"],
@@ -1549,21 +1563,6 @@
 			"publisher": "HCI Consortium",
 			"local":"Myers2009FutureOfProgrammingInHCI.pdf",
 			"contribution": "Summarizes past work on programming interfaces and open challenges in supporting the broader set of programming activities."
-		},
-		{
-			"id":"designerdescriptions",
-			"kind":"refereed short conference paper",
-			"authors": ["Sunyoung Park", "Brad A. Myers", "Amy J. Ko"],
-			"deadname": true,
-			"year": 2008,
-			"title":"Designers' Natural Descriptions of Interactive Behaviors",
-			"source":"IEEE Symposium on Visual Languages and Human-Centric Computing",
-			"pages":"185-188",
-			"acceptance rate":"29%",
-			"publisher":"IEEE",
-			"doi":"http://dx.doi.org/10.1109/VLHCC.2008.4639082",
-			"local": "Park2008DesignersDescriptions.pdf",
-			"contribution":"Designers use consistent natural language to describe the behavior of interaction techniques, suggesting the feasibility of programming languages for expressing these behaviors."
 		},
 		{
 			"id":"infowork",
