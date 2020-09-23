@@ -28,7 +28,7 @@
 						}
 					},
 					"deadname": {
-						"type": "bpp;eam",
+						"type": "boolean",
 						"required": true
 					},
 					"year": {
