@@ -22,18 +22,20 @@ class Impact extends React.Component {
 								image={"images/populations/population-" + population.id + ".jpg"}
 								alt={population.alt}
 								link={null}
-								header={<span><strong>{population.population}</strong>. {population.description}. </span>}
-								content={
+								header={population.population}
+								content={<span>
+									. {population.description}
 									<ul>
-									{
-										_.map(
-											population.impacts,
-											(impact, index) => {
-												return <li key={index} dangerouslySetInnerHTML={{__html: impact}}></li>
-											}
-										)
-									}
+										{
+											_.map(
+												population.impacts,
+												(impact, index) => {
+													return <li key={index} dangerouslySetInnerHTML={{__html: impact}}></li>
+												}
+											)
+										}
 									</ul>
+								</span>
 								}
 							/>
 					)
