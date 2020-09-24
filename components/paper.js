@@ -36,7 +36,7 @@ class Paper extends React.Component {
 			var comma = index < this.props.authors.length - 1 ? ", " : "";
 			if(author.charAt(0) === "@") {
 				var id = author.substring(1);
-				var person = this.props.app.getPerson(id);
+				var person = this.props.app.getProfile().getPerson(id);
 				return person ? 
 					<span key={index}><Link to={id === "ajko" ? "/bio" : "/students/" + id}>{person.name}</Link>{comma}</span> : 
 					<span key={index} className="alert alert-danger">unknown <code>{author}</code></span>;

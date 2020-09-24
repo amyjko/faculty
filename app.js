@@ -25,6 +25,8 @@ import { CER } from './components/cer';
 import { Unknown } from './components/unknown';
 import { Footer } from './components/footer';
 
+import { Profile } from './data/profile';
+
 // Polyfill startsWith
 if (!String.prototype.startsWith) {
     String.prototype.startsWith = function(searchString, position){
@@ -41,18 +43,18 @@ class App extends React.Component {
 		
 		// Start data as undefined, rending a loading state until it changes.
 		this.state = {
-			data: undefined
+			profile: undefined
 		};
 		
 		fetch(this.getWebRoot() + "/data/data.json")
 			.then(response => response.json())
 			.then(data => {
 				// Yay, we got data! Set the state so the page renders.
-				this.setState({ data: data });
+				this.setState({ profile: new Profile(data) });
 			})
 			.catch(err => { 
 				// Uh oh, something bad happened. Set data to null to render an error.
-				this.setState({ data: null });
+				this.setState({ profile: null });
 				console.error(err);
 			});
 		
@@ -69,9 +71,9 @@ class App extends React.Component {
 			<div className="container">
 				{currentRoute === "/cv" ? null : <Header path={currentRoute} app={this} />}				
 				{
-					this.state.data === undefined ? 
+					this.state.profile === undefined ? 
 						<center><img src="images/icons/loading.gif" /></center> :
-					this.state.data === null ?
+					this.state.profile === null ?
 						<div className='alert alert-danger'>There was a problem loading the site content. Amy will fix it right away!</div> :
 						<Switch>
 							<Route exact path="/" render={(props) => <Projects {...props} app={this} />} />
@@ -90,9 +92,9 @@ class App extends React.Component {
 							<Route path="/communities" render={(props) => <Communities {...props} app={this} />} />
 							<Route path="/funding" render={(props) => <Funding {...props} app={this} />} />
 							<Route path="/lab" render={(props) => <Students {...props} app={this} />} />
-							<Route path="/students/:student?" render={(props) => <Students {...props} app={this} />} />
+							<Route path="/students/:student?" render={(props) => <Students {...props} app={this} profile={this.state.profile} />} />
 							<Route path="/projects/:id" render={(props) => <Project {...props} app={this} />} />
-							<Route path="/cv" render={(props) => <Vita {...props} app={this} />} />
+							<Route path="/cv" render={(props) => <Vita {...props} app={this} profile={this.state.profile} />} />
 							<Route path="/cer" component={CER}/>
 							<Route path="404" component={Unknown}/>
 							<Route path="*" component={Unknown}/>
@@ -102,21 +104,8 @@ class App extends React.Component {
 			</div>
 		)
 	}
-	
-	getPeople() { return this.state.data.people; }
-	getPerson(id) {
-		return _.find(this.state.data.people, person => person.id === id);
-	}
-	getTravel() { return this.state.data.travel; }	
-	getProjects() { return this.state.data.projects; }
-	getImpacts() { return this.state.data.impacts; }
-	getPosts() { return this.state.data.posts; }
-	getCV() { return this.state.data.cv; }
-	getPublications() { return this.state.data.pubs; }
-	getTalks() { return this.state.data.talks; }
-	getClasses() { return this.state.data.classes; }
-	getBooks() { return this.state.data.books; }
-	getYearContexts() { return this.state.data.years; }
+
+	getProfile() { return this.state.profile; }
 	
 }
 

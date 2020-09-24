@@ -11,7 +11,7 @@ class Books extends React.Component {
 				</div>
 
 				{
-					_.map(_.filter(this.props.app.getBooks(), book => book.editor), (book, index) =>
+					_.map(_.filter(this.props.app.getProfile().getBooks(), book => book.editor), (book, index) =>
 						<Block 
 							key={"book-" + index}
 							image={this.props.app.getWebRoot() + "/images/books/" + book.image}
@@ -28,7 +28,7 @@ class Books extends React.Component {
 				</div>
 
 				{
-					_.map(_.filter(this.props.app.getBooks(), book => !book.editor), (book, index) =>
+					_.map(_.filter(this.props.app.getProfile().getBooks(), book => !book.editor), (book, index) =>
 						<Block 
 							key={"edited-book-" + index}
 							image={this.props.app.getWebRoot() + "/images/books/" + book.image}

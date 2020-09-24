@@ -9,7 +9,7 @@ class Funding extends React.Component {
 		var nsfLinks = 
 			_.map(
 				_.filter(
-					this.props.app.getCV().funding, 
+					this.props.app.getProfile().getCV().funding, 
 					{ "funder" : "National Science Foundation" }
 				), 
 				(award, index) => { return <li key={index}><a href={award.url} target="_blank">{award.title}</a></li>; }

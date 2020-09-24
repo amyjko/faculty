@@ -7,30 +7,19 @@ import { Block } from './block';
 
 class ProjectDetails extends React.Component {
 	
-	constructor() {
-		
-		super();
-		
-		this.state = {
-			collapsed: true
-		};
-		
-		this.showDetail = this.showDetail.bind(this);
-		
-	}
-	
-	showDetail() {
-		
-		this.setState({collapsed: false});
-		
+	componentDidMount() {
+		window.scrollTo(0, 0);
 	}
 	
 	render() {
 
 		// Find the publications that are in this project's list of papers and render a paper.
 		var papers = _.map(
-			_.reverse(_.sortBy(_.filter(this.props.app.getPublications(), (paper) => { return _.indexOf(this.props.papers, paper.id) >= 0; }), (paper) => { return paper.year; })),
-			(paper) => { return <Paper {...paper} key={paper.id} app={this.props.app} />; }
+			this.props.app.getProfile().getPublications(
+				paper => _.indexOf(this.props.papers, paper.id) >= 0,
+				paper => paper.year
+			),
+			paper => <Paper {...paper} key={paper.id} app={this.props.app} />
 		);
 	
 		var buttonStyle = "btn btn-xs btn-default";
@@ -92,7 +81,7 @@ class Project extends React.Component {
 		var projectIDToHighlight = this.props.match.params.id;
 
 		// Find the project
-		var project = _.find(this.props.app.getProjects(), { 'id': projectIDToHighlight });
+		var project = this.props.app.getProfile().getProject(projectIDToHighlight);
 		
 		if(project) {
 			return <ProjectDetails {...project} app={this.props.app} />	

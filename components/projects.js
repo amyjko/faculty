@@ -39,20 +39,20 @@ class ProjectSummary extends React.Component {
 
 		var moreDetails = "See " + (this.props.papers.length) + " papers" + (this.props.links.length > 0 ? ", " + this.props.links.length + " demo" + (this.props.links.length > 1 ? "s" : "") + ", " : "") + " and impact details..."
 		
-		var link = this.props.app.getWebRoot() + "/projects/" + this.props.id;
+		var link = "/projects/" + this.props.id;
 
 		return (
 			<Block 
 				image={this.props.app.getWebRoot() + "/images/projects/project-" + this.props.id + ".png"}
 				alt={this.props.name}
-				link={link}
+				link={this.props.app.getWebRoot() + link}
 				header={null}
 				content={
 					<span>
 						<h4>{this.props.name} <small>({this.props.startdate}&ndash;{this.props.stopdate})</small></h4>
 						<p>{people}</p>
 						<p>{this.props.description}</p>
-						<p><a href={link}>{moreDetails}</a></p>
+						<p><Link to={link}>{moreDetails}</Link></p>
 					</span>
 				}
 			/>
@@ -63,12 +63,6 @@ class ProjectSummary extends React.Component {
 
 class Projects extends React.Component {
 	render() {
-		
-		// Get the active projects
-		var active = _.map(_.filter(this.props.app.getProjects(), { 'active': true }), (project) => { return <ProjectSummary {...project} key={project.name} app={this.props.app} /> });
-
-		// Get the inactive projects.
-		var inactive = _.map(_.filter(this.props.app.getProjects(), { 'active': false }), (project) => { return <ProjectSummary  {...project} key={project.name}  app={this.props.app} /> });
 		
 		return (
 			<div>
@@ -91,14 +85,24 @@ class Projects extends React.Component {
 	
 				<p>These are areas we've recently published in.</p>
 						
-				{active}
+				{
+					_.map(
+						this.props.app.getProfile().getProjects(project => project.active), 
+						project => <ProjectSummary {...project} key={project.name} app={this.props.app} />
+					)
+				}
 	
 				<br/>
 				<h3>Past Projects</h3>
 				
 				<p>I'm not actively working on the topics below, but I'm happy to answer questions about them. And who knows, new students might join my lab and bring them back to life!</p>
-	
-				{inactive}
+
+				{
+					_.map(
+						this.props.app.getProfile().getProjects(project => !project.active), 
+						project => <ProjectSummary {...project} key={project.name} app={this.props.app} />
+					)
+				}
 				
 			</div>
 	    )

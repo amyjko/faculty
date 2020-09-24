@@ -14,15 +14,17 @@ class Person extends React.Component {
 					alt={"Photograph of " + this.props.name}
 					link={this.props.url}
 					header={null}
-					content=<span>
-						<a target="_blank" href={this.props.url}>{this.props.name}</a>
-						&nbsp;
-						<mark>{this.props.level}</mark>
-						&nbsp;
-						<small>{ this.props.dissertation ? <a href={this.props.app.getWebRoot() + "/dissertations/" + this.props.dissertation}>Dissertation</a> : null } { this.props.enddate ? " (" + this.props.enddate + ")" : null }</small>
-						<br/>
-						{this.props.bio}
-					</span>
+					content={
+						<span>
+							<a target="_blank" href={this.props.url}>{this.props.name}</a>
+							&nbsp;
+							<mark>{this.props.level}</mark>
+							&nbsp;
+							<small>{this.props.dissertation ? <a href={this.props.app.getWebRoot() + "/dissertations/" + this.props.dissertation}>Dissertation</a> : null } { this.props.enddate ? " (" + this.props.enddate + ")" : null }</small>
+							<br/>
+							{this.props.bio}
+						</span>
+					}
 				/>
 			</div>
 		);
@@ -48,33 +50,17 @@ class Students extends React.Component {
 		
 		var personToHighlight = this.props.match.params.student;
 
-		var people = _.clone(this.props.app.getPeople());
+		const renderPeople = (filter, sort) =>
+			_.map(
+				this.props.profile.getPeople(filter, sort), 
+				person => 
+					<Person {...person} 
+						key={person.id} 
+						highlight={personToHighlight === person.id} 
+						app={this.props.app}
+					/>
+			);
 
-		// Sort active students by increasing start date, inactive by decreasing start date.
-		people.sort((a, b) => {
-			if(a.active)
-				return a.startdate - b.startdate;
-			else
-				return b.startdate - a.startdate;
-		});
-
-		// Render the active people.
-		var activePeople = _.map(_.sortBy(_.filter(people, person => person.active && person.advised && person.id !== "ajko"), ['level', 'startdate']), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app}/>; });
-
-		// Render the affiliated people.
-		var affiliatedPeople = _.map(_.filter(people, { 'active': true, 'advised': false }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app}/>; });
-
-		// Render the former Ph.D. students.
-		var formerPhD = _.map(_.orderBy(_.filter(_.reject(people, {'enddate': null}), { 'active': false, 'advised': true, 'level': 'phd' }), ['enddate'], ['desc']), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
-
-		// Render the former Ph.D. students.
-		var formerAffiliatedPhD = _.map(_.filter(people, { 'active': false, 'advised': false, 'level': 'phd' }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
-
-		// Render the former postdoc students.
-		var formerPostdocs = _.map(_.filter(people, { 'active': false, 'level': 'postdoc' }), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
-
-		var inactiveUndergrad = _.map(_.filter(people, { 'active': false, 'level': 'undergrad'}), (person) => { return <Person {...person} key={person.id} highlight={personToHighlight === person.id} app={this.props.app} />; });
-		
 		return (
 			<div>
 			
@@ -101,22 +87,52 @@ class Students extends React.Component {
 				</div>
 				
 				<h3>Current Advisees</h3>
-				{activePeople}
+				{ 
+					renderPeople(
+						person => person.active && person.advised && person.id !== "ajko", 
+						['level', 'startdate']
+					) 
+				}
 
 				<h3>Affiliated Ph.D. students</h3>
-				{affiliatedPeople}
+				{ 
+					renderPeople(
+						person => person.active && !person.advised, 
+						['level', 'startdate']
+					) 
+				}
 
 				<h3>Former Ph.D. students</h3>
-				{formerPhD}
+				{ 
+					renderPeople(
+						person => person.enddate !== null && !person.active && person.advised && person.level === "phd", 
+						person => -person.enddate
+					)
+				}
 
 				<h3>Former Affiliated Ph.D. students</h3>
-				{formerAffiliatedPhD}
+				{
+					renderPeople(
+						person => !person.active && !person.advised && person.level === "phd",
+						person => -person.startdate
+					)
+				}
 
 				<h3>Former Postdocs</h3>
-				{formerPostdocs}
+				{
+					renderPeople(
+						person => !person.active && person.level === "postdoc",
+						person => -person.startdate
+					)
+				}
 
 				<h3>Former Undergrads</h3>
-				{inactiveUndergrad}
+				{
+					renderPeople(
+						person => !person.active && person.level === "undergrad",
+						person => -person.startdate
+					)
+				}
 				
 			</div>
 		);

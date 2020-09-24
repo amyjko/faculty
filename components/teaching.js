@@ -11,7 +11,7 @@ class Teaching extends React.Component {
 				</div>
 
 				{
-					_.map(this.props.app.getClasses(), course =>
+					_.map(this.props.app.getProfile().getClasses(), course =>
 						<Block
 							key={"course-" + course.id}
 							image={this.props.app.getWebRoot() + "/images/courses/" + course.id + ".png"}

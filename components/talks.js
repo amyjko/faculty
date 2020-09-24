@@ -6,14 +6,7 @@ import {Block} from './block';
 class Talks extends React.Component {
 	render() {
 		
-		var talks = this.props.app.getTalks();
-		
-		var blocks = _.map(talks, (talk, index) => {
-			
-				var link =
-					talk.recording ? talk.recording :
-					talk.practice ? talk.practice :
-					talk.slides;			
+		var blocks = _.map(this.props.app.getProfile().getTalks(), (talk, index) => {
 			
 				return <Block
 					key={"talk" + index}
@@ -21,7 +14,7 @@ class Talks extends React.Component {
 					alt={talk.alt}
 					link={talk.recording ? talk.recording : talk.practice ? talk.practice : talk.slides }
 					header={talk.title}
-					content=
+					content={
 						<span>
 							&nbsp; { talk.keynote ? <span className="award">&#x2605; Keynote</span> : null }
 							<br/><small><em>{talk.url ? <a href={talk.url}>{talk.venue}</a> : talk.venue}</em></small>
@@ -36,6 +29,7 @@ class Talks extends React.Component {
 								{talk.slides ? <a href={talk.slides}>Slides</a> : null } 
 							</small>
 						</span>
+					}
 				/>
 		})
 		

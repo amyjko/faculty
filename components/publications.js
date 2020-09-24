@@ -59,9 +59,11 @@ class Publications extends React.Component {
 	}
 
 	render() {
-		
+
 		// Sort the publications by decreasing year, then by decreasing pages
-		var pubs = this.props.app.getPublications().slice(0).sort((a, b)=>{ 
+		var pubs = this.props.app.getProfile().getPublications(
+			pub => this.state.filter === null || pub.tags.includes(this.state.filter)
+		).sort((a, b)=>{ 
 			if(b["year"] !== a["year"])
 				return b["year"] - a["year"];
 			else if(b["pages"] === "to appear")
@@ -71,67 +73,19 @@ class Publications extends React.Component {
 			else
 				return a["source"].localeCompare(b["source"]); 
 		});
-		
-		var tags = {};
-
-		// Annotate publications with tags, including projects that reference a paper,
-		// award winning papers, papers published at particular conferences, journal/conference/chapter
-		_.each(pubs, (pub) => {
-		
-			pub.tags = [];
-			// If there's one or more award...
-			if(pub.award && pub.award.length > 0) pub.tags.push("Award-winning");
-			
-			// If there's an acronymn in the source name
-			if(pub.source.indexOf("(SIGCSE)") >= 0) pub.tags.push("SIGCSE");
-			if(pub.source.indexOf("(CHI)") >= 0) pub.tags.push("CHI");
-			if(pub.source.indexOf("(ICSE)") >= 0) pub.tags.push("ICSE");
-			if(pub.source.indexOf("(ICER)") >= 0) pub.tags.push("ICER");
-			if(pub.source.indexOf("(UIST)") >= 0) pub.tags.push("UIST");
-		
-			// Annotate the paper with all the projects that reference it.
-			_.each(this.props.app.getProjects(), (project) => {
-				if(project.papers.indexOf(pub.id) >= 0)
-					pub.tags.push(project.name);		
-			});
-		
-			// Tally tags.
-			_.each(pub.tags, (tag) => {
-				if (!(tag in tags))
-					tags[tag] = 1;
-				else
-					tags[tag]++;
-			});
-			
-		});
-		
-		// Sort the display of tags by decreasing frequency.
-		var sortedTags = _.keys(tags).sort(function(a, b) {
-		    return a.toLowerCase().localeCompare(b.toLowerCase());
-		});
-
-		var tagFilters = _.map(sortedTags, (tag, index) => {
-			return (
-				<Topic topic={tag} key={"topic" + index} pubs={this} selected={this.state.filter === tag} />
-			);
-		});
 
 		var paperToHighlight = this.props.match.params.paper;
-
-		var filteredPubs = _.filter(pubs, (pub) => { 
-			return this.state.filter === null || pub.tags.includes(this.state.filter) 
-		});
 
 		// Create a list of publications, inserting year headers.
 		var lastYear = null;
 		var rows = [];
-		for (var i = 0; i < filteredPubs.length; i++) {
+		for (var i = 0; i < pubs.length; i++) {
 			
-			var pub = filteredPubs[i];
+			var pub = pubs[i];
 			
 			if(lastYear === null || lastYear !== pub.year)
 				rows.push(
-					<h3 key={pub.year}>{pub.year}{this.props.app.getYearContexts()[pub.year] ? <small> &mdash; <em>{this.props.app.getYearContexts()[pub.year]}</em></small> : null}</h3>);
+					<h3 key={pub.year}>{pub.year}{this.props.app.getProfile().getYearContexts()[pub.year] ? <small> &mdash; <em>{this.props.app.getProfile().getYearContexts()[pub.year]}</em></small> : null}</h3>);
 			lastYear = pub.year;
 			
 			rows.push(<Paper {...pub} key={"paper" + i} highlight={ paperToHighlight === pub.id } app={this.props.app} />);
@@ -139,11 +93,11 @@ class Publications extends React.Component {
 		}
 		return (
 			<div>
-				<div className="lead">These are my {pubs.length} academic publications. See <a href="https://scholar.google.com/citations?user=otmdDLoAAAAJ&hl=en" target="_blank">who's citing them.</a></div>
+				<div className="lead">These are my {this.props.app.getProfile().getPublications().length} academic publications. See <a href="https://scholar.google.com/citations?user=otmdDLoAAAAJ&hl=en" target="_blank">who's citing them.</a></div>
 				
 				<p>
 					<small>
-						Of these, {pubs.filter(pub => pub.deadname).length} are still under my former name because publishers refuse to let me fix it. 
+						Of these, {this.props.app.getProfile().getPublications(pub => pub.deadname).length} are still under my former name because publishers refuse to let me fix it. 
 						Instead of perpetuating this unjust disregard for my name, <strong>cite all of my publications as Amy J. Ko</strong>, as I do below. 
 						Include a DOI in your citation if you are worried about helping academic search engines.
 						Thank you for respecting my gender, name, and pronouns in your work.
@@ -156,7 +110,18 @@ class Publications extends React.Component {
 					Choose a topic below to filter.
 				</p>
 				<p>
-					{ tagFilters }
+					{ 
+						_.map(
+							_.keys(this.props.app.getProfile().getPublicationTags()).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase())),
+							(tag, index) => 
+								<Topic 
+									topic={tag} 
+									key={"topic" + index} 
+									pubs={this} 
+									selected={this.state.filter === tag} 
+								/>
+						) 
+					}
 				</p>
 				<div>
 					{rows}

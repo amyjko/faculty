@@ -44,11 +44,15 @@ class Chunk extends React.Component {
 
 class Vita extends React.Component {
 	
-	getPapers(pubs, kind) {
+	getPapers(kind) {
 		
-		return _.map(_.filter(pubs, { kind: kind }), (paper, index) => {
-			return <Paper {...paper} app={this.props.app} key={kind + index} hideImage={true} hideLink={true} hideContribution={true} />
-		});
+		return _.map(
+			this.props.app.getProfile().getPublications(
+				pub => pub.kind === kind,
+				pub => -pub.year
+			),
+			(paper, index) => <Paper {...paper} app={this.props.app} key={kind + index} hideImage={true} hideLink={true} hideContribution={true} />
+		);
 
 	}
 	
@@ -99,8 +103,7 @@ class Vita extends React.Component {
 	
 	render() {
 		
-		var cv = this.props.app.getCV();
-		var pubs = _.sortBy(this.props.app.getPublications(), 'year').reverse();
+		var cv = this.props.profile.getCV();
 		
 		return (
 			<div className="cv">
@@ -135,7 +138,10 @@ class Vita extends React.Component {
 				<h3>Most Influential Paper Awards</h3>
 
 				{this.getChunkList(
-					_.sortBy(_.filter(pubs, (pub) => { return pub.award && _.includes(pub.award, "most influential paper")}), "year").reverse(), 
+					this.props.profile.getPublications(
+						pub => pub.award && _.includes(pub.award, "most influential paper"),
+						pub => -pub.year
+					),
 					"mostInfluentialPaperAward", 
 					"year", 
 					null, 
@@ -147,7 +153,10 @@ class Vita extends React.Component {
 				<h3>Best Paper Awards</h3>
 
 				{this.getChunkList(
-					_.sortBy(_.filter(pubs, (pub) => { return pub.award && (_.includes(pub.award, "best paper") || _.includes(pub.award, "best paper honorable mention"))}), "year").reverse(), 
+					this.props.profile.getPublications(
+						pub => pub.award && (_.includes(pub.award, "best paper") || _.includes(pub.award, "best paper honorable mention")),
+						pub => -pub.year
+					),
 					"bestPaperAward", 
 					"year", 
 					null, 
@@ -172,39 +181,39 @@ class Vita extends React.Component {
 
 				<h3>Refereed Conference Papers</h3>
 
-				{this.getPapers(pubs, "refereed conference paper")}				
+				{this.getPapers("refereed conference paper")}				
 
 				<h3>Journal Articles</h3>
 				
-				{this.getPapers(pubs, "journal article")}				
+				{this.getPapers("journal article")}				
 				
 				<h3>Short Refereed Conference Papers</h3>
 				
-				{this.getPapers(pubs, "refereed short conference paper")}				
+				{this.getPapers("refereed short conference paper")}				
 			
 				<h3>Refereed Workshop Papers</h3>
 				
-				{this.getPapers(pubs, "refereed workshop paper")}				
+				{this.getPapers("refereed workshop paper")}				
 
 				<h3>Juried Conference Papers</h3>
 				
-				{this.getPapers(pubs, "juried conference paper")}				
+				{this.getPapers("juried conference paper")}				
 
 				<h3>Book Chapters</h3>
 				
-				{this.getPapers(pubs, "book chapter")}				
+				{this.getPapers("book chapter")}				
 
 				<h3>Refereed Invited Articles</h3>
 				
-				{this.getPapers(pubs, "refereed invited article")}
+				{this.getPapers("refereed invited article")}
 
 				<h3>Non-Refereed Workshop Papers</h3>
 				
-				{this.getPapers(pubs, "non-refereed workshop paper")}				
+				{this.getPapers("non-refereed workshop paper")}				
 
 				<h3>Technical Reports</h3>
 				
-				{this.getPapers(pubs, "technical report")}
+				{this.getPapers("technical report")}
 				
 				<h2>Press</h2>
 
@@ -213,13 +222,13 @@ class Vita extends React.Component {
 				<h2>Invited Keynotes</h2>
 
 				{this.getChunkList(
-					_.filter(this.props.app.getTalks(), (talk) => { return talk.keynote; }), 
+					_.filter(this.props.profile.getTalks(), (talk) => { return talk.keynote; }), 
 					"keynote", "date", null, "title", "venue")}
 				
 				<h2>Invited Talks</h2>
 
 				{this.getChunkList(
-					_.filter(this.props.app.getTalks(), (talk) => { return !talk.keynote; }), 
+					_.filter(this.props.profile.getTalks(), (talk) => { return !talk.keynote; }), 
 					"invitedtalk", "date", null, "title", "venue")}				
 
 				<h2>Patents</h2>
@@ -241,7 +250,11 @@ class Vita extends React.Component {
 				{
 					// Get the students and annotate the metadata for presentation.
 					this.getChunkList(
-						_.forEach(_.sortBy(_.filter(this.props.app.getPeople(), { level: 'phd', advised: true }), 'startdate'), (value) => {
+						_.forEach(
+							this.props.profile.getPeople(
+								person => person.level === "phd" && person.advised,
+								person => person.startdate
+							), value => {
 							if(value.coadvisor !== null)
 								value.coadvisor = "Co-advisor: " + value.coadvisor;
 						}), 
