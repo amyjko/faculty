@@ -1,10 +1,7 @@
 import React from 'react';
 
 class Footer extends React.Component {
-	render() {
-		
-		var path = this.props.path || "";
-		
+	render() {		
 		return (
 			<div>
 				<hr/>

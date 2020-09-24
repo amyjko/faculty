@@ -1,7 +1,6 @@
 import React from 'react';
 import _ from "lodash";
 
-import { Paper } from "./paper";
 import { Link } from 'react-router-dom';
 import { Block } from './block';
 

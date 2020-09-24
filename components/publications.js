@@ -64,15 +64,16 @@ class Publications extends React.Component {
 		var pubs = this.props.app.getProfile().getPublications(
 			pub => this.state.filter === null || pub.tags.includes(this.state.filter)
 		).sort((a, b)=>{ 
-			if(b["year"] !== a["year"])
-				return b["year"] - a["year"];
-			else if(b["pages"] === "to appear")
-				return 1;
-			else if(a["pages"] === "to appear")
-				return -1;
-			else
-				return a["source"].localeCompare(b["source"]); 
-		});
+				if(b["year"] !== a["year"])
+					return b["year"] - a["year"];
+				else if(b["pages"] === "to appear")
+					return 1;
+				else if(a["pages"] === "to appear")
+					return -1;
+				else
+					return a["source"].localeCompare(b["source"]); 
+			}
+		);
 
 		var paperToHighlight = this.props.match.params.paper;
 

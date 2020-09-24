@@ -25,11 +25,6 @@ class Paper extends React.Component {
 	render() {
 
 		var url = this.getURL();
-		var pdf = 
-			this.props["local"] ? <small><a href={this.props.app.getWebRoot() + "/papers/" + this.props["local"]} target="_blank">PDF</a></small> : 
-			this.props.authorizer ? <small><a href={this.props.authorizer} target="_blank">PDF</a></small> : 
-			null;
-		var dl = this.props["doi"] ? <small><a href={this.props["doi"]} target="_blank">Digital library</a></small> : null;
 		
 		// Convert linked authors.
 		var authors = _.map(this.props.authors, (author, index) => {

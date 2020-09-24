@@ -14,7 +14,6 @@ import { Students } from './components/students';
 import { Header } from './components/header';
 import { Projects } from './components/projects';
 import { Project } from './components/project';
-import { Reading } from './components/reading';
 import { Advice } from './components/advice';
 import { Teaching } from './components/teaching';
 import { Talks } from './components/talks';
@@ -81,7 +80,6 @@ class App extends React.Component {
 							<Route path="/publications/:paper?" render={(props) => <Publications {...props} app={this} />} />
 							<Route path="/posts" render={(props) => <Posts {...props} app={this} />} />
 							<Route path="/impact" render={(props) => <Impact {...props} app={this} />} />
-							<Route path="/reading" component={Reading}/>
 							<Route path="/advice" render={(props) => <Advice {...props} app={this} />} />
 							<Route path="/teaching" render={(props) => <Teaching {...props} app={this} />} />
 							<Route path="/talks" render={(props) => <Talks {...props} app={this} />} />

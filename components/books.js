@@ -7,7 +7,7 @@ class Books extends React.Component {
 		return (
 			<div>
 				<div className='lead'>
-					These are books I wrote to support my teaching and others'.
+					These are books I wrote and maintain to support my teaching.
 				</div>
 
 				{
