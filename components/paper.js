@@ -27,18 +27,13 @@ class Paper extends React.Component {
 		var url = this.getURL();
 		
 		// Convert linked authors.
-		var authors = _.map(this.props.authors, (author, index) => {
-			var comma = index < this.props.authors.length - 1 ? ", " : "";
-			if(author.charAt(0) === "@") {
-				var id = author.substring(1);
-				var person = this.props.app.getProfile().getPerson(id);
-				return person ? 
-					<span key={index}><Link to={id === "ajko" ? "/bio" : "/students/" + id}>{person.name}</Link>{comma}</span> : 
-					<span key={index} className="alert alert-danger">unknown <code>{author}</code></span>;
-			}
-			else
-				return author + comma;
-		});
+		var authors = _.map(this.props.authors, (author, index) =>
+			author === undefined ? 
+				<span key={index} className="alert alert-danger">unknown <code>{author}</code></span> :
+			typeof author === "string" ?
+				author + (index < this.props.authors.length - 1 ? ", " : "") :
+				<span key={index}><Link to={author.id === "ajko" ? "/bio" : "/students/" + author.id}>{author.name}</Link>{index < this.props.authors.length - 1 ? ", " : ""}</span>
+		);
 
 		var award = this.props.award && this.props.award.length > 0 ? <span className="award">&#x2605; {_.join(this.props.award, " + ")}</span> : undefined;
 		

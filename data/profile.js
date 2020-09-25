@@ -15,29 +15,44 @@ class Profile {
 			trip.time = (new Date(trip.year, trip.month - 1, trip.day)).getTime();
 		});
 
-		// Annotate publications with tags, including projects that reference a paper,
-		// award winning papers, papers published at particular conferences, journal/conference/chapter
+		// Initialize a list of publication tags
 		this.json.publicationTags = {};
+
+		// Annotate publications with synthesized tags.
+		// Resolve author references to people records.
+		// Add the tags to the publication tags dictionary.
 		_.each(this.json.pubs, pub => {
 		
+			// Initialize a list of tags for the paper.
 			pub.tags = [];
-			// If there's one or more award...
-			if(pub.award && pub.award.length > 0) pub.tags.push("Award-winning");
+
+			// If there's one or more award, tag it as award winnning.
+			if(pub.award && pub.award.length > 0) 
+				pub.tags.push("Award-winning");
 			
-			// If there's an acronymn in the source name
+			// If there's an acronymn in the source name, tag it with the acronym
 			if(pub.source.indexOf("(SIGCSE)") >= 0) pub.tags.push("SIGCSE");
 			if(pub.source.indexOf("(CHI)") >= 0) pub.tags.push("CHI");
 			if(pub.source.indexOf("(ICSE)") >= 0) pub.tags.push("ICSE");
 			if(pub.source.indexOf("(ICER)") >= 0) pub.tags.push("ICER");
 			if(pub.source.indexOf("(UIST)") >= 0) pub.tags.push("UIST");
 		
-			// Annotate the paper with all the projects that reference it.
+			// Annotate the paper tags for all the projects that reference it.
 			_.each(
 				this.getProjects(
 					project => project.papers.indexOf(pub.id) >= 0
 				), project => pub.tags.push(project.name)
 			);
 		
+			// Resolve symbolic author names to a pointer to the person record.
+			pub.authors = _.map(
+				pub.authors, 
+				author => 
+					author.charAt(0) === "@" ?
+						this.getPerson(author.substring(1)) :
+						author
+			);
+
 			// Tally tags.
 			_.each(
 				pub.tags, 
@@ -58,7 +73,7 @@ class Profile {
 		this.json.postTags = {};
 		_.each(this.json.posts, post =>
 			_.each(post.tags, tag => this.json.postTags[tag] = tag in this.json.postTags ? this.json.postTags[tag] + 1 : 1)
-		);
+		);		
 
     }
 
