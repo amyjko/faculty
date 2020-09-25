@@ -1,48 +1,25 @@
 import React from 'react';
 import $ from 'jquery';
 import _ from 'lodash';
-import { Link } from 'react-router-dom';
 
 import { Paper }  from './paper';
-		
-class Topic extends React.Component {
-	
-	constructor(props) {
-
-		super(props);
-		this.filter = this.filter.bind(this);
-		
-	}
-	
-	filter() {
-		
-		this.props.pubs.filter(this.props.selected ? null : this.props.topic);
-		
-	}
-
-	render() {
-		return (
-			<mark className={"clickable topic" + (this.props.selected ? " selected" : "")} onClick={this.filter}>
-				{this.props.topic}
-			</mark>
-		);
-	}
-	
-}
+import { Facets } from './facets';
 
 class Publications extends React.Component {
 
-	constructor(props) {
-		
-		super(props);
-    		
-	    this.state = {filter: null};
+	constructor() {
+			
+		super();
+
+	    this.state = {selection: {}};
+
+		this.filter = this.filter.bind(this);
 
 	}
 
-	filter(topic) {
+	filter(selection) {
 		
-		this.setState({filter: topic});
+		this.setState({selection: selection});
 		
 	}
 
@@ -62,7 +39,7 @@ class Publications extends React.Component {
 
 		// Sort the publications by decreasing year, then by decreasing pages
 		var pubs = this.props.app.getProfile().getPublications(
-			pub => this.state.filter === null || pub.tags.includes(this.state.filter)
+			pub => this.props.app.getProfile().tagsMatch(this.state.selection, pub.tags)
 		).sort((a, b)=>{ 
 				if(b["year"] !== a["year"])
 					return b["year"] - a["year"];
@@ -108,22 +85,14 @@ class Publications extends React.Component {
 				<hr/>
 				
 				<p>
-					Choose a topic below to filter.
+					Choose a source, award type, or project to filter.
 				</p>
-				<p>
-					{ 
-						_.map(
-							_.keys(this.props.app.getProfile().getPublicationTags()).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase())),
-							(tag, index) => 
-								<Topic 
-									topic={tag} 
-									key={"topic" + index} 
-									pubs={this} 
-									selected={this.state.filter === tag} 
-								/>
-						) 
-					}
-				</p>
+
+				<Facets 
+					facets={this.props.app.getProfile().getPublicationFacets()} 
+					update={this.filter}
+				/>
+
 				<div>
 					{rows}
 				</div>

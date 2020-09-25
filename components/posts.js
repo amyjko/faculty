@@ -2,39 +2,16 @@ import React from 'react';
 import _ from 'lodash';
 
 import { Block } from './block';
-
-class Topic extends React.Component {
-	
-	constructor(props) {
-
-		super(props);
-		this.filter = this.filter.bind(this);
-		
-	}
-	
-	filter() {
-		
-		this.props.posts.filter(this.props.selected ? null : this.props.topic);
-		
-	}
-
-	render() {
-		return (
-			<mark className={"clickable topic" + (this.props.selected ? " selected" : "")} onClick={this.filter}>
-				{this.props.topic}
-			</mark>
-		);
-	}
-	
-}
+import { Facets } from './facets';
 
 class Posts extends React.Component {
 
-	constructor(props) {
+	constructor() {
 		
-		super(props);
+		super();
     		
-	    this.state = {filter: null};
+		this.state = {filter: {}};
+		this.filter = this.filter.bind(this);
 
 	}
 
@@ -53,28 +30,18 @@ class Posts extends React.Component {
 				</div>
 				
 				<p>
-					Choose a topic below to filter.
+					Choose a topic to filter.
 				</p>
 	
-				<p>
-				{  
-					_.map(
-						_.keys(this.props.app.getProfile().getPostTags()).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase())),
-						(tag, index) => 
-							<Topic 
-								topic={tag} 
-								key={"topic" + index} 
-								posts={this} 
-								selected={this.state.filter === tag} 
-							/>
-					)
-				}
-				</p>
-	
+				<Facets
+					facets={this.props.app.getProfile().getPostTags()}
+					update={this.filter}
+				/>
+
 				{
 					_.map(
 						this.props.app.getProfile().getPosts(
-							post => this.state.filter === null || post.tags.includes(this.state.filter),
+							post => !("topic" in this.state.filter) || post.tags.includes(this.state.filter.topic),
 							post => -(post.year * 12 + post.month)
 						),
 						(post, index) => 
@@ -92,8 +59,8 @@ class Posts extends React.Component {
 											_.map(
 												post.tags, 
 												(tag, index) => 
-													<mark key={index} className={"topic" + (this.state.filter === tag ? " selected" : "")}>
-														{tag}
+													<mark key={index} className={"topic" + (this.state.filter.topic === tag ? " selected" : "")}>
+														<small>{tag}</small>
 													</mark>
 											)
 										}

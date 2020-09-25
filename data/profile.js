@@ -16,7 +16,7 @@ class Profile {
 		});
 
 		// Initialize a list of publication tags
-		this.json.publicationTags = {};
+		this.json.publicationFacets = {};
 
 		// Annotate publications with synthesized tags.
 		// Resolve author references to people records.
@@ -43,28 +43,20 @@ class Profile {
 			}
 
 			// Initialize a list of tags for the paper.
-			pub.tags = [];
-
-			// If there's one or more award, tag it as award winnning.
-			if(pub.award && pub.award.length > 0) 
-				pub.tags.push("Award-winning");
+			pub.tags = {
+				// If the source has a short name, add a tag
+				"source": pub.source.short ? [ pub.source.short ] : [],
+				// Add the paper's awards as tags
+				"award": pub.award ? pub.award.slice() : [],
+				// Add the paper's projects
+				"project": _.map(this.getProjects(project => project.papers.indexOf(pub.id) >= 0), project => project.name)
+			};
 			
-			// If the source has a short name, it must be important, so tag it with the acronym
-			if(pub.source.short)
-				pub.tags.push(pub.source.short);
-		
-			// Annotate the paper tags for all the projects that reference it.
-			_.each(
-				this.getProjects(
-					project => project.papers.indexOf(pub.id) >= 0
-				), project => pub.tags.push(project.name)
-			);
-					
-			// Tally tags.
-			_.each(
-				pub.tags, 
-				tag => this.json.publicationTags[tag] = tag in this.json.publicationTags ? this.json.publicationTags[tag] + 1 : 1
-			);
+			// Accumlate post tags by going through each facet and adding the publication's
+			_.each(Object.keys(pub.tags), facet => {
+				this.json.publicationFacets[facet] = 
+					_.union(pub.tags[facet], facet in this.json.publicationFacets ? this.json.publicationFacets[facet] : []);
+			});
 			
 		});
 
@@ -77,10 +69,10 @@ class Profile {
 		});
 
 		// Accumlate post tags
-		this.json.postTags = {};
+		this.json.postTags = {"topic": []};
 		_.each(this.json.posts, post =>
-			_.each(post.tags, tag => this.json.postTags[tag] = tag in this.json.postTags ? this.json.postTags[tag] + 1 : 1)
-		);		
+			this.json.postTags.topic = _.union(this.json.postTags.topic, post.tags)
+		);
 
     }
 
@@ -114,8 +106,8 @@ class Profile {
 	}
 
 	// Get the list of publication tags applied to all publications.
-	getPublicationTags() {
-		return this.json.publicationTags;
+	getPublicationFacets() {
+		return this.json.publicationFacets;
 	}
 
 	// Get the list of impacts.
@@ -155,6 +147,14 @@ class Profile {
 	
 	// Get the list of year contexts.
 	getYearContexts() { return this.json.years; }
+
+	// See if a given facet query matches a given set of facets
+	tagsMatch(query, tags) {
+
+		// Go through each facet in the query
+		return _.reduce(Object.keys(query), (match, facet) => match && tags[facet].includes(query[facet]), true);
+
+	}
 
 }
 
