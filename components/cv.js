@@ -146,7 +146,7 @@ class Vita extends React.Component {
 					"year", 
 					null, 
 					"title", 
-					"source"
+					"sourceName"
 					)
 				}
 			
@@ -161,7 +161,7 @@ class Vita extends React.Component {
 					"year", 
 					null, 
 					"title", 
-					"source"
+					"sourceName"
 					)
 				}
 			

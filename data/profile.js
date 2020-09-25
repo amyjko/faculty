@@ -23,27 +23,6 @@ class Profile {
 		// Add the tags to the publication tags dictionary.
 		_.each(this.json.pubs, pub => {
 		
-			// Initialize a list of tags for the paper.
-			pub.tags = [];
-
-			// If there's one or more award, tag it as award winnning.
-			if(pub.award && pub.award.length > 0) 
-				pub.tags.push("Award-winning");
-			
-			// If there's an acronymn in the source name, tag it with the acronym
-			if(pub.source.indexOf("(SIGCSE)") >= 0) pub.tags.push("SIGCSE");
-			if(pub.source.indexOf("(CHI)") >= 0) pub.tags.push("CHI");
-			if(pub.source.indexOf("(ICSE)") >= 0) pub.tags.push("ICSE");
-			if(pub.source.indexOf("(ICER)") >= 0) pub.tags.push("ICER");
-			if(pub.source.indexOf("(UIST)") >= 0) pub.tags.push("UIST");
-		
-			// Annotate the paper tags for all the projects that reference it.
-			_.each(
-				this.getProjects(
-					project => project.papers.indexOf(pub.id) >= 0
-				), project => pub.tags.push(project.name)
-			);
-		
 			// Resolve symbolic author names to a pointer to the person record.
 			pub.authors = _.map(
 				pub.authors, 
@@ -53,6 +32,34 @@ class Profile {
 						author
 			);
 
+			// Resolve symbolic source names to a pointer to the source record.
+			if(pub.source.charAt(0) === "@") {
+				pub.source = this.json.sources[pub.source.substring(1)];
+				pub.sourceName = pub.source ? pub.source.name : undefined
+			}
+			else {
+				pub.source = { "name": pub.source };
+				pub.sourceName = pub.source;
+			}
+
+			// Initialize a list of tags for the paper.
+			pub.tags = [];
+
+			// If there's one or more award, tag it as award winnning.
+			if(pub.award && pub.award.length > 0) 
+				pub.tags.push("Award-winning");
+			
+			// If the source has a short name, it must be important, so tag it with the acronym
+			if(pub.source.short)
+				pub.tags.push(pub.source.short);
+		
+			// Annotate the paper tags for all the projects that reference it.
+			_.each(
+				this.getProjects(
+					project => project.papers.indexOf(pub.id) >= 0
+				), project => pub.tags.push(project.name)
+			);
+					
 			// Tally tags.
 			_.each(
 				pub.tags, 

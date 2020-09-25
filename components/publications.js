@@ -71,7 +71,7 @@ class Publications extends React.Component {
 				else if(a["pages"] === "to appear")
 					return -1;
 				else
-					return a["source"].localeCompare(b["source"]); 
+					return a["source"].name.localeCompare(b["source"].name); 
 			}
 		);
 

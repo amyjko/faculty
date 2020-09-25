@@ -3,6 +3,26 @@
 	"title": "Amy's faculty website data schema",
 	"type": "object",
 	"properties": {
+		"sources": {
+			"type": "object",
+			"description": "Conference and journal sources.",
+			"required": true,
+			"additionalProperties": {
+				"type": "object",
+				"description": "Source names",
+				"required": true,
+				"properties": {
+					"name": {
+						"type": "string",
+						"requried": true
+					},
+					"short": {
+						"type": "string",
+						"requried": true
+					}
+				}
+			}
+		},
 	    "pubs": {
 			"type": "array",
 			"description": "List of publications.",

@@ -29,11 +29,14 @@ class Paper extends React.Component {
 		// Convert linked authors.
 		var authors = _.map(this.props.authors, (author, index) =>
 			author === undefined ? 
-				<span key={index} className="alert alert-danger">unknown <code>{author}</code></span> :
+				<span key={index} className="alert alert-danger">unknown author</span> :
 			typeof author === "string" ?
 				author + (index < this.props.authors.length - 1 ? ", " : "") :
 				<span key={index}><Link to={author.id === "ajko" ? "/bio" : "/students/" + author.id}>{author.name}</Link>{index < this.props.authors.length - 1 ? ", " : ""}</span>
 		);
+
+		var source = 
+			this.props.source.name === undefined ? <span className="alert alert-danger">unknown source</span> : this.props.source.name;
 
 		var award = this.props.award && this.props.award.length > 0 ? <span className="award">&#x2605; {_.join(this.props.award, " + ")}</span> : undefined;
 		
@@ -61,7 +64,7 @@ class Paper extends React.Component {
 					{ award ? <br/> : null }
 					<small>{authors} ({this.props.year})</small>
 					<br/>{title}
-					<br/><small><em>{this.props.source}</em>{(this.props.pages === '' || this.props.pages === null) ? "." : ", " + this.props.pages + "."}</small>
+					<br/><small><em>{source}</em>{(this.props.pages === '' || this.props.pages === null) ? "." : ", " + this.props.pages + "."}</small>
 					<br/>{contribution}
 				</div>
 			)
