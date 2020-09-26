@@ -49,7 +49,7 @@ class Profile {
 				// Add the paper's awards as tags
 				"award": pub.award ? pub.award.slice() : [],
 				// Add the paper's projects
-				"project": _.map(this.getProjects(project => project.papers.indexOf(pub.id) >= 0), project => project.name)
+				"project": _.map(this.getProjects(project => project.papers.indexOf(pub.id) >= 0), project => project.shortName)
 			};
 			
 			// Accumlate post tags by going through each facet and adding the publication's
