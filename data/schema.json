@@ -391,6 +391,10 @@
 					"keynote": {
 						"type": "boolean",
 						"required": true
+					},
+					"blog": {
+						"type": "string",
+						"required": false
 					}
 				}
 			}

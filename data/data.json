@@ -6190,7 +6190,8 @@
 			"recording": "https://www.youtube.com/watch?v=mjX3yLPKjvE",
 			"practice": "https://www.youtube.com/watch?v=m9sqJz1oM-M",
 			"description": "I gave this keynote at the 2019 Koli Calling conference, a computing education research conference in beautiful Koli National Park. In it, I argued that to address epistemic challenges such as climate change and stabilizing democracies, everyone in the world needs to learn the limits of computing, social responsibility with computing, data literacy, and diversity literacy.",
-			"keynote": true
+			"keynote": true,
+			"blog": "https://medium.com/bits-and-behavior/21st-grand-challenges-for-computing-education-f5e937d57155"
 		},
 		{
 			"date": "2019.05.01",
@@ -6229,7 +6230,8 @@
 			"recording": null,
 			"practice": "https://youtu.be/Oh5NuyTMB4A",
 			"description": "I gave this invited joint keynote at the 2018 International Conference on Mining Software Repositories, and the International Conference on Program Comprehension. I argued that the two areas need each other, that they both need theory, and that they both need to ask more relevant questions.",
-			"keynote": true
+			"keynote": true,
+			"blog": "https://medium.com/bits-and-behavior/grand-challenges-in-program-comprehension-and-software-repository-mining-my-keynote-on-7bf2cfc182a5"
 		},
 		{
 			"date": "2018.01.12",
@@ -6307,7 +6309,8 @@
 			"recording": "https://www.youtube.com/watch?v=TjkzAls5fsI&t=84s",
 			"practice": null,
 			"description": "I gave this invited keynote at SPLASH 2016, in which I built upon Seymour Papert's arguments about computing culture and the need for embracing multiple views of what programming is.",
-			"keynote": true
+			"keynote": true,
+			"blog": "https://medium.com/bits-and-behavior/my-splash-2016-keynote-81cc802f5f6e"
 		},
 		{
 			"date": "2015.10.09",
