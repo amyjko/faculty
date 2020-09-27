@@ -90,6 +90,7 @@ class Paper extends React.Component {
 					<span className="clickable" onClick={this.toggle.bind(this)}>{this.state.apa ? <strong>cite</strong> : "cite"}</span>
 					{this.props.local ? <span> &sdot; <a href={this.getLocalURL()} target="_blank">pdf</a></span> : null }
 					{this.props.doi ? <span> &sdot; <a href={this.props.doi} target="_blank">doi</a></span> : null }
+					{this.props.blog ? <span> &sdot; <a href={this.props.blog} target="_blank">blog post</a></span> : null }
 				</small>
 			</div>
 		);

@@ -68,6 +68,7 @@
 			"doi": "https://doi.org/10.1145/3372782.3406252",
 			"local": "Register2020PersonalData.pdf",
 			"publisher": "ACM",
+			"blog": "https://medium.com/@yimregister/how-to-teach-machine-learning-to-empower-learners-to-speak-up-for-themselves-35c505db941b",
 			"contribution": "Finds that teaching machine learning by tracing an algorithmwith with learners' personal data increases the extent to which they can identify bias in in self-advocacy arguments."
 		},
 		{
@@ -82,6 +83,7 @@
 			"doi": "https://doi.org/10.1145/3386527.3405928",
 			"local": "Xie2020Agency.pdf",
 			"publisher": "ACM",
+			"blog": "https://medium.com/bits-and-behavior/designing-for-agency-in-online-learning-7632e6ac6f04",
 			"contribution": "Finds that affording more agency in learning environments may increase motivation, but may not improve learning because of the increased burden on decision-making."
 		},
 		{
@@ -111,6 +113,7 @@
 			"authorizer": "https://dl.acm.org/doi/10.1145/3313831.3376149?cid=81100500360",
 			"local": "Oleson2020HCILearningDifficulties.pdf",
 			"publisher": "ACM",
+			"blog": "https://medium.com/bits-and-behavior/seven-tips-to-improve-hci-education-fa64db5da4f5",
 			"contribution": "Investigates the challenges that computing students face in learning HCI, finding challenges in understanding design as distinct from engineering, understanding design methods, finding resources to support design, interpreting feedback, scoping design problems, choosing between alternatives, and designing for diversity."
 		},
 		{
@@ -155,6 +158,7 @@
 			"doi": "https://doi.org/10.1007/s10664-020-09810-1",
 			"local": "Latoza2020ExplicitProgrammingStrategies.pdf",
 			"publisher": "Springer",
+			"blog": "https://medium.com/@latoza/solving-problems-strategically-aab8ed572cfb",
 			"contribution": "Presents the concept of explicit programming strategies, the idea of encoding manual procedures for solving programming programmers to accelerate software development problem solving. Presents a notation for encoding strategies and evidence that developers using explicit strategies, independent of expertise, were more successful at the design and debugging tasks."
 		},
 		{
@@ -249,7 +253,8 @@
 			"pages": "49 pages",
 			"doi": "https://doi.org/10.1080/08993408.2019.1565235",
 			"local":"Xie2019IntroCSTheoryOfInstruction.pdf",
-			"publisher": "Apress",
+			"publisher": "Taylor & Francis",
+			"blog": "https://medium.com/bits-and-behavior/improving-intro-cs-by-explicitly-teaching-programming-skills-20641f920fa9",
 			"contribution": "Proposes a theory that identifies four distinct skills that novices learn incrementally: tracing, writing syntax, comprehending reusable abstractions of programming knowledge (templates). Demonstrates that teaching these skills incrementally can result in improved completion rate on practice exercises and decreased error rate and improved understanding of the post-test."
 		},
 		{
@@ -337,6 +342,7 @@
 			"doi": "https://doi.org/10.1145/3287324.3287370",
 			"authorizer":"https://dl.acm.org/authorize?N677495",
 			"local":"Xie2019IRTEvaluation.pdf",
+			"blog": "https://medium.com/bits-and-behavior/improving-cs-assessment-with-careful-data-analysis-10e1304de055",
 			"contribution": "Evaluates the SCS1 language independent concept inventory, demonstrating how to use IRT to evaluate assessments, and that the SCS1 has several items that may be too hard to be useful."
 		},
 		{
@@ -554,6 +560,7 @@
 			"authorizer":"http://dl.acm.org/authorize?N42766",
 			"doi":"https://doi.org/10.1145/3105726.3106176",
 			"local":"Thayer2017CodingBootcamps.pdf",
+			"blog": "https://medium.com/bits-and-behavior/what-i-learned-from-researching-coding-bootcamps-f594c15bd9e0",
 			"contribution":"Finds that bootcamps can be an alternate path into the software industry for people who missed earlier computing education opportunities, particularly for women, but students face great personal costs and risks, including significant time, money, and effort before, during, and after bootcamps."
 		},
 		{
@@ -584,6 +591,7 @@
 			"publisher": "ACM",
 			"doi":"https://doi.org/10.1109/CHASE.2017.3",
 			"local":"Li2017CrossDisciplinary.pdf",
+			"blog": "https://medium.com/bits-and-behavior/what-makes-software-developers-great-cross-disciplinary-collaborators-590f94f2f722",
 			"contribution":"Finds that non-software developers who collaborate with software developers described great software engineers as masters of their own technical domain, open-minded to the input of others, proactively informing everyone, and seeing the big picture of how pieces fit together."
 		},
 		{
@@ -599,6 +607,7 @@
 			"doi": "https://doi.org/10.1145/3025453.3025506",
 			"authorizer":"http://dl.acm.org/authorize?N37843",
 			"local":"Swearngin2017Genie.pdf",
+			"blog": "https://medium.com/bits-and-behavior/genie-input-retargeting-on-the-web-through-command-reverse-engineering-f9c7a294b23f",
 			"contribution":"Presents Genie, a system to reverse engineer and retarget interactive commands on a website, which allows users to engage with the web via arbitrary input modalities, including speech, keyboard, and command-line input."
 		},
 		{
@@ -613,6 +622,7 @@
 			"publisher": "IEEE",
 			"doi":"https://doi.org/10.1109/ICSE-SEIP.2017.29",
 			"local":"Ko2017AnswerDashReflection.pdf",
+			"blog": "https://medium.com/bits-and-behavior/nine-factors-that-shape-software-evolution-78112ee79b3c",
 			"contribution":"Describes an analysis my personal diary reflecting on 9,000 hours of software startup work, presenting nine claims about software engineering work."
 		},
 		{
@@ -642,6 +652,7 @@
 			"publisher": "ACM",
 			"doi":"https://doi.org/10.1145/3017680.3017728",
 			"local": "Kim2017CodingTutorialEvaluation.pdf",
+			"blog": "https://medium.com/bits-and-behavior/coding-tutorials-the-good-the-bad-and-the-ugly-b45afc8821f6",
 			"contribution":"Using a set of pedagogical principles, evaluates the current state of tutorial instruction, finding that only a few tutorials follow best practices."
 		},
 		{
@@ -807,6 +818,7 @@
 			"publisher": "IEEE",
 			"doi":"http://dx.doi.org/10.1109/ICSE.2015.335",
 			"local":"Li2015GreatEngineers.pdf",
+			"blog": "https://medium.com/bits-and-behavior/what-makes-a-great-software-engineer-e8cbb25cfac0",
 			"contribution":"Software engineering expertise is much more about personality, interpersonal skills, and decision-making expertise than about technical knowledge and ability."
 		},
 		{
