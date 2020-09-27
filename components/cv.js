@@ -51,7 +51,7 @@ class Vita extends React.Component {
 				pub => pub.kind === kind,
 				pub => -pub.year
 			),
-			(paper, index) => <Paper {...paper} app={this.props.app} key={kind + index} hideImage={true} hideLink={true} hideContribution={true} />
+			(paper, index) => <Paper {...paper} app={this.props.app} key={kind + index} static={true} />
 		);
 
 	}
