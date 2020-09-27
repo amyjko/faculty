@@ -74,6 +74,37 @@ class Profile {
 			this.json.postTags.topic = _.union(this.json.postTags.topic, post.tags)
 		);
 
+		// Convert all dates into objects
+        // Label (string), description (string), category (string), start date (date), hours/week (int), [end date] (date), annual (boolean), priority (int)]
+		this.json.commitments = _.map(this.json.commitments, commitment => {
+
+			var obj = {
+				"name": commitment[0],
+				"description": commitment[1],
+				"category": commitment[2],
+				"priority": commitment[3],
+				"hours": commitment[4],
+				"annually": commitment[5] === "annually",
+				"start": null,
+				"end": null
+			};
+
+			// Handle annual dates.
+			if(obj.annually) {
+				let startDate = _.map(commitment[6].split("-"), part => parseInt(part));
+				let endDate = _.map(commitment[7].split("-"), part => parseInt(part))
+				obj.start = { "month": startDate[0], "date": startDate[1] };
+				obj.end = { "month": endDate[0], "date": endDate[1] };
+			}
+			// Handle weekly commitments with start and end dates.
+			else if(commitment.length > 6) {
+				obj.start = new Date(commitment[6]);
+				obj.end = new Date(commitment[7]);
+			}
+
+			return obj;
+		});
+
     }
 
 	cloneFilterSort(list, filter, sort) {
@@ -154,6 +185,10 @@ class Profile {
 		// Go through each facet in the query
 		return _.reduce(Object.keys(query), (match, facet) => match && tags[facet].includes(query[facet]), true);
 
+	}
+
+	getCommitments(filter, sort) {
+		return this.cloneFilterSort(this.json.commitments.slice(), filter, sort);
 	}
 
 }

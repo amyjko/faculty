@@ -484,6 +484,54 @@
 		"years": {
 			"type": "object",
 			"description": "Metadata about years."
+		},
+		"commitments": {
+			"type": "array",
+			"description": "A list of commitments",
+			"required": true,
+			"items": {
+				"type": "array",
+				"description": "Fields for a commitment",
+				"requried": true,
+				"items": [
+					{
+						"type": "string",
+						"required": true
+					},
+					{
+						"type": "string",
+						"required": true
+					},
+					{
+						"type": "string",
+						"required": true,
+						"enum": ["research", "service", "teaching", "personal"]
+					},
+					{
+						"type": "string",
+						"required": true,
+						"enum": ["flexible", "required", "prime"]
+					},
+					{
+						"type": "int",
+						"required": true,
+						"minimum": 1
+					},
+					{
+						"type": "string",
+						"required": true,
+						"enum": ["weekly", "annually"]
+					},
+					{
+						"type": ["int", "string"],
+						"required": false
+					},
+					{
+						"type": ["int", "string"],
+						"required": false
+					}
+				]
+			}
 		}
 	}
 }
