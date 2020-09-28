@@ -1,24 +1,23 @@
 {
-	"$schema": "http://json-schema.org/draft-03/schema#",
+	"$schema": "http://json-schema.org/draft-07/schema#",
 	"title": "Amy's faculty website data schema",
 	"type": "object",
 	"properties": {
 		"sources": {
 			"type": "object",
 			"description": "Conference and journal sources.",
-			"required": true,
 			"additionalProperties": {
 				"type": "object",
 				"description": "Source names",
-				"required": true,
+				"required": ["name", "short"],
 				"properties": {
 					"name": {
 						"type": "string",
-						"requried": true
+						"description": "The full name of the source."
 					},
 					"short": {
 						"type": "string",
-						"requried": true
+						"description": "A short name for the source, typically an acronym."
 					}
 				}
 			}
@@ -26,69 +25,72 @@
 	    "pubs": {
 			"type": "array",
 			"description": "List of publications.",
-			"required": true,
+			"required": ["id", "kind", "authors", "deadname", "year", "title", "source", "pages", "local", "publisher", "contribution"],
 			"items": {
 				"type": "object",
 				"description": "A publication.",
 				"properties": {
 					"id": {
 						"type": "string",
-						"required": true
+						"description": "A unique ID for the publication, used as an id attribute."
 					},
 					"kind": {
 						"type": "string",
-						"required": true,
+						"description": "The type of publication",
 						"enum": ["refereed conference paper", "refereed workshop paper", "journal article", "refereed short conference paper", "juried conference paper", "book chapter", "refereed invited article", "non-refereed workshop paper", "technical report", "refereed magazine article", "whitepaper", "abstract"]
 					},
 					"authors": {
 						"type": "array",
-						"required": true,
+						"description": "A list of authors",
 						"items": {
 							"type": "string"
 						}
 					},
 					"deadname": {
 						"type": "boolean",
-						"required": true
+						"description": "True if the publisher hasn't updated my name."
 					},
 					"year": {
 						"type": "integer",
-						"required": true
+						"description": "The year of publication."
 					},
 					"title": {
 						"type": "string",
-						"required": true
+						"description": "The title of the publication."
 					},
 					"source": {
 						"type": "string",
-						"required": true
+						"description": "The source in which the publication was published."
 					},
 					"pages": {
 						"type": ["string", "null"],
-						"required": true
+						"description": "Pages, volumes, and issues."
 					},
 					"doi": {
 						"type": ["string", "null"],
-						"required": false
+						"description": "The document object identifier."
 					},
 					"local": {
 						"type": ["string", "null"],
-						"required": true
+						"description": "A local URI to a PDF."
 					},
 					"authorizer": {
-						"type": ["string", "null"]
+						"type": ["string", "null"],
+						"description": "An ACM authorizer link.",
+						"format": "uri"
 					},
 					"publisher": {
 						"type": "string",
-						"required": true
+						"description": "The publisher."
 					},
 					"contribution": {
 						"type": "string",
-						"required": true
+						"description": "A short summary of the paper's discovery."
 					},
 					"blog": {
 						"type": "string",
-						"required": false
+						"description": "A link to a blog post describing the publication.",
+						"format": "uri"
 					}
 				}
 			}
@@ -96,59 +98,60 @@
 	    "people": {
 			"type": "array",
 			"description": "List of people.",
-			"required": true,
+			"required": ["id", "name", "active", "advised", "level", "dept", "coadvisor", "bio", "url", "startdate", "enddate", "achivements"],
 			"items": {
 				"type": "object",
 				"description": "A person.",
 				"properties": {
 					"id": {
 						"type": "string",
-						"required": true
+						"description": "A unique id, usually the student's UW NetID"
 					},
 					"name": {
 						"type": "string",
-						"required": true
+						"description": "The name of the person"
 					},
 					"active": {
 						"type": "boolean",
-						"required": true
+						"description": "Are they in the lab right now?"
 					},
 					"advised": {
 						"type": "boolean",
-						"required": true
+						"description": "True if I officially advised them"
 					},
 					"level": {
 						"type": "string",
-						"required": true,
+						"description": "The level of the student when they were in the lab",
 						"enum": ["undergrad", "phd", "postdoc", "director"]
 					},
 					"dept": {
 						"type": "string",
-						"required": true
+						"description": "Which unit on campus"
 					},
 					"coadvisor": {
 						"type": ["string", "null"],
-						"required": true
+						"description": "Name of co-advisor, if any"
 					},
 					"bio": {
 						"type": "string",
-						"required": true
+						"description": "Short bio of the student"
 					},
 					"url": {
 						"type": "string",
-						"required": true
+						"description": "A link to their website",
+						"format": "uri"
 					},
 					"startdate": {
 						"type": "integer",
-						"required": true
+						"description": "The year in which they started"
 					},
 					"enddate": {
 						"type": ["integer", "null"],
-						"required": true
+						"description": "The year in which they left the lab"
 					},
 					"achievements": {
 						"type": "array",
-						"required": true,
+						"description": "A list of descriptions of achievements",
 						"items": {
 							"type": "string"							
 						}
@@ -159,77 +162,65 @@
 	    "projects": {
 			"type": "array",
 			"description": "List of projects.",
-			"required": true,
+			"required": ["id", "active", "name", "description", "funding", "people", "papers", "links", "startdate", "stopdate", "impact"],
 			"items": {
 				"type": "object",
 				"description": "A person.",
 				"properties": {
 					"id": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"active": {
-						"type": "boolean",
-						"required": true
+						"type": "boolean"
 					},
 					"name": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"description": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"funding": {
 						"type": "array",
-						"required": true,
 						"items": {
 							"type": "string"
 						}
 					},
 					"people": {
 						"type": "array",
-						"required": true,
 						"items": {
 							"type": "string"
 						}
 					},
 					"papers": {
 						"type": "array",
-						"required": true,
 						"items": {
 							"type": "string"
 						}
 					},
 					"links": {
 						"type": "array",
-						"required": true,
 						"items": {
 							"type": "object",
-							"required": true,
+							"required": ["title", "url"],
 							"properties": {
 								"title": {
-									"type": "string",
-									"required": true
+									"type": "string"
 								},
 								"url": {
 									"type": "string",
-									"required": true
+									"format": "uri"
 								}
 							}
 						}
 					},
 					"startdate": {
-						"type": "integer",
-						"required": true
+						"type": "integer"
 					},
 					"stopdate": {
-						"type": ["integer", "null"],
-						"required": true
+						"type": ["integer", "null"]
 					},
 					"impact": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					}
 				}
 			}
@@ -237,38 +228,31 @@
 	    "posts": {
 			"type": "array",
 			"description": "List of posts.",
-			"required": true,
 			"items": {
 				"type": "object",
 				"description": "A blog post.",
-				"required": true,
+				"required": ["url", "title", "date", "tags", "img", "alt"],
 				"properties": {
 					"url": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"title": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"date": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"tags": {
 						"type": "array",
-						"required": true,
 						"items": {
 							"type": "string"
 						}
 					},
 					"img": {
-						"type": ["string", "null"],
-						"required": true
+						"type": ["string", "null"]
 					},
 					"alt": {
-					    "type": ["string", "null"],
-					    "required": true
+					    "type": ["string", "null"]
 				    }
 				}
 			}
@@ -276,30 +260,25 @@
 	    "impacts": {
 			"type": "array",
 			"description": "List of impacts.",
-			"required": true,
 			"items": {
 		    	"type": "object",
 				"description": "A population impacted.",
+				"required": ["id", "population", "alt", "description", "impacts"],
 		    	"properties": {
 			    	"id": {
-				    	"type": "string",
-				    	"required": true
+				    	"type": "string"
 			    	},
 			    	"population": {
-				    	"type": "string",
-				    	"required": true
+				    	"type": "string"
 			    	},
 			    	"alt": {
-				    	"type": "string",
-				    	"required": true
+				    	"type": "string"
 			    	},
 			    	"description": {
-				    	"type": "string",
-				    	"required": true
+				    	"type": "string"
 			    	},
 			    	"impacts": {
 				    	"type": "array",
-				    	"required": true,
 				    	"items": {
 					    	"type": "string"
 				    	}
@@ -309,37 +288,30 @@
 	    },
 	    "cv": {
 			"type": "object",
-			"description": "CV data structures.",
-			"required": true
+			"description": "CV data structures."
 	    },
 	    "travel": {
 			"type": "array",
 			"description": "List of trips.",
-			"required": true,
 			"items": {
 				"type": "object",
-				"required": true,
+				"required": ["url", "title", "details", "date", "report"],
 				"description": "A trip.",
 				"properties": {
 					"url": {
-						"type": ["string", "null"],
-						"required": true
+						"type": ["string", "null"]
 					},
 					"title": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"details": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"date": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"report": {
-						"type": ["string", "null"],
-						"required": true
+						"type": ["string", "null"]
 					}
 				}
 			}
@@ -347,54 +319,43 @@
 	    "talks": {
 			"type": "array",
 			"description": "List of talks.",
-			"required": true,
 			"items": {
 				"type": "object",
 				"description": "A talk.",
+				"required": ["date", "image", "alt", "slides", "venue", "url", "recording", "practice", "description", "keynote"],
 				"properties": {
 					"date": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"image": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"alt": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"slides": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"venue": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"url": {
-						"type": ["string", "null"],
-						"required": true
+						"type": ["string", "null"]
 					},
 					"recording": {
-						"type": ["string", "null"],
-						"required": true
+						"type": ["string", "null"]
 					},
 					"practice": {
-						"type": ["string", "null"],
-						"required": true
+						"type": ["string", "null"]
 					},
 					"description": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"keynote": {
-						"type": "boolean",
-						"required": true
+						"type": "boolean"
 					},
 					"blog": {
-						"type": "string",
-						"required": false
+						"type": "string"
 					}
 				}
 			}
@@ -402,51 +363,44 @@
 		"classes": {
 			"type": "array",
 			"description": "List of classes.",
-			"required": true,
 			"items": {
 				"type": "object",
 				"description": "A class.",
+				"required": ["id", "alt", "link", "date", "title", "description", "links"],
 				"properties": {
 					"id": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"alt": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"link": {
 						"type": "string",
-						"required": true
+						"format": "uri-reference"
 					},
 					"date": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"title": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"description": {
-						"type": ["string", "null"],
-						"required": true
+						"type": ["string", "null"]
 					},
 					"links": {
 						"type": "array",
 						"description": "List of posts.",
-						"required": true,
 						"items": {
 							"type": "object",
-							"required": true,
+							"required": ["description", "link"],
 							"description": "A trip.",
 							"properties": {
 								"description": {
-									"type": "string",
-									"required": true
+									"type": "string"
 								},
 								"link": {
 									"type": "string",
-									"required": true
+									"format": "uri"
 								}
 							}
 						}
@@ -457,34 +411,29 @@
 		"books": {
 			"type": "array",
 			"description": "List of books.",
-			"required": true,
 			"items": {
 				"type": "object",
 				"description": "A class.",
+				"required": ["image", "alt", "link", "title", "description", "editor"],
 				"properties": {
 					"image": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"alt": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"link": {
 						"type": "string",
-						"required": true
+						"format": "uri-reference"
 					},
 					"title": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"description": {
-						"type": "string",
-						"required": true
+						"type": "string"
 					},
 					"editor": {
-						"type": "boolean",
-						"required": true
+						"type": "boolean"
 					}
 				}
 			}
@@ -496,49 +445,34 @@
 		"commitments": {
 			"type": "array",
 			"description": "A list of commitments",
-			"required": true,
 			"items": {
 				"type": "array",
 				"description": "Fields for a commitment",
-				"requried": true,
 				"items": [
 					{
-						"type": "string",
-						"required": true
+						"type": "string"
+					},
+					{
+						"type": "string"
 					},
 					{
 						"type": "string",
-						"required": true
-					},
-					{
-						"type": "string",
-						"required": true,
 						"enum": ["research", "service", "teaching", "personal"]
 					},
 					{
 						"type": "string",
-						"required": true,
 						"enum": ["flexible", "required", "prime"]
 					},
 					{
-						"type": "int",
-						"required": true,
+						"type": "integer",
 						"minimum": 1
 					},
 					{
 						"type": "string",
-						"required": true,
 						"enum": ["weekly", "annually"]
-					},
-					{
-						"type": ["int", "string"],
-						"required": false
-					},
-					{
-						"type": ["int", "string"],
-						"required": false
 					}
-				]
+				],
+				"additionalItems": { "type": "string"}
 			}
 		}
 	}
