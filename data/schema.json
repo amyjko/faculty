@@ -189,7 +189,8 @@
 					"funding": {
 						"type": "array",
 						"items": {
-							"type": "string"
+							"type": "string",
+							"pattern": "^@[a-z0-9]+$"
 						}
 					},
 					"people": {
@@ -305,7 +306,51 @@
 	    "cv": {
 			"type": "object",
 			"description": "CV data structures."
-	    },
+		},
+		"funding": {
+			"type": "array",
+			"description": "List of sponsored research",
+			"items": {
+				"type": "object",
+				"required": ["title", "funder", "award", "investigators", "amount", "startdate", "enddate", "description", "url"],
+				"properties": {
+					"id": {
+						"type": "string",
+						"pattern": "^[a-z0-9]+$"
+					},
+					"title": {
+						"type": "string"
+					},
+					"funder": {
+						"type": "string"
+					},
+					"award": {
+						"type": ["string", "null"]
+					},
+					"investigators": {
+						"type": "string"
+					},
+					"amount": {
+						"type": "string"
+					},
+					"startdate": {
+						"type": "integer",
+						"minimum": 2000
+					},
+					"enddate": {
+						"type": "integer",
+						"minimum": 2000
+					},
+					"description": {
+						"type": "string"
+					},
+					"url": {
+						"type": ["string", "null"],
+						"format": "uri"
+					}
+				}
+			}
+		},
 	    "travel": {
 			"type": "array",
 			"description": "List of trips.",

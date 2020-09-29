@@ -59,14 +59,32 @@ class ProjectDetails extends React.Component {
 					header={null}
 					content={<span><p>{this.props.description}</p></span>}
 				/>
+
 				<h3>Contributors</h3>
 				<p>{people}</p>
+
+				<h3>Funding</h3>
+				{ 
+					_.map(
+						this.props.funding, 
+						(grant, index) => 
+							<p key={"grant-" + index}>
+								{grant.url ? <a href={grant.url} target="_blank">{grant.title}</a> : grant.title}
+								<br/>
+								<em><small>{grant.funder}</small></em></p>
+					)
+				}
+
 				{ videos.length > 0 ? <div><h3>Videos</h3><p>{videos}</p></div> : null }
 				{ demos.length > 0 ? <div><h3>Demos</h3><p>{demos}</p></div> : null }
 				{ code.length > 0 ? <div><h3>Source</h3><p>{code}</p></div> : null }
+
 				<h3>Impact</h3>
+
 				{impact}
+
 				<h3>Publications</h3>
+
 				{papers}
 			</div>
 		);

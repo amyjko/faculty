@@ -105,6 +105,16 @@ class Profile {
 			return obj;
 		});
 
+		// Resolve funding links in projects.
+		_.each(this.json.projects, project => {
+			project.funding = _.map(project.funding, funding => {
+				let grant = this.getGrant(funding.substring(1));
+				if(!grant)
+					console.error("Couldn't find grant " + funding);
+				return grant;
+			})
+		})
+
     }
 
 	cloneFilterSort(list, filter, sort) {
@@ -189,6 +199,14 @@ class Profile {
 
 	getCommitments(filter, sort) {
 		return this.cloneFilterSort(this.json.commitments.slice(), filter, sort);
+	}
+
+	getFunding(filter, sort) {
+		return this.cloneFilterSort(this.json.funding.slice(), filter, sort);
+	}
+
+	getGrant(id) {
+		return _.find(this.json.funding, { id: id });
 	}
 
 }

@@ -32,9 +32,9 @@ class Funding extends React.Component {
 							<ul>
 							{
 								_.map(
-									_.filter(
-										this.props.app.getProfile().getCV().funding, 
-										{ "funder" : "National Science Foundation" }
+									this.props.app.getProfile().getFunding(
+										funding => funding.funder === "National Science Foundation", 
+										funding => -funding.startdate
 									), 
 									(award, index) => { return <li key={index}><a href={award.url} target="_blank">{award.title}</a></li>; }
 								)

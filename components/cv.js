@@ -171,7 +171,7 @@ class Vita extends React.Component {
 
 				<h2>Funding</h2>
 
-				{this.getChunkList(cv.funding, "funding", "startdate", "enddate", "title", "amount", "funder", "award", "investigators", "description")}
+				{this.getChunkList(this.props.profile.getFunding(() => true, funding => -funding.startdate), "funding", "startdate", "enddate", "title", "amount", "funder", "award", "investigators", "description")}
 
 				<h2>Publications</h2>
 				
