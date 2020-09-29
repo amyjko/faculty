@@ -5,7 +5,7 @@
 	"properties": {
 		"sources": {
 			"type": "object",
-			"description": "Conference and journal sources.",
+			"description": "Conference and journal sources",
 			"additionalProperties": {
 				"type": "object",
 				"description": "Source names",
@@ -13,18 +13,18 @@
 				"properties": {
 					"name": {
 						"type": "string",
-						"description": "The full name of the source."
+						"description": "The full name of the source"
 					},
 					"short": {
 						"type": "string",
-						"description": "A short name for the source, typically an acronym."
+						"description": "A short name for the source, typically an acronym"
 					}
 				}
 			}
 		},
 	    "pubs": {
 			"type": "array",
-			"description": "List of publications.",
+			"description": "List of publications",
 			"required": ["id", "kind", "authors", "deadname", "year", "title", "source", "pages", "local", "publisher", "contribution"],
 			"items": {
 				"type": "object",
@@ -32,7 +32,8 @@
 				"properties": {
 					"id": {
 						"type": "string",
-						"description": "A unique ID for the publication, used as an id attribute."
+						"description": "A unique ID for the publication, used as an id attribute",
+						"pattern": "^[a-z0-9]+$"
 					},
 					"kind": {
 						"type": "string",
@@ -43,53 +44,57 @@
 						"type": "array",
 						"description": "A list of authors",
 						"items": {
-							"type": "string"
+							"type": "string",
+							"pattern": "^(@[a-z0-9]+|[a-zA-Z-. ]+)$"
 						}
 					},
 					"deadname": {
 						"type": "boolean",
-						"description": "True if the publisher hasn't updated my name."
+						"description": "True if the publisher hasn't updated my name"
 					},
 					"year": {
 						"type": "integer",
-						"description": "The year of publication."
+						"description": "The year of publication"
 					},
 					"title": {
 						"type": "string",
-						"description": "The title of the publication."
+						"description": "The title of the publication"
 					},
 					"source": {
 						"type": "string",
-						"description": "The source in which the publication was published."
+						"description": "The source in which the publication was published",
+						"pattern": "^(@[a-z0-9]+|[a-zA-Z0-9-. ()@,:]+)$"
 					},
 					"pages": {
 						"type": ["string", "null"],
-						"description": "Pages, volumes, and issues."
+						"description": "Pages, volumes, and issues"
 					},
 					"doi": {
 						"type": ["string", "null"],
-						"description": "The document object identifier."
+						"description": "The document object identifier",
+						"format": "uri"						
 					},
 					"local": {
 						"type": ["string", "null"],
-						"description": "A local URI to a PDF."
+						"description": "A local URI to a PDF",
+						"format": "uri-reference"
 					},
 					"authorizer": {
 						"type": ["string", "null"],
-						"description": "An ACM authorizer link.",
+						"description": "An ACM authorizer link",
 						"format": "uri"
 					},
 					"publisher": {
 						"type": "string",
-						"description": "The publisher."
+						"description": "The publisher"
 					},
 					"contribution": {
 						"type": "string",
-						"description": "A short summary of the paper's discovery."
+						"description": "A short summary of the paper's discovery"
 					},
 					"blog": {
 						"type": "string",
-						"description": "A link to a blog post describing the publication.",
+						"description": "A link to a blog post describing the publication",
 						"format": "uri"
 					}
 				}
@@ -105,7 +110,8 @@
 				"properties": {
 					"id": {
 						"type": "string",
-						"description": "A unique id, usually the student's UW NetID"
+						"description": "A unique id, usually the student's UW NetID",
+						"pattern": "^[a-z0-9]+$"
 					},
 					"name": {
 						"type": "string",
@@ -153,7 +159,7 @@
 						"type": "array",
 						"description": "A list of descriptions of achievements",
 						"items": {
-							"type": "string"							
+							"type": "string"
 						}
 					}
 				}
@@ -168,7 +174,8 @@
 				"description": "A person.",
 				"properties": {
 					"id": {
-						"type": "string"
+						"type": "string",
+						"pattern": "^[a-z0-9]+$"
 					},
 					"active": {
 						"type": "boolean"
@@ -188,13 +195,15 @@
 					"people": {
 						"type": "array",
 						"items": {
-							"type": "string"
+							"type": "string",
+							"pattern": "^[a-z0-9]+$"
 						}
 					},
 					"papers": {
 						"type": "array",
 						"items": {
-							"type": "string"
+							"type": "string",
+							"pattern": "^[a-z0-9]+$"
 						}
 					},
 					"links": {
@@ -234,18 +243,24 @@
 				"required": ["url", "title", "date", "tags", "img", "alt"],
 				"properties": {
 					"url": {
-						"type": "string"
+						"type": "string",
+						"format": "uri"
 					},
 					"title": {
 						"type": "string"
 					},
 					"date": {
-						"type": "string"
+						"type": "string",
+						"pattern": "^20[0-9][0-9]\\.1?[0-9]$"
 					},
 					"tags": {
 						"type": "array",
 						"items": {
-							"type": "string"
+							"type": "string",
+							"enum": ["HCI", "K-12", "academia", "accessibility", "advising", "argument", "automation",
+									"book summary", "computing education", "design", "diversity", "ed tech", "gender", "grant report", 
+									"industry", "information", "paper", "personal", "policy", "productivity", "programming languages",
+									"review", "science", "society", "software engineering", "teaching", "trip report", "tutorial"]
 						}
 					},
 					"img": {
@@ -266,7 +281,8 @@
 				"required": ["id", "population", "alt", "description", "impacts"],
 		    	"properties": {
 			    	"id": {
-				    	"type": "string"
+						"type": "string",
+						"pattern": "^[a-z0-9]+$"
 			    	},
 			    	"population": {
 				    	"type": "string"
@@ -299,7 +315,8 @@
 				"description": "A trip.",
 				"properties": {
 					"url": {
-						"type": ["string", "null"]
+						"type": ["string", "null"],
+						"format": "uri"
 					},
 					"title": {
 						"type": "string"
@@ -308,10 +325,12 @@
 						"type": "string"
 					},
 					"date": {
-						"type": "string"
+						"type": "string",
+						"pattern": "^[1-2][0-9][0-9][0-9]\\.[0-1][0-9]\\.[0-3][0-9]$"
 					},
 					"report": {
-						"type": ["string", "null"]
+						"type": ["string", "null"],
+						"format": "uri"
 					}
 				}
 			}
@@ -325,7 +344,8 @@
 				"required": ["date", "image", "alt", "slides", "venue", "url", "recording", "practice", "description", "keynote"],
 				"properties": {
 					"date": {
-						"type": "string"
+						"type": "string",
+						"pattern": "^[1-2][0-9][0-9][0-9]\\.[0-1][0-9]\\.[0-3][0-9]$"
 					},
 					"image": {
 						"type": "string"
@@ -334,19 +354,23 @@
 						"type": "string"
 					},
 					"slides": {
-						"type": "string"
+						"type": "string",
+						"format": "uri-reference"
 					},
 					"venue": {
 						"type": "string"
 					},
 					"url": {
-						"type": ["string", "null"]
+						"type": ["string", "null"],
+						"format": "uri"
 					},
 					"recording": {
-						"type": ["string", "null"]
+						"type": ["string", "null"],
+						"format": "uri"						
 					},
 					"practice": {
-						"type": ["string", "null"]
+						"type": ["string", "null"],
+						"format": "uri"
 					},
 					"description": {
 						"type": "string"
@@ -355,7 +379,8 @@
 						"type": "boolean"
 					},
 					"blog": {
-						"type": "string"
+						"type": "string",
+						"format": "uri"
 					}
 				}
 			}
@@ -472,7 +497,10 @@
 						"enum": ["weekly", "annually"]
 					}
 				],
-				"additionalItems": { "type": "string"}
+				"additionalItems": { 
+					"type": "string",
+					"pattern": "^([1-2][0-9][0-9][0-9]-)?[0-1][0-9]-[0-3][0-9]$"
+				}
 			}
 		}
 	}
