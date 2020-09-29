@@ -43,13 +43,6 @@ class ProjectDetails extends React.Component {
 			<p><span dangerouslySetInnerHTML={{__html: this.props.impact}}></span></p> : 
 			null;
 		
-		// Find the people on this project
-		var people = [];
-		_.each(this.props.people, (person) => {
-			var path = (person === "ajko" ? "/bio" : ("/students/" + person));
-			people.push(<Link key={person} to={path}><img src={this.props.app.getWebRoot() + "/images/headshots/mug-" + person + ".jpg"} className="student-mug img-circle" style={{width:32}} /></Link>);
-		});
-
 		return (
 			<div>
 				<div className="lead"><em>{this.props.name}</em> <small>({this.props.startdate}&ndash;{this.props.stopdate})</small></div>
@@ -61,7 +54,14 @@ class ProjectDetails extends React.Component {
 				/>
 
 				<h3>Contributors</h3>
-				<p>{people}</p>
+				<p>{_.map(this.props.people, person => 
+					<Link key={"person-" + person.id} to={person.id === "ajko" ? "/bio" : "/students/" + person.id}>
+						<img 
+							src={this.props.app.getWebRoot() + this.props.app.getProfile().getPersonImagePath(person.id)} 
+							className="student-mug img-circle" 
+							style={{width:32}} />
+					</Link>)}
+				</p>
 
 				<h3>Funding</h3>
 				{ 

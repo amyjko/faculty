@@ -26,16 +26,6 @@ class ProjectSummary extends React.Component {
 	
 	render() {
 		
-		// Find the people on this project
-		var people = [];
-		_.each(this.props.people, (person) => {
-			people.push(
-				<Link key={person} to={person === "ajko" ? "bio" : "/students/" + person}>
-					<img src={this.props.app.getWebRoot() + "/images/headshots/mug-" + person + ".jpg"} className="student-mug img-circle" style={{width:32}} />
-				</Link>
-			);
-		});
-
 		var moreDetails = "See " + (this.props.papers.length) + " papers" + (this.props.links.length > 0 ? ", " + this.props.links.length + " demo" + (this.props.links.length > 1 ? "s" : "") + ", " : "") + " and impact details..."
 		
 		var link = "/projects/" + this.props.id;
@@ -49,7 +39,18 @@ class ProjectSummary extends React.Component {
 				content={
 					<span>
 						<h4>{this.props.name} <small>({this.props.startdate}&ndash;{this.props.stopdate})</small></h4>
-						<p>{people}</p>
+						<p>
+						{
+							_.map(this.props.people, person => 
+								<Link key={"person-" + person.id} to={person.id === "ajko" ? "/bio" : "/students/" + person.id}>
+									<img 
+										src={this.props.app.getWebRoot() + this.props.app.getProfile().getPersonImagePath(person.id)} 
+										className="student-mug img-circle" 
+										style={{width:32}} />
+								</Link>
+							)
+						}
+						</p>
 						<p>{this.props.description}</p>
 						<p><Link to={link}>{moreDetails}</Link></p>
 					</span>

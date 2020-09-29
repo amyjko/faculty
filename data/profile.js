@@ -107,12 +107,23 @@ class Profile {
 
 		// Resolve funding links in projects.
 		_.each(this.json.projects, project => {
+
+			// Resolve funding links.
 			project.funding = _.map(project.funding, funding => {
 				let grant = this.getGrant(funding.substring(1));
 				if(!grant)
 					console.error("Couldn't find grant " + funding);
 				return grant;
-			})
+			});
+
+			// Resolve people links.
+			project.people = _.map(project.people, person => {
+				let peep = this.getPerson(person.substring(1));
+				if(!peep)
+					console.error("Couldn't find person " + person);
+				return peep;
+			});
+
 		})
 
     }
@@ -129,6 +140,10 @@ class Profile {
 	// Find the first person matching the given ID.
 	getPerson(id) {
 		return _.find(this.json.people, person => person.id === id);
+	}
+
+	getPersonImagePath(id) {
+		return "/images/headshots/mug-" + id + ".jpg";
 	}
 
 	// Get a list of filtered and sorted travel.
