@@ -9,7 +9,27 @@ class CER extends React.Component {
 					This is my computing education research FAQ, which I began with the help of several computing education researchers at a Dagstuhl retreat in 2016. I consider it a community resource. See something to add, fix, or improve? Write me, or submit <a href="https://github.com/amyjko/faculty/issues">an issue</a> or <a href="https://github.com/amyjko/faculty/pulls">pull request</a>.
 				</div>		
 
-				<p>Computing education research (CER), also known as computer science education (CSEd), is the study of how people learn and teach computing, broadly construed. This FAQ will teach you more about the field and how you might contribute to it.</p>
+				<hr/>
+
+				<p>Computing education research (CER), also known as computer science education (CSEd), is the study of how people learn and teach computing, broadly construed. This FAQ will teach you more about the field and how you might contribute to it:</p>
+
+				<ul>
+					<li><a href="#what-is-cer">What is computing education research?</a></li>
+					<li><a href="#comparison-to-other-fields">How does computing education research compare to learning sciences, education research, and educational psychology?</a></li>
+					<li><a href="#major-questions">What are the overarching research questions in CER?</a></li>
+					<li><a href="#exciting-discoveries">What are some exciting CER discoveries?</a></li>
+					<li><a href="#jobs">What kinds of jobs do computing education researchers do?</a></li>
+					<li><a href="#becoming-a-researcher">How do I become a CER researcher?</a></li>
+					<li><a href="#getting-a-phd">Where can I get a Ph.D. in CER?</a></li>
+					<li><a href="#doctoral-admissions">For doctoral admissions, how important is it to demonstrate focus in a single research area?</a></li>
+					<li><a href="#getting-a-job">Where can I find a CS education research job?</a></li>
+					<li><a href="#funding-for-cer">Is there funding for CER?</a></li>
+					<li><a href="being-impactful">What do I need to know to be an effective, impactful computing education researcher?</a></li>
+					<li><a href="conferences-and-journals">What conferences and journals publish CER?</a></li>
+					<li><a href="experience-reports">What's the difference between a research paper and an experience report?</a></li>
+					<li><a href="blogs">How can I keep up with the latest research, practice, and policy?</a></li>
+					<li><a href="community">How can I connect with the community?</a></li>
+				</ul>
 				
 				<h3 id="what-is-cer">What is computing education research?</h3>
 
@@ -967,7 +987,7 @@ class CER extends React.Component {
 				<h3 id="sigcse">What is SIGCSE?</h3>
 
 				<p><a href="http://sigcse.org/" target="_blank">SIGCSE</a>, like other ACM Special Interest Groups (SIGs), is an organization that focuses on a particular topic within ACM, namely computer science education. It sponsors ACM conferences (e.g., the SIGCSE Technical Symposium and ICER) and influences their structure and focus. Note that SIGCSE the group organizes SIGCSE the conference. I know, it's confusing, but aren't you glad you read this?</p>
-				
+
 				<h3 id="experience-reports">What's the difference between a research paper and an experience report?</h3>
 
 				<p>This is an important question, since many of the conference venues in the computing education community publish both. Unfortunately, the community hasn't developed much clarity about the differences between these. The result is that many papers published in the SIGCSE experience report track look like research papers, and many of the papers published in the SIGCSE research track look like experience reports. What's the essential difference?</p>
