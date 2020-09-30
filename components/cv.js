@@ -56,7 +56,7 @@ class Vita extends React.Component {
 
 	}
 	
-	getChunkList(list, prefix, start, stop, header, two, three, four, five, six) {
+getChunkList(list, prefix, start, stop, header, two, three, four, five, six) {
 		
 		return _.map(list, (entry, index) => {
 			return this.getChunk(
@@ -103,7 +103,8 @@ class Vita extends React.Component {
 	
 	render() {
 		
-		var cv = this.props.profile.getCV();
+		let profile = this.props.app.getProfile();
+		var cv = profile.getCV();
 		
 		return (
 			<div className="cv">
@@ -123,22 +124,22 @@ class Vita extends React.Component {
 
 				<h2>Education</h2>
 
-				{this.getChunkList(cv.degrees, "degree", "year", null, "degree", "institution", "thesis", "committee")}
+				{this.getChunkList(profile.getDegrees(), "degree", "year", null, "degree", "institution", "thesis", "committee")}
 	
-				<h2>Academic experience</h2>
+				<h2>Academic appointments</h2>
 				
-				{this.getChunkList(cv.academicJobs, "academicJob", "startdate", "enddate", "title", "organization")}
+				{this.getChunkList(profile.getJobs(job => job.academic, job => -job.startdate), "job", "startdate", "enddate", "title", "organization")}
 
-				<h2>Industry experience</h2>
+				<h2>Industry appointments</h2>
 				
-				{this.getChunkList(cv.industryJobs, "industryJob", "startdate", "enddate", "title", "organization")}
+				{this.getChunkList(profile.getJobs(job => !job.academic, job => -job.startdate), "industryJob", "startdate", "enddate", "title", "organization")}
 
 				<h2>Honors, Awards, and Recognitions</h2>
 
 				<h3>Most Influential Paper Awards</h3>
 
 				{this.getChunkList(
-					this.props.profile.getPublications(
+					profile.getPublications(
 						pub => pub.award && _.includes(pub.award, "most influential paper"),
 						pub => -pub.year
 					),
@@ -153,7 +154,7 @@ class Vita extends React.Component {
 				<h3>Best Paper Awards</h3>
 
 				{this.getChunkList(
-					this.props.profile.getPublications(
+					profile.getPublications(
 						pub => pub.award && (_.includes(pub.award, "best paper") || _.includes(pub.award, "best paper honorable mention")),
 						pub => -pub.year
 					),
@@ -167,11 +168,11 @@ class Vita extends React.Component {
 			
 				<h3>Honors and Recognitions</h3>
 
-				{this.getTable(cv.awards, "award", "year", null, "title")}
+				{this.getTable(profile.getRecognitions(rec => true, rec => -rec.year), "award", "year", null, "title")}
 
 				<h2>Funding</h2>
 
-				{this.getChunkList(this.props.profile.getFunding(() => true, funding => -funding.startdate), "funding", "startdate", "enddate", "title", "amount", "funder", "award", "investigators", "description")}
+				{this.getChunkList(profile.getFunding(() => true, funding => -funding.startdate), "funding", "startdate", "enddate", "title", "amount", "funder", "award", "investigators", "description")}
 
 				<h2>Publications</h2>
 				
@@ -217,31 +218,41 @@ class Vita extends React.Component {
 				
 				<h2>Press</h2>
 
-				{this.getChunkList(cv.press, "press", "date", null, "title", "source", "author")}
+				{this.getChunkList(profile.getPress(), "press", "date", null, "title", "source", "author")}
 				
 				<h2>Invited Keynotes</h2>
 
 				{this.getChunkList(
-					_.filter(this.props.profile.getTalks(), (talk) => { return talk.keynote; }), 
+					_.filter(profile.getTalks(), (talk) => { return talk.keynote; }), 
 					"keynote", "date", null, "title", "venue")}
 				
 				<h2>Invited Talks</h2>
 
 				{this.getChunkList(
-					_.filter(this.props.profile.getTalks(), (talk) => { return !talk.keynote; }), 
+					_.filter(profile.getTalks(), (talk) => { return !talk.keynote; }), 
 					"invitedtalk", "date", null, "title", "venue")}				
 
 				<h2>Patents</h2>
 			
-				{this.getChunkList(cv.patents, "patent", "year", null, "title", "number", "inventors")}
+				{this.getChunkList(profile.getPatents(), "patent", "year", null, "title", "number", "inventors")}
 
 				<h2>Teaching</h2>
-			
-				<h3>Courses</h3>
 
 				<p>All scores are <a href="http://www.washington.edu/assessment/course-evaluations/reports/course-reports/adjusted-medians/">adjusted combined medians</a>, which attempt to measure students' perceptions of the effectiveness of an instructor's teaching. The scale is from "Very Poor" (0) to "Excellent" (5).</p>
 
-				{this.getTable(cv.courses, "course", "date", null, "title", "count", "score")}
+				{
+					_.map(profile.getClasses(), course => 
+						<Chunk 
+							key={course.id} 
+							start={_.orderBy(course.offerings, ["year"], ["asc"])[0].year} stop={_.orderBy(course.offerings, ["year"], ["desc"])[0].year} 
+							header={course.number + " " + course.title}
+							two={course.level}
+							three={course.description}
+							four={"Taught " + course.offerings.length + " times"}
+							five={"Mean course evaluation: " + (_.reduce(course.offerings, (sum, offer) => sum + offer.score, 0.0) / course.offerings.length).toPrecision(2) + "/5.0"}
+						/>
+					)					
+				}				
 
 				<h2>Doctoral Student Supervision</h2>
 				
@@ -251,7 +262,7 @@ class Vita extends React.Component {
 					// Get the students and annotate the metadata for presentation.
 					this.getChunkList(
 						_.forEach(
-							this.props.profile.getPeople(
+							profile.getPeople(
 								person => person.level === "phd" && person.advised,
 								person => person.startdate
 							), value => {
@@ -268,35 +279,54 @@ class Vita extends React.Component {
 					)
 				}
 				
-				<h3>Committee Member</h3>
+				<h3>Doctoral Committee Member</h3>
 
-				{this.getTable(cv.doctoralCommittee, "doctoralCommittee", "startdate", "enddate", "name", "department")}
+				{this.getTable(profile.getDoctoralCommmitees(), "doctoralCommittee", "startdate", "enddate", "name", "department")}
 				
 				<h2>Service</h2>
 
 				<h3>Academic Program Chair</h3>
 				
-				{this.getChunkList(cv.academicChair, "academicChair", "dates", null, "program", "title", "notes")}
+				{this.getChunkList(profile.getAcademicChairing(), "academicChair", "startdate", "enddate", "program", "title", "notes")}
 
 				<h3>Journal Editorial Boards</h3>
 			
-				{this.getChunkList(cv.editor, "editor", "dates", null, "venue", "title")}
+				{this.getChunkList(profile.getEditor(), "editor", "startdate", "enddate", "venue", "title")}
 
 				<h3>Conference Program Chair</h3>
 
-				{this.getChunkList(cv.programChair, "programChair", "dates", null, "venue", "title")}
+				{this.getChunkList(profile.getProgramChairing(), "programChair", "year", null, "title", "venue", "conference")}
 
 				<h3>Conference Program Committee Member</h3>
 
-				{this.getTable(cv.programCommittee, "programCommittee", "dates", null, "venue", "role")}
+				{
+					_.map(profile.getProgramCommittees(() => true, cmte => -cmte.years.sort().reverse()[0]), (cmte, index) => 
+						<Chunk 
+							key={index} 
+							start={cmte.years.sort()[0]} 
+							stop={cmte.years.sort().reverse()[0]}
+							header={cmte.venue}
+							two={cmte.role}
+						/>
+					)					
+				}
 
 				<h3>Reviewer</h3>
 
-				{this.getTable(cv.reviewer, "review", "dates", null, "venue")}
+				{
+					_.map(profile.getReviewing(() => true, venue => -venue.years.sort().reverse()[0]), (venue, index) => 
+						<Chunk 
+							key={index} 
+							start={venue.years.sort()[0]} 
+							stop={venue.years.sort().reverse()[0]} 
+							header={venue.venue}
+						/>
+					)					
+				}
 
 				<h3>Other Service</h3>
 
-				{this.getChunkList(cv.otherService, "service", "dates", null, "title", "committee")}
+				{this.getChunkList(profile.getService(() => true, service => -service.start), "service", "start", "end", "title", "committee")}
 
 			</div>
 		)

@@ -24,6 +24,10 @@
 			"name": "ACM/IEEE International Conference on Software Engineering (ICSE), Software Engineering in Practice",
 			"short": "SEIP"
 		},
+		"seet": {
+			"name": "International Conference on Software Engineering (ICSE), Software Engineering Education and Training Track",
+			"short": "SEET"
+		},
 		"ese": {
 			"name": "Empirical Software Engineering",
 			"short": "ESE"
@@ -4972,867 +4976,714 @@
 			]
 		}
 	],
-	"cv": {
-		"degrees": [
-			{
-				"institution": "Carnegie Mellon University",
-				"degree": "Doctorate in Human-Computer Interaction",
-				"year": 2008,
-				"thesis": "Thesis: Asking and Answering Questions about the Causes of Software Behaviors",
-				"committee": "Brad Myers (CMU, Chair), Bonnie John (CMU), Jonathan Aldrich (CMU), Gail Murphy (UBC)"
-			},
-			{
-				"institution": "Oregon State University",
-				"degree": "Honors Bachelor of Science in Computer Science and Psychology",
-				"year": 2002,
-				"thesis": "Thesis: Individual Differences in Programming, Testing, and Debugging in a Statistical End-User Programming Environment",
-				"committee": "Margaret Burnett (Computer Science) and Bob Uttl (Psychology)"
-			}
-		],
-		"academicJobs": [
-			{
-				"title": "Professor",
-				"organization": "University of Washington, The Information School and Paul G. Allen School of Computer Science & Engineering (courtesy)",
-				"startdate": 2020,
-				"enddate": null
-			},
-			{
-				"title": "Associate Professor",
-				"organization": "University of Washington, The Information School and Paul G. Allen School of Computer Science & Engineering (courtesy)",
-				"startdate": 2014,
-				"enddate": null
-			},
-			{
-				"title": "Assistant Professor",
-				"organization": "University of Washington, The Information School and Paul G. Allen School of Computer Science & Engineering (courtesy)",
-				"startdate": 2008,
-				"enddate": 2014
-			},
-			{
-				"title": "Research Intern",
-				"organization": "Microsoft Research, Redmond",
-				"startdate": 2006,
-				"enddate": 2006	
-			},
-			{
-				"title": "Graduate Research Assistant",
-				"organization": "Carnegie Mellon University, Human-Computer Interaction Institute",
-				"startdate": 2002,
-				"enddate": 2008
-			},
-			{
-				"title": "Undergraduate Research Assistant",
-				"organization": "Oregon State University, Department of Computer Science",
-				"startdate": 1999,
-				"enddate": 2002	
-			}
-		],
-		"industryJobs": [
-			{
-				"title": "Co-founder and Chief Scientist",
-				"organization": "AnswerDash, Inc.",
-				"startdate": 2015,
-				"enddate": 2020
-			},
-			{
-				"title": "Co-founder and Chief Technology Officer",
-				"organization": "AnswerDash, Inc.",
-				"startdate": 2013,
-				"enddate": 2015
-			}
-		],
-		"patents": [
-			{
-				"title": "Context- and Activity-Aware Content Selection",
-				"year": "2017",
-				"number": "U.S. Patent No. 9,727,561",
-				"inventors": "Amy J. Ko and Victor Medina"
-			},
-			{
-				"title": "Systems and Methods for Selection-Based Contextual Help Retrieval",
-				"year": "2012",
-				"number": "U.S. Patent No. 9,811,583",
-				"inventors": "Parmit K. Chilana, Amy J. Ko, and Wobbrock, J.O."
-			},
-			{
-				"title": "A Debugging Interface",
-				"year": "2010",
-				"number": "U.S. Patent No. 7,735,066",
-				"inventors": "Amy J. Ko and Brad A. Myers"
-			}
-		],
-		"awards": [
-			{
-				"title": "ACM Senior Member",
-				"year": "2020"
-			},
-			{
-				"title": "ACM SIGCHI Exceptional Reviewer (UIST, CHI)",
-				"year": "2016-2017"
-			},
-			{
-				"title": "University of Washington Presidential Entrepreneurial Faculty Fellow",
-				"year": 2014
-			},
-			{
-				"title": "National Science Foundation CAREER award",
-				"year": 2010
-			},
-			{
-				"title": "National Science Foundation Graduate Research Fellowship",
-				"year": 2004
-			},
-			{
-				"title": "National Defense Science & Engineering Graduate Fellowship",
-				"year": 2004
-			},
-			{
-				"title": "National Science Foundation Graduate Research Fellowship, Honorable Mention",
-				"year": 2003
-			},
-			{
-				"title": "CRA Outstanding Undergraduate, Honorable Mention",
-				"year": 2001
-			},
-			{
-				"title": "Oregon State University Waldo-Cummings Outstanding Student Award (top 5 in junior class of 5,000)",
-				"year": 2001
-			},
-			{
-				"title": "ACM Student Chapter Excellence Award for School Service",
-				"year": 2000
-			},
-			{
-				"title": "Oregon State University Waldo-Cummings Outstanding Student Award (top 5 in freshman class of 5,000)",
-				"year": 1999
-			}
-		],
-		"press": [
-			{
-				"title": "Why the Software Industry Needs Computing Education Research",
-				"author": "Amy J. Ko and Susanne Hambrusch",
-				"source": "Huffington Post",
-				"date": "November 14th, 2016",
-				"link": "http://www.huffingtonpost.com/entry/5829cf4ce4b02b1f5257a638"
-			},
-			{
-				"title": "Do Computer Coding Toys for Kids Really Work?",
-				"author": "Tia Ghose",
-				"source": "LiveScience",
-				"date": "March 8th, 2016",
-				"link": "http://www.livescience.com/53963-are-coding-toys-useful.html"
-			},
-			{
-				"title": "Applying Software Research to Industry with Andy Ko",
-				"author": "Jeff Meyerson",
-				"source": "Software Engineering Daily",
-				"date": "February 25th, 2016",
-				"link": "http://softwareengineeringdaily.com/2016/02/24/academia-to-industry-in-computer-science-with-andy-ko/"
-			},
-			{
-				"title": "Frictionary 'mines your whines' to pinpoint software bugs",
-				"author": "Paul Marks",
-				"source": "NewScientist",
-				"date": "May 31, 2012",
-				"link": "http://www.newscientist.com/blogs/onepercent/2012/05/frictionary.html"
-			},
-			{
-				"title": "Study: Facebook relies on good design to retain users",
-				"author": "Joab Jackson",
-				"source": "IDG News",
-				"date": "May 9th, 2012",
-				"link": "http://www.pcworld.com/businesscenter/article/255340/study_facebook_relies_on_good_design_to_retain_users.html#tk.rss_news"
-			},
-			{
-				"title": "Violence against technology has psychological roots",
-				"author": "Owen Lei",
-				"source": "King5 News",
-				"date": "November 4th, 2010",
-				"link": "http://www.king5.com/news/technology/Hourglass-Syndrome-106739108.html"
-			},
-			{
-				"title": "The Ten Biggest Problems in Computing and How We'll Solve Them",
-				"author": "Alan Cohen",
-				"source": "PC Magazine",
-				"date": "August 2005",
-				"link": "http://www.pcmag.com/article2/0,2817,1842864,00.asp"
-			},
-			{
-				"title": "Researchers to Help Exterminate Bugs in Spreadsheets, Web Applications",
-				"author": "David Hart",
-				"source": "NSF Press Release PR 04-065",
-				"date": "May 5th, 2004",
-				"link": "http://www.nsf.gov/news/news_summ.jsp?cntn_id=100380"
-			},
-			{
-				"title": "Researchers Aim to Make Debugging Simpler",
-				"author": "Mike Crissey",
-				"source": "Associated Press",
-				"date": "July 2004",
-				"link": null
-			}
-		],
-		"courses": [
-			{
-				"title": "User Interface Software and Technology (HCID 520)",
-				"count": "35 masters",
-				"date": "Winter 2020",
-				"score": "4.9/5.0"
-			},
-			{
-				"title": "Intellectual Foundations of Informatics (INFO 200)",
-				"count": "208 undergrads",
-				"date": "Winter 2020",
-				"score": "4.8/5.0"
-			},
-			{
-				"title": "Cooperative Software Development (INFO 442)",
-				"count": "33 undergrads",
-				"date": "Autumn 2019",
-				"score": "4.8/5.0"
-			},
-			{
-				"title": "Cooperative Software Development (INFO 442)",
-				"count": "37 undergrads",
-				"date": "Spring 2019",
-				"score": "4.8/5.0"
-			},
-			{
-				"title": "User Interface Software and Technology (HCID 520)",
-				"count": "34 masters",
-				"date": "Winter 2019",
-				"score": "4.8/5.0"
-			},
-			{
-				"title": "Intellectual Foundations of Informatics (INFO 200)",
-				"count": "150 undergrads",
-				"date": "Autumn 2018",
-				"score": "4.8/5.0"
-			},
-			{
-				"title": "User Interface Software and Technology (HCID 520)",
-				"count": "33 masters",
-				"date": "Winter 2018",
-				"score": "4.8/5.0"
-			},
-			{
-				"title": "Design Methods (INFO 360)",
-				"count": "35 undergrads",
-				"date": "Winter 2018",
-				"score": "4.8/5.0"
-			},
-			{
-				"title": "Design Methods (INFO 360)",
-				"count": "36 undergrads",
-				"date": "Autumn 2017",
-				"score": "4.5/5.0"
-			},
-			{
-				"title": "Cooperative Software Development (INFO 461)",
-				"count": "35 undergrads", 
-				"date": "Spring 2017",
-				"score": "4.8/5.0"
-			},
-			{
-				"title": "Design Thinking (INFO 360)",
-				"count": "35 undergrads", 
-				"date": "Winter 2017",
-				"score": "5.0/5.0"
-			},
-			{
-				"title": "Design Thinking (INFO 360)",
-				"count": "35 undergrads", 
-				"date": "Fall 2016",
-				"score": "4.9/5.0"
-			},
-			{
-				"title": "Design Thinking (INFO 360)",
-				"count": "37 undergrads", 
-				"date": "Fall 2015",
-				"score": "4.2/5.0"
-			},
-			{
-				"title": "Capstone (INFO 491)",
-				"count": "96 undergrads", 
-				"date": "Spring 2013",
-				"score": "4.1/5.0"
-			},
-			{
-				"title": "Capstone (INFO 490)",
-				"count": "96 undergrads", 
-				"date": "Winter 2013",
-				"score": "4.0/5.0"
-			},
-			{
-				"title": "Design Thinking (INFO 360)",
-				"count": "40 undergrads", 
-				"date": "Autumn 2012",
-				"score": "4.3/5.0"
-			},
-			{
-				"title": "Design Thinking (INFO 360)",
-				"count": "39 undergrads", 
-				"date": "Autumn 2012",
-				"score": "4.7/5.0"
-			},
-			{
-				"title": "Capstone (INFO 490)",
-				"count": "18 undergrads", 
-				"date": "Spring 2012",
-				"score": "4.7/5.0"
-			},
-			{
-				"title": "Collaborative Software Development (INFO 461)",
-				"count": "38 undergrads", 
-				"date": "Winter 2012",
-				"score": "4.5/5.0"
-			},
-			{
-				"title": "Design Thinking (INFO 360)",
-				"count": "38 undergrads", 
-				"date": "Autumn 2011",
-				"score": "4.4/5.0"
-			},
-			{
-				"title": "Design Thinking (INFO 360)",
-				"count": "39 undergrads", 
-				"date": "Autumn 2011",
-				"score": "4.3/5.0"
-			},
-			{
-				"title": "HCI and Design Fundamentals (INSC 541)",
-				"count": "15 masters", 
-				"date": "Spring 2011",
-				"score": "4.7/5.0"
-			},
-			{
-				"title": "Design Thinking (INFO 360)",
-				"count": "37 undergrads", 
-				"date": "Spring 2011",
-				"score": "4.3/5.0"
-			},
-			{
-				"title": "Capstone (INFO 490)",
-				"count": "22 undergrads", 
-				"date": "Winter 2011",
-				"score": "3.5/5.0"
-			},
-			{
-				"title": "Collaborative Software Design (INFO 461)",
-				"count": "26 undergrads", 
-				"date": "Autumn 2010",
-				"score": "4.5/5.0"
-			},
-			{
-				"title": "User-Centered Design (INFO 360)",
-				"count": "37 undergrads", 
-				"date": "Spring 2010",
-				"score": "4.3/5.0"
-			},
-			{
-				"title": "User-Centered Design (INFO 360)",
-				"count": "37 undergrads", 
-				"date": "Spring 2010",
-				"score": "4.6/5.0"
-			},
-			{
-				"title": "HCI and Design Fundamentals (INSC 541)",
-				"count": "15 graduates", 
-				"date": "Winter 2010",
-				"score": "4.8/5.0"
-			},
-			{
-				"title": "User-Centered Design (INFO 440)",
-				"count": "35 undergrads", 
-				"date": "Autumn 2008",
-				"score": "4.5/5.0"
-			},
-			{
-				"title": "User-Centered Design (INFO 440)",
-				"count": "35 undergrads", 
-				"date": "Autumn 2008",
-				"score": "4.6/5.0"
-			}
-		],
-		"doctoralCommittee": [	
-			{
-				"name": "Jean Salac",
-				"department": "Computer Science",
-				"startdate": 2020,
-				"enddate": null
-			},
-			{
-				"name": "Chenglong Wang",
-				"department": "Computer Science & Engineering",
-				"startdate": 2019,
-				"enddate": null
-			},
-			{
-				"name": "Meen Chul Kim",
-				"department": "Drexel University, Information Science",
-				"startdate": 2018,
-				"enddate": null
-			},
-			{
-				"name": "Srinivasan Iyer",
-				"department": "George Mason University, Computer Science",
-				"startdate": 2018,
-				"enddate": null
-			},
-			{
-				"name": "David Gonzalez",
-				"department": "George Mason University, Computer Science",
-				"startdate": 2018,
-				"enddate": null
-			},
-			{
-				"name": "Justin Smith",
-				"department": "North Carolina State University, Computer Science",
-				"startdate": 2018,
-				"enddate": null
-			},
-			{
-				"name": "Alex Kale",
-				"department": "The Information School",
-				"startdate": 2017,
-				"enddate": null
-			},
-			{
-				"name": "Aaron Bauer",
-				"department": "Computer Science & Engineering",
-				"startdate": 2017,
-				"enddate": null
-			},
-			{
-				"name": "Elena Agapie",
-				"department": "Human-Centered Design and Engineering",
-				"startdate": 2017,
-				"enddate": null
-			},
-			{
-				"name": "James Bornholt",
-				"department": "Computer Science & Engineering",
-				"startdate": 2017,
-				"enddate": 2018
-			},
-			{
-				"name": "Abdullah Ali",
-				"department": "The Information School",
-				"startdate": 2017,
-				"enddate": null
-			},
-			{
-				"name": "Yea-Seul Kim",
-				"department": "The Information School",
-				"startdate": 2017,
-				"enddate": null
-			},
-			{
-				"name": "Lauren Milne",
-				"department": "Computer Science & Engineering",
-				"startdate": 2016,
-				"enddate": 2018
-			},
-			{
-				"name": "Eric Butler",
-				"department": "Computer Science & Engineering",
-				"startdate": 2016,
-				"enddate": 2018
-			},
-			{
-				"name": "Justin Huang",
-				"department": "Computer Science & Engineering",
-				"startdate": 2016,
-				"enddate": 2018
-			},
-			{
-				"name": "Elena Agapie",
-				"department": "Human-Centered Design & Engineering",
-				"startdate": 2016,
-				"enddate": null
-			},
-			{
-				"name": "Jonathan Bragg",
-				"department": "Computer Science & Engineering",
-				"startdate": 2016,
-				"enddate": 2018
-			},
-			{
-				"name": "Nan-Chen Chen",
-				"department": "Human-Centered Design and Engineering",
-				"startdate": 2016,
-				"enddate": null
-			},
-			{
-				"name": "Matthew Kay",
-				"department": "Computer Science & Engineering",
-				"startdate": 2014,
-				"enddate": 2016
-			},
-			{
-				"name": "Catherine Baker",
-				"department": "Computer Science & Engineering",
-				"startdate": 2012,
-				"enddate": 2017
-			},
-			{
-				"name": "Roshanak Zilouchian",
-				"department": "Computer Science, University of Illinois, Urbana-Champaign",
-				"startdate": 2012,
-				"enddate": 2014
-			},
-			{
-				"name": "Sean Fullerton",
-				"department": "Information School",
-				"startdate": 2012,
-				"enddate": 2015
-			},
-			{
-				"name": "Jared Bauer",
-				"department": "Information School",
-				"startdate": 2011,
-				"enddate": 2016
-			},
-			{
-				"name": "Paul Gross",
-				"department": "Computer Science, Washington University in St. Louis",
-				"startdate": 2011,
-				"enddate": 2014
-			},
-			{
-				"name": "Marilyn Ostergren",
-				"department": "Information School",
-				"startdate": 2011,
-				"enddate": 2014
-			},
-			{
-				"name": "Jing Xie",
-				"department": "Computer Science, UNC Charlotte",
-				"startdate": 2011,
-				"enddate": 2012
-			},
-			{
-				"name": "Kayur Patel",
-				"department": "Computer Science & Engineering",
-				"startdate": 2008,
-				"enddate": 2012
-			},
-			{
-				"name": "Michael Toomim",
-				"department": "Computer Science & Engineering",
-				"startdate": 2010,
-				"enddate": 2013
-			},
-			{
-				"name": "Travis Kriplean",
-				"department": "Computer Science & Engineering",
-				"startdate": 2010,
-				"enddate": 2012
-			},
-			{
-				"name": "Elisabeth Jones",
-				"department": "Information School, Ph.D. Committee",
-				"startdate": 2009,
-				"enddate": 2011
-			}
-		],
-		"academicChair": [
-			{
-				"title": "Program Chair, iSchool's undergraduate major, ~425+ students",
-				"program": "Informatics", 
-				"dates": "2017-present",
-				"notes": [
-					"Reframed curriculum around the study, design, and development of information technology",
-					"Reduced reliance on guest faculty",
-					"Increased inclusiveness and scalability of admissions"
-				]
-			},
-			{
-				"title": "Program Chair, UW's interdisciplinary professional degree, ~35 students",
-				"program": "Masters in HCI+Design", 
-				"dates": "2016-2017",
-				"notes": [
-					"Renewed memorandum of agreement between four units and graduate school", 
-					"Hired new director, Michael Smith", 
-					"Secured design studio space"
-				]
-			}
-		],
-		"programChair": [
-			{
-				"title": "Program Co-Chair, General Co-Chair",
-				"venue": "International Computing Education Research Conference (ICER)", 
-				"dates": "2021"
-			},
-			{
-				"title": "Program Co-Chair, General Co-Chair",
-				"venue": "International Computing Education Research Conference (ICER)", 
-				"dates": "2020"
-			},
-			{
-				"title": "Program Co-Chair",
-				"venue": "International Conference on Software Engineering (ICSE), Software Engineering Education and Training Track", 
-				"dates": "2019-2020"
-			},
-			{
-				"title": "Program Sub-Committee Chair",
-				"venue": "ACM Conference on Human Factors in Computing (CHI)", 
-				"dates": "2013"
-			},
-			{
-				"title": "Deputy Program Sub-Committee Chair",
-				"venue": "ACM Conference on Human Factors in Computing (CHI)",
-				"dates": "2012"
-			},
-			{
-				"title": "Program Co-Chair",
-				"venue": "IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
-				"dates": "2011"
-			}
-		],
-		"editor": [
-			{
-				"title": "Associate Editor",
-				"venue": "ACM Transactions on Computing Education", 
-				"dates": "2015-present"
-			},
-			{
-				"title": "Associate Editor",
-				"venue": "IEEE Transactions on Software Engineering",
-				"dates": "2016-2019"
-			},
-			{
-				"title": "Co-Editor",
-				"venue": "IEEE Software Special Issue on End-User Software Engineering",
-				"dates": "2009"
-			}
-		],
-		"programCommittee": [
-			{
-				"venue": "International Conference on Software Engineering (ICSE)",
-				"role": "Program Board",
-				"dates": "2019"
-			},
-			{
-				"venue": "Programming Experience Workshop (PX)",
-				"role": "Member",
-				"dates": "2017"
-			},
-			{
-				"venue": "ACM International Conference on Computing Education (ICER)",
-				"role": "Senior Member",
-				"dates": "2014-2015, 2017-2019"
-			},
-			{
-				"venue": "ACM Technical Symposium on Computer Science Education (SIGCSE)",
-				"role": "Senior Member",
-				"dates": "2016-2019"
-			},
-			{
-				"venue": "Summit on Advances in Programming Languages (SNAPL)",
-				"role": "Member",
-				"dates": "2017"
-			},
-			{
-				"venue": "International Conference on Software Engineering (ICSE)",
-				"role": "Member",
-				"dates": "2014, 2016, 2018"
-			},
-			{
-				"venue": "Workshop on Evaluation and Usability of Programming Languages and Tools (PLATEAU)",
-				"role": "Member",
-				"dates": "2016"
-			},
-			{
-				"venue": "ACM Conference on Human Factors in Computing (CHI)",
-				"role": "Associate Chair",
-				"dates": "2010-2013"
-			},
-			{
-				"venue": "ACM Symposium on User Interface Software and Technology (UIST)",
-				"role": "Associate Chair",
-				"dates": "2011"
-			},
-			{
-				"venue": "ACM Symposium on the Foundations of Software Engineering",
-				"role": "Member",
-				"dates": "2011"
-			},
-			{
-				"venue": "IEEE Visual Languages and Human-Centric Computing",
-				"role": "Member",
-				"dates": "2009-2010, 2012-2013, 2015"
-			},
-			{
-				"venue": "International Workshop on Search-Driven Development",
-				"role": "Member",
-				"dates": "2009-2010"
-			},
-			{
-				"venue": "Workshop on User Evaluation for Software Engineering Researchers",
-				"role": "Member",
-				"dates": "2012, 2013"
-			},
-			{
-				"venue": "International Workshop on Live Programming",
-				"role": "Member",
-				"dates": "2013, 2017, 2018"
-			},
-			{
-				"venue": "Future Programming Workshop",
-				"role": "Member",
-				"dates": "2014"
-			}
-		],
-		"reviewer": [
-			{
-				"venue": "Workshop on Designing Technologies to Support Human Problem Solving",
-				"dates": "2018"
-			},	
-			{
-				"venue": "Empirical Software Engineering",
-				"dates": "2018-present"
-			},	
-			{
-				"venue": "ACM Conference on Human Factors in Computing (CHI)",
-				"dates": "2005-present"
-			},	
-			{
-				"venue": "IEEE Visual Languages and Human-Centric Computing (VL/HCC)",
-				"dates": "2004-present"
-			},
-			{
-				"venue": "ACM Symposium on User Interface and Software Technology (UIST)",
-				"dates": "2005-present"
-			},
-			{
-				"venue": "Proceedings of the ACM on Human-Computer Interaction",
-				"dates": "2017-present"
-			},
-			{
-				"venue": "ACM Transactions on Computing Education (TOCE)",
-				"dates": "2012-present"
-			},
-			{
-				"venue": "International Journal of Human-Computer Studies (IJHCS)",
-				"dates": "2006-present"
-			},
-			{
-				"venue": "ACM Conference on Computer-Supported Cooperative Work (CSCW)",
-				"dates": "2010-2011"
-			},
-			{
-				"venue": "ACM Symposium on Engineering Interactive Computing Systems (EICS)",
-				"dates": "2010"
-			},
-			{
-				"venue": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
-				"dates": "2009"
-			},
-			{
-				"venue": "International Conference on Intelligent User Interfaces (IUI)",
-				"dates": "2009"
-			},
-			{
-				"venue": "IEEE Transactions on Software Engineering (TSE)",
-				"dates": "2009"
-			},
-			{
-				"venue": "Advances in Human-Computer Interaction (AHCI)",
-				"dates": "2008"
-			},
-			{
-				"venue": "Graphics Interface (GI)",
-				"dates": "2006"
-			},
-			{
-				"venue": "Journal of Visual Languages and Computing (JVLC)",
-				"dates": "2004-2005"
-			}
-		],
-		"otherService": [
-			{
-				"title": "Director",
-				"committee": "CS for All Washington. Leading policy, community organizing, and advocacy for Washington state's K-12 CS for All efforts via the NSF Funded Exploring Computing Education Pathways project (https://cseforallwa.org, https://ecepalliance.org).",
-				"dates": "2018-present"
-			},
-			{
-				"title": "Committee Member",
-				"committee": "Computing Research Association’s Education Committee (CRA-E)",
-				"dates": "2020-present"	
-			},
-			{
-				"title": "Secretary",
-				"committee": "Seattle Public Schools CS Advisory Board.",
-				"dates": "2018-present"
-			},
-			{
-				"title": "Committee member",
-				"committee": "Computing Research Association (CRA) Undergraduate Research Award",
-				"dates": "2018"
-			},
-			{
-				"title": "Co-Chair",
-				"committee": "Doctoral Consortium, ACM International Computing Education Research Conference",
-				"dates": "2018, 2019"
-			},
-			{
-				"title": "Member",
-				"committee": "ACM Education Advisory Council",
-				"dates": "2017-2020"	
-			},
-			{
-				"title": "Member",
-				"committee": "Washington State Computer Science Leadership Team",
-				"dates": "2017-present"	
-			},
-			{
-				"title": "Curriculum design committee member",
-				"committee": "Global Innovation Exchange (GIX), University of Washington",
-				"dates": "2015"
-			},
-			{
-				"title": "Co-author",
-				"committee": "CRA Whitepaper on Computing Education Research",
-				"dates": "2015"
-			},
-			{
-				"title": "Director",
-				"committee": "EUSES Consortium",
-				"dates": "2013-2015"
-			},
-			{
-				"title": "Steering Committee Member",
-				"committee": "IEEE Symposium on Visual Languages and Human-Centric Computing",
-				"dates": "2011-2015"
-			},
-			{
-				"title": "Co-organizer",
-				"committee": "Dagstuhl on Human-Centered Software Development Tools",
-				"dates": "2014"
-			},
-			{
-				"title": "Panel member (CISE, EHR)",
-				"committee": "National Science Foundation Proposal Review Panel",
-				"dates": "2012, 2014, 2016-2018"
-			},
-			{
-				"title": "Co-founder",
-				"committee": "Masters in Human-Computer Interaction and Design, University of Washington",
-				"dates": "2013"
-			},
-			{
-				"title": "Co-organizer",
-				"committee": "DUB Retreat, University of Washington",
-				"dates": "2013"
-			},
-			{
-				"title": "Graduate Consortium Chair",
-				"committee": "IEEE Symposium on Visual Languages and Human-Centric Computing",
-				"dates": "2009-2010"
-			}
-		]
-	},
+	"degrees": [
+		{
+			"institution": "Carnegie Mellon University",
+			"degree": "Doctorate in Human-Computer Interaction",
+			"year": 2008,
+			"thesis": "Thesis: Asking and Answering Questions about the Causes of Software Behaviors",
+			"committee": "Brad Myers (CMU, Chair), Bonnie John (CMU), Jonathan Aldrich (CMU), Gail Murphy (UBC)"
+		},
+		{
+			"institution": "Oregon State University",
+			"degree": "Honors Bachelor of Science in Computer Science and Psychology",
+			"year": 2002,
+			"thesis": "Thesis: Individual Differences in Programming, Testing, and Debugging in a Statistical End-User Programming Environment",
+			"committee": "Margaret Burnett (Computer Science) and Bob Uttl (Psychology)"
+		}
+	],
+	"patents": [
+		{
+			"title": "Context- and Activity-Aware Content Selection",
+			"year": "2017",
+			"number": "U.S. Patent No. 9,727,561",
+			"inventors": "Amy J. Ko and Victor Medina"
+		},
+		{
+			"title": "Systems and Methods for Selection-Based Contextual Help Retrieval",
+			"year": "2012",
+			"number": "U.S. Patent No. 9,811,583",
+			"inventors": "Parmit K. Chilana, Amy J. Ko, and Wobbrock, J.O."
+		},
+		{
+			"title": "A Debugging Interface",
+			"year": "2010",
+			"number": "U.S. Patent No. 7,735,066",
+			"inventors": "Amy J. Ko and Brad A. Myers"
+		}
+	],
+	"press": [
+		{
+			"title": "Why the Software Industry Needs Computing Education Research",
+			"author": "Amy J. Ko and Susanne Hambrusch",
+			"source": "Huffington Post",
+			"date": "November 14th, 2016",
+			"link": "http://www.huffingtonpost.com/entry/5829cf4ce4b02b1f5257a638"
+		},
+		{
+			"title": "Do Computer Coding Toys for Kids Really Work?",
+			"author": "Tia Ghose",
+			"source": "LiveScience",
+			"date": "March 8th, 2016",
+			"link": "http://www.livescience.com/53963-are-coding-toys-useful.html"
+		},
+		{
+			"title": "Applying Software Research to Industry with Andy Ko",
+			"author": "Jeff Meyerson",
+			"source": "Software Engineering Daily",
+			"date": "February 25th, 2016",
+			"link": "http://softwareengineeringdaily.com/2016/02/24/academia-to-industry-in-computer-science-with-andy-ko/"
+		},
+		{
+			"title": "Frictionary 'mines your whines' to pinpoint software bugs",
+			"author": "Paul Marks",
+			"source": "NewScientist",
+			"date": "May 31, 2012",
+			"link": "http://www.newscientist.com/blogs/onepercent/2012/05/frictionary.html"
+		},
+		{
+			"title": "Study: Facebook relies on good design to retain users",
+			"author": "Joab Jackson",
+			"source": "IDG News",
+			"date": "May 9th, 2012",
+			"link": "http://www.pcworld.com/businesscenter/article/255340/study_facebook_relies_on_good_design_to_retain_users.html#tk.rss_news"
+		},
+		{
+			"title": "Violence against technology has psychological roots",
+			"author": "Owen Lei",
+			"source": "King5 News",
+			"date": "November 4th, 2010",
+			"link": "http://www.king5.com/news/technology/Hourglass-Syndrome-106739108.html"
+		},
+		{
+			"title": "The Ten Biggest Problems in Computing and How We'll Solve Them",
+			"author": "Alan Cohen",
+			"source": "PC Magazine",
+			"date": "August 2005",
+			"link": "http://www.pcmag.com/article2/0,2817,1842864,00.asp"
+		},
+		{
+			"title": "Researchers to Help Exterminate Bugs in Spreadsheets, Web Applications",
+			"author": "David Hart",
+			"source": "NSF Press Release PR 04-065",
+			"date": "May 5th, 2004",
+			"link": "http://www.nsf.gov/news/news_summ.jsp?cntn_id=100380"
+		},
+		{
+			"title": "Researchers Aim to Make Debugging Simpler",
+			"author": "Mike Crissey",
+			"source": "Associated Press",
+			"date": "July 2004",
+			"link": null
+		}
+	],
+	"jobs": [
+		{
+			"title": "Professor",
+			"organization": "University of Washington, The Information School and Paul G. Allen School of Computer Science & Engineering (courtesy)",
+			"startdate": 2020,
+			"enddate": null,
+			"academic": true
+		},
+		{
+			"title": "Associate Professor",
+			"organization": "University of Washington, The Information School and Paul G. Allen School of Computer Science & Engineering (courtesy)",
+			"startdate": 2014,
+			"enddate": null,
+			"academic": true
+		},
+		{
+			"title": "Co-founder and Chief Scientist",
+			"organization": "AnswerDash, Inc.",
+			"startdate": 2015,
+			"enddate": 2020,
+			"academic": false
+		},
+		{
+			"title": "Co-founder and Chief Technology Officer",
+			"organization": "AnswerDash, Inc.",
+			"startdate": 2013,
+			"enddate": 2015,
+			"academic": false
+		},
+		{
+			"title": "Assistant Professor",
+			"organization": "University of Washington, The Information School and Paul G. Allen School of Computer Science & Engineering (courtesy)",
+			"startdate": 2008,
+			"enddate": 2014,
+			"academic": true
+		},
+		{
+			"title": "Research Intern",
+			"organization": "Microsoft Research, Redmond",
+			"startdate": 2006,
+			"enddate": 2006,
+			"academic": true
+		},
+		{
+			"title": "Graduate Research Assistant",
+			"organization": "Carnegie Mellon University, Human-Computer Interaction Institute",
+			"startdate": 2002,
+			"enddate": 2008,
+			"academic": true
+		},
+		{
+			"title": "Undergraduate Research Assistant",
+			"organization": "Oregon State University, Department of Computer Science",
+			"startdate": 1999,
+			"enddate": 2002,
+			"academic": true
+		}
+	],
+	"awards": [
+		{
+			"title": "ACM Senior Member",
+			"year": 2020
+		},
+		{
+			"title": "ACM SIGCHI Exceptional Reviewer",
+			"year": 2017
+		},
+		{
+			"title": "ACM SIGCHI Exceptional Reviewer",
+			"year": 2016
+		},
+		{
+			"title": "University of Washington Presidential Entrepreneurial Faculty Fellow",
+			"year": 2014
+		},
+		{
+			"title": "National Science Foundation CAREER award",
+			"year": 2010
+		},
+		{
+			"title": "National Science Foundation Graduate Research Fellowship",
+			"year": 2004
+		},
+		{
+			"title": "National Defense Science & Engineering Graduate Fellowship",
+			"year": 2004
+		},
+		{
+			"title": "National Science Foundation Graduate Research Fellowship, Honorable Mention",
+			"year": 2003
+		},
+		{
+			"title": "CRA Outstanding Undergraduate, Honorable Mention",
+			"year": 2001
+		},
+		{
+			"title": "Oregon State University Waldo-Cummings Outstanding Student Award (top 5 in junior class of 5,000)",
+			"year": 2001
+		},
+		{
+			"title": "ACM Student Chapter Excellence Award for School Service",
+			"year": 2000
+		},
+		{
+			"title": "Oregon State University Waldo-Cummings Outstanding Student Award (top 5 in freshman class of 5,000)",
+			"year": 1999
+		}
+	],
+	"editor": [
+		{
+			"title": "Associate Editor",
+			"venue": "ACM Transactions on Computing Education", 
+			"startdate": 2015,
+			"enddate": null
+		},
+		{
+			"title": "Associate Editor",
+			"venue": "IEEE Transactions on Software Engineering",
+			"startdate": 2016,
+			"enddate": 2019
+		},
+		{
+			"title": "Co-Editor",
+			"venue": "IEEE Software Special Issue on End-User Software Engineering",
+			"startdate": 2009,
+			"enddate": null
+		}
+	],
+	"programChairing": [
+		{
+			"title": "Program Co-Chair, General Co-Chair",
+			"conference": "@icer", 
+			"year": 2021
+		},
+		{
+			"title": "Program Co-Chair, General Co-Chair",
+			"conference": "@icer", 
+			"year": 2020
+		},
+		{
+			"title": "Program Co-Chair",
+			"conference": "@seet", 
+			"year": 2020
+		},
+		{
+			"title": "Program Sub-Committee Chair",
+			"conference": "@chi", 
+			"year": 2013
+		},
+		{
+			"title": "Deputy Program Sub-Committee Chair",
+			"conference": "@chi",
+			"year": 2012
+		},
+		{
+			"title": "Program Co-Chair",
+			"conference": "@vlhcc",
+			"year": 2011
+		}
+	],
+	"programCommittees": [
+		{
+			"venue": "International Conference on Software Engineering (ICSE)",
+			"role": "Program Board Member",
+			"years": [2019]
+		},
+		{
+			"venue": "Programming Experience Workshop (PX)",
+			"role": "Program Committee Member",
+			"years": [2017]
+		},
+		{
+			"venue": "ACM International Conference on Computing Education (ICER)",
+			"role": "Senior Program Committee",
+			"years": [2014, 2015, 2017, 2019]
+		},
+		{
+			"venue": "ACM Technical Symposium on Computer Science Education (SIGCSE)",
+			"role": "Senior Program Committee",
+			"years": [2016, 2017, 2018, 2019]
+		},
+		{
+			"venue": "Summit on Advances in Programming Languages (SNAPL)",
+			"role": "Program Committee Member",
+			"years": [2017]
+		},
+		{
+			"venue": "International Conference on Software Engineering (ICSE)",
+			"role": "Program Committee Member",
+			"years": [2014, 2016, 2018]
+		},
+		{
+			"venue": "Workshop on Evaluation and Usability of Programming Languages and Tools (PLATEAU)",
+			"role": "Program Committee Member",
+			"years": [2016]
+		},
+		{
+			"venue": "ACM Conference on Human Factors in Computing (CHI)",
+			"role": "Associate Chair",
+			"years": [2010, 2011, 2012, 2013]
+		},
+		{
+			"venue": "ACM Symposium on User Interface Software and Technology (UIST)",
+			"role": "Associate Chair",
+			"years": [2011]
+		},
+		{
+			"venue": "ACM Symposium on the Foundations of Software Engineering",
+			"role": "Program Committee Member",
+			"years": [2011]
+		},
+		{
+			"venue": "IEEE Visual Languages and Human-Centric Computing",
+			"role": "Program Committee Member",
+			"years": [2011]
+		},
+		{
+			"venue": "International Workshop on Search-Driven Development",
+			"role": "Program Committee Member",
+			"years": [2009, 2010]
+		},
+		{
+			"venue": "Workshop on User Evaluation for Software Engineering Researchers",
+			"role": "Program Committee Member",
+			"years": [2012, 2013]
+		},
+		{
+			"venue": "International Workshop on Live Programming",
+			"role": "Program Committee Member",
+			"years": [2013, 2017, 2018]
+		},
+		{
+			"venue": "Future Programming Workshop",
+			"role": "Program Committee Member",
+			"years": [2014]
+		}
+	],
+	"reviewing": [
+		{
+			"venue": "Workshop on Designing Technologies to Support Human Problem Solving",
+			"years": [2018]
+		},	
+		{
+			"venue": "Empirical Software Engineering",
+			"years": [2018, 2019, 2020]
+		},	
+		{
+			"venue": "ACM Conference on Human Factors in Computing (CHI)",
+			"years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
+		},	
+		{
+			"venue": "IEEE Visual Languages and Human-Centric Computing (VL/HCC)",
+			"years": [2004, 2005, 2006, 2007, 2008, 2009, 2010]
+		},
+		{
+			"venue": "ACM Symposium on User Interface and Software Technology (UIST)",
+			"years": [2005, 2006, 2007, 2008, 2009, 2010, 2013, 2014, 2015]
+		},
+		{
+			"venue": "Proceedings of the ACM on Human-Computer Interaction",
+			"years": [2017, 2018]
+		},
+		{
+			"venue": "ACM Transactions on Computing Education (TOCE)",
+			"years": [2015, 2016, 2017, 2018, 2019, 2020]
+		},
+		{
+			"venue": "International Journal of Human-Computer Studies (IJHCS)",
+			"years": [2006, 2008]
+		},
+		{
+			"venue": "ACM Conference on Computer-Supported Cooperative Work (CSCW)",
+			"years": [2010, 2011]
+		},
+		{
+			"venue": "ACM Symposium on Engineering Interactive Computing Systems (EICS)",
+			"years": [2010]
+		},
+		{
+			"venue": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
+			"years": [2009]
+		},
+		{
+			"venue": "International Conference on Intelligent User Interfaces (IUI)",
+			"years": [2009]
+		},
+		{
+			"venue": "IEEE Transactions on Software Engineering (TSE)",
+			"years": [2009]
+		},
+		{
+			"venue": "Advances in Human-Computer Interaction (AHCI)",
+			"years": [2008]
+		},
+		{
+			"venue": "Graphics Interface (GI)",
+			"years": [2006]
+		},
+		{
+			"venue": "Journal of Visual Languages and Computing (JVLC)",
+			"years": [2004, 2005]
+		}
+	],
+	"academicChair": [
+		{
+			"title": "Program Chair, iSchool's undergraduate major, ~425+ students",
+			"program": "Informatics", 
+			"startdate": 2017,
+			"enddate": null,
+			"notes": [
+				"Reframed curriculum around the study, design, and development of information technology",
+				"Reduced reliance on guest faculty",
+				"Increased inclusiveness and scalability of admissions"
+			]
+		},
+		{
+			"title": "Program Chair, UW's interdisciplinary professional degree, ~35 students",
+			"program": "Masters in HCI+Design", 
+			"startdate": 2016,
+			"enddate": 2017,
+			"notes": [
+				"Renewed memorandum of agreement between four units and graduate school", 
+				"Hired new director, Michael Smith", 
+				"Secured design studio space"
+			]
+		}
+	],
+	"doctoralCommittees": [
+		{
+			"name": "Jean Salac",
+			"department": "Computer Science",
+			"startdate": 2020,
+			"enddate": null
+		},
+		{
+			"name": "Chenglong Wang",
+			"department": "Computer Science & Engineering",
+			"startdate": 2019,
+			"enddate": null
+		},
+		{
+			"name": "Meen Chul Kim",
+			"department": "Drexel University, Information Science",
+			"startdate": 2018,
+			"enddate": null
+		},
+		{
+			"name": "Srinivasan Iyer",
+			"department": "George Mason University, Computer Science",
+			"startdate": 2018,
+			"enddate": null
+		},
+		{
+			"name": "David Gonzalez",
+			"department": "George Mason University, Computer Science",
+			"startdate": 2018,
+			"enddate": null
+		},
+		{
+			"name": "Justin Smith",
+			"department": "North Carolina State University, Computer Science",
+			"startdate": 2018,
+			"enddate": null
+		},
+		{
+			"name": "Alex Kale",
+			"department": "The Information School",
+			"startdate": 2017,
+			"enddate": null
+		},
+		{
+			"name": "Aaron Bauer",
+			"department": "Computer Science & Engineering",
+			"startdate": 2017,
+			"enddate": null
+		},
+		{
+			"name": "Elena Agapie",
+			"department": "Human-Centered Design and Engineering",
+			"startdate": 2017,
+			"enddate": null
+		},
+		{
+			"name": "James Bornholt",
+			"department": "Computer Science & Engineering",
+			"startdate": 2017,
+			"enddate": 2018
+		},
+		{
+			"name": "Abdullah Ali",
+			"department": "The Information School",
+			"startdate": 2017,
+			"enddate": null
+		},
+		{
+			"name": "Yea-Seul Kim",
+			"department": "The Information School",
+			"startdate": 2017,
+			"enddate": null
+		},
+		{
+			"name": "Lauren Milne",
+			"department": "Computer Science & Engineering",
+			"startdate": 2016,
+			"enddate": 2018
+		},
+		{
+			"name": "Eric Butler",
+			"department": "Computer Science & Engineering",
+			"startdate": 2016,
+			"enddate": 2018
+		},
+		{
+			"name": "Justin Huang",
+			"department": "Computer Science & Engineering",
+			"startdate": 2016,
+			"enddate": 2018
+		},
+		{
+			"name": "Elena Agapie",
+			"department": "Human-Centered Design & Engineering",
+			"startdate": 2016,
+			"enddate": null
+		},
+		{
+			"name": "Jonathan Bragg",
+			"department": "Computer Science & Engineering",
+			"startdate": 2016,
+			"enddate": 2018
+		},
+		{
+			"name": "Nan-Chen Chen",
+			"department": "Human-Centered Design and Engineering",
+			"startdate": 2016,
+			"enddate": null
+		},
+		{
+			"name": "Matthew Kay",
+			"department": "Computer Science & Engineering",
+			"startdate": 2014,
+			"enddate": 2016
+		},
+		{
+			"name": "Catherine Baker",
+			"department": "Computer Science & Engineering",
+			"startdate": 2012,
+			"enddate": 2017
+		},
+		{
+			"name": "Roshanak Zilouchian",
+			"department": "Computer Science, University of Illinois, Urbana-Champaign",
+			"startdate": 2012,
+			"enddate": 2014
+		},
+		{
+			"name": "Sean Fullerton",
+			"department": "Information School",
+			"startdate": 2012,
+			"enddate": 2015
+		},
+		{
+			"name": "Jared Bauer",
+			"department": "Information School",
+			"startdate": 2011,
+			"enddate": 2016
+		},
+		{
+			"name": "Paul Gross",
+			"department": "Computer Science, Washington University in St. Louis",
+			"startdate": 2011,
+			"enddate": 2014
+		},
+		{
+			"name": "Marilyn Ostergren",
+			"department": "Information School",
+			"startdate": 2011,
+			"enddate": 2014
+		},
+		{
+			"name": "Jing Xie",
+			"department": "Computer Science, UNC Charlotte",
+			"startdate": 2011,
+			"enddate": 2012
+		},
+		{
+			"name": "Kayur Patel",
+			"department": "Computer Science & Engineering",
+			"startdate": 2008,
+			"enddate": 2012
+		},
+		{
+			"name": "Michael Toomim",
+			"department": "Computer Science & Engineering",
+			"startdate": 2010,
+			"enddate": 2013
+		},
+		{
+			"name": "Travis Kriplean",
+			"department": "Computer Science & Engineering",
+			"startdate": 2010,
+			"enddate": 2012
+		},
+		{
+			"name": "Elisabeth Jones",
+			"department": "Information School, Ph.D. Committee",
+			"startdate": 2009,
+			"enddate": 2011
+		}
+	],
+	"service": [
+		{
+			"title": "Director",
+			"committee": "CS for All Washington. Leading policy, community organizing, and advocacy for Washington state's K-12 CS for All efforts via the NSF Funded Exploring Computing Education Pathways project (https://cseforallwa.org, https://ecepalliance.org).",
+			"start": 2018,
+			"end": null
+		},
+		{
+			"title": "Committee Member",
+			"committee": "Computing Research Association’s Education Committee (CRA-E)",
+			"start": 2020,
+			"end": null
+		},
+		{
+			"title": "Secretary",
+			"committee": "Seattle Public Schools CS Advisory Board.",
+			"start": 2018,
+			"end": null
+		},
+		{
+			"title": "Committee member",
+			"committee": "Computing Research Association (CRA) Undergraduate Research Award",
+			"start": 2018,
+			"end": null
+		},
+		{
+			"title": "Co-Chair",
+			"committee": "Doctoral Consortium, ACM International Computing Education Research Conference",
+			"start": 2018,
+			"end": 2019
+		},
+		{
+			"title": "Member",
+			"committee": "ACM Education Advisory Council",
+			"start": 2017,
+			"end": 2020
+		},
+		{
+			"title": "Member",
+			"committee": "Washington State Computer Science Leadership Team",
+			"start": 2017,
+			"end": null
+		},
+		{
+			"title": "Curriculum design committee member",
+			"committee": "Global Innovation Exchange (GIX), University of Washington",
+			"start": 2015,
+			"end": 2015
+		},
+		{
+			"title": "Co-author",
+			"committee": "CRA Whitepaper on Computing Education Research",
+			"start": 2015,
+			"end": 2015
+		},
+		{
+			"title": "Director",
+			"committee": "EUSES Consortium",
+			"start": 2013,
+			"end": 2015
+		},
+		{
+			"title": "Steering Committee Member",
+			"committee": "IEEE Symposium on Visual Languages and Human-Centric Computing",
+			"start": 2011,
+			"end": 2015
+		},
+		{
+			"title": "Co-organizer",
+			"committee": "Dagstuhl on Human-Centered Software Development Tools",
+			"start": 2014,
+			"end": 2014
+		},
+		{
+			"title": "Panel member (CISE, EHR)",
+			"committee": "National Science Foundation Proposal Review Panel",
+			"start": 2012,
+			"end": 2018
+		},
+		{
+			"title": "Co-founder",
+			"committee": "Masters in Human-Computer Interaction and Design, University of Washington",
+			"start": 2013,
+			"end": 2013
+		},
+		{
+			"title": "Co-organizer",
+			"committee": "DUB Retreat, University of Washington",
+			"start": 2013,
+			"end": 2013
+		},
+		{
+			"title": "Graduate Consortium Chair",
+			"committee": "IEEE Symposium on Visual Languages and Human-Centric Computing",
+			"start": 2009,
+			"end": 2010
+		}
+	],
 	"funding": [
 		{
 			"id": "csjustice",
@@ -6538,22 +6389,28 @@
 			"id": "info200",
 			"alt": "A black and white version of an old painting with a child reading a newspaper",
 			"link": "https://canvas.uw.edu/courses/1355747",
-			"title": "INFO 200 Intellectual Foundations of Informatics",
-			"date": "Winter 2020",
+			"number": "INFO 200",
+			"level": "undergraduate",
+			"title": "Intellectual Foundations of Informatics",
 			"description": "This survey course covers big ideas in information, information technology, and information systems. Students learn the history of information, foundational concepts in information, the relationship between information and computing, skills in analyzing and designing information systems, and the role of information systems in society.",
 			"links": [
 				{
 					"description": "Medium post on the big ideas in the course",
 					"link": "https://medium.com/bits-and-behavior/big-ideas-about-information-c09e4d9c60bd"
 				}
+			],
+			"offerings": [
+				{ "size": 208, "term": 2, "year": 2020, "score": 4.8 },
+				{ "size": 150, "term": 1, "year": 2018, "score": 4.8 }
 			]
 		},
 		{
 			"id": "info360",
 			"alt": "A line drawing of two people discussing a sketch",
 			"link": "courses/info360/",
-			"date": "Autumn 2016",
-			"title": "INFO 360 Design Methods",
+			"number": "INFO 360",
+			"level": "undergraduate",
+			"title": "Design Methods",
 			"description": "This undergraduate class teaches students design thinking skills in the domain of information and computing. It leverages multiple forms of active learning, involves a significant amount of studio-based learning, and helps students develop creative confidence.",
 			"links": [
 				{
@@ -6564,34 +6421,94 @@
 					"description": "Course activities on GitHub",
 					"link": "https://github.com/amyjko/info360/"
 				}
+			],
+			"offerings": [
+				{ "size": 35, "term": 2, "year": 2018, "score": 4.8 },
+				{ "size": 36, "term": 1, "year": 2017, "score": 4.5 },
+				{ "size": 35, "term": 2, "year": 2017, "score": 5.0 },
+				{ "size": 35, "term": 1, "year": 2016, "score": 4.9 },
+				{ "size": 37, "term": 1, "year": 2015, "score": 4.2 },
+				{ "size": 40, "term": 1, "year": 2012, "score": 4.3 },
+				{ "size": 39, "term": 1, "year": 2012, "score": 4.7 },
+				{ "size": 38, "term": 1, "year": 2011, "score": 4.4 },
+				{ "size": 39, "term": 1, "year": 2011, "score": 4.3 },
+				{ "size": 37, "term": 3, "year": 2011, "score": 4.3 },
+				{ "size": 37, "term": 3, "year": 2010, "score": 4.3 },
+				{ "size": 37, "term": 3, "year": 2010, "score": 4.6 },
+				{ "size": 35, "term": 1, "year": 2008, "score": 4.5 },
+				{ "size": 35, "term": 1, "year": 2008, "score": 4.6 }
 			]
 		},
 		{
 			"id": "info442",
 			"alt": "A photograph of Margaret Hamilton standing next to source code.",
 			"link": "https://canvas.uw.edu/courses/1345618",
-			"date": "Autumn 2019",
-			"title": "INFO 442 Cooperative Software Development",
+			"number": "INFO 442",
+			"level": "undergraduate",
+			"title": "Cooperative Software Development",
 			"description": "This undergraduate software engineering class teaches foundations of team-based software development, leveraging the latest research on coordination, cooperation, and human cognition in software development. Students leave ready to become meaningful contributors to teams big and small, but also to understand the processes that teams use and how they can improve them.",
 			"links": [
 				{
 					"description": "Amy's online book for the course",
 					"link": "https://faculty.washington.edu/ajko/books/cooperative-software-development/"
 				}
+			],
+			"offerings": [
+				{ "size": 33, "term": 1, "year": 2019, "score": 4.8 },
+				{ "size": 37, "term": 3, "year": 2019, "score": 4.8 },
+				{ "size": 35, "term": 3, "year": 2017, "score": 4.8 },
+				{ "size": 38, "term": 2, "year": 2012, "score": 4.5 },
+				{ "size": 26, "term": 1, "year": 2010, "score": 4.5 }
+			]
+		},
+		{
+			"id": "info490",
+			"alt": "A photograph of students at the capstone fair.",
+			"link": "https://ischool.uw.edu/capstone/students/informatics",
+			"number": "INFO 490/491",
+			"level": "undergraduate",
+			"title": "Capstone",
+			"description": "This undergraduate capstone sequence engages students in a 6-month project, usually culminating in a functional, deployable prototype, and often in collaboration with a client from local industry.",
+			"links": [],
+			"offerings": [
+				{ "size": 96, "term": 3, "year": 2013, "score": 4.1 },
+				{ "size": 96, "term": 2, "year": 2013, "score": 4.0 },
+				{ "size": 18, "term": 3, "year": 2012, "score": 4.7 },
+				{ "size": 22, "term": 2, "year": 2011, "score": 3.5 }
 			]
 		},
 		{
 			"id": "hcid520",
 			"alt": "A black and white photograph of a woman operating the ENIAC, the first computer",
 			"link": "https://canvas.uw.edu/courses/1256337",
-			"date": "Winter 2020",
-			"title": "HCID 520 User Interface Software and Technology",
+			"level": "graduate",
+			"number": "HCID 520",
+			"title": "User Interface Software and Technology",
 			"description": "This core course in our Masters of HCI+Design teaches students they history, theory, and foundations of user interfaces. Students acquire a literacy for communicating and reasoning about interfaces.",
 			"links": [
 				{
 					"description": "Amy's online book for the course",
 					"link": "https://faculty.washington.edu/ajko/books/user-interface-software-and-technology/"
 				}
+			],
+			"offerings": [
+				{ "year": 2020, "term": 2, "size": 35, "score": 4.9 },
+				{ "year": 2019, "term": 2, "size": 34, "score": 4.8 },
+				{ "year": 2018, "term": 2, "size": 33, "score": 4.8 }
+			]
+		},
+		{
+			"id": "insc541",
+			"alt": "A photograph of the 2011 class amidst discussion.",
+			"link": "https://myplan.uw.edu/course/#/courses/INSC541",
+			"level": "graduate",
+			"number": "INSC 541",
+			"title": "HCI Design Foundations for Interactive Systems",
+			"description": "This doctoral course teaches theoretical foundations of HCI, preparing students as designers, design researchers, and HCI researchers.",
+			"links": [],
+			"offerings": [
+				{ "year": 2011, "term": 3, "size": 15, "score": 4.7 },
+				{ "year": 2010, "term": 2, "size": 15, "score": 4.8 }
 			]
 		}
 	],

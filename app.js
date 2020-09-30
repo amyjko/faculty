@@ -16,7 +16,7 @@ import { Header } from './components/header';
 import { Projects } from './components/projects';
 import { Project } from './components/project';
 import { Advice } from './components/advice';
-import { Teaching } from './components/teaching';
+import { Classes } from './components/classes';
 import { Talks } from './components/talks';
 import { Books } from './components/books';
 import { Travel } from './components/travel';
@@ -82,7 +82,7 @@ class App extends React.Component {
 							<Route path="/posts" render={(props) => <Posts {...props} app={this} />} />
 							<Route path="/impact" render={(props) => <Impact {...props} app={this} />} />
 							<Route path="/advice" render={(props) => <Advice {...props} app={this} />} />
-							<Route path="/teaching" render={(props) => <Teaching {...props} app={this} />} />
+							<Route path="/classes" render={(props) => <Classes {...props} app={this} />} />
 							<Route path="/talks" render={(props) => <Talks {...props} app={this} />} />
 							<Route exact path="/books" render={(props) => <Books {...props} app={this} />} />
 							<Route path="/books/:unknown" component={Unknown} />
@@ -94,7 +94,7 @@ class App extends React.Component {
 							<Route path="/lab" render={(props) => <Students {...props} app={this} />} />
 							<Route path="/students/:student?" render={(props) => <Students {...props} app={this} profile={this.state.profile} />} />
 							<Route path="/projects/:id" render={(props) => <Project {...props} app={this} />} />
-							<Route path="/cv" render={(props) => <Vita {...props} app={this} profile={this.state.profile} />} />
+							<Route path="/cv" render={(props) => <Vita {...props} app={this} />} />
 							<Route path="/cer" component={CER}/>
 							<Route path="404" component={Unknown}/>
 							<Route path="*" component={Unknown}/>

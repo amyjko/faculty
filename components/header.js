@@ -42,7 +42,7 @@ class Header extends React.Component {
 									<li role="presentation" className={path.startsWith("/publications") ? "active" : ""}><Link to="/publications">Publications</Link></li>
 									<li role="presentation" className={path.startsWith("/posts") ? "active" : ""}><Link to="/posts">Blog</Link></li>
 									<li role="presentation" className={path.startsWith("/talks") ? "active" : ""}><Link to="/talks">Talks</Link></li>
-									<li role="presentation" className={path.startsWith("/teaching") ? "active" : ""}><Link to="/teaching">Teaching</Link></li>
+									<li role="presentation" className={path.startsWith("/classes") ? "active" : ""}><Link to="/classes">Classes</Link></li>
 									<li role="presentation" className={path.startsWith("/books") ? "active" : ""}><Link to="/books">Books</Link></li>
 									<li role="presentation" className={path.startsWith("/impact") ? "active" : ""}><Link to="/impact">Impact</Link></li>
 									<li role="presentation" className={path.startsWith("/funding") ? "active" : ""}><Link to="/funding">Funding</Link></li>

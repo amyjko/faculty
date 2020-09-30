@@ -302,10 +302,162 @@
 			    	}
 		    	}
 			}
-	    },
-	    "cv": {
-			"type": "object",
-			"description": "CV data structures."
+		},
+		"degrees": {
+			"type": "array",
+			"description": "Degrees earned",
+			"items": {
+				"type": "object",
+				"required": ["institution", "degree", "year", "thesis", "committee"]
+			}
+		},
+		"patents": {
+			"type": "array",
+			"description": "Degrees earned",
+			"items": {
+				"type": "object",
+				"required": ["title", "year", "number", "inventors"]
+			}
+		},
+		"press": {
+			"type": "array",
+			"description": "Degrees earned",
+			"items": {
+				"type": "object",
+				"required": ["title", "author", "source", "date", "link"],
+				"properties": {
+					"link": {
+						"type": ["string", "null"],
+						"format": "uri"
+					}
+				}
+			}
+		},
+		"jobs": {
+			"type": "array",
+			"description": "Jobs I've had",
+			"items": {
+				"type": "object",
+				"required": ["title", "organization", "startdate", "enddate", "academic"],
+				"properties": {
+					"startdate": {
+						"type": "integer",
+						"minimum": 1999
+					},
+					"enddate": {
+						"type": ["integer", "null"],
+						"minimum": 1999
+					},
+					"academic": {
+						"type": "boolean"
+					}
+				}
+			}
+		},
+		"recognitions": {
+			"type": "array",
+			"description": "Honors, awards, and recognitions",
+			"items": {
+				"type": "object",
+				"required": ["title", "year"],
+				"properties": {
+					"year": { "type": "integer", "minimum": 2000 }
+				}
+			}
+		},
+		"editor": {
+			"type": "array",
+			"description": "Editing positions",
+			"items": {
+				"type": "object",
+				"required": ["title", "venue", "startdate", "enddate"],
+				"properties": {
+					"startdate": { "type": "integer", "minimum": 2000},
+					"enddate": { "type": ["integer", "null"], "minimum": 2000}
+				}
+			}
+		},
+		"programChairing": {
+			"type": "array",
+			"description": "Program chairing positions",
+			"itmes": {
+				"type": "object",
+				"required": ["title", "conference", "year"],
+				"properties": {
+					"year": { "type": "integer", "minimum": 2000 }
+				}
+			}
+		},
+		"programCommitees": {
+			"type": "array",
+			"description": "Program committee membership",
+			"itmes": {
+				"type": "object",
+				"required": ["venue", "role", "years"],
+				"properties": {
+					"venue": { "type": "string" },
+					"role": { "type": "string" },
+					"year": {
+						"type": "array",
+						"items": { "type": "integer", "minimum": 2000 }
+					}
+				}
+			}
+		},
+		"reviewing": {
+			"type": "array",
+			"description": "Reviewing",
+			"itmes": {
+				"type": "object",
+				"required": ["venue", "years"],
+				"properties": {
+					"venue": { "type": "string" },
+					"year": {
+						"type": "array",
+						"items": { "type": "integer", "minimum": 2000 }
+					}
+				}
+			}
+		},
+		"academicChair": {
+			"type": "array",
+			"description": "academic chairing positions",
+			"itmes": {
+				"type": "object",
+				"required": ["title", "program", "startdate", "enddate", "notes"],
+				"properties": {
+					"startdate": { "type": "integer", "minimum": 2000 },
+					"enddate": { "type": ["integer", "null"], "minimum": 2000 },
+					"notes": { "type": "array", "items": { "type": "string" }}
+				}
+			}
+		},
+		"doctoralCommittees": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": ["name", "department", "startdate", "enddate"],
+				"properties": {
+					"name": { "type": "string" },
+					"department": { "type": "string" },
+					"startdate": { "type": "integer", "minimum": 2000 },
+					"enddate": { "type": ["integer", "null"], "minimum": 2000 }
+				}
+			}
+		},
+	    "service": {
+			"type": "array",
+			"description": "Miscellaneous service",
+			"items": {
+				"type": "object",
+				"required": ["title", "committee", "start", "end"],
+				"properties": {
+					"title": { "type": "string" },
+					"committee": { "type": "string" },
+					"start": { "type": "integer", "minimum": 2000 },
+					"endd": { "type": ["integer", "null"], "minimum": 2000 }
+				}	
+			}
 		},
 		"funding": {
 			"type": "array",
@@ -436,27 +588,15 @@
 			"items": {
 				"type": "object",
 				"description": "A class.",
-				"required": ["id", "alt", "link", "date", "title", "description", "links"],
+				"required": ["id", "alt", "link", "number", "title", "description", "links"],
 				"properties": {
-					"id": {
-						"type": "string"
-					},
-					"alt": {
-						"type": "string"
-					},
-					"link": {
-						"type": "string",
-						"format": "uri-reference"
-					},
-					"date": {
-						"type": "string"
-					},
-					"title": {
-						"type": "string"
-					},
-					"description": {
-						"type": ["string", "null"]
-					},
+					"id": { "type": "string" },
+					"alt": { "type": "string" },
+					"link": { "type": "string", "format": "uri-reference" },
+					"number": { "type": "string" },
+					"level": { "type": "string", "enum": ["undergraduate", "graduate"] },
+					"title": { "type": "string" },
+					"description": { "type": ["string", "null"] },
 					"links": {
 						"type": "array",
 						"description": "List of posts.",
@@ -472,6 +612,19 @@
 									"type": "string",
 									"format": "uri"
 								}
+							}
+						}
+					},
+					"offerings": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"required": ["size", "term", "year", "score"],
+							"properties": {
+								"term": { "type": "integer", "enum": [1, 2, 3] },
+								"size": { "type": "integer", "miniumum": 1 },
+								"year": { "type": "integer", "miniumum": 2000 },
+								"score": { "type": "number", "miniumum": 0 }
 							}
 						}
 					}

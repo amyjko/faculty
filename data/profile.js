@@ -34,7 +34,7 @@ class Profile {
 
 			// Resolve symbolic source names to a pointer to the source record.
 			if(pub.source.charAt(0) === "@") {
-				pub.source = this.json.sources[pub.source.substring(1)];
+				pub.source = this.getSource(pub.source);
 				pub.sourceName = pub.source ? pub.source.name : undefined
 			}
 			else {
@@ -124,12 +124,24 @@ class Profile {
 				return peep;
 			});
 
+		});
+
+		// Resolve the sources in the program chaiir positions.
+		_.each(this.json.programChairing, chair => {
+			let conf = this.getSource(chair.conference);
+			if(!conf)
+				console.error("Couldn't find " + chair.conference);
+			chair.conference = conf.name;
 		})
 
     }
 
 	cloneFilterSort(list, filter, sort) {
 		return _.sortBy(_.filter(list.slice(), filter), sort);
+	}
+	
+	getSource(id) {
+		return id.substring(1) in this.json.sources ? this.json.sources[id.substring(1)] : null;
 	}
 
 	// Get a list of filtered and sorted people.
@@ -187,7 +199,6 @@ class Profile {
 		return this.cloneFilterSort(this.json.pubs.slice(), filter, sort);
 	}
 	
-
     getPublication(id) {
         return _.find(this.json.pubs, { id: id });
     }
@@ -222,6 +233,58 @@ class Profile {
 
 	getGrant(id) {
 		return _.find(this.json.funding, { id: id });
+	}
+
+	getDegrees() {
+		return this.json.degrees.slice();
+	}
+
+	getPatents() {
+		return this.json.patents.slice();
+	}
+
+	getPress(filter, sort) {
+		return this.cloneFilterSort(this.json.press.slice(), filter, sort);
+	}
+
+	getJobs(filter, sort) {
+		return this.cloneFilterSort(this.json.jobs.slice(), filter, sort);
+	}
+
+	getRecognitions(filter, sort) {
+		return this.cloneFilterSort(this.json.awards.slice(), filter, sort);
+	}
+
+	getEditor(filter, sort) {
+		return this.cloneFilterSort(this.json.editor.slice(), filter, sort);
+	}
+
+	getProgramChairing(filter, sort) {
+		return this.cloneFilterSort(this.json.programChairing.slice(), filter, sort);
+	}
+
+	getProgramCommittees(filter, sort) {
+		return this.cloneFilterSort(this.json.programCommittees.slice(), filter, sort);
+	}
+
+	getReviewing(filter, sort) {
+		return this.cloneFilterSort(this.json.reviewing.slice(), filter, sort);
+	}
+
+	getAcademicChairing(filter, sort) {
+		return this.cloneFilterSort(this.json.academicChair.slice(), filter, sort);
+	}
+
+	getDoctoralCommmitees(filter, sort) {
+		return this.cloneFilterSort(this.json.doctoralCommittees.slice(), filter, sort);
+	}
+
+	getClasses(filter, sort) {
+		return this.cloneFilterSort(this.json.classes.slice(), filter, sort);
+	}
+
+	getService(filter, sort) {
+		return this.cloneFilterSort(this.json.service.slice(), filter, sort);
 	}
 
 }
