@@ -38,11 +38,6 @@ class ProjectDetails extends React.Component {
 			return <span key={this.props.id + "link" + index}><a className={buttonStyle} href={link.url} target="_blank">{link.title}</a>&nbsp;</span>;
 		});
 		
-		// Information if there's impact.
-		var impact = this.props.impact ? 
-			<p><span dangerouslySetInnerHTML={{__html: this.props.impact}}></span></p> : 
-			null;
-		
 		return (
 			<div>
 				<div className="lead"><em>{this.props.name}</em> <small>({this.props.startdate}&ndash;{this.props.stopdate})</small></div>
@@ -81,7 +76,18 @@ class ProjectDetails extends React.Component {
 
 				<h3>Impact</h3>
 
-				{impact}
+				{
+					_.map(
+						this.props.app.getProfile().getImpacts(
+							impact => impact.projects.includes(this.props.id),
+							impact => -impact.startdate
+						), (impact, index) =>
+						<p key={index}>
+							<span style={{fontVariant: "small-caps"}}>{impact.kind}</span> <small> ({impact.start}{impact.end == null ? "-present" : impact.start !== impact.end ? "-" + impact.end : "" })</small>
+							<br/>{impact.description}{impact.url ? <small> <a href={impact.link}>evidence</a></small> : null}
+						</p>
+					)
+				}
 
 				<h3>Publications</h3>
 

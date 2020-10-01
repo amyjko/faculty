@@ -179,7 +179,12 @@ class Profile {
 	}
 
 	// Get the list of impacts.
-	getImpacts() { return this.json.impacts; }
+	getImpacts(filter, sort) { 
+		return this.cloneFilterSort(this.json.impacts.slice(), filter, sort);
+	}
+
+	// Get the list of populations.
+	getPopulations() { return this.json.populations.slice(); }
 
 	// Get a list of filtered and sorted projects.
 	getPosts(filter, sort) { 

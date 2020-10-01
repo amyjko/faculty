@@ -218,7 +218,11 @@ getChunkList(list, prefix, start, stop, header, two, three, four, five, six) {
 				
 				<h2>Press</h2>
 
-				{this.getChunkList(profile.getPress(), "press", "date", null, "title", "source", "author")}
+				{this.getChunkList(
+					profile.getImpacts(
+						impact => impact.kind === "press",
+						impact => -impact.start
+					), "press", "start", null, "title", "author", "source")}
 				
 				<h2>Invited Keynotes</h2>
 

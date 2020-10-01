@@ -15,7 +15,7 @@ class Impact extends React.Component {
 
 				{
 					_.map(
-						this.props.app.getProfile().getImpacts(),
+						this.props.app.getProfile().getPopulations(),
 						population =>
 							<Block 
 								key={population.id}
@@ -25,16 +25,21 @@ class Impact extends React.Component {
 								header={population.population}
 								content={<span>
 									. {population.description}
-									<ul>
+									<div>
 										{
 											_.map(
-												population.impacts,
-												(impact, index) => {
-													return <li key={index} dangerouslySetInnerHTML={{__html: impact}}></li>
-												}
+												this.props.app.getProfile().getImpacts(
+													impact => impact.who === population.id,
+													impact => -impact.start
+												),
+												(impact, index) =>
+												<p key={index}>
+													<span style={{fontVariant: "small-caps"}}>{impact.kind}</span> <small> ({impact.start}{impact.end == null ? "-present" : impact.start !== impact.end ? "-" + impact.end : "" })</small>
+													<br/>{impact.description}{impact.url ? <small> <a href={impact.link}>evidence</a></small> : null}
+												</p>
 											)
 										}
-									</ul>
+									</div>
 								</span>
 								}
 							/>

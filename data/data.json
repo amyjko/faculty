@@ -2955,8 +2955,7 @@
 			"papers": ["criticalcsed","hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess"],
 			"links": [],
 			"startdate": 2019,
-			"stopdate": null,
-			"impact": "This project has helped open discourse in the CS education community about the responsibility of CS educators to address the role of CS in injustice. The work has also impacted the teaching of many higher education HCI educators.Future impact will include a book on teaching CS from a justice lens, teaching materials to support this teaching, and research on preparing CS teachers from a justice lens."
+			"stopdate": null
 		},
 		{
 			"id": "pllearning",
@@ -2971,8 +2970,7 @@
 				{ "title": "Try Gidget", "url": "http://helpgidget.org" }
 			],
 			"startdate": 2010,
-			"stopdate": null,
-			"impact": "This work has shaped the curriculum designed by Code.org, which is used by thousands of U.S. teachers and hundreds of thousands of youth. Gidget has been played by thousands of people online, in summer camps, and in high schools. It has directly informed the design of Code.org's <a href='https://studio.code.org'>Code Studio</a> and Apple's <a href='https://www.apple.com/swift/playgrounds/'>Swift Playgrounds</a>."
+			"stopdate": null
 		},
 		{
 			"id": "problemsolving",
@@ -2985,8 +2983,7 @@
 			"papers": ["csproblemsolving1", "csproblemsolving2", "ideagardenjvlc", "tracing", "teachingstrategies", "errormodel", "errorframework", "metajournaling", "programmingstrategies", "pstutor1"],
 			"links": [],
 			"startdate": 2003,
-			"stopdate": null,
-			"impact": "This work has shaped the curriculum and teacher professional development designed by Code.org, particularly, which is used by thousands of U.S. teachers and hundreds of thousands of youth."
+			"stopdate": null
 		},
 		{
 			"id": "csdiversity",
@@ -3001,8 +2998,7 @@
 				{ "title": "See WeCode", "url": "https://youtu.be/t56g4DYIuUA" }
 			],
 			"startdate": 2009,
-			"stopdate": null,
-			"impact": "We apply our work and others to working directly with local communities to make change, including lowering barriers to transfer students at the University of Washington, connecting with marginalized communities in South Seattle, teaching in the University of Washington's Upward Bound program, and developing statewide coalitions to ensure CS for All."
+			"stopdate": null
 		},
 		{
 			"id": "apilearning",
@@ -3015,8 +3011,7 @@
 			"papers": ["barriers", "bootcamps", "feasibility", "bioinformatics"],
 			"links": [],
 			"startdate": 2004,
-			"stopdate": null,
-			"impact": "Findings on coding bootcamps have been discussed broadly on <a href='https://www.reddit.com/r/programming/comments/6kgi7p/what_i_learned_from_researching_coding_bootcamps/'>Reddit</a> and Hacker News [<a href='https://news.ycombinator.com/item?id=14679061'>1</a>, <a href='https://news.ycombinator.com/item?id=16961716'>2</a>], including a blog post read nearly 10,000 times in four days."
+			"stopdate": null
 		},
 		{
 			"id": "softexpertise",
@@ -3029,8 +3024,7 @@
 			"papers": ["greatengineer2", "greatengineer1", "answerdash","nonengineers", "informationneeds","facebookcasestudy", "devwhiteboards", "complexdomains", "answerdash", "unfamiliar"],
 			"links": [],
 			"startdate": 2013,
-			"stopdate": 2019,
-			"impact": "This work has been read widely in industry, including by product teams at Microsoft, Adobe, Google, and ABB. Our research on software engineering experience have been used to frame soft skills instruction in the <a href='http://www.afsenyc.org/'>Academy for Software Engineering</a> curriculum in New York and have also reached over 10,000 academics and software engineers through an <a href='https://www.youtube.com/watch?v=OBlmLjeORUQ&feature=youtu.be&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU'>ACM Learning Center Webinar</a>."
+			"stopdate": 2019
 		},
 		{
 			"id": "mlliteracy",
@@ -3043,8 +3037,7 @@
 			"papers": ["mladvocacy", "gestalt", "whydebugclassifier2", "whydebugclassifier1"],
 			"links": [],
 			"startdate": 2004,
-			"stopdate": null,
-			"impact": "Our work on understanding machine learning has indirectly shaped several of the tools used in industry to develop and debug machine learned programs."
+			"stopdate": null
 		},
 		{
 			"id": "uimining",
@@ -3063,8 +3056,7 @@
 				{ "title": "See Scry", "url": "https://www.youtube.com/watch?v=pUvtbn_Ldu0" }
 			],
 			"startdate": 2006,
-			"stopdate": null,
-			"impact": "Our work on interface mining has been replicated in several indusry projects focused on supporting interface development."
+			"stopdate": null
 		},
 		{
 			"id": "methods",
@@ -3077,8 +3069,7 @@
 			"papers": ["walkthrough1", "walkthrough2", "practicalguide", "certheory", "softwarescience", "plreally", "studydesign", "futureofprogramming", "studyingprogramming", "ischoolmovement", "sequalitative"],
 			"links": [],
 			"startdate": 2003,
-			"stopdate": null,
-			"impact": "Our work on research methods is widely read by new Ph.D. students across computer science to inform how they evaluate new developer tools and how they use theory."
+			"stopdate": null
 		},
 		{
 			"id": "reviews",
@@ -3091,8 +3082,7 @@
 			"papers": ["cerhandbooktools", "eusessurvey", "cerhandoutside", "cerhandbooktools", "boostingproductivity", "fourlenses", "noproductivity", "monitoring"],
 			"links": [],
 			"startdate": 2009,
-			"stopdate": null,
-			"impact": "Our surveys are widely-cited and used by doctoral students to quickly learn about the state of the art and knowledge."
+			"stopdate": null
 		},
 		{
 			"id": "understanding",
@@ -3113,8 +3103,7 @@
 				{ "title": "Feedlack source", "url": "https://github.com/amyjko/feedlack" }
 			],
 			"startdate": 2004,
-			"stopdate": null,
-			"impact": "Our studies on program understanding and ideas for program understanding tools was partially the basis of the <a href='http://research.microsoft.com/en-us/projects/debuggercanvas/'>Debugger Canvas</a> plugin for Visual Studio. Frictionary was used in one of the features in <a href='http://www.answerdash.com'>AnswerDash</a>, the company I co-founded based on my CAREER grant. Timelapse is being upstreamed to WebKit and will likely appear in the Safari Web Inspector developer tools. Many of the ideas in Barista have made it into more modern environments like <a href='http://scratch.mit.edu'>Scratch</a> and <a href='http://www.greenfoot.org/'>Greenfoot</a>. The Whyline has impacted several projects, including Microsoft's <a href='https://docs.microsoft.com/en-us/visualstudio/debugger/intellitrace-features'>IntelliTrace</a> feature in Visual Studio, it's <a href='https://marketplace.visualstudio.com/items?itemName=DebuggerCanvasTeam.DebuggerCanvas'>Debugger Canvas</a> Visual Studio plugin, and the record-replay features in it's latest <a href='https://www.microsoft.com/en-us/research/project/javascript-time-travel-debugger/'>Chakra JavaScript runtime</a>. Other projects, including <a href='http://rr-project.org/'>Mozilla's rr</a> and the <a href='http://debug.elm-lang.org/'>Elm Debugger</a> have also incorporated time-travel debugging features. None have implemented the full vision of Whyline's interface or analysis, but many are getting close, as the infrastructure for execution tracing, record/replay, and dynamic analysis are becoming scalable enough for production use."
+			"stopdate": null
 		},
 		{
 			"id": "triage",
@@ -3131,8 +3120,7 @@
 				{ "title": "See AnswerDash", "url": "https://www.youtube.com/watch?v=Lay6EWYVhjY" }
 			],
 			"startdate": 2004,
-			"stopdate": null,
-			"impact": "Lemonaid, our crowdsourced help tool, was the basis for <a href='http://www.answerdash.com'>AnswerDash</a>, a company that I co-founded with Jacob Wobbrock and Parmit Chilana that offers an instant self-service answers product for web applications and e-commerce sites. The company has impacted other company's product offerings, including <a href='https://www.zendesk.com/'>Zendesk</a>'s self-service technologies."
+			"stopdate": null
 		},
 		{
 			"id": "euse",
@@ -3145,8 +3133,7 @@
 			"papers": ["eupoverview", "eusessurvey", "interactivebehaviors", "morenaturaleuse", "designerdescriptions", "identifyingendusers", "infowork", "ellblockstudio", "ideagardenjvlc", "gidget6", "whydebugclassifier1", "gestalt", "whydebugclassifier2", "productivitytools", "slate", "whyline1", "barriers", "aliceinquiry", "vldcabstract", "errormodel", "visuallytesting", "eupfactors"],
 			"links": [],
 			"startdate": 2004,
-			"stopdate": null,
-			"impact": "Our work on end-user software engineering has inspired hundreds of commercial tools for supporting end-user programming and impacted research efforts in professional software engineering."
+			"stopdate": null
 		}	
 	],
 	"posts": [
@@ -4855,125 +4842,562 @@
 			"alt": null
 		}
 	],
-	"impacts": [
+	"populations": [
 		{
 			"id": "public",
 			"population": "The public",
 			"alt": "A picture of Amy being interviewed for a television segment.",
-			"description": "The press often reports on my research, interviews me, or consults with me on my expertise",
-			"impacts": [
-				"I consulted with <a href='https://www.marketplace.org/shows/marketplace-tech/'>APM's Marketplace Tech</a> on automation (2019)",
-				"I wrote for the <a href='http://www.huffingtonpost.com/entry/5829cf4ce4b02b1f5257a638'>Huffington Post</a> about the software industry's need for computing education research (2016).",
-				"<a href='http://www.livescience.com/53963-are-coding-toys-useful.html'>LiveScience</a> interviewed me about the efficacy of coding toys (2016).",
-				"<a href='http://www.newscientist.com/blogs/onepercent/2012/05/frictionary.html'>NewScientist</a> featured my work on Frictionary (2012)",
-				"<a href='http://www.pcworld.com/businesscenter/article/255340/study_facebook_relies_on_good_design_to_retain_users.html#tk.rss_news'>IDG news</a> featured our work Facebook's design culture (2012)",
-				"<a href='http://www.king5.com/news/technology/Hourglass-Syndrome-106739108.html'>Seattle's King5 News</a> interviewed me about software failures (2010)",
-				"<a href='http://www.pcmag.com/article2/0,2817,1842864,00.asp'>PC Magazine</a> featured my research on debugging tools (2005).",
-				"The Associated Press featured my research on the Whyline (2004)."
-			]
+			"description": "The press often reports on my research, interviews me, or consults with me on my expertise"
 		},
 		{
 			"id": "industry",
 			"population": "The software industry",
 			"alt": "A photograph of the 2016 team at AnswerDash",
-			"description": "My research often impacts policy and processes in software companies; I have also co-founded and consulted with startups",
-			"impacts": [
-				"Our research on Lemonaid, our crowdsourced help tool, was the basis for <a href='http://www.answerdash.com/'>AnswerDash</a>, a company that I co-founded with Jacob Wobbrock and Parmit Chilana that offers an instant self-service answers product for web applications and e-commerce sites. The company has impacted other company's product offerings, including <a href='https://www.zendesk.com/'>Zendesk</a>'s self-service technologies. AnswerDash was <a href='https://www.geekwire.com/2020/uw-spinout-answerdash-contextual-qa-service-customer-support-acquired-cloudengage/'>acquired in 2020 by CloudEngage</a>, a platform for customer personalization.",
-				"Our research on bug reporting has been read widely in industry, including by product teams at Microsoft, Adobe, Google, and ABB."
-			]
+			"description": "My research often impacts policy and processes in software companies; I have also co-founded and consulted with startups"
 		},
 		{
 			"id": "engineers",
 			"population": "Software engineers",
 			"alt": "A photograph of the 2010 Mozilla Summit",
-			"description": "My research often reaches software developers through podcasts, news, and social media",
-			"impacts": [
-				"I was interviewed for the <a href='http://softwareengineeringdaily.com/2016/02/24/academia-to-industry-in-computer-science-with-andy-ko/'>Software Engineering Daily podcast</a>, which has an audience of hundreds of thousands.",
-				"Our <a href='https://www.youtube.com/watch?v=OBlmLjeORUQ&feature=youtu.be&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU'>ACM Learning Webinar on software engineering expertise</a> was viewed by hundreds of thousands of developers.",
-				"Our research on coding bootcamps has been read by hundreds of thousands of software developers on sites like <a href='https://www.reddit.com/r/programming/comments/6kgi7p/what_i_learned_from_researching_coding_bootcamps/'>Reddit and <a href='https://news.ycombinator.com/item?id=14679061'>Hacker News<a/>.",
-				"Our work evaluating coding tutorials has been discussed on <a href='https://news.ycombinator.com/item?id=16961716'>Hacker News</a>."			
-			]
-		},
-		{
-			"id": "tools",
-			"population": "Software development tools",
-			"alt": "A screenshot of the Visual Studio IDE.",
-			"description": "Many of my innovations have made it into software development tools products",
-			"impacts": [
-				"Our studies on program understanding and ideas for program understanding tools was partially the basis of the <a href='http://research.microsoft.com/en-us/projects/debuggercanvas/'>Debugger Canvas</a> plugin for Visual Studio.",
-				"Frictionary was used in one of the features in <a href='http://www.answerdash.com/'>AnswerDash</a>, the company I co-founded based on my CAREER grant",
-				"Timelapse is being upstreamed to WebKit and will likely appear in the Safari Web Inspector developer tools.",
-				"Many of the ideas in Barista have made it into more modern environments like <a href='http://scratch.mit.edu/'>Scratch</a> and <a href='http://www.greenfoot.org/'>Greenfoot</a>.",
-				"My research on the Whyline has impacted several projects, including <a href='https://docs.microsoft.com/en-us/visualstudio/debugger/intellitrace-features'>Microsoft's IntelliTrace</a> feature in Visual Studio, it's <a href='https://marketplace.visualstudio.com/items?itemName=DebuggerCanvasTeam.DebuggerCanvas'>Debugger Canvas</a> Visual Studio plugin, and the record-replay features in it's latest <a href='https://www.microsoft.com/en-us/research/project/javascript-time-travel-debugger/'>Chakra JavaScript</a> runtime. Other projects, including <a href='http://rr-project.org/'>Mozilla's rr</a> and the <a href='http://debug.elm-lang.org/'>Elm Debugger</a> have also incorporated time-travel debugging features."
-			]	
+			"description": "My research often reaches software developers through podcasts, news, social media, and tools"
 		},
 		{
 			"id": "learningtech",		
 			"population": "Technologies for learning to code",
 			"alt": "A screenshot of Apple's Swift Playgrounds.",
-			"description": "Many of my discoveries have impacted the design of educational technologies for learning to code",
-			"impacts": [
-				"In 2020, I consulted with Microsoft's VS Code, VS Online, and GitHub Education teams about how to support CS educators.",
-				"In 2016 I consulted with Microsoft on their <a href='https://makecode.com/'>MakeCode</a> project, sharing evidence from computing education research to inform the design of their learning technologies.",
-				"Our work on Gidget influenced the design of Code.org's <a href='https://studio.code.org/'>CodeStudio</a> and <a href='https://www.apple.com/swift/playgrounds/'>Apple's Swift Playgrounds</a>."
-			]
-		},	
+			"description": "Many of my discoveries have impacted the design of educational technologies for learning to code"
+		},
 		{
 			"id": "academia",
 			"population": "Higher education",
 			"alt": "A photograph of a CHI 2019 coffee break.",
-			"description": "I share much of my experience, both of my research areas and of my practice as an scholars, in books, blog posts, podcasts, and other media",
-			"impacts": [
-				"As part of my teaching, I enjoy writing short web accessible books that summarize the state of knowledge in my academic fields. I have written short books about <a href='http://faculty.washington.edu/ajko/books/design-methods'>Design</a>, <a href='http://faculty.washington.edu/ajko/books/cooperative-software-development'>Cooperative Software Development</a>, and <a href='http://faculty.washington.edu/ajko/books/uist/'>User Interface Software and Technology</a>. Many faculty at other universities have used my short books in their classes.",
-				"The <a href='http://www.changingacademiclife.com/blog/2017/6/18/andy-ko'>Changing Academic Life</a> podcast interviewed me about productivity.",
-				"My <a href='https://medium.com/bits-and-behavior/tagged/academia'>blog posts</a> about academia and professor life are read by hundreds of thousands of academics."
-			]
+			"description": "I share much of my experience, both of my research areas and of my practice as an scholars, in books, blog posts, podcasts, and other media"
 		},
 		{
 			"id": "cer",
 			"population": "The computing education research community",
 			"alt": "A photograph of my lab at SIGCSE 2019.",
-			"description": "I actively seek ways to help build the computing education research community by improving or creating new infrastructure",
-			"impacts": [
-				"I've consulted with Google, NSF, CRA, and <a href='https://code.org'>Code.org</a> about strategies for strengthening the pipeline of computing education research, researchers, and research funding.",
-				"I've co-authored <a href='http://cra.org/ccc/wp-content/uploads/sites/2/2015/01/CSEdResearchWhitePaper2016.pdf'>a whitepaper</a> discussing the importance of computing education research.",
-				"Since 2016 I've maintained a <a href='http://faculty.washington.edu/ajko/cer'>popular FAQ</a> for newcomers to the community.",
-				"I've helped shape the peer review processes for the <a href='https://toce.acm.org/'>ACM Transactions on Computing Education</a>, the <a href='https://sigcse.org/sigcse/events/symposia'>ACM SIGCSE Technical Symposium</a>'s Research Track, and the <a href='https://icer.acm.org'>ACM International Computing Education Research Conference</a>.",
-				"My <a href='https://medium.com/bits-and-behavior/tagged/computing-education'>blog posts</a> about computing education are read widely amongst researchers and CS teachers."
-			]
+			"description": "I actively seek ways to help build the computing education research community by improving or creating new infrastructure"
 		},
 		{
 			"id": "k12cs",
 			"population": "National K-12 CS education",
 			"alt": "A photograph of Amy at a national meeting of CS for All state advocates.",
-			"description": "I've used my research and expertise to inform national policy and national curricula",
-			"impacts": [
-				"I've coordinated with House representatives on policies that will expand the numbers of CS teachers nationwide.",
-				"Our research on programming problem solving, programming language learning, programming strategies, and debugging has shaped <a href='https://code.org'>Code.org</a>'s teacher professional development and it's secondary school curricula.",
-				"Our research on software engineering expertise informed the curriculum at New York's <a href='http://www.afsenyc.org/'>Academy for Software Engineering</a>."
-			]
+			"description": "I've used my research and expertise to inform national policy and national curricula"
 		},
 		{
 			"id": "k12cswa",
 			"population": "Washington state K-12 CS education",
 			"alt": "A photograph of an education committee meeting at the Washington state legislature.",
-			"description": "I've used my research and expertise to inform Washington state policy on K-12 CS education",
-			"impacts": [
-				"I direct <a href='http://csforallwa.org'>CS for All Washington</a>, a statewide CS for All advocacy group.",
-				"I've worked with leaders around Washington state to <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1625224'>help it's colleges and universities to prepare K-12 CS teachers</a>.",
-				"Our work on problem solving and program tracing has influenced the design of <a href='https://code.org'>Code.org</a>'s curiculum and teacher professional development."
-			]
+			"description": "I've used my research and expertise to inform Washington state policy on K-12 CS education"
 		},
 		{
 			"id": "k12csps",
 			"population": "Puget Sound K-12 CS education",
 			"alt": "A photograph a 2019 Sound CS Ed community meetup.",
-			"description": "I've used my research and expertise to build community and educate youth in Puget Sound",
-			"impacts": [
-				"I've run a quarterly meetup, Sound CS Ed, to bring together a community of hundreds of CS education teachers, researchers, policy makers, and product designers.",
-				"Since 2016 I've taught in the university's Upward Bound program, which primarily reaches low-income immigrant and refugee high school students in South Seattle. The students learn about computing, information, and design.",
-				"I have served on the Seattle Public Schools CS Advisory board, shaping strategic goals."		
-			]
+			"description": "I've used my research and expertise to build community and educate youth in Puget Sound"
+		}
+	],
+	"impacts": [
+		{
+			"kind": "consulting",
+			"start": 2019,
+			"end": 2019,
+			"description": "I consulted with APM's Marketplace Tech on the effects and limits of automation",
+			"url": null,
+			"projects": ["csjustice", "mliteracy", "euse"],
+			"who": "public"
+		},
+		{
+			"kind": "press",
+			"start": 2016,
+			"end": 2016,
+			"description": "I co-authored an article with Susanne Hambrusch for the Huffington Post titled \"Why the Software Industry Needs Computing Education Research\"",
+			"title": "Why the Software Industry Needs Computing Education Research",
+			"author": "Amy J. Ko and Susanne Hambrusch",
+			"source": "Huffington Post",
+			"url": "http://www.huffingtonpost.com/entry/5829cf4ce4b02b1f5257a638",
+			"projects": ["pllearning", "csdiversity"],
+			"who": "public"
+		},
+		{
+			"kind": "press",
+			"start": 2016,
+			"end": 2016,
+			"description": "Tia Ghose interviewed me for LiveScience about the efficacy of coding toys",
+			"title": "Do Computer Coding Toys for Kids Really Work?",
+			"author": "Tia Ghose",
+			"source": "LiveScience",
+			"url": "http://www.livescience.com/53963-are-coding-toys-useful.html",
+			"projects": ["pllearning"],
+			"who": "public"
+		},
+		{
+			"kind": "press",
+			"start": 2012,
+			"end": 2012,
+			"description": "NewScientist featured my work on Frictionary",
+			"title": "Frictionary 'mines your whines' to pinpoint software bugs",
+			"author": "Paul Marks",
+			"source": "NewScientist",
+			"url": "http://www.newscientist.com/blogs/onepercent/2012/05/frictionary.html",
+			"projects": ["triage"],
+			"who": "public"
+		},
+		{
+			"kind": "press",
+			"start": 2012,
+			"end": 2012,
+			"description": "PC World featured our work on Facebook's design culture",
+			"title": "Study: Facebook relies on good design to retain users",
+			"author": "Joab Jackson",
+			"source": "IDG News",
+			"url": "http://www.pcworld.com/businesscenter/article/255340/study_facebook_relies_on_good_design_to_retain_users.html",
+			"projects": ["triage"],
+			"who": "public"
+		},
+		{
+			"kind": "press",
+			"start": 2010,
+			"end": 2010,
+			"description": "Seattle's King5 news interviewed me about software failures",
+			"title": "Violence against technology has psychological roots",
+			"author": "Owen Lei",
+			"source": "King5 News",
+			"url": "http://www.king5.com/news/technology/Hourglass-Syndrome-106739108.html",
+			"projects": ["triage"],
+			"who": "public"
+		},
+		{
+			"kind": "press",
+			"start": 2004,
+			"end": 2004,
+			"description": "The Associated Press interviewed me on my dissertation work on the Whyline",
+			"title": "Researchers Aim to Make Debugging Simpler",
+			"author": "Mike Crissey",
+			"source": "Associated Press",
+			"url": "https://www.eastbaytimes.com/2004/08/15/researchers-attempt-to-make-debugging-easier/",
+			"projects": ["understanding"],
+			"who": "public"
+		},
+		{
+			"kind": "product",
+			"start": 2013,
+			"end": 2020,
+			"description": "Our research on Lemonaid, our crowdsourced help tool, was the basis for AnswerDash, a company that I co-founded with Jacob Wobbrock and Parmit Chilana that offers an instant self-service answers product for web applications and e-commerce sites. The company has impacted other company's product offerings, including Zendesk's self-service technologies. AnswerDash was acquired in 2020 by CloudEngage, a platform for customer personalization",
+			"url": "https://www.geekwire.com/2020/uw-spinout-answerdash-contextual-qa-service-customer-support-acquired-cloudengage/",
+			"projects": ["triage"],
+			"who": "industry"
+		},
+		{
+			"kind": "knowledge",
+			"start": 2014,
+			"end": 2016,
+			"description": "Our research on bug reporting has been read widely in industry, including by product teams at Microsoft, Adobe, Google, and ABB",
+			"url": null,
+			"projects": ["triage"],
+			"who": "industry"
+		},
+		{
+			"kind": "press",
+			"start": 2005,
+			"end": 2005,
+			"description": "PC Magazine featured my research on the Whyline debugging tool",
+			"title": "The Ten Biggest Problems in Computing and How We'll Solve Them",
+			"author": "Alan Cohen",
+			"source": "PC Magazine",
+			"url": "http://www.pcmag.com/article2/0,2817,1842864,00.asp",
+			"projects": ["understanding"],
+			"who": "industry"
+		},
+		{
+			"kind": "press",
+			"start": 2016,
+			"end": 2016,
+			"description": "I was interviewed by Jeff Meyerson for the Software Engineering Daily podcast on February 24 about research, reaching tens of thousands of engineers",
+			"title": "Academia to Industry in Computer Science",
+			"author": "Jeff Meyerson",
+			"url": "https://softwareengineeringdaily.com/2016/02/24/academia-to-industry-in-computer-science-with-andy-ko/",
+			"projects": ["triage", "softexpertise"],
+			"who": "engineers"
+		},
+		{
+			"kind": "knowledge",
+			"start": 2016,
+			"end": 2016,
+			"description": "Our ACM Learning Webinar on software engineering expertise was viewed by hundreds of thousands of developers",
+			"url": "https://www.youtube.com/watch?v=OBlmLjeORUQ&feature=youtu.be&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU",
+			"projects": ["triage", "softexpertise"],
+			"who": "engineers" 
+		},
+		{
+			"kind": "social",
+			"start": 2017,
+			"end": 2017,
+			"description": "Our research on coding bootcamps has been read by hundreds of thousands of software developers on Reddit",
+			"url": "https://www.reddit.com/r/programming/comments/6kgi7p/what_i_learned_from_researching_coding_bootcamps/",
+			"projects": ["apilearning", "softexpertise"],
+			"who": "engineers"
+		},
+		{
+			"kind": "social",
+			"start": 2017,
+			"end": 2017,
+			"description": "Our research on coding bootcamps has been read by tens of thousands of software developers on Hacker News",
+			"url": "https://news.ycombinator.com/item?id=14679061",
+			"projects": ["apilearning", "softexpertise"],
+			"who": "engineers"
+		},
+		{
+			"kind": "social",
+			"start": 2018,
+			"end": 2018,
+			"description": "Our research on coding tutorials read by tens of thousands of software developers on Hacker News",
+			"url": "https://news.ycombinator.com/item?id=16961716",
+			"projects": ["pllearning"],
+			"who": "engineers"
+		},
+		{
+			"kind": "product",
+			"start": 2004,
+			"end": 2008,
+			"description": "Our work on end-user software engineering has inspired hundreds of commercial tools for supporting end-user programming and impacted research efforts in professional software engineering",
+			"url": "http://eusesconsortium.org",
+			"projects": ["euse"],
+			"who": "engineers"
+		},
+		{
+			"kind": "product",
+			"start": 2004,
+			"end": 2008,
+			"description": "Our work on understanding machine learning has indirectly shaped several of the tools used in industry to develop and debug machine learned programs",
+			"url": null,
+			"projects": ["mlliteracy"],
+			"who": "engineers"
+		},
+		{
+			"kind": "product",
+			"start": 2010,
+			"end": null,
+			"description": "Our work on interface mining has been replicated in several industry projects focused on supporting interface development",
+			"url": null,
+			"projects": ["uimining"],
+			"who": "engineers"
+		},
+		{
+			"kind": "product",
+			"start": 2004,
+			"end": 2008,
+			"description": "Our studies on program understanding and ideas for program understanding tools was partially the basis of the Debugger Canvas plugin for Visual Studio",
+			"url": "http://research.microsoft.com/en-us/projects/debuggercanvas/",
+			"projects": ["understanding"],
+			"who": "engineers"
+		},
+		{
+			"kind": "product",
+			"start": 2004,
+			"end": 2008,
+			"description": "Frictionary was used in one of the features in AnswerDash, the company I co-founded based on my CAREER grant",
+			"url": "http://www.answerdash.com/",
+			"projects": ["triage"],
+			"who": "engineers"
+		},
+		{
+			"kind": "product",
+			"start": 2011,
+			"end": null,
+			"description": "Portions of Timelapse were upstreamed to WebKit and may eventually appear in the Safari Web Inspector developer tools",
+			"url": "http://www.answerdash.com/",
+			"projects": ["understanding"],
+			"who": "engineers"
+		},
+		{
+			"kind": "product",
+			"start": 2010,
+			"end": null,
+			"description": "My work on Barista influenced the Greenfoot editor",
+			"url": "http://www.greenfoot.org/",
+			"projects": ["understanding"],
+			"who": "learningtech"
+		},
+		{
+			"kind": "consulting",
+			"start": 2020,
+			"end": 2020,
+			"description": "I consulted with Microsoft's VS Code, VS Online, and GitHub Education teams about how to support CS educators",
+			"url": null,
+			"projects": ["pllearning", "problemsolving"],
+			"who": "learningtech"
+		},
+		{
+			"kind": "consulting",
+			"start": 2016,
+			"end": 2016,
+			"description": "I consulted with Microsoft on their project, sharing evidence from computing education research to inform the design of their learning technologies",
+			"url": "https://makecode.com/",
+			"projects": ["pllearning", "problemsolving", "csdiversity"],
+			"who": "learningtech"
+		},
+		{
+			"kind": "product",
+			"start": 2014,
+			"end": null,
+			"description": "Gidget has been played by tens of thousans of youth adults online, in summer camps, and in high schools",
+			"url": "https://helpgidget.org",
+			"projects": ["pllearning", "csdiversity"],
+			"who": "learningtech"
+		},
+		{
+			"kind": "product",
+			"start": 2020,
+			"end": null,
+			"description": "Codeitz, our Python tutorial which incoporates our theory of programming instruction, is publicly available, and used to support Python instruction",
+			"url": "http://codeitz.com",
+			"projects": ["pllearning"],
+			"who": "learningtech"
+		},
+		{
+			"kind": "curriculum",
+			"start": 2020,
+			"end": null,
+			"description": "We influenced the teaching of HCI education in higher education",
+			"url": null,
+			"projects": ["csjustice"],
+			"who": "academia"
+		},
+		{
+			"kind": "resource",
+			"start": 2016,
+			"end": null,
+			"description": "I write and share online books that summarize the state of knowledge in HCI and Software Engineering",
+			"url": "https://faculty.washington.edu/ajko/books",
+			"projects": ["triage", "softexpertise"],
+			"who": "academia"
+		},
+		{
+			"kind": "resource",
+			"start": 2016,
+			"end": null,
+			"description": "I shared my practices and experiences with productivity and time management in the Changing Academic Life podcast",
+			"url": "http://www.changingacademiclife.com/blog/2017/6/18/amy-ko",
+			"projects": [],
+			"who": "academia"
+		},
+		{
+			"kind": "resource",
+			"start": 2016,
+			"end": null,
+			"description": "I share thoughts on academia and academic life on my blog, read by tens of thousands",
+			"url": "https://medium.com/bits-and-behavior/tagged/academia",
+			"projects": [],
+			"who": "academia"
+		},
+		{
+			"kind": "knowledge",
+			"start": 2020,
+			"end": null,
+			"description": "Our work has opened discourse on the responsibility of CS educators to address the role of CS in injustice",
+			"url": null,
+			"projects": ["csjustice"],
+			"who": "cer"
+		},
+		{
+			"kind": "knowledge",
+			"start": 2005,
+			"end": null,
+			"description": "Our work on research methods is widely read by new Ph.D. students across computer science to inform how they evaluate new developer tools and how they use theory",
+			"url": null,
+			"projects": ["methods"],
+			"who": "cer"
+		},
+		{
+			"kind": "knowledge",
+			"start": 2018,
+			"end": null,
+			"description": "Greg Nelson's arguments about the role of theory in computing education research have spurred signfiicant debate in CS education. This debate was continued in a 60 minute panel session at ICER 2018 in Finland, an then another 90 minute panel session at SIGCSE in Minneapolis",
+			"url": null,
+			"projects": ["methods"],
+			"who": "cer"
+		},
+		{
+			"kind": "knowledge",
+			"start": 2016,
+			"end": null,
+			"description": "Our surveys are widely-cited and used by doctoral students to quickly learn about the state of the art and knowledge",
+			"url": null,
+			"projects": ["reviews"],
+			"who": "academia"
+		},
+		{
+			"kind": "resource",
+			"start": 2017,
+			"end": 2019,
+			"description": "I consulted with Google, NSF, CRA, and Code.org on strategies for strengthening the pipeline of computing education research, researchers, and research funding",
+			"url": null,
+			"projects": ["csdiversity"],
+			"who": "cer"
+		},
+		{
+			"kind": "resource",
+			"start": 2016,
+			"end": 2016,
+			"description": "Co-authored a whitepaper discussing the importance of computing education research",
+			"url": "http://cra.org/ccc/wp-content/uploads/sites/2/2015/01/CSEdResearchWhitePaper2016.pdf",
+			"projects": [],
+			"who": "cer"
+		},
+		{
+			"kind": "resource",
+			"start": 2016,
+			"end": null,
+			"description": "Since 2016 I've maintained a popular FAQ for newcomers to the community",
+			"url": "http://faculty.washington.edu/ajko/cer",
+			"projects": [],
+			"who": "cer"
+		},
+		{
+			"kind": "resource",
+			"start": 2018,
+			"end": null,
+			"description": "I've helped shape the peer review processes for the ACM Transactions on Computing Education journal",
+			"url": "https://toce.acm.org/",
+			"projects": [],
+			"who": "cer"
+		},
+		{
+			"kind": "resource",
+			"start": 2018,
+			"end": null,
+			"description": "I've helped shape the reviewing criteria for the ACM SIGCSE Technical Symposium's research track",
+			"url": "https://sigcse.org/sigcse/events/symposia",
+			"projects": [],
+			"who": "cer"
+		},
+		{
+			"kind": "resource",
+			"start": 2020,
+			"end": null,
+			"description": "I've heleped shape the peer review process for ACM International Computing Education Research Conference",
+			"url": "https://icer.acm.org",
+			"projects": [],
+			"who": "cer"
+		},
+		{
+			"kind": "resource",
+			"start": 2016,
+			"end": null,
+			"description": "I write blog posts on about computing education research topics are read widely amongst researchers and CS teachers",
+			"url": "https://medium.com/bits-and-behavior/tagged/computing-education",
+			"projects": [],
+			"who": "cer"
+		},
+		{
+			"kind": "knowledge",
+			"start": 2018,
+			"end": null,
+			"description": "Our work on assessment has imported more rigorous methods from educational measurement into CS education",
+			"url": null,
+			"projects": ["pllearning"],
+			"who": "cer"
+		},
+		{
+			"kind": "policy",
+			"start": 2020,
+			"end": 2020,
+			"description": "I've coordinated with House representatives on policies that will expand the numbers of CS teachers nationwide",
+			"url": null,
+			"projects": [],
+			"who": "k12cs"
+		},
+		{
+			"kind": "curriculum",
+			"start": 2013,
+			"end": null,
+			"description": "Our research on programming problem solving, programming language learning, programming strategies, and debugging has shaped Code.org's teacher professional development and it's secondary school curricula, impacting hundreds of thousands of U.S. youth",
+			"url": "https://code.org",
+			"projects": ["pllearning", "problemsolving"],
+			"who": "k12cs"
+		},
+		{
+			"kind": "curriculum",
+			"start": 2013,
+			"end": null,
+			"description": "Our research on software engineering expertise informed the curriculum at New York's Academy for Software Engineering",
+			"url": "http://www.afsenyc.org/",
+			"projects": ["softexpertise"],
+			"who": "k12cs"
+		},
+		{
+			"kind": "product",
+			"start": 2013,
+			"end": null,
+			"description": "Gidget influenced the design of Code.org's Code Studio",
+			"url": "https://studio.code.org",
+			"projects": ["pllearning"],
+			"who": "k12cs"
+		},
+		{
+			"kind": "product",
+			"start": 2014,
+			"end": null,
+			"description": "Gidget influenced the design of Apple's Swift Playgrounds",
+			"url": "https://www.apple.com/swift/playgrounds/",
+			"projects": ["pllearning"],
+			"who": "k12cs"
+		},
+		{
+			"kind": "curriculum",
+			"start": 2014,
+			"end": null,
+			"description": "Gidget has been played by tens of thousands of youth adults online, in summer camps, and in high schools",
+			"url": "https://helpgidget.org",
+			"projects": ["pllearning"],
+			"who": "k12cs"
+		},
+		{
+			"kind": "policy",
+			"start": 2017,
+			"end": null,
+			"description": "The CS for All Washington advocacy group I direct has used our research to affect statewide CS education policy",
+			"url": "http://csforallwa.org",
+			"projects": ["csjustice"],
+			"who": "k12cswa"
+		},
+		{
+			"kind": "policy",
+			"start": 2018,
+			"end": null,
+			"description": "Our research on transfer students has influenced admissions policy at the University of Washington",
+			"url": null,
+			"projects": ["csdiversity"],
+			"who": "k12cswa"
+		},
+		{
+			"kind": "community",
+			"start": 2016,
+			"end": null,
+			"description": "As part of our research, we have taught in the University of Washington's Upward Bound program each summer, reaching dozens of students underrepresented in computing from Seattle's low-income immigrant and refugee communities",
+			"url": "https://www.washington.edu/omad/upward-bound/",
+			"projects": ["csdiversity"],
+			"who": "k12cswa"
+		},
+		{
+			"kind": "community",
+			"start": 2017,
+			"end": null,
+			"description": "I've run a quarterly meetup, Sound CS Ed, to bring together hundreds of CS education teachers, researchers, policy makers, and product designers in Puget Sound",
+			"url": "http://soundcsed.org",
+			"projects": [],
+			"who": "k12csps"
+		},
+		{
+			"kind": "curriculum",
+			"start": 2018,
+			"end": 2019,
+			"description": "I have served on the Seattle Public Schools CS Advisory board, shaping strategic goals",
+			"url": null,
+			"projects": [],
+			"who": "k12csps"
 		}
 	],
 	"degrees": [
@@ -5010,71 +5434,6 @@
 			"year": "2010",
 			"number": "U.S. Patent No. 7,735,066",
 			"inventors": "Amy J. Ko and Brad A. Myers"
-		}
-	],
-	"press": [
-		{
-			"title": "Why the Software Industry Needs Computing Education Research",
-			"author": "Amy J. Ko and Susanne Hambrusch",
-			"source": "Huffington Post",
-			"date": "November 14th, 2016",
-			"link": "http://www.huffingtonpost.com/entry/5829cf4ce4b02b1f5257a638"
-		},
-		{
-			"title": "Do Computer Coding Toys for Kids Really Work?",
-			"author": "Tia Ghose",
-			"source": "LiveScience",
-			"date": "March 8th, 2016",
-			"link": "http://www.livescience.com/53963-are-coding-toys-useful.html"
-		},
-		{
-			"title": "Applying Software Research to Industry with Andy Ko",
-			"author": "Jeff Meyerson",
-			"source": "Software Engineering Daily",
-			"date": "February 25th, 2016",
-			"link": "http://softwareengineeringdaily.com/2016/02/24/academia-to-industry-in-computer-science-with-andy-ko/"
-		},
-		{
-			"title": "Frictionary 'mines your whines' to pinpoint software bugs",
-			"author": "Paul Marks",
-			"source": "NewScientist",
-			"date": "May 31, 2012",
-			"link": "http://www.newscientist.com/blogs/onepercent/2012/05/frictionary.html"
-		},
-		{
-			"title": "Study: Facebook relies on good design to retain users",
-			"author": "Joab Jackson",
-			"source": "IDG News",
-			"date": "May 9th, 2012",
-			"link": "http://www.pcworld.com/businesscenter/article/255340/study_facebook_relies_on_good_design_to_retain_users.html#tk.rss_news"
-		},
-		{
-			"title": "Violence against technology has psychological roots",
-			"author": "Owen Lei",
-			"source": "King5 News",
-			"date": "November 4th, 2010",
-			"link": "http://www.king5.com/news/technology/Hourglass-Syndrome-106739108.html"
-		},
-		{
-			"title": "The Ten Biggest Problems in Computing and How We'll Solve Them",
-			"author": "Alan Cohen",
-			"source": "PC Magazine",
-			"date": "August 2005",
-			"link": "http://www.pcmag.com/article2/0,2817,1842864,00.asp"
-		},
-		{
-			"title": "Researchers to Help Exterminate Bugs in Spreadsheets, Web Applications",
-			"author": "David Hart",
-			"source": "NSF Press Release PR 04-065",
-			"date": "May 5th, 2004",
-			"link": "http://www.nsf.gov/news/news_summ.jsp?cntn_id=100380"
-		},
-		{
-			"title": "Researchers Aim to Make Debugging Simpler",
-			"author": "Mike Crissey",
-			"source": "Associated Press",
-			"date": "July 2004",
-			"link": null
 		}
 	],
 	"jobs": [
@@ -6611,7 +6970,7 @@
 		["Summer break", 	"Family time", 				"personal", 	"prime", 	30, "annually", "08-01", "08-15"],
 
 		["NSF Strategies", 	"Meetings + writing",		"research", 	"flexible", 2, "weekly", "2018-09-01", "2022-09-01"],
-		["NSF STEP CSS",	"Research + admin",			"research", 	"flexible", 5, "weekly", "2020-05-01", "2023-08-03"],
+		["NSF STEP CS",	"Research + admin",			"research", 	"flexible", 5, "weekly", "2020-05-01", "2023-08-03"],
 		["NSF FMITF",		"Research",					"research", 	"flexible", 1, "weekly", "2019-06-15", "2022-06-15"],
 		["NSF AccessComp",	"Meetings + presenting",	"service", 		"flexible", 1, "weekly", "2017-06-15", "2021-06-15"],
 		["CRA-E", 			"Meetings + writing",		"service", 		"flexible", 1, "weekly", "2020-07-01", "2022-07-01"],

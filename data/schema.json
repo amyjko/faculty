@@ -2,6 +2,13 @@
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"title": "Amy's faculty website data schema",
 	"type": "object",
+	"required": [
+		"sources", "pubs", "people", "projects", "posts", 
+		"impacts", "degrees", "patents", "jobs", "awards", "editor",
+		"programChairing", "programCommittees", "reviewing", "academicChair", 
+		"doctoralCommittees", "service", "funding", "travel", 
+		"talks", "classes", "books", "years", "commitments"
+	],
 	"properties": {
 		"sources": {
 			"type": "object",
@@ -168,7 +175,7 @@
 	    "projects": {
 			"type": "array",
 			"description": "List of projects.",
-			"required": ["id", "active", "name", "description", "funding", "people", "papers", "links", "startdate", "stopdate", "impact"],
+			"required": ["id", "active", "name", "description", "funding", "people", "papers", "links", "startdate", "stopdate"],
 			"items": {
 				"type": "object",
 				"description": "A person.",
@@ -228,9 +235,6 @@
 					},
 					"stopdate": {
 						"type": ["integer", "null"]
-					},
-					"impact": {
-						"type": "string"
 					}
 				}
 			}
@@ -273,13 +277,35 @@
 				}
 			}
 	    },
-	    "impacts": {
+		"impacts": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": ["kind", "start", "end", "description", "url", "projects"],
+				"properties": {
+					"kind": { "type": "string", "enum": ["press", "product", "knowledge", "consulting", "curriculum", "resource", "policy", "community", "social"] },
+					"start": { "type": "integer", "minimum": 2000 },
+					"end": { "type": ["integer", "null"], "minimum": 2000 },
+					"description": { "type": "string" },
+					"url": { "type": ["string", "null"], "format": "uri-reference" },
+					"projects": { "type": "array", "items": { "type": "string"} },
+					"who": {
+						"type": "string",
+						"enum": [
+							"public", "industry", "engineers", "learningtech", 
+							"academia", "cer", "k12cs", "k12cswa", "k12csps"
+						]
+					}
+				}
+			}
+		},
+		"populations": {
 			"type": "array",
 			"description": "List of impacts.",
 			"items": {
 		    	"type": "object",
 				"description": "A population impacted.",
-				"required": ["id", "population", "alt", "description", "impacts"],
+				"required": ["id", "population", "alt", "description"],
 		    	"properties": {
 			    	"id": {
 						"type": "string",
@@ -293,12 +319,6 @@
 			    	},
 			    	"description": {
 				    	"type": "string"
-			    	},
-			    	"impacts": {
-				    	"type": "array",
-				    	"items": {
-					    	"type": "string"
-				    	}
 			    	}
 		    	}
 			}
@@ -317,20 +337,6 @@
 			"items": {
 				"type": "object",
 				"required": ["title", "year", "number", "inventors"]
-			}
-		},
-		"press": {
-			"type": "array",
-			"description": "Degrees earned",
-			"items": {
-				"type": "object",
-				"required": ["title", "author", "source", "date", "link"],
-				"properties": {
-					"link": {
-						"type": ["string", "null"],
-						"format": "uri"
-					}
-				}
 			}
 		},
 		"jobs": {
