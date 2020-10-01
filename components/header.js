@@ -13,7 +13,7 @@ class Header extends React.Component {
 				<div className='row'>
 		
 					<div className="col-xs-5 col-sm-3 col-md-3">
-						<img className='img-thumbnail' alt="Headshot of Amy J. Ko" src={this.props.app.getWebRoot() + "/images/headshots/mug-ajko.jpg"} />
+						<Link to="/"><img className='img-thumbnail' alt="Headshot of Amy J. Ko" src={this.props.app.getWebRoot() + "/images/headshots/mug-ajko.jpg"} /></Link>
 					</div>
 		
 					<div className="col-xs-7 col-sm-9 col-md-9" style={{lineHeight: "1.15em"}}>
@@ -21,7 +21,7 @@ class Header extends React.Component {
 						<small>
  							<a href="https://ap.washington.edu/ahr/academic-titles-ranks/professor/" target="_blank">Professor</a> &sdot; <a href="https://ischool.uw.edu/academics/informatics">Informatics</a> <a href="https://ischool.uw.edu/about/leadership/committees" target="_blank">Program Chair</a>
 							<br/><a href="http://ischool.uw.edu" target="_blank">The Information School</a>
-							<br/><a href="http://cs.uw.edu" target="_blank">Paul G. Allen Computer Science &amp; Engineering (courtesy)</a>
+							<br/><a href="http://cs.uw.edu" target="_blank">Paul G. Allen School of Computer Science &amp; Engineering (courtesy)</a>
 							<br/><a href="http://www.washington.edu" target="_blank">University of Washington, Seattle</a>
 							<br/><Link to="/cv">Curriculum Vitae</Link>
 							<br/><a href="mailto:ajko@uw.edu">ajko@uw.edu</a> &sdot; <a href="https://twitter.com/amyjko" target="_blank">@amyjko</a>
