@@ -660,6 +660,20 @@
 			"contribution":"Using a set of pedagogical principles, evaluates the current state of tutorial instruction, finding that only a few tutorials follow best practices."
 		},
 		{
+			"id":"uist",
+			"kind":"book",
+			"authors": ["@ajko"],
+			"deadname": false,
+			"year": 2017,
+			"title": "User Interface Software and Technology",
+			"source": "Online",
+			"pages": null,
+			"publisher": "Self-published",
+			"doi": "https://faculty.washington.edu/ajko/books/user-interface-software-and-technology/",
+			"local": null,
+			"contribution":"An online, self-published book that surveys the past, present, and future of user interfaces from theoretical, practical, and ethical perspectives."
+		},
+		{
 			"id":"plreally",
 			"kind":"refereed workshop paper",
 			"authors": ["@ajko"],
@@ -753,7 +767,6 @@
 			"kind": "whitepaper",
 			"authors": ["Steve Cooper", "Jeff Forbes", "Armando Fox", "Susan Hambrusch", "@ajko", "Beth Simon"],
 			"deadname": true,
-			"deadname": true,
 			"year":  2016,
 			"title": "The Importance of Computing Education Research",
 			"source": "CRA Computing Community Consortium",
@@ -762,6 +775,20 @@
 			"doi": "http://cra.org/ccc/resources/ccc-led-whitepapers/",
 			"local": "Cooper2016ImportanceofCSEd.pdf",
 			"contribution": "Argues for the foundational role of computing education research in computer science departments."
+		},
+		{
+			"id":"cooperativesoft",
+			"kind":"book",
+			"authors": ["@ajko"],
+			"deadname": false,
+			"year": 2016,
+			"title": "Cooperative Software Development",
+			"source": "Online",
+			"pages": null,
+			"publisher": "Self-published",
+			"doi": "https://faculty.washington.edu/ajko/books/cooperative-software-development/",
+			"local": null,
+			"contribution":"An online, self-published book that surveys human aspects of programming and software engineering in a simple, accessible, and direct manner."
 		},
 		{
 			"id":"scry",
@@ -843,6 +870,20 @@
 			"contribution":"Research prototypes and evidence of their usability and usefulness are only a tiny part of creating a successful whole product."
 		},
 		{
+			"id":"designmethods",
+			"kind":"book",
+			"authors": ["@ajko"],
+			"deadname": false,
+			"year": 2015,
+			"title": "Design Methods",
+			"source": "Online",
+			"pages": null,
+			"publisher": "Self-published",
+			"doi": "https://faculty.washington.edu/ajko/books/design-methods",
+			"local": null,
+			"contribution":"An online, self-published book that surveys HCI and Design methods in a simple, accessible, and direct manner."
+		},
+		{
 			"id":"gidget4",
 			"kind":"refereed conference paper",
 			"authors": ["@mjslee", "Faezeh Bahmani", "Irwin Kwan", "Jillian LaFerte", "@charters", "Amber Horvath", "@fanny", "Jill Cao", "Catherine Law", "@besweth", "Sheridan Long", "Margaret M. Burnett", "@ajko"],
@@ -856,7 +897,7 @@
 			"doi":"http://dx.doi.org/10.1109/VLHCC.2014.6883023",
 			"local":"Lee2014GidgetPrinciples.pdf",
 			"contribution":"Teaching debugging first, while redirecting blame to the computer instead of the learner, can increase learning efficiency and engage learners of all genders equally."
-		  },
+		},
 		{
 			"id":"newsproblems",
 			"kind":"refereed workshop paper",
