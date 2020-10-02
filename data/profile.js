@@ -44,6 +44,8 @@ class Profile {
 
 			// Initialize a list of tags for the paper.
 			pub.tags = {
+				// Add the kind of publication
+				"kind": [ pub.kind ],
 				// If the source has a short name, add a tag
 				"source": pub.source.short ? [ pub.source.short ] : [],
 				// Add the paper's awards as tags

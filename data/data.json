@@ -764,7 +764,7 @@
 		},
 		{
 			"id": "ccccer",
-			"kind": "whitepaper",
+			"kind": "technical report",
 			"authors": ["Steve Cooper", "Jeff Forbes", "Armando Fox", "Susan Hambrusch", "@ajko", "Beth Simon"],
 			"deadname": true,
 			"year":  2016,
@@ -1606,7 +1606,7 @@
 		},
 		{
 			"id":"feasibility",
-			"kind":"refereed short conference paper",
+			"kind":"refereed conference paper",
 			"authors": ["@ajko", "Yann Riche"],
 			"deadname": true,
 			"year": 2011,
@@ -1621,7 +1621,7 @@
 		},
 		{
 			"id":"postusability",
-			"kind":"refereed short conference paper",
+			"kind":"refereed conference paper",
 			"authors": ["@pchilana", "@ajko", "Jacob O. Wobbrock", "Tovi Grossman", "George Fitzmaurice"],
 			"deadname": true,
 			"year": 2011,
@@ -1637,7 +1637,7 @@
 		},
 		{
 			"id":"openbugs3",
-			"kind":"refereed short conference paper",
+			"kind":"refereed conference paper",
 			"authors": ["@pchilana", "@ajko", "Jacob O. Wobbrock"],
 			"deadname": true,
 			"year": 2010,
@@ -1665,7 +1665,7 @@
 		},
 		{
 			"id":"infowork",
-			"kind":"refereed short conference paper",
+			"kind":"refereed conference paper",
 			"authors": ["Chris Scaffidi", "@ajko", "Brad A. Myers", "Mary Shaw"],
 			"deadname": true,
 			"year": 2006,
@@ -1679,7 +1679,7 @@
 		},
 		{
 			"id":"icsedc",
-			"kind":"non-refereed workshop paper",
+			"kind":"abstract",
 			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2006,
@@ -1694,7 +1694,7 @@
 		},
 		{
 			"id":"eupoverview",
-			"kind":"non-refereed workshop paper",
+			"kind":"abstract",
 			"authors": ["Brad A. Myers", "@ajko", "Margaret M. Burnett"],
 			"deadname": true,
 			"year": 2006,
@@ -1709,7 +1709,7 @@
 		},
 		{
 			"id":"slate",
-			"kind":"refereed short conference paper",
+			"kind":"refereed conference paper",
 			"authors": ["Michael J. Coblenz", "@ajko", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2005,
@@ -1723,7 +1723,7 @@
 		},
 		{
 			"id":"textediting",
-			"kind":"refereed short conference paper",
+			"kind":"refereed conference paper",
 			"authors": ["@ajko", "Htet Htet Aung", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2005,
@@ -1739,7 +1739,7 @@
 		},
 		{
 			"id":"vldcabstract2",
-			"kind":"non-refereed workshop paper",
+			"kind":"abstract",
 			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2004,
@@ -1753,7 +1753,7 @@
 		},
 		{
 			"id":"vldcabstract",
-			"kind":"non-refereed workshop paper",
+			"kind":"abstract",
 			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2003,
@@ -1767,7 +1767,7 @@
 		},
 		{
 			"id":"aliceinquiry",
-			"kind":"non-refereed workshop paper",
+			"kind":"abstract",
 			"authors": ["@ajko"],
 			"deadname": true,
 			"year": 2003,
@@ -1908,7 +1908,7 @@
 		},
 		{
 			"id":"eupfactors",
-			"kind":"non-refereed workshop paper",
+			"kind":"abstract",
 			"authors": ["@ajko", "Brad A. Myers"],
 			"deadname": true,
 			"year": 2005,
@@ -1923,7 +1923,7 @@
 		},
 		{
 			"id":"productivitytools",
-			"kind":"non-refereed workshop paper",
+			"kind":"abstract",
 			"authors": ["@ajko", "Brad A. Myers", "Michael J. Coblenz", "Jeffrey Stylos"],
 			"deadname": true,
 			"year": 2006,
@@ -1936,7 +1936,7 @@
 		},
 		{
 			"id":"morenaturaleuse",
-			"kind":"non-refereed workshop paper",
+			"kind":"abstract",
 			"authors": ["Brad A. Myers", "@ajko", "SunYoung Park", "Jeffrey Stylos", "Thomas D. LaToza", "Jack Beaton"],
 			"deadname": true,
 			"year": 2008,
@@ -1993,7 +1993,7 @@
 		},
 		{
 			"id":"ischoolmovement",
-			"kind":"refereed invited article",
+			"kind":"refereed magazine article",
 			"authors": ["Jacob O. Wobbrock", "@ajko", "Julie A. Kientz"],
 			"deadname": true,
 			"year": 2009,
@@ -2010,7 +2010,7 @@
 		},
 		{
 			"id":"naturalprogramming",
-			"kind":"refereed invited article",
+			"kind":"refereed magazine article",
 			"authors": ["Brad A. Myers", "John F. Pane", "@ajko"],
 			"deadname": true,
 			"year": 2004,
@@ -2040,7 +2040,7 @@
 		},
 		{
 			"id":"gidget2",
-			"kind":"refereed short conference paper",
+			"kind":"refereed conference paper",
 			"authors": ["@mjslee", "@ajko"],
 			"deadname": true,
 			"year": 2012,
