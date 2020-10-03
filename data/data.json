@@ -6101,12 +6101,12 @@
 			"description": "I helped propose, plan, and run the weeklong workshop"
 		},
 		{
-			"title": "Panel member (CISE, EHR)",
-			"committee": "National Science Foundation Proposal Review Panel",
+			"title": "Panel member",
+			"committee": "National Science Foundation Review Panel",
 			"start": 2012,
 			"end": null,
 			"level": "national",
-			"description": "I review and recommend grant proposals."
+			"description": "I review and recommend grant proposals for CISE and EHR panels related to HCI, software engineering, and CS education."
 		},
 		{
 			"title": "Co-founder",
