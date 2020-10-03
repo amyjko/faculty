@@ -380,7 +380,7 @@ class Vita extends React.Component {
 
 				{this.getTable(profile.getDoctoralCommmitees(), "doctoralCommittee", "startdate", "enddate", "name", "department")}
 				
-				<h2>Service</h2>
+				<h1>Service</h1>
 
 				<h3>Academic Program Chair</h3>
 				
@@ -447,13 +447,55 @@ class Vita extends React.Component {
 				}
 				</div>
 
-				<h3>Other Service</h3>
+				<h3>International Service</h3>
 
-				{this.getChunkList(
-					profile.getService(() => true, service => -service.start), 
-					true,
-					"service", "start", "end", "title", "committee"
-				)}
+				{
+					this.getChunkList(
+						profile.getService(service => service.level === "international", service => -service.start), 
+						true,
+						"service", "start", "end", "title", "committee"
+					)
+				}
+
+				<h3>National Service</h3>
+
+				{
+					this.getChunkList(
+						profile.getService(service => service.level === "national", service => -service.start), 
+						true,
+						"service", "start", "end", "title", "committee"
+					)
+				}
+
+				<h3>Regional Service</h3>
+
+				{
+					this.getChunkList(
+						profile.getService(service => service.level === "regional", service => -service.start), 
+						true,
+						"service", "start", "end", "title", "committee"
+					)
+				}
+
+				<h3>University Service</h3>
+
+				{
+					this.getChunkList(
+						profile.getService(service => service.level === "university", service => -service.start), 
+						true,
+						"service", "start", "end", "title", "committee"
+					)
+				}
+
+				<h3>Departmental Service</h3>
+
+				{
+					this.getChunkList(
+						profile.getService(service => service.level === "departmental", service => -service.start), 
+						true,
+						"service", "start", "end", "title", "committee"
+					)
+				}
 
 			</div>
 		)

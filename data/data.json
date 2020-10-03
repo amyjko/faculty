@@ -5994,97 +5994,197 @@
 			"title": "Director",
 			"committee": "CS for All Washington. Leading policy, community organizing, and advocacy for Washington state's K-12 CS for All efforts via the NSF Funded Exploring Computing Education Pathways project (https://cseforallwa.org, https://ecepalliance.org).",
 			"start": 2018,
-			"end": null
+			"end": null,
+			"level": "regional"
 		},
 		{
 			"title": "Committee Member",
 			"committee": "Computing Research Association’s Education Committee (CRA-E)",
 			"start": 2020,
-			"end": null
+			"end": null,
+			"level": "international"
 		},
 		{
 			"title": "Secretary",
 			"committee": "Seattle Public Schools CS Advisory Board.",
 			"start": 2018,
-			"end": null
+			"end": null,
+			"level": "regional"
 		},
 		{
 			"title": "Committee member",
 			"committee": "Computing Research Association (CRA) Undergraduate Research Award",
 			"start": 2018,
-			"end": null
+			"end": null,
+			"level": "international"
 		},
 		{
 			"title": "Co-Chair",
 			"committee": "Doctoral Consortium, ACM International Computing Education Research Conference",
 			"start": 2018,
-			"end": 2019
+			"end": 2019,
+			"level": "international"
 		},
 		{
 			"title": "Member",
 			"committee": "ACM Education Advisory Council",
 			"start": 2017,
-			"end": 2020
+			"end": 2020,
+			"level": "international"
 		},
 		{
 			"title": "Member",
 			"committee": "Washington State Computer Science Leadership Team",
 			"start": 2017,
-			"end": null
+			"end": null,
+			"level": "regional"
 		},
 		{
 			"title": "Curriculum design committee member",
 			"committee": "Global Innovation Exchange (GIX), University of Washington",
 			"start": 2015,
-			"end": 2015
+			"end": 2015,
+			"level": "university"
 		},
 		{
 			"title": "Co-author",
 			"committee": "CRA Whitepaper on Computing Education Research",
 			"start": 2015,
-			"end": 2015
+			"end": 2015,
+			"level": "international"
 		},
 		{
 			"title": "Director",
 			"committee": "EUSES Consortium",
 			"start": 2013,
-			"end": 2015
+			"end": 2015,
+			"level": "national"
 		},
 		{
 			"title": "Steering Committee Member",
 			"committee": "IEEE Symposium on Visual Languages and Human-Centric Computing",
 			"start": 2011,
-			"end": 2015
+			"end": 2015,
+			"level": "international"
 		},
 		{
 			"title": "Co-organizer",
 			"committee": "Dagstuhl on Human-Centered Software Development Tools",
 			"start": 2014,
-			"end": 2014
+			"end": 2014,
+			"level": "international"
 		},
 		{
 			"title": "Panel member (CISE, EHR)",
 			"committee": "National Science Foundation Proposal Review Panel",
 			"start": 2012,
-			"end": 2018
+			"end": 2018,
+			"level": "national"
 		},
 		{
 			"title": "Co-founder",
 			"committee": "Masters in Human-Computer Interaction and Design, University of Washington",
 			"start": 2013,
-			"end": 2013
+			"end": 2013,
+			"level": "university"
 		},
 		{
 			"title": "Co-organizer",
 			"committee": "DUB Retreat, University of Washington",
 			"start": 2013,
-			"end": 2013
+			"end": 2013,
+			"level": "university"
 		},
 		{
 			"title": "Graduate Consortium Chair",
 			"committee": "IEEE Symposium on Visual Languages and Human-Centric Computing",
 			"start": 2009,
-			"end": 2010
+			"end": 2010,
+			"level": "international"
+		},
+		{
+			"title": "Member",
+			"committee": "iSchool Recognitions Committee",
+			"start": 2008,
+			"end": 2009,
+			"level": "departmental"
+		},
+		{
+			"title": "Member",
+			"committee": "iSchool Ph.D. Admissions Committee",
+			"start": 2009,
+			"end": 2010,
+			"level": "departmental"
+		},
+		{
+			"title": "Member",
+			"committee": "iSchool Informatics Program Committee",
+			"start": 2010,
+			"end": 2012,
+			"level": "departmental"
+		},
+		{
+			"title": "Member",
+			"committee": "iSchool Elected Faculty Council",
+			"start": 2012,
+			"end": 2013,
+			"level": "departmental"
+		},
+		{
+			"title": "Member",
+			"committee": "MHCI+D Faculty Search",
+			"start": 2012,
+			"end": 2013,
+			"level": "university"
+		},
+		{
+			"title": "Member",
+			"committee": "iSchool Faculty Search",
+			"start": 2012,
+			"end": 2013,
+			"level": "departmental"
+		},
+		{
+			"title": "Member",
+			"committee": "MHCI+D Executive Committee",
+			"start": 2013,
+			"end": 2015,
+			"level": "university"
+		},
+		{
+			"title": "Member",
+			"committee": "iSchool Faculty search",
+			"start": 2013,
+			"end": 2014,
+			"level": "departmental"
+		},
+		{
+			"title": "Chair",
+			"committee": "iSchool Informatics Program Committee",
+			"start": 2016,
+			"end": null,
+			"level": "departmental"
+		},
+		{
+			"title": "Chair",
+			"committee": "iSchool Informatics Admissions Committee",
+			"start": 2016,
+			"end": 2020,
+			"level": "departmental"
+		},
+		{
+			"title": "Chair",
+			"committee": "iSchool Academics Council",
+			"start": 2016,
+			"end": null,
+			"level": "departmental"
+		},
+		{
+			"title": "Chair",
+			"committee": "iSchool Leadership Council",
+			"start": 2016,
+			"end": null,
+			"level": "departmental"
 		}
 	],
 	"funding": [

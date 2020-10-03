@@ -466,7 +466,8 @@
 					"title": { "type": "string" },
 					"committee": { "type": "string" },
 					"start": { "type": "integer", "minimum": 2000 },
-					"endd": { "type": ["integer", "null"], "minimum": 2000 }
+					"end": { "type": ["integer", "null"], "minimum": 2000 },
+					"level": { "type": "string", "enum": ["departmental", "university", "regional", "national", "international"] }
 				}	
 			}
 		},
