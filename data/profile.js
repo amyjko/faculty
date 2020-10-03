@@ -15,6 +15,15 @@ class Profile {
 			trip.time = (new Date(trip.year, trip.month - 1, trip.day)).getTime();
 		});
 
+		// Parse travel dates.
+		_.each(this.json.talks, talk => {
+			var parts = talk.date.split(".");
+			talk.year = parseInt(parts[0]);
+			talk.month = parseInt(parts[1]);
+			talk.day = parseInt(parts[2]);
+			talk.time = (new Date(talk.year, talk.month - 1, talk.day)).getTime();
+		});
+		
 		// Initialize a list of publication tags
 		this.json.publicationFacets = {};
 

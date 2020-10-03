@@ -7,7 +7,17 @@ class Chunk extends React.Component {
 	convertArrayToNote(data) {
 		
 		if(data && _.isArray(data))
-				return _.map(data, (entry, index) => { return <small key={"note" + index}>&ndash;{entry}<br/></small>; });
+				return <ul>
+					{
+						_.map(
+							data, 
+							(entry, index) => 
+								<li key={index} className="note">
+									{entry}
+								</li>
+						)
+					}
+				</ul>;
 		else
 			return data;
 		
@@ -17,7 +27,7 @@ class Chunk extends React.Component {
 	
 		var end = "";
 		if(this.props.stop !== "none" && this.props.start !== this.props.stop)
-			end = "-" + (this.props.stop === null ? "present" : this.props.stop);
+			end = (this.props.stop === null ? "present" : this.props.stop);
 
 		var three = this.convertArrayToNote(this.props.three);
 		var four = this.convertArrayToNote(this.props.four);
@@ -25,58 +35,99 @@ class Chunk extends React.Component {
 		var six = this.convertArrayToNote(this.props.six);
 
 		return (
-			<div className="row">
-				<div className="col-md-2 date">
-					{this.props.start}{end}
-				</div>
-				<div className="col-md-10">
-					<strong>{this.props.header}</strong>
-					{this.props.two ? <span><br/>{this.props.two} </span> : null}
-					{three ? <div><small>{three}</small></div> : null}
-					{four ? <div><small>{four}</small></div> : null}
-					{five ? <div><small>{five}</small></div> : null}
-					{six ? <div><small>{six}</small></div> : null}
+			<div className={"chunk " + (this.props.wrap ? "col-md-6" : "col-md-12")} style={ this.props.clear ? { clear: "both" } : null}>
+				<div className={"row"}>
+					<div className="col-md-2 date">
+						{this.props.start + (end ? "-" : "")}{end}
+					</div>
+					<div className="col-md-10">
+						<strong className="chunk-header">{this.props.header}</strong>
+						{this.props.two ? <span><br/>{this.props.two} </span> : null}
+						{three ? <div><small>{three}</small></div> : null}
+						{four ? <div><small>{four}</small></div> : null}
+						{five ? <div><small>{five}</small></div> : null}
+						{six ? <div><small>{six}</small></div> : null}
+					</div>
 				</div>
 			</div>
 		);
+
 	}
 }
 
 class Vita extends React.Component {
 	
-	getPapers(kind) {
+	getPapers(kind, splitByYears=false, columns=false) {
 		
-		return _.map(
-			this.props.app.getProfile().getPublications(
-				pub => pub.kind === kind,
-				pub => -pub.year
-			),
-			(paper, index) => <Paper {...paper} app={this.props.app} key={kind + index} static={true} />
+		var pubs = this.props.app.getProfile().getPublications(
+			pub => pub.kind === kind,
+			pub => -pub.year
 		);
+
+		var count = 0;
+		var rows = [];
+		var yearColumns = splitByYears ? 6 : columns ? 6 : 12;
+
+		_.each(
+			pubs,
+			(pub, index) => {
+				if(splitByYears) {
+					let newYear = index === 0 || (index > 0 && pub.year !== pubs[index - 1].year);
+					if(newYear) {
+						count = 0;
+						let yearCount = 1;
+						let yearIndex = index + 1;
+						while(yearIndex < pubs.length && pubs[yearIndex].year === pubs[index].year) {
+							yearCount++;
+							yearIndex++;
+						}
+						yearColumns = yearCount <= 1 ? 12 : 6;
+						rows.push(<div key={"year" + index} className="col-md-12"><h4>{pub.year}</h4></div>);
+					}
+				}
+				if((splitByYears || columns) && count % 2 === 0) {
+					rows.push(<div key={"clear" + index} className="clearfix" />);
+				}
+				rows.push(
+					<div key={"paper" + index} className={"col-md-" + yearColumns}>
+						<Paper {...pub} app={this.props.app} key={kind + index} static={true} />
+					</div>
+				);
+				count++;
+			}
+		);
+
+		return <div className="row">{rows}</div>
 
 	}
 	
-getChunkList(list, prefix, start, stop, header, two, three, four, five, six) {
+	getChunkList(list, wrap, prefix, start, stop, header, two, three, four, five, six) {
 		
-		return _.map(list, (entry, index) => {
-			return this.getChunk(
-				prefix + index, 
-				entry[start],
-				stop === null ? "none" : entry[stop],
-				entry[header],
-				entry[two],
-				entry[three],
-				entry[four],
-				entry[five],
-				entry[six]
-			);
-		});
+		return <div className="row">
+			{
+				_.map(list, (entry, index) => 
+					this.getChunk(
+						prefix + index, 
+						wrap,
+						index % 2 === 0,
+						entry[start],
+						stop === null ? "none" : entry[stop],
+						entry[header],
+						entry[two],
+						entry[three],
+						entry[four],
+						entry[five],
+						entry[six]
+					)
+				)
+			}
+		</div>
 		
 	}
 	
-	getChunk(key, start, stop, header, two, three, four, five, six) {
+	getChunk(key, wrap, clear, start, stop, header, two, three, four, five, six) {
 		
-		return <Chunk key={key} start={start} stop={stop} header={header} two={two} three={three} four={four} five={five} six={six}/>;
+		return <Chunk key={key} wrap={wrap} clear={clear} start={start} stop={stop} header={header} two={two} three={three} four={four} five={five} six={six}/>;
 		
 	}
 	
@@ -97,23 +148,29 @@ getChunkList(list, prefix, start, stop, header, two, three, four, five, six) {
 			
 		});
 			
-		return <table className="table table-striped"><tbody>{rows}</tbody></table>;	
+		return <table className="table"><tbody>{rows}</tbody></table>;	
 				
 	}
 	
 	render() {
 		
 		let profile = this.props.app.getProfile();
-		var cv = profile.getCV();
 		
 		return (
 			<div className="cv">
 
-				<h1>Amy J. Ko, Ph.D.</h1>
-				<div className="lead">
-					Professor
-					<br/>The Information School
-					<br/>University of Washington, Seattle
+				<div className="row">
+					<div className="col-md-9 col-sm-9">
+						<h1>Amy J. Ko, Ph.D.</h1>
+						<div className="lead">
+							Professor
+							<br/>The Information School
+							<br/>University of Washington, Seattle
+						</div>
+					</div>
+					<div className="col-md-3 col-sm-3 hidden-xs">
+						<img className='img-thumbnail' alt="Headshot of Amy J. Ko" src={this.props.app.getWebRoot() + "/images/headshots/mug-ajko.jpg"} />
+					</div>
 				</div>
 				
 				<hr/>
@@ -124,25 +181,40 @@ getChunkList(list, prefix, start, stop, header, two, three, four, five, six) {
 
 				<h2>Education</h2>
 
-				{this.getChunkList(profile.getDegrees(), "degree", "year", null, "degree", "institution", "thesis", "committee")}
+				{
+					this.getChunkList(
+						profile.getDegrees(), 
+						true, 
+						"degree", "year", null, "degree", "institution", "thesis", "committee"
+					)
+				}
 	
 				<h2>Academic appointments</h2>
 				
-				{this.getChunkList(profile.getJobs(job => job.academic, job => -job.startdate), "job", "startdate", "enddate", "title", "organization")}
+				{
+					this.getChunkList(
+						profile.getJobs(job => job.academic, job => -job.startdate), 
+						true,
+						"job", "startdate", "enddate", "title", "organization"
+					)
+				}
 
 				<h2>Industry appointments</h2>
 				
-				{this.getChunkList(profile.getJobs(job => !job.academic, job => -job.startdate), "industryJob", "startdate", "enddate", "title", "organization")}
+				{this.getChunkList(
+					profile.getJobs(job => !job.academic, job => -job.startdate), 
+					true,
+					"industryJob", "startdate", "enddate", "title", "organization")
+				}
 
-				<h2>Honors, Awards, and Recognitions</h2>
-
-				<h3>Most Influential Paper Awards</h3>
+				<h2>Most Influential Paper Awards</h2>
 
 				{this.getChunkList(
 					profile.getPublications(
 						pub => pub.award && _.includes(pub.award, "most influential paper"),
 						pub => -pub.year
 					),
+					true,
 					"mostInfluentialPaperAward", 
 					"year", 
 					null, 
@@ -151,13 +223,14 @@ getChunkList(list, prefix, start, stop, header, two, three, four, five, six) {
 					)
 				}
 			
-				<h3>Best Paper Awards</h3>
+				<h2>Best Paper Awards</h2>
 
 				{this.getChunkList(
 					profile.getPublications(
 						pub => pub.award && (_.includes(pub.award, "best paper") || _.includes(pub.award, "best paper honorable mention")),
 						pub => -pub.year
 					),
+					true,
 					"bestPaperAward", 
 					"year", 
 					null, 
@@ -166,13 +239,17 @@ getChunkList(list, prefix, start, stop, header, two, three, four, five, six) {
 					)
 				}
 			
-				<h3>Honors and Recognitions</h3>
+				<h2>Honors and Recognitions</h2>
 
-				{this.getTable(profile.getRecognitions(rec => true, rec => -rec.year), "award", "year", null, "title")}
+				{this.getTable(profile.getRecognitions(() => true, rec => -rec.year), "award", "year", null, "title")}
 
 				<h2>Funding</h2>
 
-				{this.getChunkList(profile.getFunding(() => true, funding => -funding.startdate), "funding", "startdate", "enddate", "title", "amount", "funder", "award", "investigators", "description")}
+				{this.getChunkList
+					(profile.getFunding(() => true, funding => -funding.startdate), 
+					true,
+					"funding", "startdate", "enddate", "title", "amount", "funder", "award", "investigators", "description")
+				}
 
 				<h2>Publications</h2>
 				
@@ -182,72 +259,86 @@ getChunkList(list, prefix, start, stop, header, two, three, four, five, six) {
 
 				<h3>Refereed Conference Papers</h3>
 
-				{this.getPapers("refereed conference paper")}				
+				{this.getPapers("refereed conference paper", true)}				
 
 				<h3>Journal Articles</h3>
 				
-				{this.getPapers("journal article")}				
-				
-				<h3>Short Refereed Conference Papers</h3>
-				
-				{this.getPapers("refereed short conference paper")}				
-			
+				{this.getPapers("journal article", false, true)}
+							
 				<h3>Refereed Workshop Papers</h3>
 				
-				{this.getPapers("refereed workshop paper")}				
+				{this.getPapers("refereed workshop paper", false, true)}				
 
-				<h3>Juried Conference Papers</h3>
+				<h3>Books</h3>
 				
-				{this.getPapers("juried conference paper")}				
+				{this.getPapers("book")}				
 
 				<h3>Book Chapters</h3>
 				
-				{this.getPapers("book chapter")}				
+				{this.getPapers("book chapter", false, true)}				
 
-				<h3>Refereed Invited Articles</h3>
+				<h3>Juried Conference Papers</h3>
 				
-				{this.getPapers("refereed invited article")}
+				{this.getPapers("juried conference paper", false, true)}
+
+				<h3>Refereed Magazine Articles</h3>
+				
+				{this.getPapers("refereed magazine article", false, true)}
 
 				<h3>Non-Refereed Workshop Papers</h3>
 				
-				{this.getPapers("non-refereed workshop paper")}				
+				{this.getPapers("non-refereed workshop paper", false, true)}				
 
 				<h3>Technical Reports</h3>
 				
-				{this.getPapers("technical report")}
+				{this.getPapers("technical report", false, true)}
 				
 				<h2>Press</h2>
 
-				{this.getChunkList(
+				{
+				this.getChunkList(
 					profile.getImpacts(
 						impact => impact.kind === "press",
 						impact => -impact.start
-					), "press", "start", null, "title", "author", "source")}
+					), 
+					true,
+					"press", "start", null, "title", "author", "source")}
 				
 				<h2>Invited Keynotes</h2>
 
 				{this.getChunkList(
 					_.filter(profile.getTalks(), (talk) => { return talk.keynote; }), 
-					"keynote", "date", null, "title", "venue")}
+					true,
+					"keynote", "year", null, "title", "venue")}
 				
 				<h2>Invited Talks</h2>
 
 				{this.getChunkList(
 					_.filter(profile.getTalks(), (talk) => { return !talk.keynote; }), 
-					"invitedtalk", "date", null, "title", "venue")}				
+					true,
+					"invitedtalk", "year", null, "title", "venue")}				
 
 				<h2>Patents</h2>
 			
-				{this.getChunkList(profile.getPatents(), "patent", "year", null, "title", "number", "inventors")}
+				{
+					this.getChunkList(
+						profile.getPatents(), 
+						false,
+						"patent", "year", null, "title", "number", "inventors"
+					)
+				}
 
 				<h2>Teaching</h2>
 
 				<p>All scores are <a href="http://www.washington.edu/assessment/course-evaluations/reports/course-reports/adjusted-medians/">adjusted combined medians</a>, which attempt to measure students' perceptions of the effectiveness of an instructor's teaching. The scale is from "Very Poor" (0) to "Excellent" (5).</p>
 
+				<div className="row">
 				{
-					_.map(profile.getClasses(), course => 
+					_.map(profile.getClasses(), (course, index) => 
 						<Chunk 
-							key={course.id} 
+							key={course.id}
+							wrap={true}
+							clear={index % 2 === 0}
 							start={_.orderBy(course.offerings, ["year"], ["asc"])[0].year} stop={_.orderBy(course.offerings, ["year"], ["desc"])[0].year} 
 							header={course.number + " " + course.title}
 							two={course.level}
@@ -256,7 +347,8 @@ getChunkList(list, prefix, start, stop, header, two, three, four, five, six) {
 							five={"Mean course evaluation: " + (_.reduce(course.offerings, (sum, offer) => sum + offer.score, 0.0) / course.offerings.length).toPrecision(2) + "/5.0"}
 						/>
 					)					
-				}				
+				}
+				</div>
 
 				<h2>Doctoral Student Supervision</h2>
 				
@@ -273,6 +365,7 @@ getChunkList(list, prefix, start, stop, header, two, three, four, five, six) {
 							if(value.coadvisor !== null)
 								value.coadvisor = "Co-advisor: " + value.coadvisor;
 						}), 
+						true,
 						"doctoralChair", 
 						"startdate", 
 						"enddate", 
@@ -291,22 +384,43 @@ getChunkList(list, prefix, start, stop, header, two, three, four, five, six) {
 
 				<h3>Academic Program Chair</h3>
 				
-				{this.getChunkList(profile.getAcademicChairing(), "academicChair", "startdate", "enddate", "program", "title", "notes")}
+				{
+					this.getChunkList(
+						profile.getAcademicChairing(), 
+						false,
+						"academicChair", "startdate", "enddate", "program", "title", "notes"
+					)
+				}
 
 				<h3>Journal Editorial Boards</h3>
 			
-				{this.getChunkList(profile.getEditor(), "editor", "startdate", "enddate", "venue", "title")}
+				{
+					this.getChunkList(
+						profile.getEditor(), 
+						false,
+						"editor", "startdate", "enddate", "venue", "title"
+					)
+				}
 
 				<h3>Conference Program Chair</h3>
 
-				{this.getChunkList(profile.getProgramChairing(), "programChair", "year", null, "title", "venue", "conference")}
+				{
+					this.getChunkList(
+						profile.getProgramChairing(), 
+						true,
+						"programChair", "year", null, "title", "venue", "conference"
+					)
+				}
 
 				<h3>Conference Program Committee Member</h3>
 
+				<div className="row">
 				{
 					_.map(profile.getProgramCommittees(() => true, cmte => -cmte.years.sort().reverse()[0]), (cmte, index) => 
 						<Chunk 
 							key={index} 
+							wrap={true}
+							clear={index % 2 === 0}
 							start={cmte.years.sort()[0]} 
 							stop={cmte.years.sort().reverse()[0]}
 							header={cmte.venue}
@@ -314,23 +428,32 @@ getChunkList(list, prefix, start, stop, header, two, three, four, five, six) {
 						/>
 					)					
 				}
+				</div>
 
 				<h3>Reviewer</h3>
 
+				<div className="row">
 				{
 					_.map(profile.getReviewing(() => true, venue => -venue.years.sort().reverse()[0]), (venue, index) => 
 						<Chunk 
-							key={index} 
+							key={index}
+							wrap={true}
+							clear={index % 2 === 0}
 							start={venue.years.sort()[0]} 
 							stop={venue.years.sort().reverse()[0]} 
 							header={venue.venue}
 						/>
 					)					
 				}
+				</div>
 
 				<h3>Other Service</h3>
 
-				{this.getChunkList(profile.getService(() => true, service => -service.start), "service", "start", "end", "title", "committee")}
+				{this.getChunkList(
+					profile.getService(() => true, service => -service.start), 
+					true,
+					"service", "start", "end", "title", "committee"
+				)}
 
 			</div>
 		)
