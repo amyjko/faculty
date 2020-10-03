@@ -3123,7 +3123,7 @@
 			"description": "A critical part of scholarly progress is synthesizing and explaining what we've learned. Sometimes this results in robust discussions of prior work; other times we go further, publishing standalone papers and book chapters that help newcomers make sense of what we know.",
 			"funding": ["@career", "@gidget", "@csassess", "@explore"],
 			"people": ["@ajko"],
-			"papers": ["cerhandbooktools", "eusessurvey", "cerhandoutside", "cerhandbooktools", "boostingproductivity", "fourlenses", "noproductivity", "monitoring"],
+			"papers": ["cerhandbooktools", "eusessurvey", "cerhandoutside", "cerhandbooktools", "boostingproductivity", "fourlenses", "noproductivity", "monitoring", "uist", "cooperativesoft", "designmethods"],
 			"links": [],
 			"startdate": 2009,
 			"stopdate": null
