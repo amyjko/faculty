@@ -5797,30 +5797,6 @@
 			"years": [2004, 2005]
 		}
 	],
-	"academicChair": [
-		{
-			"title": "Program Chair, iSchool's undergraduate major, ~425+ students",
-			"program": "Informatics", 
-			"startdate": 2017,
-			"enddate": null,
-			"notes": [
-				"Reframed curriculum around the study, design, and development of information technology",
-				"Reduced reliance on guest faculty",
-				"Increased inclusiveness and scalability of admissions"
-			]
-		},
-		{
-			"title": "Program Chair, UW's interdisciplinary professional degree, ~35 students",
-			"program": "Masters in HCI+Design", 
-			"startdate": 2016,
-			"enddate": 2017,
-			"notes": [
-				"Renewed memorandum of agreement between four units and graduate school", 
-				"Hired new director, Michael Smith", 
-				"Secured design studio space"
-			]
-		}
-	],
 	"doctoralCommittees": [
 		{
 			"name": "Jean Salac",
@@ -6103,7 +6079,7 @@
 		{
 			"title": "Panel member",
 			"committee": "National Science Foundation Review Panel",
-			"start": 2012,
+			"start": 2011,
 			"end": null,
 			"level": "national",
 			"description": "I review and recommend grant proposals for CISE and EHR panels related to HCI, software engineering, and CS education."
@@ -6165,6 +6141,14 @@
 			"description": "I helped advance the interests of faculty in the school through policy change and advocacy to the dean, hepling to secure an annual dispursement of flexible funding."
 		},
 		{
+			"title": "Program Chair",
+			"committee": "Masters in HCI+Design", 
+			"start": 2016,
+			"end": 2017,
+			"level": "university",
+			"description": "I led the fourth year of the masters degree, renewing the campus-wide contract supporting its resources, hiring a new director to lead the program for the next three years, and securing a dedicated studio space in the former UW Alumni house."
+		},
+		{
 			"title": "Member",
 			"committee": "MHCI+D Faculty Search",
 			"start": 2012,
@@ -6189,12 +6173,12 @@
 			"description": "I helped set policy and procedures for the masters degree."
 		},
 		{
-			"title": "Chair",
-			"committee": "iSchool Informatics Program Committee",
-			"start": 2016,
+			"title": "Program Chair",
+			"committee": "Informatics",
+			"start": 2017,
 			"end": null,
 			"level": "departmental",
-			"description": "I identify curricular, community, and policy priorities, organize discussions of proposed changes, and implement the changes with the support of staff."
+			"description": "I oversee the iSchool's undergraduate degree, which has nearly 500 students and graduates more than 200 per year. I identify curricular, community, and policy priorities, organize discussions of proposed changes, and implement the changes with the support of staff.I reframed the curriculum around the study, design, and development of information technology for the good of people, organizations, and society; I reduced reliance on guest faculty; I increased the inclusiveness and scalability of admissions; I grew the program by over 50%; and I increased the percept of women in the program to 40% and increased the representation of Black and Latinx by 100%."
 		},
 		{
 			"title": "Chair",

@@ -5,7 +5,7 @@
 	"required": [
 		"sources", "pubs", "people", "projects", "posts", 
 		"impacts", "degrees", "patents", "jobs", "awards", "editor",
-		"programChairing", "programCommittees", "reviewing", "academicChair", 
+		"programChairing", "programCommittees", "reviewing", 
 		"doctoralCommittees", "service", "funding", "travel", 
 		"talks", "classes", "books", "years", "commitments"
 	],
@@ -427,19 +427,6 @@
 						"type": "array",
 						"items": { "type": "integer", "minimum": 2000 }
 					}
-				}
-			}
-		},
-		"academicChair": {
-			"type": "array",
-			"description": "academic chairing positions",
-			"itmes": {
-				"type": "object",
-				"required": ["title", "program", "startdate", "enddate", "notes"],
-				"properties": {
-					"startdate": { "type": "integer", "minimum": 2000 },
-					"enddate": { "type": ["integer", "null"], "minimum": 2000 },
-					"notes": { "type": "array", "items": { "type": "string" }}
 				}
 			}
 		},

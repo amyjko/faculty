@@ -382,16 +382,6 @@ class Vita extends React.Component {
 				
 				<h1>Service</h1>
 
-				<h3>Academic Program Chair</h3>
-				
-				{
-					this.getChunkList(
-						profile.getAcademicChairing(), 
-						false,
-						"academicChair", "startdate", "enddate", "program", "title", "notes"
-					)
-				}
-
 				<h3>Journal Editorial Boards</h3>
 			
 				{
