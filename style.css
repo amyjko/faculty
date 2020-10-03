@@ -236,7 +236,7 @@ body .cv {
 }
 
 .cv h1 {
-	font-size: 200%;
+	font-size: 180%;
 }
 
 .cv h2 {
@@ -259,6 +259,10 @@ body .cv {
 
 .cv .chunk {
 	margin-bottom: 2em;
+}
+
+.cv .table {
+	margin-bottom: 3em;
 }
 
 .chunk .note {

@@ -26,7 +26,7 @@ class Chunk extends React.Component {
 	render() {
 	
 		var end = "";
-		if(this.props.stop !== "none" && this.props.start !== this.props.stop)
+		if(this.props.stop !== null && this.props.start !== this.props.stop)
 			end = (this.props.stop === null ? "present" : this.props.stop);
 
 		var three = this.convertArrayToNote(this.props.three);
@@ -101,36 +101,31 @@ class Vita extends React.Component {
 
 	}
 	
-	getChunkList(list, wrap, prefix, start, stop, header, two, three, four, five, six) {
+	getChunkList(list, wrap, start, stop, header, two, three, four, five, six) {
 		
 		return <div className="row">
 			{
+				// Convert each entry into the list, clearing every two entries.
 				_.map(list, (entry, index) => 
-					this.getChunk(
-						prefix + index, 
-						wrap,
-						index % 2 === 0,
-						entry[start],
-						stop === null ? "none" : entry[stop],
-						entry[header],
-						entry[two],
-						entry[three],
-						entry[four],
-						entry[five],
-						entry[six]
-					)
+					<Chunk 
+						key={index} 
+						wrap={wrap} 
+						clear={index % 2 === 0} 
+						start={typeof start === "function" ? start.call(null, entry) : entry[start]} 
+						stop={typeof stop === "function" ? stop.call(null, entry) : stop === null ? null : entry[stop]} 
+						header={typeof header === "function" ? header.call(null, entry) : entry[header]} 
+						two={typeof two === "function" ? two.call(null, entry) : entry[two]} 
+						three={typeof three === "function" ? three.call(null, entry): entry[three]} 
+						four={typeof four === "function" ? four.call(null, entry): entry[four]} 
+						five={typeof five === "function" ? five.call(null, entry): entry[five]} 
+						six={typeof six === "function" ? six.call(null, entry): entry[six]}
+					/>
 				)
 			}
 		</div>
 		
 	}
-	
-	getChunk(key, wrap, clear, start, stop, header, two, three, four, five, six) {
 		
-		return <Chunk key={key} wrap={wrap} clear={clear} start={start} stop={stop} header={header} two={two} three={three} four={four} five={five} six={six}/>;
-		
-	}
-	
 	getTable(list, prefix, start, stop, header, detail, secondDetail) {
 		
 		var rows = _.map(list, (entry, index) => {
@@ -179,33 +174,35 @@ class Vita extends React.Component {
 					I study equitable ways for humanity to learn the power and perils of computing and harness it for good.
 				</div>
 
-				<h2>Education</h2>
+				<h1>Education</h1>
 
 				{
 					this.getChunkList(
 						profile.getDegrees(), 
 						true, 
-						"degree", "year", null, "degree", "institution", "thesis", "committee"
+						"year", null, "degree", "institution", "thesis", "committee"
 					)
 				}
 	
-				<h2>Academic appointments</h2>
+				<h1>Academic appointments</h1>
 				
 				{
 					this.getChunkList(
 						profile.getJobs(job => job.academic, job => -job.startdate), 
 						true,
-						"job", "startdate", "enddate", "title", "organization"
+						"startdate", "enddate", "title", "organization"
 					)
 				}
 
-				<h2>Industry appointments</h2>
+				<h1>Industry appointments</h1>
 				
 				{this.getChunkList(
 					profile.getJobs(job => !job.academic, job => -job.startdate), 
 					true,
-					"industryJob", "startdate", "enddate", "title", "organization")
+					"startdate", "enddate", "title", "organization")
 				}
+
+				<h1>Honors and Recognitions</h1>
 
 				<h2>Most Influential Paper Awards</h2>
 
@@ -215,7 +212,6 @@ class Vita extends React.Component {
 						pub => -pub.year
 					),
 					true,
-					"mostInfluentialPaperAward", 
 					"year", 
 					null, 
 					"title", 
@@ -231,7 +227,6 @@ class Vita extends React.Component {
 						pub => -pub.year
 					),
 					true,
-					"bestPaperAward", 
 					"year", 
 					null, 
 					"title", 
@@ -239,60 +234,62 @@ class Vita extends React.Component {
 					)
 				}
 			
-				<h2>Honors and Recognitions</h2>
+				<h2>Recognitions</h2>
 
 				{this.getTable(profile.getRecognitions(() => true, rec => -rec.year), "award", "year", null, "title")}
 
-				<h2>Funding</h2>
+				<h1>Funding</h1>
 
 				{this.getChunkList
 					(profile.getFunding(() => true, funding => -funding.startdate), 
 					true,
-					"funding", "startdate", "enddate", "title", "amount", "funder", "award", "investigators", "description")
+					"startdate", "enddate", "title", "amount", "funder", "award", "investigators", "description")
 				}
 
-				<h2>Publications</h2>
+				<h1>Publications</h1>
 				
 				<p><small>Unlike most of academia, premiere conferences in Human-Computer Interaction (HCI), Software Engineering (SE), and Computing Education are selective venues for archival research. These conferences exceed many journals in their selectivity, visibility, and impact.</small></p>
 			
 				<p><small>Authorship order indicates the scope of my intellectual contribution to the work. However, because I collaborate closely with my Ph.D. students on research, they are first author on many of my key publications.</small></p>
 
-				<h3>Refereed Conference Papers</h3>
+				<h2>Refereed Conference Papers</h2>
 
 				{this.getPapers("refereed conference paper", true)}				
 
-				<h3>Journal Articles</h3>
+				<h2>Journal Articles</h2>
 				
 				{this.getPapers("journal article", false, true)}
 							
-				<h3>Refereed Workshop Papers</h3>
+				<h2>Refereed Workshop Papers</h2>
 				
 				{this.getPapers("refereed workshop paper", false, true)}				
 
-				<h3>Books</h3>
+				<h2>Books</h2>
 				
 				{this.getPapers("book")}				
 
-				<h3>Book Chapters</h3>
+				<h2>Book Chapters</h2>
 				
 				{this.getPapers("book chapter", false, true)}				
 
-				<h3>Juried Conference Papers</h3>
+				<h2>Juried Conference Papers</h2>
 				
 				{this.getPapers("juried conference paper", false, true)}
 
-				<h3>Refereed Magazine Articles</h3>
+				<h2>Refereed Magazine Articles</h2>
 				
 				{this.getPapers("refereed magazine article", false, true)}
 
-				<h3>Non-Refereed Workshop Papers</h3>
+				<h2>Non-Refereed Workshop Papers</h2>
 				
 				{this.getPapers("non-refereed workshop paper", false, true)}				
 
-				<h3>Technical Reports</h3>
+				<h2>Technical Reports</h2>
 				
 				{this.getPapers("technical report", false, true)}
 				
+				<h1>Impact</h1>
+
 				<h2>Press</h2>
 
 				{
@@ -302,21 +299,21 @@ class Vita extends React.Component {
 						impact => -impact.start
 					), 
 					true,
-					"press", "start", null, "title", "author", "source")}
+					"start", null, "title", "author", "source")}
 				
 				<h2>Invited Keynotes</h2>
 
 				{this.getChunkList(
 					_.filter(profile.getTalks(), (talk) => { return talk.keynote; }), 
 					true,
-					"keynote", "year", null, "title", "venue")}
+					"year", null, "title", "venue")}
 				
 				<h2>Invited Talks</h2>
 
 				{this.getChunkList(
 					_.filter(profile.getTalks(), (talk) => { return !talk.keynote; }), 
 					true,
-					"invitedtalk", "year", null, "title", "venue")}				
+					"year", null, "title", "venue")}				
 
 				<h2>Patents</h2>
 			
@@ -324,35 +321,32 @@ class Vita extends React.Component {
 					this.getChunkList(
 						profile.getPatents(), 
 						false,
-						"patent", "year", null, "title", "number", "inventors"
+						"year", null, "title", "number", "inventors"
 					)
 				}
 
-				<h2>Teaching</h2>
+				<h1>Teaching</h1>
 
 				<p>All scores are <a href="http://www.washington.edu/assessment/course-evaluations/reports/course-reports/adjusted-medians/">adjusted combined medians</a>, which attempt to measure students' perceptions of the effectiveness of an instructor's teaching. The scale is from "Very Poor" (0) to "Excellent" (5).</p>
 
-				<div className="row">
 				{
-					_.map(profile.getClasses(), (course, index) => 
-						<Chunk 
-							key={course.id}
-							wrap={true}
-							clear={index % 2 === 0}
-							start={_.orderBy(course.offerings, ["year"], ["asc"])[0].year} stop={_.orderBy(course.offerings, ["year"], ["desc"])[0].year} 
-							header={course.number + " " + course.title}
-							two={course.level}
-							three={course.description}
-							four={"Taught " + course.offerings.length + " times"}
-							five={"Mean course evaluation: " + (_.reduce(course.offerings, (sum, offer) => sum + offer.score, 0.0) / course.offerings.length).toPrecision(2) + "/5.0"}
-						/>
-					)					
+					this.getChunkList(
+						profile.getClasses(),
+						true,
+						course => _.orderBy(course.offerings, ["year"], ["asc"])[0].year,
+						course => _.orderBy(course.offerings, ["year"], ["desc"])[0].year,
+						course => course.number + " " + course.title,
+						"level",
+						"description",
+						course => "Taught " + course.offerings.length + " times",
+						course => "Mean course evaluation: " + (_.reduce(course.offerings, (sum, offer) => sum + offer.score, 0.0) / course.offerings.length).toPrecision(2) + "/5.0"
+					)
+
 				}
-				</div>
 
 				<h2>Doctoral Student Supervision</h2>
 				
-				<h3>Chair</h3>
+				<h3>Committee Chair</h3>
 
 				{
 					// Get the students and annotate the metadata for presentation.
@@ -366,7 +360,6 @@ class Vita extends React.Component {
 								value.coadvisor = "Co-advisor: " + value.coadvisor;
 						}), 
 						true,
-						"doctoralChair", 
 						"startdate", 
 						"enddate", 
 						"name", 
@@ -376,129 +369,101 @@ class Vita extends React.Component {
 					)
 				}
 				
-				<h3>Doctoral Committee Member</h3>
+				<h3>Committee Member</h3>
 
 				{this.getTable(profile.getDoctoralCommmitees(), "doctoralCommittee", "startdate", "enddate", "name", "department")}
 				
 				<h1>Service</h1>
 
-				<h3>Journal Editorial Boards</h3>
-			
+				<h3>Journal Editorial Boards</h3>		
 				{
 					this.getChunkList(
 						profile.getEditor(), 
 						false,
-						"editor", "startdate", "enddate", "venue", "title"
+						"startdate", "enddate", "venue", "title"
 					)
 				}
 
 				<h3>Conference Program Chair</h3>
-
-				<div className="row">
 				{
-					_.map(profile.getReviewing(
-						role => role.level === "chair", 
-						role => -role.years.sort().reverse()[0]), (role, index) => 
-						<Chunk 
-							key={index} 
-							wrap={true}
-							clear={index % 2 === 0}
-							start={role.years.sort()[0]} 
-							stop={role.years.sort().reverse()[0]}
-							header={role.venue}
-							two={role.title}
-						/>
-					)					
+					this.getChunkList(
+						profile.getReviewing(
+							role => role.level === "chair", 
+							role => -role.years.sort().reverse()[0]
+						),
+						true,
+						role => role.years.sort()[0], role => role.years.sort().reverse()[0], "venue", "title"
+					)
 				}
-				</div>
 
 				<h3>Conference Program Committee Member</h3>
-
-				<div className="row">
 				{
-					_.map(profile.getReviewing(
-						role => role.level === "pc", 
-						role => -role.years.sort().reverse()[0]), (role, index) => 
-						<Chunk 
-							key={index} 
-							wrap={true}
-							clear={index % 2 === 0}
-							start={role.years.sort()[0]} 
-							stop={role.years.sort().reverse()[0]}
-							header={role.venue}
-							two={role.title}
-						/>
-					)					
+					this.getChunkList(
+						profile.getReviewing(
+							role => role.level === "pc", 
+							role => -role.years.sort().reverse()[0]
+						),
+						true,
+						role => role.years.sort()[0], role => role.years.sort().reverse()[0], "venue", "title"
+					)
 				}
-				</div>
 
 				<h3>Reviewer</h3>
-
-				<div className="row">
 				{
-					_.map(profile.getReviewing(
-						role => role.level === "reviewer", 
-						role => -role.years.sort().reverse()[0]), (role, index) => 
-						<Chunk 
-							key={index} 
-							wrap={true}
-							clear={index % 2 === 0}
-							start={role.years.sort()[0]} 
-							stop={role.years.sort().reverse()[0]}
-							header={role.venue}
-							two={role.title}
-						/>
-					)					
+					this.getChunkList(
+						profile.getReviewing(
+							role => role.level === "reviewer", 
+							role => -role.years.sort().reverse()[0]
+						),
+						true,
+						role => role.years.sort()[0], 
+						role => role.years.sort().reverse()[0], 
+						"venue"
+					)
 				}
-				</div>
 
 				<h3>International Service</h3>
-
 				{
 					this.getChunkList(
 						profile.getService(service => service.level === "international", service => -service.start), 
 						true,
-						"service", "start", "end", "title", "committee", "description"
+						"start", "end", "title", "committee", "description"
 					)
 				}
 
 				<h3>National Service</h3>
-
 				{
 					this.getChunkList(
 						profile.getService(service => service.level === "national", service => -service.start), 
 						true,
-						"service", "start", "end", "title", "committee", "description"
+						"start", "end", "title", "committee", "description"
 					)
 				}
 
 				<h3>Regional Service</h3>
-
 				{
 					this.getChunkList(
 						profile.getService(service => service.level === "regional", service => -service.start), 
 						true,
-						"service", "start", "end", "title", "committee", "description"
+						"start", "end", "title", "committee", "description"
 					)
 				}
 
 				<h3>University Service</h3>
-
 				{
 					this.getChunkList(
 						profile.getService(service => service.level === "university", service => -service.start), 
 						true,
-						"service", "start", "end", "title", "committee", "description"
+						"start", "end", "title", "committee", "description"
 					)
 				}
 
 				<h3>Departmental Service</h3>
-
 				{
 					this.getChunkList(
 						profile.getService(service => service.level === "departmental", service => -service.start), 
 						true,
-						"service", "start", "end", "title", "committee", "description"
+						"start", "end", "title", "committee", "description"
 					)
 				}
 

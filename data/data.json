@@ -815,7 +815,7 @@
 			"deadname": true,
 			"year": 2015,
 			"title":"Explaining Visual Changes in Web Interfaces",
-			"source":"ACM Symposium on User Interface Software and Technology",
+			"source":"@uist",
 			"pages":"259-268",
 			"publisher": "ACM",
 			"authorizer":"http://dl.acm.org/authorize?N08341",
@@ -5510,7 +5510,7 @@
 			"title": "Associate Professor",
 			"organization": "University of Washington, The Information School and Paul G. Allen School of Computer Science & Engineering (courtesy)",
 			"startdate": 2014,
-			"enddate": null,
+			"enddate": 2020,
 			"academic": true
 		},
 		{
