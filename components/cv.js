@@ -453,7 +453,7 @@ class Vita extends React.Component {
 					this.getChunkList(
 						profile.getService(service => service.level === "international", service => -service.start), 
 						true,
-						"service", "start", "end", "title", "committee"
+						"service", "start", "end", "title", "committee", "description"
 					)
 				}
 
@@ -463,7 +463,7 @@ class Vita extends React.Component {
 					this.getChunkList(
 						profile.getService(service => service.level === "national", service => -service.start), 
 						true,
-						"service", "start", "end", "title", "committee"
+						"service", "start", "end", "title", "committee", "description"
 					)
 				}
 
@@ -473,7 +473,7 @@ class Vita extends React.Component {
 					this.getChunkList(
 						profile.getService(service => service.level === "regional", service => -service.start), 
 						true,
-						"service", "start", "end", "title", "committee"
+						"service", "start", "end", "title", "committee", "description"
 					)
 				}
 
@@ -483,7 +483,7 @@ class Vita extends React.Component {
 					this.getChunkList(
 						profile.getService(service => service.level === "university", service => -service.start), 
 						true,
-						"service", "start", "end", "title", "committee"
+						"service", "start", "end", "title", "committee", "description"
 					)
 				}
 
@@ -493,7 +493,7 @@ class Vita extends React.Component {
 					this.getChunkList(
 						profile.getService(service => service.level === "departmental", service => -service.start), 
 						true,
-						"service", "start", "end", "title", "committee"
+						"service", "start", "end", "title", "committee", "description"
 					)
 				}
 

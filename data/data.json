@@ -5992,199 +5992,219 @@
 	"service": [
 		{
 			"title": "Director",
-			"committee": "CS for All Washington. Leading policy, community organizing, and advocacy for Washington state's K-12 CS for All efforts via the NSF Funded Exploring Computing Education Pathways project (https://cseforallwa.org, https://ecepalliance.org).",
+			"committee": "CS for All Washington",
 			"start": 2018,
 			"end": null,
-			"level": "regional"
+			"level": "regional",
+			"description": "I organize the group, which meets  monthly to inform policy, organize community, and centralize information about about Washington state's K-12 CS for All efforts on the web (https://cseforallwa.org). Supported by the NSF-funded Exploring Computing Education Pathways project (https://ecepalliance.org)."
 		},
 		{
 			"title": "Committee Member",
 			"committee": "Computing Research Association’s Education Committee (CRA-E)",
 			"start": 2020,
 			"end": null,
-			"level": "international"
+			"level": "international",
+			"description": "I work on projects that help create equitable pathways to participating in CS research."
 		},
 		{
 			"title": "Secretary",
 			"committee": "Seattle Public Schools CS Advisory Board.",
 			"start": 2018,
 			"end": null,
-			"level": "regional"
+			"level": "regional",
+			"description": "I advise the city on its CS curriculum and teacher pathways."
 		},
 		{
 			"title": "Committee member",
-			"committee": "Computing Research Association (CRA) Undergraduate Research Award",
+			"committee": "Computing Research Association (CRA) Undergraduate Research Award Committee",
 			"start": 2018,
-			"end": null,
-			"level": "international"
+			"end": 2019,
+			"level": "international",
+			"description": "I helped select finalists and winners for the CRA award."
 		},
 		{
 			"title": "Co-Chair",
-			"committee": "Doctoral Consortium, ACM International Computing Education Research Conference",
+			"committee": "SIGCSE Doctoral Consortium",
 			"start": 2018,
 			"end": 2019,
-			"level": "international"
+			"level": "international",
+			"description": "I co-organized and co-ran the doctoral consortium, co-located with the ACM ICER conference annually."
 		},
 		{
 			"title": "Member",
 			"committee": "ACM Education Advisory Council",
 			"start": 2017,
 			"end": 2020,
-			"level": "international"
+			"level": "international",
+			"description": "I helped create resources, curriculum standards, and education guidelines for the global CS community."
 		},
 		{
 			"title": "Member",
 			"committee": "Washington State Computer Science Leadership Team",
 			"start": 2017,
-			"end": null,
-			"level": "regional"
+			"end": 2018,
+			"level": "regional",
+			"description": "I provided expertise on CS learning to help shape state policy."
 		},
 		{
 			"title": "Curriculum design committee member",
 			"committee": "Global Innovation Exchange (GIX), University of Washington",
 			"start": 2015,
 			"end": 2015,
-			"level": "university"
+			"level": "university",
+			"description": "I helped design and structure the The UW Master of Science in Technology Innovation Program."
 		},
 		{
 			"title": "Co-author",
 			"committee": "CRA Whitepaper on Computing Education Research",
 			"start": 2015,
 			"end": 2015,
-			"level": "international"
+			"level": "international",
+			"description": "I co-authored this whitepaper to help spread the word about the importance of CS education research in CS departments."
 		},
 		{
 			"title": "Director",
 			"committee": "EUSES Consortium",
 			"start": 2013,
 			"end": 2015,
-			"level": "national"
+			"level": "national",
+			"description": "I led annual meetings and maintained the website for the international research collective, and then officially ended the group."
 		},
 		{
 			"title": "Steering Committee Member",
 			"committee": "IEEE Symposium on Visual Languages and Human-Centric Computing",
 			"start": 2011,
 			"end": 2015,
-			"level": "international"
+			"level": "international",
+			"description": "I helped select future conference locations and device conference publication policy."
 		},
 		{
 			"title": "Co-organizer",
 			"committee": "Dagstuhl on Human-Centered Software Development Tools",
 			"start": 2014,
-			"end": 2014,
-			"level": "international"
+			"end": 2015,
+			"level": "international",
+			"description": "I helped propose, plan, and run the weeklong workshop"
 		},
 		{
 			"title": "Panel member (CISE, EHR)",
 			"committee": "National Science Foundation Proposal Review Panel",
 			"start": 2012,
-			"end": 2018,
-			"level": "national"
+			"end": null,
+			"level": "national",
+			"description": "I review and recommend grant proposals."
 		},
 		{
 			"title": "Co-founder",
 			"committee": "Masters in Human-Computer Interaction and Design, University of Washington",
 			"start": 2013,
-			"end": 2013,
-			"level": "university"
+			"end": 2014,
+			"level": "university",
+			"description": "I helped design, plan, and launch the inaugural year of the masters degree."
 		},
 		{
 			"title": "Co-organizer",
 			"committee": "DUB Retreat, University of Washington",
 			"start": 2013,
 			"end": 2013,
-			"level": "university"
+			"level": "university",
+			"description": "I co-organized the annual retreat for the HCI community at UW."
 		},
 		{
 			"title": "Graduate Consortium Chair",
 			"committee": "IEEE Symposium on Visual Languages and Human-Centric Computing",
 			"start": 2009,
 			"end": 2010,
-			"level": "international"
+			"level": "international",
+			"description": "I co-organized and ran the doctoral consortium, reaching 40 doctoral students."
 		},
 		{
 			"title": "Member",
 			"committee": "iSchool Recognitions Committee",
 			"start": 2008,
 			"end": 2009,
-			"level": "departmental"
+			"level": "departmental",
+			"description": "I helped identify, nominate, and recognize faculty, staff, and students with school-level awards."
 		},
 		{
 			"title": "Member",
 			"committee": "iSchool Ph.D. Admissions Committee",
 			"start": 2009,
 			"end": 2010,
-			"level": "departmental"
+			"level": "departmental",
+			"description": "I helped plan admissions policy, review Ph.D. applicaitons, and make final admissions recommendations."
 		},
 		{
 			"title": "Member",
 			"committee": "iSchool Informatics Program Committee",
 			"start": 2010,
 			"end": 2012,
-			"level": "departmental"
+			"level": "departmental",
+			"description": "I helped make decisions on program curriculum, policy, and procedures."
 		},
 		{
 			"title": "Member",
 			"committee": "iSchool Elected Faculty Council",
 			"start": 2012,
 			"end": 2013,
-			"level": "departmental"
+			"level": "departmental",
+			"description": "I helped advance the interests of faculty in the school through policy change and advocacy to the dean, hepling to secure an annual dispursement of flexible funding."
 		},
 		{
 			"title": "Member",
 			"committee": "MHCI+D Faculty Search",
 			"start": 2012,
 			"end": 2013,
-			"level": "university"
+			"level": "university",
+			"description": "I evaluated and recruited applicants to join the MHCI+D instructional faculty."
 		},
 		{
 			"title": "Member",
 			"committee": "iSchool Faculty Search",
 			"start": 2012,
-			"end": 2013,
-			"level": "departmental"
+			"end": 2014,
+			"level": "departmental",
+			"description": "I evaluated and recruited applicants to join the iSchool as tenure-track faculty."
 		},
 		{
 			"title": "Member",
 			"committee": "MHCI+D Executive Committee",
 			"start": 2013,
 			"end": 2015,
-			"level": "university"
-		},
-		{
-			"title": "Member",
-			"committee": "iSchool Faculty search",
-			"start": 2013,
-			"end": 2014,
-			"level": "departmental"
+			"level": "university",
+			"description": "I helped set policy and procedures for the masters degree."
 		},
 		{
 			"title": "Chair",
 			"committee": "iSchool Informatics Program Committee",
 			"start": 2016,
 			"end": null,
-			"level": "departmental"
+			"level": "departmental",
+			"description": "I identify curricular, community, and policy priorities, organize discussions of proposed changes, and implement the changes with the support of staff."
 		},
 		{
 			"title": "Chair",
 			"committee": "iSchool Informatics Admissions Committee",
 			"start": 2016,
 			"end": 2020,
-			"level": "departmental"
+			"level": "departmental",
+			"description": "I designed, planned, and executed an admissions process with the support of staff, reviewing over 800 applications a year. I implemented many anti-racist efforts, including implicit bias training and removal of structurally racist evaluation criteria"
 		},
 		{
 			"title": "Chair",
 			"committee": "iSchool Academics Council",
 			"start": 2016,
 			"end": null,
-			"level": "departmental"
+			"level": "departmental",
+			"description": "I deliberate with the other program chairs and the Associate Dean for Academics on school-wide policy issues, as well as approve program-level changes."
 		},
 		{
 			"title": "Chair",
 			"committee": "iSchool Leadership Council",
 			"start": 2016,
 			"end": null,
-			"level": "departmental"
+			"level": "departmental",
+			"description": "I deliberate with the Dean and numerous leaders across the iSchool to make strategic choices about the school's initiatives and finances."
 		}
 	],
 	"funding": [
