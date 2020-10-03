@@ -47,6 +47,20 @@
 	},
 	"pubs": [
 		{
+			"id": "csdesignk12",
+			"kind": "journal article",
+			"authors": ["@olesona", "@ajko", "Brett Wortzman"],
+			"deadname": false,
+			"year": 2020,
+			"title": "On the Role of Design in K-12 Computing Education",
+			"source": "@toce",
+			"pages": "to appear",
+			"doi": null,
+			"local": null,
+			"publisher": "ACM",
+			"contribution": "Disentangles the role of design in K-12 CS education, finding that design ideas are pervasive in curricula and standards, but conflict program space and problem space design, masking the distinct challenges of problem space design."
+		},
+		{
 			"id": "criticalcsed",
 			"kind": "refereed magazine article",
 			"authors": ["@ajko", "@olesona", "@neilryan", "@yreg", "@bxie", "@minatari", "@mattjd", "@st3f", "@dloksa", "@glnelson"],
@@ -2996,7 +3010,7 @@
 			"description": "Computing is powerful, but that power is often used by dominant groups in ways that disregard, exclude, or even harm marginalized groups, amplifying and reinforcing sexist, racist, and ableist structures and ideas. My lab is exploring teaching methods, learning technologies, and teacher education paradigms that center these power dynamics in in CS education.",
 			"funding": ["@csjustice", "@csassess", "@fmitf"],
 			"people": ["@jayne", "@olesona", "@kshino", "@skawas", "@laurav4", "@meron", "@perdriau"],
-			"papers": ["criticalcsed","hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess"],
+			"papers": ["criticalcsed","hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess", "csdesignk12"],
 			"links": [],
 			"startdate": 2019,
 			"stopdate": null
