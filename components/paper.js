@@ -100,7 +100,7 @@ class Paper extends React.Component {
 	renderAPA(award=true) {
 
 		return <div id={"apa-" + this.props.id}>
-			{this.renderAuthors()} ({this.props.year}). <strong>{this.props.title}</strong>. {this.renderSource(true)}. {award && this.props.award && this.props.award.length > 0 ? <u>{_.join(this.props.award, " + ")}</u> : ""}
+			{this.renderAuthors()} ({this.props.year}). <strong>{this.props.title}</strong>{this.props.title.charAt(this.props.title.length - 1) === "?" ? "" : "."} {this.renderSource(true)}. {award && this.props.award && this.props.award.length > 0 ? <u>{_.join(this.props.award, " + ")}</u> : ""}
 		</div>
 
 	}
