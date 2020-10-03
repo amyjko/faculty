@@ -12,18 +12,18 @@ class Header extends React.Component {
 			<div>
 				<div className='row'>
 		
-					<div className="col-xs-5 col-sm-3 col-md-3">
+					<div className="col-xs-3 col-sm-3 col-md-3">
 						<Link to="/"><img className='img-thumbnail' alt="Headshot of Amy J. Ko" src={this.props.app.getWebRoot() + "/images/headshots/mug-ajko.jpg"} /></Link>
 					</div>
 		
-					<div className="col-xs-7 col-sm-9 col-md-9" style={{lineHeight: "1.15em"}}>
+					<div className="col-xs-9 col-sm-9 col-md-9" style={{lineHeight: "1.25em"}}>
 						<div className="lead" style={{marginBottom: 0}}>Amy J. Ko, Ph.D. <small className="hidden-xs"><small><em><a href="https://www.mypronouns.org/she-her">she/her/hers</a></em></small></small></div>
 						<small>
  							<a href="https://ap.washington.edu/ahr/academic-titles-ranks/professor/" target="_blank">Professor</a><span className="hidden-xs"> &sdot; <a href="https://ischool.uw.edu/academics/informatics">Informatics</a> <a href="https://ischool.uw.edu/about/leadership/committees" target="_blank">Program Chair</a></span>
 							<br/><a href="http://ischool.uw.edu" target="_blank">The Information School</a>
 							<span className="hidden-xs"><br/><a href="http://cs.uw.edu" target="_blank">Paul G. Allen School of Computer Science &amp; Engineering (courtesy)</a></span>
-							<br/><a href="http://www.washington.edu" target="_blank">University of Washington, Seattle</a>
-							<br/><a href="mailto:ajko@uw.edu">ajko@uw.edu</a> &sdot; <a href="https://twitter.com/amyjko" target="_blank">@amyjko</a>
+							<br/><a href="http://www.washington.edu" target="_blank">University of Washington<span className="hidden-xs">, Seattle</span></a>
+							<br/><a href="mailto:ajko@uw.edu">email</a> &sdot; <a href="https://twitter.com/amyjko" target="_blank">twitter</a> &sdot; <a href="https://medium.com/@amyjko" target="_blank">blog</a>
 						</small>
 					</div>
 					
