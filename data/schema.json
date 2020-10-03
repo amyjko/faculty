@@ -5,8 +5,7 @@
 	"required": [
 		"sources", "pubs", "people", "projects", "posts", 
 		"impacts", "degrees", "patents", "jobs", "awards", "editor",
-		"programChairing", "programCommittees", "reviewing", 
-		"doctoralCommittees", "service", "funding", "travel", 
+		"reviewing", "doctoralCommittees", "service", "funding", "travel", 
 		"talks", "classes", "books", "years", "commitments"
 	],
 	"properties": {
@@ -388,45 +387,23 @@
 				}
 			}
 		},
-		"programChairing": {
-			"type": "array",
-			"description": "Program chairing positions",
-			"itmes": {
-				"type": "object",
-				"required": ["title", "conference", "year"],
-				"properties": {
-					"year": { "type": "integer", "minimum": 2000 }
-				}
-			}
-		},
-		"programCommitees": {
-			"type": "array",
-			"description": "Program committee membership",
-			"itmes": {
-				"type": "object",
-				"required": ["venue", "role", "years"],
-				"properties": {
-					"venue": { "type": "string" },
-					"role": { "type": "string" },
-					"year": {
-						"type": "array",
-						"items": { "type": "integer", "minimum": 2000 }
-					}
-				}
-			}
-		},
 		"reviewing": {
 			"type": "array",
 			"description": "Reviewing",
 			"itmes": {
 				"type": "object",
-				"required": ["venue", "years"],
+				"required": ["venue", "years", "level"],
 				"properties": {
 					"venue": { "type": "string" },
-					"year": {
+					"years": {
 						"type": "array",
 						"items": { "type": "integer", "minimum": 2000 }
-					}
+					},
+					"level": {
+						"type": "string",
+						"enum": ["reviewer", "pc", "chair"]
+					},
+					"title": { "type": "string" }
 				}
 			}
 		},

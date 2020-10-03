@@ -43,6 +43,10 @@
 		"vlhcc": {
 			"name": "IEEE Symposium on Visual Languages and Human-Centered Computing (VL/HCC)",
 			"short": "VL/HCC"
+		},
+		"tse": {
+			"name": "IEEE Transactions on Software Engineering",
+			"short": "TSE"
 		}
 	},
 	"pubs": [
@@ -1578,7 +1582,7 @@
 			"deadname": true,
 			"year": 2006,
 			"title":"An Exploratory Study of How Developers Seek, Relate, and Collect Relevant Information during Software Maintenance Tasks",
-			"source":"IEEE Transactions on Software Engineering, 32(12)",
+			"source":"@tse",
 			"pages":"971-987",
 			"doi":"http://dx.doi.org/10.1109/TSE.2006.116",
 			"publisher": "IEEE",
@@ -5622,179 +5626,200 @@
 			"enddate": null
 		}
 	],
-	"programChairing": [
+	"reviewing": [
 		{
+			"venue": "@icer", 
 			"title": "Program Co-Chair, General Co-Chair",
-			"conference": "@icer", 
-			"year": 2021
+			"years": [2020, 2021],
+			"level": "chair"
 		},
 		{
-			"title": "Program Co-Chair, General Co-Chair",
-			"conference": "@icer", 
-			"year": 2020
-		},
-		{
+			"venue": "@seet", 
 			"title": "Program Co-Chair",
-			"conference": "@seet", 
-			"year": 2020
+			"years": [2020],
+			"level": "chair"
 		},
 		{
-			"title": "Program Sub-Committee Chair",
-			"conference": "@chi", 
-			"year": 2013
+			"venue": "@chi", 
+			"title": "Program Sub-Committee Co-Chair",
+			"years": [2012, 2013],
+			"level": "chair"
 		},
 		{
-			"title": "Deputy Program Sub-Committee Chair",
-			"conference": "@chi",
-			"year": 2012
-		},
-		{
+			"venue": "@vlhcc",
 			"title": "Program Co-Chair",
-			"conference": "@vlhcc",
-			"year": 2011
-		}
-	],
-	"programCommittees": [
+			"years": [2011],
+			"level": "chair"
+		},
 		{
-			"venue": "International Conference on Software Engineering (ICSE)",
-			"role": "Program Board Member",
-			"years": [2019]
+			"venue": "@icse",
+			"title": "Program Board Member",
+			"years": [2018, 2019],
+			"level": "pc"
 		},
 		{
 			"venue": "Programming Experience Workshop (PX)",
-			"role": "Program Committee Member",
-			"years": [2017]
+			"title": "Program Committee Member",
+			"years": [2017],
+			"level": "pc"
 		},
 		{
-			"venue": "ACM International Conference on Computing Education (ICER)",
-			"role": "Senior Program Committee",
-			"years": [2014, 2015, 2017, 2019]
+			"venue": "@icer",
+			"title": "Senior Program Committee Member",
+			"years": [2014, 2015, 2017, 2019],
+			"level": "pc"
 		},
 		{
-			"venue": "ACM Technical Symposium on Computer Science Education (SIGCSE)",
-			"role": "Senior Program Committee",
-			"years": [2016, 2017, 2018, 2019]
+			"venue": "@sigcse",
+			"title": "Senior Program Committee Member",
+			"years": [2016, 2017, 2018, 2019],
+			"level": "pc"
 		},
 		{
 			"venue": "Summit on Advances in Programming Languages (SNAPL)",
-			"role": "Program Committee Member",
-			"years": [2017]
+			"title": "Program Committee Member",
+			"years": [2017],
+			"level": "pc"
 		},
 		{
-			"venue": "International Conference on Software Engineering (ICSE)",
-			"role": "Program Committee Member",
-			"years": [2014, 2016, 2018]
+			"venue": "@icse",
+			"title": "Program Committee Member",
+			"years": [2014, 2016],
+			"level": "pc"
 		},
 		{
 			"venue": "Workshop on Evaluation and Usability of Programming Languages and Tools (PLATEAU)",
-			"role": "Program Committee Member",
-			"years": [2016]
+			"title": "Program Committee Member",
+			"years": [2016],
+			"level": "pc"
 		},
 		{
-			"venue": "ACM Conference on Human Factors in Computing (CHI)",
-			"role": "Associate Chair",
-			"years": [2010, 2011, 2012, 2013]
+			"venue": "@chi",
+			"title": "Associate Chair",
+			"years": [2010, 2011, 2012, 2013],
+			"level": "pc"
 		},
 		{
-			"venue": "ACM Symposium on User Interface Software and Technology (UIST)",
-			"role": "Associate Chair",
-			"years": [2011]
+			"venue": "@uist",
+			"title": "Associate Chair",
+			"years": [2011],
+			"level": "pc"
 		},
 		{
 			"venue": "ACM Symposium on the Foundations of Software Engineering",
-			"role": "Program Committee Member",
-			"years": [2011]
+			"title": "Program Committee Member",
+			"years": [2011],
+			"level": "pc"
 		},
 		{
-			"venue": "IEEE Visual Languages and Human-Centric Computing",
-			"role": "Program Committee Member",
-			"years": [2011]
+			"venue": "@vlhcc",
+			"title": "Program Committee Member",
+			"years": [2011],
+			"level": "pc"
 		},
 		{
 			"venue": "International Workshop on Search-Driven Development",
-			"role": "Program Committee Member",
-			"years": [2009, 2010]
+			"title": "Program Committee Member",
+			"years": [2009, 2010],
+			"level": "pc"
 		},
 		{
 			"venue": "Workshop on User Evaluation for Software Engineering Researchers",
-			"role": "Program Committee Member",
-			"years": [2012, 2013]
+			"title": "Program Committee Member",
+			"years": [2012, 2013],
+			"level": "pc"
 		},
 		{
 			"venue": "International Workshop on Live Programming",
-			"role": "Program Committee Member",
-			"years": [2013, 2017, 2018]
+			"title": "Program Committee Member",
+			"years": [2013, 2017, 2018],
+			"level": "pc"
 		},
 		{
 			"venue": "Future Programming Workshop",
-			"role": "Program Committee Member",
-			"years": [2014]
-		}
-	],
-	"reviewing": [
-		{
-			"venue": "Workshop on Designing Technologies to Support Human Problem Solving",
-			"years": [2018]
-		},	
-		{
-			"venue": "Empirical Software Engineering",
-			"years": [2018, 2019, 2020]
-		},	
-		{
-			"venue": "ACM Conference on Human Factors in Computing (CHI)",
-			"years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
-		},	
-		{
-			"venue": "IEEE Visual Languages and Human-Centric Computing (VL/HCC)",
-			"years": [2004, 2005, 2006, 2007, 2008, 2009, 2010]
+			"title": "Program Committee Member",
+			"years": [2014],
+			"level": "pc"
 		},
 		{
-			"venue": "ACM Symposium on User Interface and Software Technology (UIST)",
-			"years": [2005, 2006, 2007, 2008, 2009, 2010, 2013, 2014, 2015]
+			"venue": "Workshop on Designing Technologies to Support Human Problem Solving",
+			"years": [2018],
+			"level": "reviewer"
+		},	
+		{
+			"venue": "@ese",
+			"years": [2018, 2019, 2020],
+			"level": "reviewer"
+		},	
+		{
+			"venue": "@chi",
+			"years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
+			"level": "reviewer"
+		},	
+		{
+			"venue": "@vlhcc",
+			"years": [2004, 2005, 2006, 2007, 2008, 2009, 2010],
+			"level": "reviewer"
+		},
+		{
+			"venue": "@uist",
+			"years": [2005, 2006, 2007, 2008, 2009, 2010, 2013, 2014, 2015],
+			"level": "reviewer"
 		},
 		{
 			"venue": "Proceedings of the ACM on Human-Computer Interaction",
-			"years": [2017, 2018]
+			"years": [2017, 2018],
+			"level": "reviewer"
 		},
 		{
-			"venue": "ACM Transactions on Computing Education (TOCE)",
-			"years": [2015, 2016, 2017, 2018, 2019, 2020]
+			"venue": "@toce",
+			"years": [2015, 2016, 2017, 2018, 2019, 2020],
+			"level": "reviewer"
 		},
 		{
 			"venue": "International Journal of Human-Computer Studies (IJHCS)",
-			"years": [2006, 2008]
+			"years": [2006, 2008],
+			"level": "reviewer"
 		},
 		{
 			"venue": "ACM Conference on Computer-Supported Cooperative Work (CSCW)",
-			"years": [2010, 2011]
+			"years": [2010, 2011],
+			"level": "reviewer"
 		},
 		{
 			"venue": "ACM Symposium on Engineering Interactive Computing Systems (EICS)",
-			"years": [2010]
+			"years": [2010],
+			"level": "reviewer"
 		},
 		{
 			"venue": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
-			"years": [2009]
+			"years": [2009],
+			"level": "reviewer"
 		},
 		{
 			"venue": "International Conference on Intelligent User Interfaces (IUI)",
-			"years": [2009]
+			"years": [2009],
+			"level": "reviewer"
 		},
 		{
-			"venue": "IEEE Transactions on Software Engineering (TSE)",
-			"years": [2009]
+			"venue": "@tse",
+			"years": [2009],
+			"level": "reviewer"
 		},
 		{
 			"venue": "Advances in Human-Computer Interaction (AHCI)",
-			"years": [2008]
+			"years": [2008],
+			"level": "reviewer"
 		},
 		{
 			"venue": "Graphics Interface (GI)",
-			"years": [2006]
+			"years": [2006],
+			"level": "reviewer"
 		},
 		{
 			"venue": "Journal of Visual Languages and Computing (JVLC)",
-			"years": [2004, 2005]
+			"years": [2004, 2005],
+			"level": "reviewer"
 		}
 	],
 	"doctoralCommittees": [

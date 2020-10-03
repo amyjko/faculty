@@ -394,27 +394,39 @@ class Vita extends React.Component {
 
 				<h3>Conference Program Chair</h3>
 
+				<div className="row">
 				{
-					this.getChunkList(
-						profile.getProgramChairing(), 
-						true,
-						"programChair", "year", null, "title", "venue", "conference"
-					)
+					_.map(profile.getReviewing(
+						role => role.level === "chair", 
+						role => -role.years.sort().reverse()[0]), (role, index) => 
+						<Chunk 
+							key={index} 
+							wrap={true}
+							clear={index % 2 === 0}
+							start={role.years.sort()[0]} 
+							stop={role.years.sort().reverse()[0]}
+							header={role.venue}
+							two={role.title}
+						/>
+					)					
 				}
+				</div>
 
 				<h3>Conference Program Committee Member</h3>
 
 				<div className="row">
 				{
-					_.map(profile.getProgramCommittees(() => true, cmte => -cmte.years.sort().reverse()[0]), (cmte, index) => 
+					_.map(profile.getReviewing(
+						role => role.level === "pc", 
+						role => -role.years.sort().reverse()[0]), (role, index) => 
 						<Chunk 
 							key={index} 
 							wrap={true}
 							clear={index % 2 === 0}
-							start={cmte.years.sort()[0]} 
-							stop={cmte.years.sort().reverse()[0]}
-							header={cmte.venue}
-							two={cmte.role}
+							start={role.years.sort()[0]} 
+							stop={role.years.sort().reverse()[0]}
+							header={role.venue}
+							two={role.title}
 						/>
 					)					
 				}
@@ -424,14 +436,17 @@ class Vita extends React.Component {
 
 				<div className="row">
 				{
-					_.map(profile.getReviewing(() => true, venue => -venue.years.sort().reverse()[0]), (venue, index) => 
+					_.map(profile.getReviewing(
+						role => role.level === "reviewer", 
+						role => -role.years.sort().reverse()[0]), (role, index) => 
 						<Chunk 
-							key={index}
+							key={index} 
 							wrap={true}
 							clear={index % 2 === 0}
-							start={venue.years.sort()[0]} 
-							stop={venue.years.sort().reverse()[0]} 
-							header={venue.venue}
+							start={role.years.sort()[0]} 
+							stop={role.years.sort().reverse()[0]}
+							header={role.venue}
+							two={role.title}
 						/>
 					)					
 				}

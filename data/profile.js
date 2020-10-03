@@ -137,12 +137,15 @@ class Profile {
 
 		});
 
-		// Resolve the sources in the program chaiir positions.
-		_.each(this.json.programChairing, chair => {
-			let conf = this.getSource(chair.conference);
-			if(!conf)
-				console.error("Couldn't find " + chair.conference);
-			chair.conference = conf.name;
+		// Resolve the sources in the program chair positions.
+		_.each(this.json.reviewing, role => {
+			if(role.venue.charAt(0) === "@") {
+				let conf = this.getSource(role.venue);
+				if(!conf)
+					console.error("Couldn't find publication source " + role.venue);
+				else
+					role.venue = conf.name;
+			}
 		})
 
     }
@@ -273,14 +276,6 @@ class Profile {
 
 	getEditor(filter, sort) {
 		return this.cloneFilterSort(this.json.editor.slice(), filter, sort);
-	}
-
-	getProgramChairing(filter, sort) {
-		return this.cloneFilterSort(this.json.programChairing.slice(), filter, sort);
-	}
-
-	getProgramCommittees(filter, sort) {
-		return this.cloneFilterSort(this.json.programCommittees.slice(), filter, sort);
 	}
 
 	getReviewing(filter, sort) {
