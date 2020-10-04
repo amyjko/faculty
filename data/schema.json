@@ -4,7 +4,7 @@
 	"type": "object",
 	"required": [
 		"sources", "pubs", "people", "projects", "posts", 
-		"impacts", "degrees", "patents", "jobs", "awards", "editor",
+		"impacts", "degrees", "patents", "jobs", "recognitions", "editor",
 		"reviewing", "doctoralCommittees", "service", "funding", "travel", 
 		"talks", "classes", "books", "years", "commitments"
 	],
@@ -369,9 +369,11 @@
 			"description": "Honors, awards, and recognitions",
 			"items": {
 				"type": "object",
-				"required": ["title", "year"],
+				"required": ["title", "year", "description"],
 				"properties": {
-					"year": { "type": "integer", "minimum": 2000 }
+					"title": { "type": "string" },
+					"year": { "type": "integer", "minimum": 1998 },
+					"description": { "type": "string" }
 				}
 			}
 		},

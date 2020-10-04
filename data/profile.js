@@ -271,7 +271,7 @@ class Profile {
 	}
 
 	getRecognitions(filter, sort) {
-		return this.cloneFilterSort(this.json.awards.slice(), filter, sort);
+		return this.cloneFilterSort(this.json.recognitions.slice(), filter, sort);
 	}
 
 	getEditor(filter, sort) {

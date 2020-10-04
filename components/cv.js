@@ -238,7 +238,7 @@ class Vita extends React.Component {
 			
 				<h2>Recognitions</h2>
 
-				{this.getTable(profile.getRecognitions(() => true, rec => -rec.year), "award", "year", null, "title")}
+				{this.getTable(profile.getRecognitions(() => true, rec => -rec.year), "award", "year", null, "title", "description")}
 
 				<h1>Funding</h1>
 
