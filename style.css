@@ -32,7 +32,8 @@ b, strong {
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
+	font-family: "Verdana", sans-serif;
+	font-weight: 700;
 }
 
 .table > tbody > tr > td {
@@ -229,9 +230,6 @@ body .cv {
 }
 
 .cv h1, .cv h2, .cv h3, .cv h4 {
-	/* font-variant: small-caps; */
-	font-family: "Verdana", sans-serif;
-	font-weight: 700;
 	clear: both;
 }
 
