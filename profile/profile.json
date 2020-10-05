@@ -91,7 +91,7 @@
 			"local": "Register2020PersonalData.pdf",
 			"publisher": "ACM",
 			"blog": "https://medium.com/@yimregister/how-to-teach-machine-learning-to-empower-learners-to-speak-up-for-themselves-35c505db941b",
-			"contribution": "Finds that teaching machine learning by tracing an algorithmwith with learners' personal data increases the extent to which they can identify bias in in self-advocacy arguments."
+			"contribution": "Finds that teaching machine learning by tracing an algorithmwith with learners' personal data increases the extent to which they can identify bias in self-advocacy arguments."
 		},
 		{
 			"id": "codeitzagency",
@@ -3011,7 +3011,7 @@
 			"active": true,
 			"name": "Justice-focused CS education",
 			"shortName": "CS justice",
-			"description": "Computing is powerful, but that power is often used by dominant groups in ways that disregard, exclude, or even harm marginalized groups, amplifying and reinforcing sexist, racist, and ableist structures and ideas. My lab is exploring teaching methods, learning technologies, and teacher education paradigms that center these power dynamics in in CS education.",
+			"description": "Computing is powerful, but that power is often used by dominant groups in ways that disregard, exclude, or even harm marginalized groups, amplifying and reinforcing sexist, racist, and ableist structures and ideas. My lab is exploring teaching methods, learning technologies, and teacher education paradigms that center these power dynamics in CS education.",
 			"funding": ["@csjustice", "@csassess", "@fmitf"],
 			"people": ["@jayne", "@olesona", "@kshino", "@skawas", "@laurav4", "@meron", "@perdriau"],
 			"papers": ["criticalcsed","hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess", "csdesignk12"],
