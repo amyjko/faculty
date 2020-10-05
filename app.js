@@ -25,7 +25,7 @@ import { CER } from './components/cer';
 import { Unknown } from './components/unknown';
 import { Footer } from './components/footer';
 
-import { Profile } from './data/profile';
+import { Profile } from './profile/profile.js';
 
 // Polyfill startsWith
 if (!String.prototype.startsWith) {
@@ -39,14 +39,14 @@ class App extends React.Component {
 
 	constructor(props) {
 
-		super(props);
-		
+		super(props)
+
 		// Start data as undefined, rending a loading state until it changes.
 		this.state = {
 			profile: undefined
 		};
 		
-		fetch(this.getWebRoot() + "/data/data.json")
+		fetch(this.getWebRoot() + "/profile/profile.json")
 			.then(response => response.json())
 			.then(data => {
 				// Yay, we got data! Set the state so the page renders.
@@ -112,7 +112,7 @@ class App extends React.Component {
 
 var AppWithRouter = withRouter(App);
 	
-var webRoot = "/ajko" + (window.location.pathname.includes("/test") ? "/test" : "");	
+var webRoot = "/ajko";
 	
 // Construct the app, passing it the data.
 ReactDOM.render((
