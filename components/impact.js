@@ -24,7 +24,7 @@ class Impact extends React.Component {
 								link={null}
 								header={population.population}
 								content={<span>
-									. {population.description}
+									<p>{population.description}</p>
 									<div>
 										{
 											_.map(
