@@ -3200,6 +3200,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/@amyjko/my-parenting-past-and-present-bf09f9956153",
+			"title": "My parenting past and present",
+			"date": "2020.9",
+			"tags": ["personal", "diversity", "gender"],
+			"img": "parenting",
+			"alt": "My daughter at age 2, asking to be held."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/processing-the-untold-histories-mcilwains-black-software-the-internet-racial-justice-from-c453ba1f7885",
 			"title": "Processing the untold histories McIlwain’s “Black Software: The Internet & Racial Justice, from the AfroNet to Black Lives Matter”",
 			"date": "2020.9",
