@@ -242,8 +242,18 @@ class Commitments extends React.Component {
             commitment => commitment.start.month * 12 + commitment.start.date
         );
 
-        var definite = this.props.app.getProfile().getCommitments(
-            commitment => !commitment.annually && commitment.start !== null && commitment.category !== "personal" && commitment.end.getTime() > Date.now(),
+        var definiteResearch = this.props.app.getProfile().getCommitments(
+            commitment => !commitment.annually && commitment.start !== null && commitment.category === "research" && commitment.end.getTime() > Date.now(),
+            commitment => commitment.start.getTime()
+        );
+
+        var definiteTeaching = this.props.app.getProfile().getCommitments(
+            commitment => !commitment.annually && commitment.start !== null && commitment.category === "teaching" && commitment.end.getTime() > Date.now(),
+            commitment => commitment.start.getTime()
+        );
+
+        var definiteService = this.props.app.getProfile().getCommitments(
+            commitment => !commitment.annually && commitment.start !== null && commitment.category === "service" && commitment.end.getTime() > Date.now(),
             commitment => commitment.start.getTime()
         );
 
@@ -301,8 +311,43 @@ class Commitments extends React.Component {
                             )
                         }
                         <tr><td colSpan="3"><h3>One-time commitments</h3></td></tr>
+                        <tr><td colSpan="3"><h4>Research</h4></td></tr>
                         {
-                            _.map(definite, (commitment, index) =>
+                            _.map(definiteResearch, (commitment, index) =>
+                                <tr key={"fixed-commitment-" + index}>
+                                    <td>
+                                        <em className={commitment.category}>{commitment.name}</em>
+                                        <br/><small>{commitment.description}</small>
+                                    </td>
+                                    <td>
+                                        {this.toDateRange(commitment.start, commitment.end)}
+                                    </td>
+                                    <td>
+                                        {this.createBar(commitment)}
+                                    </td>
+                                </tr>                            
+                            )
+                        }
+                        <tr><td colSpan="3"><h4>Teaching</h4></td></tr>
+                        {
+                            _.map(definiteTeaching, (commitment, index) =>
+                                <tr key={"fixed-commitment-" + index}>
+                                    <td>
+                                        <em className={commitment.category}>{commitment.name}</em>
+                                        <br/><small>{commitment.description}</small>
+                                    </td>
+                                    <td>
+                                        {this.toDateRange(commitment.start, commitment.end)}
+                                    </td>
+                                    <td>
+                                        {this.createBar(commitment)}
+                                    </td>
+                                </tr>                            
+                            )
+                        }
+                        <tr><td colSpan="3"><h4>Service</h4></td></tr>
+                        {
+                            _.map(definiteService, (commitment, index) =>
                                 <tr key={"fixed-commitment-" + index}>
                                     <td>
                                         <em className={commitment.category}>{commitment.name}</em>
