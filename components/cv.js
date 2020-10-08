@@ -208,14 +208,15 @@ class Vita extends React.Component {
 
 				{this.getChunkList(
 					profile.getPublications(
-						pub => pub.award && _.includes(pub.award, "most influential paper"),
+						pub => pub.award && _.filter(pub.award, award => award.includes("most influential paper")).length > 0,
 						pub => -pub.year
 					),
 					true,
 					"year", 
 					null, 
 					"title", 
-					"sourceName"
+					pub => <em>{pub.award.join(", ")}</em>,
+					"sourceName",
 					)
 				}
 			

@@ -604,6 +604,13 @@ class CER extends React.Component {
 								<td>USA</td>
 							</tr>
 							<tr>
+								<td><a href="https://adalbertgerald.github.io" target="_blank">Gerald Soosai Raj</a></td>
+								<td>Making computing more accessible to diverse learners (e.g., Non-native English Speakers)</td>
+								<td>Computer Science and Engineering</td>
+								<td>University of California, San Diego</td>
+								<td>USA</td>
+							</tr>
+							<tr>
 								<td><a href="http://web.media.mit.edu/~mres/" target="_blank">Mitch Resnick*</a></td>
 								<td>constructionism, creativity</td>
 								<td>Media Lab</td>

@@ -6477,7 +6477,7 @@
 		{
 			"url": "https://www.colorado.edu/cmci/infoscience",
 			"title": "University of Colorado Boulder Information Science Colloquium",
-			"details": "Invited research talk.",
+			"details": "Invited research talk at the Department of Information Science and the College of Media, Communication and Information colloqium, with a followup discussion with early Ph.D. students.",
 			"date": "2020.10.07",
 			"report": null
 		},
@@ -6616,6 +6616,19 @@
 		}
 	],
 	"talks": [
+		{
+			"date": "2020.10.07",
+			"image": "cuboulder20.png",
+			"alt": "A screenshot of the end of my talk, showing questions, a summary of the talk gist, and several faces on Zoom.",
+			"slides": "slides/CUBoulder2020CriticalCSEd.pdf",
+			"title": "Critical Computing Education",
+			"venue": "University of Colorado joint Colloqium of the Department of Information Science and College of Media, Communication and Information",
+			"url": "https://calendar.colorado.edu/event/info_seminar_amy_ko?utm_campaign=widget&utm_medium=widget&utm_source=University+of+Colorado+Boulder#.X345bC9h1Wk",
+			"recording": null,
+			"practice": null,
+			"description": "This was the first in a series of talks about my research pivot on critical computing education. In it, I argue for the need for universal literacy about the limits of computing, the limits of data, and the responsibilty of computer science to teach these limits. I shared recent examples of research from our lab that's beginning to explore how to teach these limits.",
+			"keynote": false
+		},
 		{
 			"date": "2020.08.03",
 			"image": "studyingmaking.jpg",
