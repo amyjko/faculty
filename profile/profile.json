@@ -7203,6 +7203,7 @@
 		["NSF AccessComp",	"Meetings + presenting",			"service", 		"flexible", 1, "weekly", "2017-06-15", "2021-06-15"],
 		["CRA-E", 			"Meetings + writing",				"service", 		"flexible", 1, "weekly", "2020-07-01", "2022-07-01"],
 		["ICER 21 PC",		"Conference and program chairing",	"service", 		"flexible", 3, "weekly", "2020-08-15", "2021-09-15"],
+		["INFO faculty search", "Reviewing, interviewing",		"service", 		"flexible", 2, "weekly", "2020-10-08", "2021-02-15"],
 
 		["INFO 442 Prep",	"Revise book and syllabus",			"teaching", 	"required", 7, "weekly", "2020-07-15", "2020-09-15"],
 		["INFO 442",		"Lectures, labs, grading",			"teaching", 	"required", 7, "weekly", "2020-09-25", "2020-12-15"],
@@ -7212,11 +7213,11 @@
 		["INFO 200",		"Lectures, labs, grading",			"teaching", 	"required", 7, "weekly", "2021-04-01", "2021-06-15"],
 
 		["Fall '21 Prep",	"Planning",							"teaching", 	"required", 7, "weekly", "2021-07-15", "2021-09-15"],
-		["Fall '21 Course",	"Teaching + feedback",				"teaching", 	"required", 7, "weekly", "2021-09-25", "2021-12-15"],
+		["Fall '21 Class",	"Teaching + feedback",				"teaching", 	"required", 7, "weekly", "2021-09-25", "2021-12-15"],
 		["Winter '22 Prep",	"Teaching + feedback",				"teaching", 	"required", 2, "weekly", "2022-10-01", "2022-01-01"],
-		["Winter '22' Course", "Teaching + feedback",			"teaching", 	"required", 7, "weekly", "2022-01-01", "2022-03-20"],
+		["Winter '22 Class", "Teaching + feedback",				"teaching", 	"required", 7, "weekly", "2022-01-01", "2022-03-20"],
 		["Spring '22 Prep", "Teaching + feedback",				"teaching", 	"required", 2, "weekly", "2022-01-02", "2022-04-01"],
-		["Spring '22 Course", "Teaching + feedback",			"teaching", 	"required", 7, "weekly", "2022-04-01", "2022-06-15"],
+		["Spring '22 Class", "Teaching + feedback",				"teaching", 	"required", 7, "weekly", "2022-04-01", "2022-06-15"],
 
 		["Fall talks",		"Invited talks",					"research",		"flexible", 3, "weekly", "2020-09-15", "2020-11-20"],
 		["RE Keynote",		"Talk prep",						"research",		"flexible", 1, "weekly", "2021-06-15", "2021-09-20"],
