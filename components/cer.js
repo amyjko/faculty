@@ -24,11 +24,11 @@ class CER extends React.Component {
 					<li><a href="#doctoral-admissions">For doctoral admissions, how important is it to demonstrate focus in a single research area?</a></li>
 					<li><a href="#getting-a-job">Where can I find a CS education research job?</a></li>
 					<li><a href="#funding-for-cer">Is there funding for CER?</a></li>
-					<li><a href="being-impactful">What do I need to know to be an effective, impactful computing education researcher?</a></li>
-					<li><a href="conferences-and-journals">What conferences and journals publish CER?</a></li>
-					<li><a href="experience-reports">What's the difference between a research paper and an experience report?</a></li>
-					<li><a href="blogs">How can I keep up with the latest research, practice, and policy?</a></li>
-					<li><a href="community">How can I connect with the community?</a></li>
+					<li><a href="#being-impactful">What do I need to know to be an effective, impactful computing education researcher?</a></li>
+					<li><a href="#conferences-and-journals">What conferences and journals publish CER?</a></li>
+					<li><a href="#experience-reports">What's the difference between a research paper and an experience report?</a></li>
+					<li><a href="#blogs">How can I keep up with the latest research, practice, and policy?</a></li>
+					<li><a href="#community">How can I connect with the community?</a></li>
 				</ul>
 				
 				<h3 id="what-is-cer">What is computing education research?</h3>
