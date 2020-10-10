@@ -17,7 +17,7 @@ class ProjectDetails extends React.Component {
 		var papers = _.map(
 			this.props.app.getProfile().getPublications(
 				paper => _.indexOf(this.props.papers, paper.id) >= 0,
-				paper => paper.year
+				paper => -paper.year
 			),
 			paper => <Paper {...paper} key={paper.id} app={this.props.app} />
 		);
