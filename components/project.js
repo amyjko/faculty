@@ -84,7 +84,7 @@ class ProjectDetails extends React.Component {
 						), (impact, index) =>
 						<p key={index}>
 							<span style={{fontVariant: "small-caps"}}>{impact.kind}</span> <small> ({impact.start}{impact.end == null ? "-present" : impact.start !== impact.end ? "-" + impact.end : "" })</small>
-							<br/>{impact.description}{impact.url ? <small> <a href={impact.link}>evidence</a></small> : null}
+							<br/>{impact.description}{impact.url ? <small> <a href={impact.url}>evidence</a></small> : null}
 						</p>
 					)
 				}
