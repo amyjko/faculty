@@ -375,7 +375,7 @@ class Vita extends React.Component {
 				
 				<h3>Committee Member</h3>
 
-				{this.getTable(profile.getDoctoralCommmitees(), "doctoralCommittee", "startdate", "enddate", "name", "department")}
+				{this.getTable(profile.getDoctoralCommmitees(), "doctoralCommittee", "startdate", "enddate", "name", "institution", "department")}
 				
 				<h1>Service</h1>
 

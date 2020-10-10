@@ -5942,181 +5942,211 @@
 	"doctoralCommittees": [
 		{
 			"name": "Jean Salac",
+			"institution": "University of Chicago",
 			"department": "Computer Science",
 			"startdate": 2020,
 			"enddate": null
 		},
 		{
 			"name": "Chenglong Wang",
+			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
 			"startdate": 2019,
 			"enddate": null
 		},
 		{
 			"name": "Meen Chul Kim",
-			"department": "Drexel University, Information Science",
+			"institution": "Drexel University",
+			"department": "Information Science",
 			"startdate": 2018,
 			"enddate": null
 		},
 		{
 			"name": "Srinivasan Iyer",
-			"department": "George Mason University, Computer Science",
+			"institution": "George Mason University",
+			"department": "Computer Science",
 			"startdate": 2018,
 			"enddate": null
 		},
 		{
 			"name": "David Gonzalez",
-			"department": "George Mason University, Computer Science",
+			"institution": "George Mason University",
+			"department": "Computer Science",
 			"startdate": 2018,
 			"enddate": null
 		},
 		{
 			"name": "Justin Smith",
-			"department": "North Carolina State University, Computer Science",
+			"institution": "North Carolina State University",
+			"department": "Computer Science",
 			"startdate": 2018,
 			"enddate": null
 		},
 		{
 			"name": "Alex Kale",
+			"institution": "University of Washington",
 			"department": "The Information School",
 			"startdate": 2017,
 			"enddate": null
 		},
 		{
 			"name": "Aaron Bauer",
+			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
 			"startdate": 2017,
 			"enddate": null
 		},
 		{
 			"name": "Elena Agapie",
+			"institution": "University of Washington",
 			"department": "Human-Centered Design and Engineering",
 			"startdate": 2017,
 			"enddate": null
 		},
 		{
 			"name": "James Bornholt",
+			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
 			"startdate": 2017,
 			"enddate": 2018
 		},
 		{
 			"name": "Abdullah Ali",
+			"institution": "University of Washington",
 			"department": "The Information School",
 			"startdate": 2017,
 			"enddate": null
 		},
 		{
 			"name": "Yea-Seul Kim",
+			"institution": "University of Washington",
 			"department": "The Information School",
 			"startdate": 2017,
-			"enddate": null
+			"enddate": 2020
 		},
 		{
 			"name": "Lauren Milne",
+			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
 			"startdate": 2016,
 			"enddate": 2018
 		},
 		{
 			"name": "Eric Butler",
+			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
 			"startdate": 2016,
 			"enddate": 2018
 		},
 		{
 			"name": "Justin Huang",
+			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
 			"startdate": 2016,
 			"enddate": 2018
 		},
 		{
 			"name": "Elena Agapie",
+			"institution": "University of Washington",
 			"department": "Human-Centered Design & Engineering",
 			"startdate": 2016,
 			"enddate": null
 		},
 		{
 			"name": "Jonathan Bragg",
+			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
 			"startdate": 2016,
 			"enddate": 2018
 		},
 		{
 			"name": "Nan-Chen Chen",
+			"institution": "University of Washington",
 			"department": "Human-Centered Design and Engineering",
 			"startdate": 2016,
 			"enddate": null
 		},
 		{
 			"name": "Matthew Kay",
+			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
 			"startdate": 2014,
 			"enddate": 2016
 		},
 		{
 			"name": "Catherine Baker",
+			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
 			"startdate": 2012,
 			"enddate": 2017
 		},
 		{
 			"name": "Roshanak Zilouchian",
-			"department": "Computer Science, University of Illinois, Urbana-Champaign",
+			"institution": "University of Illinois, Urbana-Champaign",
+			"department": "Computer Science",
 			"startdate": 2012,
 			"enddate": 2014
 		},
 		{
 			"name": "Sean Fullerton",
+			"institution": "University of Washington",
 			"department": "Information School",
 			"startdate": 2012,
 			"enddate": 2015
 		},
 		{
 			"name": "Jared Bauer",
+			"institution": "University of Washington",
 			"department": "Information School",
 			"startdate": 2011,
 			"enddate": 2016
 		},
 		{
 			"name": "Paul Gross",
-			"department": "Computer Science, Washington University in St. Louis",
+			"institution": "Washington University in St. Louis",
+			"department": "Computer Science",
 			"startdate": 2011,
 			"enddate": 2014
 		},
 		{
 			"name": "Marilyn Ostergren",
+			"institution": "University of Washington",
 			"department": "Information School",
 			"startdate": 2011,
 			"enddate": 2014
 		},
 		{
 			"name": "Jing Xie",
+			"institution": "University of North Carolina, Charlotte",
 			"department": "Computer Science, UNC Charlotte",
 			"startdate": 2011,
 			"enddate": 2012
 		},
 		{
 			"name": "Kayur Patel",
+			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
 			"startdate": 2008,
 			"enddate": 2012
 		},
 		{
 			"name": "Michael Toomim",
+			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
 			"startdate": 2010,
 			"enddate": 2013
 		},
 		{
 			"name": "Travis Kriplean",
+			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
 			"startdate": 2010,
 			"enddate": 2012
 		},
 		{
 			"name": "Elisabeth Jones",
-			"department": "Information School, Ph.D. Committee",
+			"institution": "University of Washington",
+			"department": "Information School",
 			"startdate": 2009,
 			"enddate": 2011
 		}
