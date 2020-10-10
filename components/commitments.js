@@ -319,7 +319,7 @@ class Commitments extends React.Component {
                     _.filter(reviewing.years, year => year >= thisYear),
                     year => 
                         this.commit(
-                            reviewing.title ? reviewing.title : "Reviewer", reviewing.venue, "research", 
+                            reviewing.title ? reviewing.title : "Reviewer", reviewing.venue, "service", 
                             reviewing.commitment.priority, reviewing.commitment.hours, false, 
                             new Date(year, reviewing.commitment.start.getMonth(), reviewing.commitment.start.getDate()),
                             new Date(year, reviewing.commitment.end.getMonth(), reviewing.commitment.end.getDate()),
