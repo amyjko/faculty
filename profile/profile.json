@@ -4970,6 +4970,17 @@
 	],
 	"impacts": [
 		{
+			"kind": "press",
+			"start": 2020,
+			"end": 2020,
+			"description": "I was interviewed about the impact of online learning on learning to code.",
+			"url": "https://www.onlineeducation.com/features/can-online-education-fix-the-gender-diversity-problem-in-coding",
+			"author": "Chelsea Toczauer",
+			"source": "OnlineEducation.com",
+			"projects": ["csdiversity", "pllearning"],
+			"who": "public"
+		},
+		{
 			"kind": "consulting",
 			"start": 2019,
 			"end": 2019,
