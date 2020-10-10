@@ -2,11 +2,27 @@
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"title": "Amy's faculty website data schema",
 	"type": "object",
+	"definitions": {
+		"commitment": {
+			"type": "object",
+			"required": ["start", "end", "hours", "priority"],
+			"properties": {
+				"start": { "$ref": "#/definitions/date" },
+				"end": { "$ref": "#/definitions/date" },
+				"hours": { "type": "number", "minimum": 0 },
+				"priority": { "type": "integer", "enum": [0, 1, 2]}
+			}
+		},
+		"date": {
+			"type": ["string", "null"],
+			"pattern": "^[1-2][0-9][0-9][0-9]-[0-1][0-9]-[0-3][0-9]$"
+		}
+	},
 	"required": [
 		"sources", "pubs", "people", "projects", "posts", 
-		"impacts", "degrees", "patents", "jobs", "recognitions", "editor",
+		"impacts", "degrees", "patents", "jobs", "recognitions", "editing",
 		"reviewing", "doctoralCommittees", "service", "funding", "travel", 
-		"talks", "classes", "books", "years", "commitments"
+		"talks", "classes", "books", "years"
 	],
 	"properties": {
 		"sources": {
@@ -377,15 +393,16 @@
 				}
 			}
 		},
-		"editor": {
+		"editing": {
 			"type": "array",
 			"description": "Editing positions",
 			"items": {
 				"type": "object",
-				"required": ["title", "venue", "startdate", "enddate"],
+				"required": ["title", "venue", "commitment"],
 				"properties": {
-					"startdate": { "type": "integer", "minimum": 2000},
-					"enddate": { "type": ["integer", "null"], "minimum": 2000}
+					"title": { "type": "string" },
+					"venue": { "type": "string" },
+					"commitment": { "$ref": "#/definitions/commitment" }
 				}
 			}
 		},
@@ -405,7 +422,8 @@
 						"type": "string",
 						"enum": ["reviewer", "pc", "chair"]
 					},
-					"title": { "type": "string" }
+					"title": { "type": "string" },
+					"commitment": { "$ref": "#/definitions/commitment" }
 				}
 			}
 		},
@@ -427,14 +445,13 @@
 			"description": "Miscellaneous service",
 			"items": {
 				"type": "object",
-				"required": ["title", "committee", "start", "end"],
+				"required": ["title", "committee", "commitment"],
 				"properties": {
 					"title": { "type": "string" },
 					"committee": { "type": "string" },
-					"start": { "type": "integer", "minimum": 2000 },
-					"end": { "type": ["integer", "null"], "minimum": 2000 },
 					"level": { "type": "string", "enum": ["departmental", "university", "regional", "national", "international"] },
-					"description": { "type": "string" }
+					"description": { "type": "string" },
+					"commitment": { "$ref": "#/definitions/commitment" }
 				}	
 			}
 		},
@@ -443,7 +460,7 @@
 			"description": "List of sponsored research",
 			"items": {
 				"type": "object",
-				"required": ["title", "funder", "award", "investigators", "amount", "startdate", "enddate", "description", "url"],
+				"required": ["title", "funder", "award", "investigators", "amount", "commitment", "description", "url"],
 				"properties": {
 					"id": {
 						"type": "string",
@@ -458,19 +475,15 @@
 					"award": {
 						"type": ["string", "null"]
 					},
+					"category": {
+						"type": "string",
+						"enum": ["research", "service"]
+					},
 					"investigators": {
 						"type": "string"
 					},
 					"amount": {
 						"type": "string"
-					},
-					"startdate": {
-						"type": "integer",
-						"minimum": 2000
-					},
-					"enddate": {
-						"type": "integer",
-						"minimum": 2000
 					},
 					"description": {
 						"type": "string"
@@ -478,7 +491,8 @@
 					"url": {
 						"type": ["string", "null"],
 						"format": "uri"
-					}
+					},
+					"commitment": { "$ref": "#/definitions/commitment" }
 				}
 			}
 		},
@@ -487,7 +501,7 @@
 			"description": "List of trips.",
 			"items": {
 				"type": "object",
-				"required": ["url", "title", "details", "date", "report"],
+				"required": ["url", "title", "details", "report", "commitment"],
 				"description": "A trip.",
 				"properties": {
 					"url": {
@@ -500,14 +514,11 @@
 					"details": {
 						"type": "string"
 					},
-					"date": {
-						"type": "string",
-						"pattern": "^[1-2][0-9][0-9][0-9]\\.[0-1][0-9]\\.[0-3][0-9]$"
-					},
 					"report": {
 						"type": ["string", "null"],
 						"format": "uri"
-					}
+					},
+					"commitment": { "$ref": "#/definitions/commitment" }
 				}
 			}
 	    },
@@ -519,10 +530,7 @@
 				"description": "A talk.",
 				"required": ["date", "image", "alt", "slides", "venue", "url", "recording", "practice", "description", "keynote"],
 				"properties": {
-					"date": {
-						"type": "string",
-						"pattern": "^[1-2][0-9][0-9][0-9]\\.[0-1][0-9]\\.[0-3][0-9]$"
-					},
+					"date": { "$ref": "#/definitions/date" },
 					"image": {
 						"type": "string"
 					},
@@ -530,7 +538,7 @@
 						"type": "string"
 					},
 					"slides": {
-						"type": "string",
+						"type": ["string", "null"],
 						"format": "uri-reference"
 					},
 					"venue": {
@@ -567,7 +575,7 @@
 			"items": {
 				"type": "object",
 				"description": "A class.",
-				"required": ["id", "alt", "link", "number", "title", "description", "links"],
+				"required": ["id", "alt", "link", "number", "title", "description", "links", "hours"],
 				"properties": {
 					"id": { "type": "string" },
 					"alt": { "type": "string" },
@@ -576,6 +584,7 @@
 					"level": { "type": "string", "enum": ["undergraduate", "graduate"] },
 					"title": { "type": "string" },
 					"description": { "type": ["string", "null"] },
+					"hours": { "type": "integer", "minimum": 0 },
 					"links": {
 						"type": "array",
 						"description": "List of posts.",
@@ -603,7 +612,7 @@
 								"term": { "type": "integer", "enum": [1, 2, 3] },
 								"size": { "type": "integer", "miniumum": 1 },
 								"year": { "type": "integer", "miniumum": 2000 },
-								"score": { "type": "number", "miniumum": 0 }
+								"score": { "type": ["number", "null"], "miniumum": 0 }
 							}
 						}
 					}
@@ -643,42 +652,6 @@
 		"years": {
 			"type": "object",
 			"description": "Metadata about years."
-		},
-		"commitments": {
-			"type": "array",
-			"description": "A list of commitments",
-			"items": {
-				"type": "array",
-				"description": "Fields for a commitment",
-				"items": [
-					{
-						"type": "string"
-					},
-					{
-						"type": "string"
-					},
-					{
-						"type": "string",
-						"enum": ["research", "service", "teaching", "personal"]
-					},
-					{
-						"type": "string",
-						"enum": ["flexible", "required", "prime"]
-					},
-					{
-						"type": "integer",
-						"minimum": 1
-					},
-					{
-						"type": "string",
-						"enum": ["weekly", "annually"]
-					}
-				],
-				"additionalItems": { 
-					"type": "string",
-					"pattern": "^([1-2][0-9][0-9][0-9]-)?[0-1][0-9]-[0-3][0-9]$"
-				}
-			}
 		}
 	}
 }

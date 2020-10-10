@@ -22,7 +22,7 @@ class Commitments extends React.Component {
 
     }
 
-    createBar(commitment, proportion=1, label=true, key=null) {
+    renderBar(commitment, proportion=1, label=true, key=null) {
 
         var maxEms = 12;
         var ems = Math.round(maxEms * commitment.hours * proportion / 40);
@@ -112,7 +112,7 @@ class Commitments extends React.Component {
         
     }
 
-    createWeeks(commitments) {
+    renderWeeks() {
 
         var weeks = [];
 
@@ -130,7 +130,7 @@ class Commitments extends React.Component {
             var nextSunday = new Date(currentMonday.getTime() + 6 * 24 * 60 * 60 * 1000);
 
             // Which promises occur in this week?
-            _.each(commitments, commitment => {
+            _.each(this.commitments, commitment => {
                 // If this is an annual commitment, is this week in it's month range?
                 if(commitment.annually) {
                     let startMonth = new Date(currentMonday.getFullYear(), commitment.start.month - 1, commitment.start.date);
@@ -163,8 +163,8 @@ class Commitments extends React.Component {
             });
 
             // Are there any prime commitments this week? If so, remove the flexible commitments.
-            if(_.filter(intersectingCommitments, intersect => intersect.commitment.priority === "prime").length > 0)
-                intersectingCommitments = _.filter(intersectingCommitments, intersect => intersect.commitment.priority !== "flexible");
+            if(_.filter(intersectingCommitments, intersect => intersect.commitment.priority === 2).length > 0)
+                intersectingCommitments = _.filter(intersectingCommitments, intersect => intersect.commitment.priority !== 0);
 
             // Add these dcommitments to this week for rendering.
             weeks.push({
@@ -200,7 +200,7 @@ class Commitments extends React.Component {
                 <tr key={"week-" + index + "-commitments"}>
                     <td>
                     {
-                        _.map(week.intersects, (intersect, index) => this.createBar(intersect.commitment, intersect.overlap, false, "commitment-" + index))
+                        _.map(week.intersects, (intersect, index) => this.renderBar(intersect.commitment, intersect.overlap, false, "commitment-" + index))
                     }
                     <br/>
                     {
@@ -214,7 +214,7 @@ class Commitments extends React.Component {
                                     >
                                             {index > 0 && week.intersects[index - 1].commitment.category !== intersect.commitment.category ? <br/> : null}
                                             {intersect.commitment.name}
-                                            {index < week.intersects.length - 1 ? ", " : null}
+                                            {index < week.intersects.length - 1 ? <span> &sdot; </span> : null}
                                     </span>
                             )}
                         </small>
@@ -230,30 +230,155 @@ class Commitments extends React.Component {
 
     }
 
-	render() {
+    commit(name, description, category, priority, hours, annually, start, end) {
 
-        var indefiniteWeekly = this.props.app.getProfile().getCommitments(
-            commitment => commitment.start === null && commitment.category !== "personal",
-            commitment => -commitment.hours
+        this.commitments.push({
+            "name": name,
+            "description": description,
+            "category": category,
+            "priority": priority,
+            "hours": hours,
+            "annually": annually,
+            "start": start,
+            "end": end
+        });
+
+    }
+
+    generateCommitments() {
+
+        this.commitments = [];
+
+        var profile = this.props.app.getProfile();
+        var thisYear = (new Date()).getFullYear();
+
+        // Start with an list of baseline commitments.
+        this.commit("Reading", "Books and papers", "research", 0, 2, false, null, null),
+        this.commit("PhD student advising", "Meetings, feedback, and collaboration", "research", 0, 6, false, null, null),
+        this.commit("Seminars", "iSchool, CSE, DUB, etc.", "research", 0, 2, false, null, null),
+        this.commit("Faculty meetings", "Decisions, decisions", "research", 0, 2, false, null, null),
+        this.commit("PhD admissions", "Reviews + meetings", "research", 1, 2, true, { month: 12, date: 15 }, { month: 3, date: 15 }),
+        this.commit("SIGCSE deadline", "Writing", "research", 1, 10, true, { month: 8, date: 1 }, { month: 8, date: 20 }),
+        this.commit("CHI deadline", "Writing", "research", 1, 10, true, { month: 8, date: 15 }, { month: 9, date: 10 }),
+        this.commit("ICER deadline", "Writing", "research", 1, 10, true, { month: 3, date: 15 }, { month: 4, date: 5 }),
+        this.commit("Winter break", "Family", "personal", 2, 30, true, { month: 12, date: 20 }, { month: 1, date: 1 }),
+        this.commit("Summer break", "Family", "personal", 2, 30, true, { month: 8, date: 1 }, { month: 8, date: 15 })   
+
+        // Add editing responsibilities.
+        _.each(profile.getEditing(), editing =>
+            this.commit(
+                editing.venue, editing.title, "service", 
+                editing.commitment.priority, editing.commitment.hours, false, 
+                editing.commitment.start, editing.commitment.end
+            )
         );
 
-        var indefiniteAnnually = this.props.app.getProfile().getCommitments(
-            commitment => commitment.annually && commitment.category !== "personal",
+        // Add service responsibilities.
+        _.each(profile.getService(), service =>
+            this.commit(
+                service.committee, service.title, "service", 
+                service.commitment.priority, service.commitment.hours, false, 
+                service.commitment.start, service.commitment.end
+            )
+        );
+
+        // Add funding responsibilities.
+        _.each(profile.getFunding(), funding =>
+            this.commit(
+                funding.title, "Research, collaboration, reporting", funding.category, 
+                funding.commitment.priority, funding.commitment.hours, false, 
+                funding.commitment.start, funding.commitment.end
+            )
+        );
+
+        // Add travel responsibilities.
+        _.each(profile.getTravel(), trip =>
+            this.commit(
+                trip.title, trip.details, trip.category, 
+                trip.commitment.priority, trip.commitment.hours, false, 
+                trip.commitment.start, trip.commitment.end
+            )
+        );
+
+        // Add talk prep responsibilities (start prep 90 days beforehand)
+        _.each(profile.getTalks(), talk => {
+            let start = new Date(talk.date.getTime());
+            start.setDate(start.getDate() - 90);
+            return this.commit(
+                talk.title, talk.description, "research", 
+                1, 1, false, 
+                start, talk.date
+            )
+        });
+
+        // Add reviewing responsibilities.
+        _.each(profile.getReviewing(), reviewing => {
+            // If this has a commitment, add commitments for all current and future years.
+            if(reviewing.commitment) {
+                _.each(
+                    _.filter(reviewing.years, year => year >= thisYear),
+                    year => 
+                        this.commit(
+                            reviewing.title ? reviewing.title : "Reviewer", reviewing.venue, "research", 
+                            reviewing.commitment.priority, reviewing.commitment.hours, false, 
+                            new Date(year, reviewing.commitment.start.getMonth(), reviewing.commitment.start.getDate()),
+                            new Date(year, reviewing.commitment.end.getMonth(), reviewing.commitment.end.getDate()),
+                        )
+                )
+            }
+        });
+
+        // Add teaching responsibilities
+        _.each(profile.getClasses(), course => {
+            _.each(course.offerings, offering => {
+                // If this course is going to be offered this year, add commitments for it
+                if(offering.year >= thisYear) {
+                    // Add time for preparing to teach the quarter before.
+                    this.commit(
+                        course.number + " Prep", "Curriculum design", "teaching",
+                        1, 2, false,
+                        new Date(offering.year - (offering.term === 2 ? 1 : 0), [6, 9, 0][offering.term - 1], [1, 5, 5][offering.term - 1]),
+                        new Date(offering.year - (offering.term === 2 ? 1 : 0), [8, 11, 3][offering.term - 1], [15, 15, 15][offering.term - 1])
+                    );
+                    // Add time for teaching the class the quarter before.
+                    this.commit(
+                        course.number, "Teaching and grading", "teaching",
+                        1, course.hours, false,
+                        new Date(offering.year, [8, 0, 3][offering.term - 1], [15, 1, 1][offering.term - 1]),
+                        new Date(offering.year, [11, 2, 5][offering.term - 1], [15, 15, 15][offering.term - 1])
+                    );
+                }
+            });
+        });
+
+    }
+
+	render() {
+
+        this.generateCommitments();
+
+        // Split up the committments into categories for display.
+        var indefiniteWeekly = _.sortBy(_.filter(this.commitments, 
+            commitment => commitment.end === null && commitment.category !== "personal"),
+            commitment => -commitment.hours);
+
+        var indefiniteAnnually = _.sortBy(_.filter(this.commitments,
+            commitment => commitment.annually && commitment.category !== "personal"),
             commitment => commitment.start.month * 12 + commitment.start.date
         );
 
-        var definiteResearch = this.props.app.getProfile().getCommitments(
-            commitment => !commitment.annually && commitment.start !== null && commitment.category === "research" && commitment.end.getTime() > Date.now(),
+        var definiteResearch = _.sortBy(_.filter(this.commitments, 
+            commitment => !commitment.annually && commitment.end !== null && commitment.category === "research" && commitment.end.getTime() > Date.now()),
             commitment => commitment.start.getTime()
         );
 
-        var definiteTeaching = this.props.app.getProfile().getCommitments(
-            commitment => !commitment.annually && commitment.start !== null && commitment.category === "teaching" && commitment.end.getTime() > Date.now(),
+        var definiteTeaching = _.sortBy(_.filter(this.commitments, 
+            commitment => !commitment.annually && commitment.end !== null && commitment.category === "teaching" && commitment.end.getTime() > Date.now()),
             commitment => commitment.start.getTime()
         );
 
-        var definiteService = this.props.app.getProfile().getCommitments(
-            commitment => !commitment.annually && commitment.start !== null && commitment.category === "service" && commitment.end.getTime() > Date.now(),
+        var definiteService = _.sortBy(_.filter(this.commitments,
+            commitment => !commitment.annually && commitment.end !== null && commitment.category === "service" && commitment.end.getTime() > Date.now()),
             commitment => commitment.start.getTime()
         );
 
@@ -284,7 +409,7 @@ class Commitments extends React.Component {
                                         <em>weekly</em>
                                     </td>
                                     <td>
-                                        {this.createBar(commitment)}
+                                        {this.renderBar(commitment)}
                                     </td>
                                 </tr>                            
                             )
@@ -305,7 +430,7 @@ class Commitments extends React.Component {
                                         }                             
                                     </td>
                                     <td>
-                                        {this.createBar(commitment)}
+                                        {this.renderBar(commitment)}
                                     </td>
                                 </tr>                            
                             )
@@ -323,7 +448,7 @@ class Commitments extends React.Component {
                                         {this.toDateRange(commitment.start, commitment.end)}
                                     </td>
                                     <td>
-                                        {this.createBar(commitment)}
+                                        {this.renderBar(commitment)}
                                     </td>
                                 </tr>                            
                             )
@@ -340,7 +465,7 @@ class Commitments extends React.Component {
                                         {this.toDateRange(commitment.start, commitment.end)}
                                     </td>
                                     <td>
-                                        {this.createBar(commitment)}
+                                        {this.renderBar(commitment)}
                                     </td>
                                 </tr>                            
                             )
@@ -357,7 +482,7 @@ class Commitments extends React.Component {
                                         {this.toDateRange(commitment.start, commitment.end)}
                                     </td>
                                     <td>
-                                        {this.createBar(commitment)}
+                                        {this.renderBar(commitment)}
                                     </td>
                                 </tr>                            
                             )
@@ -369,7 +494,7 @@ class Commitments extends React.Component {
 
                 <table className="table">
                     <tbody>
-                    { this.createWeeks(this.props.app.getProfile().getCommitments()) }
+                    { this.renderWeeks() }
                     </tbody>
                 </table>
             </div>

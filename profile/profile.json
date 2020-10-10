@@ -5626,56 +5626,122 @@
 			"description": "Oregon State University's recognition of the top 5 undergraduates in the freshman class of more than 5,000 students."
 		}
 	],
-	"editor": [
+	"editing": [
 		{
 			"title": "Associate Editor",
-			"venue": "ACM Transactions on Computing Education", 
-			"startdate": 2015,
-			"enddate": null
+			"venue": "ACM Transactions on Computing Education",
+			"commitment": {
+				"start": "2015-01-01",
+				"end": null,
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Associate Editor",
 			"venue": "IEEE Transactions on Software Engineering",
-			"startdate": 2016,
-			"enddate": 2019
+			"commitment": {
+				"start": "2016-09-15",
+				"end": "2019-09-15",
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Co-Editor",
 			"venue": "IEEE Software Special Issue on End-User Software Engineering",
-			"startdate": 2009,
-			"enddate": null
+			"commitment": {
+				"start": "2009-01-01",
+				"end": "2009-09-15",
+				"hours": 0.5,
+				"priority": 0
+			}
 		}
 	],
 	"reviewing": [
 		{
+			"venue": "National Science Foundation (CISE, EHR)",
+			"title": "Panelist",
+			"years": [2011, 2012, 2014, 2017, 2018],
+			"level": "panelist",
+			"commitment": {
+				"start": "2020-10-01",
+				"end": "2020-12-01",
+				"hours": 2,
+				"priority": 1
+			}
+		},
+		{
+			"venue": "Princeton University Press", 
+			"title": "Book reviewer",
+			"years": [2021],
+			"level": "reviewer",
+			"commitment": {
+				"start": "2020-10-15",
+				"end": "2020-11-15",
+				"hours": 1,
+				"priority": 0
+			}
+		},
+		{
 			"venue": "@icer", 
-			"title": "Program Co-Chair, General Co-Chair",
+			"title": "Program Co-Chair",
 			"years": [2020, 2021],
-			"level": "chair"
+			"level": "chair",
+			"commitment": {
+				"start": "2020-08-15",
+				"end": "2020-09-15",
+				"hours": 4,
+				"priority": 0
+			}
 		},
 		{
 			"venue": "@seet", 
 			"title": "Program Co-Chair",
 			"years": [2020],
-			"level": "chair"
+			"level": "chair",
+			"commitment": {
+				"start": "2019-01-01",
+				"end": "2019-06-15",
+				"hours": 2,
+				"priority": 0
+			}
 		},
 		{
 			"venue": "@chi", 
 			"title": "Program Sub-Committee Co-Chair",
 			"years": [2012, 2013],
-			"level": "chair"
+			"level": "chair",
+			"commitment": {
+				"start": "2013-05-01",
+				"end": "2014-01-15",
+				"hours": 3,
+				"priority": 0
+			}
 		},
 		{
 			"venue": "@vlhcc",
 			"title": "Program Co-Chair",
 			"years": [2011],
-			"level": "chair"
+			"level": "chair",
+			"commitment": {
+				"start": "2011-01-15",
+				"end": "2011-10-15",
+				"hours": 3,
+				"priority": 0
+			}
 		},
 		{
 			"venue": "@icse",
 			"title": "Program Board Member",
 			"years": [2018, 2019],
-			"level": "pc"
+			"level": "pc",
+			"commitment": {
+				"start": "2019-08-15",
+				"end": "2019-12-15",
+				"hours": 4,
+				"priority": 0
+			}
 		},
 		{
 			"venue": "Programming Experience Workshop (PX)",
@@ -5774,7 +5840,13 @@
 		{
 			"venue": "@chi",
 			"years": [2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
-			"level": "reviewer"
+			"level": "reviewer",
+			"commitment": {
+				"start": "2020-10-01",
+				"end": "2020-11-15",
+				"hours": "1",
+				"priority": 0
+			}
 		},	
 		{
 			"venue": "@vlhcc",
@@ -6031,39 +6103,61 @@
 			"start": 2018,
 			"end": null,
 			"level": "regional",
-			"description": "I organize the group, which meets  monthly to inform policy, organize community, and centralize information about about Washington state's K-12 CS for All efforts on the web (https://cseforallwa.org). Supported by the NSF-funded Exploring Computing Education Pathways project (https://ecepalliance.org)."
+			"description": "I organize the group, which meets  monthly to inform policy, organize community, and centralize information about about Washington state's K-12 CS for All efforts on the web (https://cseforallwa.org). Supported by the NSF-funded Exploring Computing Education Pathways project (https://ecepalliance.org).",
+			"commitment": {
+				"start": "2018-05-01",
+				"end": null,
+				"hours": 2,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Committee Member",
 			"committee": "Computing Research Association’s Education Committee (CRA-E)",
-			"start": 2020,
-			"end": null,
 			"level": "international",
-			"description": "I work on projects that help create equitable pathways to participating in CS research."
+			"description": "I work on projects that help create equitable pathways to participating in CS research.",
+			"commitment": {
+				"start": "2020-08-01",
+				"end": null,
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Secretary",
 			"committee": "Seattle Public Schools CS Advisory Board.",
-			"start": 2018,
-			"end": null,
 			"level": "regional",
-			"description": "I advise the city on its CS curriculum and teacher pathways."
+			"description": "I advise the city on its CS curriculum and teacher pathways.",
+			"commitment": {
+				"start": "2018-01-01",
+				"end": "2020-03-01",
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Committee member",
 			"committee": "Computing Research Association (CRA) Undergraduate Research Award Committee",
-			"start": 2018,
-			"end": 2019,
 			"level": "international",
-			"description": "I helped select finalists and winners for the CRA award."
+			"description": "I helped select finalists and winners for the CRA award.",
+			"commitment": {
+				"start": "2018-01-01",
+				"end": "2019-03-01",
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Co-Chair",
 			"committee": "SIGCSE Doctoral Consortium",
-			"start": 2018,
-			"end": 2019,
 			"level": "international",
-			"description": "I co-organized and co-ran the doctoral consortium, co-located with the ACM ICER conference annually."
+			"description": "I co-organized and co-ran the doctoral consortium, co-located with the ACM ICER conference annually.",
+			"commitment": {
+				"start": "2017-09-15",
+				"end": "2019-09-15",
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Member",
@@ -6071,15 +6165,25 @@
 			"start": 2017,
 			"end": 2020,
 			"level": "international",
-			"description": "I helped create resources, curriculum standards, and education guidelines for the global CS community."
+			"description": "I helped create resources, curriculum standards, and education guidelines for the global CS community.",
+			"commitment": {
+				"start": "2017-08-01",
+				"end": "2020-08-01",
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Member",
 			"committee": "Washington State Computer Science Leadership Team",
-			"start": 2017,
-			"end": 2018,
 			"level": "regional",
-			"description": "I provided expertise on CS learning to help shape state policy."
+			"description": "I provided expertise on CS learning to help shape state policy.",
+			"commitment": {
+				"start": "2017-01-01",
+				"end": "2018-01-01",
+				"hours": 0.1,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Curriculum design committee member",
@@ -6087,15 +6191,25 @@
 			"start": 2015,
 			"end": 2015,
 			"level": "university",
-			"description": "I helped design and structure the The UW Master of Science in Technology Innovation Program."
+			"description": "I helped design and structure the The UW Master of Science in Technology Innovation Program.",
+			"commitment": {
+				"start": "2015-03-01",
+				"end": "2015-06-15",
+				"hours": 2,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Co-author",
 			"committee": "CRA Whitepaper on Computing Education Research",
-			"start": 2015,
-			"end": 2015,
 			"level": "international",
-			"description": "I co-authored this whitepaper to help spread the word about the importance of CS education research in CS departments."
+			"description": "I co-authored this whitepaper to help spread the word about the importance of CS education research in CS departments.",
+			"commitment": {
+				"start": "2015-01-01",
+				"end": "2015-03-15",
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Director",
@@ -6103,47 +6217,61 @@
 			"start": 2013,
 			"end": 2015,
 			"level": "national",
-			"description": "I led annual meetings and maintained the website for the international research collective, and then officially ended the group."
+			"description": "I led annual meetings and maintained the website for the international research collective, and then officially ended the group.",
+			"commitment": {
+				"start": "2013-01-01",
+				"end": "2015-08-01",
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Steering Committee Member",
 			"committee": "IEEE Symposium on Visual Languages and Human-Centric Computing",
-			"start": 2011,
-			"end": 2015,
 			"level": "international",
-			"description": "I helped select future conference locations and device conference publication policy."
+			"description": "I helped select future conference locations and device conference publication policy.",
+			"commitment": {
+				"start": "2011-10-01",
+				"end": "2015-10-01",
+				"hours": 0.25,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Co-organizer",
 			"committee": "Dagstuhl on Human-Centered Software Development Tools",
-			"start": 2014,
-			"end": 2015,
 			"level": "international",
-			"description": "I helped propose, plan, and run the weeklong workshop"
-		},
-		{
-			"title": "Panel member",
-			"committee": "National Science Foundation Review Panel",
-			"start": 2011,
-			"end": null,
-			"level": "national",
-			"description": "I review and recommend grant proposals for CISE and EHR panels related to HCI, software engineering, and CS education."
+			"description": "I helped propose, plan, and run the weeklong workshop",
+			"commitment": {
+				"start": "2014-03-01",
+				"end": "2015-08-01",
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Co-founder",
 			"committee": "Masters in Human-Computer Interaction and Design, University of Washington",
-			"start": 2013,
-			"end": 2014,
 			"level": "university",
-			"description": "I helped design, plan, and launch the inaugural year of the masters degree."
+			"description": "I helped design, plan, and launch the inaugural year of the masters degree.",
+			"commitment": {
+				"start": "2013-01-01",
+				"end": "2014-09-15",
+				"hours": 2,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Co-organizer",
 			"committee": "DUB Retreat, University of Washington",
-			"start": 2013,
-			"end": 2013,
 			"level": "university",
-			"description": "I co-organized the annual retreat for the HCI community at UW."
+			"description": "I co-organized the annual retreat for the HCI community at UW.",
+			"commitment": {
+				"start": "2013-06-01",
+				"end": "2013-10-15",
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Graduate Consortium Chair",
@@ -6151,111 +6279,181 @@
 			"start": 2009,
 			"end": 2010,
 			"level": "international",
-			"description": "I co-organized and ran the doctoral consortium, reaching 40 doctoral students."
-		},
-		{
-			"title": "Member",
-			"committee": "iSchool Recognitions Committee",
-			"start": 2008,
-			"end": 2009,
-			"level": "departmental",
-			"description": "I helped identify, nominate, and recognize faculty, staff, and students with school-level awards."
-		},
-		{
-			"title": "Member",
-			"committee": "iSchool Ph.D. Admissions Committee",
-			"start": 2009,
-			"end": 2010,
-			"level": "departmental",
-			"description": "I helped plan admissions policy, review Ph.D. applicaitons, and make final admissions recommendations."
-		},
-		{
-			"title": "Member",
-			"committee": "iSchool Informatics Program Committee",
-			"start": 2010,
-			"end": 2012,
-			"level": "departmental",
-			"description": "I helped make decisions on program curriculum, policy, and procedures."
-		},
-		{
-			"title": "Member",
-			"committee": "iSchool Elected Faculty Council",
-			"start": 2012,
-			"end": 2013,
-			"level": "departmental",
-			"description": "I helped advance the interests of faculty in the school through policy change and advocacy to the dean, hepling to secure an annual dispursement of flexible funding."
-		},
-		{
-			"title": "Program Chair",
-			"committee": "Masters in HCI+Design", 
-			"start": 2016,
-			"end": 2017,
-			"level": "university",
-			"description": "I led the fourth year of the masters degree, renewing the campus-wide contract supporting its resources, hiring a new director to lead the program for the next three years, and securing a dedicated studio space in the former UW Alumni house."
-		},
-		{
-			"title": "Member",
-			"committee": "MHCI+D Faculty Search",
-			"start": 2012,
-			"end": 2013,
-			"level": "university",
-			"description": "I evaluated and recruited applicants to join the MHCI+D instructional faculty."
+			"description": "I co-organized and ran the doctoral consortium, reaching 40 doctoral students.",
+			"commitment": {
+				"start": "2009-01-01",
+				"end": "2010-10-15",
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Member",
 			"committee": "iSchool Faculty Search",
-			"start": 2012,
-			"end": 2014,
 			"level": "departmental",
-			"description": "I evaluated and recruited applicants to join the iSchool as tenure-track faculty."
+			"description": "I helped search for and recruit data science teaching professors.",
+			"commitment": {
+				"start": "2020-10-15",
+				"end": "2021-03-15",
+				"hours": 1,
+				"priority": 0
+			}
+		},
+		{
+			"title": "Member",
+			"committee": "iSchool Recognitions Committee",
+			"level": "departmental",
+			"description": "I helped identify, nominate, and recognize faculty, staff, and students with school-level awards.",
+			"commitment": {
+				"start": "2008-09-15",
+				"end": "2009-06-15",
+				"hours": 0.1,
+				"priority": 0
+			}
+		},
+		{
+			"title": "Member",
+			"committee": "iSchool Ph.D. Admissions Committee",
+			"level": "departmental",
+			"description": "I helped plan admissions policy, review Ph.D. applicaitons, and make final admissions recommendations.",
+			"commitment": {
+				"start": "2009-09-15",
+				"end": "2010-06-15",
+				"hours": 2,
+				"priority": 0
+			}
+		},
+		{
+			"title": "Member",
+			"committee": "iSchool Informatics Program Committee",
+			"level": "departmental",
+			"description": "I helped make decisions on program curriculum, policy, and procedures.",
+			"commitment": {
+				"start": "2010-09-15",
+				"end": "2012-06-15",
+				"hours": 1,
+				"priority": 0
+			}
+		},
+		{
+			"title": "Member",
+			"committee": "iSchool Elected Faculty Council",
+			"level": "departmental",
+			"description": "I helped advance the interests of faculty in the school through policy change and advocacy to the dean, hepling to secure an annual dispursement of flexible funding.",
+			"commitment": {
+				"start": "2012-09-15",
+				"end": "2013-06-15",
+				"hours": 3,
+				"priority": 0
+			}
+		},
+		{
+			"title": "Program Chair",
+			"committee": "Masters in HCI+Design", 
+			"level": "university",
+			"description": "I led the fourth year of the masters degree, renewing the campus-wide contract supporting its resources, hiring a new director to lead the program for the next three years, and securing a dedicated studio space in the former UW Alumni house.",
+			"commitment": {
+				"start": "2016-09-15",
+				"end": "2017-09-15",
+				"hours": 1,
+				"priority": 0
+			}
+		},
+		{
+			"title": "Member",
+			"committee": "MHCI+D Faculty Search",
+			"level": "university",
+			"description": "I evaluated and recruited applicants to join the MHCI+D instructional faculty.",
+			"commitment": {
+				"start": "2012-09-15",
+				"end": "2013-06-15",
+				"hours": 2,
+				"priority": 0
+			}
+		},
+		{
+			"title": "Member",
+			"committee": "iSchool Faculty Search",
+			"level": "departmental",
+			"description": "I evaluated and recruited applicants to join the iSchool as tenure-track faculty.",
+			"commitment": {
+				"start": "2012-09-15",
+				"end": "2014-04-15",
+				"hours": 2,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Member",
 			"committee": "MHCI+D Executive Committee",
-			"start": 2013,
-			"end": 2015,
 			"level": "university",
-			"description": "I helped set policy and procedures for the masters degree."
+			"description": "I helped set policy and procedures for the masters degree.",
+			"commitment": {
+				"start": "2013-09-15",
+				"end": "2015-06-15",
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Program Chair",
 			"committee": "Informatics",
-			"start": 2017,
-			"end": null,
 			"level": "departmental",
-			"description": "I oversee the iSchool's undergraduate degree, which has nearly 500 students and graduates more than 200 per year. I identify curricular, community, and policy priorities, organize discussions of proposed changes, and implement the changes with the support of staff.I reframed the curriculum around the study, design, and development of information technology for the good of people, organizations, and society; I reduced reliance on guest faculty; I increased the inclusiveness and scalability of admissions; I grew the program by over 50%; and I increased the percept of women in the program to 40% and increased the representation of Black and Latinx by 100%."
+			"description": "I oversee the iSchool's undergraduate degree, which has nearly 500 students and graduates more than 200 per year. I identify curricular, community, and policy priorities, organize discussions of proposed changes, and implement the changes with the support of staff.I reframed the curriculum around the study, design, and development of information technology for the good of people, organizations, and society; I reduced reliance on guest faculty; I increased the inclusiveness and scalability of admissions; I grew the program by over 50%; and I increased the percept of women in the program to 40% and increased the representation of Black and Latinx by 100%.",
+			"commitment": {
+				"start": "2007-03-15",
+				"end": null,
+				"hours": 6,
+				"priority": 0
+			}
 		},
 		{
 			"title": "Chair",
 			"committee": "iSchool Informatics Admissions Committee",
-			"start": 2016,
-			"end": 2020,
 			"level": "departmental",
-			"description": "I designed, planned, and executed an admissions process with the support of staff, reviewing over 800 applications a year. I implemented many anti-racist efforts, including implicit bias training and removal of structurally racist evaluation criteria"
+			"description": "I designed, planned, and executed an admissions process with the support of staff, reviewing over 800 applications a year. I implemented many anti-racist efforts, including implicit bias training and removal of structurally racist evaluation criteria",
+			"commitment": {
+				"start": "2016-09-15",
+				"end": "2020-06-15",
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
-			"title": "Chair",
+			"title": "Member",
 			"committee": "iSchool Academics Council",
-			"start": 2016,
-			"end": null,
 			"level": "departmental",
-			"description": "I deliberate with the other program chairs and the Associate Dean for Academics on school-wide policy issues, as well as approve program-level changes."
+			"description": "I deliberate with the other program chairs and the Associate Dean for Academics on school-wide policy issues, as well as approve program-level changes.",
+			"commitment": {
+				"start": "2016-09-15",
+				"end": null,
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
-			"title": "Chair",
+			"title": "Member",
 			"committee": "iSchool Leadership Council",
-			"start": 2016,
-			"end": null,
 			"level": "departmental",
-			"description": "I deliberate with the Dean and numerous leaders across the iSchool to make strategic choices about the school's initiatives and finances."
+			"description": "I deliberate with the Dean and numerous leaders across the iSchool to make strategic choices about the school's initiatives and finances.",
+			"commitment": {
+				"start": "2016-09-15",
+				"end": null,
+				"hours": 0.5,
+				"priority": 0
+			}
 		},
 		{
 			"title": "President",
 			"committee": "Oregon State University ACM Student Chapter",
-			"start": 2000,
-			"end": 2002,
 			"level": "departmental",
-			"description": "I served as ACM Student Chapter president for three years, hosting the ACM International Collegiate Programming Contest, launching two years of student-taught 1 credit pass/fail courses to address curricular gaps, and bi-weekly pizza gatherings."
+			"description": "I served as ACM Student Chapter president for three years, hosting the ACM International Collegiate Programming Contest, launching two years of student-taught 1 credit pass/fail courses to address curricular gaps, and bi-weekly pizza gatherings.",
+			"commitment": {
+				"start": "2000-09-15",
+				"end": "2002-06-15",
+				"hours": 2,
+				"priority": 0
+			}
 		}
 	],
 	"funding": [
@@ -6266,10 +6464,15 @@
 			"award": "#2031265",
 			"investigators": "Amy J. Ko (PI), Anne Beitlers (Co-PI)",
 			"amount": "$999,723",
-			"startdate": 2020,
-			"enddate": 2023,
+			"category": "research",
 			"description": "Designing and launching a justice-focused CS education masters program and studying teacher learning about CS from a justice lens.",
-			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2031265"
+			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2031265",
+			"commitment": {
+				"start": "2020-05-15",
+				"end": "2023-09-15",
+				"hours": 4,
+				"priority": 0
+			}
 		},
 		{
 			"id": "fmitf",
@@ -6278,10 +6481,15 @@
 			"award": "#1836813",
 			"investigators": "Michael Ernst (PI), Amy J. Ko (Co-PI), Jennifer Mankoff (Co-PI), Zach Tatlock (Co-PI)",
 			"amount": "$738,125",
-			"startdate": 2019,
-			"enddate": 2022,
+			"category": "research",
 			"description": "New techniques to formally verify a range of accessibility properties of web applications.",
-			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1836813"
+			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1836813",
+			"commitment": {
+				"start": "2019-10-01",
+				"end": "2022-10-01",
+				"hours": 1,
+				"priority": 0
+			}
 		},
 		{
 			"id": "strategies",
@@ -6290,10 +6498,15 @@
 			"award": "#1703304",
 			"investigators": "Thomas LaToza (PI, George Mason University), Amy J. Ko (Co-PI, University of Washington)",
 			"amount": "$1,199,555",
-			"startdate": 2017,
-			"enddate": 2021,
+			"category": "research",
 			"description": "Develop of a new science of programming strategies.",
-			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1703734"
+			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1703734",
+			"commitment": {
+				"start": "2017-08-15",
+				"end": "2021-08-15",
+				"hours": 2,
+				"priority": 0
+			}
 		},
 		{
 			"id": "csassess",
@@ -6302,22 +6515,32 @@
 			"award": "#1735123",
 			"investigators": "Amy J. Ko (PI, University of Washington), Min Li (Co-PI, University of Washington)",
 			"amount": "$549,857",
-			"startdate": 2017,
-			"enddate": 2020,
+			"category": "research",
 			"description": "New model of CS1 concepts, new approaches to formative assessment and feedback, new techniques problem synthesis, and a new paradigm for intelligent tutoring of programming.",
-			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1735123"
+			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1735123",
+			"commitment": {
+				"start": "2017-07-15",
+				"end": "2020-07-15",
+				"hours": 4,
+				"priority": 0
+			}
 		},
 		{
 			"id": "accesscomp",
-			"title": "BPC-AE: AcessComputing - Third Extension",
+			"title": "BPC-AE: AccessComputing",
 			"funder": "National Science Foundation",
 			"award": "#1539179",
 			"investigators": "Richard Ladner (PI, University of Washington), Sheryl Burgstahler (Co-PI), Amy J. Ko (Co-PI), Jacob O. Wobbrock (Co-PI)",
 			"amount": "$3,797,990",
-			"startdate": 2015,
-			"enddate": 2020,
+			"category": "service",
 			"description": "Increases access to computing for students with disabilities.",
-			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1539179"
+			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1539179",
+			"commitment": {
+				"start": "2015-06-15",
+				"end": "2021-06-15",
+				"hours": 2,
+				"priority": 0
+			}
 		},
 		{
 			"id": "explore",
@@ -6326,10 +6549,15 @@
 			"award": "#1314399",
 			"investigators": "Brad Myers (PI, Carnegie Mellon University), Amy J. Ko (Co-PI), Margaret Burnett (Co-PI, Oregon State University), Martin Erwig (Co-PI, Oregon State University), Anita Sarma (Co-PI, University of Nebraska, Lincoln), Gregg Rothermel (Co-PI, University of Nebraska, Lincoln)",
 			"amount": "$2,999,991",
-			"startdate": 2013,
-			"enddate": 2017,
+			"category": "research",
 			"description": "New theory, tools, and techniques for supporting multiple versions and variations of programs.",
-			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1559657"
+			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1559657",
+			"commitment": {
+				"start": "2013-08-15",
+				"end": "2017-08-15",
+				"hours": 3,
+				"priority": 0
+			}
 		},
 		{
 			"id": "gidget",
@@ -6338,10 +6566,15 @@
 			"award": "#1240786",
 			"investigators": "Amy J. Ko (PI), Margaret Burnett (Co-PI, Oregon State University), Catherine Law (Co-PI, Oregon State University)",
 			"amount": "$599,999",
-			"startdate": 2012,
-			"enddate": 2015,
+			"category": "research",
 			"description": "Debugging puzzle games as a new method for engaging, efficient learning of computer programming.",
-			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1240786"
+			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1240786",
+			"commitment": {
+				"start": "2012-07-15",
+				"end": "2015-07-15",
+				"hours": 3,
+				"priority": 0
+			}
 		},
 		{
 			"id": "career",
@@ -6350,10 +6583,15 @@
 			"award": "#1153625",
 			"investigators": "Amy J. Ko (PI)",
 			"amount": "$592,456",
-			"startdate": 2010,
-			"enddate": 2014,
+			"category": "research",
 			"description": "Studies and tools for supporting analyzing and prioritizing bug reports.",
-			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0952733"
+			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0952733",
+			"commitment": {
+				"start": "2010-09-15",
+				"end": "2014-09-15",
+				"hours": 5,
+				"priority": 0
+			}
 		},
 		{
 			"id": "wfund",
@@ -6362,10 +6600,15 @@
 			"award": null,
 			"investigators": "Jacob O. Wobbrock (CEO), Amy J. Ko (CTO)",
 			"amount": "$500,000",
-			"startdate": 2013,
-			"enddate": 2014,
+			"category": "service",
 			"description": "Gap fund to support the commercialization of the LemonAid research project.",
-			"url": null
+			"url": null,
+			"commitment": {
+				"start": "2013-07-15",
+				"end": "2014-07-15",
+				"hours": 0,
+				"priority": 0
+			}
 		},
 		{
 			"id": "seif",
@@ -6374,10 +6617,15 @@
 			"award": null,
 			"investigators": "Amy J. Ko (PI)",
 			"amount": "$25,000",
-			"startdate": 2013,
-			"enddate": 2014,			
+			"category": "research",
 			"description": "Gift to support the Gidget research project.",
-			"url": null
+			"url": null,
+			"commitment": {
+				"start": "2013-07-15",
+				"end": "2014-07-15",
+				"hours": 0,
+				"priority": 0
+			}
 		},
 		{
 			"id": "googlelemon",
@@ -6386,10 +6634,15 @@
 			"award": null,
 			"investigators": "Amy J. Ko (PI)",
 			"amount": "$47,359",
-			"startdate": 2012,
-			"enddate": 2013,
+			"category": "research",
 			"description": "Gift to support the LemonAid research project.",
-			"url": null
+			"url": null,
+			"commitment": {
+				"start": "2012-07-15",
+				"end": "2013-07-15",
+				"hours": 0,
+				"priority": 0
+			}
 		},
 		{
 			"id": "gidgetrrf",
@@ -6398,10 +6651,15 @@
 			"award": null,
 			"investigators": "Amy J. Ko (PI)",
 			"amount": "$32,122",
-			"startdate": 2012,
-			"enddate": 2013,
+			"category": "research",
 			"description": "Early stage internal grant to support Gidget.",
-			"url": null
+			"url": null,
+			"commitment": {
+				"start": "2012-07-15",
+				"end": "2013-07-15",
+				"hours": 0,
+				"priority": 0
+			}
 		},
 		{
 			"id": "c4clemon",
@@ -6410,10 +6668,15 @@
 			"award": null,
 			"investigators": "Jacob O. Wobbrock (PI) and Amy J. Ko (Co-PI)",
 			"amount": "$50,000",
-			"startdate": 2012,
-			"enddate": 2012,
+			"category": "service",
 			"description": "Early stage internal grant to support the commercialization of LemonAid.",
-			"url": null
+			"url": null,
+			"commitment": {
+				"start": "2012-01-01",
+				"end": "2013-01-01",
+				"hours": 0,
+				"priority": 0
+			}
 		},
 		{
 			"id": "msft",
@@ -6422,10 +6685,15 @@
 			"award": null,
 			"investigators": "Amy J. Ko (PI)",
 			"amount": "$6,200",
-			"startdate": 2010,
-			"enddate": 2011,
+			"category": "research",
 			"description": "Gift to support research on developer help seeking.",
-			"url": null
+			"url": null,
+			"commitment": {
+				"start": "2010-03-15",
+				"end": "2011-03-15",
+				"hours": 3,
+				"priority": 0
+			}
 		},
 		{
 			"id": "grfp",
@@ -6434,10 +6702,15 @@
 			"award": null,
 			"investigators": "Amy J. Ko (PI)",
 			"amount": "$75,000",
-			"startdate": 2003,
-			"enddate": 2008,
+			"category": "research",
 			"description": "A 3-year competitive fellowship for new doctoral students",
-			"url": null
+			"url": null,
+			"commitment": {
+				"start": "2003-08-15",
+				"end": "2008-08-15",
+				"hours": 0,
+				"priority": 0
+			}
 		},
 		{
 			"id": "ndseg",
@@ -6446,178 +6719,373 @@
 			"award": null,
 			"investigators": "Amy J. Ko (PI)",
 			"amount": "$75,000",
-			"startdate": 2003,
-			"enddate": 2006,
+			"category": "research",
 			"description": "A 3-year competitive fellowship for new doctoral students",
-			"url": null
+			"url": null,
+			"commitment": {
+				"start": "2003-08-15",
+				"end": "2006-08-15",
+				"hours": 4,
+				"priority": 0
+			}
 		}
 	],
 	"travel": [
 		{
+			"url": "https://conf.researchr.org/home/RE-2021",
+			"title": "RE 2021",
+			"details": "I'm giving an invited keynote",
+			"category": "research",
+			"commitment": {
+				"start": "2021-09-20",
+				"end": "2021-09-24",
+				"hours": 20,
+				"priority": 1
+			},
+			"report": null
+		},
+		{
+			"url": "http://icer2021.acm.org",
+			"title": "ICER 2021",
+			"details": "Conference chairing and attendance",
+			"category": "research",
+			"commitment": {
+				"start": "2021-08-16",
+				"end": "2021-08-20",
+				"hours": 40,
+				"priority": 2
+			},
+			"report": null
+		},
+		{
+			"url": "http://chi2021.acm.org",
+			"title": "CHI 2021",
+			"details": "HCI research conference",
+			"category": "research",
+			"commitment": {
+				"start": "2021-05-10",
+				"end": "2021-05-13",
+				"hours": 30,
+				"priority": 2
+			},
+			"report": null
+		},
+		{
 			"url": "https://www.cis.upenn.edu/events/",
 			"title": "University of Pennsylvania, Computer and Information Science Colloqium",
-			"details": "Invited research talk.",
-			"date": "2020.11.10",
+			"details": "Invited research talk",
+			"category": "research",
+			"commitment": {
+				"start": "2020-11-10",
+				"end": "2020-11-10",
+				"hours": 5,
+				"priority": 1
+			},
 			"report": null
 		},
 		{
 			"url": "https://www.hcii.cmu.edu/seminar-series",
 			"title": "Carnegie Mellon University, HCI Institute Seminar",
-			"details": "Invited research talk.",
-			"date": "2020.10.30",
+			"details": "Invited research talk",
+			"category": "research",
+			"commitment": {
+				"start": "2020-10-30",
+				"end": "2020-10-30",
+				"hours": 5,
+				"priority": 1
+			},
 			"report": null
 		},
 		{
 			"url": "https://engineering.virginia.edu/departments/computer-science/news/distinguished-speaker-series",
 			"title": "University of Virginia, CS Colloqium",
-			"details": "Invited research talk.",
-			"date": "2020.10.21",
+			"details": "Invited research talk",
+			"category": "research",
+			"commitment": {
+				"start": "2020-10-21",
+				"end": "2020-10-21",
+				"hours": 5,
+				"priority": 1
+			},
 			"report": null
 		},
 		{
 			"url": "https://www.colorado.edu/cmci/infoscience",
 			"title": "University of Colorado Boulder Information Science Colloquium",
 			"details": "Invited research talk at the Department of Information Science and the College of Media, Communication and Information colloqium, with a followup discussion with early Ph.D. students.",
-			"date": "2020.10.07",
+			"category": "research",
+			"commitment": {
+				"start": "2020-10-07",
+				"end": "2020-10-07",
+				"hours": 2,
+				"priority": 1
+			},
 			"report": null
 		},
 		{
 			"url": "https://icer.acm.org",
 			"title": "ICER 2020",
 			"details": "The 2020 ACM International Computing Education Research conference, held online. I was the junior program chair and led the planning of the event.",
-			"date": "2020.08.10",
+			"category": "research",
+			"commitment": {
+				"start": "2020-08-10",
+				"end": "2020-08-13",
+				"hours": 16,
+				"priority": 1
+			},
 			"report": "https://medium.com/bits-and-behavior/acm-icer-2020-trip-report-virtual-serendipity-6134c8ddb9d8"
 		},
 		{
 			"url": "https://shriram.github.io/pl-hci-school-2020/",
 			"title": "PL+HCI Swimmer School",
 			"details": "A summer school that brought together perspectives on HCI and programming languages research. I gave the first invited talk on how to discover things about programming by making and evaluating tools.",
-			"date": "2020.08.03",
+			"category": "service",
+			"commitment": {
+				"start": "2020-08-03",
+				"end": "2020-08-03",
+				"hours": 2,
+				"priority": 1
+			},
 			"report": null
 		},
 		{
 			"url": null,
 			"title": "ISAT/DARPA End-User Mashup Workshop",
 			"details": "This brought together experts in end-user programming and 'low-code' programming to inform future research opportunities in the U.S. government. I contributed as one of the experts.",
-			"date": "2020.07.16",
+			"category": "research",
+			"commitment": {
+				"start": "2020-07-16",
+				"end": "2020-07-16",
+				"hours": 4,
+				"priority": 1
+			},
 			"report": null
 		},
 		{
 			"url": "https://www.youtube.com/watch?v=anEQg2C7l9M",
 			"title": "APL LGBTQ+ Panel",
 			"details": "This brought together a diverse panel of LGBTQ people in science and engineering to discuss their experiences in academia, research, and engineering. I served as a panelist. The panel was recorded.",
-			"date": "2020.07.16",
+			"category": "service",
+			"commitment": {
+				"start": "2020-07-16",
+				"end": "2020-07-16",
+				"hours": 2,
+				"priority": 1
+			},
 			"report": null
 		},
 		{
 			"url": "https://web.cvent.com/event/c6254b47-740f-4232-a896-064f09fd0ab1/summary",
 			"title": "CSTA 2020",
 			"details": "The 2020 CSTA Conference brought together CS teachers from across North America for two days, online. I attended several sessions and met many teachers through the random chat feature.",
-			"date": "2020.07.13",
+			"category": "service",
+			"commitment": {
+				"start": "2020-07-13",
+				"end": "2020-07-14",
+				"hours": 5,
+				"priority": 1
+			},
 			"report": null
 		},
 		{
 			"url": "https://cra.org/crae/",
 			"title": "CRA-E Annual Meeting",
-			"details": "I joined the Computing Research Associatin's Education board; this was my first full board meeting.",
-			"date": "2020.06.23",
+			"details": "I joined the Computing Research Association's Education board; this was my first full board meeting.",
+			"category": "service",
+			"commitment": {
+				"start": "2020-06-23",
+				"end": "2020-06-23",
+				"hours": 4,
+				"priority": 1
+			},
 			"report": null
 		},
 		{
 			"url": "http://sigcse2020.sigcse.org/",
 			"title": "SIGCSE 2020",
 			"details": "I traveled to Portland, fully masked and distance, ready to speak in about seven sessions. The conference was canceled the morning of the first day.",
-			"date": "2020.03.11",
+			"category": "research",
+			"commitment": {
+				"start": "2020-03-11",
+				"end": "2020-03-12",
+				"hours": 16,
+				"priority": 1
+			},
 			"report": "https://medium.com/bits-and-behavior/sigcse-2020-trip-report-viral-edition-6d5f3c9a31bf"
 		},
 		{
 			"url": "http://kolicalling.fi",
 			"title": "Koli Calling 2019",
 			"details": "I traveled to Joensuu, Finland to attend the conference, where I gave the keynote and my student Greg Nelson presented a paper.",
-			"date": "2019.11.21",
+			"category": "research",
+			"commitment": {
+				"start": "2019-11-20",
+				"end": "2019-11-24",
+				"hours": 40,
+				"priority": 1
+			},
 			"report": "https://medium.com/bits-and-behavior/koli-calling-2019-trip-report-computing-education-research-at-the-limits-572da5218414"
 		},
 		{
 			"url": null,
 			"title": "Defining CS for Washington State",
 			"details": "I spent the day in Olympia, Washington, on the Evergreen State College campus, working with stakeholders from across the state to shape what counts as a CS class. This was intended to help implement a new state law requiring CS electives in high schools.",
-			"date": "2019.11.06",
+			"category": "service",
+			"commitment": {
+				"start": "2019-11-06",
+				"end": "2019-11-06",
+				"hours": 8,
+				"priority": 1
+			},
 			"report": "https://medium.com/bits-and-behavior/what-counts-as-computer-science-in-k-12-education-a7173ff87801"
 		},
 		{
 			"url": null,
 			"title": "Networking in Eastern Washington",
 			"details": "I spent four days visiting Spokane, Pullman, and surrounding cities to meet dozens of passionate CS education advocates in schools, colleges, and universities.",
-			"date": "2019.10.30",
+			"category": "service",
+			"commitment": {
+				"start": "2019-10-20",
+				"end": "2019-11-02",
+				"hours": 32,
+				"priority": 1
+			},
 			"report": "https://medium.com/bits-and-behavior/trip-report-bridging-cs-for-all-across-western-and-eastern-washington-60e9543535e6"
 		},
 		{
 			"url": "https://plateau-workshop.org",
 			"title": "PLATEAU 2019",
 			"details": "I spent a few days in New Orleans, serving as a panelist at the workshop and mentoring doctoral students.",
-			"date": "2019.10.23",
+			"category": "research",
+			"commitment": {
+				"start": "2019-10-23",
+				"end": "2019-11-25",
+				"hours": 24,
+				"priority": 1
+			},
 			"report": "https://medium.com/bits-and-behavior/plateau-2019-trip-report-building-community-around-human-aspects-of-programming-languages-c70e893930ce"
 		},
 		{
 			"url": null,
 			"title": "CSEdCon 2019",
 			"details": "I spent three days in Las Vegas, meeting with state leaders in K-12 CS education.",
-			"date": "2019.09.11",
+			"category": "service",
+			"commitment": {
+				"start": "2019-09-11",
+				"end": "2019-09-13",
+				"hours": 24,
+				"priority": 1
+			},
 			"report": "https://medium.com/bits-and-behavior/csedcon-2019-trip-report-a-deep-dive-into-cs-education-policy-98efb62eb341"
 		},
 		{
 			"url": "https://archive.icer.acm.org/icer-2019/",
 			"title": "ACM ICER 2019",
 			"details": "I spent four days in Toronto, Canada, giving papers, and kicking off my role as program co-chair.",
-			"date": "2019.08.12",
+			"category": "research",
+			"commitment": {
+				"start": "2019-08-12",
+				"end": "2019-08-15",
+				"hours": 40,
+				"priority": 2
+			},
 			"report": "https://medium.com/bits-and-behavior/acm-icer-2019-trip-report-leveling-up-on-theory-statistics-and-significance-876b6d74148d"
 		},
 		{
 			"url": "https://www.acm.org/education/education-governance",
 			"title": "ACM Education Advisory Council Annual Meeting",
 			"details": "I spent three days in Toronto, Canada, discussing CS education across the globe.",
-			"date": "2019.08.05",
+			"category": "service",
+			"commitment": {
+				"start": "2019-08-05",
+				"end": "2019-08-06",
+				"hours": 16,
+				"priority": 2
+			},
 			"report": "https://medium.com/bits-and-behavior/2019-acm-education-advisory-council-meeting-its-complicated-b715fba0c8c"
 		},
 		{
 			"url": "https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=19281",
 			"title": "Dagstuhl - Notional Machines",
 			"details": "I spent the week in western Germany at Dagstuhl, talking about notional machines.",
-			"date": "2019.07.08",
+			"category": "research",
+			"commitment": {
+				"start": "2019-07-08",
+				"end": "2019-07-13",
+				"hours": 48,
+				"priority": 2
+			},
 			"report": "https://medium.com/@amyjko/dagstuhl-trip-report-learning-and-teaching-programming-language-semantics-b8d8d9007380"
 		},
 		{
 			"url": null,
 			"title": "NextGen STEM Teacher Preparation Retreat",
 			"details": "I spent the day on the Western Washington University campus doing state planning on STEM teacher education with leaders across Washington state.",
-			"date": "2019.06.24",
+			"category": "service",
+			"commitment": {
+				"start": "2019-06-24",
+				"end": "2019-06-25",
+				"hours": 16,
+				"priority": 1
+			},
 			"report": "https://medium.com/bits-and-behavior/preparing-future-stem-teachers-for-our-computational-future-c4bc1b64013d"
 		},
 		{
 			"url": "https://www.video.ethz.ch/speakers/d-infk/2019/spring/251-0100-00L.html",
 			"title": "ETH Invited Talk",
 			"details": "I spent two days at ETH Zurich's CS department, giving an invited talk and speaking to its many faculty and Ph.D. students.",
-			"date": "2019.05.13",
+			"category": "research",
+			"commitment": {
+				"start": "2019-05-13",
+				"end": "2019-05-19",
+				"hours": 48,
+				"priority": 2
+			},
 			"report": "https://medium.com/bits-and-behavior/a-visit-to-eth-zurich-computer-science-f09c49fa7da"
 		},
 		{
 			"url": "http://chi2019.acm.org",
 			"title": "ACM CHI 2019",
 			"details": "I spent five days at the ACM SIGCHI Conference on Human Factors in Computing, learning about the latest discoveries in HCI, attending many receptions, and reconnecting with colleagues.",
-			"date": "2019.05.06",
+			"category": "research",
+			"commitment": {
+				"start": "2019-05-06",
+				"end": "2019-05-11",
+				"hours": 48,
+				"priority": 2
+			},
 			"report": "https://medium.com/bits-and-behavior/chi-2019-trip-report-the-interlocking-threats-of-hci-and-learning-2f83b5118e1d"
 		},
 		{
 			"url": "https://sigcse2019.sigcse.org",
 			"title": "ACM SIGCSE 2019",
 			"details": "I spent four days, mostly sick, in Minneapolis, Minnesota, giving a few talks and mostly sleeping.",
-			"date": "2019.03.27",
+			"category": "research",
+			"commitment": {
+				"start": "2019-03-26",
+				"end": "2019-03-02",
+				"hours": 40,
+				"priority": 1
+			},
 			"report": "https://medium.com/bits-and-behavior/sigcse-2019-trip-report-celebrating-50-years-b3460835a09a"
 		}
 	],
 	"talks": [
 		{
-			"date": "2020.10.07",
+			"date": "2021-09-20",
+			"image": "re2021.png",
+			"alt": "The RE logo",
+			"slides": null,
+			"title": "RE 2021 keynote",
+			"venue": "IEEE International Requirements Engineering Conference",
+			"url": "https://conf.researchr.org/home/RE-2021",
+			"recording": null,
+			"practice": null,
+			"description": "I'm scheduled to give the 2021 keynote.",
+			"keynote": false
+		},
+		{
+			"date": "2020-10-07",
 			"image": "cuboulder20.png",
 			"alt": "A screenshot of the end of my talk, showing questions, a summary of the talk gist, and several faces on Zoom.",
 			"slides": "slides/CUBoulder2020CriticalCSEd.pdf",
@@ -6630,7 +7098,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2020.08.03",
+			"date": "2020-08-03",
 			"image": "studyingmaking.jpg",
 			"alt": "A screenshot of the first slide of the presentation, with the title Studying Programming through Making",
 			"slides": "https://docs.google.com/presentation/d/1L72wv7Lv7oWqbHbw62mISiSWFKFSSyYl65HNXpSmjCU/edit?usp=sharing",
@@ -6643,7 +7111,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2020.06.15",
+			"date": "2020-06-15",
 			"image": "msftcsed.jpg",
 			"alt": "A photograph of students on the campus of Howard University, 1870",
 			"slides": "https://docs.google.com/presentation/d/15UxfJnjI8P0N33xGlTqY1A39SQdxBUwQ2jflkVMmF7Q/edit#slide=id.gc6f980f91_0_0",
@@ -6656,7 +7124,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2019.11.22",
+			"date": "2019-11-22",
 			"image": "koli2019.jpg",
 			"alt": "A screenshot of the first slide of the keynote, showing title and Koli national park.",
 			"slides": "slides/Koli2019Keynote.pdf",
@@ -6670,7 +7138,7 @@
 			"blog": "https://medium.com/bits-and-behavior/21st-grand-challenges-for-computing-education-f5e937d57155"
 		},
 		{
-			"date": "2019.05.01",
+			"date": "2019-05-01",
 			"image": "eth2019.jpg",
 			"alt": "A screenshot of the first slide of the keynote.",
 			"slides": "slides/ETHZurich2019Programming.pdf",
@@ -6683,7 +7151,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2020.06.01",
+			"date": "2020-06-01",
 			"image": "icse2018.png",
 			"alt": "A screenshot of the first slide of the talk.",
 			"slides": "slides/ICSE2018MIP.pdf",
@@ -6696,7 +7164,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2020.05.28",
+			"date": "2020-05-28",
 			"image": "msricpc18.png",
 			"alt": "A screenshot of the first slide of the keynote.",
 			"slides": "slides/MSRICPC2018Keynote.pdf",
@@ -6710,7 +7178,7 @@
 			"blog": "https://medium.com/bits-and-behavior/grand-challenges-in-program-comprehension-and-software-repository-mining-my-keynote-on-7bf2cfc182a5"
 		},
 		{
-			"date": "2018.01.12",
+			"date": "2018-01-12",
 			"image": "stanford18.png",
 			"alt": "An image of me presenting at Stanford.",
 			"slides": "/slides/LearningToCode.pdf",
@@ -6723,7 +7191,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2017.12.04",
+			"date": "2017-12-04",
 			"image": "michigan2017.jpg",
 			"alt": "The Michigan School of Information lobby",
 			"slides": "/slides/LearningToCode.pdf",
@@ -6736,7 +7204,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2018.10.30",
+			"date": "2018-10-30",
 			"image": "northwestern2017.jpg",
 			"alt": "A photograph of one of Northwestern University's beautiful atriums.",
 			"slides": "/slides/LearningToCode.pdf",
@@ -6749,7 +7217,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2017.10.09",
+			"date": "2017-10-09",
 			"image": "acm2017.jpg",
 			"alt": "A screenshot of the closing questions slide of the webinar",
 			"slides": "slides/ACM2017StartupTrenches.pdf",
@@ -6762,7 +7230,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2017.02.21",
+			"date": "2017-02-21",
 			"image": "amazon2017.jpg",
 			"alt": "A talk cover graphic with two holding hands and the talk title",
 			"slides": "slides/Amazon2017Stackhouse.pdf",
@@ -6775,7 +7243,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2016.11.04",
+			"date": "2016-11-04",
 			"image": "splash16.png",
 			"alt": "A screenshot of the first slide of the keynote.",
 			"slides": "slides/SPLASH2016Keynote.pdf",
@@ -6789,7 +7257,7 @@
 			"blog": "https://medium.com/bits-and-behavior/my-splash-2016-keynote-81cc802f5f6e"
 		},
 		{
-			"date": "2015.10.09",
+			"date": "2015-10-09",
 			"image": "acm2015.jpg",
 			"alt": "The title slide of the talk.",
 			"slides": "https://learning.acm.org/binaries/content/assets/leaning-center/webinar-slides/2015/whatmakesagreatsoftwareengineer_slides.pdf",
@@ -6802,7 +7270,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2011.06.17",
+			"date": "2011-06-17",
 			"image": "coverity2011.jpg",
 			"alt": "A photograph of the Golden Gate Bridge",
 			"slides": "slides/Coverty2011WebDefectDetection.pdf",
@@ -6815,7 +7283,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2012.05.04",
+			"date": "2012-05-04",
 			"image": "unc2011.jpg",
 			"alt": "The title slide",
 			"slides": "slides/Coverty2011WebDefectDetection.pdf",
@@ -6828,7 +7296,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2011.04.15",
+			"date": "2011-04-15",
 			"image": "mit2015.jpg",
 			"alt": "The second slide of the talk, which says that software is a fasciating medium for expression",
 			"slides": "slides/MIT2011WaywardWeb.pdf",
@@ -6841,7 +7309,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2011.02.24",
+			"date": "2011-02-24",
 			"image": "unc2011.jpg",
 			"alt": "The title slide",
 			"slides": "slides/UNC2011WaywardWeb.pdf",
@@ -6854,7 +7322,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2009.11.23",
+			"date": "2009-11-23",
 			"image": "choose2009.jpg",
 			"alt": "A photograph of a cloudy day in Bern, Switzerland.",
 			"slides": "slides/CHOOSE2009HCISE.pdf",
@@ -6867,7 +7335,7 @@
 			"keynote": true
 		},
 		{
-			"date": "2009.02.24",
+			"date": "2009-02-24",
 			"image": "isec2009.jpg",
 			"alt": "A photograph of a panelist table at ISEC 2009.",
 			"slides": "slides/ISEC2009JavaWhyline.pdf",
@@ -6880,7 +7348,7 @@
 			"keynote": true
 		},
 		{
-			"date": "2010.09.30",
+			"date": "2010-09-30",
 			"image": "ibm2010.jpg",
 			"alt": "A photograph of a presentation at the workshop.",
 			"slides": "slides/IBM2010Keynote.pdf",
@@ -6893,7 +7361,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2009.02.27",
+			"date": "2009-02-27",
 			"image": "whyline2008.jpg",
 			"alt": "A slide from the talk showing the Java Whyline",
 			"slides": "slides/Ko2008JobTalk.pdf",
@@ -6906,7 +7374,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2009.01.14",
+			"date": "2009-01-14",
 			"image": "whyline2008.jpg",
 			"alt": "A slide from the talk showing the Java Whyline",
 			"slides": "slides/Ko2008JobTalk.pdf",
@@ -6919,7 +7387,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2008.05.30",
+			"date": "2008-05-30",
 			"image": "whyline2008.jpg",
 			"alt": "A slide from the talk showing the Java Whyline",
 			"slides": "slides/Ko2008JobTalk.pdf",
@@ -6932,7 +7400,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2008.02.25",
+			"date": "2008-02-25",
 			"image": "whyline2008.jpg",
 			"alt": "A slide from the talk showing the Java Whyline",
 			"slides": "slides/Ko2008JobTalk.pdf",
@@ -6945,7 +7413,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2008.01.31",
+			"date": "2008-01-31",
 			"image": "whyline2008.jpg",
 			"alt": "A slide from the talk showing the Java Whyline",
 			"slides": "slides/Ko2008JobTalk.pdf",
@@ -6958,7 +7426,7 @@
 			"keynote": false
 		},
 		{
-			"date": "2006.07.16",
+			"date": "2006-07-16",
 			"image": "ubc2006.jpg",
 			"alt": "The title slide of the presentation.",
 			"slides": "slides/UBC2006Overview.pdf",
@@ -6980,6 +7448,7 @@
 			"level": "undergraduate",
 			"title": "Intellectual Foundations of Informatics",
 			"description": "This survey course covers big ideas in information, information technology, and information systems. Students learn the history of information, foundational concepts in information, the relationship between information and computing, skills in analyzing and designing information systems, and the role of information systems in society.",
+			"hours": 10,
 			"links": [
 				{
 					"description": "Medium post on the big ideas in the course",
@@ -6987,6 +7456,7 @@
 				}
 			],
 			"offerings": [
+				{ "size": 200, "term": 3, "year": 2021, "score": null },
 				{ "size": 208, "term": 2, "year": 2020, "score": 4.8 },
 				{ "size": 150, "term": 1, "year": 2018, "score": 4.8 }
 			]
@@ -6999,6 +7469,7 @@
 			"level": "undergraduate",
 			"title": "Design Methods",
 			"description": "This undergraduate class teaches students design thinking skills in the domain of information and computing. It leverages multiple forms of active learning, involves a significant amount of studio-based learning, and helps students develop creative confidence.",
+			"hours": 10,
 			"links": [
 				{
 					"description": "Amy's online book for the course",
@@ -7034,6 +7505,7 @@
 			"level": "undergraduate",
 			"title": "Cooperative Software Development",
 			"description": "This undergraduate software engineering class teaches foundations of team-based software development, leveraging the latest research on coordination, cooperation, and human cognition in software development. Students leave ready to become meaningful contributors to teams big and small, but also to understand the processes that teams use and how they can improve them.",
+			"hours": 8,
 			"links": [
 				{
 					"description": "Amy's online book for the course",
@@ -7041,6 +7513,7 @@
 				}
 			],
 			"offerings": [
+				{ "size": 33, "term": 1, "year": 2020, "score": null },
 				{ "size": 33, "term": 1, "year": 2019, "score": 4.8 },
 				{ "size": 37, "term": 3, "year": 2019, "score": 4.8 },
 				{ "size": 35, "term": 3, "year": 2017, "score": 4.8 },
@@ -7057,6 +7530,7 @@
 			"title": "Capstone",
 			"description": "This undergraduate capstone sequence engages students in a 6-month project, usually culminating in a functional, deployable prototype, and often in collaboration with a client from local industry.",
 			"links": [],
+			"hours": 8,
 			"offerings": [
 				{ "size": 96, "term": 3, "year": 2013, "score": 4.1 },
 				{ "size": 96, "term": 2, "year": 2013, "score": 4.0 },
@@ -7072,6 +7546,7 @@
 			"number": "HCID 520",
 			"title": "User Interface Software and Technology",
 			"description": "This core course in our Masters of HCI+Design teaches students they history, theory, and foundations of user interfaces. Students acquire a literacy for communicating and reasoning about interfaces.",
+			"hours": 8,
 			"links": [
 				{
 					"description": "Amy's online book for the course",
@@ -7079,6 +7554,7 @@
 				}
 			],
 			"offerings": [
+				{ "year": 2021, "term": 2, "size": 35, "score": null },
 				{ "year": 2020, "term": 2, "size": 35, "score": 4.9 },
 				{ "year": 2019, "term": 2, "size": 34, "score": 4.8 },
 				{ "year": 2018, "term": 2, "size": 33, "score": 4.8 }
@@ -7093,6 +7569,7 @@
 			"title": "HCI Design Foundations for Interactive Systems",
 			"description": "This doctoral course teaches theoretical foundations of HCI, preparing students as designers, design researchers, and HCI researchers.",
 			"links": [],
+			"hours": 6,
 			"offerings": [
 				{ "year": 2011, "term": 3, "size": 15, "score": 4.7 },
 				{ "year": 2010, "term": 2, "size": 15, "score": 4.8 }
@@ -7179,53 +7656,5 @@
 		"2018": null,
 		"2019": "Gender transition",
 		"2020": "Promoted to Professor; COVID-19"
-	},
-	"commitments": [
-		["Reading", 		"Papers+books+reviews", 			"research", 	"flexible", 2, "weekly"],
-		["PhD Students", 	"Meetings+feedback", 				"research", 	"flexible", 6, "weekly"],
-		["Seminars", 		"Talks and meetings",				"research", 	"flexible", 1, "weekly"],
-		["TOCE AE",			"Editing", 							"service", 		"flexible", 1, "weekly"],
-		["CS for All WA", 	"Meetings + networking", 			"service", 		"flexible", 2, "weekly"],
-		["Informatics Program Chair", "Administrative change",  "service", 		"flexible", 8, "weekly"],
-		["iSchool", 		"Faculty meetings",					"service", 		"flexible", 2, "annually", "09-30", "06-30"],
-		["Faculty hiring",	"Talks, interviews",				"service", 		"flexible", 3, "annually", "10-15", "04-15"],
-
-		["PhD admissions", 	"Reviews + meetings", 				"research", 	"required", 2, "annually", "12-15", "03-15"],
-		["SIGCSE deadline", "Writing", 							"research", 	"required", 10, "annually", "08-01", "08-20"],
-		["CHI deadline", 	"Writing", 							"research", 	"required", 10, "annually", "08-15", "09-10"],
-		["ICER deadline",	"Writing", 							"research", 	"required", 10, "annually", "03-15", "04-05"],
-		["Winter break", 	"Family time", 						"personal", 	"prime", 	30, "annually", "12-20", "01-01"],
-		["Summer break", 	"Family time", 						"personal", 	"prime", 	30, "annually", "08-01", "08-15"],
-
-		["NSF Strategies", 	"Meetings + writing",				"research", 	"flexible", 2, "weekly", "2018-09-01", "2022-09-01"],
-		["NSF STEP CS",		"Research + admin",					"research", 	"flexible", 5, "weekly", "2020-05-01", "2023-08-03"],
-		["NSF FMITF",		"Research",							"research", 	"flexible", 1, "weekly", "2019-06-15", "2022-06-15"],
-		["NSF AccessComp",	"Meetings + presenting",			"service", 		"flexible", 1, "weekly", "2017-06-15", "2021-06-15"],
-		["CRA-E", 			"Meetings + writing",				"service", 		"flexible", 1, "weekly", "2020-07-01", "2022-07-01"],
-		["ICER 21 PC",		"Conference and program chairing",	"service", 		"flexible", 3, "weekly", "2020-08-15", "2021-09-15"],
-		["INFO faculty search", "Reviewing, interviewing",		"service", 		"flexible", 2, "weekly", "2020-10-08", "2021-02-15"],
-
-		["INFO 442 Prep",	"Revise book and syllabus",			"teaching", 	"required", 7, "weekly", "2020-07-15", "2020-09-15"],
-		["INFO 442",		"Lectures, labs, grading",			"teaching", 	"required", 7, "weekly", "2020-09-25", "2020-12-15"],
-		["HCID 520 Prep",	"Revise book and syllabus",			"teaching", 	"required", 2, "weekly", "2020-10-01", "2021-01-01"],
-		["HCID 520",		"Lectures, labs, grading",			"teaching", 	"required", 7, "weekly", "2021-01-01", "2021-03-20"],
-		["INFO 200 Prep",	"Revise design",					"teaching", 	"required", 2, "weekly", "2021-01-02", "2021-04-01"],
-		["INFO 200",		"Lectures, labs, grading",			"teaching", 	"required", 7, "weekly", "2021-04-01", "2021-06-15"],
-
-		["Fall '21 Prep",	"Planning",							"teaching", 	"required", 7, "weekly", "2021-07-15", "2021-09-15"],
-		["Fall '21 Class",	"Teaching + feedback",				"teaching", 	"required", 7, "weekly", "2021-09-25", "2021-12-15"],
-		["Winter '22 Prep",	"Teaching + feedback",				"teaching", 	"required", 2, "weekly", "2022-10-01", "2022-01-01"],
-		["Winter '22 Class", "Teaching + feedback",				"teaching", 	"required", 7, "weekly", "2022-01-01", "2022-03-20"],
-		["Spring '22 Prep", "Teaching + feedback",				"teaching", 	"required", 2, "weekly", "2022-01-02", "2022-04-01"],
-		["Spring '22 Class", "Teaching + feedback",				"teaching", 	"required", 7, "weekly", "2022-04-01", "2022-06-15"],
-
-		["Fall talks",		"Invited talks",					"research",		"flexible", 3, "weekly", "2020-09-15", "2020-11-20"],
-		["RE Keynote",		"Talk prep",						"research",		"flexible", 1, "weekly", "2021-06-15", "2021-09-20"],
-
-		["CHI '21",			"Conference",						"research",		"prime", 30, "weekly", "2021-05-10", "2021-05-13"],
-		["ICER '21",		"Conference",						"research",		"prime", 20, "weekly", "2021-08-16", "2021-08-20"],
-		["RE '21",			"Conference",						"research",		"prime", 20, "weekly", "2021-09-20", "2021-09-24"],
-
-		["Book review",		"Read and review a draft",			"service",		"required", 5, "weekly", "2020-10-24", "2020-10-30"]
-	]
+	}
 }

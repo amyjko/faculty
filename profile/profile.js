@@ -2,28 +2,50 @@ import _ from 'lodash';
 
 class Profile {
 
+	parseCommitment(commitment) {
+		commitment.start = this.parseDate(commitment.start);
+		if(commitment.end)
+			commitment.end = this.parseDate(commitment.end);
+		return commitment;
+	}
+
+	parseDate(dateString) {
+		let parts = dateString.split("-");
+		return new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+	}
+
     constructor(json) {
 
         this.json = json;
 
-		// Parse travel dates.
-		_.each(this.json.travel, trip => {
-			var parts = trip.date.split(".");
-			trip.year = parseInt(parts[0]);
-			trip.month = parseInt(parts[1]);
-			trip.day = parseInt(parts[2]);
-			trip.time = (new Date(trip.year, trip.month - 1, trip.day)).getTime();
-		});
+		// Parse talk dates.
+		_.each(this.json.talks, talk => talk.date = this.parseDate(talk.date));
 
-		// Parse travel dates.
-		_.each(this.json.talks, talk => {
-			var parts = talk.date.split(".");
-			talk.year = parseInt(parts[0]);
-			talk.month = parseInt(parts[1]);
-			talk.day = parseInt(parts[2]);
-			talk.time = (new Date(talk.year, talk.month - 1, talk.day)).getTime();
-		});
-		
+		// Parse editing
+		_.each(this.json.editing, editing => editing.commitment = this.parseCommitment(editing.commitment));
+
+		// Parse service
+		_.each(this.json.service, service => service.commitment = this.parseCommitment(service.commitment));
+
+		// Parse funding
+		_.each(this.json.funding, funding => funding.commitment = this.parseCommitment(funding.commitment));
+
+		// Parse travel
+		_.each(this.json.travel, travel => travel.travel = this.parseCommitment(travel.commitment));
+
+		// Parse reviewing
+		_.each(this.json.reviewing, role => {
+			if(role.venue.charAt(0) === "@") {
+				let conf = this.getSource(role.venue);
+				if(!conf)
+					console.error("Couldn't find publication source " + role.venue);
+				else
+					role.venue = conf.name;
+			}
+			if(role.commitment)
+				role.commitment = this.parseCommitment(role.commitment);
+		})
+
 		// Initialize a list of publication tags
 		this.json.publicationFacets = {};
 
@@ -85,37 +107,6 @@ class Profile {
 			this.json.postTags.topic = _.union(this.json.postTags.topic, post.tags)
 		);
 
-		// Convert all dates into objects
-        // Label (string), description (string), category (string), start date (date), hours/week (int), [end date] (date), annual (boolean), priority (int)]
-		this.json.commitments = _.map(this.json.commitments, commitment => {
-
-			var obj = {
-				"name": commitment[0],
-				"description": commitment[1],
-				"category": commitment[2],
-				"priority": commitment[3],
-				"hours": commitment[4],
-				"annually": commitment[5] === "annually",
-				"start": null,
-				"end": null
-			};
-
-			// Handle annual dates.
-			if(obj.annually) {
-				let startDate = _.map(commitment[6].split("-"), part => parseInt(part));
-				let endDate = _.map(commitment[7].split("-"), part => parseInt(part))
-				obj.start = { "month": startDate[0], "date": startDate[1] };
-				obj.end = { "month": endDate[0], "date": endDate[1] };
-			}
-			// Handle weekly commitments with start and end dates.
-			else if(commitment.length > 6) {
-				obj.start = new Date(commitment[6]);
-				obj.end = new Date(commitment[7]);
-			}
-
-			return obj;
-		});
-
 		// Resolve funding links in projects.
 		_.each(this.json.projects, project => {
 
@@ -136,17 +127,6 @@ class Profile {
 			});
 
 		});
-
-		// Resolve the sources in the program chair positions.
-		_.each(this.json.reviewing, role => {
-			if(role.venue.charAt(0) === "@") {
-				let conf = this.getSource(role.venue);
-				if(!conf)
-					console.error("Couldn't find publication source " + role.venue);
-				else
-					role.venue = conf.name;
-			}
-		})
 
     }
 
@@ -223,7 +203,9 @@ class Profile {
     }
 
 	// Get the list of talks.
-	getTalks() { return this.json.talks; }
+	getTalks(filter, sort) { 
+		return this.cloneFilterSort(this.json.talks.slice(), filter, sort);
+	}
 
 	// Get the list of classes.
 	getClasses() { return this.json.classes; }
@@ -240,10 +222,6 @@ class Profile {
 		// Go through each facet in the query
 		return _.reduce(Object.keys(query), (match, facet) => match && tags[facet].includes(query[facet]), true);
 
-	}
-
-	getCommitments(filter, sort) {
-		return this.cloneFilterSort(this.json.commitments.slice(), filter, sort);
 	}
 
 	getFunding(filter, sort) {
@@ -274,8 +252,8 @@ class Profile {
 		return this.cloneFilterSort(this.json.recognitions.slice(), filter, sort);
 	}
 
-	getEditor(filter, sort) {
-		return this.cloneFilterSort(this.json.editor.slice(), filter, sort);
+	getEditing(filter, sort) {
+		return this.cloneFilterSort(this.json.editing.slice(), filter, sort);
 	}
 
 	getReviewing(filter, sort) {

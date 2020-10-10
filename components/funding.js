@@ -34,7 +34,7 @@ class Funding extends React.Component {
 								_.map(
 									this.props.app.getProfile().getFunding(
 										funding => funding.funder === "National Science Foundation", 
-										funding => -funding.startdate
+										funding => -funding.commitment.end.getFullYear()
 									), 
 									(award, index) => { return <li key={index}><a href={award.url} target="_blank">{award.title}</a></li>; }
 								)

@@ -25,9 +25,8 @@ class Chunk extends React.Component {
 		
 	render() {
 	
-		var end = "";
-		if(this.props.stop !== null && this.props.start !== this.props.stop)
-			end = (this.props.stop === null ? "present" : this.props.stop);
+		var end = this.props.stop === null ? "present" :
+			this.props.start !== this.props.stop ? this.props.stop : "";
 
 		var three = this.convertArrayToNote(this.props.three);
 		var four = this.convertArrayToNote(this.props.four);
@@ -244,9 +243,11 @@ class Vita extends React.Component {
 				<h1>Funding</h1>
 
 				{this.getChunkList
-					(profile.getFunding(() => true, funding => -funding.startdate), 
+					(profile.getFunding(() => true, funding => -funding.commitment.end.getFullYear()), 
 					true,
-					"startdate", "enddate", "title", "amount", "funder", "award", "investigators", "description")
+					funding => funding.commitment.start.getFullYear(), 
+					funding => funding.commitment.end.getFullYear(), 
+					"title", "amount", "funder", "award", "investigators", "description")
 				}
 
 				<h1>Publications</h1>
@@ -309,14 +310,14 @@ class Vita extends React.Component {
 				{this.getChunkList(
 					_.filter(profile.getTalks(), (talk) => { return talk.keynote; }), 
 					true,
-					"year", null, "title", "venue")}
+					talk => talk.date.getFullYear(), null, "title", "venue")}
 				
 				<h2>Invited Talks</h2>
 
 				{this.getChunkList(
 					_.filter(profile.getTalks(), (talk) => { return !talk.keynote; }), 
 					true,
-					"year", null, "title", "venue")}				
+					talk => talk.date.getFullYear(), null, "title", "venue")}				
 
 				<h2>Patents</h2>
 			
@@ -336,13 +337,13 @@ class Vita extends React.Component {
 					this.getChunkList(
 						profile.getClasses(),
 						true,
-						course => _.orderBy(course.offerings, ["year"], ["asc"])[0].year,
-						course => _.orderBy(course.offerings, ["year"], ["desc"])[0].year,
+						course => _.orderBy(_.filter(course.offerings, offer => offer.score !== null), ["year"], ["asc"])[0].year,
+						course => _.orderBy(_.filter(course.offerings, offer => offer.score !== null), ["year"], ["desc"])[0].year,
 						course => course.number + " " + course.title,
 						"level",
 						"description",
-						course => "Taught " + course.offerings.length + " times",
-						course => "Mean course evaluation: " + (_.reduce(course.offerings, (sum, offer) => sum + offer.score, 0.0) / course.offerings.length).toPrecision(2) + "/5.0"
+						course => "Taught " + _.filter(course.offerings, offer => offer.score !== null).length + " times",
+						course => "Mean course evaluation: " + (_.reduce(_.filter(course.offerings, offer => offer.score !== null), (sum, offer) => sum + offer.score, 0.0) / _.filter(course.offerings, offer => offer.score !== null).length).toPrecision(2) + "/5.0"
 					)
 
 				}
@@ -381,9 +382,11 @@ class Vita extends React.Component {
 				<h3>Journal Editorial Boards</h3>		
 				{
 					this.getChunkList(
-						profile.getEditor(), 
+						profile.getEditing(), 
 						false,
-						"startdate", "enddate", "venue", "title"
+						role => role.commitment.start.getFullYear(), 
+						role => role.commitment.end ? role.commitment.end.getFullYear() : null, 
+						"venue", "title"
 					)
 				}
 
@@ -411,7 +414,7 @@ class Vita extends React.Component {
 					)
 				}
 
-				<h3>Reviewer</h3>
+				<h3>Conference Reviewer</h3>
 				{
 					this.getChunkList(
 						profile.getReviewing(
@@ -425,48 +428,73 @@ class Vita extends React.Component {
 					)
 				}
 
+				<h3>Proposal Reviewer</h3>
+				{
+					this.getChunkList(
+						profile.getReviewing(
+							role => role.level === "panelist", 
+							role => -role.years.sort().reverse()[0]
+						),
+						true,
+						role => role.years.sort()[0], 
+						role => role.years.sort().reverse()[0], 
+						"venue",
+						"title"
+					)
+				}
+
 				<h3>International Service</h3>
 				{
 					this.getChunkList(
-						profile.getService(service => service.level === "international", service => -service.start), 
+						profile.getService(service => service.level === "international", service => service.commitment.end ? -service.commitment.end.getTime() : Number.NEGATIVE_INFINITY), 
 						true,
-						"start", "end", "title", "committee", "description"
+						service => service.commitment.start.getFullYear(),
+						service => service.commitment.end ? service.commitment.end.getFullYear() : null, 
+						"title", "committee", "description"
 					)
 				}
 
 				<h3>National Service</h3>
 				{
 					this.getChunkList(
-						profile.getService(service => service.level === "national", service => -service.start), 
+						profile.getService(service => service.level === "national", service => service.commitment.end ? -service.commitment.end.getTime() : Number.NEGATIVE_INFINITY), 
 						true,
-						"start", "end", "title", "committee", "description"
+						service => service.commitment.start.getFullYear(),
+						service => service.commitment.end ? service.commitment.end.getFullYear() : null, 
+						"title", "committee", "description"
 					)
 				}
 
 				<h3>Regional Service</h3>
 				{
 					this.getChunkList(
-						profile.getService(service => service.level === "regional", service => -service.start), 
+						profile.getService(service => service.level === "regional", service => service.commitment.end ? -service.commitment.end.getTime() : Number.NEGATIVE_INFINITY),
 						true,
-						"start", "end", "title", "committee", "description"
+						service => service.commitment.start.getFullYear(),
+						service => service.commitment.end ? service.commitment.end.getFullYear() : null, 
+						"title", "committee", "description"
 					)
 				}
 
 				<h3>University Service</h3>
 				{
 					this.getChunkList(
-						profile.getService(service => service.level === "university", service => -service.start), 
+						profile.getService(service => service.level === "university", service => service.commitment.end ? -service.commitment.end.getTime() : Number.NEGATIVE_INFINITY), 
 						true,
-						"start", "end", "title", "committee", "description"
+						service => service.commitment.start.getFullYear(),
+						service => service.commitment.end ? service.commitment.end.getFullYear() : null, 
+						"title", "committee", "description"
 					)
 				}
 
 				<h3>Departmental Service</h3>
 				{
 					this.getChunkList(
-						profile.getService(service => service.level === "departmental", service => -service.start), 
+						profile.getService(service => service.level === "departmental", service => service.commitment.end ? -service.commitment.end.getTime() : Number.NEGATIVE_INFINITY),
 						true,
-						"start", "end", "title", "committee", "description"
+						service => service.commitment.start.getFullYear(),
+						service => service.commitment.end ? service.commitment.end.getFullYear() : null, 
+						"title", "committee", "description"
 					)
 				}
 

@@ -6,8 +6,9 @@ import {Block} from './block';
 class Talks extends React.Component {
 	render() {
 		
-		var blocks = _.map(this.props.app.getProfile().getTalks(), (talk, index) => {
-			
+		var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+		var blocks = _.map(this.props.app.getProfile().getTalks(null, talk => -talk.date.getTime()), (talk, index) => {
 			var links = [];
 
 			if(talk.recording)
@@ -15,17 +16,17 @@ class Talks extends React.Component {
 			if(talk.practice) {
 				if(links.length > 0)
 					links.push(<span key="talk-dot"> &sdot; </span>);
-				links.push(<a href={talk.practice} target="_blank">Rehearsal</a>);
+				links.push(<a key="practice" href={talk.practice} target="_blank">Rehearsal</a>);
 			}
 			if(talk.slides) {
 				if(links.length > 0)
 					links.push(<span key="slides-dot"> &sdot; </span>);
-				links.push(<a href={talk.slides} target="_blank">Slides</a>);
+				links.push(<a key="slides" href={talk.slides} target="_blank">Slides</a>);
 			}
 			if(talk.blog) {
 				if(links.length > 0)
-					links.push(<span key="talk-dot"> &sdot; </span>);
-				links.push(<a href={talk.blog} target="_blank">Blog post</a>);
+					links.push(<span key="blog-dot"> &sdot; </span>);
+				links.push(<a key="blog" href={talk.blog} target="_blank">Blog post</a>);
 			}
 
 			return <Block
@@ -38,7 +39,7 @@ class Talks extends React.Component {
 					<span>
 						&nbsp; { talk.keynote ? <span className="award">&#x2605; Keynote</span> : null }
 						<br/><small><em>{talk.url ? <a href={talk.url}>{talk.venue}</a> : talk.venue}</em></small>
-						<br/><small>{talk.date}</small>
+						<br/><small>{months[talk.date.getMonth()] + " " + talk.date.getDate() + ", " + talk.date.getFullYear()}</small>
 						<br/><small>{talk.description}</small>
 						<br/>
 						<div className="border-top"><small>{links}</small></div>
@@ -50,7 +51,7 @@ class Talks extends React.Component {
 		return (
 			<div>
 				<div className='lead'>
-					These are keynotes and invited talks I have given.
+					These are my upcoming and past keynotes and invited talks.
 				</div>
 
 				{ blocks }

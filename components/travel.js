@@ -3,6 +3,18 @@ import {Block} from './block';
 import _ from 'lodash';
 
 class Travel extends React.Component {
+
+	getDateString(start, end) {
+
+		var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+		if(start.getTime() === end.getTime()) {
+			return months[start.getMonth()] + " " + start.getDate() + ", " + start.getFullYear();
+		} else {
+			return months[start.getMonth()] + " " + start.getDate() + " - " + (start.getMonth() === end.getMonth() ? "" : months[end.getMonth()]) + " " + end.getDate() + ", " + end.getFullYear();
+		}
+
+	}
+
 	render() {
 		
 		const renderTrips = (filter, sort) =>
@@ -12,7 +24,7 @@ class Travel extends React.Component {
 					<Block 
 						image={
 							<span>
-								<em>{["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][trip.month - 1] + " " + trip.day + ", " + trip.year}</em>
+								<em>{this.getDateString(trip.commitment.start, trip.commitment.end)}</em>
 								{trip.report !== null ? <span><br/><a href={trip.report} target="_blank">trip report</a></span> : null}
 							</span>
 						}
@@ -33,16 +45,16 @@ class Travel extends React.Component {
 				<h3>Upcoming trips</h3>
 				{
 					renderTrips(
-						trip => trip.time > Date.now(),
-						trip => trip.time
+						trip => trip.commitment.start.getTime() > Date.now(),
+						trip => trip.commitment.start.getTime()
 					)
 				}
 
 				<h3>Past trips</h3>
 				{
 					renderTrips(
-						trip => trip.time <= Date.now(),
-						trip => -trip.time
+						trip => trip.commitment.start.getTime() <= Date.now(),
+						trip => -trip.commitment.start.getTime()
 					)
 				}
 				
