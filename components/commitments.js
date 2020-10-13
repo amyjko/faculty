@@ -252,17 +252,10 @@ class Commitments extends React.Component {
         var profile = this.props.app.getProfile();
         var thisYear = (new Date()).getFullYear();
 
-        // Start with an list of baseline commitments.
-        this.commit("Reading", "Books and papers", "research", 0, 2, false, null, null),
-        this.commit("PhD student advising", "Meetings, feedback, and collaboration", "research", 0, 6, false, null, null),
-        this.commit("Seminars", "iSchool, CSE, DUB, etc.", "research", 0, 2, false, null, null),
-        this.commit("Faculty meetings", "Decisions, decisions", "research", 0, 2, false, null, null),
-        this.commit("PhD admissions", "Reviews + meetings", "research", 1, 2, true, { month: 12, date: 15 }, { month: 3, date: 15 }),
-        this.commit("SIGCSE deadline", "Writing", "research", 1, 10, true, { month: 8, date: 1 }, { month: 8, date: 20 }),
-        this.commit("CHI deadline", "Writing", "research", 1, 10, true, { month: 8, date: 15 }, { month: 9, date: 10 }),
-        this.commit("ICER deadline", "Writing", "research", 1, 10, true, { month: 3, date: 15 }, { month: 4, date: 5 }),
-        this.commit("Winter break", "Family", "personal", 2, 30, true, { month: 12, date: 20 }, { month: 1, date: 1 }),
-        this.commit("Summer break", "Family", "personal", 2, 30, true, { month: 8, date: 1 }, { month: 8, date: 15 })   
+        // Start with an list of miscellaneous commitments.
+        _.map(profile.getCommitments(), 
+            com => 
+                this.commit(com.title, com.description, com.category, com.commitment.priority, com.commitment.hours, com.annually, com.commitment.start, com.commitment.end))
 
         // Add editing responsibilities.
         _.each(profile.getEditing(), editing =>

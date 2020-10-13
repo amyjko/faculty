@@ -15,14 +15,18 @@
 		},
 		"date": {
 			"type": ["string", "null"],
-			"pattern": "^[1-2][0-9][0-9][0-9]-[0-1][0-9]-[0-3][0-9]$"
+			"pattern": "^([1-2][0-9][0-9][0-9]-)?[0-1][0-9]-[0-3][0-9]$"
+		},
+		"category": {
+			"type": "string",
+			"enum": ["research", "service", "teaching", "personal"]
 		}
 	},
 	"required": [
 		"sources", "pubs", "people", "projects", "posts", 
 		"impacts", "degrees", "patents", "jobs", "recognitions", "editing",
 		"reviewing", "doctoralCommittees", "service", "funding", "travel", 
-		"talks", "classes", "books", "years"
+		"talks", "classes", "books", "commitments", "years"
 	],
 	"properties": {
 		"sources": {
@@ -475,10 +479,7 @@
 					"award": {
 						"type": ["string", "null"]
 					},
-					"category": {
-						"type": "string",
-						"enum": ["research", "service"]
-					},
+					"category": { "$ref": "#/definitions/category" },
 					"investigators": {
 						"type": "string"
 					},
@@ -646,6 +647,21 @@
 					"editor": {
 						"type": "boolean"
 					}
+				}
+			}
+		},
+		"commitments": {
+			"type": "array",
+			"description": "List of miscellaneous commitments",
+			"items": {
+				"type": "object",
+				"description": "A class.",
+				"required": ["title", "description", "category", "commitment"],
+				"properties": {
+					"title": { "type": "string" },
+					"description": { "type": "string" },
+					"category": { "$ref": "#/definitions/category" },
+					"commitment": { "$ref": "#/definitions/commitment" }
 				}
 			}
 		},

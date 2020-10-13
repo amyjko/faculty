@@ -3,7 +3,8 @@ import _ from 'lodash';
 class Profile {
 
 	parseCommitment(commitment) {
-		commitment.start = this.parseDate(commitment.start);
+		if(commitment.start)
+			commitment.start = this.parseDate(commitment.start);
 		if(commitment.end)
 			commitment.end = this.parseDate(commitment.end);
 		return commitment;
@@ -11,7 +12,13 @@ class Profile {
 
 	parseDate(dateString) {
 		let parts = dateString.split("-");
-		return new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+		if(parts.length === 2)
+			return {
+				month: parseInt(parts[0]),
+				date: parseInt(parts[1])
+			};
+		else
+			return new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
 	}
 
     constructor(json) {
@@ -32,6 +39,9 @@ class Profile {
 
 		// Parse travel
 		_.each(this.json.travel, travel => travel.travel = this.parseCommitment(travel.commitment));
+
+		// Parse commitments
+		_.each(this.json.commitments, commitment => commitment.commitment = this.parseCommitment(commitment.commitment));
 
 		// Parse reviewing
 		_.each(this.json.reviewing, role => {
@@ -274,6 +284,10 @@ class Profile {
 
 	getService(filter, sort) {
 		return this.cloneFilterSort(this.json.service.slice(), filter, sort);
+	}
+
+	getCommitments(filter, sort) {
+		return this.cloneFilterSort(this.json.commitments.slice(), filter, sort);
 	}
 
 }

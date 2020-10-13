@@ -7697,6 +7697,78 @@
 			"editor": false
 		}
 	],
+	"commitments": [
+		{
+			"title": "Reading",
+			"description": "Books and papers",
+			"category": "research",
+			"annually": false,
+			"commitment": { "start": null, "end": null, "hours": 2, "priority": 1 }
+		},
+		{
+			"title": "Ph.D. student advising",
+			"description": "Meetings, feedback, and collaboration",
+			"category": "research",
+			"annually": false,
+			"commitment": { "start": null, "end": null, "hours": 6, "priority": 0 }
+		},
+		{
+			"title": "Seminars",
+			"description": "iSchool, DUB, CSE",
+			"category": "research",
+			"annually": false,
+			"commitment": { "start": null, "end": null, "hours": 2, "priority": 0 }
+		},
+		{
+			"title": "Faculty meetings",
+			"description": "iSchool",
+			"category": "service",
+			"annually": false,
+			"commitment": { "start": null, "end": null, "hours": 2, "priority": 0 }
+		},
+		{
+			"title": "Ph.D. admissions",
+			"description": "Reviews + meetings",
+			"category": "research",
+			"annually": true,
+			"commitment": { "start": "12-15", "end": "03-15", "hours": 2, "priority": 1 }
+		},
+		{
+			"title": "SIGCSE deadline",
+			"description": "Writing",
+			"category": "research",
+			"annually": true,
+			"commitment": { "start": "08-01", "end": "08-20", "hours": 10, "priority": 1 }
+		},
+		{
+			"title": "CHI deadline",
+			"description": "Writing",
+			"category": "research",
+			"annually": true,
+			"commitment": { "start": "08-15", "end": "09-10", "hours": 10, "priority": 1 }
+		},
+		{
+			"title": "ICER deadline",
+			"description": "Writing",
+			"category": "research",
+			"annually": true,
+			"commitment": { "start": "03-15", "end": "04-05", "hours": 10, "priority": 1 }
+		},
+		{
+			"title": "Winter break",
+			"description": "Family",
+			"category": "personal",
+			"annually": true,
+			"commitment": { "start": "12-20", "end": "01-01", "hours": 30, "priority": 2 }
+		},
+		{
+			"title": "Summer break",
+			"description": "Family",
+			"category": "personal",
+			"annually": true,
+			"commitment": { "start": "08-01", "end": "08-15", "hours": 30, "priority": 2 }
+		}
+	],
 	"years": {
 		"2000": "Sophomore year of college",
 		"2001": "Junior year of college",
