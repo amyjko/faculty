@@ -195,32 +195,37 @@ class Commitments extends React.Component {
                     </tr>)
             lastWeek = week;
 
+            let hours = 
+                _.reduce(week.intersects, (sum, intersect) => sum + (intersect.commitment.category === "personal" ? 0 : Math.round(intersect.commitment.hours * intersect.overlap)), 0);
+
             // Add the commitments, then a total hours
             rows.push(
                 <tr key={"week-" + index + "-commitments"}>
                     <td>
-                    {
-                        _.map(week.intersects, (intersect, index) => this.renderBar(intersect.commitment, intersect.overlap, false, "commitment-" + index))
-                    }
-                    <br/>
-                    {
-                        <small>
-                            {_.map(
-                                week.intersects, 
-                                (intersect, index) => 
-                                    <span 
-                                        className={intersect.commitment.category}
-                                        key={"name-" + index} 
-                                    >
-                                            {index > 0 && week.intersects[index - 1].commitment.category !== intersect.commitment.category ? <br/> : null}
-                                            {intersect.commitment.name}
-                                            {index < week.intersects.length - 1 ? <span> &sdot; </span> : null}
-                                    </span>
-                            )}
-                        </small>
-                    }
+                        <div className={hours > 45 ? "shake" : ""} style={{animationDelay: "-" + Math.round(10 * Math.random()) / 10 + "s"}}>
+                        {
+                            _.map(week.intersects, (intersect, index) => this.renderBar(intersect.commitment, intersect.overlap, false, "commitment-" + index))
+                        }
+                        </div>
+                        <br/>
+                        {
+                            <small>
+                                {_.map(
+                                    week.intersects, 
+                                    (intersect, index) => 
+                                        <span 
+                                            className={intersect.commitment.category}
+                                            key={"name-" + index} 
+                                        >
+                                                {index > 0 && week.intersects[index - 1].commitment.category !== intersect.commitment.category ? <br/> : null}
+                                                {intersect.commitment.name}
+                                                {index < week.intersects.length - 1 ? <span> &sdot; </span> : null}
+                                        </span>
+                                )}
+                            </small>
+                        }
                     </td>
-                    <td key="total">{_.reduce(week.intersects, (sum, intersect) => sum + (intersect.commitment.category === "personal" ? 0 : Math.round(intersect.commitment.hours * intersect.overlap)), 0)} hrs</td>
+                    <td key="total"><div className={hours > 45 ? "shake" : ""}  style={{animationDelay: "-" + Math.round(10 * Math.random()) / 10 + "s"}}>{hours + " hrs"}</div></td>
                 </tr>
             );
 
@@ -484,6 +489,8 @@ class Commitments extends React.Component {
                 </table>
 
                 <h3>Weekly workload</h3>
+
+                <p>Here's approximately about how busy I'll be per week in the next two years. You might notice I don't like working more than 45 hours a week.</p>
 
                 <table className="table">
                     <tbody>
