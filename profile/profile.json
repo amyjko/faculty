@@ -6533,7 +6533,7 @@
 			"private": true,
 			"commitment": {
 				"start": "2020-10-01",
-				"end": "2023-11-05",
+				"end": "2020-11-05",
 				"hours": 5,
 				"priority": 0
 			}
