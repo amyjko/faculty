@@ -243,7 +243,7 @@ class Vita extends React.Component {
 				<h1>Funding</h1>
 
 				{this.getChunkList
-					(profile.getFunding(() => true, funding => -funding.commitment.end.getFullYear()), 
+					(profile.getFunding(funding => !funding.private, funding => -funding.commitment.end.getFullYear()), 
 					true,
 					funding => funding.commitment.start.getFullYear(), 
 					funding => funding.commitment.end.getFullYear(), 

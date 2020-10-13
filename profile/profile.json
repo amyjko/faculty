@@ -6521,8 +6521,26 @@
 	],
 	"funding": [
 		{
+			"id": "theoriesofprogramming",
+			"title": "NSF proposal writing",
+			"funder": "National Science Foundation",
+			"award": "TBD",
+			"investigators": "Thomas LaToza (PI), Amy J. Ko (Co-PI)",
+			"amount": "$1,200,000",
+			"category": "research",
+			"description": "Pending proposal.",
+			"url": null,
+			"private": true,
+			"commitment": {
+				"start": "2020-10-01",
+				"end": "2023-11-05",
+				"hours": 5,
+				"priority": 0
+			}
+		},
+		{
 			"id": "csjustice",
-			"title": " Justice-Focused Secondary CS Teacher Education",
+			"title": "Justice-Focused Secondary CS Teacher Education",
 			"funder": "National Science Foundation",
 			"award": "#2031265",
 			"investigators": "Amy J. Ko (PI), Anne Beitlers (Co-PI)",

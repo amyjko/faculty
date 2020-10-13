@@ -493,6 +493,7 @@
 						"type": ["string", "null"],
 						"format": "uri"
 					},
+					"private": { "type": "boolean" },
 					"commitment": { "$ref": "#/definitions/commitment" }
 				}
 			}
