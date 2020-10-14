@@ -18,7 +18,7 @@ class Biography extends React.Component {
 				
 				<p>
 					I am not huge fan of labels, since they are often used to stereotype, categorize, and oppress.
-					However, when we use them to describe ourselves, they can be powerful ways of develop cultural competency, preventing stereotyping and assumptions.
+					However, when we use them to describe ourselves, they can be powerful ways to develop cultural competency, preventing stereotyping and assumptions.
 					So here are a few labels that I use to describe myself at this point in my life and what they mean to me, roughly in order of how much they shape my identity:
 				</p>
 				
