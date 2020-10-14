@@ -61,19 +61,20 @@ class ProjectSummary extends React.Component {
 	}
 }
 
-class Projects extends React.Component {
+class Research extends React.Component {
 	render() {
 		
 		return (
 			<div>
 				<div className="lead">
-					I study equitable ways for humanity to learn the power and perils of computing. 
-					Whether it is youth discovering the limits of machine learning, adults grasping a new API, or teachers shaping learners' conceptions of code, I'm fascinated by our individual and collective struggle to make sense of computing and harness it for justice.
+					I study our individual and collective struggle to understand computing and harness it for justice.
 				</div>
-								
+
 				<p>
-					I share my work with three research communities: <em>computing education</em> (see my <Link to={"/cer"}>Computing Education Research FAQ</Link>), <em>human-computer interaction</em>, and <em>software engineering</em>.
-					I work with many outstanding <Link to={"/students"}>students</Link> and <Link to={"/communities"}>communities</Link> to <Link to={"/publications"}>publish</Link>, <Link to={"/posts"}>blog</Link>, <Link to={"/talks"}>present</Link>, <Link to={"/teaching"}>teach</Link>, <Link to={"/books"}>synthesize</Link>, and <Link to={"/impact"}>apply</Link> our research. Throughout, I leverage my expertise in <em>debugging</em>, <em>explainability</em>, <em>end-user programming</em>, <em>program understanding</em>, <em>design education</em>, <em>software engineering teamwork</em>, and <em>broadening participation in computing</em>.
+					I'm particularly interested in helping youth understand the limits of code, data, and machine learning, and empowering educators to teach these limits in inclusive and equitable ways.
+					I work with many outstanding <Link to={"/students"}>students</Link> and <Link to={"/communities"}>communities</Link> on this work, <Link to={"/publications"}>publishing</Link>, <Link to={"/posts"}>blogging</Link>, <Link to={"/talks"}>presenting</Link>, <Link to={"/teaching"}>teaching</Link>, <Link to={"/books"}>synthesizing</Link>, and <Link to={"/impact"}>applying</Link> it in the world. 
+					We share our work with three research communities: <strong>computing education</strong> (see my <Link to={"/cer"}>Computing Education Research FAQ</Link>), <strong>human-computer interaction</strong>, and <strong>software engineering</strong>.
+					Throughout, I leverage my expertise in <em>debugging</em>, <em>explainability</em>, <em>end-user programming</em>, <em>program understanding</em>, <em>design education</em>, <em>human aspects of software engineering</em>, and <em>broadening participation in computing</em>.
 				</p>
 				
 				<p>
@@ -109,4 +110,4 @@ class Projects extends React.Component {
 	}
 }
 
-export { Projects };
+export { Research };

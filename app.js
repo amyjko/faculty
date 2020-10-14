@@ -13,7 +13,7 @@ import { Posts } from './components/posts';
 import { Impact } from './components/impact';
 import { Students } from './components/students';
 import { Header } from './components/header';
-import { Projects } from './components/projects';
+import { Research } from './components/research';
 import { Project } from './components/project';
 import { Advice } from './components/advice';
 import { Classes } from './components/classes';
@@ -76,7 +76,8 @@ class App extends React.Component {
 					this.state.profile === null ?
 						<div className='alert alert-danger'>There was a problem loading the site content. Amy will fix it right away!</div> :
 						<Switch>
-							<Route exact path="/" render={(props) => <Projects {...props} app={this} />} />
+							<Route exact path="/" render={(props) => <Research {...props} app={this} />} />
+							<Route path="/research/" render={(props) => <Research {...props} app={this} />} />
 							<Route path="/bio" render={(props) => <Biography {...props} app={this} />} />
 							<Route path="/publications/:paper?" render={(props) => <Publications {...props} app={this} />} />
 							<Route path="/posts" render={(props) => <Posts {...props} app={this} />} />
