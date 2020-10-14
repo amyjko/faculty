@@ -6865,6 +6865,19 @@
 			"report": null
 		},
 		{
+			"url": null,
+			"title": "IT University of Copehagen",
+			"details": "I'm giving one of two invited keynotes at the launch of the new Center for Computing Education Research",
+			"category": "research",
+			"commitment": {
+				"start": "2020-11-05",
+				"end": "2020-11-05",
+				"hours": 3,
+				"priority": 1
+			},
+			"report": null
+		},
+		{
 			"url": "https://www.hcii.cmu.edu/seminar-series",
 			"title": "Carnegie Mellon University, HCI Institute Seminar",
 			"details": "Invited research talk",
