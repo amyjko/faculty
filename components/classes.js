@@ -12,7 +12,11 @@ class Classes extends React.Component {
 
 				{
 					_.map(this.props.app.getProfile().getClasses(), course => {
-						let latestOffering = _.orderBy(course.offerings, ["year", "term"], ["desc", "term"])[0];
+						let latestOffering = _.orderBy(course.offerings, ["year", "term"], ["desc", "desc"])[0];
+						let currentYear = (new Date()).getFullYear();
+						let currentMonth =(new Date()).getMonth() + 1;
+						let currentQuarter = currentMonth <= 3 ? 2 : currentMonth <= 6 ? 3: 1;
+						let future = latestOffering.year >= currentYear && currentQuarter >= currentQuarter;
 						return <Block
 								key={"course-" + course.id}
 								image={this.props.app.getWebRoot() + "/images/courses/" + course.id + ".png"}
@@ -20,7 +24,7 @@ class Classes extends React.Component {
 								link={course.link}
 								header={course.number + " " + course.title}
 								content={
-									<span> (<em>last taught {["Autumn", "Winter", "Spring"][latestOffering.term] + " " + latestOffering.year}</em>). {course.description}
+									<span> (<em>{future ? "Next" : "Latest"} offering {["Autumn", "Winter", "Spring"][latestOffering.term - 1] + " " + latestOffering.year}</em>). {course.description}
 										<br/>
 										<ul>
 											{_.map(
