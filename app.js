@@ -11,7 +11,7 @@ import { Funding } from './components/funding';
 import { Publications } from './components/publications';
 import { Posts } from './components/posts';
 import { Impact } from './components/impact';
-import { Students } from './components/students';
+import { Lab } from './components/lab';
 import { Header } from './components/header';
 import { Research } from './components/research';
 import { Project } from './components/project';
@@ -92,8 +92,7 @@ class App extends React.Component {
 							<Route path="/communities" render={(props) => <Communities {...props} app={this} />} />
 							<Route path="/funding" render={(props) => <Funding {...props} app={this} />} />
 							<Route path="/commitments" render={(props) => <Commitments {...props} app={this} />} />
-							<Route path="/lab" render={(props) => <Students {...props} app={this} />} />
-							<Route path="/students/:student?" render={(props) => <Students {...props} app={this} profile={this.state.profile} />} />
+							<Route path="/lab/:person?" render={(props) => <Lab {...props} app={this} profile={this.state.profile} />} />
 							<Route path="/projects/:id" render={(props) => <Project {...props} app={this} />} />
 							<Route path="/cv" render={(props) => <Vita {...props} app={this} />} />
 							<Route path="/cer" component={CER}/>

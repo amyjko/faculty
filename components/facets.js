@@ -36,7 +36,7 @@ class Facets extends React.Component {
                                 key={"topic-" + value} 
                                 role="radio"
                                 aria-checked={facet in this.state.selection && this.state.selection[facet] === value}
-                                tabindex={facet in this.state.selection && this.state.selection[facet] === value ? 0 : 1}
+                                tabIndex={facet in this.state.selection && this.state.selection[facet] === value ? 0 : 1}
                                 aria-label={"Filter by " + value}
                                 className={"clickable topic" + (facet in this.state.selection && this.state.selection[facet] === value ? " selected" : "")} 
                                 onClick={this.selectValue.bind(this, facet, value)}

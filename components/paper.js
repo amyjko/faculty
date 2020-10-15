@@ -74,7 +74,7 @@ class Paper extends React.Component {
 				author + (index < this.props.authors.length - 1 ? ", " : "") :
 				<span key={index}>
 					{link ? 
-						<Link to={author.id === "ajko" ? "/bio" : "/students/" + author.id}>{author.name}</Link> :
+						<Link to={author.id === "ajko" ? "/bio" : "/lab/" + author.id}>{author.name}</Link> :
 						author.name
 					}
 					{index < this.props.authors.length - 1 ? ", " : ""}

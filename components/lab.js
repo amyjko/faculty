@@ -32,11 +32,11 @@ class Person extends React.Component {
 	}
 }
 
-class Students extends React.Component {
+class Lab extends React.Component {
 
 	componentDidMount() {
 		
-		var personToHighlight = this.props.match.params.student;
+		var personToHighlight = this.props.match.params.person;
 
 		var highlight = $('[name=' + personToHighlight + ']');
 		
@@ -48,7 +48,7 @@ class Students extends React.Component {
 
 	render() {
 		
-		var personToHighlight = this.props.match.params.student;
+		var personToHighlight = this.props.match.params.person;
 
 		const renderPeople = (filter, sort) =>
 			_.map(
@@ -149,4 +149,4 @@ class Students extends React.Component {
 	}
 }
 
-export { Students };
+export { Lab };
