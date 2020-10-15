@@ -89,7 +89,7 @@ class Students extends React.Component {
 				<h3>Current Advisees</h3>
 				{ 
 					renderPeople(
-						person => person.active && person.advised && person.id !== "ajko", 
+						person => person.active && person.advised && person.id !== "ajko" && person.level !== "faculty", 
 						['level', 'startdate']
 					) 
 				}
@@ -97,8 +97,18 @@ class Students extends React.Component {
 				<h3>Affiliated Ph.D. students</h3>
 				{ 
 					renderPeople(
-						person => person.active && !person.advised, 
+						person => person.active && !person.advised && person.level !== "faculty", 
 						['level', 'startdate']
+					) 
+				}
+
+				<h3 id="collaborators">Faculty Collaborators</h3>
+
+				<p><em>This isn't a complete list of collaborators, just those I've gotten around to adding.</em></p>
+				{ 
+					renderPeople(
+						person => person.active && person.level === "faculty", 
+						person => -person.startdate
 					) 
 				}
 

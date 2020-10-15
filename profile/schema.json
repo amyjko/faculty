@@ -159,7 +159,7 @@
 					"level": {
 						"type": "string",
 						"description": "The level of the student when they were in the lab",
-						"enum": ["undergrad", "phd", "postdoc", "director"]
+						"enum": ["undergrad", "phd", "postdoc", "faculty", "director"]
 					},
 					"dept": {
 						"type": "string",

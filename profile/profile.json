@@ -53,7 +53,7 @@
 		{
 			"id": "csdif",
 			"kind": "refereed conference paper",
-			"authors": ["@mattjd", "@ajko", "Brett Wortzman"],
+			"authors": ["@mattjd", "@ajko", "@brettwo"],
 			"deadname": false,
 			"year": 2021,
 			"title": "Investigating item bias in a CS1 exam with differential item functioning",
@@ -67,7 +67,7 @@
 		{
 			"id": "csdesignk12",
 			"kind": "journal article",
-			"authors": ["@olesona", "@ajko", "Brett Wortzman"],
+			"authors": ["@olesona", "@ajko", "@brettwo"],
 			"deadname": false,
 			"year": 2020,
 			"title": "On the Role of Design in K-12 Computing Education",
@@ -281,7 +281,7 @@
 		{
 			"id": "cs1theory",
 			"kind":"journal article",
-			"authors": ["@bxie", "@dloksa", "@glnelson", "@mattjd", "Dongsheng Dong", "@kwikh", "@alextan", "@lkhwa", "Min Li", "@ajko"],
+			"authors": ["@bxie", "@dloksa", "@glnelson", "@mattjd", "Dongsheng Dong", "@kwikh", "@alextan", "@lkhwa", "@minli", "@ajko"],
 			"deadname": true,
 			"year": 2019,
 			"title": "A Theory of Instruction for Introductory Programming Skills",
@@ -368,7 +368,7 @@
 		{
 			"id": "irteval",
 			"kind": "refereed conference paper",
-			"authors": ["@bxie", "@mattjd", "Min Li", "@ajko"],
+			"authors": ["@bxie", "@mattjd", "@minli", "@ajko"],
 			"deadname": true,
 			"year": 2019,
 			"title": "An Item Response Theory Evaluation of a Language-Independent CS1 Knowledge Assessment",
@@ -462,7 +462,7 @@
 		{
 			"id": "ellblockstudio",
 			"kind": "refereed conference paper",
-			"authors": ["@banerjee", "Jason C. Yip", "@ajko", "Caroline Pitt", "Kiley R. Sobel", "Kung Lee", "Leanne Liu", "Meng Wang", "Zoran Popovic"],
+			"authors": ["@banerjee", "@jcyip", "@ajko", "Caroline Pitt", "Kiley R. Sobel", "Kung Lee", "Leanne Liu", "Meng Wang", "Zoran Popovic"],
 			"deadname": true,
 			"year": 2018,
 			"title": "Empowering Families Facing English Literacy Challenges to Jointly Engage in Computer Programming",
@@ -479,7 +479,7 @@
 		{
 			"id": "mentors2",
 			"kind": "refereed conference paper",
-			"authors": ["@ajko", "@lkhwa", "Katie Davis", "Jason Yip"],
+			"authors": ["@ajko", "@lkhwa", "@kdavis", "@jcyip"],
 			"deadname": true,
 			"year": 2018,
 			"title": "Informal Mentoring of Adolescents about Computing: Relationships, Roles, Qualities, and Impact",
@@ -602,7 +602,7 @@
 		{
 			"id":"mentors1",
 			"kind":"refereed conference paper",
-			"authors": ["@ajko", "Katie Davis"],
+			"authors": ["@ajko", "@kdavis"],
 			"deadname": true,
 			"year": 2017,
 			"title":"Computing Mentorship in a Software Boomtown: Relationships to Adolescent Interest and Beliefs",
@@ -2127,6 +2127,62 @@
 	],
 	"people": [
 		{
+			"id": "brettwo",
+			"name": "Brett Wortzman",
+			"active": true,
+			"advised": false,
+			"level": "faculty",
+			"dept": "Computer Science",
+			"coadvisor": null,
+			"bio": "Brett is faculty in the Paul G. Allen School of Computer Science and Engineering where he often teaches CSE 142. We often collaborate on studies we run in his class.",
+			"url": "https://homes.cs.washington.edu/~brettwo/",
+			"startdate": 2018,
+			"enddate": null,
+			"achievements": []
+		},
+		{
+			"id": "minli",
+			"name": "Min Li",
+			"active": true,
+			"advised": false,
+			"level": "faculty",
+			"dept": "College of Education",
+			"coadvisor": null,
+			"bio": "Min is faculty in the College of Education where she studies educational measurement and psychometrics. We collaborate on research related to assessment.",
+			"url": "https://education.uw.edu/people/faculty/minli",
+			"startdate": 2017,
+			"enddate": null,
+			"achievements": []
+		},
+		{
+			"id": "jcyip",
+			"name": "Jason Yip",
+			"active": true,
+			"advised": false,
+			"level": "faculty",
+			"dept": "iSchool",
+			"coadvisor": null,
+			"bio": "Jason is my colleague in the iSchool where he studies collaborative learning in families. We collaborate on research related to CS and design learning.",
+			"url": "http://bigyipper.com",
+			"startdate": 2018,
+			"enddate": null,
+			"achievements": []
+		},
+		{
+			"id": "kdavis",
+			"name": "Katie Davis",
+			"active": true,
+			"advised": false,
+			"level": "faculty",
+			"dept": "iSchool",
+			"coadvisor": null,
+			"bio": "Katie is my colleague in the iSchool where she studies new media in young people's personal, social, and academic lives.",
+			"url": "http://katiedavisresearch.com",
+			"startdate": 2017,
+			"enddate": null,
+			"achievements": []
+		},
+		{
 			"id": "jayne",
 			"name": "Jayne Everson",
 			"active": true,
@@ -2526,9 +2582,9 @@
 		{
 			"id": "kthayer",
 			"name": "Kyle Thayer",
-			"active": false,
+			"active": true,
 			"advised": true,
-			"level": "phd",
+			"level": "faculty",
 			"dept": "Computer Science",
 			"coadvisor": "Katharina Reinecke",
 			"bio": "Kyle was a PhD student in Computer Science and Engineering, co-advised by Katharina Reinecke. His dissertation investigated barriers to learning to code knowledge through bootcamps, developed a novel theory of API knowledge, and contributed a new way to mine the web for API usage patterns. He is now a Lecturer at the University of Washington Information school, where he continues investigating the intersection of diversity and computing education as a teacher and researcher.",
