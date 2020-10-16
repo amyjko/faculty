@@ -386,7 +386,9 @@ class Commitments extends React.Component {
 					This is my commitment calendar, with estimates of how busy I'll be each week in the next two years. I use this to decide whether to say yes to new opportunities.
 				</div>
 
-                <p>Curious how I maintain this page? I have a list of commitments with date ranges, from which I automatically generate this page.</p>
+                <p>Curious how I maintain this page? I have a <a target="_blank" href="https://github.com/amyjko/faculty/blob/master/profile/profile.json">list of commitments</a> with date ranges, from which I <a target="_blank" href="https://github.com/amyjko/faculty/blob/master/components/commitments.js">automatically generate</a> this page.</p>
+
+                <hr/>
 
                 <div className="bar personal">personal</div>
                 <div className="bar research">research</div>
