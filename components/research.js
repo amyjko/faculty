@@ -73,8 +73,8 @@ class Research extends React.Component {
 				<p>
 					I'm particularly interested in helping youth understand the limits of code, data, and machine learning, and empowering educators to teach these limits in inclusive and equitable ways.
 					I work with many outstanding <Link to={"/students"}>students</Link> and <Link to={"/communities"}>communities</Link> on this work, <Link to={"/publications"}>publishing</Link>, <Link to={"/posts"}>blogging</Link>, <Link to={"/talks"}>presenting</Link>, <Link to={"/teaching"}>teaching</Link>, <Link to={"/books"}>synthesizing</Link>, and <Link to={"/impact"}>applying</Link> it in the world. 
-					We share our work with three research communities: <strong>computing education</strong> (see my <Link to={"/cer"}>Computing Education Research FAQ</Link>), <strong>human-computer interaction</strong>, and <strong>software engineering</strong>.
-					Throughout, I leverage my expertise in <em>debugging</em>, <em>explainability</em>, <em>end-user programming</em>, <em>program understanding</em>, <em>design education</em>, <em>human aspects of software engineering</em>, and <em>broadening participation in computing</em>.
+					We share our work with three research communities: <Link to={"/cer"}>computing education</Link>, <strong>human-computer interaction</strong>, and <strong>software engineering</strong>.
+					Throughout, I leverage my expertise in <em>debugging</em>, <em>program understanding</em>, <em>explainability</em>; <em>end-user programming</em>, <em>human and collaborative aspects of software engineering</em>; <em>broadening participation in computing</em>; and <em>HCI and design education</em>.
 				</p>
 				
 				<p>
