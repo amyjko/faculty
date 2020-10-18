@@ -20,9 +20,17 @@ class Person extends React.Component {
 							&nbsp;
 							<mark>{this.props.level}</mark>
 							&nbsp;
-							<small>{this.props.dissertation ? <a href={this.props.app.getWebRoot() + "/dissertations/" + this.props.dissertation}>Dissertation</a> : null } { this.props.enddate ? " (" + this.props.enddate + ")" : null }</small>
+							<small>{ this.props.startdate }{ this.props.enddate ? (this.props.startdate !== this.props.enddate ? " - " + this.props.enddate : null) : " - present" }</small>
 							<br/>
 							{this.props.bio}
+							{
+								this.props.dissertation ?
+									<div className="border-top">
+										<small>
+											{ this.props.dissertation ? <a href={this.props.app.getWebRoot() + "/dissertations/" + this.props.dissertation}>Dissertation</a> : null }
+										</small>
+									</div> : null
+							}
 						</span>
 					}
 				/>
