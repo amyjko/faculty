@@ -7,7 +7,7 @@ class Classes extends React.Component {
 		return (
 			<div>
 				<div className='lead'>
-					These are courses I teach.
+					These are classes I teach.
 				</div>
 
 				{
