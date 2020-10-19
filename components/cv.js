@@ -212,7 +212,7 @@ class Vita extends React.Component {
 					),
 					true,
 					"year", 
-					null, 
+					"year", 
 					"title", 
 					pub => <em>{pub.award.join(", ")}</em>,
 					"sourceName",
@@ -229,7 +229,7 @@ class Vita extends React.Component {
 						),
 						true,
 						"year", 
-						null, 
+						"year", 
 						"title", 
 						pub => <em>{pub.award.join(", ")}</em>,
 						"sourceName",
@@ -303,21 +303,21 @@ class Vita extends React.Component {
 						impact => -impact.start
 					), 
 					true,
-					"start", null, "title", "author", "source")}
+					"start", "end", "title", "author", "source")}
 				
 				<h2>Invited Keynotes</h2>
 
 				{this.getChunkList(
 					_.filter(profile.getTalks(), (talk) => { return talk.keynote; }), 
 					true,
-					talk => talk.date.getFullYear(), null, "title", "venue")}
+					talk => talk.date.getFullYear(), talk => talk.date.getFullYear(), "title", "venue")}
 				
 				<h2>Invited Talks</h2>
 
 				{this.getChunkList(
 					_.filter(profile.getTalks(), (talk) => { return !talk.keynote; }), 
 					true,
-					talk => talk.date.getFullYear(), null, "title", "venue")}				
+					talk => talk.date.getFullYear(), talk => talk.date.getFullYear(), "title", "venue")}				
 
 				<h2>Patents</h2>
 			
@@ -325,7 +325,7 @@ class Vita extends React.Component {
 					this.getChunkList(
 						profile.getPatents(), 
 						false,
-						"year", null, "title", "number", "inventors"
+						"year", "year", "title", "number", "inventors"
 					)
 				}
 
