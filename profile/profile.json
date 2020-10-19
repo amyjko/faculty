@@ -3270,6 +3270,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/the-half-life-of-computing-education-20b3f34f8cd0",
+			"title": "The half life of computing education",
+			"date": "2020.10",
+			"tags": ["computing education", "society", "K-12"],
+			"img": "terminator",
+			"alt": "An illustration of a Terminator robot with a thought bubble that says IF OBJ.IS_HUMAN DESTROY OBJ"
+		},
+		{
 			"url": "https://medium.com/@amyjko/coming-out-of-hiding-db4a04088643",
 			"title": "Coming out (of hiding)",
 			"date": "2020.10",
