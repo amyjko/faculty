@@ -50,7 +50,7 @@ class ProjectDetails extends React.Component {
 
 				<h3>Contributors</h3>
 				<p>{_.map(this.props.people, person => 
-					<Link key={"person-" + person.id} to={person.id === "ajko" ? "/bio" : "/students/" + person.id}>
+					<Link key={"person-" + person.id} to={person.id === "ajko" ? "/bio" : "/lab/" + person.id}>
 						<img 
 							src={this.props.app.getWebRoot() + this.props.app.getProfile().getPersonImagePath(person.id)} 
 							className="student-mug img-circle" 
