@@ -7,7 +7,7 @@ class Books extends React.Component {
 		return (
 			<div>
 				<div className='lead'>
-					These are online books I wrote to support my teaching. I update them regularly with new ideas, citations, and chapters.
+					These are books I maintain to support my teaching. Unlike print books, they are digital, searchable, interactive, and web accessible. They are also living documents: I update them regularly with new ideas, citations, and chapters, especially in response to feedback.
 				</div>
 
 				{
@@ -24,7 +24,7 @@ class Books extends React.Component {
 				}
 
 				<div className='lead'>
-					These are edited books I've contributed to.
+					These are edited print books that I've contributed to.
 				</div>
 
 				{
