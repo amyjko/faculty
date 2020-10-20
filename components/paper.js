@@ -96,11 +96,11 @@ class Paper extends React.Component {
 		);
 	}
 
-	// Just the text, in APA format.
+	// Just the text, in APA format, for citing.
 	renderAPA(award=true) {
 
 		return <div id={"apa-" + this.props.id}>
-			{this.renderAuthors()} ({this.props.year}). <strong>{this.props.title}</strong>{this.props.title.charAt(this.props.title.length - 1) === "?" ? "" : "."} {this.renderSource(true)}.{this.props.doi ? " " + this.props.doi : null} {award && this.props.award && this.props.award.length > 0 ? <u>. {_.join(this.props.award, " + ")}</u> : ""}
+			{this.renderAuthors()} ({this.props.year}). <strong>{this.props.title}</strong>{this.props.title.charAt(this.props.title.length - 1) === "?" ? "" : "."} {this.renderSource(true)}.{this.props.doi ? " " + this.props.doi : null} {award && this.props.award && this.props.award.length > 0 ? <span><br/><span className="award">{_.join(this.props.award, " + ")}</span></span> : ""}
 		</div>
 
 	}
