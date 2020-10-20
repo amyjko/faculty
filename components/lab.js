@@ -73,7 +73,7 @@ class Lab extends React.Component {
 			<div>
 			
 				<div className="lead">
-					I direct the <strong>Code & Cognition Lab</strong>.
+					I direct the <em>Code & Cognition Lab</em>.
 				</div>
 				
 				<p>
