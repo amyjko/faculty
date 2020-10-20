@@ -6021,6 +6021,20 @@
 			"enddate": null
 		},
 		{
+			"name": "Lily Durwood",
+			"institution": "University of Washington",
+			"department": "Psychology",
+			"startdate": 2020,
+			"enddate": null
+		},
+		{
+			"name": "Matthew Davidson",
+			"institution": "University of Washington",
+			"department": "College of Education",
+			"startdate": 2020,
+			"enddate": null
+		},
+		{
 			"name": "Chenglong Wang",
 			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
@@ -6067,14 +6081,14 @@
 			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
 			"startdate": 2017,
-			"enddate": null
+			"enddate": 2019
 		},
 		{
 			"name": "Elena Agapie",
 			"institution": "University of Washington",
 			"department": "Human-Centered Design and Engineering",
 			"startdate": 2017,
-			"enddate": null
+			"enddate": 2020
 		},
 		{
 			"name": "James Bornholt",
@@ -6088,7 +6102,7 @@
 			"institution": "University of Washington",
 			"department": "The Information School",
 			"startdate": 2017,
-			"enddate": null
+			"enddate": 2018
 		},
 		{
 			"name": "Yea-Seul Kim",
