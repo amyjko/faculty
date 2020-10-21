@@ -105,6 +105,16 @@ class Paper extends React.Component {
 
 	}
 
+	// Just the text, in APA format, for citing.
+	renderCV() {
+
+		return <div className="ws-bottom">
+			<strong>{this.props.title}</strong> &sdot; <small>{this.renderAuthors()}</small> &sdot; <small><em>{this.renderSource(false)}</em></small>
+			{this.props.award && this.props.award.length > 0 ? <span className="award">{_.join(this.props.award, " + ")}</span> : ""}
+		</div>
+
+	}
+
 	// All the bells and whistles
 	renderInteractive() {
 
@@ -146,7 +156,9 @@ class Paper extends React.Component {
 	}
 
 	render() {
-		return this.props.static ? <div className="ws-bottom">{this.renderAPA()}</div> : this.renderInteractive();
+		return this.props.format === "apa" ? <div className="ws-bottom">{this.renderAPA()}</div> :
+			this.props.format === "cv" ? this.renderCV() :
+			this.renderInteractive();
 	}
 
 }

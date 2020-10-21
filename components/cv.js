@@ -65,7 +65,7 @@ class Vita extends React.Component {
 
 		var count = 0;
 		var rows = [];
-		var yearColumns = splitByYears ? 6 : columns ? 6 : 12;
+		var yearColumns = columns ? 6 : 12;
 
 		_.each(
 			pubs,
@@ -89,7 +89,7 @@ class Vita extends React.Component {
 				}
 				rows.push(
 					<div key={"paper" + index} className={"col-md-" + yearColumns}>
-						<Paper {...pub} app={this.props.app} key={kind + index} static={true} />
+						<Paper {...pub} app={this.props.app} key={kind + index} format={"cv"} />
 					</div>
 				);
 				count++;
@@ -262,11 +262,11 @@ class Vita extends React.Component {
 
 				<h2>Journal Articles</h2>
 				
-				{this.getPapers("journal article", false, true)}
+				{this.getPapers("journal article", true, false)}
 							
 				<h2>Refereed Workshop Papers</h2>
 				
-				{this.getPapers("refereed workshop paper", false, true)}				
+				{this.getPapers("refereed workshop paper", true, false)}				
 
 				<h2>Books</h2>
 				
@@ -274,23 +274,23 @@ class Vita extends React.Component {
 
 				<h2>Book Chapters</h2>
 				
-				{this.getPapers("book chapter", false, true)}				
+				{this.getPapers("book chapter", true, false)}				
 
 				<h2>Juried Conference Papers</h2>
 				
-				{this.getPapers("juried conference paper", false, true)}
+				{this.getPapers("juried conference paper", true, false)}
 
 				<h2>Refereed Magazine Articles</h2>
 				
-				{this.getPapers("refereed magazine article", false, true)}
+				{this.getPapers("refereed magazine article", true, false)}
 
 				<h2>Non-Refereed Workshop Papers</h2>
 				
-				{this.getPapers("non-refereed workshop paper", false, true)}				
+				{this.getPapers("non-refereed workshop paper", true, false)}				
 
 				<h2>Technical Reports</h2>
 				
-				{this.getPapers("technical report", false, true)}
+				{this.getPapers("technical report", true, false)}
 				
 				<h1>Impact</h1>
 

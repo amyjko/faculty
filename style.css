@@ -291,6 +291,14 @@ body .cv {
 	line-height: 1.5em;
 }
 
+.cv .award {
+	padding: 0;
+	background: none;
+	color: black;
+	font-weight: 700;
+	display: block;
+}
+
 @media print {
 	
 	h1, h2, h3 {
