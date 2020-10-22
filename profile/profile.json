@@ -6971,7 +6971,7 @@
 		},
 		{
 			"url": "https://engineering.virginia.edu/departments/computer-science/news/distinguished-speaker-series",
-			"title": "University of Virginia, CS Colloqium",
+			"title": "University of Virginia, CS Distinguished Speaker Series",
 			"details": "Invited research talk",
 			"category": "research",
 			"commitment": {
@@ -7245,16 +7245,16 @@
 	],
 	"talks": [
 		{
-			"date": "2021-09-20",
-			"image": "re2021.png",
-			"alt": "The RE logo",
-			"slides": null,
-			"title": "RE 2021 keynote",
-			"venue": "IEEE International Requirements Engineering Conference",
-			"url": "https://conf.researchr.org/home/RE-2021",
+			"date": "2020-10-21",
+			"image": "uva20.png",
+			"alt": "The first slide of the talk showing the title Critical Computing Education and a photo of Black Lives Matter protests.",
+			"slides": "slides/UVA2020CriticalCSEd.pdf",
+			"title": "Critical Computing Education",
+			"venue": "University of Virginia, Computer Science Distinguished Speaker Series",
+			"url": "https://engineering.virginia.edu/events/cs-distinguished-speaker-amy-ko-critical-computing-education",
 			"recording": null,
 			"practice": null,
-			"description": "I'm scheduled to give the 2021 keynote.",
+			"description": "This was the second time I gave my Autumn 2020 talk on critical computing education. In this version, I expanded discussion of my lab's research and strengthened the call to action.",
 			"keynote": false
 		},
 		{
