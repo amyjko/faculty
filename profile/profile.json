@@ -86,8 +86,8 @@
 			"year": 2020,
 			"title": "It’s Time for More Critical CS Education",
 			"source": "@cacm",
-			"pages": "to appear",
-			"doi": null,
+			"pages": "31-33",
+			"doi": "https://doi.org/10.1145/3424000",
 			"local": null,
 			"publisher": "ACM",
 			"contribution": "Argues that CS educators at all levels have the responsibility of the role of computing in injustice."
