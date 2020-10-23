@@ -99,7 +99,13 @@ class CER extends React.Component {
 
 				<h3 id="becoming-a-researcher">How do I become a CER researcher?</h3>
 
-				<p>The most effective route is to get a Ph.D. in computing education research at one of the many Ph.D. granting universities in the world. Ph.D. students learn to conduct research over the course of multiple years (generally 4 to 6) under the supervision of an advisor. Many undergraduates participate in research to help them learn about research, which can also help with admission to Ph.D. programs (especially if you publish, which demonstrates your interest and ability in conducting research).</p>
+				<p>
+					The most effective route is to get a Ph.D. in computing education research at one of the many Ph.D. granting universities in the world. Ph.D. students learn to conduct research over the course of multiple years (generally 4 to 6) under the supervision of an advisor.
+				</p>
+
+				<p>
+					Undergraduate research is a key part of creating pathways to Ph.D. programs. Undergraduates can help accelerate research projects, and even lead their own projects, helping with admission to Ph.D. programs (especially if you publish, which demonstrates your interest and ability in conducting research). See the <a href="https://cra.org/crae/wp-content/uploads/sites/3/2020/10/Resources-for-Scaling-Undergraduate-Research.pdf" target="_blank">CRA-E best practices guide on undergraduate CS research</a> for a glimpse into how effective undergraduate research experiences should work.
+				</p>
 
 				<h3 id="getting-a-phd">Where can I get a Ph.D. in CER?</h3>
 
