@@ -130,7 +130,7 @@
 			"year": 2020,
 			"title": "Toward the Development of HCI Pedagogical Content Knowledge",
 			"source": "ACM SIGCHI Symposium on HCI Education (EduCHI 2020)",
-			"pages": "to appear",
+			"pages": null,
 			"doi": null,
 			"local": "Oleson2020HCIPCK.pdf",
 			"publisher": "ACM",
@@ -248,6 +248,7 @@
 			"title": "A Study Design Design Process",
 			"source": "Cambridge Handbook on Computing Education Research (Sally Fincher, Anthony Robin, Eds.)",
 			"pages": null,
+			"doi": null,
 			"local":"Ko2019StudyDesign.pdf",
 			"publisher": "Cambridge Press",
 			"contribution": "Describes a process for designing studies in the domain of computing education research, though the process is more broadly useful for empirical study design in general."
@@ -261,6 +262,7 @@
 			"title": "Learning Outside the Classroom",
 			"source": "Cambridge Handbook on Computing Education Research (Sally Fincher, Anthony Robin, Eds.)",
 			"pages": null,
+			"doi": null,
 			"local":"Begel2019OutsideClassroom.pdf",
 			"publisher": "Cambridge Press",
 			"contribution": "Surveys the small but growing literature on informal learning of computing and the contexts, technologies, and skills that support it. Identifies a several open questions about how to support informal learning and integrate it with more formal learning."
@@ -274,6 +276,7 @@
 			"title": "Tools and Environments",
 			"source": "Cambridge Handbook on Computing Education Research (Sally Fincher, Anthony Robin, Eds.)",
 			"pages": null,
+			"doi": null,
 			"local":"Malmi2019ToolsEnvironments.pdf",
 			"publisher": "Cambridge Press",
 			"contribution": "Surveys the role of tools in learning computing, and the genres of tools that researchers have explored, including IDEs, e-books, automated assessment and feedback, and visualization. Identifies a range of open questions."
@@ -390,6 +393,7 @@
 			"title": "Scout: Mixed-Initiative Exploration of Design Variations through High-Level Design Constraints",
 			"source": "@uist",
 			"pages": "134-136",
+			"doi": "https://doi.org/10.1145/3266037.3271626",
 			"publisher": "ACM",
 			"local":"Swearngin2018Scout.pdf",
 			"contribution": "Describes early work on a system to support rapid design exploration of user interface layouts."
@@ -547,6 +551,7 @@
 			"title":"Modeling Programming Problem Solving Through Interactive Worked Examples",
 			"source":"Workshop on Evaluation and Usability of Programming Languages and Tools (PLATEAU)",
 			"pages":"",
+			"doi": null,
 			"local":"Loksa2017PLATEAU.pdf",
 			"publisher": "ACM",
 			"contribution":"Briefly overviews a vision for programming process worked examples that demonstrate an expert working through a programming problem."
@@ -774,6 +779,7 @@
 			"title":"Programmers are Users Too: Human Centered Methods for Improving Tools for Programming",
 			"source":"IEEE Computer",
 			"pages":"44-52",
+			"doi": "https://doi.org/10.1109/MC.2016.200",
 			"publisher": "IEEE",
 			"local":"Myers2016ProgrammersAreUsers.pdf",
 			"contribution":"Argues that HCI methods are directly applicable to designing and developing software development tools, and provides an overview of several methods that have been used in research to invent and evaluate new developer tools."
@@ -1037,6 +1043,7 @@
 			"publisher": "ACM",
 			"source":"CSCW Workshop on Social Media Question Asking",
 			"pages":"",
+			"doi": null,
 			"contribution": "Summarizes preliminary work on the LemonAid prototype."
 		},
 		{
@@ -1465,7 +1472,8 @@
 			"title":"Designing the Whyline: A Debugging Interface for Asking Questions About Program Failures",
 			"source":"@chi",
 			"pages":"151-158",
-			"publisher": "IEEE",
+			"doi": "https://doi.org/10.1145/985692.985712",
+			"publisher": "ACM",
 			"acceptrate": 16,
 			"authorizer":"http://dl.acm.org/authorize?N89312",
 			"local":"Ko2004Whyline.pdf",
@@ -1690,7 +1698,8 @@
 			"year": 2009,
 			"title":"The Past, Present and Future of Programming in HCI",
 			"source":"Human-Computer Interaction Consortium (HCIC)",
-			"pages":"",
+			"pages": null,
+			"doi": null,
 			"publisher": "HCI Consortium",
 			"local":"Myers2009FutureOfProgrammingInHCI.pdf",
 			"contribution": "Summarizes past work on programming interfaces and open challenges in supporting the broader set of programming activities."
@@ -1876,11 +1885,12 @@
 			"authors": ["Travis Kriplean", "Michael M. Toomim", "Jonathan T. Morgan", "Alan Borning", "@ajko"],
 			"deadname": true,
 			"year": 2011,
-			"title":"Supporting Active Listening and Grounding on the Web through Restatement",
-			"source":"ACM Conference on Computer Supported Cooperative Work (CSCW), Horizons Workshop",
-			"pages":"",
-			"publisher":"ACM",
-			"local":"Kriplean2011Reflect.pdf",
+			"title": "Supporting Active Listening and Grounding on the Web through Restatement",
+			"source": "ACM Conference on Computer Supported Cooperative Work (CSCW), Horizons Workshop",
+			"pages": null,
+			"doi": null,
+			"publisher": "ACM",
+			"local": "Kriplean2011Reflect.pdf",
 			"contribution": "Shares preliminary work on a vision for an internet that incentivizes listening."
 		},
 		{
@@ -1893,7 +1903,8 @@
 			"source":"Workshop on Crowdsourcing and Human Computation",
 			"publisher":"ACM",
 			"local": "Chilana2011CrowdsourcingHelp.pdf",
-			"pages":"",
+			"pages": null,
+			"doi": null,
 			"contribution": "Summarizes progress on the LemonAid help system."
 		},
 		{
@@ -1902,9 +1913,10 @@
 			"authors": ["@ajko", "Parmit K. Chilana"],
 			"deadname": true,
 			"year": 2010,
-			"title":"How Do Open Source Developers Talk about Users?",
-			"source":"CHI 2010 Workshop on The Future of FLOSS in CHI Research and Practice",
-			"pages":"",
+			"title": "How Do Open Source Developers Talk about Users?",
+			"source": "CHI 2010 Workshop on The Future of FLOSS in CHI Research and Practice",
+			"pages": null,
+			"doi": null,
 			"publisher":"ACM",
 			"local":"Ko2010HowDevelopersTalkAboutUsers.pdf",
 			"contribution": "Shows that many open source developers speak in generalities about users and their needs, leaning on stereotypes and instinct instead of evidence."
@@ -1961,7 +1973,8 @@
 			"year": 2006,
 			"title":"End-User Programming Productivity Tools",
 			"source":"2nd Workshop on End-User Software Engineering (WEUSE)",
-			"pages":"",
+			"pages": null,
+			"doi": null,
 			"publisher":"ACM",
 			"local":"Ko2005ProductivityTools.pdf",
 			"contribution": "Shares examples of research from the Natural Programming project."
@@ -2004,7 +2017,8 @@
 			"year": 2006,
 			"title":"The Role of Science in Supporting Software Development",
 			"source":"Workshop on Supporting the Social Side of Large-Scale Software Development, at the 2006 ACM Conference on Computer Supported Cooperative Work",
-			"pages":"",
+			"pages": null,
+			"doi": null,
 			"publisher":"ACM",
 			"local":"Ko2006RoleOfScience.pdf",
 			"contribution": "Argues that progress on inventions requires scientific, theoretical explanations of their value."
@@ -2065,7 +2079,8 @@
 			"year": 2005,
 			"title":"Identifying Types of End Users: Hints from an Informal Survey",
 			"source":"Carnegie Mellon University ISRI Technical Report, no. CMU-HCII-05-101 and Human Computer Interaction Institute Technical Report, no CMU-ISRI-05-110",
-			"pages":"",
+			"pages": null,
+			"doi": null,
 			"publisher": "ACM",
 			"local":"Scaffidi2005IdentifyingEndUsers.pdf",
 			"contribution": "Presents a clustering of end user programming activities, finding revealing variation in advanced feature usage."
@@ -2081,7 +2096,7 @@
 			"pages":"163-166",
 			"acceptrate": 25,
 			"publisher": "IEEE",
-			"doi":"http://dx.doi.org/10.1109/VLHCC.2012.6344507",
+			"doi": "http://dx.doi.org/10.1109/VLHCC.2012.6344507",
 			"local":"Lee2012GidgetGoals.pdf",
 			"contribution":"Representing data as animate, vertebrate objects instead of abstract, inanimate objects greatly increases engagement in online coding tutorials."
 		},
@@ -2093,7 +2108,8 @@
 			"year": 2002,
 			"title":"Individual Differences in Programming, Testing, and Debugging Strategies in a Statistical End-User Programming Environment",
 			"source":"Oregon State University, Honors Thesis",
-			"pages":"",
+			"pages": null,
+			"doi": null,
 			"publisher": "Oregon State University",
 			"local":"Ko2002HonorsThesis.pdf",
 			"contribution":"Programming expertise shapes strategy, but domain expertise is a better predictor of bug fixing success than strategy"
@@ -2106,7 +2122,8 @@
 			"year": 2006,
 			"title":"Asking and Answering Questions about the Causes of Software Behaivors",
 			"source":"Carnegie Mellon University, Thesis Proposal",
-			"pages":"",
+			"pages": null,
+			"doi": null,
 			"publisher": "Carnegie Mellon University",
 			"local":"Ko2006ThesisProposal.pdf",
 			"contribution":"Proposes the Java Whyline."
@@ -2119,7 +2136,8 @@
 			"year": 2008,
 			"title":"Asking and Answering Questions about the Causes of Software Behavior",
 			"source":"Carnegie Mellon University Dissertation",
-			"pages":"",
+			"pages": null,
+			"doi": null,
 			"publisher": "Carnegie Mellon University",
 			"local":"Ko2008Dissertation.pdf",
 			"contribution": "Describes the discoveries of several investigations into debugging and presents the concept, implementation, and evaluation of interrogtative debugging, and the several prototypes that embody it, including the Whyline for Alice, the Whyline for Java, and Crystal."

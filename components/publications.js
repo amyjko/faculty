@@ -40,16 +40,17 @@ class Publications extends React.Component {
 		// Sort the publications by decreasing year, then by decreasing pages
 		var pubs = this.props.app.getProfile().getPublications(
 			pub => this.props.app.getProfile().tagsMatch(this.state.selection, pub.tags)
-		).sort((a, b)=>{ 
-				if(b["year"] !== a["year"])
-					return b["year"] - a["year"];
-				else if(b["pages"] === "to appear")
-					return 1;
-				else if(a["pages"] === "to appear")
-					return -1;
-				else
-					return a["source"].name.localeCompare(b["source"].name); 
-			}
+		).sort((a, b) => 
+				// First sort by year
+				b.year !== a.year ? b.year - a.year :
+				// Put unpublished first
+				b.pages === "to appear" ? 1 :
+				a.pages === "to appear" ? -1 :
+				// If there's no DOI, put last
+				a.doi === null ? 1 :
+				b.doi === null ? -1 :
+				// Sort by DOI, since those are usually chronological
+				-a.doi.localeCompare(b.doi)
 		);
 
 		var paperToHighlight = this.props.match.params.paper;

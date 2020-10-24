@@ -51,7 +51,7 @@
 	    "pubs": {
 			"type": "array",
 			"description": "List of publications",
-			"required": ["id", "kind", "authors", "deadname", "year", "title", "source", "pages", "local", "publisher", "contribution"],
+			"required": ["id", "kind", "authors", "deadname", "year", "title", "source", "pages", "doi", "local", "publisher", "contribution"],
 			"items": {
 				"type": "object",
 				"description": "A publication.",
@@ -98,7 +98,7 @@
 					"doi": {
 						"type": ["string", "null"],
 						"description": "The document object identifier",
-						"format": "uri"						
+						"format": "uri"
 					},
 					"local": {
 						"type": ["string", "null"],
