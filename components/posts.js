@@ -30,7 +30,7 @@ class Posts extends React.Component {
 				</div>
 				
 				<p>
-					Choose a topic to filter.
+					Filter by topic.
 				</p>
 	
 				<Facets

@@ -86,7 +86,7 @@ class Publications extends React.Component {
 				<hr/>
 				
 				<p>
-					Choose a source, award type, or project to filter.
+					Filter by publication type, source, award type, or project.
 				</p>
 
 				<Facets 
