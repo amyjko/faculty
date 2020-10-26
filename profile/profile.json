@@ -3276,7 +3276,7 @@
 			"id": "euse",
 			"active": false,
 			"name": "End-user software engineering",
-			"shortName": "End-user Programming",
+			"shortName": "End-user programming",
 			"description": "Many people write code to support their own work (e.g., teachers write grading spreadsheets, scientists write scripts to process data, people automate their homes). In these end-user programming contexts, people face many of the same challenges that arise in professional software engineering, just without the same incentives to be systematic in testing, debugging, and maintenance. Our work has investigated these contexts and invented tools to support them.",
 			"funding": ["@grfp", "@ndseg"],
 			"people": ["@ajko"],
