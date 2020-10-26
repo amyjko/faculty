@@ -62,7 +62,7 @@
 			"doi": null,
 			"local": null,
 			"publisher": "ACM",
-			"contribution": "Disentangles the role of design in K-12 CS education, finding that design ideas are pervasive in curricula and standards, but conflict program space and problem space design, masking the distinct challenges of problem space design."
+			"contribution": "Demonstrates how to conduct a DIF analysis through a case study of a particular large CS1 exam, which revealed some item bias."
 		},
 		{
 			"id": "csdesignk12",
