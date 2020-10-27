@@ -2145,6 +2145,20 @@
 	],
 	"people": [
 		{
+			"id": "brianc",
+			"name": "Brian Chan",
+			"active": true,
+			"advised": true,
+			"level": "masters",
+			"dept": "Computer Science",
+			"coadvisor": null,
+			"bio": "Brian is a BS/MS student in Computer Science and Engineering interested in making algorithm visualization easier to incorporate into lectures.",
+			"url": "https://faculty.washington.edu/ajko/lab/brianc",
+			"startdate": 2020,
+			"enddate": null,
+			"achievements": []
+		},
+		{
 			"id": "brettwo",
 			"name": "Brett Wortzman",
 			"active": true,
