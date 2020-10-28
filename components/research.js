@@ -79,7 +79,7 @@ class Research extends React.Component {
 				
 				<p>
 					Want to join us? 
-					Read about my <Link to="/students">lab</Link>.
+					Read about my <Link to="/lab">lab</Link>.
 				</p>
 								
 				<h3>Active Projects</h3>
