@@ -179,7 +179,7 @@ class Vita extends React.Component {
 					this.getChunkList(
 						profile.getDegrees(), 
 						true, 
-						"year", null, "degree", "institution", "thesis", "committee"
+						"start", "end", "degree", "institution", "thesis", "committee"
 					)
 				}
 	

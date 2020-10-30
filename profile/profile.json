@@ -5612,14 +5612,16 @@
 		{
 			"institution": "Carnegie Mellon University",
 			"degree": "Doctorate in Human-Computer Interaction",
-			"year": 2008,
+			"start": 2002,
+			"end": 2008,
 			"thesis": "Thesis: Asking and Answering Questions about the Causes of Software Behaviors",
 			"committee": "Brad Myers (CMU, Chair), Bonnie John (CMU), Jonathan Aldrich (CMU), Gail Murphy (UBC)"
 		},
 		{
 			"institution": "Oregon State University",
 			"degree": "Honors Bachelor of Science in Computer Science and Psychology",
-			"year": 2002,
+			"start": 1998,
+			"end": 2002,
 			"thesis": "Thesis: Individual Differences in Programming, Testing, and Debugging in a Statistical End-User Programming Environment",
 			"committee": "Margaret Burnett (Computer Science) and Bob Uttl (Psychology)"
 		}
@@ -7284,6 +7286,19 @@
 		}
 	],
 	"talks": [
+		{
+			"date": "2020-10-30",
+			"image": "hcii20.jpg",
+			"alt": "A photograph of my speaker setup, showing my first slide and my hoisted iPad showing the audience.",
+			"slides": "slides/HCII2020CriticalComputingEducation.pdf",
+			"title": "Critical Computing Education",
+			"venue": "Carnegie Mellon University, HCI Institute, Seminar Series",
+			"url": "https://hcii.cmu.edu/news/seminar/event/2020/10/seminar-amy-j-ko",
+			"recording": null,
+			"practice": null,
+			"description": "This was the third time I gave my Autumn 2020 talk on critical computing education. In this version, I linked my framing to my time as a graduate student at Carnegie Mellon.",
+			"keynote": false
+		},
 		{
 			"date": "2020-10-21",
 			"image": "uva20.png",

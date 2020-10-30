@@ -352,7 +352,7 @@
 			"description": "Degrees earned",
 			"items": {
 				"type": "object",
-				"required": ["institution", "degree", "year", "thesis", "committee"]
+				"required": ["institution", "degree", "start", "end", "thesis", "committee"]
 			}
 		},
 		"patents": {
