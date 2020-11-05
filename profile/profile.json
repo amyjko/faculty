@@ -6988,7 +6988,7 @@
 		{
 			"url": null,
 			"title": "IT University of Copenhagen",
-			"details": "I'm giving one of two invited keynotes at the launch of the new Center for Computing Education Research",
+			"details": "Gave one of three invited keynotes at the launch of the new Center for Computing Education Research",
 			"category": "research",
 			"commitment": {
 				"start": "2020-11-05",
@@ -7286,6 +7286,19 @@
 		}
 	],
 	"talks": [
+		{
+			"date": "2020-11-05",
+			"image": "criticalliteracy2020.png",
+			"alt": "The first slide of my talk, showing the title Computing Education: A Critical Time for a Critical Literacy",
+			"slides": "slides/ITUniversityCopenhagen2020.pdf",
+			"title": "Computing Education: A Critical Time for a Critical Literacy",
+			"venue": "IT University of Copenhagen",
+			"url": "https://ccer.itu.dk/events_ccer",
+			"recording": null,
+			"practice": null,
+			"description": "I was invited to give a short keynote at the IT University of Copenhagen's inauguration of Center for Computing Education Research (CCER). Michael Caspersen and Simon Peyton Jones also spoke.",
+			"keynote": true
+		},
 		{
 			"date": "2020-10-30",
 			"image": "hcii20.jpg",
