@@ -185,7 +185,7 @@
 		{
 			"id": "programmingstrategies",
 			"kind": "journal article",
-			"authors": ["Thomas D. LaToza", "Maryam Arab", "@dloksa", "@ajko"],
+			"authors": ["@latoza", "Maryam Arab", "@dloksa", "@ajko"],
 			"deadname": false,
 			"year": 2020,
 			"title": "Explicit Programming Strategies",
@@ -299,7 +299,7 @@
 		{
 			"id": "boostingproductivity",
 			"kind": "book chapter",
-			"authors": ["Brad A Myers", "@ajko", "Thomas D. LaToza", "YoungSeok Yoon"],
+			"authors": ["Brad A Myers", "@ajko", "@latoza", "YoungSeok Yoon"],
 			"deadname": true,
 			"year": 2019,
 			"title": "Human-Centered Methods to Boost Productivity",
@@ -341,7 +341,7 @@
 		{
 			"id": "teachingstrategies",
 			"kind": "refereed conference paper",
-			"authors": ["@ajko", "Thomas LaToza", "Stephen Hull", "Ellen Ko", "@wkwok16", "@janeq97", "@akkarh", "Rishin Pandit"],
+			"authors": ["@ajko", "@latoza", "Stephen Hull", "Ellen Ko", "@wkwok16", "@janeq97", "@akkarh", "Rishin Pandit"],
 			"deadname": true,
 			"year": 2019,
 			"title": "Teaching Explicit Programming Strategies to Adolescents",
@@ -773,7 +773,7 @@
 		{
 			"id":"studyingprogramming",
 			"kind":"refereed magazine article",
-			"authors": ["Brad A. Myers", "@ajko", "Thomas LaToza", "YoungSeok Yoon"],
+			"authors": ["Brad A. Myers", "@ajko", "@latoza", "YoungSeok Yoon"],
 			"deadname": true,
 			"year": 2016,
 			"title":"Programmers are Users Too: Human Centered Methods for Improving Tools for Programming",
@@ -970,7 +970,7 @@
 		{
 			"id":"practicalguide",
 			"kind":"journal article",
-			"authors": ["@ajko", "Thomas LaToza", "Margaret M. Burnett"],
+			"authors": ["@ajko", "@latoza", "Margaret M. Burnett"],
 			"deadname": true,
 			"year": 2013,
 			"title":"A Practical Guide to Controlled Experiments of Software Engineering Tools with Human Participants",
@@ -1982,7 +1982,7 @@
 		{
 			"id":"morenaturaleuse",
 			"kind":"abstract",
-			"authors": ["Brad A. Myers", "@ajko", "SunYoung Park", "Jeffrey Stylos", "Thomas D. LaToza", "Jack Beaton"],
+			"authors": ["Brad A. Myers", "@ajko", "SunYoung Park", "Jeffrey Stylos", "@latoza", "Jack Beaton"],
 			"deadname": true,
 			"year": 2008,
 			"title":"More Natural End-User Software Engineering",
@@ -2155,6 +2155,20 @@
 			"bio": "Brian is a BS/MS student in Computer Science and Engineering interested in making algorithm visualization easier to incorporate into lectures.",
 			"url": "https://faculty.washington.edu/ajko/lab/brianc",
 			"startdate": 2020,
+			"enddate": null,
+			"achievements": []
+		},
+		{
+			"id": "latoza",
+			"name": "Thomas D. LaToza",
+			"active": true,
+			"advised": false,
+			"level": "faculty",
+			"dept": "Computer Science",
+			"coadvisor": null,
+			"bio": "Thomas is faculty at George Mason University's Department of Computer Science. We've collaborated heavily on methods, programming strategies, and tools.",
+			"url": "https://cs.gmu.edu/~tlatoza/",
+			"startdate": 2004,
 			"enddate": null,
 			"achievements": []
 		},
@@ -3143,7 +3157,7 @@
 			"shortName": "Problem solving",
 			"description": "A critical part of creating software is being able to understand programming problems, identify solutions to solve them, and systematically implement, verify, and debug programs, and avoid mistakes throughout. My lab investigates effective ways of learning these skills, and orchestrating them with self-regulation, process, and strategy.",
 			"funding": ["@explore", "@csassess", "@strategies", "@gidget", "@seif"],
-			"people": ["@dloksa", "@ajko", "@bxie", "@olesona", "@jliang9"],
+			"people": ["@dloksa", "@ajko", "@bxie", "@olesona", "@jliang9", "@latoza"],
 			"papers": ["csproblemsolving1", "csproblemsolving2", "ideagardenjvlc", "tracing", "teachingstrategies", "errormodel", "errorframework", "metajournaling", "programmingstrategies", "pstutor1"],
 			"links": [],
 			"startdate": 2003,
