@@ -189,7 +189,7 @@ class Vita extends React.Component {
 					this.getChunkList(
 						profile.getJobs(job => job.academic, job => -job.startdate), 
 						true,
-						"startdate", "enddate", "title", "organization"
+						"startdate", "enddate", "title", "department", "organization"
 					)
 				}
 
@@ -198,7 +198,7 @@ class Vita extends React.Component {
 				{this.getChunkList(
 					profile.getJobs(job => !job.academic, job => -job.startdate), 
 					true,
-					"startdate", "enddate", "title", "organization")
+					"startdate", "enddate", "title", "organization", "department")
 				}
 
 				<h1>Honors and Recognitions</h1>

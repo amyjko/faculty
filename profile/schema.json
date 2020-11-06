@@ -368,7 +368,7 @@
 			"description": "Jobs I've had",
 			"items": {
 				"type": "object",
-				"required": ["title", "organization", "startdate", "enddate", "academic"],
+				"required": ["title", "organization", "department", "startdate", "enddate", "academic"],
 				"properties": {
 					"startdate": {
 						"type": "integer",
