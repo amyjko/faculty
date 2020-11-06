@@ -7965,7 +7965,7 @@
 			"description": "A 2-day workshop spread across 6 months.",
 			"category": "research",
 			"annually": false,
-			"commitment": { "start": "2020-11-15", "end": "2021-05-15", "hours": 0.5, "priority": 0 }
+			"commitment": { "start": "2020-11-15", "end": "2021-04-15", "hours": 0.5, "priority": 0 }
 		}
 	],
 	"years": {
