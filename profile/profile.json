@@ -7920,6 +7920,13 @@
 			"commitment": { "start": null, "end": null, "hours": 2, "priority": 0 }
 		},
 		{
+			"title": "Miscellany",
+			"description": "Crises, oversights, and other surprises",
+			"category": "service",
+			"annually": false,
+			"commitment": { "start": null, "end": null, "hours": 3, "priority": 0 }
+		},
+		{
 			"title": "Faculty meetings",
 			"description": "iSchool",
 			"category": "service",
