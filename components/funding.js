@@ -10,7 +10,7 @@ class Funding extends React.Component {
 			<div>
 			
 				<div className="lead">
-					My lab recieves funding from many sources.
+					My students and I raise funding from many sources.
 				</div>
 
 				<Block 
