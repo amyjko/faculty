@@ -7005,7 +7005,7 @@
 		{
 			"url": "https://www.cis.upenn.edu/events/",
 			"title": "University of Pennsylvania, Computer and Information Science Colloqium",
-			"details": "Invited research talk",
+			"details": "Invited research talk and 1 on 1 meetings with faculty and students",
 			"category": "research",
 			"commitment": {
 				"start": "2020-11-10",
@@ -7316,6 +7316,19 @@
 		}
 	],
 	"talks": [
+		{
+			"date": "2020-11-10",
+			"image": "penn2020.jpg",
+			"alt": "A photograph of me taking a selife with my virtual audience.",
+			"slides": "slides/Penn2020CriticalComputingEducation.pdf",
+			"title": "Critical Computing Education",
+			"venue": "University of Pennsylvania, Computer and Information Science, Seminar Series",
+			"url": "https://events.seas.upenn.edu/event/cis-seminarcritical-computing-education/",
+			"recording": null,
+			"practice": null,
+			"description": "This was the four time I gave my Autumn 2020 talk on critical computing education. In this version, I selected examples more situated in Philadelphia's history.",
+			"keynote": false
+		},
 		{
 			"date": "2020-11-05",
 			"image": "criticalliteracy2020.png",
