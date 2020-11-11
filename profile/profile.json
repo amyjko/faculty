@@ -7920,6 +7920,13 @@
 	],
 	"commitments": [
 		{
+			"title": "Promotion letters",
+			"description": "Evaluating tenure and promotion cases",
+			"category": "service",
+			"annually": true,
+			"commitment": { "start": "06-15", "end": "01-15", "hours": 0.5, "priority": 0 }
+		},
+		{
 			"title": "Reading",
 			"description": "Books and papers",
 			"category": "research",
