@@ -3316,6 +3316,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/encouraging-more-critical-computing-a-virtual-trip-report-4ec38cf68635",
+			"title": "Encouraging more critical computing: A (virtual) trip report",
+			"date": "2020.11",
+			"tags": ["academia", "computing education", "trip report"],
+			"img": "critcomped",
+			"alt": "A photograph of a display showing a slide titled \"Critical Computing Education\", with an iPad hovering above showing Zoom."
+		},
+		{
 			"url": "https://amyjko.medium.com/my-trans-rights-wish-list-for-the-biden-administration-e3d41f63df0c",
 			"title": "My trans rights wish list for the Biden administration",
 			"date": "2020.11",
