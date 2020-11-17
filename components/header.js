@@ -24,7 +24,7 @@ class Header extends React.Component {
 							<br/><a href="http://ischool.uw.edu" target="_blank">The Information School</a>
 							<span className="hidden-xs"><br/><a href="http://cs.uw.edu" target="_blank">Paul G. Allen School of Computer Science &amp; Engineering (courtesy)</a></span>
 							<br/><a href="http://www.washington.edu" target="_blank">University of Washington<span className="hidden-xs">, Seattle</span></a>
-							<br/><a href="mailto:ajko@uw.edu">email</a> &sdot; <a href="https://twitter.com/amyjko" target="_blank">twitter</a> &sdot; <a href="https://medium.com/@amyjko" target="_blank">blog</a>
+							<br/><a href="mailto:ajko@uw.edu">email</a> &sdot; <a href="https://twitter.com/amyjko" target="_blank">twitter</a> &sdot; <a href="https://amyjko.medium.com" target="_blank">blog</a>
 						</small>
 					</div>
 					
