@@ -518,7 +518,7 @@ class CER extends React.Component {
 						<p><strong>IDC</strong> (ACM SIGCHI Interaction Design and Children) is an HCI conference with a focus on children, focusing on design artifacts for kids and enabling kids to be designers, with a special focus on participatory design as a methodology.</p>
 					</li>
 					<li>
-						<p><strong>CHI</strong> (ACM SIGCHI Conference on Human Factors in Computing) is an HCI conference with a focus on any aspect of interactions between people and computers, including programming. As one of the largest and broadest ACM conferences, it easy for research on learning to get lost here, but so does every other topic!</p>
+						<p><strong>CHI</strong> (ACM SIGCHI Conference on Human Factors in Computing) is an HCI conference with a focus on any aspect of interactions between people and computers, including programming. As one of the largest and broadest ACM conferences, it's easy for research on learning to get lost here, but so does every other topic!</p>
 					</li>
 					<li>
 						<p><strong>AERA</strong> (the American Education Research Association conference) has a division for engineering and computing education that publishes papers on computational thinking.</p>
