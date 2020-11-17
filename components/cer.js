@@ -190,6 +190,7 @@ class CER extends React.Component {
 							this.person("Austin Cory Bart", "https://acbart.github.io/", "introductory computing, motivation", "Computer Science", "University of Delaware", "USA"),
 							this.person("Brett Becker", "http://www.brettbecker.com", "novices, programming, compilers, errors", "Computer Science", "University College Dublin", "Ireland"),
 							this.person("Tim Bell", "http://www.cosc.canterbury.ac.nz/tim.bell/", "CS unplugged, curriculum", "Computer Science", "University of Canterbury", "New Zealand"),
+							this.person("Marc Berges*", "https://www.ddi.tf.fau.de/personen/leitung/berges/", "PCK and programming education", "Department of Computer Science", "Universitaet Erlangen-Nuernberg", "Germany"),
 							this.person("Anders Berglund*", "https://katalog.uu.se/profile/?id=XX3048", "CS education", "Department of Information Technology", "Uppsala University", "Sweden"),
 							this.person("Matthew Berland*", "http://berland.org/", "digital media, data science learning", "Curriculum &amp; Instruction<br/>Computer Science", "University of Wisconsin-Madison", "USA"),
 							this.person("Paulo Blikstein*", "https://www.tc.columbia.edu/faculty/pb2755/", "project-based learning", "Communications, Media and Learning Technology Design", "Columbia University", "USA"),
