@@ -213,6 +213,7 @@ class CER extends React.Component {
 							this.person("Judy Robertson*", "https://www.ed.ac.uk/profile/judy-robertson", "data science education, curriculum development, teacher professional learning and games-based learning", "School of Education", "The University of Edinburg", "Scotland"),
 							this.person("Anthony Robins", "http://www.cs.otago.ac.nz/staff/Anthony_Robins", "psychology of programming, language learning, first programming language, novice programmers, CS1", "Computer Science", "University of Otago", "New Zealand"),
 							this.person("Ricarose Roque", "http://www.ricarose.com/", "constructionism, creativity, informal learning, family learning", "Information Science", "CU Boulder", "USA"),
+							this.person("Monique Ross*", "https://www.moniqueross.com/", "broadening participation, with a focus on computer science", "Computing and Information Science", "Florida International University", "USA"),
 							this.person("Linda Sax*", "https://gseis.ucla.edu/directory/linda-sax/", "diversity in undergraduate CS and STEM", "Department of Education", "University of California, Los Angeles", "USA"),
 							this.person("Cliff Shaffer*", "http://people.cs.vt.edu/shaffer/", "digital education", "Computer Science", "Virginia Tech", "USA"),
 							this.person("Kristin Searle*", "https://itls.usu.edu/people/faculty/searle/", "gender, culture, engagement with computing", "Instructional Technology and Learning Sciences", "Utah State University", "USA"),
