@@ -18,12 +18,12 @@ class CER extends React.Component {
 		return (
 			<div>
 				<div className="lead">
-					This is my computing education research FAQ, which I began with the help of several computing education researchers at a Dagstuhl retreat in 2016. I consider it a community resource. See something to add, fix, or improve? Write me, or submit <a href="https://github.com/amyjko/faculty/issues">an issue</a> or <a href="https://github.com/amyjko/faculty/pulls">pull request</a>.
-				</div>		
+					This is my computing education research FAQ, which I began with the help of several computing education researchers at a Dagstuhl retreat in 2016. I consider it a community resource, so if you see something to add, fix, or improve, write me, or submit <a href="https://github.com/amyjko/faculty/issues">an issue</a> or <a href="https://github.com/amyjko/faculty/pulls">pull request</a>.
+				</div>
 
 				<hr/>
 
-				<p>Computing education research (CER), also known as computer science education (CSEd), is the study of how people learn and teach computing, broadly construed. This FAQ will teach you more about the field and how you might contribute to it:</p>
+				<p>Computing education research (CER), also known as computer science education (CSEd) research, is the study of how people learn and teach computing, broadly construed. This FAQ will teach you more about the field and how you might contribute to it:</p>
 
 				<ul>
 					<li><a href="#what-is-cer">What is computing education research?</a></li>
@@ -45,29 +45,49 @@ class CER extends React.Component {
 				
 				<h3 id="what-is-cer">What is computing education research?</h3>
 
-				<p>First, CER is not teaching. Teaching is helping people acquire knowledge, skills, attitudes, beliefs, identities. Research is discovery and invention. Teachers teach computing, whereas computing education researchers make discoveries about this teaching and learning, and invent new ways for these teaching and learning to occur. CER is an example of discipline-based education research, like math education research or science education research, all of which are part of the broader field of education and learning sciences research.</p>
+				<p>
+					First, CER is not teaching. Teaching is helping people acquire knowledge, skills, attitudes, beliefs, identities. Research is discovery and invention. Teachers teach computing, whereas computing education researchers make discoveries about this teaching and learning, and invent new ways for these teaching and learning to occur. CER is an example of <a href="https://www.nap.edu/catalog/13362/discipline-based-education-research-understanding-and-improving-learning-in-undergraduate">discipline-based education research</a>, like math education research or science education research, all of which are part of the broader field of education and learning sciences research.
+				</p>
 
-				<p>CER is also not educational technology. Computing education researchers often create educational technologies to support the learning and teaching of computing, but CER is not explicitly concerned with the broader use of technology in learning, teaching, and education. It's specifically concerned with the learning and teaching of computing in particular. Many computer science researchers invent learning technologies, but are not computing education researchers, because those technologies are not concerned with the learning of computing.</p>
+				<p>
+					CER is also not educational technology research (EdTech). Computing education researchers often create educational technologies to support the learning and teaching of computing, but CER is not explicitly concerned with the broader use of technology in learning, teaching, and education. It's specifically concerned with the learning and teaching of computing in particular. Many computer science researchers invent learning technologies, but are not computing education researchers, because those technologies are not concerned with the learning of computing.
+				</p>
 
-				<p>It's also important to note that I view "computing"  broadly: it's not just about programming, or even just about computer science, but also about all of the phenomena surrounding computing, including data, information, privacy, security, ethics, software engineering, and sociocultural and sociopolitical views of computing in society. This means that computing education and CER can and does cover far more than just learning to code&mdash;it just hasn't historically.</p>
+				<p>
+					It's also important to note that I view "computing" broadly: it's not just about programming, or even just about computer science, but also about all of the phenomena surrounding computing, including data, information, privacy, security, ethics, software engineering, and sociocultural and sociopolitical views of computing in society. This means that computing education and CER can and does cover far more than just learning to code&mdash;it just hasn't historically.
+				</p>
 
 				<h3 id="comparison-to-other-fields">How does computing education research compare to learning sciences, education research, and educational psychology?</h3>
 
-				<p>My background isn't in these fields, though I do collaborate with people in these other communities and have learned about their differences. Here's the best characterization I can give:</p>
+				<p>
+					My background isn't in these fields, though I do collaborate with people in these other communities and have learned about their differences. Here's the best characterization I can give:
+				</p>
 
 				<ul>
-					<li>Education research is broadly concerned with formal systems of education, how to make those systems effective and just, how to prepare teachers to make them effective and just. The field is interested in general theories of learning, education, interest development, and identity, and because of it's focus on formal education, is often focused on youth, who are the dominant age demographic engaged informal education. The phrase "Computing education" uses the word "education" in this same way, but I believe is more broadly concerned with teaching and learning in any context (in principle, but often not in practice).</li>
-					<li>Educational psychology is focused on learning phenomena in the mind, such as learning, memory, development, intelligence, self-regulation, motivation, and self-concept. The field is also concerned with school psychologists who help students with their mental health. The field tends to be more quantitiatve than education research and learning sciences, following traditions of cognitive psychology. Computing education draws upon this field, especially in its history of cognitive theories of program understanding.</li>
-					<li>Learning sciences emerged in the 1990's as a reaction to educational psychology's inattention to the setting, culture, and social context of learning. Combining perspectives from cognition, cognitive science, computer science, and design, like education research, it's much more concerned with the sociocultural factors that shape learning, and more than education and educational psychology, views design as a means to articulating theories, a way of shaping theories, and a way of testing theories. Because of the focus on context, in addition to being concerned with formal systems of education, it is also concerned with learning across the lifespan, at home, in families, and other settings.</li>
+					<li>
+						<strong>Education research</strong> is broadly concerned with formal systems of education, how to make those systems effective and just, how to prepare teachers to make them effective and just. The field is interested in general theories of learning, education, interest development, and identity, and because of it's focus on formal education, is often focused on youth, who are the dominant age demographic engaged informal education. The phrase "Computing education" uses the word "education" in this same way, but is more broadly concerned with teaching and learning in any context (in principle, but often not in practice).
+					</li>
+					<li>
+						<strong>Educational psychology</strong> is focused on learning phenomena in the mind, such as learning, memory, development, intelligence, self-regulation, motivation, and self-concept. The field is also concerned with school psychologists who help students with their mental health. The field tends to be more quantitiatve than education research and learning sciences, following traditions of cognitive psychology. Computing education draws upon this field, especially in its history of cognitive theories of program understanding.
+					</li>
+					<li>
+						<strong>Learning sciences</strong> emerged in the 1990's as a reaction to educational psychology's inattention to the setting, culture, and social context of learning. Combining perspectives from cognition, cognitive science, computer science, and design, like education research, it's much more concerned with the sociocultural factors that shape learning, and more than education and educational psychology, views design as a means to articulating theories, a way of shaping theories, and a way of testing theories. Because of the focus on context, in addition to being concerned with formal systems of education, it is also concerned with learning across the lifespan, at home, in families, and other settings.
+					</li>
 				</ul>
 
-				<p>How does computing education fit in to all of this? Like other <a href="https://www.nap.edu/catalog/13362/discipline-based-education-research-understanding-and-improving-learning-in-undergraduate" target="_blank">discipline-based education research (DBER)</a> such as math and physics education, it draws upon all three of the fields above, using theories and ideas from those fields. However, because it is focused on a discipline, it is specifically concerned with the content of the discipline, specific methods of learing and teaching that content. In this sense, it is more applied, bridging foundational ideas that span any human learning to applied ideas specific to the learning of specific ideas and skills.</p>
+				<p>
+					How does computing education fit in to all of this? Like other <a href="https://www.nap.edu/catalog/13362/discipline-based-education-research-understanding-and-improving-learning-in-undergraduate" target="_blank">discipline-based education research (DBER)</a> such as math and physics education, it draws upon all three of the fields above, using theories and ideas from those fields. However, because it is focused on a discipline, it is specifically concerned with the content of the discipline, specific methods of learing and teaching that content. In this sense, it is more applied, bridging foundational ideas that span any human learning to applied ideas specific to the learning of specific ideas and skills.
+				</p>
 				
 				<h3 id="major-questions">What are the overarching research questions in CER?</h3>
 				
-				<p>As with any research discipline, research questions can and should be specific. However, there are some major overarching questions in this field that researchers have begun to investigate, including:</p>
+				<p>
+					As with any research discipline, research questions can and should be specific. However, there are some major overarching questions in this field that researchers have begun to investigate, including:
+				</p>
 				
 				<ul>
+					<li>What is computing?</li>
+					<li>What does it mean to know computing?</li>
 					<li>How do people learn computing?</li>
 					<li>How do teachers teach and assess computing?</li>
 					<li>How does identity interact with people's learning of computing?</li>
@@ -76,38 +96,58 @@ class CER extends React.Component {
 					<li>How can access to computing education be improved?</li>
 					<li>How can computing education be delivered equitably to all?</li>
 					<li>How can computing education be reimagined to serve goals other than profit and disruption?</li>
-					<li>How do racism and sexism warp learning, teaching, and curricula?</li>
+					<li>How do systems of oppression such as racism, sexism, and ablism shape learning, teaching, and curricula?</li>
 					<li>How can we implement anti-racist CS education?</li>
 					<li>How can learning technologies teach computing?</li>
 					<li>How does computing education affect people's lives?</li>
 					<li>What are the societal costs of computing illiteracy?</li>
-					<li>What does it mean to know computing?</li>
-					<li>What is computing?</li>
 					<li>What can be taught about computing to learners of different ages?</li>
 				</ul>
 				
-				<p>While the "people" in the questions above could be anyone (youth, teens, college students, adults, and even teachers), the history of CER has primarily focused on teaching students in post-secondary settings, because the faculty conducting research have found it easier to study the students they are teaching. This is changing as countries around the world begin to incorporate computing into all levels of school, and as private industry begins to create technologies and services that teach computing to all ages. For example, my research has investigated new ways to teach youth from age 8-18, as well as adults.</p>
+				<p>
+					While the "people" in the questions above could be anyone (youth, teens, college students, adults, and even teachers), the history of CER has primarily focused on teaching students in post-secondary settings, because the faculty conducting research have found it easier to study the students they are teaching. This is changing as countries around the world begin to incorporate computing into all levels of school, and as private industry begins to create technologies and services that teach computing to all ages. For example, my research has investigated new ways to teach youth from age 8-18, as well as adults.
+				</p>
 				
 				<h3 id="exciting-discoveries">What are some exciting CER discoveries?</h3>
 				
-				<p>There are so many! Examples include:</p>
+				<p>
+					There are so many! Examples include:
+				</p>
 				
 				<ul>
-					<li>The field discovered that diversity in computing education is low because of the narrow, exclusionary nature of computing cultures, not because of inherent disinterest or inability on the part of diverse learners (e.g., <a href="https://doi.org/10.1145/543812.543836" target="_blank">Fisher &amp; Margolis 2002</a>, <a href="https://books.google.com/books?id=WOI9rGJSFCcC&amp;lpg=PR5&amp;ots=LaGMwwGOZl&amp;dq=swimming%20in%20the%20shallow%20end&amp;lr&amp;pg=PR5#v=onepage&amp;q=swimming%20in%20the%20shallow%20end&amp;f=false" target="_blank">Margolis 2010</a>).</li>
-					<li>The field invented contextualized computing ed pedagogy (e.g., Mark Guzdial's <a href="https://doi.org/10.1145/961290.961542" target="_blank">media computation</a>), which has greatly increased the diversity of computer science graduates, and spread to many universities.</li>
-					<li>The field built upon the earliest structured editors like the <a href="https://dl.acm.org/citation.cfm?id=358755" target="_blank">Cornell Program Synthesizer</a>, eventually maturing them into block-based editing environments like <a href="https://doi.org/10.1145/259963.260503" target="_blank">Alice</a>, <a href="https://doi.org/10.1145/1592761.1592779" target="_blank">Scratch</a> and <a href="https://developers.google.com/blockly/" target="_blank">Blockly</a>. These editors greatly increased engagement in computing education, and greatly reduced barriers to learning programming languages.</li>
-					<li>Seymour Papert, who was broadly concerned with learning, but also the learning of computing, contributed constructionism, a new theory of learning (<a href="https://dl.acm.org/citation.cfm?id=1095592" target="_blank">Papert 1980</a>).</li>
-					<li>Alan Kay, one of the earliest researchers to investigate the learning of computing, helped <a href="http://gagne.homedns.org/~tgagne/contrib/EarlyHistoryST.html" target="_blank">build upon ideas of object-orientation from Simula</a>, which inspired Smalltalk, which along with other languages such as C++, inspired the modern object-oriented programming languages and IDEs we use today.</li>
+					<li>
+						The field discovered that diversity in computing education is low because of the narrow, exclusionary nature of computing cultures, not because of inherent disinterest or inability on the part of diverse learners (e.g., <a href="https://doi.org/10.1145/543812.543836" target="_blank">Fisher &amp; Margolis 2002</a>, <a href="https://books.google.com/books?id=WOI9rGJSFCcC&amp;lpg=PR5&amp;ots=LaGMwwGOZl&amp;dq=swimming%20in%20the%20shallow%20end&amp;lr&amp;pg=PR5#v=onepage&amp;q=swimming%20in%20the%20shallow%20end&amp;f=false" target="_blank">Margolis 2010</a>).
+					</li>
+					<li>
+						The field invented contextualized computing ed pedagogy (e.g., Mark Guzdial's <a href="https://doi.org/10.1145/961290.961542" target="_blank">media computation</a>), which has greatly increased the diversity of computer science graduates, and spread to many universities.
+					</li>
+					<li>
+						The field built upon the earliest structured editors like the <a href="https://dl.acm.org/citation.cfm?id=358755" target="_blank">Cornell Program Synthesizer</a>, eventually maturing them into block-based editing environments like <a href="https://doi.org/10.1145/259963.260503" target="_blank">Alice</a>, <a href="https://doi.org/10.1145/1592761.1592779" target="_blank">Scratch</a> and <a href="https://developers.google.com/blockly/" target="_blank">Blockly</a>. These editors greatly increased engagement in computing education, and greatly reduced barriers to learning programming languages.
+					</li>
+					<li>
+						Seymour Papert, who was broadly concerned with learning, but also the learning of computing, contributed constructionism, a new theory of learning (<a href="https://dl.acm.org/citation.cfm?id=1095592" target="_blank">Papert 1980</a>).
+					</li>
+					<li>
+						Alan Kay, one of the earliest researchers to investigate the learning of computing, helped <a href="http://gagne.homedns.org/~tgagne/contrib/EarlyHistoryST.html" target="_blank">build upon ideas of object-orientation from Simula</a>, which inspired Smalltalk, which along with other languages such as C++, inspired the modern object-oriented programming languages and IDEs we use today.
+					</li>
 				</ul>
 				
-				<p>The field's recent efforts to transform STEM education through computing, invent rapid new forms of learning online, and devise more equitable ways to teach should be equally, if not more impactful.</p>
+				<p>
+					The field's recent efforts to transform STEM education through computing, invent rapid new forms of learning online, and devise more equitable ways to teach should be equally, if not more impactful.
+				</p>
 				
 				<h3 id="jobs">What kinds of jobs do computing education researchers do?</h3>
 
-				<p>Most computing education researchers are faculty in universities. Many of these faculty are tenure-track faculty like myself, which means a substantial portion of our time (~50%) is spent on scholarship. However, there are also many full-time instructors who find additional time to do research on top of their teaching. Many of the original authors at ICER were once members of the Bootstrapping or Scaffolding groups (led by Fincher, Petre, and Tenenberg), who were CS teachers that started to do research in their own classrooms.</p>
-				<p>Not all computing education researchers are college faculty. Some work in industry creating educational technologies for teaching computing, applying their expertise to the research and design of educational software. Some work in non-profits, using their expertise to advocate for computing education in schools, while conducting research on factors that affect policy. Some work in school districts, helping to implement computing education curricula in schools, while studying and evaluating the effectiveness of the implementation. Others work in government, facilitating research funding. Others still become teachers themselves, both at universities and other schools.</p>
+				<p>
+					Most computing education researchers are faculty in universities. Many of these faculty are tenure-track faculty like myself, which means a substantial portion of our time (~50%) is spent on scholarship. However, there are also many full-time instructors who find additional time to do research on top of their teaching. Many of the original authors at ICER were once members of the Bootstrapping or Scaffolding groups (led by Fincher, Petre, and Tenenberg), who were CS teachers that started to do research in their own classrooms.
+				</p>
+				<p>
+					Not all computing education researchers are college faculty. Some work in industry creating educational technologies for teaching computing, applying their expertise to the research and design of educational software. Some work in non-profits, using their expertise to advocate for computing education in schools, while conducting research on factors that affect policy. Some work in school districts, helping to implement computing education curricula in schools, while studying and evaluating the effectiveness of the implementation. Others work in government, facilitating research funding. Others still become teachers themselves, both at universities and other schools.
+				</p>
 
-				<p>Tenure-track faculty are in the best position to make advances in the field because a substantial portion of their time is dedicated to research, but the research contributions by teaching-track faculty are critical, as they often bring more richly informed perspectives on the practice of teaching. It is possible to do research in other positions, but it is often outside the scope of a job. Because of this, many non-tenure track faculty focus their research on settings that their job gives them access to, which can restrict which research questions they can answer.</p>
+				<p>
+					Tenure-track faculty are in the best position to make advances in the field because a substantial portion of their time is dedicated to research, but the research contributions by teaching-track faculty are critical, as they often bring more richly informed perspectives on the practice of teaching. It is possible to do research in other positions, but it is often outside the scope of a job. Because of this, many non-tenure track faculty focus their research on settings that their job gives them access to, which can restrict which research questions they can answer.
+				</p>
 
 				<h3 id="becoming-a-researcher">How do I become a CER researcher?</h3>
 
@@ -121,11 +161,17 @@ class CER extends React.Component {
 
 				<h3 id="getting-a-phd">Where can I get a Ph.D. in CER?</h3>
 
-				<p>You need to find a university that grants Ph.D.s and has tenure-track faculty who do research in CER on a topic that you're interested in. The alphabetical list below contains some of the many faculty who advise Ph.D. students on computing education research. Find them online and see what kind of research they're doing. (This list may be out of date, as faculty sometimes move universities, retire, go to industry, or change research areas, so be sure to check their website for the latest information).</p>
+				<p>
+					You need to find a university that grants Ph.D.s and has tenure-track faculty who do research in CER on a topic that you're interested in. The alphabetical list below contains some of the many faculty who advise Ph.D. students on computing education research. Find them online and see what kind of research they're doing. (This list may be out of date, as faculty sometimes move universities, retire, go to industry, or change research areas, so be sure to check their website for the latest information).
+				</p>
 
-				<p>One note about selecting advisors: their disciplinary affilitation is just <em>one</em> indicator of the nature of the contributions they might make (people in CS departments might built learning technologies, people in colleges of education might focus on teacher training and pedagogy), but this is not a perfect indicator. Look closely at researchers' recent publications; and if their websites seem out of date, write them to ask what they're working on.</p>
+				<p>
+					One note about selecting advisors: their disciplinary affilitation is just <em>one</em> indicator of the nature of the contributions they might make (people in CS departments might built learning technologies, people in colleges of education might focus on teacher training and pedagogy), but this is not a perfect indicator. Look closely at researchers' recent publications; and if their websites seem out of date, write them to ask what they're working on.
+				</p>
 
-				<p>Another caveat: some of the faculty below have chosen their expertise descriptions, but others I had to extract from faculty websites wrote. <strong>I've put a * next to expertise</strong> that hasn't been chosen or agreed to by the researcher being described. These expertise tags are also likely to be perpetualy out of date, as researchers pursue new topics. The best thing to do is click on their name to visit their website and see what kinds of research they have published. That's the most direct indicator of their interests, the methods they use, and the types of contributions they want to make (other than just writing them and asking, which you can also do).</p>
+				<p>
+					Another caveat: some of the faculty below have chosen their expertise descriptions, but others I had to extract from faculty websites wrote. <strong>I've put a * next to expertise</strong> that hasn't been chosen or agreed to by the researcher being described. These expertise tags are also likely to be perpetualy out of date, as researchers pursue new topics. The best thing to do is click on their name to visit their website and see what kinds of research they have published. That's the most direct indicator of their interests, the methods they use, and the types of contributions they want to make (other than just writing them and asking, which you can also do).
+				</p>
 				
 				<table className="table">
 					<thead>
@@ -246,13 +292,23 @@ class CER extends React.Component {
 
 				<h3 id="doctoral-admissions">For doctoral admissions, how important is it to demonstrate focus in a single research area?</h3>
 				
-				<p>Advisors differ on the criteria they use to select candidates. Personally, I look for 1) experience with research, 2) passion in the subject of computing education, 3) the requisite skills to persue that passion, and 4) an overlap with my interests. You can get experience by working with faculty at your own institution. That can be hard if you don't have faculty doing work in this area. The requisite skills depend a lot on the contributions you want to make. If you want to envision and build new learning technologies, can you code well enough to build them? If you want to investigate new teacher training methods, do you have teaching experience? If you want to do more theoretical work, how strong are your writing and analytical skills? All of these skills end up being important in some way to participating in CER discourse, just to varying degrees.</p>
+				<p>
+					Advisors differ on the criteria they use to select candidates. Personally, I look for 1) experience with research, 2) passion in the subject of computing education, 3) the requisite skills to persue that passion, and 4) an overlap with my interests. You can get experience by working with faculty at your own institution. That can be hard if you don't have faculty doing work in this area. The requisite skills depend a lot on the contributions you want to make. If you want to envision and build new learning technologies, can you code well enough to build them? If you want to investigate new teacher training methods, do you have teaching experience? If you want to do more theoretical work, how strong are your writing and analytical skills? All of these skills end up being important in some way to participating in CER discourse, just to varying degrees.
+				</p>
 				
-				<p>Working specifically in computing education isn't necessary to achieve the above. Perhaps you have undergraduate research experience in HCI, software engineering, or programming languages. That can be fine, as long as your passion is clear and the skills you have align with the questions you want to answer. Researchers are always investigating new questions, so it's perfectly normal to have experience from other related areas of computing and information science.</p>
+				<p>
+					Working specifically in computing education isn't necessary to achieve the above. Perhaps you have undergraduate research experience in HCI, software engineering, or programming languages. That can be fine, as long as your passion is clear and the skills you have align with the questions you want to answer. Researchers are always investigating new questions, so it's perfectly normal to have experience from other related areas of computing and information science.
+				</p>
+
+				<p>
+					Of course, even if you meet all of the criteria above (or other criteria that other advisors might have), you might not get accepted. That's because doctoral advising is extremely time-intensive: we commit to advise people for anywhere from 3-6 years or more, and so we can only take on so many students at a time. There might be a dozen people who apply to work with one of us, but we only have capacity to admit one or two at most.
+				</p>
 				
 				<h3 id="getting-a-job">Where can I find a CS education research job?</h3>
 
-				<p>There are many places where global CS education-related jobs are posted:</p>
+				<p>
+					There are many places where global CS education-related jobs are posted:
+				</p>
 
 				<ul>
 					<li>The #jobpostings channel on the <a href="https://csforall.slack.com" target="_blank">CSforAll Slack</a>:</li>
@@ -262,13 +318,18 @@ class CER extends React.Component {
 					<li><a href="https://www.edjoin.org" target="_blank">EdJoin</a></li>
 					<li>@CSFacultyJobs on Twitter.</li>
 					<li>Evan Peck maintains a list of <a href="https://cs-pui.github.io/guide.html" target="_blank">CS faculty postings from "PUIs"</a> (primarily undergraduate institutions).</li>
+					<li>Many organizations, including non-universities, hire postdocs (e.g., Quinn Burke at <a href="https://digitalpromise.org/our-team/quinn-burke/">Digital Promise</a>, has hired postdocs and consultants)</li>
 				</ul>
 
-				<p>Monitor those closely for opportunities. The field is growing, but in unconvientional ways: there are tenure-track positions, teaching-track positions, professor of practice positions, postdocs, research and development positions in not-for-profits, and much, much more.</p>
+				<p>
+					Monitor those closely for opportunities. The field is growing, but in unconvientional ways: there are tenure-track positions, teaching-track positions, professor of practice positions, postdocs, research and development positions in not-for-profits, and much, much more.
+				</p>
 				
 				<h3 id="funding-for-cer">Is there funding for CER?</h3>
 
-				<p>Yes! In the U.S., Ph.D. students are generally funded by the research grants their advisors obtain, and can also receive NSF Graduate Research Fellowships, which cover three years of tuition and stipend. Undergraduates can participate in NSF-sponsored Research Experience for Undergraduate projects that faculty sponsor. CER faculty can also apply for NSF CAREER grants on computing education research, or an <a href="http://www.nsf.gov/pubs/2015/nsf15569/nsf15569.htm" target="_blank">NSF Research Initiation Initiative</a> for new faculty. Most Ph.D. granting institutions also offer teaching assistantships. In the United States, there are also regularly programs that fund CER. This changes frequently, but here is a current snapshot as of 2016:</p>
+				<p>
+					Yes! At least in the U.S., Ph.D. students are generally funded by the research grants their advisors obtain, and can also receive NSF Graduate Research Fellowships, which cover three years of tuition and stipend. Undergraduates can participate in NSF-sponsored Research Experience for Undergraduate projects that faculty sponsor. CER faculty can also apply for NSF CAREER grants on computing education research, or an <a href="http://www.nsf.gov/pubs/2015/nsf15569/nsf15569.htm" target="_blank">NSF Research Initiation Initiative</a> for new faculty. Most Ph.D. granting institutions also offer teaching assistantships. In the United States, there are also regularly programs that fund CER. This changes frequently, but here is a current snapshot as of 2016:
+				</p>
 
 				<ul>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505359" target="_blank">NSF CS for All</a>. Funds basic research on CS education as well as researcher-practitioner partnerships focused on building K-12 CS education capacity, access, participation, and engagement.</li>
@@ -276,20 +337,26 @@ class CER extends React.Component {
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505082" target="_blank">NSF IUSE</a>. Funds programs that improve the quality of and access to STEM education in undergraduate programs. Does not directly fund basic research.</li>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=5467" target="_blank">NSF ITEST</a>. Funds programs that broaden participation in STEM. Does not directly fund basic research.</li>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=500047" target="_blank">NSF DRK-12</a>. Funds projects that enhance the quality of and access to STEM education in K-12, including basic research.</li>
-					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504984" target="_blank">NSF Cyberlearning</a>. Funds projects that enhance how learning occurs in technology-rich environments, including intelligent tutors, computer-based instruction, computational tools for learning, etc.</li>
+					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504984" target="_blank">NSF RETTL</a>. Funds projects on Emerging Technologies for Teaching and Learning, including intelligent tutors, computer-based instruction, computational tools for learning, etc.</li>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504924" target="_blank">NSF EHR CORE Research</a>. Funds basic education research. Not CS specific, but it has separate tracks within its reviewing structure for CS and engineering.</li>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=13707" target="_blank">NSF IIS Cyber-Human Systems</a>. Funds HCI research. Not CS specific, but is very supportive of educational technologies that advance the capabilities of human expression.</li>
 				</ul>
 
 				<h3 id="being-impactful">What do I need to know to be an effective, impactful computing education researcher?</h3>
 
-				<p>First, you need to know some computing yourself. That doesn't mean you need an entire computer science degree, but it helps to have learned to code a bit, and to understand what an algorithm and a data structure is. It can also help to understand the culture of computer science as an academic discipline. Taking the first few introductory courses in a CS department is usually enough to provide this content knowledge foundation, unless you want to do research on the teaching of more advanced topics in CS.</p>
+				<p>
+					First, you need to know some computing yourself. That doesn't mean you need an entire computer science degree, but it helps to have learned to code a bit, and to understand what an algorithm and a data structure is. It can also help to understand the culture of computer science as an academic discipline. Taking the first few introductory courses in a CS department is usually enough to provide this content knowledge foundation, unless you want to do research on the teaching of more advanced topics in CS.
+				</p>
 
-				<p>Beyond that, there is a substantial prior work to learn before you can make original discoveries. I've organized some of the major works into categories below, to focus your reading.</p>
+				<p>
+					Beyond that, there is a substantial prior work to learn before you can make original discoveries. I've organized some of the major works into categories below, to focus your reading.
+				</p>
 
 				<h4 id="foundations">Education research foundations</h4>
 
-				<p>As computing education research is a discipline-based kind of education research, foundations in education research are key. Below are essential works for conducting research on learning and teaching:</p>
+				<p>
+					As computing education research is a discipline-based kind of education research, foundations in education research are key. Below are essential works for conducting research on learning and teaching:
+				</p>
 
 				<ul>
 					<li><a href="http://www.nap.edu/catalog/9853/how-people-learn-brain-mind-experience-and-school-expanded-edition" target="_blank">How People Learn: Brain, Mind, Experience, and School</a> and <a href="https://www.nap.edu/catalog/24783/how-people-learn-ii-learners-contexts-and-cultures" target="_blank">How People Learn II: Learners, Contexts, and Cultures</a> provide an essential foundation in the major discoveries and theories of learning sciences and education research. Anyone doing research on learning should know everything in these books.</li>
@@ -299,20 +366,24 @@ class CER extends React.Component {
 
 				<h4 id="race">Race and Technology</h4>
 
-				<p>While not specifically about computing education, these books critically examine the role of computing in justice. The ideas in these books are key to understanding the social implications of computing on society. I focus on race in particular because race, at least in the United States, has structured injustice more heavily than all other social categories, making it critical to understanding the effects of computing.</p>
+				<p>
+					While not specifically about computing education, these books critically examine the role of computing in justice. The ideas in these books are key to understanding the social implications of computing on society. I focus on race in particular because race, at least in the United States, has structured injustice more heavily than all other social categories, making it critical to understanding the effects of computing.
+				</p>
 
 				<ul>
 					<li>
-						<p><a href="https://www.ruhabenjamin.com/race-after-technology" target="_blank">Race After Technology</a> examines how racism is embedded in software and the role of computer scientists and the software industry in reinforcing racism.</p>
+						<a href="https://www.ruhabenjamin.com/race-after-technology" target="_blank">Race After Technology</a> examines how racism is embedded in software and the role of computer scientists and the software industry in reinforcing racism.
 					</li>
 					<li>
-						<p><a href="https://www.amazon.com/Black-Software-Internet-Justice-AfroNet/dp/0190863846" target="_blank">Black Software: The Internet and Racial Justice, from the AfroNet to Black Lives Matter</a> explores the long history of racial justice movements organized online and how the impact of their innovations have been erased with false narratives social media company innovation.</p>
+						<a href="https://www.amazon.com/Black-Software-Internet-Justice-AfroNet/dp/0190863846" target="_blank">Black Software: The Internet and Racial Justice, from the AfroNet to Black Lives Matter</a> explores the long history of racial justice movements organized online and how the impact of their innovations have been erased with false narratives social media company innovation.
 					</li>
 				</ul>
 
 				<h4 id="literature-reviews">CER literature reviews</h4>
 
-				<p>These works summarize bodies of knowledge in computing education research, helping you to more quickly learn what the field has discovered. All of these are essential reading.</p>
+				<p>
+					These works summarize bodies of knowledge in computing education research, helping you to more quickly learn what the field has discovered. All of these are essential reading.
+				</p>
 
 				<ul>
 					<li><a href="https://www.amazon.com/dp/B07N45TH9R/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1" target="_blank">The Cambridge Handbook of Computing Education Research</a> is a carefully edited synthesis of all of the major discoveries in computing education research since its beginning as a field 50 years ago up until 2018. I authored several chapters along with more than a dozen other leading researchers with the goal of creating the definitive introduction to the field. It is reflective of prior work, for better or worse, going deeply into pedagogy, but only briefly (but elegantly) addressing issues of racism, sexism, and inclusion. Therefore, it should not be viewed as a vision for the future of the field, but rather a reflection of it's past.</li>
@@ -478,19 +549,29 @@ class CER extends React.Component {
 
 				<h3 id="sigcse">What is SIGCSE?</h3>
 
-				<p><a href="http://sigcse.org/" target="_blank">SIGCSE</a>, like other ACM Special Interest Groups (SIGs), is an organization that focuses on a particular topic within ACM, namely computer science education. It sponsors ACM conferences (e.g., the SIGCSE Technical Symposium and ICER) and influences their structure and focus. Note that SIGCSE the group organizes SIGCSE the conference. I know, it's confusing, but aren't you glad you read this?</p>
+				<p>
+					<a href="http://sigcse.org/" target="_blank">SIGCSE</a>, like other ACM Special Interest Groups (SIGs), is an organization that focuses on a particular topic within ACM, namely computer science education. It sponsors ACM conferences (e.g., the SIGCSE Technical Symposium and ICER) and influences their structure and focus. Note that SIGCSE the group organizes SIGCSE the conference. I know, it's confusing, but aren't you glad you read this?
+				</p>
 
 				<h3 id="experience-reports">What's the difference between a research paper and an experience report?</h3>
 
-				<p>This is an important question, since many of the conference venues in the computing education community publish both. Unfortunately, the community hasn't developed much clarity about the differences between these. The result is that many papers published in the SIGCSE experience report track look like research papers, and many of the papers published in the SIGCSE research track look like experience reports. What's the essential difference?</p>
+				<p>
+					This is an important question, since many of the conference venues in the computing education community publish both. Unfortunately, the community hasn't developed much clarity about the differences between these. The result is that many papers published in the SIGCSE experience report track look like research papers, and many of the papers published in the SIGCSE research track look like experience reports. What's the essential difference?
+				</p>
 
-				<p>In my opinion, the key distinction between research and an experience report is your audience, which implies your goals: are you writing to researchers, who aspire to build upon everything we know to advance theories about what we know about CS teaching and learning? In contrast, if you're writing to teachers, you're likely sharing practical knowledge, such as a interesting method you tried, a surprising experience, or a teaching method others might experiment with. The critical difference is that in research, trying to be certain that we know something, but it's okay if we don't know how to put that knowledge into action yet, whereas in practice, we're trying to learn how to teach something, even if we're not certain it will work. Another way to characterize the difference are some of the evaluation criteria. Research papers should be <em>novel with respect to everything we know</em> and <em>sound</em>, but not necessarily immediately useful. Experience report papers should be <em>novel with respect to common knowledge</em> (but not necessarily novel with respect to all knowledge), <em>useful</em> and <em>interesting</em>, but not necessarily sound.</p>
+				<p>
+					In my opinion, the key distinction between research and an experience report is your audience, which implies your goals: are you writing to researchers, who aspire to build upon everything we know to advance theories about what we know about CS teaching and learning? In contrast, if you're writing to teachers, you're likely sharing practical knowledge, such as a interesting method you tried, a surprising experience, or a teaching method others might experiment with. The critical difference is that in research, trying to be certain that we know something, but it's okay if we don't know how to put that knowledge into action yet, whereas in practice, we're trying to learn how to teach something, even if we're not certain it will work. Another way to characterize the difference are some of the evaluation criteria. Research papers should be <em>novel with respect to everything we know</em> and <em>sound</em>, but not necessarily immediately useful. Experience report papers should be <em>novel with respect to common knowledge</em> (but not necessarily novel with respect to all knowledge), <em>useful</em> and <em>interesting</em>, but not necessarily sound.
+				</p>
 
-				<p>I believe that both are valuable in their own ways. Research allows to build confidence in what we know, whereas sharing experience allows us to teach each other. We need both for a thriving practice of CS teaching and a thriving body of knowledge to inform that practice.</p>
+				<p>
+					I believe that both are valuable in their own ways. Research allows to build confidence in what we know, whereas sharing experience allows us to teach each other. We need both for a thriving practice of CS teaching and a thriving body of knowledge to inform that practice.
+				</p>
 
 				<h3 id="blogs">How can I keep up with the latest research, practice, and policy?</h3>
 
-				<p>There are a few excellent blogs (in alphabetical order):</p>
+				<p>
+					There are a few excellent blogs (in alphabetical order):
+				</p>
 
 				<ul>
 					<li>Mark Guzdial's <a href="https://computinged.wordpress.com/" target="_blank">Computing Education Research</a> blog has been active since 2009 and contains thousands of posts that explain computing education research to a broader community</li>
