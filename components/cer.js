@@ -324,7 +324,7 @@ class CER extends React.Component {
 				</ul>
 
 				<p>
-					Monitor those closely for opportunities. The field is growing, but in unconvientional ways: there are tenure-track positions, teaching-track positions, professor of practice positions, postdocs, research and development positions in not-for-profits, and much, much more.
+					Monitor those closely for opportunities. The field is growing, but in unconventional ways: there are tenure-track positions, teaching-track positions, professor of practice positions, postdocs, research and development positions in not-for-profits, and much, much more.
 				</p>
 				
 				<h3 id="funding-for-cer">Is there funding for CER?</h3>
@@ -388,7 +388,7 @@ class CER extends React.Component {
 				</p>
 
 				<ul>
-					<li><a href="https://www.amazon.com/dp/B07N45TH9R/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1" target="_blank">The Cambridge Handbook of Computing Education Research</a> is a carefully edited synthesis of all of the major discoveries in computing education research since its beginning as a field 50 years ago up until 2018. I authored several chapters along with more than a dozen other leading researchers with the goal of creating the definitive introduction to the field. It is reflective of prior work, for better or worse, going deeply into pedagogy, but only briefly (but elegantly) addressing issues of racism, sexism, and inclusion. Therefore, it should not be viewed as a vision for the future of the field, but rather a reflection of it's past.</li>
+					<li><a href="https://www.amazon.com/dp/B07N45TH9R/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1" target="_blank">The Cambridge Handbook of Computing Education Research</a> is a carefully edited synthesis of all of the major discoveries in computing education research since its beginning as a field 50 years ago up until 2018. I authored several chapters along with more than a dozen other leading researchers with the goal of creating the definitive introduction to the field. It is reflective of prior work, for better or worse, going deeply into pedagogy, but only briefly (but elegantly) addressing issues of racism, sexism, and inclusion. Therefore, it should not be viewed as a vision for the future of the field, but rather a reflection of its past.</li>
 					<li><a href="https://www.morganclaypool.com/doi/abs/10.2200/S00684ED1V01Y201511HCI033" target="_blank">Learner-Centered Design of Computing Education: Research on Computing for Everyone</a> is a wonderful synthesis of computing education research, with a focus on pedagogy for anyone learning computing, rather than just computer science students.</li>
 					<li><a href="https://journals.sagepub.com/doi/abs/10.3102/0013189x12463051" target="_blank">Computational Thinking in K-12 A Review of the State of the Field</a> examines the state of discourse about "Computational Thinking", a contested idea that has  spread broadly throughout K-12 CS education, despite its questionable soundness as an idea.</li>
 					<li><a href="https://doi.org/10.1145/3293881.3295779" target="_blank">Introductory programming: a systematic literature review</a>. The result of an ITiCSE working group, analyzes the literature along many facets: students, teachings, the curriculum, and assessment, and surfacing directions for future research.</li>
@@ -518,10 +518,10 @@ class CER extends React.Component {
 						<p><strong>IDC</strong> (ACM SIGCHI Interaction Design and Children) is an HCI conference with a focus on children, focusing on design artifacts for kids and enabling kids to be designers, with a special focus on participatory design as a methodology.</p>
 					</li>
 					<li>
-						<p><strong>CHI</strong> (ACM SIGCHI Conference on Human Factors in Computing) is an HCI conference with a focus on any aspect of interactions between people and computers, including programming. As one of the largest and broadest ACM conferences, it's easily for research on learning to get lost here, but so does every other topic!</p>
+						<p><strong>CHI</strong> (ACM SIGCHI Conference on Human Factors in Computing) is an HCI conference with a focus on any aspect of interactions between people and computers, including programming. As one of the largest and broadest ACM conferences, it's easy for research on learning to get lost here, but so does every other topic!</p>
 					</li>
 					<li>
-						<p><strong>AERA</strong> (the American Education Research Association conference) has a division for engineering and computing education that publish papers on computational thinking.</p>
+						<p><strong>AERA</strong> (the American Education Research Association conference) has a division for engineering and computing education that publishes papers on computational thinking.</p>
 					</li>
 					<li>
 						<p><strong>JEE</strong> (the Journal of Engineering Education). High-quality but with few international collaborations (like the MIMN studies in CER). Occasionally has papers related to computing.</p>
@@ -562,11 +562,11 @@ class CER extends React.Component {
 				</p>
 
 				<p>
-					In my opinion, the key distinction between research and an experience report is your audience, which implies your goals: are you writing to researchers, who aspire to build upon everything we know to advance theories about what we know about CS teaching and learning? In contrast, if you're writing to teachers, you're likely sharing practical knowledge, such as a interesting method you tried, a surprising experience, or a teaching method others might experiment with. The critical difference is that in research, trying to be certain that we know something, but it's okay if we don't know how to put that knowledge into action yet, whereas in practice, we're trying to learn how to teach something, even if we're not certain it will work. Another way to characterize the difference are some of the evaluation criteria. Research papers should be <em>novel with respect to everything we know</em> and <em>sound</em>, but not necessarily immediately useful. Experience report papers should be <em>novel with respect to common knowledge</em> (but not necessarily novel with respect to all knowledge), <em>useful</em> and <em>interesting</em>, but not necessarily sound.
+					In my opinion, the key distinction between research and an experience report is your audience, which implies your goals: are you writing to researchers, who aspire to build upon everything we know to advance theories about what we know about CS teaching and learning? In contrast, if you're writing to teachers, you're likely sharing practical knowledge, such as an interesting method you tried, a surprising experience, or a teaching method others might experiment with. The critical difference is that in research, we're trying to be certain that we know something, but it's okay if we don't know how to put that knowledge into action yet, whereas in practice, we're trying to learn how to teach something, even if we're not certain it will work. Another way to characterize the difference are some of the evaluation criteria. Research papers should be <em>novel with respect to everything we know</em> and <em>sound</em>, but not necessarily immediately useful. Experience report papers should be <em>novel with respect to common knowledge</em> (but not necessarily novel with respect to all knowledge), <em>useful</em> and <em>interesting</em>, but not necessarily sound.
 				</p>
 
 				<p>
-					I believe that both are valuable in their own ways. Research allows to build confidence in what we know, whereas sharing experience allows us to teach each other. We need both for a thriving practice of CS teaching and a thriving body of knowledge to inform that practice.
+					I believe that both are valuable in their own ways. Research allows us to build confidence in what we know, whereas sharing experience allows us to teach each other. We need both for a thriving practice of CS teaching and a thriving body of knowledge to inform that practice.
 				</p>
 
 				<h3 id="blogs">How can I keep up with the latest research, practice, and policy?</h3>
@@ -576,7 +576,7 @@ class CER extends React.Component {
 				</p>
 
 				<ul>
-					<li>Mark Guzdial's <a href="https://computinged.wordpress.com/" target="_blank">Computing Education Research</a> blog has been active since 2009 and contains thousands of posts that explain computing education research to a broader community</li>
+					<li>Mark Guzdial's <a href="https://computinged.wordpress.com/" target="_blank">Computing Education Research</a> blog has been active since 2009 and contains thousands of posts that explain computing education research to a broader community.</li>
 					<li>Felienne Hermans has a blog about <a href="http://www.felienne.com/archives/category/blog" target="_blank">programming and inclusion</a>.</li>
 					<li>Amy Ko's <a href="https://medium.com/bits-and-behavior" target="_blank">Bits &amp; Behavior</a> publication at Medium covers CER, software engineering, HCI, and broader issues in academia.</li>
 					<li>Shriram Krishnamurthi's <a href="https://parentheticallyspeaking.org/articles/" target="_blank">Parenthetically Speaking</a> discussions a range of topics on academia, programming languages, and computing education.</li>
@@ -594,7 +594,7 @@ class CER extends React.Component {
 				<ul>
 					<li>The ACM ICER conference maintains a Discord server. Write Amy Ko <a href="mailto:ajko@uw.edu">ajko@uw.edu</a> for an invite. It tends to be CER focused.</li>
 					<li>The CS for All Consortium maintains <a href="csforall.slack.com">a Slack team</a>. <a href="https://www.csforall.org/become_a_member/" target="_blank">Join as a member</a> to access it.</li>
-					<li>There's a private group on Facebook called <a href="https://www.facebook.com/groups/1546763215587966" target="_blank">Computer Science Education: Researchers and Practitioners</a></li>
+					<li>There's a private group on Facebook called <a href="https://www.facebook.com/groups/1546763215587966" target="_blank">Computer Science Education: Researchers and Practitioners</a>.</li>
 					<li>Twitter is very active. Amy has a <a href="https://twitter.com/i/lists/1074089287874826245" target="_blank">list of Computing Education researchers</a>.</li>
 				</ul>
 
