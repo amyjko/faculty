@@ -222,6 +222,7 @@ class CER extends React.Component {
 							this.person("Armando Fox*", "https://www2.eecs.berkeley.edu/Faculty/Homepages/fox.html", "digital learning, programming systems, and software engineering", "Electrical Engineering &amp; Computer Science", "University of California, Berkeley", "USA"),
 							this.person("Joanna Goode*", "https://education.uoregon.edu/people/faculty/goodej", "Access and equity for underrepresented students of color and females in computer science education", "College of Education", "University of Oregon", "USA"),
 							this.person("Jeff Grey", "http://gray.cs.ua.edu", "Block-based languages", "Department of Computer Science", "University of Alabama", "USA"),
+							this.person("Bill Griswold", "https://cseweb.ucsd.edu/~wgg/", "HCI, software engineering education, and educational tools", "Department of Computer Science & Engineering", "University of California, San Diego", "USA"),
 							this.person("Tovi Grossman", "http://www.tovigrossman.com/", "HCI, software learning, interactive tutorials", "Computer Science", "University of Toronto", "Canada"),
 							this.person("Philip Guo", "http://www.pgbovine.net/", "HCI, learning at scale", "Cognitive Science", "University of California, San Diego", "USA"),
 							this.person("Mark Guzdial*", "http://www.cc.gatech.edu/home/guzdial/", "pedagogy, curriculum, end-user programming, teachers, research instruments, theory", "Computer Science &amp; Engineering<br/>Engineering Education Research", "University of Michigan", "USA"),
