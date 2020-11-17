@@ -2,6 +2,18 @@ import React from 'react';
 
 class CER extends React.Component {
 
+	person(name, url, expertise, dept, inst, country) {
+
+		return <tr>
+			<td><a href={url} target="_blank">{name}</a></td>
+			<td>{expertise}</td>
+			<td>{dept}</td>
+			<td>{inst}</td>
+			<td>{country}</td>
+		</tr>
+
+	}
+
 	render() {
 		return (
 			<div>
@@ -126,643 +138,99 @@ class CER extends React.Component {
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td><a href="https://www.cs.ru.nl/E.Barendsen/" target="_blank">Erik Barendsen*</a></td>
-							<td>pedagogy, literacy, computational thinking</td>
-							<td>Computing and Information Sciences</td>
-							<td>Open University</td>
-							<td>Netherlands</td>
-						</tr>
-						<tr>
-							<td><a href="http://www4.ncsu.edu/~tmbarnes/" target="_blank">Tiffany Barnes</a></td>
-							<td>inclusion, educational games, tutoring systems, teacher education</td>
-							<td>Computer Science</td>
-							<td>North Carolina State University</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="https://acbart.github.io/" target="_blank">Austin Cory Bart</a></td>
-							<td>introductory computing, motivation</td>
-							<td>Computer Science</td>
-							<td>University of Delaware</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="http://www.brettbecker.com" target="_blank">Brett Becker</a></td>
-							<td>novices, programming, compilers, errors</td>
-							<td>Computer Science</td>
-							<td>University College Dublin</td>
-							<td>Ireland</td>
-						</tr>
-						<tr>
-							<td><a href="http://www.cosc.canterbury.ac.nz/tim.bell/" target="_blank">Tim Bell</a></td>
-							<td>CS unplugged, curriculum</td>
-							<td>Computer Science</td>
-							<td>University of Canterbury</td>
-							<td>New Zealand</td>
-						</tr>
-						<tr>
-							<td><a href="http://berland.org/" target="_blank">Matthew Berland*</a></td>
-							<td>digital media, data science learning</td>
-							<td>Curriculum &amp; Instruction<br/>Computer Science</td>
-							<td>University of Wisconsin-Madison</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="https://www.tc.columbia.edu/faculty/pb2755/" target="_blank">Paulo Blikstein*</a></td>
-							<td>project-based learning</td>
-							<td>Communications, Media and Learning Technology Design</td>
-							<td>Columbia University</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="http://research.csc.ncsu.edu/learndialogue/person.php?id=keboyer" target="_blank">Kristy Boyer*</a></td>
-							<td>intelligent tutoring systems</td>
-							<td>Computer Science</td>
-							<td>University of Florida</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="https://www.gse.harvard.edu/faculty/karen-brennan" target="_blank">Karen Brennan</a></td>
-							<td>constructionism, creativity, K-12 classrooms, teacher learning</td>
-							<td>Graduate School of Education</td>
-							<td>Harvard</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="https://www.colorado.edu/cmci/people/information-science/jed-brubaker" target="_blank">Jed Brubaker</a></td>
-							<td>how identity is designed, represented and experienced in socio-technical systems</td>
-							<td>Information Science</td>
-							<td>University of Colorado, Boulder</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="http://www.nuigalway.ie/our-research/people/education/corneliaconnolly/" target="_blank">Cornelia Connolly</a></td>
-							<td>pedagogy, teacher education, computational thinking, design</td>
-							<td>School of Education</td>
-							<td>National University of Ireland, Galway</td>
-							<td>Ireland</td>
-						</tr>
-						<tr>
-							<td><a href="http://cse.unl.edu/~scooper/" target="_blank">Steve Cooper*</a></td>
-							<td>program visualization, spatial reasoning</td>
-							<td>Computer Science &amp; Engineering</td>
-							<td>University of Nebraska, Lincoln</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="http://www.dcs.gla.ac.uk/~quintin/" target="_blank">Quintin Cutts*</a></td>
-							<td>pedagogy, assessment, work based learning and teacher learning communities</td>
-							<td>School of Computer Science</td>
-							<td>University of Glasgow</td>
-							<td>Scotland</td>
-						</tr>
-						<tr>
-							<td><a href="https://education.indiana.edu/about/directory/profiles/danish-joshua-a.html" target="_blank">Joshua Danish*</a></td>
-							<td>how people learn through activity</td>
-							<td>School of Education</td>
-							<td>Indiana University Bloomington</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="https://unmad.in/" target="_blank">Sayamindu Dasgupta*</a></td>
-							<td>youth, data science</td>
-							<td>School of Information and Library Science</td>
-							<td>University of North Carolina at Chapel Hill</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="https://adriennedecker.net/" target="_blank">Adrienne Decker</a></td>
-							<td>pedagogy, assessment, efficacy of outreach</td>
-							<td>Engineering Education</td>
-							<td>University at Buffalo</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="https://www.cs.auckland.ac.nz/~paul/" target="_blank">Paul Denny</a></td>
-							<td>collaborative learning, online learning, gamification, student-generated resources</td>
-							<td>Computer Science</td>
-							<td>University of Auckland</td>
-							<td>New Zealand</td>
-						</tr>
-						<tr>
-							<td><a href="https://steinhardt.nyu.edu/faculty/Kayla_Desportes" target="_blank">Kayla DesPortes*</a></td>
-							<td>computing as a medium for expression</td>
-							<td>Learning Sciences</td>
-							<td>New York University</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="http://sdziallas.com/" target="_blank">Sebastian Dziallas*</a></td>
-							<td>experiences in higher education CS</td>
-							<td></td>
-							<td>Fulbright University Vietnam</td>
-							<td>Vietnam</td>
-						</tr>
-						<tr>
-							<td><a href="http://betsydisalvo.com/" target="_blank">Betsy DiSalvo*</a></td>
-							<td>culture, informal learning</td>
-							<td>School of Interactive Computing</td>
-							<td>Georgia Tech</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="http://faculty.ist.unomaha.edu/bdorn/" target="_blank">Brian Dorn*</a></td>
-							<td>HCI, informal learning, teacher education</td>
-							<td>Department of Computer Science</td>
-							<td>University of Nebraska, Omaha</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="https://katalog.uu.se/profile/?id=N99-802" target="_blank">Anna Eckerdal*</a></td>
-							<td>threshold concepts, MOOCs, learning in labs</td>
-							<td>Department of Information Technology</td>
-							<td>Uppsala University</td>
-							<td>Sweden</td>
-						</tr>
-						<tr>
-							<td><a href="http://webcore.cs.vt.edu/user/edwards" target="_blank">Steve Edwards*</a></td>
-							<td>software engineering, formal methods, autograding</td>
-							<td>Computer Science</td>
-							<td>Virginia Tech</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="http://barbara-ericson.strikingly.com/" target="_blank">Barbara Ericson*</a></td>
-							<td>pedagogy, diversity</td>
-							<td>School of Information</td>
-							<td>University of Michigan</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="http://web.engr.oregonstate.edu/~erwig/" target="_blank">Martin Erwig</a></td>
-							<td>programming languages, visual languages, explanations, story programming</td>
-							<td>Electrical Engineering and Computer Science</td>
-							<td>Oregon State University</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="http://www.adelaide.edu.au/directory/katrina.falkner" target="_blank">Katrina Falkner*</a></td>
-							<td>pedagogy, computational thinking</td>
-							<td>School of Computer Science</td>
-							<td>University of Adelaide</td>
-							<td>Australia</td>
-						</tr>
-						<tr>
-							<td><a href="https://www.cs.kent.ac.uk/people/staff/saf/" target="_blank">Sally Fincher*</a></td>
-							<td>pedagogy</td>
-							<td>School of Computing</td>
-							<td>University of Kent</td>
-							<td>UK</td>
-						</tr>
-						<tr>
-							<td><a href="https://www.colorado.edu/cmci/people/information-science/casey-fiesler" target="_blank">Casey Fiesler*</a></td>
-							<td>technology ethics</td>
-							<td>Information Science</td>
-							<td>University of Colorado, Boulder</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="http://web.cs.wpi.edu/~kfisler/" target="_blank">Kathi Fisler</a></td>
-							<td>Programming languages, pedagogy, cross-disciplinary learning and transfer</td>
-							<td>Computer Science</td>
-							<td>Brown University</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="http://people.cs.uchicago.edu/~dmfranklin/" target="_blank">Diana Franklin</a></td>
-							<td>Equity, curriculum, and CS learning in K-8</td>
-							<td>Department of Computer Science</td>
-							<td>University of Chicago</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/fox.html" target="_blank">Armando Fox*</a></td>
-							<td>digital learning, programming systems, and software engineering</td>
-							<td>Electrical Engineering &amp; Computer Science</td>
-							<td>University of California, Berkeley</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="https://education.uoregon.edu/people/faculty/goodej" target="_blank">Joanna Goode*</a></td>
-							<td>Access and equity for underrepresented students of color and females in computer science education</td>
-							<td>College of Education</td>
-							<td>University of Oregon</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="http://www.tovigrossman.com/" target="_blank">Tovi Grossman</a></td>
-							<td>HCI, software learning, interactive tutorials</td>
-							<td>Computer Science</td>
-							<td>University of Toronto</td>
-							<td>Canada</td>
-						</tr>
-						<tr>
-							<td><a href="http://www.pgbovine.net/" target="_blank">Philip Guo</a></td>
-							<td>HCI, learning at scale</td>
-							<td>Cognitive Science</td>
-							<td>University of California, San Diego</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td><a href="http://www.cc.gatech.edu/home/guzdial/" target="_blank">Mark Guzdial*</a></td>
-							<td>pedagogy, curriculum, end-user programming, teachers, research instruments, theory</td>
-							<td>Computer Science &amp; Engineering<br/>Engineering Education Research</td>
-							<td>University of Michigan</td>
-							<td>USA</td>
-						</tr>
-							<tr>
-								<td><a href="https://people.engr.ncsu.edu/sesmith5/" target="_blank">Sarah Heckman</a></td>
-								<td>software engineering, automated grading, and help-seeking</td>
-								<td>Computer Science</td>
-								<td>North Carolina State University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://publish.illinois.edu/glherman/" target="_blank">Geoffrey Herman</a></td>
-								<td>conceptual change and student learning, assessment and measurement, pedagogy, and faculty development</td>
-								<td>Computer Science</td>
-								<td>University of Illinois, Urbana-Champaign</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.felienne.com/" target="_blank">Felienne Hermans</a></td>
-								<td>K-12 education, misconceptions, teacher education, direct instruction, end-user programming</td>
-								<td>Computer Science</td>
-								<td>Leiden University</td>
-								<td>The Netherlands</td>
-							</tr>
-							<tr>
-								<td><a href="https://www.tc.columbia.edu/faculty/nrh2118/" target="_blank">Nathan Holbert</a></td>
-								<td>constructionism, diversity</td>
-								<td>Mathematic Science and Technology, Teachers College</td>
-								<td>Columbia University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.professoren.tum.de/en/hubwieser-peter/" target="_blank">Peter Hubwieser</a></td>
-								<td>assessment</td>
-								<td>Computer Science</td>
-								<td>TU Munich</td>
-								<td>Germany</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.eecs.wsu.edu/~hundhaus/" target="_blank">Chris Hundhausen</a></td>
-								<td>social learning technologies and pedagogical approaches</td>
-								<td>Computer Science</td>
-								<td>Washington State University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://www.it.iitb.ac.in/~sri/" target="_blank">Sridhar Iyer*</a></td>
-								<td>computing education research</td>
-								<td>Computer Science and Engineering</td>
-								<td>Indian Institute of Technology Bombay</td>
-								<td>India</td>
-							</tr>
-							<tr>
-								<td><a href="http://scholar.gse.upenn.edu/kafai" target="_blank">Yasmin Kafai</a></td>
-								<td>constructionism, educational games, electronic textiles, Scratch</td>
-								<td>Graduate School of Education</td>
-								<td>University of Pennsylvania</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://people.cs.vt.edu/kafura/" target="_blank">Dennis Kafura*</a></td>
-								<td>computational thinking</td>
-								<td>Computer Science</td>
-								<td>Virginia Tech</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.cse.wustl.edu/~ckelleher/" target="_blank">Caitlin Kelleher*</a></td>
-								<td>learning technology</td>
-								<td>Computer Science</td>
-								<td>Washington University in St. Louis</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://d.ucsd.edu/srk/" target="_blank">Scott Klemmer*</a></td>
-								<td>HCI, learning at scale</td>
-								<td>Cognitive Science</td>
-								<td>University of California, San Diego</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://faculty.uw.edu/ajko/" target="_blank">Amy J. Ko</a></td>
-								<td>HCI, software engineering, pedagogy, learning at scale</td>
-								<td>The Information School<br/>Computer Science &amp; Engineering</td>
-								<td>University of Washington, Seattle</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://cs.brown.edu/~sk/" target="_blank">Shriram Krishnamurthi*</a></td>
-								<td>programming languages, pedagogy</td>
-								<td>Computer Science</td>
-								<td>Brown University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://celinelatulipe.wordpress.com/" target="_blank">Celine Latulipe*</a></td>
-								<td>HCI, creativity, pedagogy</td>
-								<td>Software and Information Systems</td>
-								<td>UNC Charlotte</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://pixel42.com/" target="_blank">Michael J. Lee</a></td>
-								<td>HCI, educational games, diversity, learning technologies</td>
-								<td>Informatics</td>
-								<td>New Jersey Institute of Technology</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://victor-r-lee.com/" target="_blank">Victor Lee</a></td>
-								<td>learning sciences, computational thinking with board games, early childhood computational thinking, maker education</td>
-								<td>Instructional Technology and Learning Sciences</td>
-								<td>Utah State University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://cs.illinois.edu/directory/profile/colleenl" target="_blank">Colleen Lewis</a></td>
-								<td>Understanding and optimizing learning; identifying and removing barriers</td>
-								<td>Computer Science</td>
-								<td>University of Illinois at Urbana-Champaign</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.uts.edu.au/staff/raymond.lister" target="_blank">Raymond Lister*</a></td>
-								<td>cognition, assessment, program understanding</td>
-								<td>School of Software</td>
-								<td>University of Technology, Sydney</td>
-								<td>Australia</td>
-							</tr>
-							<tr>
-								<td><a href="http://students.washington.edu/dloksa/#/" target="_blank">Dastyni Loksa*</a></td>
-								<td>Programming problem solving</td>
-								<td>Computer &amp; Information Sciences</td>
-								<td>Towson University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://unidirectory.auckland.ac.nz/profile/alux001" target="_blank">Andrew Luxton-Reilly*</a></td>
-								<td>learning communities, game-based learning, debugging, automated assessment, gender and diversity in CS</td>
-								<td>Computer Science</td>
-								<td>University of Auckland</td>
-								<td>New Zealand</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.cs.hut.fi/~lma/" target="_blank">Lauri Malmi</a></td>
-								<td>program visualization, algorithm visualization, automatic assessment</td>
-								<td>Computer Science</td>
-								<td>Aalto University</td>
-								<td>Finland</td>
-							</tr>
-							<tr>
-								<td><a href="https://laurenmarg.com/" target="_blank">Lauren Margulieux*</a></td>
-								<td>online learning in computing</td>
-								<td>Department of Learning Sciences</td>
-								<td>Georgia State University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.brianamorrison.net/" target="_blank">Briana Morrison*</a></td>
-								<td>pedagogy, cognitive load</td>
-								<td>Computer Science</td>
-								<td>University of Nebraska, Omaha</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://www.albany.edu/education/faculty/lijun-ni" target="_blank">Lijun Ni</a></td>
-								<td>K-12 computer science education, teacher education and  professional development</td>
-								<td>Department of Educational Theory and Practice</td>
-								<td>University at Albany, State University of New York</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://physics.osu.edu/people/orban.14" target="_blank">Chris Orban*</a></td>
-								<td>high school physics and math CS integration</td>
-								<td>Physics</td>
-								<td>The Ohio State University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.eleanorourke.com/" target="_blank">Eleanor O'Rourke</a></td>
-								<td>HCI, educational games, learning technology, growth mindset, motivation</td>
-								<td>Computer Science and Learning Science</td>
-								<td>Northwestern</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://tap2k.org/" target="_blank">Tapan Parikh</a></td>
-								<td>Data science, civic tech, equity</td>
-								<td>School of Information</td>
-								<td>Cornell Tech</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.cs.mcgill.ca/~patitsas/" target="_blank">Elizabeth Patitsas</a></td>
-								<td>Computing as literacy, educational/technical inequity, sociology of education, gender studies, disability studies, teacher development, educator practices, policy analysis, computing &amp; society, science and technology studies (STS), diversity</td>
-								<td>School of Computer Science<br/>Department of Integrated Studies in Education</td>
-								<td>McGill University</td>
-								<td>Canada</td>
-							</tr>
-							<tr>
-								<td><a href="http://web.stanford.edu/~roypea/" target="_blank">Roy Pea*</a></td>
-								<td>learning science, informal learning</td>
-								<td>Education and Learning Sciences</td>
-								<td>Stanford</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.it.uu.se/katalog/arnoldp" target="_blank">Arnold Pears*</a></td>
-								<td>pedagogy</td>
-								<td>Department of Information Technology</td>
-								<td>Uppsala University</td>
-								<td>Sweden</td>
-							</tr>
-							<tr>
-								<td><a href="https://www.colorado.edu/education/william-penuel" target="_blank">Bill Penuel*</a></td>
-								<td>teacher learning and organizational processes</td>
-								<td>Education</td>
-								<td>University of Colorado, Boulder</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://mcs.open.ac.uk/mp8/" target="_blank">Marian Petre*</a></td>
-								<td>software design, design pedagogy</td>
-								<td>Centre for Research in Computing</td>
-								<td>The Open University</td>
-								<td>UK</td>
-							</tr>
-							<tr>
-								<td><a href="https://cseweb.ucsd.edu/~leporter/" target="_blank">Leo Porter</a></td>
-								<td>pedagogy, assessment, educational data mining</td>
-								<td>Computer Science and Engineering</td>
-								<td>University of California, San Diego</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://people.engr.ncsu.edu/twprice/website/" target="_blank">Thomas Price</a></td>
-								<td>educational data mining, tutoring systems, automated feedback</td>
-								<td>Computer Science</td>
-								<td>North Carolina State&nbsp;University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://adalbertgerald.github.io" target="_blank">Gerald Soosai Raj</a></td>
-								<td>Making computing more accessible to diverse learners (e.g., Non-native English Speakers)</td>
-								<td>Computer Science and Engineering</td>
-								<td>University of California, San Diego</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://web.media.mit.edu/~mres/" target="_blank">Mitch Resnick*</a></td>
-								<td>constructionism, creativity</td>
-								<td>Media Lab</td>
-								<td>MIT</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://www.ed.ac.uk/profile/judy-robertson" target="_blank">Judy Robertson*</a></td>
-								<td>data science education, curriculum development, teacher professional learning and games-based learning</td>
-								<td>School of Education</td>
-								<td>The University of Edinburg</td>
-								<td>Scotland</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.cs.otago.ac.nz/staff/Anthony_Robins" target="_blank">Anthony Robins</a></td>
-								<td>psychology of programming, language learning, first programming language, novice programmers, CS1</td>
-								<td>Computer Science</td>
-								<td>University of Otago</td>
-								<td>New Zealand</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.ricarose.com/" target="_blank">Ricarose Roque</a></td>
-								<td>constructionism, creativity, informal learning, family learning</td>
-								<td>Information Science</td>
-								<td>CU Boulder</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://gseis.ucla.edu/directory/linda-sax/" target="_blank">Linda Sax*</a></td>
-								<td>diversity in undergraduate CS and STEM</td>
-								<td>Department of Education</td>
-								<td>University of California, Los Angeles</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://people.cs.vt.edu/shaffer/" target="_blank">Cliff Shaffer*</a></td>
-								<td>digital education</td>
-								<td>Computer Science</td>
-								<td>Virginia Tech</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://itls.usu.edu/people/faculty/searle/" target="_blank">Kristin Searle*</a></td>
-								<td>gender, culture, engagement with computing</td>
-								<td>Instructional Technology and Learning Sciences</td>
-								<td>Utah State University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.uni-paderborn.de/person/60311/" target="_blank">Carsten Schulte*</a></td>
-								<td>pedagogy</td>
-								<td>Computer Science</td>
-								<td>Paderborn University</td>
-								<td>Germany</td>
-							</tr>
-							<tr>
-								<td><a href="http://myweb.fsu.edu/vshute/" target="_blank">Valerie Shute*</a></td>
-								<td>assessment</td>
-								<td>Education</td>
-								<td>Florida State University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://benshapi.ro/" target="_blank">Ben Shapiro*</a></td>
-								<td>constructionism, new media</td>
-								<td>ATLAS Institute<br/>Computer Science</td>
-								<td>University of Colorado</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://web.cs.unlv.edu/stefika/" target="_blank">Andreas Stefik</a></td>
-								<td>Human factors of programming language design, accessibility</td>
-								<td>Computer Science</td>
-								<td>University of Nevada, Las Vegas</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://www.jakitaothomas.com" target="_blank">Jakita O. Thomas</a></td>
-								<td>computational algorithmic thinking, intersectional computing, complex cognitive skill development, computer-supported collaborative learning</td>
-								<td>Computer Science and Software Engineering</td>
-								<td>Auburn University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://www.uni-muenster.de/Informatik.AGVahrenhold/personen/prof.dr.janvahrenhold/" target="_blank">Jan Vahrenhold</a></td>
-								<td>algorithms, non-cognitive factors, TA education</td>
-								<td>Computer Science</td>
-								<td>University of Münster</td>
-								<td>Germany</td>
-							</tr>
-							<tr>
-								<td><a href="https://www.sesp.northwestern.edu/profile/?p=23443&amp;/SepehrVakil/" target="_blank">Sepehr Vakil</a></td>
-								<td>sociocultural perspectives on learning and identity; ethics and politics of computing; social justice education</td>
-								<td>Learning Sciences</td>
-								<td>Northwestern University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://faculty.engineering.asu.edu/ewalker/" target="_blank">Erin Walker</a></td>
-								<td>personalized learning environments, computer-supported collaborative learning, robotic learning environments</td>
-								<td>School of Computing and Information</td>
-								<td>University of Pittsburgh</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.terpconnect.umd.edu/~weintrop" target="_blank">David Weintrop</a></td>
-								<td>design of learning environments, computational thinking, K-12 Classrooms</td>
-								<td>College of Education &amp; College of Information Studies</td>
-								<td>University of Maryland</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://ccl.northwestern.edu/Uri.shtml" target="_blank">Uri Wilensky*</a></td>
-								<td>computational thinking, science integration</td>
-								<td>Learning Sciences</td>
-								<td>Northwestern University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="https://www.ocf.berkeley.edu/~mwilkers/" target="_blank">Michelle Wilkerson</a></td>
-								<td>Computing in K-12 science and math education; w/ focus on modeling and data</td>
-								<td>Graduate School of Education</td>
-								<td>UC Berkeley</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.josephjaywilliams.com/" target="_blank">Joseph Jay Williams</a></td>
-								<td>HCI, A/B experimentation, learnersourcing, personalization, multi-armed bandits/reinforcement learning, self-explanation, metacognition, motivation and social psychology interventions, cognitive science, mental health, learning at scale</td>
-								<td>Computer Science</td>
-								<td>University of Toronto</td>
-								<td>Canada</td>
-							</tr>
-							<tr>
-								<td><a href="http://www.amanyadav.org/" target="_blank">Aman Yadav</a></td>
-								<td>computational thinking, teacher education, problem-based learning, teacher professional development</td>
-								<td>Educational Psychology and Educational Technology</td>
-								<td>Michigan State University</td>
-								<td>USA</td>
-							</tr>
-							<tr>
-								<td><a href="http://users.eecs.northwestern.edu/~hq/" target="_blank">Haoqi Zhang*</a></td>
-								<td>learning ecosystems</td>
-								<td>Computer Science</td>
-								<td>Northwestern</td>
-								<td>USA</td>
-							</tr>
+						{[
+							this.person("Erik Barendsen*", "pedagogy, literacy, computational thinking", "Computing and Information Sciences", "Open University", "Netherlands"),
+							this.person("Tiffany Barnes", "http://www4.ncsu.edu/~tmbarnes/", "inclusion, educational games, tutoring systems, teacher education", "Computer Science", "North Carolina State University", "USA"),
+							this.person("Austin Cory Bart", "https://acbart.github.io/", "introductory computing, motivation", "Computer Science", "University of Delaware", "USA"),
+							this.person("Brett Becker", "http://www.brettbecker.com", "novices, programming, compilers, errors", "Computer Science", "University College Dublin", "Ireland"),
+							this.person("Tim Bell", "http://www.cosc.canterbury.ac.nz/tim.bell/", "CS unplugged, curriculum", "Computer Science", "University of Canterbury", "New Zealand"),
+							this.person("Matthew Berland*", "http://berland.org/", "digital media, data science learning", "Curriculum &amp; Instruction<br/>Computer Science", "University of Wisconsin-Madison", "USA"),
+							this.person("Paulo Blikstein*", "https://www.tc.columbia.edu/faculty/pb2755/", "project-based learning", "Communications, Media and Learning Technology Design", "Columbia University", "USA"),
+							this.person("Kristy Boyer*", "http://research.csc.ncsu.edu/learndialogue/person.php?id=keboyer", "intelligent tutoring systems", "Computer Science", "University of Florida", "USA"),
+							this.person("Karen Brennan", "https://www.gse.harvard.edu/faculty/karen-brennan", "constructionism, creativity, K-12 classrooms, teacher learning", "Graduate School of Education", "Harvard", "USA"),
+							this.person("Jed Brubaker", "https://www.colorado.edu/cmci/people/information-science/jed-brubaker", "how identity is designed, represented and experienced in socio-technical systems", "Information Science", "University of Colorado, Boulder", "USA"),
+							this.person("Cornelia Connolly", "http://www.nuigalway.ie/our-research/people/education/corneliaconnolly/", "pedagogy, teacher education, computational thinking, design", "School of Education", "National University of Ireland, Galway", "Ireland"),
+							this.person("Steve Cooper*", "http://cse.unl.edu/~scooper/", "program visualization, spatial reasoning", "Computer Science &amp; Engineering", "University of Nebraska, Lincoln", "USA"),
+							this.person("Quintin Cutts*", "http://www.dcs.gla.ac.uk/~quintin/", "pedagogy, assessment, work based learning and teacher learning communities", "School of Computer Science", "University of Glasgow", "Scotland"),
+							this.person("Joshua Danish*", "https://education.indiana.edu/about/directory/profiles/danish-joshua-a.html", "how people learn through activity", "School of Education", "Indiana University Bloomington", "USA"),
+							this.person("Sayamindu Dasgupta*", "https://unmad.in/", "youth, data science", "School of Information and Library Science", "University of North Carolina at Chapel Hill", "USA"),
+							this.person("Adrienne Decker", "https://adriennedecker.net/", "pedagogy, assessment, efficacy of outreach", "Engineering Education", "University at Buffalo", "USA"),
+							this.person("Paul Denny", "https://www.cs.auckland.ac.nz/~paul/", "collaborative learning, online learning, gamification, student-generated resources", "Computer Science", "University of Auckland", "New Zealand"),
+							this.person("Kayla DesPortes*", "https://steinhardt.nyu.edu/faculty/Kayla_Desportes", "computing as a medium for expression", "Learning Sciences", "New York University", "USA"),
+							this.person("Sebastian Dziallas*", "http://sdziallas.com/", "experiences in higher education CS", "", "Fulbright University Vietnam", "Vietnam"),
+							this.person("Betsy DiSalvo*", "http://betsydisalvo.com/", "culture, informal learning", "School of Interactive Computing", "Georgia Tech", "USA"),
+							this.person("Brian Dorn*", "http://faculty.ist.unomaha.edu/bdorn/", "HCI, informal learning, teacher education", "Department of Computer Science", "University of Nebraska, Omaha", "USA"),
+							this.person("Anna Eckerdal*", "https://katalog.uu.se/profile/?id=N99-802", "threshold concepts, MOOCs, learning in labs", "Department of Information Technology", "Uppsala University", "Sweden"),
+							this.person("Steve Edwards*", "http://webcore.cs.vt.edu/user/edwards", "software engineering, formal methods, autograding", "Computer Science", "Virginia Tech", "USA"),
+							this.person("Barbara Ericson*", "http://barbara-ericson.strikingly.com/", "pedagogy, diversity", "School of Information", "University of Michigan", "USA"),
+							this.person("Martin Erwig", "http://web.engr.oregonstate.edu/~erwig/", "programming languages, visual languages, explanations, story programming", "Electrical Engineering and Computer Science", "Oregon State University", "USA"),
+							this.person("Katrina Falkner*", "http://www.adelaide.edu.au/directory/katrina.falkner", "pedagogy, computational thinking", "School of Computer Science", "University of Adelaide", "Australia"),
+							this.person("Sally Fincher*", "https://www.cs.kent.ac.uk/people/staff/saf/", "pedagogy", "School of Computing", "University of Kent", "UK"),
+							this.person("Casey Fiesler*", "https://www.colorado.edu/cmci/people/information-science/casey-fiesler", "technology ethics", "Information Science", "University of Colorado, Boulder", "USA"),
+							this.person("Kathi Fisler", "http://web.cs.wpi.edu/~kfisler/", "Programming languages, pedagogy, cross-disciplinary learning and transfer", "Computer Science", "Brown University", "USA"),
+							this.person("Diana Franklin", "http://people.cs.uchicago.edu/~dmfranklin/", "Equity, curriculum, and CS learning in K-8", "Department of Computer Science", "University of Chicago", "USA"),
+							this.person("Armando Fox*", "https://www2.eecs.berkeley.edu/Faculty/Homepages/fox.html", "digital learning, programming systems, and software engineering", "Electrical Engineering &amp; Computer Science", "University of California, Berkeley", "USA"),
+							this.person("Joanna Goode*", "https://education.uoregon.edu/people/faculty/goodej", "Access and equity for underrepresented students of color and females in computer science education", "College of Education", "University of Oregon", "USA"),
+							this.person("Tovi Grossman", "http://www.tovigrossman.com/", "HCI, software learning, interactive tutorials", "Computer Science", "University of Toronto", "Canada"),
+							this.person("Philip Guo", "http://www.pgbovine.net/", "HCI, learning at scale", "Cognitive Science", "University of California, San Diego", "USA"),
+							this.person("Mark Guzdial*", "http://www.cc.gatech.edu/home/guzdial/", "pedagogy, curriculum, end-user programming, teachers, research instruments, theory", "Computer Science &amp; Engineering<br/>Engineering Education Research", "University of Michigan", "USA"),
+							this.person("Sarah Heckman", "https://people.engr.ncsu.edu/sesmith5/", "software engineering, automated grading, and help-seeking", "Computer Science", "North Carolina State University", "USA"),
+							this.person("Geoffrey Herman", "http://publish.illinois.edu/glherman/", "conceptual change and student learning, assessment and measurement, pedagogy, and faculty development", "Computer Science", "University of Illinois, Urbana-Champaign", "USA"),
+							this.person("Felienne Hermans", "http://www.felienne.com/", "K-12 education, misconceptions, teacher education, direct instruction, end-user programming", "Computer Science", "Leiden University", "The Netherlands"),
+							this.person("Nathan Holbert", "https://www.tc.columbia.edu/faculty/nrh2118/", "constructionism, diversity", "Mathematic Science and Technology, Teachers College", "Columbia University", "USA"),
+							this.person("Peter Hubwieser", "http://www.professoren.tum.de/en/hubwieser-peter/", "assessment", "Computer Science", "TU Munich", "Germany"),
+							this.person("Chris Hundhausen", "http://www.eecs.wsu.edu/~hundhaus/", "social learning technologies and pedagogical approaches", "Computer Science", "Washington State University", "USA"),
+							this.person("Sridhar Iyer*", "https://www.it.iitb.ac.in/~sri/", "computing education research", "Computer Science and Engineering", "Indian Institute of Technology Bombay", "India"),
+							this.person("Yasmin Kafai", "http://scholar.gse.upenn.edu/kafai", "constructionism, educational games, electronic textiles, Scratch", "Graduate School of Education", "University of Pennsylvania", "USA"),
+							this.person("Dennis Kafura*", "https://people.cs.vt.edu/kafura/", "computational thinking", "Computer Science", "Virginia Tech", "USA"),
+							this.person("Caitlin Kelleher*", "http://www.cse.wustl.edu/~ckelleher/", "learning technology", "Computer Science", "Washington University in St. Louis", "USA"),
+							this.person("Scott Klemmer*", "http://d.ucsd.edu/srk/", "HCI, learning at scale", "Cognitive Science", "University of California, San Diego", "USA"),
+							this.person("Amy J. Ko", "http://faculty.uw.edu/ajko/", "Critical computing education, programming language learning, pre-service teacher education", "The Information School<br/>Computer Science &amp; Engineering", "University of Washington, Seattle", "USA"),
+							this.person("Shriram Krishnamurthi*", "https://cs.brown.edu/~sk/", "programming languages, pedagogy", "Computer Science", "Brown University", "USA"),
+							this.person("Celine Latulipe*", "https://celinelatulipe.wordpress.com/", "HCI, creativity, pedagogy", "Software and Information Systems", "UNC Charlotte", "USA"),
+							this.person("Michael J. Lee", "http://pixel42.com/", "HCI, educational games, diversity, learning technologies", "Informatics", "New Jersey Institute of Technology", "USA"),
+							this.person("Victor Lee", "http://victor-r-lee.com/", "learning sciences, computational thinking with board games, early childhood computational thinking, maker education", "Instructional Technology and Learning Sciences", "Utah State University", "USA"),
+							this.person("Colleen Lewis", "https://cs.illinois.edu/directory/profile/colleenl", "Understanding and optimizing learning; identifying and removing barriers", "Computer Science", "University of Illinois at Urbana-Champaign", "USA"),
+							this.person("Raymond Lister*", "http://www.uts.edu.au/staff/raymond.lister", "cognition, assessment, program understanding", "School of Software", "University of Technology, Sydney", "Australia"),
+							this.person("Dastyni Loksa*", "http://students.washington.edu/dloksa/#/", "Programming problem solving", "Computer &amp; Information Sciences", "Towson University", "USA"),
+							this.person("Andrew Luxton-Reilly*", "https://unidirectory.auckland.ac.nz/profile/alux001", "learning communities, game-based learning, debugging, automated assessment, gender and diversity in CS", "Computer Science", "University of Auckland", "New Zealand"),
+							this.person("Lauri Malmi", "http://www.cs.hut.fi/~lma/", "program visualization, algorithm visualization, automatic assessment", "Computer Science", "Aalto University", "Finland"),
+							this.person("Lauren Margulieux*", "https://laurenmarg.com/", "online learning in computing", "Department of Learning Sciences", "Georgia State University", "USA"),
+							this.person("Briana Morrison*", "http://www.brianamorrison.net/", "pedagogy, cognitive load", "Computer Science", "University of Nebraska, Omaha", "USA"),
+							this.person("Lijun Ni", "https://www.albany.edu/education/faculty/lijun-ni", "K-12 computer science education, teacher education and  professional development", "Department of Educational Theory and Practice", "University at Albany, State University of New York", "USA"),
+							this.person("Chris Orban*", "https://physics.osu.edu/people/orban.14", "high school physics and math CS integration", "Physics", "The Ohio State University", "USA"),
+							this.person("Eleanor O'Rourke", "http://www.eleanorourke.com/", "HCI, educational games, learning technology, growth mindset, motivation", "Computer Science and Learning Science", "Northwestern", "USA"),
+							this.person("Tapan Parikh", "http://tap2k.org/", "Data science, civic tech, equity", "School of Information", "Cornell Tech", "USA"),
+							this.person("Elizabeth Patitsas", "http://www.cs.mcgill.ca/~patitsas/", "Computing as literacy, educational/technical inequity, sociology of education, gender studies, disability studies, teacher development, educator practices, policy analysis, computing &amp; society, science and technology studies (STS), diversity", "School of Computer Science<br/>Department of Integrated Studies in Education", "McGill University", "Canada"),
+							this.person("Roy Pea*", "http://web.stanford.edu/~roypea/", "learning science, informal learning", "Education and Learning Sciences", "Stanford", "USA"),
+							this.person("Arnold Pears*", "http://www.it.uu.se/katalog/arnoldp", "pedagogy", "Department of Information Technology", "Uppsala University", "Sweden"),
+							this.person("Bill Penuel*", "https://www.colorado.edu/education/william-penuel", "teacher learning and organizational processes", "Education", "University of Colorado, Boulder", "USA"),
+							this.person("Marian Petre*", "http://mcs.open.ac.uk/mp8/", "software design, design pedagogy", "Centre for Research in Computing", "The Open University", "UK"),
+							this.person("Leo Porter", "https://cseweb.ucsd.edu/~leporter/", "pedagogy, assessment, educational data mining", "Computer Science and Engineering", "University of California, San Diego", "USA"),
+							this.person("Thomas Price", "https://people.engr.ncsu.edu/twprice/website/", "educational data mining, tutoring systems, automated feedback", "Computer Science", "North Carolina State&nbsp;University", "USA"),
+							this.person("Gerald Soosai Raj", "https://adalbertgerald.github.io", "Making computing more accessible to diverse learners (e.g., Non-native English Speakers)", "Computer Science and Engineering", "University of California, San Diego", "USA"),
+							this.person("Mitch Resnick*", "http://web.media.mit.edu/~mres/", "constructionism, creativity", "Media Lab", "MIT", "USA"),
+							this.person("Judy Robertson*", "https://www.ed.ac.uk/profile/judy-robertson", "data science education, curriculum development, teacher professional learning and games-based learning", "School of Education", "The University of Edinburg", "Scotland"),
+							this.person("Anthony Robins", "http://www.cs.otago.ac.nz/staff/Anthony_Robins", "psychology of programming, language learning, first programming language, novice programmers, CS1", "Computer Science", "University of Otago", "New Zealand"),
+							this.person("Ricarose Roque", "http://www.ricarose.com/", "constructionism, creativity, informal learning, family learning", "Information Science", "CU Boulder", "USA"),
+							this.person("Linda Sax*", "https://gseis.ucla.edu/directory/linda-sax/", "diversity in undergraduate CS and STEM", "Department of Education", "University of California, Los Angeles", "USA"),
+							this.person("Cliff Shaffer*", "http://people.cs.vt.edu/shaffer/", "digital education", "Computer Science", "Virginia Tech", "USA"),
+							this.person("Kristin Searle*", "https://itls.usu.edu/people/faculty/searle/", "gender, culture, engagement with computing", "Instructional Technology and Learning Sciences", "Utah State University", "USA"),
+							this.person("Carsten Schulte*", "http://www.uni-paderborn.de/person/60311/", "pedagogy", "Computer Science", "Paderborn University", "Germany"),
+							this.person("Valerie Shute*", "http://myweb.fsu.edu/vshute/", "assessment", "Education", "Florida State University", "USA"),
+							this.person("Ben Shapiro*", "http://benshapi.ro/", "constructionism, new media", "ATLAS Institute<br/>Computer Science", "University of Colorado", "USA"),
+							this.person("Andreas Stefik", "http://web.cs.unlv.edu/stefika/", "Human factors of programming language design, accessibility", "Computer Science", "University of Nevada, Las Vegas", "USA"),
+							this.person("Jakita O. Thomas", "https://www.jakitaothomas.com", "computational algorithmic thinking, intersectional computing, complex cognitive skill development, computer-supported collaborative learning", "Computer Science and Software Engineering", "Auburn University", "USA"),
+							this.person("Jan Vahrenhold", "https://www.uni-muenster.de/Informatik.AGVahrenhold/personen/prof.dr.janvahrenhold/", "algorithms, non-cognitive factors, TA education", "Computer Science", "University of Münster", "Germany"),
+							this.person("Sepehr Vakil", "https://www.sesp.northwestern.edu/profile/?p=23443&amp;/SepehrVakil/", "sociocultural perspectives on learning and identity; ethics and politics of computing; social justice education", "Learning Sciences", "Northwestern University", "USA"),
+							this.person("Erin Walker", "http://faculty.engineering.asu.edu/ewalker/", "personalized learning environments, computer-supported collaborative learning, robotic learning environments", "School of Computing and Information", "University of Pittsburgh", "USA"),
+							this.person("David Weintrop", "http://www.terpconnect.umd.edu/~weintrop", "design of learning environments, computational thinking, K-12 Classrooms", "College of Education &amp; College of Information Studies", "University of Maryland", "USA"),
+							this.person("Uri Wilensky*", "http://ccl.northwestern.edu/Uri.shtml", "computational thinking, science integration", "Learning Sciences", "Northwestern University", "USA"),
+							this.person("Michelle Wilkerson", "https://www.ocf.berkeley.edu/~mwilkers/", "Computing in K-12 science and math education; w/ focus on modeling and data", "Graduate School of Education", "UC Berkeley", "USA"),
+							this.person("Joseph Jay Williams", "http://www.josephjaywilliams.com/", "HCI, A/B experimentation, learnersourcing, personalization, multi-armed bandits/reinforcement learning, self-explanation, metacognition, motivation and social psychology interventions, cognitive science, mental health, learning at scale", "Computer Science", "University of Toronto", "Canada"),
+							this.person("Aman Yadav", "http://www.amanyadav.org/", "computational thinking, teacher education, problem-based learning, teacher professional development", "Educational Psychology and Educational Technology", "Michigan State University", "USA"),
+							this.person("Haoqi Zhang*", "http://users.eecs.northwestern.edu/~hq/", "learning ecosystems", "Computer Science", "Northwestern", "USA")
+						]}
 					</tbody>
 				</table>
 
