@@ -5131,7 +5131,7 @@
 			"end": 2020,
 			"description": "I was interviewed about the impact of online learning on learning to code.",
 			"url": "https://www.onlineeducation.com/features/can-online-education-fix-the-gender-diversity-problem-in-coding",
-			"title": "Can Online Educaiton Fix the Gender Diversity Problem in Coding?",
+			"title": "Can Online Education Fix the Gender Diversity Problem in Coding?",
 			"author": "Chelsea Toczauer",
 			"source": "OnlineEducation.com",
 			"projects": ["csdiversity", "pllearning"],
@@ -5270,11 +5270,11 @@
 		},
 		{
 			"kind": "social",
-			"start": 2017,
-			"end": 2017,
-			"description": "Our research on coding bootcamps has been read by hundreds of thousands of software developers on Reddit",
-			"url": "https://www.reddit.com/r/programming/comments/6kgi7p/what_i_learned_from_researching_coding_bootcamps/",
-			"projects": ["apilearning", "softexpertise"],
+			"start": 2020,
+			"end": 2020,
+			"description": "Our research on software engineering expertise was read by tens of thousands of software developers on Hacker News",
+			"url": "https://news.ycombinator.com/item?id=25107285",
+			"projects": ["softexpertise"],
 			"who": "engineers"
 		},
 		{
