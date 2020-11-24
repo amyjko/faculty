@@ -3316,6 +3316,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/block-based-what-differentiating-programming-languages-environments-and-editors-59ae451af0a9",
+			"title": "Block-based what? Differentiating programming languages, environments, and editors",
+			"date": "2020.11",
+			"tags": ["K-12", "computing education", "ed tech", "programming languages", "teaching"],
+			"img": "blockbased",
+			"alt": "A Scratch program that, when clicked, redundantly updates a character's speech bubble to say 'editor!' 28 times."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/encouraging-more-critical-computing-a-virtual-trip-report-4ec38cf68635",
 			"title": "Encouraging more critical computing: A (virtual) trip report",
 			"date": "2020.11",
