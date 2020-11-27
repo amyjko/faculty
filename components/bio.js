@@ -75,7 +75,7 @@ class Biography extends React.Component {
 				<p>
 					These are the documents I submitted for tenure-track faculty positions in 2008, for my tenure and promotion to Associate Professor, and for my later promotion to Professor.
 					I hope they're helpful to anyone pursuing a career in academia.
-					While you read them, remmeber: careers come together one day at a time, one paper at a time, not all at once!
+					While you read them, remember: careers come together one day at a time, one paper at a time, not all at once!
 					I've felt imposter syndrome most of my life because people didn't tell me this.
 				</p>
 				
