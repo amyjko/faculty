@@ -3316,6 +3316,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/nobles-algorithms-of-oppression-indexes-search-engine-bias-4ef63aba9742",
+			"title": "Noble’s “Algorithms of Oppression” indexes search engine bias",
+			"date": "2020.11",
+			"tags": ["book summary", "diversity", "information", "society"],
+			"img": "algorithmsof",
+			"alt": "A screenshot of Google search with the query 'is google oppressi' and the suggestion 'what is oppression google scholar'"
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/block-based-what-differentiating-programming-languages-environments-and-editors-59ae451af0a9",
 			"title": "Block-based what? Differentiating programming languages, environments, and editors",
 			"date": "2020.11",
