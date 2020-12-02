@@ -6376,6 +6376,18 @@
 			}
 		},
 		{
+			"title": "Committee Member",
+			"committee": "Code.org AP CS A advisory committee",
+			"level": "national",
+			"description": "I'm advising Code.org on the design and implementation of a new curriculuar effort.",
+			"commitment": {
+				"start": "2021-01-01",
+				"end": null,
+				"hours": 0.25,
+				"priority": 0
+			}
+		},
+		{
 			"title": "Secretary",
 			"committee": "Seattle Public Schools CS Advisory Board.",
 			"level": "regional",
