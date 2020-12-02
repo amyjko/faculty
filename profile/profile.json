@@ -51,6 +51,20 @@
 	},
 	"pubs": [
 		{
+			"id": "robustapi",
+			"kind": "journal article",
+			"authors": ["@kthayer", "Sarah Chasins", "@ajko"],
+			"deadname": false,
+			"year": 2021,
+			"title": "A theory of robust API knowledge",
+			"source": "@toce",
+			"pages": "to appear",
+			"doi": null,
+			"local": null,
+			"publisher": "ACM",
+			"contribution": "Contributes a novel theory of robust API knowledge, including knowledge about the domain that an API models, knowledge of the semantics of API functionality, and knowledge of API usage patterns."
+		},
+		{
 			"id": "csdif",
 			"kind": "refereed conference paper",
 			"authors": ["@mattjd", "@ajko", "@brettwo"],
@@ -7035,6 +7049,19 @@
 				"start": "2021-03-01",
 				"end": "2021-03-01",
 				"hours": 5,
+				"priority": 1
+			},
+			"report": null
+		},
+		{
+			"url": null,
+			"title": "UC Davis, Computer Science Seminar",
+			"details": "Invited research talk",
+			"category": "research",
+			"commitment": {
+				"start": "2021-02-12",
+				"end": "2021-02-12",
+				"hours": 2,
 				"priority": 1
 			},
 			"report": null
