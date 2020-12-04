@@ -65,6 +65,20 @@
 			"contribution": "Contributes a novel theory of robust API knowledge, including knowledge about the domain that an API models, knowledge of the semantics of API functionality, and knowledge of API usage patterns."
 		},
 		{
+			"id": "gradingfeedback",
+			"kind": "journal article",
+			"authors": ["Qiang Hao", "David Smith", "Lu Ding", "@ajko", "Camille Ottaway", "Jack Wilson", "Kai Hicks", "Alistair Turcan", "Timothy Poehlman", "Tyler Greer"],
+			"deadname": false,
+			"year": 2021,
+			"title": "Towards understanding the effective design of automated formative feedback for programming assignments",
+			"source": "Computer Science Education",
+			"pages": "to appear",
+			"doi": "https://doi.org/10.1080/08993408.2020.1860408",
+			"local": null,
+			"publisher": "ACM",
+			"contribution": "Finds that feedback addressing the gap between expected and actual outputs is critical to effective learning and that feedback lacking sufficient detail on these gaps leads to gaming behaviors."
+		},
+		{
 			"id": "csdif",
 			"kind": "refereed conference paper",
 			"authors": ["@mattjd", "@ajko", "@brettwo"],
@@ -6360,6 +6374,18 @@
 				"start": "2018-05-01",
 				"end": null,
 				"hours": 2,
+				"priority": 0
+			}
+		},
+		{
+			"title": "Committee Member",
+			"committee": "University of North Texas, Information Science, Academic Program Review Committee",
+			"level": "national",
+			"description": "I participated in a formal evaluation of the department's programs.",
+			"commitment": {
+				"start": "2021-03-01",
+				"end": "2021-03-05",
+				"hours": 15,
 				"priority": 0
 			}
 		},
