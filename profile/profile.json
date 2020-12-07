@@ -56,11 +56,11 @@
 			"authors": ["@kthayer", "Sarah Chasins", "@ajko"],
 			"deadname": false,
 			"year": 2021,
-			"title": "A theory of robust API knowledge",
+			"title": "A Theory of Robust API Knowledge",
 			"source": "@toce",
 			"pages": "to appear",
 			"doi": null,
-			"local": null,
+			"local": "Thayer2021TheoryOfRobustAPIKnowledge.pdf",
 			"publisher": "ACM",
 			"contribution": "Contributes a novel theory of robust API knowledge, including knowledge about the domain that an API models, knowledge of the semantics of API functionality, and knowledge of API usage patterns."
 		},
@@ -3214,7 +3214,7 @@
 			"description": "Most modern software is built by reusing APIs, libraries, frameworks, and other code that others have carefully designed and tested. Unfortunately, such reuse often requires robust learning of API features. My lab investigates barriers to learning API's robustly and invents more effective ways of learning APIs.",
 			"funding": ["@csassess"],
 			"people": ["@ajko", "@kthayer"],
-			"papers": ["barriers", "bootcamps", "feasibility", "bioinformatics"],
+			"papers": ["barriers", "bootcamps", "feasibility", "bioinformatics", "robustapi"],
 			"links": [],
 			"startdate": 2004,
 			"stopdate": null
