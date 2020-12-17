@@ -287,7 +287,8 @@ class CER extends React.Component {
 							this.person("Michelle Wilkerson", "https://www.ocf.berkeley.edu/~mwilkers/", "Computing in K-12 science and math education; w/ focus on modeling and data", "Graduate School of Education", "UC Berkeley", "USA"),
 							this.person("Joseph Jay Williams", "http://www.josephjaywilliams.com/", "HCI, A/B experimentation, learnersourcing, personalization, multi-armed bandits/reinforcement learning, self-explanation, metacognition, motivation and social psychology interventions, cognitive science, mental health, learning at scale", "Computer Science", "University of Toronto", "Canada"),
 							this.person("Aman Yadav", "http://www.amanyadav.org/", "computational thinking, teacher education, problem-based learning, teacher professional development", "Educational Psychology and Educational Technology", "Michigan State University", "USA"),
-							this.person("Haoqi Zhang*", "http://users.eecs.northwestern.edu/~hq/", "learning ecosystems", "Computer Science", "Northwestern", "USA")
+							this.person("Haoqi Zhang*", "http://users.eecs.northwestern.edu/~hq/", "learning ecosystems", "Computer Science", "Northwestern", "USA"),
+						 	this.person("Joël Porquet-Lupine", "https://luplab.cs.ucdavis.edu/", "curriculum development for teaching introductory programming courses, educational tools", "Computer Science", "University of California, Davis", "USA")
 						]}
 					</tbody>
 				</table>
