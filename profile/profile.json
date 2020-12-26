@@ -7096,6 +7096,19 @@
 			"report": null
 		},
 		{
+			"url": "http://respect2021.stcbp.org",
+			"title": "RESPECT 2021",
+			"details": "I'm giving an invited keynote",
+			"category": "research",
+			"commitment": {
+				"start": "2021-05-23",
+				"end": "2021-05-27",
+				"hours": 5,
+				"priority": 1
+			},
+			"report": null
+		},
+		{
 			"url": "http://chi2021.acm.org",
 			"title": "CHI 2021",
 			"details": "HCI research conference",
@@ -7103,8 +7116,8 @@
 			"commitment": {
 				"start": "2021-05-10",
 				"end": "2021-05-13",
-				"hours": 30,
-				"priority": 2
+				"hours": 20,
+				"priority": 1
 			},
 			"report": null
 		},
