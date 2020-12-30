@@ -7942,6 +7942,7 @@
 				}
 			],
 			"offerings": [
+				{ "size": 35, "term": 1, "year": 2021, "score": null },
 				{ "size": 33, "term": 1, "year": 2020, "score": null },
 				{ "size": 33, "term": 1, "year": 2019, "score": 4.8 },
 				{ "size": 37, "term": 3, "year": 2019, "score": 4.8 },
@@ -7983,6 +7984,7 @@
 				}
 			],
 			"offerings": [
+				{ "year": 2022, "term": 2, "size": 35, "score": null },
 				{ "year": 2021, "term": 2, "size": 35, "score": null },
 				{ "year": 2020, "term": 2, "size": 35, "score": 4.9 },
 				{ "year": 2019, "term": 2, "size": 34, "score": 4.8 },
