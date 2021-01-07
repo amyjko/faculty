@@ -114,8 +114,8 @@
 			"year": 2020,
 			"title": "On the Role of Design in K-12 Computing Education",
 			"source": "@toce",
-			"pages": "to appear",
-			"doi": null,
+			"pages": "Article 2",
+			"doi": "https://doi.org/10.1145/3427594",
 			"local": null,
 			"publisher": "ACM",
 			"contribution": "Disentangles the role of design in K-12 CS education, finding that design ideas are pervasive in curricula and standards, but conflict program space and problem space design, masking the distinct challenges of problem space design."
