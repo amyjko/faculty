@@ -53,14 +53,14 @@
 		{
 			"id": "falx",
 			"kind": "refereed conference paper",
-			"authors": ["Chenglong Wang", "Yu Feng", "Rastislav Bodik", "Prof Isil Dillig", "Alvin Cheung", "@ajko"],
+			"authors": ["Chenglong Wang", "Yu Feng", "Rastislav Bodik", "Isil Dillig", "Alvin Cheung", "@ajko"],
 			"deadname": false,
 			"year": 2021,
 			"title": "Falx: Synthesis-Powered Visualization Authoring",
 			"source": "@chi",
 			"pages": "to appear",
 			"doi": null,
-			"local": null,
+			"local": "Wang2021Falx.pdf",
 			"publisher": "ACM",
 			"contribution": "Contributes a synthesizer-powered visualization tool that allows users to specify examples of how concrete data values should be rendered, and receive one or more data visualizations that transform data accordingly. Finds that users can effectively adopt Falx to create visualizations."
 		},
@@ -7127,7 +7127,7 @@
 			"details": "Invited research talk",
 			"category": "research",
 			"commitment": {
-				"start": "2021-04-016",
+				"start": "2021-04-16",
 				"end": "2021-04-16",
 				"hours": 2,
 				"priority": 1
