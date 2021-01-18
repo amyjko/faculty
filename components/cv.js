@@ -170,7 +170,7 @@ class Vita extends React.Component {
 				<hr/>
 							
 				<div className="lead">
-					I study equitable ways for humanity to learn the power and perils of computing and harness it for good.
+					I study our individual and collective struggle to understand computing and harness it for equity and justice.
 				</div>
 
 				<h1>Education</h1>
