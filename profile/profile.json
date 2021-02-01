@@ -72,8 +72,8 @@
 			"year": 2021,
 			"title": "A Theory of Robust API Knowledge",
 			"source": "@toce",
-			"pages": "to appear",
-			"doi": null,
+			"pages": "21(1), Article 8",
+			"doi": "https://doi.org/10.1145/3444945",
 			"local": "Thayer2021TheoryOfRobustAPIKnowledge.pdf",
 			"publisher": "ACM",
 			"contribution": "Contributes a novel theory of robust API knowledge, including knowledge about the domain that an API models, knowledge of the semantics of API functionality, and knowledge of API usage patterns."
