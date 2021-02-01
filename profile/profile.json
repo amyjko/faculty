@@ -3358,6 +3358,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/a-review-of-computer-science-in-k-12-an-a-to-z-handbook-on-teaching-programming-7f45b1b38ae0",
+			"title": "A Review of Computer Science in K-12, An A to Z Handbook on Teaching Programming",
+			"date": "2021.2",
+			"tags": ["K-12", "book summary", "computing education"],
+			"img": "teachk12prog",
+			"alt": "A photograph of the book over showing a robotic butterfly and the book title, blurred in the background."
+		},
+		{
 			"url": "https://amyjko.medium.com/work-play-rest-recover-1dd2d1630809",
 			"title": "Work, play, rest, recover",
 			"date": "2021.1",
