@@ -53,7 +53,7 @@
 		{
 			"id": "falx",
 			"kind": "refereed conference paper",
-			"authors": ["Chenglong Wang", "Yu Feng", "Rastislav Bodik", "Isil Dillig", "Alvin Cheung", "@ajko"],
+			"authors": ["@clwang", "Yu Feng", "Rastislav Bodik", "Isil Dillig", "Alvin Cheung", "@ajko"],
 			"deadname": false,
 			"year": 2021,
 			"title": "Falx: Synthesis-Powered Visualization Authoring",
@@ -2187,6 +2187,19 @@
 	],
 	"people": [
 		{
+			"id": "clwang",
+			"name": "Chenglong Wang",
+			"active": true,
+			"advised": false,
+			"dept": "Computer Science",
+			"coadvisor": null,
+			"bio": "Chenglong is a Ph.D. student in Computer Science & Engineering, interested in interactive program synthesis.",
+			"url": "http://chenglongwang.org",
+			"startdate": 2015,
+			"enddate": null,
+			"achievements": []
+		},
+		{
 			"id": "brianc",
 			"name": "Brian Chan",
 			"active": true,
@@ -3266,7 +3279,7 @@
 			"shortName": "UI mining",
 			"description": "User interfaces are structured documents, allowing us to analyze, reverse engineer, and transform them. My lab is applying techniques from program analysis and synthesis to automatically transform interfaces to be more accessible, usable, and useful.",
 			"funding": ["@career", "@explore"],
-			"people": ["@amaswea", "@ajko", "@burg"],
+			"people": ["@amaswea", "@ajko", "@burg", "@clwang"],
 			"papers": ["citrus", "genie", "rewire", "frictionary", "scry", "feedlack", "scout", "falx"],
 			"links": [
 				{ "title": "See Scout", "url": "https://www.youtube.com/watch?v=y8pTC6FEsKc" },
