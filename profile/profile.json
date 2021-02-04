@@ -7172,6 +7172,19 @@
 			"report": null
 		},
 		{
+			"url": "http://sigcse2021.sigcse.org",
+			"title": "SIGCSE 2021",
+			"details": "Presenting and attending.",
+			"category": "research",
+			"commitment": {
+				"start": "2021-03-15",
+				"end": "2021-03-20",
+				"hours": 10,
+				"priority": 1
+			},
+			"report": null
+		},
+		{
 			"url": null,
 			"title": "Caltech, Keller Colloquium in Computing and Mathematical Sciences",
 			"details": "Invited research talk and 1 on 1 meetings with faculty and students",
