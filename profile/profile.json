@@ -6431,6 +6431,20 @@
 	],
 	"service": [
 		{
+			"title": "Executive Board Member",
+			"committee": "Expanding Computing Education Pathways, Broadening Participation in Computing",
+			"start": 2021,
+			"end": null,
+			"level": "national",
+			"description": "I help define actions that lead to a more inclusive project, better positioning the ECEP community to advocate for, promote, and embrace equity in computer science education.",
+			"commitment": {
+				"start": "2021-02-01",
+				"end": null,
+				"hours": 1,
+				"priority": 0
+			}
+		},
+		{
 			"title": "Director",
 			"committee": "CS for All Washington",
 			"start": 2018,
