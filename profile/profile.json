@@ -3371,6 +3371,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/my-robotic-pandemic-productivity-9ce692c8b935",
+			"title": "My robotic pandemic productivity",
+			"date": "2021.2",
+			"tags": ["personal", "productivity"],
+			"img": "robotic",
+			"alt": "A blocky grey robot stands in front of a desk an inelegantly operates a mouse and keyboard."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/a-review-of-computer-science-in-k-12-an-a-to-z-handbook-on-teaching-programming-7f45b1b38ae0",
 			"title": "A Review of Computer Science in K-12, An A to Z Handbook on Teaching Programming",
 			"date": "2021.2",
