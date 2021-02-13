@@ -7547,6 +7547,19 @@
 	],
 	"talks": [
 		{
+			"date": "2021-02-12",
+			"image": "davis2021.jpg",
+			"alt": "The closing slide of the talk: 1) computing has limits, 2) data has limits, 3) CS has responsibility, and a column of doctoral student headshots and names.",
+			"slides": "slides/UCDavis2021CriticalComputingEducation.pdf",
+			"title": "Critical Computing Education",
+			"venue": "University of California, Davis, Computer Science, Computing Education Research at Davis Seminar",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "This was the fifth time I gave my talk on critical computing education. In this version, I updated the research slides with new papers and evidence.",
+			"keynote": false
+		},
+		{
 			"date": "2020-11-10",
 			"image": "penn2020.jpg",
 			"alt": "A photograph of me taking a selife with my virtual audience.",
@@ -7556,7 +7569,7 @@
 			"url": "https://events.seas.upenn.edu/event/cis-seminarcritical-computing-education/",
 			"recording": null,
 			"practice": null,
-			"description": "This was the four time I gave my Autumn 2020 talk on critical computing education. In this version, I selected examples more situated in Philadelphia's history.",
+			"description": "This was the fourth time I gave my Autumn 2020 talk on critical computing education. In this version, I selected examples more situated in Philadelphia's history.",
 			"keynote": false
 		},
 		{
@@ -7600,7 +7613,7 @@
 		},
 		{
 			"date": "2020-10-07",
-			"image": "cuboulder20.png",
+			"image": "cuboulder2020.png",
 			"alt": "A screenshot of the end of my talk, showing questions, a summary of the talk gist, and several faces on Zoom.",
 			"slides": "slides/CUBoulder2020CriticalCSEd.pdf",
 			"title": "Critical Computing Education",
