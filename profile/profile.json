@@ -6221,6 +6221,13 @@
 	],
 	"doctoralCommittees": [
 		{
+			"name": "Andrew Hu",
+			"institution": "Michigan State University",
+			"department": "College of Education",
+			"startdate": 2021,
+			"enddate": null
+		},
+		{
 			"name": "Jean Salac",
 			"institution": "University of Chicago",
 			"department": "Computer Science",
