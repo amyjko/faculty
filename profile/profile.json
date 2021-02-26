@@ -3197,7 +3197,7 @@
 			"shortName": "PL learning",
 			"description": "Robust understanding of a programming language is a key foundation for being able to create software. My lab investigates what it means to know a programming language, invents and evaluates educational technologies that streamline learning of a programming language, and invents and evaluates assessments that help identify what learners do and do not know about a programming language.",
 			"funding": ["@csassess", "@gidget", "@seif", "@msft"],
-			"people": ["@ajko", "@bxie", "@glnelson", "@ajko", "@kwikh", "@mjslee", "@yanan15", "@akkarh", "@wkwok16", "@brettwo", "@minli"],
+			"people": ["@ajko", "@bxie", "@glnelson", "@kwikh", "@mjslee", "@yanan15", "@akkarh", "@wkwok16", "@brettwo", "@minli"],
 			"papers": ["traceassess", "cs1theory", "gidget6", "pltutor1","tutorialeval", "tracing", "statscomprehension", "irteval", "gidget1", "gidget2", "gidget3", "gidget4", "gidget5", "gidget6", "adultattitudes", "gidgetabandoment", "codeitzagency", "cerhandoutside", "csdif"],
 			"links": [
 				{ "title": "Try Gidget", "url": "http://helpgidget.org" }
