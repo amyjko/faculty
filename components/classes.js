@@ -12,11 +12,11 @@ class Classes extends React.Component {
 
 				{
 					_.map(this.props.app.getProfile().getClasses(), course => {
-						let latestOffering = _.orderBy(course.offerings, ["year", "term"], ["desc", "desc"])[0];
+						let nextOfferings = _.orderBy(_.filter(course.offerings, offer => offer.score === null), ["year", "term"], ["asc", "asc"]);
+						let latestOfferings = _.orderBy(_.filter(course.offerings, offer => offer.score !== null), ["year", "term"], ["desc", "desc"]);
 						let currentYear = (new Date()).getFullYear();
 						let currentMonth =(new Date()).getMonth() + 1;
 						let currentQuarter = currentMonth <= 3 ? 2 : currentMonth <= 6 ? 3: 1;
-						let future = latestOffering.year >= currentYear && currentQuarter >= currentQuarter;
 						return <Block
 								key={"course-" + course.id}
 								image={this.props.app.getWebRoot() + "/images/courses/" + course.id + ".png"}
@@ -24,8 +24,11 @@ class Classes extends React.Component {
 								link={course.link}
 								header={course.number + " " + course.title}
 								content={
-									<span> (<em>{future ? "Next" : "Latest"} offering {["Autumn", "Winter", "Spring"][latestOffering.term - 1] + " " + latestOffering.year}</em>). {course.description}
-										<br/>
+									<span> (
+										<em>
+										{latestOfferings.length === 0 ? null : "last taught " + ["Autumn", "Winter", "Spring"][latestOfferings[0].term - 1] + " " + latestOfferings[0].year }
+										{nextOfferings.length === 0 ? null : (latestOfferings.length > 0 ? ", " : "") + "next offering likely " + ["Autumn", "Winter", "Spring"][nextOfferings[0].term - 1] + " " + nextOfferings[0].year }
+										</em>). {course.description}
 										<ul>
 											{_.map(
 												course.links, 
