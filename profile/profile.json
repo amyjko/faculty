@@ -8130,6 +8130,14 @@
 	],
 	"books": [
 		{
+			"image": "foundations-of-information.jpg",
+			"alt": "A metallic structure resembling a network of nodes and edges",
+			"link": "/ajko/books/foundations-of-information/#/",
+			"title": "Foundations of Information",
+			"description": "This book covers information, and all of the things that intersect with it: power, politics, oppression, data, knowledge, encoding, metadata; information technology, management, and policy; and the many domains in which information is crucial, including science, social media, automation, health, democracy, and sustainabiity. It serves as the foundation of our survey course on information, INFO 200 Intellectual Foundations of Informatics.",
+			"editor": true
+		},
+		{
 			"image": "design-methods.jpg",
 			"alt": "A stylized rendering of website mockups",
 			"link": "/ajko/books/design-methods",
@@ -8142,7 +8150,7 @@
 			"alt": "A group of people working together at a table.",
 			"link": "/ajko/books/cooperative-software-development/",
 			"title": "Cooperative Software Development",
-			"description": "This book covers software engineering fundamentals, but from a human, social, collaborative, and organizational perspective, rather than from a technical perspective.",
+			"description": "This book covers software engineering fundamentals, but from a human, social, collaborative, and organizational perspective, rather than from a purely technical perspective.",
 			"editor": true
 		},
 		{
@@ -8150,7 +8158,7 @@
 			"alt": "An illustration of a stick figure person sitting on a grid of 1's and 0's",
 			"link": "/ajko/books/user-interface-software-and-technology/",
 			"title": "User Interface Software and Technology",
-			"description": "This book covers the history, theory, and innovations in user interface software and technology.",
+			"description": "This book covers the history, theory, and innovations in user interface software and technology, as well as social issues surrounding interfaces, including intellectual property, ethics, and innovation in industry.",
 			"editor": true
 		},
 		{
