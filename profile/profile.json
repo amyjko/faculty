@@ -7570,6 +7570,19 @@
 	],
 	"talks": [
 		{
+			"date": "2021-03-01",
+			"image": "caltech2021.jpg",
+			"alt": "A slide, which says 'Computing has limits', and includes an xkcd coment that says 'An analysis of our new AI hiring algorithm has raised some concerns'",
+			"slides": "slides/Caltech2021CriticalComputingEducation.pdf",
+			"title": "Critical Computing Education",
+			"venue": "California Institute of Technology, Computing and Mathematical Sciences, Keller Colloquium",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "This was the sixth time I gave my talk on critical computing education. In this version, I updated the research slides with new papers and evidence.",
+			"keynote": false
+		},
+		{
 			"date": "2021-02-12",
 			"image": "davis2021.jpg",
 			"alt": "The closing slide of the talk: 1) computing has limits, 2) data has limits, 3) CS has responsibility, and a column of doctoral student headshots and names.",
