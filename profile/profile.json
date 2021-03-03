@@ -5674,6 +5674,17 @@
 			"who": "cer"
 		},
 		{
+			"kind": "press",
+			"start": 2021,
+			"end": 2021,
+			"description": "I was interviewed by Jared O'Leary on their BootUP CS podcast, where I talked about reflection, mentorship, and vulnerability.",
+			"title": "Vulnerability, Reflection, and CS Education with Amy Ko",
+			"author": "Jared O'Leary",
+			"url": "https://jaredoleary.com/csk8feed/73",
+			"projects": ["pllearning"],
+			"who": "k12cs"
+		},
+		{
 			"kind": "policy",
 			"start": 2020,
 			"end": 2020,
