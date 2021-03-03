@@ -6761,6 +6761,18 @@
 			}
 		},
 		{
+			"title": "Member",
+			"committee": "UW School of Social Work Academic Program Review",
+			"level": "university",
+			"description": "I chaired the school's academic program review.",
+			"commitment": {
+				"start": "2022-05-05",
+				"end": "2013-06-15",
+				"hours": 3,
+				"priority": 0
+			}
+		},
+		{
 			"title": "Program Chair",
 			"committee": "Masters in HCI+Design", 
 			"level": "university",
