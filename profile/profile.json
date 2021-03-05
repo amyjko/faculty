@@ -6532,7 +6532,7 @@
 			"commitment": {
 				"start": "2021-01-01",
 				"end": null,
-				"hours": 0.25,
+				"hours": 0.2,
 				"priority": 0
 			}
 		},
@@ -6646,7 +6646,7 @@
 			"commitment": {
 				"start": "2011-10-01",
 				"end": "2015-10-01",
-				"hours": 0.25,
+				"hours": 0.2,
 				"priority": 0
 			}
 		},
