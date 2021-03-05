@@ -183,6 +183,7 @@ img.link {
 	padding: 5px;
 	font-size: 75%;
 	min-height: 1em;
+	min-width: 2em;
 	overflow: hidden;
 	margin-right: 1px;
 	vertical-align: middle;
