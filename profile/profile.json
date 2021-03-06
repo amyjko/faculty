@@ -3371,6 +3371,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/zoom-is-a-vile-teaching-tool-cd19851a4cf9",
+			"title": "Zoom is a vile teaching tool",
+			"date": "2021.3",
+			"tags": ["HCI", "teaching", "ed tech"],
+			"img": "vilezoom",
+			"alt": "A screen shot of Zoom, showing Amy's screen in the top left and several gray rectangles with student names like 'student1', 'student2', and 'student3'."
+		},
+		{
 			"url": "https://amyjko.medium.com/encounters-with-male-fragility-as-a-man-as-a-woman-2020c05b349f",
 			"title": "Encounters with male fragility, as a man, as a woman",
 			"date": "2021.2",
