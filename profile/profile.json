@@ -100,9 +100,9 @@
 			"year": 2021,
 			"title": "Investigating Item Bias in a CS1 exam with Differential Item Functioning",
 			"source": "@sigcse",
-			"pages": "to appear",
-			"doi": null,
-			"local": null,
+			"pages": "1142-1148",
+			"doi": "https://doi.org/10.1145/3408877.3432397",
+			"local": "Davidson2021ItemBias.pdf",
 			"publisher": "ACM",
 			"contribution": "Demonstrates how to conduct a DIF analysis through a case study of a particular large CS1 exam, which revealed some item bias."
 		},
@@ -6515,7 +6515,7 @@
 			"description": "I participated in a formal evaluation of the department's programs.",
 			"commitment": {
 				"start": "2021-03-24",
-				"end": "2021-04-2",
+				"end": "2021-04-02",
 				"hours": 8,
 				"priority": 0
 			}

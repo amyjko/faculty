@@ -16,7 +16,7 @@ class ContactInfo extends React.Component {
 					alt="A photograph of my office."
 					link="https://goo.gl/maps/7c3irRBubGvXYEtZ8"
 					header="Office hours"
-					content={<span>. My office hours are virtual and by appointment. Write me an email and we can find a time to chat!</span>}
+					content={<span>. My office hours are virtual and by appointment; contact me via one of the channels below to see if a meeting makes sense. If you're in one my classes, see the syllabus for my course office hours.</span>}
 				/>
 
 				<Block 
@@ -32,7 +32,15 @@ class ContactInfo extends React.Component {
 					alt="The Slack logo."
 					link="https://uwdub.slack.com/"
 					header="Slack"
-					content=". Slack is my preferred medium for collaboration with my Ph.D. students and other collaborators at UW and beyond. During the work day I treat Slack like instant messaging, and after hours I treat it like email, reading it in the morning. If you're at UW, join DUB Slack and DM me. I'm usually pretty responsive throughout the day."
+					content={
+						<span>
+							. Slack is my preferred medium for collaboration with my Ph.D. students and other collaborators at UW and beyond. During the work day I treat Slack like instant messaging, and after hours I treat it like email, reading it in the morning. If you're at UW, join one of the Slacks and DM me. I'm usually pretty responsive throughout the day.
+							<ul>
+								<li><a href="https://computinged-uw.slack.com" target="_blank">ComputingEd@UW Slack</a>. Our Computing Education community.</li>
+								<li><a href="https://uwdub.slack.com" target="_blank">DUB Slack</a>. Our HCI + Design community.</li>
+							</ul>
+						</span>
+					}
 				/>
 
 				<Block 
