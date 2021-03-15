@@ -3371,6 +3371,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/decoding-data-feminism-1840471ae2a8",
+			"title": "Decoding Data Feminism",
+			"date": "2021.3",
+			"tags": ["book summary", "computing education", "society"],
+			"img": "datafem",
+			"alt": "A photograph of the Data Feminism jacket cover, showing the title \"Data Feminism\", authors Catherine D'Ignazio and Lauren F. Klein, and a backdrop of hundreds of data visualizations."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/zoom-is-a-vile-teaching-tool-cd19851a4cf9",
 			"title": "Zoom is a vile teaching tool",
 			"date": "2021.3",
