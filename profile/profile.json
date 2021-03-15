@@ -62,6 +62,7 @@
 			"doi": null,
 			"local": "Wang2021Falx.pdf",
 			"publisher": "ACM",
+			"award": ["best paper"],
 			"contribution": "Contributes a synthesizer-powered visualization tool that allows users to specify examples of how concrete data values should be rendered, and receive one or more data visualizations that transform data accordingly. Finds that users can effectively adopt Falx to create visualizations."
 		},
 		{
