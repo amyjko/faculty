@@ -240,7 +240,7 @@ class CER extends React.Component {
 							this.person("Shriram Krishnamurthi*", "https://cs.brown.edu/~sk/", "programming languages, pedagogy", "Computer Science", "Brown University", "USA"),
 							this.person("Celine Latulipe*", "https://celinelatulipe.wordpress.com/", "HCI, creativity, pedagogy", "Software and Information Systems", "UNC Charlotte", "USA"),
 							this.person("Michael J. Lee", "http://pixel42.com/", "HCI, educational games, diversity, learning technologies", "Informatics", "New Jersey Institute of Technology", "USA"),
-							this.person("Victor Lee", "http://victor-r-lee.com/", "learning sciences, computational thinking with board games, early childhood computational thinking, maker education", "Instructional Technology and Learning Sciences", "Utah State University", "USA"),
+							this.person("Victor Lee", "http://victor-r-lee.com/", "learning sciences, computational thinking with board games, early childhood computational thinking, maker education", "Graduate School of Education", "Stanford University", "USA"),
 							this.person("Leen-kiat Soh", "https://cse.unl.edu/~lksoh/", "multiagent systems, computer science education, and intelligent data analytics", "Computer Science and Engineering", "University of Nebraska, Lincoln", "USA"),
 							this.person("Colleen Lewis", "https://cs.illinois.edu/directory/profile/colleenl", "Understanding and optimizing learning; identifying and removing barriers", "Computer Science", "University of Illinois at Urbana-Champaign", "USA"),
 							this.person("Raymond Lister*", "http://www.uts.edu.au/staff/raymond.lister", "cognition, assessment, program understanding", "School of Software", "University of Technology, Sydney", "Australia"),
