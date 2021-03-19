@@ -328,7 +328,7 @@
 			"id": "cs1theory",
 			"kind":"journal article",
 			"authors": ["@bxie", "@dloksa", "@glnelson", "@mattjd", "Dongsheng Dong", "@kwikh", "@alextan", "@lkhwa", "@minli", "@ajko"],
-			"deadname": true,
+			"deadname": false,
 			"year": 2019,
 			"title": "A Theory of Instruction for Introductory Programming Skills",
 			"source": "Computer Science Education",
@@ -8046,13 +8046,17 @@
 		{
 			"id": "info200",
 			"alt": "A black and white version of an old painting with a child reading a newspaper",
-			"link": "https://canvas.uw.edu/courses/1355747",
+			"link": "https://canvas.uw.edu/courses/1449792",
 			"number": "INFO 200",
 			"level": "undergraduate",
 			"title": "Intellectual Foundations of Informatics",
 			"description": "This survey course covers big ideas in information, information technology, and information systems. Students learn the history of information, foundational concepts in information, the relationship between information and computing, skills in analyzing and designing information systems, and the role of information systems in society.",
 			"hours": 10,
 			"links": [
+				{
+					"description": "Amy's book for the course",
+					"link": "https://faculty.washington.edu/ajko/books/foundations-of-information/"
+				},
 				{
 					"description": "Medium post on the big ideas in the course",
 					"link": "https://medium.com/bits-and-behavior/big-ideas-about-information-c09e4d9c60bd"
