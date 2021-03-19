@@ -8288,11 +8288,25 @@
 			"commitment": { "start": null, "end": null, "hours": 3, "priority": 0 }
 		},
 		{
-			"title": "Faculty meetings",
+			"title": "Autumn faculty meetings",
 			"description": "iSchool",
 			"category": "service",
-			"annually": false,
-			"commitment": { "start": null, "end": null, "hours": 2, "priority": 0 }
+			"annually": true,
+			"commitment": { "start": "09-15", "end": "12-15", "hours": 2, "priority": 0 }
+		},
+		{
+			"title": "Winter faculty meetings",
+			"description": "iSchool",
+			"category": "service",
+			"annually": true,
+			"commitment": { "start": "01-01", "end": "03-15", "hours": 2, "priority": 0 }
+		},
+		{
+			"title": "Spring faculty meetings",
+			"description": "iSchool",
+			"category": "service",
+			"annually": true,
+			"commitment": { "start": "04-01", "end": "06-15", "hours": 2, "priority": 0 }
 		},
 		{
 			"title": "Ph.D. admissions",
