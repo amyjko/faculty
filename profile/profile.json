@@ -3373,6 +3373,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/2021-sigcse-technical-symposium-virtual-diffusion-9bd69858464a",
+			"title": "2021 SIGCSE Technical Symposium: Virtual Diffusion",
+			"date": "2021.3",
+			"tags": ["trip report", "computing education"],
+			"img": "sigcse21",
+			"alt": "A screenshot of the Pathable platform landing page, showing the SIGSE 2021 logo."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/decoding-data-feminism-1840471ae2a8",
 			"title": "Decoding Data Feminism",
 			"date": "2021.3",
