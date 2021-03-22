@@ -2187,6 +2187,20 @@
 		}
 	],
 	"people": [
+
+		{
+			"id": "jessiehl",
+			"name": "Jessie Huynh",
+			"active": true,
+			"advised": false,
+			"dept": "Design",
+			"coadvisor": null,
+			"bio": "Jessie is an undergraduate in the Design division in the School of Art + Art History + Design, and contributes to the STEP CS book.",
+			"url": "https://www.jessiehuynh.com",
+			"startdate": 2021,
+			"enddate": null,
+			"achievements": []
+		},
 		{
 			"id": "clwang",
 			"name": "Chenglong Wang",
