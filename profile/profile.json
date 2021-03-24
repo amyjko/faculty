@@ -6513,7 +6513,7 @@
 	"service": [
 		{
 			"title": "Executive Board Member",
-			"committee": "Expanding Computing Education Pathways, Broadening Participation in Computing",
+			"committee": "Expanding Computing Education Pathways",
 			"start": 2021,
 			"end": null,
 			"level": "national",
@@ -6540,8 +6540,8 @@
 			}
 		},
 		{
-			"title": "Committee Member",
-			"committee": "University of North Texas, Information Science, Academic Program Review Committee",
+			"title": "External Evaluator",
+			"committee": "University of North Texas, Information Science, Academic Program Review",
 			"level": "national",
 			"description": "I participated in a formal evaluation of the department's programs.",
 			"commitment": {
@@ -6553,7 +6553,7 @@
 		},
 		{
 			"title": "Committee Member",
-			"committee": "Computing Research Association’s Education Committee (CRA-E)",
+			"committee": "CRA-E",
 			"level": "international",
 			"description": "I work on projects that help create equitable pathways to participating in CS research.",
 			"commitment": {
@@ -8303,8 +8303,8 @@
 			"commitment": { "start": null, "end": null, "hours": 2, "priority": 1 }
 		},
 		{
-			"title": "Ph.D. student advising",
-			"description": "Meetings, feedback, and collaboration",
+			"title": "Advising",
+			"description": "Doctoral student meetings, feedback, and collaboration",
 			"category": "research",
 			"annually": false,
 			"commitment": { "start": null, "end": null, "hours": 6, "priority": 0 }
