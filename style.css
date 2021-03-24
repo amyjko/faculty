@@ -243,6 +243,11 @@ img.link {
 	100% { transform: translate(1px, -1px) rotate(-0.25deg); }
 }
 
+.commitment-notes {
+	font-size: 8pt;
+	line-height: 1.5em;
+}
+
 body .cv {
 	font-size: 12pt;
 	line-height: 1.4em;

@@ -207,9 +207,8 @@ class Commitments extends React.Component {
                             _.map(week.intersects, (intersect, index) => this.renderBar(intersect.commitment, intersect.overlap, false, "commitment-" + index))
                         }
                         </div>
-                        <br/>
                         {
-                            <small>
+                            <div className="commitment-notes">
                                 {_.map(
                                     week.intersects, 
                                     (intersect, index) => 
@@ -217,12 +216,12 @@ class Commitments extends React.Component {
                                             className={intersect.commitment.category}
                                             key={"name-" + index} 
                                         >
-                                                {index > 0 && week.intersects[index - 1].commitment.category !== intersect.commitment.category ? <br/> : null}
+                                                {/* {index > 0 && week.intersects[index - 1].commitment.category !== intersect.commitment.category ? <br/> : null} */}
                                                 {intersect.commitment.name}
                                                 {index < week.intersects.length - 1 ? <span> &sdot; </span> : null}
                                         </span>
                                 )}
-                            </small>
+                            </div>
                         }
                     </td>
                     <td key="total"><div className={hours > 45 ? "shake" : ""}  style={{animationDelay: "-" + Math.round(10 * Math.random()) / 10 + "s"}}>{hours + " hrs"}</div></td>
