@@ -2365,7 +2365,7 @@
 	 		"url": "https://www.linkedin.com/in/jenny-liang/",
 	 		"startdate": 2020,
 	 		"enddate": null,
-	 		"achievements": []
+			"achievements": [ "NSF Graduate Research Fellowship (2021)" ]
 	 	},
 		{
 	 		"id": "eboris",
@@ -2877,7 +2877,7 @@
 			"url": "https://resprit.com/",
 			"startdate": 2016,
 			"enddate": 2018,
-			"achievements": []
+			"achievements": [ "NSF Graduate Research Fellowship (2021)" ]
 		},
 		{
 			"id": "lkhwa",
