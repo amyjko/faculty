@@ -334,18 +334,19 @@ class Vita extends React.Component {
 				<p>All scores are <a href="http://www.washington.edu/assessment/course-evaluations/reports/course-reports/adjusted-medians/">adjusted combined medians</a>, which attempt to measure students' perceptions of the effectiveness of an instructor's teaching. The scale is from "Very Poor" (0) to "Excellent" (5).</p>
 
 				{
+					
+
 					this.getChunkList(
 						profile.getClasses(),
 						true,
-						course => _.orderBy(_.filter(course.offerings, offer => offer.score !== null), ["year"], ["asc"])[0].year,
-						course => _.orderBy(_.filter(course.offerings, offer => offer.score !== null), ["year"], ["desc"])[0].year,
+						course => _.orderBy(course.offerings, ["year"], ["asc"])[0].year,
+						course => _.orderBy(course.offerings, ["year"], ["desc"])[0].year,
 						course => course.number + " " + course.title,
 						"level",
 						"description",
 						course => "Taught " + _.filter(course.offerings, offer => offer.score !== null).length + " times",
 						course => "Mean course evaluation: " + (_.reduce(_.filter(course.offerings, offer => offer.score !== null), (sum, offer) => sum + offer.score, 0.0) / _.filter(course.offerings, offer => offer.score !== null).length).toPrecision(2) + "/5.0"
 					)
-
 				}
 
 				<h2>Doctoral Student Supervision</h2>
