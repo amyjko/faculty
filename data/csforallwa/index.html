@@ -1,0 +1,241 @@
+<html>
+
+    <head>
+        <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>        
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
+            body {
+                font-family: "Open Sans";
+                padding: 1em;
+                font-size: 13pt;
+            }
+
+            a {
+                color: black;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div id="dashboard"></div>
+
+        <script type="text/babel">
+        
+            class Dashboard extends React.Component {
+
+                constructor() {
+
+                    super()
+                    this.state = { 
+                        data: null,
+                        year: 2020,
+                        district: null,
+                        school: null
+                    };
+
+                    fetch("data.json")
+                        .then(response => response.json())
+                        .then(data => {
+                            // Yay, we got data! Set the state so the page renders.
+                            this.setState({ data: data });
+                        })
+                        .catch(err => { 
+                            // Uh oh, something bad happened. Set data to null to render an error.
+                            this.setState({ data: undefined });
+                        });
+
+                    this.handleYear = this.handleYear.bind(this);
+                    this.handleDistrict = this.handleDistrict.bind(this);
+                    this.handleSchool = this.handleSchool.bind(this);
+
+                }
+
+                handleYear(event) {
+                    this.setState({year: event.target.value})
+                }
+
+                handleDistrict(event) {
+                    this.setState({district: event.target.value || null, school: null})
+                }
+
+                handleSchool(event) {
+                    this.setState({school: event.target.value || null, district: null})
+                }
+
+                render() {
+
+                    if(this.state.data === null)
+                        return <p>Loading data...</p>;
+                    else if(this.state.data === undefined)
+                        return <p>Problem loading data...</p>;
+                    else {
+                        const data = this.state.data;
+
+                        const scope = 
+                            this.state.school !== null ? data[this.state.year].schools[this.state.school] :
+                            this.state.district !== null ? data[this.state.year].districts[this.state.district] :
+                            data[this.state.year].all;
+
+                        return <div>
+                            <p>
+                                The data shown below comes directly from <a href="https://www.k12.wa.us">OSPI</a> public data requests.
+                                Interpret this data cautiously:
+                            </p>
+                            <ul>
+                                <li>Many districts do not reliably report data to OSPI.</li>
+                                <li>Many districts label courses in ways that may not reflect the content actually taught.</li>
+                                <li>Data on race and gender may be incorrectly recorded.</li>
+                                <li>OSPI does not report data below a certain sample sizes to protect student identity.</li>
+                            </ul>
+                            <p>
+                                If you have questions about this data, or would like access to the raw data, <a href="mailto:ajko@uw.edu">write Amy Ko</a>.
+                            </p>
+                            <table className="table">
+                                <tbody>
+                                    <tr>
+                                        <td width="15%"><label for="year">Year</label></td>
+                                        <td>
+                                            <select name="year" value={this.state.year} onChange={this.handleYear}>
+                                                { Object.keys(data).map(year => <option value={year}>{year}</option>) }
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="district">District</label></td>
+                                        <td>
+                                            <select name="district" value={this.state.district || ""} onChange={this.handleDistrict}>
+                                                <option value={null}></option>
+                                                { Object.keys(data[this.state.year].districts).map(district => <option value={district}>{district}</option>) }
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="school">High School</label></td>
+                                        <td>
+                                            <select name="school" value={this.state.school || ""} onChange={this.handleSchool}>
+                                                <option value={""}></option>
+                                                { Object.keys(data[this.state.year].schools).map(school => <option value={school}>{school}</option>) }
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>{this.state.year}</strong> data for <strong>{this.state.district === null && this.state.school === null ? "all of Washington state" : this.state.district === null ? this.state.school : this.state.district}</strong>
+                                        </td>
+                                        <td>
+                                            { scope === null ? 
+                                                "This school did not report offering any CS classes" :
+                                                <div className="container">
+                                                    <div class="row">
+                                                        <div class="col-sm">
+                                                            <table className="table">
+                                                                <thead><tr><th>Teachers</th><th style={{textAlign: "right"}}>Count</th></tr></thead>
+                                                                <tbody>
+                                                                    {
+                                                                        scope.teachers === null ?
+                                                                            "This school did not report any CS teachers" :
+                                                                            Object.keys(scope.teachers).map(key => 
+                                                                                <tr>
+                                                                                    <td>{{
+                                                                                        "total": "Total",
+                                                                                        "nativeMale": "Native men",
+                                                                                        "asianMale": "Asian men",
+                                                                                        "blackMale": "Black men",
+                                                                                        "whiteMale": "White men",
+                                                                                        "hispanicMale": "Hispanic men",
+                                                                                        "piMale": "Pacific Islander men",
+                                                                                        "unknownMale": "Men of unknown race/ethnicity",
+                                                                                        "nativeFemale": "Native women",
+                                                                                        "asianFemale": "Asian women",
+                                                                                        "blackFemale": "Black women",
+                                                                                        "whiteFemale": "White women",
+                                                                                        "hispanicFemale": "Hispanic women",
+                                                                                        "piFemale": "Pacific Islander women",
+                                                                                        "unknownFemale": "Women of unknown race/ethnicity"
+                                                                                    }[key]}</td>
+                                                                                    <td style={{textAlign: "right"}}>{scope.teachers[key].toLocaleString()}</td>
+                                                                                </tr>
+                                                                            )
+                                                                    }
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="col-sm">
+                                                            <table className="table">
+                                                                <thead><tr><th>Courses</th><th style={{textAlign: "right"}}>Students</th></tr></thead>
+                                                                <tbody>
+                                                                    {
+                                                                        scope.courses === null ?
+                                                                            "This school did not report any CS courses" :
+                                                                            Object.keys(scope.courses).map(key => 
+                                                                                <tr>
+                                                                                    <td><em>{key}</em></td>
+                                                                                    <td style={{textAlign: "right"}}>{scope.courses[key].toLocaleString()}</td>
+                                                                                </tr>
+                                                                            )
+                                                                    }
+                                                                </tbody>
+                                                            </table>
+
+                                                        </div>
+                                                        <div class="col-sm">
+                                                            <table className="table">
+                                                                <thead><tr><th>Students</th><th style={{textAlign: "right"}}>Count</th></tr></thead>
+                                                                <tbody>
+                                                                    {
+                                                                        scope.students === null ?
+                                                                            "This school did not report any students completing CS courses" :
+                                                                            Object.keys(scope.students).map(key => 
+                                                                                <tr>
+                                                                                    <td>{{
+                                                                                        "total": "Total",
+                                                                                        "girls": "Girls",
+                                                                                        "boys": "Boys",
+                                                                                        "nonbinary": "Non-binary",
+                                                                                        "unknownGender": "Unknown gender",
+                                                                                        "asian": "Asian",
+                                                                                        "native": "Native",
+                                                                                        "hispanic": "Hispanic",
+                                                                                        "multiracial": "Multiracial",
+                                                                                        "white": "White",
+                                                                                        "black": "Black",
+                                                                                        "pi": "Pacific Islander",
+                                                                                        "unknownRaceEthnicity": "Unknown race/ethnicity",
+                                                                                        "SPED": "Special education",
+                                                                                        "nonSPED": "Non-special education",
+                                                                                        "unknownSPED": "Unknown special education status"
+                                                                                    }[key]}</td>
+                                                                                    <td style={{textAlign: "right"}}>{scope.students[key].toLocaleString()}</td>
+                                                                                </tr>
+                                                                            )
+                                                                    }
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>;
+                    }
+                }
+            }
+
+            const domContainer = document.querySelector('#dashboard');
+            ReactDOM.render(<Dashboard/>, domContainer);
+        </script>
+
+    </body>
+</html>
