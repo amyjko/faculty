@@ -1,0 +1,701 @@
+<html>
+
+    <head>
+        <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>        
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
+            body {
+                font-family: "Open Sans";
+                padding: 1em;
+                font-size: 13pt;
+            }
+            
+            .students {
+                vertical-align: middle;
+                margin-bottom: 1em;
+            }
+
+            .student {
+                display: inline-block;
+                width: 5em;
+                height: 5em;
+                line-height: 4em; /* Vertical alignment */
+                margin: 0.25em;
+                border-color: black;
+                border-style: solid;
+                border-radius: 5em;
+                font-size: 5px;
+                text-align: center;
+            }
+
+            .view {
+                display: inline-block;
+                margin-right: 1em;
+                font-size: 16pt;
+            }
+
+            .view:hover {
+                cursor: pointer;
+            }
+
+            .view.selected {
+                text-decoration: underline;
+            }
+
+            .view.selected:hover {
+                cursor: default;
+            }
+
+            h3 .small {
+                font-size: 12pt;
+            }
+
+            .progress {
+                display: inline-block;
+                text-align: center;
+                background-color: lightGray;
+                width: 2em;
+                height: 2em;
+                border-radius: 2em;
+            }
+
+            .progress.done {
+                background-color: rgb(50,50,50);
+            }
+
+            .table th {
+                font-weight: normal;
+                font-style: italic;
+            }
+
+            .filter {
+                display: inline-block;
+                opacity: 0.5;
+                margin-right: 1em;
+                cursor: pointer;
+            }
+
+            .filter.enabled {
+                opacity: 1.0;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div id="dashboard"></div>
+
+        <script type="text/babel">
+        
+            class Dashboard extends React.Component {
+
+                constructor() {
+
+                    super()
+                    this.state = { 
+                        data: null,
+                        view: "capacity",
+                        filters: {
+                            "gender": {
+                                "F": { label: "women", enabled: true },
+                                "M": { label: "men", enabled: true }
+                            },
+                            "class": {
+                                "Freshman": { label: "freshman", enabled: true },
+                                "Sophomore": { label: "sophomores", enabled: true },
+                                "Junior": { label: "juniors", enabled: true },
+                                "Senior": { label: "seniors", enabled: true }
+                            }                                
+                        }
+                    };
+
+                    // Retrieve the data.
+                    fetch("data.json")
+                        .then(response => response.json())
+                        .then(data => {
+                            // Yay, we got data! Set the state so the page renders.
+                            this.setStudents(data);
+                        })
+                        .catch(err => { 
+                            // Uh oh, something bad happened. Set data to null to render an error.
+                            console.error(err);
+                            this.setState({ data: undefined });
+                        });
+
+                }
+
+                // Compute some things not included in the data dump.
+                setStudents(data) {
+
+                    // Compute number of core completed for each student.
+                    data.students.forEach(student => {
+                        var coreCompleted = 0;
+                        var nonCapstoneCoreCompleted = 0;
+                        if(student.cse142) { coreCompleted++; }
+                        if(student.cse143) { coreCompleted++; }
+                        if(student.cse373) { coreCompleted++; }
+                        if(student.info200) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info201) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info300) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info330) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info340) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info350) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info360) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info380) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info490) { coreCompleted++; }
+                        if(student.info491) { coreCompleted++; }
+                        student.core = coreCompleted;
+
+                        // 13 core, 4 electives. Ignore electives beyond 4.
+                        student.percent = Math.round(100 * Math.min(student.core + Math.min(4, student.electives), 17) / 17);
+
+                        // Graduation prediction.
+                        student.graduating = nonCapstoneCoreCompleted >= 7 && student.electives >= 2;
+
+                    })
+
+                    this.setState({ data: data });
+
+                }
+
+                changeView(view) {
+                   this.setState({view: view});
+                }
+
+                toggleFilter(field, value) {
+                    var filters = this.state.filters;
+                    filters[field][value].enabled = !filters[field][value].enabled;
+                    this.setState({filters: filters});
+                }
+
+                render() {
+
+                    const views = {
+                        "capacity": CapacityView,
+                        "progress": ProgressView,
+                        "options": OptionsView,
+                        "class": ClassView,
+                        "gender": GenderView,
+                        "ethnicity": EthnicityView
+                    };
+
+                    // Show some loading feedback if we haven't loaded it yet.
+                    if(this.state.data === null)
+                        return <p>Loading data...</p>;
+                    // If we couldn't load, it, show an error.
+                    else if(this.state.data === undefined)
+                        return <p>Problem loading data...</p>;
+                    // Otherwise, render the views.
+                    else {
+
+                        const data = this.state.data;
+
+                        // By default, sort the students by class, gender, then race
+                        var sortedStudents = data.students.sort((a, b) => {
+                            const classes = { "Freshman": 1, "Sophomore": 2, "Junior": 3, "Senior": 4 };
+                            return a.class !== b.class ? classes[a.class] - classes[b.class] :
+                                a.gender !== b.gender ? a.gender === "M" ? 1 : -1 :
+                                a.ethnicity.localeCompare(b.ethnicity)
+                        })
+
+                        // Filter. Each student is visible if they do not match any of the disabled filters.
+                        var filteredStudents = sortedStudents.filter(student =>
+                            // For each field, does the student match one of the enabled values?
+                            Object.keys(this.state.filters).reduce((fieldAllowed, field) =>
+                                fieldAllowed && Object.keys(this.state.filters[field]).reduce((matchesValue, value) =>
+                                   matchesValue || (this.state.filters[field][value].enabled && student[field] === value), false),
+                            true)
+                        );
+
+                        return <div>
+                            <h1>{filteredStudents.length} Informatics students</h1>
+                            <hr/>
+                            <div>
+                                {Object.keys(views).map(view => <ViewSelector selected={this.state.view === view} dashboard={this} view={view} />)}
+                            </div>
+                            <hr/>
+                            <div>
+                                {
+                                    Object.keys(this.state.filters).map(field => {
+                                        var values = this.state.filters[field];
+                                        var filters = Object.keys(values).map(value => <FilterSelector dashboard={this} field={field} value={value} label={values[value].label} enabled={values[value].enabled} />);
+                                        return filters;
+                                    })
+                                }
+                            </div>
+                            <hr/>
+                            {
+                                React.createElement(views[this.state.view], { students: filteredStudents })
+                            }
+                        </div>
+
+                    }
+                }
+            }
+
+            class FilterSelector extends React.Component {
+
+                constructor() {
+                    super();
+
+                    this.handleClick = this.handleClick.bind(this);
+
+                }
+
+                handleClick() {
+
+                    this.props.dashboard.toggleFilter(this.props.field, this.props.value);
+
+                }
+
+                render() {
+
+                    return <div
+                            className={this.props.enabled  ? "filter enabled" : "filter"}
+                            onClick={this.handleClick}
+                            >
+                        {this.props.label}
+                    </div>
+
+                }
+
+            }
+
+            class ViewSelector extends React.Component {
+
+                constructor() {
+                    super();
+
+                    this.handleClick = this.handleClick.bind(this);
+
+                }
+
+                handleClick() {
+
+                    if(!this.props.selected)
+                        this.props.dashboard.changeView(this.props.view);
+
+                }
+
+                render() {
+
+                    return <div
+                            className={this.props.selected  ? "view selected" : "view"}
+                            onClick={this.handleClick}
+                            >
+                        {this.props.view}
+                    </div>
+
+                }
+
+            }
+
+            class StudentView extends React.Component {
+
+                render() {
+
+                    const gender = {
+                        "M": "1em",
+                        "F": "5em",
+                        "": "3em"
+                    }
+
+                    const ethnicityColors = {
+                        "kenyan": "rgb(102, 61, 53)",
+                        "somali": "rgb(102, 61, 53)",
+                        "african": "rgb(102, 61, 53)",
+                        "ethiopian": "rgb(102, 61, 53)",
+
+                        "bangladeshi": "#8D5524",
+                        "pakistani": "#8D5524",
+                        "asian indian": "#8D5524",
+                        "nepali": "#8D5524",
+
+                        "asian": "#F1C27D",
+                        "korean": "#F1C27D",
+                        "filipino": "#F1C27D",
+                        "taiwanese": "#F1C27D",
+                        "burmese": "#F1C27D",
+                        "cambodian": "#F1C27D",
+                        "japanese": "#F1C27D",
+                        "indonesian": "#F1C27D",
+                        "vietnamese": "#F1C27D",
+                        "singaporean": "#F1C27D",
+                        "cham": "#F1C27D",
+                        "mongolian": "#F1C27D",
+                        "mien": "#F1C27D",
+
+                        "pacific islander": "#E0AC69",
+                        "other asian am": "#E0AC69",
+                        "am ind - no doc": "#E0AC69",
+                        "american indian": "#E0AC69",
+                        "bristol bay": "#E0AC69",
+
+                        "eurasian": "#E0AC69",
+
+                        "white": "#FFDBAC",
+                        "chinese": "#F1C27D",
+                        "black/african amer": "#8D5524",
+                        "canadian indian": "#F1C27D",
+
+                        "not indicated": "lightGray"
+                    }
+
+                    const classLabels = {
+                        "Freshman": "\u25CF",
+                        "Sophomore": "\u25CF\u25CF",
+                        "Junior": "\u25CF\u25CF\u25CF",
+                        "Senior": "\u25CF\u25CF\u25CF\u25CF",
+                    }
+
+                    var ethnicityColor = this.props.ethnicity.toLowerCase() in ethnicityColors ? ethnicityColors[this.props.ethnicity.toLowerCase()] : "lightGray";
+
+                    return <div 
+                        className="student" 
+                        style={
+                            {
+                                // borderWidth: gender[this.props.gender],
+                                borderRadius: gender[this.props.gender],
+                                backgroundColor: ethnicityColors[this.props.ethnicity.toLowerCase()]
+                            }
+                        }>
+                        {classLabels[this.props.class]}
+                    </div>
+                }
+
+            }
+
+            class GenderView extends React.Component {
+
+                render() {
+
+                    const men = this.props.students.filter(student => student.gender === "M");
+                    const women = this.props.students.filter(student => student.gender === "F");
+                    const unspecified = this.props.students.filter(student => student.gender === "");
+                    const total = this.props.students.length;
+
+                    return <div>                        
+                        <p>UW only reports binary gender identities.</p>
+                        <div className="container-fluid">
+                            <div className="row">
+                                <GroupView header="Women" students={women} total={total} columns="6"/>
+                                <GroupView header="Men" students={men} total={total}  columns="6"/>
+                                { unspecified.length === 0 ? null : <GroupView header="Unspecified" students={unspecified} total={total} /> }
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            }
+
+            class ClassView extends React.Component {
+
+                render() {
+
+                    const freshman = this.props.students.filter(student => student.class === "Freshman");
+                    const sophomores = this.props.students.filter(student => student.class === "Sophomore");
+                    const juniors = this.props.students.filter(student => student.class === "Junior");
+                    const seniors = this.props.students.filter(student => student.class === "Senior");
+                    const total = this.props.students.length;
+
+                    return <div>                        
+                        <p>UW class standing is determined by credits.</p>
+                        <div className="container-fluid">
+                            <div className="row">
+                                <GroupView header="Freshman" students={freshman} total={total} columns="6"/>
+                                <GroupView header="Sophomores" students={sophomores} total={total} columns="6"/>
+                                <GroupView header="Juniors" students={juniors} total={total} columns="6"/>
+                                <GroupView header="Seniors" students={seniors} total={total} columns="6"/>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                }
+
+            class EthnicityView extends React.Component {
+
+                render() {
+                    return <SortedGroupsView
+                        students={this.props.students}
+                        property="ethnicity"
+                        note="Students' self-reported ethnicity description."
+                        labels={
+                            {
+                                "WHITE": "White",
+                                "NOT INDICATED": "Unknown",
+                                "ASIAN INDIAN": "Asian Indian",
+                                "BLACK/AFRICAN AMER": "Black",
+                                "AM IND - NO DOC": "American Indian",
+                                "AMERICAN INDIAN": "American Indian",
+                                "PACIFIC ISLANDER": "Pacific Islander",
+                                "OTHER ASIAN AM": "Asian American",
+                                "CANADIAN INDIAN": "Canadian Indian",
+                                "ASIAN": "Asian",
+                                "KOREAN": "Korean",
+                                "VIETNAMESE": "Vietnamese",
+                                "FILIPINO": "Filipino",
+                                "TAIWANESE": "Taiwanese",
+                                "PAKISTANI": "Pakistani",
+                                "NEPALI": "Nepali",
+                                "CAMBODIAN": "Cambodian",
+                                "CHINESE": "Chinese",
+                                "BANGLADESHI": "Bangladeshi",
+                                "JAPANESE": "Japanese",
+                                "SOMALI": "Somali",
+                                "AFRICAN": "African",
+                                "CHAM": "Cham",
+                                "MONGOLIAN": "Mongolian",
+                                "SINGAPOREAN": "Singaporean",
+                                "BRISTOL BAY": "Bristol Bay",
+                                "EURASIAN": "Eurasian", 
+                                "KENYAN": "Kenyan",
+                                "MIEN": "Mien",
+                                "ETHIOPIAN": "Ethiopean",
+                                "BURMESE": "Burmese",
+                                "INDONESIAN": "Indonesian"
+                            }
+                        }
+                    />;
+                }
+
+            }
+
+            class OptionsView extends React.Component {
+
+                render() {
+                    return <SortedGroupsView
+                        students={this.props.students}
+                        property="option"
+                        note="Students' declared degree options. (This lags; students may only declare near graduation."
+                        labels={
+                            {
+                                "DS": "Data Science",
+                                "IAC": "Information Assurance & Cybersecurity",
+                                "BHI": "Biomedical Health Informatics",
+                                "IA": "Information Architecture"
+                            }
+                        }
+                    />;
+                }
+
+            }
+
+            class ProgressView extends React.Component {
+
+                render() {
+
+                    var sorted = this.props.students.sort((a, b) => {
+                        return a.percent !== b.percent ? b.percent - a.percent : a.gender !== b.gender ? a.gender === "M" ? 1 : -1 : a.ethnicity.localeCompare(b.ethnicity);
+                    });
+
+                    var headers = ["info200", "info201", "cse142", "cse143", "cse373", "info300", "info330", "info340", "info350", "info360", "info380", "info490", "info491"];
+
+                    return <div>
+                        <p>
+                            Core and elective courses completed by students. 
+                            Progress % is the proportion of the minimum 14 core and 4 electives required to graduate. 
+                            The last column predicts graduation based on the assumption that students who have completed all but one non-capstone core and at least 2 electives is likely to graduate this quarter.</p>
+                        <table className="table">
+                            <tbody>
+                                <tr>
+                                    <th>Student</th>
+                                    { headers.map(header => 
+                                        <th>
+                                            {header.replace("info", "").replace("cse", "")}
+                                            <br/><small>{this.props.students.filter(student => student[header]).length}</small>
+                                            <br/><small>{Math.round(100 * this.props.students.filter(student => student[header]).length / this.props.students.length)}%</small>
+                                        </th>) }
+                                    <th>
+                                        Electives
+                                        <br/><small>{this.props.students.filter(student => student.electives >= 4).length}&ge;4</small>
+                                        <br/><small>{Math.round(100 * this.props.students.filter(student => student.electives >= 4).length / this.props.students.length)}</small>
+                                    </th>
+                                    <th>%</th>
+                                    <th>
+                                        Done?
+                                        <br/><small>{this.props.students.filter(student => student.graduating).length}</small>
+                                    </th>
+                                </tr>
+                                { 
+                                    sorted.map(student =>
+                                        <tr>
+                                            <td><StudentView {...student} /></td>
+                                            <CourseProgressView course="CSE 142" done={student.cse142} />
+                                            <CourseProgressView course="CSE 143" done={student.cse143} />
+                                            <CourseProgressView course="CSE 373" done={student.cse373} />
+                                            <CourseProgressView course="INFO 200" done={student.info200} />
+                                            <CourseProgressView course="INFO 201" done={student.info201} />
+                                            <CourseProgressView course="INFO 300" done={student.info300} />
+                                            <CourseProgressView course="INFO 330" done={student.info330} />
+                                            <CourseProgressView course="INFO 340" done={student.info340} />
+                                            <CourseProgressView course="INFO 350" done={student.info350} />
+                                            <CourseProgressView course="INFO 360" done={student.info360} />
+                                            <CourseProgressView course="INFO 380" done={student.info380} />
+                                            <CourseProgressView course="INFO 490" done={student.info490} />
+                                            <CourseProgressView course="INFO 491" done={student.info491} />
+                                            <CourseProgressView course="Electives" done={student.electives > 4} number={student.electives} />
+                                            <td>{Math.round(100 * Math.min(student.core + Math.min(4, student.electives), 17) / 17)}%</td>
+                                            <CourseProgressView course="Graduation prediction" done={student.graduating} />
+                                        </tr>
+                                    )}
+                            </tbody>
+                        </table>
+                    </div>
+
+                }
+
+            }
+
+            class CourseProgressView extends React.Component {
+                render() {
+                    return <td><div title={this.props.course} className={this.props.done ? "progress done" : "progress"}></div>&nbsp;&nbsp;{this.props.number}</td>
+                }
+            }
+
+            class CapacityView extends React.Component {
+
+                render() {
+
+                    var total = this.props.students.length;
+
+                    // The capacity is the smallest of the remaining seats in next year's offerings, assuming 70 seats for minors.
+                    var seatsForMinors = 50;
+                    var coreSeats = 350;
+                    var capacity = Math.min(
+                        // coreSeats - seatsForMinors - this.props.students.filter(student => !student.info300).length,
+                        coreSeats - seatsForMinors - this.props.students.filter(student => !student.info330).length,
+                        coreSeats - seatsForMinors - this.props.students.filter(student => !student.info340).length,
+                        coreSeats - seatsForMinors - this.props.students.filter(student => !student.info350).length,
+                        coreSeats - seatsForMinors - this.props.students.filter(student => !student.info360).length,
+                        coreSeats - seatsForMinors - this.props.students.filter(student => !student.info380).length
+                    );
+
+                    return <div>
+                        <p>
+                            These are the students still in need of core courses. 
+                            If 
+                            1) there are 350 seats in these core in the next 4 quarters, 
+                            2) we reserve 50 seats in each core for minors,
+                            3) every students' schedule is compable with core offerings,
+                            4) every student shown takes the core in the next 4 quarters, 
+                            5) every admitted student needs to take every core in the next 4 quarters,
+                            6) students delay INFO 300 until their last year,
+                            we only have <strong>{capacity}</strong> for new majors in the next year.
+                        </p>
+                        <div className="container-fluid">
+                            <div className="row">
+                                <GroupView 
+                                    header="INFO 300"
+                                    students={this.props.students.filter(student => !student.info300)} 
+                                    total={total} 
+                                    columns={4}
+                                />
+                                <GroupView 
+                                    header="INFO 330"
+                                    students={this.props.students.filter(student => !student.info330)} 
+                                    total={total} 
+                                    columns={4}
+                                />
+                                <GroupView 
+                                    header="INFO 340"
+                                    students={this.props.students.filter(student => !student.info340)} 
+                                    total={total} 
+                                    columns={4}
+                                />
+                                <GroupView 
+                                    header="INFO 350"
+                                    students={this.props.students.filter(student => !student.info350)} 
+                                    total={total} 
+                                    columns={4}
+                                />
+                                <GroupView 
+                                    header="INFO 360"
+                                    students={this.props.students.filter(student => !student.info360)} 
+                                    total={total} 
+                                    columns={4}
+                                />
+                                <GroupView 
+                                    header="INFO 380"
+                                    students={this.props.students.filter(student => !student.info380)} 
+                                    total={total} 
+                                    columns={4}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            }
+
+            class SortedGroupsView extends React.Component {
+
+                render() {
+
+                    // Gather all of the ethnicities, counting their frequency.
+                    var counts = {}
+                    this.props.students.forEach(student => { student[this.props.property] in counts ? counts[student[this.props.property]]++ : counts[student[this.props.property]] = 1 })
+
+                    // Remember the total number of students.
+                    const total = this.props.students.length;
+
+                    // Sort the keys by frequency.
+                    var sortedKeys = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+
+                    const optionLabels = {
+                        "DS": "Data Science",
+                        "IAC": "Information Assurance & Cybersecurity",
+                        "BHI": "Biomedical Health Informatics",
+                        "IA": "Information Architecture"
+                    }
+
+                    return <div>
+                        
+                        <p>{this.props.note}</p>
+                        <div className="container-fluid">
+                            <div className="row">
+                                {
+                                    sortedKeys.map(
+                                        key => 
+                                            <GroupView 
+                                                header={key in this.props.labels ? this.props.labels[key] : key} 
+                                                students={this.props.students.filter(student => student[this.props.property] === key)} 
+                                                total={total} 
+                                                columns={4}
+                                            />)
+                                }
+                            </div>
+                        </div>
+
+                    </div>
+                }
+
+            }
+
+
+            class GroupView extends React.Component {
+
+                render() {
+                    return <div className={"col-md-" + this.props.columns}>
+                        <h3>{this.props.header} <span className="small">{this.props.students.length} ({Math.round(100 * this.props.students.length / this.props.total)}%)</span></h3>
+                        <div className="students">{this.props.students.map(student => <StudentView {...student}/>)}</div>
+                    </div>
+                }
+
+            }
+
+            const domContainer = document.querySelector('#dashboard');
+            ReactDOM.render(<Dashboard/>, domContainer);
+
+        </script>
+
+    </body>
+</html>
