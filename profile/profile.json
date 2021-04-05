@@ -8193,7 +8193,7 @@
 			],
 			"offerings": [
 				{ "year": 2022, "term": 2, "size": 35, "score": null },
-				{ "year": 2021, "term": 2, "size": 35, "score": null },
+				{ "year": 2021, "term": 2, "size": 35, "score": 4.2 },
 				{ "year": 2020, "term": 2, "size": 35, "score": 4.9 },
 				{ "year": 2019, "term": 2, "size": 34, "score": 4.8 },
 				{ "year": 2018, "term": 2, "size": 33, "score": 4.8 }
