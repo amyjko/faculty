@@ -37,7 +37,7 @@
 
             .view {
                 display: inline-block;
-                margin-right: 1em;
+                margin-right: 0.75em;
                 font-size: 16pt;
             }
 
@@ -99,6 +99,138 @@
 
         <script type="text/babel">
         
+            var prefixes = {
+                "A A": "Aeronautics and Astronautics",
+                "A CMPT": "Applied Computing",
+                "AAS": "Asian American Studies",
+                "ACCTG": "Accounting",
+                "ACMS": "Applied & Computational Mathematical Sciences",
+                "AMATH": "Applied Mathematics",
+                "AES": "American Ethnic Studies",
+                "AFRAM": "Afro-American Studies",
+                "AIS": "American Indian Studies",
+                "ANTH": "Anthropology",
+                "ARCH": "Architecture",
+                "ARCHY": "Archaeology",
+                "ART": "Art",
+                "ART H": "Art History",
+                "ASIAN": "Asian Languages and Literature",
+                "ASTR": "Astronomy",
+                "ATM S": "Atmospheric Sciences",
+                "B BUS": "Business Administration",
+                "B A": "Business Administration",
+                "B IMD": "Interactive Media Design",
+                "BIO A": "Biocultural Anthropology",
+                "BIOCHM": "Biochemistry",
+                "BIOEN": "Bioengineering",
+                "BIOL": "Biology",
+                "BOTANY": "Botany",
+                "B STR": "Biological Structure",
+                "CEE": "Civil and Environmental Engineering",
+                "CEP": "Community, Environment, and Planning",
+                "CHEM": "Chemistry",
+                "CHEM E": "Chemical Engineering",
+                "CHID": "Comparative History of Ideas",
+                "CHIN": "Chinese",
+                "CHSTU": "Chicano Studies",
+                "CLAS": "Classics",
+                "C LIT": "Comparative Literature",
+                "C SCI": "Computer Science",
+                "COM": "Communication",
+                "CFRM": "Computational Finance & Risk Management",
+                "CMP E": "Computer Engineering",
+                "CSE": "Computer Science and Engineering",
+                "CSSE": "Computer Science & Software Engineering",
+                "DANCE": "Dance",
+                "DANISH": "Danish",
+                "DESIGN": "Design",
+                "D HYG": "Dental Hygiene",
+                "DRAMA": "Drama",
+                "ECO": "Education, Communities, and Organizations",
+                "ECON": "Economics",
+                "EDUC": "Education",
+                "E E": "Electrical Engineering",
+                "ENGL": "English",
+                "ENGR": "Engineering",
+                "ENV H": "Environmental Health",
+                "ENVIR": "Program on the Environment",
+                "ENTRE": "Entreprenurship",
+                "ESRM": "Environmental Science and Resource Management",
+                "ESS": "Earth and Space Sciences",
+                "EURO": "European History",
+                "FINANC": "Finance",
+                "FISH": "Fisheries",
+                "FRENCH": "French",
+                "FSNH": "Food Systems, Nutrition, and Health",
+                "GENOME": "Genome Sciences",
+                "GEN ST": "General Studies",
+                "GEOG": "Geography",
+                "GERMAN": "Germanics",
+                "GREEK": "Greek",
+                "GWSS": "Gender, Women, and Sexuality Studies",
+                "HCDE": "Human Centered Design and Engineering",
+                "HEBR": "Hebrew",
+                "HIHIME": "Health Informatics & Health Information Management",
+                "HIST": "History",
+                "HRMGT": "Human Resource Management",
+                "HSTAA": "History of the Americas",
+                "HSTAM": "Ancient and Medieval History",
+                "HSTAS": "History of Asia",
+                "HSTEU": "Modern European History",
+                "IND E": "Industrial Engineering",
+                "INDIV": "Individualized Studies",
+                "INFO": "Informatics",
+                "I S": "Information Systems",
+                "ITAL": "Italian",
+                "JAPAN": "Japanese",
+                "KOREAN": "Korean",
+                "LAB M": "Laboratory Medicine",
+                "L ARCH": "Landscape Architecture",
+                "LATIN": "Latin",
+                "LING": "Linguistics",
+                "LSJ": "Laws, Societies, and Justice",
+                "MATH": "Mathematics",
+                "M E": "Mechanical Engineering",
+                "MICRO": "Microbiology",
+                "MICROM": "Microbiology",
+                "MKTG": "Marketing",
+                "MS E": "Materials Science and Engineering",
+                "MUSIC": "Music",
+                "NEUSCI": "Neuroscience",
+                "NORW": "Norwegian",
+                "NURS": "Nursing",
+                "NUTR": "Nutritional Science",
+                "OCEAN": "Oceanography",
+                "OSCM": "Business Administration",
+                "O E": "Organization and Environment",
+                "PHIL": "Philosophy",
+                "PHYS": "Physics",
+                "POL S": "Political Science",
+                "PH": "Public Health",
+                "PSYCH": "Psychology",
+                "QMETH": "Quantitative Methods",
+                "R E": "Real Estate",
+                "REHAB": "Rehabilitation Medicine",
+                "RELIG": "Comparative Religion",
+                "RUSS": "Russian",
+                "SCAND": "Scandinavian",
+                "SIS": "International Studies",
+                "SISA": "Asian Studies",
+                "SISLA": "Latin American & Caribbean Studies",
+                "SISAF": "African Studies",
+                "SISEA": "East Asian Studies",
+                "SISSA": "South Asian Studies",
+                "SOC": "Sociology",
+                "SOC WF": "Social Welfare",
+                "SPAN": "Spanish",
+                "SPHSC": "Speech and Hearing Sciences",
+                "STAT": "Statistics",
+                "SWED": "Swedish",
+                "TCSCI": "Computer Science & Systems",
+                "URBDP": "Urban Planning",
+                "ZOOL": "Zoology"
+            };
+
             class Dashboard extends React.Component {
 
                 constructor() {
@@ -164,6 +296,11 @@
                         // Graduation prediction.
                         student.graduating = nonCapstoneCoreCompleted >= 7 && student.electives >= 2;
 
+                        // Translate the major codes into human-readable labels. Split the list by commas,
+                        // then split each major by dashes and grab the prefix. Merge into set to remove duplicates,
+                        // spread back into a list, then join by commas again.
+                        student.major = [... new Set(student.major.split(", ").map(major => major.split("-")[1]))].map(major => major in prefixes ? prefixes[major] : major).join(", ");
+
                     })
 
                     this.setState({ data: data });
@@ -189,8 +326,10 @@
                         "class": ClassView,
                         "gender": GenderView,
                         "ethnicity": EthnicityView,
-                        "firstgen": FirstGenView,
-                        "transfer": TransferView
+                        "1st gen": FirstGenView,
+                        "transfer": TransferView,
+                        "majors": MajorsView,
+                        "minors": MinorsView
                     };
 
                     // Show some loading feedback if we haven't loaded it yet.
@@ -221,8 +360,13 @@
                             true)
                         );
 
+                        // Filter minors
+                        filteredStudents = this.state.view === "minors" ? 
+                            filteredStudents.filter(student => student.minor) : 
+                            filteredStudents.filter(student => !student.minor);
+
                         return <div>
-                            <h1>{filteredStudents.length} Informatics students</h1>
+                            <h1>{filteredStudents.length} Informatics { this.state.view === "minors" ? "minors" : "majors" }</h1>
                             <hr/>
                             <div>
                                 {Object.keys(views).map(view => <ViewSelector selected={this.state.view === view} dashboard={this} view={view} />)}
@@ -400,6 +544,36 @@
                             </div>
                         </div>
                     </div>
+                }
+
+            }
+
+            class MajorsView extends React.Component {
+
+                render() {
+
+                    return <SortedGroupsView
+                        students={this.props.students}
+                        property="major"
+                        note={"The " + [... new Set(this.props.students.map(student => student.major))].length + " majors of majors."}
+                        labels={{}}
+                    />;
+
+                }
+
+            }
+
+            class MinorsView extends React.Component {
+
+                render() {
+
+                    return <SortedGroupsView
+                        students={this.props.students}
+                        property="major"
+                        note={"The " + [... new Set(this.props.students.map(student => student.major))].length + " majors of minors."}
+                        labels={{}}
+                    />;
+
                 }
 
             }
