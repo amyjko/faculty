@@ -16,7 +16,7 @@
                 padding: 1em;
                 font-size: 13pt;
             }
-            
+
             .students {
                 vertical-align: middle;
                 margin-bottom: 1em;
@@ -70,6 +70,10 @@
                 background-color: rgb(50,50,50);
             }
 
+            .progress.enrolled {
+                background-color: rgb(50,150,50);
+            }
+
             .table th {
                 font-weight: normal;
                 font-style: italic;
@@ -113,7 +117,7 @@
                                 "Sophomore": { label: "sophomores", enabled: true },
                                 "Junior": { label: "juniors", enabled: true },
                                 "Senior": { label: "seniors", enabled: true }
-                            }                                
+                            } 
                         }
                     };
 
@@ -139,19 +143,19 @@
                     data.students.forEach(student => {
                         var coreCompleted = 0;
                         var nonCapstoneCoreCompleted = 0;
-                        if(student.cse142) { coreCompleted++; }
-                        if(student.cse143) { coreCompleted++; }
-                        if(student.cse373) { coreCompleted++; }
-                        if(student.info200) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info201) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info300) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info330) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info340) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info350) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info360) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info380) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info490) { coreCompleted++; }
-                        if(student.info491) { coreCompleted++; }
+                        if(student.cse142 > 0) { coreCompleted++; }
+                        if(student.cse143 > 0) { coreCompleted++; }
+                        if(student.cse373 > 0) { coreCompleted++; }
+                        if(student.info200 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info201 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info300 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info330 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info340 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info350 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info360 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info380 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info490 > 0) { coreCompleted++; }
+                        if(student.info491 > 0) { coreCompleted++; }
                         student.core = coreCompleted;
 
                         // 13 core, 4 electives. Ignore electives beyond 4.
@@ -184,7 +188,9 @@
                         "options": OptionsView,
                         "class": ClassView,
                         "gender": GenderView,
-                        "ethnicity": EthnicityView
+                        "ethnicity": EthnicityView,
+                        "firstgen": FirstGenView,
+                        "transfer": TransferView
                     };
 
                     // Show some loading feedback if we haven't loaded it yet.
@@ -313,6 +319,7 @@
                         "somali": "rgb(102, 61, 53)",
                         "african": "rgb(102, 61, 53)",
                         "ethiopian": "rgb(102, 61, 53)",
+                        "black/african amer": "rgb(102, 61, 53)",
 
                         "bangladeshi": "#8D5524",
                         "pakistani": "#8D5524",
@@ -338,12 +345,13 @@
                         "am ind - no doc": "#E0AC69",
                         "american indian": "#E0AC69",
                         "bristol bay": "#E0AC69",
+                        
+                        "hispanic": "#E0AC69",
 
                         "eurasian": "#E0AC69",
 
                         "white": "#FFDBAC",
                         "chinese": "#F1C27D",
-                        "black/african amer": "#8D5524",
                         "canadian indian": "#F1C27D",
 
                         "not indicated": "lightGray"
@@ -392,6 +400,46 @@
                             </div>
                         </div>
                     </div>
+                }
+
+            }
+
+            class FirstGenView extends React.Component {
+
+                render() {
+
+                    const firstgen = this.props.students.filter(student => student.firstgen);
+                    const nthgen = this.props.students.filter(student => !student.firstgen);
+                    const total = this.props.students.length;
+
+                    return <div>                        
+                            <div className="container-fluid">
+                                <div className="row">
+                                    <GroupView header="First generation student" students={firstgen} total={total} columns="6"/>
+                                    <GroupView header="Nth generation student" students={nthgen} total={total}  columns="6"/>
+                                </div>
+                            </div>
+                        </div>
+                }
+
+            }
+
+            class TransferView extends React.Component {
+
+                render() {
+
+                    const transfer = this.props.students.filter(student => student.transfer);
+                    const not = this.props.students.filter(student => !student.transfer);
+                    const total = this.props.students.length;
+
+                    return <div>                        
+                            <div className="container-fluid">
+                                <div className="row">
+                                    <GroupView header="2-year transfer student" students={transfer} total={total} columns="6"/>
+                                    <GroupView header="Non-transfer students" students={not} total={total}  columns="6"/>
+                                </div>
+                            </div>
+                        </div>
                 }
 
             }
@@ -461,7 +509,8 @@
                                 "MIEN": "Mien",
                                 "ETHIOPIAN": "Ethiopean",
                                 "BURMESE": "Burmese",
-                                "INDONESIAN": "Indonesian"
+                                "INDONESIAN": "Indonesian",
+                                "HISPANIC": "Hispanic"
                             }
                         }
                     />;
@@ -517,7 +566,7 @@
                                     <th>
                                         Electives
                                         <br/><small>{this.props.students.filter(student => student.electives >= 4).length}&ge;4</small>
-                                        <br/><small>{Math.round(100 * this.props.students.filter(student => student.electives >= 4).length / this.props.students.length)}</small>
+                                        <br/><small>{Math.round(100 * this.props.students.filter(student => student.electives >= 4).length / this.props.students.length)}%</small>
                                     </th>
                                     <th>%</th>
                                     <th>
@@ -557,7 +606,7 @@
 
             class CourseProgressView extends React.Component {
                 render() {
-                    return <td><div title={this.props.course} className={this.props.done ? "progress done" : "progress"}></div>&nbsp;&nbsp;{this.props.number}</td>
+                    return <td><div title={this.props.course} className={(this.props.done === 2 || this.props.done === true) ? "progress done" : this.props.done === 1 ? "progress enrolled" : "progress"}></div>&nbsp;&nbsp;{this.props.number}</td>
                 }
             }
 
@@ -571,12 +620,13 @@
                     var seatsForMinors = 50;
                     var coreSeats = 350;
                     var capacity = Math.min(
-                        // coreSeats - seatsForMinors - this.props.students.filter(student => !student.info300).length,
-                        coreSeats - seatsForMinors - this.props.students.filter(student => !student.info330).length,
-                        coreSeats - seatsForMinors - this.props.students.filter(student => !student.info340).length,
-                        coreSeats - seatsForMinors - this.props.students.filter(student => !student.info350).length,
-                        coreSeats - seatsForMinors - this.props.students.filter(student => !student.info360).length,
-                        coreSeats - seatsForMinors - this.props.students.filter(student => !student.info380).length
+                        // We ignore info 300 in this estimate, since students often delay it until their senior year.
+                        // coreSeats - seatsForMinors - this.props.students.filter(student => student.info300 === 0).length,
+                        coreSeats - seatsForMinors - this.props.students.filter(student => student.info330 === 0).length,
+                        coreSeats - seatsForMinors - this.props.students.filter(student => student.info340 === 0).length,
+                        coreSeats - seatsForMinors - this.props.students.filter(student => student.info350 === 0).length,
+                        coreSeats - seatsForMinors - this.props.students.filter(student => student.info360 === 0).length,
+                        coreSeats - seatsForMinors - this.props.students.filter(student => student.info380 === 0).length
                     );
 
                     return <div>
@@ -595,37 +645,37 @@
                             <div className="row">
                                 <GroupView 
                                     header="INFO 300"
-                                    students={this.props.students.filter(student => !student.info300)} 
+                                    students={this.props.students.filter(student => student.info300 === 0)} 
                                     total={total} 
                                     columns={4}
                                 />
                                 <GroupView 
                                     header="INFO 330"
-                                    students={this.props.students.filter(student => !student.info330)} 
+                                    students={this.props.students.filter(student => student.info330 === 0)} 
                                     total={total} 
                                     columns={4}
                                 />
                                 <GroupView 
                                     header="INFO 340"
-                                    students={this.props.students.filter(student => !student.info340)} 
+                                    students={this.props.students.filter(student => student.info340 === 0)} 
                                     total={total} 
                                     columns={4}
                                 />
                                 <GroupView 
                                     header="INFO 350"
-                                    students={this.props.students.filter(student => !student.info350)} 
+                                    students={this.props.students.filter(student => student.info350 === 0)} 
                                     total={total} 
                                     columns={4}
                                 />
                                 <GroupView 
                                     header="INFO 360"
-                                    students={this.props.students.filter(student => !student.info360)} 
+                                    students={this.props.students.filter(student => student.info360 === 0)} 
                                     total={total} 
                                     columns={4}
                                 />
                                 <GroupView 
                                     header="INFO 380"
-                                    students={this.props.students.filter(student => !student.info380)} 
+                                    students={this.props.students.filter(student => student.info380 === 0)} 
                                     total={total} 
                                     columns={4}
                                 />

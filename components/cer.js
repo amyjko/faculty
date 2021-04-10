@@ -185,6 +185,7 @@ class CER extends React.Component {
 					</thead>
 					<tbody>
 						{[
+							this.person("Syedah Zahra Atiq", "https://cse.osu.edu/people/atiq.2", "Non-cognitive factors, broadening participation", "Computer Science and Engineering", "The Ohio State University", "USA"),
 							this.person("Erik Barendsen*", "https://www.ru.nl/english/people/barendsen-e/", "pedagogy, literacy, computational thinking", "Science Education", "Radboud University", "Netherlands"),
 							this.person("Tiffany Barnes", "http://www4.ncsu.edu/~tmbarnes/", "inclusion, educational games, tutoring systems, teacher education", "Computer Science", "North Carolina State University", "USA"),
 							this.person("Austin Cory Bart", "https://acbart.github.io/", "introductory computing, motivation", "Computer Science", "University of Delaware", "USA"),
