@@ -3386,6 +3386,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/i-wrote-a-book-about-information-8be0a3f07c4",
+			"title": "I wrote a book about information!",
+			"date": "2021.4",
+			"tags": ["design", "diversity", "information", "society", "teaching"],
+			"img": "info-book",
+			"alt": "A collage of all 18 chapters of the book, showing 90,000 words and dozens of images, arranged in a row with varying height columns of text."
+		},
+		{
 			"url": "https://amyjko.medium.com/the-gender-transition-that-wasnt-781d7e2fe8bd",
 			"title": "The gender transition that wasn't",
 			"date": "2021.3",
