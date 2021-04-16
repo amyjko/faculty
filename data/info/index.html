@@ -274,18 +274,17 @@
                     // Compute number of core completed for each student.
                     data.students.forEach(student => {
                         var coreCompleted = 0;
-                        var nonCapstoneCoreCompleted = 0;
                         if(student.cse142 > 0) { coreCompleted++; }
                         if(student.cse143 > 0) { coreCompleted++; }
                         if(student.cse373 > 0) { coreCompleted++; }
-                        if(student.info200 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info201 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info300 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info330 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info340 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info350 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info360 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
-                        if(student.info380 > 0) { coreCompleted++; nonCapstoneCoreCompleted++; }
+                        if(student.info200 > 0) { coreCompleted++; }
+                        if(student.info201 > 0) { coreCompleted++; }
+                        if(student.info300 > 0) { coreCompleted++; }
+                        if(student.info330 > 0) { coreCompleted++; }
+                        if(student.info340 > 0) { coreCompleted++; }
+                        if(student.info350 > 0) { coreCompleted++; }
+                        if(student.info360 > 0) { coreCompleted++; }
+                        if(student.info380 > 0) { coreCompleted++; }
                         if(student.info490 > 0) { coreCompleted++; }
                         if(student.info491 > 0) { coreCompleted++; }
                         student.core = coreCompleted;
@@ -294,7 +293,7 @@
                         student.percent = Math.round(100 * Math.min(student.core + Math.min(4, student.electives), 17) / 17);
 
                         // Graduation prediction.
-                        student.graduating = nonCapstoneCoreCompleted >= 7 && student.electives >= 2;
+                        student.graduating = coreCompleted >= 10 && student.electives >= 2;
 
                         // Translate the major codes into human-readable labels. Split the list by commas,
                         // then split each major by dashes and grab the prefix. Merge into set to remove duplicates,
@@ -725,8 +724,8 @@
                     return <div>
                         <p>
                             Core and elective courses completed by students. 
-                            Progress % is the proportion of the minimum 14 core and 4 electives required to graduate. 
-                            The last column predicts graduation based on the assumption that students who have completed all but one non-capstone core and at least 2 electives is likely to graduate this quarter.</p>
+                            Progress % is the proportion of the 13 core and ~4 electives required to graduate. 
+                            The last column predicts graduation based on the assumption that students who have completed or registered for all core and completed at least 2 electives is likely to graduate this quarter (since many electives are non-INFO courses).</p>
                         <table className="table">
                             <tbody>
                                 <tr>
@@ -742,7 +741,6 @@
                                         <br/><small>{this.props.students.filter(student => student.electives >= 4).length}&ge;4</small>
                                         <br/><small>{Math.round(100 * this.props.students.filter(student => student.electives >= 4).length / this.props.students.length)}%</small>
                                     </th>
-                                    <th>%</th>
                                     <th>
                                         Done?
                                         <br/><small>{this.props.students.filter(student => student.graduating).length}</small>
@@ -765,8 +763,7 @@
                                             <CourseProgressView course="INFO 380" done={student.info380} />
                                             <CourseProgressView course="INFO 490" done={student.info490} />
                                             <CourseProgressView course="INFO 491" done={student.info491} />
-                                            <CourseProgressView course="Electives" done={student.electives > 4} number={student.electives} />
-                                            <td>{Math.round(100 * Math.min(student.core + Math.min(4, student.electives), 17) / 17)}%</td>
+                                            <CourseProgressView course="Electives" done={student.electives >= 4} number={student.electives} />
                                             <CourseProgressView course="Graduation prediction" done={student.graduating} />
                                         </tr>
                                     )}
@@ -809,11 +806,11 @@
                             If 
                             1) there are 350 seats in these core in the next 4 quarters, 
                             2) we reserve 50 seats in each core for minors,
-                            3) every students' schedule is compable with core offerings,
+                            3) every students' schedule is compatible with core offerings,
                             4) every student shown takes the core in the next 4 quarters, 
                             5) every admitted student needs to take every core in the next 4 quarters,
                             6) students delay INFO 300 until their last year,
-                            we only have <strong>{capacity}</strong> for new majors in the next year.
+                            we only have <strong>{capacity}</strong> slots for new majors in the next year.
                         </p>
                         <div className="container-fluid">
                             <div className="row">
