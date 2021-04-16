@@ -35,6 +35,7 @@ class Biography extends React.Component {
 					<li><strong>I am gay</strong>. I am attracted to people who share my gender identity.</li>
 					<li><strong>I am Chinese</strong>, at least in ancestry; my father's parents came to the United States in the early 20th century, and brought with them cultural traditions in food, frugality, and financial security, which shaped my own traditions.</li>
 					<li><strong>I am Danish</strong>, at least in ancestry; my mother's parents came to the United States in early 20th century, and brought with them  humilty, privacy, and piety.</li>
+					<li><strong>I am a divorcee</strong>. This has eroded my friendships, community, finances, and wellbeing, leaving lifelong scars and stigma.</li>
 				</ul>
 
 				<h3 id="long">Long Bio</h3>
