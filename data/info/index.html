@@ -236,9 +236,13 @@
                 constructor() {
 
                     super()
+
+                    var query = window.location.href.split("?");
+                    query = query.length > 1 ? query[1] : null;
+
                     this.state = { 
                         data: null,
-                        view: "capacity",
+                        view: query in views ? query : "capacity",
                         filters: {
                             "gender": {
                                 "F": { label: "women", enabled: true },
@@ -265,6 +269,12 @@
                             console.error(err);
                             this.setState({ data: undefined });
                         });
+
+                }
+
+                componentDidMount() {
+
+                    window.history.pushState(null, this.state.view, "?" + this.state.view);
 
                 }
 
@@ -307,7 +317,7 @@
                 }
 
                 changeView(view) {
-                   this.setState({view: view});
+                   this.setState({view: view}, () => { window.history.pushState(null, view, "?" + view)});
                 }
 
                 toggleFilter(field, value) {
@@ -317,19 +327,6 @@
                 }
 
                 render() {
-
-                    const views = {
-                        "capacity": CapacityView,
-                        "progress": ProgressView,
-                        "options": OptionsView,
-                        "class": ClassView,
-                        "gender": GenderView,
-                        "ethnicity": EthnicityView,
-                        "1st gen": FirstGenView,
-                        "transfer": TransferView,
-                        "majors": MajorsView,
-                        "minors": MinorsView
-                    };
 
                     // Show some loading feedback if we haven't loaded it yet.
                     if(this.state.data === null)
@@ -912,6 +909,19 @@
                 }
 
             }
+
+            const views = {
+                "capacity": CapacityView,
+                "progress": ProgressView,
+                "options": OptionsView,
+                "class": ClassView,
+                "gender": GenderView,
+                "ethnicity": EthnicityView,
+                "1stgen": FirstGenView,
+                "transfer": TransferView,
+                "majors": MajorsView,
+                "minors": MinorsView
+            };
 
             const domContainer = document.querySelector('#dashboard');
             ReactDOM.render(<Dashboard/>, domContainer);
