@@ -20,7 +20,7 @@
 		"babelify": "^10",
 		"browserify": "^16.2",
 		"uglify-js": "^3.12.6",
-		"watchify": "^3.11"
+		"watchify": "^4.0.0"
 	},
 	"dependencies": {
 		"history": "^4.7.2",
