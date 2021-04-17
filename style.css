@@ -118,10 +118,6 @@ a:hover, .clickable {
  cursor: pointer;
 }
 
-.clickable:hover {
-	text-decoration: underline;
-}
-
 .nav > li > a {
 	padding: 5px 5px;
 }

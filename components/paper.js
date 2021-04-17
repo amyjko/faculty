@@ -85,14 +85,17 @@ class Paper extends React.Component {
 
 	renderActions() {
 		return (
-			<div className="border-top">
-				<small>
-					<span className="clickable" onClick={this.toggle.bind(this)}>{this.state.apa ? <strong>cite</strong> : "cite"}</span>
-					{this.props.local ? <span> &sdot; <a href={this.getLocalURL()} target="_blank">pdf</a></span> : null }
-					{this.props.doi ? <span> &sdot; <a href={this.props.doi} target="_blank">doi</a></span> : null }
-					{this.props.blog ? <span> &sdot; <a href={this.props.blog} target="_blank">blog post</a></span> : null }
-				</small>
-			</div>
+			<div>
+				<div className="border-top">
+					<small>
+						<span className="clickable" onClick={this.toggle.bind(this)}>{this.state.apa ? "▼ cite" : "▶ cite"}</span>
+						{this.props.local ? <span> &sdot; <a href={this.getLocalURL()} target="_blank">pdf</a></span> : null }
+						{this.props.doi ? <span> &sdot; <a href={this.props.doi} target="_blank">doi</a></span> : null }
+						{this.props.blog ? <span> &sdot; <a href={this.props.blog} target="_blank">blog post</a></span> : null }
+					</small>
+				</div>
+				{ this.state.apa ? <div className="border-top">{this.renderAPA(false)}</div> : null }
+			</div>			
 		);
 	}
 
@@ -129,11 +132,6 @@ class Paper extends React.Component {
 			<span><strong><a href={url} target="_blank">{this.props.title}</a></strong> <Link to={"/publications/" + this.props.id}><img className="link" src={this.props.app.getWebRoot() + "/images/icons/link.png"} /></Link></span>;
 
 		const paper = (
-			this.state.apa ?
-				<div>
-					{this.renderAPA(false)}
-					{this.renderActions()}
-				</div> :
 				<div name={ this.props.id } className={"paper ws-bottom " + (this.props.highlight ? "bg-info" : "")}>
 					{ award }
 					{ award ? <br/> : null }
