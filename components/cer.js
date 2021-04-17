@@ -4,7 +4,7 @@ class CER extends React.Component {
 
 	person(name, url, expertise, dept, inst, country) {
 
-		return <tr>
+		return <tr key={name}>
 			<td><a href={url} target="_blank">{name}</a></td>
 			<td>{expertise}</td>
 			<td>{dept}</td>
