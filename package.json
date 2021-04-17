@@ -18,7 +18,7 @@
 		"ajv-cli": "^5.0",
 		"ajv-formats": "^2.0.2",
 		"babelify": "^10",
-		"browserify": "^16.2",
+		"browserify": "^17.0.0",
 		"uglify-js": "^3.12.6",
 		"watchify": "^4.0.0"
 	},
