@@ -51,10 +51,10 @@
 	    "pubs": {
 			"type": "array",
 			"description": "List of publications",
-			"required": ["id", "kind", "authors", "deadname", "year", "title", "source", "pages", "doi", "local", "publisher", "contribution"],
 			"items": {
 				"type": "object",
 				"description": "A publication.",
+				"required": ["id", "kind", "authors", "deadname", "year", "title", "source", "pages", "doi", "local", "publisher", "contribution"],
 				"properties": {
 					"id": {
 						"type": "string",
@@ -134,10 +134,10 @@
 	    "people": {
 			"type": "array",
 			"description": "List of people.",
-			"required": ["id", "name", "active", "advised", "level", "dept", "coadvisor", "bio", "url", "startdate", "enddate", "achivements"],
 			"items": {
 				"type": "object",
 				"description": "A person.",
+				"required": [ "id", "name", "active", "advised", "level", "dept", "coadvisor", "bio", "url", "startdate", "enddate", "achievements" ],
 				"properties": {
 					"id": {
 						"type": "string",
@@ -199,10 +199,10 @@
 	    "projects": {
 			"type": "array",
 			"description": "List of projects.",
-			"required": ["id", "active", "name", "description", "funding", "people", "papers", "links", "startdate", "stopdate"],
 			"items": {
 				"type": "object",
 				"description": "A person.",
+				"required": ["id", "active", "name", "description", "funding", "people", "papers", "links", "startdate", "stopdate"],
 				"properties": {
 					"id": {
 						"type": "string",
@@ -413,7 +413,7 @@
 		"reviewing": {
 			"type": "array",
 			"description": "Reviewing",
-			"itmes": {
+			"items": {
 				"type": "object",
 				"required": ["venue", "years", "level"],
 				"properties": {
@@ -612,9 +612,9 @@
 							"required": ["size", "term", "year", "score"],
 							"properties": {
 								"term": { "type": "integer", "enum": [1, 2, 3] },
-								"size": { "type": "integer", "miniumum": 1 },
-								"year": { "type": "integer", "miniumum": 2000 },
-								"score": { "type": ["number", "null"], "miniumum": 0 }
+								"size": { "type": "integer", "minimum": 1 },
+								"year": { "type": "integer", "minimum": 2000 },
+								"score": { "type": ["number", "null"], "minimum": 0 }
 							}
 						}
 					}

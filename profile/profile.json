@@ -2192,6 +2192,7 @@
 			"name": "Jessie Huynh",
 			"active": true,
 			"advised": true,
+			"level": "undergrad",
 			"dept": "Design",
 			"coadvisor": null,
 			"bio": "Jessie is an undergraduate in the Design division in the School of Art + Art History + Design, and contributes to the STEP CS book.",
@@ -2205,6 +2206,7 @@
 			"name": "Chenglong Wang",
 			"active": true,
 			"advised": false,
+			"level": "phd",
 			"dept": "Computer Science",
 			"coadvisor": null,
 			"bio": "Chenglong is a Ph.D. student in Computer Science & Engineering, interested in interactive program synthesis.",
@@ -6042,7 +6044,7 @@
 			"venue": "National Science Foundation (CISE, EHR)",
 			"title": "NSF Panelist",
 			"years": [2011, 2012, 2014, 2017, 2018, 2020],
-			"level": "panelist",
+			"level": "reviewer",
 			"commitment": {
 				"start": "2020-10-01",
 				"end": "2020-12-01",
@@ -6223,7 +6225,7 @@
 			"commitment": {
 				"start": "2020-10-01",
 				"end": "2020-11-15",
-				"hours": "1",
+				"hours": 1,
 				"priority": 0
 			}
 		},	

@@ -5,7 +5,7 @@
 	"license": "MIT License",
 	"repository": "https://github.com/amyjko/faculty.git",
 	"scripts": {
-		"lint": "ajv -s profile/schema.json -d profile/profile.json",
+		"lint": "ajv -s profile/schema.json -c ajv-formats -d profile/profile.json",
 		"build": "set -e -o pipefail; npm run lint; browserify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js | uglifyjs > app.min.js",
 		"dry": "rsync --dry-run -avz --delete --exclude-from='deploy-excludes' . ajko@ovid.u.washington.edu:~/public_html",
 		"ship": "rsync -avz --delete --exclude-from='deploy-excludes' . ajko@ovid.u.washington.edu:~/public_html"
@@ -15,7 +15,8 @@
 		"@babel/core": "^7.12.13",
 		"@babel/preset-env": "^7.12.13",
 		"@babel/preset-react": "^7.12.13",
-		"ajv-cli": "^3.3.0",
+		"ajv-cli": "^5.0",
+		"ajv-formats": "^2.0.2",
 		"babelify": "^10",
 		"browserify": "^16.2",
 		"uglify-js": "^3.12.6",
