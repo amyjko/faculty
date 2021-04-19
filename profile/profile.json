@@ -2188,6 +2188,20 @@
 	],
 	"people": [
 		{
+			"id": "wangash",
+			"name": "Ashley Wang",
+			"active": true,
+			"advised": true,
+			"level": "undergrad",
+			"dept": "Design",
+			"coadvisor": null,
+			"bio": "Ashley is an undergraduate in Design, interested in designing tools that emphasize equity and accessibility.",
+			"url": "https://www.ashleyewang.com/",
+			"startdate": 2021,
+			"enddate": null,
+			"achievements": []
+		},
+		{
 			"id": "jessiehl",
 			"name": "Jessie Huynh",
 			"active": true,
