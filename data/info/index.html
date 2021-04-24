@@ -720,9 +720,8 @@
                     return <div>
                         <p>
                             Core and elective courses completed by students. 
-                            Progress % is the proportion of the 13 core and ~4 electives required to graduate. 
                             The last column predicts graduation based on the assumption that students who have completed (<div className="progress done" style={{width: "1em", height: "1em" }}/>) or registered for (<div className="progress enrolled" style={{width: "1em", height: "1em" }}/>) all core and completed at least 2 electives is likely to graduate this quarter (since many electives are non-INFO courses).
-                            Note that a negibile number of students (~15 per year) waive or substitute a core course, so the graduation estimate is a lower bound.
+                            Note that some students waive or substitute core courses, so the graduation predictions are conservative.
                         </p>
                         <table className="table">
                             <tbody>
@@ -809,7 +808,7 @@
                             5) every admitted student needs to take every core in the next 4 quarters,
                             6) students delay INFO 300 until their last year,
                             we only have <strong>{capacity}</strong> slots for new majors in the next year.
-                            This is a conservative estimate, however, as some students (~15 year) waive or substitute core courses.
+                            This is a conservative estimate, however, as some students waive or substitute core courses in ways that aren't captured by this data.
                         </p>
                         <div className="container-fluid">
                             <div className="row">
