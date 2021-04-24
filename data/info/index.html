@@ -99,7 +99,63 @@
 
         <script type="text/babel">
         
-            var prefixes = {
+            const genderRadii = {
+                "M": "1em",
+                "F": "5em",
+                "": "3em"
+            };
+
+            const classLabels = {
+                "Freshman": "\u25CF",
+                "Sophomore": "\u25CF\u25CF",
+                "Junior": "\u25CF\u25CF\u25CF",
+                "Senior": "\u25CF\u25CF\u25CF\u25CF",
+            };
+
+            const ethnicityColors = {
+                "kenyan": "rgb(102, 61, 53)",
+                "somali": "rgb(102, 61, 53)",
+                "african": "rgb(102, 61, 53)",
+                "ethiopian": "rgb(102, 61, 53)",
+                "black/african amer": "rgb(102, 61, 53)",
+
+                "bangladeshi": "#8D5524",
+                "pakistani": "#8D5524",
+                "asian indian": "#8D5524",
+                "nepali": "#8D5524",
+
+                "asian": "#F1C27D",
+                "korean": "#F1C27D",
+                "filipino": "#F1C27D",
+                "taiwanese": "#F1C27D",
+                "burmese": "#F1C27D",
+                "cambodian": "#F1C27D",
+                "japanese": "#F1C27D",
+                "indonesian": "#F1C27D",
+                "vietnamese": "#F1C27D",
+                "singaporean": "#F1C27D",
+                "cham": "#F1C27D",
+                "mongolian": "#F1C27D",
+                "mien": "#F1C27D",
+
+                "pacific islander": "#E0AC69",
+                "other asian am": "#E0AC69",
+                "am ind - no doc": "#E0AC69",
+                "american indian": "#E0AC69",
+                "bristol bay": "#E0AC69",
+                
+                "hispanic": "#E0AC69",
+
+                "eurasian": "#E0AC69",
+
+                "white": "#FFDBAC",
+                "chinese": "#F1C27D",
+                "canadian indian": "#F1C27D",
+
+                "not indicated": "lightGray"
+            };
+
+            const prefixes = {
                 "A A": "Aeronautics and Astronautics",
                 "A CMPT": "Applied Computing",
                 "AAS": "Asian American Studies",
@@ -240,19 +296,19 @@
                     var query = window.location.href.split("?");
                     query = query.length > 1 ? query[1] : null;
 
-                    this.state = { 
+                    this.state = {
                         data: null,
                         view: query in views ? query : "capacity",
                         filters: {
                             "gender": {
-                                "F": { label: "women", enabled: true },
-                                "M": { label: "men", enabled: true }
+                                "F": { label: <span>women <div className="student" style={{ verticalAlign: "middle", borderRadius: genderRadii["F"]}}></div></span>, enabled: true },
+                                "M": { label: <span>men <div className="student" style={{ verticalAlign: "middle", borderRadius: genderRadii["M"]}}></div></span>, enabled: true }
                             },
                             "class": {
-                                "Freshman": { label: "freshman", enabled: true },
-                                "Sophomore": { label: "sophomores", enabled: true },
-                                "Junior": { label: "juniors", enabled: true },
-                                "Senior": { label: "seniors", enabled: true }
+                                "Freshman": { label: <span>freshman {classLabels["Freshman"]}</span>, enabled: true },
+                                "Sophomore": { label: <span>sophomores {classLabels["Sophomore"]}</span>, enabled: true },
+                                "Junior": { label: <span>juniors {classLabels["Junior"]}</span>, enabled: true },
+                                "Senior": { label: <span>seniors {classLabels["Senior"]}</span>, enabled: true }
                             } 
                         }
                     };
@@ -303,7 +359,7 @@
                         student.percent = Math.round(100 * Math.min(student.core + Math.min(4, student.electives), 17) / 17);
 
                         // Graduation prediction.
-                        student.graduating = coreCompleted >= 10 && student.electives >= 2;
+                        student.graduating = coreCompleted >= 11 && student.electives >= 2;
 
                         // Translate the major codes into human-readable labels. Split the list by commas,
                         // then split each major by dashes and grab the prefix. Merge into set to remove duplicates,
@@ -448,70 +504,13 @@
 
                 render() {
 
-                    const gender = {
-                        "M": "1em",
-                        "F": "5em",
-                        "": "3em"
-                    }
-
-                    const ethnicityColors = {
-                        "kenyan": "rgb(102, 61, 53)",
-                        "somali": "rgb(102, 61, 53)",
-                        "african": "rgb(102, 61, 53)",
-                        "ethiopian": "rgb(102, 61, 53)",
-                        "black/african amer": "rgb(102, 61, 53)",
-
-                        "bangladeshi": "#8D5524",
-                        "pakistani": "#8D5524",
-                        "asian indian": "#8D5524",
-                        "nepali": "#8D5524",
-
-                        "asian": "#F1C27D",
-                        "korean": "#F1C27D",
-                        "filipino": "#F1C27D",
-                        "taiwanese": "#F1C27D",
-                        "burmese": "#F1C27D",
-                        "cambodian": "#F1C27D",
-                        "japanese": "#F1C27D",
-                        "indonesian": "#F1C27D",
-                        "vietnamese": "#F1C27D",
-                        "singaporean": "#F1C27D",
-                        "cham": "#F1C27D",
-                        "mongolian": "#F1C27D",
-                        "mien": "#F1C27D",
-
-                        "pacific islander": "#E0AC69",
-                        "other asian am": "#E0AC69",
-                        "am ind - no doc": "#E0AC69",
-                        "american indian": "#E0AC69",
-                        "bristol bay": "#E0AC69",
-                        
-                        "hispanic": "#E0AC69",
-
-                        "eurasian": "#E0AC69",
-
-                        "white": "#FFDBAC",
-                        "chinese": "#F1C27D",
-                        "canadian indian": "#F1C27D",
-
-                        "not indicated": "lightGray"
-                    }
-
-                    const classLabels = {
-                        "Freshman": "\u25CF",
-                        "Sophomore": "\u25CF\u25CF",
-                        "Junior": "\u25CF\u25CF\u25CF",
-                        "Senior": "\u25CF\u25CF\u25CF\u25CF",
-                    }
-
                     var ethnicityColor = this.props.ethnicity.toLowerCase() in ethnicityColors ? ethnicityColors[this.props.ethnicity.toLowerCase()] : "lightGray";
 
                     return <div 
                         className="student" 
                         style={
                             {
-                                // borderWidth: gender[this.props.gender],
-                                borderRadius: gender[this.props.gender],
+                                borderRadius: genderRadii[this.props.gender],
                                 backgroundColor: ethnicityColors[this.props.ethnicity.toLowerCase()]
                             }
                         }>
@@ -677,7 +676,7 @@
                                 "EURASIAN": "Eurasian", 
                                 "KENYAN": "Kenyan",
                                 "MIEN": "Mien",
-                                "ETHIOPIAN": "Ethiopean",
+                                "ETHIOPIAN": "Ethiopian",
                                 "BURMESE": "Burmese",
                                 "INDONESIAN": "Indonesian",
                                 "HISPANIC": "Hispanic"
@@ -722,7 +721,9 @@
                         <p>
                             Core and elective courses completed by students. 
                             Progress % is the proportion of the 13 core and ~4 electives required to graduate. 
-                            The last column predicts graduation based on the assumption that students who have completed or registered for all core and completed at least 2 electives is likely to graduate this quarter (since many electives are non-INFO courses).</p>
+                            The last column predicts graduation based on the assumption that students who have completed (<div className="progress done" style={{width: "1em", height: "1em" }}/>) or registered for (<div className="progress enrolled" style={{width: "1em", height: "1em" }}/>) all core and completed at least 2 electives is likely to graduate this quarter (since many electives are non-INFO courses).
+                            Note that a negibile number of students (~15 per year) waive or substitute a core course, so the graduation estimate is a lower bound.
+                        </p>
                         <table className="table">
                             <tbody>
                                 <tr>
@@ -808,6 +809,7 @@
                             5) every admitted student needs to take every core in the next 4 quarters,
                             6) students delay INFO 300 until their last year,
                             we only have <strong>{capacity}</strong> slots for new majors in the next year.
+                            This is a conservative estimate, however, as some students (~15 year) waive or substitute core courses.
                         </p>
                         <div className="container-fluid">
                             <div className="row">
