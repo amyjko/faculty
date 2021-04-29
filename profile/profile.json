@@ -51,6 +51,20 @@
 	},
 	"pubs": [
 		{
+			"id": "cognimates",
+			"kind": "refereed conference paper",
+			"authors": ["@st3f", "@ajko"],
+			"deadname": false,
+			"year": 2021,
+			"title": "How do children’s perceptions of machine intelligence change when training & coding smart programs?",
+			"source": "ACM Interaction Design for Children",
+			"pages": "to appear",
+			"doi": null,
+			"local": "Druga2021Cognimates.pdf",
+			"publisher": "ACM",
+			"contribution": "Discovers that children, after building and training small machine learned programs, come to view smart devices as less intelligent, shifting agency from the device to developers."
+		},
+		{
 			"id": "falx",
 			"kind": "refereed conference paper",
 			"authors": ["@clwang", "Yu Feng", "Rastislav Bodik", "Isil Dillig", "Alvin Cheung", "@ajko"],
