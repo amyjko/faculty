@@ -51,12 +51,26 @@
 	},
 	"pubs": [
 		{
+			"id": "codedif",
+			"kind": "refereed conference paper",
+			"authors": ["@bxie", "@mattjd", "Baker Franke", "Emily McLeod", "@minli", "@ajko"],
+			"deadname": false,
+			"year": 2021,
+			"title": "Domain Experts’ Interpretations of Assessment Bias in a Scaled, Online Computer Science Curriculum",
+			"source": "ACM Learning at Scale",
+			"pages": "to appear",
+			"doi": null,
+			"local": "Xie2021CodeDIF.pdf",
+			"publisher": "ACM",
+			"contribution": "Finds systemtic test gender and bias in Code.org's assessments, but barriers to interpreting psychometric results."
+		},
+		{
 			"id": "cognimates",
 			"kind": "refereed conference paper",
 			"authors": ["@st3f", "@ajko"],
 			"deadname": false,
 			"year": 2021,
-			"title": "How do children’s perceptions of machine intelligence change when training & coding smart programs?",
+			"title": "How Do Children’s Perceptions of Machine Intelligence Change when Training & Coding Smart Programs?",
 			"source": "ACM Interaction Design for Children",
 			"pages": "to appear",
 			"doi": null,
