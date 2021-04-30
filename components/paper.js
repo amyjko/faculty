@@ -94,7 +94,7 @@ class Paper extends React.Component {
 						{this.props.blog ? <span> &sdot; <a href={this.props.blog} target="_blank">blog post</a></span> : null }
 					</small>
 				</div>
-				{ this.state.apa ? <div className="border-top">{this.renderAPA(false)}</div> : null }
+				{ this.state.apa ? <div className="border-top"><small>{this.renderAPA(false)}</small></div> : null }
 			</div>			
 		);
 	}
