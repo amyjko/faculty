@@ -85,9 +85,9 @@ class Research extends React.Component {
 					Read about my <Link to="/lab">lab</Link>.
 				</p>
 								
-				<h3>Active Projects</h3>
+				<h3>Active Topics</h3>
 	
-				<p>These are areas we've recently published in.</p>
+				<p>These are topics that people in my lab are actively investigating.</p>
 						
 				{
 					_.map(
@@ -97,9 +97,9 @@ class Research extends React.Component {
 				}
 	
 				<br/>
-				<h3>Past Projects</h3>
+				<h3>Inactive Topics</h3>
 				
-				<p>I'm not actively working on the topics below, but I'm happy to answer questions about them. And who knows, new students might join my lab and bring them back to life!</p>
+				<p>These are topics that my lab has investigated in the past, but that no one in the lab is actively investigating now. New students might join my lab and bring them back to life!</p>
 
 				{
 					_.map(

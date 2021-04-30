@@ -3249,6 +3249,34 @@
 			"stopdate": null
 		},
 		{
+			"id": "csdiversity",
+			"active": true,
+			"name": "Broadening participation in computing",
+			"shortName": "Broadening participation",
+			"description": "The world is full of structural barriers to developing interest in and learning computing. My lab investigates these barriers and ways to eradicate them, including issues around accessibility, mentorship, culture, identity, and resources, with the goal of increasing the diversity of people in computing disciplines.",
+			"funding": ["@accesscomp", "@gidget", "@csassess"],
+			"people": ["@ajko", "@kthayer", "@banerjee", "@kwikh", "@kshino", "@laurav4", "@skawas", "@lkhwa", "@jcyip", "@kdavis"],
+			"papers": ["codedif", "codebios", "bootcamps", "ellblockstudio", "transfer", "mentors1", "mentors2", "csdif"],
+			"links": [
+				{ "title": "See WeCode", "url": "https://youtu.be/t56g4DYIuUA" }
+			],
+			"startdate": 2009,
+			"stopdate": null
+		},
+		{
+			"id": "mlliteracy",
+			"active": true,
+			"name": "Understanding machine learning",
+			"shortName": "ML literacy",
+			"description": "While most programs are still written by developers, many are now built by gathering large amounts of data and automatically creating machine learned programs. My lab is investigating the immense comprehension challenges imposed by these probablistic forms of program behavior, as well as the literacy required to understand how they are shaping program behavior and society.",
+			"funding": ["@csassess"],
+			"people": ["@ajko", "@st3f", "@yreg", "@kayur", "@chandrashree"],
+			"papers": ["cognimates", "mladvocacy", "gestalt", "whydebugclassifier2", "whydebugclassifier1"],
+			"links": [],
+			"startdate": 2004,
+			"stopdate": null
+		},
+		{
 			"id": "pllearning",
 			"active": true,
 			"name": "Programming language learning",
@@ -3277,21 +3305,6 @@
 			"stopdate": null
 		},
 		{
-			"id": "csdiversity",
-			"active": true,
-			"name": "Broadening participation in computing",
-			"shortName": "Broadening participation",
-			"description": "The world is full of structural barriers to developing interest in and learning computing. My lab investigates these barriers and ways to eradicate them, including issues around accessibility, mentorship, culture, identity, and resources, with the goal of increasing the diversity of people in computing disciplines.",
-			"funding": ["@accesscomp", "@gidget", "@csassess"],
-			"people": ["@ajko", "@kthayer", "@banerjee", "@kwikh", "@kshino", "@laurav4", "@skawas", "@lkhwa", "@jcyip", "@kdavis"],
-			"papers": ["codedif", "codebios", "bootcamps", "ellblockstudio", "transfer", "mentors1", "mentors2", "csdif"],
-			"links": [
-				{ "title": "See WeCode", "url": "https://youtu.be/t56g4DYIuUA" }
-			],
-			"startdate": 2009,
-			"stopdate": null
-		},
-		{
 			"id": "apilearning",
 			"active": true,
 			"name": "API learning",
@@ -3316,19 +3329,6 @@
 			"links": [],
 			"startdate": 2013,
 			"stopdate": 2019
-		},
-		{
-			"id": "mlliteracy",
-			"active": true,
-			"name": "Understanding machine learning",
-			"shortName": "ML literacy",
-			"description": "While most programs are still written by developers, many are now built by gathering large amounts of data and automatically creating machine learned programs. My lab is investigating the immense comprehension challenges imposed by these probablistic forms of program behavior, as well as the literacy required to understand how they are shaping program behavior and society.",
-			"funding": ["@csassess"],
-			"people": ["@ajko", "@yreg", "@kayur", "@chandrashree"],
-			"papers": ["mladvocacy", "gestalt", "whydebugclassifier2", "whydebugclassifier1"],
-			"links": [],
-			"startdate": 2004,
-			"stopdate": null
 		},
 		{
 			"id": "uimining",
