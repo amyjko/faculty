@@ -3238,7 +3238,7 @@
 		{
 			"id": "csjustice",
 			"active": true,
-			"name": "Justice-focused CS education",
+			"name": "Justice-focused computing education",
 			"shortName": "CS justice",
 			"description": "Computing is powerful, but that power is often used by dominant groups in ways that disregard, exclude, or even harm marginalized groups, amplifying and reinforcing sexist, racist, and ableist structures and ideas. My lab is exploring teaching methods, learning technologies, and teacher education paradigms that center these power dynamics in CS education.",
 			"funding": ["@csjustice", "@csassess", "@fmitf"],
