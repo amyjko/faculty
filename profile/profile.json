@@ -8493,18 +8493,18 @@
 			"commitment": { "start": "12-20", "end": "01-01", "hours": 30, "priority": 2 }
 		},
 		{
-			"title": "Summer break",
-			"description": "Family",
-			"category": "personal",
-			"annually": true,
-			"commitment": { "start": "08-01", "end": "08-15", "hours": 30, "priority": 2 }
-		},
-		{
 			"title": "Next 15 years of CER",
 			"description": "A 2-day workshop spread across 6 months.",
 			"category": "research",
 			"annually": false,
 			"commitment": { "start": "2020-11-15", "end": "2021-04-15", "hours": 0.5, "priority": 0 }
+		},
+		{
+			"title": "Personal leave",
+			"description": "Family",
+			"category": "personal",
+			"annually": false,
+			"commitment": { "start": "2021-08-21", "end": "2021-09-19", "hours": 40, "priority": 2 }
 		}
 	],
 	"years": {
