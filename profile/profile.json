@@ -152,7 +152,7 @@
 		{
 			"id": "criticalcsed",
 			"kind": "refereed magazine article",
-			"authors": ["@ajko", "@olesona", "@neilryan", "@yreg", "@bxie", "@minatari", "@mattjd", "@st3f", "@dloksa", "@glnelson"],
+			"authors": ["@ajko", "@olesona", "@mararyan", "@yreg", "@bxie", "@minatari", "@mattjd", "@st3f", "@dloksa", "@glnelson"],
 			"deadname": false,
 			"year": 2020,
 			"title": "It’s Time for More Critical CS Education",
@@ -2468,8 +2468,8 @@
 			"achievements": []
 		},
 		{
-			"id": "neilryan",
-			"name": "Neil Ryan",
+			"id": "mararyan",
+			"name": "Mara Ryan",
 			"active": true,
 			"advised": true,
 			"level": "phd",
