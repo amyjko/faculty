@@ -2409,7 +2409,10 @@
 	 		"url": "https://www.linkedin.com/in/jenny-liang/",
 	 		"startdate": 2020,
 	 		"enddate": null,
-			"achievements": [ "NSF Graduate Research Fellowship (2021)" ]
+			"achievements": [ 
+				"NSF Graduate Research Fellowship (2021)",
+				"Husky 100 (2020)"
+			]
 	 	},
 		{
 	 		"id": "eboris",
@@ -2549,7 +2552,9 @@
 			"url": "http://students.washington.edu/andrewhu",
 			"startdate": 2018,
 			"enddate": 2020,
-			"achievements": []
+			"achievements": [
+				"Husky 100 (2020)"
+			]
 		},
 		{
 			"id": "olesona",
@@ -2718,7 +2723,8 @@
 			"startdate": 2016,
 			"enddate": null,
 			"achievements": [ 
-				"NSF Graduate Research Fellowship (2017)" 
+				"Husky 100 (2021)",
+				"NSF Graduate Research Fellowship (2017)"
 			]
 		},
 		{
