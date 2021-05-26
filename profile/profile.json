@@ -6139,12 +6139,12 @@
 		{
 			"venue": "National Science Foundation (CISE, EHR)",
 			"title": "NSF Panelist",
-			"years": [2011, 2012, 2014, 2017, 2018, 2020],
+			"years": [2011, 2012, 2014, 2017, 2018, 2020, 2021],
 			"level": "reviewer",
 			"commitment": {
-				"start": "2020-10-01",
-				"end": "2020-12-01",
-				"hours": 2,
+				"start": null,
+				"end": null,
+				"hours": 1,
 				"priority": 1
 			}
 		},
@@ -7350,6 +7350,32 @@
 				"end": "2021-08-20",
 				"hours": 40,
 				"priority": 2
+			},
+			"report": null
+		},
+		{
+			"url": null,
+			"title": "CRA-E Annual Board Meeting",
+			"details": "Planning pathways into CS research.",
+			"category": "research",
+			"commitment": {
+				"start": "2021-07-29",
+				"end": "2021-07-39",
+				"hours": 8,
+				"priority": 1
+			},
+			"report": null
+		},
+		{
+			"url": null,
+			"title": "NSF Panel",
+			"details": "Peer reviewing research proposals",
+			"category": "research",
+			"commitment": {
+				"start": "2021-06-01",
+				"end": "2021-06-02",
+				"hours": 10,
+				"priority": 1
 			},
 			"report": null
 		},
