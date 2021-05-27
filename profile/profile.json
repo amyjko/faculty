@@ -7398,7 +7398,7 @@
 				"hours": 5,
 				"priority": 1
 			},
-			"report": null
+			"report": "https://medium.com/bits-and-behavior/respect-2021-toward-justice-focused-computing-education-65848b637db2"
 		},
 		{
 			"url": "http://chi2021.acm.org",
@@ -7779,6 +7779,19 @@
 		}
 	],
 	"talks": [
+		{
+			"date": "2021-05-27",
+			"image": "respect2021.jpg",
+			"alt": "A slide, which says 'Deconstructing CS Culture' and shows Amy's title, along with an illustration of people climbing on a tower of binary digits.",
+			"slides": "slides/RESPECT2021DeconstructingCSCulture.pdf",
+			"title": "Deconstructing CS Culture",
+			"venue": "2021 IEEE RESPECT Conference",
+			"url": "http://respect2021.stcbp.org/guest-speakers/",
+			"recording": null,
+			"practice": "https://www.youtube.com/watch?v=c8TQ29I8lK4",
+			"description": "This talk examined the hidden marginalization that led to the CS culture we have today, discussing CS history, Autism, immigration, queer refuges, segregation, desegregation, capitalism, and more.",
+			"keynote": true
+		},
 		{
 			"date": "2021-04-16",
 			"image": "uci2021.png",
