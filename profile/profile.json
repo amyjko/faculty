@@ -8474,7 +8474,7 @@
 			"description": "Books and papers",
 			"category": "research",
 			"annually": false,
-			"commitment": { "start": null, "end": null, "hours": 2, "priority": 1 }
+			"commitment": { "start": null, "end": null, "hours": 2, "priority": 0 }
 		},
 		{
 			"title": "Advising",
@@ -8565,7 +8565,7 @@
 			"description": "Family",
 			"category": "personal",
 			"annually": false,
-			"commitment": { "start": "2021-08-21", "end": "2021-09-19", "hours": 40, "priority": 2 }
+			"commitment": { "start": "2021-08-23", "end": "2021-09-19", "hours": 40, "priority": 2 }
 		}
 	],
 	"years": {
