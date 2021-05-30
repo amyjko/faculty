@@ -318,8 +318,9 @@ class Commitments extends React.Component {
                         this.commit(
                             reviewing.title ? reviewing.title : "Reviewer", reviewing.venue, "service", 
                             reviewing.commitment.priority, reviewing.commitment.hours, false, 
-                            new Date(year, reviewing.commitment.start.getMonth(), reviewing.commitment.start.getDate()),
-                            new Date(year, reviewing.commitment.end.getMonth(), reviewing.commitment.end.getDate()),
+                            new Date(year, reviewing.commitment.start.month, reviewing.commitment.start.date),
+                            // Handle the year wraparound for end months that are before start months.
+                            new Date(year + (reviewing.commitment.end.month < reviewing.commitment.start.month ? 1 : 0), reviewing.commitment.end.month, reviewing.commitment.end.date),
                         )
                 )
             }
