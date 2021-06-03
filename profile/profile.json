@@ -6635,15 +6635,15 @@
 	"service": [
 		{
 			"title": "Executive Board Member",
-			"committee": "Expanding Computing Education Pathways",
+			"committee": "Expanding Computing Education Pathways Alliance (ECEP)",
 			"start": 2021,
 			"end": null,
 			"level": "national",
-			"description": "I help define actions that lead to a more inclusive project, better positioning the ECEP community to advocate for, promote, and embrace equity in computer science education.",
+			"description": "I help define strategic actions that lead to a more inclusive project, better positioning the ECEP community to advocate for, promote, and embrace equity in computer science education.",
 			"commitment": {
 				"start": "2021-02-01",
-				"end": null,
-				"hours": 1,
+				"end": "2023-02-01",
+				"hours": 0.75,
 				"priority": 0
 			}
 		},
