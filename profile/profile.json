@@ -6705,6 +6705,18 @@
 			}
 		},
 		{
+			"title": "Committee Member",
+			"committee": "College Board AP CS Principles Standards Committee",
+			"level": "national",
+			"description": "I helped define assessments for the AP CS Principles exam.",
+			"commitment": {
+				"start": "2021-06-05",
+				"end": "2021-06-21",
+				"hours": 3,
+				"priority": 0
+			}
+		},
+		{
 			"title": "Secretary",
 			"committee": "Seattle Public Schools CS Advisory Board.",
 			"level": "regional",
