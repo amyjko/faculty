@@ -2730,15 +2730,15 @@
 		{
 			"id": "glnelson",
 			"name": "Greg Nelson",
-			"active": true,
+			"active": false,
 			"advised": true,
 			"level": "phd",
 			"dept": "Computer Science",
 			"coadvisor": null,
-			"bio": "Greg is a PhD student in Computer Science and Engineering. He's interested in HCI and computing education broadly, and has focused on programming language learning and augmented and virtual reality.",
+			"bio": "Greg was a PhD student in Computer Science and Engineering. He studied HCI and computing education broadly, specifically on programming language learning and assessment.",
 			"url": "http://www.greglnelson.info/",
 			"startdate": 2013,
-			"enddate": null,
+			"enddate": 2021,
 			"achievements": [ 
 				"ACM ICER John Henry Best Paper Award (2018)", 
 				"NSF Graduate Research Fellowship (2015)" 
