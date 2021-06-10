@@ -2358,7 +2358,7 @@
 		{
 	 		"id": "perdriau",
 	 		"name": "Chris Perdriau",
-	 		"active": true,
+	 		"active": false,
 	 		"advised": true,
 	 		"level": "undergrad",
 	 		"dept": "Oregon State University",
@@ -2366,13 +2366,13 @@
 	 		"bio": "Chris is a CS student at Oregon State University studying HCI and psychology. He is interested in making technology more inclusive for underserved communities.",
 	 		"url": "https://github.com/ChristopherPerdriau",
 	 		"startdate": 2020,
-	 		"enddate": null,
+	 		"enddate": 2021,
 			"achievements": [ "NSF Graduate Research Fellowship (2021)" ]
 	 	},
 		{
 	 		"id": "anael",
 	 		"name": "Anael Kuperwajs Cohen",
-	 		"active": true,
+	 		"active": false,
 	 		"advised": true,
 	 		"level": "undergrad",
 	 		"dept": "Macalester College",
@@ -2380,7 +2380,7 @@
 	 		"bio": "Anael is a CS and applied mathematics and statistics double major with a cognitive science concentration at Macalester College. She is interested in breaking down barriers for women and other minorities within the field of CS by pursuing a career in CS education.",
 	 		"url": "https://anaelkuperwajs.github.io/",
 	 		"startdate": 2020,
-	 		"enddate": null,
+	 		"enddate": 2021,
 	 		"achievements": []
 	 	},
 		{
