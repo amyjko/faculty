@@ -82,6 +82,12 @@ class Lab extends React.Component {
 					Read our <a href="https://docs.google.com/document/d/1LMHv0HdxXEgSNqICt3wtq8xWuH73kP7plZ_KeXyP6qM/edit?usp=sharing">onboarding document</a> for more details about the ever evolving culture of the lab.
 				</p>
 
+				<p>
+					I work hard to be a better mentor and advisor every year.
+					In fact, in 2021, my students nominated me for the <a href="https://grad.uw.edu/for-faculty-and-staff/list-of-recipients/">Marsha L. Landolt Distinguished Graduate Mentor Award</a>, and I won one of two honorable mentions.
+					I guess I'm doing something right?
+				</p>
+
 				<div className="row">
 					<div className="col-sm-4">
 						<p><strong>Current UW Ph.D. student?</strong> Lurk in <i>#codeandcognitionlab</i> on <a target="_blank" href="https://computinged-uw.slack.com">ComputingEd@UW</a> Slack. DM or email me about your interests and perhaps we'll meet.</p>
