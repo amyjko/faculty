@@ -6452,14 +6452,14 @@
 			"institution": "Drexel University",
 			"department": "Information Science",
 			"startdate": 2018,
-			"enddate": null
+			"enddate": 2021
 		},
 		{
 			"name": "Srinivasan Iyer",
 			"institution": "George Mason University",
 			"department": "Computer Science",
 			"startdate": 2018,
-			"enddate": null
+			"enddate": 2020
 		},
 		{
 			"name": "David Gonzalez",
@@ -6473,7 +6473,7 @@
 			"institution": "North Carolina State University",
 			"department": "Computer Science",
 			"startdate": 2018,
-			"enddate": null
+			"enddate": 2019
 		},
 		{
 			"name": "Alex Kale",
@@ -6543,7 +6543,7 @@
 			"institution": "University of Washington",
 			"department": "Human-Centered Design & Engineering",
 			"startdate": 2016,
-			"enddate": null
+			"enddate": 2020
 		},
 		{
 			"name": "Jonathan Bragg",
@@ -6557,7 +6557,7 @@
 			"institution": "University of Washington",
 			"department": "Human-Centered Design and Engineering",
 			"startdate": 2016,
-			"enddate": null
+			"enddate": 2019
 		},
 		{
 			"name": "Matthew Kay",
