@@ -3436,6 +3436,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/research-advising-and-vulnerability-2123a2e4dd0e",
+			"title": "Research, advising, and vulnerability",
+			"date": "2021.6",
+			"tags": ["academia", "diversity", "gender", "productivity"],
+			"img": "vulnerablelab",
+			"alt": "A screenshot of an Ohyay room showing several circular video feeds of student faces, several doodles, and a chat full of banter."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/respect-2021-toward-justice-focused-computing-education-65848b637db2",
 			"title": "RESPECT 2021: Toward justice-focused computing education",
 			"date": "2021.5",
