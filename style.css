@@ -159,21 +159,6 @@ img.link {
 	width: 1em;
 }
 
-/* Prevent browsers from adding URLs after links */
-@media print {
-    a[href]::after {
-        content: none !important;
-    }
-}
-
-/* Prevent page breaks after headers */
-@media print {
-	h1, h2, h3, h4, h5 {
-		page-break-after: avoid;
-	}
-}
-
-
 .bar {
 	display: inline-block;
 	padding: 5px;
@@ -303,8 +288,17 @@ body .cv {
 
 @media print {
 	
-	h1, h2, h3 {
-		break-after: avoid-page;
+	h1, h2, h3, h4, h5, .date {
+		page-break-after: avoid;
+	}
+
+	/* Prevent browsers from adding URLs after links */
+    a[href]::after {
+        content: none !important;
+    }
+
+	body {
+		font-size: 11pt;
 	}
 
 	.paper, .chunk {
@@ -317,4 +311,3 @@ body .cv {
 	}	
 
 }
-
