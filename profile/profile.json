@@ -2230,6 +2230,20 @@
 	],
 	"people": [
 		{
+			"id": "feec",
+			"name": "Fee Christoph",
+			"active": true,
+			"advised": true,
+			"level": "undergrad",
+			"dept": "University of Michigan",
+			"coadvisor": null,
+			"bio": "Fee is an undergraduate at the University of Michigan, finishing up her degrees in Computer Science and Interarts Performance. She is interested in interdisciplinary education, and the ways in which diverse fields of study can enhance and complement one another. Some of her main focuses include broadening participation in computing, empowering students to critique the current state of computing, and collaboratively imagining alternatives to computing.",
+			"url": "https://feechristoph.com/",
+			"startdate": 2021,
+			"enddate": null,
+			"achievements": []
+		},
+		{
 			"id": "wangash",
 			"name": "Ashley Wang",
 			"active": true,
