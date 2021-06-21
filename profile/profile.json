@@ -51,6 +51,20 @@
 	},
 	"pubs": [
 		{
+			"id": "howtoo",
+			"kind": "refereed conference paper",
+			"authors": ["Maryam Arab", "@jliang9", "Yang Kyu Yoo", "@ajko", "@latoza"],
+			"deadname": false,
+			"year": 2021,
+			"title": "HowToo: A Platform for Sharing, Finding, and Using Programming Strategies",
+			"source": "@vlhcc",
+			"pages": "to appear",
+			"doi": null,
+			"local": null,
+			"publisher": "IEEE",
+			"contribution": "Contributes HowToo, a system for encoding strategic programming knowledge as step-by-step procedures for structuring programming tasks. Finds that novice developers found the platform helpful for guiding their work, except when they were rushing toward deadlines."
+		},
+		{
 			"id": "codedif",
 			"kind": "refereed conference paper",
 			"authors": ["@bxie", "@mattjd", "Baker Franke", "Emily McLeod", "@minli", "@ajko"],
