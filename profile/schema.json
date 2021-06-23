@@ -618,7 +618,7 @@
 								"term": { "type": "integer", "enum": [1, 2, 3] },
 								"size": { "type": "integer", "minimum": 1 },
 								"year": { "type": "integer", "minimum": 2000 },
-								"score": { "type": ["number", "null"], "minimum": 0 }
+								"score": { "type": ["number", "null", "string"], "minimum": 0 }
 							}
 						}
 					}

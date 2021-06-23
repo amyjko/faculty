@@ -8315,8 +8315,8 @@
 				}
 			],
 			"offerings": [
-				{ "size": 250, "term": 3, "year": 2022, "score": null },
-				{ "size": 200, "term": 3, "year": 2021, "score": null },
+				{ "size": 200, "term": 3, "year": 2022, "score": null },
+				{ "size": 200, "term": 3, "year": 2021, "score": "N/A" },
 				{ "size": 208, "term": 2, "year": 2020, "score": 4.8 },
 				{ "size": 150, "term": 1, "year": 2018, "score": 4.8 }
 			]
