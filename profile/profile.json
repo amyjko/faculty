@@ -8621,7 +8621,14 @@
 			"description": "Family",
 			"category": "personal",
 			"annually": false,
-			"commitment": { "start": "2021-08-23", "end": "2021-09-19", "hours": 40, "priority": 2 }
+			"commitment": { "start": "2021-08-23", "end": "2021-09-20", "hours": 40, "priority": 2 }
+		},
+		{
+			"title": "Book writing",
+			"description": "Finishing a draft of a collaborative book.",
+			"category": "research",
+			"annually": false,
+			"commitment": { "start": "2021-06-15", "end": "2021-08-23", "hours": 10, "priority": 1 }
 		}
 	],
 	"years": {
