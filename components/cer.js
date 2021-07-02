@@ -322,7 +322,7 @@ class CER extends React.Component {
 					<li>The <a href="https://www.higheredjobs.com" target="_blank">Higher Ed Jobs</a></li>
 					<li><a href="https://www.edjoin.org" target="_blank">EdJoin</a></li>
 					<li>@CSFacultyJobs on Twitter.</li>
-					<li>Evan Peck maintains a list of <a href="https://cs-pui.github.io/guide.html" target="_blank">CS faculty postings from "PUIs"</a> (primarily undergraduate institutions).</li>
+					<li>Evan Peck maintains a list of <a href="https://cs-pui.github.io/" target="_blank">CS faculty postings from "PUIs"</a> (primarily undergraduate institutions).</li>
 					<li>Many organizations, including non-universities, hire postdocs (e.g., Quinn Burke at <a href="https://digitalpromise.org/our-team/quinn-burke/">Digital Promise</a>, has hired postdocs and consultants)</li>
 				</ul>
 
