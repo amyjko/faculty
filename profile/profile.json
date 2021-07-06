@@ -631,7 +631,7 @@
 			"id":"pstutor1",
 			"kind":"refereed workshop paper",
 			"authors": ["@dloksa", "@ajko"],
-			"deadname": true,
+			"deadname": false,
 			"year": 2017,
 			"title": "Modeling Programming Problem Solving Through Interactive Worked Examples",
 			"source": "Workshop on Evaluation and Usability of Programming Languages and Tools (PLATEAU)",
@@ -639,7 +639,7 @@
 			"doi": null,
 			"local": "Loksa2017PLATEAU.pdf",
 			"publisher": "ACM",
-			"contribution":"Briefly overviews a vision for programming process worked examples that demonstrate an expert working through a programming problem."
+			"contribution": "Briefly overviews a vision for programming process worked examples that demonstrate an expert working through a programming problem."
 		},
 		{
 			"id":"gidgetabandoment",
@@ -1902,8 +1902,8 @@
 			"pages":"1036-1037",
 			"publisher":"ACM",
 			"doi": "https://doi.org/10.1145/765891.766135",
-			"authorizer":"http://dl.acm.org/authorize?N89313",
-			"local":"Ko2003AliceContextualInquiry.pdf",
+			"authorizer": "http://dl.acm.org/authorize?N89313",
+			"local": "Ko2003AliceContextualInquiry.pdf",
 			"contribution": "Summarizes preliminary insights on debugging, showing that end-user programmers often start from faulty assumptions about runtime behavior."
 		},
 		{
@@ -1912,13 +1912,13 @@
 			"authors": ["@mjslee", "@ajko"],
 			"deadname": true,
 			"year": 2012,
-			"title":"Representations of User Feedback in an Agile, Collocated Software Team",
-			"source":"International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
-			"pages":"76-82",
-			"publisher":"ACM",
-			"doi":"http://dx.doi.org/10.1109/CHASE.2012.6223028",
+			"title": "Representations of User Feedback in an Agile, Collocated Software Team",
+			"source": "International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)",
+			"pages": "76-82",
+			"publisher": "ACM",
+			"doi": "https://doi.org/10.1109/CHASE.2012.6223028",
 			"local": "Lee2012UserFeedback.pdf",
-			"contribution":"As issues reported by end users are transformed from emails, to support ticket, to discussion, to bug report, to feature specification, information from the original request is lost, but remains in the distributed memory of the team."
+			"contribution": "As issues reported by end users are transformed from emails, to support ticket, to discussion, to bug report, to feature specification, information from the original request is lost, but remains in the distributed memory of the team."
 		},
 		{
 			"id":"userfeedback2",
