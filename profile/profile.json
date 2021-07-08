@@ -72,8 +72,8 @@
 			"year": 2021,
 			"title": "Domain Experts’ Interpretations of Assessment Bias in a Scaled, Online Computer Science Curriculum",
 			"source": "ACM Learning at Scale",
-			"pages": "to appear",
-			"doi": null,
+			"pages": "77-89",
+			"doi": "https://doi.org/10.1145/3430895.3460141",
 			"local": "Xie2021CodeDIF.pdf",
 			"publisher": "ACM",
 			"contribution": "Finds systemtic test gender and bias in Code.org's assessments, but barriers to interpreting psychometric results."
