@@ -86,8 +86,8 @@
 			"year": 2021,
 			"title": "How Do Children’s Perceptions of Machine Intelligence Change when Training & Coding Smart Programs?",
 			"source": "ACM Interaction Design for Children",
-			"pages": "to appear",
-			"doi": null,
+			"pages": "49-61",
+			"doi": "https://doi.org/10.1145/3459990.3460712",
 			"local": "Druga2021Cognimates.pdf",
 			"publisher": "ACM",
 			"contribution": "Discovers that children, after building and training small machine learned programs, come to view smart devices as less intelligent, shifting agency from the device to developers."
