@@ -250,7 +250,7 @@ class CER extends React.Component {
 							this.person("Lauri Malmi", "http://www.cs.hut.fi/~lma/", "program visualization, algorithm visualization, automatic assessment", "Computer Science", "Aalto University", "Finland"),
 							this.person("Lauren Margulieux*", "https://laurenmarg.com/", "online learning in computing", "Department of Learning Sciences", "Georgia State University", "USA"),
 							this.person("Christina Gardner-McCune*", "https://www.cise.ufl.edu/gardner-mccune-christina/", "Computer Science Education, AI Education, Design of Learning Technologies & Learning Environments, Curriculum Development & Assessment, K-12 Computing After-School & Summer Camps, Learning Sciences", "Computer & Information Science & Engineering", "University of Florida", "USA"),
-							this.person("Briana Morrison*", "http://www.brianamorrison.net/", "pedagogy, cognitive load", "Computer Science", "University of Nebraska, Omaha", "USA"),
+							this.person("Briana Morrison*", "http://www.brianamorrison.net/", "pedagogy, cognitive load", "Computer Science", "University of Virginia", "USA"),
 							this.person("Lijun Ni", "https://www.albany.edu/education/faculty/lijun-ni", "K-12 computer science education, teacher education and  professional development", "Department of Educational Theory and Practice", "University at Albany, State University of New York", "USA"),
 							this.person("Lars-Åke Nordén*", "https://katalog.uu.se/profile/?id=N3-976", "self-efficacy", "Department of Information Technology", "Uppsala University", "Sweden"),
 							this.person("Aletta Nylén*", "https://www.it.uu.se/katalog/aletta", "STEM and computing education", "Department of Information Technology", "Uppsala University", "Sweden"),
