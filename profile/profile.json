@@ -7837,6 +7837,19 @@
 	],
 	"talks": [
 		{
+			"date": "2021-07-15",
+			"image": "csta2021.jpg",
+			"alt": "The title slide, which says 'The Roots of Inequity in K-12 CS Education' and shows an elementary CS classroom.",
+			"slides": "slides/CSTA2021Keynote.pdf",
+			"title": "The Roots of Inequity in K-12 CS Education",
+			"venue": "2021 CSTA Conference",
+			"url": "https://www.csteachers.org/page/csta-2021",
+			"recording": "https://www.youtube.com/watch?v=p7IzFIDfyKY",
+			"practice": null,
+			"description": "This is a keynote I gave the CS Teachers Association (CSTA) annual conference. It discusses the many interacting layers of inequity in K-12 CS education, including many of my own personal experiences discovering inequities in schools that I or others have created. It also offers suggestions to teachers about how they can participate in identifying and dismantling barriers.",
+			"keynote": true
+		},
+		{
 			"date": "2021-05-27",
 			"image": "respect2021.jpg",
 			"alt": "A slide, which says 'Deconstructing CS Culture' and shows Amy's title, along with an illustration of people climbing on a tower of binary digits.",
