@@ -60,7 +60,7 @@
 			"source": "@vlhcc",
 			"pages": "to appear",
 			"doi": null,
-			"local": null,
+			"local": "Arab2021HowToo.pdf",
 			"publisher": "IEEE",
 			"contribution": "Contributes HowToo, a system for encoding strategic programming knowledge as step-by-step procedures for structuring programming tasks. Finds that novice developers found the platform helpful for guiding their work, except when they were rushing toward deadlines."
 		},
