@@ -215,6 +215,7 @@ class CER extends React.Component {
 							this.person("Steve Edwards*", "http://webcore.cs.vt.edu/user/edwards", "software engineering, formal methods, autograding", "Computer Science", "Virginia Tech", "USA"),
 							this.person("Barbara Ericson*", "http://barbara-ericson.strikingly.com/", "pedagogy, diversity", "School of Information", "University of Michigan", "USA"),
 							this.person("Martin Erwig", "http://web.engr.oregonstate.edu/~erwig/", "programming languages, visual languages, explanations, story programming", "Electrical Engineering and Computer Science", "Oregon State University", "USA"),
+							this.person("Marisa Exter", "https://www.education.purdue.edu/faculty-profiles/name/marisa-exter/", "post secondary, lifelong learning*", "Department of Curriculum & Instruction", "Perdue University", "USA"),
 							this.person("Katrina Falkner*", "http://www.adelaide.edu.au/directory/katrina.falkner", "pedagogy, computational thinking", "School of Computer Science", "University of Adelaide", "Australia"),
 							this.person("Casey Fiesler*", "https://www.colorado.edu/cmci/people/information-science/casey-fiesler", "technology ethics", "Information Science", "University of Colorado, Boulder", "USA"),
 							this.person("Kathi Fisler", "http://web.cs.wpi.edu/~kfisler/", "Programming languages, pedagogy, cross-disciplinary learning and transfer", "Computer Science", "Brown University", "USA"),
