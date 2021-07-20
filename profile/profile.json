@@ -5700,6 +5700,15 @@
 			"who": "learningtech"
 		},
 		{
+			"kind": "product",
+			"start": 2020,
+			"end": null,
+			"description": "Our work on PL Tutor influenced the JustJavaScript course by Dan Abramov",
+			"url": "https://twitter.com/dan_abramov/status/1417200694591959042?s=21",
+			"projects": ["pllearning"],
+			"who": "learningtech"
+		},
+		{
 			"kind": "consulting",
 			"start": 2020,
 			"end": 2020,
