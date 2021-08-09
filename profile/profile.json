@@ -6172,11 +6172,21 @@
 	],
 	"editing": [
 		{
+			"title": "Editor in Chief",
+			"venue": "ACM Transactions on Computing Education",
+			"commitment": {
+				"start": "2021-12-01",
+				"end": null,
+				"hours": 3,
+				"priority": 0
+			}
+		},
+		{
 			"title": "Associate Editor",
 			"venue": "ACM Transactions on Computing Education",
 			"commitment": {
 				"start": "2015-01-01",
-				"end": null,
+				"end": "2021-08-01",
 				"hours": 1,
 				"priority": 0
 			}
