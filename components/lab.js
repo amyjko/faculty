@@ -96,10 +96,12 @@ class Lab extends React.Component {
 						<p><strong>Future UW Ph.D. student?</strong> Read my <Link to="/cer">CER FAQ</Link> to ensure we share interests. Talk to my current students about their experiences. Apply to the <a href="http://ischool.uw.edu/phd" target="_blank">iSchool</a> or <a href="http://www.cs.washington.edu/education/grad/prospective.html" target="_blank">CSE</a> in Autumn.</p>
 					</div>
 					<div className="col-sm-4">
-						<p><strong>Current UW undergrad?</strong> 
-						Read about <a href="https://ischool.uw.edu/programs/informatics/research">engaging in undergrad research</a>. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjcrMFAMUEv3SXXggXscg17sIZ6p7YFSpCkFPADkBZ8BZB9g/viewform?usp=sf_link" target="_blank">Apply</a> to my lab.
-						I recruit for part-time researchers and in Winter for summer positions. 
-						I may also be launching a <Link to={"/lablets"}>new participation model</Link> in Autumn 2021.</p>
+						<p>
+							<strong>Current UW undergrad?</strong> 
+							Read about <a href="https://ischool.uw.edu/programs/informatics/research">engaging in undergrad research</a>. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjcrMFAMUEv3SXXggXscg17sIZ6p7YFSpCkFPADkBZ8BZB9g/viewform?usp=sf_link" target="_blank">Apply</a> to my lab.
+							I recruit for part-time researchers and in Winter for summer positions. 
+							{/* I may also be launching a <Link to={"/lablets"}>new participation model</Link> in Autumn 2021. */}
+						</p>
 					</div>
 				</div>
 				
