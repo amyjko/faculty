@@ -6174,6 +6174,7 @@
 		{
 			"title": "Editor in Chief",
 			"venue": "ACM Transactions on Computing Education",
+			"type": "journal",
 			"commitment": {
 				"start": "2021-12-01",
 				"end": null,
@@ -6184,6 +6185,7 @@
 		{
 			"title": "Associate Editor",
 			"venue": "ACM Transactions on Computing Education",
+			"type": "journal",
 			"commitment": {
 				"start": "2015-01-01",
 				"end": "2021-08-01",
@@ -6194,6 +6196,7 @@
 		{
 			"title": "Associate Editor",
 			"venue": "IEEE Transactions on Software Engineering",
+			"type": "journal",
 			"commitment": {
 				"start": "2016-09-15",
 				"end": "2019-09-15",
@@ -6204,10 +6207,79 @@
 		{
 			"title": "Co-Editor",
 			"venue": "IEEE Software Special Issue on End-User Software Engineering",
+			"type": "journal",
 			"commitment": {
 				"start": "2009-01-01",
 				"end": "2009-09-15",
 				"hours": 0.5,
+				"priority": 0
+			}
+		},
+		{
+			"title": "Program Co-Chair",
+			"venue": "@icer", 
+			"type": "conference",
+			"commitment": {
+				"start": "2019-09-01",
+				"end": "2020-08-31",
+				"hours": 4,
+				"priority": 0
+			}
+		},
+		{
+			"title": "Program Co-Chair",
+			"venue": "@icer", 
+			"type": "conference",
+			"years": [2020, 2021],
+			"commitment": {
+				"start": "2020-09-01",
+				"end": "2021-08-20",
+				"hours": 4,
+				"priority": 0
+			}
+		},
+		{
+			"title": "Program Co-Chair",
+			"venue": "@seet", 
+			"type": "conference",
+			"commitment": {
+				"start": "2020-01-01",
+				"end": "2020-06-15",
+				"hours": 2,
+				"priority": 0
+			}
+		},
+		{
+			"title": "Program Sub-Committee Co-Chair",
+			"venue": "@chi", 
+			"type": "conference",
+			"commitment": {
+				"start": "2011-05-01",
+				"end": "2012-01-15",
+				"hours": 3,
+				"priority": 0
+			}
+		},
+		{
+			"title": "Program Sub-Committee Co-Chair",
+			"venue": "@chi", 
+			"type": "conference",
+			"level": "chair",
+			"commitment": {
+				"start": "2012-05-01",
+				"end": "2013-01-15",
+				"hours": 3,
+				"priority": 0
+			}
+		},
+		{
+			"venue": "@vlhcc",
+			"title": "Program Co-Chair",
+			"level": "chair",
+			"commitment": {
+				"start": "2011-01-15",
+				"end": "2011-10-15",
+				"hours": 3,
 				"priority": 0
 			}
 		}
@@ -6234,54 +6306,6 @@
 				"start": "10-15",
 				"end": "11-15",
 				"hours": 1,
-				"priority": 0
-			}
-		},
-		{
-			"venue": "@icer", 
-			"title": "Program Co-Chair",
-			"years": [2020, 2021],
-			"level": "chair",
-			"commitment": {
-				"start": "09-01",
-				"end": "08-31",
-				"hours": 4,
-				"priority": 0
-			}
-		},
-		{
-			"venue": "@seet", 
-			"title": "Program Co-Chair",
-			"years": [2020],
-			"level": "chair",
-			"commitment": {
-				"start": "01-01",
-				"end": "06-15",
-				"hours": 2,
-				"priority": 0
-			}
-		},
-		{
-			"venue": "@chi", 
-			"title": "Program Sub-Committee Co-Chair",
-			"years": [2012, 2013],
-			"level": "chair",
-			"commitment": {
-				"start": "05-01",
-				"end": "01-15",
-				"hours": 3,
-				"priority": 0
-			}
-		},
-		{
-			"venue": "@vlhcc",
-			"title": "Program Co-Chair",
-			"years": [2011],
-			"level": "chair",
-			"commitment": {
-				"start": "01-15",
-				"end": "10-15",
-				"hours": 3,
 				"priority": 0
 			}
 		},

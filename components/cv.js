@@ -380,7 +380,10 @@ class Vita extends React.Component {
 				<h3>Journal Editorial Boards</h3>		
 				{
 					this.getChunkList(
-						profile.getEditing(), 
+						profile.getEditing(
+							role => role.type === "journal",
+							role => -role.commitment.start.getFullYear()
+						), 
 						false,
 						role => role.commitment.start.getFullYear(), 
 						role => role.commitment.end ? role.commitment.end.getFullYear() : null, 
@@ -391,12 +394,15 @@ class Vita extends React.Component {
 				<h3>Conference Program Chair</h3>
 				{
 					this.getChunkList(
-						profile.getReviewing(
-							role => role.level === "chair", 
-							role => -role.years.sort().reverse()[0]
-						),
-						true,
-						role => role.years.sort()[0], role => role.years.sort().reverse()[0], "venue", "title"
+						profile.getEditing(
+							role => role.type === "conference",
+							role => -role.commitment.start.getFullYear()
+						), 
+						false,
+						role => role.commitment.end.getFullYear(),
+						// It starts earlier, but we represent it by the conference year.
+						role => role.commitment.end.getFullYear(),
+						"venue", "title"
 					)
 				}
 

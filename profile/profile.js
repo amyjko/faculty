@@ -28,9 +28,6 @@ class Profile {
 		// Parse talk dates.
 		_.each(this.json.talks, talk => talk.date = this.parseDate(talk.date));
 
-		// Parse editing
-		_.each(this.json.editing, editing => editing.commitment = this.parseCommitment(editing.commitment));
-
 		// Parse service
 		_.each(this.json.service, service => service.commitment = this.parseCommitment(service.commitment));
 
@@ -43,6 +40,19 @@ class Profile {
 		// Parse commitments
 		_.each(this.json.commitments, commitment => commitment.commitment = this.parseCommitment(commitment.commitment));
 
+		// Parse editing
+		_.each(this.json.editing, role => {
+			if(role.venue.charAt(0) === "@") {
+				let conf = this.getSource(role.venue);
+				if(!conf)
+					console.error("Couldn't find publication source " + role.venue);
+				else
+					role.venue = conf.name;
+			}
+			if(role.commitment)
+				role.commitment = this.parseCommitment(role.commitment);
+		})
+		
 		// Parse reviewing
 		_.each(this.json.reviewing, role => {
 			if(role.venue.charAt(0) === "@") {
