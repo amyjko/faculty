@@ -76,6 +76,10 @@ class CER extends React.Component {
 				</ul>
 
 				<p>
+					(Shayan Doroudi provides a nice <a href="https://sites.google.com/uci.edu/shayan-doroudi/blog/learning-theories">primer on learning theories</a> and their disciplinary origins.)
+				</p>
+
+				<p>
 					How does computing education fit in to all of this? Like other <a href="https://www.nap.edu/catalog/13362/discipline-based-education-research-understanding-and-improving-learning-in-undergraduate" target="_blank">discipline-based education research (DBER)</a> such as math and physics education, it draws upon all three of the fields above, using theories and ideas from those fields. However, because it is focused on a discipline, it is specifically concerned with the content of the discipline, specific methods of learing and teaching that content. In this sense, it is more applied, bridging foundational ideas that span any human learning to applied ideas specific to the learning of specific ideas and skills.
 				</p>
 				
