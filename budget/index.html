@@ -161,7 +161,11 @@
 		window.onload = function() {
 		
 			if(localStorage.getItem("history") === null) {
-				localStorage.history = "[]";
+				localStorage.setItem("history", "[]");
+			}
+
+			if(localStorage.getItem("paydate") === null) {
+				localStorage.setItem("paydate", "25");
 			}
 
 			update();
@@ -264,9 +268,9 @@
 		
 		}
 
-		function getPayDay() {
+		function getPayDate() {
 			
-			return [25,25,25,25,25,25,25,25,25,25,25,25][(new Date()).getMonth()];
+			return Number.parseInt(localStorage.getItem("paydate"));
 			
 		}
 
@@ -275,16 +279,30 @@
 			today = new Date();
 
 			// If we're past pay day, return the number of days in the next month.
-			if(today.getDate() >= getPayDay())
+			if(today.getDate() >= getPayDate())
 				today.setMonth(today.getMonth() + 1);
 		
 			return new Date(today.getYear(), today.getMonth(), 0).getDate();
 			
 		}
 		
+		function incrementPayDate() {
+
+			let currentDate = getPayDate();
+			if(currentDate === 28)
+				currentDate = 1;
+			else
+				currentDate++;
+
+			localStorage.setItem("paydate", currentDate.toString());
+
+			update();
+
+		}
+
 		function getDaysRemaining() {
 		
-			var payday = getPayDay();
+			var payday = getPayDate();
 			var daysInMonth = getDaysInMonth();
 		
 			var date = (new Date()).getDate();
@@ -301,7 +319,12 @@
 			var daysLeft = getDaysRemaining();
 			var amountRemaining = getAmountRemaining();
 
-			document.getElementById('remaining').innerHTML = "<span>$" + amountRemaining + "<div class='label'>" + daysLeft + " days left</div></span>";
+			var payDate = getPayDate();
+			var payDateString = payDate.toString();
+			var payDateLastDigit = payDateString.charAt(payDateString.length - 1);
+			payDateString = payDateString + (payDateLastDigit === "1" ? "st" : payDateLastDigit === "2" ? "nd" : payDateLastDigit === "3" ? "rd" : "th");
+
+			document.getElementById('remaining').innerHTML = "<span>$" + amountRemaining + "<div class='label'>" + daysLeft + " days until the " + payDateString + "</div></span>";
 			document.getElementById('amount').innerHTML = (amount === "" ? "" : signtext) + "$" + (amount === "" ? "0" : amount);
 			document.getElementById('keysign').innerHTML = signtext;
 
@@ -498,7 +521,7 @@
 
 	<div id='budget'>
 	
-		<div id='remaining'></div>
+		<div id='remaining' ontouchend='incrementPayDate();'></div>
 
 		<div id='perday'></div>
 
