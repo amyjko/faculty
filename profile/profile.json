@@ -3465,6 +3465,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/icer-2021-a-daily-dose-of-digital-discourse-46ee6c8099cd",
+			"title": "ICER 2021: A daily dose of digital discourse",
+			"date": "2021.8",
+			"tags": ["trip report", "computing education"],
+			"img": "icer2021",
+			"alt": "A screenshot of the ICER 2021 Clowdr landing page."
+		},
+		{
 			"url": "https://amyjko.medium.com/im-having-bottom-surgery-yay-a7c0d1ca72d",
 			"title": "I’m Having Bottom Surgery, Yay!",
 			"date": "2021.7",
