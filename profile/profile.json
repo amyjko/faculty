@@ -7168,6 +7168,23 @@
 	],
 	"funding": [
 		{
+			"id": "endusersynth",
+			"title": "End-User Programming with Synthesis-Guided Interaction Models",
+			"funder": "National Science Foundation",
+			"award": "#2122950",
+			"investigators": "Ratislav Bodik (PI), Amy J. Ko (Co-PI)",
+			"amount": "$749,739",
+			"category": "research",
+			"description": "Invents new applications of program synthesis to supporting learning and end-user programming.",
+			"url": null,
+			"commitment": {
+				"start": "2021-10-01",
+				"end": "2024-09-30",
+				"hours": 2,
+				"priority": 0
+			}
+		},
+		{
 			"id": "googlecser",
 			"title": "Broadening Participation with CS Counternarratives",
 			"funder": "Google",
