@@ -7168,6 +7168,40 @@
 	],
 	"funding": [
 		{
+			"id": "ecep3",
+			"title": "Equity in Computing Education Policies, Pathways, and Practices",
+			"funder": "National Science Foundation",
+			"award": "#2137834",
+			"investigators": "Carol Fletcher (PI), Debra Richardson (Co-PI), Anne Ottenbreit-Leftwich (Co-PI), Joshua Childs (Co-PI), Sarah Dunton (Co-PI), Amy Ko (Senior Personnel)",
+			"amount": "$3,599,041",
+			"category": "service",
+			"description": "Expands pathways for K-12 students to participate in computing education.",
+			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2137834&HistoricalAwards=false",
+			"commitment": {
+				"start": "2021-10-01",
+				"end": "2024-09-30",
+				"hours": 1,
+				"priority": 0
+			}
+		},
+		{
+			"id": "accesscomputing4",
+			"title": "BPC-AE: AccessComputing Fourth Extension",
+			"funder": "National Science Foundation",
+			"award": "#2137312",
+			"investigators": "Richard Ladner (PI), Sheryl Burgstahler (Co-PI), Raja Kushalnagar (Co-PI), Stacy Branham (Co-PI), Elain Short (Co-PI), Amy Ko (Senior Personnel)",
+			"amount": "$2,850,000",
+			"category": "service",
+			"description": "Expands pathways for students with disabilities to participate in computing education.",
+			"url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2137312&HistoricalAwards=false",
+			"commitment": {
+				"start": "2021-10-01",
+				"end": "2024-09-30",
+				"hours": 2,
+				"priority": 0
+			}
+		},
+		{
 			"id": "fairassess",
 			"title": "Developing Authentic and Fair Computer Science Assessments",
 			"funder": "National Science Foundation",
