@@ -7972,6 +7972,19 @@
 	],
 	"talks": [
 		{
+			"date": "2021-09-22",
+			"image": "re21.jpg",
+			"alt": "The title slide, which says 'Requirements of Oppression' and shows a Banksy piece with a small girl strip searching a soldier.",
+			"slides": "slides/RE2021RequirementsOfOppression.pdf",
+			"title": "Requirements of Oppression",
+			"venue": "2021 IEEE International Requirements Engineering Conference",
+			"url": "https://conf.researchr.org/track/RE-2021/RE-2021-keynotes",
+			"recording": null,
+			"practice": "https://www.youtube.com/watch?v=yf1wfyfgXvA&t=12s",
+			"description": "This keynote argues that requirements are the central way that software models the matrix of oppression, and that to be anti-oppressive, requirements engineering must center the margins, humanity, and activism in its work.",
+			"keynote": true
+		},
+		{
 			"date": "2021-07-15",
 			"image": "csta2021.jpg",
 			"alt": "The title slide, which says 'The Roots of Inequity in K-12 CS Education' and shows an elementary CS classroom.",
