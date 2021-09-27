@@ -2543,7 +2543,7 @@
 		{
 			"id": "meron",
 			"name": "Meron Solomon",
-			"active": true,
+			"active": false,
 			"advised": true,
 			"level": "undergrad",
 			"dept": "pre-major",
@@ -2816,7 +2816,7 @@
 			"level": "phd",
 			"dept": "Information School",
 			"coadvisor": null,
-			"bio": "Dastyni was a Ph.D. student in the the Information School. His dissertation focused on problem solving in programming, with a particular focus on self-regulated learning, spanning the fields of HCI and computing education. He is now tenure-track faculty at Towson University, teaching CS and preparing CS teachers.",
+			"bio": "Dastyni was a Ph.D. student in the the Information School. His dissertation focused on problem solving in programming, with a particular focus on self-regulated learning, spanning the fields of HCI and computing education. After graduating, he joined as tenure-track faculty at Towson University, teaching CS and preparing CS teachers.",
 			"url": "http://students.washington.edu/dloksa/",
 			"startdate": 2013,
 			"enddate": 2020,
