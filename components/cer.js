@@ -170,7 +170,17 @@ class CER extends React.Component {
 				</p>
 
 				<p>
-					One note about selecting advisors: their disciplinary affilitation is just <em>one</em> indicator of the nature of the contributions they might make (people in CS departments might built learning technologies, people in colleges of education might focus on teacher training and pedagogy), but this is not a perfect indicator. Look closely at researchers' recent publications; and if their websites seem out of date, write them to ask what they're working on.
+					One common question is whether to get a Ph.D. in a CS department, a College of Education, or some other kind of computing or learning related department, such as information schools, which are often concerned with computing and data literacy. Ultimately, the doctoral program you choose is going to shape a few things: 1) the classes you're required to take in the first year or two, 2) the peers you might sit near and talk to, 3) the faculty who might serve on your committee and what expertise and values they have, and 4) what resources you have to get particular kinds of jobs. 
+					
+					For example, if you go to a CS Ph.D. program, you're going to learn about the latest research in various areas of CS, be surrounded by people interested in computing, but possibly not many interested in computing education; you'll have resources for getting faculty jobs in CS departments, but not really Colleges of Education. In contrast, if you go to a College or School of Education Ph.D. program, you're going to learn about the latest knowledge in education and learning sciences, and be surrounded by people passionate about learning, equity, and justice, but possibly not many people interested in computing. And if you go to a place like an information school, you'll gain new perspectives about data and computing, be surrounded by a radical diversity of people with interests that span many disciplines, but possibly one of only a few people interested in computing education.
+				</p>
+
+				<p>
+					Because of the tradeoffs above, the best places to go are ones where there are advisors that share your interests, a critical mass of people interested in computing education, and healthy interchange between academic units interested in computing, learning, and data. This is because computing education is inherently interdisciplinary; you want peers and faculty that appreciate that, value that, and support that.
+				</p>
+
+				<p>
+					One note about selecting advisors: their disciplinary affiliation is just <em>one</em> indicator of the nature of the contributions they might make (people in CS departments might built learning technologies, people in colleges of education might focus on teacher training and pedagogy), but this is not a perfect indicator. Look closely at researchers' recent publications; and if their websites seem out of date, write them to ask what they're working on.
 				</p>
 
 				<p>

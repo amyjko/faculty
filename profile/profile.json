@@ -2230,6 +2230,20 @@
 	],
 	"people": [
 		{
+			"id": "megumi",
+			"name": "Megumi Kivuva",
+			"active": true,
+			"advised": true,
+			"level": "undergrad",
+			"dept": "Bard College",
+			"coadvisor": null,
+			"bio": "Megumi is an undergraduate at Bard College in her final year studying Computer Science and Spanish Studies. She is interested in justice-centered CS education, specifically ways to make CS more inclusive for Black students",
+			"url": "https://fmegumikivuva.wixsite.com/portfolio",
+			"startdate": 2021,
+			"enddate": null,
+			"achievements": []
+		},
+		{
 			"id": "feec",
 			"name": "Fee Christoph",
 			"active": true,
@@ -3277,7 +3291,7 @@
 			"shortName": "CS justice",
 			"description": "Computing is powerful, but that power is often used by dominant groups in ways that disregard, exclude, or even harm marginalized groups, amplifying and reinforcing sexist, racist, and ableist structures and ideas. My lab is exploring teaching methods, learning technologies, and teacher education paradigms that center these power dynamics in CS education.",
 			"funding": ["@csjustice", "@csassess", "@fmitf", "@googlecser"],
-			"people": ["@ajko", "@jayne", "@olesona", "@kshino", "@skawas", "@laurav4", "@meron", "@perdriau"],
+			"people": ["@ajko", "@jayne", "@olesona", "@kshino", "@skawas", "@laurav4", "@meron", "@perdriau", "@megumi"],
 			"papers": ["cognimates", "criticalcsed","hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess", "csdesignk12"],
 			"links": [],
 			"startdate": 2019,
