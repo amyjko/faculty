@@ -6562,14 +6562,14 @@
 			"institution": "University of Chicago",
 			"department": "Computer Science",
 			"startdate": 2020,
-			"enddate": null
+			"enddate": 2021
 		},
 		{
 			"name": "Lily Durwood",
 			"institution": "University of Washington",
 			"department": "Psychology",
 			"startdate": 2020,
-			"enddate": null
+			"enddate": 2021
 		},
 		{
 			"name": "Matthew Davidson",
@@ -6583,7 +6583,7 @@
 			"institution": "University of Washington",
 			"department": "Computer Science & Engineering",
 			"startdate": 2019,
-			"enddate": null
+			"enddate": 2021
 		},
 		{
 			"name": "Meen Chul Kim",
