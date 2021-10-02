@@ -6537,6 +6537,13 @@
 	],
 	"doctoralCommittees": [
 		{
+			"name": "Alex Okeson",
+			"institution": "University of Washington",
+			"department": "Computer Science & Enngineering",
+			"startdate": 2021,
+			"enddate": null
+		},
+		{
 			"name": "Burren Peil",
 			"institution": "University of Washington",
 			"department": "Human-Centered Design and Engineering",
