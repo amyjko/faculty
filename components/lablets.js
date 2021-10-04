@@ -9,7 +9,7 @@ class Lablets extends React.Component {
 					Are you an undergraduate at UW that wants to join the Code and Cognition lab? Read on for details about our experimental <em>lablets</em> model.
 				</div>
 
-				<p className="alert alert-danger">This is not yet final. However, if you read this and have feedback, <a href="mailto:ajko@uw.edu">email Amy</a>! We hope to recruit in Autumn 2021 and launch it in Winter 2022.</p>
+				<p className="alert alert-danger">This model for undergraduate research participation is highly experimental. We're going to try things and sometimes they won't work. But we might only know they're failing if you provide feedback! If you read this and have feedback, <a href="mailto:ajko@uw.edu">email Amy</a>, and if you've already joined, write Amy in Slack.</p>
 
 				<p>
 					Every year, dozens of students reach out to my lab to participate, but we don't have the capacity to meaningfully mentor everyone who wants to join.
@@ -99,6 +99,7 @@ class Lablets extends React.Component {
 					<li>If you see a need for a new lablet, read the responsibilities in the question below to ensure you are willing to commit to the job.</li>
 					<li>If you're willing, write Amy with your lablet proposal and she'll try to find a supervisor for it.</li>
 					<li>If the lablet is approved by Amy and she finds a supervisor, she will introduce you to your supervisor, who will share an onboarding.</li>
+					<li>Ask your supervisor to create a room in the <a href="https://ohyay.co/s/codeandcognition">Code and Cognition Ohyay</a> and give you admin permissions to design it.</li>
 					<li>Run your lablet, recruiting other students to join! You're welcome to use #codeandcognition to recruit.</li>
 				</ol>
 
@@ -142,14 +143,14 @@ class Lablets extends React.Component {
 				</p>
 
 				<ul>
-					<li><strong>Authors</strong>. A list of people involved in the research, in order of contribution. (The person first in the list is in charge of leading the project and bringing it to completion.</li>
+					<li><strong>Authors</strong>. A list of people involved in the research, in order of contribution. (The first author in the list is in charge of leading the project and bringing it to completion).</li>
 					<li><strong>Phenomena</strong>. A paragraph describing the phenomena of interest.</li>
 					<li><strong>Prior work</strong>. A paragraph, with citations, describing what prior research has discovered about the phenomenon.</li>
 					<li><strong>Question</strong>. A carefully-worded sentence describing the research question you would like to answer.</li>
-					<li><strong>Method</strong>. A paragraph describing the method you would use for answering the research question.</li>
+					<li><strong>Method</strong>. A paragraph describing the method(s) you would use for answering the research question.</li>
 				</ul>
 
-				<p>The proposal should be a Google Doc, set to allow comments from anyone.</p>
+				<p>The proposal should be a Google Doc in the <em>Lablets &gt; Proposals</em> folder, set to allow comments from anyone.</p>
 
 				<p>
 					You can submit a proposal at any time to your lablet supervisor via DM in Slack, who will offer you feedback, and may circulate it for feedback to Amy and others.
