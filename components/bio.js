@@ -6,7 +6,7 @@ class Biography extends React.Component {
 		return (
 			<div>
 			
-				<div className="lead">These are my <a href="#short">short bio</a>, <a href="#lineage">academic lineage</a>, and <a href="#promotion">promotion documents</a>, <a href="#identity">identity statement</a>, <a href="#long">long bio</a>.</div>
+				<div className="lead">These are my <a href="#short">short bio</a>, <a href="#lineage">academic lineage</a>, and <a href="#promotion">promotion documents</a>, <a href="#identity">identity statement</a>, <a href="#long">long bio</a>, and a <a href={this.props.app.getWebRoot() + "/images/headshots/ajko.jpg"}>high-resolution headshot</a>.</div>
 										
 				<h3 id="short">Short Bio</h3>
 
