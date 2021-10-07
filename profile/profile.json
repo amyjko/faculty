@@ -6793,7 +6793,7 @@
 			"commitment": {
 				"start": "2021-02-01",
 				"end": "2023-02-01",
-				"hours": 0.75,
+				"hours": 1,
 				"priority": 0
 			}
 		},
