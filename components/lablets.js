@@ -169,9 +169,30 @@ class Lablets extends React.Component {
 
 				<h3>How do you monitor lablet activity?</h3>
 				<p>
-					Supervisors will conduct a quarterly lablet health check, sending a report to Amy each quarter
+					Supervisors will conduct a quarterly lablet health check, sending a report to Amy each quarter.
 					The report will comment on lablet engagement, clarity of focus, and confidence in lablet leadership.
-					Amy may use this information to restructure lablets.
+					Amy may use this information to restructure lablets for the following quarter.
+				</p>
+
+				<h3>Can I get a letter of recommendation for participating?</h3>
+				<p>
+					Letters of recommendation are a common request for scholarships, recognitions, and graduate school, and unfortunately they can be very hard to acquire!
+					And there's a reason for this: faculty like Amy are asked to write hundreds a year, and if she said yes to all of them, she'd have no time to do the rest of her job.
+					Therefore, Amy has generally reserved letters for students with whom she's had sustained, direct interactions with over a significant period of time.
+				</p>
+
+				<p>
+					Do lablets count? Here's the policy we're going to try:
+				</p>
+
+				<ul>
+					<li>If you <em>participated</em> in a lablet, but did not interact with Amy in a sustained way over a significant period of time, she will write a <strong>templated</strong> letter that explains what lablets are, confirms that you participated in one, and include a personalized statement from your lablet supervisor. This won't be a very helpful letter, since it will read as a slightly personalized form letter, but it will at least indicate participation, interest, and help you meet whatever unreasonable and oppressive requirements some employer or school has set about letters.</li>
+					<li>If you <em>led</em> a lablet, Amy will meet with you, discuss your experiences and interests, and write a short letter. This will be more valuable than the templated letter above.</li>
+					<li>If you <em>collaborated</em> with Amy on research or another project, she will write a detailed, personalized letter, as she's always done for undergraduates who engage in research with her.</li>
+				</ul>
+
+				<p>
+					If any part of that policy isn't clear, let Amy know and she will clarify it.
 				</p>
 
 			</div>
