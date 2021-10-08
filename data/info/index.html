@@ -419,6 +419,7 @@
 
                         return <div>
                             <h1>{filteredStudents.length} Informatics { this.state.view === "minors" ? "minors" : "majors" }</h1>
+                            <small><em>data from {data.date}</em></small>
                             <hr/>
                             <div>
                                 {Object.keys(views).map(view => <ViewSelector selected={this.state.view === view} dashboard={this} view={view} />)}
