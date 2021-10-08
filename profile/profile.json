@@ -6537,6 +6537,13 @@
 	],
 	"doctoralCommittees": [
 		{
+			"name": "Leah Perlmutter",
+			"institution": "University of Washington",
+			"department": "Computer Science & Enngineering",
+			"startdate": 2021,
+			"enddate": null
+		},
+		{
 			"name": "Alex Okeson",
 			"institution": "University of Washington",
 			"department": "Computer Science & Enngineering",
