@@ -30,6 +30,35 @@ class Biography extends React.Component {
 					She received her Ph.D. at the <a href="http://www.hcii.cs.cmu.edu">Human-Computer Interaction Institute</a> at <a href="http://www.cmu.edu">Carnegie Mellon University</a> in 2008, and degrees in Computer Science and Psychology with Honors from <a href="http://www.oregonstate.edu">Oregon State University</a> in 2002.
 				</p>
 
+				<h3 id="age">Age</h3>
+
+				<p>
+					Why would I put a section on this page about my age? 
+					There are so many reasons. 
+					First, people are constantly assuming I'm much younger than I am (which I guess is to be expected, since I have a young face, but must we really assume?)
+					Second, when I tell people my age, they're often skeptical (which is ridiculous, because I'm pretty sure I know my age better than they do). 
+					Third, in ageist academia, much of how I'm treated and how my ideas are treated are dependent on how people perceive my expertise, experience, and wisdom. 
+					Looking young is almost guaranteed to lead less thoughtful academics to assume I'm a student, that I know nothing, and that I have no expertise to share.
+					Hence this section on this page.
+				</p>
+
+				<p>
+					So how old am I? 
+					I was born in the summer of 1980.
+					I am an Gen Xer.
+					The music of my childhood came with big hair and melodrama.
+					I spent a whole summer earning and saving $99 to buy a first generation Nintendo.
+					Childhood meant going wherever I wanted with whomever I wanted after school with no parental consequences.
+					I was one of the first people on the consumer internet.
+					My adolescence was defined by pervasive grunge, sadness, suicide, comic book stores, arcades, and Magic the Gathering tournaments.
+					And I look back to the 80's and 90's and wonder how the world got so complicated, so quickly.
+				</p>
+
+				<p>
+					So let my face be a reminder: you <em>cannot</em> judge someone's age, life experience, expertise, or wisdom from their face.
+					So stop trying!
+				</p>
+
 				<h3 id="lineage">Academic Lineage</h3>
 
 				<p>I have a relatively short academic lineage. I was advised by...</p>
