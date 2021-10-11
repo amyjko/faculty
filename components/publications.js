@@ -72,7 +72,10 @@ class Publications extends React.Component {
 		}
 		return (
 			<div>
-				<div className="lead">These are my {this.props.app.getProfile().getPublications().length} academic publications. See <a href="https://scholar.google.com/citations?user=otmdDLoAAAAJ&hl=en" target="_blank">who's citing them.</a></div>
+				<div className="lead">
+					These are my {this.props.app.getProfile().getPublications().length} academic publications. 
+					You can see who's citing them on <a href="https://scholar.google.com/citations?user=otmdDLoAAAAJ&hl=en" target="_blank">Google Scholar</a>, <a href="https://www.semanticscholar.org/author/Amy-J.-Ko/1441987875" target="_blank">Semantic Scholar</a>, or <a href="https://dl.acm.org/profile/81100500360" target="_blank">ACM</a>.
+				</div>
 				
 				<p>
 					<small>
