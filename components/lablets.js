@@ -9,7 +9,12 @@ class Lablets extends React.Component {
 					Are you an undergraduate at UW that wants to join the Code and Cognition lab? Read on for details about our experimental <em>lablets</em> model.
 				</div>
 
-				<p className="alert alert-danger">This model for undergraduate research participation is highly experimental. We're going to try things and sometimes they won't work. But we might only know they're failing if you provide feedback! If you read this and have feedback, <a href="mailto:ajko@uw.edu">email Amy</a>, and if you've already joined, write Amy in Slack.</p>
+				<p className="alert alert-danger">
+					This is an entirely new experimental model for undergraduate research participation we're launching in Winter 2021.
+					We're going to try things and sometimes they won't work. 
+					But we might only know they're failing if you provide feedback! 
+					If you read this and have feedback, <a href="mailto:ajko@uw.edu">email Amy</a>, and if you've already joined, write Amy in Slack.
+				</p>
 
 				<p>
 					Every year, dozens of students reach out to my lab to participate, but we don't have the capacity to meaningfully mentor everyone who wants to join.

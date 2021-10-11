@@ -90,17 +90,17 @@ class Lab extends React.Component {
 
 				<div className="row">
 					<div className="col-sm-4">
-						<p><strong>Current UW Ph.D. student?</strong> Lurk in <i>#codeandcognitionlab</i> on <a target="_blank" href="https://computinged-uw.slack.com">ComputingEd@UW</a> Slack. DM or email me about your interests and perhaps we'll meet.</p>
+						<p><strong>Current UW Ph.D. student?</strong> Lurk in <i>#codeandcognitionlab</i> on <a target="_blank" href="https://computinged-uw.slack.com">ComputingEd@UW</a> Slack. DM or email me about your interests. I'm always open to chatting, collaborating, serving on committees, and when I have capacity, advising.</p>
 					</div>
 					<div className="col-sm-4">
-						<p><strong>Future UW Ph.D. student?</strong> Read my <Link to="/cer">CER FAQ</Link> to ensure we share interests. Talk to my current students about their experiences. Apply to the <a href="http://ischool.uw.edu/phd" target="_blank">iSchool</a> or <a href="http://www.cs.washington.edu/education/grad/prospective.html" target="_blank">CSE</a> in Autumn.</p>
+						<p><strong>Future UW Ph.D. student?</strong> Read my <Link to="/cer">CER FAQ</Link> to ensure we share interests. Talk to my current students about their experiences. Apply to the <a href="http://ischool.uw.edu/phd" target="_blank">iSchool</a> or <a href="http://www.cs.washington.edu/education/grad/prospective.html" target="_blank">CSE</a> in Autumn. Assume I'm admitting students in the coming year; no need to write me to confirm.</p>
 					</div>
 					<div className="col-sm-4">
 						<p>
 							<strong>Current UW undergrad?</strong> 
-							Read about <a href="https://ischool.uw.edu/programs/informatics/research">engaging in undergrad research</a>. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjcrMFAMUEv3SXXggXscg17sIZ6p7YFSpCkFPADkBZ8BZB9g/viewform?usp=sf_link" target="_blank">Apply</a> to my lab.
-							I recruit for part-time researchers and in Winter for summer positions. 
-							{/* I may also be launching a <Link to={"/lablets"}>new participation model</Link> in Autumn 2021. */}
+							Read about <a href="https://ischool.uw.edu/programs/informatics/research">engaging in undergrad research</a>.
+							If that sounds interesting, read about my lab's undergraduate research model, <Link to={"/lablets"}>lablets</Link>, and follow the instructions there to join.
+							I also recruit for full-time summer research assistants in Winter through the <a href="https://dub.washington.edu/gettinginvolved.html#tab_prospective" target="_blank">DUB REU program</a>.
 						</p>
 					</div>
 				</div>
