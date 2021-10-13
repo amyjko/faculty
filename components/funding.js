@@ -41,6 +41,10 @@ class Funding extends React.Component {
 							}
 							</ul>
 							Six of my 13 past and present doctoral students have also won NSF Graduate Research Fellowships, which support three years of their research.
+							
+							<br/>
+							<br/>
+							For those preparing CAREER proposals looking for a exemplars, here is my <a href={this.props.app.getWebRoot() + "/papers/Ko2009CAREER.pdf"}>awarded proposal</a>.
 						</span>
 					}
 				/>
