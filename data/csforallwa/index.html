@@ -37,7 +37,7 @@
                     super()
                     this.state = { 
                         data: null,
-                        year: 2020,
+                        year: 2021,
                         district: null,
                         school: null
                     };
@@ -133,7 +133,7 @@
                                         </td>
                                         <td>
                                             { scope === null ? 
-                                                "This school did not report offering any CS classes" :
+                                                "No data available." :
                                                 <div className="container">
                                                     <div class="row">
                                                         <div class="col-sm">
@@ -142,7 +142,7 @@
                                                                 <tbody>
                                                                     {
                                                                         scope.teachers === null ?
-                                                                            "This school did not report any CS teachers" :
+                                                                            "No data available." :
                                                                             Object.keys(scope.teachers).map(key => 
                                                                                 <tr>
                                                                                     <td>{{
@@ -160,7 +160,8 @@
                                                                                         "whiteFemale": "White women",
                                                                                         "hispanicFemale": "Hispanic women",
                                                                                         "piFemale": "Pacific Islander women",
-                                                                                        "unknownFemale": "Women of unknown race/ethnicity"
+                                                                                        "unknownFemale": "Women of unknown race/ethnicity",
+                                                                                        "nonBinary": "Non-binary of any race/ethnicity",
                                                                                     }[key]}</td>
                                                                                     <td style={{textAlign: "right"}}>{scope.teachers[key].toLocaleString()}</td>
                                                                                 </tr>
@@ -175,7 +176,7 @@
                                                                 <tbody>
                                                                     {
                                                                         scope.courses === null ?
-                                                                            "This school did not report any CS courses" :
+                                                                            "No data available." :
                                                                             Object.keys(scope.courses).map(key => 
                                                                                 <tr>
                                                                                     <td><em>{key}</em></td>
@@ -193,7 +194,7 @@
                                                                 <tbody>
                                                                     {
                                                                         scope.students === null ?
-                                                                            "This school did not report any students completing CS courses" :
+                                                                            "No data available." :
                                                                             Object.keys(scope.students).map(key => 
                                                                                 <tr>
                                                                                     <td>{{
