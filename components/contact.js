@@ -16,7 +16,14 @@ class ContactInfo extends React.Component {
 					alt="A photograph of my office."
 					link="https://goo.gl/maps/7c3irRBubGvXYEtZ8"
 					header="Office hours"
-					content={<span>. My office hours are virtual and by appointment; contact me via one of the channels below to see if a meeting makes sense. If you're in one my classes, see the syllabus for my course office hours.</span>}
+					content={
+						<span>
+							. For current UW students, my office hours are virtual and by appointment.
+							Contact me via one of the channels below to see if a meeting makes sense. 
+							If you're in one my classes, see the syllabus for my course office hours.
+							If you're not a UW student, write me an email; we'll meet if appropriate.
+						</span>
+					}
 				/>
 
 				<Block 

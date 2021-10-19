@@ -10,7 +10,7 @@ class Lablets extends React.Component {
 				</div>
 
 				<p className="alert alert-danger">
-					This is an entirely new experimental model for undergraduate research participation we're launching in Winter 2021.
+					This is an experimental model for undergraduate research participation we're launching in Winter 2021.
 					We're going to try things and sometimes they won't work. 
 					But we might only know they're failing if you provide feedback! 
 					If you read this and have feedback, <a href="mailto:ajko@uw.edu">email Amy</a>, and if you've already joined, write Amy in Slack.
@@ -173,11 +173,28 @@ class Lablets extends React.Component {
 				</p>
 
 				<h3>How do you monitor lablet activity?</h3>
+
 				<p>
 					Supervisors will conduct a quarterly lablet health check, sending a report to Amy each quarter.
 					The report will comment on lablet engagement, clarity of focus, and confidence in lablet leadership.
 					Amy may use this information to restructure lablets for the following quarter.
 				</p>
+
+				<h3 id="codeofconduct">How am I expected to behave in a lablet?</h3>
+
+				<p>
+					All lablet members are subject to the following code of conduct:
+				</p>
+					
+				<ul>
+					<li>Respect people's name, pronouns, identity, health, wellbeing, agency, worth, dignity, and safety.</li>
+					<li>Respect for the above should come before before lab activities and priorities; learning and research cannot happen without the psychological safety conferred by the above.</li>
+					<li>All lab activities must be conducted with integrity: there shall be no plagiarism of writing, no fabrication of data, no misrepresentation of results, no sharing of ideas without proper attribution and credit.</li>
+					<li>
+						If anyone in a lablet notices violations of the code above, they can and should report it to either the lablet leader, the lablet supervisor, Amy, or anyone else in the lab they trust.
+						No one should struggle through conflicts in isolation; we want to help.
+					</li>
+				</ul>
 
 				<h3>Can I get a letter of recommendation for participating?</h3>
 				<p>
@@ -195,6 +212,29 @@ class Lablets extends React.Component {
 					<li>If you <em>led</em> a lablet, Amy will meet with you, discuss your experiences and interests, and write a short letter. This will be more valuable than the templated letter above.</li>
 					<li>If you <em>collaborated</em> with Amy on research or another project, she will write a detailed, personalized letter, as she's always done for undergraduates who engage in research with her.</li>
 				</ul>
+
+				<h3>Are there other ways I can participate in the lab other than lablets?</h3>
+				
+				<p>
+					Yes, there are several!
+				</p>
+				
+				<ul>
+					<li>
+						We recruit undergraduates for full-time paid summer research positions each Winter through the <a href="https://dub.washington.edu/gettinginvolved.html#tab_prospective" target="_blank">DUB REU program</a>. 
+						Participating in a lablet is a great way to be competitive for one of those slots.
+					</li>
+					<li>
+						We will occasionally hire undergraduates for focused work on a project such as development, maintenance, or data analysis.
+						We'll post announcements about that to the #codeandcognitionlab channel and elsewhere.
+					</li>
+					<li>
+						Other members of the lab may organize informal research activities or recruit volunteers.
+						You can always ask to see if there are opportunities.
+					</li>
+				</ul>
+
+				<hr/>
 
 				<p>
 					If any part of that policy isn't clear, let Amy know and she will clarify it.
