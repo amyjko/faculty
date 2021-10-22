@@ -79,7 +79,7 @@ class Lablets extends React.Component {
 
 				<p>To encourage focus, you can only be part of <strong>one</strong> lablet at a time.</p>
 
-				<h3>How do I join an existing lablet?</h3>
+				<h3>How do I join a lablet?</h3>
 
 				<p>
 					Follow these steps:
@@ -87,6 +87,7 @@ class Lablets extends React.Component {
 
 				<ol>
 					<li>Review the <a href="https://docs.google.com/spreadsheets/d/1ziwgmDBdCNY1AbhlQti8hgabwhVhwvRpL8xPjknywnQ/edit#gid=0" target="_blank">active lablets</a>.</li>
+					<li>Join the <a href="http://computinged-uw.slack.com">ComputingEd@UW Slack</a> (follow this link and use your UW address to create an account on the Slack). Fill out your profile so people can learn about you.</li>
 					<li>Write Amy a DM in Slack and introduce yourself. If she has any concerns, she'll let you know; all UW students are eligible. If she doesn't, she'll give you access to the lablets folder in Google Drive, which will give you edit access to everything.</li>
 					<li>Once you have access, add your name to the <a href="https://docs.google.com/spreadsheets/d/1ziwgmDBdCNY1AbhlQti8hgabwhVhwvRpL8xPjknywnQ/edit#gid=772195334" target="_blank">students</a> sheet.</li>
 					<li>After you hear from Amy, write the lablet leader and supervisor a joint message in Slack and introduce yourself. They'll welcome you to the lablet and tell you what's next for the lablet.</li>
