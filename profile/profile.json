@@ -8005,6 +8005,19 @@
 	],
 	"talks": [
 		{
+			"date": "2021-10-22",
+			"image": "whycs21.png",
+			"alt": "The title slide, which says 'Code, Calculators, Creativity, and the Many Paths to CS Education' and shows a TI-82 graphing calculator.",
+			"slides": "slides/WhyCS2021Keynote.pdf",
+			"title": "Code, Calculators, Creativity, and the Many Paths to CS Education",
+			"venue": "2021 Washington State Why CS Summit",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "In this short keynote, I shared my path to computing and then make the case for many paths to computing through student interests.",
+			"keynote": true
+		},
+		{
 			"date": "2021-09-22",
 			"image": "re21.jpg",
 			"alt": "The title slide, which says 'Requirements of Oppression' and shows a Banksy piece with a small girl strip searching a soldier.",
