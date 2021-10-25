@@ -37,7 +37,8 @@ class Header extends React.Component {
 					        <nav>
 								<ul className="nav nav-pills">
 									<li role="presentation" className={path === "/" ? "active" : ""}><Link to="/">Research</Link></li>
-									<li role="presentation" className={path.startsWith("/lab") ? "active" : ""}><Link to="/lab">Lab</Link></li>
+									<li role="presentation" className={path.match(/^\/lab(\/.+)?$/) ? "active" : ""}><Link to="/lab">Lab</Link></li>
+									<li role="presentation" className={path.startsWith("/lablets") ? "active" : ""}><Link to="/lablets">Lablets</Link></li>
 									<li role="presentation" className={path.startsWith("/communities") ? "active" : ""}><Link to="/communities">Communities</Link></li>
 									<li role="presentation" className={path.startsWith("/publications") ? "active" : ""}><Link to="/publications">Publications</Link></li>
 									<li role="presentation" className={path.startsWith("/posts") ? "active" : ""}><Link to="/posts">Blog</Link></li>

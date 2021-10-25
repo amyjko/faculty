@@ -80,6 +80,7 @@ class Lab extends React.Component {
 					My lab includes students from <a href="http://ischool.uw.edu">The Information School</a>, <a href="http://cs.washington.edu">The Paul G. Allen School of Computer Science & Engineering</a>, the <a href="https://education.uw.edu">College of Education</a>, and occasionally other units on campus.
 					I run the lab in a doctoral student-centered manner: students define their own projects within the scope of my interests, and often move me into new research areas. 
 					Read our <a href="https://docs.google.com/document/d/1LMHv0HdxXEgSNqICt3wtq8xWuH73kP7plZ_KeXyP6qM/edit?usp=sharing">onboarding document</a> for more details about the ever evolving culture of the lab.
+					Read our <Link to={"/lablets"}>lablets</Link> page for details on how we engage undergraduates in research at scale.
 				</p>
 
 				<p>
