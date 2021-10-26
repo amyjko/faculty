@@ -6,11 +6,11 @@ class Lablets extends React.Component {
 		return (
 			<div>
 				<div className='lead'>
-					Are you an undergraduate at UW that wants to join the Code and Cognition lab? Read on for details about our experimental <em>lablets</em> model.
+					Are you an undergraduate or masters student at UW that wants to join the Code and Cognition lab? Read on for details about our experimental <em>lablets</em> model.
 				</div>
 
 				<p className="alert alert-danger">
-					This is an experimental model for undergraduate research participation we're launching in Winter 2021.
+					This is an experimental model for undergraduate and masters student research participation we're launching in Winter 2021.
 					We're going to try things and sometimes they won't work. 
 					But we might only know they're failing if you provide feedback! 
 					If you read this and have feedback, <a href="mailto:ajko@uw.edu">email Amy</a>, and if you've already joined, write Amy in Slack.
@@ -38,11 +38,11 @@ class Lablets extends React.Component {
 				</p>
 
 				<ul>
-					<li>A group of undergraduates who self-organize around a common interest, that...</li>
+					<li>A group of undergraduates and masters students who self-organize around a common interest, that...</li>
 					<li>Meets weekly (or more frequently) to do research activities related to the focus of the Code &amp; Cognition lab, and that...</li>
 					<li>Starts and ends on a quarterly basis, and that...</li>
 					<li>Has 8 or fewer people, and is...</li>
-					<li>Led by an undergraduate leader elected by majority by the members of the lablet at the beginning of each quarter, and is...</li>
+					<li>Led by an undergraduate or masters leader elected by majority by the members of the lablet at the beginning of each quarter, and is...</li>
 					<li>Supervised by either Amy or one of her postdocs or doctoral students.</li>
 				</ul>
 
@@ -228,7 +228,7 @@ class Lablets extends React.Component {
 						Participating in a lablet is a great way to be competitive for one of those slots.
 					</li>
 					<li>
-						We will occasionally hire undergraduates for focused work on a project such as development, maintenance, or data analysis.
+						We will occasionally hire undergraduates and masters students for focused work on a project such as development, maintenance, or data analysis.
 						We'll post announcements about that to the #codeandcognitionlab channel and elsewhere.
 					</li>
 					<li>

@@ -94,9 +94,8 @@ class Lab extends React.Component {
 					</div>
 					<div className="col-sm-4">
 						<p>
-							<strong>Current UW undergrad?</strong> 
-							Read about <a href="https://ischool.uw.edu/programs/informatics/research">engaging in undergrad research</a>.
-							If that sounds interesting, read about my lab's undergraduate research model, <Link to={"/lablets"}>lablets</Link>, and follow the instructions there to join.
+							<strong>Current UW undergrad or masters student?</strong> Read about <a href="https://ischool.uw.edu/programs/informatics/research">engaging in undergrad research</a>.
+							If that sounds interesting, read about my lab's undergraduate/masters research model, <Link to={"/lablets"}>lablets</Link>, and follow the instructions there to join.
 							I also recruit for full-time summer research assistants in Winter through the <a href="https://dub.washington.edu/gettinginvolved.html#tab_prospective" target="_blank">DUB REU program</a>.
 						</p>
 					</div>
