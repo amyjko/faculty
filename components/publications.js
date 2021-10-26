@@ -1,5 +1,4 @@
 import React from 'react';
-import $ from 'jquery';
 import _ from 'lodash';
 
 import { Paper }  from './paper';
@@ -25,14 +24,13 @@ class Publications extends React.Component {
 
 	componentDidMount() {
 		
-		var paperToHighlight = this.props.match.params.paper;
-
-		var highlight = $('[name=' + paperToHighlight + ']');
+		let paperToHighlight = this.props.match.params.paper;
+		let highlight = document.getElementsByName(paperToHighlight);
 		
 		// Now scroll to the highlight, if there is one.
 		if(highlight.length > 0)
-			$('html,body').animate({scrollTop:highlight.offset().top - $(window).height() / 2}, 300);
-		
+			this.props.app.scrollToElement(highlight[0]);
+
 	}
 
 	render() {

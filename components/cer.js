@@ -2,6 +2,10 @@ import React from 'react';
 
 class CER extends React.Component {
 
+	componentDidMount() {
+		this.props.app.scrollToHash();
+	}
+
 	person(name, url, expertise, dept, inst, country) {
 
 		return <tr key={name}>

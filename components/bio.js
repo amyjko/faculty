@@ -2,6 +2,11 @@ import _ from 'lodash';
 import React from 'react';
 
 class Biography extends React.Component {
+
+	componentDidMount() {
+		this.props.app.scrollToHash();
+	}
+
 	render() {
 		return (
 			<div>

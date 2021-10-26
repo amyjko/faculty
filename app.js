@@ -28,6 +28,10 @@ import { Footer } from './components/footer';
 
 import { Profile } from './profile/profile.js';
 
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
+
 // Polyfill startsWith
 if (!String.prototype.startsWith) {
     String.prototype.startsWith = function(searchString, position){
@@ -61,6 +65,19 @@ class App extends React.Component {
 		
 	}
 	
+	scrollToElement(element) {
+		window.scrollTo({ top: element.getBoundingClientRect().top - window.innerHeight / 2, behavior: 'smooth' });
+	}
+
+	scrollToHash() {
+		// Scroll to the element if there is one.
+		if(window.location.hash.length > 0) {
+			let element = document.getElementById(window.location.hash.substring(1));
+			if(element)
+				this.scrollToElement(element);
+		}
+	}
+
 	getWebRoot() { return this.props.root; }
 
 	render() {
@@ -97,7 +114,7 @@ class App extends React.Component {
 							<Route path="/lablets" render={(props) => <Lablets {...props} app={this} />} />
 							<Route path="/projects/:id" render={(props) => <Project {...props} app={this} />} />
 							<Route path="/cv" render={(props) => <Vita {...props} app={this} />} />
-							<Route path="/cer" component={CER}/>
+							<Route path="/cer" render={(props) => <CER {...props} app={this} />} />
 							<Route path="404" component={Unknown}/>
 							<Route path="*" component={Unknown}/>
 						</Switch>	

@@ -2,7 +2,7 @@ import React from 'react';
 import _ from 'lodash';
 import { Link } from 'react-router-dom';
 
-import {Block} from './block';
+import { Block } from './block';
 
 class Person extends React.Component {
 	render() {
@@ -44,13 +44,9 @@ class Lab extends React.Component {
 
 	componentDidMount() {
 		
-		var personToHighlight = this.props.match.params.person;
-
-		var highlight = $('[name=' + personToHighlight + ']');
-		
-		// Now scroll to the highlight, if there is one.
+		let highlight = document.getElementsByName(this.props.match.params.person);
 		if(highlight.length > 0)
-			$('html,body').animate({scrollTop:highlight.offset().top - $(window).height() / 2}, 300);
+			this.props.app.scrollToElement(highlight[0]);
 		
 	}
 
