@@ -68,6 +68,14 @@ class Communities extends React.Component {
 				/>
 
 				<Block 
+					image={this.props.app.getWebRoot() + "/images/communities/create.png"}
+					alt="The CREATE center logo."
+					link="https://create.uw.edu"
+					header="CREATE"
+					content=". The Center for Research and Education on Accessible Technology and Experiences explores how to make technology and the world accessible. My work in the center explores how to educate students and teachers about accessible computing, to ensure future generations of technologists create a more accessible digital world."
+				/>
+
+				<Block 
 					image={this.props.app.getWebRoot() + "/images/communities/euses.jpg"}
 					alt="The EUSES Washington logo."
 					link="http://www.eusesconsortium.org"
