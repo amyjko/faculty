@@ -28,6 +28,9 @@ class Profile {
 		// Parse talk dates.
 		_.each(this.json.talks, talk => talk.date = this.parseDate(talk.date));
 
+		// Parse panel dates.
+		_.each(this.json.panels, panel => panel.date = this.parseDate(panel.date));
+
 		// Parse service
 		_.each(this.json.service, service => service.commitment = this.parseCommitment(service.commitment));
 
@@ -227,6 +230,11 @@ class Profile {
 		return this.cloneFilterSort(this.json.talks.slice(), filter, sort);
 	}
 
+	// Get the list of panels.
+	getPanels(filter, sort) { 
+		return this.cloneFilterSort(this.json.panels.slice(), filter, sort);
+	}
+	
 	// Get the list of classes.
 	getClasses() { return this.json.classes; }
 	

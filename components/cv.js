@@ -319,6 +319,13 @@ class Vita extends React.Component {
 					true,
 					talk => talk.date.getFullYear(), talk => talk.date.getFullYear(), "title", "venue")}				
 
+				<h2>Invited Panels</h2>
+
+				{this.getChunkList(
+					profile.getPanels(), 
+					true,
+					panel => panel.date.getFullYear(), panel => panel.date.getFullYear(), "title", "venue")}
+
 				<h2>Patents</h2>
 			
 				{
