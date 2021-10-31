@@ -1,19 +1,18 @@
 import _ from 'lodash';
 import React from 'react';
 
-class Biography extends React.Component {
+import { Linkable } from './linkable';
+import { HashLink } from 'react-router-hash-link';
 
-	componentDidMount() {
-		this.props.app.scrollToHash();
-	}
+class Biography extends React.Component {
 
 	render() {
 		return (
 			<div>
 			
-				<div className="lead">These are my <a href="#short">short bio</a>, <a href="#lineage">academic lineage</a>, and <a href="#promotion">promotion documents</a>, <a href="#identity">identity statement</a>, <a href="#long">long bio</a>, and a <a href={this.props.app.getWebRoot() + "/images/headshots/ajko.jpg"}>high-resolution headshot</a>.</div>
+				<div className="lead">These are my <HashLink smooth to="#short">short bio</HashLink>, <HashLink smooth to="#lineage">academic lineage</HashLink>, and <HashLink smooth to="#promotion">promotion documents</HashLink>, <HashLink smooth to="#identity">identity statement</HashLink>, <HashLink smooth to="#long">long bio</HashLink>, and a <a href={this.props.app.getWebRoot() + "/images/headshots/ajko.jpg"}>high-resolution headshot</a>.</div>
 										
-				<h3 id="short">Short Bio</h3>
+				<Linkable app={this.props.app} id="short">Short Bio</Linkable>
 
 				<p>
 					Amy J. Ko is a Professor at the <a href="http://www.washington.edu">University of Washington</a> <a href="http://ischool.uw.edu/">Information School</a> and an Adjunct Professor at the <a href="http://cs.washington.edu">Paul G. Allen School of Computer Science and Engineering</a>.
@@ -35,7 +34,7 @@ class Biography extends React.Component {
 					She received her Ph.D. at the <a href="http://www.hcii.cs.cmu.edu">Human-Computer Interaction Institute</a> at <a href="http://www.cmu.edu">Carnegie Mellon University</a> in 2008, and degrees in Computer Science and Psychology with Honors from <a href="http://www.oregonstate.edu">Oregon State University</a> in 2002.
 				</p>
 
-				<h3 id="age">Age</h3>
+				<Linkable app={this.props.app} id="age">Age</Linkable>
 
 				<p>
 					Why would I put a section on this page about my age? 
@@ -64,7 +63,7 @@ class Biography extends React.Component {
 					So stop trying!
 				</p>
 
-				<h3 id="lineage">Academic Lineage</h3>
+				<Linkable app={this.props.app} id="lineage">Academic Lineage</Linkable>
 
 				<p>I have a relatively short academic lineage. I was advised by...</p>
 				<ul>
@@ -79,7 +78,7 @@ class Biography extends React.Component {
 					<li>Allen Ambler, University of Kansas</li>
 				</ul>
 				
-				<h3 id="promotion">Promotion Documents</h3>
+				<Linkable app={this.props.app} id="promotion">Promotion Documents</Linkable>
 				
 				<p>
 					These are the documents I submitted for tenure-track faculty positions in 2008, for my tenure and promotion to Associate Professor, and for my later promotion to Professor.
@@ -95,7 +94,7 @@ class Biography extends React.Component {
 					<li><a href="promotion/Full-Statements.pdf">Research, teaching, service, and diversity statements</a> for tenure and promotion to Professor.</li>
 					<li><a href="promotion/Full-CV.pdf">Curriculum vita</a> for tenure and promotion to Professor.</li>
 				</ul>
-				<h3 id="identity">Identity</h3>
+				<Linkable app={this.props.app}  id="identity">Identity</Linkable>
 				
 				<p>
 					Labels are are often used to stereotype, categorize, and oppress.
@@ -120,7 +119,7 @@ class Biography extends React.Component {
 					<li><strong>I am an atheist</strong>. I find my spirituality in human values and the unknown, but do not believe there is an all powerful being that designed the universe.</li>
 				</ul>
 
-				<h3 id="long">Long Bio</h3>
+				<Linkable app={this.props.app}  id="long">Long Bio</Linkable>
 
 				<p>
 					<img src={this.props.app.getWebRoot() + "/images/bio/bio-childhood.jpg"} className="pull-right img-float" />

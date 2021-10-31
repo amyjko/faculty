@@ -1,6 +1,8 @@
 import React from 'react';
 import {Paper} from './paper';
 import _ from "lodash";
+import { HashLink } from 'react-router-hash-link';
+import { Linkable } from './linkable';
 
 class Advice extends React.Component {
 	render() {
@@ -11,21 +13,21 @@ class Advice extends React.Component {
 				</div>
 
 				<ul>
-					<li><a href="#csis">What is the difference between computer science and information science?</a></li>
-					<li><a href="#phdadmissions">How do I get into a Ph.D. program?</a></li>
-					<li><a href="#phdstudent">What is it like to be a Ph.D. student?</a></li>
-					<li><a href="#goodquestion">What makes a good research question?</a></li>
-					<li><a href="#goodwriting">How can I become a good technical writer?</a></li>
-					<li><a href="#review">I was asked to review a paper. Should I?</a></li>
-					<li><a href="#evaluation">How should I evaluate this developer tool I invented?</a></li>
-					<li><a href="#copyright">My paper was accepted. Which ACM copyright option should I choose?</a></li>
+					<li><HashLink smooth to="#csis">What is the difference between computer science and information science?</HashLink></li>
+					<li><HashLink smooth to="#phdadmissions">How do I get into a Ph.D. program?</HashLink></li>
+					<li><HashLink smooth to="#phdstudent">What is it like to be a Ph.D. student?</HashLink></li>
+					<li><HashLink smooth to="#goodquestion">What makes a good research question?</HashLink></li>
+					<li><HashLink smooth to="#goodwriting">How can I become a good technical writer?</HashLink></li>
+					<li><HashLink smooth to="#review">I was asked to review a paper. Should I?</HashLink></li>
+					<li><HashLink smooth to="#evaluation">How should I evaluate this developer tool I invented?</HashLink></li>
+					<li><HashLink smooth to="#copyright">My paper was accepted. Which ACM copyright option should I choose?</HashLink></li>
 				</ul>
 				
 				<p>
 					Also see the excellent pages by <a href="http://www.cs.washington.edu/homes/mernst/advice/">Mike Ernst</a> (software engineering), <a href="http://people.engr.ncsu.edu/txie/advice.htm">Tao Xie</a> (software engineering) and <a href="http://www.cs.cmu.edu/~jasonh/advice.html">Jason Hong</a> (HCI).
 				</p>
 
-				<h3 id="csis">What is the difference between computer science and informatics at UW?</h3>
+				<Linkable app={this.props.app} id="csis">What is the difference between computer science and informatics at UW?</Linkable>
 				
 				<p>
 					I think of Computer Science and Informatics like we think about Physics versus Engineering: the former concerns itself with a phenomenon as it occurs in nature and the latter is concerned with applications of it for humanity.
@@ -42,21 +44,21 @@ class Advice extends React.Component {
 					You can read more about my view of information and computing in a blog post I wrote about <a target="_blank" href="https://medium.com/bits-and-behavior/big-ideas-about-information-c09e4d9c60bd">big ideas about information</a>.
 				</p>
 
-				<h3 id="phdadmissions">How do I get into a Ph.D. program?</h3>
+				<Linkable app={this.props.app} id="phdadmissions">How do I get into a Ph.D. program?</Linkable>
 				
 				<p>Philip Guo gives a <a href="http://www.pgbovine.net/PhD-application-tips.htm">brutally honest glimpse</a> into how he and others review Ph.D. applicants in HCI and other areas of computing. I do similar things, but also look for glimpses of potential and common interest.</p>	
 
 				
-				<h3 id="phdstudent">What is it like to be a Ph.D. student?</h3>
+				<Linkable app={this.props.app} id="phdstudent">What is it like to be a Ph.D. student?</Linkable>
 
 				<p>There are many, many resources on this. Philip Guo write a <a href="http://pgbovine.net/PhD-memoir.htm"> a nice Ph.D. memoir</a> about his experiences at Stanford. It has a definite slant toward CS and software engineering academic culture, but it's a useful read to anyone thinking about a Ph.D. <a href="http://matt.might.net/articles/successful-phd-students/">Matt Might's advice</a> is similar sobering, but practical. I also like <a href="https://freedom-to-tinker.com/2010/09/27/advice-new-graduate-students/">Jennifer Rexford's view of Ph.D. life as individual growth by leveraging the group</a>, because it complements more pragmatic views. The Economist also has some practical advice on <a href="http://www.economist.com/node/17723223?fsrc=scn/fb/wl/ar/mr/disposableacademic">Why doing a PhD is often a waste of time</a>. And, for a lighter glimpse into Ph.D. life, there is always <a href="http://www.phdcomics.com/comics.php">Ph.D. comics</a>.</p>
 
 
-				<h3 id="goodquestion">What makes a good research paper?</h3>
+				<Linkable app={this.props.app} id="goodquestion">What makes a good research paper?</Linkable>
 				
 				<p>Learning to do research is hard! Developing good questions is just one of the many challenges in research. I wrote a book chapter that <a href={this.props.app.getWebRoot() + "/papers/Ko2019StudyDesign.pdf"}>covers many aspects of developing good research questions</a>. I use the same practices with the students in my lab.</p>
 
-				<h3 id="goodwriting">How can I become a good technical writer?</h3>
+				<Linkable app={this.props.app} id="goodwriting">How can I become a good technical writer?</Linkable>
 				
 				<p>
 					When writing and reviewing scientific papers, there are a lot of mistakes one can make. Several have written helpful guide:
@@ -69,7 +71,7 @@ class Advice extends React.Component {
 					<li>Morgan Klause Scheuerman has an excellent guide on <a href="https://www.morgan-klaus.com/gender-guidelines.html">reporting gender</a>.</li>
 				</ul>
 
-				<h3 id="review">I was asked to review a paper. Should I?</h3>
+				<Linkable app={this.props.app} id="review">I was asked to review a paper. Should I?</Linkable>
 				
 				<p>My Ph.D. students often ask me whether they should accept a paper review request. Here's some of the advice I give them for doing or not doing it:</p>
 				
@@ -92,7 +94,7 @@ class Advice extends React.Component {
 					<li>You're overloaded on other service commitments.</li>
 				</ul>
 				
-				<h3 id="evaluation">How should I evaluate this developer tool I invented?</h3>
+				<Linkable app={this.props.app} id="evaluation">How should I evaluate this developer tool I invented?</Linkable>
 				
 				<p>I often get questions from researchers asking for help to design studies to evaluate the developer tool what they've built. I could write a whole book on this (and <a href="http://www.amazon.com/Research-Methods-Statistics-Psychology-Coolican/dp/0340812583">several</a> <a href="http://www.amazon.com/Research-Methods-Psychology-John-Shaughnessy/dp/007128351X/ref=sr_1_1?s=books&ie=UTF8&qid=1281625862&sr=1-1">people</a> <a href="http://www.socialresearchmethods.net/">have</a>, just not on the topic of CS research).</p>
 				
@@ -106,7 +108,7 @@ class Advice extends React.Component {
 				
 				<p>I also like <a href="http://pgbovine.net/running-user-studies.htm">Philip Guo's exceedingly practical experiment checklist</a>, which helps prevent data collection catastrophes.</p> 
 
-				<h3 id="copyright">Which ACM copyright option should I choose?</h3>
+				<Linkable app={this.props.app} id="copyright">Which ACM copyright option should I choose?</Linkable>
 				
 				<p>Casey Fiesler has <a href="http://caseyfiesler.com/2014/10/02/acm-publication-copyright/">a helpful blog post</a> about this decision.</p>
 

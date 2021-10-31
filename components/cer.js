@@ -1,10 +1,9 @@
 import React from 'react';
 
-class CER extends React.Component {
+import { Linkable } from './linkable';
+import { HashLink } from 'react-router-hash-link';
 
-	componentDidMount() {
-		this.props.app.scrollToHash();
-	}
+class CER extends React.Component {
 
 	person(name, url, expertise, dept, inst, country) {
 
@@ -30,24 +29,24 @@ class CER extends React.Component {
 				<p>Computing education research (CER), also known as computer science education (CSEd) research, is the study of how people learn and teach computing, broadly construed. This FAQ will teach you more about the field and how you might contribute to it:</p>
 
 				<ul>
-					<li><a href="#what-is-cer">What is computing education research?</a></li>
-					<li><a href="#comparison-to-other-fields">How does computing education research compare to learning sciences, education research, and educational psychology?</a></li>
-					<li><a href="#major-questions">What are the overarching research questions in CER?</a></li>
-					<li><a href="#exciting-discoveries">What are some exciting CER discoveries?</a></li>
-					<li><a href="#jobs">What kinds of jobs do computing education researchers do?</a></li>
-					<li><a href="#becoming-a-researcher">How do I become a CER researcher?</a></li>
-					<li><a href="#getting-a-phd">Where can I get a Ph.D. in CER?</a></li>
-					<li><a href="#doctoral-admissions">For doctoral admissions, how important is it to demonstrate focus in a single research area?</a></li>
-					<li><a href="#getting-a-job">Where can I find a CS education research job?</a></li>
-					<li><a href="#funding-for-cer">Is there funding for CER?</a></li>
-					<li><a href="#being-impactful">What do I need to know to be an effective, impactful computing education researcher?</a></li>
-					<li><a href="#conferences-and-journals">What conferences and journals publish CER?</a></li>
-					<li><a href="#experience-reports">What's the difference between a research paper and an experience report?</a></li>
-					<li><a href="#blogs">How can I keep up with the latest research, practice, and policy?</a></li>
-					<li><a href="#community">How can I connect with the community?</a></li>
+					<li><HashLink smooth to="#what-is-cer">What is computing education research?</HashLink></li>
+					<li><HashLink smooth to="#comparison-to-other-fields">How does computing education research compare to learning sciences, education research, and educational psychology?</HashLink></li>
+					<li><HashLink smooth to="#major-questions">What are the overarching research questions in CER?</HashLink></li>
+					<li><HashLink smooth to="#exciting-discoveries">What are some exciting CER discoveries?</HashLink></li>
+					<li><HashLink smooth to="#jobs">What kinds of jobs do computing education researchers do?</HashLink></li>
+					<li><HashLink smooth to="#becoming-a-researcher">How do I become a CER researcher?</HashLink></li>
+					<li><HashLink smooth to="#getting-a-phd">Where can I get a Ph.D. in CER?</HashLink></li>
+					<li><HashLink smooth to="#doctoral-admissions">For doctoral admissions, how important is it to demonstrate focus in a single research area?</HashLink></li>
+					<li><HashLink smooth to="#getting-a-job">Where can I find a CS education research job?</HashLink></li>
+					<li><HashLink smooth to="#funding-for-cer">Is there funding for CER?</HashLink></li>
+					<li><HashLink smooth to="#being-impactful">What do I need to know to be an effective, impactful computing education researcher?</HashLink></li>
+					<li><HashLink smooth to="#conferences-and-journals">What conferences and journals publish CER?</HashLink></li>
+					<li><HashLink smooth to="#experience-reports">What's the difference between a research paper and an experience report?</HashLink></li>
+					<li><HashLink smooth to="#blogs">How can I keep up with the latest research, practice, and policy?</HashLink></li>
+					<li><HashLink smooth to="#community">How can I connect with the community?</HashLink></li>
 				</ul>
 				
-				<h3 id="what-is-cer">What is computing education research?</h3>
+				<Linkable app={this.props.app} id="what-is-cer">What is computing education research?</Linkable>
 
 				<p>
 					First, CER is not teaching. Teaching is helping people acquire knowledge, skills, attitudes, beliefs, identities. Research is discovery and invention. Teachers teach computing, whereas computing education researchers make discoveries about this teaching and learning, and invent new ways for these teaching and learning to occur. CER is an example of <a href="https://www.nap.edu/catalog/13362/discipline-based-education-research-understanding-and-improving-learning-in-undergraduate">discipline-based education research</a>, like math education research or science education research, all of which are part of the broader field of education and learning sciences research.
@@ -61,7 +60,7 @@ class CER extends React.Component {
 					It's also important to note that I view "computing" broadly: it's not just about programming, or even just about computer science, but also about all of the phenomena surrounding computing, including data, information, privacy, security, ethics, software engineering, and sociocultural and sociopolitical views of computing in society. This means that computing education and CER can and does cover far more than just learning to code&mdash;it just hasn't historically.
 				</p>
 
-				<h3 id="comparison-to-other-fields">How does computing education research compare to learning sciences, education research, and educational psychology?</h3>
+				<Linkable app={this.props.app} id="comparison-to-other-fields">How does computing education research compare to learning sciences, education research, and educational psychology?</Linkable>
 
 				<p>
 					My background isn't in these fields, though I do collaborate with people in these other communities and have learned about their differences. Here's the best characterization I can give:
@@ -87,7 +86,7 @@ class CER extends React.Component {
 					How does computing education fit in to all of this? Like other <a href="https://www.nap.edu/catalog/13362/discipline-based-education-research-understanding-and-improving-learning-in-undergraduate" target="_blank">discipline-based education research (DBER)</a> such as math and physics education, it draws upon all three of the fields above, using theories and ideas from those fields. However, because it is focused on a discipline, it is specifically concerned with the content of the discipline, specific methods of learing and teaching that content. In this sense, it is more applied, bridging foundational ideas that span any human learning to applied ideas specific to the learning of specific ideas and skills.
 				</p>
 				
-				<h3 id="major-questions">What are the overarching research questions in CER?</h3>
+				<Linkable app={this.props.app} id="major-questions">What are the overarching research questions in CER?</Linkable>
 				
 				<p>
 					As with any research discipline, research questions can and should be specific. However, there are some major overarching questions in this field that researchers have begun to investigate, including:
@@ -116,7 +115,7 @@ class CER extends React.Component {
 					While the "people" in the questions above could be anyone (youth, teens, college students, adults, and even teachers), the history of CER has primarily focused on teaching students in post-secondary settings, because the faculty conducting research have found it easier to study the students they are teaching. This is changing as countries around the world begin to incorporate computing into all levels of school, and as private industry begins to create technologies and services that teach computing to all ages. For example, my research has investigated new ways to teach youth from age 8-18, as well as adults.
 				</p>
 				
-				<h3 id="exciting-discoveries">What are some exciting CER discoveries?</h3>
+				<Linkable app={this.props.app} id="exciting-discoveries">What are some exciting CER discoveries?</Linkable>
 				
 				<p>
 					There are so many! Examples include:
@@ -144,7 +143,7 @@ class CER extends React.Component {
 					The field's recent efforts to transform STEM education through computing, invent rapid new forms of learning online, and devise more equitable ways to teach should be equally, if not more impactful.
 				</p>
 				
-				<h3 id="jobs">What kinds of jobs do computing education researchers do?</h3>
+				<Linkable app={this.props.app} id="jobs">What kinds of jobs do computing education researchers do?</Linkable>
 
 				<p>
 					Most computing education researchers are faculty in universities. Many of these faculty are tenure-track faculty like myself, which means a substantial portion of our time (~50%) is spent on scholarship. However, there are also many full-time instructors who find additional time to do research on top of their teaching. Many of the original authors at ICER were once members of the Bootstrapping or Scaffolding groups (led by Fincher, Petre, and Tenenberg), who were CS teachers that started to do research in their own classrooms.
@@ -157,7 +156,7 @@ class CER extends React.Component {
 					Tenure-track faculty are in the best position to make advances in the field because a substantial portion of their time is dedicated to research, but the research contributions by teaching-track faculty are critical, as they often bring more richly informed perspectives on the practice of teaching. It is possible to do research in other positions, but it is often outside the scope of a job. Because of this, many non-tenure track faculty focus their research on settings that their job gives them access to, which can restrict which research questions they can answer.
 				</p>
 
-				<h3 id="becoming-a-researcher">How do I become a CER researcher?</h3>
+				<Linkable app={this.props.app} id="becoming-a-researcher">How do I become a CER researcher?</Linkable>
 
 				<p>
 					The most effective route is to get a Ph.D. in computing education research at one of the many Ph.D. granting universities in the world. Ph.D. students learn to conduct research over the course of multiple years (generally 4 to 6) under the supervision of an advisor.
@@ -167,7 +166,7 @@ class CER extends React.Component {
 					Undergraduate research is a key part of creating pathways to Ph.D. programs. Undergraduates can help accelerate research projects, and even lead their own projects, helping with admission to Ph.D. programs (especially if you publish, which demonstrates your interest and ability in conducting research). See the <a href="https://cra.org/crae/wp-content/uploads/sites/3/2020/10/Resources-for-Scaling-Undergraduate-Research.pdf" target="_blank">CRA-E best practices guide on undergraduate CS research</a> for a glimpse into how effective undergraduate research experiences should work.
 				</p>
 
-				<h3 id="getting-a-phd">Where can I get a Ph.D. in CER?</h3>
+				<Linkable app={this.props.app} id="getting-a-phd">Where can I get a Ph.D. in CER?</Linkable>
 
 				<p>
 					You need to find a university that grants Ph.D.s and has tenure-track faculty who do research in CER on a topic that you're interested in. The alphabetical list below contains some of the many faculty who advise Ph.D. students on computing education research. Find them online and see what kind of research they're doing. (This list may be out of date, as faculty sometimes move universities, retire, go to industry, or change research areas, so be sure to check their website for the latest information).
@@ -315,7 +314,7 @@ class CER extends React.Component {
 					</tbody>
 				</table>
 
-				<h3 id="doctoral-admissions">For doctoral admissions, how important is it to demonstrate focus in a single research area?</h3>
+				<Linkable app={this.props.app} id="doctoral-admissions">For doctoral admissions, how important is it to demonstrate focus in a single research area?</Linkable>
 				
 				<p>
 					Advisors differ on the criteria they use to select candidates. Personally, I look for 1) experience with research, 2) passion in the subject of computing education, 3) the requisite skills to persue that passion, and 4) an overlap with my interests. You can get experience by working with faculty at your own institution. That can be hard if you don't have faculty doing work in this area. The requisite skills depend a lot on the contributions you want to make. If you want to envision and build new learning technologies, can you code well enough to build them? If you want to investigate new teacher training methods, do you have teaching experience? If you want to do more theoretical work, how strong are your writing and analytical skills? All of these skills end up being important in some way to participating in CER discourse, just to varying degrees.
@@ -329,7 +328,7 @@ class CER extends React.Component {
 					Of course, even if you meet all of the criteria above (or other criteria that other advisors might have), you might not get accepted. That's because doctoral advising is extremely time-intensive: we commit to advise people for anywhere from 3-6 years or more, and so we can only take on so many students at a time. There might be a dozen people who apply to work with one of us, but we only have capacity to admit one or two at most.
 				</p>
 				
-				<h3 id="getting-a-job">Where can I find a CS education research job?</h3>
+				<Linkable app={this.props.app} id="getting-a-job">Where can I find a CS education research job?</Linkable>
 
 				<p>
 					There are many places where global CS education-related jobs are posted:
@@ -350,7 +349,7 @@ class CER extends React.Component {
 					Monitor those closely for opportunities. The field is growing, but in unconventional ways: there are tenure-track positions, teaching-track positions, professor of practice positions, postdocs, research and development positions in not-for-profits, and much, much more.
 				</p>
 				
-				<h3 id="funding-for-cer">Is there funding for CER?</h3>
+				<Linkable app={this.props.app} id="funding-for-cer">Is there funding for CER?</Linkable>
 
 				<p>
 					Yes! At least in the U.S., Ph.D. students are generally funded by the research grants their advisors obtain, and can also receive NSF Graduate Research Fellowships, which cover three years of tuition and stipend. Undergraduates can participate in NSF-sponsored Research Experience for Undergraduate projects that faculty sponsor. CER faculty can also apply for NSF CAREER grants on computing education research, or an <a href="http://www.nsf.gov/pubs/2015/nsf15569/nsf15569.htm" target="_blank">NSF Research Initiation Initiative</a> for new faculty. Most Ph.D. granting institutions also offer teaching assistantships. In the United States, there are also regularly programs that fund CER. This changes frequently, but here is a current snapshot as of 2016:
@@ -367,7 +366,7 @@ class CER extends React.Component {
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=13707" target="_blank">NSF IIS Cyber-Human Systems</a>. Funds HCI research. Not CS specific, but is very supportive of educational technologies that advance the capabilities of human expression.</li>
 				</ul>
 
-				<h3 id="being-impactful">What do I need to know to be an effective, impactful computing education researcher?</h3>
+				<Linkable app={this.props.app} id="being-impactful">What do I need to know to be an effective, impactful computing education researcher?</Linkable>
 
 				<p>
 					First, you need to know some computing yourself. That doesn't mean you need an entire computer science degree, but it helps to have learned to code a bit, and to understand what an algorithm and a data structure is. It can also help to understand the culture of computer science as an academic discipline. Taking the first few introductory courses in a CS department is usually enough to provide this content knowledge foundation, unless you want to do research on the teaching of more advanced topics in CS.
@@ -482,7 +481,7 @@ class CER extends React.Component {
 
 				<p>If you've read all of the above and are looking for more literature, be sure to follow all of the SIGCSE conferences, and other relevant education and learning science journals, monitoring the <a href="http://acm.org/dl" target="_blank">ACM Digital Library</a> and the NSF funded website <a href="https://csedresearch.org" target="_blank">CSEdResearch.org</a>, which surveys the broad expanse of CS education research, including article summaries and evaluation instruments.</p>
 
-				<h3 id="teaching-guidance">What books provide guidance on CS teaching?</h3>
+				<Linkable app={this.props.app} id="teaching-guidance">What books provide guidance on CS teaching?</Linkable>
 
 				<p>While there are many books that provide guidance on teaching in general (e.g., Tools for teaching (Davis, 2009), How learning works: Seven research-based principles for smart teaching (Ambrose et al., 2010), Teaching what you don’t know (Huston, 2009), <a href="https://ies.ed.gov/ncee/wwc/practiceguide/1" target="_blank">What Works Clearinghouse</a>), there are only a handful of books written to guide CS educators (alphabetically):</p>
 
@@ -506,7 +505,7 @@ class CER extends React.Component {
 
 				<p>Is one missing from this list? Let me know and I'll add it.</p>
 
-				<h3 id="conferences-and-journals">What conferences and journals publish CER?</h3>
+				<Linkable app={this.props.app} id="conferences-and-journals">What conferences and journals publish CER?</Linkable>
 
 				<p>Most academic fields have exclusively academic venues for publication, with few practitioners participating in or reading the research that researchers produce. The CER community is unique (and I believe quite fortunate) in that practitioners are deeply involved in the academic research community (partly because most faculty conducting research are teachers themselves). Below I note several conferences and journals where you can publish computing education research (see SIGCSE for <a href="http://sigcse.org/sigcse/resources/publish" target="_blank">a broader list</a>). Note that I separate the pure research venues from the venues that combine both research and practice since the combined venues are often dominated by practioners, which can make it hard to have focused research conversations and rigorous peer review.</p>
 
@@ -574,13 +573,13 @@ class CER extends React.Component {
 					<li><strong>FIE</strong> (the ASEE Frontiers in Education conference) is more broad and more practitioner focused than SIGCSE and occasionally has CER work.</li>
 				</ul>
 
-				<h3 id="sigcse">What is SIGCSE?</h3>
+				<Linkable app={this.props.app} id="sigcse">What is SIGCSE?</Linkable>
 
 				<p>
 					<a href="http://sigcse.org/" target="_blank">SIGCSE</a>, like other ACM Special Interest Groups (SIGs), is an organization that focuses on a particular topic within ACM, namely computer science education. It sponsors ACM conferences (e.g., the SIGCSE Technical Symposium and ICER) and influences their structure and focus. Note that SIGCSE the group organizes SIGCSE the conference. I know, it's confusing, but aren't you glad you read this?
 				</p>
 
-				<h3 id="experience-reports">What's the difference between a research paper and an experience report?</h3>
+				<Linkable app={this.props.app} id="experience-reports">What's the difference between a research paper and an experience report?</Linkable>
 
 				<p>
 					This is an important question, since many of the conference venues in the computing education community publish both. Unfortunately, the community hasn't developed much clarity about the differences between these. The result is that many papers published in the SIGCSE experience report track look like research papers, and many of the papers published in the SIGCSE research track look like experience reports. What's the essential difference?
@@ -594,7 +593,7 @@ class CER extends React.Component {
 					I believe that both are valuable in their own ways. Research allows us to build confidence in what we know, whereas sharing experience allows us to teach each other. We need both for a thriving practice of CS teaching and a thriving body of knowledge to inform that practice.
 				</p>
 
-				<h3 id="blogs">How can I keep up with the latest research, practice, and policy?</h3>
+				<Linkable app={this.props.app} id="blogs">How can I keep up with the latest research, practice, and policy?</Linkable>
 
 				<p>
 					There are a few excellent blogs (in alphabetical order):
@@ -612,7 +611,7 @@ class CER extends React.Component {
 				
 				<p>Is this list missing you? Let me know!</p>
 				
-				<h3 id="community">How can I connect with the community?</h3>
+				<Linkable app={this.props.app} id="community">How can I connect with the community?</Linkable>
 
 				<p>There are several online communities to join:</p>
 

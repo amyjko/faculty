@@ -80,6 +80,8 @@ class App extends React.Component {
 
 	getWebRoot() { return this.props.root; }
 
+	getRoute() { return this.props.location.pathname; }
+
 	render() {
 		
 		var currentRoute = this.props.location.pathname;

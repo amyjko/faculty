@@ -36,6 +36,11 @@ b, strong {
 	font-weight: 600;
 }
 
+h3.linked {
+	text-decoration-line: underline;
+	text-decoration-color: #337ab7;
+}
+
 .table > tbody > tr > td {
     vertical-align: top;
 	border-top: 0px solid #ddd;
