@@ -16,6 +16,10 @@
 			"name": "ACM Technical Symposium on Computer Science Education (SIGCSE), Research Track",
 			"short": "SIGCSE"
 		},
+		"sigcsex": {
+			"name": "ACM Technical Symposium on Computer Science Education (SIGCSE), Experience Report Track",
+			"short": "SIGCSE"
+		},
 		"icse": {
 			"name": "ACM/IEEE International Conference on Software Engineering (ICSE)",
 			"short": "ICSE"
@@ -71,12 +75,12 @@
 			"deadname": false,
 			"year": 2022,
 			"title": "The House of Computing: Integrating Counternarratives into Computer Systems Education",
-			"source": "@sigcse",
+			"source": "@sigcsex",
 			"pages": "to appear",
 			"doi": null,
 			"local": null,
 			"publisher": "ACM",
-			"contribution": "Teaching computer systems through the lens of sociohistorical choices and values can open space for student reexamination of technical knowledge and values."
+			"contribution": "Teaching computer systems through the lens of sociopolitical and historical choices can open space for student reexamination of technical knowledge and values."
 		},
 		{
 			"id": "howtoo",
