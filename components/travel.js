@@ -45,7 +45,7 @@ class Travel extends React.Component {
 				<h3>Upcoming trips</h3>
 				{
 					renderTrips(
-						trip => trip.commitment.start.getTime() > Date.now(),
+						trip => trip.commitment.end.getTime() > Date.now(),
 						trip => trip.commitment.start.getTime()
 					)
 				}
@@ -53,7 +53,7 @@ class Travel extends React.Component {
 				<h3>Past trips</h3>
 				{
 					renderTrips(
-						trip => trip.commitment.start.getTime() <= Date.now(),
+						trip => trip.commitment.end.getTime() <= Date.now(),
 						trip => -trip.commitment.start.getTime()
 					)
 				}

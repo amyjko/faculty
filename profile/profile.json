@@ -7601,6 +7601,32 @@
 	],
 	"travel": [
 		{
+			"url": null,
+			"title": "University of Michigan",
+			"details": "I'm serving on a panel on Equity, Justice, and Engineering Education sponsored by the Science, Technology, and Public Policy (STPP) Program at the Ford School of Public Policy.",
+			"category": "research",
+			"commitment": {
+				"start": "2022-03-20",
+				"end": "2022-03-22",
+				"hours": 16,
+				"priority": 2
+			},
+			"report": null
+		},
+		{
+			"url": "http://csedcon.com",
+			"title": "CSEdCon",
+			"details": "I'm attending the opening and closing plenaries on K-12 CS education policy and education reform.",
+			"category": "service",
+			"commitment": {
+				"start": "2021-11-03",
+				"end": "2022-11-04",
+				"hours": 4,
+				"priority": 1
+			},
+			"report": null
+		},
+		{
 			"url": "https://conf.researchr.org/home/RE-2021",
 			"title": "RE 2021",
 			"details": "I'm giving an invited keynote",
