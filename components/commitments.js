@@ -492,7 +492,13 @@ class Commitments extends React.Component {
 
                 <h3>Weekly workload</h3>
 
-                <p>Here's approximately about how busy I'll be per week in the next two years. You might notice I don't like working more than 45 hours a week.</p>
+                <p>
+                    Here's approximately about how busy I'll be per week in the next two years. 
+                    You might notice from the wiggles that I don't like working more than 45 hours a week.
+                    Do big numbers mean I work obscene hours?
+                    No: I take shortcuts to make my work fit into 45 hours a week.
+                    For example, it might mean being less prepared for class, missing a meeting, or making less progress on a grant or service responsibility.
+                </p>
 
                 <table className="table">
                     <tbody>
