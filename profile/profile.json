@@ -51,6 +51,34 @@
 	},
 	"pubs": [
 		{
+			"id": "ubcrit",
+			"kind": "refereed conference paper",
+			"authors": ["@jayne", "@megumi", "@ajko"],
+			"deadname": false,
+			"year": 2022,
+			"title": "“A key to reducing inequities in like, AI, is by reducing inequities everywhere first”: Emerging Critical Consciousness in a Co-Constructed Secondary CS Classroom",
+			"source": "@sigcse",
+			"pages": "to appear",
+			"doi": null,
+			"local": null,
+			"publisher": "ACM",
+			"contribution": "Finds that before there is space for critical consciousness about CS, teachers have to navigate issues of trust, positionality, and inequitable systems of education."
+		},
+		{
+			"id": "houseofcomputing",
+			"kind": "refereed conference paper",
+			"authors": ["@mararyan", "@ajko"],
+			"deadname": false,
+			"year": 2022,
+			"title": "The House of Computing: Integrating Counternarratives into Computer Systems Education",
+			"source": "@sigcse",
+			"pages": "to appear",
+			"doi": null,
+			"local": null,
+			"publisher": "ACM",
+			"contribution": "Teaching computer systems through the lens of sociohistorical choices and values can open space for student reexamination of technical knowledge and values."
+		},
+		{
 			"id": "howtoo",
 			"kind": "refereed conference paper",
 			"authors": ["Maryam Arab", "@jliang9", "Yang Kyu Yoo", "@ajko", "@latoza"],
@@ -3292,7 +3320,7 @@
 			"description": "Computing is powerful, but that power is often used by dominant groups in ways that disregard, exclude, or even harm marginalized groups, amplifying and reinforcing sexist, racist, and ableist structures and ideas. My lab is exploring teaching methods, learning technologies, and teacher education paradigms that center these power dynamics in CS education.",
 			"funding": ["@csjustice", "@csassess", "@fmitf", "@googlecser"],
 			"people": ["@ajko", "@jayne", "@olesona", "@kshino", "@skawas", "@laurav4", "@meron", "@perdriau", "@megumi"],
-			"papers": ["cognimates", "criticalcsed","hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess", "csdesignk12"],
+			"papers": ["cognimates", "criticalcsed","hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess", "csdesignk12", "ubcrit", "houseofcomputing"],
 			"links": [],
 			"startdate": 2019,
 			"stopdate": null
