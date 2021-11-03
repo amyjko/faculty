@@ -334,7 +334,7 @@ class Commitments extends React.Component {
                     // Add time for preparing to teach the quarter before.
                     this.commit(
                         course.number + " Prep", "Curriculum design", "teaching",
-                        1, 3, false,
+                        1, 2, false,
                         new Date(offering.year - (offering.term === 2 ? 1 : 0), [6, 9, 0][offering.term - 1], [1, 5, 5][offering.term - 1]),
                         new Date(offering.year - (offering.term === 2 ? 1 : 0), [8, 11, 3][offering.term - 1], [15, 15, 15][offering.term - 1])
                     );
