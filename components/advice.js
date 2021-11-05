@@ -3,6 +3,7 @@ import {Paper} from './paper';
 import _ from "lodash";
 import { HashLink } from 'react-router-hash-link';
 import { Linkable } from './linkable';
+import { Link } from 'react-router-dom';
 
 class Advice extends React.Component {
 	render() {
@@ -13,6 +14,7 @@ class Advice extends React.Component {
 				</div>
 
 				<ul>
+					<li><HashLink smooth to="#letters">Will you write me a letter of recommendation?</HashLink></li>
 					<li><HashLink smooth to="#csis">What is the difference between computer science and information science?</HashLink></li>
 					<li><HashLink smooth to="#phdadmissions">How do I get into a Ph.D. program?</HashLink></li>
 					<li><HashLink smooth to="#phdstudent">What is it like to be a Ph.D. student?</HashLink></li>
@@ -25,6 +27,39 @@ class Advice extends React.Component {
 				
 				<p>
 					Also see the excellent pages by <a href="http://www.cs.washington.edu/homes/mernst/advice/">Mike Ernst</a> (software engineering), <a href="http://people.engr.ncsu.edu/txie/advice.htm">Tao Xie</a> (software engineering) and <a href="http://www.cs.cmu.edu/~jasonh/advice.html">Jason Hong</a> (HCI).
+				</p>
+
+				<Linkable app={this.props.app}>Will you write me a letter of recommendation?</Linkable>
+
+				<p>
+					Maybe.
+					All of the following must be true before I commit to writing you a letter:
+				</p>
+
+				<ul>
+					<li>You've asked for it two weeks in advance of the deadline.</li>
+					<li>You've given me all of the information you have about what is expected in the letter.</li>
+					<li>You've shared with me why you need the letter.</li>
+					<li>You've explained why I'm one of the best people in your network to write the letter.</li>
+					<li>I've had multiple conversations about things beyond the scope of a class and it's requirements (e.g., in office hours, in research, or other settings).</li>
+				</ul>
+
+				<p>
+					For many students, this is easy to satisfy.
+					For example, postdocs, doctoral students, and undergraduate researchers in my research lab easily satisfy all of the criteria above.
+					They don't even need to ask if I'll write; it's a given.
+					But I receive many requests from students I've had in classes that I've <em>never</em> talked to.
+					In these cases, what would I even say in the letter?
+					"They were in my class, but I don't know them?"
+					If you're in that situation, I would love to get to know you, but if I spent the time to do that with every student who asked for a letter, I would probably be spending more than a dozen hours a week meeting with students just to write letters.
+					I definitely cannot do that; I have too many other responsibilities in research, teaching, and service.
+				</p>
+
+				<p>
+					There are some exceptions to the policy above.
+					If a the "letter" you need is really just a form that I fill out attesting that I had you in class, I'm happy to do that.
+					If you just need a reference for a job, I'm happy to be a reference; I rarely get called, and when I do, it's rarely onerous.
+					And if you're a student in one of our <Link to={"/lablets"}>lablets</Link>, there are specific conditions for earning a letter.
 				</p>
 
 				<Linkable app={this.props.app} id="csis">What is the difference between computer science and informatics at UW?</Linkable>
