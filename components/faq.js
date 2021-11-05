@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 import { Linkable } from './linkable';
 import { Link } from 'react-router-dom';
 
-class Advice extends React.Component {
+class FAQ extends React.Component {
 	render() {
 		return (
 			<div>
@@ -152,4 +152,4 @@ class Advice extends React.Component {
 	}
 }
 
-export {Advice}
+export { FAQ }

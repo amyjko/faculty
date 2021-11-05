@@ -16,7 +16,7 @@ import { Lablets } from './components/lablets';
 import { Header } from './components/header';
 import { Research } from './components/research';
 import { Project } from './components/project';
-import { Advice } from './components/advice';
+import { FAQ } from './components/faq';
 import { Classes } from './components/classes';
 import { Talks } from './components/talks';
 import { Books } from './components/books';
@@ -102,7 +102,7 @@ class App extends React.Component {
 							<Route path="/publications/:paper?" render={(props) => <Publications {...props} app={this} />} />
 							<Route path="/posts" render={(props) => <Posts {...props} app={this} />} />
 							<Route path="/impact" render={(props) => <Impact {...props} app={this} />} />
-							<Route path="/advice" render={(props) => <Advice {...props} app={this} />} />
+							<Route path={["/faq/", "/advice"]} render={(props) => <FAQ {...props} app={this} />} />
 							<Route path="/classes" render={(props) => <Classes {...props} app={this} />} />
 							<Route path="/talks" render={(props) => <Talks {...props} app={this} />} />
 							<Route exact path="/books" render={(props) => <Books {...props} app={this} />} />

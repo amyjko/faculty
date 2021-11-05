@@ -2496,7 +2496,7 @@
 	 		"level": "undergrad",
 	 		"dept": "Pre-major",
 	 		"coadvisor": null,
-	 		"bio": "Emilia was an undergraduate student pursuing Informatics and helped with Neil's research on understanding the personal and interpersonal factors influencing computing career choices.",
+	 		"bio": "Emilia was an undergraduate student pursuing Informatics and helped with Mara's research on understanding the personal and interpersonal factors influencing computing career choices.",
 	 		"url": "https://www.linkedin.com/in/emilia-borisova",
 	 		"startdate": 2020,
 	 		"enddate": null,
@@ -6260,9 +6260,9 @@
 			"type": "journal",
 			"commitment": {
 				"start": "2021-12-01",
-				"end": null,
+				"end": "2024-12-01",
 				"hours": 3,
-				"priority": 0
+				"priority": 1
 			}
 		},
 		{
