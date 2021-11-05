@@ -7253,13 +7253,13 @@
 			"commitment": {
 				"start": "2021-10-01",
 				"end": "2024-09-30",
-				"hours": 1,
-				"priority": 0
+				"hours": 0.5,
+				"priority": 1
 			}
 		},
 		{
 			"id": "accesscomputing4",
-			"title": "BPC-AE: AccessComputing Fourth Extension",
+			"title": "AccessComputing Alliance",
 			"funder": "National Science Foundation",
 			"award": "#2137312",
 			"investigators": "Richard Ladner (PI), Sheryl Burgstahler (Co-PI), Raja Kushalnagar (Co-PI), Stacy Branham (Co-PI), Elain Short (Co-PI), Amy Ko (Senior Personnel)",
@@ -7271,7 +7271,7 @@
 				"start": "2021-10-01",
 				"end": "2024-09-30",
 				"hours": 2,
-				"priority": 0
+				"priority": 1
 			}
 		},
 		{
@@ -7288,7 +7288,7 @@
 				"start": "2021-10-01",
 				"end": "2024-09-30",
 				"hours": 2,
-				"priority": 0
+				"priority": 1
 			}
 		},
 		{
@@ -7305,7 +7305,7 @@
 				"start": "2021-10-01",
 				"end": "2024-09-30",
 				"hours": 2,
-				"priority": 0
+				"priority": 1
 			}
 		},
 		{
@@ -7323,7 +7323,7 @@
 				"start": "2021-07-01",
 				"end": "2022-06-30",
 				"hours": 1,
-				"priority": 0
+				"priority": 1
 			}
 		},
 		{
@@ -7340,7 +7340,7 @@
 				"start": "2020-05-15",
 				"end": "2023-09-15",
 				"hours": 4,
-				"priority": 0
+				"priority": 1
 			}
 		},
 		{
@@ -7357,7 +7357,7 @@
 				"start": "2019-10-01",
 				"end": "2022-10-01",
 				"hours": 1,
-				"priority": 0
+				"priority": 1
 			}
 		},
 		{
@@ -7374,7 +7374,7 @@
 				"start": "2017-08-15",
 				"end": "2021-08-15",
 				"hours": 2,
-				"priority": 0
+				"priority": 1
 			}
 		},
 		{
@@ -7391,7 +7391,7 @@
 				"start": "2017-07-15",
 				"end": "2020-07-15",
 				"hours": 4,
-				"priority": 0
+				"priority": 1
 			}
 		},
 		{
@@ -7620,7 +7620,7 @@
 			"category": "service",
 			"commitment": {
 				"start": "2021-11-03",
-				"end": "2022-11-04",
+				"end": "2021-11-04",
 				"hours": 4,
 				"priority": 1
 			},
@@ -8834,21 +8834,21 @@
 			"description": "Evaluating tenure and promotion cases",
 			"category": "service",
 			"annually": true,
-			"commitment": { "start": "05-15", "end": "09-15", "hours": 2, "priority": 0 }
+			"commitment": { "start": "05-15", "end": "09-15", "hours": 2, "priority": 1 }
 		},
 		{
 			"title": "Reading",
 			"description": "Books and papers",
 			"category": "research",
 			"annually": false,
-			"commitment": { "start": null, "end": null, "hours": 2, "priority": 0 }
+			"commitment": { "start": null, "end": null, "hours": 2, "priority": 1 }
 		},
 		{
 			"title": "Advising",
 			"description": "Doctoral student meetings, feedback, and collaboration",
 			"category": "research",
 			"annually": false,
-			"commitment": { "start": null, "end": null, "hours": 6, "priority": 0 }
+			"commitment": { "start": null, "end": null, "hours": 6, "priority": 1 }
 		},
 		{
 			"title": "Seminars",
@@ -8862,7 +8862,7 @@
 			"description": "Crises, oversights, and other surprises",
 			"category": "service",
 			"annually": false,
-			"commitment": { "start": null, "end": null, "hours": 3, "priority": 0 }
+			"commitment": { "start": null, "end": null, "hours": 2, "priority": 0 }
 		},
 		{
 			"title": "Autumn faculty meetings",
@@ -8933,6 +8933,13 @@
 			"category": "personal",
 			"annually": false,
 			"commitment": { "start": "2021-08-23", "end": "2021-09-20", "hours": 40, "priority": 2 }
+		},
+		{
+			"title": "Sabbatical",
+			"description": "Paid professional leave.",
+			"category": "research",
+			"annually": false,
+			"commitment": { "start": "2022-06-15", "end": "2023-09-25", "hours": 20, "priority": 2 }
 		},
 		{
 			"title": "Book writing",
