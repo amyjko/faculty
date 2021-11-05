@@ -14,7 +14,7 @@ class Advice extends React.Component {
 				</div>
 
 				<ul>
-					<li><HashLink smooth to="#letters">Will you write me a letter of recommendation?</HashLink></li>
+					<li><HashLink smooth to="#recommendations">Will you write me a letter of recommendation?</HashLink></li>
 					<li><HashLink smooth to="#csis">What is the difference between computer science and information science?</HashLink></li>
 					<li><HashLink smooth to="#phdadmissions">How do I get into a Ph.D. program?</HashLink></li>
 					<li><HashLink smooth to="#phdstudent">What is it like to be a Ph.D. student?</HashLink></li>
@@ -29,7 +29,7 @@ class Advice extends React.Component {
 					Also see the excellent pages by <a href="http://www.cs.washington.edu/homes/mernst/advice/">Mike Ernst</a> (software engineering), <a href="http://people.engr.ncsu.edu/txie/advice.htm">Tao Xie</a> (software engineering) and <a href="http://www.cs.cmu.edu/~jasonh/advice.html">Jason Hong</a> (HCI).
 				</p>
 
-				<Linkable app={this.props.app}>Will you write me a letter of recommendation?</Linkable>
+				<Linkable app={this.props.app} id="recommendations">Will you write me a letter of recommendation?</Linkable>
 
 				<p>
 					Maybe.
@@ -59,7 +59,7 @@ class Advice extends React.Component {
 					There are some exceptions to the policy above.
 					If a the "letter" you need is really just a form that I fill out attesting that I had you in class, I'm happy to do that.
 					If you just need a reference for a job, I'm happy to be a reference; I rarely get called, and when I do, it's rarely onerous.
-					And if you're a student in one of our <Link to={"/lablets"}>lablets</Link>, there are specific conditions for earning a letter.
+					And if you're a student in one of our <Link to={"/lablets#recommendation"}>lablets</Link>, there are specific conditions for earning a letter.
 				</p>
 
 				<Linkable app={this.props.app} id="csis">What is the difference between computer science and informatics at UW?</Linkable>

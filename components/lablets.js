@@ -1,6 +1,8 @@
 import _ from 'lodash';
 import React from 'react';
 
+import { Linkable } from './linkable';
+
 class Lablets extends React.Component {
 	render() {
 		return (
@@ -31,7 +33,7 @@ class Lablets extends React.Component {
 					<li><em>Ensure any barriers we create are beneficial.</em> We'll have to create some barriers to avoid overwhelming Amy and her doctoral students, but any barriers do create should be helpful in some way.</li>
 				</ul>
 
-				<h3>What is a lablet?</h3>
+				<Linkable app={this.props.app} id="whatisalablet">What is a lablet?</Linkable>
 
 				<p>
 					A lablet is:
@@ -53,7 +55,7 @@ class Lablets extends React.Component {
 					However, you're always welcome to deviate from them, or suggest improvements to them, by writing Amy a DM in <a href="http://computinged-uw.slack.com" target="_blank">Slack</a>.
 				</p>
 
-				<h3>Why would I want to join a lablet?</h3>
+				<Linkable app={this.props.app} id="whylablet">Why would I want to join a lablet?</Linkable>
 
 				<p>
 					There are many reasons!
@@ -79,7 +81,7 @@ class Lablets extends React.Component {
 
 				<p>To encourage focus, you can only be part of <strong>one</strong> lablet at a time.</p>
 
-				<h3>How do I join a lablet?</h3>
+				<Linkable app={this.props.app} id="howtojoin">How do I join a lablet?</Linkable>
 
 				<p>
 					Follow these steps:
@@ -95,7 +97,7 @@ class Lablets extends React.Component {
 					<li>After you hear from Amy, write the lablet leader and supervisor a joint message in Slack and introduce yourself. They'll welcome you to the lablet and tell you what's next for the lablet.</li>
 				</ol>
 
-				<h3>How do I create a lablet?</h3>
+				<Linkable app={this.props.app} id="howtocreate">How do I create a lablet?</Linkable>
 
 				<p>
 					Follow these steps:
@@ -111,7 +113,7 @@ class Lablets extends React.Component {
 					<li>Run your lablet, recruiting other students to join! You're welcome to use #codeandcognition to recruit.</li>
 				</ol>
 
-				<h3>What does a lablet leader have to do?</h3>
+				<Linkable app={this.props.app} id="labletleaders">What does a lablet leader have to do?</Linkable>
 
 				<p>
 					Lablet leaders must:
@@ -131,7 +133,7 @@ class Lablets extends React.Component {
 					<li>Propose research projects to the lab.</li>
 				</ul>
 
-				<h3>What does a lablet supervisor do?</h3>
+				<Linkable app={this.props.app} id="labletsupervisors">What does a lablet supervisor do?</Linkable>
 
 				<p>
 					Lablet supervisors must:
@@ -144,7 +146,7 @@ class Lablets extends React.Component {
 					<li>Meet with Amy before each quarter to set expectations.</li>
 				</ul>
 
-				<h3>How does our lablet propose a research project?</h3>
+				<Linkable app={this.props.app} id="research">How does our lablet propose a research project?</Linkable>
 				<p>
 					Any lablet can conduct research without anyone's permission.
 					However, if you want the help of a Amy or her postdocs or doctoral students, you'll need to write a project proposal, which must include:
@@ -167,7 +169,7 @@ class Lablets extends React.Component {
 					Everyone who was included on the proposal is welcome to join the main lab meetings to discuss research.
 				</p>
 
-				<h3>How do I leave a lablet or move to a new one?</h3>
+				<Linkable app={this.props.app} id="leave">How do I leave a lablet or move to a new one?</Linkable>
 				<p>
 					If at any point you no longer want to be in your lablet, you may write your leader to let them know.
 					At the end of each quarter, Amy will post a lablet refresh request to solicit updates to lablet membership.
@@ -175,7 +177,7 @@ class Lablets extends React.Component {
 					If everyone leaves the lablet, then the lablet is over.
 				</p>
 
-				<h3>How do you monitor lablet activity?</h3>
+				<Linkable app={this.props.app} id="evaluate">How do you monitor lablet activity?</Linkable>
 
 				<p>
 					Supervisors will conduct a quarterly lablet health check, sending a report to Amy each quarter.
@@ -183,7 +185,7 @@ class Lablets extends React.Component {
 					Amy may use this information to restructure lablets for the following quarter.
 				</p>
 
-				<h3 id="codeofconduct">How am I expected to behave in a lablet?</h3>
+				<Linkable app={this.props.app} id="codeofconduct">How am I expected to behave in a lablet?</Linkable>
 
 				<p>
 					All lablet members are subject to the following code of conduct:
@@ -199,7 +201,7 @@ class Lablets extends React.Component {
 					</li>
 				</ul>
 
-				<h3>Can I get a letter of recommendation for participating?</h3>
+				<Linkable app={this.props.app} id="recommendation">Can I get a letter of recommendation for participating?</Linkable>
 				<p>
 					Letters of recommendation are a common request for scholarships, recognitions, and graduate school, and unfortunately they can be very hard to acquire!
 					And there's a reason for this: faculty like Amy are asked to write hundreds a year, and if she said yes to all of them, she'd have no time to do the rest of her job.
@@ -216,7 +218,7 @@ class Lablets extends React.Component {
 					<li>If you <em>collaborated</em> with Amy on research or another project, she will write a detailed, personalized letter, as she's always done for undergraduates who engage in research with her.</li>
 				</ul>
 
-				<h3>Are there other ways I can participate in the lab other than lablets?</h3>
+				<Linkable app={this.props.app} id="otherparticipation">Are there other ways I can participate in the lab other than lablets?</Linkable>
 				
 				<p>
 					Yes, there are several!
