@@ -383,7 +383,7 @@ class Commitments extends React.Component {
 		return (
 			<div>
 				<div className="lead">
-					This is my commitment calendar, with estimates of how busy I'll be each week in the next two years. I use this to decide whether to say yes to new opportunities.
+					This is my commitment calendar, which estimates how much work I've promised to do in the next two years. I use this to decide whether to say yes to new opportunities and brace myself for busy periods.
 				</div>
 
                 <p>Curious how I maintain this page? I have a <a target="_blank" href="https://github.com/amyjko/faculty/blob/master/profile/profile.json">list of commitments</a> with date ranges, from which I <a target="_blank" href="https://github.com/amyjko/faculty/blob/master/components/commitments.js">automatically generate</a> this page.</p>
@@ -493,7 +493,7 @@ class Commitments extends React.Component {
                 <h3>Weekly workload</h3>
 
                 <p>
-                    Here's approximately about how busy I'll be per week in the next two years. 
+                    Here's an estimate of how busy I'll be per week in the next two years. 
                     You might notice from the wiggles that I don't like working more than 45 hours a week.
                     Do big numbers mean I work obscene hours?
                     No: I take shortcuts to make my work fit into 45 hours a week.
