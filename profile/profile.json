@@ -90,8 +90,8 @@
 			"year": 2021,
 			"title": "HowToo: A Platform for Sharing, Finding, and Using Programming Strategies",
 			"source": "@vlhcc",
-			"pages": "to appear",
-			"doi": null,
+			"pages": "1-9",
+			"doi": "https://doi.org/10.1109/VL/HCC51201.2021.9576337",
 			"local": "Arab2021HowToo.pdf",
 			"publisher": "IEEE",
 			"contribution": "Contributes HowToo, a system for encoding strategic programming knowledge as step-by-step procedures for structuring programming tasks. Finds that novice developers found the platform helpful for guiding their work, except when they were rushing toward deadlines."
