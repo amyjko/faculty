@@ -100,7 +100,7 @@ class App extends React.Component {
 							<Route path="/research/" render={(props) => <Research {...props} app={this} />} />
 							<Route path="/bio" render={(props) => <Biography {...props} app={this} />} />
 							<Route path="/publications/:paper?" render={(props) => <Publications {...props} app={this} />} />
-							<Route path="/posts" render={(props) => <Posts {...props} app={this} />} />
+							<Route path={["/essays/", "/posts"]} render={(props) => <Posts {...props} app={this} />} />
 							<Route path="/impact" render={(props) => <Impact {...props} app={this} />} />
 							<Route path={["/faq/", "/advice"]} render={(props) => <FAQ {...props} app={this} />} />
 							<Route path="/classes" render={(props) => <Classes {...props} app={this} />} />

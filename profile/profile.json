@@ -2320,7 +2320,7 @@
 		{
 			"id": "clwang",
 			"name": "Chenglong Wang",
-			"active": true,
+			"active": false,
 			"advised": false,
 			"level": "phd",
 			"dept": "Computer Science",
@@ -2328,7 +2328,7 @@
 			"bio": "Chenglong is a Ph.D. student in Computer Science & Engineering, interested in interactive program synthesis.",
 			"url": "http://chenglongwang.org",
 			"startdate": 2015,
-			"enddate": null,
+			"enddate": 2021,
 			"achievements": []
 		},
 		{
@@ -2753,7 +2753,7 @@
 			"bio": "Annie is a Ph.D. student in the Information School working with Carol Palmer. Annie worked with Amy on predicting dropout in a coding tutorial.",
 			"url": "https://ischool.uw.edu/people/phd/yanan15",
 			"startdate": 2016,
-			"enddate": null,
+			"enddate": 2021,
 			"achievements": []
 		},
 		{
