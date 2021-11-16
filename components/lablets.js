@@ -94,7 +94,8 @@ class Lablets extends React.Component {
 					<li>Join the <strong>#codeandcognitionlab</strong> channel so you get all updates about the lab. This is where we talk about lab and lablet activity.</li>
 					<li>Write Amy a message in Slack and introduce yourself. If she has any concerns, she'll let you know; all UW students are eligible. If she doesn't, she'll give you access to the lablets folder in Google Drive, which will give you edit access to everything.</li>
 					<li>Once you have access, add your name to the <a href="https://docs.google.com/spreadsheets/d/1ziwgmDBdCNY1AbhlQti8hgabwhVhwvRpL8xPjknywnQ/edit#gid=772195334" target="_blank">students</a> sheet.</li>
-					<li>After you hear from Amy, write the lablet leader and supervisor a joint message in Slack and introduce yourself. They'll welcome you to the lablet and tell you what's next for the lablet.</li>
+					<li>Join the Slack channel corresponding to the lablet you joined. You'll find the channel in the spreadsheet.</li>
+					<li>If you signed up for a lablet in the middle of a quarter, write the lablet leader and supervisor a joint message in Slack and introduce yourself. They'll welcome you to the lablet and tell you what's next for the lablet. If you signed up for the next quarter</li>
 				</ol>
 
 				<Linkable app={this.props.app} id="howtocreate">How do I create a lablet?</Linkable>
@@ -145,6 +146,17 @@ class Lablets extends React.Component {
 					<li>Participate in lablet meetings.</li>
 					<li>Meet with Amy before each quarter to set expectations.</li>
 				</ul>
+
+				<p>
+					About 3 weeks before each quarter, lablet leaders should:
+				</p>
+				<ul>
+					<li>Ensure that there's an Ohyay meeting space for the lablet with a link to the meeting minutes.</li>
+					<li>Ensure that there's a channel in Slack for the lablet and that everyone signed up for it is added to the channel.</li>
+					<li>Ensure that there's a meeting minutes document for the lablet.</li>
+					<li>Post a poll in the Slack to determine a meeting time for the next quarter.</li>
+					<li>Announce the meeting time no later than 1 week before the quarter.</li>
+				</ul>				
 
 				<Linkable app={this.props.app} id="research">How does our lablet propose a research project?</Linkable>
 				<p>
