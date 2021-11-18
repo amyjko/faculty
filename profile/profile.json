@@ -55,6 +55,20 @@
 	},
 	"pubs": [
 		{
+			"id": "strategywriting",
+			"kind": "refereed conference paper",
+			"authors": ["Maryam Arab", "@latoza", "@jliang9", "@ajko"],
+			"deadname": false,
+			"year": 2022,
+			"title": "An Exploratory Study of Sharing Strategic Programming Knowledge",
+			"source": "@chi",
+			"pages": "to appear",
+			"doi": null,
+			"local": null,
+			"publisher": "ACM",
+			"contribution": "Finds that developers can share strategies for programming, but they struggle in choosing a level of detail and understanding the diversity of the potential audience, requiring substantial feedback, but also that developers struggle to give feedback on strategies."
+		},
+		{
 			"id": "aifamily",
 			"kind": "refereed conference paper",
 			"authors": ["@st3f", "@feec", "@ajko"],
@@ -3394,7 +3408,7 @@
 			"description": "A critical part of creating software is being able to understand programming problems, identify solutions to solve them, and systematically implement, verify, and debug programs, and avoid mistakes throughout. My lab investigates effective ways of learning these skills, and orchestrating them with self-regulation, process, and strategy.",
 			"funding": ["@explore", "@csassess", "@strategies", "@gidget", "@seif", "@endusersynth"],
 			"people": ["@ajko", "@dloksa", "@bxie", "@olesona", "@jliang9", "@latoza"],
-			"papers": ["csproblemsolving1", "csproblemsolving2", "ideagardenjvlc", "tracing", "teachingstrategies", "errormodel", "errorframework", "metajournaling", "programmingstrategies", "pstutor1", "howtoo"],
+			"papers": ["csproblemsolving1", "csproblemsolving2", "ideagardenjvlc", "tracing", "teachingstrategies", "errormodel", "errorframework", "metajournaling", "programmingstrategies", "pstutor1", "howtoo", "strategywriting"],
 			"links": [],
 			"startdate": 2003,
 			"stopdate": null
