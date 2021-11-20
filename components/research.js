@@ -67,21 +67,21 @@ class Research extends React.Component {
 		return (
 			<div>
 				<div className="lead">
-					I study our individual and collective struggle to understand computing and harness it for equity and justice.
+					Whether it's youth debugging an animation, a developer auditing a classifier for bias, or a teacher linking code to oppression, I study our individual and collective struggle to understand computing and harness it for equity and justice.
 				</div>
 
 				<p>
-					I'm particularly interested in helping youth understand the limits of code, data, and machine learning, and empowering educators to teach these limits in inclusive and equitable ways.
-					I work with many outstanding <Link to={"/lab"}>students</Link> and <Link to={"/communities"}>communities</Link> on this work, <Link to={"/publications"}>publishing</Link>, <Link to={"/posts"}>blogging</Link>, <Link to={"/talks"}>presenting</Link>, <Link to={"/classes"}>teaching</Link>, <Link to={"/books"}>synthesizing</Link>, and <Link to={"/impact"}>applying</Link> it in the world. 
-					We share our work with three research communities: <Link to={"/cer"}><strong>computing education</strong></Link>, <strong>human-computer interaction</strong>, and <strong>software engineering</strong>.
+					I work with outstanding <Link to={"/lab"}>students</Link> and <Link to={"/communities"}>communities</Link> on this work, <Link to={"/publications"}>publishing</Link>, <Link to={"/essays"}>blogging</Link>, <Link to={"/talks"}>presenting</Link>, <Link to={"/classes"}>teaching</Link>, <Link to={"/books"}>synthesizing</Link>, and <Link to={"/impact"}>applying</Link> it in the world. 
+					We publish our work in three research communities: <Link to={"/cer"}>Computing Education</Link>, <a href="https://www.google.com/books/edition/Human_Computer_Interaction_Handbook/dVrRBQAAQBAJ?hl=en&gbpv=0" target="_blank">Human-Computer Interaction</a>, and <a href="https://link.springer.com/article/10.1007/s10664-020-09858-z" target="_blank">Software Engineering</a>.
 				</p>
 
 				<p>
-					I have expertise in <em>debugging</em>, <em>program understanding</em>, <em>explainability</em>, <em>end-user programming</em>, <em>human and collaborative aspects of software engineering</em>, <em>broadening participation in computing</em>, and <em>HCI education</em>. I also have broad methodlogical expertise, including the design and implementation of user interfaces, programming languages, and developer tools; HCI methods; multivariate null hypothesis significance testing; Bayesian modeling; qualitative methods such as interviews, surveys, content analysis, and ethnomethodologies; data science methods; and argumentation.
+					I have expertise in debugging, program understanding, explainability, end-user programming, human aspects of software engineering, broadening participation in computing, assessment, and HCI education. 
+					I also have broad methodological expertise, including the design and implementation of user interfaces, programming languages, and developer tools; HCI methods; multivariate null hypothesis significance testing; Bayesian modeling; qualitative methods such as interviews, surveys, content analysis, and fieldwork; data science methods; and argumentation.
 				</p>
 				
 				<p>
-					Want to explore and learn with us? 
+					Want to do research with me?
 					Read about my <Link to="/lab">lab</Link>.
 				</p>
 								
