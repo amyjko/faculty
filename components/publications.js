@@ -77,10 +77,8 @@ class Publications extends React.Component {
 				
 				<p>
 					<small>
-						Of these, {this.props.app.getProfile().getPublications(pub => pub.deadname).length} are still under my former name because publishers refuse to let me fix it. 
-						Instead of perpetuating this unjust disregard for my name, <strong>cite all of my publications as Amy J. Ko</strong>, as I do below. 
-						Include a DOI in your citation if you are worried about helping academic search engines.
-						Thank you for respecting my gender, name, and pronouns in your work.
+						Of these, {this.props.app.getProfile().getPublications(pub => pub.deadname).length} are still under my deadname, and thousands cite me by my deadname.
+						Publishers refuse to fix these, so please <strong>cite me as Amy J. Ko</strong>, regardless of how you might find my prior work in reference lists and scholarly search engines.
 					</small>
 				</p>	
 				
