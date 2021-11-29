@@ -125,7 +125,7 @@ class Biography extends React.Component {
 					<li><strong>I am a foodophile</strong>. Food shapes my travel, my experiences, my conversations. I love food!</li>
 					<li><strong>I am a woman</strong>. Much of this means being treated as a woman, but also having to dismantle sexist cultures, assumptions, and traditions that limit my opportunities.</li>
 					<li><strong>I am transgender</strong>. I experience dissonance between my body and my gender, and the unjust treatment in law and life that comes with a transphobic world.</li>
-					<li><strong>I am queer</strong>. My sex, sexual orienation, and gender identity don't really fit a false gender binaries popular in dominant culture.</li>
+					<li><strong>I am queer</strong>. My sex, sexual orientation, and gender identity don't really fit the false gender binaries popular in dominant culture.</li>
 					<li><strong>I am Chinese</strong>. My father's parents came to the United States in the early 20th century, and brought with them cultural traditions in food, frugality, and financial security, which shaped my own traditions.</li>
 					<li><strong>I am Danish</strong>, at least in ancestry; my mother's parents came to the United States in early 20th century, and brought with them humility, privacy, and piety.</li>
 					<li><strong>I am a divorcee</strong>. This has eroded my friendships, community, finances, and wellbeing, leaving lifelong scars and stigma.</li>
