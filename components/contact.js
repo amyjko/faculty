@@ -82,6 +82,14 @@ class ContactInfo extends React.Component {
 					content=". I primarily use Facebook for non-work relationships (though that boundary is blurry). I usually only accept connections from people I've met IRL and have a social relationship with, so if I have a purely professional relationship with you, please don't be offended if I decline your friend request. Add me on LinkedIn instead."
 				/>
 
+				<Block 
+					image={this.props.app.getWebRoot() + "/images/contact/phone.jpg"}
+					alt="A telephone."
+					link={null}
+					header="Phone"
+					content=". Don't call me on the phone. It's never the right time, I'm rarely in my office when you want to reach me. Write me on one of the platforms above first and we can schedule a call if necessary."
+				/>
+
 			</div>
 			
 		)
