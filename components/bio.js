@@ -43,7 +43,7 @@ class Biography extends React.Component {
 					She then got excited about the ways that programmers interact with massive communities of people using their code, and that somehow turned into a startup that sold help tools.
 					After she returned from her icky capitalist stint as a CTO, she decided to focus on making people smarter instead of tools smarter, and began studying how to make learning to code easier.
 					Now she mostly thinks about how we can teach people to write code that's not so terribly oppressive to people at the margins.
-					Somewhere along the way, she published a punch of papers and won a bunch of awards, which mostly means that people think her discoveries and insights are neat.
+					Somewhere along the way, she published a bunch of papers and won a bunch of awards, which mostly means that people think her discoveries and insights are neat.
 					She's grateful to <a href="http://www.cmu.edu">Carnegie Mellon University</a> and <a href="http://www.oregonstate.edu">Oregon State University</a> for being mostly safe spaces to bumble through the world's endless expanse of mysteries as a student, and to the many students and taxpayers that pay her to keep doing it as a professor.
 				</p>
 
