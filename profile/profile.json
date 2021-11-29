@@ -8813,6 +8813,14 @@
 	],
 	"books": [
 		{
+			"image": "ccc.png",
+			"alt": "Several applications of computing, including VR, news, robotics, information, and automation.|Computing is everywhere, for better and worse.",
+			"link": "https://criticallyconsciouscomputing.org",
+			"title": "Critically Conscious Computing: Methods for Secondary Education",
+			"description": "A book for secondary educators who want to teach CS from critical lens, examining it from technical, sociotechnical, and sociopoitical stance.",
+			"editor": true
+		},
+		{
 			"image": "foundations-of-information.jpg",
 			"alt": "A metallic structure resembling a network of nodes and edges",
 			"link": "/ajko/books/foundations-of-information/#/",
