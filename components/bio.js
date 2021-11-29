@@ -10,8 +10,8 @@ class Biography extends React.Component {
 		return (
 			<div>
 			
-				<div className="lead">These are my <HashLink smooth to="#short">short bio</HashLink>, <HashLink smooth to="#lineage">academic lineage</HashLink>, and <HashLink smooth to="#promotion">promotion documents</HashLink>, <HashLink smooth to="#identity">identity statement</HashLink>, <HashLink smooth to="#long">long bio</HashLink>, and a <a href={this.props.app.getWebRoot() + "/images/headshots/ajko.jpg"}>high-resolution headshot</a>.</div>
-										
+				<div className="lead">Professional and personal takes on my professorly life.</div>
+
 				<Linkable app={this.props.app} id="short">Short Bio</Linkable>
 
 				<p>
