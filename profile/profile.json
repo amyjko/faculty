@@ -51,9 +51,27 @@
 		"tse": {
 			"name": "IEEE Transactions on Software Engineering",
 			"short": "TSE"
+		},
+		"hcipacm": {
+			"name": "Proceedings of the ACM on Human-Computer Interaction",
+			"short": "PACMHCI"
 		}
 	},
 	"pubs": [
+		{
+			"id": "studentamp",
+			"kind": "refereed conference paper",
+			"authors": ["@bxie", "@olesona", "@jayne", "@ajko"],
+			"deadname": false,
+			"year": 2022,
+			"title": "Surfacing Equity Issues in Large Computing Courses with Peer-Ranked, Demographically-Labeled Student Feedback",
+			"source": "@hcipacm",
+			"pages": "to appear",
+			"doi": null,
+			"local": null,
+			"publisher": "ACM",
+			"contribution": "Developed and evaluated tool that contextualizes student feedback for teaching teams to identify equity issues."
+		},
 		{
 			"id": "strategywriting",
 			"kind": "refereed conference paper",
@@ -3365,7 +3383,7 @@
 			"description": "The world is full of structural barriers to developing interest in and learning computing. My lab investigates these barriers and ways to eradicate them, including issues around accessibility, mentorship, culture, identity, and resources, with the goal of increasing the diversity of people in computing disciplines.",
 			"funding": ["@accesscomp", "@gidget", "@csassess", "@fairassess"],
 			"people": ["@ajko", "@kthayer", "@banerjee", "@kwikh", "@kshino", "@laurav4", "@skawas", "@lkhwa", "@jcyip", "@kdavis"],
-			"papers": ["codedif", "codebios", "bootcamps", "ellblockstudio", "transfer", "mentors1", "mentors2", "csdif"],
+			"papers": ["codedif", "codebios", "bootcamps", "ellblockstudio", "transfer", "mentors1", "mentors2", "csdif", "studentamp"],
 			"links": [
 				{ "title": "See WeCode", "url": "https://youtu.be/t56g4DYIuUA" }
 			],
