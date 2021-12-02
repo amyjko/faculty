@@ -5817,8 +5817,8 @@
 			"kind": "product",
 			"start": 2011,
 			"end": null,
-			"description": "Portions of Timelapse were upstreamed to WebKit and may eventually appear in the Safari Web Inspector developer tools",
-			"url": "http://www.answerdash.com/",
+			"description": "Portions of Timelapse and Scry were upstreamed to WebKit and may eventually appear in the Safari Web Inspector developer tools. These projects inspired similar features at the venture-backed startup replay.io.",
+			"url": "https://www.replay.io",
 			"projects": ["understanding"],
 			"who": "engineers"
 		},
