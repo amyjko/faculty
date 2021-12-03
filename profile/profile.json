@@ -7241,7 +7241,7 @@
 				"start": "2007-03-15",
 				"end": null,
 				"hours": 6,
-				"priority": 0
+				"priority": 1
 			}
 		},
 		{
@@ -8923,7 +8923,7 @@
 			"description": "Doctoral student meetings, feedback, and collaboration",
 			"category": "research",
 			"annually": false,
-			"commitment": { "start": null, "end": null, "hours": 6, "priority": 1 }
+			"commitment": { "start": null, "end": null, "hours": 6, "priority": 0 }
 		},
 		{
 			"title": "Seminars",
