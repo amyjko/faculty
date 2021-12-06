@@ -3557,6 +3557,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/critically-conscious-computing-a-new-book-for-the-critical-secondary-cs-educator-c7ec9fa4a45e",
+			"title": "Critically Conscious Computing — A new book for secondary CS educators",
+			"date": "2021.12",
+			"tags": ["computing education"],
+			"img": "cccbook",
+			"alt": "Several applications of computing, including VR, news, robotics, information, and automation."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/im-the-new-editor-in-chief-of-acm-transactions-on-computing-education-866ffa9a0044",
 			"title": "I’m the new Editor-in-Chief of ACM Transactions on Computing Education",
 			"date": "2021.11",
