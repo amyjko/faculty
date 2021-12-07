@@ -59,10 +59,12 @@ class FAQ extends React.Component {
 				</p>
 			</Section>,
 			<Section id="phdadmissions" header="How do I get into a Ph.D. program?">
+
 				<p>
-					Philip Guo gives a <a href="http://www.pgbovine.net/PhD-application-tips.htm">brutally honest glimpse</a> into how he and others review Ph.D. applicants in HCI and other areas of computing. 
-					I do similar things, but also look for glimpses of potential and common interest.
+					Shriram Krishnamurthi has a wonderful guide on <a href="https://parentheticallyspeaking.org/articles/us-cs-phd-faq/" target="_blank">Getting a Computer Science PhD</a>. 
+					It's focused on CS programs, but much of the advice is good for any discipline.
 				</p>
+
 			</Section>,
 			<Section id="phdstudent" header="What is it like to be a Ph.D. student?">
 				<p>
