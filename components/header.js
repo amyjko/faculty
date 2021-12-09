@@ -20,9 +20,17 @@ class Header extends React.Component {
 						<h2 style={{margin: 0}}>Amy J. Ko, Ph.D.</h2>
 						<small>
 							<a href="https://www.mypronouns.org/she-her">she/her/hers</a>
- 							<br/><a href="https://ap.washington.edu/ahr/academic-titles-ranks/professor/" target="_blank">Professor</a><span className="hidden-xs"> &sdot; <a href="https://ischool.uw.edu/academics/informatics">Informatics</a> <a href="https://ischool.uw.edu/about/leadership/committees" target="_blank">Program Chair</a></span>
-							<br/><a href="http://ischool.uw.edu" target="_blank">The Information School</a>
-							<span className="hidden-xs"><br/><a href="http://cs.uw.edu" target="_blank">Paul G. Allen School of Computer Science &amp; Engineering (courtesy)</a></span>
+ 							<br/>
+							<a href="https://ap.washington.edu/ahr/academic-titles-ranks/professor/" target="_blank">Professor</a>
+							<span className="hidden-xs">
+								&nbsp;&sdot; <a href="https://ischool.uw.edu/academics/informatics">Program Chair, <em>Informatics</em></a>
+								&nbsp;&sdot; <a href="https://dl.acm.org/journal/toce" target="_blank">Editor-in-Chief, <em>ACM TOCE</em></a>
+							</span>
+							<br/>
+							<a href="http://ischool.uw.edu" target="_blank">The Information School</a>
+							<span className="hidden-xs">
+								&nbsp;&sdot;<a href="http://cs.uw.edu" target="_blank">Computer Science &amp; Engineering (courtesy)</a>
+							</span>
 							<br/><a href="http://www.washington.edu" target="_blank">University of Washington<span className="hidden-xs">, Seattle</span></a>
 							<br/><a href="mailto:ajko@uw.edu">email</a> &sdot; <a href="https://twitter.com/amyjko" target="_blank">twitter</a> &sdot; <a href="https://amyjko.medium.com" target="_blank">blog</a>
 						</small>
