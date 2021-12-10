@@ -101,7 +101,7 @@
 			"contribution": "Finds that parents mediate children's learning by taking on different roles, including mentor, student, collaborator, and tinkerer, and that family learning promotes new framings of consumer devices in homes."
 		},
 		{
-			"id": "ubcrit",
+			"id": "coconstructedcriticalcs",
 			"kind": "refereed conference paper",
 			"authors": ["@jayne", "@megumi", "@ajko"],
 			"deadname": false,
@@ -110,7 +110,7 @@
 			"source": "@sigcse",
 			"pages": "to appear",
 			"doi": null,
-			"local": null,
+			"local": "Everson2021CoConstructedCriticalCS.pdf",
 			"publisher": "ACM",
 			"contribution": "Finds that before there is space for critical consciousness about CS, teachers have to navigate issues of trust, positionality, and inequitable systems of education."
 		},
@@ -3370,7 +3370,7 @@
 			"description": "Computing is powerful, but that power is often used by dominant groups in ways that disregard, exclude, or even harm marginalized groups, amplifying and reinforcing sexist, racist, and ableist structures and ideas. My lab is exploring teaching methods, learning technologies, and teacher education paradigms that center these power dynamics in CS education.",
 			"funding": ["@csjustice", "@csassess", "@fmitf", "@googlecser"],
 			"people": ["@ajko", "@jayne", "@olesona", "@kshino", "@skawas", "@laurav4", "@meron", "@perdriau", "@megumi"],
-			"papers": ["cognimates", "criticalcsed","hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess", "csdesignk12", "ubcrit", "houseofcomputing"],
+			"papers": ["cognimates", "criticalcsed","hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess", "csdesignk12", "coconstructedcriticalcs", "houseofcomputing"],
 			"links": [],
 			"startdate": 2019,
 			"stopdate": null
