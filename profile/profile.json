@@ -59,6 +59,20 @@
 	},
 	"pubs": [
 		{
+			"id": "ccc",
+			"kind": "book",
+			"authors": ["@ajko", "Anne Beitlers", "@brettwo", "@mattjd", "@olesona", "@mararyan", "@st3f"],
+			"deadname": false,
+			"year": 2021,
+			"title": "Critically Conscious Computing: Methods for Secondary Education",
+			"source": "Online",
+			"pages": null,
+			"publisher": "Self-published",
+			"doi": "https://criticallyconsciouscomputing.org",
+			"local": null,
+			"contribution": "A book for secondary educators who want to teach CS from critical lens, examining it from technical, sociotechnical, and sociopoitical stance."
+		},
+		{
 			"id": "studentamp",
 			"kind": "refereed conference paper",
 			"authors": ["@bxie", "@olesona", "@jayne", "@ajko"],
@@ -3370,7 +3384,7 @@
 			"description": "Computing is powerful, but that power is often used by dominant groups in ways that disregard, exclude, or even harm marginalized groups, amplifying and reinforcing sexist, racist, and ableist structures and ideas. My lab is exploring teaching methods, learning technologies, and teacher education paradigms that center these power dynamics in CS education.",
 			"funding": ["@csjustice", "@csassess", "@fmitf", "@googlecser"],
 			"people": ["@ajko", "@jayne", "@olesona", "@kshino", "@skawas", "@laurav4", "@meron", "@perdriau", "@megumi"],
-			"papers": ["cognimates", "criticalcsed","hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess", "csdesignk12", "coconstructedcriticalcs", "houseofcomputing"],
+			"papers": ["cognimates", "criticalcsed","hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess", "csdesignk12", "coconstructedcriticalcs", "houseofcomputing", "ccc"],
 			"links": [],
 			"startdate": 2019,
 			"stopdate": null

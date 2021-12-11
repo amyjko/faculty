@@ -270,7 +270,7 @@ class Vita extends React.Component {
 
 				<h2>Books</h2>
 				
-				{this.getPapers("book")}				
+				{this.getPapers("book")}
 
 				<h2>Book Chapters</h2>
 				
