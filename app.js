@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, BrowserRouter, Switch, withRouter } from 'react-router-dom';
-import _ from 'lodash';
 
 import { Biography } from './components/bio';
 import { ContactInfo } from './components/contact';

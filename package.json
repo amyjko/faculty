@@ -6,21 +6,16 @@
 	"repository": "https://github.com/amyjko/faculty.git",
 	"scripts": {
 		"lint": "ajv -s profile/schema.json -c ajv-formats -d profile/profile.json",
-		"build": "set -e -o pipefail; npm run lint; browserify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] app.js | uglifyjs > app.min.js",
+		"build": "node ./esbuild.config.js",
+		"watch": "watch 'npm run build' .",
 		"dry": "rsync --dry-run -avz --delete --exclude-from='deploy-excludes' . ajko@ovid.u.washington.edu:~/public_html",
 		"ship": "rsync -avz --delete --exclude-from='deploy-excludes' . ajko@ovid.u.washington.edu:~/public_html"
 	},
 	"devDependencies": {
-		"@babel/cli": "^7.12.13",
-		"@babel/core": "^7.12.13",
-		"@babel/preset-env": "^7.12.13",
-		"@babel/preset-react": "^7.12.13",
 		"ajv-cli": "^5.0",
 		"ajv-formats": "^2.0.2",
-		"babelify": "^10",
-		"browserify": "^17.0.0",
-		"uglify-js": "^3.12.6",
-		"watchify": "^4.0.0"
+		"esbuild": "^0.14.3",
+		"watch": "^1.0.2"
 	},
 	"dependencies": {
 		"history": "^5.0.0",
