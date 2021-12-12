@@ -9,6 +9,7 @@
 deploy-excludes
 package.json
 package-lock.json
+esbuild.config.js
 README.md
 app.js
 ajko
