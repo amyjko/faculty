@@ -1,5 +1,4 @@
 import React from 'react';
-import _, { max } from 'lodash';
 
 class Facets extends React.Component {
 
@@ -28,10 +27,10 @@ class Facets extends React.Component {
         return (
             <div>
             {
-                _.map(Object.keys(this.props.facets), facet =>
+                Object.keys(this.props.facets).map(facet =>
                     <p key={"facet-" + facet} role="radiogroup" aria-label="Filter">
                     {
-                        _.map(this.props.facets[facet].sort(), value =>
+                        this.props.facets[facet].sort().map(value =>
                             <mark 
                                 key={"topic-" + value} 
                                 role="radio"

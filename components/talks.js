@@ -1,15 +1,13 @@
 import React from 'react';
-import _ from 'lodash';
-
-import {Block} from './block';
+import { Block } from './block';
 
 class Talks extends React.Component {
 	render() {
 		
-		var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+		const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-		var blocks = _.map(this.props.app.getProfile().getTalks(null, talk => -talk.date.getTime()), (talk, index) => {
-			var links = [];
+		const blocks = this.props.app.getProfile().getTalks(null, talk => -talk.date.getTime()).map((talk, index) => {
+			let links = [];
 
 			if(talk.recording)
 				links.push(<a key="talk" href={talk.recording} target="_blank">Recording</a>);

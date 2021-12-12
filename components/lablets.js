@@ -1,6 +1,4 @@
-import _ from 'lodash';
 import React from 'react';
-
 import { Linkable } from './linkable';
 
 class Lablets extends React.Component {

@@ -1,5 +1,4 @@
 import React from 'react';
-import _ from "lodash";
 
 import { Paper } from "./paper";
 import { Link } from 'react-router-dom';
@@ -14,27 +13,26 @@ class ProjectDetails extends React.Component {
 	render() {
 
 		// Find the publications that are in this project's list of papers and render a paper.
-		var papers = _.map(
+		var papers =
 			this.props.app.getProfile().getPublications(
-				paper => _.indexOf(this.props.papers, paper.id) >= 0,
+				paper => this.props.papers.includes(paper.id),
 				paper => -paper.year
-			),
-			paper => <Paper {...paper} key={paper.id} app={this.props.app} />
+			).map(paper => <Paper {...paper} key={paper.id} app={this.props.app} />
 		);
 	
 		var buttonStyle = "btn btn-xs btn-default";
 		
-		var videos = _.map(_.filter(this.props.links, (link) => { return link.url.indexOf("youtube.com") >= 0; }), (link, index) => {
+		var videos = this.props.links.filter(link => link.url.indexOf("youtube.com") >= 0).map((link, index) => {
 			return <p key={"video-" + index} className="embed-responsive embed-responsive-16by9">
 				<iframe width="560" height="315" src={"https://www.youtube.com/embed/" + link.url.substring(link.url.indexOf("=") + 1)} frameBorder="0" allowFullScreen=""></iframe>
 			</p>;
 		});
 
-		var code = _.map(_.filter(this.props.links, (link) => { return link.url.indexOf("github.com") >= 0; }), (link, index) => {
+		var code = this.props.links.filter(link => link.url.indexOf("github.com") >= 0).map((link, index) => {
 			return <span key={this.props.id + "link" + index}><a className={buttonStyle} href={link.url} target="_blank">{link.title}</a>&nbsp;</span>;
 		});
 
-		var demos = _.map(_.filter(this.props.links, (link) => { return link.title.indexOf("Try") >= 0; }), (link, index) => {
+		var demos = this.props.links.filter(link => link.title.indexOf("Try") >= 0).map((link, index) => {
 			return <span key={this.props.id + "link" + index}><a className={buttonStyle} href={link.url} target="_blank">{link.title}</a>&nbsp;</span>;
 		});
 		
@@ -49,7 +47,7 @@ class ProjectDetails extends React.Component {
 				/>
 
 				<h3>Contributors</h3>
-				<p>{_.map(this.props.people, person => 
+				<p>{this.props.people.map(person => 
 					<Link key={"person-" + person.id} to={person.id === "ajko" ? "/bio" : "/lab/" + person.id}>
 						<img 
 							src={this.props.app.getWebRoot() + this.props.app.getProfile().getPersonImagePath(person.id)} 
@@ -60,8 +58,7 @@ class ProjectDetails extends React.Component {
 
 				<h3>Funding</h3>
 				{ 
-					_.map(
-						this.props.funding, 
+					this.props.funding.map(
 						(grant, index) => 
 							<p key={"grant-" + index}>
 								{grant.url ? <a href={grant.url} target="_blank">{grant.title}</a> : grant.title}
@@ -77,11 +74,10 @@ class ProjectDetails extends React.Component {
 				<h3>Impact</h3>
 
 				{
-					_.map(
-						this.props.app.getProfile().getImpacts(
+					this.props.app.getProfile().getImpacts(
 							impact => impact.projects.includes(this.props.id),
 							impact => -impact.startdate
-						), (impact, index) =>
+					).map((impact, index) =>
 						<p key={index}>
 							<span style={{fontVariant: "small-caps"}}>{impact.kind}</span> <small> ({impact.start}{impact.end == null ? "-present" : impact.start !== impact.end ? "-" + impact.end : "" })</small>
 							<br/>{impact.description}{impact.url ? <small> <a href={impact.url}>evidence</a></small> : null}

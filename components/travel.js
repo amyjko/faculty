@@ -1,6 +1,5 @@
 import React from 'react';
 import {Block} from './block';
-import _ from 'lodash';
 
 class Travel extends React.Component {
 
@@ -18,8 +17,7 @@ class Travel extends React.Component {
 	render() {
 		
 		const renderTrips = (filter, sort) =>
-			_.map(
-				this.props.app.getProfile().getTravel(filter, sort), 
+			this.props.app.getProfile().getTravel(filter, sort).map(
 				(trip, index) =>
 					<Block 
 						image={

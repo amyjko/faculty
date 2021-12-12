@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import _ from "lodash";
 
 import { Block } from './block';
 
@@ -67,7 +66,7 @@ class Paper extends React.Component {
 
 	renderAuthors(link=false) {
 
-		return _.map(this.props.authors, (author, index) =>
+		return this.props.authors.map((author, index) =>
 			author === undefined ? 
 				<span key={index} className="alert alert-danger">unknown author</span> :
 			typeof author === "string" ?
@@ -103,7 +102,7 @@ class Paper extends React.Component {
 	renderAPA(award=true) {
 
 		return <div id={"apa-" + this.props.id}>
-			{this.renderAuthors()} ({this.props.year}). <strong>{this.props.title}</strong>{this.props.title.charAt(this.props.title.length - 1) === "?" ? "" : "."} {this.renderSource(true)}.{this.props.doi ? " " + this.props.doi : null} {award && this.props.award && this.props.award.length > 0 ? <span><br/><span className="award">{_.join(this.props.award, " + ")}</span></span> : ""}
+			{this.renderAuthors()} ({this.props.year}). <strong>{this.props.title}</strong>{this.props.title.charAt(this.props.title.length - 1) === "?" ? "" : "."} {this.renderSource(true)}.{this.props.doi ? " " + this.props.doi : null} {award && this.props.award && this.props.award.length > 0 ? <span><br/><span className="award">{ this.props.award.join(" + ") }</span></span> : ""}
 		</div>
 
 	}
@@ -113,7 +112,7 @@ class Paper extends React.Component {
 
 		return <div className="ws-bottom">
 			<strong>{this.props.title}</strong> &sdot; <small>{this.renderAuthors()}</small> &sdot; <small><em>{this.renderSource(false)}</em></small>
-			{this.props.award && this.props.award.length > 0 ? <span className="award">{_.join(this.props.award, " + ")}</span> : ""}
+			{this.props.award && this.props.award.length > 0 ? <span className="award">{this.props.award.join(" + ")}</span> : ""}
 		</div>
 
 	}
@@ -125,7 +124,7 @@ class Paper extends React.Component {
 		
 		const source = this.renderSource(false);
 
-		const award = this.props.award && this.props.award.length > 0 ? <span className="award">&#x2605; {_.join(this.props.award, " + ")}</span> : undefined;
+		const award = this.props.award && this.props.award.length > 0 ? <span className="award">&#x2605; { this.props.award.join(" + ")}</span> : undefined;
 
 		const title = !url ? 
 			<strong>{this.props.title}</strong> : 

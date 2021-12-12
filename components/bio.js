@@ -1,8 +1,6 @@
-import _ from 'lodash';
 import React from 'react';
 
 import { Linkable } from './linkable';
-import { HashLink } from 'react-router-hash-link';
 
 class Biography extends React.Component {
 
@@ -25,10 +23,10 @@ class Biography extends React.Component {
 						Math.round(this.props.app.getProfile().getPublications(paper => paper.kind.indexOf("refereed") === 0 || paper.kind.indexOf("journal")).length / 10) * 10
 					} peer-reviewed publications, with {
 						// Compute number of best papers
-						this.props.app.getProfile().getPublications(paper => paper.award && _.filter(paper.award, award => award.includes("best paper")).length > 0).length
+						this.props.app.getProfile().getPublications(paper => paper.award && paper.award.filter(award => award.includes("best paper")).length > 0).length
 					} receiving best paper awards and {
 						// Compute number of most influential papers.
-						this.props.app.getProfile().getPublications(paper => paper.award && _.filter(paper.award, award => award.includes("most influential")).length > 0).length
+						this.props.app.getProfile().getPublications(paper => paper.award && paper.award.filter(award => award.includes("most influential")).length > 0).length
 					} receiving most influential paper awards.
 					She is an ACM Senior Member, and member of ACM SIGCHI, SIGCSE, and SIGSOFT. 
 					She received her Ph.D. at the <a href="http://www.hcii.cs.cmu.edu">Human-Computer Interaction Institute</a> at <a href="http://www.cmu.edu">Carnegie Mellon University</a> in 2008, and degrees in Computer Science and Psychology with Honors from <a href="http://www.oregonstate.edu">Oregon State University</a> in 2002.

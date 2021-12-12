@@ -1,6 +1,4 @@
 import React from 'react';
-import _ from 'lodash';
-
 import { Paper }  from './paper';
 import { Facets } from './facets';
 

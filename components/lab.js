@@ -1,7 +1,5 @@
 import React from 'react';
-import _ from 'lodash';
 import { Link } from 'react-router-dom';
-
 import { Block } from './block';
 
 class Person extends React.Component {
@@ -55,8 +53,7 @@ class Lab extends React.Component {
 		var personToHighlight = this.props.match.params.person;
 
 		const renderPeople = (filter, sort) =>
-			_.map(
-				this.props.profile.getPeople(filter, sort), 
+			this.props.profile.getPeople(filter, sort).map(
 				person => 
 					<Person {...person} 
 						key={person.id} 
@@ -115,8 +112,8 @@ class Lab extends React.Component {
 				{ 
 					renderPeople(
 						person => person.active && !person.advised && person.level !== "faculty", 
-						['level', 'startdate']
-					) 
+						person => -person.startdate
+					)
 				}
 
 				<h3 id="collaborators">Faculty Collaborators</h3>

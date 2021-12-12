@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import React from 'react';
 
 class Commitments extends React.Component {
@@ -130,7 +129,7 @@ class Commitments extends React.Component {
             var nextSunday = new Date(currentMonday.getTime() + 6 * 24 * 60 * 60 * 1000);
 
             // Which promises occur in this week?
-            _.each(this.commitments, commitment => {
+            this.commitments.forEach(commitment => {
                 // If this is an annual commitment, is this week in it's month range?
                 if(commitment.annually) {
                     let startMonth = new Date(currentMonday.getFullYear(), commitment.start.month - 1, commitment.start.date);
@@ -163,8 +162,8 @@ class Commitments extends React.Component {
             });
 
             // Are there any prime commitments this week? If so, remove the flexible commitments.
-            if(_.filter(intersectingCommitments, intersect => intersect.commitment.priority === 2).length > 0)
-                intersectingCommitments = _.filter(intersectingCommitments, intersect => intersect.commitment.priority !== 0);
+            if(intersectingCommitments.filter(intersect => intersect.commitment.priority === 2).length > 0)
+                intersectingCommitments = intersectingCommitments.filter(intersect => intersect.commitment.priority !== 0);
 
             // Add these dcommitments to this week for rendering.
             weeks.push({
@@ -185,7 +184,7 @@ class Commitments extends React.Component {
         // Finally, map the weeks to table rows.
         var rows = [];
         var lastWeek = null;
-        _.each(weeks, (week, index) => {
+        weeks.forEach((week, index) => {
             
             // Add a month header when we start or it changes.
             if(lastWeek === null || lastWeek.date.getMonth() !== week.date.getMonth())
@@ -196,7 +195,7 @@ class Commitments extends React.Component {
             lastWeek = week;
 
             let hours = 
-                _.reduce(week.intersects, (sum, intersect) => sum + (intersect.commitment.category === "personal" ? 0 : Math.round(intersect.commitment.hours * intersect.overlap)), 0);
+                week.intersects.reduce((sum, intersect) => sum + (intersect.commitment.category === "personal" ? 0 : Math.round(intersect.commitment.hours * intersect.overlap)), 0);
 
             // Add the commitments, then a total hours
             rows.push(
@@ -204,23 +203,24 @@ class Commitments extends React.Component {
                     <td>
                         <div className={hours > 45 ? "shake" : ""} style={{animationDelay: "-" + Math.round(10 * Math.random()) / 10 + "s"}}>
                         {
-                            _.map(week.intersects, (intersect, index) => this.renderBar(intersect.commitment, intersect.overlap, false, "commitment-" + index))
+                            week.intersects.map((intersect, index) => this.renderBar(intersect.commitment, intersect.overlap, false, "commitment-" + index))
                         }
                         </div>
                         {
                             <div className="commitment-notes">
-                                {_.map(
-                                    week.intersects, 
-                                    (intersect, index) => 
-                                        <span 
-                                            className={intersect.commitment.category}
-                                            key={"name-" + index} 
-                                        >
-                                                {/* {index > 0 && week.intersects[index - 1].commitment.category !== intersect.commitment.category ? <br/> : null} */}
-                                                {intersect.commitment.name}
-                                                {index < week.intersects.length - 1 ? <span> &sdot; </span> : null}
-                                        </span>
-                                )}
+                                {
+                                    week.intersects.map(
+                                        (intersect, index) => 
+                                            <span 
+                                                className={intersect.commitment.category}
+                                                key={"name-" + index} 
+                                            >
+                                                    {/* {index > 0 && week.intersects[index - 1].commitment.category !== intersect.commitment.category ? <br/> : null} */}
+                                                    {intersect.commitment.name}
+                                                    {index < week.intersects.length - 1 ? <span> &sdot; </span> : null}
+                                            </span>
+                                    )
+                                }
                             </div>
                         }
                     </td>
@@ -257,12 +257,12 @@ class Commitments extends React.Component {
         var thisYear = (new Date()).getFullYear();
 
         // Start with an list of miscellaneous commitments.
-        _.map(profile.getCommitments(), 
+        profile.getCommitments().map(
             com => 
                 this.commit(com.title, com.description, com.category, com.commitment.priority, com.commitment.hours, com.annually, com.commitment.start, com.commitment.end))
 
         // Add editing responsibilities.
-        _.each(profile.getEditing(), editing =>
+        profile.getEditing().forEach(editing =>
             this.commit(
                 editing.venue, editing.title, "service", 
                 editing.commitment.priority, editing.commitment.hours, false, 
@@ -271,7 +271,7 @@ class Commitments extends React.Component {
         );
 
         // Add service responsibilities.
-        _.each(profile.getService(), service =>
+        profile.getService().forEach(service =>
             this.commit(
                 service.committee, service.title, "service", 
                 service.commitment.priority, service.commitment.hours, false, 
@@ -280,7 +280,7 @@ class Commitments extends React.Component {
         );
 
         // Add funding responsibilities.
-        _.each(profile.getFunding(), funding =>
+        profile.getFunding().forEach(funding =>
             this.commit(
                 funding.title, "Research, collaboration, reporting", funding.category, 
                 funding.commitment.priority, funding.commitment.hours, false, 
@@ -289,7 +289,7 @@ class Commitments extends React.Component {
         );
 
         // Add travel responsibilities.
-        _.each(profile.getTravel(), trip =>
+        profile.getTravel().forEach(trip =>
             this.commit(
                 trip.title, trip.details, trip.category, 
                 trip.commitment.priority, trip.commitment.hours, false, 
@@ -298,7 +298,7 @@ class Commitments extends React.Component {
         );
 
         // Add talk prep responsibilities (start prep 90 days beforehand)
-        _.each(profile.getTalks(), talk => {
+        profile.getTalks().forEach(talk => {
             let start = new Date(talk.date.getTime());
             start.setDate(start.getDate() - 90);
             return this.commit(
@@ -309,11 +309,10 @@ class Commitments extends React.Component {
         });
 
         // Add reviewing responsibilities.
-        _.each(profile.getReviewing(), reviewing => {
+        profile.getReviewing().forEach(reviewing => {
             // If this has a commitment, add commitments for all current and future years.
             if(reviewing.commitment) {
-                _.each(
-                    _.filter(reviewing.years, year => year >= thisYear),
+                reviewing.years.filter(year => year >= thisYear).forEach(
                     year => 
                         this.commit(
                             reviewing.title ? reviewing.title : "Reviewer", reviewing.venue, "service", 
@@ -327,8 +326,8 @@ class Commitments extends React.Component {
         });
 
         // Add teaching responsibilities
-        _.each(profile.getClasses(), course => {
-            _.each(course.offerings, offering => {
+        profile.getClasses().forEach(course => {
+           course.offerings.forEach(offering => {
                 // If this course is going to be offered this year, add commitments for it
                 if(offering.year >= thisYear) {
                     // Add time for preparing to teach the quarter before.
@@ -356,29 +355,30 @@ class Commitments extends React.Component {
         this.generateCommitments();
 
         // Split up the committments into categories for display.
-        var indefiniteWeekly = _.sortBy(_.filter(this.commitments, 
-            commitment => commitment.end === null && commitment.category !== "personal"),
-            commitment => -commitment.hours);
+        const indefiniteWeekly = 
+            this.commitments
+                .filter(commitment => commitment.end === null && commitment.category !== "personal")
+                .sort((a, b) => b.hours - a.hours)
 
-        var indefiniteAnnually = _.sortBy(_.filter(this.commitments,
-            commitment => commitment.annually && commitment.category !== "personal"),
-            commitment => commitment.start.month * 12 + commitment.start.date
-        );
+        const indefiniteAnnually = 
+            this.commitments
+                .filter(commitment => commitment.annually && commitment.category !== "personal")
+                .sort((a, b) => (a.start.month * 12 + a.start.date) - (b.start.month * 12 + b.start.date))
 
-        var definiteResearch = _.sortBy(_.filter(this.commitments, 
-            commitment => !commitment.annually && commitment.end !== null && commitment.category === "research" && commitment.end.getTime() > Date.now()),
-            commitment => commitment.start.getTime()
-        );
+        const definiteResearch = 
+            this.commitments
+                .filter(commitment => !commitment.annually && commitment.end !== null && commitment.category === "research" && commitment.end.getTime() > Date.now())
+                .sort((a, b) => a.start.getTime() - b.start.getTime())
 
-        var definiteTeaching = _.sortBy(_.filter(this.commitments, 
-            commitment => !commitment.annually && commitment.end !== null && commitment.category === "teaching" && commitment.end.getTime() > Date.now()),
-            commitment => commitment.start.getTime()
-        );
+        const definiteTeaching = 
+            this.commitments
+                .filter(commitment => !commitment.annually && commitment.end !== null && commitment.category === "teaching" && commitment.end.getTime() > Date.now())
+                .sort((a, b) => a.start.getTime() - b.start.getTime())
 
-        var definiteService = _.sortBy(_.filter(this.commitments,
-            commitment => !commitment.annually && commitment.end !== null && commitment.category === "service" && commitment.end.getTime() > Date.now()),
-            commitment => commitment.start.getTime()
-        );
+        const definiteService = 
+            this.commitments
+                .filter(commitment => !commitment.annually && commitment.end !== null && commitment.category === "service" && commitment.end.getTime() > Date.now())
+                .sort((a, b) => a.start.getTime() - b.start.getTime())
 
 		return (
 			<div>
@@ -399,7 +399,7 @@ class Commitments extends React.Component {
                     <tbody>
                         <tr><td colSpan="3"><h3>Weekly commitments</h3></td></tr>
                         {
-                            _.map(indefiniteWeekly, (commitment, index) =>
+                            indefiniteWeekly.map((commitment, index) =>
                                 <tr key={"weekly-commitment-" + index}>
                                     <td>
                                         <em className={commitment.category}>{commitment.name}</em>
@@ -416,7 +416,7 @@ class Commitments extends React.Component {
                         }
                         <tr><td colSpan="3"><h3>Annual commitments</h3></td></tr>
                         {
-                            _.map(indefiniteAnnually, (commitment, index) =>
+                            indefiniteAnnually.map((commitment, index) =>
                                 <tr key={"annual-commitment-" + index}>
                                     <td>
                                         <em className={commitment.category}>{commitment.name}</em>
@@ -438,7 +438,7 @@ class Commitments extends React.Component {
                         <tr><td colSpan="3"><h3>One-time commitments</h3></td></tr>
                         <tr><td colSpan="3"><h4>Research</h4></td></tr>
                         {
-                            _.map(definiteResearch, (commitment, index) =>
+                            definiteResearch.map((commitment, index) =>
                                 <tr key={"fixed-commitment-" + index}>
                                     <td>
                                         <em className={commitment.category}>{commitment.name}</em>
@@ -455,7 +455,7 @@ class Commitments extends React.Component {
                         }
                         <tr><td colSpan="3"><h4>Teaching</h4></td></tr>
                         {
-                            _.map(definiteTeaching, (commitment, index) =>
+                            definiteTeaching.map((commitment, index) =>
                                 <tr key={"fixed-commitment-" + index}>
                                     <td>
                                         <em className={commitment.category}>{commitment.name}</em>
@@ -472,7 +472,7 @@ class Commitments extends React.Component {
                         }
                         <tr><td colSpan="3"><h4>Service</h4></td></tr>
                         {
-                            _.map(definiteService, (commitment, index) =>
+                            definiteService.map((commitment, index) =>
                                 <tr key={"fixed-commitment-" + index}>
                                     <td>
                                         <em className={commitment.category}>{commitment.name}</em>

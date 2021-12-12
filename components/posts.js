@@ -1,6 +1,4 @@
 import React from 'react';
-import _ from 'lodash';
-
 import { Block } from './block';
 import { Facets } from './facets';
 
@@ -39,11 +37,10 @@ class Posts extends React.Component {
 				/>
 
 				{
-					_.map(
-						this.props.app.getProfile().getPosts(
-							post => !("topic" in this.state.filter) || post.tags.includes(this.state.filter.topic),
-							post => -(post.year * 12 + post.month)
-						),
+					this.props.app.getProfile().getPosts(
+						post => !("topic" in this.state.filter) || post.tags.includes(this.state.filter.topic),
+						post => -(post.year * 12 + post.month)
+					).map(
 						(post, index) => 
 							<Block
 								key={"post-" + index}
@@ -56,8 +53,7 @@ class Posts extends React.Component {
 										<small>{ post.month + "/" + post.year }</small>
 										<br/>
 										{
-											_.map(
-												post.tags, 
+											post.tags.map(
 												(tag, index) => 
 													<mark key={index} className={"topic" + (this.state.filter.topic === tag ? " selected" : "")}>
 														<small>{tag}</small>

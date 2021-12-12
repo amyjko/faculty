@@ -1,5 +1,4 @@
 import React from 'react';
-import _ from 'lodash';
 
 import {Block} from './block';
 
@@ -14,8 +13,7 @@ class Impact extends React.Component {
 				</div>
 
 				{
-					_.map(
-						this.props.app.getProfile().getPopulations(),
+					this.props.app.getProfile().getPopulations().map(
 						population =>
 							<Block 
 								key={population.id}
@@ -27,12 +25,10 @@ class Impact extends React.Component {
 									<p>{population.description}</p>
 									<div>
 										{
-											_.map(
-												this.props.app.getProfile().getImpacts(
-													impact => impact.who === population.id,
-													impact => -impact.start
-												),
-												(impact, index) =>
+											this.props.app.getProfile().getImpacts(
+												impact => impact.who === population.id,
+												impact => -impact.start
+											).map((impact, index) =>
 												<p key={index}>
 													<span style={{fontVariant: "small-caps"}}>{impact.kind}</span> <small> ({impact.start}{impact.end == null ? "-present" : impact.start !== impact.end ? "-" + impact.end : "" })</small>
 													<br/>{impact.description}{impact.url ? <small> <a href={impact.url}>evidence</a></small> : null}

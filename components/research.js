@@ -1,5 +1,4 @@
 import React from 'react';
-import _ from "lodash";
 
 import { Link } from 'react-router-dom';
 import { Block } from './block';
@@ -41,7 +40,7 @@ class ProjectSummary extends React.Component {
 						<h4>{this.props.name} <small>({this.props.startdate}&ndash;{this.props.stopdate})</small></h4>
 						<p>
 						{
-							_.map(this.props.people, person => 
+							this.props.people.map(person => 
 								<Link key={"person-" + person.id} to={person.id === "ajko" ? "/bio" : "/lab/" + person.id}>
 									<img 
 										src={this.props.app.getWebRoot() + this.props.app.getProfile().getPersonImagePath(person.id)} 
@@ -89,8 +88,7 @@ class Research extends React.Component {
 				<p>These are topics that people in my lab are actively investigating.</p>
 						
 				{
-					_.map(
-						this.props.app.getProfile().getProjects(project => project.active), 
+					this.props.app.getProfile().getProjects(project => project.active).map( 
 						project => <ProjectSummary {...project} key={project.name} app={this.props.app} />
 					)
 				}
@@ -101,8 +99,7 @@ class Research extends React.Component {
 				<p>These are topics that my lab has investigated in the past, but that no one in the lab is actively investigating now. New students might join my lab and bring them back to life!</p>
 
 				{
-					_.map(
-						this.props.app.getProfile().getProjects(project => !project.active), 
+					this.props.app.getProfile().getProjects(project => !project.active).map(
 						project => <ProjectSummary {...project} key={project.name} app={this.props.app} />
 					)
 				}

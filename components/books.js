@@ -1,6 +1,5 @@
 import React from 'react';
 import { Block } from './block';
-import _ from 'lodash'
 
 class Books extends React.Component {
 	render() {

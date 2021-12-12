@@ -1,8 +1,6 @@
 import React from 'react';
 import {Paper} from './paper';
-import _ from "lodash";
 import { HashLink } from 'react-router-hash-link';
-import { Linkable } from './linkable';
 import { Section } from './section';
 import { Link } from 'react-router-dom';
 

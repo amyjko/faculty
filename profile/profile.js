@@ -1,5 +1,3 @@
-import _ from 'lodash';
-
 class Profile {
 
 	parseCommitment(commitment) {
@@ -26,25 +24,25 @@ class Profile {
         this.json = json;
 
 		// Parse talk dates.
-		_.each(this.json.talks, talk => talk.date = this.parseDate(talk.date));
+		this.json.talks.forEach(talk => talk.date = this.parseDate(talk.date));
 
 		// Parse panel dates.
-		_.each(this.json.panels, panel => panel.date = this.parseDate(panel.date));
+		this.json.panels.forEach(panel => panel.date = this.parseDate(panel.date));
 
 		// Parse service
-		_.each(this.json.service, service => service.commitment = this.parseCommitment(service.commitment));
+		this.json.service.forEach(service => service.commitment = this.parseCommitment(service.commitment));
 
 		// Parse funding
-		_.each(this.json.funding, funding => funding.commitment = this.parseCommitment(funding.commitment));
+		this.json.funding.forEach(funding => funding.commitment = this.parseCommitment(funding.commitment));
 
 		// Parse travel
-		_.each(this.json.travel, travel => travel.travel = this.parseCommitment(travel.commitment));
+		this.json.travel.forEach(travel => travel.travel = this.parseCommitment(travel.commitment));
 
 		// Parse commitments
-		_.each(this.json.commitments, commitment => commitment.commitment = this.parseCommitment(commitment.commitment));
+		this.json.commitments.forEach(commitment => commitment.commitment = this.parseCommitment(commitment.commitment));
 
 		// Parse editing
-		_.each(this.json.editing, role => {
+		this.json.editing.forEach(role => {
 			if(role.venue.charAt(0) === "@") {
 				let conf = this.getSource(role.venue);
 				if(!conf)
@@ -57,7 +55,7 @@ class Profile {
 		})
 		
 		// Parse reviewing
-		_.each(this.json.reviewing, role => {
+		this.json.reviewing.forEach(role => {
 			if(role.venue.charAt(0) === "@") {
 				let conf = this.getSource(role.venue);
 				if(!conf)
@@ -75,15 +73,13 @@ class Profile {
 		// Annotate publications with synthesized tags.
 		// Resolve author references to people records.
 		// Add the tags to the publication tags dictionary.
-		_.each(this.json.pubs, pub => {
+		this.json.pubs.forEach(pub => {
 		
 			// Resolve symbolic author names to a pointer to the person record.
-			pub.authors = _.map(
-				pub.authors, 
-				author => 
-					author.charAt(0) === "@" ?
-						this.getPerson(author.substring(1)) :
-						author
+			pub.authors = pub.authors.map(author => 
+				author.charAt(0) === "@" ?
+					this.getPerson(author.substring(1)) :
+					author
 			);
 
 			// Resolve symbolic source names to a pointer to the source record.
@@ -105,36 +101,37 @@ class Profile {
 				// Add the paper's awards as tags
 				"award": pub.award ? pub.award.slice() : [],
 				// Add the paper's projects
-				"project": _.map(this.getProjects(project => project.papers.indexOf(pub.id) >= 0), project => project.shortName)
+				"project": this.getProjects(project => project.papers.indexOf(pub.id) >= 0).map(project => project.shortName)
 			};
 			
-			// Accumlate post tags by going through each facet and adding the publication's
-			_.each(Object.keys(pub.tags), facet => {
+			// Accumulate post tags by going through each facet and adding the publication's
+			Object.keys(pub.tags).forEach(facet => {
+				// Union the tags
 				this.json.publicationFacets[facet] = 
-					_.union(pub.tags[facet], facet in this.json.publicationFacets ? this.json.publicationFacets[facet] : []);
+					Array.from(new Set(pub.tags[facet].concat(facet in this.json.publicationFacets ? this.json.publicationFacets[facet] : [])))
 			});
 			
 		});
 
 		// Parse post years and months.
 		// Compute months and dates from strings.
-		_.each(this.json.posts, post => {
+		this.json.posts.forEach(post => {
 			var parts = post.date.split(".");
 			post.year = parseInt(parts[0]);
 			post.month = parseInt(parts[1]);
 		});
 
-		// Accumlate post tags
+		// Accumulate post tags
 		this.json.postTags = {"topic": []};
-		_.each(this.json.posts, post =>
-			this.json.postTags.topic = _.union(this.json.postTags.topic, post.tags)
+		this.json.posts.forEach(post =>
+			this.json.postTags.topic = Array.from(new Set(this.json.postTags.topic.concat(post.tags)))
 		);
 
 		// Resolve funding links in projects.
-		_.each(this.json.projects, project => {
+		this.json.projects.forEach(project => {
 
 			// Resolve funding links.
-			project.funding = _.map(project.funding, funding => {
+			project.funding = project.funding.map(funding => {
 				let grant = this.getGrant(funding.substring(1));
 				if(!grant)
 					console.error("Couldn't find grant " + funding);
@@ -142,7 +139,7 @@ class Profile {
 			});
 
 			// Resolve people links.
-			project.people = _.map(project.people, person => {
+			project.people = project.people.map(person => {
 				let peep = this.getPerson(person.substring(1));
 				if(!peep)
 					console.error("Couldn't find person " + person);
@@ -154,7 +151,12 @@ class Profile {
     }
 
 	cloneFilterSort(list, filter, sort) {
-		return _.sortBy(_.filter(list.slice(), filter), sort);
+		list = list.slice()
+		if(filter)
+			list = list.filter(filter)
+		if(sort)
+			list = list.sort((a, b) => sort.call(undefined, a) - sort.call(undefined, b))
+		return list
 	}
 	
 	getSource(id) {
@@ -168,7 +170,7 @@ class Profile {
 
 	// Find the first person matching the given ID.
 	getPerson(id) {
-		return _.find(this.json.people, person => person.id === id);
+		return this.json.people.find(person => person.id === id);
 	}
 
 	getPersonImagePath(id) {
@@ -187,7 +189,7 @@ class Profile {
 	
 	// Find the project with the matching id.
 	getProject(id) {
-		return _.find(this.json.projects, { 'id': id });
+		return this.json.projects.find(p => p.id === id);
 	}
 
 	// Get the list of publication tags applied to all publications.
@@ -222,7 +224,7 @@ class Profile {
 	}
 	
     getPublication(id) {
-        return _.find(this.json.pubs, { id: id });
+        return this.json.pubs.find(p => p.id = id);
     }
 
 	// Get the list of talks.
@@ -245,7 +247,7 @@ class Profile {
 	tagsMatch(query, tags) {
 
 		// Go through each facet in the query
-		return _.reduce(Object.keys(query), (match, facet) => match && tags[facet].includes(query[facet]), true);
+		return Object.keys(query).reduce((match, facet) => match && tags[facet].includes(query[facet]), true);
 
 	}
 
@@ -254,7 +256,7 @@ class Profile {
 	}
 
 	getGrant(id) {
-		return _.find(this.json.funding, { id: id });
+		return this.json.funding.find(g => g.id === id);
 	}
 
 	getDegrees() {

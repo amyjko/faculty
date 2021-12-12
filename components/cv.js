@@ -1,16 +1,14 @@
 import React from 'react';
-import _ from "lodash";
 import {Paper} from "./paper";
 
 class Chunk extends React.Component {
 	
 	convertArrayToNote(data) {
 		
-		if(data && _.isArray(data))
+		if(data && Array.isArray(data))
 				return <ul>
 					{
-						_.map(
-							data, 
+						data.map(
 							(entry, index) => 
 								<li key={index} className="note">
 									{entry}
@@ -67,8 +65,7 @@ class Vita extends React.Component {
 		var rows = [];
 		var yearColumns = columns ? 6 : 12;
 
-		_.each(
-			pubs,
+		pubs.forEach(
 			(pub, index) => {
 				if(splitByYears) {
 					let newYear = index === 0 || (index > 0 && pub.year !== pubs[index - 1].year);
@@ -105,7 +102,7 @@ class Vita extends React.Component {
 		return <div className="row">
 			{
 				// Convert each entry into the list, clearing every two entries.
-				_.map(list, (entry, index) => 
+				list.map((entry, index) => 
 					<Chunk 
 						key={index} 
 						wrap={wrap} 
@@ -127,7 +124,7 @@ class Vita extends React.Component {
 		
 	getTable(list, prefix, start, stop, header, detail, secondDetail) {
 		
-		var rows = _.map(list, (entry, index) => {
+		var rows = list.map((entry, index) => {
 
 			var end = "";
 			if(stop !== null && entry[start] !== entry[stop])
@@ -207,7 +204,7 @@ class Vita extends React.Component {
 
 				{this.getChunkList(
 					profile.getPublications(
-						pub => pub.award && _.filter(pub.award, award => award.includes("most influential paper")).length > 0,
+						pub => pub.award && pub.award.filter(award => award.includes("most influential paper")).length > 0,
 						pub => -pub.year
 					),
 					true,
@@ -224,7 +221,7 @@ class Vita extends React.Component {
 				{
 					this.getChunkList(
 						profile.getPublications(
-							pub => pub.award && (_.includes(pub.award, "best paper") || _.includes(pub.award, "best paper honorable mention")),
+							pub => pub.award && (pub.award.includes("best paper") || pub.award.includes("best paper honorable mention")),
 							pub => -pub.year
 						),
 						true,
@@ -308,14 +305,14 @@ class Vita extends React.Component {
 				<h2>Invited Keynotes</h2>
 
 				{this.getChunkList(
-					_.filter(profile.getTalks(), (talk) => { return talk.keynote; }), 
+					profile.getTalks().filter(talk => talk.keynote),
 					true,
 					talk => talk.date.getFullYear(), talk => talk.date.getFullYear(), "title", "venue")}
 				
 				<h2>Invited Talks</h2>
 
 				{this.getChunkList(
-					_.filter(profile.getTalks(), (talk) => { return !talk.keynote; }), 
+					profile.getTalks().filter(talk => !talk.keynote), 
 					true,
 					talk => talk.date.getFullYear(), talk => talk.date.getFullYear(), "title", "venue")}				
 
@@ -344,12 +341,12 @@ class Vita extends React.Component {
 					this.getChunkList(
 						profile.getClasses(),
 						true,
-						course => _.orderBy(course.offerings, ["year"], ["asc"])[0].year,
-						course => _.orderBy(course.offerings, ["year"], ["desc"])[0].year,
+						course => course.offerings.sort((a, b) => a.year - b.year)[0].year,
+						course => course.offerings.sort((a, b) => b.year - a.year)[0].year,
 						course => course.number + " " + course.title,
 						"level",
 						"description",
-						course => "Taught " + _.filter(course.offerings, offer => offer.score !== null).length + " times"
+						course => "Taught " + course.offerings.filter(offer => offer.score !== null).length + " times"
 					)
 				}
 
@@ -360,14 +357,14 @@ class Vita extends React.Component {
 				{
 					// Get the students and annotate the metadata for presentation.
 					this.getChunkList(
-						_.forEach(
-							profile.getPeople(
-								person => person.level === "phd" && person.advised,
-								person => person.startdate
-							), value => {
+						profile.getPeople(
+							person => person.level === "phd" && person.advised,
+							person => person.startdate
+						).map(value => {
 							if(value.coadvisor !== null)
 								value.coadvisor = "Co-advisor: " + value.coadvisor;
-						}), 
+							return value
+						}),
 						true,
 						"startdate", 
 						"enddate", 

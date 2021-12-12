@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import React from 'react';
 import { Block } from './block';
 
@@ -11,9 +10,9 @@ class Classes extends React.Component {
 				</div>
 
 				{
-					_.map(this.props.app.getProfile().getClasses(), course => {
-						let nextOfferings = _.orderBy(_.filter(course.offerings, offer => offer.score === null), ["year", "term"], ["asc", "asc"]);
-						let latestOfferings = _.orderBy(_.filter(course.offerings, offer => offer.score !== null), ["year", "term"], ["desc", "desc"]);
+					this.props.app.getProfile().getClasses().map(course => {
+						const nextOfferings = course.offerings.filter(offer => offer.score === null).sort((a, b) => (a.year === b.year ? a.term - b.term : a.year - b.year))
+						const latestOfferings = course.offerings.filter(offer => offer.score !== null).sort((a, b) => (a.year === b.year ? b.term - a.term : b.year - a.year))
 						return <Block
 								key={"course-" + course.id}
 								image={this.props.app.getWebRoot() + "/images/courses/" + course.id + ".png"}
@@ -27,8 +26,7 @@ class Classes extends React.Component {
 										{nextOfferings.length === 0 ? null : (latestOfferings.length > 0 ? ", " : "") + "next offering likely " + ["Autumn", "Winter", "Spring"][nextOfferings[0].term - 1] + " " + nextOfferings[0].year }
 										</em>). {course.description}
 										<ul>
-											{_.map(
-												course.links, 
+											{course.links.map( 
 												(link, index) => 
 													<li key={index}>
 														{
