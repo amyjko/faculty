@@ -237,10 +237,7 @@ class Profile {
 	
 	// Get the list of classes.
 	getClasses() { return this.json.classes; }
-	
-	// Get the list of books.
-	getBooks() { return this.json.books; }
-	
+		
 	// Get the list of year contexts.
 	getYearContexts() { return this.json.years; }
 

@@ -30,7 +30,7 @@
 		"sources", "pubs", "people", "projects", "posts", 
 		"impacts", "degrees", "patents", "jobs", "recognitions", "editing",
 		"reviewing", "doctoralCommittees", "service", "funding", "travel", 
-		"talks", "classes", "books", "commitments", "years"
+		"talks", "classes", "commitments", "years"
 	],
 	"properties": {
 		"sources": {
@@ -621,36 +621,6 @@
 								"score": { "type": ["number", "null", "string"], "minimum": 0 }
 							}
 						}
-					}
-				}
-			}
-		},
-		"books": {
-			"type": "array",
-			"description": "List of books.",
-			"items": {
-				"type": "object",
-				"description": "A class.",
-				"required": ["image", "alt", "link", "title", "description", "editor"],
-				"properties": {
-					"image": {
-						"type": "string"
-					},
-					"alt": {
-						"type": "string"
-					},
-					"link": {
-						"type": "string",
-						"format": "uri-reference"
-					},
-					"title": {
-						"type": "string"
-					},
-					"description": {
-						"type": "string"
-					},
-					"editor": {
-						"type": "boolean"
 					}
 				}
 			}

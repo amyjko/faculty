@@ -242,6 +242,20 @@
 			"contribution": "Demonstrates how to conduct a DIF analysis through a case study of a particular large CS1 exam, which revealed some item bias."
 		},
 		{
+			"id": "infobook",
+			"kind": "book",
+			"authors": ["@ajko"],
+			"deadname": false,
+			"year": 2021,
+			"title": "Foundations of Information",
+			"source": "Online",
+			"pages": null,
+			"doi": "https://faculty.washington.edu/ajko/books/foundations-of-information/",
+			"local": null,
+			"publisher": "Self-published",
+			"contribution": "This book covers information, and all of the things that intersect with it: power, politics, oppression, data, knowledge, encoding, metadata; information technology, management, and policy; and the many domains in which information is crucial, including science, social media, automation, health, democracy, and sustainabiity. It serves as the foundation of our survey course on information, INFO 200 Intellectual Foundations of Informatics."
+		},
+		{
 			"id": "csdesignk12",
 			"kind": "journal article",
 			"authors": ["@olesona", "@ajko", "@brettwo"],
@@ -560,6 +574,20 @@
 			"local": "Xie2019IRTEvaluation.pdf",
 			"blog": "https://medium.com/bits-and-behavior/improving-cs-assessment-with-careful-data-analysis-10e1304de055",
 			"contribution": "Evaluates the SCS1 language independent concept inventory, demonstrating how to use IRT to evaluate assessments, and that the SCS1 has several items that may be too hard to be useful."
+		},
+		{
+			"id": "higheredteaching",
+			"kind": "book",
+			"authors": ["@ajko"],
+			"deadname": false,
+			"year": 2019,
+			"title": "Informatics Teaching Guide",
+			"source": "Onlne",
+			"pages": null,
+			"publisher": "Self-published",
+			"doi": "https://faculty.washington.edu/ajko/books/informatics-teaching-guide/",
+			"local": null,
+			"contribution": "Supports new higher education teachers, including new faculty, guest faculty, doctoral student teachers, and teaching assistants. It uses our undergraduate Informatics program for examples, but is in essence a practical, but also research-informed introduction to teaching in a university."
 		},
 		{
 			"id": "scoutdemo",
@@ -1003,7 +1031,7 @@
 			"publisher": "Self-published",
 			"doi": "https://faculty.washington.edu/ajko/books/cooperative-software-development/",
 			"local": null,
-			"contribution": "An online, self-published book that surveys human aspects of programming and software engineering in a simple, accessible, and direct manner."
+			"contribution": "An online, self-published book that covers software engineering fundamentals, but from a human, social, collaborative, and organizational perspective, rather than from a purely technical perspective."
 		},
 		{
 			"id": "scry",
@@ -8849,80 +8877,6 @@
 			"offerings": [
 				{ "year": 2022, "term": 3, "size": 15, "score": null }
 			]
-		}
-	],
-	"books": [
-		{
-			"image": "ccc.png",
-			"alt": "Several applications of computing, including VR, news, robotics, information, and automation.|Computing is everywhere, for better and worse.",
-			"link": "https://criticallyconsciouscomputing.org",
-			"title": "Critically Conscious Computing: Methods for Secondary Education",
-			"description": "A book for secondary educators who want to teach CS from critical lens, examining it from technical, sociotechnical, and sociopoitical stance.",
-			"editor": true
-		},
-		{
-			"image": "foundations-of-information.jpg",
-			"alt": "A metallic structure resembling a network of nodes and edges",
-			"link": "/ajko/books/foundations-of-information/#/",
-			"title": "Foundations of Information",
-			"description": "This book covers information, and all of the things that intersect with it: power, politics, oppression, data, knowledge, encoding, metadata; information technology, management, and policy; and the many domains in which information is crucial, including science, social media, automation, health, democracy, and sustainabiity. It serves as the foundation of our survey course on information, INFO 200 Intellectual Foundations of Informatics.",
-			"editor": true
-		},
-		{
-			"image": "design-methods.jpg",
-			"alt": "A stylized rendering of website mockups",
-			"link": "/ajko/books/design-methods",
-			"title": "Design Methods",
-			"description": "This book covers interaction design, design methods, and HCI fundamentals. I have my students read it in the first five weeks of class, then launch into a five week design project.",
-			"editor": true
-		},
-		{
-			"image": "cooperative-software-development.jpg",
-			"alt": "A group of people working together at a table.",
-			"link": "/ajko/books/cooperative-software-development/",
-			"title": "Cooperative Software Development",
-			"description": "This book covers software engineering fundamentals, but from a human, social, collaborative, and organizational perspective, rather than from a purely technical perspective.",
-			"editor": true
-		},
-		{
-			"image": "user-interface-software-and-technology.jpg",
-			"alt": "An illustration of a stick figure person sitting on a grid of 1's and 0's",
-			"link": "/ajko/books/user-interface-software-and-technology/",
-			"title": "User Interface Software and Technology",
-			"description": "This book covers the history, theory, and innovations in user interface software and technology, as well as social issues surrounding interfaces, including intellectual property, ethics, and innovation in industry.",
-			"editor": true
-		},
-		{
-			"image": "informatics-teaching-guide.jpg",
-			"alt": "Four stick figure drawings of teachers teaching differently sized groups of students.",
-			"link": "/ajko/books/informatics-teaching-guide/",
-			"title": "Higher Education Teaching Guide",
-			"description": "I wrote this book to support new higher education teachers, including new faculty, guest faculty, doctoral student teachers, and teaching assistants. It uses our undergraduate Informatics program for examples, but is in essence a practical, but also research-informed introduction to teaching in a university.",
-			"editor": true
-		},
-		{
-			"image": "computingedhandbook.jpg",
-			"alt": "The cover of The Cambridge Handbook of Computing Education Research, a strange arrangement of sharp objects pointing at a window.",
-			"link": "https://www.cambridge.org/core/books/cambridge-handbook-of-computing-education-research/F8CFAF7B81A8F6BF5C663412BA0A943D",
-			"title": "The Cambridge Handbook of Computing Education Research",
-			"description": "This book surveys the entire history of computing education research up to 2018, and also covers research methods necessary for conducting computing education research. I contributed chapters on study design, informal learning, and tools and environments to support learning. If you're new to the field, it's a great way to rapidly learn most of what we know about teaching and learning computing concepts.",
-			"editor": false
-		},
-		{
-			"image": "productivity.jpg",
-			"alt": "The cover of the Rethinking Productivity in Software Engineering book, a picture of space.",
-			"link": "https://www.apress.com/gp/book/9781484242209",
-			"title": "Rethinking Productivity in Software Engineering",
-			"description": "This book takes both a broad and deep look about what productivity on software development means and how we can productively think about it. I authored or co-authored chapters on human-centered methods for developing tools to boost productivity, a conceptual chapter on individual, team, organization, and market perspectives on productivity, and an analysis of why we shouldn't even try to measure productivity.",
-			"editor": false
-		},
-		{
-			"image": "makingsoftware.jpg",
-			"alt": "The cover of the Making Software book, showing a bridge, staring from the bottom looking up.",
-			"link": "https://www.amazon.com/Making-Software-Really-Works-Believe/dp/0596808321",
-			"title": "Making Software: What Really Works, and Why We Believe It",
-			"description": "This book summarizes a collection of studies about software engineering, presenting them for a practitioner audience interested in the science of software development. I contributed a chapter on qualitative methods and why would should trust them, relative to quantitative methods.",
-			"editor": false
 		}
 	],
 	"commitments": [
