@@ -28,14 +28,14 @@ class FAQ extends React.Component {
 					They don't even need to ask if I'll write; it's a given.
 					But I receive many requests from students I've had in classes that I've <em>never</em> talked to.
 					In these cases, what would I even say in the letter?
-					"They were in my class, but I don't know them?"
+					<em>"They were in my class, but I don't know them?"</em>
 					If you're in that situation, I would love to get to know you, but if I spent the time to do that with every student who asked for a letter, I would probably be spending more than a dozen hours a week meeting with students just to write letters.
 					I definitely cannot do that; I have too many other responsibilities in research, teaching, and service.
 				</p>
 
 				<p>
 					There are some exceptions to the policy above.
-					If a the "letter" you need is really just a form that I fill out attesting that I had you in class, I'm happy to do that.
+					If the "letter" you need is really just a form that I fill out attesting that I had you in class, I'm happy to do that.
 					If you just need a reference for a job, I'm happy to be a reference; I rarely get called, and when I do, it's rarely onerous.
 					And if you're a student in one of our <Link to={"/lablets#recommendation"}>lablets</Link>, there are specific conditions for earning a letter.
 				</p>
