@@ -10,10 +10,10 @@ class Lablets extends React.Component {
 				</div>
 
 				<p className="alert alert-danger">
-					This is an experimental model for undergraduate and masters student research participation we're launching in Winter 2021.
-					We're going to try things and sometimes they won't work. 
-					But we might only know they're failing if you provide feedback! 
-					If you read this and have feedback, <a href="mailto:ajko@uw.edu">email Amy</a>, and if you've already joined, write Amy in Slack.
+					Lablets are new, experimental model for engaging undergraduate and masters students research.
+					Because it's an experiment, don't expect perfect processes or preparation.
+					Have feedback?
+					Email or Slack Amy!
 				</p>
 
 				<p>
