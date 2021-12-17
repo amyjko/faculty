@@ -98,10 +98,17 @@ class Lab extends React.Component {
 					</div>
 				</div>
 				
+				<h3>Current Postdocs</h3>
+				{ 
+					renderPeople(
+						person => person.active && person.advised && person.id !== "ajko" && person.level === "postdoc"
+					)
+				}
+
 				<h3>Current Advisees</h3>
 				{ 
 					renderPeople(
-						person => person.active && person.advised && person.id !== "ajko" && person.level !== "faculty", 
+						person => person.active && person.advised && person.id !== "ajko" && person.level !== "faculty" && person.level !== "postdoc", 
 						person => {
 							return { "undergrad": 5, "masters": 4, "phd": 3, "postdoc": 2, "faculty": 1 }[person.level] * 10000 + person.startdate
 						}
