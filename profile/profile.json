@@ -6976,6 +6976,18 @@
 			}
 		},
 		{
+			"title": "Advisory Board Member",
+			"committee": "ITU Center for Computing Education",
+			"level": "international",
+			"description": "I advice on the research centers scope and priorities.",
+			"commitment": {
+				"start": "2021-12-15",
+				"end": null,
+				"hours": 0,
+				"priority": 0
+			}
+		},
+		{
 			"title": "Committee Member",
 			"committee": "CRA-E",
 			"level": "international",
