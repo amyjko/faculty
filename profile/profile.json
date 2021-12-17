@@ -2877,13 +2877,14 @@
 			"name": "Benjamin Xie",
 			"active": true,
 			"advised": true,
-			"level": "phd",
+			"level": "postdoc",
 			"dept": "Information School",
 			"coadvisor": null,
-			"bio": "Benji is a PhD candidate in the Information School. He designs interactions with data that support their interpretations and uses for equity-oriented goals.",
+			"bio": "Benji was a PhD student in the Information School, and is now a postdoc in the lab. He designs interactions with data that support their interpretations and uses for equity-oriented goals.",
 			"url": "http://benjixie.com/",
 			"startdate": 2016,
 			"enddate": null,
+			"dissertation": "Xie2021Dissertation.pdf",
 			"achievements": [ 
 				"Husky 100 (2021)",
 				"NSF Graduate Research Fellowship (2017)"
