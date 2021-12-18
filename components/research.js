@@ -66,7 +66,7 @@ class Research extends React.Component {
 		return (
 			<div>
 				<div className="lead">
-					Whether it's youth debugging an animation, a developer auditing a classifier for bias, or a teacher linking code to oppression, I study our individual and collective struggle to understand computing and harness it for equity and justice.
+					Whether it's youth debugging an animation, a developer auditing a classifier for bias, or a teacher linking code to oppression, I study our individual and collective struggle to understand computing and harness it for play, power, equity, and justice.
 				</div>
 
 				<p>
