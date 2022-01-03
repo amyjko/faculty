@@ -60,6 +60,10 @@ class Lablets extends React.Component {
 
 				<iframe style={{ width: "100%", height: "20em" }} src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMKVkgWMGoC01z_W9Z9w1XQeMlsi6t6AjaAoTILCWOYqFRctsAzvh3fy78Dv2BvKYXIP3fT_ov8VoO/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
+				<p>
+					You can see when the lablets (and main lab meeting) are scheduled by subscribing to our lab calendar (add <strong>codeandcognition@uw.edu</strong> if using UW G Suite, download this <a href="https://calendar.google.com/calendar/ical/codeandcognition%40uw.edu/public/basic.ics">ICS file</a> otherwise).
+				</p>
+
 				<Linkable app={this.props.app} id="whylablet">Why would I want to join a lablet?</Linkable>
 
 				<p>
