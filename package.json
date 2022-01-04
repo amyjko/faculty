@@ -15,7 +15,7 @@
 		"ajv-cli": "^5.0",
 		"ajv-formats": "^2.0.2",
 		"esbuild": "^0.14.3",
-		"watch": "^1.0.2"
+		"watch": "^0.13.0"
 	},
 	"dependencies": {
 		"history": "^5.0.0",
