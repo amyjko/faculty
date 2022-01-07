@@ -88,7 +88,7 @@ class Lab extends React.Component {
 
 				<div className="row">
 					<div className="col-sm-4">
-						<p><strong>Current UW Ph.D. student?</strong> Lurk in <i>#codeandcognitionlab</i> on <a target="_blank" href="https://computinged-uw.slack.com">ComputingEd@UW</a> Slack. DM or email me about your interests. I'm always open to chatting, collaborating, serving on committees, and when I have capacity, advising.</p>
+						<p><strong>Current UW Ph.D. student?</strong> Lurk in <i>#codeandcognitionlab</i> on <a target="_blank" href="https://computinged-uw.slack.com">ComputingEd@UW</a> Slack. DM or email me about your interests. I'm always open to chatting, collaborating, serving on committees, and when I have capacity, advising. You're also welcome to visit any of our lab meetings. Check out our lab calendar (linked above) to see when we're meeting .</p>
 					</div>
 					<div className="col-sm-4">
 						<p><strong>Future UW Ph.D. student?</strong> Read my <Link to="/cer">CER FAQ</Link> to ensure we share interests. Talk to my current students about their experiences. Apply to the <a href="http://ischool.uw.edu/phd" target="_blank">iSchool</a> or <a href="http://www.cs.washington.edu/education/grad/prospective.html" target="_blank">CSE</a> in Autumn. Assume I'm admitting students in the coming year; no need to write me to confirm.</p>
