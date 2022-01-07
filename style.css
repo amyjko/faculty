@@ -150,6 +150,8 @@ mark {
 	padding: 0;
 	border: none;
 	margin-top: 0.5em;
+	filter: drop-shadow(0.25em .25em .25em rgba(0,0,0,0.1));
+	border-radius: 10px;
 }
 
 .img-float {
