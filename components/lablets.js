@@ -174,6 +174,7 @@ class Lablets extends React.Component {
 					<li>Ensure that there's a meeting minutes document for the lablet.</li>
 					<li>Post a poll in the Slack to determine a meeting time for the next quarter.</li>
 					<li>Announce the meeting time no later than 1 week before the quarter.</li>
+					<li>Add the meeting to the Code and Cognition lab calendar so that everyone can discover the meeting time.</li>
 				</ul>				
 
 				<Linkable app={this.props.app} id="research">How does our lablet propose a research project?</Linkable>
