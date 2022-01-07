@@ -90,6 +90,15 @@ class Lablets extends React.Component {
 
 				<p>To encourage focus, you can only be part of <strong>one</strong> lablet at a time.</p>
 
+				<Linkable app={this.props.app} id="howmuchtime">How much time does a lablet require?</Linkable>
+
+				<p>
+					Lablets are a minimum of 1 hour per week (a weekly 50 minute meeting).
+					However, to make the most of them, you'll want to have at least a few hours a week to contribute to whatever activities a lablet decides to engage in.
+					It's okay if you're busier some weeks and more available others, or unavailable sometimes.
+					They are not intended to be intense high-commitment activities, just a gentle introduction to computing education research.
+				</p>
+
 				<Linkable app={this.props.app} id="howtojoin">How do I join a lablet?</Linkable>
 
 				<p>
