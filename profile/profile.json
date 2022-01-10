@@ -3600,6 +3600,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/programming-evolves-privilege-reins-e1aa664c2719",
+			"title": "Programming evolves, privilege reigns",
+			"date": "2022.01",
+			"tags": ["computing education", "programming languages"],
+			"img": "commodore",
+			"alt": "A screenshot of a Commodore 64 program printing hello world."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/finding-hope-in-the-year-2122-6b1ec137736a",
 			"title": "Finding hope in the year 2122",
 			"date": "2021.12",
