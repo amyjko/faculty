@@ -160,6 +160,7 @@ class Lablets extends React.Component {
 
 				<ul>
 					<li>Be a postdoc, doctoral student, or UW faculty member engaged in computing education research or practice.</li>
+					<li>Facilitate selecting a lablet leader. Avoid co-leaders, as this results in diffuse responsibility, but consider rotating leaders every few weeks if multiple students are interested.</li>
 					<li>Check in weekly with the lablet leader.</li>
 					<li>Participate in lablet meetings.</li>
 					<li>Meet with Amy before each quarter to set expectations.</li>
@@ -172,7 +173,7 @@ class Lablets extends React.Component {
 					<li>Ensure that there's an Ohyay meeting space for the lablet with a link to the meeting minutes.</li>
 					<li>Ensure that there's a channel in Slack for the lablet and that everyone signed up for it is added to the channel.</li>
 					<li>Ensure that there's a meeting minutes document for the lablet.</li>
-					<li>Post a poll in the Slack to determine a meeting time for the next quarter.</li>
+					<li>Post a poll in the Slack to determine a meeting time for the next quarter. (Avoid Mondays since those are often university holidays).</li>
 					<li>Announce the meeting time no later than 1 week before the quarter.</li>
 					<li>Add the meeting to the Code and Cognition lab calendar so that everyone can discover the meeting time.</li>
 				</ul>				
