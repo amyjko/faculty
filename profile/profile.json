@@ -2350,6 +2350,20 @@
 	],
 	"people": [
 		{
+			"id": "salac",
+			"name": "Jean Salac",
+			"active": true,
+			"advised": true,
+			"level": "postdoc",
+			"dept": "The Information School",
+			"coadvisor": null,
+			"bio": "Jean is interested in justice-focused computing pedagogy for young learners.",
+			"url": "https://jeansalac.github.io/",
+			"startdate": 2022,
+			"enddate": null,
+			"achievements": []
+		},
+		{
 			"id": "megumi",
 			"name": "Megumi Kivuva",
 			"active": true,
