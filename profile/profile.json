@@ -96,7 +96,7 @@
 			"source": "@chi",
 			"pages": "to appear",
 			"doi": null,
-			"local": null,
+			"local": "Arab2022StrategyWriting.pdf",
 			"publisher": "ACM",
 			"contribution": "Finds that developers can share strategies for programming, but they struggle in choosing a level of detail and understanding the diversity of the potential audience, requiring substantial feedback, but also that developers struggle to give feedback on strategies."
 		},
@@ -582,7 +582,7 @@
 			"deadname": false,
 			"year": 2019,
 			"title": "Informatics Teaching Guide",
-			"source": "Onlne",
+			"source": "Online",
 			"pages": null,
 			"publisher": "Self-published",
 			"doi": "https://faculty.washington.edu/ajko/books/informatics-teaching-guide/",
@@ -2891,13 +2891,14 @@
 			"name": "Benjamin Xie",
 			"active": true,
 			"advised": true,
-			"level": "phd",
+			"level": "postdoc",
 			"dept": "Information School",
 			"coadvisor": null,
-			"bio": "Benji is a PhD candidate in the Information School. He designs interactions with data that support their interpretations and uses for equity-oriented goals.",
+			"bio": "Benji was a PhD student in the Information School, and is now a postdoc in the lab. He designs interactions with data that support their interpretations and uses for equity-oriented goals.",
 			"url": "http://benjixie.com/",
 			"startdate": 2016,
 			"enddate": null,
+			"dissertation": "Xie2021Dissertation.pdf",
 			"achievements": [ 
 				"Husky 100 (2021)",
 				"NSF Graduate Research Fellowship (2017)"
@@ -3612,6 +3613,30 @@
 		}	
 	],
 	"posts": [
+		{
+			"url": "https://medium.com/bits-and-behavior/tinkering-towards-semi-seamless-hybrid-classroom-discussions-391b35ccca21",
+			"title": "Tinkering towards semi-seamless hybrid classroom discussions",
+			"date": "2022.01",
+			"tags": ["teaching", "K-12", "academia"],
+			"img": "hybridav",
+			"alt": "A photograph of a projector screen showing an Ohyay virtual classroom and several video feeds."
+		},
+		{
+			"url": "https://medium.com/bits-and-behavior/programming-evolves-privilege-reins-e1aa664c2719",
+			"title": "Programming evolves, privilege reigns",
+			"date": "2022.01",
+			"tags": ["computing education", "programming languages"],
+			"img": "commodore",
+			"alt": "A screenshot of a Commodore 64 program printing hello world."
+		},
+		{
+			"url": "https://medium.com/bits-and-behavior/finding-hope-in-the-year-2122-6b1ec137736a",
+			"title": "Finding hope in the year 2122",
+			"date": "2021.12",
+			"tags": ["society", "automation", "policy"],
+			"img": "2122",
+			"alt": "A silhouette of road signs set against a pink, orange, and blue sunset."
+		},
 		{
 			"url": "https://medium.com/bits-and-behavior/critically-conscious-computing-a-new-book-for-the-critical-secondary-cs-educator-c7ec9fa4a45e",
 			"title": "Critically Conscious Computing — A new book for secondary CS educators",
@@ -6985,6 +7010,18 @@
 				"start": "2021-03-24",
 				"end": "2021-04-02",
 				"hours": 8,
+				"priority": 0
+			}
+		},
+		{
+			"title": "Advisory Board Member",
+			"committee": "ITU Center for Computing Education",
+			"level": "international",
+			"description": "I advice on the research centers scope and priorities.",
+			"commitment": {
+				"start": "2021-12-15",
+				"end": null,
+				"hours": 0,
 				"priority": 0
 			}
 		},

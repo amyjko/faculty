@@ -9,13 +9,13 @@
 		"build": "node ./esbuild.config.js",
 		"watch": "watch 'npm run build' .",
 		"dry": "rsync --dry-run -avz --delete --exclude-from='deploy-excludes' . ajko@ovid.u.washington.edu:~/public_html",
-		"ship": "rsync -avz --delete --exclude-from='deploy-excludes' . ajko@ovid.u.washington.edu:~/public_html"
+		"ship": "npm run build; rsync -avz --delete --exclude-from='deploy-excludes' . ajko@ovid.u.washington.edu:~/public_html"
 	},
 	"devDependencies": {
 		"ajv-cli": "^5.0",
 		"ajv-formats": "^2.0.2",
 		"esbuild": "^0.14.3",
-		"watch": "^1.0.2"
+		"watch": "^0.13.0"
 	},
 	"dependencies": {
 		"history": "^5.0.0",

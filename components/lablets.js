@@ -60,6 +60,10 @@ class Lablets extends React.Component {
 
 				<iframe style={{ width: "100%", height: "20em" }} src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMKVkgWMGoC01z_W9Z9w1XQeMlsi6t6AjaAoTILCWOYqFRctsAzvh3fy78Dv2BvKYXIP3fT_ov8VoO/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
+				<p>
+					You can see when the lablets (and main lab meeting) are scheduled by subscribing to our lab calendar (add <strong>codeandcognition@uw.edu</strong> if using UW G Suite, download this <a href="https://calendar.google.com/calendar/ical/codeandcognition%40uw.edu/public/basic.ics">ICS file</a> otherwise).
+				</p>
+
 				<Linkable app={this.props.app} id="whylablet">Why would I want to join a lablet?</Linkable>
 
 				<p>
@@ -85,6 +89,15 @@ class Lablets extends React.Component {
 				</ul>
 
 				<p>To encourage focus, you can only be part of <strong>one</strong> lablet at a time.</p>
+
+				<Linkable app={this.props.app} id="howmuchtime">How much time does a lablet require?</Linkable>
+
+				<p>
+					Lablets are a minimum of 1 hour per week (a weekly 50 minute meeting).
+					However, to make the most of them, you'll want to have at least a few hours a week to contribute to whatever activities a lablet decides to engage in.
+					It's okay if you're busier some weeks and more available others, or unavailable sometimes.
+					They are not intended to be intense high-commitment activities, just a gentle introduction to computing education research.
+				</p>
 
 				<Linkable app={this.props.app} id="howtojoin">How do I join a lablet?</Linkable>
 
@@ -147,6 +160,7 @@ class Lablets extends React.Component {
 
 				<ul>
 					<li>Be a postdoc, doctoral student, or UW faculty member engaged in computing education research or practice.</li>
+					<li>Facilitate selecting a lablet leader. Avoid co-leaders, as this results in diffuse responsibility, but consider rotating leaders every few weeks if multiple students are interested.</li>
 					<li>Check in weekly with the lablet leader.</li>
 					<li>Participate in lablet meetings.</li>
 					<li>Meet with Amy before each quarter to set expectations.</li>
@@ -159,8 +173,9 @@ class Lablets extends React.Component {
 					<li>Ensure that there's an Ohyay meeting space for the lablet with a link to the meeting minutes.</li>
 					<li>Ensure that there's a channel in Slack for the lablet and that everyone signed up for it is added to the channel.</li>
 					<li>Ensure that there's a meeting minutes document for the lablet.</li>
-					<li>Post a poll in the Slack to determine a meeting time for the next quarter.</li>
+					<li>Post a poll in the Slack to determine a meeting time for the next quarter. (Avoid Mondays since those are often university holidays).</li>
 					<li>Announce the meeting time no later than 1 week before the quarter.</li>
+					<li>Add the meeting to the Code and Cognition lab calendar so that everyone can discover the meeting time.</li>
 				</ul>				
 
 				<Linkable app={this.props.app} id="research">How does our lablet propose a research project?</Linkable>

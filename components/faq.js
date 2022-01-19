@@ -19,7 +19,7 @@ class FAQ extends React.Component {
 					<li>You've given me all of the information you have about what is expected in the letter.</li>
 					<li>You've shared with me why you need the letter.</li>
 					<li>You've explained why I'm one of the best people in your network to write the letter.</li>
-					<li>I've had multiple conversations about things beyond the scope of a class and it's requirements (e.g., in office hours, in research, or other settings).</li>
+					<li>I've had multiple conversations about things beyond the scope of a class and its requirements (e.g., in office hours, in research, or other settings).</li>
 				</ul>
 
 				<p>

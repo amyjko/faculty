@@ -72,9 +72,13 @@ class Lab extends React.Component {
 				<p>
 					My lab includes students from <a href="http://ischool.uw.edu">The Information School</a>, <a href="http://cs.washington.edu">The Paul G. Allen School of Computer Science & Engineering</a>, the <a href="https://education.uw.edu">College of Education</a>, and occasionally other units on campus.
 					I run the lab in a doctoral student-centered manner: students define their own projects within the scope of my interests, and often move me into new research areas. 
-					Read our <a href="https://docs.google.com/document/d/1LMHv0HdxXEgSNqICt3wtq8xWuH73kP7plZ_KeXyP6qM/edit?usp=sharing">onboarding document</a> for more details about the ever evolving culture of the lab.
-					Read our <Link to={"/lablets"}>lablets</Link> page for details on how we engage undergraduates in research at scale.
 				</p>
+				
+				<ul>
+					<li>Read our <a href="https://docs.google.com/document/d/1LMHv0HdxXEgSNqICt3wtq8xWuH73kP7plZ_KeXyP6qM/edit?usp=sharing">onboarding document</a> for more details about the ever evolving culture of the lab.</li>
+					<li>Read our <Link to={"/lablets"}>lablets</Link> page for details on how we engage undergraduates in research at scale.</li>
+					<li>Subscribe to our lab calendar (add <strong>codeandcognition@uw.edu</strong> if using UW G Suite, download this <a href="https://calendar.google.com/calendar/ical/codeandcognition%40uw.edu/public/basic.ics">ICS file</a> otherwise) to see when lab meetings, lablet meetings, and other activities are scheduled.</li>
+				</ul>
 
 				<p>
 					I work hard to be a better mentor and advisor every year.
@@ -84,7 +88,7 @@ class Lab extends React.Component {
 
 				<div className="row">
 					<div className="col-sm-4">
-						<p><strong>Current UW Ph.D. student?</strong> Lurk in <i>#codeandcognitionlab</i> on <a target="_blank" href="https://computinged-uw.slack.com">ComputingEd@UW</a> Slack. DM or email me about your interests. I'm always open to chatting, collaborating, serving on committees, and when I have capacity, advising.</p>
+						<p><strong>Current UW Ph.D. student?</strong> Lurk in <i>#codeandcognitionlab</i> on <a target="_blank" href="https://computinged-uw.slack.com">ComputingEd@UW</a> Slack. DM or email me about your interests. I'm always open to chatting, collaborating, serving on committees, and when I have capacity, advising. You're also welcome to visit any of our lab meetings. Check out our lab calendar (linked above) to see when we're meeting .</p>
 					</div>
 					<div className="col-sm-4">
 						<p><strong>Future UW Ph.D. student?</strong> Read my <Link to="/cer">CER FAQ</Link> to ensure we share interests. Talk to my current students about their experiences. Apply to the <a href="http://ischool.uw.edu/phd" target="_blank">iSchool</a> or <a href="http://www.cs.washington.edu/education/grad/prospective.html" target="_blank">CSE</a> in Autumn. Assume I'm admitting students in the coming year; no need to write me to confirm.</p>
@@ -98,10 +102,17 @@ class Lab extends React.Component {
 					</div>
 				</div>
 				
+				<h3>Current Postdocs</h3>
+				{ 
+					renderPeople(
+						person => person.active && person.advised && person.id !== "ajko" && person.level === "postdoc"
+					)
+				}
+
 				<h3>Current Advisees</h3>
 				{ 
 					renderPeople(
-						person => person.active && person.advised && person.id !== "ajko" && person.level !== "faculty", 
+						person => person.active && person.advised && person.id !== "ajko" && person.level !== "faculty" && person.level !== "postdoc", 
 						person => {
 							return { "undergrad": 5, "masters": 4, "phd": 3, "postdoc": 2, "faculty": 1 }[person.level] * 10000 + person.startdate
 						}
