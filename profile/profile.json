@@ -2380,7 +2380,7 @@
 		{
 			"id": "feec",
 			"name": "Fee Christoph",
-			"active": true,
+			"active": false,
 			"advised": true,
 			"level": "undergrad",
 			"dept": "University of Michigan",
@@ -2408,7 +2408,7 @@
 		{
 			"id": "jessiehl",
 			"name": "Jessie Huynh",
-			"active": true,
+			"active": false,
 			"advised": true,
 			"level": "undergrad",
 			"dept": "Design",
@@ -2578,7 +2578,7 @@
 	 		"name": "Jenny Liang",
 	 		"active": true,
 	 		"advised": true,
-	 		"level": "phd",
+	 		"level": "undergrad",
 	 		"dept": "Computer Science & The Information School",
 	 		"coadvisor": null,
 	 		"bio": "Jenny was an undergrad studying computer science and informatics, and is an incoming student at Carnegie Mellon University. She works with Amy to study how to use explicit programming strategies to improve collaboration and learning of developers.",
