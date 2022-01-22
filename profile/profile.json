@@ -860,7 +860,7 @@
 			"id": "answerdash",
 			"kind": "refereed conference paper",
 			"authors": ["@ajko"],
-			"deadname": true,
+			"deadname": false,
 			"year": 2017,
 			"title": "A Three-Year Participant Observation of Software Startup Software Evolution",
 			"source": "@seip",
