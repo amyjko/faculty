@@ -2925,7 +2925,7 @@
 		{
 			"id": "kthayer",
 			"name": "Kyle Thayer",
-			"active": true,
+			"active": false,
 			"advised": true,
 			"level": "phd",
 			"dept": "Computer Science",
