@@ -335,8 +335,6 @@ class Vita extends React.Component {
 
 				<h1>Teaching</h1>
 
-				<p>All scores are <a href="http://www.washington.edu/assessment/course-evaluations/reports/course-reports/adjusted-medians/">adjusted combined medians</a>, which attempt to measure students' perceptions of the effectiveness of an instructor's teaching. The scale is from "Very Poor" (0) to "Excellent" (5).</p>
-
 				{					
 					this.getChunkList(
 						profile.getClasses(),
