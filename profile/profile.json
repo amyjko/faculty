@@ -110,7 +110,7 @@
 			"source": "@chi",
 			"pages": "to appear",
 			"doi": null,
-			"local": null,
+			"local": "Druga2022FamilyAILiteracy.pdf",
 			"publisher": "ACM",
 			"contribution": "Finds that parents mediate children's learning by taking on different roles, including mentor, student, collaborator, and tinkerer, and that family learning promotes new framings of consumer devices in homes."
 		},
@@ -2350,6 +2350,20 @@
 	],
 	"people": [
 		{
+			"id": "salac",
+			"name": "Jean Salac",
+			"active": true,
+			"advised": true,
+			"level": "postdoc",
+			"dept": "The Information School",
+			"coadvisor": null,
+			"bio": "Jean is interested in justice-focused computing pedagogy for young learners.",
+			"url": "https://jeansalac.github.io/",
+			"startdate": 2022,
+			"enddate": null,
+			"achievements": []
+		},
+		{
 			"id": "megumi",
 			"name": "Megumi Kivuva",
 			"active": true,
@@ -2366,7 +2380,7 @@
 		{
 			"id": "feec",
 			"name": "Fee Christoph",
-			"active": true,
+			"active": false,
 			"advised": true,
 			"level": "undergrad",
 			"dept": "University of Michigan",
@@ -2394,7 +2408,7 @@
 		{
 			"id": "jessiehl",
 			"name": "Jessie Huynh",
-			"active": true,
+			"active": false,
 			"advised": true,
 			"level": "undergrad",
 			"dept": "Design",
@@ -2564,7 +2578,7 @@
 	 		"name": "Jenny Liang",
 	 		"active": true,
 	 		"advised": true,
-	 		"level": "phd",
+	 		"level": "undergrad",
 	 		"dept": "Computer Science & The Information School",
 	 		"coadvisor": null,
 	 		"bio": "Jenny was an undergrad studying computer science and informatics, and is an incoming student at Carnegie Mellon University. She works with Amy to study how to use explicit programming strategies to improve collaboration and learning of developers.",
