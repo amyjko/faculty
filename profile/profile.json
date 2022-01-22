@@ -2927,7 +2927,7 @@
 			"name": "Kyle Thayer",
 			"active": true,
 			"advised": true,
-			"level": "faculty",
+			"level": "phd",
 			"dept": "Computer Science",
 			"coadvisor": "Katharina Reinecke",
 			"bio": "Kyle was a PhD student in Computer Science and Engineering, co-advised by Katharina Reinecke. His dissertation investigated barriers to learning to code knowledge through bootcamps, developed a novel theory of API knowledge, and contributed a new way to mine the web for API usage patterns. He is now a Lecturer at the University of Washington Information school, where he continues investigating the intersection of diversity and computing education as a teacher and researcher.",
