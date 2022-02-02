@@ -3614,6 +3614,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/dagstuhl-trip-report-people-programs-and-programming-errors-6d2430e6492f",
+			"title": "Dagstuhl trip report: People, programs, and programming errors",
+			"date": "2022.02",
+			"tags": ["programming languages", "computing education"],
+			"img": "errors",
+			"alt": "A photograph of the in-person Dagstuhl attendees with a screenshot of the virtual attendees in Zoom."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/tinkering-towards-semi-seamless-hybrid-classroom-discussions-391b35ccca21",
 			"title": "Tinkering towards semi-seamless hybrid classroom discussions",
 			"date": "2022.01",
