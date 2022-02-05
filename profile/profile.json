@@ -7765,6 +7765,19 @@
 	"travel": [
 		{
 			"url": null,
+			"title": "SIGCSE 2022 Technical Symposium",
+			"details": "Two of my PhD students are presenting papers; I'm co-organizing two pre-symposium workshops and presenting on three panels.",
+			"category": "research",
+			"commitment": {
+				"start": "2022-03-01",
+				"end": "2022-03-06",
+				"hours": 40,
+				"priority": 2
+			},
+			"report": null
+		},
+		{
+			"url": null,
 			"title": "University of Michigan",
 			"details": "I'm serving on a panel on Equity, Justice, and Engineering Education sponsored by the Science, Technology, and Public Policy (STPP) Program at the Ford School of Public Policy.",
 			"category": "research",
