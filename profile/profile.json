@@ -7764,7 +7764,33 @@
 	],
 	"travel": [
 		{
-			"url": null,
+			"url": "https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22302",
+			"title": "Dagstuhl on Educational Programming Languages and Systems",
+			"details": "I'm attending this workshop as a participant.",
+			"category": "research",
+			"commitment": {
+				"start": "2022-07-24",
+				"end": "2022-07-29",
+				"hours": 40,
+				"priority": 2
+			},
+			"report": null
+		},
+		{
+			"url": "https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22231",
+			"title": "Dagstuhl on Theories of Programming",
+			"details": "I'm co-organzing this workshop on establishing scientific foundations of programming.",
+			"category": "research",
+			"commitment": {
+				"start": "2022-06-06",
+				"end": "2022-06-10",
+				"hours": 40,
+				"priority": 2
+			},
+			"report": null
+		},
+		{
+			"url": "https://sigcse2022.sigcse.org",
 			"title": "SIGCSE 2022 Technical Symposium",
 			"details": "Two of my PhD students are presenting papers; I'm co-organizing two pre-symposium workshops and presenting on three panels.",
 			"category": "research",
@@ -7777,13 +7803,26 @@
 			"report": null
 		},
 		{
-			"url": null,
+			"url": "https://stpp.fordschool.umich.edu/event/2022/cultivating-socially-responsible-engineers-role-universities-and-public-policy",
 			"title": "University of Michigan",
 			"details": "I'm serving on a panel on Equity, Justice, and Engineering Education sponsored by the Science, Technology, and Public Policy (STPP) Program at the Ford School of Public Policy.",
 			"category": "research",
 			"commitment": {
 				"start": "2022-03-20",
 				"end": "2022-03-22",
+				"hours": 16,
+				"priority": 2
+			},
+			"report": null
+		},
+		{
+			"url": "https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22052",
+			"title": "Dagstuhl on Human Factors Impact on Programming Error Messages",
+			"details": "Twenty-nine HCI, CS Ed, and PL researchers meet to discuss error message design.",
+			"category": "research",
+			"commitment": {
+				"start": "2022-01-30",
+				"end": "2022-02-02",
 				"hours": 16,
 				"priority": 2
 			},
