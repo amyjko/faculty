@@ -132,6 +132,14 @@ class Lablets extends React.Component {
 					<li>Run your lablet, recruiting other students to join! You're welcome to use #codeandcognition to recruit.</li>
 				</ol>
 
+				<p>
+					A good lablet should have a clear purpose. 
+					Why does it exist?
+					Who does it serve?
+					Does it have a particular goal, such as starting a research project, networking, or learning?
+					Communicate all of these things at the beginning of a lablet, whenever new students join, and whenever the goals change.
+				</p>
+
 				<Linkable app={this.props.app} id="labletleaders">What does a lablet leader have to do?</Linkable>
 
 				<p>
@@ -162,8 +170,11 @@ class Lablets extends React.Component {
 					<li>Be a postdoc, doctoral student, or UW faculty member engaged in computing education research or practice.</li>
 					<li>Facilitate selecting a lablet leader. Avoid co-leaders, as this results in diffuse responsibility, but consider rotating leaders every few weeks if multiple students are interested.</li>
 					<li>Check in weekly with the lablet leader.</li>
-					<li>Participate in lablet meetings.</li>
+					<li>Participate in lablet meetings, acting as an on-demand resource, consultant, expert, and perhaps notetaker, allowing the lablet leader to take the leadership role.</li>
+					<li>Intervene in groups to offer advice, question assumptions, offer suggestions.</li>
+					<li>Offer guidance on research, research design, research methods, and reading research papers.</li>
 					<li>Meet with Amy before each quarter to set expectations.</li>
+					<ii>Check in weekly on #lablets-supervisors with other supervisor on lablets activities, offering suggestions for improvement.</ii>
 				</ul>
 
 				<p>
