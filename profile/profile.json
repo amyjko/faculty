@@ -3615,6 +3615,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/on-pacing-and-programming-pedagogy-12c25f9b2c9d",
+			"title": "On pacing and programming pedagogy",
+			"date": "2022.02",
+			"tags": ["programming languages", "computing education"],
+			"img": "pacing",
+			"alt": "A child assembling legos."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/dagstuhl-trip-report-people-programs-and-programming-errors-6d2430e6492f",
 			"title": "Dagstuhl trip report: People, programs, and programming errors",
 			"date": "2022.02",
