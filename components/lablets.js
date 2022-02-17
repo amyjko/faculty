@@ -116,6 +116,28 @@ class Lablets extends React.Component {
 					<li>If you signed up for a lablet in the middle of a quarter, write the lablet leader and supervisor a joint message in Slack and introduce yourself. They'll welcome you to the lablet and tell you what's next for the lablet. If you signed up for the next quarter</li>
 				</ol>
 
+				<Linkable app={this.props.app} id="howtocreate">When do lablets run?</Linkable>
+
+				<p>
+					We will try to have at least one lablet each Autumn, Winter, and Spring quarters.
+					This depends on the availability and interest of lablet supervisors.
+					We do not have plans to run lablets over summer; we reserve that for a few full-time undergraduate researchers.
+					Lablets are a good way to prepare for summer research opportunities!
+				</p>
+
+				<p>
+					You can join a lablet at any time.
+					These aren't classes, just informal gatherings.
+				</p>
+
+				<Linkable app={this.props.app} id="howtocreate">Do lablet topics change?</Linkable>
+
+				<p>
+					Always! They shift based on the interests of the supervisor and of the participants.
+					In fact, we might even rename them in the middle of the quarter if a topic goes beyond its title.
+					This is the nature of research.
+				</p>
+
 				<Linkable app={this.props.app} id="howtocreate">How do I create a lablet?</Linkable>
 
 				<p>
