@@ -7799,6 +7799,19 @@
 			"report": null
 		},
 		{
+			"url": null,
+			"title": "Exploring Computing Education Pathways 2022 Summit",
+			"details": "National K-12 CS Education policy summit, including 23 U.S. states and territories.",
+			"category": "research",
+			"commitment": {
+				"start": "2022-05-03",
+				"end": "2022-05-04",
+				"hours": 24,
+				"priority": 2
+			},
+			"report": null
+		},
+		{
 			"url": "https://sigcse2022.sigcse.org",
 			"title": "SIGCSE 2022 Technical Symposium",
 			"details": "Two of my PhD students are presenting papers; I'm co-organizing two pre-symposium workshops and presenting on three panels.",
