@@ -42,6 +42,33 @@ class CER extends React.Component {
 					This means that computing education and CER can and does cover far more than just learning to code&mdash;it just hasn't historically.
 				</p>
 			</Section>,
+			<Section id="csed-v-cer" header="What is the difference between CS education research and computing education research?">
+				<p>
+					The difference in these two phrases is in the difference between "CS" and "Computing". 
+					CS generally refers to the historically core topics in computer science research, such as theory, algorithms, data structures, programming languages, and operating systems.
+					But other fields began to engage these ideas and identify their intersections to other fields.
+					For example, information science, a field long concerned with data, information, and society, began to consider those topics from a computer science perspective.
+					Science began to apply computer science ideas to data capture, storage, and analysis.
+					Biology, as it began to see DNA as a form of biological data, and apply algorithms to analyzing it, formed bioinformatics.
+					Communication began to explore computer-mediated communication.
+					Behavioral and brain scientists started using computers to model decisions, knowledge, and brain activity.
+					And social scientists of all kinds began studying and critiquing the role of computers in society.
+				</p>
+
+				<p>
+					This broadening of algorithms, data structures, and programming to all of academia put pressure on "computer science" as a phrase.
+					Some universities with CS departments began to grow to teach and study all of these broader phenomena, leading many of them to rename themselves "Schools of Computing".
+					The word "computing" was meant to refer not to physical hardware, but of computation itself and the many ways that it occurs and is organized in nature and human civilization.
+					And thus, over time, CS began to connote the more narrow historical focus of CS foundations and Computing to the broader set of phenomena around the design and use of computers, including CS itself.
+				</p>
+
+				<p>
+					Given that history, "CS education" generally refers to the teaching and learning of these historically narrow topics in CS, and "CS education research" to research about this teaching and learning.
+					In contrast, "Computing education" generally refers to the teaching and learning of <em>any</em> aspect of the use of computers and computational ideas, and "Computing education research" to research about that teaching and learning.
+					Because I'm not interested in the historically narrow conception of computing, and my research considers topics outside that narrow historical conception, I use "Computing" instead of "CS".
+				</p>
+
+			</Section>,
 			<Section id="comparison-to-other-fields" header="How does computing education research compare to learning sciences, education research, and educational psychology?">
 				<p>
 					My background isn't in these fields, though I do collaborate with people in these other communities and have learned about their differences. 
