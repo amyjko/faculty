@@ -16,6 +16,10 @@
 			"name": "ACM Technical Symposium on Computer Science Education (SIGCSE), Research Track",
 			"short": "SIGCSE"
 		},
+		"iticse": {
+			"name": "ACM Conference on Innovation and Technology in Computer Science Education",
+			"short": "ITiCSE"
+		},
 		"sigcsex": {
 			"name": "ACM Technical Symposium on Computer Science Education (SIGCSE), Experience Report Track",
 			"short": "SIGCSE"
@@ -58,6 +62,20 @@
 		}
 	},
 	"pubs": [
+		{
+			"id": "airesources",
+			"kind": "refereed conference paper",
+			"authors": ["@st3f", "Nancy Otero", "@ajko"],
+			"deadname": false,
+			"year": 2022,
+			"title": "The Landscape of Teaching Resources for AI Education",
+			"source": "@iticse",
+			"pages": null,
+			"publisher": "ACM",
+			"doi": null,
+			"local": null,
+			"contribution": "Finds that most AI education resources do not consider teacher needs and do not align with emerging AI literacy standards."
+		},
 		{
 			"id": "ccc",
 			"kind": "book",
@@ -3614,6 +3632,14 @@
 		}	
 	],
 	"posts": [
+		{
+			"url": "https://medium.com/bits-and-behavior/sigcse-2022-trip-report-reunited-cf5fd2bce3e",
+			"title": "SIGCSE 2022 Trip Report: Reunited",
+			"date": "2022.3",
+			"tags": ["trip report", "computing education"],
+			"img": "sigcse2022",
+			"alt": "The SIGCSE 2022 registration booth."
+		},
 		{
 			"url": "https://medium.com/bits-and-behavior/on-pacing-and-programming-pedagogy-12c25f9b2c9d",
 			"title": "On pacing and programming pedagogy",
