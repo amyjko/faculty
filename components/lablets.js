@@ -83,7 +83,7 @@ class Lablets extends React.Component {
 					<li>Participate in all lablet activities.</li>
 					<li>Join the first main lab meeting of each quarter to meet Amy and the rest of her lab.</li>
 					<li>Post in <a href="http://computinged-uw.slack.com" target="_blank">ComputingEd@UW Slack</a> #codeandcognitionlab</li>
-					<li>Earn 1 credit by registering for <a href="https://ischool.uw.edu/programs/informatics/curriculum/experiential-learning/independent-study" target="_blank">INFO 499 Independent Study</a> with Amy. To sign up, write Amy in Slack. (Earning this credit only requires a short end of quarter reflection).</li>
+					<li>Earn 1 credit by registering for <a href="https://ischool.uw.edu/programs/informatics/curriculum/experiential-learning/independent-study" target="_blank">INFO 499 Independent Study</a> with Amy. To sign up, follow the <a href="https://ischool.uw.edu/programs/informatics/curriculum/experiential-learning/independent-study">instructions for registering for INFO 499</a>; your proposal only needs to mention that you'll be participating in a lablet and the required reflection.</li>
 					<li>Meet graduation requirements, such as research capstones or other requirements related to research.</li>
 					<li>In certain cases, earn hourly or salaried pay, if funding is available.</li>
 				</ul>
