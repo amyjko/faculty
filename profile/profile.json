@@ -6785,6 +6785,13 @@
 	],
 	"doctoralCommittees": [
 		{
+			"name": "Mina Tari",
+			"institution": "University of Washington",
+			"department": "The Information School",
+			"startdate": 2018,
+			"enddate": null
+		},
+		{
 			"name": "Bas Jansen",
 			"institution": "Leiden University",
 			"department": "Institute of Advanced Computer Science",
