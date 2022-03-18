@@ -6785,6 +6785,13 @@
 	],
 	"doctoralCommittees": [
 		{
+			"name": "Bas Jansen",
+			"institution": "Leiden University",
+			"department": "Institute of Advanced Computer Science",
+			"startdate": 2022,
+			"enddate": 2022
+		},
+		{
 			"name": "Leah Perlmutter",
 			"institution": "University of Washington",
 			"department": "Computer Science & Enngineering",
