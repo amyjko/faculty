@@ -58,7 +58,7 @@ class Funding extends React.Component {
 					alt="The Google logo."
 					link="https://google.com"
 					header="Google"
-					content=". Occasionally, I will write proposals to Google's faculty research awards program, which support 1-year projects that support me and a doctoral student. This funding comes with no strings attached."
+					content=". In the past, I have received unrestricted Google research grants that generally support 1-year projects that support me and a doctoral student. I have significant concerns with the treatment of Google researchers of color, however, and so I don't expect to be pursuing further Google funding until they apologize and reimagine their corporate culture."
 				/>
 
 				<Block 
