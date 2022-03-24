@@ -8,6 +8,10 @@
 			"name": "ACM International Computing Education Research Conference (ICER)",
 			"short": "ICER"
 		},
+		"idc": {
+			"name": "ACM Interaction Design for Children",
+			"short": "IDC"
+		},
 		"chi": {
 			"name": "ACM SIGCHI Conference on Human Factors in Computing Systems (CHI)",
 			"short": "CHI"
@@ -62,6 +66,20 @@
 		}
 	},
 	"pubs": [
+		{
+			"id": "tilecode",
+			"kind": "refereed conference paper",
+			"authors": ["@st3f", "Tom Ball", "@ajko"],
+			"deadname": false,
+			"year": 2022,
+			"title": "How families design and program games: a qualitative analysis of a 4-week online in-home study with a cellular-automata programming platform",
+			"source": "@idc",
+			"pages": null,
+			"publisher": "ACM",
+			"doi": null,
+			"local": null,
+			"contribution": "Finds that inter-generational collaboration patterns and use of resources are distinct from individual and pair programming."
+		},
 		{
 			"id": "airesources",
 			"kind": "refereed conference paper",
@@ -196,7 +214,7 @@
 			"deadname": false,
 			"year": 2021,
 			"title": "How Do Children’s Perceptions of Machine Intelligence Change when Training & Coding Smart Programs?",
-			"source": "ACM Interaction Design for Children",
+			"source": "@idc",
 			"pages": "49-61",
 			"doi": "https://doi.org/10.1145/3459990.3460712",
 			"local": "Druga2021Cognimates.pdf",
