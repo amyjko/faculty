@@ -66,8 +66,7 @@ class FAQ extends React.Component {
 			</Section>,
 			<Section id="phdstudent" header="What is it like to be a Ph.D. student?">
 				<p>
-					There are many, many resources on this. 
-					<a href="http://matt.might.net/articles/successful-phd-students/">Matt Might's advice</a> has a sobering but practical look. 
+					There are many resources on this. <a href="http://matt.might.net/articles/successful-phd-students/">Matt Might's advice</a> has a sobering but practical look, including a <a href="https://matt.might.net/articles/phd-school-in-pictures/">fun visual metaphor</a> of what it means to do a PhD.
 					I also like <a href="https://freedom-to-tinker.com/2010/09/27/advice-new-graduate-students/">Jennifer Rexford's view of Ph.D. life as individual growth by leveraging the group</a>, because it complements more pragmatic views.
 					The Economist also has some practical advice on <a href="http://www.economist.com/node/17723223?fsrc=scn/fb/wl/ar/mr/disposableacademic">Why doing a PhD is often a waste of time</a>. 
 					And, for a lighter glimpse into Ph.D. life, there is always <a href="http://www.phdcomics.com/comics.php">Ph.D. comics</a>.
