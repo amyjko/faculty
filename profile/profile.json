@@ -2622,7 +2622,9 @@
 	 		"url": "http://minatari.com/",
 	 		"startdate": 2018,
 	 		"enddate": null,
-	 		"achievements": []
+	 		"achievements": [
+				"Husky 100, recognizing top UW students (2017)"
+			 ]
 	 	},
 		{
 	 		"id": "jliang9",
@@ -2638,7 +2640,7 @@
 	 		"enddate": null,
 			"achievements": [ 
 				"NSF Graduate Research Fellowship (2021)",
-				"Husky 100 (2020)"
+				"Husky 100, recognizing top UW students (2020)"
 			]
 	 	},
 		{
@@ -2780,7 +2782,7 @@
 			"startdate": 2018,
 			"enddate": 2020,
 			"achievements": [
-				"Husky 100 (2020)"
+				"Husky 100, recognizing top UW students (2020)"
 			]
 		},
 		{
@@ -2795,7 +2797,10 @@
 			"url": "https://alannaholeson.com/",
 			"startdate": 2018,
 			"enddate": null,
-			"achievements": [ "NSF Graduate Research Fellowship (2018)" ]
+			"achievements": [ 
+				"Husky 100, recognizing top UW students (2022)",
+				"NSF Graduate Research Fellowship (2018)" 
+			]
 		},
 		{
 			"id": "yreg",
@@ -2951,7 +2956,7 @@
 			"enddate": null,
 			"dissertation": "Xie2021Dissertation.pdf",
 			"achievements": [ 
-				"Husky 100 (2021)",
+				"Husky 100, recognizing top UW students (2021)",
 				"NSF Graduate Research Fellowship (2017)"
 			]
 		},
@@ -3171,7 +3176,7 @@
 			"startdate": 2016,
 			"enddate": 2018,
 			"achievements": [
-				"UW Husky 100, recognizing top UW undergrad and graduates (2019)"
+				"Husky 100, recognizing top UW students (2019)"
 			]
 		},	
 		{
