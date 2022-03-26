@@ -2945,12 +2945,12 @@
 		{
 			"id": "bxie",
 			"name": "Benjamin Xie",
-			"active": true,
+			"active": false,
 			"advised": true,
-			"level": "postdoc",
+			"level": "phd",
 			"dept": "Information School",
 			"coadvisor": null,
-			"bio": "Benji was a PhD student in the Information School, and is now a postdoc in the lab. He designs interactions with data that support their interpretations and uses for equity-oriented goals.",
+			"bio": "Benji was a PhD student in the Information School, and briefly a postdoc in the lab. He designs interactions with data that support their interpretations and uses for equity-oriented goals.",
 			"url": "http://benjixie.com/",
 			"startdate": 2016,
 			"enddate": null,
@@ -2974,6 +2974,7 @@
 			"enddate": 2021,
 			"dissertation": "Nelson2021Dissertation.pdf",
 			"achievements": [ 
+				"Assistant Professor, University of Maine, Department of Computer Science (2022-present)",
 				"ACM ICER John Henry Best Paper Award (2018)", 
 				"NSF Graduate Research Fellowship (2015)" 
 			]
@@ -2992,7 +2993,7 @@
 			"enddate": 2020,
 			"dissertation": "Thayer2020Dissertation.pdf",
 			"achievements": [
-				"Lecturer, The Information School, University of Washington (2019-present)"
+				"Assistant Teaching Professor, The Information School, University of Washington (2019-present)"
 			]
 		},
 		{
@@ -3009,7 +3010,7 @@
 			"enddate": 2019,
 			"dissertation": "Swearngin2019Dissertation.pdf",
 			"achievements": [ 
-				"Apple Research (2020)",
+				"Apple Research (2020-present)",
 				"NSF Graduate Research Fellowship (2016)"
 			]
 		},
@@ -3027,7 +3028,7 @@
 			"enddate": 2020,
 			"dissertation": "Loksa2020Dissertation.pdf",
 			"achievements": [
-				"Assistant Professor, Towson University, Computer Science"
+				"Assistant Professor, Towson University, Computer Science (2020-present)"
 			]
 		},
 		{
@@ -3075,7 +3076,7 @@
 			"enddate": 2015,
 			"dissertation": "Lee2015Dissertation.pdf",
 			"achievements": [
-				"Assistant Professor, New Jersey Institute of Technology, Information Systems (2015-present)",
+				"Associate Professor, New Jersey Institute of Technology, Information Systems (2015-present)",
 				"ACM ICER John Henry Best Paper Award (2013)"
 			]
 		},
