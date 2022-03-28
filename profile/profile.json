@@ -3671,6 +3671,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://amyjko.medium.com/life-at-the-limit-ff2b3b466125",
+			"title": "Life at the limit",
+			"date": "2022.3",
+			"tags": ["personal", "productivity"],
+			"img": "limit",
+			"alt": "A 1980's photo of a women with curly hair in a recliner nursing a baby with a bottle and a small child holding a stuffed panda on the floor."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/a-visit-to-ann-arbor-to-discuss-equity-justice-and-engineering-education-79b17ff6be5e",
 			"title": "A visit to Ann Arbor to discuss equity, justice, and engineering education",
 			"date": "2022.3",
