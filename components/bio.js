@@ -28,7 +28,7 @@ class Biography extends React.Component {
 						// Compute number of most influential papers.
 						this.props.app.getProfile().getPublications(paper => paper.award && paper.award.filter(award => award.includes("most influential")).length > 0).length
 					} receiving most influential paper awards.
-					She is an ACM Senior Member, and member of ACM SIGCHI, SIGCSE, and SIGSOFT. 
+					She is an ACM Senior Member, a member of ACM SIGCHI, SIGCSE, and SIGSOFT, and a member of the SIGCHI academy, for her substantial contributions to the field of human-computer interaction.
 					She received her Ph.D. at the <a href="http://www.hcii.cs.cmu.edu">Human-Computer Interaction Institute</a> at <a href="http://www.cmu.edu">Carnegie Mellon University</a> in 2008, and degrees in Computer Science and Psychology with Honors from <a href="http://www.oregonstate.edu">Oregon State University</a> in 2002.
 				</p>
 

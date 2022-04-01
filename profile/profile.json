@@ -6431,6 +6431,11 @@
 	],
 	"recognitions": [
 		{
+			"title": "SIGCHI Academy",
+			"year": 2022,
+			"description": "A recognition given to honorary and leading individuals who have made substantial contributions ot the field of human-computer interaction, shaping the field."
+		},
+		{
 			"title": "Oregon State University Council of Outstanding Early Career Engineers",
 			"year": 2021,
 			"description": "A recogntion given to distinguished Oregon State University alumni who are future leaders in their profession."
