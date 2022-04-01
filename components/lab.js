@@ -161,6 +161,14 @@ class Lab extends React.Component {
 					)
 				}
 
+				<h3>Former Masters</h3>
+				{
+					renderPeople(
+						person => !person.active && person.level === "masters",
+						person => -person.startdate
+					)
+				}
+
 				<h3>Former Undergrads</h3>
 				{
 					renderPeople(

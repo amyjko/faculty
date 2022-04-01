@@ -2487,7 +2487,7 @@
 		{
 			"id": "brianc",
 			"name": "Brian Chan",
-			"active": true,
+			"active": false,
 			"advised": true,
 			"level": "masters",
 			"dept": "Computer Science",
@@ -2495,7 +2495,7 @@
 			"bio": "Brian is a BS/MS student in Computer Science and Engineering interested in making algorithm visualization easier to incorporate into lectures.",
 			"url": "https://faculty.washington.edu/ajko/lab/brianc",
 			"startdate": 2020,
-			"enddate": null,
+			"enddate": 2022,
 			"achievements": []
 		},
 		{
