@@ -102,10 +102,10 @@ class FAQ extends React.Component {
 				<p>Reasons to do it:</p>
 				
 				<ul>
-					<li>You're an expert. Academia is small, expertise is rare, it's your duty to volunteer.</li>
-					<li>You need practice reviewing papers.</li>
-					<li>If you plan a career in research, it's important to show that you've reviewed for prestigious journals and conferences.</li>
-					<li>If it's relevant to your research, you have an incentive to read it and find out what other people are doing.</li>
+					<li>You want to read the paper!</li>
+					<li>You need practice critically evaluating papers.</li>
+					<li>You're one of a handful of people who has the expertise to evaluate it. (Academia is small, expertise is rare, it's your duty to volunteer).</li>
+					<li>Early in an academic career, it's helpful to show that you've reviewed for prestigious journals and conferences.</li>
 				</ul>
 				
 				<p>Reasons not to do it:</p>
@@ -114,7 +114,7 @@ class FAQ extends React.Component {
 					<li>You really don't have the expertise.</li>
 					<li>You've done too much reviewing in the past year and have earned the right to say no.</li>
 					<li>You're an experienced paper reviewer and don't need the practice.</li>
-					<li>You honestly don't have the time because of some exceptional circumstance.</li>
+					<li>You don't have the time due to other reviewing commitments.</li>
 					<li>You're overloaded on other service commitments.</li>
 				</ul>
 			</Section>,
