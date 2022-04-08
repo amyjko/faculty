@@ -110,7 +110,11 @@ class Lablets extends React.Component {
 					<li>Join the <a href="http://computinged-uw.slack.com">ComputingEd@UW Slack</a> (follow this link and use your UW address to create an account on the Slack).</li>
 					<li>Fill out your profile, including a headshot, so people can learn about you.</li>
 					<li>Join the <strong>#codeandcognitionlab</strong> channel so you get all updates about the lab. This is where we talk about lab and lablet activity.</li>
-					<li>Write Amy a message in Slack and introduce yourself. If she has any concerns, she'll let you know; all UW students are eligible. If she doesn't, she'll give you access to the lablets folder in Google Drive, which will give you edit access to everything.</li>
+					<li>
+						Write Amy a message in Slack, introduce yourself, explain your interest in computing education research, and what lablet you're thinking of joining. 
+						If she has any concerns, she'll let you know; all UW students are eligible. 
+						If she doesn't, she'll give you access to the lablets folder in Google Drive, which will give you edit access.
+					</li>
 					<li>Once you have access, add your name to the <a href="https://docs.google.com/spreadsheets/d/1ziwgmDBdCNY1AbhlQti8hgabwhVhwvRpL8xPjknywnQ/edit#gid=772195334" target="_blank">students</a> sheet.</li>
 					<li>Join the Slack channel corresponding to the lablet you joined. You'll find the channel in the spreadsheet.</li>
 					<li>If you signed up for a lablet in the middle of a quarter, write the lablet leader and supervisor a joint message in Slack and introduce yourself. They'll welcome you to the lablet and tell you what's next for the lablet. If you signed up for the next quarter</li>
