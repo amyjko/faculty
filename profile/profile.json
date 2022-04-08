@@ -116,8 +116,8 @@
 			"year": 2022,
 			"title": "Surfacing Equity Issues in Large Computing Courses with Peer-Ranked, Demographically-Labeled Student Feedback",
 			"source": "@hcipacm",
-			"pages": "to appear",
-			"doi": null,
+			"pages": "1-39",
+			"doi": "https://dl.acm.org/doi/10.1145/3512912",
 			"local": "Xie2022StudentAmp.pdf",
 			"publisher": "ACM",
 			"contribution": "Developed and evaluated tool that contextualizes student feedback for teaching teams to identify equity issues."
