@@ -2387,6 +2387,20 @@
 	],
 	"people": [
 		{
+			"id": "leahperl",
+			"name": "Leah Perlmutter",
+			"active": true,
+			"advised": false,
+			"level": "phd",
+			"dept": "Computer Science & Engineering",
+			"coadvisor": null,
+			"bio": "Leah  is a PhD candidate in Computer Science and Engineering. She is interested in TA practices, CS identity construction, and CS culture.",
+			"url": "https://homes.cs.washington.edu/~lrperlmu/",
+			"startdate": 2022,
+			"enddate": null,
+			"achievements": []
+		},
+		{
 			"id": "kmack3",
 			"name": "Kelly Mack",
 			"active": true,
