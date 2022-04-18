@@ -3685,6 +3685,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/a-student-guide-to-computing-education-activism-e816fdbba501",
+			"title": "A guide to student activism in computing education",
+			"date": "2022.4",
+			"tags": ["academia", "diversity", "computing education"],
+			"img": "activism",
+			"alt": "A group of Google protesters outside a Google building, 'My outrage can't fit this sign.'"
+		},
+		{
 			"url": "https://amyjko.medium.com/im-a-happy-trans-kid-44a9c2557e67",
 			"title": "I'm a happy trans kid!",
 			"date": "2022.4",
