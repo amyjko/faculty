@@ -130,8 +130,8 @@
 			"year": 2022,
 			"title": "An Exploratory Study of Sharing Strategic Programming Knowledge",
 			"source": "@chi",
-			"pages": "to appear",
-			"doi": null,
+			"pages": "1-15",
+			"doi": "https://doi.org/10.1145/3491102.3502070",
 			"local": "Arab2022StrategyWriting.pdf",
 			"publisher": "ACM",
 			"contribution": "Finds that developers can share strategies for programming, but they struggle in choosing a level of detail and understanding the diversity of the potential audience, requiring substantial feedback, but also that developers struggle to give feedback on strategies."
