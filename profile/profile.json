@@ -144,8 +144,8 @@
 			"year": 2022,
 			"title": "Family as a Third Space for AI Literacies: How Do Children and Parents Learn about AI Together?",
 			"source": "@chi",
-			"pages": "to appear",
-			"doi": null,
+			"pages": "1-17",
+			"doi": "https://doi.org/10.1145/3491102.3502031",
 			"local": "Druga2022FamilyAILiteracy.pdf",
 			"publisher": "ACM",
 			"contribution": "Finds that parents mediate children's learning by taking on different roles, including mentor, student, collaborator, and tinkerer, and that family learning promotes new framings of consumer devices in homes."
