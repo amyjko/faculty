@@ -3685,6 +3685,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/chi-2022-ecep-2022-equity-oh-my-40f3ffdf816",
+			"title": "CHI 2022, ECEP 2022, equity oh my",
+			"date": "2022.5",
+			"tags": ["trip report", "HCI", "computing education"],
+			"img": "chiecep22",
+			"alt": "A view of a stage, a large projector screen, and hundreds of people staring at them."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/a-student-guide-to-computing-education-activism-e816fdbba501",
 			"title": "A guide to student activism in computing education",
 			"date": "2022.4",
