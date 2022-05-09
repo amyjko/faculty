@@ -10,6 +10,11 @@ class Lablets extends React.Component {
 				</div>
 
 				<p className="alert alert-danger">
+					No lablets in Summer 2022.
+					We will resume them in Autumn 2022.
+				</p>
+
+				<p className="alert alert-danger">
 					Lablets are new, experimental model for engaging undergraduate and masters students research.
 					Because it's an experiment, don't expect perfect processes or preparation.
 					Have feedback?
