@@ -24,7 +24,7 @@ class CER extends React.Component {
 			<Section id="what-is-cer" header="What is computing education research?">
 				<p>
 					First, CER is not teaching. 
-					Teaching is helping people acquire knowledge, skills, attitudes, beliefs, identities. 
+					Teaching is helping people change their knowledge, skills, attitudes, beliefs, identities. 
 					Research is discovery and invention. 
 					Teachers teach computing, whereas computing education researchers make discoveries about this teaching and learning, and invent new ways for these teaching and learning to occur. 
 					CER is an example of <a href="https://www.nap.edu/catalog/13362/discipline-based-education-research-understanding-and-improving-learning-in-undergraduate">discipline-based education research</a>, like math education research or science education research, all of which are part of the broader field of education and learning sciences research.
@@ -408,7 +408,6 @@ class CER extends React.Component {
 
 				<ul>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505359" target="_blank">NSF CS for All</a>. Funds basic research on CS education as well as researcher-practitioner partnerships focused on building K-12 CS education capacity, access, participation, and engagement.</li>
-					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505006" target="_blank">NSF STEM+C</a>. Funds a variety of research and implementation projects, some focused on the integration of computing into STEM subjects, and some on basic computing education research.</li>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505082" target="_blank">NSF IUSE</a>. Funds programs that improve the quality of and access to STEM education in undergraduate programs. Does not directly fund basic research.</li>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=5467" target="_blank">NSF ITEST</a>. Funds programs that broaden participation in STEM. Does not directly fund basic research.</li>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=500047" target="_blank">NSF DRK-12</a>. Funds projects that enhance the quality of and access to STEM education in K-12, including basic research.</li>
@@ -572,65 +571,59 @@ class CER extends React.Component {
 				<h4 id="research-only">Research only venues</h4>
 				<ul>
 					<li>
-						<p><strong>ICER</strong> (the ACM International Computing Education Research conference) is the only academic conference that strictly publishes research. All of the reviewers who peer review submissions are trained researchers with Ph.D.s. ICER tends to focus on theoretically, methodologically, and empirically-rich work, advancing the science of computing education. It is held around the world but is generally in North America every other year.</p>
+						<p><a href="http://icer.acm.org">ICER</a> (the ACM International Computing Education Research conference) is the only academic conference that strictly publishes research. All of the reviewers who peer review submissions are trained researchers with Ph.D.s. ICER tends to focus on theoretically, methodologically, and empirically-rich work, advancing the science of computing education. It is held around the world but is generally in North America every other year.</p>
 					</li>
 					<li>
-						<p><strong>TOCE</strong> (the ACM Transactions on Computing Education) publishes research, and is similar in scope to ICER, but in a journal format. Like ICER, the editorial board and reviewers are all trained researchers.</p>
+						<p><a href="http://toce.acm.org">TOCE</a> (the ACM Transactions on Computing Education) publishes research, and is similar in scope to ICER, but in a journal format. Like ICER, the editorial board and reviewers are all trained researchers.</p>
 					</li>
 					<li>
-						<p><strong>CSE</strong> (the Journal of Computer Science Education) publishes research and is similar to TOCE and ICER in its reviewing community and similar in research rigor and prestige. However, unlike TOCE and ICER, publications in CSE are generally expected to have more direct implications for teachers.</p>
+						<p><a href="https://www.tandfonline.com/journals/ncse20">CSE</a> (the Journal of Computer Science Education) publishes research and is similar to TOCE and ICER in its reviewing community and similar in research rigor and prestige. However, unlike TOCE and ICER, publications in CSE are generally expected to have more direct implications for teachers.</p>
 					</li>
 					<li>
-						<p><strong>ICLS</strong> (the International Conference on Learning Sciences) does not strictly focus on computing education, but publishes high quality research on learning sciences. Accepts both qualitative and quantitative work, especially of mixed methods. Also tends to focus more on K-12 than the venues focusing strictly on CER.</p>
+						<p><a href="https://www.isls.org/annual-meeting/icls/">ICLS</a> (the International Conference on Learning Sciences) does not strictly focus on computing education, but publishes high quality research on learning sciences. Accepts both qualitative and quantitative work, especially of mixed methods. Also tends to focus more on K-12 than the venues focusing strictly on CER.</p>
 					</li>
 					<li>
-						<p><strong>JLS</strong> (the Journal of Learning Sciences) is one of the top education research journals and expects a strong connection to learning theory and mostly wants empirical work. It is not a journal that publishes HCI, so work must be connected to cognition, sociocultural context, or other theory, and not system design.</p>
+						<p><a href="https://www.tandfonline.com/journals/hlns20">JLS</a> (the Journal of Learning Sciences) is one of the top education research journals and expects a strong connection to learning theory and mostly wants empirical work. It is not a journal that publishes HCI, so work must be connected to cognition, sociocultural context, or other theory, and not system design.</p>
 					</li>
 					<li>
-						<p><strong>CSCL</strong> (the International Conference on Computer-Supported Collaborative Learning) focuses on issues related to learning through collaboration and promoting productive collaborative discourse with the help of the computer and other communications technologies.</p>
+						<p><a href="https://www.isls.org/annual-meeting/cscl/">CSCL</a> (the International Conference on Computer-Supported Collaborative Learning) focuses on issues related to learning through collaboration and promoting productive collaborative discourse with the help of the computer and other communications technologies.</p>
 					</li>
 					<li>
-						<p><strong>IJCSCL</strong> (the International Journal of Computer-Supported Collaborative Learning), like CSCL, focuses on learning through collaboration.</p>
+						<p><a href="https://ijcscl.org">IJCSCL</a> (the International Journal of Computer-Supported Collaborative Learning), like CSCL, focuses on learning through collaboration.</p>
 					</li>
 					<li>
-						<p><strong>L@S</strong> (the ACM Conference on Learning at Scale) is a computer science conference that focuses on techniques for scaling instruction. Some of the work published here concerns computing education, but many other domains are represented as well. Often focuses on MOOCs and other forms of online learning.</p>
+						<p><a href="http://learningatscale.acm.org">L@S</a> (the ACM Conference on Learning at Scale) is a computer science conference that focuses on techniques for scaling instruction. Some of the work published here concerns computing education, but many other domains are represented as well. Often focuses on MOOCs and other forms of online learning.</p>
 					</li>
 					<li>
-						<p><strong>RESPECT</strong> (the IEEE Conference on Research on Equity and Sustained Participation in Engineering, Computing, and Technology) is a conference focused on engagement, participation, and equity in STEM fields. It has research and experience report tracks, and expects empirical papers grounded in theory.</p>
+						<p><a href="https://www.computer.org/csdl/proceedings/1809604">RESPECT</a> (the IEEE Conference on Research on Equity and Sustained Participation in Engineering, Computing, and Technology) is a conference focused on engagement, participation, and equity in STEM fields. It has research and experience report tracks, and expects empirical papers grounded in theory.</p>
 					</li>
 					<li>
-						<p><strong>IDC</strong> (ACM SIGCHI Interaction Design and Children) is an HCI conference with a focus on children, focusing on design artifacts for kids and enabling kids to be designers, with a special focus on participatory design as a methodology.</p>
+						<p><a href="http://idc.acm.org">IDC</a> (ACM SIGCHI Interaction Design and Children) is an HCI conference with a focus on children, focusing on design artifacts for kids and enabling kids to be designers, with a special focus on participatory design as a methodology.</p>
 					</li>
 					<li>
-						<p><strong>CHI</strong> (ACM SIGCHI Conference on Human Factors in Computing) is an HCI conference with a focus on any aspect of interactions between people and computers, including programming. As one of the largest and broadest ACM conferences, it's easy for research on learning to get lost here, but so does every other topic!</p>
+						<p><a href="http://chi.acm.org">CHI</a> (ACM SIGCHI Conference on Human Factors in Computing) is an HCI conference with a focus on any aspect of interactions between people and computers, including programming. As one of the largest and broadest ACM conferences, it's easy for research on learning to get lost here, but so does every other topic!</p>
 					</li>
 					<li>
-						<p><strong>AERA</strong> (the American Education Research Association conference) has a division for engineering and computing education that publishes papers on computational thinking.</p>
+						<p><a href="https://www.aera.net/Events-Meetings/Annual-Meeting">AERA</a> (the American Education Research Association conference) has a division for engineering and computing education that publishes papers on computational thinking.</p>
 					</li>
 					<li>
-						<p><strong>JEE</strong> (the Journal of Engineering Education). High-quality but with few international collaborations (like the MIMN studies in CER). Occasionally has papers related to computing.</p>
+						<p><a href="https://onlinelibrary.wiley.com/journal/21689830">JEE</a> (the Journal of Engineering Education). High-quality but with few international collaborations (like the MIMN studies in CER). Occasionally has papers related to computing.</p>
 					</li>
 					<li>
-						<p><strong>IEEE Global Engineering Education Conference</strong>. I know little about this conference; if someone has opinions to share, please send them to me!</p>
-					</li>
-					<li>
-						<p><strong>IEEE Transactions on Education</strong>. I know little about this journal. Feel free to share opinions!</p>
-					</li>
-					<li>
-						<p><strong>Journal of Education Computing Research</strong>. I know little about this journal. Feel free to share opinions!</p>
+						<p><a href="https://ieee-edusociety.org/publication/ieee-toe">IEEE Transactions on Education</a>. I know little about this journal. Feel free to share opinions!</p>
 					</li>
 				</ul>
 
 				<h4 id="research-and-practice">Research and practice venues</h4>
 
 				<ul>
-					<li><strong>SIGCSE</strong> (the SIGCSE Technical Symposium on Computer Science Education) publishes both research and practice papers in a short format, bringing together researchers and teachers. This is the largest conference on computer science education and generally attracts teachers. There is a dedicated research track separate from experience reports, though the research track has a 6-page limit, making it unsuitable for many forms of research, such as qualitative work or more substantial quantitative work. Generally held in North America.</li>
-					<li><strong>ITiCSE</strong> (the Annual Conference on Innovation and Technology in Computer Science Education) publishes both research and practice papers, with a focus on practice. Generally held in Europe.</li>
-					<li><strong>Koli Calling</strong> (International Conference on Computing Education Research), held in Finland every year, publishes research and practice papers with a focus on qualitative research. A small but dedicated community.</li>
-					<li><strong>WiPSCE</strong> (Workshop in Primary and Secondary Computing Education) aims to bring together researchers and practitioners, and publishes both research and practice papers. It is generally held in Europe.</li>
-					<li><strong>ACE</strong> (the Australasian Computing Education Conference) is a regional conference with a mix of research and practice papers, bringing together education researchers and practitioners. Held in Australia or New Zealand, but welcomes attendees from anywhere.</li>
-					<li><strong>LaTiCE</strong> (the International Conference on Learning and Teaching in Computing and Engineering) publishes both research and practice papers. Held primarily in Asia.</li>
-					<li><strong>FIE</strong> (the ASEE Frontiers in Education conference) is more broad and more practitioner focused than SIGCSE and occasionally has CER work.</li>
+					<li><a href="https://sigcse.org/events/symposia/index.html">SIGCSE</a> (the SIGCSE Technical Symposium on Computer Science Education) publishes both research and practice papers in a short format, bringing together researchers and teachers. This is the largest conference on computer science education and generally attracts teachers. There is a dedicated research track separate from experience reports, though the research track has a 6-page limit, making it unsuitable for many forms of research, such as qualitative work or more substantial quantitative work. Generally held in North America.</li>
+					<li><a href="http://iticse.acm.org">ITiCSE</a> (the Annual Conference on Innovation and Technology in Computer Science Education) publishes both research and practice papers, with a focus on practice. Generally held in Europe.</li>
+					<li><a href="https://www.kolicalling.fi">Koli Calling</a> (International Conference on Computing Education Research), held in Finland every year, publishes research and practice papers with a focus on qualitative research. A small but dedicated community.</li>
+					<li><a href="https://www.wipsce.org">WiPSCE</a> (Workshop in Primary and Secondary Computing Education) aims to bring together researchers and practitioners, and publishes both research and practice papers. It is generally held in Europe.</li>
+					<li><a href="https://aceconference.wordpress.com">ACE</a> (the Australasian Computing Education Conference) is a regional conference with a mix of research and practice papers, bringing together education researchers and practitioners. Held in Australia or New Zealand, but welcomes attendees from anywhere.</li>
+					<li><a href="http://www.latice-conference.org">LaTiCE</a> (the International Conference on Learning and Teaching in Computing and Engineering) publishes both research and practice papers. Held primarily in Asia.</li>
+					<li><a href="http://fie-conference.org">FIE</a> (the ASEE Frontiers in Education conference) is more broad and more practitioner focused than SIGCSE and occasionally has CER work.</li>
 				</ul>
 			</Section>,
 			<Section id="sigcse" header="What is SIGCSE?">
