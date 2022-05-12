@@ -3500,7 +3500,7 @@
 			"description": "Computing is powerful, but that power is often used by dominant groups in ways that disregard, exclude, or even harm marginalized groups, amplifying and reinforcing sexist, racist, and ableist structures and ideas. My lab is exploring teaching methods, learning technologies, and teacher education paradigms that center these power dynamics in CS education.",
 			"funding": ["@csjustice", "@csassess", "@fmitf", "@googlecser"],
 			"people": ["@ajko", "@jayne", "@olesona", "@kshino", "@skawas", "@laurav4", "@meron", "@perdriau", "@megumi"],
-			"papers": ["cognimates", "criticalcsed","hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess", "csdesignk12", "coconstructedcriticalcs", "houseofcomputing", "ccc"],
+			"papers": ["cognimates", "criticalcsed","hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess", "csdesignk12", "coconstructedcriticalcs", "houseofcomputing", "ccc", "coconstructedcriticalcs", "houseofcomputing"],
 			"links": [],
 			"startdate": 2019,
 			"stopdate": null
@@ -3513,7 +3513,7 @@
 			"description": "The world is full of structural barriers to developing interest in and learning computing. My lab investigates these barriers and ways to eradicate them, including issues around accessibility, mentorship, culture, identity, and resources, with the goal of increasing the diversity of people in computing disciplines.",
 			"funding": ["@accesscomp", "@gidget", "@csassess", "@fairassess"],
 			"people": ["@ajko", "@kthayer", "@banerjee", "@kwikh", "@kshino", "@laurav4", "@skawas", "@lkhwa", "@jcyip", "@kdavis"],
-			"papers": ["codedif", "codebios", "bootcamps", "ellblockstudio", "transfer", "mentors1", "mentors2", "csdif", "studentamp"],
+			"papers": ["codedif", "codebios", "bootcamps", "ellblockstudio", "transfer", "mentors1", "mentors2", "csdif", "studentamp", "ccc", "coconstructedcriticalcs", "houseofcomputing", "codedif"],
 			"links": [
 				{ "title": "See WeCode", "url": "https://youtu.be/t56g4DYIuUA" }
 			],
@@ -3528,7 +3528,7 @@
 			"description": "While most programs are still written by developers, many are now built by gathering large amounts of data and automatically creating machine learned programs. My lab is investigating the immense comprehension challenges imposed by these probablistic forms of program behavior, as well as the literacy required to understand how they are shaping program behavior and society.",
 			"funding": ["@csassess"],
 			"people": ["@ajko", "@st3f", "@yreg", "@kayur", "@chandrashree"],
-			"papers": ["cognimates", "mladvocacy", "gestalt", "whydebugclassifier2", "whydebugclassifier1"],
+			"papers": ["cognimates", "mladvocacy", "gestalt", "whydebugclassifier2", "whydebugclassifier1", "airesources", "ccc", "aifamily", "coconstructedcriticalcs", "cognimates"],
 			"links": [],
 			"startdate": 2004,
 			"stopdate": null
@@ -3541,7 +3541,7 @@
 			"description": "Robust understanding of a programming language is a key foundation for being able to create software. My lab investigates what it means to know a programming language, invents and evaluates educational technologies that streamline learning of a programming language, and invents and evaluates assessments that help identify what learners do and do not know about a programming language.",
 			"funding": ["@csassess", "@gidget", "@seif", "@msft", "@fairassess"],
 			"people": ["@ajko", "@bxie", "@glnelson", "@kwikh", "@mjslee", "@yanan15", "@akkarh", "@wkwok16", "@brettwo", "@minli"],
-			"papers": ["traceassess", "cs1theory", "gidget6", "pltutor1","tutorialeval", "tracing", "statscomprehension", "irteval", "gidget1", "gidget2", "gidget3", "gidget4", "gidget5", "gidget6", "adultattitudes", "gidgetabandoment", "codeitzagency", "cerhandoutside", "csdif"],
+			"papers": ["traceassess", "cs1theory", "gidget6", "pltutor1","tutorialeval", "tracing", "statscomprehension", "irteval", "gidget1", "gidget2", "gidget3", "gidget4", "gidget5", "gidget6", "adultattitudes", "gidgetabandoment", "codeitzagency", "cerhandoutside", "csdif", "tilecode", "ccc"],
 			"links": [
 				{ "title": "Try Gidget", "url": "http://helpgidget.org" }
 			],
@@ -3556,7 +3556,7 @@
 			"description": "A critical part of creating software is being able to understand programming problems, identify solutions to solve them, and systematically implement, verify, and debug programs, and avoid mistakes throughout. My lab investigates effective ways of learning these skills, and orchestrating them with self-regulation, process, and strategy.",
 			"funding": ["@explore", "@csassess", "@strategies", "@gidget", "@seif", "@endusersynth"],
 			"people": ["@ajko", "@dloksa", "@bxie", "@olesona", "@jliang9", "@latoza"],
-			"papers": ["csproblemsolving1", "csproblemsolving2", "ideagardenjvlc", "tracing", "teachingstrategies", "errormodel", "errorframework", "metajournaling", "programmingstrategies", "pstutor1", "howtoo", "strategywriting"],
+			"papers": ["csproblemsolving1", "csproblemsolving2", "ideagardenjvlc", "tracing", "teachingstrategies", "errormodel", "errorframework", "metajournaling", "programmingstrategies", "pstutor1", "howtoo", "strategywriting", "tilecode", "strategywriting", "howtoo"],
 			"links": [],
 			"startdate": 2003,
 			"stopdate": null
