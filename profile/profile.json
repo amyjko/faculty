@@ -3687,6 +3687,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/on-the-internet-we-are-all-bystanders-967c5e4d9def",
+			"title": "On the internet, we are all bystanders",
+			"date": "2022.5",
+			"tags": ["society", "gender", "HCI"],
+			"img": "bystander",
+			"alt": "A network of circles with stick figure faces inside, some in shock, some in tears, some angry. All of them watch at a distance one while stick figure towers over another with a weapon, and the other is on their knees waiting for the next blow."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/chi-2022-ecep-2022-equity-oh-my-40f3ffdf816",
 			"title": "CHI 2022, ECEP 2022, equity oh my",
 			"date": "2022.5",
