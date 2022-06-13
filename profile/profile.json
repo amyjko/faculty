@@ -9178,7 +9178,8 @@
 			"links": [],
 			"hours": 6,
 			"offerings": [
-				{ "year": 2022, "term": 3, "size": 15, "score": null }
+				{ "year": 2023, "term": 3, "size": 15, "score": null },
+				{ "year": 2022, "term": 3, "size": 9, "score": null }
 			]
 		}
 	],
