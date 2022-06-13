@@ -9046,7 +9046,7 @@
 				}
 			],
 			"offerings": [
-				{ "size": 200, "term": 3, "year": 2022, "score": null },
+				{ "size": 200, "term": 3, "year": 2022, "score": "N/A" },
 				{ "size": 200, "term": 3, "year": 2021, "score": "N/A" },
 				{ "size": 208, "term": 2, "year": 2020, "score": 4.8 },
 				{ "size": 150, "term": 1, "year": 2018, "score": 4.8 }
@@ -9179,7 +9179,7 @@
 			"hours": 6,
 			"offerings": [
 				{ "year": 2023, "term": 3, "size": 15, "score": null },
-				{ "year": 2022, "term": 3, "size": 9, "score": null }
+				{ "year": 2022, "term": 3, "size": 9, "score": "N/A" }
 			]
 		}
 	],
