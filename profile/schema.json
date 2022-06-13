@@ -78,6 +78,10 @@
 							"pattern": "^(@[a-z0-9]+|[a-zA-Z-. ]+)$"
 						}
 					},
+					"equalfirst": {
+						"type": "boolean",
+						"description": "True if the first two authors made equal contributions."
+					},
 					"deadname": {
 						"type": "boolean",
 						"description": "True if the publisher hasn't updated my name"

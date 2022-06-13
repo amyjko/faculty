@@ -66,17 +66,19 @@ class Paper extends React.Component {
 
 	renderAuthors(link=false) {
 
+		const equalFirst = this.props.equalfirst && this.props.authors.length >= 2;
+
 		return this.props.authors.map((author, index) =>
 			author === undefined ? 
 				<span key={index} className="alert alert-danger">unknown author</span> :
 			typeof author === "string" ?
-				author + (index < this.props.authors.length - 1 ? ", " : "") :
+				author + (index < this.props.authors.length - 1 ? (equalFirst && index === 0 ? " + " : ", ") : "") :
 				<span key={index}>
 					{link ? 
 						<Link to={author.id === "ajko" ? "/bio" : "/lab/" + author.id}>{author.name}</Link> :
 						author.name
 					}
-					{index < this.props.authors.length - 1 ? ", " : ""}
+					{index < this.props.authors.length - 1 ? (equalFirst && index === 0 ? " + " : ", ") : ""}
 				</span>
 		);
 

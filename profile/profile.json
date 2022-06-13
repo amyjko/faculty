@@ -67,6 +67,21 @@
 	},
 	"pubs": [
 		{
+			"id": "demographics",
+			"kind": "refereed conference paper",
+			"authors": ["@olesona", "@bxie", "@salac", "@jayne", "@megumi", "@ajko"],
+			"equalfirst": true,
+			"deadname": false,
+			"year": 2022,
+			"title": "A decade of demographics in computing education research: A critical review of trends in collection, reporting, and use",
+			"source": "@icer",
+			"pages": null,
+			"publisher": "ACM",
+			"doi": null,
+			"local": "OlesonXie2022Demographics.pdf",
+			"contribution": "Finds that most computing education research studied adults, did not mention how demographics data was gathered, and used imprecise and sometimes hegemonic aggregate terms about diversity."
+		},
+		{
 			"id": "tilecode",
 			"kind": "refereed conference paper",
 			"authors": ["@st3f", "Tom Ball", "@ajko"],
