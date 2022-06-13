@@ -3687,6 +3687,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/im-mostly-leaving-twitter-813dc41e21a4",
+			"title": "I'm (mostly) leaving Twitter",
+			"date": "2022.6",
+			"tags": ["HCI", "information"],
+			"img": "byetwitter",
+			"alt": "An illustration of a blue Twitter logo with a white bird and several stick figures climbing a top it into a human pyramid, some falling off, and two people on the other side of the illustration having a conversation."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/on-the-internet-we-are-all-bystanders-967c5e4d9def",
 			"title": "On the internet, we are all bystanders",
 			"date": "2022.5",
