@@ -3702,6 +3702,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/sabbatical-2-e2ea332301c3",
+			"title": "Sabbatical #2",
+			"date": "2022.6",
+			"tags": ["academia", "personal"],
+			"img": "sabbatical2",
+			"alt": "A blue sky with clouds"
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/im-mostly-leaving-twitter-813dc41e21a4",
 			"title": "I'm (mostly) leaving Twitter",
 			"date": "2022.6",
