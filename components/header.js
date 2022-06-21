@@ -33,6 +33,7 @@ class Header extends React.Component {
 							</span>
 							<br/><a href="http://www.washington.edu" target="_blank">University of Washington<span className="hidden-xs">, Seattle</span></a>
 							<br/><a href="mailto:ajko@uw.edu">email</a> &sdot; <a href="https://twitter.com/amyjko" target="_blank">twitter</a> &sdot; <a href="https://amyjko.medium.com" target="_blank">blog</a>
+							<br/><span style={{backgroundColor: "rgb(255, 240, 240)"}}>I'm on <a href="https://medium.com/bits-and-behavior/sabbatical-2-e2ea332301c3">sabbatical</a> until Sept. 2023.</span>
 						</small>
 					</div>
 					
