@@ -14,7 +14,7 @@ class Biography extends React.Component {
 
 				<p>
 					Amy J. Ko is a Professor at the <a href="http://www.washington.edu">University of Washington</a> <a href="http://ischool.uw.edu/">Information School</a> and an Adjunct Professor at the <a href="http://cs.washington.edu">Paul G. Allen School of Computer Science and Engineering</a>.
-					She directs the Code &amp; Cognition Lab, where she and her students study CS education, human-computer interaction, and humanity's individual and collective struggle to understand computing and harness it for equity and justice.
+					She directs the Code &amp; Cognition Lab, where she and her students study CS education, human-computer interaction, and humanity's individual and collective struggle to understand computing and harness it for creativity, equity, and justice.
 					Her earliest work included techniques for automatically answering questions about program behavior to support debugging, program understanding, and reuse.
 					Her later work studied interactions between developers and users, and techniques for web scale aggregation of user intent through help systems; she co-founded <a href="http://www.answerdash.com">AnswerDash</a> to commercialize these ideas.
 					Her latest work investigates effective, equitable, and inclusive ways for humanity to learn computing, especially how data, algorithms, APIs, and AI can both empower and oppress. 
@@ -40,8 +40,8 @@ class Biography extends React.Component {
 					She started off inventing ways of making programming easier, but then got disillusioned with productivity.
 					She then got excited about the ways that programmers interact with massive communities of people using their code, and that somehow turned into a startup that sold help tools.
 					After she returned from her icky capitalist stint as a CTO, she decided to focus on making people smarter instead of tools smarter, and began studying how to make learning to code easier.
-					Now she mostly thinks about how we can teach people to write code that's not so terribly oppressive to people at the margins.
-					Somewhere along the way, she published a bunch of papers and won a bunch of awards, which mostly means that people think her discoveries and insights are neat.
+					Now she mostly thinks about how we can teach people to write code that's not so terribly oppressive to people at the margins, and to create with code in ways that express their values and identities.
+					Somewhere along the way, she published a bunch of papers and won a bunch of awards, which she thinks is nice, but isn't what really motivates her.
 					She's grateful to <a href="http://www.cmu.edu">Carnegie Mellon University</a> and <a href="http://www.oregonstate.edu">Oregon State University</a> for being mostly safe spaces to bumble through the world's endless expanse of mysteries as a student, and to the many students and taxpayers that pay her to keep doing it as a professor.
 				</p>
 
