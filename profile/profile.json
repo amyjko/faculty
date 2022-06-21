@@ -2448,7 +2448,7 @@
 			"name": "Megumi Kivuva",
 			"active": true,
 			"advised": true,
-			"level": "undergrad",
+			"level": "phd",
 			"dept": "Bard College",
 			"coadvisor": null,
 			"bio": "Megumi is an undergraduate at Bard College in her final year studying Computer Science and Spanish Studies. She is interested in justice-centered CS education, specifically ways to make CS more inclusive for Black students",
@@ -2474,12 +2474,12 @@
 		{
 			"id": "wangash",
 			"name": "Ashley Wang",
-			"active": true,
+			"active": false,
 			"advised": true,
 			"level": "undergrad",
 			"dept": "Design",
 			"coadvisor": null,
-			"bio": "Ashley is an undergraduate in Design, interested in designing tools that emphasize equity and accessibility.",
+			"bio": "Ashley was an undergraduate in Design, interested in designing tools that emphasize equity and accessibility. They helped create illustrations and design language for the Critically Conscious Computing book.",
 			"url": "https://www.ashleyewang.com/",
 			"startdate": 2021,
 			"enddate": null,
@@ -2644,15 +2644,15 @@
 		{
 	 		"id": "minatari",
 	 		"name": "Mina Tari",
-	 		"active": true,
+	 		"active": false,
 	 		"advised": false,
 	 		"level": "phd",
 	 		"dept": "The Information School",
 	 		"coadvisor": null,
-	 		"bio": "Mina is PhD student in the Information School exploring women of color's experiences in introductory computing courses. She's a homegrown UW student, coming from the Informatics and Gender, Women, and Sexuality Studies programs. Mina works with Amy and the lab to apply a critical feminist lens to questions regarding equity in computing education.",
+	 		"bio": "Mina was a PhD student in the Information School exploring women of color's experiences in introductory computing courses. She's a homegrown UW student, coming from the Informatics and Gender, Women, and Sexuality Studies programs. Mina works with Amy and the lab to apply a critical feminist lens to questions regarding equity in computing education.",
 	 		"url": "http://minatari.com/",
 	 		"startdate": 2018,
-	 		"enddate": null,
+	 		"enddate": 2022,
 	 		"achievements": [
 				"Husky 100, recognizing top UW students (2017)"
 			 ]
@@ -2660,15 +2660,15 @@
 		{
 	 		"id": "jliang9",
 	 		"name": "Jenny Liang",
-	 		"active": true,
+	 		"active": false,
 	 		"advised": true,
 	 		"level": "undergrad",
 	 		"dept": "Computer Science & The Information School",
 	 		"coadvisor": null,
-	 		"bio": "Jenny was an undergrad studying computer science and informatics, and is an incoming student at Carnegie Mellon University. She works with Amy to study how to use explicit programming strategies to improve collaboration and learning of developers.",
+	 		"bio": "Jenny was an undergrad studying computer science and informatics. She worked with Amy to study how to use explicit programming strategies to improve collaboration and learning of developers.",
 	 		"url": "http://jennyliang.me",
 	 		"startdate": 2020,
-	 		"enddate": null,
+	 		"enddate": 2021,
 			"achievements": [ 
 				"NSF Graduate Research Fellowship (2021)",
 				"Husky 100, recognizing top UW students (2020)"
@@ -2761,15 +2761,15 @@
 		{
 			"id": "mattjd",
 			"name": "Matt Davidson",
-			"active": true,
+			"active": false,
 			"advised": false,
 			"level": "phd",
 			"dept": "College of Education",
 			"coadvisor": null,
-			"bio": "Matt is a doctoral in the College of Education. He studies how to use process data to make assessments more equitable and informative.",
+			"bio": "Matt was a doctoral student in the College of Education. He studied how to use process data to make assessments more equitable and informative.",
 			"url": "http://mattjohndavidson.github.io/",
 			"startdate": 2017,
-			"enddate": null,
+			"enddate": 2022,
 			"achievements": []
 		},
 		{
@@ -2906,15 +2906,15 @@
 		{
 			"id": "banerjee",
 			"name": "Rahul Banerjee",
-			"active": true,
+			"active": false,
 			"advised": false,
 			"level": "phd",
 			"dept": "Computer Science",
 			"coadvisor": null,
-			"bio": "Rahul works in the Center for Game Science and has worked with the lab on programming by demonstration systems for creating interactive games.",
+			"bio": "Rahul worked in the Center for Game Science and has worked with the lab on programming by demonstration systems for creating interactive games.",
 			"url": "https://homes.cs.washington.edu/~banerjee/",
 			"startdate": 2015,
-			"enddate": null,
+			"enddate": 2020,
 			"achievements": []
 		},
 		{
@@ -2962,15 +2962,15 @@
 		{
 			"id": "skawas",
 			"name": "Saba Kawas",
-			"active": true,
+			"active": false,
 			"advised": false,
 			"level": "phd",
 			"dept": "Information School",
 			"coadvisor": null,
-			"bio": "Saba is a PhD student in the Information School working with Katie Davis. Saba worked with Amy on a nationwide survey of the teaching of accessibility in higher education in the United States.",
+			"bio": "Saba was a PhD student in the Information School working with Katie Davis. Saba worked with Amy on a nationwide survey of the teaching of accessibility in higher education in the United States.",
 			"url": "https://www.linkedin.com/in/saba-kawas-7b82b582",
 			"startdate": 2016,
-			"enddate": null,
+			"enddate": 2022,
 			"achievements": []
 		},
 		{
