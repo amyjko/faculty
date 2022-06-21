@@ -18,10 +18,11 @@ class ContactInfo extends React.Component {
 					header="Office hours"
 					content={
 						<span>
-							. For current UW students, my office hours are virtual and by appointment.
+							. I'm on sabbatical until September 2023 and not holding office hours.
+							{/* If you're a current UW student 
 							Contact me via one of the channels below to see if a meeting makes sense. 
 							If you're in one my classes, see the syllabus for my course office hours.
-							If you're not a UW student, write me an email; we'll meet if appropriate.
+							If you're not a UW student, write me an email; we'll meet if appropriate. */}
 						</span>
 					}
 				/>
