@@ -7,7 +7,7 @@
 	"scripts": {
 		"lint": "ajv -s profile/schema.json -c ajv-formats -d profile/profile.json",
 		"build": "node ./esbuild.config.js",
-		"watch": "watch --color 'npm run lint; npm run build' .",
+		"watch": "watch 'npm run lint; npm run build ' .",
 		"dry": "rsync --dry-run -avz --delete --exclude-from='deploy-excludes' . ajko@ovid.u.washington.edu:~/public_html",
 		"ship": "npm run build; rsync -avz --delete --exclude-from='deploy-excludes' . ajko@ovid.u.washington.edu:~/public_html"
 	},
