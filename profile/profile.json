@@ -2402,6 +2402,20 @@
 	],
 	"people": [
 		{
+			"id": "paulp",
+			"name": "Paul Pham",
+			"active": true,
+			"advised": true,
+			"level": "undergrad",
+			"dept": "Education + Informatics",
+			"coadvisor": null,
+			"bio": "Paul is an Informatics and Education, Communities, and Organizations double major. He is interested in the intersection between critical, justice-oriented pedagogy and CS education to better understand how to make it more accessible and equitable to learn.",
+			"url": "https://www.linkedin.com/in/pkdpham/",
+			"startdate": 2022,
+			"enddate": null,
+			"achievements": []
+		},
+		{
 			"id": "lenaa",
 			"name": "Lena Armstrong",
 			"active": true,
