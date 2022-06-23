@@ -2402,6 +2402,20 @@
 	],
 	"people": [
 		{
+			"id": "jaredl",
+			"name": "Jared Lim",
+			"active": true,
+			"advised": true,
+			"level": "undergrad",
+			"dept": "Informatics",
+			"coadvisor": null,
+			"bio": "Jared is an Informatics undergraduate in his 3rd year at the Information School. He is interested in improving access to CS education and in establishing a critically conscious pedagogy.",
+			"url": "https://www.linkedin.com/in/jared-ordona-lim/",
+			"startdate": 2022,
+			"enddate": null,
+			"achievements": []
+		},
+		{
 			"id": "paulp",
 			"name": "Paul Pham",
 			"active": true,
