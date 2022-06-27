@@ -2402,6 +2402,20 @@
 	],
 	"people": [
 		{
+			"id": "audreylm",
+			"name": "Audrey Le Meur",
+			"active": true,
+			"advised": true,
+			"level": "undergrad",
+			"dept": "Computer Science",
+			"coadvisor": null,
+			"bio": "Audrey is a Computer Science major at the University of Minnesota Morris. She is interested K-12 and undergraduate CS education as a tool for broadening participation in computing. Specifically, she studies pedagogy and curriculum to improve self-efficacy and belonging, and pathways to teaching K-12 CS.",
+			"url": "https://www.linkedin.com/in/audrey-le-meur-733168168",
+			"startdate": 2022,
+			"enddate": null,
+			"achievements": []
+		},
+		{
 			"id": "jaredl",
 			"name": "Jared Lim",
 			"active": true,
