@@ -89,10 +89,10 @@
 			"year": 2022,
 			"title": "How families design and program games: a qualitative analysis of a 4-week online in-home study with a cellular-automata programming platform",
 			"source": "@idc",
-			"pages": null,
+			"pages": "237-252",
 			"publisher": "ACM",
-			"doi": null,
-			"local": null,
+			"doi": "https://doi.org/10.1145/3501712.3529724",
+			"local": "Druga2022FamilyGameDesign.pdf",
 			"contribution": "Finds that inter-generational collaboration patterns and use of resources are distinct from individual and pair programming."
 		},
 		{
