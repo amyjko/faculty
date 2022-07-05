@@ -3758,6 +3758,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/dagstuhl-trip-report-theories-of-programming-382543a3e540",
+			"title": "Dagstuhl trip report: theories of programming",
+			"date": "2022.7",
+			"tags": ["trip report", "programming languages", "software engineering", "HCI", "science"],
+			"img": "theorydagstuhl",
+			"alt": "A group photo of the Dagstuhl castle of every attendee in the workshop on a staircase."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/sabbatical-2-e2ea332301c3",
 			"title": "Sabbatical #2",
 			"date": "2022.6",
