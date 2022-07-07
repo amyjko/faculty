@@ -11,19 +11,19 @@ class Lablets extends React.Component {
 
 				<p className="alert alert-danger">
 					No lablets in Summer 2022.
-					We will resume them in Autumn 2022.
+					We will resume in Autumn 2022.
 				</p>
 
 				<p className="alert alert-danger">
 					Lablets are new, experimental model for engaging undergraduate and masters students research.
 					Because it's an experiment, don't expect perfect processes or preparation.
-					Have feedback?
+					Have questions or feedback?
 					Email or Slack Amy!
 				</p>
 
 				<p>
 					Every year, dozens of students reach out to my lab to participate, but we don't have the capacity to meaningfully mentor everyone who wants to join.
-					To offer more students the opportunity to participate in research while respecting our limited attention, we're trying a new <strong>lablets</strong> model.
+					To offer more students the opportunity to learn about computing education research while respecting our limited time, we offer a <strong>lablet</strong> model.
 				</p>
 
 				<p>
@@ -31,7 +31,7 @@ class Lablets extends React.Component {
 				</p>
 
 				<ul>
-					<li><em>Help students develop interest in CS education research and teaching.</em> If you join a lablet, we commit to helping you develop your interests.</li>
+					<li><em>Help students develop interest in computing education research and teaching.</em> If you join a lablet, we commit to helping you develop your interests.</li>
 					<li><em>Offer clear protocols for participation and pathways for deeper engagement.</em> It should always be clear what participation means; no hidden curriculum.</li>
 					<li><em>Ensure any barriers we create are beneficial.</em> We'll have to create some barriers to avoid overwhelming Amy and her doctoral students, but any barriers do create should be helpful in some way.</li>
 				</ul>
@@ -44,23 +44,23 @@ class Lablets extends React.Component {
 
 				<ul>
 					<li>A group of undergraduates and masters students who self-organize around a common interest, that...</li>
-					<li>Meets weekly (or more frequently) to do research activities related to the focus of the Code &amp; Cognition lab, and that...</li>
+					<li>Meets weekly to read, discuss, and apply research on a particular topic, and that...</li>
 					<li>Starts and ends on a quarterly basis, and that...</li>
-					<li>Has 8 or fewer people, and is...</li>
-					<li>Led by an undergraduate or masters leader elected by majority by the members of the lablet at the beginning of each quarter, and is...</li>
-					<li>Supervised by either Amy or one of her postdocs or doctoral students.</li>
+					<li>Led by one or more students elected by majority by the members of the lablet, and is...</li>
+					<li>Supervised by either Amy, a postdoc, or a doctoral student.</li>
 				</ul>
 
 				<p>
-					Lablets run separately from the main lab meetings, but engage in similar activities, including weekly meetings, reading groups, critiques, brainstorms, activism, tutorials, planning research, and conducting research.
+					Lablets run separately from the main lab meetings.
+					Activities include weekly meetings, reading groups, activism, tutorials, and discussion.
 					It's up to the leader and supervisor to ensure meaningful activities, maintaining a weekly agenda.
-					We provide <a href="https://docs.google.com/spreadsheets/d/1ziwgmDBdCNY1AbhlQti8hgabwhVhwvRpL8xPjknywnQ/edit#gid=1849819586" target="_blank">meeting templates</a> for all of the above activities to help you understand roles and expectations.
+					We provide <a href="https://docs.google.com/spreadsheets/d/1ziwgmDBdCNY1AbhlQti8hgabwhVhwvRpL8xPjknywnQ/edit#gid=1849819586" target="_blank">meeting templates</a> for many of the above activities to help you understand roles and expectations.
 					However, you're always welcome to deviate from them, or suggest improvements to them, by writing Amy a DM in <a href="http://computinged-uw.slack.com" target="_blank">Slack</a>.
 				</p>
 
 				<Linkable app={this.props.app} id="whatlablets">What lablets are being offered?</Linkable>
 				<p>
-					Here are the currently active lablets:
+					Here are the past and future lablets:
 				</p>
 
 				<iframe style={{ width: "100%", height: "20em" }} src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMKVkgWMGoC01z_W9Z9w1XQeMlsi6t6AjaAoTILCWOYqFRctsAzvh3fy78Dv2BvKYXIP3fT_ov8VoO/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
@@ -76,10 +76,10 @@ class Lablets extends React.Component {
 				</p>
 
 				<ul>
-					<li><em>To learn about research</em>. By reading, talking about, and doing research, you'll learn the difference between research and practice.</li>
+					<li><em>To learn about research</em>. By readinga and talking about research, you'll learn the difference between research and practice.</li>
 					<li><em>To find students with shared interests</em>. Lablets bringing together students with shared interests.</li>
-					<li><em>To join the Code &amp; Cognition lab</em>. If you join a lablet that successfully proposes a research project, you'll be invited to join the main lab meetings and get advising from Amy and other lab members.</li>
-					<li><em>To prepare for doctoral studies</em>. Doing research is the best way to prepare to apply to Ph.D. programs.</li>
+					<li><em>To join the Code &amp; Cognition lab</em>. Lablets are a great way to learn about opportunities in the lab; the active lablet leaders are invited to join the main lab meetings and get advising from Amy and other lab members.</li>
+					<li><em>To prepare for doctoral studies and applied research careers.</em></li>
 				</ul>
 
 				<p>Lablet members may:</p>
@@ -89,11 +89,9 @@ class Lablets extends React.Component {
 					<li>Join the first main lab meeting of each quarter to meet Amy and the rest of her lab.</li>
 					<li>Post in <a href="http://computinged-uw.slack.com" target="_blank">ComputingEd@UW Slack</a> #codeandcognitionlab</li>
 					<li>Earn 1 credit by registering for <a href="https://ischool.uw.edu/programs/informatics/curriculum/experiential-learning/independent-study" target="_blank">INFO 499 Independent Study</a> with Amy. To sign up, follow the <a href="https://ischool.uw.edu/programs/informatics/curriculum/experiential-learning/independent-study">instructions for registering for INFO 499</a>; your proposal only needs to mention that you'll be participating in a lablet and the required reflection.</li>
-					<li>Meet graduation requirements, such as research capstones or other requirements related to research.</li>
-					<li>In certain cases, earn hourly or salaried pay, if funding is available.</li>
 				</ul>
 
-				<p>To encourage focus, you can only be part of <strong>one</strong> lablet at a time.</p>
+				<p>To encourage focus and discourage overcommitment, you can only be part of <strong>one</strong> lablet at a time.</p>
 
 				<Linkable app={this.props.app} id="howmuchtime">How much time does a lablet require?</Linkable>
 
@@ -102,6 +100,7 @@ class Lablets extends React.Component {
 					However, to make the most of them, you'll want to have at least a few hours a week to contribute to whatever activities a lablet decides to engage in.
 					It's okay if you're busier some weeks and more available others, or unavailable sometimes.
 					They are not intended to be intense high-commitment activities, just a gentle introduction to computing education research.
+					Don't join one if you don't have the time to engage.
 				</p>
 
 				<Linkable app={this.props.app} id="howtojoin">How do I join a lablet?</Linkable>
@@ -135,7 +134,7 @@ class Lablets extends React.Component {
 				</p>
 
 				<p>
-					You can join a lablet at any time.
+					You can join a lablet at any time, even part way through a quarter.
 					These aren't classes, just informal gatherings.
 				</p>
 
@@ -144,7 +143,6 @@ class Lablets extends React.Component {
 				<p>
 					Always! They shift based on the interests of the supervisor and of the participants.
 					In fact, we might even rename them in the middle of the quarter if a topic goes beyond its title.
-					This is the nature of research.
 				</p>
 
 				<Linkable app={this.props.app} id="howtocreate">How do I create a lablet?</Linkable>
@@ -167,7 +165,7 @@ class Lablets extends React.Component {
 					A good lablet should have a clear purpose. 
 					Why does it exist?
 					Who does it serve?
-					Does it have a particular goal, such as starting a research project, networking, or learning?
+					Does it have a particular goal, such networking or learning?
 					Communicate all of these things at the beginning of a lablet, whenever new students join, and whenever the goals change.
 				</p>
 
@@ -220,29 +218,6 @@ class Lablets extends React.Component {
 					<li>Add the meeting to the Code and Cognition lab calendar so that everyone can discover the meeting time.</li>
 				</ul>				
 
-				<Linkable app={this.props.app} id="research">How does our lablet propose a research project?</Linkable>
-				<p>
-					Any lablet can conduct research without anyone's permission.
-					However, if you want the help of a Amy or her postdocs or doctoral students, you'll need to write a project proposal, which must include:
-				</p>
-
-				<ul>
-					<li><strong>Authors</strong>. A list of people involved in the research, in order of contribution. (The first author in the list is in charge of leading the project and bringing it to completion).</li>
-					<li><strong>Phenomena</strong>. A paragraph describing the phenomena of interest.</li>
-					<li><strong>Prior work</strong>. A paragraph, with citations, describing what prior research has discovered about the phenomenon.</li>
-					<li><strong>Question</strong>. A carefully-worded sentence describing the research question you would like to answer.</li>
-					<li><strong>Method</strong>. A paragraph describing the method(s) you would use for answering the research question.</li>
-				</ul>
-
-				<p>The proposal should be a Google Doc in the <em>Lablets &gt; Proposals</em> folder, set to allow comments from anyone.</p>
-
-				<p>
-					You can submit a proposal at any time to your lablet supervisor via DM in Slack, who will offer you feedback, and may circulate it for feedback to Amy and others.
-					Your lablet might have to iterate several times before it's approved; we might even reject it entirely if it's not a well-formed research project.
-					If it's accepted, however, you'll earn your Amy and your supervisor's attention to bring your project to completion.
-					Everyone who was included on the proposal is welcome to join the main lab meetings to discuss research.
-				</p>
-
 				<Linkable app={this.props.app} id="leave">How do I leave a lablet or move to a new one?</Linkable>
 				<p>
 					If at any point you no longer want to be in your lablet, you may write your leader to let them know.
@@ -289,8 +264,11 @@ class Lablets extends React.Component {
 				<ul>
 					<li>If you <em>participated</em> in a lablet, but did not interact with Amy in a sustained way over a significant period of time, she will write a <strong>templated</strong> letter that explains what lablets are, confirms that you participated in one, and include a personalized statement from your lablet supervisor. This won't be a very helpful letter, since it will read as a slightly personalized form letter, but it will at least indicate participation, interest, and help you meet whatever unreasonable and oppressive requirements some employer or school has set about letters.</li>
 					<li>If you <em>led</em> a lablet, Amy will meet with you, discuss your experiences and interests, and write a short letter. This will be more valuable than the templated letter above.</li>
-					<li>If you <em>collaborated</em> with Amy on research or another project, she will write a detailed, personalized letter, as she's always done for undergraduates who engage in research with her.</li>
 				</ul>
+
+				<p>
+					If you're looking for a letter, lead.
+				</p>
 
 				<Linkable app={this.props.app} id="otherparticipation">Are there other ways I can participate in the lab other than lablets?</Linkable>
 				
