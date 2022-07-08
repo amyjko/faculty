@@ -67,6 +67,20 @@
 	},
 	"pubs": [
 		{
+			"id": "teachermotives",
+			"kind": "refereed conference paper",
+			"authors": ["@jayne", "@ajko"],
+			"deadname": false,
+			"year": 2022,
+			"title": "“I would be afraid to be a bad CS teacher”: Factors Influencing Participation in Pre-Service Secondary CS Teacher Education",
+			"source": "@icer",
+			"pages": null,
+			"publisher": "ACM",
+			"doi": null,
+			"local": "Everson2022TeacherMotivation.pdf",
+			"contribution": "Finds that teacher candidates displayed many conceptions of justice that motivated them to teach CS, including repairing past wrongs in education, improving representation, and expanding literacy, but fears of added course preparation and opportunity costs were signficant deterrents."
+		},
+		{
 			"id": "demographics",
 			"kind": "refereed conference paper",
 			"authors": ["@olesona", "@bxie", "@salac", "@jayne", "@megumi", "@ajko"],
