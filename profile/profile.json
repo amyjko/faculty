@@ -103,9 +103,9 @@
 			"year": 2022,
 			"title": "The Landscape of Teaching Resources for AI Education",
 			"source": "@iticse",
-			"pages": null,
+			"pages": "96-102",
 			"publisher": "ACM",
-			"doi": null,
+			"doi": "https://doi.org/10.1145/3502718.3524782",
 			"local": "Druga2022AIResources.pdf",
 			"contribution": "Finds that most AI education resources do not consider teacher needs and do not align with emerging AI literacy standards."
 		},
