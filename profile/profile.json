@@ -48,6 +48,10 @@
 			"name": "ACM Transactions on Computing Education",
 			"short": "TOCE"
 		},
+		"tochi": {
+			"name": "ACM Transactions on Computer-Human Interaction",
+			"short": "TOCHI"
+		},
 		"uist": {
 			"name": "ACM Symposium on User Interface Software and Technology (UIST)",
 			"short": "UIST"
@@ -66,6 +70,20 @@
 		}
 	},
 	"pubs": [
+		{
+			"id": "cider",
+			"kind": "journal article",
+			"authors": ["@olesona", "@meron", "Christopher Perdriau", "@ajko"],
+			"deadname": false,
+			"year": 2022,
+			"title": "“Teaching inclusive design skills with the CIDER assumption elicitation technique",
+			"source": "@tochi",
+			"pages": null,
+			"publisher": "ACM",
+			"doi": "https://doi.org/10.1145/3549074",
+			"local": "Oleson2022CIDER.pdf",
+			"contribution": "Contributes a teaching method for helping students identify design assumptions that exclude."
+		},
 		{
 			"id": "teachermotives",
 			"kind": "refereed conference paper",
