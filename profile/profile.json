@@ -8070,6 +8070,32 @@
 	],
 	"travel": [
 		{
+			"url": null,
+			"title": "Simon Fraser University",
+			"details": "I'm visiting the faculty and students to talk about computing education research.",
+			"category": "research",
+			"commitment": {
+				"start": "2022-09-19",
+				"end": "2022-09-20",
+				"hours": 16,
+				"priority": 2
+			},
+			"report": null
+		},
+		{
+			"url": "https://icer2022.acm.org/",
+			"title": "2022 ACM International Computing Education Research Conference",
+			"details": "I'm attending and have two student-led papers we'll present.",
+			"category": "research",
+			"commitment": {
+				"start": "2022-08-04",
+				"end": "2022-08-12",
+				"hours": 40,
+				"priority": 2
+			},
+			"report": null
+		},
+		{
 			"url": "https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22302",
 			"title": "Dagstuhl on Educational Programming Languages and Systems",
 			"details": "I'm attending this workshop as a participant.",
@@ -8093,7 +8119,7 @@
 				"hours": 40,
 				"priority": 2
 			},
-			"report": null
+			"report": "https://medium.com/bits-and-behavior/dagstuhl-trip-report-theories-of-programming-382543a3e540"
 		},
 		{
 			"url": null,
@@ -8106,7 +8132,7 @@
 				"hours": 24,
 				"priority": 2
 			},
-			"report": null
+			"report": "https://medium.com/bits-and-behavior/chi-2022-ecep-2022-equity-oh-my-40f3ffdf816"
 		},
 		{
 			"url": "https://sigcse2022.sigcse.org",
