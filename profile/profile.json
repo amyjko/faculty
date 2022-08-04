@@ -3790,6 +3790,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/dagstuhl-trip-report-educational-programming-languages-ad9117ee615b",
+			"title": "Dagstuhl trip report: Educational programming languages",
+			"date": "2022.8",
+			"tags": ["trip report", "K-12", "teaching", "computing education"],
+			"img": "edpldagstuhl",
+			"alt": "A group of researchers and two children standing on tiered steps facing the camera directly."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/csta-2022-trip-report-teaching-equity-and-a-bit-of-professional-healing-46e48982d9d7",
 			"title": "CSTA 2022 trip report: teaching, equity, and a bit of professional healing",
 			"date": "2022.7",
