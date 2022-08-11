@@ -3790,6 +3790,14 @@
 	],
 	"posts": [
 		{
+			"url": "https://medium.com/bits-and-behavior/icer-2022-trip-report-together-again-as-bits-and-atoms-7ccf0440d1ec",
+			"title": "ICER 2022 trip report: Together again, as bits and atoms",
+			"date": "2022.8",
+			"tags": ["trip report", "computing education"],
+			"img": "icer22",
+			"alt": "A mountain top view of the northwest end of Lake Lugano and the city of Lugano tightly nested around it, with many larger mountain ranges in the hazy distance."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/dagstuhl-trip-report-educational-programming-languages-ad9117ee615b",
 			"title": "Dagstuhl trip report: Educational programming languages",
 			"date": "2022.8",
