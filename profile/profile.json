@@ -5993,6 +5993,18 @@
 	"impacts": [
 		{
 			"kind": "press",
+			"start": 2022,
+			"end": 2022,
+			"description": "I was interviewed about coding bootcamps.",
+			"url": "https://prismreports.org/2022/08/12/for-profit-coding-boot-camps-prey-bipoc/",
+			"title": "For-profit coding boot camps prey on BIPOC workers",
+			"author": "Sravya Tadepalli",
+			"source": "Prism Reports",
+			"projects": ["csdiversity", "pllearning"],
+			"who": "public"
+		},
+		{
+			"kind": "press",
 			"start": 2020,
 			"end": 2020,
 			"description": "I was interviewed about the impact of online learning on learning to code.",
