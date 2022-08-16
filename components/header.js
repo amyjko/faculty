@@ -23,7 +23,7 @@ class Header extends React.Component {
  							<br/>
 							<a href="https://ap.washington.edu/ahr/academic-titles-ranks/professor/" target="_blank">Professor</a>
 							<span className="hidden-xs">
-								&nbsp;&sdot; <a href="https://ischool.uw.edu/academics/informatics">Program Chair, <em>Informatics</em></a>
+								{/* &nbsp;&sdot; <a href="https://ischool.uw.edu/academics/informatics">Program Chair, <em>Informatics</em></a> */}
 								&nbsp;&sdot; <a href="https://dl.acm.org/journal/toce" target="_blank">Editor-in-Chief, <em>ACM TOCE</em></a>
 							</span>
 							<br/>
