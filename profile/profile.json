@@ -92,9 +92,9 @@
 			"year": 2022,
 			"title": "“I would be afraid to be a bad CS teacher”: Factors Influencing Participation in Pre-Service Secondary CS Teacher Education",
 			"source": "@icer",
-			"pages": null,
+			"pages": "237-246",
 			"publisher": "ACM",
-			"doi": null,
+			"doi": "https://doi.org/10.1145/3501385.3543966",
 			"local": "Everson2022TeacherMotivation.pdf",
 			"contribution": "Finds that teacher candidates displayed many conceptions of justice that motivated them to teach CS, including repairing past wrongs in education, improving representation, and expanding literacy, but fears of added course preparation and opportunity costs were signficant deterrents."
 		},
@@ -107,9 +107,9 @@
 			"year": 2022,
 			"title": "A decade of demographics in computing education research: A critical review of trends in collection, reporting, and use",
 			"source": "@icer",
-			"pages": null,
+			"pages": "323–343",
 			"publisher": "ACM",
-			"doi": null,
+			"doi": "https://doi.org/10.1145/3501385.3543967",
 			"local": "OlesonXie2022Demographics.pdf",
 			"contribution": "Finds that most computing education research studied adults, did not mention how demographics data was gathered, and used imprecise and sometimes hegemonic aggregate terms about diversity."
 		},
