@@ -144,7 +144,7 @@
 		{
 			"id": "ccc",
 			"kind": "book",
-			"authors": ["@ajko", "Anne Beitlers", "@brettwo", "@mattjd", "@olesona", "@mararyan", "@st3f"],
+			"authors": ["@ajko", "Anne Beitlers", "@brettwo", "@mattjd", "@olesona", "@mararyan", "@st3f", "@jayne"],
 			"deadname": false,
 			"year": 2021,
 			"title": "Critically Conscious Computing: Methods for Secondary Education",
