@@ -2434,6 +2434,20 @@
 	],
 	"people": [
 		{
+			"id": "emans",
+			"name": "Eman Sharif",
+			"active": true,
+			"advised": true,
+			"level": "phd",
+			"dept": "Computer Science",
+			"coadvisor": null,
+			"bio": "Eman is a PhD student in Computer Science and Engineering. She is interested in broadening participation in computing through social justice oriented curricula.",
+			"url": "https://scholar.google.com/citations?user=aPnsRikAAAAJ&hl=en",
+			"startdate": 2022,
+			"enddate": null,
+			"achievements": []
+		},
+		{
 			"id": "audreylm",
 			"name": "Audrey Le Meur",
 			"active": true,
