@@ -32,7 +32,7 @@ class Chunk extends React.Component {
 		var six = this.convertArrayToNote(this.props.six);
 
 		return (
-			<div className={"chunk " + (this.props.wrap ? "col-md-6" : "col-md-12")} style={ this.props.clear ? { clear: "both" } : null}>
+			<div className={"chunk " + (this.props.wrap ? "col-sm-6 col-md-6" : "col-sm-12 col-md-12")} style={ this.props.clear ? { clear: "both" } : null}>
 				<div className={"row"}>
 					<div className="col-md-2 date">
 						{this.props.start + (end ? "-" : "")}{end}
