@@ -7752,6 +7752,60 @@
 	],
 	"funding": [
 		{
+			"id": "googlestepcsgift",
+			"title": "STEP CS scholarships",
+			"funder": "Google",
+			"award": null,
+			"investigators": "Amy J. Ko (PI), Anne Beitlers (Co-PI)",
+			"amount": "$400,000",
+			"category": "service",
+			"description": "An unrestricted gift to support the STEP CS program.",
+			"url": null,
+			"private": false,
+			"commitment": {
+				"start": "2022-09-15",
+				"end": "2026-09-15",
+				"hours": 0,
+				"priority": 1
+			}
+		},
+		{
+			"id": "provoststep",
+			"title": "Supporting CS teacher pathways",
+			"funder": "UW Provost's Office",
+			"award": null,
+			"investigators": "Amy J. Ko (PI), Anne Beitlers (Co-PI)",
+			"amount": "$200,000",
+			"category": "service",
+			"description": "Provides two years of tuition subsidy for the new STEP CS secondary CS teacher education program in the College of Education.",
+			"url": null,
+			"private": false,
+			"commitment": {
+				"start": "2022-09-15",
+				"end": "2024-09-15",
+				"hours": 0,
+				"priority": 1
+			}
+		},
+		{
+			"id": "nsfstepcssupplement",
+			"title": "Supplement for Grade 6-12 Data Science Education",
+			"funder": "National Science Foundation",
+			"award": "#2031265",
+			"investigators": "Amy J. Ko (PI), Anne Beitlers (Co-PI)",
+			"amount": "$200,000",
+			"category": "service",
+			"description": "Provides tuition subsidy for the new STEP CS secondary CS teacher education program in the College of Education, with a focus on data science education.",
+			"url": null,
+			"private": false,
+			"commitment": {
+				"start": "2022-09-15",
+				"end": "2024-09-15",
+				"hours": 0,
+				"priority": 1
+			}
+		},
+		{
 			"id": "ecep3",
 			"title": "Equity in Computing Education Policies, Pathways, and Practices",
 			"funder": "National Science Foundation",
