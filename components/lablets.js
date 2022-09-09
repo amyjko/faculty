@@ -10,8 +10,8 @@ class Lablets extends React.Component {
 				</div>
 
 				<p className="alert alert-danger">
-					No lablets in Summer 2022.
-					We will resume in Autumn 2022.
+					Amy is on sabbatical.
+					Please check the spreadsheet below to see if any of her postdocs or PhD students are organizing lablets this quarter.
 				</p>
 
 				<p className="alert alert-danger">
