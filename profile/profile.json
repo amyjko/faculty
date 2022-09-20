@@ -8727,6 +8727,19 @@
 	],
 	"talks": [
 		{
+			"date": "2022-09-20",
+			"image": "sfu22.jpg",
+			"alt": "",
+			"slides": "slides/SFU22.pdf",
+			"title": "The Promise and Problems of CS for All",
+			"venue": "Simon Fraser University, British Columbia, Canada",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "I make the case for computing literacy, sample from my lab's many discoveries over the past decade, and call the audience to action to contribute.",
+			"keynote": false
+		},
+		{
 			"date": "2021-11-19",
 			"image": "cuboulderics21.jpg",
 			"alt": "The title slide, which says 'Programming as cognition, programming as politics'.",
