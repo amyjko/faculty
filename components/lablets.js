@@ -60,13 +60,21 @@ class Lablets extends React.Component {
 
 				<Linkable app={this.props.app} id="whatlablets">What lablets are being offered?</Linkable>
 				<p>
-					Here are the past and future lablets:
+					Below are the past and future lablets. 
+					Note that we don't necessarily offer one every quarter; it depends on our availability.
 				</p>
 
 				<iframe style={{ width: "100%", height: "20em" }} src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMKVkgWMGoC01z_W9Z9w1XQeMlsi6t6AjaAoTILCWOYqFRctsAzvh3fy78Dv2BvKYXIP3fT_ov8VoO/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 				<p>
 					You can see when the lablets (and main lab meeting) are scheduled by subscribing to our lab calendar (add <strong>codeandcognition@uw.edu</strong> if using UW G Suite, download this <a href="https://calendar.google.com/calendar/ical/codeandcognition%40uw.edu/public/basic.ics">ICS file</a> otherwise).
+				</p>
+
+				<Linkable app={this.props.app} id="1styear">Can I join as a 1st year student with no research experience?</Linkable>
+
+				<p>
+					Yes, definitely.
+					That's exactly why we started doing lablets &mdash; to give students a front door to learning about research.
 				</p>
 
 				<Linkable app={this.props.app} id="whylablet">Why would I want to join a lablet?</Linkable>
@@ -91,7 +99,10 @@ class Lablets extends React.Component {
 					<li>Earn 1 credit by registering for <a href="https://ischool.uw.edu/programs/informatics/curriculum/experiential-learning/independent-study" target="_blank">INFO 499 Independent Study</a> with Amy. To sign up, follow the <a href="https://ischool.uw.edu/programs/informatics/curriculum/experiential-learning/independent-study">instructions for registering for INFO 499</a>; your proposal only needs to mention that you'll be participating in a lablet and the required reflection.</li>
 				</ul>
 
-				<p>To encourage focus and discourage overcommitment, you can only be part of <strong>one</strong> lablet at a time.</p>
+				<p>
+					To encourage focus and discourage overcommitment, you can only be part of <strong>one</strong> lablet at a time.
+					But you can participate for as many quarters as you like (assuming we're offering one every quarter.)
+				</p>
 
 				<Linkable app={this.props.app} id="howmuchtime">How much time does a lablet require?</Linkable>
 
@@ -101,6 +112,12 @@ class Lablets extends React.Component {
 					It's okay if you're busier some weeks and more available others, or unavailable sometimes.
 					They are not intended to be intense high-commitment activities, just a gentle introduction to computing education research.
 					Don't join one if you don't have the time to engage.
+				</p>
+
+				<p>
+					Because lablets are such a small time committment, it is generally not possible to engage in main lab research projects, or even to start research projects in the lablet.
+					There simply isn't enough time.
+					I recommend using lablets as a way to learn about research, and then if you like it, pursuing more intensive research experiences, especially in summer.
 				</p>
 
 				<Linkable app={this.props.app} id="howtojoin">How do I join a lablet?</Linkable>
