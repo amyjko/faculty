@@ -7352,6 +7352,20 @@
 	],
 	"service": [
 		{
+			"title": "Panel Member",
+			"committee": "Kaiser Permanente Gender Health Advisory Panel",
+			"start": 2021,
+			"end": null,
+			"level": "regional",
+			"description": "Along with a group of a dozen other trans and non-binary community members, I provide guidance, ideas, feedback, and advocacy to Kaiser on their gender health services.",
+			"commitment": {
+				"start": "2021-02-01",
+				"end": null,
+				"hours": 1,
+				"priority": 0
+			}
+		},
+		{
 			"title": "Executive Board Member",
 			"committee": "Expanding Computing Education Pathways Alliance (ECEP)",
 			"start": 2021,
