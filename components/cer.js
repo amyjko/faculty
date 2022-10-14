@@ -411,11 +411,11 @@ class CER extends React.Component {
 				<ul>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505359" target="_blank">NSF CS for All</a>. Funds basic research on CS education as well as researcher-practitioner partnerships focused on building K-12 CS education capacity, access, participation, and engagement.</li>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505082" target="_blank">NSF IUSE</a>. Funds programs that improve the quality of and access to STEM education in undergraduate programs. Does not directly fund basic research.</li>
+					<li><a href="https://www.nsf.gov/div/index.jsp?div=DUE" target="_blank">NSF DUE</a>. Funds innovations in STEM education at 2- and 4-year colleges.</li>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=5467" target="_blank">NSF ITEST</a>. Funds programs that broaden participation in STEM. Does not directly fund basic research.</li>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=500047" target="_blank">NSF DRK-12</a>. Funds projects that enhance the quality of and access to STEM education in K-12, including basic research.</li>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504984" target="_blank">NSF RETTL</a>. Funds projects on Emerging Technologies for Teaching and Learning, including intelligent tutors, computer-based instruction, computational tools for learning, etc.</li>
 					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504924" target="_blank">NSF EHR CORE Research</a>. Funds basic education research. Not CS specific, but it has separate tracks within its reviewing structure for CS and engineering.</li>
-					<li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=13707" target="_blank">NSF IIS Cyber-Human Systems</a>. Funds HCI research. Not CS specific, but is very supportive of educational technologies that advance the capabilities of human expression.</li>
 				</ul>
 			</Section>,
 			<Section id="being-impactful" header="What do I need to know to be an effective, impactful computing education researcher?">
