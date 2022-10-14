@@ -57,7 +57,7 @@ class Vita extends React.Component {
 	getPapers(kind, splitByYears=false, columns=false) {
 		
 		var pubs = this.props.app.getProfile().getPublications(
-			pub => pub.kind === kind,
+			kind instanceof Function ? kind : pub => pub.kind === kind,
 			pub => -pub.year
 		);
 
@@ -253,13 +253,9 @@ class Vita extends React.Component {
 			
 				<p><small>Authorship order indicates the scope of my intellectual contribution to the work. However, because I collaborate closely with my Ph.D. students on research, they are first author on many of my key publications.</small></p>
 
-				<h2>Refereed Conference Papers</h2>
+				<h2>Refereed Conference + Journal Articles</h2>
 
-				{this.getPapers("refereed conference paper", true)}				
-
-				<h2>Journal Articles</h2>
-				
-				{this.getPapers("journal article", true, false)}
+				{this.getPapers(pub => pub.kind === "journal article" || pub.kind === "refereed conference paper", true)}				
 							
 				<h2>Refereed Workshop Papers</h2>
 				
