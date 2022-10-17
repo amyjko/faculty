@@ -37,7 +37,7 @@
 		header={post.title}
 	>
 		<svelte:fragment slot="image">
-			{#if post.img !== null }
+			{#if post.img }
 				<Image url={"/images/posts/post-" + post.img + ".jpg"} alt={post.alt ?? "Sorry, no description for this image yet!"}/>
 			{/if}
 		</svelte:fragment>
