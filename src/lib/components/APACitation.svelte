@@ -1,0 +1,26 @@
+<script lang="ts">
+
+    import type { Paper } from "$lib/models/Paper";
+    import Authors from "./Authors.svelte";
+    import { profile } from "$lib/models/stores";
+
+    export let paper: Paper;
+
+</script>
+
+<div class="ws-bottom">
+    <div id={ "citation-" + paper.id }>
+        <Authors paper={ paper }/>
+        ({paper.year}).
+        <strong>{ paper.title }</strong>
+        { paper.title.charAt(paper.title.length - 1) === "?" ? "" : "." }
+        <em>{$profile.getSourceName(paper.source)}</em>
+        { paper.doi ? " " + paper.doi : ""}
+        {#if paper.award && paper.award.length > 0}
+            <span>
+                <br/>
+                <span class="award">{ paper.award.join(" + ") }</span>
+            </span>
+        {/if}
+    </div>
+</div>

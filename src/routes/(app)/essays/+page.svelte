@@ -1,0 +1,54 @@
+<script lang="ts">
+
+	import Block from "$lib/components/Block.svelte";
+    import External from "$lib/components/External.svelte";
+	import Facets from "$lib/components/Facets.svelte";
+	import { profile } from "$lib/models/stores";
+	import Image from "$lib/components/Image.svelte";
+
+	let filter: Record<string, string> = {};
+
+	function setFilter(tag: Record<string, string>) {
+		filter = tag;
+	}
+
+</script>
+
+<div class="lead">
+	I <External to="https://amyjko.medium.com">blog</External> on my lab's Medium publication, <External to="https://medium.com/bits-and-behavior">Bits and Behavior</External>.
+</div>
+
+<p>
+	Filter by topic.
+</p>
+
+<Facets
+	facets={$profile.getPostTags()}
+	update={setFilter}
+/>
+
+{#each $profile.getPosts(
+		post => !("topic" in filter) || post.tags.includes(filter.topic),
+		post => -($profile.getPostMontYear(post).year * 12 + $profile.getPostMontYear(post).month)
+	) as post }
+	{@const date = $profile.getPostMontYear(post) }
+	<Block
+		link={post.url}
+		header={post.title}
+	>
+		<svelte:fragment slot="image">
+			{#if post.img !== null }
+				<Image url={"/images/posts/post-" + post.img + ".jpg"} alt={post.alt ?? "Sorry, no description for this image yet!"}/>
+			{/if}
+		</svelte:fragment>
+		<p>
+			<small>{ date.month + "/" + date.year }</small>
+			<br/>
+			{#each post.tags as tag}
+				<mark class={"topic" + (filter.topic === tag ? " selected" : "")}>
+					<small>{tag}</small>
+				</mark>
+			{/each}
+		</p>
+	</Block>
+{/each}
