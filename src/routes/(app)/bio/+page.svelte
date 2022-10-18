@@ -198,3 +198,13 @@
 	That same year, I was promoted to Professor, and pivoted my research to have a more critical stance, exploring literacies in both the powers and perils of computing and investigating CS teacher education.
 	Shortly after I came out, the COVID-19 pandemic arrived, and my lab and I went into survival mode, slowing down our work and doing our best to care for each other while in lockdown.
 </p>
+
+<style>
+	.img-float {
+		margin-top: 0.5em;
+		margin-left: 1em;
+		margin-bottom: 1em;
+		border-radius: 4px;
+		max-width: 20%;
+	}
+</style>

@@ -24,3 +24,18 @@
         {/if}
     </div>
 </div>
+
+<style>
+    .ws-bottom {
+        padding-bottom: 20px;
+    }
+
+    .award {
+        padding: 0;
+        background: none;
+        color: black;
+        font-weight: 700;
+        display: block;
+    }
+
+</style>

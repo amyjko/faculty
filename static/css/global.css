@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:wght@600&display=swap');
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+	  max-width: 42em;
+  }
+}
+
+.container:focus {
+	outline: none;
+}
+
+.container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+body {
+	font-weight: 300;
+	font-family: "Lato", sans-serif;
+	font-size: 13pt;
+	line-height: 1.5em;
+}
+
+.lead {
+	font-size: 24px;
+}
+
+b, strong {
+	font-weight: 400;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+}
+
+h3.linked {
+	text-decoration-line: underline;
+	text-decoration-color: #337ab7;
+}
+
+img.link {
+	height: 1em;
+}
+
+.table > tbody > tr > td {
+    vertical-align: top;
+	border-top: 0px solid #ddd;
+}
+
+table > tbody > tr > td {
+	vertical-align: top;
+	padding: 0.25em;
+	border-top: 0px solid #ddd;
+}
+
+.row h4 {
+	margin-top: 0;
+}
+
+.row {
+	margin-bottom: 10px;
+}
+
+.top-bordered {
+	margin-top: 0.25em;
+	padding-top: 0.25em;
+	border-top: 1px solid #EEEEEE;
+}
+
+.student-mug {
+	opacity: 0.5;
+}
+
+.student-mug:hover {
+	opacity: 1.0;
+}
+
+a:hover, .clickable {
+ cursor: pointer;
+}
+
+.img-thumbnail {
+	padding: 0;
+	border: none;
+	margin-top: 0.5em;
+	filter: drop-shadow(0.25em .25em .25em rgba(0,0,0,0.1));
+	border-radius: 10px;
+}

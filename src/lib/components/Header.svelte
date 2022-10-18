@@ -61,3 +61,20 @@
 		</ul>
 	</nav>
 </div>
+
+<style>
+	.header {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-top: 1px solid #e5e5e5;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	:global(.nav > li > a){
+		margin: 2px;
+		padding: 5px;
+	}
+
+</style>

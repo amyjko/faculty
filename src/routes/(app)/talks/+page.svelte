@@ -31,7 +31,7 @@
 			<br/><small>{#if date instanceof Date}{months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear()}{/if}</small>
 			<br/><small>{talk.description}</small>
 			<br/>
-			<div class="border-top">
+			<div class="top-bordered">
 				<small>
 					{#if talk.recording}
 						<External to={talk.recording}>Recording</External>

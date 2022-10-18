@@ -8,12 +8,12 @@
     import DateRange from "./DateRange.svelte";
     import months from "./months";
 
-    const colors = {
-        "research": "rgb(210,210,255)",
-        "teaching": "rgb(195,240,195)",
-        "service": "rgb(255,222,162)",
-        "personal": "rgb(220,220,220)"
-    };
+    // const colors = {
+    //     "research": "rgb(210,210,255)",
+    //     "teaching": "rgb(195,240,195)",
+    //     "service": "rgb(255,222,162)",
+    //     "personal": "rgb(220,220,220)"
+    // };
 
     // Build a huge list of commitments from the profile
     let commitments: Commit[] = [];
@@ -37,43 +37,41 @@
         return date === null ? null : parseDate(date)
     }
 
-    function getPreviousMonday() {
+    // function getPreviousMonday() {
 				
-        const date = new Date();
-        const day = date.getDay();
-        let prevMonday;
-        if(date.getDay() === 1) {
-            prevMonday = new Date().setDate(date.getDate() - 7);
-        }
-        else {
-            prevMonday = new Date().setDate(date.getDate() - day + 1);
-        }
+    //     const date = new Date();
+    //     const day = date.getDay();
+    //     let prevMonday;
+    //     if(date.getDay() === 1) {
+    //         prevMonday = new Date().setDate(date.getDate() - 7);
+    //     }
+    //     else {
+    //         prevMonday = new Date().setDate(date.getDate() - day + 1);
+    //     }
     
-        return new Date(prevMonday);
+    //     return new Date(prevMonday);
 
-    }
+    // }
 
-    function datesIntersect(date1Start: Date, date1End: Date, date2Start: Date, date2End: Date) {
-        // The beginning of the second range is within the first range.
-        // Compute the proportion of a week.
-        if(date2Start.getTime() >= date1Start.getTime() && date2Start.getTime() < date1End.getTime()) {
-            return (date1End.getTime() - date2Start.getTime()) / 1000 / 60 / 60 / 24 / 7;
-        }
-        // The second range completely subsumes the first range.
-        else if(date2Start.getTime() < date1Start.getTime() && date2End.getTime() >= date1End.getTime()) {
-            return 1;
-        }
-        // The end of the second range is within the first range.
-        else if(date2End.getTime() >= date1Start.getTime() && date2End.getTime() < date1End.getTime()) {
-            return (date2End.getTime() - date1Start.getTime()) / 1000 / 60 / 60 / 24 / 7;
-        }
-        // If none of the above apply, then there is no intersection. Return 0% overlap.
-        else {
-            return 0;
-        }        
-    }
-
-
+    // function datesIntersect(date1Start: Date, date1End: Date, date2Start: Date, date2End: Date) {
+    //     // The beginning of the second range is within the first range.
+    //     // Compute the proportion of a week.
+    //     if(date2Start.getTime() >= date1Start.getTime() && date2Start.getTime() < date1End.getTime()) {
+    //         return (date1End.getTime() - date2Start.getTime()) / 1000 / 60 / 60 / 24 / 7;
+    //     }
+    //     // The second range completely subsumes the first range.
+    //     else if(date2Start.getTime() < date1Start.getTime() && date2End.getTime() >= date1End.getTime()) {
+    //         return 1;
+    //     }
+    //     // The end of the second range is within the first range.
+    //     else if(date2End.getTime() >= date1Start.getTime() && date2End.getTime() < date1End.getTime()) {
+    //         return (date2End.getTime() - date1Start.getTime()) / 1000 / 60 / 60 / 24 / 7;
+    //     }
+    //     // If none of the above apply, then there is no intersection. Return 0% overlap.
+    //     else {
+    //         return 0;
+    //     }        
+    // }
 
     const thisYear = (new Date()).getFullYear();
 
@@ -443,3 +441,77 @@ weeks.forEach((week, index) => {
 </table>
 
 -->
+
+<style>
+    .bar {
+        display: inline-block;
+        padding: 5px;
+        font-size: 75%;
+        min-height: 1em;
+        min-width: 2em;
+        overflow: hidden;
+        margin-right: 1px;
+        vertical-align: middle;
+    }
+
+    .personal {
+        color:  rgb(180,180,180);
+    }
+    .bar.personal {
+        background-color: rgb(180,180,180);
+        color: white;
+    }
+
+    .research {
+        color: #81c3fc;
+    }
+    .bar.research {
+        background-color: #81c3fc;
+        color: white;
+    }
+
+    .teaching {
+        color: rgb(135, 207, 135);
+    }
+    .bar.teaching {
+        background-color: rgb(135, 207, 135);
+        color: white;
+    }
+
+    .service {
+        color: rgb(255, 199, 96);
+    }
+    
+    .bar.service {
+        background-color: rgb(255, 199, 96);
+        color: white;
+    }
+
+    .shake {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.5s; 
+
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite; 
+    }
+
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -1px) rotate(-0.25deg); }
+        20% { transform: translate(-1px, 0px) rotate(0.25deg); }
+        30% { transform: translate(1px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(0.25deg); }
+        50% { transform: translate(-1px, 1px) rotate(-0.25deg); }
+        60% { transform: translate(-1px, 1px) rotate(0deg); }
+        70% { transform: translate(1px, 1px) rotate(-0.25deg); }
+        80% { transform: translate(-1px, -1px) rotate(0.25deg); }
+        90% { transform: translate(1px, 1px) rotate(0deg); }
+        100% { transform: translate(1px, -1px) rotate(-0.25deg); }
+    }
+
+    .commitment-notes {
+        font-size: 8pt;
+        line-height: 1.5em;
+    }
+
+</style>

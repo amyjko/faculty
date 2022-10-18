@@ -291,3 +291,43 @@
 	{/each}
 
 </div>
+
+<style>
+	.cv {
+		font-size: 12pt;
+		line-height: 1.4em;
+	}
+
+	.cv h1, .cv h2, .cv h3, .cv h4 {
+		clear: both;
+	}
+
+	.cv h1 {
+		font-size: 180%;
+	}
+
+	.cv h2 {
+		font-size: 150%;
+	}
+
+	.cv h3 {
+		font-size: 130%;
+	}
+
+	.cv h4 {
+		font-size: 110%;
+	}
+
+	.cv .table {
+		margin-bottom: 3em;
+	}
+
+	@media print {
+	
+		h1, h2, h3, h4 {
+			page-break-after: avoid;
+		}
+	}
+
+</style>
+

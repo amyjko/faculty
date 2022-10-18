@@ -39,3 +39,20 @@
     {/each}
     </p>
 {/each}
+
+<style>
+    .topic {
+        display: inline-block;
+    }
+
+    mark {
+        background-color: #f1f6fe;
+        border-radius: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 6px;
+        padding-right: 6px;
+        margin: 3px;
+    }
+
+</style>

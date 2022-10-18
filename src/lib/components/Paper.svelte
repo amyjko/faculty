@@ -94,7 +94,7 @@
 			{/if}
 			<br/><small><em>{$profile.getSourceName(paper.source)}</em></small>
 			{#if paper.contribution}<span><br/><em class="text-muted small">{paper.contribution}</em></span>{/if}
-			<div class="border-top">
+			<div class="top-bordered">
 				<small>
 					<span class="clickable" tabIndex=0 on:click={toggle} on:keydown={(event) => event.key === "Enter" ? toggle() : undefined}>{apa ? "▾ cite" : "▸ cite"}</span>
 					{#if paper.local}<span> &sdot; <Link to={getLocalURL()}>pdf</Link></span>{/if}
@@ -102,8 +102,23 @@
 					{#if paper.blog}<span> &sdot; <External to={paper.blog}>blog post</External></span>{/if}
 				</small>
 			</div>
-			{#if apa}<div class="border-top"><small><APACitation paper={paper}/></small></div>{/if}
+			{#if apa}<div class="top-bordered"><small><APACitation paper={paper}/></small></div>{/if}
 
 		</div>	
 	</Block>
 {/if}
+
+<style>
+	.ws-bottom {
+		padding-bottom: 20px;
+	}
+
+	.award {
+		padding: 3px;
+		font-variant: small-caps;
+		display: inline-block;
+		margin-bottom: 3px;
+		border-radius: 3px;
+	}
+
+</style>

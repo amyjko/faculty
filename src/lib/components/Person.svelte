@@ -25,7 +25,7 @@
             <br/>
             {person.bio}
             {#if person.dissertation }
-                <div class="border-top">
+                <div class="top-bordered">
                     <small>
                         <Link to={"/dissertations/" + person.dissertation}>Dissertation</Link>
                     </small>

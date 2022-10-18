@@ -23,3 +23,10 @@
 		<slot></slot>
 	</div>
 </div>
+
+<style>
+	.project {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+</style>
