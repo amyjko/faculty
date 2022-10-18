@@ -5,25 +5,17 @@
 	import Link from "$lib/components/Link.svelte";
     import Paper from "$lib/components/Paper.svelte";
 	import { profile } from "$lib/models/stores";
-
-// return (
-// 			<div>
-// 				<div className='lead'>
-// 					These are questions I'm frequently asked.
-// 				</div>
-
-// 				<ul>
-// 					{ sections.map((section, index) => <li key={"section-" + index}><HashLink smooth to={"#" + section.props.id}>{section.props.header}</HashLink></li>) }
-// 				</ul>
-				
-// 				{ sections.map(section => React.cloneElement(section, { app: this.props.app })) }
-
-// 			</div>
-// 		);
+    import SectionList from "../../../lib/components/SectionList.svelte";
 
 	const guide = $profile.getPublication("practicalguide");
 
 </script>
+
+<div class='lead'>
+	These are questions I'm frequently asked.
+</div>
+
+<SectionList/>
 
 <Section id="recommendations" header="Will you write me a letter of recommendation?">
 <p>

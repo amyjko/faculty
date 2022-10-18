@@ -2,13 +2,16 @@
 	import Section from '$lib/components/Section.svelte';
 	import External from '$lib/components/External.svelte';
 	import advisors from '$lib/models/advisors';
+    import SectionList from '../../../lib/components/SectionList.svelte';
 </script>
 
 <div class="lead">
-	This is my computing education research FAQ, which I began with the help of several computing education researchers at a Dagstuhl retreat in 2016. I consider it a community resource, so if you see something to add, fix, or improve, write me, or submit <External to="https://github.com/amyjko/faculty/issues">an issue</External> or <External to="https://github.com/amyjko/faculty/pulls">pull request</External>.
+	This is my computing education research FAQ, which I began with the help of several computing education researchers at a Dagstuhl retreat in 2016. 
+	I consider it a community resource, so if you see something to add, fix, or improve, write me, or submit <External to="https://github.com/amyjko/faculty/issues">an issue</External> or 
+	<External to="https://github.com/amyjko/faculty/pulls">pull request</External>.
 </div>
 
-<hr/>
+<SectionList />
 
 <p>
 	Computing education research (CER), also known as computer science education (CSEd) research, is the study of how people learn and teach computing, broadly construed. 

@@ -20,7 +20,7 @@
 
 </script>
 
-<h3 id={id} class={isLinked() ? "linked" : null}>
+<h3 id={id} class={`section ${isLinked() ? "linked" : ""}`}>
     <slot />
     <Link
         to={$page.url.pathname + "#" + id}
