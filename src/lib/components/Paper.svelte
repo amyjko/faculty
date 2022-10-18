@@ -13,6 +13,7 @@
 	export let paper: Paper;
 	export let format: "apa" | "cv" | "full" = "full";
 	export let highlight: boolean = false;
+	export let year: boolean = true;
 
 	let apa = false;
 
@@ -66,7 +67,8 @@
 	<APACitation paper={paper}/>
 {:else if format === "cv" }
 	<div class="ws-bottom">
-		<strong>{paper.title}</strong> &sdot; 
+		<strong>{paper.title}</strong> &sdot;
+		{#if year }<small>{paper.year} &sdot;</small>{/if}
 		<small><Authors paper={paper}/></small> &sdot; 
 		<small><em>{$profile.getSourceName(paper.source)}</em></small>
 		{#if paper.award && paper.award.length > 0}

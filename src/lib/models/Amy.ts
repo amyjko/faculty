@@ -1325,7 +1325,7 @@ export const Amy: ProfileSpec = {
 		},
 		{
 			"id": "lemonaidworkshop",
-			"kind": "non-refereed workshop paper",
+			"kind": "juried workshop paper",
 			"authors": ["@pchilana", "@ajko", "Jacob O. Wobbrock"],
 			"deadname": false,
 			"year": 2013,
@@ -1983,7 +1983,7 @@ export const Amy: ProfileSpec = {
 		},
 		{
 			"id": "futureofprogramming",
-			"kind": "non-refereed workshop paper",
+			"kind": "juried workshop paper",
 			"authors": ["Brad A. Myers", "@ajko"],
 			"deadname": true,
 			"year": 2009,
@@ -2186,7 +2186,7 @@ export const Amy: ProfileSpec = {
 		},
 		{
 			"id": "prelemonaid",
-			"kind": "non-refereed workshop paper",
+			"kind": "juried workshop paper",
 			"authors": ["@pchilana", "@ajko", "Jacob O. Wobbrock"],
 			"deadname": false,
 			"year": 2011,
@@ -2200,7 +2200,7 @@ export const Amy: ProfileSpec = {
 		},
 		{
 			"id": "talkingaboutusers",
-			"kind": "non-refereed workshop paper",
+			"kind": "juried workshop paper",
 			"authors": ["@ajko", "Parmit K. Chilana"],
 			"deadname": false,
 			"year": 2010,
@@ -2214,7 +2214,7 @@ export const Amy: ProfileSpec = {
 		},
 		{
 			"id": "unfamiliar",
-			"kind": "non-refereed workshop paper",
+			"kind": "juried workshop paper",
 			"authors": ["@pchilana", "@ajko", "Jacob O. Wobbrock"],
 			"deadname": false,
 			"year": 2009,
@@ -2228,7 +2228,7 @@ export const Amy: ProfileSpec = {
 		},
 		{
 			"id": "whylinebeta",
-			"kind": "non-refereed workshop paper",
+			"kind": "juried workshop paper",
 			"authors": ["@ajko", "Brad A. Myers"],
 			"deadname": false,
 			"year": 2008,
@@ -2287,7 +2287,7 @@ export const Amy: ProfileSpec = {
 		},
 		{
 			"id": "morenaturalui",
-			"kind": "non-refereed workshop paper",
+			"kind": "juried workshop paper",
 			"authors": ["Brad A. Myers", "@ajko"],
 			"deadname": false,
 			"year": 2005,
@@ -2302,7 +2302,7 @@ export const Amy: ProfileSpec = {
 		},
 		{
 			"id": "softwarescience",
-			"kind": "non-refereed workshop paper",
+			"kind": "juried workshop paper",
 			"authors": ["@ajko"],
 			"deadname": false,
 			"year": 2006,

@@ -9,7 +9,7 @@ export type Paper = {
 		"juried conference paper" |
 		"book chapter" |
 		"refereed invited article" |
-		"non-refereed workshop paper" |
+		"juried workshop paper" |
 		"technical report" |
 		"refereed magazine article" |
 		"whitepaper" |

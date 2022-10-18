@@ -4,69 +4,9 @@
     import { parseDate } from "$lib/models/utilities";
     import Chunk from "./Chunk.svelte";
     import Row from "./Row.svelte";
+	import Paper from "$lib/components/Paper.svelte";
 
-		
-	// 	var pubs = this.props.app.getProfile().getPublications(
-	// 		kind instanceof Function ? kind : pub => pub.kind === kind,
-	// 		pub => -pub.year
-	// 	);
-
-	// 	var count = 0;
-	// 	var rows = [];
-	// 	var yearColumns = columns ? 6 : 12;
-
-	// 	pubs.forEach(
-	// 		(pub, index) => {
-	// 			if(splitByYears) {
-	// 				let newYear = index === 0 || (index > 0 && pub.year !== pubs[index - 1].year);
-	// 				if(newYear) {
-	// 					count = 0;
-	// 					let yearCount = 1;
-	// 					let yearIndex = index + 1;
-	// 					while(yearIndex < pubs.length && pubs[yearIndex].year === pubs[index].year) {
-	// 						yearCount++;
-	// 						yearIndex++;
-	// 					}
-	// 					yearColumns = yearCount <= 1 ? 12 : 6;
-	// 					rows.push(<div key={"year" + index} class="col-md-12"><h4>{pub.year}</h4></div>);
-	// 				}
-	// 			}
-	// 			if((splitByYears || columns) && count % 2 === 0) {
-	// 				rows.push(<div key={"clear" + index} class="clearfix" />);
-	// 			}
-	// 			rows.push(
-	// 				<div key={"paper" + index} class={"col-md-" + yearColumns}>
-	// 					<Paper {...pub} app={this.props.app} key={kind + index} format={"cv"} />
-	// 				</div>
-	// 			);
-	// 			count++;
-	// 		}
-	// 	);
-
-	// 	return <div class="row">{rows}</div>
-
-	// }
-
-	// function getTable(list, prefix, start, stop, header, detail, secondDetail) {
-		
-	// 	var rows = list.map((entry, index) => {
-
-	// 		var end = "";
-	// 		if(stop !== null && entry[start] !== entry[stop])
-	// 			end = "-" + (entry[stop] === null ? "present" : entry[stop]);
-			
-	// 		return <tr key={prefix+index}>
-	// 			<td><span class="date">{entry[start]}{end}</span></td>
-	// 			<td><strong>{entry[header]}</strong></td>
-	// 			{entry[detail] ? <td>{entry[detail]}</td> : undefined }
-	// 			{ entry[secondDetail] ? <td>{entry[secondDetail]}</td> : undefined }
-	// 		</tr>;
-			
-	// 	});
-			
-	// 	return <table class="table"><tbody>{rows}</tbody></table>;	
-				
-	// }
+	let refereed = $profile.getPublications(pub => pub.kind === "journal article" || pub.kind === "refereed conference paper", pub => -pub.year);
 
 </script>
 
@@ -162,39 +102,54 @@
 	
 	<h2>Refereed Conference + Journal Articles</h2>
 
-	<!--
+	{#each refereed as paper, index }
+		{#if index === 0 || refereed[index - 1].year !== paper.year }
+			<h4>{paper.year}</h4>
+		{/if}
+		<Paper paper={paper} format="cv" year={false} />
+	{/each}
 
-	{this.getPapers(pub => pub.kind === "journal article" || pub.kind === "refereed conference paper", true)}				
-				
 	<h2>Refereed Workshop Papers</h2>
-	
-	{this.getPapers("refereed workshop paper", true, false)}				
+
+	{#each $profile.getPublications(pub => pub.kind === "refereed workshop paper", pub => -pub.year) as paper }
+		<Paper paper={paper} format="cv" />
+	{/each}
 
 	<h2>Books</h2>
-	
-	{this.getPapers("book", true)}
+
+	{#each $profile.getPublications(pub => pub.kind === "book", pub => -pub.year) as paper }
+		<Paper paper={paper} format="cv" />
+	{/each}
 
 	<h2>Book Chapters</h2>
-	
-	{this.getPapers("book chapter", true, false)}				
 
-	<h2>Juried Conference Papers</h2>
-	
-	{this.getPapers("juried conference paper", true, false)}
+	{#each $profile.getPublications(pub => pub.kind === "book chapter", pub => -pub.year) as paper }
+		<Paper paper={paper} format="cv" />
+	{/each}
 
 	<h2>Refereed Magazine Articles</h2>
-	
-	{this.getPapers("refereed magazine article", true, false)}
 
-	<h2>Non-Refereed Workshop Papers</h2>
-	
-	{this.getPapers("non-refereed workshop paper", true, false)}				
+	{#each $profile.getPublications(pub => pub.kind === "refereed magazine article", pub => -pub.year) as paper }
+		<Paper paper={paper} format="cv" />
+	{/each}
+
+	<h2>Juried Conference Papers</h2>
+
+	{#each $profile.getPublications(pub => pub.kind === "juried conference paper", pub => -pub.year) as paper }
+		<Paper paper={paper} format="cv" />
+	{/each}
+
+	<h2>juried workshop papers</h2>
+
+	{#each $profile.getPublications(pub => pub.kind === "juried workshop paper", pub => -pub.year) as paper }
+		<Paper paper={paper} format="cv" />
+	{/each}
 
 	<h2>Technical Reports</h2>
-	
-	{this.getPapers("technical report", true, false)}
 
-	-->
+	{#each $profile.getPublications(pub => pub.kind === "technical report", pub => -pub.year) as paper }
+		<Paper paper={paper} format="cv" />
+	{/each}
 	
 	<h1>Impact</h1>
 
