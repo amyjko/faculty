@@ -7326,7 +7326,7 @@ export const Amy: ProfileSpec = {
 			"description": "I'm advising Code.org on the design and implementation of a new curriculuar effort.",
 			"commitment": {
 				"start": "2021-01-01",
-				"end": null,
+				"end": "2022-06-15",
 				"hours": 0.2,
 				"priority": 0
 			}
@@ -7638,7 +7638,7 @@ export const Amy: ProfileSpec = {
 			"description": "I deliberate with the other program chairs and the Associate Dean for Academics on school-wide policy issues, as well as approve program-level changes.",
 			"commitment": {
 				"start": "2016-09-15",
-				"end": null,
+				"end": "2022-06-15",
 				"hours": 1,
 				"priority": 0
 			}
@@ -7650,7 +7650,7 @@ export const Amy: ProfileSpec = {
 			"description": "I deliberate with the Dean and numerous leaders across the iSchool to make strategic choices about the school's initiatives and finances.",
 			"commitment": {
 				"start": "2016-09-15",
-				"end": null,
+				"end": "2022-06-15",
 				"hours": 0.5,
 				"priority": 0
 			}
