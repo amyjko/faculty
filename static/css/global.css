@@ -89,3 +89,19 @@ a:hover, .clickable {
 	filter: drop-shadow(0.25em .25em .25em rgba(0,0,0,0.1));
 	border-radius: 10px;
 }
+
+.personal {
+	color:  rgb(180,180,180);
+}
+
+.research {
+	color: #81c3fc;
+}
+
+.teaching {
+	color: rgb(135, 207, 135);
+}
+
+.service {
+	color: rgb(255, 199, 96);
+}

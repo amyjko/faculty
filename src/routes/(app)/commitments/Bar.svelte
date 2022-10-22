@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type Commit from "./Commit";
+    import type Commit from "../../../lib/models/Commit";
 
 
 
@@ -28,3 +28,39 @@
         <span>{commit.hours * proportion}{postfix}</span>
     {/if}
 </div>
+
+<style>
+
+    .bar {
+        display: inline-block;
+        padding: 5px;
+        font-size: 75%;
+        min-height: 1em;
+        min-width: 2em;
+        overflow: hidden;
+        margin-right: 1px;
+        vertical-align: middle;
+    }
+
+    .bar.personal {
+        background-color: rgb(180,180,180);
+        color: white;
+    }
+
+    .bar.research {
+        background-color: #81c3fc;
+        color: white;
+    }
+
+    .bar.teaching {
+        background-color: rgb(135, 207, 135);
+        color: white;
+    }
+
+    
+    .bar.service {
+        background-color: rgb(255, 199, 96);
+        color: white;
+    }
+
+</style>
