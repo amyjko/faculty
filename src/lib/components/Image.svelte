@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { base } from "$app/paths";
 
     export let url: string;
     export let alt: string;
@@ -6,7 +7,7 @@
 
 </script>
 
-<img class={`thumbnail ${highlight ? "highlight" : ""}`} src={url} alt={alt}/>
+<img class={`thumbnail ${highlight ? "highlight" : ""}`} src={`${base}${url}`} alt={alt}/>
 
 <style>
 

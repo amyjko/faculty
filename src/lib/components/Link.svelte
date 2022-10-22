@@ -1,5 +1,7 @@
 <script type="ts">
 
+    import { base } from "$app/paths";
+
     export let to: string;
     export let at: boolean=false;
 
@@ -8,7 +10,7 @@
 {#if at}
     <span class="at"><slot></slot></span>
 {:else}
-    <a href={to}><slot></slot></a>
+    <a href={`${base}${to}`}><slot></slot></a>
 {/if}
 
 <style>

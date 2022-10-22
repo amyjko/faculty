@@ -7,8 +7,8 @@
 	import Block from "$lib/components/Block.svelte";
 	import Link from "$lib/components/Link.svelte";
 	import Image from "$lib/components/Image.svelte";
-
 	import { page } from "$app/stores";
+    import getPersonImagePath from "$lib/components/getPersonImage";
 
 	$: project = $profile.getProject($page.params.project);
 
@@ -42,7 +42,7 @@
 			{#if person }
 				<Link to={person.id === "ajko" ? "/bio" : "/lab#" + person.id}>
 					<img 
-						src={$profile.getPersonImagePath(person.id)}
+						src={getPersonImagePath(person.id)}
 						alt={person.name + " headshot"}
 						class="mini-headshot"
 						style="width: 32px"

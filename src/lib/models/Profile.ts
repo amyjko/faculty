@@ -95,10 +95,6 @@ export default class Profile {
 		return { year: parseInt(parts[0]), month: parseInt(parts[1]) };
 	}
 
-	getPersonImagePath(id: string) {
-		return "/images/headshots/mug-" + id + ".jpg";
-	}
-
 	// Get a list of filtered and sorted travel.
 	getTravel(filter?: (travel: Travel) => boolean, sort?: (travel: Travel) => number) { 
 		return this.cloneFilterSort(this.json.travel.slice(), filter, sort);

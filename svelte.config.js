@@ -13,7 +13,10 @@ const config = {
 			assets: "build",
 			trailingSlash: 'always',
 			fallback: "index.html"
-		})
+		}),
+		paths: {
+			base: "/ajko"
+		}
 	}
 };
 

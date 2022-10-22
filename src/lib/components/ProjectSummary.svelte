@@ -1,11 +1,10 @@
 <script lang="ts">
-
     import Link from "$lib/components/Link.svelte";
     import Block from "$lib/components/Block.svelte";
     import type { Project } from "$lib/models/Project";
     import { profile } from "../models/stores";
     import Image from "./Image.svelte";
-
+    import getPersonImagePath from "$lib/components/getPersonImage";
     export let project: Project;
 
     const link = "/projects/" + project.id;
@@ -23,7 +22,7 @@
             {#if person}
                 <Link to={person.id === "ajko" ? "/bio" : "/lab/#" + person.id}>
                     <img 
-                        src={$profile.getPersonImagePath(person.id)} 
+                        src={`${getPersonImagePath(person.id)}`} 
                         alt={`${person.name} headshot`}
                         class="mini-headshot" 
                     />
