@@ -15,9 +15,8 @@
 		"ship": "npm run build; rsync -avz --delete --exclude-from='deploy-excludes' . ajko@ovid.u.washington.edu:~/public_html"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
-		"@types/smoothscroll-polyfill": "^0.3.1",
+		"@sveltejs/adapter-static": "^1.0.0-next.46",
 		"ajv-cli": "^5.0",
 		"ajv-formats": "^2.0.2",
 		"svelte": "^3.44.0",
