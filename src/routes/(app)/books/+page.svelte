@@ -6,9 +6,14 @@
 
 </script>
 
-<div class='lead'>
-	These are books I've authored. Unlike print books, they are digital, searchable, interactive, and web accessible. They are also living documents: I update them regularly with new ideas, citations, and chapters, especially in response to feedback.
-</div>
+<h1>
+	These are books I've authored.
+</h1>
+
+<p>
+	Unlike print books, they are digital, searchable, interactive, and web accessible. 
+	They are also living documents: I update them regularly with new ideas, citations, and chapters, especially in response to feedback.
+</p>
 
 {#each $profile?.getPublications(pub => pub.kind === "book", pub => -pub.year) as book }
 	<Block 

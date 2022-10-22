@@ -6618,7 +6618,7 @@ export const Amy: ProfileSpec = {
 		{
 			"title": "National Science Foundation Graduate Research Fellowship",
 			"year": 2004,
-			"description": "A five year fellowshiop recognizing outstanding graduate students in NSF-supported STEM disciplines."
+			"description": "A five year fellowship recognizing outstanding graduate students in NSF-supported STEM disciplines."
 		},
 		{
 			"title": "National Defense Science & Engineering Graduate Fellowship",
@@ -6977,7 +6977,7 @@ export const Amy: ProfileSpec = {
 			"institution": "University of Washington",
 			"department": "The Information School",
 			"startdate": 2018,
-			"enddate": null
+			"enddate": 2022
 		},
 		{
 			"name": "Bas Jansen",
@@ -7005,7 +7005,7 @@ export const Amy: ProfileSpec = {
 			"institution": "University of Washington",
 			"department": "Computer Science & Enngineering",
 			"startdate": 2021,
-			"enddate": null
+			"enddate": 2022
 		},
 		{
 			"name": "Burren Peil",
@@ -7040,7 +7040,7 @@ export const Amy: ProfileSpec = {
 			"institution": "University of Washington",
 			"department": "College of Education",
 			"startdate": 2020,
-			"enddate": null
+			"enddate": 2022
 		},
 		{
 			"name": "Chenglong Wang",
@@ -7068,7 +7068,7 @@ export const Amy: ProfileSpec = {
 			"institution": "George Mason University",
 			"department": "Computer Science",
 			"startdate": 2018,
-			"enddate": null
+			"enddate": 2021
 		},
 		{
 			"name": "Justin Smith",
@@ -7082,7 +7082,7 @@ export const Amy: ProfileSpec = {
 			"institution": "University of Washington",
 			"department": "The Information School",
 			"startdate": 2017,
-			"enddate": null
+			"enddate": 2021
 		},
 		{
 			"name": "Aaron Bauer",
@@ -8086,12 +8086,25 @@ export const Amy: ProfileSpec = {
 		{
 			url: null,
 			title: "MIT",
-			details: "I'm visiting the HCI faculty to talk about computing education research.",
+			details: "I'm visiting the HCI community to talk about computing education research.",
 			category: "research",
 			commitment: {
-				start: "2022-10-23",
-				end: "2022-10-26",
+				start: "2022-10-25",
+				end: "2022-10-25",
 				hours: 20,
+				priority: 2
+			},
+			report: null
+		},
+		{
+			url: null,
+			title: "Harvard",
+			details: "I'm visiting the HCI community to talk about computing education research.",
+			category: "research",
+			commitment: {
+				start: "2022-10-24",
+				end: "2022-10-24",
+				hours: 8,
 				priority: 2
 			},
 			report: null

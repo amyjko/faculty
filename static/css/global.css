@@ -1,93 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@300&display=swap');
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-	  max-width: 42em;
-  }
+:root {
+	--text-color: #000000;
+	--back-color: #FFFFFF;
+
+	--border-color: #f3f3f3;
+	--personal-color:  rgb(180,180,180);
+	--research-color: #81c3fc;
+	--teaching-color: rgb(135, 207, 135);
+	--service-color: rgb(255, 199, 96);
+
+	--annotation-color: rgb(234, 234, 255);
+
+	--link-color: rgb(0 0 196);
+
+	--text-font-family: "Lato", sans-serif;
+	--text-font-size: 13pt;
+	--text-weight: 300;
+	--bold-weight: 400;
+	--text-line-height: 1.5em;
+	--header-line-height: 1.25em;
+
+	--header-font: "Raleway", sans-serif;
+	--header-weight: 300;
+	--header-size: 24pt;
+
+	--annotation-size: 11pt;
+
+	--roundedness: 0.25em;
+	--padding: 0.25em;
+	--margin: 1em;
 }
 
-.container:focus {
-	outline: none;
-}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text-color: #FEFEFE;
+		--back-color: #000000;
 
-.container {
-	padding-top: 50px;
-	padding-bottom: 50px;
+		--personal-color:  rgb(45, 45, 45);
+		--research-color: #032d51;
+		--teaching-color: rgb(0, 52, 0);
+		--service-color: rgb(66, 43, 0);
+
+		--link-color: rgb(162 162 255);
+		--border-color: rgb(50 50 50);
+
+		--annotation-color: rgb(35 35 71);
+	}
+
+	img {
+		opacity: 0.5;
+		background-color: var(--border-color);
+	}
 }
 
 body {
-	font-weight: 300;
-	font-family: "Lato", sans-serif;
-	font-size: 13pt;
-	line-height: 1.5em;
-}
-
-.lead {
-	font-size: 24px;
+	color: var(--text-color);
+	background-color: var(--back-color);
+	font-weight: var(--text-weight);
+	font-family: var(--text-font-family);
+	font-size: var(--text-font-size);
+	line-height: var(--text-line-height);
 }
 
 b, strong {
-	font-weight: 400;
+	font-weight: var(--bold-weight);
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-	font-family: "Raleway", sans-serif;
-	font-weight: 600;
+h1, h2, h3, h4 {
+	font-family: var(--header-font);
+	line-height: var(--header-line-height);
+	margin-top: var(--margin);
+	margin-bottom: 0;
 }
 
-h3.linked {
-	text-decoration-line: underline;
-	text-decoration-color: #337ab7;
+h1 {
+	font-size: var(--header-size);
 }
 
-img.link {
-	height: 1em;
+h2 {
+	font-size: calc(var(--header-size) - 3pt);
+	margin-bottom: var(--margin);
 }
 
-.table > tbody > tr > td {
-    vertical-align: top;
-	border-top: 0px solid #ddd;
+h3 {
+	font-size: calc(var(--header-size) - 6pt);
+	margin-bottom: var(--margin);
 }
 
-table > tbody > tr > td {
-	vertical-align: top;
-	padding: 0.25em;
-	border-top: 0px solid #ddd;
+h4 {
+	font-size: calc(var(--header-size) - 9pt);
+	margin-bottom: var(--margin);
 }
 
-.row h4 {
-	margin-top: 0;
+a {
+	color: var(--link-color);
+	text-decoration: none;
 }
 
-.row {
-	margin-bottom: 10px;
+mark {
+	color: var(--text-color);
+	font-size: var(--annotation-size);
+	background-color: var(--annotation-color);
+	border-radius: var(--roundedness);
+	padding-top: var(--padding);
+	padding-bottom: var(--padding);
+	padding-right: calc(2 * var(--padding));
+	padding-left: calc(2 * var(--padding));
 }
 
-.top-bordered {
-	margin-top: 0.25em;
-	padding-top: 0.25em;
-	border-top: 1px solid #EEEEEE;
+.alert {
+	display: inline-block;
+	background-color: var(--annotation-color);
+	padding: var(--padding);
+	margin-top: var(--margin);
+	margin-bottom: var(--margin);
+	border-radius: var(--roundedness);	
 }
 
-.student-mug {
+.mini-headshot {
 	opacity: 0.5;
+	height: 2em;
+	border-radius: 50%;
 }
 
-.student-mug:hover {
+.mini-headshot:hover {
 	opacity: 1.0;
+}
+
+.link-icon {
+	height: 1em;
 }
 
 a:hover, .clickable {
  cursor: pointer;
 }
 
-.img-thumbnail {
-	padding: 0;
+hr {
+	margin-top: var(--margin);
+	margin-bottom: var(--margin);
 	border: none;
-	margin-top: 0.5em;
-	filter: drop-shadow(0.25em .25em .25em rgba(0,0,0,0.1));
-	border-radius: 10px;
+	border-bottom: 1px solid var(--border-color);
 }
 
 .personal {
@@ -104,4 +157,37 @@ a:hover, .clickable {
 
 .service {
 	color: rgb(255, 199, 96);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td, th {
+	text-align: left;
+	vertical-align: top;
+	padding-right: var(--margin);
+    padding-top: var(--margin);
+}
+
+tr {
+	border-bottom: 1px solid var(--border-color);
+}
+
+.responsive-frame {
+	overflow: hidden;
+	padding-top: 56.25%;
+	position: relative;	
+}
+
+.responsive-frame iframe {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	border: 0;
+	margin-top: var(--margin);
+	border-radius: var(--roundedness);
 }

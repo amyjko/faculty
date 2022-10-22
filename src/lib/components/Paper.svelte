@@ -72,7 +72,7 @@
 		<small><Authors paper={paper}/></small> &sdot; 
 		<small><em>{$profile.getSourceName(paper.source)}</em></small>
 		{#if paper.award && paper.award.length > 0}
-			<span class="award">{ paper.award.join(" + ") }</span>
+			<mark class="award">{ paper.award.join(" + ") }</mark>
 		{/if}
 	</div>
 {:else}
@@ -82,19 +82,19 @@
 		<Image slot="image" url={"/images/papers/paper-" + paper.id + ".jpg"} alt="A clip from the paper's PDF."/>
 		<div name={ paper.id } class={"paper ws-bottom " + (highlight ? "bg-info" : "")}>
 			{#if paper.award && paper.award.length > 0}
-				<span class="award">&#x2605; { paper.award.join(" + ")}</span>
+				<mark class="award">&#x2605; { paper.award.join(" + ")}</mark>
 				<br/>
 			{/if}
 			<small><Authors paper={paper} link/> ({paper.year})</small>
 			<br/>
 			{#if url}
-				<span><strong>{#if url.startsWith("http")}<External to={url}>{paper.title}</External>{:else}<Link to={url}>{paper.title}</Link>{/if}</strong> <Link to={"/publications/#" + paper.id}><img class="link" alt="external link icon" src={"/images/icons/link.png"} /></Link></span>
+				<span>{#if url.startsWith("http")}<External to={url}>{paper.title}</External>{:else}<Link to={url}>{paper.title}</Link>{/if} <Link to={"/publications/#" + paper.id}><img class="link-icon" alt="external link icon" src={"/images/icons/link.png"} /></Link></span>
 			{:else}
 				<strong>{paper.title}</strong>
 			{/if}
 			<br/><small><em>{$profile.getSourceName(paper.source)}</em></small>
-			{#if paper.contribution}<span><br/><em class="text-muted small">{paper.contribution}</em></span>{/if}
-			<div class="top-bordered">
+			{#if paper.contribution}<span><br/><small>{paper.contribution}</span>{/if}
+			<div>
 				<small>
 					<span class="clickable" tabIndex=0 on:click={toggle} on:keydown={(event) => event.key === "Enter" ? toggle() : undefined}>{apa ? "▾ cite" : "▸ cite"}</span>
 					{#if paper.local}<span> &sdot; <Link to={getLocalURL()}>pdf</Link></span>{/if}
@@ -102,7 +102,7 @@
 					{#if paper.blog}<span> &sdot; <External to={paper.blog}>blog post</External></span>{/if}
 				</small>
 			</div>
-			{#if apa}<div class="top-bordered"><small><APACitation paper={paper}/></small></div>{/if}
+			{#if apa}<div><small><APACitation paper={paper}/></small></div>{/if}
 
 		</div>	
 	</Block>

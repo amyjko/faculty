@@ -14,9 +14,9 @@
 
 </script>
 
-<div class="lead">
+<h1>
 	I <External to="https://amyjko.medium.com">blog</External> on my lab's Medium publication, <External to="https://medium.com/bits-and-behavior">Bits and Behavior</External>.
-</div>
+</h1>
 
 <p>
 	Filter by topic.

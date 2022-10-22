@@ -2,7 +2,7 @@
     import type { Travel } from "$lib/models/Travel";
     import Block from "$lib/components/Block.svelte";
     import External from "$lib/components/External.svelte";
-    import { parseDate } from "./utilities";
+    import { parseDate } from "./Profile";
 
     export let trip: Travel;
 

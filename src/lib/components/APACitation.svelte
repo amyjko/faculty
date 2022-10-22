@@ -8,7 +8,7 @@
 
 </script>
 
-<div class="ws-bottom">
+<div>
     <div id={ "citation-" + paper.id }>
         <Authors paper={ paper }/>
         ({paper.year}).
@@ -19,22 +19,18 @@
         {#if paper.award && paper.award.length > 0}
             <span>
                 <br/>
-                <span class="award">{ paper.award.join(" + ") }</span>
+                <mark class="award">{ paper.award.join(" + ") }</mark>
             </span>
         {/if}
     </div>
 </div>
 
 <style>
-    .ws-bottom {
-        padding-bottom: 20px;
-    }
-
     .award {
         padding: 0;
         background: none;
-        color: black;
-        font-weight: 700;
+        color: var(--text-color);
+        font-weight: var(--bold-weight);
         display: block;
     }
 

@@ -2,14 +2,14 @@
     import External from "$lib/components/External.svelte";
 	import Block from "$lib/components/Block.svelte";
 	import { profile } from "$lib/models/stores";
-    import { parseDate } from "$lib/models/utilities";
+    import { parseDate } from "$lib/models/Profile";
 	import Image from "$lib/components/Image.svelte";
 
 </script>
 
-<div class="lead">
+<h1>
 	My students and I receive funding from many sources.
-</div>
+</h1>
 
 <Block 
 	link="https://ischool.uw.edu"

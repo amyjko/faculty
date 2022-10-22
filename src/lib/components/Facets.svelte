@@ -30,11 +30,11 @@
             aria-checked={facet in selection && selection[facet] === value}
             tabIndex={facet in selection && selection[facet] === value ? 0 : 1}
             aria-label={"Filter by " + value}
-            class={"clickable topic" + (facet in selection && selection[facet] === value ? " selected" : "")} 
+            class={"annotation clickable topic" + (facet in selection && selection[facet] === value ? " selected" : "")} 
             on:click={() => selectValue(facet, value)}
             on:keydown={event => event.key === "Enter" ? selectValue(facet, value) : undefined }
         >
-            <small>{value}</small>
+            {value}
         </mark>
     {/each}
     </p>
@@ -43,16 +43,15 @@
 <style>
     .topic {
         display: inline-block;
+        margin-right: var(--margin);
+        margin-bottom: var(--margin);
     }
 
     mark {
-        background-color: #f1f6fe;
-        border-radius: 3px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 6px;
-        padding-right: 6px;
-        margin: 3px;
+        background-color: var(--border-color);
     }
 
+    mark.selected {
+        background-color: var(--annotation-color);
+    }
 </style>

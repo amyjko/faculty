@@ -43,24 +43,18 @@
     }
 
     .bar.personal {
-        background-color: rgb(180,180,180);
-        color: white;
+        background-color: var(--personal-color);
     }
 
     .bar.research {
-        background-color: #81c3fc;
-        color: white;
+        background-color: var(--research-color);
     }
 
     .bar.teaching {
-        background-color: rgb(135, 207, 135);
-        color: white;
-    }
-
-    
+        background-color: var(--teaching-color);
+    }    
     .bar.service {
-        background-color: rgb(255, 199, 96);
-        color: white;
+        background-color: var(--service-color);
     }
 
 </style>

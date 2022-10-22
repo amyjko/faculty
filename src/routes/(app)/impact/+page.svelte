@@ -7,9 +7,9 @@
 
 </script>
 
-<div class="lead">
+<h1>
 	I actively share my research and expertise with the world.
-</div>
+</h1>
 
 {#each $profile.getPopulations() as population}
 	<Block 

@@ -4,15 +4,15 @@
 
 </script>
 
-<div class="project row">
-	<div class="col-xs-3 col-md-3">
+<div class="block">
+	<div class="left">
 		{#if link }
-			<a href={link} target="_blank" rel="noreferrer"><slot name="image">no image</slot></a>
+			<a href={link} target="_blank" rel="noreferrer"><slot name="image"></slot></a>
 		{:else}
 			<slot name="image"></slot>
 		{/if}
 	</div>
-	<div class="col-xs-9 col-md-9">
+	<div class="right">
 		{#if header }
 			{#if link}
 				<a href={link} target="_blank" rel="noreferrer">{ header }</a>
@@ -25,8 +25,13 @@
 </div>
 
 <style>
-	.project {
+	.block {
 		margin-top: 20px;
 		margin-bottom: 20px;
+		display: flex;
+	}
+
+	.left {
+		flex: 0 0 10em;
 	}
 </style>

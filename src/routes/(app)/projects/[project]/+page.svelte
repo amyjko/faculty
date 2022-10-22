@@ -27,9 +27,9 @@
 	{@const code = project.links.filter(link => link.url.indexOf("github.com") >= 0) }
 	{@const demos = project.links.filter(link => link.title.indexOf("Try") >= 0) }
 
-	<div class="lead">
+	<h1>
 		<em>{project.name}</em> <small>({project.startdate}&ndash;{project.stopdate ?? ""})</small>
-	</div>
+	</h1>
 
 	<Block>
 		<Image slot="image" url={"/images/projects/project-" + project.id + ".png"} alt={project.name} />
@@ -40,11 +40,11 @@
 	<p>
 		{#each project.people.map(id => $profile.getPerson(id)) as person }
 			{#if person }
-				<Link to={person.id === "ajko" ? "/bio" : "/lab/" + person.id}>
+				<Link to={person.id === "ajko" ? "/bio" : "/lab#" + person.id}>
 					<img 
 						src={$profile.getPersonImagePath(person.id)}
 						alt={person.name + " headshot"}
-						class="student-mug img-circle" 
+						class="mini-headshot"
 						style="width: 32px"
 					/>
 				</Link>
@@ -65,9 +65,9 @@
 	{#if videos.length > 0}
 		<h3>Videos</h3>
 		{#each videos as link}
-			<p class="embed-responsive embed-responsive-16by9">
-				<iframe title="YouTube video" width="560" height="315" src={"https://www.youtube.com/embed/" + link.url.substring(link.url.indexOf("=") + 1)} frameBorder="0" allowFullScreen></iframe>
-			</p>
+			<div class="responsive-frame">
+				<iframe title="YouTube video" src={"https://www.youtube.com/embed/" + link.url.substring(link.url.indexOf("=") + 1)} frameBorder="0" allowFullScreen></iframe>
+			</div>
 		{/each}
 
 	{/if}
@@ -105,5 +105,5 @@
 	{/each}
 
 {:else}
-	<div class='alert alert-danger'>There's no project by this name.</div>
+	<div class='alert'>There's no project by this name.</div>
 {/if}

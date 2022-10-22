@@ -11,11 +11,11 @@
 
 </script>
 
-<div class={(highlight ? "bg-info" : "")} id={person.id}>
+<div id={person.id}>
     <Block 
         link={person.url}
     >
-        <Image slot="image" url={"/images/headshots/mug-" + person.id + ".jpg"} alt={"Photograph of " + person.name} />
+        <Image slot="image" url={"/images/headshots/mug-" + person.id + ".jpg"} alt={"Photograph of " + person.name} highlight={highlight} />
         <span>
             <External to={person.url}>{person.name}</External>
             &nbsp;
@@ -25,7 +25,7 @@
             <br/>
             {person.bio}
             {#if person.dissertation }
-                <div class="top-bordered">
+                <div>
                     <small>
                         <Link to={"/dissertations/" + person.dissertation}>Dissertation</Link>
                     </small>

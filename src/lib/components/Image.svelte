@@ -2,14 +2,31 @@
 
     export let url: string;
     export let alt: string;
+    export let highlight: boolean = false;
 
 </script>
 
-<img class='img-responsive img-thumbnail gap-bottom-right' src={url} alt={alt}/>
+<img class={`thumbnail ${highlight ? "highlight" : ""}`} src={url} alt={alt}/>
 
 <style>
-    .gap-bottom-right {
-        margin-right: 20px;
-        margin-bottom: 10px;
+
+    img {
+        width: 10em;
+        padding: 0;
+        border-radius: var(--roundedness);
+        display: block;
+        margin-right: 1em;
+        margin-bottom: 1em;
+    }
+
+    img.highlight {
+        outline: 5px solid var(--link-color);
+        animation: throb 0.5s 3;
+    }
+
+    @keyframes throb {
+        0% { outline-color: var(--link-color); }
+        50% { outline-color: var(--back-color); }
+        100% { outline-color: var(--link-color); }
     }
 </style>

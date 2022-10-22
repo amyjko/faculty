@@ -7,9 +7,9 @@
 
 </script>
 
-<div class="lead">
-	Whether it's youth debugging an animation, a developer auditing a classifier for bias, or a teacher linking code to oppression, I study our individual and collective struggle to understand computing and harness it for play, power, equity, and justice.
-</div>
+<h1>
+	I study our individual and collective struggle to understand computing and harness it for play, power, equity, and justice.
+</h1>
 
 <p>
 	I work with outstanding <Link to={"/lab"}>students</Link> and vibrant <Link to={"/communities"}>communities</Link> on this work, 

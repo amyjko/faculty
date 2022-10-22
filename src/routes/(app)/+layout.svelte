@@ -5,8 +5,56 @@
 
 </script>
 
-<div class="container">
-    <Header />
+<div class="page">
+    <div class="header"><Header /></div>
+    <div class="content">
         <slot></slot>
-    <Footer />
+        <Footer />
+    </div>
 </div>
+
+
+<style>
+    /* Small */
+    @media only screen and (max-width: 600px) {
+
+        :global(body) {
+            margin: 1em;
+        }
+
+        .page {
+            display: block;
+        }
+
+        .header {
+            margin-right: 1em;
+            flex: 0 0 15em;
+        }
+
+    }
+
+    /* Large */
+    @media only screen and (min-width: 600px) {
+
+        :global(body) {
+            margin: 3em;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .header {
+            margin-right: var(--margin);
+            flex: 0 0 15em;
+        }
+
+        .content {
+            margin-top: 10em;
+            max-width: 40em;
+        }
+
+    }
+
+</style>

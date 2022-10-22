@@ -5,9 +5,9 @@
 
 </script>
 
-<div class="lead">
+<h1>
 	These are communities I work with to do research, advocate, and have impact.
-</div>
+</h1>
 
 <Block 
 	link="http://computinged.uw.edu/"

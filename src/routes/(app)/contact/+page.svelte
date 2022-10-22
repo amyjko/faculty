@@ -5,9 +5,9 @@
 
 </script>
 
-<div class="lead">
+<h1>
 	There are many ways to reach me:
-</div>
+</h1>
 
 <Block 
 	link="https://goo.gl/maps/7c3irRBubGvXYEtZ8"

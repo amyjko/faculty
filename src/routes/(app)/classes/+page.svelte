@@ -14,9 +14,9 @@
 
 </script>
 
-<div class='lead'>
+<h1>
 	These are classes I teach.
-</div>
+</h1>
 
 {#each offerings as offering }
 	<Block

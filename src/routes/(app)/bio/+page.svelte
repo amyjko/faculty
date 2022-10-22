@@ -12,7 +12,7 @@
 
 </script>
 
-<div class="lead">Professional and personal takes on my professorly life.</div>
+<h1>Professional and personal takes on my professorly life.</h1>
 
 <Linkable id="short">Short Bio</Linkable>
 
@@ -134,14 +134,12 @@
 <Linkable  id="long">Long Bio</Linkable>
 
 <p>
-	<img src={"/images/bio/bio-childhood.jpg"} alt="Amy at a computer, coding" class="pull-right img-float" />
 	I was born in <External to="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Ontario,+Oregon&sll=37.788081,-104.501953&sspn=38.763291,54.931641&ie=UTF8&z=13&iwloc=addr">Ontario, Oregon</External>, but grew up primarily in <External to="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=west+linn&sll=44.024804,-116.975703&sspn=0.069492,0.107288&ie=UTF8&z=12&iwloc=addr">West Linn, Oregon</External>, a suburb of Portland, and went to <External to="http://www.wlhs.wlwv.k12.or.us/">West Linn High School</External>. The school was fantastic and I had wonderful teachers, especially in math, science, and English.
 	I spent much of my free time playing video games with friends, drawing, and writing code in BASIC, Pascal, C, and my TI-85 to make visualizations, games, and user interface toolkits.
 	I retreated into programming largely as a refuge from myself.
 </p>
 
 <p>
-	<img src={"/images/bio/bio-osu.jpg"} alt="Amy in her graduation cap and gown" class="pull-right img-float" />
 	I was a strong student and was admitted to several great universities out of state, but I couldn't afford any of them.
 	I attended <External to="http://oregonstate.edu/">Oregon State University</External>, where I majored in <External to="http://eecs.oregonstate.edu/">Computer Science</External> and <External to="http://oregonstate.edu/cla/psychology/">Psychology</External>.
 	Early on, I got involved in the budding student chapter of the ACM, and after my first year, helped run the club and its activities around campus, including the ACM International Collegiate Programming Contest, a statewide software engineering contest, and a student taught course on 2D graphics rendering algorithms.
@@ -151,7 +149,6 @@
 </p>
 
 <p>
-	<img src={"/images/bio/bio-cmu.jpg"} alt="Amy at her doctoral graduation in cap and gown" class="pull-right img-float" />
 	Of all of the schools, the <External to="http://www.hcii.cmu.edu/">Human-Computer Interaction Institute</External> at <External to="http://www.cmu.edu">Carnegie Mellon University</External> was the best fit, and I started work right away with <External to="http://www.cs.cmu.edu/~bam/">Brad Myers</External>.
 	I started by investigating what made debugging so difficult, and inventing technologies to make it easier. 
 	Just after proposing in 2006, I did a fantastic internship at <External to="http://research.microsoft.com/en-us/default.aspx">Microsoft Research</External> in the <External to="http://research.microsoft.com/en-us/groups/hip/">Human Interactions in Programming</External> group, and became fascinated with the larger challenge of software design and all of the human and cooperative issues that make it such a challenging form of engineering practice. 
@@ -159,14 +156,12 @@
 </p>
 
 <p>
-	<img src={"/images/bio/bio-uw.jpg"} alt="Amy smiling maniacally" class="pull-right img-float" />
 	Just prior to graduating, I toured the country, giving invited talks and job interviews at labs and universities for about eight weeks. 
 	I interviewed at a range of places, including from conservative CS departments like <External to="http://www.eecs.berkeley.edu/">Berkeley EECS</External> to much broader places like the <External to="http://ischool.uw.edu/">University of Washington Information School</External>, as well as <External to="http://research.microsoft.com/en-us/default.aspx">Microsoft Research</External>, Redmond. 
 	In the end, I wanted to be in the Pacific Northwest, I wanted a strong mix of teaching and research, and I was fascinated by the challenge of helping to grow and envision a new academic unit, so I chose the <External to="http://ischool.uw.edu/">Information School</External> as my new home.
 </p>
 
 <p>
-	<img src={"/images/bio/bio-answerdash.jpg"} alt="Amy at AnswerDash with Jake and Parmit" class="pull-right img-float" />
 	The pre-tenure period of my faculty career was distinguished by wonderful Ph.D. students, supportive colleagues across HCI and software engineering in both academia and industry, and exciting growth in the Information School faculty in data science, HCI, and several other fields. 
 	My own work continued to focus on developer tools, but began to incorporate more data science, investigating bug reporting from in a range of contexts, including open source, Agile teams, and private industry. 
 	While I did this work, I also developed a growing passion for research on the learning and teaching of computing, investigating new learning technologies and aspects of software engineering expertise. 
@@ -175,7 +170,6 @@
 </p>
 
 <p>
-	<img src={"/images/bio/bio-tenure.jpg"} alt="Amy in front of a class of high school students" class="pull-right img-float" />
 	I earned tenure in 2015.
 	I finished my last day AnswerDash in December of 2015, resuming full-time faculty life on a short 6-month sabbatical.
 	I used that time to begin a new focus on computing education research, inventing more effective, equitable, and scalable technologies and pedagogies for learning computer science. 
@@ -183,7 +177,6 @@
 </p>
 
 <p>
-	<img src={"/images/bio/bio-chair.jpg"} alt="Amy standing next to Scott Barker" class="pull-right img-float" />
 	In Spring of 2017, our former Dean, Harry Bruce, asked me to chair our undergraduate major, Informatics. 
 	I accepted. 
 	While this was a big role, it only constituted 20% of my time and came with a healthy amount of teaching release to compensate. 
@@ -192,19 +185,8 @@
 </p>
 
 <p>
-	<img src={"/images/posts/post-comingoutresponse.jpg"} alt="Amy in her office smiling, the day she came out" class="pull-right img-float" />
 	In Autumn 2019, I <External to="https://medium.com/bits-and-behavior/im-trans-call-me-amy-8a72a3951964">came out as a trans woman</External>, finally accepting my gender identity and having the confidence to share it with the world. 
 	My academic communities were <External to="https://medium.com/bits-and-behavior/what-coming-out-as-trans-should-look-like-395f31beeddb">incredibly supportive</External>, which gave me to confidence to be out and proud.
 	That same year, I was promoted to Professor, and pivoted my research to have a more critical stance, exploring literacies in both the powers and perils of computing and investigating CS teacher education.
 	Shortly after I came out, the COVID-19 pandemic arrived, and my lab and I went into survival mode, slowing down our work and doing our best to care for each other while in lockdown.
 </p>
-
-<style>
-	.img-float {
-		margin-top: 0.5em;
-		margin-left: 1em;
-		margin-bottom: 1em;
-		border-radius: 4px;
-		max-width: 20%;
-	}
-</style>

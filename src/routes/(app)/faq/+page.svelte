@@ -11,9 +11,9 @@
 
 </script>
 
-<div class='lead'>
+<h1>
 	These are questions I'm frequently asked.
-</div>
+</h1>
 
 <SectionList/>
 

@@ -34,13 +34,13 @@
 
 </script>
 
-<div class="lead">
+<h1>
 	These are my {$profile.getPublications().length} academic publications. 
 	You can see who's citing them on 
 	<External to="https://scholar.google.com/citations?user=otmdDLoAAAAJ&hl=en">Google Scholar</External>, 
 	<External to="https://www.semanticscholar.org/author/Amy-J.-Ko/1441987875">Semantic Scholar</External>, or 
 	<External to="https://dl.acm.org/profile/81100500360">ACM</External>.
-</div>
+</h1>
 				
 <p>
 	<small>

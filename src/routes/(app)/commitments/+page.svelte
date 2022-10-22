@@ -32,19 +32,20 @@
 
 </script>
 
-<div class="lead">
-    This is my commitment calendar, which estimates how much work I've promised to do in the next few years. 
-    I use this to decide whether to say yes to new opportunities and brace myself for busy periods.
-</div>
+<h1>
+    This is my commitment calendar.
+</h1>
 
 <p>
-    Curious how I maintain this page? I have a <External to="https://github.com/amyjko/faculty/blob/master/profile/profile.json">list of commitments</External> with date ranges, 
-    from which I <External to="https://github.com/amyjko/faculty/blob/master/components/commitments.js">automatically generate</External> this page.
+    I use it to estimate how much work I've promised to do in the next few years. 
+    I use this to decide whether to say yes to new opportunities and brace myself for busy periods.
+    I have a <External to="https://github.com/amyjko/faculty/blob/main/src/lib/models/Amy.ts">list of commitments</External> with date ranges, 
+    from which I use some Typecript to create this page.
 </p>
 
 <hr/>
 
-<table class="table">
+<table>
     <tbody>
         <tr><td colSpan="3"><h3>Weekly commitments</h3></td></tr>
         {#each indefiniteWeekly as commitment}
@@ -149,7 +150,7 @@
 </p>
 
 
-<table class="table">
+<table>
     <tbody>
 
         {#each weeks as week, index }

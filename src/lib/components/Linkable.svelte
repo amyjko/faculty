@@ -20,11 +20,11 @@
 
 </script>
 
-<h3 id={id} class={`section ${isLinked() ? "linked" : ""}`}>
+<h2 id={id} class={`section ${isLinked() ? "linked" : ""}`}>
     <slot />
     <Link
         to={$page.url.pathname + "#" + id}
     >
-        <img class="link" alt="link icon" src={"/images/icons/link.png"} />
+        <img class="link-icon" alt="link icon" src={"/images/icons/link.png"} />
     </Link>
-</h3>
+</h2>

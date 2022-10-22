@@ -17,9 +17,9 @@
 
 </script>
 
-<div class="lead">
+<h1>
 	I direct the <em>Code & Cognition Lab</em>.
-</div>
+</h1>
 
 <p>
 	My lab includes students from <External to="http://ischool.uw.edu">The Information School</External>, 
@@ -45,8 +45,8 @@
 	I guess I'm doing something right?
 </p>
 
-<div class="row">
-	<div class="col-sm-4">
+<div>
+	<div>
 		<p>
 			<strong>Current UW Ph.D. student?</strong> Lurk in <i>#codeandcognitionlab</i> on <External to="https://computinged-uw.slack.com">ComputingEd@UW</External> Slack. 
 			DM or email me about your interests. 
@@ -55,7 +55,7 @@
 			Check out our lab calendar (linked above) to see when we're meeting.
 		</p>
 	</div>
-	<div class="col-sm-4">
+	<div>
 		<p>
 			<strong>Future UW Ph.D. student?</strong> 
 			Read my <Link to="/cer">CER FAQ</Link> and <Link to="/publications">recent publications</Link> to ensure we share interests. 
@@ -64,7 +64,7 @@
 			Apply to the <External to="http://ischool.uw.edu/phd">iSchool</External> or <External to="http://www.cs.washington.edu/education/grad/prospective.html">CSE</External> in Autumn.
 		</p>
 	</div>
-	<div class="col-sm-4">
+	<div>
 		<p>
 			<strong>Current UW undergrad or masters student?</strong>
 			Read about <External to="https://ischool.uw.edu/programs/informatics/research">engaging in undergrad research</External>.

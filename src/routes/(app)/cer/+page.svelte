@@ -5,11 +5,15 @@
     import SectionList from '../../../lib/components/SectionList.svelte';
 </script>
 
-<div class="lead">
-	This is my computing education research FAQ, which I began with the help of several computing education researchers at a Dagstuhl retreat in 2016. 
+<h1>
+	This is my computing education research FAQ.
+</h1>
+
+<p>
+	I started it with the help of several computing education researchers at a Dagstuhl retreat in 2016. 
 	I consider it a community resource, so if you see something to add, fix, or improve, write me, or submit <External to="https://github.com/amyjko/faculty/issues">an issue</External> or 
-	<External to="https://github.com/amyjko/faculty/pulls">pull request</External>.
-</div>
+	<External to="https://github.com/amyjko/faculty/pulls">pull request</External>
+</p>
 
 <SectionList />
 
@@ -235,7 +239,7 @@
 	That's the most direct indicator of their interests, the methods they use, and the types of contributions they want to make (other than just writing them and asking, which you can also do).
 </p>
 
-<table class="table">
+<table>
 	<thead>
 		<tr>
 			<th>Name</th>

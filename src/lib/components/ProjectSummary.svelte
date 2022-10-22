@@ -17,7 +17,7 @@
 >
     <Image slot="image" url={"/images/projects/project-" + project.id + ".png"} alt={project.name} />
     <span>
-        <h4>{project.name} <small>({project.startdate}&ndash;{project.stopdate})</small></h4>
+        <h3>{project.name} <small>({project.startdate}&ndash;{project.stopdate ?? ""})</small></h3>
         <p>
         {#each project.people.map(id => $profile.getPerson(id)) as person }
             {#if person}
@@ -25,8 +25,8 @@
                     <img 
                         src={$profile.getPersonImagePath(person.id)} 
                         alt={`${person.name} headshot`}
-                        class="student-mug img-circle" 
-                        style={"width: 32px"} />
+                        class="mini-headshot" 
+                    />
                 </Link>
             {/if}
         {/each}
@@ -35,3 +35,9 @@
         <p><Link to={link}>{"See " + (project.papers.length) + " papers" + (project.links.length > 0 ? ", " + project.links.length + " demo" + (project.links.length > 1 ? "s" : "") + ", " : "") + " and impact details..."}</Link></p>
     </span>
 </Block>
+
+<style>
+    h3 {
+        margin-top: 0;
+    }
+</style>
