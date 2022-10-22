@@ -9,7 +9,7 @@
 
 	onMount(() => {
 		scrollToHash();
-	})
+	});
 
 	function isPersonHighlighted(id: string) {
 		return typeof window !== "undefined" && window.location.hash.substring(1) === id;

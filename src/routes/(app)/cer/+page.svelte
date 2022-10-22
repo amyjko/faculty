@@ -2,7 +2,8 @@
 	import Section from '$lib/components/Section.svelte';
 	import External from '$lib/components/External.svelte';
 	import advisors from '$lib/models/advisors';
-    import SectionList from '../../../lib/components/SectionList.svelte';
+    import SectionList from '$lib/components/SectionList.svelte';
+
 </script>
 
 <h1>

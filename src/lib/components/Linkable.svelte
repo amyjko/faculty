@@ -2,6 +2,7 @@
     import { onMount } from "svelte";
     import Link from "./Link.svelte";
     import { page } from "$app/stores";
+    import { scrollToElement } from "../models/utilities";
 
     export let id: string;
 
@@ -14,7 +15,7 @@
 		if(isLinked()) {
             let element = document.getElementById(id);
             if(element)
-                window.scrollTo({ top: element.getBoundingClientRect().top - window.innerHeight / 2, behavior: 'smooth' })
+                scrollToElement(element);
 		}
     });
 
@@ -25,6 +26,12 @@
     <Link
         to={$page.url.pathname + "#" + id}
     >
-        <img class="link-icon" alt="link icon" src={"/images/icons/link.png"} />
+        &#x1F517;
     </Link>
 </h2>
+
+<style>
+    .linked { 
+        border-bottom: 4px solid var(--annotation-color);
+    }
+</style>
