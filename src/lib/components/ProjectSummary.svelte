@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { base } from "$app/paths";
     import Link from "$lib/components/Link.svelte";
     import Block from "$lib/components/Block.svelte";
     import type { Project } from "$lib/models/Project";
@@ -7,7 +8,7 @@
     import getPersonImagePath from "$lib/components/getPersonImage";
     export let project: Project;
 
-    const link = "/projects/" + project.id;
+    const link = `${base}/projects/${project.id}`;
 
 </script>
 		

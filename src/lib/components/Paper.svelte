@@ -1,5 +1,6 @@
 <script lang="ts">
 
+	import { base } from "$app/paths";
 	import Block from "./Block.svelte";
 	import Authors from "./Authors.svelte";
 	import type { Paper } from "$lib/models/Paper";
@@ -22,7 +23,7 @@
 	}
 
 	function getLocalURL() {
-		return "/papers/" + paper.local;
+		return `/papers/${paper.local}`;
 	}
 
 	function getURL() {
@@ -88,7 +89,7 @@
 			<small><Authors paper={paper} link/> ({paper.year})</small>
 			<br/>
 			{#if url}
-				<span>{#if url.startsWith("http")}<External to={url}>{paper.title}</External>{:else}<Link to={url}>{paper.title}</Link>{/if} <Link to={"/publications/#" + paper.id}><img class="link-icon" alt="external link icon" src={"/images/icons/link.png"} /></Link></span>
+				<span>{#if url.startsWith("http")}<External to={url}>{paper.title}</External>{:else}<Link to={url}>{paper.title}</Link>{/if}</span>
 			{:else}
 				<strong>{paper.title}</strong>
 			{/if}
@@ -99,7 +100,8 @@
 					<span class="clickable" tabIndex=0 on:click={toggle} on:keydown={(event) => event.key === "Enter" ? toggle() : undefined}>{apa ? "▾ cite" : "▸ cite"}</span>
 					{#if paper.local}<span> &sdot; <Link to={getLocalURL()}>pdf</Link></span>{/if}
 					{#if paper.doi}<span> &sdot; <External to={paper.doi}>doi</External></span>{/if}
-					{#if paper.blog}<span> &sdot; <External to={paper.blog}>blog post</External></span>{/if}
+					{#if paper.blog}<span> &sdot; <External to={paper.blog}>blog</External></span>{/if}
+					&sdot; <Link to={"/publications/#" + paper.id}>&#x1F517;</Link>
 				</small>
 			</div>
 			{#if apa}<div><small><APACitation paper={paper}/></small></div>{/if}

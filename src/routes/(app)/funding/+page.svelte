@@ -4,6 +4,7 @@
 	import { profile } from "$lib/models/stores";
     import { parseDate } from "$lib/models/Profile";
 	import Image from "$lib/components/Image.svelte";
+    import Link from "$lib/components/Link.svelte";
 
 </script>
 
@@ -49,7 +50,7 @@
 	
 	<br/>
 	<br/>
-	For those preparing CAREER proposals looking for a exemplars, here is my <a href={"/papers/Ko2009CAREER.pdf"}>awarded proposal</a>.
+	For those preparing CAREER proposals looking for a exemplars, here is my <Link to={"/papers/Ko2009CAREER.pdf"}>awarded proposal</Link>.
 </Block>
 <Block 
 	link="https://microsoft.com"

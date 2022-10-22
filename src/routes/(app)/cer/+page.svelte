@@ -16,7 +16,7 @@
 	<External to="https://github.com/amyjko/faculty/pulls">pull request</External>
 </p>
 
-<SectionList />
+<SectionList path="/cer" />
 
 <p>
 	Computing education research (CER), also known as computer science education (CSEd) research, is the study of how people learn and teach computing, broadly construed. 

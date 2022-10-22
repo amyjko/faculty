@@ -10,7 +10,7 @@
 </script>
 
 <div class="info">
-	<a href="/"><Image url={"/images/headshots/mug-ajko.jpg"} alt="Headshot of Amy J. Ko"/></a>
+	<a href="/ajko/"><Image url={"/images/headshots/mug-ajko.jpg"} alt="Headshot of Amy J. Ko"/></a>
 	<h1>Amy J. Ko, Ph.D.</h1>
 	<External to="https://www.mypronouns.org/she-her">she/her/hers</External>
 	<br/><External to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/">Professor</External>

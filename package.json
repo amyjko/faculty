@@ -11,7 +11,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"dry":  "rsync --dry-run -avzi --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html",
-		"ship": "rsync -avz --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html"
+		"ship": "npm run build && rsync -avz --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html"
 	},
 	"devDependencies": {
 		"@sveltejs/kit": "next",

@@ -1,5 +1,8 @@
 <script lang="ts">
     import { afterUpdate } from "svelte";
+    import Link from "./Link.svelte";
+
+    export let path: string;
 
     type Header = { id: string, text: string | null}
 
@@ -21,7 +24,7 @@
 <hr/>
 <ul>
     {#each sections as section }
-        <li><a href={`#${section.id}`}>{section.text}</a></li>
+        <li><Link to={`${path}#${section.id}`}>{section.text?.replaceAll("🔗", "")}</Link></li>
     {/each}
 </ul>
 <hr/>

@@ -15,7 +15,7 @@
 	These are questions I'm frequently asked.
 </h1>
 
-<SectionList/>
+<SectionList path="/faq" />
 
 <Section id="recommendations" header="Will you write me a letter of recommendation?">
 <p>
