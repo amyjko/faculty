@@ -15,9 +15,9 @@
 
 
 <style>
+
     /* Small */
     @media only screen and (max-width: 800px) {
-
         :global(body) {
             margin: 1em;
         }
@@ -25,12 +25,6 @@
         .page {
             display: block;
         }
-
-        .header {
-            margin-right: 1em;
-            flex: 0 0 15em;
-        }
-
     }
 
     /* Large */
