@@ -4,7 +4,7 @@
     import Block from "$lib/components/Block.svelte";
     import type { Project } from "$lib/models/Project";
     import { profile } from "../models/stores";
-    import Image from "./Image.svelte";
+    import Image from "./Thumbnail.svelte";
     import getPersonImagePath from "$lib/components/getPersonImage";
     export let project: Project;
 

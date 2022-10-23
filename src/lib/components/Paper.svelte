@@ -1,6 +1,5 @@
 <script lang="ts">
 
-	import { base } from "$app/paths";
 	import Block from "./Block.svelte";
 	import Authors from "./Authors.svelte";
 	import type { Paper } from "$lib/models/Paper";
@@ -9,7 +8,7 @@
     import APACitation from "./APACitation.svelte";
 	import { profile } from "$lib/models/stores";
     import { afterUpdate } from "svelte";
-	import Image from "./Image.svelte";
+	import Image from "./Thumbnail.svelte";
 
 	export let paper: Paper;
 	export let format: "apa" | "cv" | "full" = "full";

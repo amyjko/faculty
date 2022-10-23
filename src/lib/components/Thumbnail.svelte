@@ -12,12 +12,13 @@
 <style>
 
     img {
-        width: 10em;
+        width: calc(100% - 1em);
         padding: 0;
         border-radius: var(--roundedness);
         display: block;
         margin-right: 1em;
         margin-bottom: 1em;
+        max-width: 10em;
     }
 
     img.highlight {

@@ -6,7 +6,7 @@
 	import Paper from "$lib/components/Paper.svelte";
 	import Block from "$lib/components/Block.svelte";
 	import Link from "$lib/components/Link.svelte";
-	import Image from "$lib/components/Image.svelte";
+	import Image from "$lib/components/Thumbnail.svelte";
 	import { page } from "$app/stores";
     import getPersonImagePath from "$lib/components/getPersonImage";
 

@@ -5,7 +5,7 @@
 	import Link from "$lib/components/Link.svelte";
 	import { profile } from "$lib/models/stores";
     import { parseDate } from "$lib/models/Profile";
-	import Image from "$lib/components/Image.svelte";
+	import Image from "$lib/components/Thumbnail.svelte";
 		
 	const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 

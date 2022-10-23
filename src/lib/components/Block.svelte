@@ -34,4 +34,11 @@
 	.left {
 		flex: 0 0 10em;
 	}
+
+	@media only screen and (max-width: 800px) {
+		.left {
+			flex: 0 0 5em;
+		}
+    }
+
 </style>

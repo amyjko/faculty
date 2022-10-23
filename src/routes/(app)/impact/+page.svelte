@@ -3,7 +3,7 @@
 	import Block from "$lib/components/Block.svelte";
     import External from "$lib/components/External.svelte";
 	import { profile } from "$lib/models/stores";
-	import Image from "$lib/components/Image.svelte";
+	import Image from "$lib/components/Thumbnail.svelte";
 
 </script>
 

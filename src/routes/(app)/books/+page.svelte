@@ -1,7 +1,7 @@
 <script lang="ts">
 
 	import Block from "$lib/components/Block.svelte";
-	import Image from "$lib/components/Image.svelte";
+	import Image from "$lib/components/Thumbnail.svelte";
 	import { profile } from '$lib/models/stores'
 
 </script>

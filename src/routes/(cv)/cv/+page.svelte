@@ -5,7 +5,7 @@
     import Item from "./Item.svelte";
     import Row from "./Row.svelte";
 	import Paper from "$lib/components/Paper.svelte";
-	import Image from "$lib/components/Image.svelte";
+	import Image from "$lib/components/Thumbnail.svelte";
     import Wrap from "./Wrap.svelte";
 
 	let refereed = $profile.getPublications(pub => pub.kind === "journal article" || pub.kind === "refereed conference paper", pub => -pub.year);

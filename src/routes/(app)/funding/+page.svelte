@@ -3,7 +3,7 @@
 	import Block from "$lib/components/Block.svelte";
 	import { profile } from "$lib/models/stores";
     import { parseDate } from "$lib/models/Profile";
-	import Image from "$lib/components/Image.svelte";
+	import Image from "$lib/components/Thumbnail.svelte";
     import Link from "$lib/components/Link.svelte";
 
 </script>

@@ -16,7 +16,7 @@
 
 <style>
     /* Small */
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
 
         :global(body) {
             margin: 1em;
@@ -34,13 +34,15 @@
     }
 
     /* Large */
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 800px) {
 
         :global(body) {
-            margin: 3em;
+            margin: auto;
+            max-width: 80em;
         }
 
         .page {
+            margin: 3em;
             display: flex;
             flex-direction: row;
         }

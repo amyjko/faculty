@@ -4,7 +4,7 @@
     import Block from "./Block.svelte";
     import External from "./External.svelte";
     import Link from "./Link.svelte";
-    import Image from "./Image.svelte";
+    import Image from "./Thumbnail.svelte";
 
     export let highlight: boolean;
     export let person: Person;
