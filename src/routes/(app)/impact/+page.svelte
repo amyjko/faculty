@@ -15,7 +15,7 @@
 	<Block 
 		header={population.population}
 	>
-		<Image slot="image" url={"images/populations/population-" + population.id + ".jpg"} alt={population.alt} />
+		<Image slot="image" url={"/images/populations/population-" + population.id + ".jpg"} alt={population.alt} />
 		<p>{population.description}</p>
 		<div>
 			{#each $profile.getImpacts(impact => impact.who === population.id, impact => -impact.start) as impact}

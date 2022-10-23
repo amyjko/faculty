@@ -1,13 +1,16 @@
 <script type="ts">
 
     import { base } from "$app/paths";
+	import { page } from "$app/stores";
 
     export let to: string;
-    export let at: boolean=false;
+    export let at: string | undefined = undefined;
+
+	$: path = $page.url.pathname;
 
 </script>
 
-{#if at}
+{#if at && (at === "/" ? path === `${base}` : path ===`${base}${at}`) }
     <span class="at"><slot></slot></span>
 {:else}
     <a href={`${base}${to}`}><slot></slot></a>
