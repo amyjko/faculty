@@ -59,8 +59,10 @@
 		background-color: var(--annotation-color);
 	}
 
-	nav {
-		position: sticky;
-		top: var(--margin);
+	@media only screen and (min-width: 800px) {
+		nav {
+			position: sticky;
+			top: var(--margin);
+		}
 	}
 </style>
