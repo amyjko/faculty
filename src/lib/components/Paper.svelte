@@ -99,6 +99,7 @@
 					<span class="clickable" tabIndex=0 on:click={toggle} on:keydown={(event) => event.key === "Enter" ? toggle() : undefined}>{apa ? "▾ cite" : "▸ cite"}</span>
 					{#if paper.local}<span> &sdot; <Link to={getLocalURL()}>pdf</Link></span>{/if}
 					{#if paper.doi}<span> &sdot; <External to={paper.doi}>doi</External></span>{/if}
+					{#if paper.slides}<span> &sdot; <Link to={`/slides/${paper.slides}`}>slides</Link></span>{/if}
 					{#if paper.blog}<span> &sdot; <External to={paper.blog}>blog</External></span>{/if}
 					&sdot; <Link to={"/publications/#" + paper.id}>&#x1F517;</Link>
 				</small>

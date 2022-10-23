@@ -2,10 +2,10 @@
 
 	import External from "$lib/components/External.svelte";
 	import Block from "$lib/components/Block.svelte";
-	import Link from "$lib/components/Link.svelte";
 	import { profile } from "$lib/models/stores";
     import { parseDate } from "$lib/models/Profile";
 	import Image from "$lib/components/Thumbnail.svelte";
+    import Link from "$lib/components/Link.svelte";
 		
 	const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -19,13 +19,13 @@
 {#each $profile.getTalks(undefined, talk => -(parseDate(talk.date).getTime())) as talk}
 	{@const date = parseDate(talk.date)}
 	<Block
-		link={talk.recording ? talk.recording : talk.practice ? talk.practice : talk.slides }
+		link={talk.recording ? talk.recording : talk.practice ? talk.practice : `/slides/${talk.slides}` }
 		header={talk.title}
 	>
 		<Image slot="image" url={"/images/talks/" + talk.image} alt={talk.alt} />
 		<span>
 			&nbsp; {#if talk.keynote}<span class="award">&#x2605; Keynote</span>{/if}
-			<br/><small><em>{#if talk.url}<Link to={talk.url}>{talk.venue}</Link>{:else}{talk.venue}{/if}</em></small>
+			<br/><small><em>{#if talk.url}<External to={talk.url}>{talk.venue}</External>{:else}{talk.venue}{/if}</em></small>
 			<br/><small>{#if date instanceof Date}{months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear()}{/if}</small>
 			<br/><small>{talk.description}</small>
 			<br/>
@@ -40,7 +40,7 @@
 					{/if}
 					{#if talk.slides}
 						{#if talk.recording || talk.practice } &sdot; {/if}
-						<External to={talk.slides}>Slides</External>
+						<Link to={`/slides/${talk.slides}`}>Slides</Link>
 					{/if}
 					{#if talk.blog}
 						{#if talk.recording || talk.practice || talk.slides } &sdot; {/if}

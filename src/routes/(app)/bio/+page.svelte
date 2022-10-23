@@ -100,11 +100,11 @@
 </p>
 
 <ul>
-	<li><Link to="promotion/Assistant-Statements.pdf">Research and teaching statements</Link> for my 2008 academic job search.</li>
-	<li><Link to="promotion/Associate-Statements.pdf">Research, teaching, and service statements</Link> for tenure and promotion to Associate Professor.</li>
-	<li><Link to="promotion/Associate-CV.pdf">Curriculum vita</Link> for tenure and promotion to Associate Professor.</li>
-	<li><Link to="promotion/Full-Statements.pdf">Research, teaching, service, and diversity statements</Link> for tenure and promotion to Professor.</li>
-	<li><Link to="promotion/Full-CV.pdf">Curriculum vita</Link> for tenure and promotion to Professor.</li>
+	<li><Link to="/promotion/Assistant-Statements.pdf">Research and teaching statements</Link> for my 2008 academic job search.</li>
+	<li><Link to="/promotion/Associate-Statements.pdf">Research, teaching, and service statements</Link> for tenure and promotion to Associate Professor.</li>
+	<li><Link to="/promotion/Associate-CV.pdf">Curriculum vita</Link> for tenure and promotion to Associate Professor.</li>
+	<li><Link to="/promotion/Full-Statements.pdf">Research, teaching, service, and diversity statements</Link> for tenure and promotion to Professor.</li>
+	<li><Link to="/promotion/Full-CV.pdf">Curriculum vita</Link> for tenure and promotion to Professor.</li>
 </ul>
 <Linkable  id="identity">Identity</Linkable>
 
