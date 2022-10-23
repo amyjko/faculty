@@ -43,8 +43,8 @@
 <style>
     .topic {
         display: inline-block;
-        margin-right: var(--margin);
-        margin-bottom: var(--margin);
+        margin-right: var(--padding);
+        margin-bottom: var(--padding);
     }
 
     mark {
