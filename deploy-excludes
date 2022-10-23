@@ -1,17 +1,3 @@
-/.git/
-/budget/
 /books/
-/bookish/
 /courses/
-/node_modules/
-/components/
 .DS_Store
-.gitignore
-deploy-excludes
-package.json
-package-lock.json
-esbuild.config.js
-README.md
-app.js
-ajko
-LICENSE
