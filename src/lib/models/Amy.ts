@@ -8669,6 +8669,19 @@ export const Amy: ProfileSpec = {
 	],
 	"talks": [
 		{
+			"date": "2022-10-25",
+			"image": "mit2022.jpg",
+			"alt": "",
+			"slides": "MIT2022CSforAll.pdf",
+			"title": "The Promise and Problems of CS for All",
+			"venue": "CSAIL, MIT",
+			"url": null,
+			"recording": null,
+			"practice": null,
+			"description": "A revised version of my SFU talk, which motivates the need for computing literacy, talks about my lab's recent discoveries, and challenges us to have broader visions of computing in education.",
+			"keynote": false
+		},
+		{
 			"date": "2022-09-20",
 			"image": "sfu22.jpg",
 			"alt": "",

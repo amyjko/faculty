@@ -28,5 +28,5 @@
         <em>{trip.commitment.start === null || trip.commitment.end === null ? "TBD" : getDateString(parseDate(trip.commitment.start), parseDate(trip.commitment.end))}</em>
         {#if trip.report }<span><br/><External to={trip.report}>trip report</External></span>{/if}
     </svelte:fragment>
-    { ". " + trip.details }
+    <br/>{trip.details }
 </Block>
