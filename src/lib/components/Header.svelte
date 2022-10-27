@@ -43,7 +43,6 @@
 	<Link to="/cer" at={"/cer.*"}>CER FAQ</Link>
 	<Link to="/cv">CV</Link>
 </nav>
-<hr/>
 
 <style>
 	:global(nav > *) {

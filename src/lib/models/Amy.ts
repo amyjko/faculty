@@ -2565,11 +2565,11 @@ export const Amy: ProfileSpec = {
 			"active": true,
 			"advised": true,
 			"level": "phd",
-			"dept": "Bard College",
+			"dept": "iSchool",
 			"coadvisor": null,
-			"bio": "Megumi is an undergraduate at Bard College in her final year studying Computer Science and Spanish Studies. She is interested in justice-centered CS education, specifically ways to make CS more inclusive for Black students",
-			"url": "https://fmegumikivuva.wixsite.com/portfolio",
-			"startdate": 2021,
+			"bio": "Megumi is a PhD student at the iSchool studying justice-centered CS education.",
+			"url": "http://megumikivuva.com/",
+			"startdate": 2022,
 			"enddate": null,
 			"achievements": []
 		},
@@ -3814,6 +3814,20 @@ export const Amy: ProfileSpec = {
 			"links": [],
 			"startdate": 2004,
 			"stopdate": null
+		}
+	],
+	discoveries: [
+		{
+			start: 2004,
+			stop: 2010,
+			image: "paper-whyline2.jpg",
+			contribution: "Programs can explain themselves",
+			detail: "I invented tools and algorithms for deriving 'why' and 'why not' questions from programs and automatically answering those questions, helping people efficiently and interactively debug the root causes of program failures.",
+			pubs: [],
+			people: ['@ajko'],
+			tags: ["debugging", "tool"],
+			code: "https://github.com/amyjko/whyline",
+			video: "https://www.youtube.com/watch?v=pbElN8nfe3k"
 		}
 	],
 	"posts": [

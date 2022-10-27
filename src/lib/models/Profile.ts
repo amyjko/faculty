@@ -16,6 +16,7 @@ import type { Service } from "./Service";
 import type { Talk } from "./Talk";
 import type { Travel } from "./Travel";
 import type Commit from "./Commit";
+import type { Discovery } from "./Discovery";
 
 export default class Profile {
 
@@ -108,6 +109,10 @@ export default class Profile {
 	// Find the project with the matching id.
 	getProject(id: string) {
 		return this.json.projects.find(p => p.id === id);
+	}
+
+	getDiscoveries(filter?: (p: Discovery) => boolean, sort?: (p: Discovery) => number) { 
+		return this.cloneFilterSort(this.json.discoveries.slice(), filter, sort); 
 	}
 
 	// Get the list of publication tags applied to all publications.

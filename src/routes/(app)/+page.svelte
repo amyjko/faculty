@@ -4,6 +4,9 @@
     import External from "$lib/components/External.svelte";
 	import ProjectSummary from "$lib/components/ProjectSummary.svelte";
 	import { profile } from "$lib/models/stores";
+	import Thumbnail from "$lib/components/Thumbnail.svelte";
+	import Block from "$lib/components/Block.svelte";
+	import getPersonImagePath from "$lib/components/getPersonImage";
 
 </script>
 
@@ -32,7 +35,40 @@
 	Want to do research with me?
 	Read about my <Link to="/lab">lab</Link>.
 </p>
-				
+
+<h2>Discoveries</h2>
+
+{#each $profile.getDiscoveries(undefined, a => a.start) as discovery }
+	<Block>
+		<Thumbnail url={`/images/papers/${discovery.image}`} alt="A list of why questions such as 'why did color = red?'" slot="image"/>
+		<strong>{discovery.contribution}</strong> <small>({discovery.start}&mdash;{discovery.stop ?? ""})</small>
+		<br/>{discovery.detail}
+		<br/>
+		<p>
+			{#each discovery.people.map(id => $profile.getPerson(id)) as person }
+				{#if person}
+					<Link to={person.id === "ajko" ? "/bio" : "/lab/#" + person.id}>
+						<img 
+							src={`${getPersonImagePath(person.id)}`} 
+							alt={`${person.name} headshot`}
+							class="mini-headshot" 
+						/>
+					</Link>
+				{/if}
+			{/each}
+			{#each discovery.tags as tag}<mark class={"topic"}>{tag}</mark>{/each}
+			{#each $profile.getPublications(paper => discovery.pubs.includes(paper.id), paper => -paper.year) as paper}
+				paper
+			{/each}
+			<small>
+				{#if discovery.video}&sdot; <External to={discovery.video}>video</External>{/if}
+				{#if discovery.demo}&sdot; <External to={discovery.demo}>demo</External>{/if}
+				{#if discovery.code}&sdot; <External to={discovery.code}>code</External>{/if}
+			</small>
+		</p>
+</Block>
+{/each}
+
 <h3>Active Topics</h3>
 
 <p>These are topics that people in my lab are actively investigating.</p>

@@ -107,6 +107,7 @@ mark {
 	padding-bottom: var(--padding);
 	padding-right: calc(2 * var(--padding));
 	padding-left: calc(2 * var(--padding));
+	margin-right: var(--padding);
 }
 
 .alert {
@@ -120,8 +121,9 @@ mark {
 
 .mini-headshot {
 	opacity: 0.5;
-	height: 2em;
+	height: 1.5em;
 	border-radius: 50%;
+	vertical-align: middle;
 }
 
 .mini-headshot:hover {
