@@ -75,7 +75,7 @@ export default class Profile {
 			// Add the paper's awards as tags
 			"award": paper.award ? paper.award.slice() : [],
 			// Add the paper's projects
-			"project": this.getProjects(project => project.papers.indexOf(paper.id) >= 0).map(project => project.shortName)
+			"project": this.getDiscoveries(discovery => discovery.pubs.indexOf(paper.id) >= 0).map(discovery => discovery.tags).reduce((allTags, tags) => [ ...allTags, ...tags ], [])
 		};
 
 	}
@@ -91,7 +91,7 @@ export default class Profile {
 		
 	}
 
-	getPostMontYear(post: Post) {
+	getPostMonthYear(post: Post) {
 		const parts = post.date.split(".");
 		return { year: parseInt(parts[0]), month: parseInt(parts[1]) };
 	}
@@ -115,6 +115,17 @@ export default class Profile {
 		return this.cloneFilterSort(this.json.discoveries.slice(), filter, sort); 
 	}
 
+	getDiscoveryRange(discovery: Discovery) {
+		const years = [];
+		for(const id of discovery.pubs) {
+			const paper = this.getPublication(id);
+			if(paper)
+				years.push(paper.year);
+		}
+		return [ Math.min.apply(undefined, years), Math.max.apply(undefined, years) ];
+		
+	}
+
 	// Get the list of publication tags applied to all publications.
 	getPublicationFacets() {
 		// Initialize a list of publication tags
@@ -125,7 +136,7 @@ export default class Profile {
 		// Add the tags to the publication tags dictionary.
 		this.getPublications().forEach(pub => {
 
-			const tags = this.getPaperTags(pub)
+			const tags = this.getPaperTags(pub);
 
 			// Accumulate post tags by going through each facet and adding the publication's
 			Object.keys(tags).forEach(facet => {
@@ -137,6 +148,18 @@ export default class Profile {
 
 		return publicationFacets;
 		
+	}
+
+	getPeopleFromPubs(pubs: string[]): Person[] {
+		const peeps = new Set<string>();
+		for(const id of pubs) {
+			const paper = this.getPublication(id);
+			if(paper)
+				for(const author of paper.authors.filter(author => author.startsWith("@")))
+					peeps.add(author);
+		}
+		return Array.from(peeps).map(author => this.getPerson(author)).filter(person => person !== undefined) as Person[];
+
 	}
 
 	// Get the list of impacts.
@@ -158,7 +181,7 @@ export default class Profile {
 	}
 	
     getPublication(id: string) {
-        return this.json.pubs.find(p => p.id = id);
+        return this.json.pubs.find(p => p.id === id);
     }
 
 	// Get the list of talks.

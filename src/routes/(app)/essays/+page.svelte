@@ -29,9 +29,9 @@
 
 {#each $profile.getPosts(
 		post => !("topic" in filter) || post.tags.includes(filter.topic),
-		post => -($profile.getPostMontYear(post).year * 12 + $profile.getPostMontYear(post).month)
+		post => -($profile.getPostMonthYear(post).year * 12 + $profile.getPostMonthYear(post).month)
 	) as post }
-	{@const date = $profile.getPostMontYear(post) }
+	{@const date = $profile.getPostMonthYear(post) }
 	<Block
 		link={post.url}
 		header={post.title}

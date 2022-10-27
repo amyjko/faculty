@@ -7,6 +7,7 @@
 	import Thumbnail from "$lib/components/Thumbnail.svelte";
 	import Block from "$lib/components/Block.svelte";
 	import getPersonImagePath from "$lib/components/getPersonImage";
+    import Paper from "../../lib/components/Paper.svelte";
 
 </script>
 
@@ -38,50 +39,44 @@
 
 <h2>Discoveries</h2>
 
-{#each $profile.getDiscoveries(undefined, a => a.start) as discovery }
+<p>
+	My lab and I have discovered many things since I started doing research in 1999.
+	Here are some of the highlights from our work.
+	How I describe these is always evolving as we learn more.
+</p>
+
+<!-- Create a list of discoveries from bundles of papers, sorted by the most recent publication on the discovery. -->
+{#each $profile.getDiscoveries(undefined, a => -$profile.getDiscoveryRange(a)[1]) as discovery }
+	{@const range = $profile.getDiscoveryRange(discovery) }
 	<Block>
 		<Thumbnail url={`/images/papers/${discovery.image}`} alt="A list of why questions such as 'why did color = red?'" slot="image"/>
-		<strong>{discovery.contribution}</strong> <small>({discovery.start}&mdash;{discovery.stop ?? ""})</small>
+		<strong>{discovery.contribution}</strong> <small>({range[0]}{range[0] !== range[1] ? ` — ${range[1]}` : ""})</small> 
 		<br/>{discovery.detail}
-		<br/>
+		<br/>{#each $profile.getPeopleFromPubs(discovery.pubs) as person }
+			{#if person}
+				<Link to={person.id === "ajko" ? "/bio" : "/lab/#" + person.id}>
+					<img 
+						src={`${getPersonImagePath(person.id)}`} 
+						alt={`${person.name} headshot`}
+						class="mini-headshot" 
+					/>
+				</Link>
+			{/if}
+		{/each}
 		<p>
-			{#each discovery.people.map(id => $profile.getPerson(id)) as person }
-				{#if person}
-					<Link to={person.id === "ajko" ? "/bio" : "/lab/#" + person.id}>
-						<img 
-							src={`${getPersonImagePath(person.id)}`} 
-							alt={`${person.name} headshot`}
-							class="mini-headshot" 
-						/>
-					</Link>
-				{/if}
-			{/each}
-			{#each discovery.tags as tag}<mark class={"topic"}>{tag}</mark>{/each}
-			{#each $profile.getPublications(paper => discovery.pubs.includes(paper.id), paper => -paper.year) as paper}
-				paper
-			{/each}
 			<small>
-				{#if discovery.video}&sdot; <External to={discovery.video}>video</External>{/if}
-				{#if discovery.demo}&sdot; <External to={discovery.demo}>demo</External>{/if}
-				{#if discovery.code}&sdot; <External to={discovery.code}>code</External>{/if}
+				{#each discovery.tags as tag}<mark class={"topic"}>{tag}</mark>{/each}
+				{#if discovery.video}
+					{#each discovery.video as video }
+						&nbsp; <span class="emoji">🎬</span> <External to={video}>video</External>&nbsp;
+					{/each}
+				{/if}	
+				{#if discovery.demo}&nbsp;<span class="emoji">🖥️</span> <External to={discovery.demo}>demo</External>{/if}
+				{#if discovery.code}&nbsp;<code>{"{}"}</code>&nbsp;<External to={discovery.code}>code</External>{/if}
+				{#each $profile.getPublications(paper => discovery.pubs.includes(paper.id), paper => -paper.year) as paper}
+					&nbsp; <span class="emoji">📄</span><Link to={`/publications#${paper.id}`}>'{paper.year.toString().substring(2)}&nbsp;</Link>
+				{/each}
 			</small>
 		</p>
 </Block>
-{/each}
-
-<h3>Active Topics</h3>
-
-<p>These are topics that people in my lab are actively investigating.</p>
-
-{#each $profile.getProjects(project => project.active) as project }
-	<ProjectSummary project={project} />
-{/each}
-
-<br/>
-<h3>Inactive Topics</h3>
-
-<p>These are topics that my lab has investigated in the past, but that no one in the lab is actively investigating now. New students might join my lab and bring them back to life!</p>
-
-{#each $profile.getProjects(project => !project.active) as project }
-	<ProjectSummary project={project} />
 {/each}
