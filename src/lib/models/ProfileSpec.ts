@@ -1,7 +1,6 @@
 import type { Source } from "./Source";
 import type { Paper } from "./Paper";
 import type { Person } from "./Person";
-import type { Project } from "./Project";
 import type { Post } from "./Post";
 import type { Impact } from "./Impact";
 import type { Population } from "./Population";
@@ -25,7 +24,6 @@ type ProfileSpec = {
 	sources: Record<string, Source>;
 	pubs: Paper[];
 	people: Person[];
-	projects: Project[];
 	discoveries: Discovery[];
 	impacts: Impact[];
 	populations: Population[];

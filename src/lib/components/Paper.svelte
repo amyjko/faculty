@@ -101,7 +101,7 @@
 					{#if paper.doi}<span> &sdot; <External to={paper.doi}>doi</External></span>{/if}
 					{#if paper.slides}<span> &sdot; <Link to={`/slides/${paper.slides}`}>slides</Link></span>{/if}
 					{#if paper.blog}<span> &sdot; <External to={paper.blog}>blog</External></span>{/if}
-					&sdot; <Link to={"/publications/#" + paper.id}>&#x1F517;</Link>
+					&sdot; <Link to={"/publications/#" + paper.id}><span class="emoji">&#x1F517;</span></Link>
 				</small>
 			</div>
 			{#if apa}<div><small><APACitation paper={paper}/></small></div>{/if}

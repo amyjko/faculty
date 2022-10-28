@@ -1,4 +1,4 @@
-import type ProfileSpec from "./ProfileSpec";
+import type ProfileSpec from "../lib/models/ProfileSpec";
 
 export const Amy: ProfileSpec = {
 	sources: {
@@ -2924,7 +2924,7 @@ export const Amy: ProfileSpec = {
 			"level": "undergrad",
 			"dept": "Computer Science and Education",
 			"coadvisor": null,
-			"bio": "Andrew was a CS & Education double major interested in pedagogical techniques and student motivation in CS Ed. He's now a Ph.D. student at Michigan State University's College of Education.",
+			"bio": "Anne Drew was a CS & Education double major interested in pedagogical techniques and student motivation in CS Ed. He's now a Ph.D. student at Michigan State University's College of Education.",
 			"url": "http://students.washington.edu/andrewhu",
 			"startdate": 2018,
 			"enddate": 2020,
@@ -3622,243 +3622,43 @@ export const Amy: ProfileSpec = {
 			"achievements": []
 		}
 	],
-	projects: [
-		{
-			"id": "csjustice",
-			"active": true,
-			"name": "Justice-focused computing education",
-			"shortName": "CS justice",
-			"description": "Computing is powerful, but that power is often used by dominant groups in ways that disregard, exclude, or even harm marginalized groups, amplifying and reinforcing sexist, racist, and ableist structures and ideas. My lab is exploring teaching methods, learning technologies, and teacher education paradigms that center these power dynamics in CS education.",
-			"funding": ["@csjustice", "@csassess", "@fmitf", "@googlecser"],
-			"people": ["@ajko", "@jayne", "@olesona", "@kshino", "@skawas", "@laurav4", "@meron", "@perdriau", "@megumi"],
-			"papers": ["cognimates", "criticalcsed", "hcidifficulties", "inclusivepck", "hcipckchallenge", "teachaccess1", "teachaccess2", "accesscomputingteachaccess", "csdesignk12", "coconstructedcriticalcs", "houseofcomputing", "ccc", "coconstructedcriticalcs", "houseofcomputing"],
-			"links": [],
-			"startdate": 2019,
-			"stopdate": null
-		},
-		{
-			"id": "csdiversity",
-			"active": true,
-			"name": "Broadening participation in computing",
-			"shortName": "Broadening participation",
-			"description": "The world is full of structural barriers to developing interest in and learning computing. My lab investigates these barriers and ways to eradicate them, including issues around accessibility, mentorship, culture, identity, and resources, with the goal of increasing the diversity of people in computing disciplines.",
-			"funding": ["@accesscomp", "@gidget", "@csassess", "@fairassess"],
-			"people": ["@ajko", "@kthayer", "@banerjee", "@kwikh", "@kshino", "@laurav4", "@skawas", "@lkhwa", "@jcyip", "@kdavis"],
-			"papers": ["codedif", "codebios", "bootcamps", "ellblockstudio", "transfer", "mentors1", "mentors2", "csdif", "studentamp", "ccc", "coconstructedcriticalcs", "houseofcomputing", "codedif"],
-			"links": [
-				{ "title": "See WeCode", "url": "https://youtu.be/t56g4DYIuUA" }
-			],
-			"startdate": 2009,
-			"stopdate": null
-		},
-		{
-			"id": "mlliteracy",
-			"active": true,
-			"name": "Understanding machine learning",
-			"shortName": "ML literacy",
-			"description": "While most programs are still written by developers, many are now built by gathering large amounts of data and automatically creating machine learned programs. My lab is investigating the immense comprehension challenges imposed by these probablistic forms of program behavior, as well as the literacy required to understand how they are shaping program behavior and society.",
-			"funding": ["@csassess"],
-			"people": ["@ajko", "@st3f", "@yreg", "@kayur", "@chandrashree"],
-			"papers": ["cognimates", "mladvocacy", "gestalt", "whydebugclassifier2", "whydebugclassifier1", "airesources", "ccc", "aifamily", "coconstructedcriticalcs", "cognimates"],
-			"links": [],
-			"startdate": 2004,
-			"stopdate": null
-		},
-		{
-			"id": "pllearning",
-			"active": true,
-			"name": "Programming language learning",
-			"shortName": "PL learning",
-			"description": "Robust understanding of a programming language is a key foundation for being able to create software. My lab investigates what it means to know a programming language, invents and evaluates educational technologies that streamline learning of a programming language, and invents and evaluates assessments that help identify what learners do and do not know about a programming language.",
-			"funding": ["@csassess", "@gidget", "@seif", "@msft", "@fairassess"],
-			"people": ["@ajko", "@bxie", "@glnelson", "@kwikh", "@mjslee", "@yanan15", "@akkarh", "@wkwok16", "@brettwo", "@minli"],
-			"papers": ["traceassess", "cs1theory", "gidget6", "pltutor1", "tutorialeval", "tracing", "statscomprehension", "irteval", "gidget1", "gidget2", "gidget3", "gidget4", "gidget5", "gidget6", "adultattitudes", "gidgetabandoment", "codeitzagency", "cerhandoutside", "csdif", "tilecode", "ccc"],
-			"links": [
-				{ "title": "Try Gidget", "url": "http://helpgidget.org" }
-			],
-			"startdate": 2010,
-			"stopdate": null
-		},
-		{
-			"id": "problemsolving",
-			"active": true,
-			"name": "Programming problem solving",
-			"shortName": "Problem solving",
-			"description": "A critical part of creating software is being able to understand programming problems, identify solutions to solve them, and systematically implement, verify, and debug programs, and avoid mistakes throughout. My lab investigates effective ways of learning these skills, and orchestrating them with self-regulation, process, and strategy.",
-			"funding": ["@explore", "@csassess", "@strategies", "@gidget", "@seif", "@endusersynth"],
-			"people": ["@ajko", "@dloksa", "@bxie", "@olesona", "@jliang9", "@latoza"],
-			"papers": ["csproblemsolving1", "csproblemsolving2", "ideagardenjvlc", "tracing", "teachingstrategies", "errormodel", "errorframework", "metajournaling", "programmingstrategies", "pstutor1", "howtoo", "strategywriting", "tilecode", "strategywriting", "howtoo"],
-			"links": [],
-			"startdate": 2003,
-			"stopdate": null
-		},
-		{
-			"id": "apilearning",
-			"active": true,
-			"name": "API learning",
-			"shortName": "API learning",
-			"description": "Most modern software is built by reusing APIs, libraries, frameworks, and other code that others have carefully designed and tested. Unfortunately, such reuse often requires robust learning of API features. My lab investigates barriers to learning API's robustly and invents more effective ways of learning APIs.",
-			"funding": ["@csassess"],
-			"people": ["@ajko", "@kthayer"],
-			"papers": ["barriers", "bootcamps", "feasibility", "bioinformatics", "robustapi"],
-			"links": [],
-			"startdate": 2004,
-			"stopdate": null
-		},
-		{
-			"id": "softexpertise",
-			"active": false,
-			"name": "Software engineering expertise",
-			"shortName": "SE expertise",
-			"description": "Engineering production software requires far more than knowing how to code. We've investigated the skills that are required for developers to be great engineers, including not only technical skills, but communication, collaboration, design, and business skills as well.",
-			"funding": ["@explore", "@career"],
-			"people": ["@ajko", "@plli", "@pchilana"],
-			"papers": ["greatengineer2", "greatengineer1", "answerdash", "nonengineers", "informationneeds", "facebookcasestudy", "devwhiteboards", "complexdomains", "answerdash", "unfamiliar"],
-			"links": [],
-			"startdate": 2013,
-			"stopdate": 2019
-		},
-		{
-			"id": "uimining",
-			"active": true,
-			"name": "User interface mining",
-			"shortName": "UI mining",
-			"description": "User interfaces are structured documents, allowing us to analyze, reverse engineer, and transform them. My lab is applying techniques from program analysis and synthesis to automatically transform interfaces to be more accessible, usable, and useful.",
-			"funding": ["@career", "@explore"],
-			"people": ["@ajko", "@amaswea", "@burg", "@clwang"],
-			"papers": ["citrus", "genie", "rewire", "frictionary", "scry", "feedlack", "scout", "falx"],
-			"links": [
-				{ "title": "See Falx", "url": "https://www.youtube.com/watch?v=rQE0zrgzV6Y" },
-				{ "title": "See Scout", "url": "https://www.youtube.com/watch?v=y8pTC6FEsKc" },
-				{ "title": "See Genie", "url": "https://www.youtube.com/watch?v=Ivtvyy7m-qc" },
-				{ "title": "See Rewire", "url": "https://www.youtube.com/watch?v=9LA8feFOsOo" },
-				{ "title": "Try Frictionary", "url": "http://faculty.uw.edu/ajko/demo/frictionary" },
-				{ "title": "See Scry", "url": "https://www.youtube.com/watch?v=pUvtbn_Ldu0" }
-			],
-			"startdate": 2006,
-			"stopdate": null
-		},
-		{
-			"id": "methods",
-			"active": true,
-			"name": "Theory and methods",
-			"shortName": "Methods",
-			"description": "Studying programming is hard. We invent new methods for studying programming, and reflect on the science of studying programming, to help accelerate progress on improving it.",
-			"funding": ["@csassess", "@career"],
-			"people": ["@ajko", "@glnelson"],
-			"papers": ["walkthrough1", "walkthrough2", "practicalguide", "certheory", "softwarescience", "plreally", "studydesign", "futureofprogramming", "studyingprogramming", "ischoolmovement", "sequalitative"],
-			"links": [],
-			"startdate": 2003,
-			"stopdate": null
-		},
-		{
-			"id": "reviews",
-			"active": true,
-			"name": "Literature reviews and surveys",
-			"shortName": "Lit reviews",
-			"description": "A critical part of scholarly progress is synthesizing and explaining what we've learned. Sometimes this results in robust discussions of prior work; other times we go further, publishing standalone papers and book chapters that help newcomers make sense of what we know.",
-			"funding": ["@career", "@gidget", "@csassess", "@explore"],
-			"people": ["@ajko"],
-			"papers": ["cerhandbooktools", "eusessurvey", "cerhandoutside", "cerhandbooktools", "boostingproductivity", "fourlenses", "noproductivity", "monitoring", "uist", "cooperativesoft", "designmethods", "ccc", "infobook"],
-			"links": [],
-			"startdate": 2009,
-			"stopdate": null
-		},
-		{
-			"id": "understanding",
-			"active": false,
-			"name": "Understanding program behavior",
-			"shortName": "Program understanding",
-			"description": "Finding and fixing bugs is challenging. My lab studies debugging and invents tools that it make program understanding easier by combining human intelligence with machine intelligence.",
-			"funding": ["@career", "@grfp", "@ndseg"],
-			"people": ["@ajko", "@burg"],
-			"papers": ["vldcabstract", "vldcabstract2", "aliceinquiry", "seekrelatecollect", "maintenancetasks", "devinterrupt", "jasper", "timelapse", "cleanroom", "barista", "textediting", "whyline1", "whyline2", "whyline3", "whyline4", "whylinebeta", "icsedc", "dissertation", "eusessurvey", "morenaturalui"],
-			"links": [
-				{ "title": "See Timelapse", "url": "https://www.youtube.com/watch?v=Uw0PP00xafs" },
-				{ "title": "See Barista", "url": "https://www.youtube.com/watch?v=rR8glIsliSo" },
-				{ "title": "See Whyline for Alice", "url": "https://www.youtube.com/watch?v=fP8swbzeDuY" },
-				{ "title": "See Whyline for Java", "url": "https://www.youtube.com/watch?v=pbElN8nfe3k" },
-				{ "title": "Whyline for Java source", "url": "https://github.com/amyjko/whyline" },
-				{ "title": "Try Cleanroom", "url": "http://faculty.uw.edu/ajko/demo/cleanroom" },
-				{ "title": "Feedlack source", "url": "https://github.com/amyjko/feedlack" }
-			],
-			"startdate": 2004,
-			"stopdate": null
-		},
-		{
-			"id": "triage",
-			"active": false,
-			"name": "Bug triage and user feedback",
-			"shortName": "Bug triage",
-			"description": "When software gets shared with the world, helping people use it, and understanding their struggles in using it, are critical to improving it. My lab has studied challenges in gathering user feedback, and invented several tools that both provide better technical support, while also gathering data to improve software.",
-			"funding": ["@career", "@googlelemon", "@c4clemon", "@wfund"],
-			"people": ["@ajko", "@pchilana", "@mjslee", "@dosono", "@padma"],
-			"papers": ["beta", "postusability", "talkingaboutusers", "openbugs1", "openbugs2", "openbugs3", "userfeedback", "userfeedback2", "newsproblems", "linguisticbugs", "prelemonaid", "lemonaid1", "lemonaid2", "lemonaid3", "crystal"],
-			"links": [
-				{ "title": "See Crystal", "url": "https://www.youtube.com/watch?v=XqkLlKHQeKI" },
-				{ "title": "See LemonAid", "url": "https://www.youtube.com/watch?v=IkKObjGv42o" },
-				{ "title": "See AnswerDash", "url": "https://www.youtube.com/watch?v=Lay6EWYVhjY" }
-			],
-			"startdate": 2004,
-			"stopdate": null
-		},
-		{
-			"id": "euse",
-			"active": false,
-			"name": "End-user software engineering",
-			"shortName": "End-user programming",
-			"description": "Many people write code to support their own work (e.g., teachers write grading spreadsheets, scientists write scripts to process data, people automate their homes). In these end-user programming contexts, people face many of the same challenges that arise in professional software engineering, just without the same incentives to be systematic in testing, debugging, and maintenance. Our work has investigated these contexts and invented tools to support them.",
-			"funding": ["@grfp", "@ndseg"],
-			"people": ["@ajko"],
-			"papers": ["eupoverview", "eusessurvey", "interactivebehaviors", "morenaturaleuse", "designerdescriptions", "identifyingendusers", "infowork", "ellblockstudio", "ideagardenjvlc", "gidget6", "whydebugclassifier1", "gestalt", "whydebugclassifier2", "productivitytools", "slate", "whyline1", "barriers", "aliceinquiry", "vldcabstract", "errormodel", "visuallytesting", "eupfactors"],
-			"links": [],
-			"startdate": 2004,
-			"stopdate": null
-		}
-	],
 	discoveries: [
 		{
-			image: "paper-ellblockstudio.jpg",
-			contribution: "Learning to code with families can communities can enable rich new forms of intergenerational learning.",
+			contribution: "Learning to code with families can communities can enable rich new forms of intergenerational learning",
 			detail: "But it requires careful attention to the design of learning technologies to faciliate facile role switdching.",
-			pubs: [ "ellblockstudio", "aifamily" ],
-			tags: [ "studies", "learning" ],
+			pubs: [ "ellblockstudio", "aifamily", "tilecode" ],
+			tags: [ "families", "studies", "learning" ],
 			video: [ "https://www.youtube.com/watch?v=t56g4DYIuUA" ]
 		},
 		{
-			image: "paper-csdif.jpg",
-			contribution: "CS assessments aren't fair, but it's very hard to know how and why. Designing assessments that are comprehensible can help.",
+			contribution: "CS assessments aren't fair, but it's very hard to know how and why",
 			detail: "Techniques from psychometrics can help, but they are far from usable by everyday CS teachers.",
-			pubs: [ "studentamp", "codedif", "csdif", "gradingfeedback", "traceassess", "irteval" ],
+			pubs: [ "csdif", "studentamp", "codedif", "gradingfeedback", "traceassess", "irteval" ],
 			tags: [ "assessment", "studies", "tools" ]
 		},
 		{
-			image: "paper-teachermotives.jpg",
-			contribution: "Justice-focused CS education requires student trust and agency",
+			contribution: "Justice-focused CS education is empowering but requires student trust and agency",
 			detail: "Making room for conversations about computing, society, and fairness demands deep respect for students' limiting situations.",
-			pubs: [ "coconstructedcriticalcs", "ccc", "houseofcomputing" ],
+			pubs: [ "teachermotives", "coconstructedcriticalcs", "ccc", "houseofcomputing" ],
 			tags: [ "justice", "studies" ]
 		},
 		{
-			image: "paper-teachaccess1.jpg",
-			contribution: "CS doesn't teach about equity, inclusion, or justice",
+			contribution: "Teaching about diversity in CS is possible, but requires substantial professional development",
 			detail: "The topic is largely ignored because of lack of teacher professional development, student resistance, and fear of failure, not disinterest.",
 			pubs: [ "teachaccess1", "inclusivepck", "teachaccess2", "hcipckchallenge", "hcidifficulties", "criticalcsed", "csdesignk12", "teachermotives" ],
-			tags: [ "justice", "studies" ]
+			tags: [ "diversity", "studies" ]
 		},
 		{
-			image: "paper-pltutor1.jpg",
-			contribution: "Teaching program reading before program writing can promote more robust programming skills",
+			contribution: "Teaching program reading before writing can promote more robust learning",
 			detail: "This is because writing skills are dependent on reading skills. Unfortunately, learning to read code correctly can be boring.",
 			pubs: [ "pltutor1", "tracing", "cs1theory" ],
-			tags: [ "pedagogy", "tools" ]
+			tags: [ "program reading", "pedagogy", "tools" ]
 		},
 		{
-			image: "paper-genie.jpg",
 			contribution: "It is possible to mine, transform, and synthesize interfaces to serve new use cases and users",
 			detail: "Reasoning about user interfaces in probabalistic and formal ways can enable new forms of accessibility and productivity.",
 			pubs: [ "genie", "rewire", "scoutdemo", "scout", "falx" ],
-			tags: [ "user interfaces", "tools" ],
+			tags: [ "UI mining", "tools" ],
 			video: [
 				"https://www.youtube.com/watch?v=rQE0zrgzV6Y",
 				"https://www.youtube.com/watch?v=y8pTC6FEsKc",
@@ -3867,39 +3667,34 @@ export const Amy: ProfileSpec = {
 			]
 		},
 		{
-			image: "paper-tutorialeval.jpg",
-			contribution: "Popular learning materials online largely ignore what's necessary for learning",
+			contribution: "Materials for learning CS online largely ignore pedagogical best practices",
 			detail: "They fail to provide feedback, scaffold effectively, grow self-efficacy, or develop mastery, often because learners struggle to effectively deploy their agency.",
 			pubs: [ "tutorialeval", "bootcamps", "codeitzagency", "airesources" ],
 			tags: [ "tutorials", "studies" ]
 		},
 		{
-			image: "paper-gidget6.jpg",
 			contribution: "Programming problem solving can benefit greatly from guided, step-by-step scaffolding",
 			detail: "Most learners don't want to be that deliberate about their process, favoring less effective trial and error strategies. But framing it as aunthetic practice can help.",
 			pubs: [ "gidget6", "csproblemsolving1", "csproblemsolving2", "pstutor1", "ideagardenjvlc", "teachingstrategies", "programmingstrategies", "metajournaling", "howtoo" ],
-			tags: [ "expertise", "studies" ]
+			tags: [ "problem solving", "studies" ]
 		},
 		{
-			image: "paper-greatengineer2.jpg",
-			contribution: "Software engineering expertise is partly technical, but also social, organizational, and political",
+			contribution: "Software engineering expertise is technical, but also social, organizational, and political",
 			detail: "Across thousands of surveys and interviews, we found that expertise is far more than just knowing how to architect and build software.",
-			pubs: [ "greatengineer1", "nonengineers", "answerdash", "greatengineer2" ],
+			pubs: [ "greatengineer2", "nonengineers", "answerdash", "greatengineer1" ],
 			tags: [ "expertise", "studies" ]
 		},
 		{
-			image: "paper-gidget1.jpg",
 			contribution: "Framing compilers as fallible, prosocial collaborators can facilitate learning",
 			detail: "Compiler feedback is usually impersonal and mean; we found that being nicer has powerful impacts on learners' attention, compelling them to pay attention to valuable direct instruction.",
 			pubs: [ "gidget1", "gidget2", "gidget3", "gidget4", "adultattitudes", "gidget5", "gidgetabandoment" ],
-			tags: [ "learning", "studies", "tools" ],
+			tags: [ "feedback", "studies", "tools" ],
 			demo: "https://helpgidget.org"
 		},
 		{
-			image: "paper-lemonaid1.jpg",
 			contribution: "Finding help with software can be as simple as pointing",
 			detail: "Pointing to user interface elements can be a powerfully discrminating input into help retrieval algorithms.",
-			pubs: [ "crystal", "prelemonaid", "lemonaid1", "lemonaidworkshop", "lemonaid2" ],
+			pubs: [ "lemonaid1", "crystal", "prelemonaid", "lemonaidworkshop", "lemonaid2" ],
 			tags: [ "help", "tools" ],
 			code: "https://github.com/amyjko/feedlack",
 			demo: "http://faculty.uw.edu/ajko/demo/cleanroom",
@@ -3910,84 +3705,81 @@ export const Amy: ProfileSpec = {
 			]
 		},
 		{
-			image: "paper-feedlack.jpg",
-			contribution: "It is possible to find defects with simple principles from how people communicate with and about software",
+			contribution: "Some defects can be found by operationalizing principles of human communication",
 			detail: "Many defects in dynamically typed programs can be found by operationalizing simple observations about how people write code, often forgetting to close the loop that statically typed programs can easily point out.",
-			pubs: [ "cleanroom", "feedlack", "frictionary", "newsproblems" ],
+			pubs: [ "feedlack", "cleanroom", "feedlack", "frictionary", "newsproblems" ],
 			tags: [ "verification", "tools" ],
 			code: "https://github.com/amyjko/feedlack",
 			demo: "http://faculty.uw.edu/ajko/demo/cleanroom",
 		},
 		{
-			image: "paper-talkingaboutusers.jpg",
-			contribution: "Bug reports are where conflicting ideas about what software is for are debated, denied, designed, and suppressed",
+			contribution: "Bug reports are where developers and users engage in conflict around what software is for",
 			detail: "The seeminly technical context of bug reports are where large communities of users and small teams of developers engage in power struggles about what software should and shouldn't do.",
 			pubs: [ "talkingaboutusers", "openbugs3", "openbugs1", "openbugs2", "postusability", "userfeedback2", "beta", "userfeedback" ],
 			tags: [ "issue tracking", "studies" ],
 		},
 		{
-			image: "paper-whydebugclassifier2.jpg",
-			contribution: "Understanding machine learning means understanding incomprehensible uncertainty",
+			contribution: "Understanding machine learning means understanding uncertainty",
 			detail: "Tools can help, but even more so, using data and domains that people understand is even better.",
 			pubs: [ "whydebugclassifier2", "gestalt", "whydebugclassifier1", "mladvocacy", "cognimates" ],
-			tags: [ "AI", "studies", "tools" ],
+			tags: [ "AI education", "studies", "tools" ],
 		},
 		{
-			image: "paper-codebios.jpg",
 			contribution: "People's interests in computing are intricately shaped by their social worlds",
 			detail: "We found across a series of reflective studies that people and events in people's lives come to shape their interest and disinterest in computing.",
 			pubs: [ "codebios", "mentors1", "mentors2", "transfer" ],
 			tags: [ "interest", "studies" ],
 		},
 		{
-			image: "paper-bioinformatics.jpg",
 			contribution: "Design skills depend greatly on domain expertise",
 			detail: "We found through several studies that designers' productivity and careers are often limited by their lack of domain expertise.",
 			pubs: [ "bioinformatics", "unfamiliar", "complexdomains", "facebookcasestudy", "lemonaid3" ],
 			tags: [ "design", "studies" ],
 		},
 		{
-			image: "paper-informationneeds.jpg",
 			contribution: "Software engineering depends on information",
 			detail: "Through a series of studies, I unconvered the many ways that developers depend on information from people and systems to make engineering decisions, and how some of the most crucial information is hard or impossible to find.",
-			pubs: [ "informationneeds", "devwhiteboards" ],
-			tags: ["teams", "studies" ],
+			pubs: [ "informationneeds", "devwhiteboards", "nonengineers" ],
+			tags: [ "teams", "studies" ],
 		},
 		{
-			image: "paper-citrus.jpg",
 			contribution: "Text-based code editors can be richly interactive",
 			detail: "The structured editors of the 1980's were hard to build and use; I invented ways of making both easier by viewing programs as user interfaces, not documents.",
-			pubs: ["textediting", "citrus", "barista", "jasper"],
-			tags: ["programming", "tools"],
+			pubs: [ "citrus", "textediting", "citrus", "barista", "jasper"],
+			tags: [ "editors", "programming", "tools"],
 			video: [ "https://www.youtube.com/watch?v=rR8glIsliSo" ]
 		},
 		{
-			image: "paper-barriers.jpg",
-			contribution: "Programming is hard partly because programming ecosystems pose information seeking barriers",
+			contribution: "The tools and systems around programming languages are a primary source of learning difficulty",
 			detail: "Programming is hard for many reasons, but my work showed that it is also hard because tools, APIs, and IDEs make information about program behavior particulary difficulty to find.",
-			pubs: ["honorsthesis", "walkthrough1", "walkthrough2", "statscomprehension", "barriers", "naturalprogramming", "maintenancetasks", "seekrelatecollect", "feasibility", "robustapi" ],
-			tags: [ "programming", "studies"]
+			pubs: [ "barriers", "honorsthesis", "walkthrough1", "walkthrough2", "statscomprehension", "naturalprogramming", "maintenancetasks", "seekrelatecollect", "feasibility", "robustapi" ],
+			tags: [ "programming systems", "programming", "studies"]
 		},
 		{
-			image: "paper-errorframework.jpg",
 			contribution: "Defects emerge from the interaction of satisficing and state space complexity",
 			detail: "Much of my work during my dissertation examined where software failures come from; cognitive slips interact with the large state space that people create when programming to generate defects that are hard to localize.",
-			pubs: ["vldcabstract", "vldcabstract2", "aliceinquiry", "seekrelatecollect", "errormodel", "errorframework"],
-			tags: ["defects", "studies"]
+			pubs: [ "errorframework", "vldcabstract", "vldcabstract2", "aliceinquiry", "seekrelatecollect", "errormodel" ],
+			tags: [ "errors", "studies" ]
 		},
 		{
-			image: "paper-whyline2.jpg",
 			contribution: "Programs can answer questions about their behavior",
 			detail: "I invented tools and algorithms for deriving 'why' and 'why not' questions from programs and automatically answering those questions, helping people efficiently and interactively debug the root causes of program failures.",
-			pubs: ["whyline1", "whyline2", "whyline3", "whyline4", "whylinebeta", "icsedc", "dissertation", "timelapse", "scry" ],
-			tags: ["debugging", "tools"],
+			pubs: [ "whyline2", "whyline1", "whyline3", "whyline4", "whylinebeta", "icsedc", "dissertation", "timelapse", "scry" ],
+			tags: [ "debugging", "tools" ],
 			code: "https://github.com/amyjko/whyline",
 			video: [ 
 				"https://www.youtube.com/watch?v=pbElN8nfe3k", 
 				"https://www.youtube.com/watch?v=fP8swbzeDuY",
 				"https://www.youtube.com/watch?v=Uw0PP00xafs"
 			]
-		}
+		},
+		{
+			contribution: "Studying programming requires human-centered methods",
+			detail: "Studying programming is hard. We invent new methods for studying programming, and reflect on the science of studying programming, to help accelerate progress on improving it.",
+			pubs: ["practicalguide", "walkthrough1", "walkthrough2", "certheory", "softwarescience", "plreally", "studydesign", "futureofprogramming", "studyingprogramming", "ischoolmovement", "sequalitative", "demographics"],
+			tags: ["methods"]
+		},
+
 	],
 	posts: [
 		{
@@ -6095,7 +5887,7 @@ export const Amy: ProfileSpec = {
 			"description": "I've used my research and expertise to build community and educate youth in Puget Sound"
 		}
 	],
-	"impacts": [
+	impacts: [
 		{
 			"kind": "press",
 			"start": 2022,
@@ -6105,7 +5897,6 @@ export const Amy: ProfileSpec = {
 			"title": "For-profit coding boot camps prey on BIPOC workers",
 			"author": "Sravya Tadepalli",
 			"source": "Prism Reports",
-			"projects": ["csdiversity", "pllearning"],
 			"who": "public"
 		},
 		{
@@ -6117,7 +5908,6 @@ export const Amy: ProfileSpec = {
 			"title": "Can Online Education Fix the Gender Diversity Problem in Coding?",
 			"author": "Chelsea Toczauer",
 			"source": "OnlineEducation.com",
-			"projects": ["csdiversity", "pllearning"],
 			"who": "public"
 		},
 		{
@@ -6126,7 +5916,6 @@ export const Amy: ProfileSpec = {
 			"end": 2019,
 			"description": "I consulted with APM's Marketplace Tech on the effects and limits of automation",
 			"url": null,
-			"projects": ["csjustice", "mliteracy", "euse"],
 			"who": "public"
 		},
 		{
@@ -6138,7 +5927,6 @@ export const Amy: ProfileSpec = {
 			"author": "Amy J. Ko and Susanne Hambrusch",
 			"source": "Huffington Post",
 			"url": "http://www.huffingtonpost.com/entry/5829cf4ce4b02b1f5257a638",
-			"projects": ["pllearning", "csdiversity"],
 			"who": "public"
 		},
 		{
@@ -6150,7 +5938,6 @@ export const Amy: ProfileSpec = {
 			"author": "Tia Ghose",
 			"source": "LiveScience",
 			"url": "http://www.livescience.com/53963-are-coding-toys-useful.html",
-			"projects": ["pllearning"],
 			"who": "public"
 		},
 		{
@@ -6162,7 +5949,6 @@ export const Amy: ProfileSpec = {
 			"author": "Paul Marks",
 			"source": "NewScientist",
 			"url": "http://www.newscientist.com/blogs/onepercent/2012/05/frictionary.html",
-			"projects": ["triage"],
 			"who": "public"
 		},
 		{
@@ -6174,7 +5960,6 @@ export const Amy: ProfileSpec = {
 			"author": "Joab Jackson",
 			"source": "IDG News",
 			"url": "http://www.pcworld.com/businesscenter/article/255340/study_facebook_relies_on_good_design_to_retain_users.html",
-			"projects": ["triage"],
 			"who": "public"
 		},
 		{
@@ -6186,7 +5971,6 @@ export const Amy: ProfileSpec = {
 			"author": "Owen Lei",
 			"source": "King5 News",
 			"url": "http://www.king5.com/news/technology/Hourglass-Syndrome-106739108.html",
-			"projects": ["triage"],
 			"who": "public"
 		},
 		{
@@ -6198,7 +5982,6 @@ export const Amy: ProfileSpec = {
 			"author": "Mike Crissey",
 			"source": "Associated Press",
 			"url": "https://www.eastbaytimes.com/2004/08/15/researchers-attempt-to-make-debugging-easier/",
-			"projects": ["understanding"],
 			"who": "public"
 		},
 		{
@@ -6207,7 +5990,6 @@ export const Amy: ProfileSpec = {
 			"end": 2020,
 			"description": "Our research on Lemonaid, our crowdsourced help tool, was the basis for AnswerDash, a company that I co-founded with Jacob Wobbrock and Parmit Chilana that offers an instant self-service answers product for web applications and e-commerce sites. The company has impacted other company's product offerings, including Zendesk's self-service technologies. AnswerDash was acquired in 2020 by CloudEngage, a platform for customer personalization",
 			"url": "https://www.geekwire.com/2020/uw-spinout-answerdash-contextual-qa-service-customer-support-acquired-cloudengage/",
-			"projects": ["triage"],
 			"who": "industry"
 		},
 		{
@@ -6216,7 +5998,6 @@ export const Amy: ProfileSpec = {
 			"end": 2016,
 			"description": "Our research on bug reporting has been read widely in industry, including by product teams at Microsoft, Adobe, Google, and ABB",
 			"url": null,
-			"projects": ["triage"],
 			"who": "industry"
 		},
 		{
@@ -6228,7 +6009,6 @@ export const Amy: ProfileSpec = {
 			"author": "Alan Cohen",
 			"source": "PC Magazine",
 			"url": "http://www.pcmag.com/article2/0,2817,1842864,00.asp",
-			"projects": ["understanding"],
 			"who": "industry"
 		},
 		{
@@ -6239,7 +6019,6 @@ export const Amy: ProfileSpec = {
 			"title": "Academia to Industry in Computer Science",
 			"author": "Jeff Meyerson",
 			"url": "https://softwareengineeringdaily.com/2016/02/24/academia-to-industry-in-computer-science-with-andy-ko/",
-			"projects": ["triage", "softexpertise"],
 			"who": "engineers"
 		},
 		{
@@ -6248,7 +6027,6 @@ export const Amy: ProfileSpec = {
 			"end": 2016,
 			"description": "Our ACM Learning Webinar on software engineering expertise was viewed by hundreds of thousands of developers",
 			"url": "https://www.youtube.com/watch?v=OBlmLjeORUQ&feature=youtu.be&list=PLn0nrSd4xjjZa4KDqFBCMOnk52CItWqyU",
-			"projects": ["triage", "softexpertise"],
 			"who": "engineers"
 		},
 		{
@@ -6257,7 +6035,6 @@ export const Amy: ProfileSpec = {
 			"end": 2020,
 			"description": "Our research on software engineering expertise was read by tens of thousands of software developers on Hacker News",
 			"url": "https://news.ycombinator.com/item?id=25107285",
-			"projects": ["softexpertise"],
 			"who": "engineers"
 		},
 		{
@@ -6266,7 +6043,6 @@ export const Amy: ProfileSpec = {
 			"end": 2017,
 			"description": "Our research on coding bootcamps has been read by tens of thousands of software developers on Hacker News",
 			"url": "https://news.ycombinator.com/item?id=14679061",
-			"projects": ["apilearning", "softexpertise"],
 			"who": "engineers"
 		},
 		{
@@ -6275,7 +6051,6 @@ export const Amy: ProfileSpec = {
 			"end": 2018,
 			"description": "Our research on coding tutorials read by tens of thousands of software developers on Hacker News",
 			"url": "https://news.ycombinator.com/item?id=16961716",
-			"projects": ["pllearning"],
 			"who": "engineers"
 		},
 		{
@@ -6284,7 +6059,6 @@ export const Amy: ProfileSpec = {
 			"end": 2008,
 			"description": "Our work on end-user software engineering has inspired hundreds of commercial tools for supporting end-user programming and impacted research efforts in professional software engineering",
 			"url": "http://eusesconsortium.org",
-			"projects": ["euse"],
 			"who": "engineers"
 		},
 		{
@@ -6293,7 +6067,6 @@ export const Amy: ProfileSpec = {
 			"end": 2008,
 			"description": "Our work on understanding machine learning has indirectly shaped several of the tools used in industry to develop and debug machine learned programs",
 			"url": null,
-			"projects": ["mlliteracy"],
 			"who": "engineers"
 		},
 		{
@@ -6302,7 +6075,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Our work on interface mining has been replicated in several industry projects focused on supporting interface development",
 			"url": null,
-			"projects": ["uimining"],
 			"who": "engineers"
 		},
 		{
@@ -6311,7 +6083,6 @@ export const Amy: ProfileSpec = {
 			"end": 2008,
 			"description": "Our studies on program understanding and ideas for program understanding tools was partially the basis of the Debugger Canvas plugin for Visual Studio",
 			"url": "http://research.microsoft.com/en-us/projects/debuggercanvas/",
-			"projects": ["understanding"],
 			"who": "engineers"
 		},
 		{
@@ -6320,7 +6091,6 @@ export const Amy: ProfileSpec = {
 			"end": 2008,
 			"description": "Frictionary was used in one of the features in AnswerDash, the company I co-founded based on my CAREER grant",
 			"url": "http://www.answerdash.com/",
-			"projects": ["triage"],
 			"who": "engineers"
 		},
 		{
@@ -6329,7 +6099,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Portions of Timelapse and Scry were upstreamed to WebKit and may eventually appear in the Safari Web Inspector developer tools. These projects inspired similar features at the venture-backed startup replay.io.",
 			"url": "https://www.replay.io",
-			"projects": ["understanding"],
 			"who": "engineers"
 		},
 		{
@@ -6338,7 +6107,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "My work on Barista influenced the Greenfoot editor",
 			"url": "http://www.greenfoot.org/",
-			"projects": ["understanding"],
 			"who": "learningtech"
 		},
 		{
@@ -6347,7 +6115,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Our work on PL Tutor influenced the JustJavaScript course by Dan Abramov",
 			"url": "https://twitter.com/dan_abramov/status/1417200694591959042?s=21",
-			"projects": ["pllearning"],
 			"who": "learningtech"
 		},
 		{
@@ -6356,7 +6123,6 @@ export const Amy: ProfileSpec = {
 			"end": 2020,
 			"description": "I consulted with Microsoft's VS Code, VS Online, and GitHub Education teams about how to support CS educators",
 			"url": null,
-			"projects": ["pllearning", "problemsolving"],
 			"who": "learningtech"
 		},
 		{
@@ -6365,7 +6131,6 @@ export const Amy: ProfileSpec = {
 			"end": 2016,
 			"description": "I consulted with Microsoft on their project, sharing evidence from computing education research to inform the design of their learning technologies",
 			"url": "https://makecode.com/",
-			"projects": ["pllearning", "problemsolving", "csdiversity"],
 			"who": "learningtech"
 		},
 		{
@@ -6374,7 +6139,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Gidget has been played by tens of thousans of youth adults online, in summer camps, and in high schools",
 			"url": "https://helpgidget.org",
-			"projects": ["pllearning", "csdiversity"],
 			"who": "learningtech"
 		},
 		{
@@ -6383,7 +6147,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Codeitz, our Python tutorial which incoporates our theory of programming instruction, is publicly available, and used to support Python instruction",
 			"url": "http://codeitz.com",
-			"projects": ["pllearning"],
 			"who": "learningtech"
 		},
 		{
@@ -6392,7 +6155,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "We influenced the teaching of HCI education in higher education",
 			"url": null,
-			"projects": ["csjustice"],
 			"who": "academia"
 		},
 		{
@@ -6401,7 +6163,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "I write and share online books that summarize the state of knowledge in HCI and Software Engineering",
 			"url": "https://faculty.washington.edu/ajko/books",
-			"projects": ["triage", "softexpertise"],
 			"who": "academia"
 		},
 		{
@@ -6410,7 +6171,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "I shared my practices and experiences with productivity and time management in the Changing Academic Life podcast",
 			"url": "http://www.changingacademiclife.com/blog/2017/6/18/amy-ko",
-			"projects": [],
 			"who": "academia"
 		},
 		{
@@ -6419,7 +6179,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "I share thoughts on academia and academic life on my blog, read by tens of thousands",
 			"url": "https://medium.com/bits-and-behavior/tagged/academia",
-			"projects": [],
 			"who": "academia"
 		},
 		{
@@ -6428,7 +6187,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Our work has opened discourse on the responsibility of CS educators to address the role of CS in injustice",
 			"url": null,
-			"projects": ["csjustice"],
 			"who": "cer"
 		},
 		{
@@ -6437,7 +6195,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Our work on research methods is widely read by new Ph.D. students across computer science to inform how they evaluate new developer tools and how they use theory",
 			"url": null,
-			"projects": ["methods"],
 			"who": "cer"
 		},
 		{
@@ -6446,7 +6203,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Greg Nelson's arguments about the role of theory in computing education research have spurred signfiicant debate in CS education. This debate was continued in a 60 minute panel session at ICER 2018 in Finland, an then another 90 minute panel session at SIGCSE in Minneapolis",
 			"url": null,
-			"projects": ["methods"],
 			"who": "cer"
 		},
 		{
@@ -6455,7 +6211,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Our surveys are widely-cited and used by doctoral students to quickly learn about the state of the art and knowledge",
 			"url": null,
-			"projects": ["reviews"],
 			"who": "academia"
 		},
 		{
@@ -6464,7 +6219,6 @@ export const Amy: ProfileSpec = {
 			"end": 2019,
 			"description": "I consulted with Google, NSF, CRA, and Code.org on strategies for strengthening the pipeline of computing education research, researchers, and research funding",
 			"url": null,
-			"projects": ["csdiversity"],
 			"who": "cer"
 		},
 		{
@@ -6473,7 +6227,6 @@ export const Amy: ProfileSpec = {
 			"end": 2016,
 			"description": "Co-authored a whitepaper discussing the importance of computing education research",
 			"url": "http://cra.org/ccc/wp-content/uploads/sites/2/2015/01/CSEdResearchWhitePaper2016.pdf",
-			"projects": [],
 			"who": "cer"
 		},
 		{
@@ -6482,7 +6235,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Since 2016 I've maintained a popular FAQ for newcomers to the community",
 			"url": "http://faculty.washington.edu/ajko/cer",
-			"projects": [],
 			"who": "cer"
 		},
 		{
@@ -6491,7 +6243,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "I've helped shape the peer review processes for the ACM Transactions on Computing Education journal",
 			"url": "https://toce.acm.org/",
-			"projects": [],
 			"who": "cer"
 		},
 		{
@@ -6500,7 +6251,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "I've helped shape the reviewing criteria for the ACM SIGCSE Technical Symposium's research track",
 			"url": "https://sigcse.org/sigcse/events/symposia",
-			"projects": [],
 			"who": "cer"
 		},
 		{
@@ -6509,7 +6259,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "I've heleped shape the peer review process for ACM International Computing Education Research Conference",
 			"url": "https://icer.acm.org",
-			"projects": [],
 			"who": "cer"
 		},
 		{
@@ -6518,7 +6267,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "I write blog posts on about computing education research topics are read widely amongst researchers and CS teachers",
 			"url": "https://medium.com/bits-and-behavior/tagged/computing-education",
-			"projects": [],
 			"who": "cer"
 		},
 		{
@@ -6527,7 +6275,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Our work on assessment has imported more rigorous methods from educational measurement into CS education",
 			"url": null,
-			"projects": ["pllearning"],
 			"who": "cer"
 		},
 		{
@@ -6538,7 +6285,6 @@ export const Amy: ProfileSpec = {
 			"title": "Vulnerability, Reflection, and CS Education with Amy Ko",
 			"author": "Jared O'Leary",
 			"url": "https://jaredoleary.com/csk8feed/73",
-			"projects": ["pllearning"],
 			"who": "k12cs"
 		},
 		{
@@ -6547,7 +6293,6 @@ export const Amy: ProfileSpec = {
 			"end": 2020,
 			"description": "I've coordinated with House representatives on policies that will expand the numbers of CS teachers nationwide",
 			"url": null,
-			"projects": [],
 			"who": "k12cs"
 		},
 		{
@@ -6556,7 +6301,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Our research on programming problem solving, programming language learning, programming strategies, and debugging has shaped Code.org's teacher professional development and it's secondary school curricula, impacting hundreds of thousands of U.S. youth",
 			"url": "https://code.org",
-			"projects": ["pllearning", "problemsolving"],
 			"who": "k12cs"
 		},
 		{
@@ -6565,7 +6309,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Our research on software engineering expertise informed the curriculum at New York's Academy for Software Engineering",
 			"url": "http://www.afsenyc.org/",
-			"projects": ["softexpertise"],
 			"who": "k12cs"
 		},
 		{
@@ -6574,7 +6317,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Gidget influenced the design of Code.org's Code Studio",
 			"url": "https://studio.code.org",
-			"projects": ["pllearning"],
 			"who": "k12cs"
 		},
 		{
@@ -6583,7 +6325,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Gidget influenced the design of Apple's Swift Playgrounds",
 			"url": "https://www.apple.com/swift/playgrounds/",
-			"projects": ["pllearning"],
 			"who": "k12cs"
 		},
 		{
@@ -6592,7 +6333,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Gidget has been played by tens of thousands of youth adults online, in summer camps, and in high schools",
 			"url": "https://helpgidget.org",
-			"projects": ["pllearning"],
 			"who": "k12cs"
 		},
 		{
@@ -6601,7 +6341,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "The CS for All Washington advocacy group I direct has used our research to affect statewide CS education policy",
 			"url": "http://csforallwa.org",
-			"projects": ["csjustice"],
 			"who": "k12cswa"
 		},
 		{
@@ -6610,7 +6349,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "Our research on transfer students has influenced admissions policy at the University of Washington",
 			"url": null,
-			"projects": ["csdiversity"],
 			"who": "k12cswa"
 		},
 		{
@@ -6619,7 +6357,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "As part of our research, we have taught in the University of Washington's Upward Bound program each summer, reaching dozens of students underrepresented in computing from Seattle's low-income immigrant and refugee communities",
 			"url": "https://www.washington.edu/omad/upward-bound/",
-			"projects": ["csdiversity"],
 			"who": "k12cswa"
 		},
 		{
@@ -6628,7 +6365,6 @@ export const Amy: ProfileSpec = {
 			"end": null,
 			"description": "I've run a quarterly meetup, Sound CS Ed, to bring together hundreds of CS education teachers, researchers, policy makers, and product designers in Puget Sound",
 			"url": "http://soundcsed.org",
-			"projects": [],
 			"who": "k12csps"
 		},
 		{
@@ -6637,11 +6373,10 @@ export const Amy: ProfileSpec = {
 			"end": 2019,
 			"description": "I have served on the Seattle Public Schools CS Advisory board, shaping strategic goals",
 			"url": null,
-			"projects": [],
 			"who": "k12csps"
 		}
 	],
-	"degrees": [
+	degrees: [
 		{
 			"institution": "Carnegie Mellon University",
 			"degree": "Doctorate in Human-Computer Interaction",
@@ -6659,7 +6394,7 @@ export const Amy: ProfileSpec = {
 			"committee": "Margaret Burnett (Computer Science) and Bob Uttl (Psychology)"
 		}
 	],
-	"patents": [
+	patents: [
 		{
 			"title": "Context- and Activity-Aware Content Selection",
 			"year": "2017",
@@ -6679,7 +6414,7 @@ export const Amy: ProfileSpec = {
 			"inventors": "Amy J. Ko and Brad A. Myers"
 		}
 	],
-	"jobs": [
+	jobs: [
 		{
 			"title": "Professor",
 			"organization": "University of Washington, Seattle",
@@ -6745,7 +6480,7 @@ export const Amy: ProfileSpec = {
 			"academic": true
 		}
 	],
-	"recognitions": [
+	recognitions: [
 		{
 			"title": "SIGCHI Academy",
 			"year": 2022,
@@ -6822,7 +6557,7 @@ export const Amy: ProfileSpec = {
 			"description": "Oregon State University's recognition of the top 5 undergraduates in the freshman class of more than 5,000 students."
 		}
 	],
-	"editing": [
+	editing: [
 		{
 			"title": "Editor in Chief",
 			"venue": "ACM Transactions on Computing Education",
@@ -6934,7 +6669,7 @@ export const Amy: ProfileSpec = {
 			}
 		}
 	],
-	"reviewing": [
+	reviewing: [
 		{
 			"venue": "National Science Foundation (CISE, EHR)",
 			"title": "NSF Panelist",
@@ -7142,7 +6877,7 @@ export const Amy: ProfileSpec = {
 			"level": "reviewer"
 		}
 	],
-	"doctoralCommittees": [
+	doctoralCommittees: [
 		{
 			"name": "Mina Tari",
 			"institution": "University of Washington",
@@ -7417,7 +7152,7 @@ export const Amy: ProfileSpec = {
 			"enddate": 2011
 		}
 	],
-	"service": [
+	service: [
 		{
 			"title": "Panel Member",
 			"committee": "Kaiser Permanente Gender Health Advisory Panel",
@@ -7839,7 +7574,7 @@ export const Amy: ProfileSpec = {
 			}
 		}
 	],
-	"funding": [
+	funding: [
 		{
 			"id": "googlestepcsgift",
 			"title": "STEP CS scholarships",
@@ -8253,7 +7988,7 @@ export const Amy: ProfileSpec = {
 			}
 		}
 	],
-	"travel": [
+	travel: [
 		{
 			url: null,
 			title: "MIT",
@@ -8840,7 +8575,7 @@ export const Amy: ProfileSpec = {
 			"report": "https://medium.com/bits-and-behavior/sigcse-2019-trip-report-celebrating-50-years-b3460835a09a"
 		}
 	],
-	"talks": [
+	talks: [
 		{
 			"date": "2022-10-25",
 			"image": "mit2022.jpg",
@@ -9378,7 +9113,7 @@ export const Amy: ProfileSpec = {
 			"keynote": false
 		}
 	],
-	"panels": [
+	panels: [
 		{
 			"date": "2022-03-21",
 			"title": "Equity, Justice, and Engineering Education",
@@ -9415,7 +9150,7 @@ export const Amy: ProfileSpec = {
 			"venue": "CRA Snowbird Conference"
 		}
 	],
-	"classes": [
+	classes: [
 		{
 			"id": "info200",
 			"alt": "A black and white version of an old painting with a child reading a newspaper",
@@ -9573,7 +9308,7 @@ export const Amy: ProfileSpec = {
 			]
 		}
 	],
-	"commitments": [
+	commitments: [
 		{
 			"title": "Promotion letters",
 			"description": "Evaluating tenure and promotion cases",
@@ -9694,7 +9429,7 @@ export const Amy: ProfileSpec = {
 			"commitment": { "start": "2021-06-15", "end": "2021-08-23", "hours": 10, "priority": 1 }
 		}
 	],
-	"years": {
+	years: {
 		"2000": "Sophomore year of college",
 		"2001": "Junior year of college",
 		"2002": "Graduated from college; 1st year of PhD",

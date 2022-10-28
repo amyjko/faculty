@@ -8,7 +8,6 @@ import type { Job } from "./Job";
 import type { Person } from "./Person";
 import type { Post } from "./Post";
 import type ProfileSpec from "./ProfileSpec";
-import type { Project } from "./Project";
 import type { Paper } from "./Paper";
 import type { Recognition } from "./Recognition";
 import type { Reviewing } from "./Reviewing";
@@ -69,13 +68,13 @@ export default class Profile {
 
 		return {
 			// Add the kind of publication
-			"kind": [ paper.kind ],
+			kind: [ paper.kind ],
 			// If the source has a short name, add a tag
-			"source": source ? [ source.short ] : [],
+			source: source ? [ source.short ] : [],
 			// Add the paper's awards as tags
-			"award": paper.award ? paper.award.slice() : [],
+			award: paper.award ? paper.award.slice() : [],
 			// Add the paper's projects
-			"project": this.getDiscoveries(discovery => discovery.pubs.indexOf(paper.id) >= 0).map(discovery => discovery.tags).reduce((allTags, tags) => [ ...allTags, ...tags ], [])
+			tag: this.getDiscoveries(discovery => discovery.pubs.indexOf(paper.id) >= 0).map(discovery => discovery.tags).reduce((allTags, tags) => [ ...allTags, ...tags ], [])
 		};
 
 	}
@@ -99,16 +98,6 @@ export default class Profile {
 	// Get a list of filtered and sorted travel.
 	getTravel(filter?: (travel: Travel) => boolean, sort?: (travel: Travel) => number) { 
 		return this.cloneFilterSort(this.json.travel.slice(), filter, sort);
-	}
-
-	// Get a list of filtered and sorted projects.
-	getProjects(filter?: (p: Project) => boolean, sort?: (p: Project) => number) { 
-		return this.cloneFilterSort(this.json.projects.slice(), filter, sort);
-	}
-	
-	// Find the project with the matching id.
-	getProject(id: string) {
-		return this.json.projects.find(p => p.id === id);
 	}
 
 	getDiscoveries(filter?: (p: Discovery) => boolean, sort?: (p: Discovery) => number) { 
@@ -196,7 +185,7 @@ export default class Profile {
 	tagsMatch(query: Record<string, string>, tags: Record<string, string[]>) {
 
 		// Go through each facet in the query
-		return Object.keys(query).reduce((match, facet) => match && tags[facet].includes(query[facet]), true);
+		return Object.keys(query).reduce((match, facet) => match && tags[facet]?.includes(query[facet]), true);
 
 	}
 

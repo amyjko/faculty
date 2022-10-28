@@ -3,9 +3,6 @@
 	import External from "./External.svelte";
 	import Link from "./Link.svelte";
 	import Image from "./Thumbnail.svelte";
-	import { page } from "$app/stores";
-
-	$: path = $page.url.pathname;
 
 </script>
 

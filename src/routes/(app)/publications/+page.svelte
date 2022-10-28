@@ -12,6 +12,10 @@
 
 	onMount(() => {
 		scrollToHash();
+
+		if(typeof window !== "undefined" && window.location.search.length > 0) {
+			filter({ tag: window.location.search.substring(1).replaceAll("%20", " ") });
+		}
 	})
 
 	function filter(newSelection: Record<string, string>) {
@@ -58,6 +62,7 @@
 <Facets 
 	facets={$profile.getPublicationFacets()} 
 	update={filter}
+	selection={selection}
 />
 
 <!-- // Create a list of publications, inserting year headers when the year changes. -->

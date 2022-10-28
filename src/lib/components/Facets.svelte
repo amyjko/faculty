@@ -1,9 +1,8 @@
 <script lang="ts">
 
     export let facets: Record<string, string[]>;
-    export let update: (selection: {}) => void;
-    
-    let selection: Record<string, string> = {};
+    export let update: (selection: {}) => void;    
+    export let selection: Record<string, string> = {};
 
     function selectValue(facet: string, value: string) {
 
