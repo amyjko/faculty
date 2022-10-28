@@ -2553,7 +2553,7 @@ export const Amy: ProfileSpec = {
 			"level": "postdoc",
 			"dept": "The Information School",
 			"coadvisor": null,
-			"bio": "Jean is interested in justice-focused computing pedagogy for young learners.",
+			"bio": "Jean is interested in justice-focused computing education for youth, namely how youth can learn to examine technology's role in their lives and society and how educators can support this learning process.",
 			"url": "https://jeansalac.github.io/",
 			"startdate": 2022,
 			"enddate": null,
