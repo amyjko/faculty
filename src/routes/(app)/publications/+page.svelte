@@ -56,7 +56,7 @@
 <hr/>
 
 <p>
-	Filter by publication type, source, award type, or project.
+	Filter by publication topic and awards.
 </p>
 
 <Facets 
@@ -74,4 +74,6 @@
 	<div id={pub.id}>
 		<Paper paper={pub} highlight={ typeof window !== "undefined" && window.location.hash.substring(1) === pub.id } />
 	</div>
+{:else}
+	<p class="alert">No matching publications.</p>
 {/each}

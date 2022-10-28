@@ -67,14 +67,14 @@ export default class Profile {
 		const source = this.getSource(paper.source);
 
 		return {
-			// Add the kind of publication
-			kind: [ paper.kind ],
-			// If the source has a short name, add a tag
-			source: source ? [ source.short ] : [],
-			// Add the paper's awards as tags
-			award: paper.award ? paper.award.slice() : [],
+			// // Add the kind of publication
+			// kind: [ paper.kind ],
+			// // If the source has a short name, add a tag
+			// source: source ? [ source.short ] : [],
 			// Add the paper's projects
-			tag: this.getDiscoveries(discovery => discovery.pubs.indexOf(paper.id) >= 0).map(discovery => discovery.tags).reduce((allTags, tags) => [ ...allTags, ...tags ], [])
+			tag: this.getDiscoveries(discovery => discovery.pubs.indexOf(paper.id) >= 0).map(discovery => discovery.tags).reduce((allTags, tags) => [ ...allTags, ...tags ], []),
+			// Add the paper's awards as tags
+			award: paper.award ? paper.award.slice() : []
 		};
 
 	}

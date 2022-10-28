@@ -111,7 +111,8 @@ mark {
 }
 
 .alert {
-	display: inline-block;
+	display: block;
+	text-align: center;
 	background-color: var(--annotation-color);
 	padding: var(--padding);
 	margin-top: var(--margin);
