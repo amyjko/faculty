@@ -3625,7 +3625,7 @@ export const Amy: ProfileSpec = {
 	discoveries: [
 		{
 			contribution: "Learning to code with families can communities can enable rich new forms of intergenerational learning",
-			detail: "But it requires careful attention to the design of learning technologies to faciliate facile role switdching.",
+			detail: "But it requires careful attention to the design of learning technologies to faciliate facile role switching.",
 			pubs: [ "ellblockstudio", "aifamily", "tilecode" ],
 			tags: [ "families", "studies", "learning" ],
 			video: [ "https://www.youtube.com/watch?v=t56g4DYIuUA" ]
