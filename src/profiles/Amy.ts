@@ -3783,6 +3783,14 @@ export const Amy: ProfileSpec = {
 	],
 	posts: [
 		{
+			"url": "https://medium.com/bits-and-behavior/life-off-twitter-37f2b93f6f9b",
+			"title": "Life off Twitter",
+			"date": "2022.11",
+			"tags": ["personal", "academia"],
+			"img": "offtwitter",
+			"alt": "White water rapids below a blue sky, lined with trees."
+		},
+		{
 			"url": "https://medium.com/bits-and-behavior/academia-needs-to-dream-bigger-485bdbcfd194",
 			"title": "Academia needs to dream bigger",
 			"date": "2022.10",
