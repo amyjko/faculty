@@ -25,22 +25,6 @@
 		return `/papers/${paper.local}`;
 	}
 
-	function getURL() {
-
-		// If there's a local, show it first, since digital libraries have my deadname.
-		if(paper.local)
-			return getLocalURL();
-		// If we don't have one, but there's an ACM authorizer URL, return it, because visitors will be able to bypass the paywall.
-		else if(paper.authorizer)
-			return paper.authorizer;
-		// Lastly, include the doi, which will not be as easily accessible.
-		else if(paper.doi)
-			return paper.doi;
-		else
-			return "";
-
-	}
-
 	// Highlight the citation if expanded.
 	afterUpdate(() => {
 		if(apa) {
@@ -59,7 +43,14 @@
 		}
 	})
 
-	$: url = getURL();
+	$: url = 
+			// If there's a local, show it first, since digital libraries have my deadname.
+			paper.local ? getLocalURL() :
+			// If we don't have one, but there's an ACM authorizer URL, return it, because visitors will be able to bypass the paywall.
+			paper.authorizer ? paper.authorizer :
+			// Lastly, include the doi, which will not be as easily accessible.
+			paper.doi ? paper.doi :
+			"";
 
 </script>
 

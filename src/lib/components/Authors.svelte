@@ -7,7 +7,7 @@
     export let link: boolean = false;
     export let paper: Paper;
 
-    const equalFirst = paper.equalfirst && paper.authors.length >= 2;
+    $: equalFirst = paper.equalfirst && paper.authors.length >= 2;
 
 </script>
 

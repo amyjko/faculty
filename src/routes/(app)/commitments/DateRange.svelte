@@ -4,7 +4,7 @@
     export let start: Date;
     export let end: Date;
 
-    let range = end.getTime() - start.getTime();
+    $: range = end.getTime() - start.getTime();
     const yearInMilliseconds = 1000 * 60 * 60 * 24 * 7 * 52;
     const weekInMilliseconds = 1000 * 60 * 60 * 24 * 7;
 

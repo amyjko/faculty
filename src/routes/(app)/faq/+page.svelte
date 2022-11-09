@@ -7,7 +7,7 @@
 	import { profile } from "$lib/models/stores";
     import SectionList from "../../../lib/components/SectionList.svelte";
 
-	const guide = $profile.getPublication("practicalguide");
+	$: guide = $profile.getPublication("practicalguide");
 
 </script>
 

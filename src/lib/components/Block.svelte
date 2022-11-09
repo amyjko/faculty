@@ -4,7 +4,7 @@
 	export let header: string | null = null;
 	export let link: string | null = null;
 
-	const url = link?.startsWith("/") ? `${base}${link}` : link
+	$: url = link?.startsWith("/") ? `${base}${link}` : link
 
 </script>
 

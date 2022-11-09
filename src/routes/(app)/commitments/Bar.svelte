@@ -7,8 +7,8 @@
     export let proportion: number=1;
     export let label: boolean=true;
 
-    const maxEms = 12;
-    const ems = Math.round(maxEms * commit.hours * proportion / 40);
+    $: maxEms = 12;
+    $: ems = Math.round(maxEms * commit.hours * proportion / 40);
 
     // Adjust the postfix based on size and duration of commitment.
     let postfix = 

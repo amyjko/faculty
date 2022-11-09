@@ -6,9 +6,9 @@
 
 	import { profile } from "$lib/models/stores";
 
-	const pubCount = Math.round($profile.getPublications(paper => paper.kind.indexOf("refereed") === 0 || paper.kind.indexOf("journal") >= 0).length / 10) * 10;
-	const bestAwardCount = $profile.getPublications(paper => paper.award !== undefined && paper.award.filter(award => award.includes("best paper")).length > 0).length;
-	const mipAwardCount = $profile.getPublications(paper => paper.award !== undefined && paper.award.filter(award => award.includes("most influential")).length > 0).length;
+	$: pubCount = Math.round($profile.getPublications(paper => paper.kind.indexOf("refereed") === 0 || paper.kind.indexOf("journal") >= 0).length / 10) * 10;
+	$: bestAwardCount = $profile.getPublications(paper => paper.award !== undefined && paper.award.filter(award => award.includes("best paper")).length > 0).length;
+	$: mipAwardCount = $profile.getPublications(paper => paper.award !== undefined && paper.award.filter(award => award.includes("most influential")).length > 0).length;
 
 </script>
 
