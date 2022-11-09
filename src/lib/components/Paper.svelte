@@ -59,7 +59,7 @@
 		}
 	})
 
-	const url = getURL();
+	$: url = getURL();
 
 </script>
 
