@@ -3,6 +3,7 @@
     import Link from "./Link.svelte";
     import { page } from "$app/stores";
     import { scrollToElement } from "../models/utilities";
+    import { base } from "$app/paths";
 
     export let id: string;
 
@@ -23,8 +24,9 @@
 
 <h2 id={id} class={`section ${isLinked() ? "linked" : ""}`}>
     <slot />
+    <!-- Remove the base from the pathname before Link reappends it. -->
     <Link
-        to={$page.url.pathname + "#" + id}
+        to={$page.url.pathname.replace(base, "") + "#" + id}
     >
         &#x1F517;
     </Link>
