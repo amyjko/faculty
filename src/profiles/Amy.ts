@@ -6887,6 +6887,13 @@ export const Amy: ProfileSpec = {
 	],
 	doctoralCommittees: [
 		{
+			name: "Maryam Arab",
+			institution: "George Mason University",
+			department: "Computer Science",
+			startdate: 2018,
+			enddate: null
+		},
+		{
 			"name": "Mina Tari",
 			"institution": "University of Washington",
 			"department": "The Information School",
