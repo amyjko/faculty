@@ -64,8 +64,6 @@ export default class Profile {
 
 	getPaperTags(paper: Paper): Record<string, string[]> {
 
-		const source = this.getSource(paper.source);
-
 		return {
 			// // Add the kind of publication
 			// kind: [ paper.kind ],

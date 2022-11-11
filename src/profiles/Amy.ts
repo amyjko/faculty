@@ -7998,7 +7998,53 @@ export const Amy: ProfileSpec = {
 	],
 	travel: [
 		{
-			url: null,
+			url: "https://www.aera.net/Events-Meetings/Annual-Meeting/2023-Annual-Meeting",
+			title: "AERA 2023",
+			details: "I'll be attending my first AERA conference, serving on a panel and helping present a paper.",
+			category: "research",
+			commitment: {
+				start: "2023-04-13",
+				end: "2023-04-16",
+				hours: 16,
+				priority: 1
+			}
+		},
+		{
+			url: "http://s3d.cmu.edu/",
+			title: "Pittsburgh",
+			details: "I'll be working from Pittsburgh, hosted by CMU's Software and Societal Systems.",
+			category: "research",
+			commitment: {
+				start: "2023-04-10",
+				end: "2023-04-21",
+				hours: 0,
+				priority: 1
+			}
+		},
+		{
+			url: "https://sigcse2023.sigcse.org/",
+			title: "SIGCSE 2023",
+			details: "I'll be attending, presenting, and networking",
+			category: "research",
+			commitment: {
+				start: "2023-03-15",
+				end: "2023-03-18",
+				hours: 24,
+				priority: 1
+			}
+		},
+		{
+			title: "Vacation",
+			details: "I'm going to Hawaii for some rest and relaxation and will be offline.",
+			category: "personal",
+			commitment: {
+				start: "2022-11-30",
+				end: "2022-12-08",
+				hours: 56,
+				priority: 0
+			},
+		},
+		{
 			title: "MIT",
 			details: "I'm visiting the HCI community to talk about computing education research.",
 			category: "research",
@@ -8008,10 +8054,8 @@ export const Amy: ProfileSpec = {
 				hours: 20,
 				priority: 2
 			},
-			report: null
 		},
 		{
-			url: null,
 			title: "Harvard",
 			details: "I'm visiting the HCI community to talk about computing education research.",
 			category: "research",
@@ -8021,10 +8065,8 @@ export const Amy: ProfileSpec = {
 				hours: 8,
 				priority: 2
 			},
-			report: null
 		},
 		{
-			"url": null,
 			"title": "Simon Fraser University",
 			"details": "I'm visiting the faculty and students to talk about computing education research.",
 			"category": "research",
@@ -8034,7 +8076,6 @@ export const Amy: ProfileSpec = {
 				"hours": 16,
 				"priority": 2
 			},
-			"report": null
 		},
 		{
 			"url": "https://icer2022.acm.org/",
@@ -8046,8 +8087,7 @@ export const Amy: ProfileSpec = {
 				"end": "2022-08-12",
 				"hours": 40,
 				"priority": 2
-			},
-			"report": null
+			}
 		},
 		{
 			"url": "https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22302",
@@ -8059,8 +8099,7 @@ export const Amy: ProfileSpec = {
 				"end": "2022-07-29",
 				"hours": 40,
 				"priority": 2
-			},
-			"report": null
+			}
 		},
 		{
 			"url": "https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22231",
@@ -8076,7 +8115,6 @@ export const Amy: ProfileSpec = {
 			"report": "https://medium.com/bits-and-behavior/dagstuhl-trip-report-theories-of-programming-382543a3e540"
 		},
 		{
-			"url": null,
 			"title": "Exploring Computing Education Pathways 2022 Summit",
 			"details": "National K-12 CS Education policy summit, including 23 U.S. states and territories.",
 			"category": "research",
@@ -8137,8 +8175,7 @@ export const Amy: ProfileSpec = {
 				"end": "2021-11-04",
 				"hours": 4,
 				"priority": 1
-			},
-			"report": null
+			}
 		},
 		{
 			"url": "https://conf.researchr.org/home/RE-2021",
@@ -8150,8 +8187,7 @@ export const Amy: ProfileSpec = {
 				"end": "2021-09-24",
 				"hours": 20,
 				"priority": 1
-			},
-			"report": null
+			}
 		},
 		{
 			"url": "http://icer2021.acm.org",
@@ -8163,11 +8199,9 @@ export const Amy: ProfileSpec = {
 				"end": "2021-08-20",
 				"hours": 40,
 				"priority": 2
-			},
-			"report": null
+			}
 		},
 		{
-			"url": null,
 			"title": "CRA-E Annual Board Meeting",
 			"details": "Planning pathways into CS research.",
 			"category": "research",
@@ -8177,10 +8211,8 @@ export const Amy: ProfileSpec = {
 				"hours": 8,
 				"priority": 1
 			},
-			"report": null
 		},
 		{
-			"url": null,
 			"title": "NSF Panel",
 			"details": "Peer reviewing research proposals",
 			"category": "research",
@@ -8189,8 +8221,7 @@ export const Amy: ProfileSpec = {
 				"end": "2021-06-02",
 				"hours": 10,
 				"priority": 1
-			},
-			"report": null
+			}
 		},
 		{
 			"url": "http://respect2021.stcbp.org",
@@ -8215,11 +8246,9 @@ export const Amy: ProfileSpec = {
 				"end": "2021-05-13",
 				"hours": 20,
 				"priority": 1
-			},
-			"report": null
+			}
 		},
 		{
-			"url": null,
 			"title": "UC Irvine, Digital Learning Lab",
 			"details": "Invited research talk",
 			"category": "research",
@@ -8228,8 +8257,7 @@ export const Amy: ProfileSpec = {
 				"end": "2021-04-16",
 				"hours": 2,
 				"priority": 1
-			},
-			"report": null
+			}
 		},
 		{
 			"url": "http://sigcse2021.sigcse.org",
@@ -8241,11 +8269,9 @@ export const Amy: ProfileSpec = {
 				"end": "2021-03-20",
 				"hours": 10,
 				"priority": 1
-			},
-			"report": null
+			}
 		},
 		{
-			"url": null,
 			"title": "Caltech, Keller Colloquium in Computing and Mathematical Sciences",
 			"details": "Invited research talk and 1 on 1 meetings with faculty and students",
 			"category": "research",
@@ -8254,11 +8280,9 @@ export const Amy: ProfileSpec = {
 				"end": "2021-03-01",
 				"hours": 5,
 				"priority": 1
-			},
-			"report": null
+			}
 		},
 		{
-			"url": null,
 			"title": "UC Davis, Computer Science Seminar",
 			"details": "Invited research talk",
 			"category": "research",
@@ -8267,8 +8291,7 @@ export const Amy: ProfileSpec = {
 				"end": "2021-02-12",
 				"hours": 2,
 				"priority": 1
-			},
-			"report": null
+			}
 		},
 		{
 			"url": "https://www.cis.upenn.edu/events/",
@@ -8284,7 +8307,6 @@ export const Amy: ProfileSpec = {
 			"report": "https://medium.com/bits-and-behavior/encouraging-more-critical-computing-a-virtual-trip-report-4ec38cf68635"
 		},
 		{
-			"url": null,
 			"title": "IT University of Copenhagen",
 			"details": "Gave one of three invited keynotes at the launch of the new Center for Computing Education Research",
 			"category": "research",
@@ -8293,8 +8315,7 @@ export const Amy: ProfileSpec = {
 				"end": "2020-11-05",
 				"hours": 3,
 				"priority": 1
-			},
-			"report": null
+			}
 		},
 		{
 			"url": "https://www.hcii.cmu.edu/seminar-series",
@@ -8358,11 +8379,9 @@ export const Amy: ProfileSpec = {
 				"end": "2020-08-03",
 				"hours": 2,
 				"priority": 1
-			},
-			"report": null
+			}
 		},
 		{
-			"url": null,
 			"title": "ISAT/DARPA End-User Mashup Workshop",
 			"details": "This brought together experts in end-user programming and 'low-code' programming to inform future research opportunities in the U.S. government. I contributed as one of the experts.",
 			"category": "research",
@@ -8371,8 +8390,7 @@ export const Amy: ProfileSpec = {
 				"end": "2020-07-16",
 				"hours": 4,
 				"priority": 1
-			},
-			"report": null
+			}
 		},
 		{
 			"url": "https://www.youtube.com/watch?v=anEQg2C7l9M",
@@ -8384,8 +8402,7 @@ export const Amy: ProfileSpec = {
 				"end": "2020-07-16",
 				"hours": 2,
 				"priority": 1
-			},
-			"report": null
+			}
 		},
 		{
 			"url": "https://web.cvent.com/event/c6254b47-740f-4232-a896-064f09fd0ab1/summary",
@@ -8397,8 +8414,7 @@ export const Amy: ProfileSpec = {
 				"end": "2020-07-14",
 				"hours": 5,
 				"priority": 1
-			},
-			"report": null
+			}
 		},
 		{
 			"url": "https://cra.org/crae/",
@@ -8410,8 +8426,7 @@ export const Amy: ProfileSpec = {
 				"end": "2020-06-23",
 				"hours": 4,
 				"priority": 1
-			},
-			"report": null
+			}
 		},
 		{
 			"url": "http://sigcse2020.sigcse.org/",
@@ -8440,7 +8455,6 @@ export const Amy: ProfileSpec = {
 			"report": "https://medium.com/bits-and-behavior/koli-calling-2019-trip-report-computing-education-research-at-the-limits-572da5218414"
 		},
 		{
-			"url": null,
 			"title": "Defining CS for Washington State",
 			"details": "I spent the day in Olympia, Washington, on the Evergreen State College campus, working with stakeholders from across the state to shape what counts as a CS class. This was intended to help implement a new state law requiring CS electives in high schools.",
 			"category": "service",
@@ -8453,7 +8467,6 @@ export const Amy: ProfileSpec = {
 			"report": "https://medium.com/bits-and-behavior/what-counts-as-computer-science-in-k-12-education-a7173ff87801"
 		},
 		{
-			"url": null,
 			"title": "Networking in Eastern Washington",
 			"details": "I spent four days visiting Spokane, Pullman, and surrounding cities to meet dozens of passionate CS education advocates in schools, colleges, and universities.",
 			"category": "service",
@@ -8479,7 +8492,6 @@ export const Amy: ProfileSpec = {
 			"report": "https://medium.com/bits-and-behavior/plateau-2019-trip-report-building-community-around-human-aspects-of-programming-languages-c70e893930ce"
 		},
 		{
-			"url": null,
 			"title": "CSEdCon 2019",
 			"details": "I spent three days in Las Vegas, meeting with state leaders in K-12 CS education.",
 			"category": "service",
@@ -8531,7 +8543,6 @@ export const Amy: ProfileSpec = {
 			"report": "https://amyjko.medium.com/dagstuhl-trip-report-learning-and-teaching-programming-language-semantics-b8d8d9007380"
 		},
 		{
-			"url": null,
 			"title": "NextGen STEM Teacher Preparation Retreat",
 			"details": "I spent the day on the Western Washington University campus doing state planning on STEM teacher education with leaders across Washington state.",
 			"category": "service",
