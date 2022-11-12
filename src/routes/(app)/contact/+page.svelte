@@ -56,8 +56,9 @@
 	header="Twitter"
 >
 	<Image slot="image" url={"/images/contact/twitter.jpg"} alt="The Twitter logo."/>
-	&mdash; I mostly broadcast on Twitter, and reply to other people's posts, but I do respond to direct messages from non-trolls. 
-	It's a good place to learn what's on my mind and when I have new writing to share.
+	&mdash; I used to be fairly active on Twitter, but mostly left in June 2022. 
+	I still broadcast writing, amplify others, and respond to DMs, but I'm generally not posting otherwise.
+	You might find me on Mastadon @amyjko@hci.social saying things.
 </Block>
 
 <Block 
