@@ -169,7 +169,8 @@ export const Amy: ProfileSpec = {
 			"doi": "https://dl.acm.org/doi/10.1145/3512912",
 			"local": "Xie2022StudentAmp.pdf",
 			"publisher": "ACM",
-			"contribution": "Developed and evaluated tool that contextualizes student feedback for teaching teams to identify equity issues."
+			"contribution": "Developed and evaluated tool that contextualizes student feedback for teaching teams to identify equity issues.",
+			"award": [ "diversity + inclusion award" ]
 		},
 		{
 			"id": "strategywriting",
