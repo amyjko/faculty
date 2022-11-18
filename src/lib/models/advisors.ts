@@ -93,6 +93,7 @@ export default [
     ["Ricarose Roque", "http://www.ricarose.com/", "constructionism, creativity, informal learning, family learning", "Information Science", "CU Boulder", "USA"],
     ["Monique Ross*", "https://www.moniqueross.com/", "broadening participation, with a focus on computer science", "Computing and Information Science", "Florida International University", "USA"],
     ["Linda Sax*", "https://gseis.ucla.edu/directory/linda-sax/", "diversity in undergraduate CS and STEM", "Department of Education", "University of California, Los Angeles", "USA"],
+    ["Sue Sentance*", "https://www.cst.cam.ac.uk/people/ss2600", "computing education", "Computer Science education", "University of Cambridge", "UK"],
     ["Cliff Shaffer*", "http://people.cs.vt.edu/shaffer/", "digital education", "Computer Science", "Virginia Tech", "USA"],
     ["Kristin Searle*", "https://itls.usu.edu/people/faculty/searle/", "gender, culture, engagement with computing", "Instructional Technology and Learning Sciences", "Utah State University", "USA"],
     ["Carsten Schulte*", "http://www.uni-paderborn.de/person/60311/", "pedagogy", "Computer Science", "Paderborn University", "Germany"],
