@@ -17,7 +17,7 @@ export type Paper = {
 		"book";
 	authors: string[];
 	equalfirst?: boolean;
-	deadname: boolean;
+	deadname?: boolean;
 	year: number;
 	title: string;
 	source: string;

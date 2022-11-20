@@ -73,6 +73,19 @@ export const Amy: ProfileSpec = {
 	},
 	pubs: [
 		{
+			id: "stepcs",
+			kind: "refereed conference paper",
+			authors: ["@ajko", "@annes", "@jayne", "@brettwo", "Dan Gallagher"],
+			year: 2023,
+			title: "Proposing, preparing, and teaching an equity- and justice-centered secondary pre-service CS teacher education program",
+			source: "@sigcse",
+			pages: null,
+			publisher: "ACM",
+			doi: null,
+			local: null,
+			contribution: "Describes the administrative, fundraising, and pedagogical backstory behind the CS creation of a pre-service program."
+		},
+		{
 			"id": "cider",
 			"kind": "journal article",
 			"authors": ["@olesona", "@meron", "Christopher Perdriau", "@ajko"],
