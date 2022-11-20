@@ -7194,6 +7194,18 @@ export const Amy: ProfileSpec = {
 	],
 	service: [
 		{
+			"title": "Volunteer",
+			"committee": "Lambert House",
+			"level": "regional",
+			"description": "I faciliate and mentor LGBTQ+ and especially trans youth around Puget Sound",
+			"commitment": {
+				"start": "2022-11-01",
+				"end": null,
+				"hours": 1,
+				"priority": 0
+			}
+		},
+		{
 			"title": "Panel Member",
 			"committee": "Kaiser Permanente Gender Health Advisory Panel",
 			"level": "regional",
