@@ -3653,7 +3653,7 @@ export const Amy: ProfileSpec = {
 		{
 			contribution: "Justice-focused CS education is empowering but requires student trust and agency",
 			detail: "Making room for conversations about computing, society, and fairness demands deep respect for students' limiting situations.",
-			pubs: [ "teachermotives", "coconstructedcriticalcs", "ccc", "houseofcomputing" ],
+			pubs: [ "teachermotives", "coconstructedcriticalcs", "ccc", "houseofcomputing", "stepcs" ],
 			tags: [ "justice", "studies" ]
 		},
 		{
@@ -5910,6 +5910,17 @@ export const Amy: ProfileSpec = {
 		}
 	],
 	impacts: [
+		{
+			kind: "press",
+			start: 2022,
+			end: 2022,
+			description: "I was interviewed about our Google gift for STEP CS tuition subsidy.",
+			url: "https://www.425business.com/news/uw-computer-science-google-400k/article_abf64af0-50ba-11ed-b4d2-ab86ab3336e4.html",
+			title: "Google Giving $400K to UW Computer Science Teacher Education Program",
+			author: "John Stearns",
+			source: "425 Business",
+			who: "public"
+		},
 		{
 			"kind": "press",
 			"start": 2022,

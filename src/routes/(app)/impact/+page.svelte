@@ -21,7 +21,8 @@
 			{#each $profile.getImpacts(impact => impact.who === population.id, impact => -impact.start) as impact}
 				<p>
 					<span style="font-variant: small-caps">{impact.kind}</span> <small>({impact.start}{impact.end == null ? "-present" : impact.start !== impact.end ? "-" + impact.end : "" })</small>
-					<br/>{impact.description}{#if impact.url} <small> <External to={impact.url}>evidence</External></small>{/if}
+					{#if impact.url}<small><External to={impact.url}>evidence</External></small>{/if}
+					<br/>{impact.description}
 				</p>
 			{/each}
 		</div>
