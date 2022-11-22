@@ -8,8 +8,6 @@
 
 	$: path = $page.url.pathname;
 
-    $: console.log(path + ", " + base + ", " + at);
-
 </script>
 
 {#if at && (at === "/" ? path === `${base}/` : path ===`${base}${at}`) }
