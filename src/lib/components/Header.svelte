@@ -22,22 +22,22 @@
 <hr/>
 <nav>
 	<Link to="/" at={"/"}>Research</Link>
-	<Link to="/lab" at={"/lab"}>Lab</Link>
-	<Link to="/lablets" at={"/lablets"}>Lablets</Link>
-	<Link to="/communities" at={"/communities"}>Communities</Link>
-	<Link to="/publications" at={"/publications"}>Publications</Link>
-	<Link to="/essays" at={"/essays"}>Essays</Link>
-	<Link to="/talks" at={"/talks"}>Talks</Link>
-	<Link to="/classes" at={"/classes"}>Classes</Link>
-	<Link to="/books" at={"/books"}>Books</Link>
-	<Link to="/impact" at={"/impact"}>Impact</Link>
-	<Link to="/funding" at={"/funding"}>Funding</Link>
-	<Link to="/travel" at={"/travel"}>Travel</Link>
-	<Link to="/bio" at={"/bio"}>Bio</Link>
-	<Link to="/commitments" at={"/commitments"}>Commitments</Link>
-	<Link to="/contact" at={"/contact"}>Contact</Link>
-	<Link to="/faq" at={"/faq.*"}>FAQ</Link>
-	<Link to="/cer" at={"/cer.*"}>CER FAQ</Link>
+	<Link to="/lab" at={"/lab/"}>Lab</Link>
+	<Link to="/lablets" at={"/lablets/"}>Lablets</Link>
+	<Link to="/communities" at={"/communities/"}>Communities</Link>
+	<Link to="/publications" at={"/publications/"}>Publications</Link>
+	<Link to="/essays" at={"/essays/"}>Essays</Link>
+	<Link to="/talks" at={"/talks/"}>Talks</Link>
+	<Link to="/classes" at={"/classes/"}>Classes</Link>
+	<Link to="/books" at={"/books/"}>Books</Link>
+	<Link to="/impact" at={"/impact/"}>Impact</Link>
+	<Link to="/funding" at={"/funding/"}>Funding</Link>
+	<Link to="/travel" at={"/travel/"}>Travel</Link>
+	<Link to="/bio" at={"/bio/"}>Bio</Link>
+	<Link to="/commitments" at={"/commitments/"}>Commitments</Link>
+	<Link to="/contact" at={"/contact/"}>Contact</Link>
+	<Link to="/faq" at={"/faq/"}>FAQ</Link>
+	<Link to="/cer" at={"/cer/"}>CER FAQ</Link>
 	<Link to="/cv">CV</Link>
 </nav>
 
