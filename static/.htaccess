@@ -1,5 +1,6 @@
 ExpiresActive On
 ExpiresDefault "access"
+Options -Multiviews -Indexes
 
 # Support cache manifest for the Budget app.
 AddType text/cache-manifest .manifest
@@ -32,6 +33,11 @@ RewriteRule ^books/?$ index.html [L]
 # directory on the server.
 RewriteRule ^.*app\.min\.js$ app.min.js [L]
 RewriteRule ^.*style\.css$ style.css [L]
+
+# Rewrite all extension-less paths to have an HTML extension.
+# Regex transation: match any sequence of word characters, forward slashes, and hypens followed by an optional query string
+# Replace it with the file name, then the html extension, then the query string.
+RewriteRule ^([\w/-]+)(\?.*)?$ $1.html$2
 
 # If we're processing a path that isn't a real file or a directory, rewrite to index but preserve the query string.
 RewriteCond %{REQUEST_FILENAME} !-f
