@@ -11,8 +11,7 @@ const config = {
 		adapter: adapter({
 			pages: "build",
 			assets: "build",
-			trailingSlash: 'always',
-			// fallback: "index.html"
+			fallback: "index.html"
 		}),
 		paths: {
 			base: "/ajko"
