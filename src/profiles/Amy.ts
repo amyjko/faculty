@@ -1763,7 +1763,6 @@ export const Amy: ProfileSpec = {
 			"publisher": "IEEE",
 			"doi": "https://doi.org/10.1109/VLHCC.2004.47",
 			"local": "Ko2004LearningBarriers.pdf",
-			"slides": "VLHCC2004LearningBarriers.pdf",
 			"award": ["most influential paper"],
 			"contribution": "When people write programs, they face at least six distinct problems: 1) identifying a solution, 2) finding abstractions to implement the solution, 3) coordinating these abstractions, 4) properly configuring these abstractions, 5) identifying possible causes of program failures, and 6) getting information about program execution."
 		},
@@ -1781,7 +1780,6 @@ export const Amy: ProfileSpec = {
 			"acceptrate": 16,
 			"authorizer": "http://dl.acm.org/authorize?N89312",
 			"local": "Ko2004Whyline.pdf",
-			"slides": "CHI2004Whyline.pdf",
 			"contribution": "Algorithms and user interfaces for extracting and answering why and why not questions about program behavior."
 		},
 		{
@@ -1797,7 +1795,6 @@ export const Amy: ProfileSpec = {
 			"acceptrate": 33,
 			"doi": "https://doi.org/10.1109/HCC.2003.1260196",
 			"local": "Ko2003ModelOfErrors.pdf",
-			"slides": "VLHCC2003ProgrammingErrors.pdf",
 			"award": ["best paper", "most influential paper"],
 			"contribution": "Software defects are caused by cognitive breakdowns in specification, implementation and debugging activities and analysis of these breakdowns can be used to identify tools that prevent these breakdowns."
 		},
@@ -1814,7 +1811,6 @@ export const Amy: ProfileSpec = {
 			"acceptrate": 40,
 			"doi": "https://doi.org/10.1109/WPC.2003.1199201",
 			"local": "Ko2003ComprehensionStrategies.pdf",
-			"slides": "IWPC2003ComprehensionStrategies.pdf",
 			"contribution": "Programming expertise shapes strategy, but domain expertise is a better predictor of bug fixing success than strategy."
 		},
 		{
@@ -2652,7 +2648,7 @@ export const Amy: ProfileSpec = {
 			"dept": "Computer Science",
 			"coadvisor": null,
 			"bio": "Brian is a BS/MS student in Computer Science and Engineering interested in making algorithm visualization easier to incorporate into lectures.",
-			"url": "https://faculty.washington.edu/ajko/lab/brianc",
+			"url": "https://faculty.washington.edu/ajko/lab#brianc",
 			"startdate": 2020,
 			"enddate": 2022,
 			"achievements": []
@@ -8918,7 +8914,7 @@ export const Amy: ProfileSpec = {
 			"date": "2018-01-12",
 			"image": "stanford18.png",
 			"alt": "An image of me presenting at Stanford.",
-			"slides": "/slides/LearningToCode.pdf",
+			"slides": "LearningToCode.pdf",
 			"title": "Learning to Code: Why We Fail, How We Flourish",
 			"venue": "Stanford University, HCI Seminar",
 			"url": null,
@@ -8931,7 +8927,7 @@ export const Amy: ProfileSpec = {
 			"date": "2017-12-04",
 			"image": "michigan2017.jpg",
 			"alt": "The Michigan School of Information lobby",
-			"slides": "/slides/LearningToCode.pdf",
+			"slides": "LearningToCode.pdf",
 			"title": "Learning to Code: Why We Fail, How We Flourish",
 			"venue": "University of Michigan, MISC Seminar",
 			"url": null,
@@ -8944,7 +8940,7 @@ export const Amy: ProfileSpec = {
 			"date": "2018-10-30",
 			"image": "northwestern2017.jpg",
 			"alt": "A photograph of one of Northwestern University's beautiful atriums.",
-			"slides": "/slides/LearningToCode.pdf",
+			"slides": "LearningToCode.pdf",
 			"title": "Learning to Code: Why We Fail, How We Flourish",
 			"venue": "Northwestern University, CS+X Colloquium",
 			"url": null,
@@ -9243,7 +9239,7 @@ export const Amy: ProfileSpec = {
 		{
 			"id": "info360",
 			"alt": "A line drawing of two people discussing a sketch",
-			"link": "courses/info360/",
+			"link": "https://faculty.washington.edu/courses/info360/",
 			"number": "INFO 360",
 			"level": "undergraduate",
 			"title": "Design Methods",
