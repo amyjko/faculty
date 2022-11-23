@@ -1,5 +1,4 @@
-
-export type Paper = {
+type Paper = {
 	id: string;
 	kind: 
 		"refereed conference paper" |
@@ -35,3 +34,4 @@ export type Paper = {
 	acceptrate?: number;
 	award?: string[];
 };
+export default Paper;

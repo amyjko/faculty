@@ -1,6 +1,6 @@
 <script lang="ts">
 
-    import type { Paper } from "$lib/models/Paper";
+    import type Paper from "$lib/models/Paper";
     import Authors from "./Authors.svelte";
     import { profile } from "$lib/models/stores";
 

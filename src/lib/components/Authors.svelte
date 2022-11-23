@@ -1,8 +1,8 @@
 <script lang="ts">
 
     import Link from "$lib/components/Link.svelte";
-    import type { Paper } from "$lib/models/Paper";
-    import { profile } from "../models/stores";
+    import type Paper from "$lib/models/Paper";
+    import { profile } from "$lib/models/stores";
 
     export let link: boolean = false;
     export let paper: Paper;

@@ -2,7 +2,7 @@
 
 	import Block from "./Block.svelte";
 	import Authors from "./Authors.svelte";
-	import type { Paper } from "$lib/models/Paper";
+	import type Paper from "$lib/models/Paper";
 	import Link from "./Link.svelte";
     import External from "./External.svelte";
     import APACitation from "./APACitation.svelte";

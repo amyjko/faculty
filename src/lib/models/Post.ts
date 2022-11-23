@@ -1,5 +1,4 @@
-
-export type Post = {
+type Post = {
 	url: string;
 	title: string;
 	date: string;
@@ -7,3 +6,5 @@ export type Post = {
 	img?: string;
 	alt?: string;
 };
+
+export default Post;
