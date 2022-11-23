@@ -17,14 +17,7 @@
 		{/if}
 	</div>
 	<div class="right">
-		{#if header }
-			{#if url}
-				<a href={url} target="_blank" rel="noreferrer">{ header }</a>
-			{:else}
-					<strong>{header}</strong>
-			{/if}
-		{/if}
-		<slot></slot>
+		{#if header }{#if url}<a href={url} target="_blank" rel="noreferrer">{ header }</a>{:else}<strong>{header}</strong>{/if}{/if}<slot></slot>
 	</div>
 </div>
 
