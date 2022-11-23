@@ -13,12 +13,24 @@
 	<br/><External to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/">Professor</External>
 	<br/><External to="http://ischool.uw.edu">The Information School</External>
 	<br/><External to="http://cs.uw.edu">Computer Science &amp; Engineering (courtesy)</External>
-	<br/><External to="http://www.washington.edu">University of Washington<span class="hidden-xs">, Seattle</span></External>
+	<br/><External to="http://www.washington.edu">University of Washington, Seattle</External>
 	<!-- &nbsp;&sdot; <a href="https://ischool.uw.edu/academics/informatics">Program Chair, <em>Informatics</em></a> -->
 	<br/><External to="https://dl.acm.org/journal/toce">Editor-in-Chief, <em>ACM TOCE</em></External>
 	<br/><a href="mailto:ajko@uw.edu">email</a> &sdot; <External to="https://twitter.com/amyjko">twitter</External> &sdot; <External to="https://amyjko.medium.com">blog</External>
-	<br/><br/><mark>I'm on <External to="https://medium.com/bits-and-behavior/sabbatical-2-e2ea332301c3">sabbatical</External> until Sept. 2023.</mark>
 </div>
+<div class="small-info">
+	<a href="/ajko/"><Image url={"/images/headshots/mug-ajko.jpg"} alt="Headshot of Amy J. Ko"/></a>
+	<div>
+		<h1 style="margin-top: 0; margin-bottom: 0;">Amy J. Ko</h1>
+		<External to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/">Professor</External>
+		<br/><External to="http://ischool.uw.edu">iSchool</External> &middot; <External to="http://cs.uw.edu">CSE</External>
+		<br/><External to="http://www.washington.edu">University of Washington</External>
+		<br/><a href="mailto:ajko@uw.edu">email</a> &sdot; <External to="https://twitter.com/amyjko">twitter</External> &sdot; <External to="https://amyjko.medium.com">blog</External>
+	</div>
+</div>
+
+<p><mark>I'm on <External to="https://medium.com/bits-and-behavior/sabbatical-2-e2ea332301c3">sabbatical</External> until Sept. 2023.</mark></p>
+
 <hr/>
 <nav>
 	<Link to="/" at={"/"}>Research</Link>
@@ -41,6 +53,8 @@
 	<Link to="/cv">CV</Link>
 </nav>
 
+<hr class="small-hr"/>
+
 <style>
 	:global(nav > *) {
 		padding: var(--padding);
@@ -55,10 +69,28 @@
 		background-color: var(--annotation-color);
 	}
 
+	.small-info {
+		display: flex;
+		flex-direction: row;
+		flex-basis: 1;
+	}
+
 	@media only screen and (min-width: 800px) {
 		nav {
 			position: sticky;
 			top: var(--margin);
+		}
+		.small-info {
+			display: none;
+		}
+		.small-hr {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 800px) {
+		.info {
+			display: none;
 		}
 	}
 </style>
