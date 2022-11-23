@@ -1,6 +1,6 @@
 <script lang="ts">
 
-    import type { Person } from "$lib/models/Person";
+    import type Person from "$lib/models/Person";
     import Block from "./Block.svelte";
     import External from "./External.svelte";
     import Link from "./Link.svelte";

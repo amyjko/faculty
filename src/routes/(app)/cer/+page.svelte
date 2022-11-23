@@ -596,7 +596,7 @@
 
 <ul>
 	<li>The ACM ICER conference maintains a Discord server. Write Amy Ko <External to="mailto:ajko@uw.edu">ajko@uw.edu</External> for an invite. It tends to be CER focused.</li>
-	<li>The CS for All Consortium maintains <External to="csforall.slack.com">a Slack team</External>. <External to="https://www.csforall.org/become_a_member/">Join as a member</External> to access it.</li>
+	<li>The CS for All Consortium maintains <External to="https://csforall.slack.com">a Slack team</External>. <External to="https://www.csforall.org/become_a_member/">Join as a member</External> to access it.</li>
 	<li>There's a private group on Facebook called <External to="https://www.facebook.com/groups/1546763215587966">Computer Science Education: Researchers and Practitioners</External>.</li>
 	<li>Twitter is very active. Amy has a <External to="https://twitter.com/i/lists/1074089287874826245">list of Computing Education researchers</External>.</li>
 </ul>

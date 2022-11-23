@@ -1,7 +1,7 @@
 import type { Source } from "./Source";
-import type { Paper } from "./Paper";
-import type { Person } from "./Person";
-import type { Post } from "./Post";
+import type Paper from "./Paper";
+import type Person from "./Person";
+import type Post from "./Post";
 import type { Impact } from "./Impact";
 import type { Population } from "./Population";
 import type { Degree } from "./Degree";

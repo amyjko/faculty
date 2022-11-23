@@ -11,7 +11,6 @@ const config = {
 		adapter: adapter({
 			pages: "build",
 			assets: "build",
-			trailingSlash: 'always',
 			fallback: "index.html"
 		}),
 		paths: {

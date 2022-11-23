@@ -1,5 +1,4 @@
-
-export type Person = {
+type Person = {
 	id: string;
 	name: string;
 	active: boolean;
@@ -14,3 +13,4 @@ export type Person = {
 	enddate: number | null;
 	achievements: string[];
 };
+export default Person;

@@ -12,6 +12,8 @@
 
 {#if at && (at === "/" ? path === `${base}` : path ===`${base}${at}`) }
     <span class="at"><slot></slot></span>
+{:else if to.startsWith("http")}
+    <a href={to} target="_blank" rel="noreferrer"><slot></slot></a>
 {:else}
     <a href={`${base}${to}`}><slot></slot></a>
 {/if}

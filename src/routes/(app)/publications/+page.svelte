@@ -48,7 +48,7 @@
 				
 <p>
 	<small>
-		Of these, {$profile.getPublications(pub => pub.deadname).length} are still under my deadname, and thousands cite me by my deadname.
+		Of these, {$profile.getPublications(pub => pub.deadname === true).length} are still under my deadname, and thousands cite me by my deadname.
 		Publishers refuse to fix these, so please <strong>cite me as Amy J. Ko</strong>, regardless of how you might find my prior work in reference lists and scholarly search engines.
 	</small>
 </p>	

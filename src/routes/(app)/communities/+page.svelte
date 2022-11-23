@@ -14,7 +14,7 @@
 	header="ComputingEd@UW"
 >
 	<Image slot="image" url={"/images/communities/computinged.jpg"} alt="The ComputingEd@UW logo." />
-	is the grassroots community of computing education researchers and educators at the University of Washington, spanning the Paul G. Allen School of Computer Science & Engineering, The Information School, the College of Education, Human-Centered Design and Engineering, and the Department of Communication.
+	&nbsp;is the grassroots community of computing education researchers and educators at the University of Washington, spanning the Paul G. Allen School of Computer Science & Engineering, The Information School, the College of Education, Human-Centered Design and Engineering, and the Department of Communication.
 </Block>
 
 <Block 
@@ -22,7 +22,7 @@
 	header="DUB"
 >
 	<Image slot="image" url={"/images/communities/dub.jpg"} alt="The DUB logo."/>
-	is the grassroots community of HCI and design researchers and educators + teachers at the University of Washington. Amy helped grow it from a small group of HCI faculty to one of the largest and most prolific HCI research communities in the world.
+	&nbsp;is the grassroots community of HCI and design researchers and educators + teachers at the University of Washington. Amy helped grow it from a small group of HCI faculty to one of the largest and most prolific HCI research communities in the world.
 </Block>
 
 <Block 
@@ -30,15 +30,15 @@
 	header="PLSE"
 >
 	<Image slot="image" url={"/images/communities/plse.jpg"} alt="The PLSE logo."/>
-	is the programming languages + software engineering researcher group in the Paul G. Allen School of Computer Science & Engineering at the University of Washington. Amy often advises or co-advises Ph.D. students in PLSE.
+	&nbsp;is the programming languages + software engineering researcher group in the Paul G. Allen School of Computer Science & Engineering at the University of Washington. Amy often advises or co-advises Ph.D. students in PLSE.
 </Block>
 
 <Block 
 	link="https://digitalyouth.ischool.uw.edu"
 	header="The Digital Youth Lab"
 >
-<Image slot="image" url={"/images/communities/digitalyouth.jpg"} alt="The Digital Youth logo."/>
-studies the transformative potential of technology in young people's lives. Amy collaborates with faculty in the lab.
+	<Image slot="image" url={"/images/communities/digitalyouth.jpg"} alt="The Digital Youth logo."/>
+	&nbsp;studies the transformative potential of technology in young people's lives. I collaborate with faculty in the lab.
 </Block>
 
 <Block 
@@ -46,7 +46,7 @@ studies the transformative potential of technology in young people's lives. Amy 
 	header="Sound CS Ed"
 >
 <Image slot="image" url={"/images/communities/soundcsed.jpg"} alt="The Sound CS Ed logo."/>
-is a community of CS teachers, researchers, makers, and advocates in Puget Sound that Amy facilites. It hosts a quarterly meetup and chats on Slack.
+	&nbsp;is a community of CS teachers, researchers, makers, and advocates in Puget Sound that I facilitate. It hosts a quarterly meetup and chats on Slack.
 </Block>
 
 <Block 
@@ -54,7 +54,7 @@ is a community of CS teachers, researchers, makers, and advocates in Puget Sound
 	header="CS for All Washington"
 >
 	<Image slot="image" url={"/images/communities/csforallwa.jpg"} alt="The CS for All Washington logo."/>
-. Amy founded this coalition to advocate for universal K-12 CS education in Washington state, bringing together CSTA chapters, the Washington State Office of the Superintendent of Public Instruction, and several Educational Service Districts.
+	. I founded this coalition to advocate for universal K-12 CS education in Washington state, bringing together CSTA chapters, the Washington State Office of the Superintendent of Public Instruction, and several Educational Service Districts.
 </Block>
 
 <Block 
@@ -62,7 +62,7 @@ is a community of CS teachers, researchers, makers, and advocates in Puget Sound
 	header="AccessComputing"
 >
 	<Image slot="image" url={"/images/communities/accesscomputing.jpg"} alt="The AccessComputing logo." />
-	. First funded by NSF and led by Richard Ladner and Sheryl Burgstahler, AccessComputing creates pathways for students with disabilities into computing. Amy joined as a co-PI in 2016, and brought leadership in teaching accessibility. I help make strategic decision for the project and give talks regularly about the alliance's activities.
+	. First funded by NSF and led by Richard Ladner and Sheryl Burgstahler, AccessComputing creates pathways for students with disabilities into computing. I joined as a co-PI in 2016, and brought leadership in teaching accessibility. I help make strategic decision for the project and give talks regularly about the alliance's activities.
 </Block>
 
 <Block 
@@ -78,5 +78,5 @@ is a community of CS teachers, researchers, makers, and advocates in Puget Sound
 	header="EUSES Consortium"
 >
 	<Image slot="image" url={"/images/communities/euses.jpg"} alt="The EUSES Washington logo."/>
-	is a former coalition of end-user programming and end-user software engineering researchers. Amy was its last director
+	&nbsp;is a former coalition of end-user programming and end-user software engineering researchers. I was its last director.
 </Block>

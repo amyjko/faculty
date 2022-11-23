@@ -19,7 +19,7 @@
 {#each $profile.getTalks(undefined, talk => -(parseDate(talk.date).getTime())) as talk}
 	{@const date = parseDate(talk.date)}
 	<Block
-		link={talk.recording ? talk.recording : talk.practice ? talk.practice : `/slides/${talk.slides}` }
+		link={talk.recording ? talk.recording : talk.practice ? talk.practice : talk.slides?.startsWith("http") ? talk.slides : `/slides/${talk.slides}` }
 		header={talk.title}
 	>
 		<Image slot="image" url={"/images/talks/" + talk.image} alt={talk.alt} />
@@ -40,7 +40,7 @@
 					{/if}
 					{#if talk.slides}
 						{#if talk.recording || talk.practice } &sdot; {/if}
-						<Link to={`/slides/${talk.slides}`}>Slides</Link>
+						<Link to={talk.slides.startsWith("http") ? talk.slides : `/slides/${talk.slides}`}>Slides</Link>
 					{/if}
 					{#if talk.blog}
 						{#if talk.recording || talk.practice || talk.slides } &sdot; {/if}
