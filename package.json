@@ -9,8 +9,8 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --ignore build --watch",
-		"dry":  "rsync --dry-run -vzrip --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html",
-		"ship": "npm run build && rsync -vzrip --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html"
+		"dry":  "rsync --dry-run -vzripc --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html",
+		"ship": "npm run build && rsync -vzripc --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html"
 	},
 	"devDependencies": {
 		"@sveltejs/kit": "next",
