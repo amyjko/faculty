@@ -55,6 +55,7 @@ export default [
     ["Caitlin Kelleher*", "http://www.cse.wustl.edu/~ckelleher/", "learning technology", "Computer Science", "Washington University in St. Louis", "USA"],
     ["Scott Klemmer*", "http://d.ucsd.edu/srk/", "HCI, learning at scale", "Cognitive Science", "University of California, San Diego", "USA"],
     ["Amy J. Ko", "http://faculty.uw.edu/ajko/", "Critical computing education, programming language learning, pre-service teacher education", "The Information School, Computer Science & Engineering", "University of Washington, Seattle", "USA"],
+    ["Michael Kölling*", "https://nms.kcl.ac.uk/michael.kolling/", "computing education", "Faculty of Natural and Mathematical Sciences", "King's College London", "UK"],
     ["Shriram Krishnamurthi*", "https://cs.brown.edu/~sk/", "programming languages, pedagogy", "Computer Science", "Brown University", "USA"],
     ["Celine Latulipe*", "https://celinelatulipe.wordpress.com/", "HCI, creativity, pedagogy", "Software and Information Systems", "UNC Charlotte", "USA"],
     ["Michael J. Lee", "http://pixel42.com/", "HCI, educational games, diversity, learning technologies", "Informatics", "New Jersey Institute of Technology", "USA"],
