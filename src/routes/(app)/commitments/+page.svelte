@@ -2,6 +2,7 @@
 
     import External from "$lib/components/External.svelte";
     import { profile } from "$lib/models/stores";
+    import Table from "$lib/components/Table.svelte";
     import Bar from "./Bar.svelte";
     import DateRange from "./DateRange.svelte";
     import months from "./months";
@@ -45,7 +46,7 @@
 
 <hr/>
 
-<table>
+<Table>
     <tbody>
         <tr><td colSpan="3"><h3>Weekly commitments</h3></td></tr>
         {#each indefiniteWeekly as commitment}
@@ -136,7 +137,7 @@
             </tr>                            
         {/each}
     </tbody>
-</table>
+</Table>
 
 
 <h3>Weekly workload</h3>
@@ -150,7 +151,7 @@
 </p>
 
 
-<table>
+<Table>
     <tbody>
 
         {#each weeks as week, index }
@@ -181,7 +182,7 @@
 
         {/each}
     </tbody>
-</table>
+</Table>
 
 <style>
 

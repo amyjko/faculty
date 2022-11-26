@@ -162,22 +162,6 @@ hr {
 	color: rgb(255, 199, 96);
 }
 
-table {
-	width: 100%;
-	border-collapse: collapse;
-}
-
-td, th {
-	text-align: left;
-	vertical-align: top;
-	padding-right: var(--margin);
-    padding-top: var(--margin);
-}
-
-tr {
-	border-bottom: 1px solid var(--border-color);
-}
-
 .responsive-frame {
 	overflow: hidden;
 	padding-top: 56.25%;

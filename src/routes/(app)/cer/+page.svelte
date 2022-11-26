@@ -3,6 +3,7 @@
 	import External from '$lib/components/External.svelte';
 	import advisors from '$lib/models/advisors';
     import SectionList from '$lib/components/SectionList.svelte';
+    import Table from '../../../lib/components/Table.svelte';
 
 </script>
 
@@ -240,7 +241,7 @@
 	That's the most direct indicator of their interests, the methods they use, and the types of contributions they want to make (other than just writing them and asking, which you can also do).
 </p>
 
-<table>
+<Table>
 	<thead>
 		<tr>
 			<th>Name</th>
@@ -261,7 +262,7 @@
 			</tr>
 		{/each}
 	</tbody>
-</table>
+</Table>
 
 </Section>
 

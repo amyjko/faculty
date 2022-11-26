@@ -7,6 +7,7 @@
 	import Paper from "$lib/components/Paper.svelte";
 	import Image from "$lib/components/Thumbnail.svelte";
     import Wrap from "./Wrap.svelte";
+    import Table from "$lib/components/Table.svelte";
 
 	let refereed = $profile.getPublications(pub => pub.kind === "journal article" || pub.kind === "refereed conference paper", pub => -pub.year);
 
@@ -67,13 +68,13 @@ Professor
 
 <h3>Recognitions</h3>
 
-<table>
+<Table>
 	<tbody>
 		{#each $profile.getRecognitions(() => true, rec => -rec.year) as rec}
 			<Row start={rec.year} header={rec.title} detail={rec.description} />
 		{/each}
 	</tbody>
-</table>
+</Table>
 
 <h2>Funding</h2>
 
@@ -223,13 +224,13 @@ Professor
 
 <h4>Committee Member</h4>
 
-<table>
+<Table>
 	<tbody>
 		{#each $profile.getDoctoralCommmitees() as person}
 			<Row start={person.startdate} end={person.enddate} header={person.name} detail={person.institution} extra={person.department} />
 		{/each}
 	</tbody>
-</table>
+</Table>
 
 <h2>Service</h2>
 
