@@ -13,10 +13,6 @@
 
 </script>
 
-<div style="float: right">
-	<Image url="/images/bean.jpg" alt="Mr. Bean counting beans"/>
-</div>
-
 <Image url={"/images/headshots/mug-ajko.jpg"} alt="Headshot of Amy J. Ko" />
 
 <h1>Amy J. Ko, Ph.D.</h1>
