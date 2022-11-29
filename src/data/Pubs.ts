@@ -10,8 +10,8 @@ export const Publications: Paper[] = [
         source: "@sigcse",
         pages: null,
         publisher: "ACM",
-        doi: null,
-        local: null,
+        doi: "https://doi.org/10.1145/3545945.3569735",
+        local: "Ko2023STEPCS.pdf",
         contribution: "Describes the administrative, fundraising, and pedagogical backstory behind the CS creation of a pre-service program."
     },
     {
