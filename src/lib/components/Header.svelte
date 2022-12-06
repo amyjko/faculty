@@ -23,8 +23,7 @@
 	<div>
 		<h1 style="margin-top: 0; margin-bottom: 0;">Amy J. Ko</h1>
 		<External to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/">Professor</External>
-		<br/><External to="http://ischool.uw.edu">iSchool</External> &middot; <External to="http://cs.uw.edu">CSE</External>
-		<br/><External to="http://www.washington.edu">University of Washington</External>
+		<br/><External to="http://ischool.uw.edu">iSchool</External> &middot; <External to="http://cs.uw.edu">CSE</External> &middot; <External to="http://www.washington.edu">UW</External>
 		<br/><a href="mailto:ajko@uw.edu">email</a> &sdot; <External to="https://twitter.com/amyjko">twitter</External> &sdot; <External to="https://amyjko.medium.com">blog</External>
 	</div>
 </div>
@@ -91,6 +90,15 @@
 	@media only screen and (max-width: 800px) {
 		.info {
 			display: none;
+		}
+
+		.small-info :global(img) {
+			height: 6.5em;
+		}
+
+		nav {
+			overflow-x: scroll;
+			white-space: nowrap;
 		}
 	}
 </style>
