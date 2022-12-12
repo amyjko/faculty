@@ -1139,6 +1139,13 @@ export const Amy: ProfileSpec = {
 	],
 	doctoralCommittees: [
 		{
+			name: "Venkatesh Potluri",
+			institution: "University of Washington",
+			department: "Computer Science",
+			startdate: 2022,
+			enddate: null
+		},
+		{
 			name: "Maryam Arab",
 			institution: "George Mason University",
 			department: "Computer Science",
