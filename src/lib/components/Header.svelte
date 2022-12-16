@@ -6,7 +6,7 @@
 
 </script>
 
-<div class="info">
+<section class="info">
 	<a href="/ajko/"><Image url={"/images/headshots/mug-ajko.jpg"} alt="Headshot of Amy J. Ko"/></a>
 	<h1>Amy J. Ko, Ph.D.</h1>
 	<External to="https://www.mypronouns.org/she-her">she/her/hers</External>
@@ -17,16 +17,16 @@
 	<!-- &nbsp;&sdot; <a href="https://ischool.uw.edu/academics/informatics">Program Chair, <em>Informatics</em></a> -->
 	<br/><External to="https://dl.acm.org/journal/toce">Editor-in-Chief, <em>ACM TOCE</em></External>
 	<br/><a href="mailto:ajko@uw.edu">email</a> &sdot; <External to="https://twitter.com/amyjko">twitter</External> &sdot; <External to="https://amyjko.medium.com">blog</External>
-</div>
-<div class="small-info">
-	<a href="/ajko/"><Image url={"/images/headshots/mug-ajko.jpg"} alt="Headshot of Amy J. Ko"/></a>
+</section>
+<section class="small-info">
+	<p><a href="/ajko/"><Image url={"/images/headshots/mug-ajko.jpg"} alt="Headshot of Amy J. Ko"/></a></p>
 	<div>
 		<h1 style="margin-top: 0; margin-bottom: 0;">Amy J. Ko</h1>
 		<External to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/">Professor</External>
 		<br/><External to="http://ischool.uw.edu">iSchool</External> &middot; <External to="http://cs.uw.edu">CSE</External> &middot; <External to="http://www.washington.edu">UW</External>
 		<br/><a href="mailto:ajko@uw.edu">email</a> &sdot; <External to="https://twitter.com/amyjko">twitter</External> &sdot; <External to="https://amyjko.medium.com">blog</External>
 	</div>
-</div>
+</section>
 
 <p><mark>I'm on <External to="https://medium.com/bits-and-behavior/sabbatical-2-e2ea332301c3">sabbatical</External> until Sept. 2023.</mark></p>
 
@@ -90,10 +90,6 @@
 	@media only screen and (max-width: 800px) {
 		.info {
 			display: none;
-		}
-
-		.small-info :global(img) {
-			height: 6.5em;
 		}
 
 		nav {
