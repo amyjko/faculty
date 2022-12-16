@@ -19,7 +19,7 @@
 	<br/><a href="mailto:ajko@uw.edu">email</a> &sdot; <External to="https://twitter.com/amyjko">twitter</External> &sdot; <External to="https://amyjko.medium.com">blog</External>
 </section>
 <section class="small-info">
-	<p><a href="/ajko/"><Image url={"/images/headshots/mug-ajko.jpg"} alt="Headshot of Amy J. Ko"/></a></p>
+	<a href="/ajko/"><Image url={"/images/headshots/mug-ajko.jpg"} alt="Headshot of Amy J. Ko"/></a>
 	<div>
 		<h1 style="margin-top: 0; margin-bottom: 0;">Amy J. Ko</h1>
 		<External to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/">Professor</External>
