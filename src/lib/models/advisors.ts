@@ -111,5 +111,7 @@ export default [
     ["Joseph Jay Williams", "http://www.josephjaywilliams.com/", "HCI, A/B experimentation, learnersourcing, personalization, multi-armed bandits/reinforcement learning, self-explanation, metacognition, motivation and social psychology interventions, cognitive science, mental health, learning at scale", "Computer Science", "University of Toronto", "Canada"],
     ["Aman Yadav", "http://www.amanyadav.org/", "computational thinking, teacher education, problem-based learning, teacher professional development", "Educational Psychology and Educational Technology", "Michigan State University", "USA"],
     ["Mark Zarb", "https://rgu-repository.worktribe.com/person/77298/mark-zarb", "Computing Education, Pedagogy, Teaching and Learning, Transitions into HE, Student Resilience, Post-Pandemic Educational Landscapes", "School of Computing", "Robert Gordon University", "Scotland"],
-    ["Haoqi Zhang*", "http://users.eecs.northwestern.edu/~hq/", "learning ecosystems", "Computer Science", "Northwestern", "USA"]
+    ["Haoqi Zhang*", "http://users.eecs.northwestern.edu/~hq/", "learning ecosystems", "Computer Science", "Northwestern", "USA"],
+    ["Gary K. W. Wong", "https://web.edu.hku.hk/faculty-academics/wongkwg", "Computational thinking, Computer science education, Artificial intelligence education", "Faculty of Education", "University of Hong Kong", "Hong Kong"],
+    ["Lukas Z. Liu", "https://web.edu.hku.hk/faculty-academics/lukasliu", "Computational thinking, Learning analytics, Game-based learning", "Faculty of Education", "University of Hong Kong", "Hong Kong"]
 ]
