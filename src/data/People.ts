@@ -9,7 +9,7 @@ export const People: Person[] = [
         "level": "faculty",
         "dept": "Education",
         "coadvisor": null,
-        "bio": "Annes is faculty in the College of Education. We often collaborate on teacher education research, teaching, and administration.",
+        "bio": "Anne is faculty in the College of Education. We often collaborate on teacher education research, teaching, and administration.",
         "url": "https://www.linkedin.com/in/anne-beitlers-241a3939/",
         "startdate": 2016,
         "enddate": null,
