@@ -2,6 +2,14 @@ import type Post from "../lib/models/Post";
 
 export const Posts: Post[] = [
     {
+        url: "https://medium.com/bits-and-behavior/winter-sabbatical-update-code-community-huaka%CA%BBi-bcfdd862c62",
+        title: "Winter sabbatical update: Code, community, huakaʻi",
+        date: "2022.12",
+        tags: ["personal", "academia"],
+        img: "huakai",
+        alt: "Amy smiling with her hair down with a a sunset and beach in the background."
+    },
+    {
         url: "https://medium.com/bits-and-behavior/life-off-twitter-37f2b93f6f9b",
         title: "Life off Twitter",
         date: "2022.11",
