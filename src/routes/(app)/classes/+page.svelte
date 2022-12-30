@@ -4,7 +4,7 @@
 	import { profile } from "$lib/models/stores";
 	import Image from "$lib/components/Thumbnail.svelte";
 
-	const offerings = $profile.getClasses().map((course) => {
+	const offerings = $profile.getClasses(undefined, (c) => -Math.max.apply(undefined, c.offerings.map((o) => o.year))).map((course) => {
 		return {
 			course: course,
 			next: course.offerings.filter(offer => offer.score === null).sort((a, b) => (a.year === b.year ? a.term - b.term : a.year - b.year)),
@@ -26,9 +26,8 @@
 		<Image slot="image" url={"/images/courses/" + offering.course.id + ".png"} alt={offering.course.alt} />
 		<span>
 			<em>
-			{#if offering.latest.length > 0}{"last taught " + ["Autumn", "Winter", "Spring"][offering.latest[0].term - 1] + " " + offering.latest[0].year }{/if}
-			{#if offering.next.length > 0}{(offering.next.length > 0 ? ", " : "") + "next offering likely " + ["Autumn", "Winter", "Spring"][offering.next[0].term - 1] + " " + offering.next[0].year }{/if}
-			</em>. {offering.course.description}
+				&nbsp;({#if offering.latest.length > 0}{"last taught " + ["Autumn", "Winter", "Spring"][offering.latest[0].term - 1] + " " + offering.latest[0].year }{/if}{#if offering.next.length > 0}{(offering.next.length > 0 ? ", " : "") + "next offering likely " + ["Autumn", "Winter", "Spring"][offering.next[0].term - 1] + " " + offering.next[0].year }{/if}).
+			</em> {offering.course.description}
 			<ul>
 				{#each offering.course.links as link}
 					<li>
