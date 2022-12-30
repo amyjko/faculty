@@ -1,6 +1,6 @@
 <div>
     <table>
-        <slot></slot>
+        <slot />
     </table>
 </div>
 
@@ -9,12 +9,13 @@
         width: 100%;
         overflow-x: auto;
     }
-    
+
     table {
         border-collapse: collapse;
     }
 
-    table :global(td), table :global(th) {
+    table :global(td),
+    table :global(th) {
         text-align: left;
         vertical-align: top;
         padding-right: var(--margin);
@@ -22,7 +23,6 @@
     }
 
     table :global(tr) {
-	    border-bottom: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
     }
-
 </style>

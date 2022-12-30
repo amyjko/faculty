@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<base href="/ajko/">
-		<meta charset="utf-8">
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta property="og:image" content="https://faculty.washington.edu/ajko/images/headshots/mug-ajko.jpg" />
-		<meta property="og:description" content="Amy J. Ko, Ph.D. | The Information School | University of Washington" />
+    <head>
+        <base href="/ajko/" />
+        <meta charset="utf-8" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            property="og:image"
+            content="https://faculty.washington.edu/ajko/images/headshots/mug-ajko.jpg"
+        />
+        <meta
+            property="og:description"
+            content="Amy J. Ko, Ph.D. | The Information School | University of Washington"
+        />
 
         <title>Amy J. Ko, Ph.D. | UW Seattle</title>
 
-		<link rel="stylesheet" type="text/css" href="%sveltekit.assets%/css/global.css">
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="%sveltekit.assets%/css/global.css"
+        />
 
-		%sveltekit.head%
-	</head>
-	<body>
-		<div>%sveltekit.body%</div>
+        %sveltekit.head%
+    </head>
+    <body>
+        <div>%sveltekit.body%</div>
 
-		<!-- Google Analytics -->
-		<script type="text/javascript">
+        <!-- Google Analytics -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-10917999-1']);
+            _gaq.push(['_trackPageview']);
 
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-10917999-1']);
-			_gaq.push(['_trackPageview']);
-			
-			(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		
-		</script>
-		
-	</body>
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src =
+                    ('https:' == document.location.protocol
+                        ? 'https://ssl'
+                        : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </body>
 </html>

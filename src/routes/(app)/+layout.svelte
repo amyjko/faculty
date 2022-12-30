@@ -1,21 +1,17 @@
 <script lang="ts">
-    
-    import Header from "$lib/components/Header.svelte";
-    import Footer from "$lib/components/Footer.svelte";
-
+    import Header from '$lib/components/Header.svelte';
+    import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <div class="page">
     <div class="header"><Header /></div>
     <div class="content">
-        <slot></slot>
+        <slot />
         <Footer />
     </div>
 </div>
 
-
 <style>
-
     /* Small */
     @media only screen and (max-width: 800px) {
         :global(body) {
@@ -29,7 +25,6 @@
 
     /* Large */
     @media only screen and (min-width: 800px) {
-
         :global(body) {
             margin: auto;
             max-width: 80em;
@@ -50,7 +45,5 @@
             margin-top: 10em;
             max-width: 40em;
         }
-
     }
-
 </style>

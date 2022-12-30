@@ -1,652 +1,849 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"title": "Amy's faculty website data schema",
-	"type": "object",
-	"definitions": {
-		"commitment": {
-			"type": "object",
-			"required": ["start", "end", "hours", "priority"],
-			"properties": {
-				"start": { "$ref": "#/definitions/optionaldate" },
-				"end": { "$ref": "#/definitions/optionaldate" },
-				"hours": { "type": "number", "minimum": 0 },
-				"priority": { "type": "integer", "enum": [0, 1, 2]}
-			}
-		},
-		"date": {
-			"type": "string",
-			"pattern": "^([1-2][0-9][0-9][0-9]-)?[0-1][0-9]-[0-3][0-9]$"
-		},
-		"optionaldate": {
-			"type": ["string", "null"],
-			"pattern": "^([1-2][0-9][0-9][0-9]-)?[0-1][0-9]-[0-3][0-9]$"
-		},
-		"category": {
-			"type": "string",
-			"enum": ["research", "service", "teaching", "personal"]
-		}
-	},
-	"required": [
-		"sources", "pubs", "people", "projects", "posts", 
-		"impacts", "degrees", "patents", "jobs", "recognitions", "editing",
-		"reviewing", "doctoralCommittees", "service", "funding", "travel", 
-		"talks", "classes", "commitments", "years"
-	],
-	"properties": {
-		"sources": {
-			"type": "object",
-			"description": "Conference and journal sources",
-			"additionalProperties": {
-				"type": "object",
-				"description": "Source names",
-				"required": ["name", "short"],
-				"properties": {
-					"name": {
-						"type": "string",
-						"description": "The full name of the source"
-					},
-					"short": {
-						"type": "string",
-						"description": "A short name for the source, typically an acronym"
-					}
-				}
-			}
-		},
-	    "pubs": {
-			"type": "array",
-			"description": "List of publications",
-			"items": {
-				"type": "object",
-				"description": "A publication.",
-				"required": ["id", "kind", "authors", "deadname", "year", "title", "source", "pages", "doi", "local", "publisher", "contribution"],
-				"properties": {
-					"id": {
-						"type": "string",
-						"description": "A unique ID for the publication, used as an id attribute",
-						"pattern": "^[a-z0-9]+$"
-					},
-					"kind": {
-						"type": "string",
-						"description": "The type of publication",
-						"enum": ["refereed conference paper", "refereed workshop paper", "journal article", "refereed short conference paper", "juried conference paper", "book chapter", "refereed invited article", "juried workshop paper", "technical report", "refereed magazine article", "whitepaper", "abstract", "book"]
-					},
-					"authors": {
-						"type": "array",
-						"description": "A list of authors",
-						"items": {
-							"type": "string",
-							"pattern": "^(@[a-z0-9]+|[a-zA-Z-. ]+)$"
-						}
-					},
-					"equalfirst": {
-						"type": "boolean",
-						"description": "True if the first two authors made equal contributions."
-					},
-					"deadname": {
-						"type": "boolean",
-						"description": "True if the publisher hasn't updated my name"
-					},
-					"year": {
-						"type": "integer",
-						"description": "The year of publication"
-					},
-					"title": {
-						"type": "string",
-						"description": "The title of the publication"
-					},
-					"source": {
-						"type": "string",
-						"description": "The source in which the publication was published",
-						"pattern": "^(@[a-z0-9]+|[a-zA-Z0-9-. ()@,:]+)$"
-					},
-					"pages": {
-						"type": ["string", "null"],
-						"description": "Pages, volumes, and issues"
-					},
-					"doi": {
-						"type": ["string", "null"],
-						"description": "The document object identifier",
-						"format": "uri"
-					},
-					"local": {
-						"type": ["string", "null"],
-						"description": "A local URI to a PDF",
-						"format": "uri-reference"
-					},
-					"authorizer": {
-						"type": ["string", "null"],
-						"description": "An ACM authorizer link",
-						"format": "uri"
-					},
-					"publisher": {
-						"type": "string",
-						"description": "The publisher"
-					},
-					"contribution": {
-						"type": "string",
-						"description": "A short summary of the paper's discovery"
-					},
-					"blog": {
-						"type": "string",
-						"description": "A link to a blog post describing the publication",
-						"format": "uri"
-					},
-					"acceptance rate": {
-						"type": "integer",
-						"minimum": 0,
-						"maximum": 100
-					}
-				}
-			}
-	    },
-	    "people": {
-			"type": "array",
-			"description": "List of people.",
-			"items": {
-				"type": "object",
-				"description": "A person.",
-				"required": [ "id", "name", "active", "advised", "level", "dept", "coadvisor", "bio", "url", "startdate", "enddate", "achievements" ],
-				"properties": {
-					"id": {
-						"type": "string",
-						"description": "A unique id, usually the student's UW NetID",
-						"pattern": "^[a-z0-9]+$"
-					},
-					"name": {
-						"type": "string",
-						"description": "The name of the person"
-					},
-					"active": {
-						"type": "boolean",
-						"description": "Are they in the lab right now?"
-					},
-					"advised": {
-						"type": "boolean",
-						"description": "True if I officially advised them"
-					},
-					"level": {
-						"type": "string",
-						"description": "The level of the student when they were in the lab",
-						"enum": ["undergrad", "masters", "phd", "postdoc", "faculty", "director"]
-					},
-					"dept": {
-						"type": "string",
-						"description": "Which unit on campus"
-					},
-					"coadvisor": {
-						"type": ["string", "null"],
-						"description": "Name of co-advisor, if any"
-					},
-					"bio": {
-						"type": "string",
-						"description": "Short bio of the student"
-					},
-					"url": {
-						"type": "string",
-						"description": "A link to their website",
-						"format": "uri"
-					},
-					"startdate": {
-						"type": "integer",
-						"description": "The year in which they started"
-					},
-					"enddate": {
-						"type": ["integer", "null"],
-						"description": "The year in which they left the lab"
-					},
-					"achievements": {
-						"type": "array",
-						"description": "A list of descriptions of achievements",
-						"items": {
-							"type": "string"
-						}
-					}
-				}
-			}
-	    },
-	    "projects": {
-			"type": "array",
-			"description": "List of projects.",
-			"items": {
-				"type": "object",
-				"description": "A person.",
-				"required": ["id", "active", "name", "description", "funding", "people", "papers", "links", "startdate", "stopdate"],
-				"properties": {
-					"id": {
-						"type": "string",
-						"pattern": "^[a-z0-9]+$"
-					},
-					"active": {
-						"type": "boolean"
-					},
-					"name": {
-						"type": "string"
-					},
-					"description": {
-						"type": "string"
-					},
-					"funding": {
-						"type": "array",
-						"items": {
-							"type": "string",
-							"pattern": "^@[a-z0-9]+$"
-						}
-					},
-					"people": {
-						"type": "array",
-						"items": {
-							"type": "string",
-							"pattern": "^@[a-z0-9]+$"
-						}
-					},
-					"papers": {
-						"type": "array",
-						"items": {
-							"type": "string",
-							"pattern": "^[a-z0-9]+$"
-						}
-					},
-					"links": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"required": ["title", "url"],
-							"properties": {
-								"title": {
-									"type": "string"
-								},
-								"url": {
-									"type": "string",
-									"format": "uri"
-								}
-							}
-						}
-					},
-					"startdate": {
-						"type": "integer"
-					},
-					"stopdate": {
-						"type": ["integer", "null"]
-					}
-				}
-			}
-	    },
-	    "posts": {
-			"type": "array",
-			"description": "List of posts.",
-			"items": {
-				"type": "object",
-				"description": "A blog post.",
-				"required": ["url", "title", "date", "tags", "img", "alt"],
-				"properties": {
-					"url": {
-						"type": "string",
-						"format": "uri"
-					},
-					"title": {
-						"type": "string"
-					},
-					"date": {
-						"type": "string",
-						"pattern": "^20[0-9][0-9]\\.1?[0-9]$"
-					},
-					"tags": {
-						"type": "array",
-						"items": {
-							"type": "string",
-							"enum": ["HCI", "K-12", "academia", "accessibility", "advising", "argument", "automation",
-									"book summary", "computing education", "design", "diversity", "ed tech", "gender", "grant report", 
-									"industry", "information", "paper", "personal", "policy", "productivity", "programming languages",
-									"review", "science", "society", "software engineering", "teaching", "trip report", "tutorial"]
-						}
-					},
-					"img": {
-						"type": ["string", "null"]
-					},
-					"alt": {
-					    "type": ["string", "null"]
-				    }
-				}
-			}
-	    },
-		"impacts": {
-			"type": "array",
-			"items": {
-				"type": "object",
-				"required": ["kind", "start", "end", "description", "url", "projects"],
-				"properties": {
-					"kind": { "type": "string", "enum": ["press", "product", "knowledge", "consulting", "curriculum", "resource", "policy", "community", "social"] },
-					"start": { "type": "integer", "minimum": 2000 },
-					"end": { "type": ["integer", "null"], "minimum": 2000 },
-					"description": { "type": "string" },
-					"url": { "type": ["string", "null"], "format": "uri-reference" },
-					"projects": { "type": "array", "items": { "type": "string"} },
-					"who": {
-						"type": "string",
-						"enum": [
-							"public", "industry", "engineers", "learningtech", 
-							"academia", "cer", "k12cs", "k12cswa", "k12csps"
-						]
-					}
-				}
-			}
-		},
-		"populations": {
-			"type": "array",
-			"description": "List of impacts.",
-			"items": {
-		    	"type": "object",
-				"description": "A population impacted.",
-				"required": ["id", "population", "alt", "description"],
-		    	"properties": {
-			    	"id": {
-						"type": "string",
-						"pattern": "^[a-z0-9]+$"
-			    	},
-			    	"population": {
-				    	"type": "string"
-			    	},
-			    	"alt": {
-				    	"type": "string"
-			    	},
-			    	"description": {
-				    	"type": "string"
-			    	}
-		    	}
-			}
-		},
-		"degrees": {
-			"type": "array",
-			"description": "Degrees earned",
-			"items": {
-				"type": "object",
-				"required": ["institution", "degree", "start", "end", "thesis", "committee"]
-			}
-		},
-		"patents": {
-			"type": "array",
-			"description": "Degrees earned",
-			"items": {
-				"type": "object",
-				"required": ["title", "year", "number", "inventors"]
-			}
-		},
-		"jobs": {
-			"type": "array",
-			"description": "Jobs I've had",
-			"items": {
-				"type": "object",
-				"required": ["title", "organization", "department", "startdate", "enddate", "academic"],
-				"properties": {
-					"startdate": {
-						"type": "integer",
-						"minimum": 1999
-					},
-					"enddate": {
-						"type": ["integer", "null"],
-						"minimum": 1999
-					},
-					"academic": {
-						"type": "boolean"
-					}
-				}
-			}
-		},
-		"recognitions": {
-			"type": "array",
-			"description": "Honors, awards, and recognitions",
-			"items": {
-				"type": "object",
-				"required": ["title", "year", "description"],
-				"properties": {
-					"title": { "type": "string" },
-					"year": { "type": "integer", "minimum": 1998 },
-					"description": { "type": "string" }
-				}
-			}
-		},
-		"editing": {
-			"type": "array",
-			"description": "Editing positions",
-			"items": {
-				"type": "object",
-				"required": ["title", "venue", "commitment"],
-				"properties": {
-					"title": { "type": "string" },
-					"venue": { "type": "string" },
-					"commitment": { "$ref": "#/definitions/commitment" }
-				}
-			}
-		},
-		"reviewing": {
-			"type": "array",
-			"description": "Reviewing",
-			"items": {
-				"type": "object",
-				"required": ["venue", "years", "level"],
-				"properties": {
-					"venue": { "type": "string" },
-					"years": {
-						"type": "array",
-						"items": { "type": "integer", "minimum": 2000 }
-					},
-					"level": {
-						"type": "string",
-						"enum": ["reviewer", "pc", "chair"]
-					},
-					"title": { "type": "string" },
-					"commitment": { "$ref": "#/definitions/commitment" }
-				}
-			}
-		},
-		"doctoralCommittees": {
-			"type": "array",
-			"items": {
-				"type": "object",
-				"required": ["name", "department", "startdate", "enddate"],
-				"properties": {
-					"name": { "type": "string" },
-					"department": { "type": "string" },
-					"startdate": { "type": "integer", "minimum": 2000 },
-					"enddate": { "type": ["integer", "null"], "minimum": 2000 }
-				}
-			}
-		},
-	    "service": {
-			"type": "array",
-			"description": "Miscellaneous service",
-			"items": {
-				"type": "object",
-				"required": ["title", "committee", "commitment"],
-				"properties": {
-					"title": { "type": "string" },
-					"committee": { "type": "string" },
-					"level": { "type": "string", "enum": ["departmental", "university", "regional", "national", "international"] },
-					"description": { "type": "string" },
-					"commitment": { "$ref": "#/definitions/commitment" }
-				}	
-			}
-		},
-		"funding": {
-			"type": "array",
-			"description": "List of sponsored research",
-			"items": {
-				"type": "object",
-				"required": ["title", "funder", "award", "investigators", "amount", "commitment", "description", "url"],
-				"properties": {
-					"id": {
-						"type": "string",
-						"pattern": "^[a-z0-9]+$"
-					},
-					"title": {
-						"type": "string"
-					},
-					"funder": {
-						"type": "string"
-					},
-					"award": {
-						"type": ["string", "null"]
-					},
-					"category": { "$ref": "#/definitions/category" },
-					"investigators": {
-						"type": "string"
-					},
-					"amount": {
-						"type": "string"
-					},
-					"description": {
-						"type": "string"
-					},
-					"url": {
-						"type": ["string", "null"],
-						"format": "uri"
-					},
-					"private": { "type": "boolean" },
-					"commitment": { "$ref": "#/definitions/commitment" }
-				}
-			}
-		},
-	    "travel": {
-			"type": "array",
-			"description": "List of trips.",
-			"items": {
-				"type": "object",
-				"required": ["url", "title", "details", "report", "commitment"],
-				"description": "A trip.",
-				"properties": {
-					"url": {
-						"type": ["string", "null"],
-						"format": "uri"
-					},
-					"title": {
-						"type": "string"
-					},
-					"details": {
-						"type": "string"
-					},
-					"report": {
-						"type": ["string", "null"],
-						"format": "uri"
-					},
-					"commitment": { "$ref": "#/definitions/commitment" }
-				}
-			}
-	    },
-	    "talks": {
-			"type": "array",
-			"description": "List of talks.",
-			"items": {
-				"type": "object",
-				"description": "A talk.",
-				"required": ["date", "image", "alt", "slides", "venue", "url", "recording", "practice", "description", "keynote"],
-				"properties": {
-					"date": { "$ref": "#/definitions/date" },
-					"image": {
-						"type": "string"
-					},
-					"alt": {
-						"type": "string"
-					},
-					"slides": {
-						"type": ["string", "null"],
-						"format": "uri-reference"
-					},
-					"venue": {
-						"type": "string"
-					},
-					"url": {
-						"type": ["string", "null"],
-						"format": "uri"
-					},
-					"recording": {
-						"type": ["string", "null"],
-						"format": "uri"
-					},
-					"practice": {
-						"type": ["string", "null"],
-						"format": "uri"
-					},
-					"description": {
-						"type": "string"
-					},
-					"keynote": {
-						"type": "boolean"
-					},
-					"blog": {
-						"type": "string",
-						"format": "uri"
-					}
-				}
-			}
-		},
-		"classes": {
-			"type": "array",
-			"description": "List of classes.",
-			"items": {
-				"type": "object",
-				"description": "A class.",
-				"required": ["id", "alt", "link", "number", "title", "description", "links", "hours"],
-				"properties": {
-					"id": { "type": "string" },
-					"alt": { "type": "string" },
-					"link": { "type": "string", "format": "uri-reference" },
-					"number": { "type": "string" },
-					"level": { "type": "string", "enum": ["undergraduate", "graduate"] },
-					"title": { "type": "string" },
-					"description": { "type": ["string", "null"] },
-					"hours": { "type": "integer", "minimum": 0 },
-					"links": {
-						"type": "array",
-						"description": "List of posts.",
-						"items": {
-							"type": "object",
-							"required": ["description", "link"],
-							"description": "A trip.",
-							"properties": {
-								"description": {
-									"type": "string"
-								},
-								"link": {
-									"type": "string",
-									"format": "uri"
-								}
-							}
-						}
-					},
-					"offerings": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"required": ["size", "term", "year", "score"],
-							"properties": {
-								"term": { "type": "integer", "enum": [1, 2, 3] },
-								"size": { "type": "integer", "minimum": 1 },
-								"year": { "type": "integer", "minimum": 2000 },
-								"score": { "anyOf": [ { "type": "number", "minimum": 0 }, { "type": "null"}, { "type": "string" }] }
-							}
-						}
-					}
-				}
-			}
-		},
-		"commitments": {
-			"type": "array",
-			"description": "List of miscellaneous commitments",
-			"items": {
-				"type": "object",
-				"description": "A class.",
-				"required": ["title", "description", "category", "commitment"],
-				"properties": {
-					"title": { "type": "string" },
-					"description": { "type": "string" },
-					"category": { "$ref": "#/definitions/category" },
-					"commitment": { "$ref": "#/definitions/commitment" }
-				}
-			}
-		},
-		"years": {
-			"type": "object",
-			"description": "Metadata about years."
-		}
-	}
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Amy's faculty website data schema",
+    "type": "object",
+    "definitions": {
+        "commitment": {
+            "type": "object",
+            "required": ["start", "end", "hours", "priority"],
+            "properties": {
+                "start": { "$ref": "#/definitions/optionaldate" },
+                "end": { "$ref": "#/definitions/optionaldate" },
+                "hours": { "type": "number", "minimum": 0 },
+                "priority": { "type": "integer", "enum": [0, 1, 2] }
+            }
+        },
+        "date": {
+            "type": "string",
+            "pattern": "^([1-2][0-9][0-9][0-9]-)?[0-1][0-9]-[0-3][0-9]$"
+        },
+        "optionaldate": {
+            "type": ["string", "null"],
+            "pattern": "^([1-2][0-9][0-9][0-9]-)?[0-1][0-9]-[0-3][0-9]$"
+        },
+        "category": {
+            "type": "string",
+            "enum": ["research", "service", "teaching", "personal"]
+        }
+    },
+    "required": [
+        "sources",
+        "pubs",
+        "people",
+        "projects",
+        "posts",
+        "impacts",
+        "degrees",
+        "patents",
+        "jobs",
+        "recognitions",
+        "editing",
+        "reviewing",
+        "doctoralCommittees",
+        "service",
+        "funding",
+        "travel",
+        "talks",
+        "classes",
+        "commitments",
+        "years"
+    ],
+    "properties": {
+        "sources": {
+            "type": "object",
+            "description": "Conference and journal sources",
+            "additionalProperties": {
+                "type": "object",
+                "description": "Source names",
+                "required": ["name", "short"],
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "The full name of the source"
+                    },
+                    "short": {
+                        "type": "string",
+                        "description": "A short name for the source, typically an acronym"
+                    }
+                }
+            }
+        },
+        "pubs": {
+            "type": "array",
+            "description": "List of publications",
+            "items": {
+                "type": "object",
+                "description": "A publication.",
+                "required": [
+                    "id",
+                    "kind",
+                    "authors",
+                    "deadname",
+                    "year",
+                    "title",
+                    "source",
+                    "pages",
+                    "doi",
+                    "local",
+                    "publisher",
+                    "contribution"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "A unique ID for the publication, used as an id attribute",
+                        "pattern": "^[a-z0-9]+$"
+                    },
+                    "kind": {
+                        "type": "string",
+                        "description": "The type of publication",
+                        "enum": [
+                            "refereed conference paper",
+                            "refereed workshop paper",
+                            "journal article",
+                            "refereed short conference paper",
+                            "juried conference paper",
+                            "book chapter",
+                            "refereed invited article",
+                            "juried workshop paper",
+                            "technical report",
+                            "refereed magazine article",
+                            "whitepaper",
+                            "abstract",
+                            "book"
+                        ]
+                    },
+                    "authors": {
+                        "type": "array",
+                        "description": "A list of authors",
+                        "items": {
+                            "type": "string",
+                            "pattern": "^(@[a-z0-9]+|[a-zA-Z-. ]+)$"
+                        }
+                    },
+                    "equalfirst": {
+                        "type": "boolean",
+                        "description": "True if the first two authors made equal contributions."
+                    },
+                    "deadname": {
+                        "type": "boolean",
+                        "description": "True if the publisher hasn't updated my name"
+                    },
+                    "year": {
+                        "type": "integer",
+                        "description": "The year of publication"
+                    },
+                    "title": {
+                        "type": "string",
+                        "description": "The title of the publication"
+                    },
+                    "source": {
+                        "type": "string",
+                        "description": "The source in which the publication was published",
+                        "pattern": "^(@[a-z0-9]+|[a-zA-Z0-9-. ()@,:]+)$"
+                    },
+                    "pages": {
+                        "type": ["string", "null"],
+                        "description": "Pages, volumes, and issues"
+                    },
+                    "doi": {
+                        "type": ["string", "null"],
+                        "description": "The document object identifier",
+                        "format": "uri"
+                    },
+                    "local": {
+                        "type": ["string", "null"],
+                        "description": "A local URI to a PDF",
+                        "format": "uri-reference"
+                    },
+                    "authorizer": {
+                        "type": ["string", "null"],
+                        "description": "An ACM authorizer link",
+                        "format": "uri"
+                    },
+                    "publisher": {
+                        "type": "string",
+                        "description": "The publisher"
+                    },
+                    "contribution": {
+                        "type": "string",
+                        "description": "A short summary of the paper's discovery"
+                    },
+                    "blog": {
+                        "type": "string",
+                        "description": "A link to a blog post describing the publication",
+                        "format": "uri"
+                    },
+                    "acceptance rate": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 100
+                    }
+                }
+            }
+        },
+        "people": {
+            "type": "array",
+            "description": "List of people.",
+            "items": {
+                "type": "object",
+                "description": "A person.",
+                "required": [
+                    "id",
+                    "name",
+                    "active",
+                    "advised",
+                    "level",
+                    "dept",
+                    "coadvisor",
+                    "bio",
+                    "url",
+                    "startdate",
+                    "enddate",
+                    "achievements"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "A unique id, usually the student's UW NetID",
+                        "pattern": "^[a-z0-9]+$"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the person"
+                    },
+                    "active": {
+                        "type": "boolean",
+                        "description": "Are they in the lab right now?"
+                    },
+                    "advised": {
+                        "type": "boolean",
+                        "description": "True if I officially advised them"
+                    },
+                    "level": {
+                        "type": "string",
+                        "description": "The level of the student when they were in the lab",
+                        "enum": [
+                            "undergrad",
+                            "masters",
+                            "phd",
+                            "postdoc",
+                            "faculty",
+                            "director"
+                        ]
+                    },
+                    "dept": {
+                        "type": "string",
+                        "description": "Which unit on campus"
+                    },
+                    "coadvisor": {
+                        "type": ["string", "null"],
+                        "description": "Name of co-advisor, if any"
+                    },
+                    "bio": {
+                        "type": "string",
+                        "description": "Short bio of the student"
+                    },
+                    "url": {
+                        "type": "string",
+                        "description": "A link to their website",
+                        "format": "uri"
+                    },
+                    "startdate": {
+                        "type": "integer",
+                        "description": "The year in which they started"
+                    },
+                    "enddate": {
+                        "type": ["integer", "null"],
+                        "description": "The year in which they left the lab"
+                    },
+                    "achievements": {
+                        "type": "array",
+                        "description": "A list of descriptions of achievements",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "projects": {
+            "type": "array",
+            "description": "List of projects.",
+            "items": {
+                "type": "object",
+                "description": "A person.",
+                "required": [
+                    "id",
+                    "active",
+                    "name",
+                    "description",
+                    "funding",
+                    "people",
+                    "papers",
+                    "links",
+                    "startdate",
+                    "stopdate"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9]+$"
+                    },
+                    "active": {
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "funding": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "pattern": "^@[a-z0-9]+$"
+                        }
+                    },
+                    "people": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "pattern": "^@[a-z0-9]+$"
+                        }
+                    },
+                    "papers": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "pattern": "^[a-z0-9]+$"
+                        }
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "required": ["title", "url"],
+                            "properties": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "type": "string",
+                                    "format": "uri"
+                                }
+                            }
+                        }
+                    },
+                    "startdate": {
+                        "type": "integer"
+                    },
+                    "stopdate": {
+                        "type": ["integer", "null"]
+                    }
+                }
+            }
+        },
+        "posts": {
+            "type": "array",
+            "description": "List of posts.",
+            "items": {
+                "type": "object",
+                "description": "A blog post.",
+                "required": ["url", "title", "date", "tags", "img", "alt"],
+                "properties": {
+                    "url": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "date": {
+                        "type": "string",
+                        "pattern": "^20[0-9][0-9]\\.1?[0-9]$"
+                    },
+                    "tags": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "enum": [
+                                "HCI",
+                                "K-12",
+                                "academia",
+                                "accessibility",
+                                "advising",
+                                "argument",
+                                "automation",
+                                "book summary",
+                                "computing education",
+                                "design",
+                                "diversity",
+                                "ed tech",
+                                "gender",
+                                "grant report",
+                                "industry",
+                                "information",
+                                "paper",
+                                "personal",
+                                "policy",
+                                "productivity",
+                                "programming languages",
+                                "review",
+                                "science",
+                                "society",
+                                "software engineering",
+                                "teaching",
+                                "trip report",
+                                "tutorial"
+                            ]
+                        }
+                    },
+                    "img": {
+                        "type": ["string", "null"]
+                    },
+                    "alt": {
+                        "type": ["string", "null"]
+                    }
+                }
+            }
+        },
+        "impacts": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "kind",
+                    "start",
+                    "end",
+                    "description",
+                    "url",
+                    "projects"
+                ],
+                "properties": {
+                    "kind": {
+                        "type": "string",
+                        "enum": [
+                            "press",
+                            "product",
+                            "knowledge",
+                            "consulting",
+                            "curriculum",
+                            "resource",
+                            "policy",
+                            "community",
+                            "social"
+                        ]
+                    },
+                    "start": { "type": "integer", "minimum": 2000 },
+                    "end": { "type": ["integer", "null"], "minimum": 2000 },
+                    "description": { "type": "string" },
+                    "url": {
+                        "type": ["string", "null"],
+                        "format": "uri-reference"
+                    },
+                    "projects": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                    },
+                    "who": {
+                        "type": "string",
+                        "enum": [
+                            "public",
+                            "industry",
+                            "engineers",
+                            "learningtech",
+                            "academia",
+                            "cer",
+                            "k12cs",
+                            "k12cswa",
+                            "k12csps"
+                        ]
+                    }
+                }
+            }
+        },
+        "populations": {
+            "type": "array",
+            "description": "List of impacts.",
+            "items": {
+                "type": "object",
+                "description": "A population impacted.",
+                "required": ["id", "population", "alt", "description"],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9]+$"
+                    },
+                    "population": {
+                        "type": "string"
+                    },
+                    "alt": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "degrees": {
+            "type": "array",
+            "description": "Degrees earned",
+            "items": {
+                "type": "object",
+                "required": [
+                    "institution",
+                    "degree",
+                    "start",
+                    "end",
+                    "thesis",
+                    "committee"
+                ]
+            }
+        },
+        "patents": {
+            "type": "array",
+            "description": "Degrees earned",
+            "items": {
+                "type": "object",
+                "required": ["title", "year", "number", "inventors"]
+            }
+        },
+        "jobs": {
+            "type": "array",
+            "description": "Jobs I've had",
+            "items": {
+                "type": "object",
+                "required": [
+                    "title",
+                    "organization",
+                    "department",
+                    "startdate",
+                    "enddate",
+                    "academic"
+                ],
+                "properties": {
+                    "startdate": {
+                        "type": "integer",
+                        "minimum": 1999
+                    },
+                    "enddate": {
+                        "type": ["integer", "null"],
+                        "minimum": 1999
+                    },
+                    "academic": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        },
+        "recognitions": {
+            "type": "array",
+            "description": "Honors, awards, and recognitions",
+            "items": {
+                "type": "object",
+                "required": ["title", "year", "description"],
+                "properties": {
+                    "title": { "type": "string" },
+                    "year": { "type": "integer", "minimum": 1998 },
+                    "description": { "type": "string" }
+                }
+            }
+        },
+        "editing": {
+            "type": "array",
+            "description": "Editing positions",
+            "items": {
+                "type": "object",
+                "required": ["title", "venue", "commitment"],
+                "properties": {
+                    "title": { "type": "string" },
+                    "venue": { "type": "string" },
+                    "commitment": { "$ref": "#/definitions/commitment" }
+                }
+            }
+        },
+        "reviewing": {
+            "type": "array",
+            "description": "Reviewing",
+            "items": {
+                "type": "object",
+                "required": ["venue", "years", "level"],
+                "properties": {
+                    "venue": { "type": "string" },
+                    "years": {
+                        "type": "array",
+                        "items": { "type": "integer", "minimum": 2000 }
+                    },
+                    "level": {
+                        "type": "string",
+                        "enum": ["reviewer", "pc", "chair"]
+                    },
+                    "title": { "type": "string" },
+                    "commitment": { "$ref": "#/definitions/commitment" }
+                }
+            }
+        },
+        "doctoralCommittees": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": ["name", "department", "startdate", "enddate"],
+                "properties": {
+                    "name": { "type": "string" },
+                    "department": { "type": "string" },
+                    "startdate": { "type": "integer", "minimum": 2000 },
+                    "enddate": { "type": ["integer", "null"], "minimum": 2000 }
+                }
+            }
+        },
+        "service": {
+            "type": "array",
+            "description": "Miscellaneous service",
+            "items": {
+                "type": "object",
+                "required": ["title", "committee", "commitment"],
+                "properties": {
+                    "title": { "type": "string" },
+                    "committee": { "type": "string" },
+                    "level": {
+                        "type": "string",
+                        "enum": [
+                            "departmental",
+                            "university",
+                            "regional",
+                            "national",
+                            "international"
+                        ]
+                    },
+                    "description": { "type": "string" },
+                    "commitment": { "$ref": "#/definitions/commitment" }
+                }
+            }
+        },
+        "funding": {
+            "type": "array",
+            "description": "List of sponsored research",
+            "items": {
+                "type": "object",
+                "required": [
+                    "title",
+                    "funder",
+                    "award",
+                    "investigators",
+                    "amount",
+                    "commitment",
+                    "description",
+                    "url"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9]+$"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "funder": {
+                        "type": "string"
+                    },
+                    "award": {
+                        "type": ["string", "null"]
+                    },
+                    "category": { "$ref": "#/definitions/category" },
+                    "investigators": {
+                        "type": "string"
+                    },
+                    "amount": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": ["string", "null"],
+                        "format": "uri"
+                    },
+                    "private": { "type": "boolean" },
+                    "commitment": { "$ref": "#/definitions/commitment" }
+                }
+            }
+        },
+        "travel": {
+            "type": "array",
+            "description": "List of trips.",
+            "items": {
+                "type": "object",
+                "required": ["url", "title", "details", "report", "commitment"],
+                "description": "A trip.",
+                "properties": {
+                    "url": {
+                        "type": ["string", "null"],
+                        "format": "uri"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "details": {
+                        "type": "string"
+                    },
+                    "report": {
+                        "type": ["string", "null"],
+                        "format": "uri"
+                    },
+                    "commitment": { "$ref": "#/definitions/commitment" }
+                }
+            }
+        },
+        "talks": {
+            "type": "array",
+            "description": "List of talks.",
+            "items": {
+                "type": "object",
+                "description": "A talk.",
+                "required": [
+                    "date",
+                    "image",
+                    "alt",
+                    "slides",
+                    "venue",
+                    "url",
+                    "recording",
+                    "practice",
+                    "description",
+                    "keynote"
+                ],
+                "properties": {
+                    "date": { "$ref": "#/definitions/date" },
+                    "image": {
+                        "type": "string"
+                    },
+                    "alt": {
+                        "type": "string"
+                    },
+                    "slides": {
+                        "type": ["string", "null"],
+                        "format": "uri-reference"
+                    },
+                    "venue": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": ["string", "null"],
+                        "format": "uri"
+                    },
+                    "recording": {
+                        "type": ["string", "null"],
+                        "format": "uri"
+                    },
+                    "practice": {
+                        "type": ["string", "null"],
+                        "format": "uri"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "keynote": {
+                        "type": "boolean"
+                    },
+                    "blog": {
+                        "type": "string",
+                        "format": "uri"
+                    }
+                }
+            }
+        },
+        "classes": {
+            "type": "array",
+            "description": "List of classes.",
+            "items": {
+                "type": "object",
+                "description": "A class.",
+                "required": [
+                    "id",
+                    "alt",
+                    "link",
+                    "number",
+                    "title",
+                    "description",
+                    "links",
+                    "hours"
+                ],
+                "properties": {
+                    "id": { "type": "string" },
+                    "alt": { "type": "string" },
+                    "link": { "type": "string", "format": "uri-reference" },
+                    "number": { "type": "string" },
+                    "level": {
+                        "type": "string",
+                        "enum": ["undergraduate", "graduate"]
+                    },
+                    "title": { "type": "string" },
+                    "description": { "type": ["string", "null"] },
+                    "hours": { "type": "integer", "minimum": 0 },
+                    "links": {
+                        "type": "array",
+                        "description": "List of posts.",
+                        "items": {
+                            "type": "object",
+                            "required": ["description", "link"],
+                            "description": "A trip.",
+                            "properties": {
+                                "description": {
+                                    "type": "string"
+                                },
+                                "link": {
+                                    "type": "string",
+                                    "format": "uri"
+                                }
+                            }
+                        }
+                    },
+                    "offerings": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "required": ["size", "term", "year", "score"],
+                            "properties": {
+                                "term": {
+                                    "type": "integer",
+                                    "enum": [1, 2, 3]
+                                },
+                                "size": { "type": "integer", "minimum": 1 },
+                                "year": { "type": "integer", "minimum": 2000 },
+                                "score": {
+                                    "anyOf": [
+                                        { "type": "number", "minimum": 0 },
+                                        { "type": "null" },
+                                        { "type": "string" }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "commitments": {
+            "type": "array",
+            "description": "List of miscellaneous commitments",
+            "items": {
+                "type": "object",
+                "description": "A class.",
+                "required": ["title", "description", "category", "commitment"],
+                "properties": {
+                    "title": { "type": "string" },
+                    "description": { "type": "string" },
+                    "category": { "$ref": "#/definitions/category" },
+                    "commitment": { "$ref": "#/definitions/commitment" }
+                }
+            }
+        },
+        "years": {
+            "type": "object",
+            "description": "Metadata about years."
+        }
+    }
 }

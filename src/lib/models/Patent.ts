@@ -1,7 +1,6 @@
-
 export type Patent = {
-	title: string;
-	year: string;
-	number: string;
-	inventors: string;
+    title: string;
+    year: string;
+    number: string;
+    inventors: string;
 };

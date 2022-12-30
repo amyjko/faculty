@@ -1,6 +1,5 @@
-
 export type Recognition = {
-	title: string;
-	year: number;
-	description: string;
+    title: string;
+    year: number;
+    description: string;
 };

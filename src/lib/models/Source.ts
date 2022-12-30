@@ -1,5 +1,4 @@
-
 export type Source = {
-	name: string;
-	short: string;
+    name: string;
+    short: string;
 };
