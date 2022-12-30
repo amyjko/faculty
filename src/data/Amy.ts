@@ -3839,13 +3839,23 @@ export const Amy: ProfileSpec = {
         {
             id: 'edtep577',
             alt: '',
-            link: '',
+            link: 'https://canvas.uw.edu/courses/1545856',
             level: 'graduate',
             number: 'EDTEP 577',
             title: 'Computer Science Equity & Justice',
             description:
                 "This graduate course educates teacher candidates about equity and justice issues in computer science and computer science education, while also teaching content knowledge foundations of CS. I teach it in partnership with the UW College of Education's Secondary Teacher Education Program, which I'm helping design and launch.",
-            links: [],
+            links: [
+                {
+                    description: "Amy's book for the course",
+                    link: 'https://criticallyconsciouscomputing.org/',
+                },
+                {
+                    description:
+                        'The STEP CS program, of which the course is a part',
+                    link: 'https://computinged.uw.edu/stepcs/',
+                },
+            ],
             hours: 6,
             offerings: [
                 { year: 2024, term: 3, size: 15, score: null },
