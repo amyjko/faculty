@@ -124,7 +124,7 @@
 
 <ul>
     <li
-        ><em>To learn about research</em>. By readinga and talking about
+        ><em>To learn about research</em>. By reading and talking about
         research, you'll learn the difference between research and practice.</li
     >
     <li
