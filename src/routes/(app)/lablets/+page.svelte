@@ -423,7 +423,7 @@
         worth, dignity, and safety.</li
     >
     <li
-        >Respect for the above should come before before lab activities and
+        >Respect for the above should come before lab activities and
         priorities; learning and research cannot happen without the
         psychological safety conferred by the above.</li
     >
