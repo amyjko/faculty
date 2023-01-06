@@ -124,7 +124,7 @@
 
 <ul>
     <li
-        ><em>To learn about research</em>. By readinga and talking about
+        ><em>To learn about research</em>. By reading and talking about
         research, you'll learn the difference between research and practice.</li
     >
     <li
@@ -423,7 +423,7 @@
         worth, dignity, and safety.</li
     >
     <li
-        >Respect for the above should come before before lab activities and
+        >Respect for the above should come before lab activities and
         priorities; learning and research cannot happen without the
         psychological safety conferred by the above.</li
     >
