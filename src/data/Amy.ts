@@ -826,7 +826,7 @@ export const Amy: ProfileSpec = {
             title: 'SIGCHI Academy',
             year: 2022,
             description:
-                'A recognition given to honorary and leading individuals who have made substantial contributions ot the field of human-computer interaction, shaping the field.',
+                'A recognition given to honorary and leading individuals who have made substantial contributions to the field of human-computer interaction, shaping the field.',
         },
         {
             title: 'Oregon State University Council of Outstanding Early Career Engineers',
