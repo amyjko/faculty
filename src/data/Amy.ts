@@ -1531,7 +1531,7 @@ export const Amy: ProfileSpec = {
             committee: 'Lambert House',
             level: 'regional',
             description:
-                'I faciliate and mentor LGBTQ+ and especially trans youth around Puget Sound',
+                'I facilitate and mentor LGBTQ+ and especially trans youth around Puget Sound',
             commitment: {
                 start: '2022-11-01',
                 end: null,

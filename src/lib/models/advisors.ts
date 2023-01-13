@@ -732,7 +732,7 @@ export default [
         'https://www.ed.ac.uk/profile/judy-robertson',
         'data science education, curriculum development, teacher professional learning and games-based learning',
         'School of Education',
-        'The University of Edinburg',
+        'The University of Edinburgh',
         'Scotland',
     ],
     [
