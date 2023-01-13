@@ -4,7 +4,7 @@ export const Discoveries: Discovery[] = [
     {
         contribution:
             'Learning to code with families can enable rich new forms of intergenerational learning',
-        detail: 'But it requires careful attention to the design of learning technologies to faciliate facile role switching.',
+        detail: 'But it requires careful attention to the design of learning technologies to facilitate facile role switching.',
         pubs: ['ellblockstudio', 'aifamily', 'tilecode'],
         tags: ['families', 'studies', 'learning'],
         video: ['https://www.youtube.com/watch?v=t56g4DYIuUA'],

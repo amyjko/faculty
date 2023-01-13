@@ -142,7 +142,7 @@
             in the mind, such as learning, memory, development, intelligence, self-regulation,
             motivation, and self-concept. The field is also concerned with school
             psychologists who help students with their mental health. The field tends
-            to be more quantitiatve than education research and learning sciences,
+            to be more quantitative than education research and learning sciences,
             following traditions of cognitive psychology. Computing education draws
             upon this field, especially in its history of cognitive theories of program
             understanding.
@@ -460,7 +460,7 @@
     <p>
         Advisors differ on the criteria they use to select candidates.
         Personally, I look for 1) experience with research, 2) passion in the
-        subject of computing education, 3) the requisite skills to persue that
+        subject of computing education, 3) the requisite skills to pursue that
         passion, and 4) an overlap with my interests. You can get experience by
         working with faculty at your own institution. That can be hard if you
         don't have faculty doing work in this area. The requisite skills depend
@@ -1048,7 +1048,7 @@
                 >Computational Thinking in Education: A Pedagogical Perspective</External
             > (Yadav and Berthelsen, 2022), explores the relevance of computational
             thinking in primary and secondary education, giving an overview of what
-            computational thinking is and how to integrate it into learning, instruciton,
+            computational thinking is and how to integrate it into learning, instruction,
             and assessment.</li
         >
         <li
