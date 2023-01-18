@@ -31,8 +31,9 @@ Professor
             start={degree.start}
             stop={degree.end}
             header={degree.institution}
-            two={degree.thesis}
-            three={degree.committee}
+            two={degree.degree}
+            three={degree.thesis}
+            four={degree.committee}
         />
     {/each}
 </Wrap>
