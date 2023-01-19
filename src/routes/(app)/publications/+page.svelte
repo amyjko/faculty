@@ -7,6 +7,7 @@
 
     import { profile } from '$lib/models/stores';
     import { scrollToHash } from '$lib/models/utilities';
+    import Alert from '../../../lib/components/Alert.svelte';
 
     let selection: Record<string, string> = {};
 
@@ -98,5 +99,5 @@
         />
     </div>
 {:else}
-    <p class="alert">No matching publications.</p>
+    <Alert>No matching publications.</Alert>
 {/each}

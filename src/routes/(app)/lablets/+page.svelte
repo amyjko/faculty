@@ -1,6 +1,7 @@
 <script lang="ts">
     import External from '$lib/components/External.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
+    import Alert from '$lib/components/Alert.svelte';
 </script>
 
 <h1>
@@ -10,24 +11,25 @@
     > model.
 </h1>
 
-<p class="alert">
+<Alert>
     Amy is on sabbatical. Please check the spreadsheet below to see if any of
     her postdocs or PhD students are organizing lablets this quarter.
-</p>
+</Alert>
 
-<p class="alert">
-    Lablets are new, experimental model for engaging undergraduate and masters
+<Alert>
+    Lablets are an experimental model for engaging undergraduate and masters
     students research. Because it's an experiment, don't expect perfect
-    processes or preparation. Have questions or feedback? Email or Slack Amy!
-</p>
+    processes or preparation or consistent offerings. Email or Slack Amy if you
+    have questions.
+</Alert>
 
 <p>
     Every year, dozens of students reach out to my lab to participate, but we
     don't have the capacity to meaningfully mentor everyone who wants to join.
     To offer more students the opportunity to learn about computing education
-    research while respecting our limited time, we offer a <strong
+    research while respecting our limited time, we occasionally will offer a <strong
         >lablet</strong
-    > model.
+    > to engage University of Washington students in our lab's research community.
 </p>
 
 <p> Here are the goals of lablets: </p>
@@ -423,9 +425,9 @@
         worth, dignity, and safety.</li
     >
     <li
-        >Respect for the above should come before lab activities and
-        priorities; learning and research cannot happen without the
-        psychological safety conferred by the above.</li
+        >Respect for the above should come before lab activities and priorities;
+        learning and research cannot happen without the psychological safety
+        conferred by the above.</li
     >
     <li
         >All lab activities must be conducted with integrity: there shall be no

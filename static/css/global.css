@@ -110,16 +110,6 @@ mark {
 	margin-right: var(--padding);
 }
 
-.alert {
-	display: block;
-	text-align: center;
-	background-color: var(--annotation-color);
-	padding: var(--padding);
-	margin-top: var(--margin);
-	margin-bottom: var(--margin);
-	border-radius: var(--roundedness);	
-}
-
 .mini-headshot {
 	opacity: 0.5;
 	height: 1.5em;
