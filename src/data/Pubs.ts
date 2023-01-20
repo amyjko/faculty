@@ -2,9 +2,23 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'implementation',
+        kind: 'refereed conference paper',
+        authors: ['@jliang9', 'Maryam Arab', 'Minhyuk Ko', '@ajko', '@latoza'],
+        year: 2023,
+        title: 'A qualitative study on the implementation design decisions of developers',
+        source: '@icse',
+        pages: null,
+        publisher: 'IEEE',
+        doi: null,
+        local: null,
+        contribution:
+            'Implementation design decisions, rather than being a natural outcome from higher levels of design, require constant monitoring and reconsideration of higher level design choices, such as requirements and architecture.',
+    },
+    {
         id: 'automata',
         kind: 'journal article',
-        authors: ['@mara', '@jko'],
+        authors: ['@mara', '@ajko'],
         year: 2023,
         title: '"Taught to be automata": Examining the departmental role inshaping initial career choices of computing students',
         source: '@cse',
