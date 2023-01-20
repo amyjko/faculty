@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'automata',
+        kind: 'journal article',
+        authors: ['@mara', '@jko'],
+        year: 2023,
+        title: '"Taught to be automata": Examining the departmental role inshaping initial career choices of computing students',
+        source: '@cse',
+        pages: null,
+        publisher: 'Taylor & Francis',
+        doi: 'https://doi.org/10.1080/08993408.2023.2171689',
+        local: null,
+        contribution:
+            'Finds that unspoken departmental capitalist norms and values strongly shape not only student career plans, but advising practices, teaching, and student identity.',
+    },
+    {
         id: 'stepcs',
         kind: 'refereed conference paper',
         authors: ['@ajko', '@annes', '@jayne', '@brettwo', 'Dan Gallagher'],
