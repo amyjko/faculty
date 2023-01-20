@@ -1,4 +1,4 @@
-export default [
+const advisors: [string, string, string, string, string, string][] = [
     [
         'Syedah Zahra Atiq',
         'https://cse.osu.edu/people/atiq.2',
@@ -438,6 +438,14 @@ export default [
         'Cognitive Science',
         'University of California, San Diego',
         'USA',
+    ],
+    [
+        'Stephan Krusche',
+        'http://www.skrusche.de/',
+        'Education technologies, in particular in learning platforms, assessment, learning analytics and adaptive learning',
+        'School of Computation',
+        'Technical University of Munich',
+        'Germany',
     ],
     [
         'Amy J. Ko',
@@ -920,3 +928,5 @@ export default [
         'USA',
     ],
 ];
+
+export default advisors;
