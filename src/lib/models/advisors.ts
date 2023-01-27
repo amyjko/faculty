@@ -384,14 +384,6 @@ const advisors: [string, string, string, string, string, string][] = [
         'USA',
     ],
     [
-        'Peter Hubwieser',
-        'http://www.professoren.tum.de/en/hubwieser-peter/',
-        'assessment',
-        'Computer Science',
-        'TU Munich',
-        'Germany',
-    ],
-    [
         'Chris Hundhausen',
         'http://www.eecs.wsu.edu/~hundhaus/',
         'social learning technologies and pedagogical approaches',
