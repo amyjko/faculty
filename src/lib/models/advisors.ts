@@ -1,5 +1,13 @@
 const advisors: [string, string, string, string, string, string][] = [
     [
+        'Saira Anwar',
+        'https://engineering.tamu.edu/mtde/profiles/anwar-saira.html',
+        'Engineering and computing education research, educational technologies, instrument design, data science, cognitive and noncognitive factors',
+        'Department of Multidisciplinary Engineering',
+        'Texas A & M University',
+        'USA',
+    ],
+    [
         'Syedah Zahra Atiq',
         'https://cse.osu.edu/people/atiq.2',
         'Non-cognitive factors, broadening participation',
