@@ -432,7 +432,7 @@ export const People: Person[] = [
         level: 'undergrad',
         dept: 'Computer Science and the Information School',
         coadvisor: null,
-        bio: "Christina is an undergraduate majoring in Computer Science and Informatics. She's working on supporting research on intelligent programmin tutors.",
+        bio: "Christina is an undergraduate majoring in Computer Science and Informatics. She's working on supporting research on intelligent programming tutors.",
         url: 'https://www.linkedin.com/in/christina9/',
         startdate: 2019,
         enddate: 2019,

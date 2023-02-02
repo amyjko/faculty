@@ -26,7 +26,7 @@
                 >{person.startdate}{person.enddate
                     ? person.startdate !== person.enddate
                         ? ' - ' + person.enddate
-                        : null
+                        : ''
                     : ' - present'}</small
             >
             <br />
