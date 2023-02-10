@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/six-months-unplugged-bd2a1a1b34d8',
+        title: 'Six months unplugged',
+        date: '2023.02',
+        tags: ['personal', 'academia'],
+        img: 'unplugged',
+        alt: 'A pencil illustration, with a small cross-legged woman at the bottom left staring at a horizon, with a thought bubble, and a gentle sun in the top right, hovering above. The canvas is otherwise blank.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/winter-sabbatical-update-code-community-huaka%CA%BBi-bcfdd862c62',
         title: 'Winter sabbatical update: Code, community, huakaʻi',
         date: '2022.12',
