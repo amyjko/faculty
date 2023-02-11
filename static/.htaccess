@@ -11,12 +11,12 @@ AddType text/cache-manifest .manifest
 # Turn the rewrite engine on.
 RewriteEngine On
 
-# Redirect to https before rewriting anything
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
 # Set the path to prepend to all rewrites.
 RewriteBase /ajko
+
+# Rewrite any http requests to https
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # If we're processing index.html, leave it alone and stop.
 RewriteRule ^index\.html$ - [L] 
@@ -30,13 +30,14 @@ RewriteRule ^data/.*$ - [L]
 # rewrite the broken relative paths that are requested.
 RewriteRule ^books/?$ index.html [L]
 
-# Append .html to any requests that resolve to a file with .html. Ignore directories.
+# Remove the ending trailing slash from any requests to avoid resolving to directory listings
+RewriteRule ^(.*?)/$ /$1
 
+# Append .html to any requests with or without a trailing slash that resolve to a file with .html.
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.\*)$ $1.html [L]
 
-
-# If we're processing a path that isn't a real file or a directory, rewrite to index but preserve the query string.
+# If we're processing a path that isn't a file or a directory, rewrite to index but preserve the query string.
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule (.*) index.html [L,QSA]

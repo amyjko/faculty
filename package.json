@@ -10,7 +10,8 @@
         "preview": "vite preview",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --ignore build --watch",
         "dry": "rsync --dry-run -vzripc --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html",
-        "ship": "npm run build && rsync -vzripc --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html"
+        "sync": "rsync -vzripc --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html",
+        "ship": "npm run build && npm run sync"
     },
     "devDependencies": {
         "@sveltejs/adapter-static": "^1.0.0",

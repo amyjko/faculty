@@ -16,7 +16,7 @@
     > or
     <External to="https://github.com/amyjko/faculty/pulls"
         >pull request</External
-    >
+    >.
 </p>
 
 <SectionList path="/cer" />
