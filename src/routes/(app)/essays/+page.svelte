@@ -35,16 +35,12 @@
                 />
             {/if}
         </svelte:fragment>
-        <p>
-            <small>{date.month + '/' + date.year}</small>
-            <br />
-            {#each post.tags as tag}
-                <mark
-                    class={'topic' + (filter.topic === tag ? ' selected' : '')}
-                >
-                    <small>{tag}</small>
-                </mark>
-            {/each}
-        </p>
+        <br /><small>{date.month + '/' + date.year}</small>
+        <br />
+        {#each post.tags as tag}
+            <mark class={'topic' + (filter.topic === tag ? ' selected' : '')}>
+                <small>{tag}</small>
+            </mark>
+        {/each}
     </Block>
 {/each}
