@@ -2,6 +2,19 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/large-language-models-will-change-programming-a-little-81445778d957',
+        title: 'Large language models will change programming… a little',
+        date: '2023.02',
+        tags: [
+            'programming languages',
+            'productivity',
+            'software engineering',
+            'teaching',
+        ],
+        img: 'llmcode',
+        alt: 'A robot working on a computer writing something sloppily',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/bookish-press-a-place-to-write-and-publish-web-based-books-840014d682e6',
         title: 'Bookish.press: a place to write and publish web-based books',
         date: '2023.02',
