@@ -32,6 +32,12 @@ type Paper = {
     slides?: string;
     blog?: string;
     acceptrate?: number;
-    award?: string[];
+    award?: (
+        | 'best paper'
+        | 'diversity + inclusion award'
+        | 'honorable mention'
+        | 'most influential paper'
+        | 'most influential paper honorable mention'
+    )[];
 };
 export default Paper;

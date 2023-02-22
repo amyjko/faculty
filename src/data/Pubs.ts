@@ -14,6 +14,7 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             'Implementation design decisions, rather than being a natural outcome from higher levels of design, require constant monitoring and reconsideration of higher level design choices, such as requirements and architecture.',
+        award: ['best paper'],
     },
     {
         id: 'automata',
@@ -897,7 +898,7 @@ export const Publications: Paper[] = [
         doi: 'https://doi.org/10.1145/3173574.3174196',
         authorizer: 'https://dl.acm.org/authorize?N658026',
         local: 'Banerjee2018WeCode.pdf',
-        award: ['best paper honorable mention'],
+        award: ['honorable mention'],
         contribution:
             'Investigates how a programming-by-demonstration programming environment with no English text can facilitate joint-media engagement between children and their parents.',
     },
@@ -1502,7 +1503,7 @@ export const Publications: Paper[] = [
         doi: 'https://doi.org/10.1145/2501988.2502050',
         authorizer: 'http://dl.acm.org/authorize?N89371',
         local: 'Burg2013Timelapse.pdf',
-        award: ['best paper honorable mention'],
+        award: ['honorable mention'],
         contribution:
             'A system for recording inputs to a web application and replaying them deterministically with minimal time or space overhead.',
     },
@@ -1763,7 +1764,7 @@ export const Publications: Paper[] = [
         doi: 'https://doi.org/10.1145/1753326.1753576',
         authorizer: 'http://dl.acm.org/authorize?N89398',
         local: 'Ko2010HowPowerUsersHelpAndHinderOpenBugReporting.pdf',
-        award: ['best paper honorable mention'],
+        award: ['honorable mention'],
         contribution:
             'Most bug reports submitted from non-core open source contributors describe non-issues that devolve into technical support, providing little valuable information to the core community.',
     },
