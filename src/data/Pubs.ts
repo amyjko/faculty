@@ -19,7 +19,7 @@ export const Publications: Paper[] = [
     {
         id: 'automata',
         kind: 'journal article',
-        authors: ['@mararyan', '@ajko'],
+        authors: ['@mararyan', '@ajko', 'Emilia A. Borisova'],
         year: 2023,
         title: '"Taught to be automata": Examining the departmental role inshaping initial career choices of computing students',
         source: '@cse',
