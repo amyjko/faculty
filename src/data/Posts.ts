@@ -2,6 +2,19 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/large-language-models-will-change-programming-a-lot-5cfe13afa46c',
+        title: 'Large language models will change programming… a lot',
+        date: '2023.02',
+        tags: [
+            'programming languages',
+            'productivity',
+            'software engineering',
+            'teaching',
+        ],
+        img: 'llmcode2',
+        alt: 'Three child-like humanoid robots frolicking in a field of grass and bright flowers',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/large-language-models-will-change-programming-a-little-81445778d957',
         title: 'Large language models will change programming… a little',
         date: '2023.02',
