@@ -2,6 +2,20 @@ import type Person from '../lib/models/Person';
 
 export const People: Person[] = [
     {
+        id: 'rotem',
+        name: 'Rotem Landesman',
+        active: true,
+        advised: true,
+        level: 'phd',
+        dept: 'The Information School',
+        coadvisor: 'Katie Davis',
+        bio: 'Rotem is a PhD student in the Information School. She studies ways to measure youth wellbeing in digital spaces, as well as how we can support youth to critically examine technology’s role in their lives using a philosophical lens. She is co-advised by Katie Davis.',
+        url: 'https://rotemland.github.io/',
+        startdate: 2021,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'annes',
         name: 'Anne Beitlers',
         active: true,
