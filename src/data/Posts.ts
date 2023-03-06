@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://amyjko.medium.com/finding-hope-in-trans-diversity-bd6d3766439b',
+        title: 'Finding hope in trans diversity',
+        date: '2023.03',
+        tags: ['personal', 'society', 'gender', 'diversity'],
+        img: 'hope',
+        alt: 'A rainbow watercolor planet earth.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/large-language-models-will-change-programming-a-lot-5cfe13afa46c',
         title: 'Large language models will change programming… a lot',
         date: '2023.02',
