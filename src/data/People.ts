@@ -46,7 +46,7 @@ export const People: Person[] = [
     {
         id: 'audreylm',
         name: 'Audrey Le Meur',
-        active: true,
+        active: false,
         advised: true,
         level: 'undergrad',
         dept: 'Computer Science',
@@ -74,7 +74,7 @@ export const People: Person[] = [
     {
         id: 'paulp',
         name: 'Paul Pham',
-        active: true,
+        active: false,
         advised: true,
         level: 'undergrad',
         dept: 'Education + Informatics',
