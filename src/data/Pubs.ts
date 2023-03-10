@@ -26,7 +26,7 @@ export const Publications: Paper[] = [
         pages: null,
         publisher: 'Taylor & Francis',
         doi: 'https://doi.org/10.1080/08993408.2023.2171689',
-        local: null,
+        local: 'KirdaniRyan2023Careers.pdf',
         contribution:
             'Finds that unspoken departmental capitalist norms and values strongly shape not only student career plans, but advising practices, teaching, and student identity.',
     },
