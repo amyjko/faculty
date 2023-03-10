@@ -10,6 +10,10 @@ export const Amy: ProfileSpec = {
             name: 'Communications of the ACM (CACM)',
             short: 'CACM',
         },
+        cse: {
+            name: 'Computer Science Education',
+            short: 'CSE',
+        },
         icer: {
             name: 'ACM International Computing Education Research Conference (ICER)',
             short: 'ICER',
