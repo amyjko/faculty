@@ -2,6 +2,20 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/sigcse-2023-trip-report-a-chronicle-of-ideas-good-and-bad-9752a7b2a4e8',
+        title: 'SIGCSE 2023 Trip Report: A Chronicle of Ideas, Good and Bad',
+        date: '2023.03',
+        tags: [
+            'k-12',
+            'academia',
+            'computing education',
+            'trip report',
+            'diversity',
+        ],
+        img: 'sigcse23',
+        alt: 'A sweeping arc of glowing yellow and blue in the center of an atrium.',
+    },
+    {
         url: 'https://amyjko.medium.com/finding-hope-in-trans-diversity-bd6d3766439b',
         title: 'Finding hope in trans diversity',
         date: '2023.03',
