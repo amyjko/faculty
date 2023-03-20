@@ -3859,7 +3859,7 @@ export const Amy: ProfileSpec = {
         {
             id: 'edtep577',
             alt: '',
-            link: 'https://canvas.uw.edu/courses/1545856',
+            link: 'https://canvas.uw.edu/courses/1633604',
             level: 'graduate',
             number: 'EDTEP 577',
             title: 'Computer Science Equity & Justice',
@@ -3873,13 +3873,13 @@ export const Amy: ProfileSpec = {
                 {
                     description:
                         'The STEP CS program, of which the course is a part',
-                    link: 'https://computinged.uw.edu/stepcs/',
+                    link: 'https://computinged.uw.edu/stepcs',
                 },
             ],
             hours: 6,
             offerings: [
                 { year: 2024, term: 3, size: 15, score: null },
-                { year: 2023, term: 3, size: 15, score: null },
+                { year: 2023, term: 3, size: 14, score: null },
                 { year: 2022, term: 3, size: 9, score: 4.8 },
             ],
         },
