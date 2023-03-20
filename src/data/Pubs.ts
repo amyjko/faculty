@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'aerarigor',
+        kind: 'juried conference paper',
+        authors: ['@jayne', '@annes', '@ajko'],
+        year: 2023,
+        title: 'What do you really mean by rigor? Deconstructing the definition in CS Teaching',
+        source: '@aera',
+        pages: null,
+        publisher: 'AERA',
+        doi: null,
+        local: null,
+        contribution:
+            'Finds widely varying and inconsistent definitions of rigor amongst CS educators and students across primary, secondary, and post-secondary settings.',
+    },
+    {
         id: 'implementation',
         kind: 'refereed conference paper',
         authors: ['@jliang9', 'Maryam Arab', 'Minhyuk Ko', '@ajko', '@latoza'],

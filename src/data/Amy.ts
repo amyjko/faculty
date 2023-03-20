@@ -6,6 +6,10 @@ import { Publications } from './Pubs';
 
 export const Amy: ProfileSpec = {
     sources: {
+        aera: {
+            name: 'American Education Research Association',
+            short: 'AERA',
+        },
         cacm: {
             name: 'Communications of the ACM (CACM)',
             short: 'CACM',
