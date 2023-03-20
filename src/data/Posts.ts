@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/sustainable-peer-review-via-incentive-aligned-markets-a64ff726da56',
+        title: 'Sustainable peer review via incentive aligned markets',
+        date: '2023.03',
+        tags: ['academia', 'computing education'],
+        img: 'sustainblereview',
+        alt: 'A very tall stack of documents, hoisted by a group of 10 very small stick figures, each using a different strategy to keep the stack lifted. Some use their strength, some use tools, some use a stool, some help others be tall enough.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/sigcse-2023-trip-report-a-chronicle-of-ideas-good-and-bad-9752a7b2a4e8',
         title: 'SIGCSE 2023 Trip Report: A Chronicle of Ideas, Good and Bad',
         date: '2023.03',
