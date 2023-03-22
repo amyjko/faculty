@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'childrenfairness',
+        kind: 'refereed conference paper',
+        authors: ['@salac', '@rotem', '@st3f', '@ajko'],
+        year: 2023,
+        title: "Scaffolding children's sensemaking around algorithmic fairness",
+        source: '@idc',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            'Finds that youth use a tiered human lens and then technological lens to reason through fairness, often invoking identity.',
+    },
+    {
         id: 'aerarigor',
         kind: 'juried conference paper',
         authors: ['@jayne', '@annes', '@ajko'],
