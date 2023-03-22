@@ -52,31 +52,29 @@
         );
 </script>
 
-<h1>
-    These are my {$profile.getPublications().length} academic publications. You can
-    see who's citing them on
+<h1> These are my academic publications. </h1>
+
+<p>
+    For the bean counters, there are {$profile.getPublications().length} of them.
+    You can see who's citing them on
     <External to="https://scholar.google.com/citations?user=otmdDLoAAAAJ&hl=en"
         >Google Scholar</External
     >,
     <External to="https://www.semanticscholar.org/author/Amy-J.-Ko/1441987875"
         >Semantic Scholar</External
     >, or
-    <External to="https://dl.acm.org/profile/81100500360">ACM</External>.
-</h1>
-
-<p>
-    <small>
-        Of these, {$profile.getPublications((pub) => pub.deadname === true)
-            .length} are still under my deadname, and thousands cite me by my deadname.
-        Publishers refuse to fix these, so please
-        <strong>cite me as Amy J. Ko</strong>, regardless of how you might find
-        my prior work in reference lists and scholarly search engines.
-    </small>
+    <External to="https://dl.acm.org/profile/81100500360">ACM</External>. Note
+    that {$profile.getPublications((pub) => pub.deadname === true).length} are still
+    under my deadname, and thousands cite me by my deadname. Publishers refuse to
+    fix these citations, so please cite me
+    <strong>Amy J. Ko</strong>, regardless of how you might find my prior work
+    in reference lists and scholarly search engines. And if you're reviewing a
+    paper that cites me incorrectly, please demand they fix it.
 </p>
 
 <hr />
 
-<p> Filter by publication topic and awards. </p>
+<p><em>Filter by publication topic and awards.</em></p>
 
 <Facets facets={$profile.getPublicationFacets()} update={filter} {selection} />
 
