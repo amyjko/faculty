@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/spring-sabbatical-update-hibernation-in-war-ae7ecaf43306',
+        title: 'Spring sabbatical update: hibernation in war',
+        date: '2023.03',
+        tags: ['persona', 'academia'],
+        img: 'hibernation',
+        alt: 'A tuxedo cat looking concerned on front of a burning house.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/sustainable-peer-review-via-incentive-aligned-markets-a64ff726da56',
         title: 'Sustainable peer review via incentive aligned markets',
         date: '2023.03',
