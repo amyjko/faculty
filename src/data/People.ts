@@ -385,7 +385,7 @@ export const People: Person[] = [
     {
         id: 'st3f',
         name: 'Stefania Druga',
-        active: true,
+        active: false,
         advised: true,
         level: 'phd',
         dept: 'Information School',
@@ -393,7 +393,7 @@ export const People: Person[] = [
         bio: 'Stefania Druga a Ph.D. candidate in the Information School. Studies computer-supported creative coding for youth and the design of AI literacy tools and resources for Families. She is co-advised by Benjamin Mako Hill.',
         url: 'http://www.drugastefania.com',
         startdate: 2019,
-        enddate: null,
+        enddate: 2023,
         achievements: [],
     },
     {
