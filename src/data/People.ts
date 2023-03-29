@@ -153,7 +153,7 @@ export const People: Person[] = [
         url: 'http://megumikivuva.com/',
         startdate: 2022,
         enddate: null,
-        achievements: [],
+        achievements: ['NSF Graduate Research Fellowship (2023)'],
     },
     {
         id: 'feec',
