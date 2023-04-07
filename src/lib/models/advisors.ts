@@ -840,6 +840,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'USA',
     ],
     [
+        'Frank Vahid',
+        'https://www.cs.ucr.edu/~vahid',
+        'College-level CS ed',
+        'Computer Science and Engineering',
+        'University of California, Riverside',
+        'USA',
+    ],
+    [
         'Jan Vahrenhold',
         'https://www.uni-muenster.de/Informatik.AGVahrenhold/personen/prof.dr.janvahrenhold/',
         'algorithms, non-cognitive factors, TA education',
