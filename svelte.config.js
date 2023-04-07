@@ -15,6 +15,7 @@ const config = {
         }),
         paths: {
             base: '/ajko',
+            relative: false,
         },
     },
 };

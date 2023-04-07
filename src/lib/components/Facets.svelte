@@ -15,9 +15,9 @@
 </script>
 
 {#each Object.keys(facets) as facet}
-    <p role="radiogroup" aria-label="Filter">
+    <div role="radiogroup" aria-label="Filter">
         {#each facets[facet].sort() as value}
-            <mark
+            <span
                 role="radio"
                 tabindex="0"
                 aria-checked={facet in selection && selection[facet] === value}
@@ -36,9 +36,9 @@
                         : undefined}
             >
                 {value}
-            </mark>
+            </span>
         {/each}
-    </p>
+    </div>
 {/each}
 
 <style>
@@ -48,11 +48,11 @@
         margin-bottom: var(--padding);
     }
 
-    mark {
+    .topic {
         background-color: var(--border-color);
     }
 
-    mark.selected {
+    .tag.selected {
         background-color: var(--annotation-color);
     }
 </style>
