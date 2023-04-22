@@ -21,9 +21,6 @@
                 role="radio"
                 tabindex="0"
                 aria-checked={facet in selection && selection[facet] === value}
-                tabIndex={facet in selection && selection[facet] === value
-                    ? 0
-                    : 1}
                 aria-label={'Filter by ' + value}
                 class={'annotation clickable topic' +
                     (facet in selection && selection[facet] === value
@@ -46,13 +43,14 @@
         display: inline-block;
         margin-right: var(--padding);
         margin-bottom: var(--padding);
-    }
-
-    .topic {
         background-color: var(--border-color);
+        padding: var(--padding);
+        border-radius: var(--roundedness);
+        font-family: var(--text-font-family);
+        font-size: var(--annotation-size);
     }
 
-    .tag.selected {
+    .topic.selected {
         background-color: var(--annotation-color);
     }
 </style>
