@@ -2,10 +2,18 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/a-tale-of-two-cities-a-sabbatical-jaunt-to-pittsburgh-and-chicago-e2904de1b256',
+        title: 'A tale of two cities: a sabbatical jaunt to Pittsburgh and Chicago',
+        date: '2023.04',
+        tags: ['personal', 'academia', 'K-12', 'computing education'],
+        img: 'pitord',
+        alt: "A street, a porch, an outdoor ottoman, and Amy's legs wearing black Birkenstocks. The sun shines and the first perspective suggests calm.",
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/spring-sabbatical-update-hibernation-in-war-ae7ecaf43306',
         title: 'Spring sabbatical update: hibernation in war',
         date: '2023.03',
-        tags: ['persona', 'academia'],
+        tags: ['personal', 'academia'],
         img: 'hibernation',
         alt: 'A tuxedo cat looking concerned on front of a burning house.',
     },
@@ -22,7 +30,7 @@ export const Posts: Post[] = [
         title: 'SIGCSE 2023 Trip Report: A Chronicle of Ideas, Good and Bad',
         date: '2023.03',
         tags: [
-            'k-12',
+            'K-12',
             'academia',
             'computing education',
             'trip report',
