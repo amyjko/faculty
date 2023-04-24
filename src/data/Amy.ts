@@ -3087,6 +3087,21 @@ export const Amy: ProfileSpec = {
     ],
     talks: [
         {
+            date: '2023-04-21',
+            image: 'cmu2023.jpg',
+            alt: 'a title slide that says Searching for Justice in Programming Language Design and shows several glyphs from world languages.',
+            slides: 'CMU2023Wordplay.pdf',
+            title: 'Searching for Justice in Programming Language Design',
+            venue: 'HCI Institute, Carnegie Mellon',
+            url: 'https://www.hcii.cmu.edu/news/on/event/2023/04/hcii-seminar-series-amy-ko',
+            recording:
+                'https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=18eed084-2310-42ba-bb09-afe0015fa4f5',
+            practice: null,
+            description:
+                'I examine what it might mean to center justice in programming language design, and unveal Wordplay.dev, a creative coding platform striving for equity and justice in accessibility and natural language.',
+            keynote: false,
+        },
+        {
             date: '2022-10-25',
             image: 'mit2022.jpg',
             alt: '',
