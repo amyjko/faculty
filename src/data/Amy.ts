@@ -2451,6 +2451,44 @@ export const Amy: ProfileSpec = {
     ],
     travel: [
         {
+            url: 'https://icer2023.acm.org/',
+            title: 'ACM ICER 2023',
+            details: 'Networking with my research community',
+            category: 'research',
+            commitment: {
+                start: '2023-08-08',
+                end: '2023-08-10',
+                hours: 24,
+                priority: 1,
+            },
+        },
+        {
+            url: 'https://www.cise-ewf-pi-2023.starscomputingcorps.org/',
+            title: '2023 NSF CISE Education and Workforce PI and Community Meeting',
+            details:
+                "I'll be networking with researchers and NSF program officers.",
+            category: 'research',
+            commitment: {
+                start: '2023-06-19',
+                end: '2023-06-22',
+                hours: 24,
+                priority: 1,
+            },
+        },
+        {
+            url: 'https://lsa.umich.edu/computingfor',
+            title: 'University of Michigan sabbatical visit',
+            details:
+                "I'll be visiting Computer Science & Engineering and the School of Information to discuss computing education and the Program in Computing for the Arts and Sciences.",
+            category: 'research',
+            commitment: {
+                start: '2023-04-28',
+                end: '2023-05-04',
+                hours: 24,
+                priority: 1,
+            },
+        },
+        {
             url: 'https://www.aera.net/Events-Meetings/Annual-Meeting/2023-Annual-Meeting',
             title: 'AERA 2023',
             details:
