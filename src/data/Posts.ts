@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://amyjko.medium.com/this-piece-is-a-bit-tongue-in-cheek-70404407bac5',
+        title: 'Foot frustrations',
+        date: '2023.04',
+        tags: ['personal', 'gender'],
+        img: 'feet',
+        alt: "A top down view of Amy's feet, shrouded by flared jeans, and resting upon the wet asphalt of downtown Ann Arbor.",
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/a-tale-of-two-cities-a-sabbatical-jaunt-to-pittsburgh-and-chicago-e2904de1b256',
         title: 'A tale of two cities: a sabbatical jaunt to Pittsburgh and Chicago',
         date: '2023.04',
