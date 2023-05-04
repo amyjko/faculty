@@ -2,6 +2,15 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/visiting-umich-again-df1235a6b4cf',
+        title: 'Visiting UMich Again',
+        date: '2023.05',
+        tags: ['academia', 'diversity', 'trip report', 'computing education'],
+        img: 'umichagain',
+        alt: 'A 10,000 foot view of a big and small cloud, hovering over Michigan, creating a shadow on the plains.',
+    },
+
+    {
         url: 'https://amyjko.medium.com/this-piece-is-a-bit-tongue-in-cheek-70404407bac5',
         title: 'Foot frustrations',
         date: '2023.04',
