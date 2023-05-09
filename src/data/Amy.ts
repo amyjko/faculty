@@ -3781,7 +3781,7 @@ export const Amy: ProfileSpec = {
                 },
             ],
             offerings: [
-                { size: 200, term: 1, year: 2022, score: null },
+                { size: 200, term: 1, year: 2023, score: null },
                 { size: 200, term: 3, year: 2022, score: 'N/A' },
                 { size: 200, term: 3, year: 2021, score: 'N/A' },
                 { size: 208, term: 2, year: 2020, score: 4.8 },
@@ -3842,7 +3842,6 @@ export const Amy: ProfileSpec = {
                 },
             ],
             offerings: [
-                { size: 35, term: 1, year: 2023, score: null },
                 { size: 33, term: 1, year: 2020, score: 4.7 },
                 { size: 33, term: 1, year: 2019, score: 4.8 },
                 { size: 37, term: 3, year: 2019, score: 4.8 },
@@ -3886,6 +3885,7 @@ export const Amy: ProfileSpec = {
                 },
             ],
             offerings: [
+                { year: 2024, term: 2, size: 35, score: null },
                 { year: 2022, term: 2, size: 35, score: 4.7 },
                 { year: 2021, term: 2, size: 35, score: 4.2 },
                 { year: 2020, term: 2, size: 35, score: 4.9 },
