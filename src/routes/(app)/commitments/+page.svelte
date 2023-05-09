@@ -81,7 +81,8 @@
     brace myself for busy periods. I have a <External
         to="https://github.com/amyjko/faculty/blob/main/src/lib/models/Amy.ts"
         >list of commitments</External
-    > with date ranges, from which I use some Typecript to create this page.
+    > with date ranges, from which I generate this page. You can use it to decide
+    whether to ask me to do something :)
 </p>
 
 <hr />
