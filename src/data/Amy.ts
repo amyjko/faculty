@@ -1555,7 +1555,7 @@ export const Amy: ProfileSpec = {
                 'Along with a group of a dozen other trans and non-binary community members, I provide guidance, ideas, feedback, and advocacy to Kaiser on their gender health services.',
             commitment: {
                 start: '2021-02-01',
-                end: null,
+                end: '2023-0201',
                 hours: 1,
                 priority: 0,
             },
@@ -1608,7 +1608,7 @@ export const Amy: ProfileSpec = {
                 'I advice on the research centers scope and priorities.',
             commitment: {
                 start: '2021-12-15',
-                end: null,
+                end: '2022-01-01',
                 hours: 0,
                 priority: 0,
             },
@@ -1621,7 +1621,7 @@ export const Amy: ProfileSpec = {
                 'I work on projects that help create equitable pathways to participating in CS research.',
             commitment: {
                 start: '2020-08-01',
-                end: null,
+                end: '2023-07-31',
                 hours: 1,
                 priority: 0,
             },
