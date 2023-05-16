@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'taexp',
+        kind: 'refereed conference paper',
+        authors: ['@leahperl', '@salac', '@ajko'],
+        year: 2023,
+        title: '"A field where you will be accepted": Belonging in student and TA interactions in post-secondary CS education',
+        source: '@icer',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            'Finds student and TA conceptions and narratives of belonging aligned with the three basic needs for wellness as described in Self-Determination Theory: relatedness, competence, and autonomy.',
+    },
+    {
         id: 'hiringexp',
         kind: 'refereed conference paper',
         authors: ['@lenaa', '@jayne', '@ajko'],
