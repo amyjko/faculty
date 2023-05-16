@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'hiringexp',
+        kind: 'refereed conference paper',
+        authors: ['@lenaa', '@jayne', '@ajko'],
+        year: 2023,
+        title: "Navigating a blackbox: Students' experiences and perceptions of automated hiring",
+        source: '@icer',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            "Finds that while manys students deemed automation a 'necessary evil' to combat scale, many struggled with the inequity automated hiring processes perpetuated",
+    },
+    {
         id: 'youthfairness',
         kind: 'refereed conference paper',
         authors: ['@salac', '@rotem', '@st3f', '@ajko'],
