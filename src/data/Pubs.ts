@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'twinelang',
+        kind: 'refereed conference paper',
+        authors: ['@megumi', "Keith O'Hara", '@ajko'],
+        year: 2023,
+        title: 'Exploring identity through computing integration in a Spanish language and literature Class',
+        source: '@respect',
+        pages: null,
+        publisher: 'IEEE',
+        doi: null,
+        local: null,
+        contribution:
+            'Offers promising ideas for how to integrate computing concepts into language learning and language arts classes.',
+    },
+    {
         id: 'childrenfairness',
         kind: 'refereed conference paper',
         authors: ['@salac', '@rotem', '@st3f', '@ajko'],
