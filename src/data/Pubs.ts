@@ -30,18 +30,18 @@ export const Publications: Paper[] = [
             "Finds that while manys students deemed automation a 'necessary evil' to combat scale, many struggled with the inequity automated hiring processes perpetuated",
     },
     {
-        id: 'youthfairness',
+        id: 'fundsfairness',
         kind: 'refereed conference paper',
-        authors: ['@salac', '@rotem', '@st3f', '@ajko'],
+        authors: ['@salac', '@olesona', '@lenaa', '@audreylm', '@ajko'],
         year: 2023,
-        title: "Scaffolding children's sensemaking around algorithmic fairness",
+        title: 'Funds of knowledge used by adolescents of color in scaffolded sensemaking around algorithmic fairness',
         source: '@icer',
         pages: null,
         publisher: 'ACM',
         doi: null,
         local: null,
         contribution:
-            "Contributes understanding of children's situated reasoning of technology, suggesting their potential for critical engagement and a blueprint for engaging children in scaffolded yet open-ended sensemaking around algorithmic fairness",
+            "Finds that students use their cultural knowledge and experiences to situate their interpretation of three algorithms and how this can lead to teaching about algorithmic fairness (including challenging the notion of 'average use' in design",
     },
     {
         id: 'twinelang',
