@@ -31,7 +31,7 @@ export const People: Person[] = [
     },
     {
         id: 'emans',
-        name: 'Eman Sharif',
+        name: 'Eman Sherif',
         active: true,
         advised: true,
         level: 'phd',
