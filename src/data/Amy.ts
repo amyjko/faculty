@@ -159,6 +159,18 @@ export const Amy: ProfileSpec = {
     impacts: [
         {
             kind: 'press',
+            start: 2023,
+            end: 2023,
+            description:
+                'I was interviewed about the strengths and weaknesses of large-language models for scientific computing.',
+            url: 'https://www.nature.com/articles/d41586-023-01833-0?utm_medium=Social&utm_campaign=nature&utm_source=Twitter#Echobox=1685960182',
+            title: 'Six tips for better coding with ChatGPT',
+            author: 'Jeffrey M. Perkel',
+            source: 'Nature',
+            who: 'public',
+        },
+        {
+            kind: 'press',
             start: 2022,
             end: 2022,
             description:
