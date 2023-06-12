@@ -102,8 +102,8 @@ export const People: Person[] = [
     {
         id: 'leahperl',
         name: 'Leah Perlmutter',
-        active: true,
-        advised: false,
+        active: false,
+        advised: true,
         level: 'phd',
         dept: 'Computer Science & Engineering',
         coadvisor: null,

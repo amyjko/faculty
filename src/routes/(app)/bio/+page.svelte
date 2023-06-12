@@ -14,10 +14,7 @@
             ).length / 10
         ) * 10;
     $: bestAwardCount = $profile.getPublications(
-        (paper) =>
-            paper.award !== undefined &&
-            paper.award.filter((award) => award.includes('best paper')).length >
-                0
+        (paper) => paper.award !== undefined && paper.award.length > 0
     ).length;
     $: mipAwardCount = $profile.getPublications(
         (paper) =>
@@ -47,13 +44,13 @@
     interactions between developers and users, and techniques for web scale
     aggregation of user intent through help systems; she co-founded <External
         to="http://www.answerdash.com">AnswerDash</External
-    > to commercialize these ideas. Her latest work investigates effective, equitable,
-    and inclusive ways for humanity to learn computing, especially how data, algorithms,
-    APIs, and AI can both empower and oppress. Her work spans more than
+    > to commercialize these ideas. Her latest work investigates how to weave equity
+    and justice in into computing education pedagogy, culture, and technology. Her
+    work spans more than
     <!-- Compute number of publications, rounding to nearest 10 -->
     {pubCount} peer-reviewed publications, with
     <!-- Compute number of best papers -->
-    {bestAwardCount} receiving best paper awards and
+    {bestAwardCount} receiving paper awards and
     <!-- Compute number of most influential papers. -->
     {mipAwardCount} receiving most influential paper awards. She is an ACM Senior
     Member, a member of ACM SIGCHI, SIGCSE, and SIGSOFT, and a member of the <External
@@ -71,26 +68,23 @@
 <Linkable id="irreverent">Irreverent Bio</Linkable>
 
 <p>
-    Amy J. Ko is one of those strange, awkward, lucky people at the <External
+    Amy J. Ko is a queer, trans anti-disciplinary weirdo at the <External
         to="http://www.washington.edu">University of Washington</External
-    > who gets paid to follow her curiosity and tell people what she finds. She surrounds
-    herself with similarly curious people, particularly students, and they wander
-    about asking questions about the surprising ways that code has woven itself through
-    people's lives. She started off inventing ways of making programming easier,
-    but then got disillusioned with productivity. She then got excited about the
-    ways that programmers interact with massive communities of people using their
-    code, and that somehow turned into a startup that sold help tools. After she
-    returned from her icky capitalist stint as a CTO, she decided to focus on making
-    people smarter instead of tools smarter, and began studying how to make learning
-    to code easier. Now she mostly thinks about how we can teach people to write
-    code that's not so terribly oppressive to people at the margins, and to create
-    with code in ways that express their values and identities. Somewhere along the
-    way, she published a bunch of papers and won a bunch of awards, which she thinks
-    is nice, but isn't what really motivates her. She's grateful to <External
-        to="http://www.cmu.edu">Carnegie Mellon University</External
-    > and <External to="http://www.oregonstate.edu"
-        >Oregon State University</External
-    > for being mostly safe spaces to bumble through the world's endless expanse
+    > who gets paid to follow her curiosity about computation and tell people what
+    she finds. She likes working with students to wander about asking questions about
+    the ways that computation has and hasn't woven itself through people's lives
+    and learning. She started off inventing ways of making programming easier, but
+    then got disillusioned with productivity. She then got excited about the ways
+    that programmers interact with communities of people using their code. After
+    she returned from her icky capitalist stint as a CTO, she decided to focus on
+    making people smarter instead of tools smarter, and began studying what kinds
+    of computing literacies might lead to a more just world, and what kinds of teachers,
+    teaching, and tools we need to make that happen. She published a bunch of papers
+    and won a bunch of awards, which is apparently good, but she's much more interested
+    in the ideas they represent than the counting of beans they enable. She's grateful
+    to <External to="http://www.cmu.edu">Carnegie Mellon University</External> and
+    <External to="http://www.oregonstate.edu">Oregon State University</External>
+    for being reasonably safe spaces to bumble through the world's endless expanse
     of mysteries as a student, and to the many students and taxpayers that pay her
     to keep doing it as a professor.
 </p>
@@ -119,12 +113,13 @@
     internet. My adolescence was defined by pervasive grunge, sadness, suicide,
     comic book stores, arcades, and Magic the Gathering tournaments. And I look
     back to the 80's and 90's and wonder how the world got so complicated, so
-    quickly.
+    quickly. And then I remember that it was always complicated, whiteness just
+    demanded we deny it.
 </p>
 
 <p>
     So let my face be a reminder: you <em>cannot</em> judge someone's age, life experience,
-    expertise, or wisdom from their face. So stop trying!
+    expertise, or wisdom from their face.
 </p>
 
 <Linkable id="lineage">Academic Lineage</Linkable>
