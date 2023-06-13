@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'codereplay',
+        kind: 'refereed conference paper',
+        authors: ['@bxie', '@jaredl', '@paulp', '@minli', '@ajko'],
+        year: 2023,
+        title: "Developing novice programmers' self-regulation skills with code replays",
+        source: '@icer',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: 'Xie2023CodeReplay.pdf',
+        contribution:
+            'After watching code replays, learners more frequently interpreted problem prompts and planned their solutions, two crucial self-regulation behaviors that novices often overlook.',
+    },
+    {
         id: 'taexp',
         kind: 'refereed conference paper',
         authors: ['@leahperl', '@salac', '@ajko'],
