@@ -25,7 +25,7 @@ export const Publications: Paper[] = [
         pages: null,
         publisher: 'ACM',
         doi: null,
-        local: null,
+        local: 'Perlmutter2023TABelonging.pdf',
         contribution:
             'Finds student and TA conceptions and narratives of belonging aligned with the three basic needs for wellness as described in Self-Determination Theory: relatedness, competence, and autonomy.',
     },
@@ -39,7 +39,7 @@ export const Publications: Paper[] = [
         pages: null,
         publisher: 'ACM',
         doi: null,
-        local: null,
+        local: 'Armstrong2023AutomatedHiring.pdf',
         contribution:
             "Finds that while manys students deemed automation a 'necessary evil' to combat scale, many struggled with the inequity automated hiring processes perpetuated",
     },
@@ -53,7 +53,7 @@ export const Publications: Paper[] = [
         pages: null,
         publisher: 'ACM',
         doi: null,
-        local: null,
+        local: 'Salac2023AdolescentAlgorithmicFairness.pdf',
         contribution:
             "Finds that students use their cultural knowledge and experiences to situate their interpretation of three algorithms and how this can lead to teaching about algorithmic fairness (including challenging the notion of 'average use' in design",
     },
