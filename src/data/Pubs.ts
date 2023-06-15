@@ -81,7 +81,7 @@ export const Publications: Paper[] = [
         pages: null,
         publisher: 'ACM',
         doi: null,
-        local: null,
+        local: 'Salac2023ChildrenFairness.pdf',
         contribution:
             'Finds that youth use a tiered human lens and then technological lens to reason through fairness, often invoking identity.',
     },
