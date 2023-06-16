@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/on-moments-of-toxic-silence-in-computer-science-839e9d710323',
+        title: 'On moments of toxic silence in computer science',
+        date: '2023.06',
+        tags: ['academia', 'diversity'],
+        img: 'toxicsilence',
+        alt: 'Five stick figures sitting at a stick table, one with a watercolor pink head and exclamation point above their head, the others with ellipses above their heads.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/visiting-umich-again-df1235a6b4cf',
         title: 'Visiting UMich Again',
         date: '2023.05',
