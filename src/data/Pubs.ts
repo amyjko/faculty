@@ -78,9 +78,9 @@ export const Publications: Paper[] = [
         year: 2023,
         title: "Scaffolding children's sensemaking around algorithmic fairness",
         source: '@idc',
-        pages: null,
+        pages: '137-149',
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://doi.org/10.1145/3585088.3589379',
         local: 'Salac2023ChildrenFairness.pdf',
         contribution:
             'Finds that youth use a tiered human lens and then technological lens to reason through fairness, often invoking identity.',
