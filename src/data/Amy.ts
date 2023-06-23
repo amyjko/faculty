@@ -3948,7 +3948,7 @@ export const Amy: ProfileSpec = {
             hours: 6,
             offerings: [
                 { year: 2024, term: 3, size: 15, score: null },
-                { year: 2023, term: 3, size: 14, score: null },
+                { year: 2023, term: 3, size: 14, score: 4.9 },
                 { year: 2022, term: 3, size: 9, score: 4.8 },
             ],
         },
