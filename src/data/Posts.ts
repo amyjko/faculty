@@ -2,6 +2,21 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/2023-ieee-respect-nsf-cise-epi-meeting-trip-report-6ec7cbe6e509',
+        title: '2023 IEEE RESPECT + NSF CISE EWF PI meeting trip report',
+        date: '2023.06',
+        tags: [
+            'academia',
+            'computing education',
+            'trip report',
+            'accessibility',
+            'diversity',
+            'K-12',
+        ],
+        img: 'cise23',
+        alt: 'A slide showing "RESPECT conference" and Tamara Pearson at a podium speaking to the large room.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/on-moments-of-toxic-silence-in-computer-science-839e9d710323',
         title: 'On moments of toxic silence in computer science',
         date: '2023.06',
