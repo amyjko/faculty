@@ -7,6 +7,7 @@ import type { Impact } from './Impact';
 import type { Job } from './Job';
 import type Person from './Person';
 import type Post from './Post';
+import type { PostTagType } from './Post';
 import type Paper from './Paper';
 import type ProfileSpec from './ProfileSpec';
 import type { Recognition } from './Recognition';
@@ -86,9 +87,9 @@ export default class Profile {
         };
     }
 
-    getPostTags(): Record<string, string[]> {
+    getPostTags(): Record<string, PostTagType[]> {
         // Accumulate post tags
-        const postTags: Record<string, string[]> = { topic: [] };
+        const postTags: Record<string, PostTagType[]> = { topic: [] };
         this.json.posts.forEach(
             (post) =>
                 (postTags.topic = Array.from(

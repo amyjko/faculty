@@ -4,10 +4,11 @@
     import Facets from '$lib/components/Facets.svelte';
     import { profile } from '$lib/models/stores';
     import Image from '$lib/components/Thumbnail.svelte';
+    import type { PostTagType } from '../../../lib/models/Post';
 
-    let filter: Record<string, string> = {};
+    let filter: Record<string, PostTagType> = {};
 
-    function setFilter(tag: Record<string, string>) {
+    function setFilter(tag: Record<string, PostTagType>) {
         filter = tag;
     }
 </script>

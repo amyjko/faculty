@@ -75,7 +75,7 @@
             alt="A clip from the paper's PDF."
             {highlight}
         />
-        <div name={paper.id} class="paper ws-bottom">
+        <div id={paper.id} class="paper ws-bottom">
             {#if paper.award && paper.award.length > 0}
                 <mark class="award">&#x2605; {paper.award.join(' + ')}</mark>
                 <br />
@@ -99,7 +99,8 @@
                 <small>
                     <span
                         class="clickable"
-                        tabIndex="0"
+                        role="button"
+                        tabindex="0"
                         on:click={toggle}
                         on:keydown={(event) =>
                             event.key === 'Enter' ? toggle() : undefined}
