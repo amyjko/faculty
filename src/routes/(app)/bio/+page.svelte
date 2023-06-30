@@ -36,10 +36,10 @@
     Professor at the <External to="http://cs.washington.edu"
         >Paul G. Allen School of Computer Science and Engineering</External
     >. She directs the Code &amp; Cognition Lab, where she and her students
-    study CS education, human-computer interaction, and humanity's individual
-    and collective struggle to understand computing and harness it for
-    creativity, equity, and justice. Her earliest work included techniques for
-    automatically answering questions about program behavior to support
+    study computing education, human-computer interaction, and humanity's
+    individual and collective struggle to understand computing and harness it
+    for creativity, equity, and justice. Her earliest work included techniques
+    for automatically answering questions about program behavior to support
     debugging, program understanding, and reuse. Her later work studied
     interactions between developers and users, and techniques for web scale
     aggregation of user intent through help systems; she co-founded <External
