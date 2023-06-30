@@ -45,8 +45,8 @@
     aggregation of user intent through help systems; she co-founded <External
         to="http://www.answerdash.com">AnswerDash</External
     > to commercialize these ideas. Her latest work investigates how to weave equity
-    and justice in into computing education pedagogy, culture, and technology. Her
-    work spans more than
+    and justice into computing education pedagogy, culture, and technology. Her work
+    spans more than
     <!-- Compute number of publications, rounding to nearest 10 -->
     {pubCount} peer-reviewed publications, with
     <!-- Compute number of best papers -->
