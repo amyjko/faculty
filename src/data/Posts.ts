@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/summer-sabbatical-update-warming-up-337fc3cefc12',
+        title: 'Summer sabbatical update: focus, fleeting',
+        date: '2023.07',
+        tags: ['academia', 'productivity'],
+        img: 'focus',
+        alt: 'A bright blue sky above a small tree, with the light piercing through its small leaves.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/2023-ieee-respect-nsf-cise-epi-meeting-trip-report-6ec7cbe6e509',
         title: '2023 IEEE RESPECT + NSF CISE EWF PI meeting trip report',
         date: '2023.06',
