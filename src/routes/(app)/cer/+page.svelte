@@ -989,7 +989,7 @@
     <ul>
         <li
             ><External
-                to="https://helloworld.raspberrypi.org/issues/0?fbclid=IwAR3D6RFiGvTno6VgMiMnGRXq7vJHVaIThyXH5mnB_-rYWjiPSyoiJDSyJxc"
+                to="https://helloworld.raspberrypi.org/books/big_book_of_pedagogy"
                 >The Big Book of Computing Pedagogy</External
             > offers a collection of CS teaching practices and methods written by
             CS educators and CS education researchers.
