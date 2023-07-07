@@ -26,6 +26,21 @@
 
 <h1>Professional and personal takes on my professorly life.</h1>
 
+<Linkable id="tiny">Tiny Bio</Linkable>
+<p>
+    Amy J. Ko is a Professor at the <External to="http://www.washington.edu"
+        >University of Washington</External
+    >
+    <External to="http://ischool.uw.edu/">iSchool</External>, where she studies
+    humanity's individual and collective struggle to understand computing. She
+    believes in an equitable, sustainable, and liberatory future in which
+    everyone has the freedom and resources they need to thrive as themselves.
+    She views uncritical uses of computing as a threat to that future, but
+    believes computing can be reimagined to help achieve it. Her background is
+    in HCI, Software Engineering, Computing Education, and Programming
+    Languages.
+</p>
+
 <Linkable id="short">Short Bio</Linkable>
 
 <p>
