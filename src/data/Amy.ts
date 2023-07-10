@@ -1262,6 +1262,13 @@ export const Amy: ProfileSpec = {
     ],
     doctoralCommittees: [
         {
+            name: 'Camille Gobert',
+            institution: 'Paris-Saclay University',
+            department: 'Computer Science',
+            startdate: 2022,
+            enddate: null,
+        },
+        {
             name: 'Venkatesh Potluri',
             institution: 'University of Washington',
             department: 'Computer Science',
