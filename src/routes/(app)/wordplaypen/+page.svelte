@@ -5,16 +5,16 @@
 </script>
 
 <h1>
-    Are you a University of Washington student interested in gaining web
-    development experience and making programming more accessible and globally
-    inclusive?
+    Are you a University of Washington undergraduate interested in gaining web
+    development experience, making programming more global and accessible,
 </h1>
 
 <p
-    >I'm looking for students to help with <External to="https://wordplay.dev"
+    >I'm recruiting students to join our <strong>Wordplaypen</strong>, a team
+    that helps design, build, and maintain <External to="https://wordplay.dev"
         >Wordplay</External
-    >, a playful programming platform for creating accessible, interactive
-    typography that celebrates the world's languages. Our vision is
+    >. Wordplay is a playful programming platform for creating accessible,
+    interactive typography that celebrates the world's languages. Our vision is
     <em
         >to create a global platform for creative expression with language that
         celebrates every indivdual's culture, identity, and values, while also
@@ -28,30 +28,33 @@
 </p>
 
 <ul
-    ><li
-        >Basic web development knowledge (e.g. from CSE 154, INFO 340, or
-        practical experience).</li
-    >
-    <li>A passion for equity and justice.</li>
+    ><li>A passion for equity and justice.</li>
     <li
         >And (optionally) lived experience with disability and/or fluency in
         non-English languages. This is because a major goal of Wordplay is
         accessibility and global inclusion, and we can't meaningfully achieve
         that without your knowledge and lived experience.</li
+    ><li
+        >Basic web development knowledge (e.g. from CSE 154, INFO 340, or other
+        experience). And I do mean basic &mdash; it's okay if you're still just
+        leanring the basics.</li
     >
 </ul>
 
 <p>Joining the team means contributing things like:</p>
 
 <ul>
-    <li>Designing and implementing new features in the language and platform</li
-    >
+    <li>Designing and redesigning the language and platform</li>
+    <li>Implementing new features </li>
     <li>Improving correctness and reliability of current features</li>
     <li>Localizing to one or more of the world's langauges</li>
     <li>Writing automated tests</li>
     <li>Testing accessibility</li>
     <li>Providing peer feedback on student contributions</li>
-    <li>Teaching peers skills</li>
+    <li
+        >Teaching peers, including programming, testing, software engineering,
+        and design skills</li
+    >
 </ul>
 
 <Linkable id="whycontribute">Why should I contribute?</Linkable>
@@ -80,7 +83,11 @@
         >Be credited on the Wordplay website and repository as a contributor,
         which can be helpful for resume building.</li
     >
-</ul>
+    <li
+        >Get a letter of recommendation from me about your contributions to the
+        team.
+    </li></ul
+>
 
 <Linkable id="howcontribute">How do I join the team?</Linkable>
 
