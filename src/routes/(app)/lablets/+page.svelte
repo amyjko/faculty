@@ -4,24 +4,27 @@
     import Alert from '$lib/components/Alert.svelte';
 </script>
 
+<Alert>
+    After much deliberation, Amy and her lab have decided to <strong
+        >stop the lablets experiment</strong
+    >. There were many wonderful things that came from it, but the amount of
+    time it took to run, and the lack of capacity for students to particate in
+    non-credited activites meant that the overall benefit did not justify the
+    effort. Thank you to everyone who participated! We'll leave this here for
+    others to reference in case they want to try a similar model in a different
+    context. If you're looking for research opportunities, consult <External
+        to="http://computinged.uw.edu/">computinged.uw.edu</External
+    > for ideas.
+</Alert>
+
 <h1>
-    Are you an undergraduate or masters student at UW that wants to join the
-    Code and Cognition lab? Read on for details about our experimental <em
-        >lablets</em
-    > model.
+    <strike
+        >Are you an undergraduate or masters student at UW that wants to join
+        the Code and Cognition lab? Read on for details about our experimental <em
+            >lablets</em
+        > model.</strike
+    >
 </h1>
-
-<Alert>
-    Amy is on sabbatical. Please check the spreadsheet below to see if any of
-    her postdocs or PhD students are organizing lablets this quarter.
-</Alert>
-
-<Alert>
-    Lablets are an experimental model for engaging undergraduate and masters
-    students research. Because it's an experiment, don't expect perfect
-    processes or preparation or consistent offerings. Email or Slack Amy if you
-    have questions.
-</Alert>
 
 <p>
     Every year, dozens of students reach out to my lab to participate, but we
