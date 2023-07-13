@@ -67,7 +67,8 @@
 <nav>
     <Link to="/" at={'/'}>Research</Link>
     <Link to="/lab" at={'/lab'}>Lab</Link>
-    <Link to="/lablets" at={'/lablets'}>Lablets</Link>
+    <Link to="/buildlet" at={'/buildlet'}>Buildlet</Link>
+    <Link to="/lablets" at={'/lablets'}><strike>Lablets</strike></Link>
     <Link to="/communities" at={'/communities'}>Communities</Link>
     <Link to="/publications" at={'/publications'}>Publications</Link>
     <Link to="/essays" at={'/essays'}>Essays</Link>
