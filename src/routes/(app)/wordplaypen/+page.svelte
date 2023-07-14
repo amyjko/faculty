@@ -6,7 +6,8 @@
 
 <h1>
     Are you a University of Washington undergraduate interested in gaining web
-    development experience, making programming more global and accessible,
+    development experience and making programming more platful, global, and
+    accessible?
 </h1>
 
 <p
