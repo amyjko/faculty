@@ -108,9 +108,8 @@
                 to="https://ischool.uw.edu/programs/informatics/research"
                 >engaging in undergrad research</External
             >. If that sounds interesting, read about my lab's
-            undergraduate/masters research model, <Link to={'/lablets'}
-                >lablets</Link
-            >, and follow the instructions there to join. I also recruit for
+            undergraduate/masters <Link to={'/wordplaypen'}>Wordplaypen</Link>,
+            and follow the instructions there to join. I also recruit for
             full-time summer research assistants in Winter through the <External
                 to="https://dub.washington.edu/gettinginvolved.html#tab_prospective"
                 >DUB REU program</External
