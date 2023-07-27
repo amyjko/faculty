@@ -42,16 +42,21 @@
     >
 </ul>
 
-<p>Joining the team means contributing things like:</p>
+<p
+    >You don't need to know how programming languages are built, but you'll
+    probably learn about it by contributing.</p
+>
+
+<p>Here are some things you might contribute:</p>
 
 <ul>
     <li>Designing and redesigning the language and platform</li>
-    <li>Implementing new features </li>
+    <li>Implementing new user interface features </li>
     <li>Improving correctness and reliability of current features</li>
-    <li>Localizing to one or more of the world's langauges</li>
+    <li>Localizing to one or more of the world's languages</li>
     <li>Writing automated tests</li>
-    <li>Testing accessibility</li>
-    <li>Providing peer feedback on student contributions</li>
+    <li>Verifying accessibility</li>
+    <li>Providing peer feedback</li>
     <li
         >Teaching peers, including programming, testing, software engineering,
         and design skills</li
