@@ -38,7 +38,7 @@
     ><li
         >Basic web development knowledge (e.g. from CSE 154, INFO 340, or other
         experience). And I do mean basic &mdash; it's okay if you're still just
-        leanring the basics.</li
+        learning the basics.</li
     >
 </ul>
 
