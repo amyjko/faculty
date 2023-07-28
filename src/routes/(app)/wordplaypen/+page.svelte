@@ -117,7 +117,10 @@
     ><li>How much time you are willing to commit.</li>
 </ul>
 
-<p> Your proposal can be very short; three sentences would suffice.</p>
+<p>
+    Your proposal can be very short; just a few sentences in each section would
+    suffice.</p
+>
 
 <p>Participation is quarterly and at a minimum will involve: </p>
 
