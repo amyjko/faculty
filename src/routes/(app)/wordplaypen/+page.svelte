@@ -147,7 +147,7 @@
 >
 
 <Alert
-    >Other questions? Find me on <External to="httsp://computinged-uw.slack.com"
+    >Other questions? Find me on <External to="https://computinged-uw.slack.com"
         >ComputingEd@UW Slack</External
     > and DM me. I know it's scary to write professors, but I'm pretty friendly,
     I promise!</Alert
