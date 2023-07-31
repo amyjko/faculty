@@ -108,7 +108,7 @@ export const Publications: Paper[] = [
         source: '@icse',
         pages: null,
         publisher: 'IEEE',
-        doi: null,
+        doi: 'https://doi.org/10.1109/ICSE48619.2023.00047',
         local: null,
         contribution:
             'Implementation design decisions, rather than being a natural outcome from higher levels of design, require constant monitoring and reconsideration of higher level design choices, such as requirements and architecture.',
