@@ -792,6 +792,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'USA',
     ],
     [
+        'R. Ben Shapiro*',
+        'https://benshapi.ro/',
+        'playful and programmable technologies for learning',
+        'Computer Science',
+        'University of Washington',
+        'USA',
+    ],
+    [
         'Kristin Searle*',
         'https://itls.usu.edu/people/faculty/searle/',
         'gender, culture, engagement with computing',
