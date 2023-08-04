@@ -93,7 +93,7 @@ export const People: Person[] = [
         level: 'undergrad',
         dept: 'Computer Science + Cognitive Science',
         coadvisor: null,
-        bio: 'Lena is a computer science and cognitive science double major at the University of Pennsylvania. She is interested in improving CS education and mitigating algorithmic bias to create more inclusive and meaningful experiences with technology.',
+        bio: 'Leah worked with Amy as a PhD student in Computer Science and Engineering at UW. She is now an Assistant Professor at Grinnell College. She is interested in post-secondary CS education, including TA practices, emotion while programming, sociotechnical topics in CS curricula, CS identity construction, and CS culture.',
         url: 'https://www.linkedin.com/in/lena-armstrong/',
         startdate: 2022,
         enddate: 2023,
