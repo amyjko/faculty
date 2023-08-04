@@ -16,7 +16,7 @@
     );
 </script>
 
-<Image url={'/images/headshots/mug-ajko.jpg'} alt="Headshot of Amy J. Ko" />
+<Image url={'/images/headshots/ajko.jpg'} alt="Headshot of Amy J. Ko" />
 
 <h1>Amy J. Ko, Ph.D.</h1>
 Professor

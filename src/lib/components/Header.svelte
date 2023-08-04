@@ -7,7 +7,7 @@
 <section class="info">
     <a href="/ajko/"
         ><Image
-            url={'/images/headshots/mug-ajko.jpg'}
+            url={'/images/headshots/ajko.jpg'}
             alt="Headshot of Amy J. Ko"
         /></a
     >
@@ -35,7 +35,7 @@
 <section class="small-info">
     <a href="/ajko/"
         ><Image
-            url={'/images/headshots/mug-ajko.jpg'}
+            url={'/images/headshots/ajko.jpg'}
             alt="Headshot of Amy J. Ko"
         /></a
     >

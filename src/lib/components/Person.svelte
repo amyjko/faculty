@@ -13,7 +13,7 @@
     <Block link={person.url}>
         <Image
             slot="image"
-            url={'/images/headshots/mug-' + person.id + '.jpg'}
+            url={`/images/headshots/${person.id}.jpg`}
             alt={'Photograph of ' + person.name}
             {highlight}
         />
