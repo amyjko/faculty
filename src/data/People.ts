@@ -54,13 +54,13 @@ export const People: Person[] = [
         bio: 'Audrey is a Computer Science major at the University of Minnesota Morris. She is interested K-12 and undergraduate CS education as a tool for broadening participation in computing. Specifically, she studies pedagogy and curriculum to improve self-efficacy and belonging, and pathways to teaching K-12 CS.',
         url: 'https://www.linkedin.com/in/audrey-le-meur-733168168',
         startdate: 2022,
-        enddate: null,
+        enddate: 2022,
         achievements: [],
     },
     {
         id: 'jaredl',
         name: 'Jared Lim',
-        active: true,
+        active: false,
         advised: true,
         level: 'undergrad',
         dept: 'Informatics',
@@ -68,7 +68,7 @@ export const People: Person[] = [
         bio: 'Jared is an Informatics undergraduate in his 3rd year at the Information School. He is interested in improving access to CS education and in establishing a critically conscious pedagogy.',
         url: 'https://www.linkedin.com/in/jared-ordona-lim/',
         startdate: 2022,
-        enddate: null,
+        enddate: 2023,
         achievements: [],
     },
     {
@@ -82,7 +82,7 @@ export const People: Person[] = [
         bio: 'Paul is an Informatics and Education, Communities, and Organizations double major. He is interested in the intersection between critical, justice-oriented pedagogy and CS education to better understand how to make it more accessible and equitable to learn.',
         url: 'https://www.linkedin.com/in/pkdpham/',
         startdate: 2022,
-        enddate: null,
+        enddate: 2023,
         achievements: [],
     },
     {
@@ -96,7 +96,7 @@ export const People: Person[] = [
         bio: 'Lena is a computer science and cognitive science double major at the University of Pennsylvania. She is interested in improving CS education and mitigating algorithmic bias to create more inclusive and meaningful experiences with technology.',
         url: 'https://www.linkedin.com/in/lena-armstrong/',
         startdate: 2022,
-        enddate: null,
+        enddate: 2023,
         achievements: [],
     },
     {
@@ -110,7 +110,7 @@ export const People: Person[] = [
         bio: 'Leah is a PhD candidate in Computer Science and Engineering. She is interested in TA practices, CS identity construction, and CS culture.',
         url: 'https://homes.cs.washington.edu/~lrperlmu/',
         startdate: 2022,
-        enddate: null,
+        enddate: 2023,
         achievements: [],
     },
     {

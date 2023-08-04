@@ -153,7 +153,7 @@
 
 <h3>Former Ph.D. students</h3>
 
-{#each $profile.getPeople( (person) => person.enddate !== null && !person.active && person.advised && person.level === 'phd', (person) => (person.enddate === null ? -Infinity : -person.enddate) ) as person}
+{#each $profile.getPeople( (person) => !person.active && person.advised && person.level === 'phd', (person) => (person.enddate === null ? -Infinity : -person.enddate) ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
