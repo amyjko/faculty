@@ -6,7 +6,7 @@ export const Posts: Post[] = [
         title: 'Faculty are Gozdillas',
         date: '2023.08',
         tags: ['academia'],
-        img: 'gozilla',
+        img: 'godzilla',
         alt: 'Two Japanese people hugging a human scale godzilla in black and white.',
     },
     {
