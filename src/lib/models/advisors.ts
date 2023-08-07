@@ -794,7 +794,7 @@ const advisors: [string, string, string, string, string, string][] = [
     [
         'R. Ben Shapiro*',
         'https://benshapi.ro/',
-        'playful and programmable technologies for learning',
+        'learning sciences and learning technologies, with an emphasis on youth learning computer science',
         'Computer Science',
         'University of Washington',
         'USA',
@@ -821,14 +821,6 @@ const advisors: [string, string, string, string, string, string][] = [
         'assessment',
         'Education',
         'Florida State University',
-        'USA',
-    ],
-    [
-        'Ben Shapiro*',
-        'http://benshapi.ro/',
-        'constructionism, new media',
-        'ATLAS Institute, Computer Science',
-        'University of Colorado',
         'USA',
     ],
     [
