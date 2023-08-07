@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/faculty-are-godzillas-c74e8b7ce9fb',
+        title: 'Faculty are Gozdillas',
+        date: '2023.08',
+        tags: ['academia'],
+        img: 'gozilla',
+        alt: 'Two Japanese people hugging a human scale godzilla in black and white.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/that-time-i-wanted-to-be-an-ai-researcher-fcdbf74c429',
         title: 'That time I wanted to be an AI researcher',
         date: '2023.07',
