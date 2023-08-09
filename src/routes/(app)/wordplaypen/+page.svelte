@@ -106,16 +106,33 @@
 >
 
 <p
-    >Then, register for <External
+    >Then, <External
         to="https://ischool.uw.edu/programs/informatics/curriculum/experiential-learning/independent-study"
-        >INFO 499</External
+        >register for INFO 499</External
     > for anywhere from <strong>1-5 credits</strong> by the start of the quarter.
     As part of your proposal, indicate:
-</p><p /><ul
+</p>
+
+<ul
     ><li>Why you want to participate,</li>
     <li>What skills and lived experience you would bring to the project, and</li
     ><li>How much time you are willing to commit.</li>
 </ul>
+
+<p
+    >The INFO 499 proposal form (which I don't control) don't quite align with
+    the questions above. Just put answers wherever they fit best. I'm the only
+    one who reviews these, so you're not going to be rejected for filling it
+    "wrong" because there is no wrong.</p
+>
+
+<p
+    >I expect to approve all proposals, unless I get to a number of students
+    that I can't manage. Don't worry about trying to convince me, or writing
+    some big epic essay. This isn't a competitive admissions process, I just
+    want some context for your goals and availability, so I can prepare a good
+    experience.</p
+>
 
 <p>
     Your proposal can be very short; just a few sentences in each section would
