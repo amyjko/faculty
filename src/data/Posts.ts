@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/icer-2023-trip-report-57f634248d06',
+        title: 'ICER 2023 trip report',
+        date: '2023.08',
+        tags: ['academia', 'trip report'],
+        img: 'icer23',
+        alt: '170+ ICER attendees looking toward the end of a dance hall, sitting at round tables.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/faculty-are-godzillas-c74e8b7ce9fb',
         title: 'Faculty are Gozdillas',
         date: '2023.08',
