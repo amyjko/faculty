@@ -56,6 +56,7 @@ export const Publications: Paper[] = [
         local: 'Salac2023AdolescentAlgorithmicFairness.pdf',
         contribution:
             "Finds that students use their cultural knowledge and experiences to situate their interpretation of three algorithms and how this can lead to teaching about algorithmic fairness (including challenging the notion of 'average use' in design",
+        award: ['best paper'],
     },
     {
         id: 'twinelang',
