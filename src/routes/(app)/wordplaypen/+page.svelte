@@ -127,11 +127,11 @@
 >
 
 <p
-    >I expect to approve all proposals, unless I get to a number of students
-    that I can't manage. Don't worry about trying to convince me, or writing
-    some big epic essay. This isn't a competitive admissions process, I just
-    want some context for your goals and availability, so I can prepare a good
-    experience.</p
+    >iSchool student services can be slow to process these, but I expect to
+    approve all proposals. Don't worry about trying to convince me, or writing
+    some big epic essay, or being rejected. This isn't a competitive admissions
+    process, I just want some context for your goals and availability, so I can
+    prepare a good experience.</p
 >
 
 <p>
