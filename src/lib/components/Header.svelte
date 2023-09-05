@@ -54,15 +54,6 @@
     </div>
 </section>
 
-<p
-    ><mark
-        >I'm on <External
-            to="https://medium.com/bits-and-behavior/sabbatical-2-e2ea332301c3"
-            >sabbatical</External
-        > until Sept. 2023.</mark
-    ></p
->
-
 <hr />
 <nav>
     <Link to="/" at={'/'}>Research</Link>

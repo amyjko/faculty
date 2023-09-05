@@ -13,12 +13,10 @@
         alt="A photograph of my office."
     />
     <span>
-        &mdash; I'm on sabbatical until September 2023 and not holding office
-        hours.
-        <!-- If you're a current UW student 
-		Contact me via one of the channels below to see if a meeting makes sense. 
-		If you're in one my classes, see the syllabus for my course office hours.
-		If you're not a UW student, write me an email; we'll meet if appropriate. -->
+        &mdash; If you're a current UW student Contact me via one of the
+        channels below to see if a meeting makes sense. If you're in one my
+        classes, see the syllabus for my course office hours. If you're not a UW
+        student, write me an email; we'll meet if appropriate.
     </span>
 </Block>
 
@@ -69,8 +67,11 @@
     />
     &mdash; I used to be fairly active on Twitter, but mostly left in June 2022.
     I still broadcast writing, amplify others, and respond to DMs, but I'm generally
-    not posting otherwise. You might find me on Mastadon @amyjko@hci.social saying
-    things.
+    not posting otherwise. You can also find me on Mastadon <External
+        to="https://hci.social/@amyjko">@amyjko@hci.social</External
+    > or Threads <External to="https://www.threads.net/@amyjensenko"
+        >@amyjensenko</External
+    >.
 </Block>
 
 <Block link="http://github.com/amyjko" header="GitHub">
@@ -110,7 +111,8 @@
 
 <Block header="Phone">
     <Image slot="image" url={'/images/contact/phone.jpg'} alt="A telephone." />
-    &mdash; Don't call me on the phone. It's never the right time, I'm rarely in
-    my office when you want to reach me. Write me on one of the platforms above first
-    and we can schedule a call if necessary.
+    &mdash; Don't call me on the phone. They never come at the right time, I'm rarely
+    in my office when you want to reach me. Write me on one of the platforms above
+    first and we can schedule a call if necessary. If you leave a voicemail, I will
+    get it eventually.
 </Block>
