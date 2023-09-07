@@ -432,7 +432,7 @@ export const People: Person[] = [
         level: 'phd',
         dept: 'Computer Science',
         coadvisor: null,
-        bio: 'Mara is a PhD Student in Computer Science and Engineering. They study how to encourage computing students to pursue work that allows for greater self-expression and acts as a force for collective liberation.',
+        bio: 'Mara is a PhD candidate in Computer Science and Engineering. They utilize techniques from sociology to surface cultural norms within computing, as well as techniques from social work to deconstruct these norms so that computing might act as a force for collective liberation.',
         url: 'https://marakr.com',
         startdate: 2018,
         enddate: null,

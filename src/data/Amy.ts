@@ -2034,6 +2034,25 @@ export const Amy: ProfileSpec = {
     ],
     funding: [
         {
+            id: 'pnwcsteachers',
+            title: 'An Equitable, Justice-Focused Ecosystem for Pacific Northwest Secondary CS Teaching',
+            funder: 'National Science Foundation',
+            award: null,
+            investigators: 'Amy J. Ko (PI), Caroline Hardin (Co-PI)',
+            amount: '$1,400,000',
+            category: 'research',
+            description:
+                'Explores pathways into CS teaching and strategies for retention.',
+            url: null,
+            private: false,
+            commitment: {
+                start: '2023-10-01',
+                end: '2027-09-30',
+                hours: 4,
+                priority: 1,
+            },
+        },
+        {
             id: 'googlestepcsgift',
             title: 'STEP CS scholarships',
             funder: 'Google',
