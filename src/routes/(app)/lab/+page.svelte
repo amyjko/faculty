@@ -50,16 +50,6 @@
             >onboarding document</External
         > for context on ever-evolving culture of the lab.</li
     >
-    <li>
-        Subscribe to our lab calendar (add <strong
-            >codeandcognition@uw.edu</strong
-        >
-        if using UW G Suite, download this <External
-            to="https://calendar.google.com/calendar/ical/codeandcognition%40uw.edu/public/basic.ics"
-            >ICS file</External
-        > otherwise) to see when lab meetings, lablet meetings, and other activities
-        are scheduled.
-    </li>
 </ul>
 
 <p>
