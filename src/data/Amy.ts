@@ -162,6 +162,18 @@ export const Amy: ProfileSpec = {
             start: 2023,
             end: 2023,
             description:
+                'I wrote a short piece about accessibility and programming.',
+            url: 'https://www.nature.com/articles/d41586-023-02885-y',
+            title: 'How my broken elbow made the ableism of computer programming personal',
+            author: 'Amy J. Ko',
+            source: 'Nature',
+            who: 'public',
+        },
+        {
+            kind: 'press',
+            start: 2023,
+            end: 2023,
+            description:
                 'I was interviewed about the strengths and weaknesses of large-language models for scientific computing.',
             url: 'https://www.nature.com/articles/d41586-023-01833-0?utm_medium=Social&utm_campaign=nature&utm_source=Twitter#Echobox=1685960182',
             title: 'Six tips for better coding with ChatGPT',
