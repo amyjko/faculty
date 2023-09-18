@@ -33,12 +33,14 @@
     >
     <External to="http://ischool.uw.edu/">iSchool</External>, where she studies
     humanity's individual and collective struggle to understand computing. She
-    believes in an equitable, sustainable, and liberatory future in which
-    everyone has the freedom and resources they need to thrive as themselves.
+    workds toward an equitable, sustainable, and liberatory future in which
+    everyone has the freedom, resources, and affirmation they need to thrive.
     She views uncritical uses of computing as a threat to that future, but
-    believes computing can be reimagined to help achieve it. Her background is
-    in HCI, Software Engineering, Computing Education, and Programming
-    Languages.
+    believes computing can be reimagined to help achieve it. Her primary areas
+    of expertise are HCI, Software Engineering, Computing Education, and
+    Programming Languages, but she draws extensively upon Education Research,
+    Learning Sciences, and the many social sciences of identity, community, and
+    power.
 </p>
 
 <Linkable id="short">Short Bio</Linkable>
@@ -47,21 +49,20 @@
     Amy J. Ko is a Professor at the <External to="http://www.washington.edu"
         >University of Washington</External
     >
-    <External to="http://ischool.uw.edu/">Information School</External> and an Adjunct
-    Professor at the <External to="http://cs.washington.edu"
+    <External to="http://ischool.uw.edu/">Information School</External> and the <External
+        to="http://cs.washington.edu"
         >Paul G. Allen School of Computer Science and Engineering</External
-    >. She directs the Code &amp; Cognition Lab, where she and her students
-    study computing education, human-computer interaction, and humanity's
-    individual and collective struggle to understand computing and harness it
-    for creativity, equity, and justice. Her earliest work included techniques
-    for automatically answering questions about program behavior to support
-    debugging, program understanding, and reuse. Her later work studied
-    interactions between developers and users, and techniques for web scale
-    aggregation of user intent through help systems; she co-founded <External
-        to="http://www.answerdash.com">AnswerDash</External
-    > to commercialize these ideas. Her latest work investigates how to weave equity
-    and justice into computing education pedagogy, culture, and technology. Her work
-    spans more than
+    > (courtesy). She directs the Code &amp; Cognition Lab, where she and her students
+    study computing education, human-computer interaction, and humanity's individual
+    and collective struggle to understand computing and harness it for creativity,
+    equity, and justice. With her collaborators, she's invented many tools and programming
+    languages to support debugging, program understanding, reuse, and learning; founded
+    and sold a <External to="http://www.answerdash.com"
+        >venture-backed startup</External
+    >; developed numerous ways to weave equity and justice into computing
+    education pedagogy, culture, and technology; and impacted local, state, and
+    federal K-12 CS education policy through community organizing and advocacy.
+    Her work spans more than
     <!-- Compute number of publications, rounding to nearest 10 -->
     {pubCount} peer-reviewed publications, with
     <!-- Compute number of best papers -->
@@ -95,13 +96,12 @@
     making people smarter instead of tools smarter, and began studying what kinds
     of computing literacies might lead to a more just world, and what kinds of teachers,
     teaching, and tools we need to make that happen. She published a bunch of papers
-    and won a bunch of awards, which is apparently good, but she's much more interested
-    in the ideas they represent than the counting of beans they enable. She's grateful
+    and won a bunch of awards, but that's not why she does the work. She's grateful
     to <External to="http://www.cmu.edu">Carnegie Mellon University</External> and
     <External to="http://www.oregonstate.edu">Oregon State University</External>
     for being reasonably safe spaces to bumble through the world's endless expanse
     of mysteries as a student, and to the many students and taxpayers that pay her
-    to keep doing it as a professor.
+    to keep doing it as a professor in Seattle.
 </p>
 
 <Linkable id="age">Age</Linkable>
@@ -129,7 +129,7 @@
     comic book stores, arcades, and Magic the Gathering tournaments. And I look
     back to the 80's and 90's and wonder how the world got so complicated, so
     quickly. And then I remember that it was always complicated, whiteness just
-    demanded we deny it.
+    demanded we deny that.
 </p>
 
 <p>
