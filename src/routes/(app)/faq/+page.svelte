@@ -34,9 +34,10 @@
             write the letter.</li
         >
         <li
-            >I've had multiple conversations about things beyond the scope of a
-            class and its requirements (e.g., in office hours, in research, or
-            other settings).</li
+            >I've collaborated with you on a project or I've had multiple
+            conversations about things beyond the scope of a class and its
+            requirements (e.g., in office hours, in research, or other
+            settings), .</li
         >
     </ul>
 
@@ -51,8 +52,7 @@
         If you're in that situation, I would love to get to know you, but if I spent
         the time to do that with every student who asked for a letter, I would probably
         be spending more than a dozen hours a week meeting with students just to
-        write letters. I definitely cannot do that; I have too many other responsibilities
-        in research, teaching, and service.
+        write letters. I definitely cannot do that without failing at my other responsibilities.
     </p>
 
     <p>

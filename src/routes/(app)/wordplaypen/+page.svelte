@@ -2,6 +2,7 @@
     import External from '$lib/components/External.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
     import Alert from '$lib/components/Alert.svelte';
+    import Link from '../../../lib/components/Link.svelte';
 </script>
 
 <h1>
@@ -98,7 +99,11 @@
     >
     <li
         >Get a letter of recommendation from me about your contributions to the
-        team.
+        team. Because of the number of students contributing, I'll need you're
+        help writing these, so I'm not overwhelmed by letter requests. See the <Link
+            to="/faq#recommendations">guidelines in my FAQ</Link
+        > and additionally send me one paragraph describing in detail what you contributed
+        to the project and how you view it's level of quality.
     </li></ul
 >
 
