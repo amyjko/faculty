@@ -10,6 +10,13 @@
     accessible?
 </h1>
 
+<Alert
+    >Already registered for INFO 499 with me already? We'll be meeting in <strong
+        >BLD 070 on Tuesdays from 5:30-6:30 pm</strong
+    >, starting Wednesday, September 26th, 2023. It's a basement, but it's cozy,
+    and has flexible tables, so it will do.</Alert
+>
+
 <p
     >I'm recruiting students to join our <strong>Wordplaypen</strong>, a team
     that helps design, build, and maintain <External to="https://wordplay.dev"
@@ -31,14 +38,14 @@
 <ul
     ><li>A passion for equity and justice.</li>
     <li
-        >And (optionally) lived experience with disability and/or fluency in
+        >(Optionally) lived experience with disability and/or fluency in
         non-English languages. This is because a major goal of Wordplay is
         accessibility and global inclusion, and we can't meaningfully achieve
         that without your knowledge and lived experience.</li
     ><li
         >Basic web development knowledge (e.g. from CSE 154, INFO 340, or other
         experience). And I do mean basic &mdash; it's okay if you're still just
-        learning the basics.</li
+        learning. This is an opportunity to strengthen your skills.</li
     >
 </ul>
 
@@ -98,11 +105,11 @@
 <Linkable id="howcontribute">How do I join the team?</Linkable>
 
 <p
-    >First, ensure you are available <strong>Tuesdays from 5:30-6:30 pm</strong
-    >, held on campus in my office, Mary Gates 015E. We'll run hybrid sprint
-    planning meetings each week at that time, and attendance is mandatory unless
-    ill. (In-person is preferred, but virtual will always be possible for
-    reasons of illness, travel, commuting, etc.)</p
+    >First, ensure you are available at the day, time, and location listed at
+    the top of this page. We'll run hybrid sprint planning meetings each week at
+    that time, and attendance is mandatory unless ill. (In-person is preferred,
+    but virtual will always be possible for reasons of illness, travel,
+    commuting, etc.)</p
 >
 
 <p
@@ -169,6 +176,5 @@
 <Alert
     >Other questions? Find me on <External to="https://computinged-uw.slack.com"
         >ComputingEd@UW Slack</External
-    > and DM me. I know it's scary to write professors, but I'm pretty friendly,
-    I promise!</Alert
+    > and DM me. I know it's scary to write professors, but I'm friendly, I promise!</Alert
 >
