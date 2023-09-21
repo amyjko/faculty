@@ -2,6 +2,20 @@ import type Person from '../lib/models/Person';
 
 export const People: Person[] = [
     {
+        id: 'camilo',
+        name: 'Camilo Montes de Haro',
+        active: true,
+        advised: true,
+        level: 'undergrad',
+        dept: 'Bellevue College',
+        coadvisor: null,
+        bio: 'Camilo is an undergraduate student at Bellevue College. He is interested in broadening participation in CS by leveraging and innovating new technologies.',
+        url: 'http://www.linkedin.com/in/camilomontesdeharo',
+        startdate: 2023,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'rotem',
         name: 'Rotem Landesman',
         active: true,
