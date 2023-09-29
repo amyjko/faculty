@@ -545,8 +545,8 @@ export default class Profile {
 
             // Which promises occur in this week?
             commitments.forEach((commitment) => {
-                // If this is an annual commitment, is this week in it's month range?
                 if (commitment.start !== null) {
+                    // If this is an annual commitment, is this week in it's month range?
                     if (commitment.annually) {
                         if (
                             commitment.end &&
@@ -607,6 +607,8 @@ export default class Profile {
                             });
                     }
                 }
+                // This is an indefinite weekly commitment.
+                else intersectingCommitments.push({ commitment, overlap: 1 });
             });
 
             // Are there any prime commitments this week? If so, remove the flexible commitments.

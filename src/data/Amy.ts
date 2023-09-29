@@ -1570,6 +1570,58 @@ export const Amy: ProfileSpec = {
     ],
     service: [
         {
+            title: 'Associate Dean for Academics',
+            committee: 'The Information School',
+            level: 'departmental',
+            description:
+                "I serve as the iSchool's Associate Dean for Academics.",
+            commitment: {
+                start: '2024-06-15',
+                end: '2027-06-15',
+                hours: 16,
+                priority: 0,
+            },
+        },
+        {
+            title: 'Incoming Associate Dean for Academics',
+            committee: 'The Information School',
+            level: 'departmental',
+            description:
+                'I shadowed our Associate Dean for Academics to prepare to take over his role.',
+            commitment: {
+                start: '2023-09-15',
+                end: '2024-06-15',
+                hours: 1,
+                priority: 0,
+            },
+        },
+        {
+            title: 'Interim Program Chair',
+            committee: 'Informatics',
+            level: 'departmental',
+            description:
+                'I served as interim program chair while our program chair was on leave.',
+            commitment: {
+                start: '2024-01-01',
+                end: '2024-3-15',
+                hours: 8,
+                priority: 0,
+            },
+        },
+        {
+            title: 'Member',
+            committee: 'iSchool Ph.D. Admissions Committee',
+            level: 'departmental',
+            description:
+                'I helped plan admissions policy, review Ph.D. applicaitons, and make final admissions recommendations.',
+            commitment: {
+                start: '2023-09-15',
+                end: '2023-12-15',
+                hours: 1,
+                priority: 0,
+            },
+        },
+        {
             title: 'Volunteer',
             committee: 'Lambert House',
             level: 'regional',
@@ -3993,11 +4045,19 @@ export const Amy: ProfileSpec = {
     ],
     commitments: [
         {
+            title: 'Wordplay benevolent facilitator',
+            description:
+                'Lead designer and developer of Wordplay, community organizer.',
+            category: 'research',
+            annually: true,
+            commitment: { start: null, end: null, hours: 3, priority: 1 },
+        },
+        {
             title: 'Promotion letters',
             description: 'Evaluating tenure and promotion cases',
             category: 'service',
             annually: true,
-            commitment: { start: '05-15', end: '09-15', hours: 2, priority: 1 },
+            commitment: { start: '05-15', end: '10-01', hours: 2, priority: 1 },
         },
         {
             title: 'Reading',

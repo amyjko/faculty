@@ -26,7 +26,7 @@
             : ' hrs/wk';
 </script>
 
-<div class={'bar ' + commit.category} style={`width: ${ems} + "em"`}>
+<div class={'bar ' + commit.category} style={`width: ${ems}em`}>
     {#if label}
         <span>{commit.hours * proportion}{postfix}</span>
     {/if}
