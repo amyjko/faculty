@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://amyjko.medium.com/30f2c7324172',
+        title: 'Programming is sculpting',
+        date: '2023.10',
+        tags: ['programming languages', 'software engineering'],
+        img: 'sculpting',
+        alt: 'An organic petal-like pattern of three dimensional shapes.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/a-quiet-sabbatical-b7284e46c95f',
         title: 'A quiet sabbatical',
         date: '2023.09',
