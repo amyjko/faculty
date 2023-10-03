@@ -1,3 +1,5 @@
+import type { People } from '../../data/People';
+
 type Paper = {
     id: string;
     kind:

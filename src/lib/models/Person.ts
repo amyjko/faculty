@@ -11,6 +11,6 @@ type Person = {
     dissertation?: string;
     startdate: number;
     enddate: number | null;
-    achievements: string[];
+    achievements: readonly string[];
 };
 export default Person;

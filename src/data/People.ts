@@ -1,6 +1,6 @@
 import type Person from '../lib/models/Person';
 
-export const People: Person[] = [
+export const People: readonly Person[] = [
     {
         id: 'camilo',
         name: 'Camilo Montes de Haro',
@@ -14,7 +14,7 @@ export const People: Person[] = [
         startdate: 2023,
         enddate: null,
         achievements: [],
-    },
+    } as const,
     {
         id: 'rotem',
         name: 'Rotem Landesman',
@@ -1207,4 +1207,4 @@ export const People: Person[] = [
         enddate: null,
         achievements: [],
     },
-];
+] as const;

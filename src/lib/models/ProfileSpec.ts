@@ -23,7 +23,7 @@ import type { Discovery } from './Discovery';
 type ProfileSpec = {
     sources: Record<string, Source>;
     pubs: Paper[];
-    people: Person[];
+    people: readonly Person[];
     discoveries: Discovery[];
     impacts: Impact[];
     populations: Population[];
