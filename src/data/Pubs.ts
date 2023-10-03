@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'textiles',
+        kind: 'refereed conference paper',
+        authors: ['@everjay', '@megumi', '@camilo'],
+        year: 2023,
+        title: 'Culture-centric computational embroidery',
+        source: '@sigcse',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            'Students enthusiastically engaged with the programming aspects of the course and sought to make complicated and beautiful work that interwove their diverse cultures and identities.',
+    },
+    {
         id: 'codereplay',
         kind: 'refereed conference paper',
         authors: ['@bxie', '@jaredl', '@paulp', '@minli', '@ajko'],

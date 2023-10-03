@@ -36,6 +36,7 @@ export const Discoveries: Discovery[] = [
             'stepcs',
             'fundsfairness',
             'childrenfairness',
+            'textiles',
         ],
         tags: ['justice', 'studies'],
     },
