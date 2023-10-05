@@ -20,10 +20,6 @@
         apa = !apa;
     }
 
-    function getLocalURL() {
-        return `/papers/${paper.local}`;
-    }
-
     // Highlight the citation if expanded.
     afterUpdate(() => {
         if (apa) {
@@ -42,10 +38,12 @@
         }
     });
 
+    $: paperLocalURL = `/papers/${paper.local}`;
+
     $: url =
         // If there's a local, show it first, since digital libraries have my deadname.
         paper.local
-            ? getLocalURL()
+            ? paperLocalURL
             : // If we don't have one, but there's an ACM authorizer URL, return it, because visitors will be able to bypass the paywall.
             paper.authorizer
             ? paper.authorizer
@@ -107,7 +105,7 @@
                         >{apa ? '▾ cite' : '▸ cite'}</span
                     >
                     {#if paper.local}<span>
-                            &sdot; <Link to={getLocalURL()}>pdf</Link></span
+                            &sdot; <Link to={paperLocalURL}>pdf</Link></span
                         >{/if}
                     {#if paper.doi}<span>
                             &sdot; <External to={paper.doi}>doi</External></span
