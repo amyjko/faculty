@@ -23,21 +23,25 @@
     </p>
 
     <ul>
-        <li>You've asked for it two weeks in advance of the deadline.</li>
+        <li
+            >You've asked for it at least two weeks in advance of the deadline,
+            preferably one month, so I have time to schedule writing.</li
+        >
         <li
             >You've given me all of the information you have about what is
-            expected in the letter.</li
+            expected in the letter, especially if it is not a conventional
+            graduate school application.</li
         >
         <li>You've shared with me why you need the letter.</li>
         <li
-            >You've explained why I'm one of the best people in your network to
-            write the letter.</li
+            >You've explained why I'm an ideal person in your network to write
+            the letter, relative to other options.</li
         >
         <li
-            >I've collaborated with you on a project or I've had multiple
-            conversations about things beyond the scope of a class and its
-            requirements (e.g., in office hours, in research, or other
-            settings), .</li
+            >I've collaborated with you on a project, or if you were a student
+            in my class, I've had multiple conversations about things beyond the
+            scope of a class and its requirements (e.g., in office hours, in
+            research, or other settings).</li
         >
     </ul>
 
@@ -55,6 +59,8 @@
         write letters. I definitely cannot do that without failing at my other responsibilities.
     </p>
 
+    <p>Write me and ask if you think you're eligible.</p>
+
     <p>
         There are some exceptions to the policy above. If the "letter" you need
         is really just a form that I fill out attesting that I had you in class,
@@ -64,6 +70,24 @@
             to={'/lablets#recommendation'}>lablets</Link
         >, there are specific conditions for earning a letter.
     </p>
+
+    <p>
+        If you are eligible for a letter, I need the following to help me write
+        a good letter:
+    </p>
+
+    <ul>
+        <li>The deadline</li>
+        <li>Where to submit</li>
+        <li
+            >Details about what the letter is for, preferably a URL to whatever
+            you're applying to</li
+        >
+        <li
+            >If we did not interact regularly, a detailed summary of all of our
+            interactions, to help prime my memory.</li
+        >
+    </ul>
 </Section>
 
 <Section
