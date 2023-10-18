@@ -33,7 +33,7 @@
     >
     <External to="http://ischool.uw.edu/">iSchool</External>, where she studies
     humanity's individual and collective struggle to understand computing. She
-    workds toward an equitable, sustainable, and liberatory future in which
+    works toward an equitable, sustainable, and liberatory future in which
     everyone has the freedom, resources, and affirmation they need to thrive.
     She views uncritical uses of computing as a threat to that future, but
     believes computing can be reimagined to help achieve it. Her primary areas
