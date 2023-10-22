@@ -6,16 +6,13 @@
 </script>
 
 <h1>
-    Are you a University of Washington undergraduate interested in gaining web
-    development experience and making programming more playful, global, and
-    accessible?
+    Are you a University of Washington interested in making programming more
+    playful, global, and accessible?
 </h1>
 
 <Alert
-    >Already registered for INFO 499 with me already? We'll be meeting in <strong
-        >BLD 070 on Tuesdays from 5:30-6:30 pm</strong
-    >, starting Wednesday, September 26th, 2023. It's a basement, but it's cozy,
-    and has flexible tables, so it will do.</Alert
+    >We meet in <strong>BLD 070 on Tuesdays from 5:30-6:30 pm</strong>, starting
+    the first Tuesday of each quarter.</Alert
 >
 
 <p
@@ -79,15 +76,15 @@
     <li
         >Learn <External to="https://www.typescriptlang.org/"
             >TypeScript</External
-        >, <External to="https://kit.svelte.dev/">Sveltekit</External>, and/or <External
+        >, <External to="https://kit.svelte.dev/">SvelteKit</External>, and/or <External
             to="https://firebase.google.com/">Firebase</External
         >, and strengthen your knowledge in HTML, CSS, and JavaScript.</li
     >
     <li
         >Gain practical skills in software engineering, including bug triage,
         Git workflows, code reviews, verification, and programming languages.
-        (INFO 442 is a great place to do that too, but this will be 100%
-        hands-on.)
+        (INFO 442 is a great place to do that too, but unlike that course, this
+        will be 100% hands-on.)
     </li>
     <li
         >Contribute to a programming platform that centers equity and inclusion,
@@ -111,10 +108,8 @@
 
 <p
     >First, ensure you are available at the day, time, and location listed at
-    the top of this page. We'll run hybrid sprint planning meetings each week at
-    that time, and attendance is mandatory unless ill. (In-person is preferred,
-    but virtual will always be possible for reasons of illness, travel,
-    commuting, etc.)</p
+    the top of this page. Attendance is mandatory unless ill. (In-person is
+    preferred, as this time is 95% collaboration time.)</p
 >
 
 <p
@@ -132,7 +127,7 @@
 </ul>
 
 <p
-    >The INFO 499 proposal form (which I don't control) don't quite align with
+    >The INFO 499 proposal form (which I don't control) doesn't quite align with
     the questions above. Just put answers wherever they fit best. I'm the only
     one who reviews these, so you're not going to be rejected for filling it
     "wrong" because there is no wrong.</p
@@ -178,8 +173,20 @@
     first week of the quarter, but mostly as a disincentive to overcommit.</p
 >
 
-<Alert
-    >Other questions? Find me on <External to="https://computinged-uw.slack.com"
-        >ComputingEd@UW Slack</External
-    > and DM me. I know it's scary to write professors, but I'm friendly, I promise!</Alert
+<p
+    >I do welcome students on a <strong>volunteer</strong> basis if they can make
+    a time commitment, and demonstrate that they actually have capacity to follow
+    through with it. It doesn't help the project to promise contributions that you
+    can't keep.</p
+>
+
+<Linkable id="otherquestiosn">I have more questions!</Linkable>
+
+<p
+    >First, ensure your question isn't answered on this page. Then, find me on
+    Wordplay's <External to="https://discord.gg/Jh2Qq9husy">Discord</External> and
+    DM me (do not write me an email). I know it's scary to write professors! But
+    I'm friendly, I promise :) Include your name and student status at UW (or set
+    up your Discord server profile with this information), so I have context for
+    who you are.</p
 >
