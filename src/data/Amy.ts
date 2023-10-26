@@ -2101,13 +2101,13 @@ export const Amy: ProfileSpec = {
             id: 'pnwcsteachers',
             title: 'An Equitable, Justice-Focused Ecosystem for Pacific Northwest Secondary CS Teaching',
             funder: 'National Science Foundation',
-            award: null,
+            award: '#2318257',
             investigators: 'Amy J. Ko (PI), Caroline Hardin (Co-PI)',
             amount: '$1,400,000',
             category: 'research',
             description:
                 'Explores pathways into CS teaching and strategies for retention.',
-            url: null,
+            url: 'https://www.nsf.gov/awardsearch/showAward?AWD_ID=2318257&HistoricalAwards=false',
             private: false,
             commitment: {
                 start: '2023-10-01',
