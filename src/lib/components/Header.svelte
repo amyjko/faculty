@@ -1,6 +1,7 @@
 <script lang="ts">
     import External from './External.svelte';
     import Link from './Link.svelte';
+    import Social from './Social.svelte';
     import Image from './Thumbnail.svelte';
 </script>
 
@@ -28,9 +29,7 @@
     <br /><External to="https://dl.acm.org/journal/toce"
         >Editor-in-Chief, <em>ACM TOCE</em></External
     >
-    <br /><a href="mailto:ajko@uw.edu">email</a> &sdot; <External
-        to="https://twitter.com/amyjko">twitter</External
-    > &sdot; <External to="https://amyjko.medium.com">blog</External>
+    <Social />
 </section>
 <section class="small-info">
     <a href="/ajko/"
@@ -48,9 +47,7 @@
         <br /><External to="http://ischool.uw.edu">iSchool</External> &middot; <External
             to="http://cs.uw.edu">CSE</External
         > &middot; <External to="http://www.washington.edu">UW</External>
-        <br /><a href="mailto:ajko@uw.edu">email</a> &sdot; <External
-            to="https://twitter.com/amyjko">twitter</External
-        > &sdot; <External to="https://amyjko.medium.com">blog</External>
+        <Social />
     </div>
 </section>
 
