@@ -11,8 +11,10 @@
 </h1>
 
 <Alert
-    >We meet in <strong>BLD 070 on Tuesdays from 5:30-6:30 pm</strong>, starting
-    the first Tuesday of each quarter.</Alert
+    >Autumn 2023 we meet in <strong
+        >BLD 070 on Tuesdays from 5:30-6:30 pm</strong
+    >, starting the first Tuesday of each quarter. Winter 2023 will be
+    Wednesdays 5:30-6:20.</Alert
 >
 
 <p
