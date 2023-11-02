@@ -138,11 +138,13 @@
 >
 
 <p
-    >iSchool student services can be slow to process these, but I expect to
-    approve all proposals. Don't worry about trying to convince me, or writing
-    some big epic essay, or being rejected. This isn't a competitive admissions
-    process, I just want some context for your goals and availability, so I can
-    prepare a good experience.</p
+    >iSchool student services can be slow to process these, and I don't have
+    visibility into their backlog or timeline. If you want an update, write
+    them. However, I do expect to approve all proposals, so don't fret too much.
+    And don't worry about trying to convince me, or writing some big epic essay,
+    or being rejected. This isn't a competitive admissions process, I just want
+    some context for your goals and availability, so I can prepare a good
+    experience.</p
 >
 
 <p>
