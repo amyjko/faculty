@@ -2,6 +2,20 @@ import type Person from '../lib/models/Person';
 
 export const People: readonly Person[] = [
     {
+        id: 'rbs',
+        name: 'R. Ben Shapiro',
+        active: true,
+        advised: false,
+        level: 'faculty',
+        dept: 'Paul G. Allen School of Computer Science & Engineering',
+        coadvisor: null,
+        bio: 'Ben designs new learning technologies and experiences that enable people, especially youth, to make new computational systems that help them to understand the world around themselves, express themselves creatively, and care for human and non-human others.',
+        url: 'https://benshapi.ro/',
+        startdate: 2023,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'camilo',
         name: 'Camilo Montes de Haro',
         active: true,
@@ -14,7 +28,7 @@ export const People: readonly Person[] = [
         startdate: 2023,
         enddate: null,
         achievements: [],
-    } as const,
+    },
     {
         id: 'rotem',
         name: 'Rotem Landesman',
