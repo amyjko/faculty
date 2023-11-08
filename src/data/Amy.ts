@@ -34,6 +34,10 @@ export const Amy: ProfileSpec = {
             name: 'ACM Technical Symposium on Computer Science Education (SIGCSE), Research Track',
             short: 'SIGCSE',
         },
+        sigcseexp: {
+            name: 'ACM Technical Symposium on Computer Science Education (SIGCSE), Experience Report Track',
+            short: 'SIGCSE',
+        },
         iticse: {
             name: 'ACM Conference on Innovation and Technology in Computer Science Education',
             short: 'ITiCSE',
