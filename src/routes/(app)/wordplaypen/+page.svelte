@@ -3,6 +3,7 @@
     import Linkable from '$lib/components/Linkable.svelte';
     import Alert from '$lib/components/Alert.svelte';
     import Link from '../../../lib/components/Link.svelte';
+    import Emoji from '$lib/components/Emoji.svelte';
 </script>
 
 <h1>
@@ -11,16 +12,23 @@
 </h1>
 
 <Alert
-    >Autumn 2023 we meet in <strong
-        >BLD 070 on Tuesdays from 5:30-6:30 pm</strong
-    >, starting the first Tuesday of each quarter. Winter 2023 will be
-    Wednesdays 5:30-6:30 BLD 070.</Alert
+    ><ul>
+        <li
+            >Autumn 2023 meets in <strong>BLD 070 Tuesdays 5:30-6:30 pm</strong
+            ></li
+        >
+        <li
+            >Winter 2023 meets in <strong
+                >BLD 070 Wednesdays 5:30-6:30 pm</strong
+            >, starting January 3rd</li
+        ></ul
+    ></Alert
 >
 
 <p
     >I'm recruiting students to join our <strong>Wordplaypen</strong>, a team
     that helps design, build, and maintain <External to="https://wordplay.dev"
-        >Wordplay</External
+        ><Emoji symbol="💬" /> Wordplay</External
     >. Wordplay is a playful programming platform for creating accessible,
     interactive typography that celebrates the world's languages. Our vision is
     <em

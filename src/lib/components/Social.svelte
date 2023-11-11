@@ -1,17 +1,19 @@
 <script lang="ts">
+    import Emoji from './Emoji.svelte';
     import External from './External.svelte';
 </script>
 
 <span class="emoji">
-    <br /><a href="mailto:ajko@uw.edu">{'📧\uFE0E'}</a><span class="dot"
-        >&sdot;</span
-    ><External to="https://amyjko.medium.com">{'📝\uFE0E'}</External><span
+    <br /><a href="mailto:ajko@uw.edu"><Emoji symbol="📧" /></a><span
         class="dot">&sdot;</span
-    ><External to="https://hci.social/@amyjko">{'🐘\uFE0E'}</External><span
-        class="dot">&sdot;</span
-    ><External to="https://www.threads.net/@amyjensenko">{'🧵\uFE0E'}</External
+    ><External to="https://amyjko.medium.com"><Emoji symbol="📝" /></External
+    ><span class="dot">&sdot;</span><External to="https://hci.social/@amyjko"
+        ><Emoji symbol="🐘" /></External
+    ><span class="dot">&sdot;</span><External
+        to="https://www.threads.net/@amyjensenko"
+        ><Emoji symbol="🧵" /></External
     ><span class="dot">&sdot;</span><External to="https://twitter.com/amyjko"
-        >{'🐥\uFE0E'}</External
+        ><Emoji symbol="🐥" /></External
     >
 </span>
 

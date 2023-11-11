@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Emoji from './Emoji.svelte';
     import External from './External.svelte';
     import Link from './Link.svelte';
     import Social from './Social.svelte';
@@ -55,8 +56,6 @@
 <nav>
     <Link to="/" at={'/'}>Research</Link>
     <Link to="/lab" at={'/lab'}>Lab</Link>
-    <Link to="/wordplaypen" at={'/wordplaypen'}>Wordplaypen</Link>
-    <Link to="/lablets" at={'/lablets'}><strike>Lablets</strike></Link>
     <Link to="/communities" at={'/communities'}>Communities</Link>
     <Link to="/publications" at={'/publications'}>Publications</Link>
     <Link to="/essays" at={'/essays'}>Essays</Link>
@@ -72,6 +71,9 @@
     <Link to="/faq" at={'/faq'}>FAQ</Link>
     <Link to="/cer" at={'/cer'}>CER FAQ</Link>
     <Link to="/cv">CV</Link>
+    <br /><Link to="/wordplaypen" at={'/wordplaypen'}
+        ><Emoji symbol="💬" /> <strong>Wordplaypen</strong></Link
+    >
 </nav>
 
 <hr class="small-hr" />

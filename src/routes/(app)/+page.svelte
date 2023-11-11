@@ -5,6 +5,7 @@
     import Thumbnail from '$lib/components/Thumbnail.svelte';
     import Block from '$lib/components/Block.svelte';
     import getPersonImagePath from '$lib/components/getPersonImage';
+    import Emoji from '$lib/components/Emoji.svelte';
 </script>
 
 <h1>
@@ -43,10 +44,7 @@
     <Link to="/papers/Ko2021CriticalCSEd.pdf"
         >justice-centered computing education</Link
     >, and particuarly <External to="https://wordplay.dev"
-        ><strong style:font-size="125%"
-            ><span style:font-family={'Noto Emoji'}>{'💬\uFE0E'}</span
-            >&nbsp;Wordplay</strong
-        ></External
+        ><Emoji symbol="💬" /> <strong>Wordplay</strong></External
     >, an accessible, multilingual educational programming language for creating
     interactive typography.
 </p>

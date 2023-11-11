@@ -2,6 +2,7 @@
     import External from '$lib/components/External.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
     import Alert from '$lib/components/Alert.svelte';
+    import Link from '$lib/components/Link.svelte';
 </script>
 
 <Alert>
@@ -12,9 +13,9 @@
     non-credited activites meant that the overall benefit did not justify the
     effort. Thank you to everyone who participated! We'll leave this here for
     others to reference in case they want to try a similar model in a different
-    context. If you're looking for research opportunities, consult <External
-        to="http://computinged.uw.edu/">computinged.uw.edu</External
-    > for ideas.
+    context. If you're looking for research opportunities, consider <Link
+        to="/wordplaypen">Wordplaypen</Link
+    >.
 </Alert>
 
 <h1>
