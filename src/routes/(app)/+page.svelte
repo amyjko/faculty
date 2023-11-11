@@ -44,7 +44,7 @@
         >justice-centered computing education</Link
     >, and particuarly <External to="https://wordplay.dev"
         ><strong style:font-size="125%"
-            ><span style:font-family={'Noto Emoji'}>💬</span
+            ><span style:font-family={'Noto Emoji'}>{'💬\uFE0E'}</span
             >&nbsp;Wordplay</strong
         ></External
     >, an accessible, multilingual educational programming language for creating
