@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@300&display=swap&family=Noto+Emoji');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Noto+Emoji&family=Sarabun:ital,wght@0,200;0,400;1,200&display=swap');
 
 :root {
 	--text-color: #000000;
@@ -14,15 +14,15 @@
 
 	--link-color: rgb(0 0 184);
 
-	--text-font-family: "Lato", sans-serif;
+	--text-font-family: "Sarabun", sans-serif;
 	--text-font-size: 16pt;
-	--text-weight: 300;
+	--text-weight: 200;
 	--bold-weight: 400;
-	--text-line-height: 1.5em;
-	--header-line-height: 1.25em;
+	--text-line-height: 1.4em;
+	--header-line-height: 1.3em;
 
-	--header-font: "Raleway", sans-serif;
-	--header-weight: 300;
+	--header-font: "Gabarito", sans-serif;
+	--header-weight: 600;
 	--header-size: 24pt;
 
 	--annotation-size: 11pt;
@@ -70,6 +70,7 @@ b, strong {
 h1, h2, h3, h4 {
 	font-family: var(--header-font);
 	line-height: var(--header-line-height);
+	font-weight: var(--header-weight);
 	margin-top: var(--margin);
 	margin-bottom: 0;
 }
