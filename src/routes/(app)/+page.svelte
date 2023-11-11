@@ -35,7 +35,7 @@
 </p>
 
 <p>
-    My active research projects are largely shaped by the <Link to="lab"
+    My active research projects are largely shaped by the <Link to="/lab"
         >postdocs and doctoral students</Link
     > in my lab and my <Link to="/funding">active grants</Link>. My <Link
         to="/publications">recent publications</Link
