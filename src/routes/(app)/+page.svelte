@@ -35,18 +35,26 @@
 </p>
 
 <p>
-    I have expertise in debugging, program understanding, explainability,
-    end-user programming, human aspects of software engineering, broadening
-    participation in computing, assessment, and HCI education. I also have broad
-    methodological expertise, including the design and implementation of user
-    interfaces, programming languages, and developer tools; HCI methods;
-    multivariate null hypothesis significance testing; Bayesian modeling;
-    qualitative methods such as interviews, surveys, content analysis, and
-    fieldwork; data science methods; and argumentation.
+    My active research projects are largely shaped by the <Link to="lab"
+        >postdocs and doctoral students</Link
+    > in my lab and my <Link to="/funding">active grants</Link>. My <Link
+        to="/publications">recent publications</Link
+    > are a good guide to my current focus. I'm currently focused on
+    <Link to="/papers/Ko2021CriticalCSEd.pdf"
+        >justice-centered computing education</Link
+    >, and particuarly <External to="https://wordplay.dev"
+        ><strong style:font-size="125%"
+            ><span style:font-family={'Noto Emoji'}>💬</span
+            >&nbsp;Wordplay</strong
+        ></External
+    >, an accessible, multilingual educational programming language for creating
+    interactive typography.
 </p>
 
 <p>
-    Want to do research with me? Read about my <Link to="/lab">lab</Link>.
+    Want to do research with me? Read about my <Link to="/lab">lab</Link>, and
+    join us in creating a more equitable future of computing that includes
+    <em>everyone</em>.
 </p>
 
 <h2>Discoveries</h2>
