@@ -704,6 +704,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'USA',
     ],
     [
+        'Seth Poulsen',
+        'https://sethpoulsen.github.io/',
+        'CS Theory education, educational data mining',
+        'Computer Science',
+        'Utah State University',
+        'USA',
+    ],
+    [
         'Thomas Price',
         'https://people.engr.ncsu.edu/twprice/website/',
         'educational data mining, tutoring systems, automated feedback',
