@@ -54,7 +54,7 @@
                         .next.length > 0
                         ? ', '
                         : '') +
-                        'next offering likely ' +
+                        'next planned offering ' +
                         ['Autumn', 'Winter', 'Spring'][
                             offering.next[0].term - 1
                         ] +

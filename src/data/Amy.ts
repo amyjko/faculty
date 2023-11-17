@@ -3873,7 +3873,7 @@ export const Amy: ProfileSpec = {
         {
             id: 'info200',
             alt: 'A black and white version of an old painting with a child reading a newspaper',
-            link: 'https://canvas.uw.edu/courses/1547979',
+            link: 'https://canvas.uw.edu/courses/1662893',
             number: 'INFO 200',
             level: 'undergraduate',
             title: 'Intellectual Foundations of Informatics',
