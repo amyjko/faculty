@@ -8,7 +8,16 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - run: |
+
+            - name: Setup Node.js environment
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 18.x
+
+            - name: Add SSH key
+              env:
+                  SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+              run: |
                   # Make an SSH folder
                   mkdir -p /home/runner/.ssh
                   # Add UW faculty server to the known hosts
