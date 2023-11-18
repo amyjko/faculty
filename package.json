@@ -14,18 +14,18 @@
         "ship": "npm run build && npm run sync"
     },
     "devDependencies": {
-        "@sveltejs/adapter-static": "^2",
-        "@sveltejs/kit": "^1",
+        "@sveltejs/adapter-static": "^2.0",
+        "@sveltejs/kit": "^1.27",
         "ajv-cli": "^5",
         "ajv-formats": "^2",
         "prettier": "^2",
         "prettier-plugin-svelte": "^2",
-        "svelte": "^4",
-        "svelte-check": "^3",
-        "svelte-preprocess": "^5",
+        "svelte": "^4.2",
+        "svelte-check": "^3.6",
+        "svelte-preprocess": "^5.1",
         "tslib": "^2",
         "typescript": "^5",
-        "vite": "^4"
+        "vite": "^4.5"
     },
     "type": "module"
 }
