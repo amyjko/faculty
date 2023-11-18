@@ -14,7 +14,7 @@ jobs:
               with:
                   node-version: 18.x
 
-            - name: Setup SSH
+            - name: Build and deploy
               env:
                   SSH_AUTH_SOCK: /tmp/ssh_agent.sock
               run: |
@@ -29,12 +29,9 @@ jobs:
                   # Add the key
                   ssh-agent -a $SSH_AUTH_SOCK > /dev/null
                   ssh-add /home/runner/.ssh/github_actions
-
-            - name: Build and deploy
-              run: |
                   # Install the faculty website package
                   npm ci
                   # Build it
                   npm run build
-                  # Sync the build to the web server
-                  rsync -vzripc --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html
+                  # Ship it
+                  npm run sync
