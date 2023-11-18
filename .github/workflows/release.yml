@@ -14,7 +14,7 @@ jobs:
               with:
                   node-version: 18.x
 
-            - name: Add SSH key
+            - name: Setup SSH
               env:
                   SSH_AUTH_SOCK: /tmp/ssh_agent.sock
               run: |
@@ -29,6 +29,9 @@ jobs:
                   # Add the key
                   ssh-agent -a $SSH_AUTH_SOCK > /dev/null
                   ssh-add /home/runner/.ssh/github_actions
+
+            - name: Build and deploy
+              run: |
                   # Install the faculty website package
                   npm ci
                   # Build it
