@@ -99,7 +99,12 @@ Professor
 <Table>
     <tbody>
         {#each $profile.getRecognitions( () => true, (rec) => -rec.year ) as rec}
-            <Row start={rec.year} header={rec.title} detail={rec.description} />
+            <Row
+                start={rec.year}
+                end={rec.year}
+                header={rec.title}
+                detail={rec.description}
+            />
         {/each}
     </tbody>
 </Table>

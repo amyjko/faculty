@@ -4,7 +4,7 @@
     export let header: string;
     export let two: string | undefined = undefined;
     export let three: string | undefined = undefined;
-    export let four: string | string[] | undefined = undefined;
+    export let four: string | readonly string[] | undefined = undefined;
     export let five: string | undefined = undefined;
     export let six: string | undefined = undefined;
 
