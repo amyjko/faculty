@@ -863,6 +863,12 @@ export const Amy: ProfileSpec = {
     ],
     recognitions: [
         {
+            title: 'ACM Distinguished Speaker',
+            year: 2023,
+            description:
+                'A recognition given to thought leaders in computing, with an expectation of giving public talks to venues globally.',
+        },
+        {
             title: 'SIGCHI Academy',
             year: 2022,
             description:
