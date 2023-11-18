@@ -1,0 +1,28 @@
+name: Deploy to UW Faculty web server
+'on':
+    push:
+        branches:
+            - main
+jobs:
+    build_and_deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - run: |
+                  # Make an SSH folder
+                  mkdir -p /home/runner/.ssh
+                  # Add UW faculty server to the known hosts
+                  ssh-keyscan ovid.u.washington.edu >> /home/runner/.ssh/known_hosts
+                  # Copy the private SSH key secret to a key file
+                  echo "${{ secrets.UW_SSH_KEY }}" > /home/runner/.ssh/github_actions
+                  # Update permissions on the secret
+                  chmod 600 /home/runner/.ssh/github_actions
+                  # Add the key
+                  ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+                  ssh-add /home/runner/.ssh/github_actions
+                  # Install the faculty website package
+                  npm ci
+                  # Build it
+                  npm run build
+                  # Sync the build to the web server
+                  rsync -vzripc --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html
