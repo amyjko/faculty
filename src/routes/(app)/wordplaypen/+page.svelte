@@ -18,7 +18,7 @@
             ></li
         >
         <li
-            >Winter 2023 meets in <strong
+            >Winter 2024 meets in <strong
                 >BLD 070 Wednesdays 5:30-6:30 pm</strong
             >, starting January 3rd</li
         ></ul
