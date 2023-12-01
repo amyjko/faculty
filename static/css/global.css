@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Noto+Emoji&family=Sarabun:ital,wght@0,200;0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji&family=Poppins:ital,wght@0,700;1,700&family=Nunito+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap');
 
 :root {
 	--text-color: #000000;
@@ -14,15 +14,15 @@
 
 	--link-color: rgb(0 0 184);
 
-	--text-font-family: "Sarabun", sans-serif;
+	--text-font-family: "Nunito Sans", sans-serif;
 	--text-font-size: 16pt;
-	--text-weight: 200;
-	--bold-weight: 500;
+	--text-weight: 300;
+	--bold-weight: 600;
 	--text-line-height: 1.5em;
 	--header-line-height: 1.35em;
 
-	--header-font: "Gabarito", sans-serif;
-	--header-weight: 500;
+	--header-font: "Poppins", sans-serif;
+	--header-weight: 700;
 	--header-size: 24pt;
 
 	--annotation-size: 11pt;
