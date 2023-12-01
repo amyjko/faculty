@@ -2567,6 +2567,30 @@ export const Amy: ProfileSpec = {
     ],
     travel: [
         {
+            url: 'https://www.aera.net/Events-Meetings/Annual-Meeting/2024-Annual-Meeting',
+            title: 'AERA Annual Meeting',
+            details: 'Networking with my research and practice community',
+            category: 'research',
+            commitment: {
+                start: '2024-04-11',
+                end: '2024-04-14',
+                hours: 20,
+                priority: 1,
+            },
+        },
+        {
+            url: 'https://sigcse2024.sigcse.org/',
+            title: 'ACM SIGCSE Technical Symposium 2024',
+            details: 'Networking with my research and practice community',
+            category: 'research',
+            commitment: {
+                start: '2024-03-20',
+                end: '2024-03-24',
+                hours: 30,
+                priority: 1,
+            },
+        },
+        {
             url: 'https://icer2023.acm.org/',
             title: 'ACM ICER 2023',
             details: 'Networking with my research community',
