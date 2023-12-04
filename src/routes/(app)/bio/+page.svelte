@@ -417,3 +417,20 @@
     pandemic arrived, and my lab and I went into survival mode, slowing down our
     work and doing our best to care for each other while in lockdown.
 </p>
+
+<p>
+    In the summer of 2022, I started my first full-length sabbatical. It was
+    very much needed after sabbatical and administrative stress, an empty nest,
+    and far too much personal and professional isolation. What I wanted most
+    from it was unconstrained time to find myself and create art. I spent most
+    of it traveling solo and creating <External to="https://wordplay.dev"
+        >Wordplay</External
+    >. After a summer, an academic year, and another summer, I returned, mostly
+    refreshed, and with a renewed sense of purpose and self, ready for another 6
+    years of fragmented attention and public service. My Dean welcomed me back
+    by asking me to serve as the iSchool's Associate Dean for Academics,
+    starting Summer of 2024. I agreed, and spent the year preparing to set aside
+    most of my teaching for a few years to help the school manage its
+    unprecedent growth in students, faculty, courses, and programs, while
+    maintaining my normal level of research activity.
+</p>
