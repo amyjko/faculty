@@ -2,6 +2,22 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/@amyjko/learning-to-love-and-hate-democracy-9fcb8be71575',
+        title: 'Learning to love and hate democracy',
+        date: '2023.11',
+        tags: ['society', 'gender'],
+        img: 'democracy',
+        alt: 'A web page with a left, a right, and several footers. The left shows a text editor with colorful computer code, a yellow highlight, and a magenta highlight on top of it, indicating a selection of a "translate" statement that converts a list of symbols into a list of Phrases for display. The right shows a 5 by 5 grid of symbols, one of them fading in to the grid. The footers show a timeline, several file names, and navigation links and settings.',
+    },
+    {
+        url: 'https://medium.com/bits-and-behavior/wordplay-accessible-language-inclusive-interactive-typography-e4b9027eaf10',
+        title: 'Wordplay: an accessible, language-inclusive programming language for all',
+        date: '2023.10',
+        tags: ['programming languages', 'accessibility', 'diversity', 'K-12'],
+        img: 'wordplay',
+        alt: 'A web page with a left, a right, and several footers. The left shows a text editor with colorful computer code, a yellow highlight, and a magenta highlight on top of it, indicating a selection of a "translate" statement that converts a list of symbols into a list of Phrases for display. The right shows a 5 by 5 grid of symbols, one of them fading in to the grid. The footers show a timeline, several file names, and navigation links and settings.',
+    },
+    {
         url: 'https://amyjko.medium.com/30f2c7324172',
         title: 'Programming is sculpting',
         date: '2023.10',
