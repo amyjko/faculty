@@ -43,7 +43,7 @@
     > are a good guide to my current focus. I'm currently focused on
     <Link to="/papers/Ko2021CriticalCSEd.pdf"
         >justice-centered computing education</Link
-    >, and particuarly <External to="https://wordplay.dev"
+    >, and particularly <External to="https://wordplay.dev"
         ><Emoji symbol="💬" /> <strong>Wordplay</strong></External
     >, an accessible, multilingual educational programming language for creating
     interactive typography.
