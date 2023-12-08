@@ -4,7 +4,7 @@ export const Publications: Paper[] = [
     {
         id: 'textiles',
         kind: 'refereed conference paper',
-        authors: ['@jayne', '@megumi', '@camilo'],
+        authors: ['@jayne', '@megumi', '@camilo', '@ajko'],
         year: 2024,
         title: 'Culture-centric computational embroidery',
         source: '@sigcseexp',
