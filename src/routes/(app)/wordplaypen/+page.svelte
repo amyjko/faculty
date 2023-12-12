@@ -4,7 +4,10 @@
     import Alert from '$lib/components/Alert.svelte';
     import Link from '../../../lib/components/Link.svelte';
     import Emoji from '$lib/components/Emoji.svelte';
+    import Title from '$lib/components/Title.svelte';
 </script>
+
+<Title text="Wordplaypen" />
 
 <h1>
     Are you a University of Washington undergraduate interested in making

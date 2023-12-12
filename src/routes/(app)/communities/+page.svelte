@@ -1,7 +1,10 @@
 <script lang="ts">
     import Block from '$lib/components/Block.svelte';
     import Image from '$lib/components/Thumbnail.svelte';
+    import Title from '$lib/components/Title.svelte';
 </script>
+
+<Title text="Communities" />
 
 <h1>
     These are communities I work with to do research, advocate, and have impact.

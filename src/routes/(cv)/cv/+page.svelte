@@ -7,6 +7,7 @@
     import Image from '$lib/components/Thumbnail.svelte';
     import Wrap from './Wrap.svelte';
     import Table from '$lib/components/Table.svelte';
+    import Title from '$lib/components/Title.svelte';
 
     let refereed = $profile.getPublications(
         (pub) =>
@@ -17,6 +18,8 @@
 </script>
 
 <Image url={'/images/headshots/ajko.jpg'} alt="Headshot of Amy J. Ko" />
+
+<Title text="Curriculum Vita" />
 
 <h1>Amy J. Ko, Ph.D.</h1>
 Professor

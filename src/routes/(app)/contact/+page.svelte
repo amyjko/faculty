@@ -2,7 +2,10 @@
     import Block from '$lib/components/Block.svelte';
     import External from '$lib/components/External.svelte';
     import Image from '$lib/components/Thumbnail.svelte';
+    import Title from '$lib/components/Title.svelte';
 </script>
+
+<Title text="Contacting Me" />
 
 <h1> There are many ways to reach me: </h1>
 

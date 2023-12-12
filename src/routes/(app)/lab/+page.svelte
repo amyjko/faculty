@@ -5,6 +5,7 @@
     import External from '$lib/components/External.svelte';
     import { onMount } from 'svelte';
     import { scrollToHash } from '$lib/models/utilities';
+    import Title from '$lib/components/Title.svelte';
 
     onMount(() => {
         scrollToHash();
@@ -17,6 +18,8 @@
         );
     }
 </script>
+
+<Title text="Lab" />
 
 <h1>
     I direct the <em>Code & Cognition Lab</em>.

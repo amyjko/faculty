@@ -3,7 +3,10 @@
     import External from '$lib/components/External.svelte';
     import { profile } from '$lib/models/stores';
     import Image from '$lib/components/Thumbnail.svelte';
+    import Title from '$lib/components/Title.svelte';
 </script>
+
+<Title text="Impact" />
 
 <h1> I actively share my research and expertise with the world. </h1>
 

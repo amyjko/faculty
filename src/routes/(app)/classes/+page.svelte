@@ -3,6 +3,7 @@
     import External from '$lib/components/External.svelte';
     import { profile } from '$lib/models/stores';
     import Image from '$lib/components/Thumbnail.svelte';
+    import Title from '$lib/components/Title.svelte';
 
     const offerings = $profile
         .getClasses(
@@ -29,6 +30,8 @@
             };
         });
 </script>
+
+<Title text="Classes" />
 
 <h1> These are classes I teach. </h1>
 

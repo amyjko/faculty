@@ -5,6 +5,7 @@
     import { profile } from '$lib/models/stores';
     import Image from '$lib/components/Thumbnail.svelte';
     import type { PostTagType } from '../../../lib/models/Post';
+    import Title from '$lib/components/Title.svelte';
 
     let filter: Record<string, PostTagType> = {};
 
@@ -12,6 +13,8 @@
         filter = tag;
     }
 </script>
+
+<Title text="Essays" />
 
 <h1>
     I <External to="https://amyjko.medium.com">blog</External> on my lab's Medium

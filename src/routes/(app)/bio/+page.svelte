@@ -4,6 +4,7 @@
     import Link from '$lib/components/Link.svelte';
 
     import { profile } from '$lib/models/stores';
+    import Title from '$lib/components/Title.svelte';
 
     $: pubCount =
         Math.round(
@@ -23,6 +24,8 @@
                 .length > 0
     ).length;
 </script>
+
+<Title text="Biography" />
 
 <h1>Professional and personal takes on my professorly life.</h1>
 

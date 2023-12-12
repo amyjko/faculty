@@ -5,7 +5,10 @@
     import { parseDate } from '$lib/models/Profile';
     import Image from '$lib/components/Thumbnail.svelte';
     import Link from '$lib/components/Link.svelte';
+    import Title from '$lib/components/Title.svelte';
 </script>
+
+<Title text="Funding" />
 
 <h1> My students and I receive funding from many sources. </h1>
 

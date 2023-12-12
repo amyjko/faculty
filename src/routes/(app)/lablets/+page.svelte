@@ -3,6 +3,7 @@
     import Linkable from '$lib/components/Linkable.svelte';
     import Alert from '$lib/components/Alert.svelte';
     import Link from '$lib/components/Link.svelte';
+    import Title from '$lib/components/Title.svelte';
 </script>
 
 <Alert>
@@ -17,6 +18,8 @@
         to="/wordplaypen">Wordplaypen</Link
     >.
 </Alert>
+
+<Title text="Lablets" />
 
 <h1>
     <strike

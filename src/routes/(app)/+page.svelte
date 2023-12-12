@@ -6,7 +6,10 @@
     import Block from '$lib/components/Block.svelte';
     import getPersonImagePath from '$lib/components/getPersonImage';
     import Emoji from '$lib/components/Emoji.svelte';
+    import Title from '$lib/components/Title.svelte';
 </script>
+
+<Title text="Research" />
 
 <h1>
     I study our individual and collective struggle to understand computing and

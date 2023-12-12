@@ -8,6 +8,7 @@
     import { profile } from '$lib/models/stores';
     import { scrollToHash } from '$lib/models/utilities';
     import Alert from '../../../lib/components/Alert.svelte';
+    import Title from '$lib/components/Title.svelte';
 
     let selection: Record<string, string> = {};
 
@@ -51,6 +52,8 @@
                   -a.doi.localeCompare(b.doi)
         );
 </script>
+
+<Title text="Publications" />
 
 <h1> These are my academic publications. </h1>
 

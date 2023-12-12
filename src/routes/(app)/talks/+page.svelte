@@ -5,6 +5,7 @@
     import { parseDate } from '$lib/models/Profile';
     import Image from '$lib/components/Thumbnail.svelte';
     import Link from '$lib/components/Link.svelte';
+    import Title from '$lib/components/Title.svelte';
 
     const months = [
         'Jan',
@@ -21,6 +22,8 @@
         'Dec',
     ];
 </script>
+
+<Title text="Talks" />
 
 <h1> These are my upcoming and past keynotes and invited talks. </h1>
 

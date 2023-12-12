@@ -4,7 +4,10 @@
     import advisors from '$lib/models/advisors';
     import SectionList from '$lib/components/SectionList.svelte';
     import Table from '../../../lib/components/Table.svelte';
+    import Title from '$lib/components/Title.svelte';
 </script>
+
+<Title text="CER FAQ" />
 
 <h1> This is my computing education research FAQ. </h1>
 

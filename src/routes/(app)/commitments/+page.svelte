@@ -5,6 +5,7 @@
     import Bar from './Bar.svelte';
     import DateRange from './DateRange.svelte';
     import months from './months';
+    import Title from '$lib/components/Title.svelte';
 
     let commits = $profile.getCommits();
     let weeks = $profile.getWeeklyCommits();
@@ -72,6 +73,8 @@
                 (b.start instanceof Date ? b.start.getTime() : Infinity)
         );
 </script>
+
+<Title text="Commitments" />
 
 <h1> This is my commitment calendar. </h1>
 
