@@ -174,9 +174,10 @@
 <Linkable id="expectations">What will I be expected to do?</Linkable>
 
 <p
-    >See the Wordplaypen wiki on the project's GitHub page for <External
+    >See the <External
         to="https://github.com/wordplaydev/wordplay/wiki/wordplaypen"
-    />expectations.</p
+        >Wordplaypen wiki</External
+    > on the project's GitHub page for expectations.</p
 >
 
 <Linkable id="otherquestiosn">I have more questions!</Linkable>
@@ -184,7 +185,7 @@
 <p
     >First, ensure your question isn't answered on this page or the <External
         to="https://github.com/wordplaydev/wordplay/wiki/wordplaypen"
-        >Wordplaypen onboarding</External
+        >Wordplaypen wiki</External
     > page. Then, find me on Wordplay's <External
         to="https://discord.gg/Jh2Qq9husy">Discord</External
     > and DM me (do not write me an email). I know it's scary to write professors!
