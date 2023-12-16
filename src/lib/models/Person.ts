@@ -13,4 +13,4 @@ type Person = {
     enddate: number | null;
     achievements: readonly string[];
 };
-export default Person;
+export type { Person as default };

@@ -45,4 +45,4 @@ type ProfileSpec = {
     years: Record<string, string | null>;
 };
 
-export default ProfileSpec;
+export type { ProfileSpec as default };

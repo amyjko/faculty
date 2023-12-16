@@ -42,4 +42,4 @@ type Paper = {
         | 'most influential paper honorable mention'
     )[];
 };
-export default Paper;
+export type { Paper as default };

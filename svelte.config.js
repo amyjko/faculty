@@ -17,6 +17,10 @@ const config = {
             base: '/ajko',
             relative: false,
         },
+        alias: {
+            $lib: './src/lib',
+            '$lib/*': './src/lib/*',
+        },
     },
 };
 

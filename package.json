@@ -14,9 +14,10 @@
         "ship": "npm run build && npm run sync"
     },
     "devDependencies": {
-        "@sveltejs/adapter-static": "^2.0",
-        "@sveltejs/kit": "^1.30.3",
-        "ajv-cli": "^5",
+        "@sveltejs/adapter-static": "^3.0.0",
+        "@sveltejs/kit": "^2.0.0",
+        "@sveltejs/vite-plugin-svelte": "^3.0.0",
+        "ajv-cli": "^0.6.0",
         "ajv-formats": "^2",
         "prettier": "^2",
         "prettier-plugin-svelte": "^2",
@@ -25,7 +26,7 @@
         "svelte-preprocess": "^5.1",
         "tslib": "^2",
         "typescript": "^5",
-        "vite": "^4.5"
+        "vite": "^5.0.0"
     },
     "type": "module"
 }

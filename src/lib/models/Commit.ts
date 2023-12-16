@@ -11,4 +11,4 @@ type Commit = {
     end: Date | MonthDate | null;
 };
 
-export default Commit;
+export type { Commit as default };
