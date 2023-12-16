@@ -4011,7 +4011,7 @@ export const Amy: ProfileSpec = {
         {
             id: 'hcid520',
             alt: 'A black and white photograph of a woman operating the ENIAC, the first computer',
-            link: 'https://canvas.uw.edu/courses/1516445',
+            link: 'https://canvas.uw.edu/courses/1694914/',
             level: 'graduate',
             number: 'HCID 520',
             title: 'User Interface Software and Technology',
