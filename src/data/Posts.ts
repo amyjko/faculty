@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/more-than-calculators-why-large-language-models-threaten-public-education-480dd5300939',
+        title: 'More than calculators: Why large language models threaten learning, teaching, and education',
+        date: '2023.12',
+        tags: ['ed tech', 'computing education', 'K-12'],
+        img: 'llmcalc',
+        alt: 'An orange pen held by a hand about to write on grid-lined paper.',
+    },
+    {
         url: 'https://medium.com/@amyjko/learning-to-love-and-hate-democracy-9fcb8be71575',
         title: 'Learning to love and hate democracy',
         date: '2023.11',
