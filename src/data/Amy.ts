@@ -1587,6 +1587,18 @@ export const Amy: ProfileSpec = {
     ],
     service: [
         {
+            title: 'Committee Member',
+            committee: 'CHI Academy Selection Committee',
+            level: 'international',
+            description: 'I help evaluate nominations for CHI Academy members.',
+            commitment: {
+                start: '2024-01-15',
+                end: '2026-03-15',
+                hours: 1,
+                priority: 0,
+            },
+        },
+        {
             title: 'Associate Dean for Academics',
             committee: 'The Information School',
             level: 'departmental',
