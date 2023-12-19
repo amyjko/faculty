@@ -1284,6 +1284,13 @@ export const Amy: ProfileSpec = {
     ],
     doctoralCommittees: [
         {
+            name: 'Sara Nurollahian',
+            institution: 'University of Utah',
+            department: 'Computer Science',
+            startdate: 2023,
+            enddate: null,
+        },
+        {
             name: 'Camille Gobert',
             institution: 'Paris-Saclay University',
             department: 'Computer Science',
