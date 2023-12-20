@@ -30,9 +30,10 @@ RewriteRule ^data/.*$ - [L]
 # rewrite the broken relative paths that are requested.
 RewriteRule ^books/?$ books.html [L]
 
-# Remove the ending trailing slash from any requests to avoid resolving to directory listings
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^(.*?)/$ $1.html
+# Redirect any non-directory requests to the name without a trailing slash to avoid resolving to directory listings.
+# The rule below will append .html to it.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*?)/$ $1 [R=301,L]
 
 # Append .html to any requests with or without a trailing slash that resolve to a file with .html.
 RewriteCond %{REQUEST_FILENAME}.html -f
