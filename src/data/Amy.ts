@@ -1075,7 +1075,7 @@ export const Amy: ProfileSpec = {
         {
             venue: 'National Science Foundation (CISE, EHR)',
             title: 'NSF Panelist',
-            years: [2011, 2012, 2014, 2017, 2018, 2020],
+            years: [2011, 2012, 2014, 2017, 2018, 2020, 2021, 2022, 2023],
             level: 'panelist',
             commitment: {
                 start: '09-15',
