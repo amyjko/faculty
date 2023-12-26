@@ -3284,6 +3284,20 @@ export const Amy: ProfileSpec = {
     ],
     talks: [
         {
+            date: '2023-05-02',
+            image: 'cmu2023.jpg',
+            alt: 'a title slide that says Searching for Justice in Programming Language Design and shows several glyphs from world languages.',
+            slides: 'CMU2023Wordplay.pdf',
+            title: 'Searching for Justice in Programming Language Design',
+            venue: 'University of Michigan',
+            url: null,
+            recording: null,
+            practice: null,
+            description:
+                'I examine what it might mean to center justice in programming language design, and unveal Wordplay.dev, a creative coding platform striving for equity and justice in accessibility and natural language.',
+            keynote: false,
+        },
+        {
             date: '2023-04-21',
             image: 'cmu2023.jpg',
             alt: 'a title slide that says Searching for Justice in Programming Language Design and shows several glyphs from world languages.',
