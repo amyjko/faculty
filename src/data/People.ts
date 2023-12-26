@@ -709,6 +709,7 @@ export const People: readonly Person[] = [
         achievements: [
             'Husky 100, recognizing top UW students (2021)',
             'NSF Graduate Research Fellowship (2017)',
+            'Postdoc, Stanford University (2022-2024)',
         ],
     },
     {

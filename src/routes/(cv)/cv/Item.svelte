@@ -49,9 +49,10 @@
 
     .chunk {
         display: inline-block;
-        flex-basis: calc(50% - var(--margin));
+        flex-basis: calc(100% - var(--margin));
         margin-right: var(--margin);
         margin-bottom: var(--margin);
+        page-break-after: auto;
     }
 
     @media only screen and (max-width: 600px) {
