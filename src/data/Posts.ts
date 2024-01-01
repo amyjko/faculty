@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/@amyjko/things-i-hope-for-in-2024-8688c4fbd959',
+        title: 'Things I hope for in 2024',
+        date: '2024.01',
+        tags: ['personal', 'diversity', 'society'],
+        img: '2024hopes',
+        alt: 'A sunrise, or possibly a sunset, over silhouettes of hills.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/more-than-calculators-why-large-language-models-threaten-public-education-480dd5300939',
         title: 'More than calculators: Why large language models threaten learning, teaching, and education',
         date: '2023.12',
