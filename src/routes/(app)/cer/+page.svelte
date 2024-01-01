@@ -1126,6 +1126,32 @@
             programming. Greg put it together to help others become better
             teachers of computing.</li
         >
+        <li>
+            <External to="https://yourfirstyearteaching.com/"
+                >Your First year teaching computer science</External
+            > (Gregg, 2021).
+        </li>
+        <li
+            ><External
+                to="https://www.amazon.com/Code-Every-Class-Kevin-Brookhouser/dp/1945167211"
+                >Code in Every Class</External
+            >
+            (Brookhouser and Megnin, 2017).</li
+        >
+        <li
+            ><External
+                to="https://www.amazon.com/Integrating-Computer-Science-Across-Core/dp/0367198649"
+                >Integrting Computer Science Across the Core: Strategies for
+                K-12 Districts</External
+            >(Lynch and Ardito, 2020).</li
+        >
+        <li
+            ><External
+                to="https://www.amazon.com/Creative-Coding-Strategies-Integrate-Curriculum/dp/1564846768"
+                >Creative Coding: Lessons and Strategies to Integrate Computer
+                Science Across the 6-8 Curriculum</External
+            > (Caldwell, 2018)</li
+        >
     </ul>
 
     <p>Is one missing from this list? Let me know and I'll add it.</p>
