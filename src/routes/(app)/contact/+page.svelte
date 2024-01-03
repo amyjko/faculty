@@ -70,7 +70,7 @@
     />
     &mdash; I used to be fairly active on Twitter, but mostly left in June 2022.
     I still broadcast writing, amplify others, and respond to DMs, but I'm generally
-    not posting otherwise. You can also find me on Mastadon <External
+    not posting otherwise. You can also find me on Mastodon <External
         to="https://hci.social/@amyjko">@amyjko@hci.social</External
     > or Threads <External to="https://www.threads.net/@amyjensenko"
         >@amyjensenko</External
