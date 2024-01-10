@@ -17,16 +17,17 @@
 <Alert
     ><ul>
         <li
-            >Autumn 2023 meets in <strong>BLD 070 Tuesdays 5:30-6:30 pm</strong
-            ></li
-        >
-        <li
             >Winter 2024 meets in <strong
                 >BLD 070 Wednesdays 5:30-6:30 pm</strong
             >, starting January 3rd</li
-        ></ul
-    ></Alert
->
+        >
+        <li
+            >Spring 2024 meets in <strong
+                >[Location TBD] Wednesdays 5:30-6:30 pm</strong
+            >, starting March 27th</li
+        >
+    </ul>
+</Alert>
 
 <p
     >I'm recruiting students to join our <strong>Wordplaypen</strong>, a team
