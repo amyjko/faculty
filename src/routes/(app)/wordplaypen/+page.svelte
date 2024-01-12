@@ -23,7 +23,7 @@
         >
         <li
             >Spring 2024 meets in <strong
-                >[Location TBD] Wednesdays 5:30-6:30 pm</strong
+                >BLD 070 Wednesdays 5:30-6:30 pm</strong
             >, starting March 27th</li
         >
     </ul>
