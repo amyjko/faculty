@@ -3,6 +3,14 @@ import type Post from '../lib/models/Post';
 export const Posts: Post[] = [
     {
         url: 'https://medium.com/@amyjko/things-i-hope-for-in-2024-8688c4fbd959',
+        title: 'Cars are unjust',
+        date: '2024.01',
+        tags: ['personal', 'policy', 'design'],
+        img: 'cars',
+        alt: 'A horrendous LA freeway interchange at dawn.',
+    },
+    {
+        url: 'https://medium.com/@amyjko/things-i-hope-for-in-2024-8688c4fbd959',
         title: 'Things I hope for in 2024',
         date: '2024.01',
         tags: ['personal', 'diversity', 'society'],
