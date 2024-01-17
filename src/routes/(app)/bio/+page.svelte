@@ -71,12 +71,12 @@
     <!-- Compute number of best papers -->
     {bestAwardCount} receiving paper awards and
     <!-- Compute number of most influential papers. -->
-    {mipAwardCount} receiving most influential paper awards. She is an ACM Senior
-    Member, a member of ACM SIGCHI, SIGCSE, and SIGSOFT, and a member of the <External
-        to="https://sigchi.org/awards/">SIGCHI Academy</External
+    {mipAwardCount} receiving most influential paper awards. She is an ACM Distinguished
+    Member and a member <External to="https://sigchi.org/awards/"
+        >SIGCHI Academy</External
     >, for her substantial contributions to the field of human-computer
-    interaction. She received her Ph.D. at the <External
-        to="http://www.hcii.cs.cmu.edu"
+    interaction, computing education, and software engineering. She received her
+    Ph.D. at the <External to="http://www.hcii.cs.cmu.edu"
         >Human-Computer Interaction Institute</External
     > at <External to="http://www.cmu.edu">Carnegie Mellon University</External>
     in 2008, and degrees in Computer Science and Psychology with Honors from <External

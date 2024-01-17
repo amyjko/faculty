@@ -863,6 +863,12 @@ export const Amy: ProfileSpec = {
     ],
     recognitions: [
         {
+            title: 'ACM Distinguished Member',
+            year: 2024,
+            description:
+                'A recognition given to computing scholars who have made a significant impact on the computing field.',
+        },
+        {
             title: 'ACM Distinguished Speaker',
             year: 2023,
             description:
