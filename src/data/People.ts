@@ -136,7 +136,7 @@ export const People: readonly Person[] = [
         dept: 'Computer Science & Engineering',
         coadvisor: null,
         bio: 'Leah worked with Amy as a PhD student in Computer Science and Engineering at UW. She is now an Assistant Professor at Grinnell College. She is interested in post-secondary CS education, including TA practices, emotion while programming, sociotechnical topics in CS curricula, CS identity construction, and CS culture.',
-        url: 'https://homes.cs.washington.edu/~lrperlmu/',
+        url: 'https://perlmutter.cs.grinnell.edu/home/',
         startdate: 2022,
         enddate: 2023,
         achievements: [],
