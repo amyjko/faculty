@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'helpseeking',
+        kind: 'journal article',
+        authors: ['@anael', '@oleson', '@ajko'],
+        year: 2024,
+        title: 'Factors Influencing the Social Help-Seeking Behavior of Introductory Programming Students in a Competitive University Environment',
+        source: '@toce',
+        pages: null,
+        publisher: 'ACM',
+        doi: 'https://doi.org/10.1145/3639059',
+        local: null,
+        contribution:
+            'Communication style, type of question being asked, cheating policy, competition, and feelings intimidation shape who students ask for help and whether they do at all.',
+    },
+    {
         id: 'textiles',
         kind: 'refereed conference paper',
         authors: ['@jayne', '@megumi', '@camilo', '@ajko'],
