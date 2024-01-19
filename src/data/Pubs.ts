@@ -28,6 +28,7 @@ export const Publications: Paper[] = [
         local: 'Everson2024ComputationalEmbroidery.pdf',
         contribution:
             'Students enthusiastically engaged with the programming aspects of the course and sought to make complicated and beautiful work that interwove their diverse cultures and identities.',
+        award: ['best paper'],
     },
     {
         id: 'codereplay',
