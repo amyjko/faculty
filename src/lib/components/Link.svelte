@@ -18,8 +18,7 @@
 
 <style>
     /* So that components can style it. */
-    span,
-    a {
+    span {
         display: inline-block;
     }
 </style>

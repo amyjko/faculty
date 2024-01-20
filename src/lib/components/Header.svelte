@@ -79,6 +79,13 @@
 <hr class="small-hr" />
 
 <style>
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: calc(var(--padding) / 2);
+    }
+
     :global(nav > *) {
         padding: var(--padding);
         border-radius: var(--roundedness);
@@ -117,6 +124,7 @@
         }
 
         nav {
+            flex-wrap: nowrap;
             overflow-x: scroll;
             white-space: nowrap;
         }
