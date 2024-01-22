@@ -2,6 +2,20 @@ import type Person from '../lib/models/Person';
 
 export const People: readonly Person[] = [
     {
+        id: 'benzhou',
+        name: 'Benjamin Zhou',
+        active: true,
+        advised: true,
+        level: 'undergrad',
+        dept: 'Paul G. Allen School of Computer Science & Engineering',
+        coadvisor: null,
+        bio: 'Ben is an undergraduate student at the University of Washington, specializing in computer science. He has an interest in exploring the intersection of coding education and cognitive science, particularly focusing on how to make teaching computer science more inclusive and effective.',
+        url: 'https://benshapi.ro/',
+        startdate: 2023,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'rbs',
         name: 'R. Ben Shapiro',
         active: true,
