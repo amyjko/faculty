@@ -14,7 +14,7 @@
             ' ' +
             date.getDate() +
             (showYear
-                ? ", '" + date.getFullYear().toString().substring(-2)
+                ? ", " + date.getFullYear().toString().substring(-2)
                 : '')
         );
     }
