@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/individual-and-collective-recognition-dfc714b27bd2',
+        title: 'Individual and collective recognition',
+        date: '2024.01',
+        tags: ['personal', 'academia'],
+        img: 'recognition',
+        alt: 'Twenty Black residents of Montgomery Alabama walking on a sidewalk in 1955.',
+    },
+    {
         url: 'https://medium.com/@amyjko/things-i-hope-for-in-2024-8688c4fbd959',
         title: 'Cars are unjust',
         date: '2024.01',
