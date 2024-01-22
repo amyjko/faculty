@@ -25,13 +25,13 @@
     <span
         ><em>{Math.round((10 * range) / yearInMilliseconds) / 10} years</em><br
         />starting <em>{toDateString(start)}</em></span
-    >;
+    >
     <!-- If it's longer than a week, do weeks -->
 {:else if range >= weekInMilliseconds}
     <span
         ><em>{Math.round(range / weekInMilliseconds)} weeks</em><br />starting
         <em>{toDateString(start)}</em></span
-    >;
+    >
 {:else}
     <!-- If it's less than a week, just do the dates -->
     <span
