@@ -10,7 +10,7 @@ export const People: readonly Person[] = [
         dept: 'Paul G. Allen School of Computer Science & Engineering',
         coadvisor: null,
         bio: 'Ben is an undergraduate student at the University of Washington, specializing in computer science. He has an interest in exploring the intersection of coding education and cognitive science, particularly focusing on how to make teaching computer science more inclusive and effective.',
-        url: 'https://benshapi.ro/',
+        url: 'https://www.linkedin.com/in/benjamin-zhou-48a46b264/',
         startdate: 2023,
         enddate: null,
         achievements: [],
