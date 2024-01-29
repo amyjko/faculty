@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/data-dependency-317344978843',
+        title: 'Data dependency',
+        date: '2024.01',
+        tags: ['personal', 'automation', 'diversity', 'society'],
+        img: 'datadep',
+        alt: 'A stick figure with long black hair in a bright red haze running away from a network of nodes and edges in cool blue haze.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/individual-and-collective-recognition-dfc714b27bd2',
         title: 'Individual and collective recognition',
         date: '2024.01',
