@@ -138,7 +138,7 @@ const advisors: [string, string, string, string, string, string][] = [
     [
         'Katie Cunningham',
         'https://www.kicunningham.com',
-        'programming plans, novel learning environmemts, conversational programmers',
+        'programming plans, novel learning environments, conversational programmers',
         'Computer Science',
         'University of Illinois Urbana-Champaign',
         'USA',
