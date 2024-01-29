@@ -2,6 +2,20 @@ import type Person from '../lib/models/Person';
 
 export const People: readonly Person[] = [
     {
+        id: 'maxs',
+        name: 'Max Skorodinsky',
+        active: true,
+        advised: true,
+        level: 'postdoc',
+        dept: 'The Information School',
+        coadvisor: null,
+        bio: 'Max is a postdoc, secondary CS educator, and researcher interested in equity in CS teacher education, identity, and community.',
+        url: 'https://www.linkedin.com/in/max-skorodinsky-3874175/',
+        startdate: 2024,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'benzhou',
         name: 'Benjamin Zhou',
         active: true,
@@ -35,7 +49,7 @@ export const People: readonly Person[] = [
         active: true,
         advised: true,
         level: 'undergrad',
-        dept: 'Bellevue College',
+        dept: 'The Information School',
         coadvisor: null,
         bio: 'Camilo is an undergraduate student at Bellevue College. He is interested in broadening participation in CS by leveraging and innovating new technologies.',
         url: 'http://www.linkedin.com/in/camilomontesdeharo',
