@@ -637,6 +637,15 @@
     </p>
 
     <p>
+        Another thing to know is what makes good computing education research.
+        One guide is to read peer review criteria. For example, ACM TOCE
+        maintains and evolves a list of <External
+            to="https://github.com/acm-toce/documentation/wiki/Reviewing-Criteria"
+            >nuanced and pluralist peer review criteria</External
+        > that cover many kinds of research.
+    </p>
+
+    <p>
         Beyond that, there is a substantial prior work to learn before you can
         make original discoveries. I've organized some of the major works into
         categories below, to focus your reading.
