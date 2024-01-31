@@ -46,10 +46,13 @@
     > are a good guide to my current focus. I'm currently focused on
     <Link to="/papers/Ko2021CriticalCSEd.pdf"
         >justice-centered computing education</Link
-    >, and particularly <External to="https://wordplay.dev"
+    >. This includes more equitable programmable media (particularly <External
+        to="https://wordplay.dev"
         ><Emoji symbol="💬" /> <strong>Wordplay</strong></External
     >, an accessible, multilingual educational programming language for creating
-    interactive typography.
+    interactive typography), as well as equitable, justice-centered secondary CS
+    teacher education, including pathways and community. I'm generally
+    interested in anything liberatory in computing education.
 </p>
 
 <p>
