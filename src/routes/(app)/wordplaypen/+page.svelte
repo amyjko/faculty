@@ -166,11 +166,25 @@
 
 <p
     >Participation is quarterly. If you want to participate again, you'll need
-    to register again, or continue as a volunteer. You may volunteer if you can
-    make a time commitment, and demonstrate that they actually have capacity to
-    follow through with it. It doesn't help the project to promise contributions
-    that you can't keep.</p
+    to register again, or continue as a volunteer (see below).</p
 >
+
+<Linkable id="volunteer">Can I volunteer instead?</Linkable>
+
+<p
+    >Yes! The project is open source, and so anyone in the world may volunteer.
+    Just follow the <Link
+        to="https://github.com/wordplaydev/wordplay/wiki/contribute"
+        >contributor guidelines</Link
+    > to learn how. You may volunteer if you can make a time commitment, and demonstrate
+    that they actually have capacity to follow through with it. (It doesn't help
+    the project to promise contributions that you can't keep.)</p
+>
+
+<p
+    >If you're at UW or around Puget Sound and volunteering, you're welcome to
+    join the Wordplaypen meetups.
+</p>
 
 <Linkable id="expectations">What will I be expected to do?</Linkable>
 
