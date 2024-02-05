@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/power-ignorance-and-the-healing-promise-of-curiosity-16f2e6edda5a',
+        title: 'Power, ignorance, and the healing promise of curiosity',
+        date: '2024.02',
+        tags: ['personal', 'gender', 'society'],
+        img: 'ignorance',
+        alt: 'A dark wooded scene with white and pink spheres hovering in the air.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/data-dependency-317344978843',
         title: 'Data dependency',
         date: '2024.01',
