@@ -728,6 +728,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'Ireland',
     ],
     [
+        'Jean Salac',
+        'https://jeansalac.github.io',
+        'K-12 (pre-university) education, critical/socially responsible computing',
+        'Computer Science',
+        'Carleton College',
+        'USA',
+    ],
+    [
         'Gerald Soosai Raj',
         'https://adalbertgerald.github.io',
         'Making computing more accessible to diverse learners (e.g., Non-native English Speakers)',
