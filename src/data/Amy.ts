@@ -1613,20 +1613,20 @@ export const Amy: ProfileSpec = {
         },
         {
             title: 'Associate Dean for Academics',
-            committee: 'The Information School',
+            committee: 'Associate Dean for Academics',
             level: 'departmental',
             description:
                 "I serve as the iSchool's Associate Dean for Academics.",
             commitment: {
-                start: '2024-06-15',
-                end: '2027-06-15',
+                start: '2024-07-1',
+                end: '2027-06-30',
                 hours: 16,
                 priority: 0,
             },
         },
         {
             title: 'Incoming Associate Dean for Academics',
-            committee: 'The Information School',
+            committee: 'Associate Dean for Academics',
             level: 'departmental',
             description:
                 'I shadowed our Associate Dean for Academics to prepare to take over his role.',
@@ -2190,7 +2190,7 @@ export const Amy: ProfileSpec = {
             private: false,
             commitment: {
                 start: '2022-09-15',
-                end: '2024-09-15',
+                end: '2022-09-15',
                 hours: 0,
                 priority: 1,
             },
@@ -2209,7 +2209,7 @@ export const Amy: ProfileSpec = {
             private: false,
             commitment: {
                 start: '2022-09-15',
-                end: '2024-09-15',
+                end: '2022-09-15',
                 hours: 0,
                 priority: 1,
             },
@@ -4156,7 +4156,7 @@ export const Amy: ProfileSpec = {
         },
         {
             title: 'Seminars',
-            description: 'iSchool, DUB, CSE',
+            description: 'iSchool, DUB, CSE, CREATE',
             category: 'research',
             annually: false,
             commitment: { start: null, end: null, hours: 2, priority: 0 },
