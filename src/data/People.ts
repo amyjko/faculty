@@ -9,7 +9,7 @@ export const People: readonly Person[] = [
         level: 'undergrad',
         dept: 'The Information School',
         coadvisor: null,
-        bio: 'Isabel is an undergraduate in Informatics, interested in creating equitable spaces for students learning CS. She is interested in design and product management.',
+        bio: 'Isabel is an undergraduate in Informatics and interdisciplinary honors program, they are interested in creating equitable spaces for marginalized students learning CS and tech. She is interested in design and product management.',
         url: 'https://www.linkedin.com/in/isabel-amaya123/',
         startdate: 2024,
         enddate: null,
