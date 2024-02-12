@@ -2,6 +2,20 @@ import type Person from '../lib/models/Person';
 
 export const People: readonly Person[] = [
     {
+        id: 'iamaya',
+        name: 'Isabel Amaya',
+        active: true,
+        advised: true,
+        level: 'undergrad',
+        dept: 'The Information School',
+        coadvisor: null,
+        bio: 'Isabel is an undergraduate in Informatics, interested in creating equitable spaces for students learning CS. She is interested in design and product management.',
+        url: 'https://www.linkedin.com/in/isabel-amaya123/',
+        startdate: 2024,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'maxs',
         name: 'Max Skorodinsky',
         active: true,
