@@ -2599,8 +2599,8 @@ export const Amy: ProfileSpec = {
     ],
     travel: [
         {
-            url: 'https://ecepalliance.org/',
-            title: 'ISAT GONE',
+            url: 'https://web.cvent.com/event/64035ecf-cce5-455a-a9e9-77346d51574b/summary?i=qyPgowJnYE-QP2PCT6p15w&locale=en-US',
+            title: 'ISAT/DARPA Workshop The Great Oncoming kNowledge Ending (GONE)',
             details: 'Discussing the possible end of knowledge.',
             category: 'research',
             commitment: {
