@@ -23,6 +23,14 @@
     >.
 </h1>
 
+<p
+    ><em
+        >My beliefs change over time, because I love learning and changing.
+        Don't assume something I wrote years ago reflects my beliefs now.
+        Instead, think of this archive as a record of my reflection and growth.</em
+    ></p
+>
+
 <p> Filter by topic. </p>
 
 <Facets facets={$profile.getPostTags()} update={setFilter} />
