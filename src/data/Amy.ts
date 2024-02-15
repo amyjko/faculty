@@ -2599,6 +2599,31 @@ export const Amy: ProfileSpec = {
     ],
     travel: [
         {
+            url: 'https://ecepalliance.org/',
+            title: 'ISAT GONE',
+            details: 'Discussing the possible end of knowledge.',
+            category: 'research',
+            commitment: {
+                start: '2024-03-07',
+                end: '2024-03-08',
+                hours: 16,
+                priority: 1,
+            },
+        },
+        {
+            url: 'https://ecepalliance.org/',
+            title: 'ECEP CMP4',
+            details:
+                'Coordinating data policy work for Washington state K-12 CS education.',
+            category: 'service',
+            commitment: {
+                start: '2024-02-13',
+                end: '2024-02-14',
+                hours: 16,
+                priority: 1,
+            },
+        },
+        {
             url: 'https://www.aera.net/Events-Meetings/Annual-Meeting/2024-Annual-Meeting',
             title: 'AERA Annual Meeting',
             details: 'Networking with my research and practice community',
