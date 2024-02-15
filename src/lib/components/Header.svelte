@@ -62,6 +62,7 @@
     <Link to="/talks" at={'/talks'}>Talks</Link>
     <Link to="/classes" at={'/classes'}>Classes</Link>
     <Link to="/books" at={'/books'}>Books</Link>
+    <Link to="/code" at={'/code'}>Code</Link>
     <Link to="/impact" at={'/impact'}>Impact</Link>
     <Link to="/funding" at={'/funding'}>Funding</Link>
     <Link to="/travel" at={'/travel'}>Travel</Link>
