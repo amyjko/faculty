@@ -22,3 +22,5 @@
 {#each $profile.getTravel( (trip) => trip.commitment.end !== null && parseDate(trip.commitment.end).getTime() <= Date.now(), (trip) => (trip.commitment.start === null ? Infinity : -parseDate(trip.commitment.start).getTime()) ) as trip}
     <Trip {trip} />
 {/each}
+
+<p><em>Obviously I traveled before 2019 :) I just didn't track it here.</em></p>
