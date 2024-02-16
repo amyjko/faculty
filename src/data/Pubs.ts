@@ -4,7 +4,7 @@ export const Publications: Paper[] = [
     {
         id: 'helpseeking',
         kind: 'journal article',
-        authors: ['@anael', '@oleson', '@ajko'],
+        authors: ['@anael', '@olesona', '@ajko'],
         year: 2024,
         title: 'Factors Influencing the Social Help-Seeking Behavior of Introductory Programming Students in a Competitive University Environment',
         source: '@toce',
