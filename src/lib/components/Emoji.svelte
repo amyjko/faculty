@@ -2,7 +2,7 @@
     export let symbol: string;
 </script>
 
-<span class="emoji">{symbol + '\uFE0E'}</span>
+<span class="emoji">{symbol + '\uFE0F'}</span>
 
 <style>
     .emoji {
