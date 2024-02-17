@@ -2,7 +2,10 @@
     import Block from '$lib/components/Block.svelte';
     import Link from '$lib/components/Link.svelte';
     import Image from '$lib/components/Thumbnail.svelte';
+    import Title from '$lib/components/Title.svelte';
 </script>
+
+<Title text="Code" />
 
 <h1>These are open source projects I maintain.</h1>
 
