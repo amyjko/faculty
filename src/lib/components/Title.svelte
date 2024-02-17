@@ -4,4 +4,5 @@
 
 <svelte:head>
     <title>Amy J. Ko - {text}</title>
+    <meta property="og:description" content="Amy J. Ko - {text}" />
 </svelte:head>
