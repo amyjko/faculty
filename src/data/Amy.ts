@@ -3322,6 +3322,20 @@ export const Amy: ProfileSpec = {
     ],
     talks: [
         {
+            date: '2024-02-20',
+            image: 'uqam2024.jpg',
+            alt: 'a picture of a glacier and the text this, of course, is just the beginning.',
+            slides: 'LATECEWordplay.pdf',
+            title: 'Searching for Justice in Programming Language Design',
+            venue: "L'Université du Québec à Montréal",
+            url: 'https://latece.uqam.ca/evenement/amy-j-ko-programming-accessibility-and-language/',
+            recording: null,
+            practice: null,
+            description:
+                'I share a vision for justice-centered programming languages and detail how Wordplay strives to achieve it.',
+            keynote: false,
+        },
+        {
             date: '2023-05-02',
             image: 'cmu2023.jpg',
             alt: 'a title slide that says Searching for Justice in Programming Language Design and shows several glyphs from world languages.',
