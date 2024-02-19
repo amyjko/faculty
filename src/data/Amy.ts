@@ -163,6 +163,17 @@ export const Amy: ProfileSpec = {
     impacts: [
         {
             kind: 'press',
+            start: 2024,
+            end: 2024,
+            description:
+                'I was interviewed by Dave Levine for the KZSU Stanford Radio 90.1FM show Hearsay Culture on the topic of generative AI and education.',
+            title: 'Hearsay Culture',
+            author: 'Dave Levine',
+            url: 'https://kzsu.stanford.edu/',
+            who: 'public',
+        },
+        {
+            kind: 'press',
             start: 2023,
             end: 2023,
             description:
