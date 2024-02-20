@@ -3333,7 +3333,7 @@ export const Amy: ProfileSpec = {
     ],
     talks: [
         {
-            date: '2024-02-20',
+            date: '2024-02-21',
             image: 'uqam2024.jpg',
             alt: 'a picture of a glacier and the text this, of course, is just the beginning.',
             slides: 'LATECEWordplay.pdf',
