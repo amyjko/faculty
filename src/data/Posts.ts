@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://amyjko.medium.com/90e50d2ba670',
+        title: 'Processing a “A Short History of Trans Misogyny',
+        date: '2024.02',
+        tags: ['personal', 'gender', 'society'],
+        img: 'misogyny',
+        alt: 'Photo of the cover of the book, reading "A SHORT HISTORY OF TRANS MISOGYNY" with an image of a dolled up woman behind.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/power-ignorance-and-the-healing-promise-of-curiosity-16f2e6edda5a',
         title: 'Power, ignorance, and the healing promise of curiosity',
         date: '2024.02',
