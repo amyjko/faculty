@@ -311,6 +311,17 @@ This changes quarterly:
     and 2) you submitted the final reflection.</p
 >
 
+<Linkable id="start">How do I get started?</Linkable>
+
+<p
+    >Everything you need to start is on Wordplay the <External
+        to="https://github.com/wordplaydev/wordplay/wiki/contribute"
+        >contribute</External
+    > page, which is the same onboarding for any contributor. You can read that before
+    the quarter starts, but be warned that we revise between each quarter, so you
+    might want to wait until the quarter starts to avoid having to re-read.</p
+>
+
 <Linkable id="otherquestions">I have more questions!</Linkable>
 
 <p
