@@ -14,25 +14,10 @@
     programming languages more playful, global, and accessible?
 </h1>
 
-<Alert
-    ><ul>
-        <li
-            >Winter 2024 meets in <strong
-                >BLD 070 Wednesdays 5:30-6:30 pm</strong
-            >, starting January 3rd</li
-        >
-        <li
-            >Spring 2024 meets in <strong
-                >BLD 070 Wednesdays 5:30-6:30 pm</strong
-            >, starting March 27th</li
-        >
-    </ul>
-</Alert>
-
 <p
-    >I'm recruiting students to join our <strong>Wordplaypen</strong>, a team
-    that helps design, build, and maintain <External to="https://wordplay.dev"
-        ><Emoji symbol="💬" /> Wordplay</External
+    >I'm recruiting students to join our <strong>Wordplaypen</strong>, a
+    community that helps design, build, and maintain <External
+        to="https://wordplay.dev"><Emoji symbol="💬" /> Wordplay</External
     >. Wordplay is a playful programming platform for creating accessible,
     interactive typography that celebrates the world's languages. Our vision is
     <em
@@ -112,15 +97,15 @@
     >
     <li
         >Get a letter of recommendation from me about your contributions to the
-        team. Because of the number of students contributing, I'll need you're
-        help writing these, so I'm not overwhelmed by letter requests. See the <Link
-            to="/faq#recommendations">guidelines in my FAQ</Link
-        > and additionally send me one paragraph describing in detail what you contributed
-        to the project and how you view it's level of quality.
+        community. Because of the number of students contributing, I'll need
+        you're help writing these, so I'm not overwhelmed by letter requests.
+        See the <Link to="/faq#recommendations">guidelines in my FAQ</Link> and additionally
+        send me one paragraph describing in detail what you contributed to the project
+        and how you view it's level of quality.
     </li></ul
 >
 
-<Linkable id="howcontribute">How do I join the team?</Linkable>
+<Linkable id="howcontribute">How do I join the community?</Linkable>
 
 <p
     >First, ensure you are available at the day, time, and location listed at
@@ -193,6 +178,15 @@
         to="https://github.com/wordplaydev/wordplay/wiki/wordplaypen"
         >Wordplaypen wiki</External
     > on the project's GitHub page for expectations.</p
+>
+
+<Linkable id="expectations">When and where do we meet?</Linkable>
+
+<p
+    >See the <External
+        to="https://github.com/wordplaydev/wordplay/wiki/wordplaypen"
+        >Wordplaypen wiki</External
+    > on the project's GitHub page for meetup times and locations.</p
 >
 
 <Linkable id="otherquestiosn">I have more questions!</Linkable>
