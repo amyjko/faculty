@@ -171,31 +171,153 @@
     join the Wordplaypen meetups.
 </p>
 
-<Linkable id="expectations">What will I be expected to do?</Linkable>
+<Linkable id="meetups">When do we meet?</Linkable>
+
+This changes quarterly:
+
+<Alert>
+    <ul>
+        <li
+            >Winter 2024 meets in <strong
+                >BLD 070 Wednesdays 5:30-6:30 pm</strong
+            >, starting January 3rd</li
+        >
+        <li
+            >Spring 2024 meets in <strong
+                >BLD 070 Wednesdays 5:30-6:30 pm</strong
+            >, starting March 27th</li
+        >
+    </ul>
+</Alert>
 
 <p
-    >See the <External
-        to="https://github.com/wordplaydev/wordplay/wiki/wordplaypen"
-        >Wordplaypen wiki</External
-    > on the project's GitHub page for expectations.</p
+    >We currently gather once a week, using the collocated time to build
+    community, make friendships, and help each other. In person gathering is
+    important, because it allows for trust building and learning that's not
+    possible online. If we're doing it right, you should look forward to
+    gathering and when you leave, you should have a sense of being supported,
+    having community, and knowing more than you did before! As noted above, we
+    expect you at every meeting unless you are ill or have a conflict.</p
 >
 
-<Linkable id="expectations">When and where do we meet?</Linkable>
+<p>At our first meeting:</p>
+
+<ul>
+    <li
+        >Amy will share the vision of the project and the ways you can
+        contribute</li
+    >
+    <li
+        >We'll network for a bit with icebreakers in smaller groups, to help you
+        meet each other and make friends</li
+    >
+    <li
+        >You will choose an initial role to take on (which you can change at any
+        time)</li
+    >
+    <li>We'll make sure you have access to Discord.</li>
+    <li>We'll make sure you have access to the appropriate team on GitHub.</li>
+    <li
+        >We'll assign managers to teams, and assign a manager to each
+        contributor (no more than 5 direct reports each).</li
+    >
+</ul>
+
+<p>At all other meetings: </p>
+
+<ul>
+    <li>Amy will give brief updates </li>
+    <li>Managers will report the progress of their direct reports.</li>
+    <li
+        >Anyone can share "kudos", which is recognition something that someone
+        else did to help or support you.</li
+    >
+    <li
+        >After those opening updates, managers and their teams will gather and
+        collaborate and Amy will be available for consultation on anything,
+        including design approvals, implementation insights, and tutoring on any
+        of the languages, frameworks, or other skills needed to make progress.</li
+    >
+</ul>
 
 <p
-    >See the <External
-        to="https://github.com/wordplaydev/wordplay/wiki/wordplaypen"
-        >Wordplaypen wiki</External
-    > on the project's GitHub page for meetup times and locations.</p
+    >In the last meeting of the quarter (during finals week), we will: Have
+    food! Volunteer something you're proud of that you learned or contributed
+    Brainstorm changes to our process for the next quarter</p
 >
 
-<Linkable id="otherquestiosn">I have more questions!</Linkable>
+<Linkable id="grades">How will I be graded?</Linkable>
 
 <p
-    >First, ensure your question isn't answered on this page or the <External
-        to="https://github.com/wordplaydev/wordplay/wiki/wordplaypen"
-        >Wordplaypen wiki</External
-    > page. Then, find me on Wordplay's <External
+    >Wordplay is first and foremost a community, not a class, and so grades and
+    credit are a very low priority. More important is that you meet the
+    communities norms and expectations, which are detailed on the <External
+        to="https://github.com/wordplaydev/wordplay/wiki/contribute"
+        >contributor</External
+    > page.</p
+>
+
+<Alert>
+    <strong>Note</strong>: If you're reading this prior to the quarter you're
+    joining, note that we may change assessments before each quarter, in order
+    to improve the experience. Consider the current asssessments an example of
+    how you might be evaluated. The official assessments for each quarter are
+    announced at the beginning of each quarter.
+</Alert>
+
+<p
+    >To keep assessments at a minimum, our current practice is that every week,
+    by the time of our gathering, we expect you to submit a progress report to
+    the Discord channel of the team you're on (e.g., if you're working on
+    verification, you should submit to #verification. It should follow this
+    format:</p
+>
+
+<pre>
+    Week [#, where the first week of the quarter is week 1] 
+    • What I learned: [insert details] 
+    • Progress: [insert issue #s you worked on ] 
+    • Help I need: [insert any help you need] 
+    • Collaboration I did: [who did you work with?] 
+    • Work I got approved: [issues triaged, designs approved, PRs merged, etc.]
+</pre>
+
+<p
+    >If you have nothing to report, you should say so, and why. Your manager
+    will mark these for credit, and use them to facilitate your work with Amy
+    and others in the community.</p
+>
+
+<p>You only have to do two things for credit:</p>
+
+<ul
+    ><li
+        >Submit your weekly reports, starting in week 2 of the quarter, with
+        your last report the last week before finals week. If you submit on time
+        and have something to report, then you get 1 point per report. If its
+        late or you have nothing to report, then you get 0 points.
+    </li><li
+        >Before our last meeting, submit a ~500 word reflection to
+        #contributors, detailing what worked well about this quarter's workflow,
+        and what should be improved. Amy will read these all in detail to revise
+        the design of the workflow for the next quarter.</li
+    >
+</ul>
+
+<p
+    >Possible points sum to 10; we'll convert to a percent, and then convert to
+    a grade point using the Informatics grading scale. If you're registered for
+    credit/no credit, you'll receive credit if: 1) you earned at least 8 points,
+    and 2) you submitted the final reflection.</p
+>
+
+<Linkable id="otherquestions">I have more questions!</Linkable>
+
+<p
+    >Everything else should be answered on the <External
+        to="https://github.com/wordplaydev/wordplay/wiki/contribute"
+        >contribute</External
+    > page. If you don't find your answer, fid me on Wordplay's <External
         to="https://discord.gg/Jh2Qq9husy">Discord</External
     > and DM me (do not write me an email). I know it's scary to write professors!
     But I'm friendly, I promise :) Include your name and student status at UW (or
