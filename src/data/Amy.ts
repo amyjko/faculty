@@ -166,6 +166,18 @@ export const Amy: ProfileSpec = {
             start: 2024,
             end: 2024,
             description:
+                'GitHub highlighted Wordplay in a blog post about its security tools',
+            title: 'The architecture of SAST tools: An explainer for developers',
+            author: 'Nicole Choi',
+            source: 'GitHub',
+            url: 'https://github.blog/2024-08-07-the-architecture-of-sast-tools-an-explainer-for-developers/',
+            who: 'public',
+        },
+        {
+            kind: 'press',
+            start: 2024,
+            end: 2024,
+            description:
                 'I was interviewed by Dave Levine for the KZSU Stanford Radio 90.1FM show Hearsay Culture on the topic of generative AI and education.',
             title: 'Hearsay Culture',
             author: 'Dave Levine',
