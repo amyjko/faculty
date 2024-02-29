@@ -297,10 +297,10 @@ This changes quarterly:
         and have something to report, then you get 1 point per report. If its
         late or you have nothing to report, then you get 0 points.
     </li><li
-        >Before our last meeting, submit a ~500 word reflection to
-        #contributors, detailing what worked well about this quarter's workflow,
-        and what should be improved. Amy will read these all in detail to revise
-        the design of the workflow for the next quarter.</li
+        >Before our last meeting during finals week, submit a ~500 word
+        reflection to #contributors, detailing what worked well about this
+        quarter's workflow, and what should be improved. Amy will read these all
+        in detail to revise the design of the workflow for the next quarter.</li
     >
 </ul>
 
