@@ -581,9 +581,9 @@ export const People: readonly Person[] = [
     {
         id: 'olesona',
         name: 'Alannah Oleson',
-        active: false,
+        active: true,
         advised: true,
-        level: 'phd',
+        level: 'postdoc',
         dept: 'Information School',
         coadvisor: null,
         bio: 'Alannah is a PhD candidate in the Information School. They study educational interventions to support critical and ethical software design processes, with a particular focus on countering design bias and marginalization.',
