@@ -586,7 +586,7 @@ export const People: readonly Person[] = [
         level: 'postdoc',
         dept: 'Information School',
         coadvisor: null,
-        bio: 'Alannah is a PhD candidate in the Information School. They study educational interventions to support critical and ethical software design processes, with a particular focus on countering design bias and marginalization.',
+        bio: 'Alannah is a postdoc and PhD student in the Information School. They study educational interventions to support critical and ethical software design processes, with a particular focus on countering design bias and marginalization.',
         url: 'https://alannaholeson.com/',
         startdate: 2018,
         enddate: 2023,
