@@ -16,7 +16,7 @@
         alt="A photograph of my office."
     />
     <span>
-        &mdash; If you're a current UW student Contact me via one of the
+        &mdash; If you're a current UW student, contact me via one of the
         channels below to see if a meeting makes sense. If you're in one my
         classes, see the syllabus for my course office hours. If you're not a UW
         student, write me an email; we'll meet if appropriate.
