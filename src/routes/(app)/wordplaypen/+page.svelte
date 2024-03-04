@@ -187,7 +187,8 @@ This changes quarterly:
                 >BLD 070 Wednesdays 5:30-6:30 pm</strong
             >, starting March 27th</li
         >
-    </ul>
+        <li>Summer 2024 will happen! Location and time TBD. </li></ul
+    >
 </Alert>
 
 <p
