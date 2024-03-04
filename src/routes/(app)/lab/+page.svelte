@@ -44,10 +44,6 @@
         at UW.</li
     >
     <li
-        >Read our <Link to={'/lablets'}>lablets</Link> page for details on how we
-        engage undergraduates in research.</li
-    >
-    <li
         >Read our <External
             to="https://docs.google.com/document/d/1LMHv0HdxXEgSNqICt3wtq8xWuH73kP7plZ_KeXyP6qM/edit?usp=sharing"
             >onboarding document</External
