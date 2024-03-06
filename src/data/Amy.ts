@@ -1313,6 +1313,13 @@ export const Amy: ProfileSpec = {
     ],
     doctoralCommittees: [
         {
+            name: 'Anne Drew Hu',
+            institution: 'Michigan State University',
+            department: 'Education',
+            startdate: 2024,
+            enddate: null,
+        },
+        {
             name: 'Aashaka Desai',
             institution: 'University of Washington',
             department: 'Computer Science',
