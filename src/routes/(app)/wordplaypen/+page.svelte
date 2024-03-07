@@ -108,17 +108,32 @@
 <Linkable id="howcontribute">How do I join the community?</Linkable>
 
 <p
-    >First, ensure you are available at the day, time, and location listed at
-    the top of this page. Attendance is mandatory unless ill. (In-person is
-    preferred, as this time is 95% collaboration time.)</p
+    >First, ensure you are available at the <Link to="/wordplaypen/#meetups"
+        >day, time, and location</Link
+    > listed at on this page. Attendance is mandatory unless ill. (In-person is preferred,
+    as this time is 95% collaboration time.)</p
 >
 
 <p
-    >Then, <External
+    >Next, decide of you want to volunteer or get credit. Both are the same
+    activity, but for credit, you'll have to do a bit more to earn the credit.
+    If you just want to volunteer, you can skip to the <Link
+        to="/wordplaypen#volunteer">next question</Link
+    >.</p
+>
+
+<p
+    >If you want credit and are a University of Washington student, register <External
         to="https://ischool.uw.edu/programs/informatics/curriculum/experiential-learning/independent-study"
-        >register for INFO 499</External
-    > for anywhere from <strong>1-5 credits</strong> by the start of the quarter.
-    As part of your proposal, indicate:
+        >INFO 499 independent study credit</External
+    > or for <External
+        to="https://www.cs.washington.edu/academics/ugrad/research#registration"
+        >CSE 499</External
+    > research credit before the quarter starts. In both cases, I approve it, and
+    then advisors send you an add code. You can register for anywhere from
+    <strong>1-5 credits</strong>; think about how much time you want to
+    contribute (1 credit = 3 hours/week). For the INFO form, answer these
+    questions anywhere on the proposal form:
 </p>
 
 <ul
@@ -128,30 +143,22 @@
 </ul>
 
 <p
-    >The INFO 499 proposal form (which I don't control) doesn't quite align with
-    the questions above. Just put answers wherever they fit best. I'm the only
-    one who reviews these, so you're not going to be rejected for filling it
-    "wrong" because there is no wrong.</p
+    >Just put answers wherever they fit best. I'm the only one who reviews
+    these, so you're not going to be rejected for filling it "wrong" because
+    there is no wrong.</p
 >
 
 <p
-    >iSchool student services can be slow to process these, and I don't have
-    visibility into their backlog or timeline. If you want an update, write
-    them. However, I do expect to approve all proposals, so don't fret too much.
-    And don't worry about trying to convince me, or writing some big epic essay,
-    or being rejected. This isn't a competitive admissions process, I just want
-    some context for your goals and availability, so I can prepare a good
-    experience.</p
->
-
-<p>
-    Your proposal can be very short; just a few sentences in each section would
-    suffice.</p
+    >Advising teams process these manually, so be patient, and if you want an
+    update, write them, not me. And don't worry about trying to convince me, or
+    writing some big epic essay, or being rejected. This isn't a competitive
+    admissions process, I just want some context for your goals and
+    availability, so I can prepare a good experience.</p
 >
 
 <p
-    >Participation is quarterly. If you want to participate again, you'll need
-    to register again, or continue as a volunteer (see below).</p
+    >Registration for credit is quarterly. If you want to participate again,
+    you'll need to register again, or continue as a volunteer (see below).</p
 >
 
 <Linkable id="volunteer">Can I volunteer instead?</Linkable>
