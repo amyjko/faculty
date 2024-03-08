@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'teenethics',
+        kind: 'refereed conference paper',
+        authors: ['@rotem', '@salac', '@jaredl', '@ajko'],
+        year: 2024,
+        title: '"There Will Always be a Yes and No Side": Facilitating Ethical Sensemaking Around Technology with Teens',
+        source: 'ISLS 2024',
+        pages: null,
+        publisher: 'ISLS',
+        doi: null,
+        local: null,
+        contribution:
+            'Our preliminary analyses identified launchpads for ethical sensemaking, instances where students leveraged their lived experiences, community discussion, and ethical scaffolding to begin reasoning about moral dilemmas, and (2) expressions of ethical sensemaking, signals within students’ reasoning processes that indicated critical sensemaking was taking place',
+    },
+    {
         id: 'helpseeking',
         kind: 'journal article',
         authors: ['@anael', '@olesona', '@ajko'],
