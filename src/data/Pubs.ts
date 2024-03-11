@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'tac',
+        kind: 'book',
+        authors: ['@olesona', '@ajko', "Richard Ladner"],
+        year: 2024,
+        title: 'Teaching Accessible Computing',
+        source: 'Online',
+        pages: null,
+        publisher: 'self-published',
+        doi: "https://bookish.press/tac",
+        local: null,
+        contribution:
+            'A book for computing educators who want to integrate accessible computing concepts and skils into computer science courses.',
+    },
+    {
         id: 'teenethics',
         kind: 'refereed conference paper',
         authors: ['@rotem', '@salac', '@jaredl', '@ajko'],
