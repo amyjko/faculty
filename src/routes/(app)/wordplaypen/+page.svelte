@@ -249,10 +249,14 @@ This changes quarterly:
 </ul>
 
 <p
-    >In the last meeting of the quarter (during finals week), we will: Have
-    food! Volunteer something you're proud of that you learned or contributed
-    Brainstorm changes to our process for the next quarter</p
->
+    >In the last meeting of the quarter (during finals week), we will:
+</p>
+
+<ul>
+    <li>Have snacks of your choice!</li>
+    <li>Share something they're proud of this quarter</li>
+    <li>Clean up any remaining work: 1) commit and push uncommited code, 2) comment on issues to document where you left the work, and 3) unassign yourself from issues you will not finish</li>
+</ul>
 
 <Linkable id="grades">How will I be graded?</Linkable>
 
