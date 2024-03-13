@@ -194,7 +194,9 @@ This changes quarterly:
                 >BLD 070 Wednesdays 5:30-6:30 pm</strong
             >, starting March 27th</li
         >
-        <li>Summer 2024 will happen! Location and time TBD. </li></ul
+        <li>Summer 2024 will happen! Location and time TBD. </li>
+        <li>Wordplaypen will almost certainly continue through AY 2024-205.</li
+        ></ul
     >
 </Alert>
 
@@ -248,14 +250,16 @@ This changes quarterly:
     >
 </ul>
 
-<p
-    >In the last meeting of the quarter (during finals week), we will:
-</p>
+<p>In the last meeting of the quarter (during finals week), we will: </p>
 
 <ul>
     <li>Have snacks of your choice!</li>
     <li>Share something they're proud of this quarter</li>
-    <li>Clean up any remaining work: 1) commit and push uncommited code, 2) comment on issues to document where you left the work, and 3) unassign yourself from issues you will not finish</li>
+    <li
+        >Clean up any remaining work: 1) commit and push uncommited code, 2)
+        comment on issues to document where you left the work, and 3) unassign
+        yourself from issues you will not finish</li
+    >
 </ul>
 
 <Linkable id="grades">How will I be graded?</Linkable>
