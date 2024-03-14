@@ -166,6 +166,18 @@ export const Amy: ProfileSpec = {
             start: 2024,
             end: 2024,
             description:
+                'The University of Washington highlighted our work on computational embroidery.',
+            title: 'UW researchers taught kids to code with cultural research and embroidery machines',
+            author: 'Stefane Milne',
+            source: 'University of Washington',
+            url: 'https://www.washington.edu/news/2024/03/14/computer-science-education-coding-embroidery/',
+            who: 'public',
+        },
+        {
+            kind: 'press',
+            start: 2024,
+            end: 2024,
+            description:
                 'GitHub highlighted Wordplay in a blog post about its security tools',
             title: 'The architecture of SAST tools: An explainer for developers',
             author: 'Nicole Choi',
