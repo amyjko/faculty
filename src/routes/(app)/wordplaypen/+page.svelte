@@ -214,39 +214,50 @@ This changes quarterly:
 
 <ul>
     <li
-        >Amy will share the vision of the project and the ways you can
-        contribute</li
+        >Amy will share the vision of the project (see <Link
+            to="https://docs.google.com/presentation/d/1TEUSsTXGW2y0yv9tt2KcoVQPbkUONejB1zms4H-bEJQ/edit#slide=id.g28dc14f0177_0_21"
+            >slides for a preview)</Link
+        ></li
     >
     <li
-        >We'll network for a bit with icebreakers in smaller groups, to help you
-        meet each other and make friends</li
+        >For those who signed up for credit, we'll discuss the assessments, so
+        you know how to earn credit.</li
     >
     <li
-        >You will choose an initial role to take on (which you can change at any
-        time)</li
+        >We'll network briefly, to help you meet each other and make friends.
+        You'll share your name, optional pronouns, affiliation, and why you
+        joined the community.</li
     >
-    <li>We'll make sure you have access to Discord.</li>
-    <li>We'll make sure you have access to the appropriate team on GitHub.</li>
     <li
-        >We'll assign managers to teams, and assign a manager to each
-        contributor (no more than 5 direct reports each).</li
+        >We'll identify returning contributors, who will act as mentors to help
+        you orient in the community, and assign mentors to newcomers.</li
     >
 </ul>
 
 <p>At all other meetings: </p>
 
 <ul>
-    <li>Amy will give brief updates </li>
-    <li>Managers will report the progress of their direct reports.</li>
     <li
-        >Anyone can share "kudos", which is recognition something that someone
-        else did to help or support you.</li
+        >Amy will give brief updates to the whole group (and also post these in
+        Discord #updates)</li
     >
     <li
-        >After those opening updates, managers and their teams will gather and
-        collaborate and Amy will be available for consultation on anything,
-        including design approvals, implementation insights, and tutoring on any
-        of the languages, frameworks, or other skills needed to make progress.</li
+        >Everyone will post a 1-sentence update in Discord #updates, so we can
+        celebrate accomplishments and identify needs. Updates should include
+        things like: 1) something you accomplished that you're proud of, 2) help
+        that you need, 3) progress that you made</li
+    >
+    <li
+        >Contributors will huddle by role (and if they don't have a role, huddle
+        with other contributors without a role).</li
+    >
+    <li
+        >After the role huddle, mentors will huddle with the faciliators,
+        surfacing needs</li
+    >
+    <li
+        >After huddles, people will work in small groups, collaborating,
+        helping, asking questions, and making progress.</li
     >
 </ul>
 
