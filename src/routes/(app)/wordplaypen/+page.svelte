@@ -294,53 +294,58 @@ This changes quarterly:
     announced at the beginning of each quarter.
 </Alert>
 
-<p
-    >To keep assessments at a minimum, our current practice is that every week,
-    by the time of our gathering, we expect you to submit a progress report to
-    the Discord channel of the team you're on (e.g., if you're working on
-    verification, you should submit to #verification. It should follow this
-    format:</p
->
+<p>Here is our current asssesment practice</p>
 
-<pre>
-    Week [#, where the first week of the quarter is week 1] 
-    • What I learned: [insert details] 
-    • Progress: [insert issue #s you worked on ] 
-    • Help I need: [insert any help you need] 
-    • Collaboration I did: [who did you work with?] 
-    • Work I got approved: [issues triaged, designs approved, PRs merged, etc.]
-</pre>
-
-<p
-    >If you have nothing to report, you should say so, and why. Your manager
-    will mark these for credit, and use them to facilitate your work with Amy
-    and others in the community.</p
->
-
-<p>You only have to do two things for credit:</p>
-
-<ul
-    ><li
-        >Submit your weekly reports, starting in week 2 of the quarter, with
-        your last report the last week before finals week. If you submit on time
-        and have something to report, then you get 1 point per report. If its
-        late or you have nothing to report, then you get 0 points.
-    </li><li
-        >Before our last meeting during finals week, submit a ~500 word
-        reflection to Discord <strong>#reflections</strong>, detailing what
-        worked well about this quarter's workflow, and what should be improved.
-        Make sure your server Nickname is your real name, so I can give you
-        credit. Amy will read these all in detail to revise the design of the
-        workflow for the next quarter.</li
+<ul>
+    <li
+        >Before week 3 of the quarter, you'll submit a <strong>contract</strong>
+        proposal to Canvas. The contract should include:</li
+    >
+    <ul>
+        <li
+            >The role or roles you would like to take on (as defined in the <Link
+                to="https://github.com/wordplaydev/wordplay/wiki/contribute#choose-a-role"
+                >contributor docs</Link
+            >)</li
+        >
+        <li
+            >Your GitHub username (so we can give you contributor permissions)</li
+        >
+        <li
+            >A list of accomplishments you want to make by the end of the
+            quarter, including things like 1) technologies you want to learn, 2)
+            issues you want to complete and get merged into production, 3)
+            content you want contribute, and anything else you can think of</li
+        >
+        <li
+            >For each accomplishment, the evidence you will provide of the
+            accomplishment by the end of the quarter</li
+        >
+        <li
+            >The number of credits you registered for, and why you think the
+            accomplishments are possible in that amount of time committed.</li
+        >
+        <li
+            >Amy will iterate with you on these until it seems like a reasonable
+            scope, and once approved, will give you contributor privileges.</li
+        >
+    </ul>
+    <li
+        >Before the last meetup of the quarter during finals week, a document
+        submitted to Canvas providing:</li
+    >
+    <ul>
+        <li
+            >A revised version of the contract that including any evidence of
+            your accomplishments, and if there were accomplishments you did not
+            complete, why, and what remains to accomplish them.</li
+        >
+        <li
+            >A ~500 word reflection detailing what worked well about this
+            quarter's workflow, and what should be improved.</li
+        ></ul
     >
 </ul>
-
-<p
-    >Possible points sum to 10; we'll convert to a percent, and then convert to
-    a grade point using the Informatics grading scale. If you're registered for
-    credit/no credit, you'll receive credit if: 1) you earned at least 8 points,
-    and 2) you submitted the final reflection.</p
->
 
 <Linkable id="start">How do I get started?</Linkable>
 
