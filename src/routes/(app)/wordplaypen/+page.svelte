@@ -210,6 +210,8 @@ This changes quarterly:
     expect you at every meeting unless you are ill or have a conflict.</p
 >
 
+<Linkable id="meetups">What happens at the meetups?</Linkable>
+
 <p>At our first meeting:</p>
 
 <ul>
