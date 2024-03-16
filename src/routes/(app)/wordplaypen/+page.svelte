@@ -294,7 +294,7 @@ This changes quarterly:
     announced at the beginning of each quarter.
 </Alert>
 
-<p>Here is our current asssesment practice</p>
+<p>Here is our current asssesment practice:</p>
 
 <ul>
     <li
@@ -303,31 +303,53 @@ This changes quarterly:
     >
     <ul>
         <li
-            >The role or roles you would like to take on (as defined in the <Link
+            >The <strong>role(s)</strong> you would like to take on (as defined
+            in the <Link
                 to="https://github.com/wordplaydev/wordplay/wiki/contribute#choose-a-role"
                 >contributor docs</Link
-            >)</li
+            >). You can have multiple roles!</li
         >
         <li
-            >Your GitHub username (so we can give you contributor permissions)</li
+            >Your <strong>GitHub username</strong> (so we can give you relevant contributor
+            permissions)</li
         >
         <li
-            >A list of accomplishments you want to make by the end of the
-            quarter, including things like 1) technologies you want to learn, 2)
-            issues you want to complete and get merged into production, 3)
-            content you want contribute, and anything else you can think of</li
+            >A set of one or more <strong>goals</strong> you want to make by the
+            end of the quarter, including things like:</li
+        >
+        <ul>
+            <li>technologies you want to learn,</li>
+            <li
+                >specific issues you want to complete and get merged into
+                production (including new issues you've submitted for work you
+                want to contribute),
+            </li>
+            <li
+                >anything else you do to help the community, within a role, or
+                outside of pre-defined roles</li
+            >
+        </ul>
+        <li
+            >For each goal, the <strong>evidence</strong> you will provide of the
+            accomplishment by the end of the quarter. Evidence includes things like
+            closed issues, approved design proposals, Wordplay examples you created,
+            feedback you received on your mentorship, explanations of concepts you
+            learned, examples of things you created with skills you learned. I will
+            not rigorously evaluate you on these &mdash; I trust you to be honest
+            &mdash; but planning the evidence you gather will help focus your work.</li
         >
         <li
-            >For each accomplishment, the evidence you will provide of the
-            accomplishment by the end of the quarter</li
+            >The <strong>number of credits</strong> you registered for, and
+            <strong>why</strong> you think the goals are possible in that amount
+            of time committed.</li
         >
         <li
-            >The number of credits you registered for, and why you think the
-            accomplishments are possible in that amount of time committed.</li
-        >
-        <li
-            >Amy will iterate with you on these until it seems like a reasonable
-            scope, and once approved, will give you contributor privileges.</li
+            ><em
+                >Amy will iterate with you on these in Canvas until it seems
+                like a reasonable scope, and once approved, will give you
+                contributor privileges. Submit as early in the quarter as you
+                like; no need to wait until the third week.</em
+            ></li
         >
     </ul>
     <li
@@ -336,16 +358,25 @@ This changes quarterly:
     >
     <ul>
         <li
-            >A revised version of the contract that including any evidence of
-            your accomplishments, and if there were accomplishments you did not
+            >An updated version of the contract that including any evidence of
+            your accomplishments. If there were accomplishments you did not
             complete, why, and what remains to accomplish them.</li
         >
         <li
             >A ~500 word reflection detailing what worked well about this
-            quarter's workflow, and what should be improved.</li
+            quarter's workflow and what should be improved.</li
         ></ul
     >
 </ul>
+
+<p
+    >Both of these are graded <strong>satisfactory/unsatisfactory</strong>. The
+    only way to get an unsatisfactory on either is to 1) not submit it on time
+    or 2) not include a required element. For those registering for credit/no
+    credit, you'll receive credit if both elements are satisfactory. For those
+    registering for graded credit, getting satisfactory on one is a 2.0 and on
+    both is a 4.0.</p
+>
 
 <Linkable id="start">How do I get started?</Linkable>
 
