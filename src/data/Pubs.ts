@@ -4,13 +4,13 @@ export const Publications: Paper[] = [
     {
         id: 'tac',
         kind: 'book',
-        authors: ['@olesona', '@ajko', "Richard Ladner"],
+        authors: ['@olesona', '@ajko', 'Richard Ladner'],
         year: 2024,
         title: 'Teaching Accessible Computing',
         source: 'Online',
         pages: null,
         publisher: 'self-published',
-        doi: "https://bookish.press/tac",
+        doi: 'https://bookish.press/tac',
         local: null,
         contribution:
             'A book for computing educators who want to integrate accessible computing concepts and skils into computer science courses.',
@@ -52,7 +52,7 @@ export const Publications: Paper[] = [
         source: '@sigcseexp',
         pages: null,
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://doi.org/10.1145/3626252.3630818',
         local: 'Everson2024ComputationalEmbroidery.pdf',
         contribution:
             'Students enthusiastically engaged with the programming aspects of the course and sought to make complicated and beautiful work that interwove their diverse cultures and identities.',
