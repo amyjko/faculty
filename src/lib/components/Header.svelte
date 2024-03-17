@@ -14,24 +14,29 @@
         /></a
     >
     <h1>Amy J. Ko, Ph.D.</h1>
-    <External to="https://www.mypronouns.org/she-her">she/her/hers</External>
-    <br /><External
-        to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/"
-        >Professor</External
-    >
-    <br /><External to="http://ischool.uw.edu">The Information School</External>
-    <br /><External to="http://cs.uw.edu"
-        >Computer Science &amp; Engineering (courtesy)</External
-    >
-    <br /><External to="http://www.washington.edu"
-        >University of Washington, Seattle</External
-    >
-    <!-- &nbsp;&sdot; <a href="https://ischool.uw.edu/academics/informatics">Program Chair, <em>Informatics</em></a> -->
-    <br /><External to="https://dl.acm.org/journal/toce"
-        >Editor-in-Chief, <em>ACM TOCE</em></External
-    >
-    <Social />
-</section>
+    <div class="metadata">
+        <External to="https://www.mypronouns.org/she-her">she/her/hers</External
+        >
+        <br /><External
+            to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/"
+            >Professor</External
+        >
+        <br /><External to="http://ischool.uw.edu"
+            >The Information School</External
+        >
+        <br /><External to="http://cs.uw.edu"
+            >Computer Science &amp; Engineering (courtesy)</External
+        >
+        <br /><External to="http://www.washington.edu"
+            >University of Washington, Seattle</External
+        >
+        <!-- &nbsp;&sdot; <a href="https://ischool.uw.edu/academics/informatics">Program Chair, <em>Informatics</em></a> -->
+        <br /><External to="https://dl.acm.org/journal/toce"
+            >Editor-in-Chief, <em>ACM TOCE</em></External
+        >
+        <Social />
+    </div></section
+>
 <section class="small-info">
     <a href="/ajko/"
         ><Image
@@ -41,14 +46,17 @@
     >
     <div>
         <h1 style="margin-top: 0; margin-bottom: 0;">Amy J. Ko</h1>
-        <External
-            to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/"
-            >Professor</External
-        >
-        <br /><External to="http://ischool.uw.edu">iSchool</External> &middot; <External
-            to="http://cs.uw.edu">CSE</External
-        > &middot; <External to="http://www.washington.edu">UW</External>
-        <Social />
+        <div class="metadata">
+            <External
+                to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/"
+                >Professor</External
+            >
+            <br /><External to="http://ischool.uw.edu">iSchool</External> &middot;
+            <External to="http://cs.uw.edu">CSE</External> &middot; <External
+                to="http://www.washington.edu">UW</External
+            >
+            <Social />
+        </div>
     </div>
 </section>
 
@@ -80,6 +88,12 @@
 <hr class="small-hr" />
 
 <style>
+    nav,
+    .metadata {
+        font-size: var(--small-font-size);
+        line-height: 1.5;
+    }
+
     nav {
         display: flex;
         flex-direction: row;
@@ -88,7 +102,8 @@
     }
 
     :global(nav > *) {
-        padding: var(--padding);
+        padding-left: var(--padding);
+        padding-right: var(--padding);
         border-radius: var(--roundedness);
     }
 
