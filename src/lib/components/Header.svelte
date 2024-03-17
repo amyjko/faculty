@@ -140,8 +140,6 @@
         }
 
         nav {
-            flex-wrap: nowrap;
-            overflow-x: scroll;
             white-space: nowrap;
         }
     }
