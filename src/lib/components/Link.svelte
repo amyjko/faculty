@@ -6,8 +6,6 @@
     export let at: string | undefined = undefined;
 
     $: path = $page.url.pathname;
-    $: console.log(path);
-    $: console.log(base);
 </script>
 
 {#if at && (at === '/' ? path === `${base}/` : path === `${base}${at}`)}
