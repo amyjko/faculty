@@ -7,6 +7,7 @@
     import getPersonImagePath from '$lib/components/getPersonImage';
     import Emoji from '$lib/components/Emoji.svelte';
     import Title from '$lib/components/Title.svelte';
+    import Linkable from '$lib/components/Linkable.svelte';
 </script>
 
 <Title text="Research" />
@@ -61,7 +62,7 @@
     <em>everyone</em>.
 </p>
 
-<h2>Discoveries</h2>
+<Linkable id="discoveries">Discoveries</Linkable>
 
 <p>
     My lab and I have discovered many things since I started doing research in

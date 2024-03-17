@@ -1,9 +1,14 @@
 <script lang="ts">
+    import { base } from '$app/paths';
+    import { page } from '$app/stores';
     import Emoji from './Emoji.svelte';
     import External from './External.svelte';
     import Link from './Link.svelte';
     import Social from './Social.svelte';
     import Image from './Thumbnail.svelte';
+
+    export let headers: [string, string][] = [];
+    export let activeid: string | undefined;
 </script>
 
 <section class="info">
@@ -83,6 +88,19 @@
     <br /><Link to="/wordplaypen" at={'/wordplaypen'}
         ><Emoji symbol="💬" /> <strong>Wordplaypen</strong></Link
     >
+
+    <div class="outline">
+        <ul>
+            {#each headers as [header, id]}
+                <li
+                    ><Link
+                        to={`${$page.url.pathname.replace(base, '')}#${id}`}
+                        active={id === activeid}>{header}</Link
+                    ></li
+                >
+            {/each}
+        </ul>
+    </div>
 </nav>
 
 <hr class="small-hr" />
@@ -111,7 +129,7 @@
         background-color: var(--border-color);
     }
 
-    :global(nav > .at) {
+    :global(nav .at) {
         background-color: var(--annotation-color);
     }
 
@@ -119,6 +137,16 @@
         display: flex;
         flex-direction: row;
         flex-basis: 1;
+    }
+
+    .outline li {
+        font-style: italic;
+        font-size: 80%;
+        list-style-type: square;
+    }
+
+    .outline ul {
+        padding-inline-start: calc(3 * var(--padding));
     }
 
     @media only screen and (min-width: 800px) {
@@ -136,6 +164,10 @@
 
     @media only screen and (max-width: 800px) {
         .info {
+            display: none;
+        }
+
+        .outline {
             display: none;
         }
 

@@ -4,7 +4,6 @@
     import Link from '$lib/components/Link.svelte';
     import Paper from '$lib/components/Paper.svelte';
     import { profile } from '$lib/models/stores';
-    import SectionList from '../../../lib/components/SectionList.svelte';
     import Title from '$lib/components/Title.svelte';
 
     $: guide = $profile.getPublication('practicalguide');
@@ -13,8 +12,6 @@
 <Title text="FAQ" />
 
 <h1> These are questions I'm frequently asked. </h1>
-
-<SectionList path="/faq" />
 
 <Section
     id="recommendations"

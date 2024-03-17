@@ -6,6 +6,7 @@
     import { onMount } from 'svelte';
     import { scrollToHash } from '$lib/models/utilities';
     import Title from '$lib/components/Title.svelte';
+    import Linkable from '$lib/components/Linkable.svelte';
 
     onMount(() => {
         scrollToHash();
@@ -107,13 +108,13 @@
     </div>
 </div>
 
-<h3>Current Postdocs</h3>
+<Linkable id="current-postdoc">Current Postdocs</Linkable>
 
 {#each $profile.getPeople((person) => person.active && person.advised && person.id !== 'ajko' && person.level === 'postdoc') as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
-<h3>Current Advisees</h3>
+<Linkable id="current-advisees">Current Advisees</Linkable>
 
 {#each $profile.getPeople( (person) => person.active && person.advised && person.id !== 'ajko' && person.level !== 'faculty' && person.level !== 'postdoc', (person) => {
         return { undergrad: 5, masters: 4, phd: 3, postdoc: 2, faculty: 1, director: 0 }[person.level] * 10000 + person.startdate;
@@ -121,13 +122,13 @@
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
-<h3>Affiliated Ph.D. students</h3>
+<Linkable id="affiliate-phd">Affiliated Ph.D. students</Linkable>
 
 {#each $profile.getPeople( (person) => person.active && !person.advised && person.level !== 'faculty', (person) => -person.startdate ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
-<h3 id="collaborators">Faculty Collaborators</h3>
+<Linkable id="collaborators">Faculty Collaborators</Linkable>
 
 <p
     ><em
@@ -140,31 +141,31 @@
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
-<h3>Former Ph.D. students</h3>
+<Linkable id="former-phd">Former Ph.D. students</Linkable>
 
 {#each $profile.getPeople( (person) => !person.active && person.advised && person.level === 'phd', (person) => (person.enddate === null ? -Infinity : -person.enddate) ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
-<h3>Former Affiliated Ph.D. students</h3>
+<Linkable id="former-affiliated-phd">Former Affiliated Ph.D. students</Linkable>
 
 {#each $profile.getPeople( (person) => !person.active && !person.advised && person.level === 'phd', (person) => -person.startdate ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
-<h3>Former Postdocs</h3>
+<Linkable id="former-postdoc">Former Postdocs</Linkable>
 
 {#each $profile.getPeople( (person) => !person.active && person.level === 'postdoc', (person) => -person.startdate ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
-<h3>Former Masters</h3>
+<Linkable id="former-masters">Former Masters</Linkable>
 
 {#each $profile.getPeople( (person) => !person.active && person.level === 'masters', (person) => -person.startdate ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
-<h3>Former Undergrads</h3>
+<Linkable id="former-undergrad">Former Undergrads</Linkable>
 {#each $profile.getPeople( (person) => !person.active && person.level === 'undergrad', (person) => -person.startdate ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}

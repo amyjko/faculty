@@ -4,6 +4,7 @@
 
     export let to: string;
     export let at: string | undefined = undefined;
+    export let active = false;
 
     $: path = $page.url.pathname;
 </script>
@@ -13,12 +14,16 @@
 {:else if to.startsWith('http')}
     <a href={to} target="_blank" rel="noreferrer"><slot /></a>
 {:else}
-    <a href={`${base}${to}`}><slot /></a>
+    <a href={`${base}${to}`} class={active ? 'at' : ''}><slot /></a>
 {/if}
 
 <style>
     /* So that components can style it. */
     span {
         display: inline-block;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 </style>

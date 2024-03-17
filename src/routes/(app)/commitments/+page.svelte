@@ -6,6 +6,7 @@
     import DateRange from './DateRange.svelte';
     import months from './months';
     import Title from '$lib/components/Title.svelte';
+    import Linkable from '$lib/components/Linkable.svelte';
 
     let commits = $profile.getCommits();
     let weeks = $profile.getWeeklyCommits();
@@ -92,7 +93,12 @@
 
 <Table>
     <tbody>
-        <tr><td colSpan="3"><h3>Weekly commitments</h3></td></tr>
+        <tr
+            ><td colSpan="3"
+                ><Linkable id="weekly-commitments">Weekly commitments</Linkable
+                ></td
+            ></tr
+        >
         {#each indefiniteWeekly as commitment}
             <tr>
                 <td>
@@ -107,7 +113,11 @@
                 </td>
             </tr>
         {/each}
-        <tr><td colSpan="3"><h3>Annual commitments</h3></td></tr>
+        <tr
+            ><td colSpan="3"
+                ><Linkable id="annual">Annual commitments</Linkable></td
+            ></tr
+        >
         {#each indefiniteAnnually as commitment}
             <tr>
                 <td>
@@ -131,7 +141,11 @@
                 </td>
             </tr>
         {/each}
-        <tr><td colSpan="3"><h3>One-time commitments</h3></td></tr>
+        <tr
+            ><td colSpan="3"
+                ><Linkable id="one-time">One-time commitments</Linkable></td
+            ></tr
+        >
         <tr><td colSpan="3"><h4>Research</h4></td></tr>
         {#each definiteResearch as commitment}
             <tr>
@@ -195,7 +209,7 @@
     </tbody>
 </Table>
 
-<h3>Weekly workload</h3>
+<Linkable id="weekly">Weekly workload</Linkable>
 
 <p>
     Here's an estimate of how busy I'll be per week in the next two years. You

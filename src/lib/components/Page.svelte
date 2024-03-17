@@ -1,15 +1,41 @@
 <script lang="ts">
     import Header from '$lib/components/Header.svelte';
     import Footer from '$lib/components/Footer.svelte';
+    import { navigating } from '$app/stores';
+    import { browser } from '$app/environment';
+
+    let headers: [string, string][] = [];
+    let closestID: string | undefined = undefined;
+    let scrollY: number;
+
+    $: if (browser && typeof document !== undefined && $navigating === null) {
+        headers = Array.from(document.getElementsByTagName('h2'))
+            .map((a) =>
+                a instanceof HTMLElement
+                    ? [a.innerText.replaceAll('🔗', '').trim(), a.id]
+                    : undefined
+            )
+            .filter((a): a is [string, string] => a !== undefined);
+    }
+
+    $: if (scrollY >= 0) {
+        closestID = Array.from(document.getElementsByTagName('h2')).sort(
+            (h1, h2) =>
+                Math.abs(h1.offsetTop - scrollY) -
+                Math.abs(h2.offsetTop - scrollY)
+        )[0]?.id;
+    }
 </script>
 
 <div class="page">
-    <div class="header"><Header /></div>
+    <div class="header"><Header {headers} activeid={closestID} /></div>
     <div class="content">
         <slot />
         <Footer />
     </div>
 </div>
+
+<svelte:window bind:scrollY />
 
 <style>
     /* Small */

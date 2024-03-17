@@ -2,7 +2,6 @@
     import Section from '$lib/components/Section.svelte';
     import External from '$lib/components/External.svelte';
     import advisors from '$lib/models/advisors';
-    import SectionList from '$lib/components/SectionList.svelte';
     import Table from '../../../lib/components/Table.svelte';
     import Title from '$lib/components/Title.svelte';
 </script>
@@ -21,8 +20,6 @@
         >pull request</External
     >.
 </p>
-
-<SectionList path="/cer" />
 
 <p>
     Computing education research (CER), also known as computer science education
@@ -71,19 +68,18 @@
 
 <Section
     id="csed-v-cer"
-    header="What is the difference between CS education research and computing education research?"
+    header="What is the difference between 'CS' and 'computing'?"
 >
     <p>
-        The difference in these two phrases is in the difference between "CS"
-        and "Computing". CS generally refers to the historically core topics in
-        computer science research, such as theory, algorithms, data structures,
-        programming languages, and operating systems. But other fields began to
-        engage these ideas and identify their intersections to other fields. For
-        example, information science, a field long concerned with data,
-        information, and society, began to consider those topics from a computer
-        science perspective. Science began to apply computer science ideas to
-        data capture, storage, and analysis. Biology, as it began to see DNA as
-        a form of biological data, and apply algorithms to analyzing it, formed
+        CS generally refers to the historically core topics in computer science
+        research, such as theory, algorithms, data structures, programming
+        languages, and operating systems. But other fields began to engage these
+        ideas and identify their intersections to other fields. For example,
+        information science, a field long concerned with data, information, and
+        society, began to consider those topics from a computer science
+        perspective. Science began to apply computer science ideas to data
+        capture, storage, and analysis. Biology, as it began to see DNA as a
+        form of biological data, and apply algorithms to analyzing it, formed
         bioinformatics. Communication began to explore computer-mediated
         communication. Behavioral and brain scientists started using computers
         to model decisions, knowledge, and brain activity. And social scientists
@@ -120,7 +116,7 @@
 
 <Section
     id="comparison-to-other-fields"
-    header="How does computing education research compare to learning sciences, education research, and educational psychology?"
+    header="How does computing education research compare to related fields?"
 >
     <p>
         My background isn't in these fields, though I do collaborate with people
@@ -187,7 +183,7 @@
 
 <Section
     id="major-questions"
-    header="What are the overarching research questions in CER?"
+    header="What are major research questions in CER?"
 >
     <p>
         As with any research discipline, research questions can and should be
@@ -302,10 +298,7 @@
     </p>
 </Section>
 
-<Section
-    id="jobs"
-    header="What kinds of jobs do computing education researchers do?"
->
+<Section id="jobs" header="What jobs can computing education researchers get?">
     <p>
         Most computing education researchers are faculty in universities. Many
         of these faculty are tenure-track faculty like myself, which means a
@@ -458,7 +451,7 @@
 
 <Section
     id="doctoral-admissions"
-    header="For doctoral admissions, how important is it to demonstrate focus in a single research area?"
+    header="For doctoral admissions, how important is it to focus on a single research area?"
 >
     <p>
         Advisors differ on the criteria they use to select candidates.
@@ -497,10 +490,7 @@
     </p>
 </Section>
 
-<Section
-    id="getting-a-job"
-    header="Where can I find a CS education research job?"
->
+<Section id="getting-a-job" header="Where can I find a CER job?">
     <p>
         There are many places where global CS education-related jobs are posted:
     </p>
@@ -623,7 +613,7 @@
 
 <Section
     id="being-impactful"
-    header="What do I need to know to be an effective, impactful computing education researcher?"
+    header="What do I need to know to be an effective researcher?"
 >
     <p>
         First, you need to know some computing yourself. That doesn't mean you
