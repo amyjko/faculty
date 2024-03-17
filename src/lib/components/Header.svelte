@@ -89,18 +89,20 @@
         ><Emoji symbol="💬" /> <strong>Wordplaypen</strong></Link
     >
 
-    <div class="outline">
-        <ul>
-            {#each headers as [header, id]}
-                <li
-                    ><Link
-                        to={`${$page.url.pathname.replace(base, '')}#${id}`}
-                        active={id === activeid}>{header}</Link
-                    ></li
-                >
-            {/each}
-        </ul>
-    </div>
+    {#if headers.length > 1}
+        <div class="outline">
+            <ul>
+                {#each headers as [header, id]}
+                    <li
+                        ><Link
+                            to={`${$page.url.pathname.replace(base, '')}#${id}`}
+                            active={id === activeid}>{header}</Link
+                        ></li
+                    >
+                {/each}
+            </ul>
+        </div>
+    {/if}
 </nav>
 
 <hr class="small-hr" />
