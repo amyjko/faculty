@@ -8,17 +8,16 @@
     let closestID: string | undefined = undefined;
     let scrollY: number;
 
-    $: if (browser && typeof document !== undefined && $navigating === null) {
-        headers = Array.from(document.getElementsByTagName('h2'))
-            .map((a) =>
-                a instanceof HTMLElement
-                    ? [a.innerText.replaceAll('🔗', '').trim(), a.id]
-                    : undefined
-            )
-            .filter((a): a is [string, string] => a !== undefined);
-    }
-
     $: if (scrollY >= 0) {
+        if (browser && typeof document !== undefined && $navigating === null) {
+            headers = Array.from(document.getElementsByTagName('h2'))
+                .map((a) =>
+                    a instanceof HTMLElement
+                        ? [a.innerText.replaceAll('🔗', '').trim(), a.id]
+                        : undefined
+                )
+                .filter((a): a is [string, string] => a !== undefined);
+        }
         closestID = Array.from(document.getElementsByTagName('h2')).sort(
             (h1, h2) =>
                 Math.abs(h1.offsetTop - scrollY) -

@@ -6,8 +6,18 @@
     import Image from '$lib/components/Thumbnail.svelte';
     import type { PostTagType } from '../../../lib/models/Post';
     import Title from '$lib/components/Title.svelte';
+    import Linkable from '$lib/components/Linkable.svelte';
 
     let filter: Record<string, PostTagType> = {};
+
+    $: posts = $profile.getPosts(
+        (post) => !('topic' in filter) || post.tags.includes(filter.topic),
+        (post) =>
+            -(
+                $profile.getPostMonthYear(post).year * 12 +
+                $profile.getPostMonthYear(post).month
+            )
+    );
 
     function setFilter(tag: Record<string, PostTagType>) {
         filter = tag;
@@ -35,8 +45,11 @@
 
 <Facets facets={$profile.getPostTags()} update={setFilter} />
 
-{#each $profile.getPosts( (post) => !('topic' in filter) || post.tags.includes(filter.topic), (post) => -($profile.getPostMonthYear(post).year * 12 + $profile.getPostMonthYear(post).month) ) as post}
+{#each posts as post, index}
     {@const date = $profile.getPostMonthYear(post)}
+    {#if index === 0 || date.year !== $profile.getPostMonthYear(posts[index - 1]).year}
+        <Linkable id={`${date.year}`}>{date.year}</Linkable>
+    {/if}
     <Block link={post.url} header={post.title}>
         <svelte:fragment slot="image">
             {#if post.img}

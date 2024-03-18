@@ -4400,6 +4400,7 @@ export const Amy: ProfileSpec = {
         '2021': 'Informatics program chair; COVID-19; gender transition',
         '2022': 'Informatics program chair; gender transition; sabbatical (Summer/Fall)',
         '2023': 'Sabbatical (Winter/Spring/Summer)',
+        '2024': 'Informatics program chair; Associate Dean for Academics',
     },
 };
 

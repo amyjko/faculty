@@ -6,6 +6,12 @@
     import Image from '$lib/components/Thumbnail.svelte';
     import Link from '$lib/components/Link.svelte';
     import Title from '$lib/components/Title.svelte';
+    import Linkable from '$lib/components/Linkable.svelte';
+
+    $: talks = $profile.getTalks(
+        undefined,
+        (talk) => -parseDate(talk.date).getTime()
+    );
 
     const months = [
         'Jan',
@@ -27,8 +33,14 @@
 
 <h1> These are my upcoming and past keynotes and invited talks. </h1>
 
-{#each $profile.getTalks(undefined, (talk) => -parseDate(talk.date).getTime()) as talk}
+{#each talks as talk, index}
     {@const date = parseDate(talk.date)}
+    {#if index === 0 || date.getFullYear() !== parseDate(talks[index - 1].date).getFullYear()}
+        <Linkable id={`${date.getFullYear()}`}>
+            {date.getFullYear()}</Linkable
+        >
+    {/if}
+
     <Block
         link={talk.recording
             ? talk.recording

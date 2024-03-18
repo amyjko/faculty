@@ -9,6 +9,7 @@
     import { scrollToHash } from '$lib/models/utilities';
     import Alert from '../../../lib/components/Alert.svelte';
     import Title from '$lib/components/Title.svelte';
+    import Linkable from '$lib/components/Linkable.svelte';
 
     let selection: Record<string, string> = {};
 
@@ -84,11 +85,11 @@
 <!-- // Create a list of publications, inserting year headers when the year changes. -->
 {#each pubs as pub, index}
     {#if index === 0 || pubs[index - 1].year !== pub.year}
-        <h3
-            >{pub.year}{#if $profile.getYearContexts()[pub.year]}<small>
-                    &mdash; <em>{$profile.getYearContexts()[pub.year]}</em
+        <Linkable id={`${pub.year}`}>
+            {pub.year}{#if $profile.getYearContexts()[pub.year]}<small>
+                    &ndash; <em>{$profile.getYearContexts()[pub.year]}</em
                     ></small
-                >{/if}</h3
+                >{/if}</Linkable
         >
     {/if}
 

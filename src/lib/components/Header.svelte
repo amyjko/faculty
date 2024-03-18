@@ -96,7 +96,9 @@
                     <li
                         ><Link
                             to={`${$page.url.pathname.replace(base, '')}#${id}`}
-                            active={id === activeid}>{header}</Link
+                            active={id === activeid}
+                            >{header.substring(0, 32) +
+                                (header.length > 32 ? '…' : '')}</Link
                         ></li
                     >
                 {/each}
