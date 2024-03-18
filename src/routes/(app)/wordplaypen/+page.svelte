@@ -178,7 +178,7 @@
     join the Wordplaypen meetups.
 </p>
 
-<Linkable id="meetups">When do we meet?</Linkable>
+<Linkable id="when">When do we meet?</Linkable>
 
 This changes quarterly:
 
