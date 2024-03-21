@@ -3365,6 +3365,20 @@ export const Amy: ProfileSpec = {
     ],
     talks: [
         {
+            date: '2024-03-21',
+            image: 'sigcseequity24.jpg',
+            alt: 'a picture of a glacier and the text this, of course, is just the beginning.',
+            slides: 'SIGCSE2024EquityWork.pdf',
+            title: 'Building a Community of Equity-Focused CS Educators',
+            venue: 'SIGCSE Technical Symposium 2024',
+            url: 'https://latece.uqam.ca/evenement/amy-j-ko-programming-accessibility-and-language/',
+            recording: null,
+            practice: null,
+            description:
+                'In this talk I try to scaffold how to do equity-centered change work in academia, and in computing in particular.',
+            keynote: false,
+        },
+        {
             date: '2024-02-21',
             image: 'uqam2024.jpg',
             alt: 'a picture of a glacier and the text this, of course, is just the beginning.',
