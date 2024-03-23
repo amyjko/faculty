@@ -52,8 +52,20 @@
         ><Emoji symbol="💬" /> <strong>Wordplay</strong></External
     >, an accessible, multilingual educational programming language for creating
     interactive typography), as well as equitable, justice-centered secondary CS
-    teacher education, including pathways and community. I'm generally
-    interested in anything liberatory in computing education.
+    teacher education, including pathways and community.
+</p>
+
+<p>
+    I'm interested in any scholarly or community activity that advances
+    liberation in computing education (e.g., uniting equitable pathways to CS
+    education in the Pacific Northwest through <Link to="https://csforallwa.org"
+        >CS for All Washington</Link
+    > and <Link to="https://www.pnwcsteach.org/">PNW CS Teach</Link> and broadening
+    scholarly discourse by editing <Link to="https://dl.acm.org/journal/toce"
+        >ACM TOCE</Link
+    > and building infrastructure to sustain peer review through <Link
+        to="https://reciprocal.reviews/">Reciprocal Reviews</Link
+    >.)
 </p>
 
 <p>
