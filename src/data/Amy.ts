@@ -1642,6 +1642,19 @@ export const Amy: ProfileSpec = {
     ],
     service: [
         {
+            title: 'Co-director',
+            committee: 'Reciprocal Reviews',
+            level: 'international',
+            description:
+                'I lead a community of volunteers to create infrastructure for sustainable peer review labor markets.',
+            commitment: {
+                start: '2023-01-04',
+                end: null,
+                hours: 1,
+                priority: 0,
+            },
+        },
+        {
             title: 'Committee Member',
             committee: 'CHI Academy Selection Committee',
             level: 'international',
