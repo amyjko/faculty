@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/sigcse-2024-trip-report-041db5678f9b',
+        title: 'SIGSE 2024 trip report: always hallways',
+        date: '2024.03',
+        tags: ['trip report', 'computing education'],
+        img: 'sigcse2024',
+        alt: 'Photo of the cover of the book, reading "A SHORT HISTORY OF TRANS MISOGYNY" with an image of a dolled up woman behind.',
+    },
+    {
         url: 'https://amyjko.medium.com/90e50d2ba670',
         title: 'Processing a “A Short History of Trans Misogyny',
         date: '2024.02',
