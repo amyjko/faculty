@@ -115,6 +115,12 @@
 >
 
 <p
+    >Next, join the <Link to="https://discord.gg/Jh2Qq9husy"
+        >Discord server</Link
+    >, where contributors and creators connect.</p
+>
+
+<p
     >Next, decide of you want to volunteer or get credit. Both are the same
     activity, but for credit, you'll have to do a bit more to earn the credit.
     If you just want to volunteer, you can skip to the <Link
