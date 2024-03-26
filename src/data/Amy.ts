@@ -3378,6 +3378,20 @@ export const Amy: ProfileSpec = {
     ],
     talks: [
         {
+            date: '2024-03-25',
+            image: 'sonoma2024.jpg',
+            alt: 'raining cats and the words "playful, centering silliness"',
+            slides: 'Sonoma2024Wordplay.pdf',
+            title: 'Searching for Justice in Programming Language Design',
+            venue: 'Cal State Sonoma',
+            url: null,
+            recording: null,
+            practice: null,
+            description:
+                'I share a vision for justice-centered programming languages and detail how Wordplay strives to achieve it.',
+            keynote: false,
+        },
+        {
             date: '2024-03-21',
             image: 'sigcseequity24.jpg',
             alt: 'a picture of a glacier and the text this, of course, is just the beginning.',
