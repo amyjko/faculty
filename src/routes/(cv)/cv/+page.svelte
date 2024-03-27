@@ -291,6 +291,21 @@
         {/each}
     </Wrap>
 
+    <h3>Postdoc Supervision</h3>
+
+    <Wrap>
+        {#each $profile.getPeople( (person) => person.level === 'postdoc', (person) => person.startdate ) as person}
+            <Item
+                start={person.startdate}
+                stop={person.enddate}
+                header={person.name}
+                two={person.dept}
+                three={person.coadvisor ?? undefined}
+                four={person.achievements}
+            />
+        {/each}
+    </Wrap>
+
     <h3>Doctoral Student Supervision</h3>
 
     <h4>Committee Chair</h4>

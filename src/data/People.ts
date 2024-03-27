@@ -223,7 +223,9 @@ export const People: readonly Person[] = [
         url: 'https://jeansalac.github.io/',
         startdate: 2022,
         enddate: null,
-        achievements: [],
+        achievements: [
+            'Assistant Professor, Computer Science, Carlton College, 2024',
+        ],
     },
     {
         id: 'megumi',
