@@ -344,6 +344,19 @@ This changes quarterly:
             not rigorously evaluate you on these &mdash; I trust you to be honest
             &mdash; but planning the evidence you gather will help focus your work.</li
         >
+        <ul>
+            <li
+                >For any issue associated with a goal, <strong
+                    >post a comment on issue</strong
+                >
+                itself describing the status of the issue, any work you completed
+                on it, and whether you'll be continuing work on the issue past the
+                end of the quarter. If you are not continuing work, make sure you've
+                included all work materials in the issue so that others can resume
+                where you left off, and <strong>unassign</strong> yourself from the
+                issue, so others know they are free to work on it.</li
+            >
+        </ul>
         <li
             >The <strong>number of credits</strong> you registered for, and
             <strong>why</strong> you think the goals are possible in that amount
