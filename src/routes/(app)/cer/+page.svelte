@@ -517,7 +517,6 @@
             ></li
         >
         <li><External to="https://www.edjoin.org">EdJoin</External></li>
-        <li>@CSFacultyJobs on Twitter.</li>
         <li
             >Evan Peck maintains a list of <External
                 to="https://cs-pui.github.io/"
