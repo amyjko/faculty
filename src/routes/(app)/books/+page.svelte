@@ -5,7 +5,7 @@
     import Link from '$lib/components/Link.svelte';
 </script>
 
-<h1> These are books I've authored. </h1>
+<h1> These are books I've authored or edited. </h1>
 
 <p>
     Unlike print books, they are digital, searchable, interactive, and web
