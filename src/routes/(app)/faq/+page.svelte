@@ -138,7 +138,7 @@
         > has a sobering but practical look, including a <External
             to="https://matt.might.net/articles/phd-school-in-pictures/"
             >fun visual metaphor</External
-        >> of what it means to do a PhD. I also like <External
+        > of what it means to do a PhD. I also like <External
             to="https://freedom-to-tinker.com/2010/09/27/advice-new-graduate-students/"
             >Jennifer Rexford's view of Ph.D. life as individual growth by
             leveraging the group</External
