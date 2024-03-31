@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://amyjko.medium.com/trans-day-of-chores-516a22fa9b1b',
+        title: 'Trans day of chores',
+        date: '2024.03',
+        tags: ['gender', 'personal'],
+        img: 'tdovchores',
+        alt: 'A highly warped, up close photo of Boomy the tuxedo cat, with her nose so pink and large.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/sigcse-2024-trip-report-041db5678f9b',
         title: 'SIGSE 2024 trip report: always hallways',
         date: '2024.03',
