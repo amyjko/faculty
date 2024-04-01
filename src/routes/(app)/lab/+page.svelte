@@ -23,11 +23,14 @@
 <Title text="Lab" />
 
 <h1>
-    I direct the <em>Code & Cognition Lab</em>.
+    I mentor PhD students, undergraduates, and postdocs on research as part of
+    the broader <Link to="https://computinged.uw.edu/"
+        >Center for Learning, Computing, and Imagination</Link
+    >.
 </h1>
 
 <p>
-    My lab includes students from <External to="http://ischool.uw.edu"
+    My students are typically from <External to="http://ischool.uw.edu"
         >The Information School</External
     >,
     <External to="http://cs.washington.edu"
