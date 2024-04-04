@@ -1458,11 +1458,11 @@ export const Amy: ProfileSpec = {
             enddate: 2020,
         },
         {
-            name: 'David Gonzalez',
+            name: 'David Samudio',
             institution: 'George Mason University',
             department: 'Computer Science',
             startdate: 2018,
-            enddate: 2021,
+            enddate: 2024,
         },
         {
             name: 'Justin Smith',
