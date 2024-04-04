@@ -181,7 +181,7 @@ export const People: readonly Person[] = [
         url: 'https://www.linkedin.com/in/lena-armstrong/',
         startdate: 2022,
         enddate: 2023,
-        achievements: [],
+        achievements: ['NSF Graduate Research Fellowship (2024)'],
     },
     {
         id: 'leahperl',
