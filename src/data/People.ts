@@ -125,7 +125,7 @@ export const People: readonly Person[] = [
         url: 'https://scholar.google.com/citations?user=aPnsRikAAAAJ&hl=en',
         startdate: 2022,
         enddate: null,
-        achievements: [],
+        achievements: ['NSF Graduate Research Fellowship (2024)'],
     },
     {
         id: 'audreylm',
