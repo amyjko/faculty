@@ -608,6 +608,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'Sweden',
     ],
     [
+        'Alannah Oleson',
+        'https://alannaholeson.com',
+        'HCI education; critical computing education; inclusive design methods; pedagogical content knowledge',
+        'Computer Science',
+        'University of Denver',
+        'USA',
+    ],
+    [
         'Chris Orban*',
         'https://physics.osu.edu/people/orban.14',
         'high school physics and math CS integration',
