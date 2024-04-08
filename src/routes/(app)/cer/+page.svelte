@@ -674,6 +674,23 @@
             > presents key methods for conducting education research in equitable
             ways, but also about equity and justice.</li
         >
+        <li
+            >There are also several notable commentaries on tensions between
+            qualitative and quantitative data, including Hammer and Berland's
+            arguments about <External
+                to="https://doi.org/10.1080/10508406.2013.802652"
+                >qualitative coding as generating claims</External
+            >, McDonald et al's guidelines for <External
+                to="https://doi.org/10.1145/3359174"
+                >inter-rater reliability practices</External
+            >, Soden, et al's guide for how to <External
+                to="http://dx.doi.org/10.1145/3633200"
+                >evaluate interpretive research</External
+            >, and Chi's classic guide for <External
+                to="https://doi.org/10.1207/s15327809jls0603_1"
+                >quantifying verbal data</External
+            >.
+        </li>
     </ul>
 
     <h4 id="race">Race and Technology</h4>
