@@ -162,6 +162,65 @@
     </p>
 </Section>
 
+<Section id="coadvising" header="How should coadvising work?">
+    <p
+        >I advise a lot of doctoral students, but also advise a lot of faculty
+        who advise doctoral students, and one of the most common areas of
+        concern that comes up is how to do co-advising well. I wouldn't say I'm
+        an expert on this, but I do feel like I know the challenges that arise.
+        Here are the questions I think are key for everyone in a co-advising
+        situation &mdash; co-advisors and co-advisees &mdash; to have shared
+        agreement on:</p
+    >
+
+    <ul>
+        <li
+            ><strong
+                >How does each advisor see their role in the student's work and
+                success?</strong
+            > Are they compatible? In conflict? Some advisors might see students
+            as people who can accelerate their research focus; others might view
+            them as students who they are mentoring. Others still might view students
+            as collaborators. All three of these perspectives come with different
+            expectations and relationships, and so it's important for co-advisors
+            to come to some shared understanding about them.</li
+        >
+        <li
+            ><strong
+                >Who is responsible for the long term funding with the student?
+                Is that fixed or dynamic?</strong
+            > This is key, because it shapes who feels responsible for resourcing
+            a PhD students' time, and offering the student certainty about their
+            funding stability.</li
+        >
+        <li
+            ><strong
+                >Should both advisors always be a collaborator on a students'
+                work</strong
+            >. Or does that depend on the paper and project?. Authorship
+            expectations are wildly different between researchers, so these
+            should be stated and negotiated upfront.</li
+        >
+        <li
+            ><strong
+                >When advisors' disagree on how a student should proceed, is it
+                the student's job to reconcile the disagreement?</strong
+            >. Are they free to choose without consequence from either advisor?
+            Or is it the advisors' job to come to consensus? Is that done with
+            or without the students' involvement? Everyone should agree on how
+            this happens.</li
+        >
+        <li
+            ><strong
+                >When there is interpersonal conflict between advisors, how is a
+                student shielded from that?</strong
+            > Or is a student expected to be the mediator? (Not recommended).</li
+        >
+    </ul>
+
+    <p>What other questions do you think are important to answer?</p>
+</Section>
+
 <Section id="goodwriting" header="How can I become a good technical writer?">
     <p>
         When writing and reviewing scientific papers, there are a lot of
