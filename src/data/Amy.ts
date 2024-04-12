@@ -1642,6 +1642,19 @@ export const Amy: ProfileSpec = {
     ],
     service: [
         {
+            title: 'Mentor',
+            committee: 'SIGCSE Doctoral Consortium',
+            level: 'international',
+            description:
+                'I served as a mentor for twenty doctoral students from around the globe.',
+            commitment: {
+                start: '2024-08-10',
+                end: '2024-08-10',
+                hours: 8,
+                priority: 0,
+            },
+        },
+        {
             title: 'Co-director',
             committee: 'Reciprocal Reviews',
             level: 'international',
