@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/aera-2024-trip-report-blight-and-belief-f82e1c403d3a',
+        title: 'AERA 2024 trip report: blight and belief',
+        date: '2024.04',
+        tags: ['computing education', 'trip report'],
+        img: 'aera24',
+        alt: 'Two imposing marble columns, a dimly lit hallway, and a hundred attendees swarming.',
+    },
+    {
         url: 'https://amyjko.medium.com/trans-day-of-chores-516a22fa9b1b',
         title: 'Trans day of chores',
         date: '2024.03',
