@@ -68,13 +68,12 @@
     <div>
         <p>
             <strong>Current UW Ph.D. student?</strong> Lurk in
-            <i>#codeandcognitionlab</i>
-            on <External to="https://computinged-uw.slack.com"
-                >ComputingEd@UW</External
-            > Slack. DM or email me about your interests. I'm always open to chatting,
-            collaborating, serving on committees, and when I have capacity, advising.
-            You're also welcome to visit any of our lab meetings. Check out our lab
-            calendar (linked above) to see when we're meeting.
+            <i>#research</i>
+            on <External to="https://computinged-uw.slack.com">LCI</External> Slack.
+            DM or email me about your interests. I'm always open to chatting, collaborating,
+            serving on committees, and when I have capacity, advising. You're also
+            welcome to visit any of our lab meetings. Check out our lab calendar
+            (linked above) to see when we're meeting.
         </p>
     </div>
     <div>
