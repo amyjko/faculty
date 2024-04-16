@@ -269,7 +269,9 @@ This changes quarterly:
     >
 </ul>
 
-<p>In the last meeting of the quarter (during finals week), we will: </p>
+<p
+    >In the last meeting of the quarter (the week before finals week), we will:
+</p>
 
 <ul>
     <li>Have snacks of your choice!</li>
@@ -280,6 +282,8 @@ This changes quarterly:
         yourself from issues you will not finish</li
     >
 </ul>
+
+<p>We will not meet during finals week.</p>
 
 <Linkable id="grades">How will I be graded?</Linkable>
 
@@ -372,8 +376,8 @@ This changes quarterly:
         >
     </ul>
     <li
-        >Before the last meetup of the quarter during finals week, a document
-        submitted to Canvas providing:</li
+        >Before the last meetup of the quarter (the week before finals week), a
+        document submitted to Canvas providing:</li
     >
     <ul>
         <li
