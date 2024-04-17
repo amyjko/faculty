@@ -15,8 +15,8 @@
 </h1>
 
 <p
-    >I'm recruiting students to join our <strong>Wordplaypen</strong>, a
-    community that helps design, build, and maintain <External
+    >I'm recruiting volunteers to join our <strong>Wordplaypen</strong>, an open
+    source community that helps design, build, and maintain <External
         to="https://wordplay.dev"><Emoji symbol="💬" /> Wordplay</External
     >. Wordplay is a playful programming platform for creating accessible,
     interactive typography that celebrates the world's languages. Our vision is
@@ -28,8 +28,8 @@
 </p>
 
 <p>
-    I'm excited to work with any University of Washington undergraduate excited
-    about that vision and who has:
+    I'm excited to work with anyone excited about that vision &mdash; especially
+    students &mdash; and who has:
 </p>
 
 <ul
@@ -40,9 +40,9 @@
         accessibility and global inclusion, and we can't meaningfully achieve
         that without your knowledge and lived experience.</li
     ><li
-        >Basic knowledge of git, programming, and optionally design (e.g. from
-        INFO 201, CSE 154, INFO 340, INFO 360, or other experience). And I do
-        mean basic &mdash; it's okay if you're still just learning. This is an
+        >Basic knowledge of Git, GitHub, programming, or design (e.g. from INFO
+        201, CSE 154, INFO 340, INFO 360, or other experience). And I do mean
+        basic &mdash; it's okay if you're still just learning. This is an
         opportunity to strengthen your skills with others.</li
     >
 </ul>
@@ -108,81 +108,64 @@
 <Linkable id="howcontribute">How do I join the community?</Linkable>
 
 <p
-    >First, ensure you are available at the <Link to="/wordplaypen/#meetups"
-        >day, time, and location</Link
-    > listed at on this page. Attendance is mandatory unless ill. (In-person is preferred,
-    as this time is 95% collaboration time.)</p
->
-
-<p
-    >Next, join the <Link to="https://discord.gg/Jh2Qq9husy"
-        >Discord server</Link
-    >, where contributors and creators connect.</p
->
-
-<p
-    >Next, decide of you want to volunteer or get credit. Both are the same
-    activity, but for credit, you'll have to do a bit more to earn the credit.
-    If you just want to volunteer, you can skip to the <Link
-        to="/wordplaypen#volunteer">next question</Link
-    >.</p
->
-
-<p
-    >If you want credit and are a University of Washington student, register <External
-        to="https://ischool.uw.edu/programs/informatics/curriculum/experiential-learning/independent-study"
-        >INFO 499 independent study credit</External
-    > or for <External
-        to="https://www.cs.washington.edu/academics/ugrad/research#registration"
-        >CSE 499</External
-    > research credit before the quarter starts. In both cases, I approve it, and
-    then advisors send you an add code. You can register for anywhere from
-    <strong>1-5 credits</strong>; think about how much time you want to
-    contribute (1 credit = 3 hours/week). For the INFO form, answer these
-    questions anywhere on the proposal form:
+    >Anyone that completes the steps below &mdash; not only UW students &mdash;
+    is welcome to contribute.
 </p>
 
-<ul
-    ><li>Why you want to participate,</li>
-    <li>What skills and lived experience you would bring to the project, and</li
-    ><li>How much time you are willing to commit.</li>
-</ul>
+<ol>
+    <li
+        ><strong>Check your calendar</strong>. First, ensure you are available
+        to attend meetups at the <Link to="/wordplaypen/#meetups"
+            >day, time, and location</Link
+        > listed below. Attendance is mandatory unless ill, traveling, or time conflicted
+        occasionally. In-person is preferred, as this time is 95% collaboration time.</li
+    >
+    <li
+        ><strong>Apply</strong>. Next, fill out the <Link
+            to="https://forms.gle/8iKs2CqAWzxNYVcG8"
+            >Wordplaypen application</Link
+        >. It is extensive, requiring reading, writing, and reflection, and some
+        careful planning about your time and commitments. We recommend skimming
+        the application first, seeing what's required, and making sure you
+        actually want to commit to volunteering. The effort this application
+        requires is intentional: we want volunteers who are invested in the
+        vision and the project's success, and will be reliable, sustained
+        contributors for at least 3 months, if not much longer. After you fill
+        out the application, expect us to reach out either with a welcome email,
+        or questions about your application.
+    </li>
 
-<p
-    >Just put answers wherever they fit best. I'm the only one who reviews
-    these, so you're not going to be rejected for filling it "wrong" because
-    there is no wrong.</p
->
-
-<p
-    >Advising teams process these manually, so be patient, and if you want an
-    update, write them, not me. And don't worry about trying to convince me, or
-    writing some big epic essay, or being rejected. This isn't a competitive
-    admissions process, I just want some context for your goals and
-    availability, so I can prepare a good experience.</p
->
-
-<p
-    >Registration for credit is quarterly. If you want to participate again,
-    you'll need to register again, or continue as a volunteer (see below).</p
->
-
-<Linkable id="volunteer">Can I volunteer instead?</Linkable>
-
-<p
-    >Yes! The project is open source, and so anyone in the world may volunteer.
-    Just follow the <Link
-        to="https://github.com/wordplaydev/wordplay/wiki/contribute"
-        >contributor guidelines</Link
-    > to learn how. You may volunteer if you can make a time commitment, and demonstrate
-    that they actually have capacity to follow through with it. (It doesn't help
-    the project to promise contributions that you can't keep.)</p
->
-
-<p
-    >If you're at UW or around Puget Sound and volunteering, you're welcome to
-    join the Wordplaypen meetups.
-</p>
+    <li
+        ><strong>Join Discord</strong>. While you wait for a reply, join the <Link
+            to="https://discord.gg/Jh2Qq9husy">Discord server</Link
+        >, where contributors and creators connect. It's okay to join before
+        your application is approved; it's an open server.</li
+    >
+    <li
+        ><strong>Optionally register for credit</strong>. If you are a UW
+        student and you want credit for participation, complete the steps above
+        first, and then choose one of the these ways to register before the next
+        quarter begins:
+        <ul>
+            <li
+                ><strong>INFO 494 Research Studio</strong>
+                <em>Justice-Centered Programming Languages</em>. Receive 2
+                credits of elective credit as compensation for 6 hours/week of
+                volunteer effort. Includes some minor additional work for
+                credit.
+            </li>
+            <li
+                ><strong>CSE 499</strong>. If you are a CSE student and do not
+                want to register for INFO 494, you may register for 2-4 credits
+                of <External
+                    to="https://www.cs.washington.edu/academics/ugrad/research#registration"
+                    >CSE 499</External
+                > instead. In your proposal, you may simply refer to the application
+                you filled out.</li
+            >
+        </ul>
+    </li>
+</ol>
 
 <Linkable id="when">When do we meet?</Linkable>
 
@@ -191,17 +174,18 @@ This changes quarterly:
 <Alert>
     <ul>
         <li
-            >Winter 2024 meets in <strong
-                >BLD 070 Wednesdays 5:30-6:30 pm</strong
-            >, starting January 3rd</li
-        >
-        <li
             >Spring 2024 meets in <strong
                 >BLD 070 Wednesdays 5:30-6:30 pm</strong
             >, starting March 27th</li
         >
-        <li>Summer 2024 will happen! Location and time TBD. </li>
-        <li>Wordplaypen will almost certainly continue through AY 2024-205.</li
+        <li
+            >Summer 2024 meets in <strong
+                >MGH 015 Monday + Wednesday 4:30-6:00 pm</strong
+            >, starting June 17th and ending August 28th.
+        </li>
+        <li
+            >Autumn 2024 meets in <strong>DEN 303 Wednesdays 5:30-6:30pm</strong
+            >.</li
         ></ul
     >
 </Alert>
@@ -304,7 +288,10 @@ This changes quarterly:
     announced at the beginning of each quarter.
 </Alert>
 
-<p>Here is our current asssesment practice:</p>
+<p
+    >That said, if you have registered for credit, here is how we will determine
+    whether you get credit:</p
+>
 
 <ul>
     <li
@@ -404,12 +391,12 @@ This changes quarterly:
 <Linkable id="start">How do I get started?</Linkable>
 
 <p
-    >Everything you need to start is on Wordplay the <External
+    >Once you've been invited into the community, everything you need to start
+    is on Wordplay the <External
         to="https://github.com/wordplaydev/wordplay/wiki/contribute"
         >contribute</External
-    > page, which is the same onboarding for any contributor. You can read that before
-    the quarter starts, but be warned that we revise between each quarter, so you
-    might want to wait until the quarter starts to avoid having to re-read.</p
+    > page, which is the same onboarding for any contributor. You can read that at
+    any time.</p
 >
 
 <Linkable id="otherquestions">I have more questions!</Linkable>
