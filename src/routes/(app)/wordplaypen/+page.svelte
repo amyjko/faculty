@@ -231,13 +231,13 @@ This changes quarterly:
 <ul>
     <li
         >Amy will give brief updates to the whole group (and also post these in
-        Discord #updates)</li
+        Discord #weekly-highlights)</li
     >
     <li
-        >Everyone will post a 1-sentence update in Discord #updates, so we can
-        celebrate accomplishments and identify needs. Updates should include
-        things like: 1) something you accomplished that you're proud of, 2) help
-        that you need, 3) progress that you made</li
+        >Everyone will post a 1-sentence update in Discord #weekly-highlights,
+        so we can celebrate accomplishments and identify needs. Updates should
+        include things like: 1) something you accomplished that you're proud of,
+        2) help that you need, 3) progress that you made</li
     >
     <li
         >Contributors will huddle by role (and if they don't have a role, huddle
