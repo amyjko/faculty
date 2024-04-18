@@ -117,8 +117,10 @@
         ><strong>Check your calendar</strong>. First, ensure you are available
         to attend meetups at the <Link to="/wordplaypen/#meetups"
             >day, time, and location</Link
-        > listed below. Attendance is mandatory unless ill, traveling, or time conflicted
-        occasionally. In-person is preferred, as this time is 95% collaboration time.</li
+        > listed below. Attendance is mandatory unless ill, traveling; it's okay
+        to not attend occasionally when you have time conflicts, or if you are contributing
+        remotely. We are not currently offering hybrid, just because the time is
+        95% fluid collaboration time.</li
     >
     <li
         ><strong>Apply</strong>. Next, fill out the <Link
