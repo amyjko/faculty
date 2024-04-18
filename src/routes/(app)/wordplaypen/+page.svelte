@@ -142,10 +142,12 @@
         your application is approved; it's an open server.</li
     >
     <li
-        ><strong>Optionally register for credit</strong>. If you are a UW
-        student and you want credit for participation, complete the steps above
-        first, and then choose one of the these ways to register before the next
-        quarter begins:
+        ><strong
+            >Optionally register for credit during Autumn, Winter, or Spring
+            quarter</strong
+        >. If you are a UW student and you want credit for participation during
+        the academic year (not summer), complete the steps above first, and then
+        choose one of the these ways to register before the next quarter begins:
         <ul>
             <li
                 ><strong>INFO 494 Research Studio</strong>
