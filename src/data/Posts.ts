@@ -123,7 +123,7 @@ export const Posts: Post[] = [
     },
     {
         url: 'https://medium.com/bits-and-behavior/faculty-are-godzillas-c74e8b7ce9fb',
-        title: 'Faculty are Gozdillas',
+        title: 'Faculty are Godzillas',
         date: '2023.08',
         tags: ['academia'],
         img: 'godzilla',
