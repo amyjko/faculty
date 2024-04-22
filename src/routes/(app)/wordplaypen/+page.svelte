@@ -188,7 +188,7 @@ This changes quarterly:
             >, starting June 17th and ending August 28th.
         </li>
         <li
-            >Autumn 2024 meets in <strong>DEN 303 Wednesdays 5:30-6:30pm</strong
+            >Autumn 2024 meets in <strong>DEN 303 Wednesdays 5:30-6:50pm</strong
             >.</li
         ></ul
     >
