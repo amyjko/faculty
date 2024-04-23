@@ -184,7 +184,7 @@ This changes quarterly:
         >
         <li
             >Summer 2024 meets in <strong
-                >MGH 015 Monday + Wednesday 4:30-6:00 pm</strong
+                >MGH 015 Tuesday + Thursday 4:00-5:30 pm</strong
             >, starting June 17th and ending August 28th.
         </li>
         <li
