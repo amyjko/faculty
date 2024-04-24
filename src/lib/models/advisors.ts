@@ -464,9 +464,9 @@ const advisors: [string, string, string, string, string, string][] = [
         'Germany',
     ],
     [
-        'Dennis Komm*',
+        'Dennis Komm',
         'https://csedu.ethz.ch/en/people.html',
-        'algorithms, programming, K–12, misconceptions',
+        'algorithms, programming, K-12, misconceptions, computational thinking',
         'Computer Science',
         'ETH Zürich',
         'Switzerland',
