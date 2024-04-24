@@ -456,6 +456,22 @@ const advisors: [string, string, string, string, string, string][] = [
         'USA',
     ],
     [
+        'Tobias Kohn',
+        'https://tobiaskohn.ch/',
+        'novices, programming, compilers, errors, K-12',
+        'Computer Science',
+        'Karlsruhe Institute of Technology (KIT)',
+        'Germany',
+    ],
+    [
+        'Dennis Komm*',
+        'https://csedu.ethz.ch/en/people.html',
+        'algorithms, programming, K–12, misconceptions',
+        'Computer Science',
+        'ETH Zürich',
+        'Switzerland',
+    ],
+    [
         'Michael Kölling*',
         'https://nms.kcl.ac.uk/michael.kolling/',
         'computing education',
@@ -846,6 +862,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'Education',
         'Florida State University',
         'USA',
+    ],
+    [
+        'Jacqueline Staub*',
+        'https://scholar.google.com/citations?user=hFe7oDcAAAAJ&hl=en',
+        'programming, K-12',
+        'Computer Science',
+        'University of Trier',
+        'Germany',
     ],
     [
         'Andreas Stefik',
