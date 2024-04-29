@@ -20,30 +20,42 @@
     >
     <h1>Amy J. Ko, Ph.D.</h1>
     <div class="metadata">
-        <External to="https://www.mypronouns.org/she-her">she/her/hers</External
+        <span class="small"
+            ><em
+                ><External to="https://www.mypronouns.org/she-her"
+                    >she/her/hers</External
+                ></em
+            ></span
         >
-        <br /><External
-            to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/"
-            >Professor</External
+        <strong
+            ><External
+                to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/"
+                >Professor</External
+            ></strong
         >
-        <br /><External to="http://ischool.uw.edu"
-            >The Information School</External
+        <External to="http://ischool.uw.edu">The Information School</External>
+        <External to="http://cs.uw.edu"
+            >Paul G. Allen School of Computer Science &amp; Engineering <span
+                class="small"><em>courtesy</em></span
+            ></External
         >
-        <br /><External to="http://cs.uw.edu"
-            >Computer Science &amp; Engineering (courtesy)</External
-        >
-        <br /><External to="http://www.washington.edu"
+        <External to="http://www.washington.edu"
             >University of Washington, Seattle</External
         >
-        <!-- &nbsp;&sdot; <a href="https://ischool.uw.edu/academics/informatics">Program Chair, <em>Informatics</em></a> -->
-        <br /><External to="https://dl.acm.org/journal/toce"
-            >Editor-in-Chief, <em>ACM TOCE</em></External
+        <span class="small"
+            >- <External to="https://dl.acm.org/journal/toce"
+                >Editor-in-Chief, <em>ACM TOCE</em></External
+            ></span
         >
-        <br /><External to="https://reciprocal.reviews/"
-            >Co-Director, <em>Reciprocal Reviews</em></External
+        <span class="small"
+            >- <External to="https://reciprocal.reviews/"
+                >Co-Director, <em>Reciprocal Reviews</em></External
+            ></span
         >
-        <br /><External to="https://csforallwa.org/"
-            >Co-Director, <em>CS for All Washington</em></External
+        <span class="small"
+            >- <External to="https://csforallwa.org/"
+                >Co-Director, <em>CS for All Washington</em></External
+            ></span
         >
         <Social />
     </div></section
@@ -120,6 +132,13 @@
     .metadata {
         font-size: var(--small-font-size);
         line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .small {
+        font-size: calc(var(--small-font-size) * 0.8);
     }
 
     nav {

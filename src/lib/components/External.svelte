@@ -3,3 +3,9 @@
 </script>
 
 <a href={to} target="_blank" rel="noreferrer"><slot /></a>
+
+<style>
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
