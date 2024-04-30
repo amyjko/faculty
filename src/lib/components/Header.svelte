@@ -33,14 +33,22 @@
                 >Professor</External
             ></strong
         >
-        <External to="http://ischool.uw.edu">The Information School</External>
-        <External to="http://cs.uw.edu"
-            >Paul G. Allen School of Computer Science &amp; Engineering <span
-                class="small"><em>courtesy</em></span
-            ></External
+        <span
+            ><External to="http://ischool.uw.edu"
+                >The Information School</External
+            ></span
         >
-        <External to="http://www.washington.edu"
-            >University of Washington, Seattle</External
+        <span
+            ><External to="http://cs.uw.edu"
+                >Paul G. Allen School of Computer Science &amp; Engineering <span
+                    class="small"><em>courtesy</em></span
+                ></External
+            ></span
+        >
+        <span
+            ><External to="http://www.washington.edu"
+                >University of Washington, Seattle</External
+            ></span
         >
         <span class="small"
             >- <External to="https://dl.acm.org/journal/toce"
