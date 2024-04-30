@@ -60,28 +60,6 @@
         <Social />
     </div></section
 >
-<section class="small-info">
-    <a href="/ajko/"
-        ><Image
-            url={'/images/headshots/ajko.jpg'}
-            alt="Headshot of Amy J. Ko"
-        /></a
-    >
-    <div>
-        <h1 style="margin-top: 0; margin-bottom: 0;">Amy J. Ko</h1>
-        <div class="metadata">
-            <External
-                to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/"
-                >Professor</External
-            >
-            <br /><External to="http://ischool.uw.edu">iSchool</External> &middot;
-            <External to="http://cs.uw.edu">CSE</External> &middot; <External
-                to="http://www.washington.edu">UW</External
-            >
-            <Social />
-        </div>
-    </div>
-</section>
 
 <hr />
 <nav>
@@ -162,12 +140,6 @@
         background-color: var(--annotation-color);
     }
 
-    .small-info {
-        display: flex;
-        flex-direction: row;
-        flex-basis: 1;
-    }
-
     .outline li {
         font-style: italic;
         font-size: 80%;
@@ -183,19 +155,12 @@
             position: sticky;
             top: var(--margin);
         }
-        .small-info {
-            display: none;
-        }
         .small-hr {
             display: none;
         }
     }
 
     @media only screen and (max-width: 800px) {
-        .info {
-            display: none;
-        }
-
         .outline {
             display: none;
         }

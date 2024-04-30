@@ -3,9 +3,9 @@
     import External from './External.svelte';
 </script>
 
-<span class="emoji">
-    <br /><a href="mailto:ajko@uw.edu"><Emoji symbol="📧" /></a><span
-        class="dot">&sdot;</span
+<div class="emoji">
+    <a href="mailto:ajko@uw.edu"><Emoji symbol="📧" /></a><span class="dot"
+        >&sdot;</span
     ><External to="https://amyjko.medium.com"><Emoji symbol="📝" /></External
     ><span class="dot">&sdot;</span><External to="https://hci.social/@amyjko"
         ><Emoji symbol="🐘" /></External
@@ -15,11 +15,12 @@
     ><span class="dot">&sdot;</span><External to="https://twitter.com/amyjko"
         ><Emoji symbol="🐥" /></External
     >
-</span>
+</div>
 
 <style>
     .emoji {
         font-family: 'Noto Emoji';
+        margin-block-start: var(--padding);
     }
 
     .dot {
