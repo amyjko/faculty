@@ -55,13 +55,13 @@
     <External to="http://ischool.uw.edu/">Information School</External> and the <External
         to="http://cs.washington.edu"
         >Paul G. Allen School of Computer Science and Engineering</External
-    > (courtesy). She directs the Code &amp; Cognition Lab, where she and her students
-    study computing education, human-computer interaction, and humanity's individual
-    and collective struggle to understand computing and harness it for creativity,
-    equity, and justice. With her collaborators, she's invented many tools and programming
-    languages to support debugging, program understanding, reuse, and learning; founded
-    and sold a <External to="http://www.answerdash.com"
-        >venture-backed startup</External
+    > (courtesy). She co-direct the UW Center for Learning, Computing, and Imagination,
+    where she studies computing education, human-computer interaction, and humanity's
+    individual and collective struggle to understand computing and harness it for
+    creativity, equity, and justice. With her collaborators, she's invented many
+    tools and programming languages to support debugging, program understanding,
+    reuse, and learning; founded and sold a <External
+        to="http://www.answerdash.com">venture-backed startup</External
     >; developed numerous ways to weave equity and justice into computing
     education pedagogy, culture, and technology; and impacted local, state, and
     federal K-12 CS education policy through community organizing and advocacy.
@@ -129,8 +129,8 @@
     meant going wherever I wanted with whomever I wanted after school with no
     parental consequences. I was one of the first people on the consumer
     internet. My adolescence was defined by pervasive grunge, sadness, suicide,
-    comic book stores, arcades, and Magic the Gathering tournaments. And I look
-    back to the 80's and 90's and wonder how the world got so complicated, so
+    comic book stores, arcades, and Magic the Gathering tournaments. I look back
+    to the 80's and 90's and wonder how the world got so complicated, so
     quickly. And then I remember that it was always complicated, whiteness just
     demanded we deny that.
 </p>
