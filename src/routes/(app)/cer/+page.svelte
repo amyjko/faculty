@@ -916,8 +916,7 @@
         </li>
         <li>
             <p
-                ><External
-                    to="https://hepgjournals.org/doi/abs/10.17763/1943-5045-88.1.26"
+                ><External to="https://doi.org/10.17763/1943-5045-88.1.26"
                     >Ethics, Identity, and Political Vision: Toward a
                     Justice-Centered Approach to Equity in Computer Science
                     Education</External
