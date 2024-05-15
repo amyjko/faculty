@@ -2,12 +2,26 @@ import type Person from '../lib/models/Person';
 
 export const People: readonly Person[] = [
     {
+        id: 'janet',
+        name: 'Janet Jiang',
+        active: true,
+        advised: true,
+        level: 'undergrad',
+        dept: 'Computer Science (Duke University)',
+        coadvisor: null,
+        bio: 'Janet is an undergraduate student at Duke University majoring in Computer Science. She is interested in addressing barriers that marginalized students face entering and persisting in computing related fields. Additionally, she hopes to design new technologies and pedagogy that make computer science curricula more inclusive.',
+        url: 'https://www.linkedin.com/in/janetcjiang/',
+        startdate: 2024,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'hardin',
         name: 'Caroline Hardin',
         active: true,
         advised: false,
         level: 'faculty',
-        dept: 'Computer Hardin',
+        dept: 'Computer Science (Western Washington University)',
         coadvisor: null,
         bio: 'Caroline and I collaborate on CS teacher education topics.',
         url: 'https://cs.wwu.edu/hardinc3',
