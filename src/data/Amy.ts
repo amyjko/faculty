@@ -2667,6 +2667,54 @@ export const Amy: ProfileSpec = {
     ],
     travel: [
         {
+            url: 'https://www.transstudiesconference.org/',
+            title: '2nd International Trans Studies Conference',
+            details: 'Hanging with computing education researchers.',
+            category: 'research',
+            commitment: {
+                start: '2024-09-04',
+                end: '2024-09-06',
+                hours: 24,
+                priority: 1,
+            },
+        },
+        {
+            url: 'https://icer2024.acm.org/',
+            title: 'ACM ICER 2024',
+            details: 'Hanging with computing education researchers.',
+            category: 'research',
+            commitment: {
+                start: '2024-07-12',
+                end: '2024-07-16',
+                hours: 40,
+                priority: 1,
+            },
+        },
+        {
+            url: 'https://cra.org/conference-at-snowbird/',
+            title: 'Snowbird',
+            details: 'Hanging with computing and information leaders.',
+            category: 'administrative',
+            commitment: {
+                start: '2024-07-23',
+                end: '2024-07-26',
+                hours: 40,
+                priority: 1,
+            },
+        },
+        {
+            url: 'https://csteachers.org/pd-opportunities/csta-annual-conference/',
+            title: 'CSTA Annual Conference',
+            details: 'Hanging with K-12 teachers and their supporters.',
+            category: 'research',
+            commitment: {
+                start: '2024-07-15',
+                end: '2024-07-19',
+                hours: 40,
+                priority: 1,
+            },
+        },
+        {
             url: 'https://web.cvent.com/event/64035ecf-cce5-455a-a9e9-77346d51574b/summary?i=qyPgowJnYE-QP2PCT6p15w&locale=en-US',
             title: 'ISAT/DARPA Workshop The Great Oncoming kNowledge Ending (GONE)',
             details:
