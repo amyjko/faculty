@@ -2684,8 +2684,8 @@ export const Amy: ProfileSpec = {
             details: 'Hanging with computing education researchers.',
             category: 'research',
             commitment: {
-                start: '2024-07-12',
-                end: '2024-07-16',
+                start: '2024-08-12',
+                end: '2024-08-16',
                 hours: 40,
                 priority: 1,
             },
