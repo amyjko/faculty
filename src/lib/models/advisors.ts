@@ -999,6 +999,22 @@ const advisors: [string, string, string, string, string, string][] = [
         'Georgia Tech',
         'USA',
     ],
+    [
+        'Ashok Goel*',
+        'https://dilab.gatech.edu/ashok-k-goel/',
+        'AI in education',
+        'Computer Science',
+        'Georgia Tech',
+        'USA',
+    ],
+    [
+        'David Joyner*',
+        'https://dilab.gatech.edu/david-joyner/',
+        'scaling large online classes and higher education',
+        'Computer Science',
+        'Georgia Tech',
+        'USA',
+    ],
 ];
 
 export default advisors;
