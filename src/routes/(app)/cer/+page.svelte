@@ -1329,6 +1329,23 @@
                 opinions!</p
             >
         </li>
+        <li>
+            <p
+                ><External to="https://educationaldatamining.org/">EDM</External
+                >
+                (the International Conference on Educational Data Mining). Explores
+                using educational data to understand student learning.
+            </p>
+        </li>
+        <li>
+            <p
+                ><External
+                    to="https://jedm.educationaldatamining.org/index.php/JEDM"
+                    >JEDM</External
+                > (the Journal of Educational Data Mining). Publishes research on
+                the use of data mining in education.</p
+            >
+        </li>
     </ul>
 
     <h4 id="research-and-practice">Research and practice venues</h4>
