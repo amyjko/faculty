@@ -983,6 +983,38 @@ const advisors: [string, string, string, string, string, string][] = [
         'Northwestern',
         'USA',
     ],
+    [
+        'Chris Piech*',
+        'https://stanford.edu/~cpiech/bio/index.html',
+        'machine learning to understand human learning',
+        'Computer Science',
+        'Stanford',
+        'USA',
+    ],
+    [
+        'Thad Starner*',
+        'https://sites.cc.gatech.edu/home/thad/',
+        'plagiarism detection in large scale programming classes, navigating large class forums',
+        'Computer Science',
+        'Georgia Tech',
+        'USA',
+    ],
+    [
+        'Ashok Goel*',
+        'https://dilab.gatech.edu/ashok-k-goel/',
+        'AI in education',
+        'Computer Science',
+        'Georgia Tech',
+        'USA',
+    ],
+    [
+        'David Joyner*',
+        'https://dilab.gatech.edu/david-joyner/',
+        'scaling large online classes and higher education',
+        'Computer Science',
+        'Georgia Tech',
+        'USA',
+    ],
 ];
 
 export default advisors;
