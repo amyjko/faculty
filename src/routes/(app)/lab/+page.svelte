@@ -44,8 +44,9 @@
 
 <ul>
     <li
-        >Our weekly lab meetings are open to any doctoral students or postdocs
-        at UW.</li
+        >Our weekly lab meetings are part of the <External
+            to="https://computinged.uw.edu/">LCI research meetings</External
+        >, joined with the many other computing education scholars on campus.</li
     >
     <li
         >Read our <External
