@@ -2,6 +2,20 @@ import type Person from '../lib/models/Person';
 
 export const People: readonly Person[] = [
     {
+        id: 'carlos',
+        name: 'Carlos Aldana Lira',
+        active: true,
+        advised: true,
+        level: 'undergrad',
+        dept: 'Computer Science (Middle Tennessee State University)',
+        coadvisor: null,
+        bio: "Carlos is an undergraduate student at Middle Tennessee State University studying Computer Science and Interactive Media. He additionally studies computing education and the learning sciences for his undergraduate research work and aims to center learners' existing conceptual, strategic, and epistemological resources in the development of effective, inclusive pedagogy.",
+        url: 'https://aldats.dev/',
+        startdate: 2024,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'janet',
         name: 'Janet Jiang',
         active: true,
