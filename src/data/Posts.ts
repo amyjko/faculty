@@ -27,7 +27,7 @@ export const Posts: Post[] = [
     },
     {
         url: 'https://amyjko.medium.com/90e50d2ba670',
-        title: 'Processing a “A Short History of Trans Misogyny',
+        title: 'Processing a "A Short History of Trans Misogyny"',
         date: '2024.02',
         tags: ['personal', 'gender', 'society'],
         img: 'misogyny',
