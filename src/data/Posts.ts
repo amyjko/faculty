@@ -19,7 +19,7 @@ export const Posts: Post[] = [
     },
     {
         url: 'https://medium.com/bits-and-behavior/sigcse-2024-trip-report-041db5678f9b',
-        title: 'SIGSE 2024 trip report: always hallways',
+        title: 'SIGCSE 2024 trip report: always hallways',
         date: '2024.03',
         tags: ['trip report', 'computing education'],
         img: 'sigcse2024',
