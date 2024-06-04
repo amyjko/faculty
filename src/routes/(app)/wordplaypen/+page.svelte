@@ -177,18 +177,13 @@ This changes quarterly:
 <Alert>
     <ul>
         <li
-            >Spring 2024 meets in <strong
-                >BLD 070 Wednesdays 5:30-6:30 pm</strong
-            >, starting March 27th</li
-        >
-        <li
             >Summer 2024 meets in <strong
                 >MGH 015 Tuesday + Thursday 4:00-5:30 pm</strong
-            >, starting June 17th and ending August 28th.
+            >, first day June 18th, last day August 29th.
         </li>
         <li
             >Autumn 2024 meets in <strong>DEN 303 Wednesdays 5:30-6:50pm</strong
-            >.</li
+            >, first day September 25th, last day December 4th.</li
         ></ul
     >
 </Alert>
