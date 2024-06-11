@@ -116,7 +116,7 @@ export const People: readonly Person[] = [
     {
         id: 'camilo',
         name: 'Camilo Montes de Haro',
-        active: true,
+        active: false,
         advised: true,
         level: 'undergrad',
         dept: 'The Information School',
@@ -242,7 +242,7 @@ export const People: readonly Person[] = [
     {
         id: 'kmack3',
         name: 'Avery Mack',
-        active: true,
+        active: false,
         advised: false,
         level: 'phd',
         dept: 'Computer Science & Engineering',
@@ -256,7 +256,7 @@ export const People: readonly Person[] = [
     {
         id: 'salac',
         name: 'Jean Salac',
-        active: true,
+        active: false,
         advised: true,
         level: 'postdoc',
         dept: 'The Information School',
@@ -356,7 +356,7 @@ export const People: readonly Person[] = [
     {
         id: 'latoza',
         name: 'Thomas D. LaToza',
-        active: true,
+        active: false,
         advised: false,
         level: 'faculty',
         dept: 'Computer Science',

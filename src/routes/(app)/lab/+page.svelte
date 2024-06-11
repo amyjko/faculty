@@ -18,6 +18,12 @@
             window.location.hash.substring(1) === id
         );
     }
+
+    $: affiliated = $profile.getPeople(
+        (person) =>
+            person.active && !person.advised && person.level !== 'faculty',
+        (person) => -person.startdate
+    );
 </script>
 
 <Title text="Lab" />
@@ -125,13 +131,15 @@
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
-<Linkable id="affiliate-phd">Affiliated Ph.D. students</Linkable>
+{#if affiliated.length > 0}
+    <Linkable id="affiliate-phd">Affiliated Ph.D. students</Linkable>
 
-{#each $profile.getPeople( (person) => person.active && !person.advised && person.level !== 'faculty', (person) => -person.startdate ) as person}
-    <Person {person} highlight={isPersonHighlighted(person.id)} />
-{/each}
+    {#each affiliated as person}
+        <Person {person} highlight={isPersonHighlighted(person.id)} />
+    {/each}
+{/if}
 
-<Linkable id="collaborators">Faculty Collaborators</Linkable>
+<Linkable id="collaborators">Active Faculty Collaborators</Linkable>
 
 <p
     ><em
