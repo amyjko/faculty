@@ -7,7 +7,8 @@ const Talks = [
         title: 'Liberatory Futures for Computing Literacy',
         venue: 'NCWIT Summit 2024',
         url: null,
-        recording: null,
+        recording:
+            'https://ncwit.org/video/liberatory-futures-for-computing-literacy/',
         practice: null,
         description:
             'I discuss the intersectional needs of trans youth in schools, and what implications that has for serving all youth in computing education.',
