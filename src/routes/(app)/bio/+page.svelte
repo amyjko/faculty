@@ -39,11 +39,11 @@
     works toward an equitable, sustainable, and liberatory future in which
     everyone has the freedom, resources, and affirmation they need to thrive.
     She views uncritical uses of computing as a threat to that future, but
-    believes computing can be reimagined to help achieve it. Her primary areas
-    of expertise are HCI, Software Engineering, Computing Education, and
-    Programming Languages, but she draws extensively upon Education Research,
-    Learning Sciences, and the many social sciences of identity, community, and
-    power.
+    believes computing can be reimagined to help achieve it, and wants to help
+    design and build it. Her primary areas of expertise are HCI, Computing
+    Education, Software Engineering, and Programming Languages, but she draws
+    extensively upon Education Research, Learning Sciences, and the many social
+    sciences of identity, community, and power.
 </p>
 
 <Linkable id="short">Short Bio</Linkable>
@@ -69,10 +69,12 @@
     <!-- Compute number of publications, rounding to nearest 10 -->
     {pubCount} peer-reviewed publications, with
     <!-- Compute number of best papers -->
-    {bestAwardCount} receiving paper awards and
+    {bestAwardCount} receiving distinguished paper awards and
     <!-- Compute number of most influential papers. -->
-    {mipAwardCount} receiving most influential paper awards. She is an ACM Distinguished
-    Member and a member <External to="https://sigchi.org/awards/"
+    {mipAwardCount} receiving most influential paper awards. She is an <External
+        to="https://awards.acm.org/distinguished-members"
+        >ACM Distinguished Member</External
+    > and a member <External to="https://sigchi.org/awards/"
         >SIGCHI Academy</External
     >, for her substantial contributions to the field of human-computer
     interaction, computing education, and software engineering. She received her
@@ -89,18 +91,19 @@
 <p>
     Amy J. Ko is a queer, trans anti-disciplinary weirdo at the <External
         to="http://www.washington.edu">University of Washington</External
-    > who gets paid to follow her curiosity about computation and tell people what
-    she finds. She likes working with students to wander about asking questions about
-    the ways that computation has and hasn't woven itself through people's lives
-    and learning. She started off inventing ways of making programming easier, but
-    then got disillusioned with productivity. She then got excited about the ways
-    that programmers interact with communities of people using their code. After
-    she returned from her icky capitalist stint as a CTO, she decided to focus on
-    making people smarter instead of tools smarter, and began studying what kinds
+    > who has the privilege of being paid to follow her curiosity about computation,
+    learning, and politics, and tell people what she finds in various rooms, physical
+    and virtual. She likes working with students to wander about asking questions
+    about the ways that computation has and hasn't woven itself through people's
+    lives and learning. She started off inventing ways of making programming easier
+    for developers, but then got disillusioned with capitalism. She then got excited
+    about the ways that programmers interact with communities of people using their
+    code. After she returned from her profit-laced time as CTO, she decided to focus
+    on making people smarter instead of tools smarter, and began studying what kinds
     of computing literacies might lead to a more just world, and what kinds of teachers,
-    teaching, and tools we need to make that happen. She published a bunch of papers
-    and won a bunch of awards, but that's not why she does the work. She's grateful
-    to <External to="http://www.cmu.edu">Carnegie Mellon University</External> and
+    teaching, and tools we need to make that happen. She's grateful to <External
+        to="http://www.cmu.edu">Carnegie Mellon University</External
+    > and
     <External to="http://www.oregonstate.edu">Oregon State University</External>
     for being reasonably safe spaces to bumble through the world's endless expanse
     of mysteries as a student, and to the many students and taxpayers that pay her
@@ -216,8 +219,9 @@
 <p>
     Labels are are often used to stereotype, categorize, and oppress. However,
     when we use them to describe ourselves, they can be powerful ways to develop
-    cultural humility, preventing stereotyping and assumptions. Here are a few
-    labels that I use to describe myself and what they mean to me:
+    cultural humility, preventing stereotyping and assumptions, as well as
+    signal safety. Here are a few labels that I use to describe myself and what
+    they mean to me:
 </p>
 
 <ul>
@@ -432,8 +436,8 @@
     refreshed, and with a renewed sense of purpose and self, ready for another 6
     years of fragmented attention and public service. My Dean welcomed me back
     by asking me to serve as the iSchool's Associate Dean for Academics,
-    starting Summer of 2024. I agreed, and spent the year preparing to set aside
-    most of my teaching for a few years to help the school manage its
-    unprecedent growth in students, faculty, courses, and programs, while
-    maintaining my normal level of research activity.
+    starting Autumn of 2024. I agreed, and spent the year preparing to set aside
+    most of my teaching for a few years to help the school manage its growth in
+    students, faculty, staff, and academics programs, while (trying to) maintain
+    my research activity.
 </p>
