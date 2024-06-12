@@ -52,7 +52,7 @@ export const People: readonly Person[] = [
         dept: 'Paul G. Allen School of Computer Science & Engineering',
         coadvisor: null,
         bio: 'Rayana is an undergraduate studying Computer Science. She is interested in dismantling barriers in computing education and expanding minority participation in CS.',
-        url: 'https://www.linkedin.com/in/isabel-amaya123/',
+        url: 'https://www.linkedin.com/in/rayanalyons/',
         startdate: 2024,
         enddate: null,
         achievements: [],
