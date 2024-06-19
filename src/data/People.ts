@@ -644,7 +644,7 @@ export const People: readonly Person[] = [
         name: 'Alannah Oleson',
         active: false,
         advised: true,
-        level: 'postdoc',
+        level: 'phd',
         dept: 'Information School',
         coadvisor: null,
         bio: 'Alannah was a human-computer interaction (HCI) education researcher exploring strategies for teaching inclusive computing interface design. They worked with communities of computing educators to support pedagogical content knowledge development.',
