@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/im-a-proud-professor-parent-85b201522b52',
+        title: 'I’m a proud professor parent',
+        date: '2024.06',
+        tags: ['computing education', 'academia'],
+        img: 'proudparent',
+        alt: 'A stadium full of Information School graduates and proud families in the stands.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/aera-2024-trip-report-blight-and-belief-f82e1c403d3a',
         title: 'AERA 2024 trip report: blight and belief',
         date: '2024.04',
