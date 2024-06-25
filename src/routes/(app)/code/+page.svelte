@@ -67,10 +67,10 @@
         slot="image"
         url="/images/code/adminima.png"
         alt="A 12 point star."
-    />&nbsp; is a platform for improving organization's onboarding,
-    transparency, and agility by defining work processes and managing requests
-    for change. I designed it because I couldn't find anything that was simple
-    and not designed for very large enterprises. I think it would work well for
+    />&nbsp;is a platform for improving organization's onboarding, transparency,
+    and agility by defining work processes and managing requests for change. I
+    designed it because I couldn't find anything that was simple and not
+    designed for very large enterprises. I think it would work well for
     not-for-profits and small orgs of &lt; 100 people trying to define roles and
     responsibilities.
     <ul>
