@@ -592,6 +592,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'Switzerland',
     ],
     [
+	'Fred Martin',
+	'http://www.cs.utsa.edu/~fredm',
+	'tools and collaborations for K-12 learning of computing, including AI, ML, and data science',
+	'Department of Computer Science',
+	'University of Texas at San Antonio',
+	'USA',
+    ],
+    [
         'Briana Morrison*',
         'http://www.brianamorrison.net/',
         'pedagogy, cognitive load',
