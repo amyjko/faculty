@@ -74,7 +74,7 @@
     {mipAwardCount} receiving most influential paper awards. She is an <External
         to="https://awards.acm.org/distinguished-members"
         >ACM Distinguished Member</External
-    > and a member <External to="https://sigchi.org/awards/"
+    > and a member of the <External to="https://sigchi.org/awards/"
         >SIGCHI Academy</External
     >, for her substantial contributions to the field of human-computer
     interaction, computing education, and software engineering. She received her
