@@ -55,17 +55,17 @@
     <External to="http://ischool.uw.edu/">Information School</External> and the <External
         to="http://cs.washington.edu"
         >Paul G. Allen School of Computer Science and Engineering</External
-    > (courtesy). She co-direct the UW Center for Learning, Computing, and Imagination,
+    > (courtesy). She co-directs the UW Center for Learning, Computing, and Imagination,
     where she studies computing education, human-computer interaction, and humanity's
     individual and collective struggle to understand computing and harness it for
     creativity, equity, and justice. With her collaborators, she's invented many
-    tools and programming languages to support debugging, program understanding,
+    programming languages and tools to support debugging, program understanding,
     reuse, and learning; founded and sold a <External
         to="http://www.answerdash.com">venture-backed startup</External
-    >; developed numerous ways to weave equity and justice into computing
-    education pedagogy, culture, and technology; and impacted local, state, and
-    federal K-12 CS education policy through community organizing and advocacy.
-    Her work spans more than
+    > focused on software troubleshooting; developed numerous ways to weave equity
+    and justice into computing education pedagogy, culture, and technology; and impacted
+    local, state, and federal K-12 CS education policy through community organizing
+    and advocacy. Her work spans more than
     <!-- Compute number of publications, rounding to nearest 10 -->
     {pubCount} peer-reviewed publications, with
     <!-- Compute number of best papers -->
