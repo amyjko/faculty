@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'assessmentequity',
+        kind: 'refereed conference paper',
+        authors: ['@eman', '@salac', '@jaredl', '@ajko'],
+        year: 2024,
+        title: 'Integrating Philosophy Teaching Perspectives to Foster Adolescents’ Ethical Sensemaking of Computing Technologies',
+        source: '@icer',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            'Students expressed their ethical sensemaking by considering multiple perspectives, questioning the status quo, wrestling with dissonance between their principles and actions, and rejecting the good/bad binary.',
+    },
+    {
         id: 'teenethics2',
         kind: 'refereed conference paper',
         authors: ['@rotem', '@salac', '@jaredl', '@ajko'],
@@ -11,7 +25,7 @@ export const Publications: Paper[] = [
         pages: null,
         publisher: 'ACM',
         doi: null,
-        local: null,
+        local: 'Landesman2024EthicalSensemaking.pdf',
         contribution:
             'Students expressed their ethical sensemaking by considering multiple perspectives, questioning the status quo, wrestling with dissonance between their principles and actions, and rejecting the good/bad binary.',
     },
