@@ -2,18 +2,18 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
-        id: 'assessmentequity',
+        id: 'assessmentpolicy',
         kind: 'refereed conference paper',
-        authors: ['@eman', '@salac', '@jaredl', '@ajko'],
+        authors: ['@emans', '@jayne', '@megumi', '@mararyan', '@ajko'],
         year: 2024,
-        title: 'Integrating Philosophy Teaching Perspectives to Foster Adolescents’ Ethical Sensemaking of Computing Technologies',
+        title: "Exploring the Impact of Assessment Policies on Marginalized Students' Experiences in Post-Secondary Programming Courses",
         source: '@icer',
         pages: null,
         publisher: 'ACM',
         doi: null,
-        local: null,
+        local: 'Sherif2024AssessmentPolicies.pdf',
         contribution:
-            'Students expressed their ethical sensemaking by considering multiple perspectives, questioning the status quo, wrestling with dissonance between their principles and actions, and rejecting the good/bad binary.',
+            "Reveals ten distinct ways policy and students' lives interacted to create or heighten inequities, which significantly shaped marginalized students' lives.",
     },
     {
         id: 'teenethics2',
