@@ -1327,6 +1327,13 @@ export const Amy: ProfileSpec = {
     ],
     doctoralCommittees: [
         {
+            name: 'Ella Lombard',
+            institution: 'University of Washington',
+            department: 'Psychology',
+            startdate: 2022,
+            enddate: 2024,
+        },
+        {
             name: 'Anne Drew Hu',
             institution: 'Michigan State University',
             department: 'Education',
