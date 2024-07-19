@@ -21,7 +21,8 @@
                     alt="CC0"
                 />
             </a>
-            To the extent possible under law,
+            Last updated {new Date().toLocaleDateString()}. To the extent
+            possible under law,
             <a rel="dct:publisher" href="https://faculty.washington.edu/ajko">
                 <span property="dct:title">Amy J. Ko</span></a
             >
