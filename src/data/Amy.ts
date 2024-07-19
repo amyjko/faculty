@@ -1327,6 +1327,13 @@ export const Amy: ProfileSpec = {
     ],
     doctoralCommittees: [
         {
+            name: 'Edward Misback',
+            institution: 'University of Washington',
+            department: 'Computer Science',
+            startdate: 2024,
+            enddate: null,
+        },
+        {
             name: 'Ella Lombard',
             institution: 'University of Washington',
             department: 'Psychology',
