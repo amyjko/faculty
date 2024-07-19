@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/csta-2024-trip-report-mixed-messages-20222112a788',
+        title: 'CSTA 2024 trip report: mixed messages',
+        date: '2024.07',
+        tags: ['computing education', 'trip report'],
+        img: 'csta2024',
+        alt: 'A stadium full of Information School graduates and proud families in the stands.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/im-a-proud-professor-parent-85b201522b52',
         title: 'I’m a proud professor parent',
         date: '2024.06',
