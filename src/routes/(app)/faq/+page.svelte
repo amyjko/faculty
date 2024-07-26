@@ -228,6 +228,11 @@
     </p>
 
     <ul>
+        <li>
+            Shomir Wilson's <External to="https://shomir.net/advice"
+                >advice page</External
+            >, which spans hidden curricula in CS.
+        </li>
         <li
             >Matt Might's <External
                 to="http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/"
