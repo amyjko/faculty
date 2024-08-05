@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'negotiatecritical',
+        kind: 'journal article',
+        authors: ['@salac', '@lenaa', '@megumi', '@jayne', '@ajko'],
+        year: 2024,
+        title: 'Critical Pedagogy in Computing with Adolescents: How Economically-Marginalized Adolescents of Color Negotiate Critical Pedagogy in a Computing Classroom',
+        source: '@toce',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            "Students' initial attitudes towards technology were mostly positive, but exhibited an awareness of its negative impacts on their lives and society. Students later demonstrated a rich social consciousness around technology, but they faced challenges in addressing hegemonic values embedded in their work.",
+    },
+    {
         id: 'recruitinginformal',
         kind: 'journal article',
         authors: ['@perdriau', '@meron', '@ajko'],
