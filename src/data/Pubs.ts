@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'recruitinginformal',
+        kind: 'journal article',
+        authors: ['@perdriau', '@meron', '@ajko'],
+        year: 2024,
+        title: 'Recruiting Practices in Informal CS Learning',
+        source: '@toce',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            'Discovers 18 different recruting practices, most with low levels of cultural compentence, resulting in inequities in participation.',
+    },
+    {
         id: 'assessmentpolicy',
         kind: 'refereed conference paper',
         authors: ['@emans', '@jayne', '@megumi', '@mararyan', '@ajko'],
