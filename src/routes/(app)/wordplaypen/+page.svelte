@@ -67,6 +67,10 @@
         >Teaching peers, including programming, testing, software engineering,
         and design skills</li
     >
+    <li
+        >If you are a student at UW, you may earn elective credit for
+        participating.</li
+    >
 </ul>
 
 <Linkable id="whycontribute">Why should I contribute?</Linkable>
@@ -271,120 +275,11 @@ This changes quarterly:
 <Linkable id="grades">How will I be graded?</Linkable>
 
 <p
-    >Wordplay is first and foremost a community, not a class, and so grades and
-    credit are a very low priority. More important is that you meet the
-    communities norms and expectations, which are detailed on the <External
-        to="https://github.com/wordplaydev/wordplay/wiki/contribute"
-        >contributor</External
-    > page.</p
->
-
-<Alert>
-    <strong>Note</strong>: If you're reading this prior to the quarter you're
-    joining, note that we may change assessments before each quarter, in order
-    to improve the experience. Consider the current asssessments an example of
-    how you might be evaluated. The official assessments for each quarter are
-    announced at the beginning of each quarter.
-</Alert>
-
-<p
-    >That said, if you have registered for credit, here is how we will determine
-    whether you get credit:</p
->
-
-<ul>
-    <li
-        >Before week 3 of the quarter, you'll submit a <strong>contract</strong>
-        proposal to Canvas. The contract should include:</li
-    >
-    <ul>
-        <li
-            >The <strong>role(s)</strong> you would like to take on (as defined
-            in the <Link
-                to="https://github.com/wordplaydev/wordplay/wiki/contribute#choose-a-role"
-                >contributor docs</Link
-            >). You can have multiple roles!</li
-        >
-        <li
-            >Your <strong>GitHub username</strong> (so we can give you relevant contributor
-            permissions)</li
-        >
-        <li
-            >A set of one or more <strong>goals</strong> you want to make by the
-            end of the quarter, including things like:</li
-        >
-        <ul>
-            <li>technologies you want to learn,</li>
-            <li
-                >specific issues you want to complete and get merged into
-                production (including new issues you've submitted for work you
-                want to contribute),
-            </li>
-            <li
-                >anything else you do to help the community, within a role, or
-                outside of pre-defined roles</li
-            >
-        </ul>
-        <li
-            >For each goal, the <strong>evidence</strong> you will provide of the
-            accomplishment by the end of the quarter. Evidence includes things like
-            closed issues, approved design proposals, Wordplay examples you created,
-            feedback you received on your mentorship, explanations of concepts you
-            learned, examples of things you created with skills you learned. I will
-            not rigorously evaluate you on these &mdash; I trust you to be honest
-            &mdash; but planning the evidence you gather will help focus your work.</li
-        >
-        <ul>
-            <li
-                >For any issue associated with a goal, <strong
-                    >post a comment on issue</strong
-                >
-                itself describing the status of the issue, any work you completed
-                on it, and whether you'll be continuing work on the issue past the
-                end of the quarter. If you are not continuing work, make sure you've
-                included all work materials in the issue so that others can resume
-                where you left off, and <strong>unassign</strong> yourself from the
-                issue, so others know they are free to work on it.</li
-            >
-        </ul>
-        <li
-            >The <strong>number of credits</strong> you registered for, and
-            <strong>why</strong> you think the goals are possible in that amount
-            of time committed.</li
-        >
-        <li
-            ><em
-                >Amy will iterate with you on these in Canvas until it seems
-                like a reasonable scope, and once approved, will give you
-                contributor privileges. Submit as early in the quarter as you
-                like; no need to wait until the third week.</em
-            ></li
-        >
-    </ul>
-    <li
-        >Before the last meetup of the quarter (the week before finals week), a
-        document submitted to Canvas providing:</li
-    >
-    <ul>
-        <li
-            >An updated version of the contract that including any evidence of
-            your accomplishments. If there were accomplishments you did not
-            complete, why, and what remains to accomplish them.</li
-        >
-        <li
-            >A ~500 word reflection detailing what worked well about this
-            quarter's workflow and what should be improved.</li
-        ></ul
-    >
-</ul>
-
-<p
-    >Both of these are graded <strong>satisfactory/unsatisfactory</strong>. The
-    only way to get an unsatisfactory on either is to 1) not submit it on time
-    or 2) not include a required element. For those registering for credit/no
-    credit, you'll receive credit if both elements are satisfactory. For those
-    registering for graded credit, getting satisfactory on one is a 2.0 and on
-    both is a 4.0.</p
+    >Wordplay is first and foremost a community, not a class. If you sign up for
+    credit, think of the credit like something added on top of your community
+    contributions, like a receipt for the contributions you made. Refer to the
+    Canvas page for the INFO 494 or CSE 499 that you signed up for. It should be
+    posted a few weeks before class starts.</p
 >
 
 <Linkable id="start">How do I get started?</Linkable>
