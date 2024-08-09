@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/pride-and-shame-in-hobbyist-programming-063d4273f61c',
+        title: 'Pride and shame in hobbyist programming',
+        date: '2024.08',
+        tags: ['computing education', 'personal'],
+        img: 'hobby',
+        alt: 'Amy in a white Nike "just do it" t-shirt in front of a boxy CRT and PC with keyboard, speakers, and floppy disks. A small desk lamp lights a corner of a wooden desk.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/cra-snowbird-2024-trip-report-computing-contrasts-6754de87243a',
         title: 'CRA Snowbird 2024 trip report: computing contrasts',
         date: '2024.07',
