@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'neurotypes',
+        kind: 'journal article',
+        authors: ['@mararyan', '@ajko'],
+        year: 2024,
+        title: 'Neurodivergent Legitimacy in Computing Spaces',
+        source: '@toce',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            "Finds that computing learning spaces legitimize hyper-focus, deep ``special'' interests, and high organization, and that fitting these expectations was frequently required for persistence.",
+    },
+    {
         id: 'negotiatecritical',
         kind: 'journal article',
         authors: ['@salac', '@lenaa', '@megumi', '@jayne', '@ajko'],
