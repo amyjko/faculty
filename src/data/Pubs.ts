@@ -52,7 +52,7 @@ export const Publications: Paper[] = [
         source: '@icer',
         pages: null,
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://doi.org/10.1145/3632620.3671100',
         local: 'Sherif2024AssessmentPolicies.pdf',
         contribution:
             "Reveals ten distinct ways policy and students' lives interacted to create or heighten inequities, which significantly shaped marginalized students' lives.",
