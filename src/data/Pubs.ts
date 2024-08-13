@@ -66,7 +66,7 @@ export const Publications: Paper[] = [
         source: '@icer',
         pages: null,
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://doi.org/10.1145/3632620.3671106',
         local: 'Landesman2024EthicalSensemaking.pdf',
         contribution:
             'Students expressed their ethical sensemaking by considering multiple perspectives, questioning the status quo, wrestling with dissonance between their principles and actions, and rejecting the good/bad binary.',
