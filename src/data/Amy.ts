@@ -168,6 +168,18 @@ export const Amy: ProfileSpec = {
             start: 2024,
             end: 2024,
             description:
+                'I was interviewed by the Seattle Times about the state of CS education in the state.',
+            title: 'Washington state is a leader in computer science education, but disparities persist',
+            author: 'Claire Bryan',
+            source: 'Seattle Times',
+            url: 'https://www.seattletimes.com/education-lab/with-few-coding-classes-at-school-redmond-teens-teach-their-own/',
+            who: 'public',
+        },
+        {
+            kind: 'press',
+            start: 2024,
+            end: 2024,
+            description:
                 'The University of Washington highlighted our work on computational embroidery.',
             title: 'UW researchers taught kids to code with cultural research and embroidery machines',
             author: 'Stefane Milne',
