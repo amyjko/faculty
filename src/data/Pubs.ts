@@ -62,7 +62,7 @@ export const Publications: Paper[] = [
         kind: 'refereed conference paper',
         authors: ['@rotem', '@salac', '@jaredl', '@ajko'],
         year: 2024,
-        title: 'Integrating Philosophy Teaching Perspectives to Foster Adolescents’ Ethical Sensemaking of Computing Technologies',
+        title: "Integrating Philosophy Teaching Perspectives to Foster Adolescents' Ethical Sensemaking of Computing Technologies",
         source: '@icer',
         pages: null,
         publisher: 'ACM',
@@ -70,6 +70,7 @@ export const Publications: Paper[] = [
         local: 'Landesman2024EthicalSensemaking.pdf',
         contribution:
             'Students expressed their ethical sensemaking by considering multiple perspectives, questioning the status quo, wrestling with dissonance between their principles and actions, and rejecting the good/bad binary.',
+        award: ['honorable mention'],
     },
     {
         id: 'tac',
