@@ -2,7 +2,7 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
-        url: 'I went to a city down under and had fun with curious, kind people #icer2024 https://medium.com/bits-and-behavior/icer-2024-trip-report-1cb2ebd2395d',
+        url: 'https://medium.com/bits-and-behavior/icer-2024-trip-report-1cb2ebd2395d',
         title: 'ICER 2024 trip report: winter in Melbourne',
         date: '2024.08',
         tags: ['computing education', 'trip report'],
