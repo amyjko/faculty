@@ -1,6 +1,7 @@
 <script lang="ts">
     import { base } from '$app/paths';
     import { page } from '$app/stores';
+    import Alert from './Alert.svelte';
     import Emoji from './Emoji.svelte';
     import External from './External.svelte';
     import Link from './Link.svelte';
@@ -68,6 +69,17 @@
         <Social />
     </div></section
 >
+
+<small style="line-height: 1.4">
+    <Alert>
+        <strong>JOB OPENING</strong><br />
+        I'm looking for a masters or doctoral
+        <strong>research assistant</strong> at UW to help with Wordplay development
+        (up to 20 hours/week during the academic year). If you have significant front
+        end development experience and want to be a maintainer on the project, email
+        me.</Alert
+    >
+</small>
 
 <hr />
 <nav>

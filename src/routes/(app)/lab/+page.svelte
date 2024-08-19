@@ -7,6 +7,7 @@
     import { scrollToHash } from '$lib/models/utilities';
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
+    import Alert from '$lib/components/Alert.svelte';
 
     onMount(() => {
         scrollToHash();
