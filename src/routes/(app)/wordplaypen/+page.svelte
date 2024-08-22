@@ -183,7 +183,7 @@ This changes quarterly:
         <li
             >Summer 2024 meets in <strong
                 >MGH 015 Tuesday + Thursday 4:00-5:30 pm</strong
-            >, first day June 18th, last day August 29th.
+            >, first day June 18th, last day August 27th.
         </li>
         <li
             >Autumn 2024 meets in <strong>DEN 303 Wednesdays 5:30-6:50pm</strong
