@@ -1,11 +1,27 @@
 <script lang="ts">
+    import Alert from '$lib/components/Alert.svelte';
     import Block from '$lib/components/Block.svelte';
     import External from '$lib/components/External.svelte';
+    import Link from '$lib/components/Link.svelte';
     import Image from '$lib/components/Thumbnail.svelte';
     import Title from '$lib/components/Title.svelte';
 </script>
 
 <Title text="Contacting Me" />
+
+<Alert>
+    As Associate Dean for Academics, I am one of the iSchool's Title IX
+    mandatory reporters. If I learn of sex/gender-based violence, harassment, or
+    discrimination, I am required to submit a report to UW's Title IX office,
+    including any names or details I have. This does not trigger an
+    investigation; case managers will reach out to victims with supportive
+    measures, resources, and how to submit a formal complaint. If you're unsure
+    whether to reach out to me, or the Title IX office, I recommend contacting a <Link
+        to="https://livewell.uw.edu/survivor-support-advocacy/"
+        >UW confidential advocate</Link
+    >; they are confidential and trained, and can help you decide what action to
+    take next.
+</Alert>
 
 <h1> There are many ways to reach me: </h1>
 
