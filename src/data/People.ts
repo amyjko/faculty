@@ -2,6 +2,20 @@ import type Person from '../lib/models/Person';
 
 export const People: readonly Person[] = [
     {
+        id: 'elli',
+        name: 'Eleftheria Beres',
+        active: true,
+        advised: true,
+        level: 'phd',
+        dept: 'Paul G. Allen School of Computer Science & Engineering',
+        coadvisor: 'R. Benjamin Shapiro, Mike Ernst',
+        bio: 'Elli is a PhD student in a Computer Science in Engineering. She is interested in the programming systems and software engineering tools that non-computer scientists use and how non-computer scientists learn computing.',
+        url: 'https://elliberes.me',
+        startdate: 2024,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'carlos',
         name: 'Carlos Aldana Lira',
         active: true,
