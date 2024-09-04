@@ -1666,6 +1666,7 @@ export const Publications: Paper[] = [
         local: 'Lee2014GidgetPrinciples.pdf',
         contribution:
             'Teaching debugging first, while redirecting blame to the computer instead of the learner, can increase learning efficiency and engage learners of all genders equally.',
+        award: ['most influential paper'],
     },
     {
         id: 'newsproblems',
