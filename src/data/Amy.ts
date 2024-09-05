@@ -3467,6 +3467,11 @@ export const Amy: ProfileSpec = {
     ],
     panels: [
         {
+            date: '2024-09-06',
+            title: 'Computing and Information Sciences as a Partner in the Post-Discipline',
+            venue: 'Trans Studies 2024',
+        },
+        {
             date: '2022-03-21',
             title: 'Equity, Justice, and Engineering Education',
             venue: 'Science, Technology, and Public Policy (STPP) Program, Ford School of Public Policy, University of Michigan',
