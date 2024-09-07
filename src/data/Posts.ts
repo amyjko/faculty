@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/trans-studies-2024-trip-report-2d5850f42c4f',
+        title: 'Trans Studies 2024 trip report: academic trans camp!',
+        date: '2024.09',
+        tags: ['trip report', 'gender'],
+        img: 'tstudies24',
+        alt: 'A bright pink slide reading the 2nd international trans studies conference',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/icer-2024-trip-report-1cb2ebd2395d',
         title: 'ICER 2024 trip report: winter in Melbourne',
         date: '2024.08',
