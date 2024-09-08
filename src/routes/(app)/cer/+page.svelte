@@ -691,6 +691,11 @@
                 >quantifying verbal data</External
             >.
         </li>
+        <li
+            >For any scholars marginalized in CS or society more broadly, and studying marginalization, a must read is <External to="https://journals.sagepub.com/doi/full/10.1177/0038038520904918"
+                >A Methodology for the Marginalized</External
+            >. It deconstructs the complex dynamics of managing secondary trauma.</li
+        >
     </ul>
 
     <h4 id="race">Race and Technology</h4>
