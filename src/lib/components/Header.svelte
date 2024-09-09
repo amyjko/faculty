@@ -72,11 +72,8 @@
 
 <small style="line-height: 1.4">
     <Alert>
-        <strong>JOB OPENINGS</strong><br />
-        I'm seeking part-time research assistants (up to 20 hours/week) to help with
-        front-end-development on Wordplay. Undergrads, <Link
-            to="https://apply.interfolio.com/152140">apply</Link
-        > by September 9th. Masters or doctoral students, email with interest.</Alert
+        I'm seeking currently UW masters or doctoral research assistants to help
+        design, develop, and maintain Wordplay. Email with interest.</Alert
     >
 </small>
 
