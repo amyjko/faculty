@@ -22,7 +22,7 @@
     interactive typography that celebrates the world's languages. Our vision is
     <em
         >to create a global platform for creative expression with language that
-        celebrates every indivdual's culture, identity, and values, while also
+        celebrates every individual's culture, identity, and values, while also
         enabling youth to learn about the power and limits of computing</em
     >.
 </p>
