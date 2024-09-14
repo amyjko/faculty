@@ -2695,6 +2695,42 @@ export const Amy: ProfileSpec = {
     ],
     travel: [
         {
+            url: undefined,
+            title: 'SIGCSE 2025',
+            details: 'Networking and sharing my research.',
+            category: 'research',
+            commitment: {
+                start: '2025-2-25',
+                end: '2025-03-01',
+                hours: 36,
+                priority: 1,
+            },
+        },
+        {
+            url: undefined,
+            title: 'Harvey Mudd visit',
+            details: 'Networking and sharing my research.',
+            category: 'research',
+            commitment: {
+                start: '2024-11-22',
+                end: '2024-11-22',
+                hours: 8,
+                priority: 1,
+            },
+        },
+        {
+            url: 'https://www.aies-conference.com/2024/',
+            title: 'AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society',
+            details: 'Speak on a pedagogy panel.',
+            category: 'research',
+            commitment: {
+                start: '2024-10-20',
+                end: '2024-09-21',
+                hours: 16,
+                priority: 1,
+            },
+        },
+        {
             url: 'https://www.transstudiesconference.org/',
             title: '2nd International Trans Studies Conference',
             details: 'Hanging with computing education researchers.',
