@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/i-am-an-associate-dean-for-academics-fae90108136e',
+        title: 'I am an Associate Dean for Academics',
+        date: '2024.09',
+        tags: ['academia', 'computing education', 'diversity'],
+        img: 'ada',
+        alt: "A tweet by Associate Deans: 'My favorite time of the year! Time to cancel under-enrolled classes and reassign faculty to classes they aren't qualified to teach!",
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/trans-studies-2024-trip-report-2d5850f42c4f',
         title: 'Trans Studies 2024 trip report: academic trans camp!',
         date: '2024.09',
