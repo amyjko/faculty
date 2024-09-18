@@ -178,7 +178,7 @@ export const People: readonly Person[] = [
         dept: 'Computer Science',
         coadvisor: null,
         bio: 'Eman is a PhD student in Computer Science and Engineering. She is interested in broadening participation in computing through social justice oriented curricula.',
-        url: 'https://scholar.google.com/citations?user=aPnsRikAAAAJ&hl=en',
+        url: 'https://emansherif.com/',
         startdate: 2022,
         enddate: null,
         achievements: ['NSF Graduate Research Fellowship (2024)'],
