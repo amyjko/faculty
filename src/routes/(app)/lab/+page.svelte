@@ -86,14 +86,18 @@
     </div>
     <div>
         <p>
-            <strong>Future UW Ph.D. student?</strong>
+            <strong>Prospective UW Ph.D. student?</strong>
             Read my <Link to="/cer">CER FAQ</Link> and <Link to="/publications"
                 >recent publications</Link
             > to ensure we share interests. Don't write me to ask if I'm admitting
             students in the coming year; I'm always considering new students unless
-            this page says otherwise. Don't ask me to evaluate your CV; I don't have
-            time to evaluate your application twice; <em>do</em> write if you
-            have specific questions about my lab's recent research. Apply to the <External
+            this page says otherwise. Don't ask me to evaluate your CV (I don't have
+            capacity to evaluate your application twice). Don't ask me for a meeting
+            (I can't meet with every prospective outside of our review process,
+            <em>and</em>
+            meet with students during our review process.) <em>Do</em> write if
+            you have specific questions about my lab's recent research that
+            aren't answered on my website. Apply to the <External
                 to="http://ischool.uw.edu/phd">iSchool</External
             > or <External
                 to="http://www.cs.washington.edu/education/grad/prospective.html"
