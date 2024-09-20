@@ -80,6 +80,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'USA',
     ],
     [
+        'Jennifer Blaney',
+        'https://ihe.uga.edu/directory/people/jennifer-m-blaney',
+        'Gender equity in computing degree pathways; community college transfer in CS',
+        'McBee Institute of Higher Education',
+        'University of Georgia',
+        'USA',
+    ],
+    [
         'Paulo Blikstein*',
         'https://www.tc.columbia.edu/faculty/pb2755/',
         'project-based learning',
@@ -592,12 +600,12 @@ const advisors: [string, string, string, string, string, string][] = [
         'Switzerland',
     ],
     [
-	'Fred Martin',
-	'http://www.cs.utsa.edu/~fredm',
-	'tools and collaborations for K-12 learning of computing, including AI, ML, and data science',
-	'Department of Computer Science',
-	'University of Texas at San Antonio',
-	'USA',
+        'Fred Martin',
+        'http://www.cs.utsa.edu/~fredm',
+        'tools and collaborations for K-12 learning of computing, including AI, ML, and data science',
+        'Department of Computer Science',
+        'University of Texas at San Antonio',
+        'USA',
     ],
     [
         'Briana Morrison*',
