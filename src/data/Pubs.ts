@@ -2,6 +2,29 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'process1',
+        kind: 'juried conference paper',
+        authors: [
+            'Hongwen Guo',
+            'Mo Zhang',
+            '@ajko',
+            'Min Li',
+            'Benjamin Zhou',
+            'Jared Lim',
+            'Paul Pham',
+            'Chen Li',
+        ],
+        year: 2024,
+        title: "Psychometric considerations on assessing students' programming skills through online practice",
+        source: 'Computer Science Educational Data Mining Workshop',
+        pages: null,
+        publisher: 'EDM',
+        doi: null,
+        local: 'Guo2024ProgrammingSkillOnline.pdf',
+        contribution:
+            "Examines fairness concerns and tradeoffs in scoring students' solutions to programming problems.",
+    },
+    {
         id: 'neurotypes',
         kind: 'journal article',
         authors: ['@mararyan', '@ajko'],
