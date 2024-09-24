@@ -72,8 +72,16 @@
 
 <small style="line-height: 1.4">
     <Alert>
-        I'm seeking currently UW masters or doctoral research assistants to help
-        design, develop, and maintain Wordplay. Email with interest.</Alert
+        I'm seeking currently UW <strong
+            >masters or doctoral research assistants</strong
+        > to help design, develop, and maintain Wordplay. Email with interest.</Alert
+    >
+
+    <Alert
+        >Are you a <strong>K-12 teacher</strong> interested in summer research?
+        Fill out our <Link to="https://forms.gle/JdvUfyPVUbai9kbc9"
+            >interest form</Link
+        >.</Alert
     >
 </small>
 
