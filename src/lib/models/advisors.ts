@@ -770,7 +770,7 @@ const advisors: [string, string, string, string, string, string][] = [
     [
         'Jean Salac',
         'https://jeansalac.github.io',
-        'K-12 (pre-university) education, critical/socially responsible computing',
+        'K-12 (pre-university) education, critical/socially responsible computing. (Undergraduate but not PhD advisor; Can serve on PhD committees.)',
         'Computer Science',
         'Carleton College',
         'USA',
