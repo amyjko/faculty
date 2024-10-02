@@ -361,11 +361,11 @@
         You need to find a university that grants Ph.D.s and has tenure-track
         faculty who do research in CER on a topic that you're interested in. The
         alphabetical list below contains some of the many faculty who advise
-        Ph.D. students on computing education research. Find them online and see
-        what kind of research they're doing. (This list may be out of date, as
-        faculty sometimes move universities, retire, go to industry, or change
-        research areas, so be sure to check their website for the latest
-        information).
+        Ph.D. students on computing education research, or who can serve on PhD
+        committees. Find them online and see what kind of research they're
+        doing. (This list may be out of date, as faculty sometimes move
+        universities, retire, go to industry, or change research areas, so be
+        sure to check their website for the latest information).
     </p>
 
     <p>
@@ -692,9 +692,12 @@
             >.
         </li>
         <li
-            >For any scholars marginalized in CS or society more broadly, and studying marginalization, a must read is <External to="https://journals.sagepub.com/doi/full/10.1177/0038038520904918"
+            >For any scholars marginalized in CS or society more broadly, and
+            studying marginalization, a must read is <External
+                to="https://journals.sagepub.com/doi/full/10.1177/0038038520904918"
                 >A Methodology for the Marginalized</External
-            >. It deconstructs the complex dynamics of managing secondary trauma.</li
+            >. It deconstructs the complex dynamics of managing secondary
+            trauma.</li
         >
     </ul>
 
