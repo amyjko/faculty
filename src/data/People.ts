@@ -82,7 +82,7 @@ export const People: readonly Person[] = [
         bio: 'Isabel is an undergraduate in Informatics and interdisciplinary honors program, they are interested in creating equitable spaces for marginalized students learning CS and tech. She is interested in design and product management.',
         url: 'https://www.linkedin.com/in/isabel-amaya123/',
         startdate: 2024,
-        enddate: null,
+        enddate: 2024,
         achievements: [],
     },
     {
