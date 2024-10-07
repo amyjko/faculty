@@ -13,60 +13,43 @@
 <Title text="Research" />
 
 <h1>
-    I study our individual and collective struggle to understand computing and
-    harness it for play, power, equity, and justice.
+    My research imagines and enables equitable, joyous, liberatory learning
+    about computing and information, in schools and beyond.
 </h1>
 
 <p>
-    I work with outstanding <Link to={'/lab'}>students</Link> and vibrant <Link
-        to={'/communities'}>communities</Link
-    > on this work,
-    <Link to={'/publications'}>publishing</Link> it in <Link to={'/cer'}
-        >Computing Education</Link
-    >,
+    I work with outstanding <Link to={'/lab'}
+        >postdocs, doctoral students, undergraduates, teachers</Link
+    > and <Link to={'/communities'}>communities</Link> on this vision. My current
+    projects within this goal are largely shaped by the faculty, students, and teachers
+    in the <Link to="https://computinged.uw.edu"
+        >Center for Learning, Computing, and Imagination</Link
+    >, our partner teachers, school leaders, and families, and to a lesser
+    extent, my <Link to="/funding">active grants</Link>.
+</p>
+
+<p>
+    We
+    <Link to={'/publications'}>publish</Link>
+    primarily in <Link to={'/cer'}>Computing Education</Link> and
     <External
         to="https://www.google.com/books/edition/Human_Computer_Interaction_Handbook/dVrRBQAAQBAJ?hl=en&gbpv=0"
         >Human-Computer Interaction</External
-    >, and
-    <External to="https://link.springer.com/article/10.1007/s10664-020-09858-z"
-        >Software Engineering</External
-    > communities, and then <Link to={'/essays'}>blogging</Link>, <Link
-        to={'/talks'}>presenting</Link
-    >,
-    <Link to={'/classes'}>teaching</Link>, <Link to={'/books'}
-        >synthesizing</Link
-    >, and
-    <Link to={'/impact'}>applying</Link> it in the world.
+    > and I work to broaden scholarly discourse as Editor-in-Chief of <Link
+        to="https://dl.acm.org/journal/toce">ACM TOCE</Link
+    > and facilitating <Link to="https://reciprocal.reviews/"
+        >Reciprocal Reviews</Link
+    >. More importantly, we share our discoveries broadly by <Link
+        to={'/essays'}>blogging</Link
+    >, <Link to={'/talks'}>presenting</Link>,
+    <Link to={'/classes'}>teaching</Link>, <Link to={'/books'}>writing</Link>,
+    and and connecting with community, including the <Link
+        to="https://csforallwa.org">CS for All Washington</Link
+    > advocacy community, the <Link to="https://www.pnwcsteach.org/"
+        >PNW CS Teach</Link
+    > consortium of teacher educators.
 </p>
-
-<p>
-    My active research projects are largely shaped by the <Link to="/lab"
-        >postdocs and doctoral students</Link
-    > in my lab and my <Link to="/funding">active grants</Link>. My <Link
-        to="/publications">recent publications</Link
-    > are a good guide to my current focus. I'm currently focused on
-    <Link to="/papers/Ko2021CriticalCSEd.pdf"
-        >justice-centered computing education</Link
-    >. This includes more equitable programmable media (particularly <External
-        to="https://wordplay.dev"
-        ><Emoji symbol="💬" /> <strong>Wordplay</strong></External
-    >, an accessible, multilingual educational programming language for creating
-    interactive typography), as well as equitable, justice-centered secondary CS
-    teacher education, including pathways and community.
-</p>
-
-<p>
-    I'm interested in any scholarly or community activity that advances
-    liberation in computing education (e.g., uniting equitable pathways to CS
-    education in the Pacific Northwest through <Link to="https://csforallwa.org"
-        >CS for All Washington</Link
-    > and <Link to="https://www.pnwcsteach.org/">PNW CS Teach</Link> and broadening
-    scholarly discourse by editing <Link to="https://dl.acm.org/journal/toce"
-        >ACM TOCE</Link
-    > and building infrastructure to sustain peer review through <Link
-        to="https://reciprocal.reviews/">Reciprocal Reviews</Link
-    >.)
-</p>
+<p />
 
 <p>
     Want to do research with me? Read about my <Link to="/lab">lab</Link>, and
