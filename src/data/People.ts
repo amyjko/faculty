@@ -2,6 +2,20 @@ import type Person from '../lib/models/Person';
 
 export const People: readonly Person[] = [
     {
+        id: 'gifford',
+        name: 'Adrienne Gifford',
+        active: true,
+        advised: true,
+        coadvisor: null,
+        level: 'teacher',
+        dept: 'Open Window School',
+        bio: 'Adrienne is a Middle School Innovation & Technology Teacher at Open Window School and has been engaged on research about culturally responsive pedagogy.',
+        url: 'https://www.linkedin.com/in/adrienne-g-b029711b8/',
+        startdate: 2024,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'elli',
         name: 'Eleftheria Beres',
         active: true,

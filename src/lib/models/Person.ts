@@ -3,7 +3,14 @@ type Person = {
     name: string;
     active: boolean;
     advised: boolean;
-    level: 'undergrad' | 'masters' | 'phd' | 'postdoc' | 'faculty' | 'director';
+    level:
+        | 'undergrad'
+        | 'masters'
+        | 'phd'
+        | 'postdoc'
+        | 'faculty'
+        | 'director'
+        | 'teacher';
     dept: string;
     coadvisor: string | null;
     bio: string;

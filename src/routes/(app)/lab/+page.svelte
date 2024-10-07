@@ -139,7 +139,7 @@
 <Linkable id="current-advisees">Current Advisees</Linkable>
 
 {#each $profile.getPeople( (person) => person.active && person.advised && person.id !== 'ajko' && person.level !== 'faculty' && person.level !== 'postdoc', (person) => {
-        return { undergrad: 5, masters: 4, phd: 3, postdoc: 2, faculty: 1, director: 0 }[person.level] * 10000 + person.startdate;
+        return { undergrad: 5, masters: 4, phd: 3, teacher: 3, postdoc: 2, faculty: 1, director: 0 }[person.level] * 10000 + person.startdate;
     } ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
