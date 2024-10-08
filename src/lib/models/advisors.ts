@@ -1011,7 +1011,7 @@ const advisors: [string, string, string, string, string, string][] = [
         'Thad Starner*',
         'https://sites.cc.gatech.edu/home/thad/',
         'plagiarism detection in large scale programming classes, navigating large class forums',
-        'Computer Science',
+        'School of Interactive Computing',
         'Georgia Tech',
         'USA',
     ],
@@ -1019,7 +1019,7 @@ const advisors: [string, string, string, string, string, string][] = [
         'Ashok Goel*',
         'https://dilab.gatech.edu/ashok-k-goel/',
         'AI in education',
-        'Computer Science',
+        'School of Interactive Computing',
         'Georgia Tech',
         'USA',
     ],
@@ -1027,10 +1027,34 @@ const advisors: [string, string, string, string, string, string][] = [
         'David Joyner*',
         'https://dilab.gatech.edu/david-joyner/',
         'scaling large online classes and higher education',
-        'Computer Science',
+        'School of Interactive Computing',
         'Georgia Tech',
         'USA',
     ],
+    [
+        'Pedro Guillermo Feijóo García',
+        'https://www.pfeijoo.com/',
+        'Human-Centered AI, computing education, broadening participation in computing.',
+        'School of Computing Instruction',
+        'Georgia Tech',
+        'USA',
+    ],
+    [
+        'Maria Elena Chavez Echeagaray*',
+        'https://search.asu.edu/profile/1215971',
+        'Human-Centered AI, affective computing, educational technology, engineering education',
+        'School of Computing and Augmented Intelligence',
+        'Arizona State University',
+        'USA',
+    ],
+    [
+        'Alejandra J. Magana*',
+        'https://polytechnic.purdue.edu/profile/admagana',
+        'Cyberlearning in STEM, embodied learning, modeling and simulation, discipline'based computation',
+        'Department of Computer and Information Technology',
+        'Purdue University',
+        'USA',
+    ]
 ];
 
 export default advisors;
