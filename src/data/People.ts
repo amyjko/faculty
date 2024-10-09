@@ -88,7 +88,7 @@ export const People: readonly Person[] = [
     {
         id: 'iamaya',
         name: 'Isabel Amaya',
-        active: true,
+        active: false,
         advised: true,
         level: 'undergrad',
         dept: 'The Information School',
