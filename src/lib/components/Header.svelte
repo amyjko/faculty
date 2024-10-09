@@ -79,12 +79,15 @@
     <Alert>
         I'm seeking currently UW <strong
             >masters or doctoral research assistants</strong
-        > to help design, develop, and maintain Wordplay. Email with interest.</Alert
+        >
+        to help design, develop, and maintain <Link to="https://wordplay.dev/"
+            >Wordplay</Link
+        >. Email with interest.</Alert
     >
 
     <Alert
-        >Are you a <strong>K-12 teacher</strong> interested in summer research?
-        Fill out our <Link to="https://forms.gle/JdvUfyPVUbai9kbc9"
+        >Are you a <strong>K-12 teacher</strong> interested in research next
+        summer? Fill out our <Link to="https://forms.gle/JdvUfyPVUbai9kbc9"
             >interest form</Link
         >.</Alert
     >
