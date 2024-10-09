@@ -31,19 +31,14 @@
 
 <Linkable id="tiny">Tiny Bio</Linkable>
 <p>
-    Amy J. Ko is a Professor at the <External to="http://www.washington.edu"
+    Amy J. Ko studies equitable, joyous, liberatory learning about computing and
+    information, in schools and beyond, drawing from HCI, computing education,
+    software engineering, programming languages, learning sciences, behavioral
+    sciences, and sociology. She is a Professor and Associate Dean for Academics
+    at the <External to="http://www.washington.edu"
         >University of Washington</External
     >
-    <External to="http://ischool.uw.edu/">iSchool</External>, where she studies
-    humanity's individual and collective struggle to understand computing. She
-    works toward an equitable, sustainable, and liberatory future in which
-    everyone has the freedom, resources, and affirmation they need to thrive.
-    She views uncritical uses of computing as a threat to that future, but
-    believes computing can be reimagined to help achieve it, and wants to help
-    design and build it. Her primary areas of expertise are HCI, Computing
-    Education, Software Engineering, and Programming Languages, but she draws
-    extensively upon Education Research, Learning Sciences, and the many social
-    sciences of identity, community, and power.
+    <External to="http://ischool.uw.edu/">Information School</External>.
 </p>
 
 <Linkable id="short">Short Bio</Linkable>
