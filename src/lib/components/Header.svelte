@@ -34,6 +34,11 @@
                 >Professor</External
             ></strong
         >
+        <strong
+            ><External to="https://ischool.uw.edu/about/leadership"
+                >Associate Dean for Academics</External
+            ></strong
+        >
         <span
             ><External to="http://ischool.uw.edu"
                 >The Information School</External
