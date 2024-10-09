@@ -10,8 +10,8 @@
 <Title text="Wordplaypen" />
 
 <h1>
-    Are you a University of Washington undergraduate interested in making
-    programming languages more playful, global, and accessible?
+    Are you interested in making programming languages more playful, global, and
+    accessible?
 </h1>
 
 <p
@@ -40,10 +40,10 @@
         accessibility and global inclusion, and we can't meaningfully achieve
         that without your knowledge and lived experience.</li
     ><li
-        >Basic knowledge of Git, GitHub, programming, or design (e.g. from INFO
-        201, CSE 154, INFO 340, INFO 360, or other experience). And I do mean
-        basic &mdash; it's okay if you're still just learning. This is an
-        opportunity to strengthen your skills with others.</li
+        >Basic knowledge of Git, GitHub, programming, or design (e.g. at UW,
+        perhaps from INFO 201, CSE 154, INFO 340, INFO 360, or other
+        experience). And I do mean basic &mdash; it's okay if you're still just
+        learning. This is an opportunity to strengthen your skills with others.</li
     >
 </ul>
 
@@ -236,10 +236,10 @@ This changes quarterly:
         Discord #weekly-highlights)</li
     >
     <li
-        >Everyone will post a 1-sentence update in Discord #weekly-highlights,
-        so we can celebrate accomplishments and identify needs. Updates should
-        include things like: 1) something you accomplished that you're proud of,
-        2) help that you need, 3) progress that you made</li
+        >Everyone will post a 1-sentence update in Discord in a channel relevant
+        to their role so we can celebrate accomplishments and identify needs.
+        Updates should include things like: 1) something you accomplished that
+        you're proud of, 2) help that you need, 3) progress that you made</li
     >
     <li
         >Contributors will huddle by role (and if they don't have a role, huddle
