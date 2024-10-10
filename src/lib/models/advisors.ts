@@ -1050,11 +1050,11 @@ const advisors: [string, string, string, string, string, string][] = [
     [
         'Alejandra J. Magana*',
         'https://polytechnic.purdue.edu/profile/admagana',
-        'Cyberlearning in STEM, embodied learning, modeling and simulation, discipline'based computation',
+        'Cyberlearning in STEM, embodied learning, modeling and simulation, discipline-based computation',
         'Department of Computer and Information Technology',
         'Purdue University',
         'USA',
-    ]
+    ],
 ];
 
 export default advisors;
