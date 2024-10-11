@@ -121,8 +121,8 @@
     Read about <External
         to="https://ischool.uw.edu/programs/informatics/research"
         >engaging in undergrad research</External
-    >. If that sounds interesting, read about my lab's undergraduate/masters <Link
-        to={'/wordplaypen'}>Wordplaypen</Link
+    >. If that sounds interesting, read about <Link to={'/wordplay'}
+        >Wordplay</Link
     >, and follow the instructions there to join. I also recruit for full-time
     summer research assistants in Winter through the <External
         to="https://dub.washington.edu/gettinginvolved.html#tab_prospective"

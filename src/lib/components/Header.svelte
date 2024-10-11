@@ -113,8 +113,8 @@
     <Link to="/faq" at={'/faq'}>FAQ</Link>
     <Link to="/cer" at={'/cer'}>CER FAQ</Link>
     <Link to="/cv">CV</Link>
-    <br /><Link to="/wordplaypen" at={'/wordplaypen'}
-        ><Emoji symbol="💬" /> <strong>Wordplaypen</strong></Link
+    <br /><Link to="/wordplay" at={'/wordplay'}
+        ><Emoji symbol="💬" /> <strong>Wordplay</strong></Link
     >
 
     {#if headers.length > 1}
