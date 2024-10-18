@@ -61,7 +61,7 @@ export const Publications: Paper[] = [
         source: '@toce',
         pages: null,
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://doi.org/10.1145/3688829',
         local: null,
         contribution:
             'Discovers 18 different recruting practices, most with low levels of cultural compentence, resulting in inequities in participation.',
@@ -297,7 +297,7 @@ export const Publications: Paper[] = [
     {
         id: 'cider',
         kind: 'journal article',
-        authors: ['@olesona', '@meron', 'Christopher Perdriau', '@ajko'],
+        authors: ['@olesona', '@meron', '@perdriau', '@ajko'],
         deadname: false,
         year: 2022,
         title: 'Teaching inclusive design skills with the CIDER assumption elicitation technique',
@@ -1067,7 +1067,7 @@ export const Publications: Paper[] = [
             'Christopher Mendez',
             'Zoe Steine-Hanson',
             'Claudia Hilderbrand',
-            'Christopher Perdriau',
+            '@perdriau',
             'Margaret Burnett',
             '@ajko',
         ],
