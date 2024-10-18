@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'criticalpedagogy',
+        kind: 'journal article',
+        authors: ['@salac', '@lenaa', '@megumi', '@jayne', '@ajko'],
+        year: 2024,
+        title: 'How Economically-Marginalized Adolescents of Color Negotiate Critical Pedagogy in a Computing Classroom',
+        source: '@toce',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            "Finds tensions between participants' computing attitudes, knowledge, self-efficacy, and social consciousness, suggesting pathways for scaffolding the critical examination of technology in secondary education",
+    },
+    {
         id: 'process1',
         kind: 'juried conference paper',
         authors: [
