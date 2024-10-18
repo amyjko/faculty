@@ -95,28 +95,29 @@
 
 <hr />
 <nav>
-    <Link to="/" at={'/'}>Research</Link>
-    <Link to="/lab" at={'/lab'}>Lab</Link>
-    <Link to="/communities" at={'/communities'}>Communities</Link>
-    <Link to="/publications" at={'/publications'}>Publications</Link>
-    <Link to="/essays" at={'/essays'}>Essays</Link>
-    <Link to="/talks" at={'/talks'}>Talks</Link>
-    <Link to="/classes" at={'/classes'}>Classes</Link>
-    <Link to="/books" at={'/books'}>Books</Link>
-    <Link to="/code" at={'/code'}>Code</Link>
-    <Link to="/impact" at={'/impact'}>Impact</Link>
-    <Link to="/funding" at={'/funding'}>Funding</Link>
-    <Link to="/travel" at={'/travel'}>Travel</Link>
-    <Link to="/bio" at={'/bio'}>Bio</Link>
-    <Link to="/commitments" at={'/commitments'}>Commitments</Link>
-    <Link to="/contact" at={'/contact'}>Contact</Link>
-    <Link to="/faq" at={'/faq'}>FAQ</Link>
-    <Link to="/cer" at={'/cer'}>CER FAQ</Link>
-    <Link to="/cv">CV</Link>
-    <br /><Link to="/wordplay" at={'/wordplay'}
-        ><Emoji symbol="💬" /> <strong>Wordplay</strong></Link
-    >
-
+    <div class="links">
+        <Link to="/" at={'/'}>Research</Link>
+        <Link to="/lab" at={'/lab'}>Lab</Link>
+        <Link to="/communities" at={'/communities'}>Communities</Link>
+        <Link to="/publications" at={'/publications'}>Publications</Link>
+        <Link to="/essays" at={'/essays'}>Essays</Link>
+        <Link to="/talks" at={'/talks'}>Talks</Link>
+        <Link to="/classes" at={'/classes'}>Classes</Link>
+        <Link to="/books" at={'/books'}>Books</Link>
+        <Link to="/code" at={'/code'}>Code</Link>
+        <Link to="/impact" at={'/impact'}>Impact</Link>
+        <Link to="/funding" at={'/funding'}>Funding</Link>
+        <Link to="/travel" at={'/travel'}>Travel</Link>
+        <Link to="/bio" at={'/bio'}>Bio</Link>
+        <Link to="/commitments" at={'/commitments'}>Commitments</Link>
+        <Link to="/contact" at={'/contact'}>Contact</Link>
+        <Link to="/faq" at={'/faq'}>FAQ</Link>
+        <Link to="/cer" at={'/cer'}>CER FAQ</Link>
+        <Link to="/cv">CV</Link>
+        <br /><Link to="/wordplay" at={'/wordplay'}
+            ><Emoji symbol="💬" /> <strong>Wordplay</strong></Link
+        >
+    </div>
     {#if headers.length > 1}
         <div class="outline">
             <ul>
@@ -151,20 +152,22 @@
         font-size: calc(var(--small-font-size) * 0.8);
     }
 
-    nav {
+    .links {
+        font-size: var(--small-font-size);
+        line-height: 1.5;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         row-gap: calc(var(--padding) / 2);
     }
 
-    :global(nav > *) {
+    :global(.links > *) {
         padding-left: var(--padding);
         padding-right: var(--padding);
         border-radius: var(--roundedness);
     }
 
-    :global(nav > a:hover) {
+    :global(.links > a:hover) {
         background-color: var(--border-color);
     }
 
