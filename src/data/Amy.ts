@@ -1339,6 +1339,13 @@ export const Amy: ProfileSpec = {
     ],
     doctoralCommittees: [
         {
+            name: 'Daniela Wolf',
+            institution: 'Graz University of Technology',
+            department: 'Computer Science',
+            startdate: 2024,
+            enddate: null,
+        },
+        {
             name: 'Edward Misback',
             institution: 'University of Washington',
             department: 'Computer Science',
