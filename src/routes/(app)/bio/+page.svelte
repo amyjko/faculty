@@ -6,23 +6,23 @@
     import { profile } from '$lib/models/stores';
     import Title from '$lib/components/Title.svelte';
 
-    $: pubCount =
-        Math.round(
+    let pubCount =
+        $derived(Math.round(
             $profile.getPublications(
                 (paper) =>
                     paper.kind.indexOf('refereed') === 0 ||
                     paper.kind.indexOf('journal') >= 0
             ).length / 10
-        ) * 10;
-    $: bestAwardCount = $profile.getPublications(
+        ) * 10);
+    let bestAwardCount = $derived($profile.getPublications(
         (paper) => paper.award !== undefined && paper.award.length > 0
-    ).length;
-    $: mipAwardCount = $profile.getPublications(
+    ).length);
+    let mipAwardCount = $derived($profile.getPublications(
         (paper) =>
             paper.award !== undefined &&
             paper.award.filter((award) => award.includes('most influential'))
                 .length > 0
-    ).length;
+    ).length);
 </script>
 
 <Title text="Biography" />

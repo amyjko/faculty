@@ -1,10 +1,14 @@
 <script lang="ts">
     import months from './months';
 
-    export let start: Date;
-    export let end: Date;
+    interface Props {
+        start: Date;
+        end: Date;
+    }
 
-    $: range = end.getTime() - start.getTime();
+    let { start, end }: Props = $props();
+
+    let range = $derived(end.getTime() - start.getTime());
     const yearInMilliseconds = 1000 * 60 * 60 * 24 * 7 * 52;
     const weekInMilliseconds = 1000 * 60 * 60 * 24 * 7;
 

@@ -1,12 +1,25 @@
 <script lang="ts">
-    export let start: number;
-    export let stop: number | null | false = false;
-    export let header: string;
-    export let two: string | undefined = undefined;
-    export let three: string | undefined = undefined;
-    export let four: string | readonly string[] | undefined = undefined;
-    export let five: string | undefined = undefined;
-    export let six: string | undefined = undefined;
+    interface Props {
+        start: number;
+        stop?: number | null | false;
+        header: string;
+        two?: string | undefined;
+        three?: string | undefined;
+        four?: string | readonly string[] | undefined;
+        five?: string | undefined;
+        six?: string | undefined;
+    }
+
+    let {
+        start,
+        stop = false,
+        header,
+        two = undefined,
+        three = undefined,
+        four = undefined,
+        five = undefined,
+        six = undefined
+    }: Props = $props();
 
     let end =
         stop === null

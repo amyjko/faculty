@@ -20,11 +20,11 @@
         );
     }
 
-    $: affiliated = $profile.getPeople(
+    let affiliated = $derived($profile.getPeople(
         (person) =>
             person.active && !person.advised && person.level !== 'faculty',
         (person) => -person.startdate
-    );
+    ));
 </script>
 
 <Title text="Lab" />

@@ -106,7 +106,7 @@
     title="Google Sheet of lablet's this quarter"
     style="width: 100%; height: 20em"
     src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMKVkgWMGoC01z_W9Z9w1XQeMlsi6t6AjaAoTILCWOYqFRctsAzvh3fy78Dv2BvKYXIP3fT_ov8VoO/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
-/>
+></iframe>
 
 <p>
     You can see when the lablets (and main lab meeting) are scheduled by

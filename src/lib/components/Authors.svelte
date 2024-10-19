@@ -3,10 +3,14 @@
     import type Paper from '$lib/models/Paper';
     import { profile } from '$lib/models/stores';
 
-    export let link: boolean = false;
-    export let paper: Paper;
+    interface Props {
+        link?: boolean;
+        paper: Paper;
+    }
 
-    $: equalFirst = paper.equalfirst && paper.authors.length >= 2;
+    let { link = false, paper }: Props = $props();
+
+    let equalFirst = $derived(paper.equalfirst && paper.authors.length >= 2);
 </script>
 
 {#each paper.authors as author, index}

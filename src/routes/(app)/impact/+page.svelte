@@ -12,11 +12,13 @@
 
 {#each $profile.getPopulations() as population}
     <Block header={population.population}>
-        <Image
-            slot="image"
-            url={'/images/populations/population-' + population.id + '.jpg'}
-            alt={population.alt}
-        />
+        {#snippet image()}
+                <Image
+                
+                url={'/images/populations/population-' + population.id + '.jpg'}
+                alt={population.alt}
+            />
+            {/snippet}
         <p>{population.description}</p>
         <div>
             {#each $profile.getImpacts( (impact) => impact.who === population.id, (impact) => -impact.start ) as impact}

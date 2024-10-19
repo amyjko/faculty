@@ -49,7 +49,7 @@
         >PNW CS Teach</Link
     > consortium of teacher educators.
 </p>
-<p />
+<p></p>
 
 <p>
     Want to do research with me? Read about my <Link to="/lab">lab</Link>, and
@@ -71,11 +71,13 @@
     {@const keyPaper = $profile.getPublication(discovery.pubs[0])}
     {#if keyPaper}
         <Block>
-            <Thumbnail
-                url={`/images/papers/paper-${keyPaper.id}.jpg`}
-                alt="A clip from the paper's text or figure"
-                slot="image"
-            />
+            {#snippet image()}
+                        <Thumbnail
+                    url={`/images/papers/paper-${keyPaper.id}.jpg`}
+                    alt="A clip from the paper's text or figure"
+                    
+                />
+                    {/snippet}
             <strong>{discovery.contribution}</strong>
             <small
                 >({range[0]}{range[0] !== range[1]

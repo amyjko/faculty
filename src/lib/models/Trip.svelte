@@ -4,7 +4,11 @@
     import External from '$lib/components/External.svelte';
     import { parseDate } from './Profile';
 
-    export let trip: Travel;
+    interface Props {
+        trip: Travel;
+    }
+
+    let { trip }: Props = $props();
 
     function getDateString(start: Date, end: Date) {
         var months = [
@@ -48,18 +52,20 @@
 </script>
 
 <Block link={trip.url} header={trip.title}>
-    <svelte:fragment slot="image">
-        <em
-            >{trip.commitment.start === null || trip.commitment.end === null
-                ? 'TBD'
-                : getDateString(
-                      parseDate(trip.commitment.start),
-                      parseDate(trip.commitment.end)
-                  )}</em
-        >
-        {#if trip.report}<span
-                ><br /><External to={trip.report}>trip report</External></span
-            >{/if}
-    </svelte:fragment>
+    {#snippet image()}
+    
+            <em
+                >{trip.commitment.start === null || trip.commitment.end === null
+                    ? 'TBD'
+                    : getDateString(
+                          parseDate(trip.commitment.start),
+                          parseDate(trip.commitment.end)
+                      )}</em
+            >
+            {#if trip.report}<span
+                    ><br /><External to={trip.report}>trip report</External></span
+                >{/if}
+        
+    {/snippet}
     <br />{trip.details}
 </Block>

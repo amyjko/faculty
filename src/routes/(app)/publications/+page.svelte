@@ -11,7 +11,7 @@
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
 
-    let selection: Record<string, string> = {};
+    let selection: Record<string, string> = $state({});
 
     onMount(() => {
         scrollToHash();
@@ -31,7 +31,7 @@
     }
 
     // Sort the publications by decreasing year, then by decreasing pages
-    $: pubs = $profile
+    let pubs = $derived($profile
         .getPublications((paper) =>
             $profile.tagsMatch(selection, $profile.getPaperTags(paper))
         )
@@ -51,7 +51,7 @@
                 ? -1
                 : // Sort by DOI, since those are usually chronological
                   -a.doi.localeCompare(b.doi)
-        );
+        ));
 </script>
 
 <Title text="Publications" />

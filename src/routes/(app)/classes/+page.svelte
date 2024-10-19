@@ -40,11 +40,13 @@
         link={offering.course.link}
         header={offering.course.number + ' ' + offering.course.title}
     >
-        <Image
-            slot="image"
-            url={'/images/courses/' + offering.course.id + '.png'}
-            alt={offering.course.alt}
-        />
+        {#snippet image()}
+                <Image
+                
+                url={'/images/courses/' + offering.course.id + '.png'}
+                alt={offering.course.alt}
+            />
+            {/snippet}
         <span>
             <em>
                 &nbsp;({#if offering.latest.length > 0}{'last taught ' +

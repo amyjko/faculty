@@ -6,7 +6,7 @@
     import { profile } from '$lib/models/stores';
     import Title from '$lib/components/Title.svelte';
 
-    $: guide = $profile.getPublication('practicalguide');
+    let guide = $derived($profile.getPublication('practicalguide'));
 </script>
 
 <Title text="FAQ" />

@@ -2,19 +2,29 @@
     import { base } from '$app/paths';
     import { page } from '$app/stores';
 
-    export let to: string;
-    export let at: string | undefined = undefined;
-    export let active = false;
+    interface Props {
+        to: string;
+        at?: string | undefined;
+        active?: boolean;
+        children?: import('svelte').Snippet;
+    }
 
-    $: path = $page.url.pathname;
+    let {
+        to,
+        at = undefined,
+        active = false,
+        children
+    }: Props = $props();
+
+    let path = $derived($page.url.pathname);
 </script>
 
 {#if at && (at === '/' ? path === `${base}/` : path === `${base}${at}`)}
-    <span class="at"><slot /></span>
+    <span class="at">{@render children?.()}</span>
 {:else if to.startsWith('http')}
-    <a href={to} target="_blank" rel="noreferrer"><slot /></a>
+    <a href={to} target="_blank" rel="noreferrer">{@render children?.()}</a>
 {:else}
-    <a href={`${base}${to}`} class={active ? 'at' : ''}><slot /></a>
+    <a href={`${base}${to}`} class={active ? 'at' : ''}>{@render children?.()}</a>
 {/if}
 
 <style>

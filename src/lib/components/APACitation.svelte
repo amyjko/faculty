@@ -3,7 +3,11 @@
     import Authors from './Authors.svelte';
     import { profile } from '$lib/models/stores';
 
-    export let paper: Paper;
+    interface Props {
+        paper: Paper;
+    }
+
+    let { paper }: Props = $props();
 </script>
 
 <div>

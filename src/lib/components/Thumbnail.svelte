@@ -1,9 +1,13 @@
 <script lang="ts">
     import { base } from '$app/paths';
 
-    export let url: string;
-    export let alt: string;
-    export let highlight: boolean = false;
+    interface Props {
+        url: string;
+        alt: string;
+        highlight?: boolean;
+    }
+
+    let { url, alt, highlight = false }: Props = $props();
 </script>
 
 <img

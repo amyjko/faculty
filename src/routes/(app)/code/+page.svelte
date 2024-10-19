@@ -16,7 +16,9 @@
 </p>
 
 <Block link="https://wordplay.dev" header="Wordplay">
-    <Image slot="image" url="/images/code/wordplay.png" alt="A chat bubble" />
+    {#snippet image()}
+        <Image  url="/images/code/wordplay.png" alt="A chat bubble" />
+    {/snippet}
 
     &nbsp;is a free platform for creative expression with text and typography;
     it aspires to radically center accessibility, language, and culture, and to
@@ -30,11 +32,13 @@
 </Block>
 
 <Block link="https://bookish.press" header="Bookish.press">
-    <Image
-        slot="image"
-        url="/images/code/bookish.png"
-        alt="The word Bookish"
-    />&nbsp;is a platform for publishing accessible online multi-chapter books
+    {#snippet image()}
+        <Image
+            
+            url="/images/code/bookish.png"
+            alt="The word Bookish"
+        />
+    {/snippet}&nbsp;is a platform for publishing accessible online multi-chapter books
     for the web. I use it to maintain and publish the textbooks I've written for
     my teaching.
     <ul>
@@ -46,11 +50,13 @@
 </Block>
 
 <Block link="https://reciprocal.reviews/" header="Reciprocal Reviews">
-    <Image
-        slot="image"
-        url="/images/code/reciprocal.png"
-        alt="Two circular arrows pointing to each other."
-    />&nbsp;is a platform for enabling peer review volunteering and review
+    {#snippet image()}
+        <Image
+            
+            url="/images/code/reciprocal.png"
+            alt="Two circular arrows pointing to each other."
+        />
+    {/snippet}&nbsp;is a platform for enabling peer review volunteering and review
     activity tracking, to enable more sustainable and equitable peer review in
     conferences and journals.
     <ul>
@@ -63,11 +69,13 @@
 </Block>
 
 <Block link="https://adminima.app" header="Adminima">
-    <Image
-        slot="image"
-        url="/images/code/adminima.png"
-        alt="A 12 point star."
-    />&nbsp;is a platform for improving organization's onboarding, transparency,
+    {#snippet image()}
+        <Image
+            
+            url="/images/code/adminima.png"
+            alt="A 12 point star."
+        />
+    {/snippet}&nbsp;is a platform for improving organization's onboarding, transparency,
     and agility by defining work processes and managing requests for change. I
     designed it because I couldn't find anything that was simple and not
     designed for very large enterprises. I think it would work well for

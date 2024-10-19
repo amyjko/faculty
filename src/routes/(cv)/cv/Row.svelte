@@ -1,9 +1,19 @@
 <script lang="ts">
-    export let start: string | number;
-    export let end: string | number | null = null;
-    export let header: string;
-    export let detail: string;
-    export let extra: string | null = null;
+    interface Props {
+        start: string | number;
+        end?: string | number | null;
+        header: string;
+        detail: string;
+        extra?: string | null;
+    }
+
+    let {
+        start,
+        end = null,
+        header,
+        detail,
+        extra = null
+    }: Props = $props();
 </script>
 
 <tr>

@@ -8,16 +8,16 @@
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
 
-    let filter: Record<string, PostTagType> = {};
+    let filter: Record<string, PostTagType> = $state({});
 
-    $: posts = $profile.getPosts(
+    let posts = $derived($profile.getPosts(
         (post) => !('topic' in filter) || post.tags.includes(filter.topic),
         (post) =>
             -(
                 $profile.getPostMonthYear(post).year * 12 +
                 $profile.getPostMonthYear(post).month
             )
-    );
+    ));
 
     function setFilter(tag: Record<string, PostTagType>) {
         filter = tag;
@@ -51,15 +51,17 @@
         <Linkable id={`${date.year}`}>{date.year}</Linkable>
     {/if}
     <Block link={post.url} header={post.title}>
-        <svelte:fragment slot="image">
-            {#if post.img}
-                <Image
-                    url={'/images/posts/post-' + post.img + '.jpg'}
-                    alt={post.alt ??
-                        'Sorry, no description for this image yet!'}
-                />
-            {/if}
-        </svelte:fragment>
+        {#snippet image()}
+            
+                {#if post.img}
+                    <Image
+                        url={'/images/posts/post-' + post.img + '.jpg'}
+                        alt={post.alt ??
+                            'Sorry, no description for this image yet!'}
+                    />
+                {/if}
+            
+            {/snippet}
         <br /><small>{date.month + '/' + date.year}</small>
         <br />
         {#each post.tags as tag}

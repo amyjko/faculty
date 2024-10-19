@@ -1,7 +1,11 @@
 <script lang="ts">
-    export let facets: Record<string, string[]>;
-    export let update: (selection: {}) => void;
-    export let selection: Record<string, string> = {};
+    interface Props {
+        facets: Record<string, string[]>;
+        update: (selection: {}) => void;
+        selection?: Record<string, string>;
+    }
+
+    let { facets, update, selection = $bindable({}) }: Props = $props();
 
     function selectValue(facet: string, value: string) {
         if (facet in selection && selection[facet] === value)
@@ -26,8 +30,8 @@
                     (facet in selection && selection[facet] === value
                         ? ' selected'
                         : '')}
-                on:click={() => selectValue(facet, value)}
-                on:keydown={(event) =>
+                onclick={() => selectValue(facet, value)}
+                onkeydown={(event) =>
                     event.key === 'Enter'
                         ? selectValue(facet, value)
                         : undefined}

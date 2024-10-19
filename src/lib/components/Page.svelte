@@ -1,35 +1,44 @@
 <script lang="ts">
+    import { run } from 'svelte/legacy';
+
     import Header from '$lib/components/Header.svelte';
     import Footer from '$lib/components/Footer.svelte';
     import { navigating } from '$app/stores';
     import { browser } from '$app/environment';
-
-    let headers: [string, string][] = [];
-    let closestID: string | undefined = undefined;
-    let scrollY: number;
-
-    $: if (scrollY >= 0) {
-        if (browser && typeof document !== undefined && $navigating === null) {
-            headers = Array.from(document.getElementsByTagName('h2'))
-                .map((a) =>
-                    a instanceof HTMLElement
-                        ? [a.innerText.replaceAll('🔗', '').trim(), a.id]
-                        : undefined
-                )
-                .filter((a): a is [string, string] => a !== undefined);
-        }
-        closestID = Array.from(document.getElementsByTagName('h2')).sort(
-            (h1, h2) =>
-                Math.abs(h1.offsetTop - scrollY) -
-                Math.abs(h2.offsetTop - scrollY)
-        )[0]?.id;
+    interface Props {
+        children?: import('svelte').Snippet;
     }
+
+    let { children }: Props = $props();
+
+    let headers: [string, string][] = $state([]);
+    let closestID: string | undefined = $state(undefined);
+    let scrollY: number = $state(0);
+
+    $effect(() => {
+        if (scrollY >= 0) {
+            if (browser && typeof document !== undefined && $navigating === null) {
+                headers = Array.from(document.getElementsByTagName('h2'))
+                    .map((a) =>
+                        a instanceof HTMLElement
+                            ? [a.innerText.replaceAll('🔗', '').trim(), a.id]
+                            : undefined
+                    )
+                    .filter((a): a is [string, string] => a !== undefined);
+            }
+            closestID = Array.from(document.getElementsByTagName('h2')).sort(
+                (h1, h2) =>
+                    Math.abs(h1.offsetTop - scrollY) -
+                    Math.abs(h2.offsetTop - scrollY)
+            )[0]?.id;
+        }
+    });
 </script>
 
 <div class="page">
     <div class="header"><Header {headers} activeid={closestID} /></div>
     <div class="content">
-        <slot />
+        {@render children?.()}
         <Footer />
     </div>
 </div>

@@ -5,7 +5,12 @@
     import { scrollToElement } from '../models/utilities';
     import { base } from '$app/paths';
 
-    export let id: string;
+    interface Props {
+        id: string;
+        children?: import('svelte').Snippet;
+    }
+
+    let { id, children }: Props = $props();
 
     function isLinked() {
         return typeof window === 'undefined'
@@ -24,7 +29,7 @@
 </script>
 
 <h2 {id} class={`section ${isLinked() ? 'linked' : ''}`}>
-    <slot />
+    {@render children?.()}
     <!-- Remove the base from the pathname before Link reappends it. -->
     <Link to={$page.url.pathname.replace(base, '') + '#' + id}>&#x1F517;</Link>
 </h2>

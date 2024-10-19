@@ -5,18 +5,24 @@
     import Link from './Link.svelte';
     import Image from './Thumbnail.svelte';
 
-    export let highlight: boolean;
-    export let person: Person;
+    interface Props {
+        highlight: boolean;
+        person: Person;
+    }
+
+    let { highlight, person }: Props = $props();
 </script>
 
 <div id={person.id}>
     <Block link={person.url}>
-        <Image
-            slot="image"
-            url={`/images/headshots/${person.id}.jpg`}
-            alt={'Photograph of ' + person.name}
-            {highlight}
-        />
+        {#snippet image()}
+                <Image
+                
+                url={`/images/headshots/${person.id}.jpg`}
+                alt={'Photograph of ' + person.name}
+                {highlight}
+            />
+            {/snippet}
         <span>
             <External to={person.url}>{person.name}</External>
             &nbsp;

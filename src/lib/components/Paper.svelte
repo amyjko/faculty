@@ -6,22 +6,30 @@
     import External from './External.svelte';
     import APACitation from './APACitation.svelte';
     import { profile } from '$lib/models/stores';
-    import { afterUpdate } from 'svelte';
     import Image from './Thumbnail.svelte';
 
-    export let paper: Paper;
-    export let format: 'apa' | 'cv' | 'full' = 'full';
-    export let highlight: boolean = false;
-    export let year: boolean = true;
+    interface Props {
+        paper: Paper;
+        format?: 'apa' | 'cv' | 'full';
+        highlight?: boolean;
+        year?: boolean;
+    }
 
-    let apa = false;
+    let {
+        paper,
+        format = 'full',
+        highlight = false,
+        year = true,
+    }: Props = $props();
+
+    let apa = $state(false);
 
     function toggle() {
         apa = !apa;
     }
 
     // Highlight the citation if expanded.
-    afterUpdate(() => {
+    $effect(() => {
         if (apa) {
             let node = document.getElementById('citation-' + paper.id);
             if (node) {
@@ -38,19 +46,20 @@
         }
     });
 
-    $: paperLocalURL = `/papers/${paper.local}`;
+    let paperLocalURL = $derived(`/papers/${paper.local}`);
 
-    $: url =
+    let url = $derived(
         // If there's a local, show it first, since digital libraries have my deadname.
         paper.local
             ? paperLocalURL
             : // If we don't have one, but there's an ACM authorizer URL, return it, because visitors will be able to bypass the paywall.
-            paper.authorizer
-            ? paper.authorizer
-            : // Lastly, include the doi, which will not be as easily accessible.
-            paper.doi
-            ? paper.doi
-            : '';
+              paper.authorizer
+              ? paper.authorizer
+              : // Lastly, include the doi, which will not be as easily accessible.
+                paper.doi
+                ? paper.doi
+                : '',
+    );
 </script>
 
 {#if format === 'apa'}
@@ -66,13 +75,14 @@
         {/if}
     </div>
 {:else}
-    <Block link={url}>
-        <Image
-            slot="image"
+    {#snippet image()}
+    <Image
             url={'/images/papers/paper-' + paper.id + '.jpg'}
             alt="A clip from the paper's PDF."
             {highlight}
         />
+    {/snippet}
+    <Block link={url} image={image}>
         <div id={paper.id} class="paper ws-bottom">
             {#if paper.award && paper.award.length > 0}
                 <mark class="award">&#x2605; {paper.award.join(' + ')}</mark>
@@ -99,8 +109,8 @@
                         class="clickable"
                         role="button"
                         tabindex="0"
-                        on:click={toggle}
-                        on:keydown={(event) =>
+                        onclick={toggle}
+                        onkeydown={(event) =>
                             event.key === 'Enter' ? toggle() : undefined}
                         >{apa ? '▾ cite' : '▸ cite'}</span
                     >

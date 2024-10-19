@@ -13,11 +13,13 @@
 <h1> My students and I receive funding from many sources. </h1>
 
 <Block link="https://ischool.uw.edu" header="The Information School">
-    <Image
-        slot="image"
-        url={'/images/funding/ischool.jpg'}
-        alt="The Information School logo"
-    />
+    {#snippet image()}
+        <Image
+            
+            url={'/images/funding/ischool.jpg'}
+            alt="The Information School logo"
+        />
+    {/snippet}
     &mdash; My lab's primary source of funding is the University of Washington Information
     School. It pays 9 months of my salary, it subsidizes my doctoral students' time
     through teaching assistantships, it provides space and staff support, and it
@@ -26,7 +28,9 @@
 </Block>
 
 <Block link="https://nsf.gov" header="National Science Foundation">
-    <Image slot="image" url={'/images/funding/nsf.jpg'} alt="The NSF logo." />
+    {#snippet image()}
+        <Image  url={'/images/funding/nsf.jpg'} alt="The NSF logo." />
+    {/snippet}
     &mdash; The majority of my sponsored research is funded by the U.S. National
     Science Foundation, which is tax-funded. I write proposals, which are confidentially
     evaluated by my peers, and when my peers and NSF find my proposals to have compelling
@@ -57,11 +61,13 @@
     >.
 </Block>
 <Block link="https://microsoft.com" header="Microsoft">
-    <Image
-        slot="image"
-        url={'/images/funding/microsoft.jpg'}
-        alt="The Microsoft logo."
-    />
+    {#snippet image()}
+        <Image
+            
+            url={'/images/funding/microsoft.jpg'}
+            alt="The Microsoft logo."
+        />
+    {/snippet}
     &mdash; Occasionally, collaborators across Microsoft, such as those in Microsoft
     Research and Microsoft's developer division, will give me unrestricted gifts
     to support my lab. These are no strings attached contributions, which I rely
@@ -70,21 +76,25 @@
 </Block>
 
 <Block link="https://google.com" header="Google">
-    <Image
-        slot="image"
-        url={'/images/funding/google.jpg'}
-        alt="The Google logo."
-    />
+    {#snippet image()}
+        <Image
+            
+            url={'/images/funding/google.jpg'}
+            alt="The Google logo."
+        />
+    {/snippet}
     &mdash; In the past, I have received unrestricted Google research grants that
     generally support 1-year projects that support me and a doctoral student.
 </Block>
 
 <Block link="http://adobe.com" header="Adobe">
-    <Image
-        slot="image"
-        url={'/images/funding/adobe.jpg'}
-        alt="The Adobe logo."
-    />
+    {#snippet image()}
+        <Image
+            
+            url={'/images/funding/adobe.jpg'}
+            alt="The Adobe logo."
+        />
+    {/snippet}
     &mdash; When my doctoral students or I have collaborated with Adobe researchers,
     they have given unrestricted gifts in support of my lab. This funding comes with
     no strings attached.

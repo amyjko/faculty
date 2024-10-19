@@ -8,10 +8,10 @@
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
 
-    $: talks = $profile.getTalks(
+    let talks = $derived($profile.getTalks(
         undefined,
         (talk) => -parseDate(talk.date).getTime()
-    );
+    ));
 
     const months = [
         'Jan',
@@ -51,11 +51,13 @@
             : `/slides/${talk.slides}`}
         header={talk.title}
     >
-        <Image
-            slot="image"
-            url={'/images/talks/' + talk.image}
-            alt={talk.alt}
-        />
+        {#snippet image()}
+                <Image
+                
+                url={'/images/talks/' + talk.image}
+                alt={talk.alt}
+            />
+            {/snippet}
         <span>
             &nbsp; {#if talk.keynote}<span class="award">&#x2605; Keynote</span
                 >{/if}

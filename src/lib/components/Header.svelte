@@ -8,8 +8,12 @@
     import Social from './Social.svelte';
     import Image from './Thumbnail.svelte';
 
-    export let headers: [string, string][] = [];
-    export let activeid: string | undefined;
+    interface Props {
+        headers?: [string, string][];
+        activeid: string | undefined;
+    }
+
+    let { headers = [], activeid }: Props = $props();
 </script>
 
 <section class="info">

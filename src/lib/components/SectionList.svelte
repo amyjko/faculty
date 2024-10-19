@@ -1,20 +1,23 @@
 <script lang="ts">
-    import { afterUpdate } from 'svelte';
     import Link from './Link.svelte';
 
-    export let path: string;
+    interface Props {
+        path: string;
+    }
+
+    let { path }: Props = $props();
 
     type Header = { id: string; text: string | null };
 
-    let sections: Header[] = [];
+    let sections: Header[] = $state([]);
 
-    afterUpdate(() => {
+    $effect(() => {
         if (typeof document === 'undefined') return;
 
         sections = Array.from(document.getElementsByClassName('section')).map(
             (section) => {
                 return { id: section.id, text: section.textContent };
-            }
+            },
         );
     });
 </script>

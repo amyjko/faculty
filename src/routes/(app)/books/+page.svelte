@@ -18,11 +18,13 @@
 
 {#each $profile?.getPublications( (pub) => pub.kind === 'book', (pub) => -pub.year ) as book}
     <Block link={book.doi ?? undefined} header={book.title}>
-        <Image
-            slot="image"
-            url={'/images/papers/paper-' + book.id + '.jpg'}
-            alt={'No book cover description, sorry'}
-        />
+        {#snippet image()}
+                <Image
+                
+                url={'/images/papers/paper-' + book.id + '.jpg'}
+                alt={'No book cover description, sorry'}
+            />
+            {/snippet}
         {'. ' + book.contribution}
     </Block>
 {/each}
