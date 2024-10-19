@@ -167,7 +167,7 @@ export const People: readonly Person[] = [
         url: 'https://rotemland.github.io/',
         startdate: 2021,
         enddate: null,
-        achievements: [],
+        achievements: ['2024 ACM ICER Best Paper Award Honorable Mention'],
     },
     {
         id: 'annes',
@@ -251,7 +251,10 @@ export const People: readonly Person[] = [
         url: 'https://www.linkedin.com/in/lena-armstrong/',
         startdate: 2022,
         enddate: 2023,
-        achievements: ['NSF Graduate Research Fellowship (2024)'],
+        achievements: [
+            'PhD student, Computer Science, Harvard',
+            'NSF Graduate Research Fellowship (2024)',
+        ],
     },
     {
         id: 'leahperl',
@@ -265,7 +268,9 @@ export const People: readonly Person[] = [
         url: 'https://perlmutter.cs.grinnell.edu/home/',
         startdate: 2022,
         enddate: 2023,
-        achievements: [],
+        achievements: [
+            'Assistant Professor, Computer Science, Grinnell College, 2023',
+        ],
         dissertation: 'Perlmutter2023Dissertation.pdf',
     },
     {
@@ -295,7 +300,7 @@ export const People: readonly Person[] = [
         startdate: 2022,
         enddate: null,
         achievements: [
-            'Assistant Professor, Computer Science, Carlton College, 2024',
+            'Assistant Professor, Computer Science, Carlton College (2024)',
         ],
     },
     {
@@ -464,7 +469,10 @@ export const People: readonly Person[] = [
         url: 'https://jayneeverson.com',
         startdate: 2020,
         enddate: null,
-        achievements: ['ACM SIGCSE Best Paper Award (2022)'],
+        achievements: [
+            'ACM SIGCSE Best Paper Award (2024)',
+            'ACM SIGCSE Best Paper Award (2022)',
+        ],
     },
     {
         id: 'perdriau',
@@ -551,7 +559,7 @@ export const People: readonly Person[] = [
         url: 'http://www.drugastefania.com',
         startdate: 2019,
         enddate: 2023,
-        achievements: [],
+        achievements: ['Research Scientist, Google Gemini (2023)'],
         dissertation: 'Druga2023Dissertation.pdf',
     },
     {
@@ -594,7 +602,9 @@ export const People: readonly Person[] = [
         url: 'https://marakr.com',
         startdate: 2018,
         enddate: 2024,
-        achievements: [],
+        achievements: [
+            'Assistant Teaching Professor, The Information School, University of Washington (2024)',
+        ],
         dissertation: 'KirdaniRyan2024Dissertation.pdf',
     },
     {
@@ -680,6 +690,7 @@ export const People: readonly Person[] = [
         startdate: 2018,
         enddate: 2023,
         achievements: [
+            'Assistant Professor, Computer Science, University of Denver (2024)',
             'Husky 100, recognizing top UW students (2022)',
             'NSF Graduate Research Fellowship (2018)',
         ],
@@ -839,6 +850,7 @@ export const People: readonly Person[] = [
         enddate: 2022,
         dissertation: 'Xie2021Dissertation.pdf',
         achievements: [
+            'Assistant Professor, Computer Science, University of Denver (2025)',
             'Husky 100, recognizing top UW students (2021)',
             'NSF Graduate Research Fellowship (2017)',
             'Postdoc, Stanford University (2022-2024)',
@@ -858,7 +870,7 @@ export const People: readonly Person[] = [
         enddate: 2021,
         dissertation: 'Nelson2021Dissertation.pdf',
         achievements: [
-            'Assistant Professor, University of Maine, Department of Computer Science (2022-present)',
+            'Assistant Professor, Computer Science, University of Maine (2022)',
             'ACM ICER John Henry Best Paper Award (2018)',
             'NSF Graduate Research Fellowship (2015)',
         ],
@@ -877,7 +889,7 @@ export const People: readonly Person[] = [
         enddate: 2020,
         dissertation: 'Thayer2020Dissertation.pdf',
         achievements: [
-            'Assistant Teaching Professor, The Information School, University of Washington (2019-present)',
+            'Assistant Teaching Professor, The Information School, University of Washington (2019)',
         ],
     },
     {
@@ -894,7 +906,7 @@ export const People: readonly Person[] = [
         enddate: 2019,
         dissertation: 'Swearngin2019Dissertation.pdf',
         achievements: [
-            'Apple Research (2020-present)',
+            'Research Scientist, AIML, Apple (2020)',
             'NSF Graduate Research Fellowship (2016)',
         ],
     },
@@ -912,7 +924,7 @@ export const People: readonly Person[] = [
         enddate: 2020,
         dissertation: 'Loksa2020Dissertation.pdf',
         achievements: [
-            'Assistant Professor, Towson University, Computer Science (2020-present)',
+            'Assistant Professor, Towson University, Computer Science (2020)',
         ],
     },
     {
@@ -942,7 +954,7 @@ export const People: readonly Person[] = [
         startdate: 2009,
         enddate: 2016,
         dissertation: 'Li2016Dissertation.pdf',
-        achievements: ['Senior Data Scientist, Microsoft (2016-present)'],
+        achievements: ['Senior Data Scientist, Microsoft (2016)'],
     },
     {
         id: 'mjslee',
@@ -958,8 +970,8 @@ export const People: readonly Person[] = [
         enddate: 2015,
         dissertation: 'Lee2015Dissertation.pdf',
         achievements: [
-            'Associate Professor, New Jersey Institute of Technology, Information Systems (2015-present)',
-            'ACM ICER John Henry Best Paper Award (2013)',
+            'Assistant Professor, Information Systems, New Jersey Institute of Technology (2015)',
+            'ACM ICER Best Paper Award (2013)',
         ],
     },
     {
@@ -994,8 +1006,8 @@ export const People: readonly Person[] = [
         enddate: 2012,
         dissertation: 'Patel2012Dissertation.pdf',
         achievements: [
-            'Research Scientist, Apple (2018-present)',
-            'Research Scientist, Google (2013-2018)',
+            'Research Scientist, Apple (2018)',
+            'Research Scientist, Google (2013)',
         ],
     },
     {
@@ -1012,7 +1024,7 @@ export const People: readonly Person[] = [
         enddate: 2013,
         dissertation: 'Chilana2013Dissertation.pdf',
         achievements: [
-            'Assistant Professor, Simon Fraser University, Computer Science (2016-present)',
+            'Assistant Professor, Simon Fraser University, Computer Science (2016)',
             'Assistant Professor, University of Waterloo, Management Sciences, (2013-2016)',
             'Facebook PhD Fellowship (2010)',
             'Canadian Social Sciences and Humanities Research Council (SSHRC) Doctoral Award (2009)',

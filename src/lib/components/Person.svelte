@@ -31,15 +31,24 @@
             >
             <br />
             {person.bio}
-            {#if person.dissertation}
-                <div>
+            <ul>
+                {#if person.dissertation}
+                    <li>
+                        <small>
+                            <Link to={'/dissertations/' + person.dissertation}
+                                >Dissertation</Link
+                            >
+                        </small>
+                    </li>
+                {/if}
+                {#if person.achievements.length > 0}
                     <small>
-                        <Link to={'/dissertations/' + person.dissertation}
-                            >Dissertation</Link
-                        >
+                        {#each person.achievements as achievement}
+                            <li>{achievement}</li>
+                        {/each}
                     </small>
-                </div>
-            {/if}
+                {/if}
+            </ul>
         </span>
     </Block>
 </div>
