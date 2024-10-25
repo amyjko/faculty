@@ -86,7 +86,8 @@
         >
         to help design, develop, and maintain <Link to="https://wordplay.dev/"
             >Wordplay</Link
-        >. Email with interest.</Alert
+        >. <Link to="https://apply.interfolio.com/157618">Apply by Nov 6.</Link
+        ></Alert
     >
 
     <Alert
