@@ -56,7 +56,7 @@
                         ' ' +
                         offering.latest[0]
                             .year}{/if}{#if offering.next.length > 0}{(offering
-                        .next.length > 0
+                        .latest.length > 0
                         ? ', '
                         : '') +
                         'next planned offering ' +

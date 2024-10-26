@@ -1719,9 +1719,9 @@ export const Amy: ProfileSpec = {
             committee: 'Associate Dean for Academics',
             level: 'departmental',
             description:
-                "I serve as the iSchool's Associate Dean for Academics.",
+                "I serve as the iSchool's Associate Dean for Academics (40% time).",
             commitment: {
-                start: '2024-07-1',
+                start: '2024-07-01',
                 end: '2027-06-30',
                 hours: 16,
                 priority: 0,
@@ -3552,6 +3552,23 @@ export const Amy: ProfileSpec = {
     ],
     classes: [
         {
+            id: 'info494',
+            alt: 'A photograph of a group of students working on laptops',
+            link: 'https://canvas.uw.edu/courses/1757590',
+            links: [],
+            number: 'INFO 494',
+            level: 'undergraduate',
+            title: 'Justice-Centered Educational Programming Languages',
+            hours: 2,
+            description:
+                'A weekly research studio, held annually, for working on Wordplay and other justice-centered educational programming languages research.',
+            offerings: [
+                { size: 40, term: 1, year: 2024, score: null },
+                { size: 40, term: 2, year: 2025, score: null },
+                { size: 40, term: 3, year: 2025, score: null },
+            ],
+        },
+        {
             id: 'info200',
             alt: 'A black and white version of an old painting with a child reading a newspaper',
             link: 'https://canvas.uw.edu/courses/1662893',
@@ -3778,7 +3795,7 @@ export const Amy: ProfileSpec = {
             description: 'iSchool',
             category: 'service',
             annually: true,
-            commitment: { start: '09-15', end: '12-15', hours: 2, priority: 0 },
+            commitment: { start: '09-15', end: '12-15', hours: 4, priority: 0 },
         },
         {
             title: 'Winter faculty meetings',
