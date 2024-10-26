@@ -3561,7 +3561,7 @@ export const Amy: ProfileSpec = {
             title: 'Justice-Centered Educational Programming Languages',
             hours: 2,
             description:
-                'A weekly research studio, held annually, for working on Wordplay and other justice-centered educational programming languages research.',
+                'A weekly research studio, held annually, for working on Wordplay and other justice-centered educational programming languages research. A way to earn credit by contributing to Wordplay.',
             offerings: [
                 { size: 40, term: 1, year: 2024, score: null },
                 { size: 40, term: 2, year: 2025, score: null },
