@@ -29,11 +29,11 @@ export const Publications: Paper[] = [
             'Chen Li',
         ],
         year: 2024,
-        title: "Psychometric considerations on assessing students' programming skills through online practice",
+        title: "Measuring students' programming skills via online practice",
         source: 'Computer Science Educational Data Mining Workshop',
         pages: null,
         publisher: 'EDM',
-        doi: null,
+        doi: 'https://ceur-ws.org/Vol-3796/CSEDM-24_paper_9417.pdf',
         local: 'Guo2024ProgrammingSkillOnline.pdf',
         contribution:
             "Examines fairness concerns and tradeoffs in scoring students' solutions to programming problems.",
