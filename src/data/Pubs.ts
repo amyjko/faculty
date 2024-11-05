@@ -2490,6 +2490,7 @@ export const Publications: Paper[] = [
         issue: 12,
         contribution:
             'Developers work on software maintenance tasks by searching for relevant code, navigating dependencies, and constructing a mental model of the dependencies of a feature, suggesting the need for environments that explicitly support feature location through dependency navigation.',
+        award: ['most influential paper'],
     },
     {
         id: 'errorframework',
