@@ -80,16 +80,6 @@
 >
 
 <small style="line-height: 1.4">
-    <Alert>
-        I'm seeking currently UW <strong
-            >masters or doctoral research assistants</strong
-        >
-        to help design, develop, and maintain <Link to="https://wordplay.dev/"
-            >Wordplay</Link
-        >. <Link to="https://apply.interfolio.com/157618">Apply by Nov 6.</Link
-        ></Alert
-    >
-
     <Alert
         >Are you a <strong>K-12 teacher</strong> interested in research next
         summer? Fill out our <Link to="https://forms.gle/JdvUfyPVUbai9kbc9"
