@@ -40,14 +40,6 @@ const advisors: [string, string, string, string, string, string][] = [
         'USA',
     ],
     [
-        'Brett Becker',
-        'http://www.brettbecker.com',
-        'novices, programming, compilers, errors',
-        'Computer Science',
-        'University College Dublin',
-        'Ireland',
-    ],
-    [
         'Tim Bell',
         'http://www.cosc.canterbury.ac.nz/tim.bell/',
         'CS unplugged, curriculum',
