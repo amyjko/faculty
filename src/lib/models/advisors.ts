@@ -680,14 +680,6 @@ const advisors: [string, string, string, string, string, string][] = [
         'USA',
     ],
     [
-        'Roy Pea*',
-        'http://web.stanford.edu/~roypea/',
-        'learning science, informal learning',
-        'Education and Learning Sciences',
-        'Stanford',
-        'USA',
-    ],
-    [
         'Arnold Pears*',
         'http://www.it.uu.se/katalog/arnoldp',
         'pedagogy',
@@ -790,14 +782,6 @@ const advisors: [string, string, string, string, string, string][] = [
         'School of Education',
         'The University of Edinburgh',
         'Scotland',
-    ],
-    [
-        'Anthony Robins',
-        'http://www.cs.otago.ac.nz/staff/Anthony_Robins',
-        'psychology of programming, language learning, first programming language, novice programmers, CS1',
-        'Computer Science',
-        'University of Otago',
-        'New Zealand',
     ],
     [
         'Ricarose Roque',
