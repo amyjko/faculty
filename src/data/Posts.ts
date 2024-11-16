@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/@amyjko/the-coming-storm-03a03750016b',
+        title: 'The Coming Storm',
+        date: '2024.11',
+        tags: ['gender', 'society'],
+        img: 'comingstorm',
+        alt: 'Mount St. Helens erupting in May, 1980',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/i-am-an-associate-dean-for-academics-fae90108136e',
         title: 'I am an Associate Dean for Academics',
         date: '2024.09',
