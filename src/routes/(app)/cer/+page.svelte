@@ -848,7 +848,8 @@
         </li>
         <li>
             <p
-                ><External to="https://mitpress.mit.edu/books/stuck-shallow-end"
+                ><External
+                    to="https://mitpress.mit.edu/9780262514040/stuck-in-the-shallow-end/"
                     >Stuck in the Shallow End: Education, Race, and Computing
                 </External> illustrates the numerous racist structures, beliefs,
                 and practices in K-12 education that systematically exclude students
@@ -858,7 +859,7 @@
         <li>
             <p
                 ><External
-                    to="https://mitpress.mit.edu/books/unlocking-clubhouse"
+                    to="https://mitpress.mit.edu/9780262632690/unlocking-the-clubhouse/"
                     >Unlocking the Clubhouse: Women in Computing</External
                 > examines how the culture of higher education CS systematically
                 excludes and deters women from participating in CS education, and
