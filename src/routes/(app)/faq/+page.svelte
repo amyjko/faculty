@@ -24,26 +24,18 @@
 
     <ul>
         <li
+            >I am one of the best person in your network to write the letter,
+            relative to your other options.</li
+        >
+        <li
             >You've asked for it at least two weeks in advance of the deadline,
             preferably one month, so I have time to schedule writing.</li
-        >
-        <li
-            >You've given me all of the information you have about what is
-            expected in the letter, especially if it is not a conventional
-            graduate school application.</li
-        >
-        <li>You've shared with me why you need the letter.</li>
-        <li
-            >You've explained why I'm an ideal person in your network to write
-            the letter, relative to other options.</li
         >
         <li
             >I've collaborated with you on a project, or if you were a student
             in my class, I've had multiple conversations about things beyond the
             scope of a class and its requirements (e.g., in office hours, in
-            research, or other settings). Provide me with specific details about
-            these collaborations and conversations in case I've forgotten, so I
-            can write a concrete letter.</li
+            research, or other settings).</li
         >
     </ul>
 
@@ -52,16 +44,33 @@
         doctoral students, and undergraduate researchers in my research lab
         easily satisfy all of the criteria above. They don't even need to ask if
         I'll write; it's a given. But I receive many requests from students I've
-        had in classes that I've <em>never</em> talked to. In these cases, what
-        would I even say in the letter?
-        <em>"They were in my class, but I don't know them?"</em>
-        If you're in that situation, I would love to get to know you, but if I spent
-        the time to do that with every student who asked for a letter, I would probably
-        be spending more than a dozen hours a week meeting with students just to
-        write letters. I definitely cannot do that without failing at my other responsibilities.
+        had in classes that I've <em>never</em> talked to. In these cases, I'd have
+        nothing to write in my recommendation.
     </p>
 
-    <p>Write me and ask if you think you're eligible.</p>
+    <p>If you satisfy these requirements, write me with the following:</p>
+
+    <ul>
+        <li
+            >Remind me how we know each other, in case I don't recognize your
+            name.
+        </li>
+        <li
+            >You've shared with me why you need the letter. What programs, jobs,
+            or opportunities are you applying to and why?</li
+        >
+        <li
+            >Provide me with specific details about these collaborations and
+            conversations in case I've forgotten, so I can write a letter that
+            is specific about our interactions.</li
+        >
+        <li>When is the letter (or first letter in a batch) due?</li>
+        <li
+            >If there is a specific location to upload the letter, provide the
+            location. (Most are invitations sent to me that I fill out
+            independently.)</li
+        >
+    </ul>
 
     <p>
         There are some exceptions to the policy above. If the "letter" you need
@@ -72,24 +81,6 @@
             to={'/lablets#recommendation'}>lablets</Link
         >, there are specific conditions for earning a letter.
     </p>
-
-    <p>
-        If you are eligible for a letter, I need the following to help me write
-        a good letter:
-    </p>
-
-    <ul>
-        <li>The deadline</li>
-        <li>Where to submit</li>
-        <li
-            >Details about what the letter is for, preferably a URL to whatever
-            you're applying to</li
-        >
-        <li
-            >If we did not interact regularly, a detailed summary of all of our
-            interactions, to help prime my memory.</li
-        >
-    </ul>
 </Section>
 
 <Section
