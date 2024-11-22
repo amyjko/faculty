@@ -41,7 +41,9 @@
             >I've collaborated with you on a project, or if you were a student
             in my class, I've had multiple conversations about things beyond the
             scope of a class and its requirements (e.g., in office hours, in
-            research, or other settings).</li
+            research, or other settings). Provide me with specific details about
+            these collaborations and conversations in case I've forgotten, so I
+            can write a concrete letter.</li
         >
     </ul>
 
