@@ -6,7 +6,7 @@
     let { symbol }: Props = $props();
 </script>
 
-<span class="emoji">{symbol + '\uFE0F'}</span>
+<span class="emoji">{symbol + '\uFE0E'}</span>
 
 <style>
     .emoji {

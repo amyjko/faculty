@@ -12,8 +12,9 @@
     ><span class="dot">&sdot;</span><External
         to="https://www.threads.net/@amyjensenko"
         ><Emoji symbol="🧵" /></External
-    ><span class="dot">&sdot;</span><External to="https://twitter.com/amyjko"
-        ><Emoji symbol="🐥" /></External
+    ><span class="dot">&sdot;</span><External
+        to="https://bsky.app/profile/amyjko.bsky.social"
+        ><Emoji symbol="🦋" /></External
     >
 </div>
 
