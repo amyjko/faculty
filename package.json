@@ -15,7 +15,7 @@
     },
     "devDependencies": {
         "@sveltejs/adapter-static": "^3.0",
-        "@sveltejs/kit": "^2.7",
+        "@sveltejs/kit": "^2.8",
         "@sveltejs/vite-plugin-svelte": "^4.0",
         "ajv-cli": "^5",
         "ajv-formats": "^3",
