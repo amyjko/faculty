@@ -1,5 +1,19 @@
 const Talks = [
     {
+        date: '2024-11-22',
+        image: 'mudd2024.jpg',
+        alt: 'ALTCODE acronym',
+        slides: 'Mudd2024JCEPL.pdf',
+        title: 'Justice-Centered Educational Programming Languages',
+        venue: 'Harvey Mudd and Pomona College, joint colloqium',
+        url: null,
+        recording: null,
+        practice: null,
+        description:
+            'I connect theories of justice to the design of educational programming languages.',
+        keynote: false,
+    },
+    {
         date: '2024-05-21',
         image: 'ncwit2024.jpg',
         alt: 'a colorized photo of Kansas City, Missouri',
