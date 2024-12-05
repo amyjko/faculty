@@ -6,23 +6,29 @@
     import { profile } from '$lib/models/stores';
     import Title from '$lib/components/Title.svelte';
 
-    let pubCount =
-        $derived(Math.round(
+    let pubCount = $derived(
+        Math.round(
             $profile.getPublications(
                 (paper) =>
                     paper.kind.indexOf('refereed') === 0 ||
-                    paper.kind.indexOf('journal') >= 0
-            ).length / 10
-        ) * 10);
-    let bestAwardCount = $derived($profile.getPublications(
-        (paper) => paper.award !== undefined && paper.award.length > 0
-    ).length);
-    let mipAwardCount = $derived($profile.getPublications(
-        (paper) =>
-            paper.award !== undefined &&
-            paper.award.filter((award) => award.includes('most influential'))
-                .length > 0
-    ).length);
+                    paper.kind.indexOf('journal') >= 0,
+            ).length / 10,
+        ) * 10,
+    );
+    let bestAwardCount = $derived(
+        $profile.getPublications(
+            (paper) => paper.award !== undefined && paper.award.length > 0,
+        ).length,
+    );
+    let mipAwardCount = $derived(
+        $profile.getPublications(
+            (paper) =>
+                paper.award !== undefined &&
+                paper.award.filter((award) =>
+                    award.includes('most influential'),
+                ).length > 0,
+        ).length,
+    );
 </script>
 
 <Title text="Biography" />
@@ -32,13 +38,14 @@
 <Linkable id="tiny">Tiny Bio</Linkable>
 <p>
     Amy J. Ko studies equitable, joyous, liberatory learning about computing and
-    information, in schools and beyond, drawing from HCI, computing education,
-    software engineering, programming languages, learning sciences, behavioral
-    sciences, and sociology. She is a Professor and Associate Dean for Academics
-    at the <External to="http://www.washington.edu"
+    information, in schools and beyond, drawing from human-computer interaction,
+    computing education, software engineering, programming languages, learning
+    sciences, behavioral sciences, and sociology. She is a Professor and
+    Associate Dean for Academics at the <External to="http://www.washington.edu"
         >University of Washington</External
     >
-    <External to="http://ischool.uw.edu/">Information School</External>.
+    <External to="http://ischool.uw.edu/">Information School</External>, with a
+    courtesy appointment in Computer Science & Engineering.
 </p>
 
 <Linkable id="short">Short Bio</Linkable>
