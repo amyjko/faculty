@@ -23,7 +23,8 @@
 <p
     >Want to learn more? Try <External to="https://wordplay.dev"
         ><Emoji symbol="💬" /> Wordplay</External
-    >, or <Link to="https://github.com/wordplaydev">contribute</Link>, helping
-    design and implement the platform, participating in meetups and chats, and
-    guiding the direction of the project.
+    >, or <Link to="https://github.com/wordplaydev/wordplay/wiki/contribute"
+        >contribute</Link
+    >, helping design and implement the platform, participating in meetups and
+    chats, and guiding the direction of the project.
 </p>
