@@ -3599,7 +3599,7 @@ export const Amy: ProfileSpec = {
         {
             id: 'info360',
             alt: 'A line drawing of two people discussing a sketch',
-            link: 'https://faculty.washington.edu/courses/info360/',
+            link: 'https://github.com/amyjko/info360/',
             number: 'INFO 360',
             level: 'undergraduate',
             title: 'Design Methods',
@@ -3609,12 +3609,8 @@ export const Amy: ProfileSpec = {
             links: [
                 {
                     description: "Amy's online book for the course",
-                    link: 'https://faculty.washington.edu/ajko/courses/info360/',
-                },
-                {
-                    description: 'Course activities on GitHub',
-                    link: 'https://github.com/amyjko/info360/',
-                },
+                    link: 'https://faculty.washington.edu/ajko/books/design-methods/',
+                }
             ],
             offerings: [
                 { size: 35, term: 2, year: 2018, score: 4.8 },
