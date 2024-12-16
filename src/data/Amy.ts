@@ -3563,9 +3563,9 @@ export const Amy: ProfileSpec = {
             description:
                 'A weekly research studio, held annually, for working on Wordplay and other justice-centered educational programming languages research. A way to earn credit by contributing to Wordplay.',
             offerings: [
-                { size: 40, term: 1, year: 2024, score: null },
-                { size: 40, term: 2, year: 2025, score: null },
-                { size: 40, term: 3, year: 2025, score: null },
+                { size: 13, term: 1, year: 2024, score: null },
+                { size: 17, term: 2, year: 2025, score: null },
+                { size: 20, term: 3, year: 2025, score: null },
             ],
         },
         {
@@ -3610,7 +3610,7 @@ export const Amy: ProfileSpec = {
                 {
                     description: "Amy's online book for the course",
                     link: 'https://faculty.washington.edu/ajko/books/design-methods/',
-                }
+                },
             ],
             offerings: [
                 { size: 35, term: 2, year: 2018, score: 4.8 },
