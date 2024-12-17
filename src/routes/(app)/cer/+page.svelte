@@ -414,7 +414,7 @@
 
     <p>
         Another caveat: some of the faculty below have chosen their expertise
-        descriptions, but others I had to extract from faculty websites wrote.
+        descriptions, but others I had to extract from faculty websites.
         <strong>I've put a * next to expertise</strong> that hasn't been chosen or
         agreed to by the researcher being described. These expertise tags are also
         likely to be perpetualy out of date, as researchers pursue new topics. The
