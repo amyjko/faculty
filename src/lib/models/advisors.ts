@@ -1,4 +1,13 @@
 const advisors: [string, string, string, string, string, string][] = [
+    
+    [
+        'Abdu Alawini',
+        'https://alawini.web.illinois.edu',
+        'Teaching and learning at scale, AI in Education, Educational data mining and data analytics',
+        'Siebel School of Computing and Data Science',
+        'University of Illinois Urbana-Champaign',
+        'USA',
+    ],
     [
         'Saira Anwar',
         'https://engineering.tamu.edu/mtde/profiles/anwar-saira.html',
@@ -139,7 +148,7 @@ const advisors: [string, string, string, string, string, string][] = [
         'Katie Cunningham',
         'https://www.kicunningham.com',
         'programming plans, novel learning environments, conversational programmers',
-        'Computer Science',
+        'Siebel School of Computing and Data Science',
         'University of Illinois Urbana-Champaign',
         'USA',
     ],
@@ -240,6 +249,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'USA',
     ],
     [
+        'Jeff Erickson',
+        'https://jeffe.cs.illinois.edu',
+        'theoretical CS education, broadening participation in computing, open educational resources',
+        'Siebel School of Computing and Data Science',
+        'University of Illinois Urbana-Champaign',
+        'USA',
+    ],
+    [
         'Barbara Ericson*',
         'http://barbara-ericson.strikingly.com/',
         'pedagogy, diversity',
@@ -285,6 +302,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'Programming languages, pedagogy, cross-disciplinary learning and transfer',
         'Computer Science',
         'Brown University',
+        'USA',
+    ],
+    [
+        'Max Fowler',
+        'https://siebelschool.illinois.edu/about/people/faculty/mfowler5',
+        'assessment at scale, isomorphic questions, programming skill hierarchies, LLMs for question authoring and grading/feedback, open educational resources (OER)',
+        'Siebel School of Computing and Data Science',
+        'University of Illinois Urbana-Champaign',
         'USA',
     ],
     [
@@ -371,7 +396,7 @@ const advisors: [string, string, string, string, string, string][] = [
         'Geoffrey Herman',
         'http://publish.illinois.edu/glherman/',
         'conceptual change and student learning, assessment and measurement, pedagogy, and faculty development',
-        'Computer Science',
+        'Siebel School of Computing and Data Science',
         'University of Illinois, Urbana-Champaign',
         'USA',
     ],
@@ -406,6 +431,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'Computer Science and Engineering',
         'Indian Institute of Technology Bombay',
         'India',
+    ],
+    [
+        'Gayithri Jayathirtha',
+        'https://education.illinois.edu/profile/gayithri-jayathirtha',
+        'K-12 Critical Computing Education, Teaching and Teacher education',
+        'Curriculum & Instruction',
+        'University of Illinois Urbana-Champaign',
+        'USA',
     ],
     [
         'Yasmin Kafai',
@@ -496,6 +529,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'USA',
     ],
     [
+        'Chad Lane',
+        'https://education.illinois.edu/profile/h-chad-lane',
+        'AI in Education, educational games, informal CS Education, pedagogical agents',
+        'Educational Psychology & Computer Science',
+        'University of Illinois Urbana-Champaign',
+        'USA',
+    ],
+    [
         'Michael J. Lee',
         'http://pixel42.com/',
         'HCI, educational games, diversity, learning technologies',
@@ -521,8 +562,8 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Colleen Lewis',
-        'https://cs.illinois.edu/directory/profile/colleenl',
-        'Understanding and optimizing learning; identifying and removing barriers',
+        'https://siebelschool.illinois.edu/about/people/faculty/colleenl',
+        'Broadening Participation in Computing (BPC) and CS learning',
         'Computer Science',
         'University of Illinois at Urbana-Champaign',
         'USA',
@@ -856,6 +897,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'USA',
     ],
     [
+        'Mariana Silva',
+        'https://mfsilva22.github.io',
+        'computer-based assessment at scale, collaborative learning, LLMs for autograding short-answer questions and question authoring, open-educational resources',
+        'Siebel School of Computing and Data Science',
+        'University of Illinois Urbana-Champaign',
+        'USA',
+    ],
+    [
         'Jacqueline Staub*',
         'https://scholar.google.com/citations?user=hFe7oDcAAAAJ&hl=en',
         'programming, K-12',
@@ -872,11 +921,27 @@ const advisors: [string, string, string, string, string, string][] = [
         'USA',
     ],
     [
+        'Nicolas Tanchuk',
+        'https://education.illinois.edu/profile/nicolas-tanchuk',
+        'AI Ed ethics, philosophy of educational technology, critical education policy analysis',
+        'Education Policy, Organization and Leadership',
+        'University of Illinois Urbana-Champaign',
+        'USA',
+    ],
+    [
         'Jakita O. Thomas',
         'https://www.jakitaothomas.com',
         'computational algorithmic thinking, intersectional computing, complex cognitive skill development, computer-supported collaborative learning',
         'Computer Science and Software Engineering',
         'Auburn University',
+        'USA',
+    ],
+    [
+        'Mike Tissenbaum',
+        'https://education.illinois.edu/profile/michael-tissenbaum',
+        'Computational Action, digital empowerment, culturally sustaining computing and engineering education',
+        'Curriculum & Instruction',
+        'University of Illinois Urbana-Champaign',
         'USA',
     ],
     [
@@ -973,6 +1038,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'learning ecosystems',
         'Computer Science',
         'Northwestern',
+        'USA',
+    ],
+    [
+        'Craig Zilles',
+        'https://zilles.cs.illinois.edu',
+        'Assessment, learning at scale, code reading, second-chance/frequent testing',
+        'Siebel School of Computing and Data Science',
+        'University of Illinois Urbana-Champaign',
         'USA',
     ],
     [
