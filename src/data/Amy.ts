@@ -1339,6 +1339,13 @@ export const Amy: ProfileSpec = {
     ],
     doctoralCommittees: [
         {
+            name: 'Luis Morales-Navarro',
+            institution: 'University of Pennsylvania',
+            department: 'Graduate School of Education',
+            startdate: 2024,
+            enddate: null,
+        },
+        {
             name: 'Daniela Wolf',
             institution: 'Graz University of Technology',
             department: 'Computer Science',
