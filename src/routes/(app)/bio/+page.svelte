@@ -112,6 +112,14 @@
     to keep doing it as a professor in Seattle.
 </p>
 
+<Linkable id="wikipedia">Wikipedia</Linkable>
+
+<p>
+    <External to="https://en.wikipedia.org/wiki/Amy_J._Ko">Wikipedia</External> has
+    a page about me. If you're so inclined, see if there's other notable information
+    its missing and add it.
+</p>
+
 <Linkable id="age">Age</Linkable>
 
 <p>
