@@ -1807,7 +1807,7 @@ export const Amy: ProfileSpec = {
                 'I help define strategic actions that lead to a more inclusive project, better positioning the ECEP community to advocate for, promote, and embrace equity in computer science education.',
             commitment: {
                 start: '2021-02-01',
-                end: '2023-02-01',
+                end: '2024-02-01',
                 hours: 1,
                 priority: 0,
             },
