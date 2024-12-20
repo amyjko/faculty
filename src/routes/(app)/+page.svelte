@@ -5,7 +5,6 @@
     import Thumbnail from '$lib/components/Thumbnail.svelte';
     import Block from '$lib/components/Block.svelte';
     import getPersonImagePath from '$lib/components/getPersonImage';
-    import Emoji from '$lib/components/Emoji.svelte';
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
 </script>
@@ -72,12 +71,11 @@
     {#if keyPaper}
         <Block>
             {#snippet image()}
-                        <Thumbnail
+                <Thumbnail
                     url={`/images/papers/paper-${keyPaper.id}.jpg`}
                     alt="A clip from the paper's text or figure"
-                    
                 />
-                    {/snippet}
+            {/snippet}
             <strong>{discovery.contribution}</strong>
             <small
                 >({range[0]}{range[0] !== range[1]
@@ -124,7 +122,7 @@
                         ><Link
                             to={`/publications?${discovery.tags[0].replaceAll(
                                 ' ',
-                                '%20'
+                                '%20',
                             )}`}>papers</Link
                         >{/if}
                 </small>
