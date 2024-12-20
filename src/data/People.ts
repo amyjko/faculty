@@ -298,7 +298,7 @@ export const People: readonly Person[] = [
         bio: "Jean is interested in justice-focused computing education for youth, namely how youth can learn to examine technology's role in their lives and society and how educators can support this learning process.",
         url: 'https://jeansalac.github.io/',
         startdate: 2022,
-        enddate: null,
+        enddate: 2024,
         achievements: [
             'Assistant Professor, Computer Science, Carlton College (2024)',
         ],
