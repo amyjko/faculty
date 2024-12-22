@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/fragmentation-in-academic-leadership-8bae84ea3402',
+        title: 'Fragmentation in academic leadership',
+        date: '2024.12',
+        tags: ['academia'],
+        img: 'fragmentedleadership',
+        alt: 'On the top half, green flowing river water, and on the bottom, fractured rock.',
+    },
+    {
         url: 'https://medium.com/@amyjko/the-coming-storm-03a03750016b',
         title: 'The Coming Storm',
         date: '2024.11',
