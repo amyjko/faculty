@@ -3687,7 +3687,7 @@ export const Amy: ProfileSpec = {
             number: 'HCID 520',
             title: 'User Interface Software and Technology',
             description:
-                'This core course in our Masters of HCI+Design teaches students they history, theory, and foundations of user interfaces. Students acquire a literacy for communicating and reasoning about interfaces.',
+                'This core course in our Masters of HCI+Design teaches students the history, theory, and foundations of user interfaces. Students acquire a literacy for communicating and reasoning about interfaces.',
             hours: 8,
             links: [
                 {
