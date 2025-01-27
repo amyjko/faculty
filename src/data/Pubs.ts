@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'tseretro',
+        kind: 'journal article',
+        authors: ['@ajko', 'Brad Myers', 'Michael Coblenz', 'Htet Htet Aung'],
+        year: 2025,
+        title: 'A Retrospective on How Developers Seek, Relate, and Collect Information About Code',
+        source: '@tse',
+        pages: null,
+        publisher: 'IEEE',
+        doi: null,
+        local: null,
+        contribution:
+            'Looks back on a study I led 20 years ago on developer productivity in IDEs.',
+    },
+    {
         id: 'criticalpedagogy',
         kind: 'journal article',
         authors: ['@salac', '@lenaa', '@megumi', '@jayne', '@ajko'],
