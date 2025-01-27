@@ -1339,6 +1339,13 @@ export const Amy: ProfileSpec = {
     ],
     doctoralCommittees: [
         {
+            name: 'Jialin Li',
+            institution: 'University of Pennsylvania',
+            department: 'Computer Science & Engineering',
+            startdate: 2025,
+            enddate: null,
+        },
+        {
             name: 'Luis Morales-Navarro',
             institution: 'University of Pennsylvania',
             department: 'Graduate School of Education',
