@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'wordplay',
+        kind: 'refereed conference paper',
+        authors: ['@ajko', '@carlos', '@iamaya'],
+        year: 2025,
+        title: 'Wordplay: Accessible, Multilingual Interactive Typography',
+        source: '@chi',
+        pages: null,
+        publisher: 'ACM',
+        doi: 'https://doi.org/10.1145/3706598.3713196',
+        local: null,
+        contribution:
+            'Describes and evaluates Wordplay, an multilingual, accesislbe, educational programming language.',
+    },
+    {
         id: 'tseretro',
         kind: 'journal article',
         authors: ['@ajko', 'Brad Myers', 'Michael Coblenz', 'Htet Htet Aung'],
