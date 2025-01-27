@@ -11,7 +11,7 @@ export const Publications: Paper[] = [
         pages: null,
         publisher: 'IEEE',
         doi: null,
-        local: null,
+        local: 'Ko2025SeekRetrospective.pdf',
         contribution:
             'Looks back on a study I led 20 years ago on developer productivity in IDEs.',
     },
