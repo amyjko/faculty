@@ -78,7 +78,7 @@ export const Publications: Paper[] = [
         doi: 'https://doi.org/10.1145/3690651',
         local: null,
         contribution:
-            "Finds that computing learning spaces legitimize hyper-focus, deep ``special'' interests, and high organization, and that fitting these expectations was frequently required for persistence.",
+            "Finds that computing learning spaces legitimize hyper-focus, deep 'special' interests, and high organization, and that fitting these expectations was frequently required for persistence.",
     },
     {
         id: 'recruitinginformal',
