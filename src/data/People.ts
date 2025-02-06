@@ -556,7 +556,7 @@ export const People: readonly Person[] = [
         dept: 'Information School',
         coadvisor: null,
         bio: 'Stefania Druga a Ph.D. candidate in the Information School. Studies computer-supported creative coding for youth and the design of AI literacy tools and resources for Families. She is co-advised by Benjamin Mako Hill.',
-        url: 'http://www.drugastefania.com',
+        url: 'https://stefania11.github.io/',
         startdate: 2019,
         enddate: 2023,
         achievements: ['Research Scientist, Google Gemini (2023)'],
