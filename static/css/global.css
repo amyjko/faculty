@@ -64,6 +64,12 @@ body {
 	line-height: var(--text-line-height);
 }
 
+button {
+	font-family: var(--text-font-family);
+	font-size: var(--text-font-size);
+	font-weight: var(--text-weight);
+}
+
 b, strong {
 	font-weight: var(--bold-weight);
 }

@@ -14,6 +14,61 @@
     }
 
     let { headers = [], activeid }: Props = $props();
+
+    const words = [
+        'anti-racism',
+        'racism',
+        'allyship',
+        'bias',
+        'diversity',
+        'equity',
+        'inclusion',
+        'feminism',
+        'gender',
+        'justice',
+        'injustice',
+        'intersectionality',
+        'prejudice',
+        'privilege',
+        'racial identity',
+        'sexuality',
+        'pronouns',
+        'queer',
+        'transgender',
+        'equality',
+    ];
+
+    function textNodesUnder(el: Node) {
+        const children: Node[] = []; // Type: Node[]
+        const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+        while (walker.nextNode()) {
+            children.push(walker.currentNode);
+        }
+        return children;
+    }
+    function replace() {
+        const texts = textNodesUnder(document.body);
+        for (const text of texts) {
+            if (
+                text.nodeType === 3 &&
+                text.textContent !== null &&
+                text.textContent.trim().length > 0
+            ) {
+                const spaceBefore = text.textContent.match(/^\s*/)?.[0] || '';
+                const spaceAfter = text.textContent.match(/\s*$/)?.[0] || '';
+                text.textContent =
+                    spaceBefore +
+                    text.textContent
+                        .split(' ')
+                        .map(
+                            () =>
+                                words[Math.round(Math.random() * words.length)],
+                        )
+                        .join(' ') +
+                    spaceAfter;
+            }
+        }
+    }
 </script>
 
 <section class="info">
@@ -87,6 +142,8 @@
         >.</Alert
     >
 </small>
+
+<button onclick={replace}>CENSOR</button>
 
 <hr />
 <nav>
