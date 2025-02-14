@@ -24,7 +24,7 @@ export const Publications: Paper[] = [
         source: '@tse',
         pages: null,
         publisher: 'IEEE',
-        doi: null,
+        doi: 'https://doi.org/10.1109/TSE.2025.3534071',
         local: 'Ko2025SeekRetrospective.pdf',
         contribution:
             'Looks back on a study I led 20 years ago on developer productivity in IDEs.',
