@@ -2,6 +2,38 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/sigcse-2025-rumination-resistance-0a1882d9731b',
+        title: 'SIGCSE 2025: Rumination, resistance',
+        date: '2025.03',
+        tags: ['computing education', 'trip report'],
+        img: 'sigcse25',
+        alt: 'A dark purple stage, a slide that says SIGCSE, and the organizing committee kicking things off.',
+    },
+    {
+        url: 'https://medium.com/@amyjko/a-day-at-the-state-capitol-8c2f5dc7e3f7',
+        title: 'A day at the state capitol',
+        date: '2025.02',
+        tags: ['society', 'policy', 'personal', 'gender'],
+        img: 'capitol25',
+        alt: 'A thousand people sitting on Capitol building steps, and standing in the street, with grey clouds above us all.',
+    },
+    {
+        url: 'https://medium.com/@amyjko/plain-language-american-problems-9fffa42fb9ef',
+        title: 'Plain language American problems',
+        date: '2025.02',
+        tags: ['society', 'policy'],
+        img: 'plainlang',
+        alt: 'A photo of a cloudy sky, with a long arc of cloud break showing blue sky above.',
+    },
+    {
+        url: 'https://medium.com/@amyjko/horror-joy-ff4e5c4e8423',
+        title: 'Horror, joy',
+        date: '2025.01',
+        tags: ['personal', 'policy', 'gender'],
+        img: 'horrorjoy',
+        alt: 'A stage with a Black woman and a keyboard in mics, shrounded in blue.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/fragmentation-in-academic-leadership-8bae84ea3402',
         title: 'Fragmentation in academic leadership',
         date: '2024.12',
