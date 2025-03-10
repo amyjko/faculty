@@ -11,7 +11,7 @@ export const Publications: Paper[] = [
         pages: null,
         publisher: 'ACM',
         doi: 'https://doi.org/10.1145/3706598.3713196',
-        local: null,
+        local: 'Ko2025Wordplay.pdf',
         contribution:
             'Describes and evaluates Wordplay, an multilingual, accesislbe, educational programming language.',
     },
