@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/we-are-not-binary-ai-and-dehumanization-db03754d06ac',
+        title: 'We are not bits: AI and dehumanization',
+        date: '2025.03',
+        tags: ['diversity', 'society', 'automation'],
+        img: 'notbits',
+        alt: 'A muted, fuzzy photo above the clouds, with the bright sun in the corner, possibly from an airplane window.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/sigcse-2025-rumination-resistance-0a1882d9731b',
         title: 'SIGCSE 2025: Rumination, resistance',
         date: '2025.03',
