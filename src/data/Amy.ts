@@ -3568,7 +3568,7 @@ export const Amy: ProfileSpec = {
         {
             id: 'info494',
             alt: 'A photograph of a group of students working on laptops',
-            link: 'https://canvas.uw.edu/courses/1757590',
+            link: 'https://canvas.uw.edu/courses/1786872',
             links: [],
             number: 'INFO 494',
             level: 'undergraduate',
@@ -3577,7 +3577,7 @@ export const Amy: ProfileSpec = {
             description:
                 'A weekly research studio, held annually, for working on Wordplay and other justice-centered educational programming languages research. A way to earn credit by contributing to Wordplay.',
             offerings: [
-                { size: 13, term: 1, year: 2024, score: null },
+                { size: 13, term: 1, year: 2024, score: 4.7 },
                 { size: 17, term: 2, year: 2025, score: null },
                 { size: 20, term: 3, year: 2025, score: null },
             ],
