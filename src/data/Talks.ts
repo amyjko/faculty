@@ -1,4 +1,20 @@
-const Talks = [
+import type { Talk } from '$lib/models/Talk';
+
+const Talks: Talk[] = [
+    {
+        date: '2026-02-18',
+        image: 'placeholder.jpg',
+        alt: 'forthcoming',
+        slides: null,
+        title: 'TBD',
+        venue: '2025 ACM SIGCSE Technical Symposium',
+        url: null,
+        recording: null,
+        practice: null,
+        description:
+            "I'll be giving a keynote broadly about equity and justice in computing education.",
+        keynote: true,
+    },
     {
         date: '2024-11-22',
         image: 'mudd2024.jpg',
