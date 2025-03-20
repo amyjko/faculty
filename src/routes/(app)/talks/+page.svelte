@@ -8,10 +8,9 @@
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
 
-    let talks = $derived($profile.getTalks(
-        undefined,
-        (talk) => -parseDate(talk.date).getTime()
-    ));
+    let talks = $derived(
+        $profile.getTalks(undefined, (talk) => -parseDate(talk.date).getTime()),
+    );
 
     const months = [
         'Jan',
@@ -45,19 +44,17 @@
         link={talk.recording
             ? talk.recording
             : talk.practice
-            ? talk.practice
-            : talk.slides?.startsWith('http')
-            ? talk.slides
-            : `/slides/${talk.slides}`}
+              ? talk.practice
+              : talk.slides?.startsWith('http')
+                ? talk.slides
+                : talk.slides
+                  ? `/slides/${talk.slides}`
+                  : null}
         header={talk.title}
     >
         {#snippet image()}
-                <Image
-                
-                url={'/images/talks/' + talk.image}
-                alt={talk.alt}
-            />
-            {/snippet}
+            <Image url={'/images/talks/' + talk.image} alt={talk.alt} />
+        {/snippet}
         <span>
             &nbsp; {#if talk.keynote}<span class="award">&#x2605; Keynote</span
                 >{/if}
@@ -83,11 +80,15 @@
                         <External to={talk.recording}>Recording</External>
                     {/if}
                     {#if talk.practice}
-                        {#if talk.recording} &sdot; {/if}
+                        {#if talk.recording}
+                            &sdot;
+                        {/if}
                         <External to={talk.practice}>Rehearsal</External>
                     {/if}
                     {#if talk.slides}
-                        {#if talk.recording || talk.practice} &sdot; {/if}
+                        {#if talk.recording || talk.practice}
+                            &sdot;
+                        {/if}
                         <Link
                             to={talk.slides.startsWith('http')
                                 ? talk.slides

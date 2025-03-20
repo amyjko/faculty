@@ -76,13 +76,13 @@
     </div>
 {:else}
     {#snippet image()}
-    <Image
+        <Image
             url={'/images/papers/paper-' + paper.id + '.jpg'}
             alt="A clip from the paper's PDF."
             {highlight}
         />
     {/snippet}
-    <Block link={url} image={image}>
+    <Block link={url} {image}>
         <div id={paper.id} class="paper ws-bottom">
             {#if paper.award && paper.award.length > 0}
                 <mark class="award">&#x2605; {paper.award.join(' + ')}</mark>
