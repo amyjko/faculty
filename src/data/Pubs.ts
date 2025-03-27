@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'scratchcopilot',
+        kind: 'refereed conference paper',
+        authors: ['@st3f', '@ajko'],
+        year: 2025,
+        title: 'Scratch Copilot: Supporting Youth Creative Coding with AI',
+        source: '@idc',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            'Explore opportunities and limitations of youth interactions with generative AI for creative coding.',
+    },
+    {
         id: 'psychometricassessment',
         kind: 'refereed conference paper',
         authors: ['Mo Zhang', 'Xiang Lu', 'Hongwen Guo', '@minli', '@ajko'],
