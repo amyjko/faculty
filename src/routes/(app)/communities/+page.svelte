@@ -10,27 +10,26 @@
     These are communities I work with to do research, advocate, and have impact.
 </h1>
 
-<Block link="http://computinged.uw.edu/" header="ComputingEd@UW">
+<Block
+    link="http://computinged.uw.edu/"
+    header="The Center for the Learning, Computing, and Imagination"
+>
     {#snippet image()}
         <Image
-            
-            url={'/images/communities/computinged.jpg'}
-            alt="The ComputingEd@UW logo."
+            url={'/images/communities/lci.png'}
+            alt="The Center for the Learning, Computing, and Imagination logo."
         />
     {/snippet}
-    &nbsp;is the grassroots community of computing education researchers and educators
-    at the University of Washington, spanning the Paul G. Allen School of Computer
-    Science & Engineering, The Information School, the College of Education, Human-Centered
-    Design and Engineering, and the Department of Communication.
+    &nbsp;(LCI, pronouned "Lacey") is the grassroots community of computing education
+    researchers and educators at the University of Washington, spanning the Paul
+    G. Allen School of Computer Science & Engineering, The Information School, the
+    College of Education, Human-Centered Design and Engineering, the Department of
+    Communication, and more.
 </Block>
 
 <Block link="http://dub.uw.edu/" header="DUB">
     {#snippet image()}
-        <Image
-            
-            url={'/images/communities/dub.jpg'}
-            alt="The DUB logo."
-        />
+        <Image url={'/images/communities/dub.jpg'} alt="The DUB logo." />
     {/snippet}
     &nbsp;is the grassroots community of HCI and design researchers and educators
     + teachers at the University of Washington. Amy helped grow it from a small group
@@ -40,11 +39,7 @@
 
 <Block link="http://uwplse.org" header="PLSE">
     {#snippet image()}
-        <Image
-            
-            url={'/images/communities/plse.jpg'}
-            alt="The PLSE logo."
-        />
+        <Image url={'/images/communities/plse.jpg'} alt="The PLSE logo." />
     {/snippet}
     &nbsp;is the programming languages + software engineering researcher group in
     the Paul G. Allen School of Computer Science & Engineering at the University
@@ -57,7 +52,6 @@
 >
     {#snippet image()}
         <Image
-            
             url={'/images/communities/digitalyouth.jpg'}
             alt="The Digital Youth logo."
         />
@@ -69,7 +63,6 @@
 <Block link="http://soundcsed.org/" header="Sound CS Ed">
     {#snippet image()}
         <Image
-            
             url={'/images/communities/soundcsed.jpg'}
             alt="The Sound CS Ed logo."
         />
@@ -81,7 +74,6 @@
 <Block link="https://www.csforallwa.org" header="CS for All Washington">
     {#snippet image()}
         <Image
-            
             url={'/images/communities/csforallwa.jpg'}
             alt="The CS for All Washington logo."
         />
@@ -97,7 +89,6 @@
 >
     {#snippet image()}
         <Image
-            
             url={'/images/communities/accesscomputing.jpg'}
             alt="The AccessComputing logo."
         />
@@ -112,7 +103,6 @@
 <Block link="https://create.uw.edu" header="CREATE">
     {#snippet image()}
         <Image
-            
             url={'/images/communities/create.png'}
             alt="The CREATE center logo."
         />
@@ -126,7 +116,6 @@
 <Block link="http://www.eusesconsortium.org" header="EUSES Consortium">
     {#snippet image()}
         <Image
-            
             url={'/images/communities/euses.jpg'}
             alt="The EUSES Washington logo."
         />
