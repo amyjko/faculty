@@ -41,7 +41,9 @@ export const People: readonly Person[] = [
         url: 'https://aldats.dev/',
         startdate: 2024,
         enddate: null,
-        achievements: [],
+        achievements: [
+            'PhD student, Computer Science, University of Illinois Urbana-Champaign (2025)',
+        ],
     },
     {
         id: 'janet',
@@ -675,7 +677,10 @@ export const People: readonly Person[] = [
         url: 'http://students.washington.edu/andrewhu',
         startdate: 2018,
         enddate: 2020,
-        achievements: ['Husky 100, recognizing top UW students (2020)'],
+        achievements: [
+            'Husky 100, recognizing top UW students (2020)',
+            'PhD student at Michigan State University',
+        ],
     },
     {
         id: 'olesona',
