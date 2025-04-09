@@ -2717,6 +2717,66 @@ export const Amy: ProfileSpec = {
     travel: [
         {
             url: undefined,
+            title: 'Dagstuhl: Creativity, GenAI, and Software Development',
+            details: 'Weeklong workshop.',
+            category: 'research',
+            commitment: {
+                start: '2025-10-06',
+                end: '2025-10-10',
+                hours: 40,
+                priority: 1,
+            },
+        },
+        {
+            url: undefined,
+            title: 'ICER 2025',
+            details: 'Networking and sharing my research.',
+            category: 'research',
+            commitment: {
+                start: '2025-08-04',
+                end: '2025-08-06',
+                hours: 30,
+                priority: 1,
+            },
+        },
+        {
+            url: undefined,
+            title: 'CSTA 2025',
+            details: 'Networking and sharing my research.',
+            category: 'research',
+            commitment: {
+                start: '2025-07-08',
+                end: '2025-07-10',
+                hours: 30,
+                priority: 1,
+            },
+        },
+        {
+            url: undefined,
+            title: 'CHI 2025',
+            details: 'Networking and sharing my research.',
+            category: 'research',
+            commitment: {
+                start: '2025-04-23',
+                end: '2025-05-02',
+                hours: 40,
+                priority: 1,
+            },
+        },
+        {
+            url: undefined,
+            title: 'Berkeley EECS visit',
+            details: 'Networking and sharing my research.',
+            category: 'research',
+            commitment: {
+                start: '2025-04-16',
+                end: '2025-04-16',
+                hours: 20,
+                priority: 1,
+            },
+        },
+        {
+            url: undefined,
             title: 'SIGCSE 2025',
             details: 'Networking and sharing my research.',
             category: 'research',

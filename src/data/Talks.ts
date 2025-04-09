@@ -16,6 +16,20 @@ const Talks: Talk[] = [
         keynote: true,
     },
     {
+        date: '2025-04-16',
+        image: 'placeholder.jpg',
+        alt: 'forthcoming',
+        slides: null,
+        title: 'Justice-Centered Educational Programming Languages',
+        venue: 'Berkeley EECS Colloqium',
+        url: 'https://events.berkeley.edu/eecs/event/296720-eecs-colloquium-justice-centered-educational-programm',
+        recording: null,
+        practice: null,
+        description:
+            'I connect theories of justice to the design of educational programming languages.',
+        keynote: false,
+    },
+    {
         date: '2024-11-22',
         image: 'mudd2024.jpg',
         alt: 'ALTCODE acronym',
