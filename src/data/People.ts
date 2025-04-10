@@ -9,7 +9,7 @@ export const People: readonly Person[] = [
         coadvisor: null,
         level: 'undergrad',
         dept: 'The Information School',
-        bio: 'My Bio: Sophie is an undergraduate student studying geography and data science. She is interested in studying accessibility in computer science education. She is also interested in discovering new ways to educate about artificial intelligence.',
+        bio: 'Sophie is an undergraduate student studying geography and data science. She is interested in studying accessibility in computer science education. She is also interested in discovering new ways to educate about artificial intelligence.',
         url: 'https://www.linkedin.com/in/adrienne-g-b029711b8/',
         startdate: 2025,
         enddate: null,
