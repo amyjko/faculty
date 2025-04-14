@@ -18,14 +18,21 @@ export const Publications: Paper[] = [
     {
         id: 'psychometricassessment',
         kind: 'refereed conference paper',
-        authors: ['Mo Zhang', 'Xiang Lu', 'Hongwen Guo', '@minli', '@ajko'],
+        authors: [
+            'Chen Li',
+            'Mo Zhang',
+            'Xiang Lu',
+            'Hongwen Guo',
+            '@ajko',
+            '@minli',
+        ],
         year: 2025,
         title: 'Leveraging psychometric modeling for enhancing programming skill assessments',
         source: 'ICAIE 2025: International Conference on Artificial Intelligence and Education',
         pages: null,
         publisher: 'BERA',
         doi: null,
-        local: null,
+        local: 'Li2025PsychometricModeling.pdf',
         contribution:
             'Demonstrates that a cognitive diagnostic model can provide valuable insights for instructors and researchers in understanding how students learn and master programming concepts.',
     },
