@@ -80,7 +80,7 @@
         >SIGCHI Academy</External
     >, for her substantial contributions to the field of human-computer
     interaction, computing education, and software engineering. She received her
-    Ph.D. at the <External to="http://www.hcii.cs.cmu.edu"
+    Ph.D. at the <External to="http://hcii.cs.cmu.edu"
         >Human-Computer Interaction Institute</External
     > at <External to="http://www.cmu.edu">Carnegie Mellon University</External>
     in 2008, and degrees in Computer Science and Psychology with Honors from <External
@@ -346,7 +346,7 @@
 </p>
 
 <p>
-    Of all of the schools, the <External to="http://www.hcii.cmu.edu/"
+    Of all of the schools, the <External to="http://hcii.cmu.edu/"
         >Human-Computer Interaction Institute</External
     > at <External to="http://www.cmu.edu">Carnegie Mellon University</External>
     was the best fit, and I started work right away with <External

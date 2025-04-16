@@ -46,10 +46,7 @@
     of Washington. Amy often advises or co-advises Ph.D. students in PLSE.
 </Block>
 
-<Block
-    link="https://digitalyouth.ischool.uw.edu"
-    header="The Digital Youth Lab"
->
+<Block link="https://digitalyouth.uw.edu/" header="The Digital Youth Lab">
     {#snippet image()}
         <Image
             url={'/images/communities/digitalyouth.jpg'}

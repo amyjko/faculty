@@ -1,5 +1,4 @@
 const advisors: [string, string, string, string, string, string][] = [
-    
     [
         'Abdu Alawini',
         'https://alawini.web.illinois.edu',
@@ -98,7 +97,7 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Kristy Boyer*',
-        'http://research.csc.ncsu.edu/learndialogue/person.php?id=keboyer',
+        'https://learndialogue.org/person.php?id=keboyer',
         'intelligent tutoring systems',
         'Computer Science',
         'University of Florida',
@@ -106,7 +105,7 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Karen Brennan',
-        'https://www.gse.harvard.edu/faculty/karen-brennan',
+        'https://www.gse.harvard.edu/directory/faculty/karen-brennan',
         'constructionism, creativity, K-12 classrooms, teacher learning',
         'Graduate School of Education',
         'Harvard',
@@ -130,7 +129,7 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Cornelia Connolly',
-        'http://www.nuigalway.ie/our-research/people/education/corneliaconnolly/',
+        'https://www.universityofgalway.ie/colleges-and-schools/arts-social-sciences-and-celtic-studies/staffprofiles/corneliaconnolly/',
         'pedagogy, teacher education, computational thinking, design',
         'School of Education',
         'National University of Ireland, Galway',
@@ -242,7 +241,7 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Steve Edwards*',
-        'http://webcore.cs.vt.edu/user/edwards',
+        'https://people.cs.vt.edu/~edwards/',
         'software engineering, formal methods, autograding',
         'Computer Science',
         'Virginia Tech',
@@ -370,7 +369,7 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Philip Guo',
-        'http://www.pgbovine.net/',
+        'https://pg.ucsd.edu/',
         'HCI, learning at scale',
         'Cognitive Science',
         'University of California, San Diego',
@@ -378,7 +377,7 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Mark Guzdial*',
-        'http://www.cc.gatech.edu/home/guzdial/',
+        'https://guzdial.engin.umich.edu/',
         'pedagogy, curriculum, end-user programming, teachers, research instruments, theory',
         'Computer Science & Engineering, Engineering Education Research',
         'University of Michigan',
@@ -386,7 +385,7 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Sarah Heckman',
-        'https://people.engr.ncsu.edu/sesmith5/',
+        'https://sheckman.github.io/',
         'software engineering, automated grading, and help-seeking',
         'Computer Science',
         'North Carolina State University',
@@ -418,15 +417,15 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Chris Hundhausen',
-        'http://www.eecs.wsu.edu/~hundhaus/',
+        'https://engineering.oregonstate.edu/people/christopher-hundhausen',
         'social learning technologies and pedagogical approaches',
         'Computer Science',
-        'Washington State University',
+        'Oregon State University',
         'USA',
     ],
     [
         'Sridhar Iyer*',
-        'https://www.it.iitb.ac.in/~sri/',
+        'https://www.cse.iitb.ac.in/~sri/',
         'computing education research',
         'Computer Science and Engineering',
         'Indian Institute of Technology Bombay',
@@ -498,7 +497,7 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Dennis Komm',
-        'https://csedu.ethz.ch/en/people.html',
+        'https://people.inf.ethz.ch/dkomm/',
         'algorithms, programming, K-12, misconceptions, computational thinking',
         'Computer Science',
         'ETH Zürich',
@@ -586,7 +585,7 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Dastyni Loksa*',
-        'http://students.washington.edu/dloksa/#/',
+        'https://www.towson.edu/fcsm/departments/computerinfosci/facultystaff/dastyni-loksa.html',
         'Programming problem solving',
         'Computer & Information Sciences',
         'Towson University',
@@ -594,7 +593,7 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Andrew Luxton-Reilly*',
-        'https://unidirectory.auckland.ac.nz/profile/alux001',
+        'https://www.cs.auckland.ac.nz/~andrew/',
         'learning communities, game-based learning, debugging, automated assessment, gender and diversity in CS',
         'Computer Science',
         'University of Auckland',
@@ -746,7 +745,7 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Marian Petre*',
-        'http://mcs.open.ac.uk/mp8/',
+        'https://scholar.google.com/citations?user=J7zsMn8AAAAJ&hl=en',
         'software design, design pedagogy',
         'Centre for Research in Computing',
         'The Open University',
@@ -778,7 +777,7 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Thomas Price',
-        'https://people.engr.ncsu.edu/twprice/website/',
+        'https://isnap.csc.ncsu.edu/home/public/',
         'educational data mining, tutoring systems, automated feedback',
         'Computer Science',
         'North Carolina State&nbsp;University',
@@ -842,7 +841,7 @@ const advisors: [string, string, string, string, string, string][] = [
     ],
     [
         'Linda Sax*',
-        'https://gseis.ucla.edu/directory/linda-sax/',
+        'https://seis.ucla.edu/faculty/linda-j-sax/',
         'diversity in undergraduate CS and STEM',
         'Department of Education',
         'University of California, Los Angeles',

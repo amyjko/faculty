@@ -3284,7 +3284,7 @@ export const Amy: ProfileSpec = {
             },
         },
         {
-            url: 'https://www.hcii.cmu.edu/seminar-series',
+            url: 'https://www.hcii.cmu.edu/news/event/2023/04/hcii-seminar-series-amy-ko',
             title: 'Carnegie Mellon University, HCI Institute Seminar',
             details:
                 'Invited research talk and a series of 1 on 1 meetings with faculty.',

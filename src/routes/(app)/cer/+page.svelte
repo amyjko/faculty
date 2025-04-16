@@ -283,7 +283,7 @@
         <li>
             Alan Kay, one of the earliest researchers to investigate the
             learning of computing, helped <External
-                to="http://gagne.homedns.org/~tgagne/contrib/EarlyHistoryST.html"
+                to="https://worrydream.com/EarlyHistoryOfSmalltalk/"
                 >build upon ideas of object-orientation from Simula</External
             >, which inspired Smalltalk, which along with other languages such
             as C++, inspired the modern object-oriented programming languages
@@ -506,8 +506,7 @@
             ></li
         >
         <li
-            >The <External
-                to="https://sigcse.org/sigcse/membership/mailing-lists.html"
+            >The <External to="https://sigcse.org/membership/mailing-lists.html"
                 >SIGCSE-jobs mailing list</External
             ></li
         >

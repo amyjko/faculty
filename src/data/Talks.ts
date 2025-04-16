@@ -121,7 +121,7 @@ const Talks: Talk[] = [
         slides: 'CMU2023Wordplay.pdf',
         title: 'Searching for Justice in Programming Language Design',
         venue: 'HCI Institute, Carnegie Mellon',
-        url: 'https://www.hcii.cmu.edu/news/on/event/2023/04/hcii-seminar-series-amy-ko',
+        url: 'https://www.hcii.cmu.edu/news/event/2023/04/hcii-seminar-series-amy-ko',
         recording:
             'https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=18eed084-2310-42ba-bb09-afe0015fa4f5',
         practice: null,
