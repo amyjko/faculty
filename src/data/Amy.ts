@@ -2264,6 +2264,26 @@ export const Amy: ProfileSpec = {
     ],
     funding: [
         {
+            id: 'accesscomputing6',
+            title: 'AccessComputing Alliance',
+            funder: 'National Science Foundation',
+            award: '2417014',
+            investigators:
+                'Richard Ladner (PI), Sheryl Burgstahler (Co-PI), Raja Kushalnagar (Co-PI), Stacy Branham (Co-PI), Elain Short (Co-PI), Amy Ko (Senior Personnel)',
+            amount: '$5,618,463',
+            category: 'research',
+            description:
+                'Expands pathways for students with disabilities to participate in computing education.',
+            url: 'https://www.nsf.gov/awardsearch/showAward?AWD_ID=2417014&HistoricalAwards=false',
+            private: false,
+            commitment: {
+                start: '2024-10-01',
+                end: '2029-09-30',
+                hours: 1,
+                priority: 1,
+            },
+        },
+        {
             id: 'pnwcsteachers',
             title: 'An Equitable, Justice-Focused Ecosystem for Pacific Northwest Secondary CS Teaching',
             funder: 'National Science Foundation',
