@@ -19,7 +19,7 @@ const Talks: Talk[] = [
         date: '2025-04-16',
         image: 'placeholder.jpg',
         alt: 'forthcoming',
-        slides: null,
+        slides: 'BerkeleyEECS2025JCEPL.pdf',
         title: 'Justice-Centered Educational Programming Languages',
         venue: 'Berkeley EECS Colloqium',
         url: 'https://events.berkeley.edu/eecs/event/296720-eecs-colloquium-justice-centered-educational-programm',
