@@ -1339,6 +1339,13 @@ export const Amy: ProfileSpec = {
     ],
     doctoralCommittees: [
         {
+            name: 'Hannah Potter',
+            institution: 'University of Washington',
+            department: 'Computer Science & Engineering',
+            startdate: 2025,
+            enddate: null,
+        },
+        {
             name: 'Jialin Li',
             institution: 'University of Pennsylvania',
             department: 'Computer Science & Engineering',
