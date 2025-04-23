@@ -165,6 +165,18 @@ export const Amy: ProfileSpec = {
     impacts: [
         {
             kind: 'press',
+            start: 2025,
+            end: 20225,
+            description:
+                'I was interviewed by the Chronicle about my grant being terminated by DOGE.',
+            title: 'The Trump Administration Has Canceled Millions in NSF Grants',
+            author: 'Megan Zahneis',
+            source: 'The Chronicle of Higher Education',
+            url: 'https://www.chronicle.com/article/the-trump-administration-has-canceled-millions-in-nsf-grants',
+            who: 'public',
+        },
+        {
+            kind: 'press',
             start: 2024,
             end: 2024,
             description:
