@@ -16,6 +16,20 @@ const Talks: Talk[] = [
         keynote: true,
     },
     {
+        date: '2025-04-28',
+        image: 'wordplay2025.jpg',
+        alt: 'Wordplay: Accessible, Multilingual, Interactive Typography',
+        slides: 'WordplayCHI2025.pdf',
+        title: 'Wordplay: Accessible, Multilingual, Interactive Typography',
+        venue: '2025 ACM CHI Conference on Human Factors in Computing Systems',
+        url: 'https://dl.acm.org/doi/10.1145/3706598.3713196',
+        recording: 'https://www.youtube.com/watch?v=Mc3r0cGStuc',
+        practice: null,
+        description:
+            'I present Wordplay, its design principles, and a focus group evaluation of its tensions between language and ability inclusion, amongst other aspects of justice.',
+        keynote: false,
+    },
+    {
         date: '2025-04-16',
         image: 'berkeley2025.jpg',
         alt: 'forthcoming',

@@ -49,6 +49,7 @@ export const Publications: Paper[] = [
         local: 'Ko2025Wordplay.pdf',
         contribution:
             'Describes and evaluates Wordplay, an multilingual, accesislbe, educational programming language.',
+        slides: 'WordplayCHI2025.pdf',
     },
     {
         id: 'tseretro',
