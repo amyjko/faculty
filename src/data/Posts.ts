@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/chi-2025-frayed-edges-4c38ea98069d',
+        title: 'CHI 2025: Frayed edges',
+        date: '2025.05',
+        tags: ['trip report', 'HCI'],
+        img: 'chi2025',
+        alt: 'Japanese calligraphy on a white background, with the words "CHI 2025" in black.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/we-are-not-binary-ai-and-dehumanization-db03754d06ac',
         title: 'We are not bits: AI and dehumanization',
         date: '2025.03',
