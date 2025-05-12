@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/letters-from-the-fascist-front-e9433a7fc38c',
+        title: 'How is fascism going for you? Here’s how it’s going for me',
+        date: '2025.05',
+        tags: ['society', 'gender', 'personal', 'academia'],
+        img: 'fascism',
+        alt: 'Fuzzy speckles of red, black, and yellow, with a circular cutout in the center, and stick figure Amy pushing against its edits, with an angry, resistant face.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/chi-2025-frayed-edges-4c38ea98069d',
         title: 'CHI 2025: Frayed edges',
         date: '2025.05',
