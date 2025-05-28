@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'justicecurriculum',
+        kind: 'refereed conference paper',
+        authors: ['@megumi', 'Davie A. Ross', '@ajko'],
+        year: 2025,
+        title: 'Justice-Centered Computing Curriculum Design in Informal Learning',
+        source: '@respect',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: 'Kivuva2025JusticeCurriculum.pdf',
+        contribution:
+            'Justice-centered curriculum design requires educators’ ongoing content learning, reflection on positionality, and adaptability to students’ needs, including those with disabilities.',
+    },
+    {
         id: 'scratchcopilot',
         kind: 'refereed conference paper',
         authors: ['@st3f', '@ajko'],
