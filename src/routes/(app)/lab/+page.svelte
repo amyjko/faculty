@@ -57,14 +57,6 @@
     >, and I won honorable mention.
 </p>
 
-<Alert
-    >It is highly unlikely I will be admitting new Ph.D. students in Autumn
-    2025, due to the unprecedented budget cuts and grant terminations in the
-    United States. It's possible that this will change &mdash; this
-    administration seems to shift it's policies every few days &mdash; but it is
-    impossible to plan under such chaotic conditions.
-</Alert>
-
 <p>Areas I'm currently interested in include:</p>
 
 <ul>
