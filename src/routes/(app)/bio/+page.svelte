@@ -37,10 +37,10 @@
 
 <Linkable id="tiny">Tiny Bio</Linkable>
 <p>
-    Amy J. Ko studies equitable, joyous, liberatory learning about computing and
+    Amy J. Ko studies equitable, liberatory learning about computing and
     information, in schools and beyond, drawing from human-computer interaction,
     computing education, software engineering, programming languages, learning
-    sciences, behavioral sciences, and sociology. She is a Professor and
+    sciences, behavioral sciences, sociology, and more. She is a Professor and
     Associate Dean for Academics at the <External to="http://www.washington.edu"
         >University of Washington</External
     >
@@ -60,7 +60,7 @@
     > (courtesy). She co-directs the UW Center for Learning, Computing, and Imagination,
     where she studies computing education, human-computer interaction, and humanity's
     individual and collective struggle to understand computing and harness it for
-    creativity, equity, and justice. With her collaborators, she's invented many
+    equity, justice, and liberation. With her collaborators, she's invented many
     programming languages and tools to support debugging, program understanding,
     reuse, and learning; founded and sold a <External
         to="http://www.answerdash.com">venture-backed startup</External
@@ -101,9 +101,9 @@
     for developers, but then got disillusioned with capitalism. She then got excited
     about the ways that programmers interact with communities of people using their
     code. After she returned from her profit-laced time as CTO, she decided to focus
-    on making people smarter instead of tools smarter, and began studying what kinds
-    of computing literacies might lead to a more just world, and what kinds of teachers,
-    teaching, and tools we need to make that happen. She's grateful to <External
+    on making people smarter instead of tools, and began studying what kinds of computing
+    literacies might lead to a more just world, and what kinds of teachers, teaching,
+    and tools we need to make that happen. She's grateful to <External
         to="http://www.cmu.edu">Carnegie Mellon University</External
     > and
     <External to="http://www.oregonstate.edu">Oregon State University</External>
