@@ -3677,8 +3677,8 @@ export const Amy: ProfileSpec = {
                 'A weekly research studio, held annually, for working on Wordplay and other justice-centered educational programming languages research. A way to earn credit by contributing to Wordplay.',
             offerings: [
                 { size: 13, term: 1, year: 2024, score: 4.7 },
-                { size: 17, term: 2, year: 2025, score: null },
-                { size: 20, term: 3, year: 2025, score: null },
+                { size: 17, term: 2, year: 2025, score: 4.8 },
+                { size: 17, term: 3, year: 2025, score: null },
             ],
         },
         {
@@ -3848,7 +3848,8 @@ export const Amy: ProfileSpec = {
             ],
             hours: 6,
             offerings: [
-                { year: 2024, term: 3, size: 15, score: null },
+                { year: 2025, term: 3, size: 9, score: null },
+                { year: 2024, term: 3, size: 15, score: 4.9 },
                 { year: 2023, term: 3, size: 14, score: 4.9 },
                 { year: 2022, term: 3, size: 9, score: 4.8 },
             ],
