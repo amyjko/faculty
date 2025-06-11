@@ -23,9 +23,20 @@
     <Title text="Curriculum Vita" />
 
     <h1>Amy J. Ko, Ph.D.</h1>
-    Professor
+    <span style="font-size: 125%">Professor</span>
     <br />The Information School
     <br />University of Washington, Seattle
+
+    <p style="font-size: 125%"
+        ><em
+            >I study how people learn about computing and information, in
+            schools and beyond, and invent new methods and tools for teaching
+            and learning them in equitable, liberatory ways. I draw from
+            human-computer interaction, computing education, software
+            engineering, programming languages, and behavioral, social, and
+            learning sciences.</em
+        >
+    </p>
 
     <h2>Education</h2>
 
