@@ -2,6 +2,20 @@ import type Person from '../lib/models/Person';
 
 export const People: readonly Person[] = [
     {
+        id: 'cara',
+        name: 'Cara Pangilinan',
+        active: true,
+        advised: true,
+        coadvisor: null,
+        level: 'teacher',
+        dept: 'The Information School',
+        bio: 'Cara Pangelinan is an educator passionate about disrupting inequities in schools, in whatever way she can. She is interested in melding the bridge between the STEM and humanities fields through her teaching.',
+        url: 'https://www.linkedin.com/in/cara-pangelinan/',
+        startdate: 2025,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'sophie',
         name: 'Sophie Dahl',
         active: true,
