@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://amyjko.medium.com/little-blue-pills-7cd030f2661e',
+        title: 'Little blue pills',
+        date: '2025.06',
+        tags: ['personal', 'gender', 'society'],
+        img: 'pills',
+        alt: 'Pencil sketches of two 2mg estradiol pills.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/letters-from-the-fascist-front-e9433a7fc38c',
         title: 'How is fascism going for you? Here’s how it’s going for me',
         date: '2025.05',
