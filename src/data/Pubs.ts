@@ -881,7 +881,7 @@ export const Publications: Paper[] = [
     {
         id: 'traceassess',
         kind: 'refereed conference paper',
-        authors: ['@glnelson', '@andrewhu', '@bxie', '@ajko'],
+        authors: ['@glnelson', '@amberhu', '@bxie', '@ajko'],
         deadname: false,
         year: 2019,
         title: 'Towards Validity for a Formative Assessment for Language-Specific Program Tracing Skills',
