@@ -2,6 +2,27 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'formativecodingassessment',
+        kind: 'refereed conference paper',
+        authors: [
+            'Chen Li',
+            'Mo Zhang',
+            '@ajko',
+            '@minli',
+            '@benzhou',
+            'Hongwen Guo',
+        ],
+        year: 2025,
+        title: 'How Students Tackle Coding Tasks in Formative Assessment',
+        source: 'International Conference on Data Science',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            'Through keystroke feature and keystroke burst analysis, we found that harder items were associated with longer, more continuous typing bursts and fewer pauses, indicating deeper cognitive engagement.',
+    },
+    {
         id: 'justicecurriculum',
         kind: 'refereed conference paper',
         authors: ['@megumi', 'Davie A. Ross', '@ajko'],
