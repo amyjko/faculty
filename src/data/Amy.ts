@@ -3678,7 +3678,7 @@ export const Amy: ProfileSpec = {
             offerings: [
                 { size: 13, term: 1, year: 2024, score: 4.7 },
                 { size: 17, term: 2, year: 2025, score: 4.8 },
-                { size: 17, term: 3, year: 2025, score: 4.8 },
+                { size: 13, term: 3, year: 2025, score: 4.8 },
                 { size: 17, term: 1, year: 2025, score: null },
             ],
         },
