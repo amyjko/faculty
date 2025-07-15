@@ -29,9 +29,9 @@ export const Publications: Paper[] = [
         year: 2025,
         title: 'Justice-Centered Computing Curriculum Design in Informal Learning',
         source: '@respect',
-        pages: null,
+        pages: '176-185',
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://doi.org/10.1145/3704637.3734779',
         local: 'Kivuva2025JusticeCurriculum.pdf',
         contribution:
             'Justice-centered curriculum design requires educators’ ongoing content learning, reflection on positionality, and adaptability to students’ needs, including those with disabilities.',
