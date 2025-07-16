@@ -83,10 +83,10 @@
 </ul>
 
 <p
-    >Read our <External
+    >Read my <External
         to="https://docs.google.com/document/d/1LMHv0HdxXEgSNqICt3wtq8xWuH73kP7plZ_KeXyP6qM/edit?usp=sharing"
-        >onboarding document</External
-    > for context on ever-evolving culture of the lab.</p
+        >advising guide</External
+    > for context on how I advise and support students.</p
 >
 
 <p>
