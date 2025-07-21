@@ -217,8 +217,8 @@ export const Publications: Paper[] = [
         source: 'ISLS 2024',
         pages: null,
         publisher: 'ISLS',
-        doi: null,
-        local: null,
+        doi: 'https://repository.isls.org//handle/1/10635',
+        local: 'Landesman2024YesNoEthics.pdf',
         contribution:
             'Our preliminary analyses identified launchpads for ethical sensemaking, instances where students leveraged their lived experiences, community discussion, and ethical scaffolding to begin reasoning about moral dilemmas, and (2) expressions of ethical sensemaking, signals within students’ reasoning processes that indicated critical sensemaking was taking place',
     },
