@@ -43,10 +43,10 @@ export const Publications: Paper[] = [
         year: 2025,
         title: 'Scratch Copilot: Supporting Youth Creative Coding with AI',
         source: '@idc',
-        pages: null,
+        pages: '140-153',
         publisher: 'ACM',
-        doi: null,
-        local: null,
+        doi: 'https://doi.org/10.1145/3713043.3727051',
+        local: 'Druga2025ScratchCopilot.pdf',
         contribution:
             'Explore opportunities and limitations of youth interactions with generative AI for creative coding.',
     },
