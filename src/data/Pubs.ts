@@ -109,8 +109,8 @@ export const Publications: Paper[] = [
         source: '@toce',
         pages: null,
         publisher: 'ACM',
-        doi: null,
-        local: null,
+        doi: 'https://doi.org/10.1145/3702330',
+        local: 'Salac2024CriticalPedagogy.pdf',
         contribution:
             "Finds tensions between participants' computing attitudes, knowledge, self-efficacy, and social consciousness, suggesting pathways for scaffolding the critical examination of technology in secondary education",
     },
