@@ -2,6 +2,19 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'dreamingjoy',
+        kind: 'referred conference paper',
+        authors: ['@jayne', '@rotem', '@megumi', '@ajko'],
+        year: 2025,
+        title: "Dreaming of difference: Imagining the future of CS education pedagogy with secondary students",
+        source: "@icer",
+        pages: "394-406",
+        publisher: "ACM",
+        doi: "https://doi.org/10.1145/3702652.3744203",
+        local: null,
+        contribution: "Shows that students believe CS pedagogy should: have distributed responsibility and accountability, value the whole individual, foreground autonomy, community, and collaboration, as well as extend outside the classroom."
+    },
+    {
         id: 'formativecodingassessment',
         kind: 'refereed conference paper',
         authors: [
