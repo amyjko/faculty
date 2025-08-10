@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: "https://amyjko.medium.com/will-the-u-s-collapse-c2b14ce1b654",
+        title: "Will the U.S. collapse?",
+        date: "2025.07",
+        tags: ['policy', 'diversity', 'academia', 'society'],
+        img: 'collapse',
+        alt: "An outline of the U.S. border, repeated to the right four more times, but each time, rotated, smaller, and blurry."
+    },
+    {
         url: 'https://amyjko.medium.com/little-blue-pills-7cd030f2661e',
         title: 'Little blue pills',
         date: '2025.06',
