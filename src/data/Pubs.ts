@@ -2,17 +2,40 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'llmpsych',
+        kind: 'refereed conference paper',
+        authors: [
+            'Mo Zhang',
+            'Chen Li',
+            'Hongwen Guo',
+            'Min Li',
+            '@ajko',
+            '@benzhou',
+        ],
+        year: 2025,
+        title: "Integrating large language model and psychometric analysis to understand learners' coding behaviors",
+        source: 'nternational Conference on Education and New Learning Technologies (EDULEARN)',
+        pages: null,
+        publisher:
+            'International Academy of Technology, Education and Development',
+        doi: 'https://doi.org/10.21125/edulearn.2025.2516',
+        local: 'Zhang2025LLMPsych.pdf',
+        contribution:
+            'Demonstrates the feasibility of combining LLM and psychometric analyses to model programming behavior.',
+    },
+    {
         id: 'dreamingjoy',
-        kind: 'referred conference paper',
+        kind: 'refereed conference paper',
         authors: ['@jayne', '@rotem', '@megumi', '@ajko'],
         year: 2025,
-        title: "Dreaming of difference: Imagining the future of CS education pedagogy with secondary students",
-        source: "@icer",
-        pages: "394-406",
-        publisher: "ACM",
-        doi: "https://doi.org/10.1145/3702652.3744203",
+        title: 'Dreaming of difference: Imagining the future of CS education pedagogy with secondary students',
+        source: '@icer',
+        pages: '394-406',
+        publisher: 'ACM',
+        doi: 'https://doi.org/10.1145/3702652.3744203',
         local: null,
-        contribution: "Shows that students believe CS pedagogy should: have distributed responsibility and accountability, value the whole individual, foreground autonomy, community, and collaboration, as well as extend outside the classroom."
+        contribution:
+            'Shows that students believe CS pedagogy should: have distributed responsibility and accountability, value the whole individual, foreground autonomy, community, and collaboration, as well as extend outside the classroom.',
     },
     {
         id: 'formativecodingassessment',
