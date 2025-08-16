@@ -16,7 +16,7 @@
     "devDependencies": {
         "@sveltejs/adapter-static": "^3",
         "@sveltejs/kit": "^2",
-        "@sveltejs/vite-plugin-svelte": "^5",
+        "@sveltejs/vite-plugin-svelte": "^6",
         "ajv-cli": "^5",
         "ajv-formats": "^3",
         "prettier": "^3",
@@ -26,7 +26,7 @@
         "svelte-preprocess": "^6",
         "tslib": "^2",
         "typescript": "^5",
-        "vite": "^6"
+        "vite": "^7"
     },
     "type": "module"
 }
