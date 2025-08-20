@@ -168,6 +168,18 @@ export const Amy: ProfileSpec = {
             start: 2025,
             end: 20225,
             description:
+                'I appeared on Fox 13 local news live with state Superintendent Chris Reykdal to discuss the impacts of generative AI on schools in K-12 and higher education.',
+            title: 'Confronting AI in the classroom',
+            author: 'Abby Acone',
+            source: 'Fox 13 news',
+            url: 'https://www.youtube.com/watch?v=0mBJAlL_Vxo&feature=youtu.be',
+            who: 'public',
+        },
+        {
+            kind: 'press',
+            start: 2025,
+            end: 20225,
+            description:
                 'I was interviewed by the Chronicle about my grant being terminated by DOGE.',
             title: 'The Trump Administration Has Canceled Millions in NSF Grants',
             author: 'Megan Zahneis',
