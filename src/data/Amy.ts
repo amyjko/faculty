@@ -2323,7 +2323,7 @@ export const Amy: ProfileSpec = {
             amount: '$1,400,000',
             category: 'research',
             description:
-                'Explores pathways into CS teaching and strategies for retention.',
+                'Explores pathways into CS teaching and strategies for retention. Was terminated by DOGE in 2025.',
             url: 'https://www.nsf.gov/awardsearch/showAward?AWD_ID=2318257&HistoricalAwards=false',
             private: false,
             commitment: {
@@ -2495,7 +2495,7 @@ export const Amy: ProfileSpec = {
             url: 'https://www.nsf.gov/awardsearch/showAward?AWD_ID=2031265',
             commitment: {
                 start: '2020-05-15',
-                end: '2023-09-15',
+                end: '2025-09-15',
                 hours: 4,
                 priority: 1,
             },
