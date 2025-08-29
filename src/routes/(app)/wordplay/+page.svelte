@@ -27,5 +27,6 @@
         to="https://github.com/wordplaydev/wordplay/wiki/contribute"
         >learn how to contribute</Link
     >, helping design and implement the platform, participating in meetups and
-    chats, and guiding the direction of the project.
+    chats, and guiding the direction of the project. UW students can earn credit
+    during the academic year by registering for <strong>INFO 494</strong>.
 </p>
