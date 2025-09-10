@@ -164,6 +164,18 @@ export const Amy: ProfileSpec = {
     ],
     impacts: [
         {
+            kind: 'community',
+            start: 2025,
+            end: 20225,
+            description:
+                'I was interviewed for the ACM Inroads "Prominent Propagator" column.',
+            title: 'Conversations with a Prominent Propagator: Amy Ko',
+            author: 'David P. Bunde, Zack Butler, Christopher L. Hovey, Cynthia Taylor',
+            source: 'ACM Inroads',
+            url: 'https://dl.acm.org/doi/pdf/10.1145/3756325',
+            who: 'public',
+        },
+        {
             kind: 'press',
             start: 2025,
             end: 20225,
