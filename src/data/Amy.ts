@@ -164,9 +164,21 @@ export const Amy: ProfileSpec = {
     ],
     impacts: [
         {
+            kind: 'policy',
+            start: 2025,
+            end: 2026,
+            description:
+                "I was invited by the Washington State Board of Education to lead the subcommittee on technology, media literacy, and computer science, to form recommendations for the next version of the state's graduation requirements",
+            title: 'State CS Graduation Requirements',
+            author: 'J. Lee Shultz',
+            source: 'Washiington State Board of Education',
+            url: 'https://sbe.wa.gov/our-work/futureready',
+            who: 'public',
+        },
+        {
             kind: 'community',
             start: 2025,
-            end: 20225,
+            end: 2025,
             description:
                 'I was interviewed for the ACM Inroads "Prominent Propagator" column.',
             title: 'Conversations with a Prominent Propagator: Amy Ko',
@@ -1740,6 +1752,20 @@ export const Amy: ProfileSpec = {
         },
     ],
     service: [
+        {
+            title: 'Subcommittee chair',
+            committee:
+                'Washington State Board of Education FutureReady Technology, Media Literacy, and Computer Science Subcommittee',
+            level: 'regional',
+            description:
+                "I was invited by the Washington State Board of Education to lead the subcommittee on technology, media literacy, and computer science, to form recommendations for the next version of the state's graduation requirements",
+            commitment: {
+                start: '2025-09-01',
+                end: '2026-09-01',
+                hours: 1,
+                priority: 0,
+            },
+        },
         {
             title: 'Mentor',
             committee: 'SIGCSE Doctoral Consortium',
