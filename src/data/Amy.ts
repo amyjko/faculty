@@ -1387,6 +1387,13 @@ export const Amy: ProfileSpec = {
     ],
     doctoralCommittees: [
         {
+            name: 'Majeed Kazemitabaar',
+            institution: 'University of Toronto',
+            department: 'Computer Science',
+            startdate: 2025,
+            enddate: null,
+        },
+        {
             name: 'Melissa Chen',
             institution: 'Northwestern',
             department: 'Computer Science',
