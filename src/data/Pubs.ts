@@ -2,6 +2,20 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'rigor',
+        kind: 'journal article',
+        authors: ['@jayne', '@megumi', '@emans', '@olesona', '@ajko'],
+        year: 2025,
+        title: 'Deconstructing Conceptions of Rigor in Computer Science Education',
+        source: '@toce',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            'Demonstrates the feasibility of combining LLM and psychometric analyses to model programming behavior.',
+    },
+    {
         id: 'llmpsych',
         kind: 'refereed conference paper',
         authors: [
@@ -28,7 +42,7 @@ export const Publications: Paper[] = [
         kind: 'refereed conference paper',
         authors: ['@jayne', '@rotem', '@megumi', '@ajko'],
         year: 2025,
-        title: 'Dreaming of difference: Imagining the future of CS education pedagogy with secondary students',
+        title: 'Dreaming of Difference: Imagining the Future of CS Education Pedagogy with Secondary Students',
         source: '@icer',
         pages: '394-406',
         publisher: 'ACM',
