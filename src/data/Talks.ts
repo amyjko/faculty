@@ -16,6 +16,20 @@ const Talks: Talk[] = [
         keynote: true,
     },
     {
+        date: '2025-10-03',
+        image: 'lewisandclark2025.jpg',
+        alt: 'I hope some of you will join us, creating A computational world that works for everyone, One PL at a time',
+        slides: 'JECPLLewisClark2025.pdf',
+        title: 'Justice-Centered Educational Programming Languages',
+        venue: 'Lewis and Clark College',
+        url: null,
+        recording: null,
+        practice: null,
+        description:
+            'I repreised my talk on justice-centered programming languages, and shared the design principles behind designing education programming languages in justice-centered ways.',
+        keynote: false,
+    },
+    {
         date: '2025-04-28',
         image: 'wordplay2025.jpg',
         alt: 'Wordplay: Accessible, Multilingual, Interactive Typography',
