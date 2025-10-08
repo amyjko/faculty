@@ -2819,7 +2819,7 @@ export const Amy: ProfileSpec = {
     ],
     travel: [
         {
-            url: undefined,
+            url: 'https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/25412',
             title: 'Dagstuhl: Creativity, GenAI, and Software Development',
             details: 'Weeklong workshop.',
             category: 'research',
