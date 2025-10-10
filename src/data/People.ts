@@ -2,6 +2,20 @@ import type Person from '../lib/models/Person';
 
 export const People: readonly Person[] = [
     {
+        id: 'rijul',
+        name: 'Rijul Jain',
+        active: true,
+        advised: true,
+        coadvisor: 'Ben Shapiro',
+        level: 'phd',
+        dept: 'Computer Science',
+        bio: 'Rijul is a PhD student in Computer Science & Engineering interested in computing for the arts and humanities.',
+        url: 'https://rjainrjain.github.io/',
+        startdate: 2025,
+        enddate: null,
+        achievements: ['NSF Graduate Research Fellowship (2025)'],
+    },
+    {
         id: 'belen',
         name: 'Belén Edgar',
         active: true,
