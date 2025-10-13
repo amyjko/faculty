@@ -61,14 +61,22 @@
         >
         <li
             >Provide me with specific details about these collaborations and
-            conversations in case I've forgotten, so I can write a letter that
-            is specific about our interactions.</li
+            conversations we've had, so I can write a letter that is specific
+            about our interactions. The more detail, the better, as I cannot
+            remember the details of all of our interactions, especially if our
+            interactions were long ago or minimal, and a vague high level letter
+            will hurt your prospects.</li
         >
         <li>When is the letter (or first letter in a batch) due?</li>
         <li
+            >Many students requests a letter for "graduate school". There are
+            two kinds of graduate school, masters programs and PhD programs.
+            Please specify which kind of graduate school you are applying to.</li
+        >
+        <li
             >If there is a specific location to upload the letter, provide the
             location. (Most are invitations sent to me that I fill out
-            independently.)</li
+            independently, and this is not necessary in this case)</li
         >
     </ul>
 
