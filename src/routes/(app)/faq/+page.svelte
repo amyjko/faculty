@@ -85,9 +85,7 @@
         is really just a form that I fill out attesting that I had you in class,
         I'm happy to do that. If you just need a reference for a job, I'm happy
         to be a reference; I rarely get called, and when I do, it's rarely
-        onerous. And if you're a student in one of our <Link
-            to={'/lablets#recommendation'}>lablets</Link
-        >, there are specific conditions for earning a letter.
+        onerous.
     </p>
 </Section>
 
