@@ -16,6 +16,20 @@ const Talks: Talk[] = [
         keynote: true,
     },
     {
+        date: '2025-10-22',
+        image: 'assetstitleii2025.jpg',
+        alt: 'forthcoming',
+        slides: 'ASSETSTitleII2025.pdf',
+        title: 'Ten recipes for leveraging ADA Title II compliance for more accessible higher education',
+        venue: 'ASSETS workshop; Teaching Accessibility Across Disciplines: Perspectives From ADA Title II',
+        url: 'https://assets25.sigaccess.org/accepted_workshops.html',
+        recording: null,
+        practice: null,
+        description:
+            'I spoke about systems change in accessibility and disability justice in higher education.',
+        keynote: true,
+    },
+    {
         date: '2025-10-03',
         image: 'lewisandclark2025.jpg',
         alt: 'I hope some of you will join us, creating A computational world that works for everyone, One PL at a time',
