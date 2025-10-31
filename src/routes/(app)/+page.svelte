@@ -7,9 +7,16 @@
     import getPersonImagePath from '$lib/components/getPersonImage';
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
+    import Alert from '$lib/components/Alert.svelte';
 </script>
 
 <Title text="Research" />
+
+<Alert
+    >I will not be admitting new Ph.D. students in Autumn 2025, due to the
+    unprecedented and illegal budget cuts and grant terminations in the United
+    States.
+</Alert>
 
 <h1>
     My research imagines and enables equitable, joyous, liberatory learning

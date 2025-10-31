@@ -134,15 +134,11 @@
     </div></section
 >
 
-<small style="line-height: 1.4">
+<!-- <small style="line-height: 1.4">
     <Alert
-        >I will not be admitting new Ph.D. students in Autumn 2025, due to the
-        unprecedented budget cuts and grant terminations in the United States.
-        It's possible that this will change &mdash; this administration seems to
-        shift it's policies every few days &mdash; but it is impossible to plan
-        under such chaotic conditions.
+        >
     </Alert>
-</small>
+</small> -->
 
 <button onclick={replace}>CENSOR</button>
 
