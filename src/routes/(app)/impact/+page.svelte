@@ -10,7 +10,24 @@
 
 <h1> I actively share my research and expertise with the world. </h1>
 
-{#each $profile.getPopulations() as population}
+{#each $profile.getImpacts( () => true, (impact) => -impact.start, ) as impact}
+    <p>
+        <span style="font-variant: small-caps">{impact.kind}</span>
+        <small
+            >({impact.start}{impact.end == null
+                ? '-present'
+                : impact.start !== impact.end
+                  ? '-' + impact.end
+                  : ''})</small
+        >
+        {#if impact.url}<small
+                ><External to={impact.url}>evidence</External></small
+            >{/if}
+        <br />{impact.description}
+    </p>
+{/each}
+
+<!-- {#each $profile.getPopulations() as population}
     <Block header={population.population}>
         {#snippet image()}
                 <Image
@@ -40,4 +57,4 @@
             {/each}
         </div>
     </Block>
-{/each}
+{/each} -->
