@@ -8,7 +8,6 @@
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
     import Emoji from '$lib/components/Emoji.svelte';
-    import Alert from '$lib/components/Alert.svelte';
 
     onMount(() => {
         scrollToHash();
@@ -26,6 +25,16 @@
             (person) =>
                 person.active && !person.advised && person.level !== 'faculty',
             (person) => -person.startdate,
+        ),
+    );
+
+    let activePostdocs = $derived(
+        $profile.getPeople(
+            (person) =>
+                person.active &&
+                person.advised &&
+                person.id !== 'ajko' &&
+                person.level === 'postdoc',
         ),
     );
 </script>
@@ -131,11 +140,12 @@
     >.
 </p>
 
-<Linkable id="current-postdoc">Current Postdocs</Linkable>
-
-{#each $profile.getPeople((person) => person.active && person.advised && person.id !== 'ajko' && person.level === 'postdoc') as person}
-    <Person {person} highlight={isPersonHighlighted(person.id)} />
-{/each}
+{#if activePostdocs.length > 0}
+    <Linkable id="current-postdoc">Current Postdocs</Linkable>
+    {#each $profile.getPeople((person) => person.active && person.advised && person.id !== 'ajko' && person.level === 'postdoc') as person}
+        <Person {person} highlight={isPersonHighlighted(person.id)} />
+    {/each}
+{/if}
 
 <Linkable id="current-advisees">Current Advisees</Linkable>
 

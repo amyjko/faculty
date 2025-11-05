@@ -32,7 +32,7 @@ export const People: readonly Person[] = [
     {
         id: 'cara',
         name: 'Cara Pangilinan',
-        active: true,
+        active: false,
         advised: true,
         coadvisor: null,
         level: 'teacher',
@@ -40,7 +40,7 @@ export const People: readonly Person[] = [
         bio: 'Cara Pangelinan is an educator passionate about disrupting inequities in schools, in whatever way she can. She is interested in melding the bridge between the STEM and humanities fields through her teaching.',
         url: 'https://www.linkedin.com/in/cara-pangelinan/',
         startdate: 2025,
-        enddate: null,
+        enddate: 2025,
         achievements: [],
     },
     {
@@ -160,15 +160,15 @@ export const People: readonly Person[] = [
     {
         id: 'maxs',
         name: 'Max Skorodinsky',
-        active: true,
+        active: false,
         advised: true,
         level: 'postdoc',
         dept: 'The Information School',
         coadvisor: null,
-        bio: 'Max is a postdoc, secondary CS educator, and researcher interested in equity in CS teacher education, identity, and community.',
+        bio: 'Max is secondary CS educator, and researcher interested in equity in CS teacher education, identity, and community. He was a postdoc in 2024 and 2025, before the NSF grant supporting his work was terminated for trying to support teachers.',
         url: 'https://www.linkedin.com/in/max-skorodinsky-3874175/',
         startdate: 2024,
-        enddate: null,
+        enddate: 2025,
         achievements: [],
     },
     {

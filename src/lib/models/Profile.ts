@@ -28,13 +28,13 @@ export default class Profile {
     cloneFilterSort<Type>(
         list: Type[],
         filter?: (list: Type) => boolean,
-        sort?: (list: Type) => number
+        sort?: (list: Type) => number,
     ) {
         list = list.slice();
         if (filter) list = list.filter(filter);
         if (sort)
             list = list.sort(
-                (a, b) => sort.call(undefined, a) - sort.call(undefined, b)
+                (a, b) => sort.call(undefined, a) - sort.call(undefined, b),
             );
         return list;
     }
@@ -53,8 +53,8 @@ export default class Profile {
     // Get a list of filtered and sorted people.
     getPeople(
         filter?: (list: Person) => boolean,
-        sort?: (list: Person) => number
-    ) {
+        sort?: (list: Person) => number,
+    ): Person[] {
         return this.cloneFilterSort(this.json.people.slice(), filter, sort);
     }
 
@@ -78,7 +78,7 @@ export default class Profile {
             // source: source ? [ source.short ] : [],
             // Add the paper's projects
             tag: this.getDiscoveries(
-                (discovery) => discovery.pubs.indexOf(paper.id) >= 0
+                (discovery) => discovery.pubs.indexOf(paper.id) >= 0,
             )
                 .map((discovery) => discovery.tags)
                 .reduce((allTags, tags) => [...allTags, ...tags], []),
@@ -93,8 +93,8 @@ export default class Profile {
         this.json.posts.forEach(
             (post) =>
                 (postTags.topic = Array.from(
-                    new Set(postTags.topic.concat(post.tags))
-                ))
+                    new Set(postTags.topic.concat(post.tags)),
+                )),
         );
         return postTags;
     }
@@ -107,19 +107,19 @@ export default class Profile {
     // Get a list of filtered and sorted travel.
     getTravel(
         filter?: (travel: Travel) => boolean,
-        sort?: (travel: Travel) => number
+        sort?: (travel: Travel) => number,
     ) {
         return this.cloneFilterSort(this.json.travel.slice(), filter, sort);
     }
 
     getDiscoveries(
         filter?: (p: Discovery) => boolean,
-        sort?: (p: Discovery) => number
+        sort?: (p: Discovery) => number,
     ) {
         return this.cloneFilterSort(
             this.json.discoveries.slice(),
             filter,
-            sort
+            sort,
         );
     }
 
@@ -153,9 +153,9 @@ export default class Profile {
                         tags[facet].concat(
                             facet in publicationFacets
                                 ? publicationFacets[facet]
-                                : []
-                        )
-                    )
+                                : [],
+                        ),
+                    ),
                 );
             });
         });
@@ -169,7 +169,7 @@ export default class Profile {
             const paper = this.getPublication(id);
             if (paper)
                 for (const author of paper.authors.filter((author) =>
-                    author.startsWith('@')
+                    author.startsWith('@'),
                 ))
                     peeps.add(author);
         }
@@ -196,7 +196,7 @@ export default class Profile {
     // Get a list of filtered and sorted publications.
     getPublications(
         filter?: (p: Paper) => boolean,
-        sort?: (p: Paper) => number
+        sort?: (p: Paper) => number,
     ) {
         return this.cloneFilterSort(this.json.pubs.slice(), filter, sort);
     }
@@ -220,13 +220,13 @@ export default class Profile {
         // Go through each facet in the query
         return Object.keys(query).reduce(
             (match, facet) => match && tags[facet]?.includes(query[facet]),
-            true
+            true,
         );
     }
 
     getFunding(
         filter?: (f: Funding) => boolean,
-        sort?: (f: Funding) => number
+        sort?: (f: Funding) => number,
     ) {
         return this.cloneFilterSort(this.json.funding.slice(), filter, sort);
     }
@@ -249,37 +249,37 @@ export default class Profile {
 
     getRecognitions(
         filter?: (p: Recognition) => boolean,
-        sort?: (p: Recognition) => number
+        sort?: (p: Recognition) => number,
     ) {
         return this.cloneFilterSort(
             this.json.recognitions.slice(),
             filter,
-            sort
+            sort,
         );
     }
 
     getEditing(
         filter?: (p: Editing) => boolean,
-        sort?: (p: Editing) => number
+        sort?: (p: Editing) => number,
     ) {
         return this.cloneFilterSort(this.json.editing.slice(), filter, sort);
     }
 
     getReviewing(
         filter?: (p: Reviewing) => boolean,
-        sort?: (p: Reviewing) => number
+        sort?: (p: Reviewing) => number,
     ) {
         return this.cloneFilterSort(this.json.reviewing.slice(), filter, sort);
     }
 
     getDoctoralCommmitees(
         filter?: (p: DoctoralCommittee) => boolean,
-        sort?: (p: DoctoralCommittee) => number
+        sort?: (p: DoctoralCommittee) => number,
     ) {
         return this.cloneFilterSort(
             this.json.doctoralCommittees.slice(),
             filter,
-            sort
+            sort,
         );
     }
 
@@ -289,19 +289,19 @@ export default class Profile {
 
     getService(
         filter?: (p: Service) => boolean,
-        sort?: (p: Service) => number
+        sort?: (p: Service) => number,
     ) {
         return this.cloneFilterSort(this.json.service.slice(), filter, sort);
     }
 
     getCommitments(
         filter?: (p: CommitmentDetails) => boolean,
-        sort?: (p: CommitmentDetails) => number
+        sort?: (p: CommitmentDetails) => number,
     ) {
         return this.cloneFilterSort(
             this.json.commitments.slice(),
             filter,
-            sort
+            sort,
         );
     }
 
@@ -323,7 +323,7 @@ export default class Profile {
             hours: number,
             annually: boolean,
             start: Date | MonthDate | null,
-            end: Date | MonthDate | null
+            end: Date | MonthDate | null,
         ) {
             commitments.push({
                 name: name,
@@ -347,8 +347,8 @@ export default class Profile {
                 com.commitment.hours,
                 com.annually,
                 getDateOrNull(com.commitment.start),
-                getDateOrNull(com.commitment.end)
-            )
+                getDateOrNull(com.commitment.end),
+            ),
         );
 
         // Add editing responsibilities.
@@ -361,8 +361,8 @@ export default class Profile {
                 editing.commitment.hours,
                 false,
                 getDateOrNull(editing.commitment.start),
-                getDateOrNull(editing.commitment.end)
-            )
+                getDateOrNull(editing.commitment.end),
+            ),
         );
 
         // Add service responsibilities.
@@ -375,8 +375,8 @@ export default class Profile {
                 service.commitment.hours,
                 false,
                 getDateOrNull(service.commitment.start),
-                getDateOrNull(service.commitment.end)
-            )
+                getDateOrNull(service.commitment.end),
+            ),
         );
 
         // Add funding responsibilities.
@@ -389,8 +389,8 @@ export default class Profile {
                 funding.commitment.hours,
                 false,
                 getDateOrNull(funding.commitment.start),
-                getDateOrNull(funding.commitment.end)
-            )
+                getDateOrNull(funding.commitment.end),
+            ),
         );
 
         // Add travel responsibilities.
@@ -403,8 +403,8 @@ export default class Profile {
                 trip.commitment.hours,
                 false,
                 getDateOrNull(trip.commitment.start),
-                getDateOrNull(trip.commitment.end)
-            )
+                getDateOrNull(trip.commitment.end),
+            ),
         );
 
         // Add talk prep responsibilities (start prep 90 days beforehand)
@@ -419,7 +419,7 @@ export default class Profile {
                 1,
                 false,
                 start,
-                parseDate(talk.date)
+                parseDate(talk.date),
             );
         });
 
@@ -445,30 +445,30 @@ export default class Profile {
                                 new Date(
                                     year,
                                     parseMonthDate(
-                                        reviewing.commitment.start
+                                        reviewing.commitment.start,
                                     ).month,
                                     parseMonthDate(
-                                        reviewing.commitment.start
-                                    ).date
+                                        reviewing.commitment.start,
+                                    ).date,
                                 ),
                                 // Handle the year wraparound for end months that are before start months.
                                 new Date(
                                     year +
                                         (parseMonthDate(
-                                            reviewing.commitment.end
+                                            reviewing.commitment.end,
                                         ).month <
                                         parseMonthDate(
-                                            reviewing.commitment.start
+                                            reviewing.commitment.start,
                                         ).month
                                             ? 1
                                             : 0),
                                     parseMonthDate(
-                                        reviewing.commitment.end
+                                        reviewing.commitment.end,
                                     ).month,
                                     parseMonthDate(
-                                        reviewing.commitment.end
-                                    ).date
-                                )
+                                        reviewing.commitment.end,
+                                    ).date,
+                                ),
                             );
                     });
             }
@@ -490,13 +490,13 @@ export default class Profile {
                         new Date(
                             offering.year - (offering.term === 2 ? 1 : 0),
                             [6, 9, 0][offering.term - 1],
-                            [1, 5, 5][offering.term - 1]
+                            [1, 5, 5][offering.term - 1],
                         ),
                         new Date(
                             offering.year - (offering.term === 2 ? 1 : 0),
                             [8, 11, 3][offering.term - 1],
-                            [15, 15, 15][offering.term - 1]
-                        )
+                            [15, 15, 15][offering.term - 1],
+                        ),
                     );
                     // Add time for teaching the class the quarter before.
                     commit(
@@ -509,13 +509,13 @@ export default class Profile {
                         new Date(
                             offering.year,
                             [8, 0, 3][offering.term - 1],
-                            [15, 1, 1][offering.term - 1]
+                            [15, 1, 1][offering.term - 1],
                         ),
                         new Date(
                             offering.year,
                             [11, 2, 5][offering.term - 1],
-                            [15, 15, 15][offering.term - 1]
-                        )
+                            [15, 15, 15][offering.term - 1],
+                        ),
                     );
                 }
             });
@@ -540,7 +540,7 @@ export default class Profile {
 
             // Compute Sunday.
             var nextSunday = new Date(
-                currentMonday.getTime() + 6 * 24 * 60 * 60 * 1000
+                currentMonday.getTime() + 6 * 24 * 60 * 60 * 1000,
             );
 
             // Which promises occur in this week?
@@ -556,7 +556,7 @@ export default class Profile {
                             let startMonth = new Date(
                                 currentMonday.getFullYear(),
                                 commitment.start.month - 1,
-                                commitment.start.date
+                                commitment.start.date,
                             );
                             let endMonth = new Date(
                                 currentMonday.getFullYear() +
@@ -565,13 +565,13 @@ export default class Profile {
                                         ? 1
                                         : 0),
                                 commitment.end.month - 1,
-                                commitment.end.date
+                                commitment.end.date,
                             );
                             let overlap = datesIntersect(
                                 currentMonday,
                                 nextSunday,
                                 startMonth,
-                                endMonth
+                                endMonth,
                             );
                             if (overlap > 0)
                                 intersectingCommitments.push({
@@ -591,7 +591,7 @@ export default class Profile {
                                 currentMonday,
                                 nextSunday,
                                 commitment.start,
-                                commitment.end
+                                commitment.end,
                             );
                             if (overlap > 0)
                                 intersectingCommitments.push({
@@ -614,11 +614,11 @@ export default class Profile {
             // Are there any prime commitments this week? If so, remove the flexible commitments.
             if (
                 intersectingCommitments.filter(
-                    (intersect) => intersect.commitment.priority === 2
+                    (intersect) => intersect.commitment.priority === 2,
                 ).length > 0
             )
                 intersectingCommitments = intersectingCommitments.filter(
-                    (intersect) => intersect.commitment.priority !== 0
+                    (intersect) => intersect.commitment.priority !== 0,
                 );
 
             // Add these dcommitments to this week for rendering.
@@ -627,7 +627,7 @@ export default class Profile {
                 intersects: intersectingCommitments.sort((a, b) => {
                     if (a.commitment.category !== b.commitment.category)
                         return a.commitment.category.localeCompare(
-                            b.commitment.category
+                            b.commitment.category,
                         );
                     else
                         return (
@@ -639,7 +639,7 @@ export default class Profile {
 
             // Add a week to the current Monday.
             currentMonday = new Date(
-                currentMonday.getTime() + 7 * 24 * 60 * 60 * 1000
+                currentMonday.getTime() + 7 * 24 * 60 * 60 * 1000,
             );
         }
 
@@ -654,7 +654,7 @@ export function parseDate(dateString: string) {
     return new Date(
         parseInt(parts[0]),
         parseInt(parts[1]) - 1,
-        parseInt(parts[2])
+        parseInt(parts[2]),
     );
 }
 
@@ -692,7 +692,7 @@ function datesIntersect(
     date1Start: Date,
     date1End: Date,
     date2Start: Date,
-    date2End: Date
+    date2End: Date,
 ) {
     // The beginning of the second range is within the first range.
     // Compute the proportion of a week.
