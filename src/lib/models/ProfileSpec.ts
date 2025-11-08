@@ -3,7 +3,6 @@ import type Paper from './Paper';
 import type Person from './Person';
 import type Post from './Post';
 import type { Impact } from './Impact';
-import type { Population } from './Population';
 import type { Degree } from './Degree';
 import type { Patent } from './Patent';
 import type { Job } from './Job';
@@ -26,7 +25,6 @@ type ProfileSpec = {
     people: readonly Person[];
     discoveries: Discovery[];
     impacts: Impact[];
-    populations: Population[];
     degrees: Degree[];
     patents: Patent[];
     jobs: Job[];

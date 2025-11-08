@@ -183,11 +183,6 @@ export default class Profile {
         return this.cloneFilterSort(this.json.impacts.slice(), filter, sort);
     }
 
-    // Get the list of populations.
-    getPopulations() {
-        return this.json.populations.slice();
-    }
-
     // Get a list of filtered and sorted projects.
     getPosts(filter: (p: Post) => boolean, sort: (p: Post) => number) {
         return this.cloneFilterSort(this.json.posts.slice(), filter, sort);
