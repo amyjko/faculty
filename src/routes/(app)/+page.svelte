@@ -13,9 +13,10 @@
 <Title text="Research" />
 
 <Alert
-    >I will not be admitting new Ph.D. students in Autumn 2025, due to the
-    unprecedented and illegal budget cuts and grant terminations in the United
-    States.
+    >I will not be admitting new Ph.D. students for the 2026-27 academic year,
+    due to the unprecedented and illegal grant terminations in the United
+    States, and continued higher education budget uncertainty caused by the U.S.
+    government.
 </Alert>
 
 <h1>
