@@ -10,7 +10,7 @@ export const Publications: Paper[] = [
         source: '@toce',
         pages: null,
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://dl.acm.org/doi/10.1145/3776542',
         local: null,
         contribution:
             'Demonstrates the feasibility of combining LLM and psychometric analyses to model programming behavior.',
