@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/koli-calling-2025-alliances-of-the-artificial-732a76f1958a',
+        title: 'Koli Calling 2025: Alliances of the Artificial',
+        date: '2025.11',
+        tags: ['trip report', 'computing education'],
+        img: 'koli25',
+        alt: 'The rear view of the conference room, with 80 heads, partially obscured by the edge of a large wooden stump sculpture.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/dagstuhl-trip-report-creativity-code-and-generative-ai-26b5e414bdf3',
         title: 'Dagstuhl trip report: creativity, code, and generative AI',
         date: '2025.10',
