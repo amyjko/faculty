@@ -134,12 +134,6 @@
     </div></section
 >
 
-<!-- <small style="line-height: 1.4">
-    <Alert
-        >
-    </Alert>
-</small> -->
-
 <button onclick={replace}>CENSOR</button>
 
 <hr />

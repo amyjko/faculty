@@ -5,6 +5,7 @@
     import Footer from '$lib/components/Footer.svelte';
     import { navigating } from '$app/stores';
     import { browser } from '$app/environment';
+    import Alert from './Alert.svelte';
     interface Props {
         children?: import('svelte').Snippet;
     }
@@ -17,19 +18,23 @@
 
     $effect(() => {
         if (scrollY >= 0) {
-            if (browser && typeof document !== undefined && $navigating === null) {
+            if (
+                browser &&
+                typeof document !== undefined &&
+                $navigating === null
+            ) {
                 headers = Array.from(document.getElementsByTagName('h2'))
                     .map((a) =>
                         a instanceof HTMLElement
                             ? [a.innerText.replaceAll('🔗', '').trim(), a.id]
-                            : undefined
+                            : undefined,
                     )
                     .filter((a): a is [string, string] => a !== undefined);
             }
             closestID = Array.from(document.getElementsByTagName('h2')).sort(
                 (h1, h2) =>
                     Math.abs(h1.offsetTop - scrollY) -
-                    Math.abs(h2.offsetTop - scrollY)
+                    Math.abs(h2.offsetTop - scrollY),
             )[0]?.id;
         }
     });
@@ -38,6 +43,13 @@
 <div class="page">
     <div class="header"><Header {headers} activeid={closestID} /></div>
     <div class="content">
+        <Alert
+            >I will not be recruiting new Ph.D. students for the 2026-27
+            academic year, due to the unprecedented grant terminations and
+            funding cuts in the United States, and continued higher education
+            budget uncertainty caused by the U.S. government.
+        </Alert>
+
         {@render children?.()}
         <Footer />
     </div>

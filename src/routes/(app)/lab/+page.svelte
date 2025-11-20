@@ -111,10 +111,10 @@
     <strong>Prospective UW Ph.D. student?</strong>
     Read my <Link to="/cer">CER FAQ</Link> and <Link to="/publications"
         >recent publications</Link
-    > to ensure we share interests. Check the front page of my website to see if
-    I'm recruiting Ph.D. students. Don't ask me to evaluate your CV (I don't have
-    capacity to evaluate your application twice). Don't ask me for a meeting (I can't
-    meet with every prospective outside of our review process,
+    > to ensure we share interests. I'm recruiting students unless there is an alert
+    on the top of my page. Don't ask me to evaluate your CV (I don't have capacity
+    to evaluate your application twice). Don't ask me for a meeting (I can't meet
+    with every prospective outside of our review process,
     <em>and</em>
     meet with students during our review process.) <em>Do</em> write if you have
     specific questions about my lab's recent research that aren't answered on my

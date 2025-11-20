@@ -19,5 +19,7 @@
         margin-top: var(--margin);
         margin-bottom: var(--margin);
         border-radius: var(--roundedness);
+        font-size: var(--small-font-size);
+        line-height: 1.4;
     }
 </style>
