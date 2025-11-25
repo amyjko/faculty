@@ -101,22 +101,11 @@
         <Image url={'/images/contact/twitter.jpg'} alt="The Twitter logo." />
     {/snippet}
     &mdash; I used to be fairly active on Twitter, but mostly left in June 2022.
-    I still broadcast writing, amplify others, and respond to DMs, but I'm generally
-    not posting otherwise. You can find me on <External
-        to="https://bsky.app/profile/amyko.phd">Bluesky</External
+    You can find me on <External to="https://bsky.app/profile/amyko.phd"
+        >Bluesky</External
     >, Mastodon <External to="https://hci.social/@amyjko"
         >@amyjko@hci.social</External
-    > or Threads <External to="https://www.threads.net/@amyjensenko"
-        >@amyjensenko</External
     >. I mostly post on Bluesky, and mostly just links to my writing.
-</Block>
-
-<Block link="http://github.com/amyjko" header="GitHub">
-    {#snippet image()}
-        <Image url={'/images/contact/github.jpg'} alt="The Github logo." />
-    {/snippet}
-    &mdash; I host a lot of my content and software projects on GitHub. Feel free
-    to submit issues and pull requests to my various repositories.
 </Block>
 
 <Block link="https://www.linkedin.com/in/ajko/" header="LinkedIn">
@@ -140,11 +129,19 @@
     instead.
 </Block>
 
+<Block link="http://github.com/amyjko" header="GitHub">
+    {#snippet image()}
+        <Image url={'/images/contact/github.jpg'} alt="The Github logo." />
+    {/snippet}
+    &mdash; I host a lot of my content and software projects on GitHub. Feel free
+    to submit issues and pull requests to my various repositories.
+</Block>
+
 <Block header="Phone">
     {#snippet image()}
         <Image url={'/images/contact/phone.jpg'} alt="A telephone." />
     {/snippet}
     &mdash; Don't call me on the phone. It's never the right time. Write me on one
     of the platforms above first and we can schedule a call if necessary. If you
-    leave a voicemail, I will get it eventually.
+    somehow find my office phone number and leave a voicemail, I will get it eventually.
 </Block>
