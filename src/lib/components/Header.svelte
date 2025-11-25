@@ -98,16 +98,17 @@
                 >Associate Dean for Academics</External
             ></strong
         >
-        <span
-            ><External to="http://ischool.uw.edu"
-                >The Information School</External
+        <span>
+            <External to="http://ischool.uw.edu"
+                ><em>The Information School</em></External
             ></span
         >
-        <span
-            ><External to="http://cs.uw.edu"
-                >Paul G. Allen School of Computer Science &amp; Engineering <span
-                    class="small"><em>courtesy</em></span
-                ></External
+        <span>
+            <External to="http://cs.uw.edu"
+                ><em
+                    >Paul G. Allen School of Computer Science &amp; Engineering</em
+                >
+                <span class="small"><em>courtesy</em></span></External
             ></span
         >
         <span
@@ -121,19 +122,20 @@
             ></span
         >
         <span class="small"
-            >- <External to="https://reciprocal.reviews/"
-                >Co-Director, <em>Reciprocal Reviews</em></External
+            >- <External to="https://csforallwa.org/"
+                >Co-Director, <em>CS for All Washington</em></External
             ></span
         >
         <span class="small"
-            >- <External to="https://csforallwa.org/"
-                >Co-Director, <em>CS for All Washington</em></External
+            >- <External to="https://reciprocal.reviews/"
+                >Co-Director, <em>Reciprocal Reviews</em></External
             ></span
         >
         <Social />
     </div></section
 >
 
+<br />
 <button onclick={replace}>CENSOR</button>
 
 <hr />
