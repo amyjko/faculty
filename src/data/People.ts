@@ -5,7 +5,7 @@ export const People: readonly Person[] = [
         id: 'rijul',
         name: 'Rijul Jain',
         active: true,
-        advised: true,
+        advised: false,
         coadvisor: 'Ben Shapiro',
         level: 'phd',
         dept: 'Computer Science',
