@@ -135,7 +135,13 @@
     </div></section
 >
 
-<br />
+<Alert
+    >I will not be recruiting new Ph.D. students for the 2026-27 academic year,
+    due to the U.S. government's grant terminations, research funding cuts, and
+    threats to university budgets. Progress will have to wait for an
+    administration interested in the future.
+</Alert>
+
 <button onclick={replace}>CENSOR</button>
 
 <hr />

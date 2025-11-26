@@ -43,13 +43,6 @@
 <div class="page">
     <div class="header"><Header {headers} activeid={closestID} /></div>
     <div class="content">
-        <Alert
-            >I will not be recruiting new Ph.D. students for the 2026-27
-            academic year, due to the U.S. government's grant terminations,
-            research funding cuts, and threats to university budgets. <strong
-                >Progress will have to wait :(</strong
-            >
-        </Alert>
         {@render children?.()}
         <Footer />
     </div>

@@ -9,42 +9,48 @@
 
 <Title text="Contacting Me" />
 
-<Alert>
-    As Associate Dean for Academics, I have several roles in managing conflict:
+<h1>Need to chat?</h1>
 
-    <ul>
-        <li
-            >I am the school's academic <strong>conduct officer</strong>, which
-            means I fact find and make judgements about reports of cheating that
-            our faculty escalate.</li
-        >
-        <li
-            >I am one of the school's <strong>conflict facilitators</strong>. If
-            you are in a conflict with faculty, staff, or students, you can
-            reach out to me, and it's my responsibility to help you find a
-            faciliator (possibly me) to resolve the conflict and rebuild trust.</li
-        >
-        <li
-            >I am one of the iSchool's Title IX
-            <strong>Officials Required to Report</strong>. If I learn of
-            sex/gender-based violence, harassment, or discrimination, I am
-            required to
-            <Link to="https://www.washington.edu/titleix/report/"
-                >submit a report</Link
-            >
-            to UW's Title IX office, including any names or details I have. This
-            does not trigger an investigation; case managers will reach out to victims
-            with supportive measures, resources, and how to submit a formal complaint.
-            If you're unsure whether to reach out to me I recommend contacting a
-            <Link to="https://livewell.uw.edu/survivor-support-advocacy/"
-                >UW confidential advocate</Link
-            >; they are confidential and trained, and can help you decide what
-            action to take next.
-        </li></ul
+<p>
+    Before you reach out, make sure you've read my website. It has a lot of
+    answers! And if you want to talk about something sensitive, a few things to
+    note:</p
+>
+
+<ul>
+    <li
+        >I am one of the school's <Link
+            to="https://www.washington.edu/cssc/facultystaff/academic-misconduct/"
+            >academic conduct officer</Link
+        >. I fact find and make judgements about instructors' reports of
+        cheating.</li
     >
-</Alert>
-
-<h1> There are many ways to reach me: </h1>
+    <li
+        >I am one of the school's <Link
+            to="https://ischool.uw.edu/about/conflict-resolution"
+            >conflict facilitators</Link
+        >. If you're facing conflict in the school, review the link above.</li
+    >
+    <li
+        >I am one of the iSchool's Title IX
+        <Link
+            to="https://www.washington.edu/civilrights/making-a-report/employee-reporting-obligations/"
+            >Officials Required to Report</Link
+        >. If I learn of violence, harassment, or discrimination, I am required
+        to
+        <Link to="https://www.washington.edu/titleix/report/"
+            >submit a report</Link
+        >. Case managers will reach out to victims with supportive measures,
+        resources, and how to submit a formal complaint.
+    </li>
+    <li
+        >If you're unsure whether to reach out to me, I encourage you to contact
+        a
+        <Link to="https://livewell.uw.edu/survivor-support-advocacy/"
+            >confidential advocate</Link
+        >.
+    </li>
+</ul>
 
 <Block link="https://goo.gl/maps/7c3irRBubGvXYEtZ8" header="Office hours">
     {#snippet image()}
