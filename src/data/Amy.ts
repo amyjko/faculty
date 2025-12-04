@@ -2070,6 +2070,18 @@ export const Amy: ProfileSpec = {
     ],
     travel: [
         {
+            url: 'https://www.kolicalling.fi/',
+            title: 'Koli Calling 2025',
+            details: 'Networking and sharing my research.',
+            category: 'research',
+            commitment: {
+                start: '2024-11-11',
+                end: '2024-11-16',
+                hours: 40,
+                priority: 1,
+            },
+        },
+        {
             url: 'https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/25412',
             title: 'Dagstuhl: Creativity, GenAI, and Software Development',
             details: 'Weeklong workshop.',
