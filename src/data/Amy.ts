@@ -2082,31 +2082,7 @@ export const Amy: ProfileSpec = {
             },
         },
         {
-            url: undefined,
-            title: 'ICER 2025',
-            details: 'Networking and sharing my research.',
-            category: 'research',
-            commitment: {
-                start: '2025-08-04',
-                end: '2025-08-06',
-                hours: 30,
-                priority: 1,
-            },
-        },
-        {
-            url: undefined,
-            title: 'CSTA 2025',
-            details: 'Networking and sharing my research.',
-            category: 'research',
-            commitment: {
-                start: '2025-07-08',
-                end: '2025-07-10',
-                hours: 30,
-                priority: 1,
-            },
-        },
-        {
-            url: undefined,
+            url: 'https://chi2025.acm.org/',
             title: 'CHI 2025',
             details: 'Networking and sharing my research.',
             category: 'research',
@@ -2118,7 +2094,7 @@ export const Amy: ProfileSpec = {
             },
         },
         {
-            url: undefined,
+            url: 'https://eecs.berkeley.edu/',
             title: 'Berkeley EECS visit',
             details: 'Networking and sharing my research.',
             category: 'research',
@@ -2130,7 +2106,7 @@ export const Amy: ProfileSpec = {
             },
         },
         {
-            url: undefined,
+            url: 'https://sigcse2025.sigcse.org/',
             title: 'SIGCSE 2025',
             details: 'Networking and sharing my research.',
             category: 'research',
@@ -2142,7 +2118,7 @@ export const Amy: ProfileSpec = {
             },
         },
         {
-            url: undefined,
+            url: 'https://www.hmc.edu/cs/',
             title: 'Harvey Mudd visit',
             details: 'Networking and sharing my research.',
             category: 'research',
