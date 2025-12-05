@@ -18,17 +18,18 @@
         three = undefined,
         four = undefined,
         five = undefined,
-        six = undefined
+        six = undefined,
     }: Props = $props();
 
-    let end =
+    let end = $derived(
         stop === null
             ? 'present'
             : stop === false
-            ? ''
-            : start !== stop
-            ? stop
-            : '';
+              ? ''
+              : start !== stop
+                ? stop
+                : '',
+    );
 </script>
 
 <div class="chunk">
