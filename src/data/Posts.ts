@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/pride-and-posting-abc07ac96b0d',
+        title: 'Pride and posting',
+        date: '2025.12',
+        tags: ['personal', 'gender', 'society'],
+        img: 'prideposting',
+        alt: 'The university district in Seattle, with a post rain shower rainbow amidst a cloudy sky.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/koli-calling-2025-alliances-of-the-artificial-732a76f1958a',
         title: 'Koli Calling 2025: Alliances of the Artificial',
         date: '2025.11',
