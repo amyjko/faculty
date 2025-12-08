@@ -210,7 +210,7 @@
             ><strong
                 >Should both advisors always be a collaborator on a students'
                 work</strong
-            >. Or does that depend on the paper and project?. Authorship
+            >. Or does that depend on the paper and project? Authorship
             expectations are wildly different between researchers, so these
             should be stated and negotiated upfront.</li
         >
