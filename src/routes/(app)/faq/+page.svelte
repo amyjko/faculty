@@ -119,36 +119,50 @@
     </p>
 </Section>
 
-<Section id="phdadmissions" header="How do I get into a Ph.D. program?">
-    <p>
-        Shriram Krishnamurthi has a wonderful guide on <External
-            to="https://parentheticallyspeaking.org/articles/us-cs-phd-faq/"
-            >Getting a Computer Science PhD</External
-        >. It's focused on CS programs, but much of the advice is good for any
-        discipline.
-    </p>
-</Section>
-
-<Section id="phdstudent" header="What is it like to be a Ph.D. student?">
-    <p>
-        There are many resources on this. <External
-            to="http://matt.might.net/articles/successful-phd-students/"
-            >Matt Might's advice</External
-        > has a sobering but practical look, including a <External
-            to="https://matt.might.net/articles/phd-school-in-pictures/"
-            >fun visual metaphor</External
-        > of what it means to do a PhD. I also like <External
-            to="https://freedom-to-tinker.com/2010/09/27/advice-new-graduate-students/"
-            >Jennifer Rexford's view of Ph.D. life as individual growth by
-            leveraging the group</External
-        >, because it complements more pragmatic views. The Economist also has
-        some practical advice on <External
-            to="http://www.economist.com/node/17723223?fsrc=scn/fb/wl/ar/mr/disposableacademic"
-            >Why doing a PhD is often a waste of time</External
-        >. And, for a lighter glimpse into Ph.D. life, there is always <External
-            to="http://www.phdcomics.com/comics.php">Ph.D. comics</External
-        >.
-    </p>
+<Section
+    id="phdstudent"
+    header="What is it like to be a Ph.D. student and how to I get into one?"
+>
+    <p> There are many great resources on this: </p>
+    <ul>
+        <li
+            >CRA has a great collection of FAQs called <External
+                to="https://sparc.cra.org/">SPARC</External
+            > about doing research and applying to PhD programs. I helped create it.</li
+        >
+        <li>
+            Shriram Krishnamurthi has a wonderful guide on <External
+                to="https://parentheticallyspeaking.org/articles/us-cs-phd-faq/"
+                >Getting a Computer Science PhD</External
+            >. It's focused on CS programs, but much of the advice is good for
+            any discipline.
+        </li>
+        <li
+            ><External
+                to="http://matt.might.net/articles/successful-phd-students/"
+                >Matt Might's advice</External
+            > has a sobering but practical look, including a <External
+                to="https://matt.might.net/articles/phd-school-in-pictures/"
+                >fun visual metaphor</External
+            > of what it means to do a PhD.</li
+        ><li
+            >I also like <External
+                to="https://freedom-to-tinker.com/2010/09/27/advice-new-graduate-students/"
+                >Jennifer Rexford's view of Ph.D. life as individual growth by
+                leveraging the group</External
+            >, because it complements more pragmatic views.</li
+        >
+        <li
+            >The Economist also has some practical advice on <External
+                to="http://www.economist.com/node/17723223?fsrc=scn/fb/wl/ar/mr/disposableacademic"
+                >Why doing a PhD is often a waste of time</External
+            >.</li
+        ><li
+            >For a lighter glimpse into Ph.D. life, there is always <External
+                to="http://www.phdcomics.com/comics.php">Ph.D. comics</External
+            >.
+        </li>
+    </ul>
 </Section>
 
 <Section id="goodquestion" header="What makes a good research paper?">
@@ -177,20 +191,20 @@
             ><strong
                 >How does each advisor see their role in the student's work and
                 success?</strong
-            > Are they compatible? In conflict? Some advisors might see students
-            as people who can accelerate their research focus; others might view
-            them as students who they are mentoring. Others still might view students
-            as collaborators. All three of these perspectives come with different
-            expectations and relationships, and so it's important for co-advisors
-            to come to some shared understanding about them.</li
+            > Are they compatible? In conflict? Some advisors might see students as
+            people who can accelerate their research focus; others might view them
+            as students who they are mentoring. Others still might view students as
+            collaborators. All three of these perspectives come with different expectations
+            and relationships, and so it's important for co-advisors to come to some
+            shared understanding about them.</li
         >
         <li
             ><strong
                 >Who is responsible for the long term funding with the student?
                 Is that fixed or dynamic?</strong
             > This is key, because it shapes who feels responsible for resourcing
-            a PhD students' time, and offering the student certainty about their
-            funding stability.</li
+            a PhD students' time, and offering the student certainty about their funding
+            stability.</li
         >
         <li
             ><strong
