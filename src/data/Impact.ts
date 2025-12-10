@@ -2,6 +2,16 @@ import type { Impact } from '../lib/models/Impact';
 
 export const Impacts: Impact[] = [
     {
+        kind: 'community',
+        start: 2025,
+        end: 2025,
+        description:
+            'I was invited to join a panel with Ben Shapiro on AI and education.',
+        title: 'Education to Employment: Building AI-Ready Talent',
+        url: 'https://www.micro1.ai/forum/education-to-employment-building-ai-ready-talent',
+        who: 'public',
+    },
+    {
         kind: 'press',
         start: 2025,
         end: 2025,
