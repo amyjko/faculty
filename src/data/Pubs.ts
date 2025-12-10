@@ -367,7 +367,7 @@ export const Publications: Paper[] = [
         source: '@respect',
         pages: null,
         publisher: 'IEEE',
-        doi: null,
+        doi: 'https://doi.org/10.1109/RESPECT60069.2023.00038',
         local: 'Kivuva2023SpanishLiterature.pdf',
         contribution:
             'Offers promising ideas for how to integrate computing concepts into language learning and language arts classes.',
