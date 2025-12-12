@@ -320,7 +320,7 @@ export const Amy: ProfileSpec = {
             type: 'journal',
             commitment: {
                 start: '2021-12-01',
-                end: '2024-12-01',
+                end: '2027-11-01',
                 hours: 3,
                 priority: 1,
             },
