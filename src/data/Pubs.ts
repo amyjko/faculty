@@ -138,7 +138,7 @@ export const Publications: Paper[] = [
     },
     {
         id: 'tseretro',
-        kind: 'journal article',
+        kind: 'refereed invited article',
         authors: ['@ajko', 'Brad Myers', 'Michael Coblenz', 'Htet Htet Aung'],
         year: 2025,
         title: 'A Retrospective on How Developers Seek, Relate, and Collect Information About Code',
