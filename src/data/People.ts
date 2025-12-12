@@ -114,6 +114,10 @@ export const People: readonly Person[] = [
         startdate: 2024,
         enddate: null,
         achievements: [],
+        annotation: {
+            year: 2025,
+            text: 'I welcomed Janet as my newest PhD student, helping her start work on multilingual learners in CS learning.',
+        },
     },
     {
         id: 'hardin',
@@ -170,6 +174,10 @@ export const People: readonly Person[] = [
         startdate: 2024,
         enddate: 2025,
         achievements: [],
+        annotation: {
+            year: 2025,
+            text: 'I mentored Max through his interrupted 2nd year of postdoc work, helping him find a temporary role at the University of Oregon and plan a later job search.',
+        },
     },
     {
         id: 'benzhou',
@@ -226,6 +234,10 @@ export const People: readonly Person[] = [
         startdate: 2021,
         enddate: null,
         achievements: ['2024 ACM ICER Best Paper Award Honorable Mention'],
+        annotation: {
+            year: 2025,
+            text: 'With Katie, I guided Rotem through her second to last year of her PhD, now ADB. She has a postdoc at Harvard starting in summer.',
+        },
     },
     {
         id: 'annes',
@@ -254,6 +266,10 @@ export const People: readonly Person[] = [
         startdate: 2022,
         enddate: null,
         achievements: ['NSF Graduate Research Fellowship (2024)'],
+        annotation: {
+            year: 2025,
+            text: 'I guided Eman toward her proposal and supported her growth as a writer.',
+        },
     },
     {
         id: 'audreylm',
@@ -374,6 +390,10 @@ export const People: readonly Person[] = [
         startdate: 2022,
         enddate: null,
         achievements: ['NSF Graduate Research Fellowship (2023)'],
+        annotation: {
+            year: 2025,
+            text: 'I helped Megumi successfully retake their general exam and sharpen their use of theory.',
+        },
     },
     {
         id: 'feec',
@@ -531,6 +551,10 @@ export const People: readonly Person[] = [
             'ACM SIGCSE Best Paper Award (2024)',
             'ACM SIGCSE Best Paper Award (2022)',
         ],
+        annotation: {
+            year: 2025,
+            text: "I guided Jayne through her second to last year of her PhD, now ADB. She's now at Foundry10.",
+        },
     },
     {
         id: 'perdriau',

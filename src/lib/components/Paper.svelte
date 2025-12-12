@@ -7,6 +7,7 @@
     import APACitation from './APACitation.svelte';
     import { profile } from '$lib/models/stores';
     import Image from './Thumbnail.svelte';
+    import Highlight from './Highlight.svelte';
 
     interface Props {
         paper: Paper;
@@ -72,6 +73,11 @@
         <small><em>{$profile.getSourceName(paper.source)}</em></small>
         {#if paper.award && paper.award.length > 0}
             <mark class="award">{paper.award.join(' + ')}</mark>
+        {/if}
+        {#if paper.annotation}
+            <br /><Highlight year={paper.annotation.year}
+                >{paper.annotation.text}</Highlight
+            >
         {/if}
     </div>
 {:else}

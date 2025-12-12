@@ -1,3 +1,4 @@
+import type Annotation from './Annotation';
 import type { Commitment } from './Commitment';
 
 export type Editing = {
@@ -5,4 +6,5 @@ export type Editing = {
     type: 'journal' | 'conference';
     venue: string;
     commitment: Commitment;
+    annotation?: Annotation;
 };

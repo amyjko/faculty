@@ -1,10 +1,14 @@
 <script lang="ts">
+    import type Annotation from '$lib/models/Annotation';
+    import Highlight from '$lib/components/Highlight.svelte';
+
     interface Props {
         start: string | number;
         end?: string | number | null;
         header: string;
         detail: string;
         extra?: string | null;
+        annotation?: Annotation;
     }
 
     let {
@@ -12,7 +16,8 @@
         end = null,
         header,
         detail,
-        extra = null
+        extra = null,
+        annotation,
     }: Props = $props();
 </script>
 
@@ -22,11 +27,16 @@
             >{start}{start === end
                 ? ''
                 : end === null
-                ? ' — present'
-                : ' - ' + end}</small
+                  ? ' — present'
+                  : ' - ' + end}</small
         ></td
     >
-    <td><strong>{header}</strong></td>
+    <td
+        ><strong>{header}</strong>
+        {#if annotation}<Highlight year={annotation.year}
+                >{annotation.text}</Highlight
+            >{/if}</td
+    >
     {#if detail}<td>{detail}</td>{/if}
     {#if extra}<td>{extra}</td>{/if}
 </tr>

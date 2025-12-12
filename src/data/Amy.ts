@@ -148,6 +148,10 @@ export const Amy: ProfileSpec = {
             startdate: 2020,
             enddate: null,
             academic: true,
+            annotation: {
+                year: 2025,
+                text: "I'm still a professor and still happy to be at the Information School!",
+            },
         },
         {
             title: 'Associate Professor',
@@ -324,6 +328,10 @@ export const Amy: ProfileSpec = {
                 hours: 3,
                 priority: 1,
             },
+            annotation: {
+                year: 2025,
+                text: 'I served my 4th year as EiC, preparing the journal for a transition to more sustainable peer review through my open source work on the Reciprocal.Reviews platform. My term ends in November 2027.',
+            },
         },
         {
             title: 'Associate Editor',
@@ -436,6 +444,10 @@ export const Amy: ProfileSpec = {
                 end: '06-15',
                 hours: 0.5,
                 priority: 1,
+            },
+            annotation: {
+                year: 2025,
+                text: 'I was a panelist twice in 2025.',
             },
         },
         {
@@ -662,6 +674,10 @@ export const Amy: ProfileSpec = {
             department: 'Computer Science',
             startdate: 2025,
             enddate: null,
+            annotation: {
+                year: 2025,
+                text: 'I advised Melissa when her advisor at Northwestern when on 6 months of maternity leave.',
+            },
         },
         {
             name: 'Hannah Potter',
@@ -683,6 +699,10 @@ export const Amy: ProfileSpec = {
             department: 'Graduate School of Education',
             startdate: 2024,
             enddate: null,
+            annotation: {
+                year: 2025,
+                text: 'I advised Luis on his dissertation proposal.',
+            },
         },
         {
             name: 'Daniela Wolf',
@@ -696,7 +716,7 @@ export const Amy: ProfileSpec = {
             institution: 'University of Washington',
             department: 'Computer Science',
             startdate: 2024,
-            enddate: null,
+            enddate: 2025,
         },
         {
             name: 'Ella Lombard',
@@ -711,6 +731,10 @@ export const Amy: ProfileSpec = {
             department: 'Education',
             startdate: 2024,
             enddate: null,
+            annotation: {
+                year: 2025,
+                text: 'I advised Amber on their dissertation proposal.',
+            },
         },
         {
             name: 'Aashaka Desai',
@@ -724,28 +748,36 @@ export const Amy: ProfileSpec = {
             institution: 'University of Utah',
             department: 'Computer Science',
             startdate: 2023,
-            enddate: null,
+            enddate: 2025,
+            annotation: {
+                year: 2025,
+                text: 'I advised Sara on her dissertation proposal.',
+            },
         },
         {
             name: 'Camille Gobert',
             institution: 'Paris-Saclay University',
             department: 'Computer Science',
             startdate: 2022,
-            enddate: null,
+            enddate: 2025,
+            annotation: {
+                year: 2025,
+                text: 'I advised Camille on her dissertation proposal.',
+            },
         },
         {
             name: 'Venkatesh Potluri',
             institution: 'University of Washington',
             department: 'Computer Science',
             startdate: 2022,
-            enddate: null,
+            enddate: 2025,
         },
         {
             name: 'Maryam Arab',
             institution: 'George Mason University',
             department: 'Computer Science',
             startdate: 2018,
-            enddate: null,
+            enddate: 2024,
         },
         {
             name: 'Mina Tari',
@@ -773,7 +805,7 @@ export const Amy: ProfileSpec = {
             institution: 'University of Washington',
             department: 'Computer Science & Enngineering',
             startdate: 2021,
-            enddate: null,
+            enddate: 2023,
         },
         {
             name: 'Alex Okeson',
@@ -1035,6 +1067,10 @@ export const Amy: ProfileSpec = {
                 hours: 1,
                 priority: 0,
             },
+            annotation: {
+                year: 2025,
+                text: 'I was invited to lead the graduation requirement subcommittee on CS, setting the requirements for all Washington state youth for the coming decades.',
+            },
         },
         {
             title: 'Mentor',
@@ -1061,6 +1097,10 @@ export const Amy: ProfileSpec = {
                 hours: 1,
                 priority: 0,
             },
+            annotation: {
+                year: 2025,
+                text: 'This platform ties publishing labor to reviewing labor through a currency system. I organize a community of maintainers and am launching a pilot for ACM TOCE in 2026. 80+ editors are waiting for our results across academia, hoping for more sustainable peer review.',
+            },
         },
         {
             title: 'Director',
@@ -1073,6 +1113,10 @@ export const Amy: ProfileSpec = {
                 end: null,
                 hours: 1,
                 priority: 0,
+            },
+            annotation: {
+                year: 2025,
+                text: 'I serve as the lead maintainer and facilitator of this community-engaged open source educational programming language with teachers and youth.',
             },
         },
         {
@@ -1087,6 +1131,10 @@ export const Amy: ProfileSpec = {
                 hours: 1,
                 priority: 0,
             },
+            annotation: {
+                year: 2025,
+                text: 'I built and maintain a platform for organizing people, roles, processes, and change in organizations, for use in iSchool Academics.',
+            },
         },
         {
             title: 'Director',
@@ -1100,6 +1148,10 @@ export const Amy: ProfileSpec = {
                 hours: 1,
                 priority: 0,
             },
+            annotation: {
+                year: 2025,
+                text: 'I maintain an online book publishing platform that serves as the key infrastructure for my textbooks and for other authors globally looking for free platforms for sharing knowledge in book form.',
+            },
         },
         {
             title: 'Committee Member',
@@ -1111,6 +1163,10 @@ export const Amy: ProfileSpec = {
                 end: '2026-03-15',
                 hours: 1,
                 priority: 0,
+            },
+            annotation: {
+                year: 2025,
+                text: 'I served my second year as a committee member.',
             },
         },
         {
@@ -1124,6 +1180,10 @@ export const Amy: ProfileSpec = {
                 end: '2027-06-30',
                 hours: 16,
                 priority: 0,
+            },
+            annotation: {
+                year: 2025,
+                text: 'I served my first full year as Associate Dean for Academics. This included completing the major academics reorganization, documenting more than 230 processes, tracking more than 90 change requests and successfully implementing more than 25 of them. This included streamlining budgets, scholarships, buyouts, teaching assignments, and numerous other smaller operational concerns.',
             },
         },
         {
@@ -1177,6 +1237,10 @@ export const Amy: ProfileSpec = {
                 hours: 1,
                 priority: 0,
             },
+            annotation: {
+                year: 2025,
+                text: 'I continue to run a trans youth group on Mondays, helping youth navigate loss of civil rights and suicidal ideation, while making friends.',
+            },
         },
         {
             title: 'Panel Member',
@@ -1215,6 +1279,10 @@ export const Amy: ProfileSpec = {
                 end: null,
                 hours: 2,
                 priority: 0,
+            },
+            annotation: {
+                year: 2025,
+                text: 'I continue to direct a coalition of 500+ advocates in Washington state around access to K-12 CS education. This includes close collaboration with state agencies and the state legislature.',
             },
         },
         {
@@ -1660,6 +1728,10 @@ export const Amy: ProfileSpec = {
                 hours: 1,
                 priority: 1,
             },
+            annotation: {
+                year: 2025,
+                text: 'I continue to help lead AccessComputing, though NSF required us to rescope the whole thing to no longer focus on people with disabilities and the budget was severely cut. That was not fun :(',
+            },
         },
         {
             id: 'pnwcsteachers',
@@ -1678,6 +1750,10 @@ export const Amy: ProfileSpec = {
                 end: '2027-09-30',
                 hours: 4,
                 priority: 1,
+            },
+            annotation: {
+                year: 2025,
+                text: 'This grant was terminated in January of 2025. Lawsuits have not resurrected it, and so I was suddenly quite underfunded this year, and lost my postdoc and ability to fund my Ph.D. students.',
             },
         },
         {
@@ -1845,6 +1921,10 @@ export const Amy: ProfileSpec = {
                 end: '2025-09-15',
                 hours: 4,
                 priority: 1,
+            },
+            annotation: {
+                year: 2025,
+                text: 'This grant ended this year after a 2nd no cost extension. It was hugely impactful, and produced 20 publications, cited more than 800 times.',
             },
         },
         {
@@ -3035,6 +3115,10 @@ export const Amy: ProfileSpec = {
                 { size: 13, term: 3, year: 2025, score: 4.8 },
                 { size: 17, term: 1, year: 2025, score: null },
             ],
+            annotation: {
+                year: 2025,
+                text: "It's the second year I've taught this DRG focused on Wordplay, the educational programming language I'm co-designing twith teachers and youth.",
+            },
         },
         {
             id: 'info200',
@@ -3208,6 +3292,10 @@ export const Amy: ProfileSpec = {
                 { year: 2023, term: 3, size: 14, score: 4.9 },
                 { year: 2022, term: 3, size: 9, score: 4.8 },
             ],
+            annotation: {
+                year: 2025,
+                text: "It's the 4th time I taught teacher candidates in the College of Education how to teach computer science in middle and high school.",
+            },
         },
     ],
     commitments: [

@@ -1,3 +1,5 @@
+import type Annotation from './Annotation';
+
 export type Impact = {
     kind:
         | 'press'
@@ -26,4 +28,5 @@ export type Impact = {
     title?: string;
     author?: string;
     source?: string;
+    annotation?: Annotation;
 };

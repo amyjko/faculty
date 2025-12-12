@@ -1,3 +1,4 @@
+import type Annotation from './Annotation';
 import type { Commitment } from './Commitment';
 import type { CommitmentCategory } from './CommitmentCategory';
 
@@ -13,4 +14,5 @@ export type Funding = {
     url: string | null;
     private?: boolean;
     commitment: Commitment;
+    annotation?: Annotation;
 };

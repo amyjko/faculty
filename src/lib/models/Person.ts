@@ -1,3 +1,5 @@
+import type Annotation from './Annotation';
+
 type Person = {
     id: string;
     name: string;
@@ -19,5 +21,6 @@ type Person = {
     startdate: number;
     enddate: number | null;
     achievements: readonly string[];
+    annotation?: Annotation;
 };
 export type { Person as default };

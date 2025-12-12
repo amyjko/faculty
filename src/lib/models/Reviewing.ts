@@ -1,3 +1,4 @@
+import type Annotation from './Annotation';
 import type { Commitment } from './Commitment';
 
 export type Reviewing = {
@@ -6,4 +7,5 @@ export type Reviewing = {
     level: 'reviewer' | 'pc' | 'chair' | 'panelist';
     title?: string;
     commitment?: Commitment;
+    annotation?: Annotation;
 };

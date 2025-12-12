@@ -6,14 +6,18 @@ const Talks: Talk[] = [
         image: 'placeholder.jpg',
         alt: 'forthcoming',
         slides: null,
-        title: 'TBD',
-        venue: '2025 ACM SIGCSE Technical Symposium',
+        title: 'Love, Learning, and Computing Education',
+        venue: '2026 ACM SIGCSE Technical Symposium',
         url: null,
         recording: null,
         practice: null,
         description:
             "I'll be giving a keynote broadly about equity and justice in computing education.",
         keynote: true,
+        annotation: {
+            year: 2025,
+            text: 'I was invited to give the SIGCSE keynote, the top keynote invitation in computing education.',
+        },
     },
     {
         date: '2025-10-22',
@@ -28,6 +32,10 @@ const Talks: Talk[] = [
         description:
             'I spoke about systems change in accessibility and disability justice in higher education.',
         keynote: true,
+        annotation: {
+            year: 2025,
+            text: 'This minor workshop keynote was a chance to share my campus leadership on accessible teaching.',
+        },
     },
     {
         date: '2025-10-03',
@@ -42,6 +50,10 @@ const Talks: Talk[] = [
         description:
             'I repreised my talk on justice-centered programming languages, and shared the design principles behind designing education programming languages in justice-centered ways.',
         keynote: false,
+        annotation: {
+            year: 2025,
+            text: 'I gave a talk at Lewis and Clark in Portland, engaging students and faculty in thinking about computer science from a justice perspective.',
+        },
     },
     {
         date: '2025-04-28',
@@ -56,6 +68,10 @@ const Talks: Talk[] = [
         description:
             'I present Wordplay, its design principles, and a focus group evaluation of its tensions between language and ability inclusion, amongst other aspects of justice.',
         keynote: false,
+        annotation: {
+            year: 2025,
+            text: "It's been a while since I gave a CHI presentation! This was the culmination of my sabbatical work.",
+        },
     },
     {
         date: '2025-04-16',

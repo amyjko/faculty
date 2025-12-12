@@ -1,3 +1,5 @@
+import type Annotation from './Annotation';
+
 export type Class = {
     id: string;
     alt: string;
@@ -14,4 +16,5 @@ export type Class = {
         year: number;
         score: number | null | string;
     }[];
+    annotation?: Annotation;
 };

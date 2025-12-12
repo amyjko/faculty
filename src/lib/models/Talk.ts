@@ -1,3 +1,5 @@
+import type Annotation from './Annotation';
+
 export type Talk = {
     title: string;
     date: string;
@@ -11,4 +13,5 @@ export type Talk = {
     description: string;
     keynote: boolean;
     blog?: string;
+    annotation?: Annotation;
 };

@@ -14,6 +14,7 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             'Demonstrates the feasibility of combining LLM and psychometric analyses to model programming behavior.',
+        annotation: { year: 2025, text: 'Jayne led this with my guidance.' },
     },
     {
         id: 'llmpsych',
@@ -36,6 +37,7 @@ export const Publications: Paper[] = [
         local: 'Zhang2025LLMPsych.pdf',
         contribution:
             'Demonstrates the feasibility of combining LLM and psychometric analyses to model programming behavior.',
+        annotation: { year: 2025, text: 'Mo led this and I consulted.' },
     },
     {
         id: 'dreamingjoy',
@@ -50,6 +52,10 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             'Shows that students believe CS pedagogy should: have distributed responsibility and accountability, value the whole individual, foreground autonomy, community, and collaboration, as well as extend outside the classroom.',
+        annotation: {
+            year: 2025,
+            text: 'Jayne and I envisioned this project together.',
+        },
     },
     {
         id: 'formativecodingassessment',
@@ -71,6 +77,10 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             'Through keystroke feature and keystroke burst analysis, we found that harder items were associated with longer, more continuous typing bursts and fewer pauses, indicating deeper cognitive engagement.',
+        annotation: {
+            year: 2025,
+            text: 'Chen led this with my consultation.',
+        },
     },
     {
         id: 'justicecurriculum',
@@ -85,6 +95,10 @@ export const Publications: Paper[] = [
         local: 'Kivuva2025JusticeCurriculum.pdf',
         contribution:
             'Justice-centered curriculum design requires educators’ ongoing content learning, reflection on positionality, and adaptability to students’ needs, including those with disabilities.',
+        annotation: {
+            year: 2025,
+            text: 'Megumi envisioned this paper and I provided sustained consultation.',
+        },
     },
     {
         id: 'scratchcopilot',
@@ -99,6 +113,10 @@ export const Publications: Paper[] = [
         local: 'Druga2025ScratchCopilot.pdf',
         contribution:
             'Explore opportunities and limitations of youth interactions with generative AI for creative coding.',
+        annotation: {
+            year: 2025,
+            text: "This was the culiminating work in Stef's dissertation, which I collaborated on with her.",
+        },
     },
     {
         id: 'psychometricassessment',
@@ -120,6 +138,10 @@ export const Publications: Paper[] = [
         local: 'Li2025PsychometricModeling.pdf',
         contribution:
             'Demonstrates that a cognitive diagnostic model can provide valuable insights for instructors and researchers in understanding how students learn and master programming concepts.',
+        annotation: {
+            year: 2025,
+            text: 'Chen led this and I consulted.',
+        },
     },
     {
         id: 'wordplay',
@@ -135,6 +157,10 @@ export const Publications: Paper[] = [
         contribution:
             'Describes and evaluates Wordplay, an multilingual, accesislbe, educational programming language.',
         slides: 'WordplayCHI2025.pdf',
+        annotation: {
+            year: 2025,
+            text: 'This was the culmination of my sabbatical work, which I led.',
+        },
     },
     {
         id: 'tseretro',
@@ -257,6 +283,10 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             'A book for computing educators who want to integrate accessible computing concepts and skils into computer science courses.',
+        annotation: {
+            year: 2025,
+            text: 'Alannah has continued to evolve this book with Richard and I as co-editors this year. It is now read by more than 10,000 CS faculty, with new chapters coming. It has been a key resource for transforming CS teaching about accessibility.',
+        },
     },
     {
         id: 'teenethics',
@@ -542,6 +572,10 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             'A book for secondary educators who want to teach CS from critical lens, examining it from technical, sociotechnical, and sociopoitical stance.',
+        annotation: {
+            year: 2025,
+            text: 'This year, this book exceeded 12,000 teachers globally, and was translated into Portuguese and Spanish, with my coordination.',
+        },
     },
     {
         id: 'studentamp',

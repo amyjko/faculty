@@ -1,4 +1,7 @@
 <script lang="ts">
+    import type Annotation from '$lib/models/Annotation';
+    import Highlight from '../../../lib/components/Highlight.svelte';
+
     interface Props {
         start: number;
         stop?: number | null | false;
@@ -8,6 +11,7 @@
         four?: string | readonly string[] | undefined;
         five?: string | undefined;
         six?: string | undefined;
+        annotation?: Annotation;
     }
 
     let {
@@ -19,6 +23,7 @@
         four = undefined,
         five = undefined,
         six = undefined,
+        annotation = undefined,
     }: Props = $props();
 
     let end = $derived(
@@ -53,6 +58,9 @@
         {/if}
         {#if five}<div><small>{five}</small></div>{/if}
         {#if six}<div><small>{six}</small></div>{/if}
+        {#if annotation}<Highlight year={annotation.year}
+                >{annotation.text}</Highlight
+            >{/if}
     </div>
 </div>
 

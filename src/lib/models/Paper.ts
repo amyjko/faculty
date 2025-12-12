@@ -1,4 +1,4 @@
-import type { People } from '../../data/People';
+import type Annotation from './Annotation';
 
 type Paper = {
     id: string;
@@ -34,6 +34,7 @@ type Paper = {
     slides?: string;
     blog?: string;
     acceptrate?: number;
+    annotation?: Annotation;
     award?: (
         | 'best paper'
         | 'diversity + inclusion award'

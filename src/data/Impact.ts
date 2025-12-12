@@ -10,6 +10,10 @@ export const Impacts: Impact[] = [
         title: 'Education to Employment: Building AI-Ready Talent',
         url: 'https://www.micro1.ai/forum/education-to-employment-building-ai-ready-talent',
         who: 'public',
+        annotation: {
+            year: 2025,
+            text: 'This was an invited panel about AI and education.',
+        },
     },
     {
         kind: 'press',
@@ -22,6 +26,10 @@ export const Impacts: Impact[] = [
         source: 'ACM Inroads',
         url: 'https://dl.acm.org/doi/10.1145/3756325',
         who: 'public',
+        annotation: {
+            year: 2025,
+            text: 'This was a fun interview about research impact.',
+        },
     },
     {
         kind: 'policy',
@@ -34,6 +42,10 @@ export const Impacts: Impact[] = [
         source: 'Washiington State Board of Education',
         url: 'https://sbe.wa.gov/our-work/futureready',
         who: 'public',
+        annotation: {
+            year: 2025,
+            text: 'This appointment was the culmination of 10 years of state advocacy.',
+        },
     },
     {
         kind: 'community',
@@ -46,6 +58,10 @@ export const Impacts: Impact[] = [
         source: 'ACM Inroads',
         url: 'https://dl.acm.org/doi/pdf/10.1145/3756325',
         who: 'public',
+        annotation: {
+            year: 2025,
+            text: 'I appeared a few times on Fox 13 news to talk about AI in Education.',
+        },
     },
     {
         kind: 'press',
@@ -58,6 +74,10 @@ export const Impacts: Impact[] = [
         source: 'Fox 13 news',
         url: 'https://www.youtube.com/watch?v=0mBJAlL_Vxo&feature=youtu.be',
         who: 'public',
+        annotation: {
+            year: 2025,
+            text: 'I was invited to speak with the State Superintended about AI in schools.',
+        },
     },
     {
         kind: 'press',
@@ -70,6 +90,10 @@ export const Impacts: Impact[] = [
         source: 'The Chronicle of Higher Education',
         url: 'https://www.chronicle.com/article/the-trump-administration-has-canceled-millions-in-nsf-grants',
         who: 'public',
+        annotation: {
+            year: 2025,
+            text: 'I was interviewed about the impacts of my grant being terminated.',
+        },
     },
     {
         kind: 'press',

@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { setContext } from 'svelte';
     import { profile } from '$lib/models/stores';
     import { parseDate } from '$lib/models/Profile';
     import Item from './Item.svelte';
@@ -8,6 +9,7 @@
     import Wrap from './Wrap.svelte';
     import Table from '$lib/components/Table.svelte';
     import Title from '$lib/components/Title.svelte';
+    import Annotation from '$lib/components/Highlight.svelte';
 
     let refereed = $profile.getPublications(
         (pub) =>
@@ -15,10 +17,18 @@
             pub.kind === 'refereed conference paper',
         (pub) => -pub.year,
     );
+
+    let annotations = $state({ on: false, year: 2025 });
+    setContext('annotations', annotations);
 </script>
 
 <div class="cv">
     <Image url={'/images/headshots/ajko.jpg'} alt="Headshot of Amy J. Ko" />
+
+    <Annotation year={2025}
+        >Hello Professors! Thanks for skimming. Look for these highlights for
+        context this year's updates.</Annotation
+    >
 
     <Title text="Curriculum Vita" />
 
@@ -63,6 +73,7 @@
                 header={job.title}
                 two={job.department}
                 three={job.organization}
+                annotation={job.annotation}
             />
         {/each}
     </Wrap>
@@ -140,6 +151,7 @@
                     four={funding.award ?? ''}
                     five={funding.investigators}
                     six={funding.description}
+                    annotation={funding.annotation}
                 />
             {/if}
         {/each}
@@ -167,6 +179,14 @@
     </p>
 
     <h3>Refereed Conference + Journal Articles</h3>
+
+    <Annotation year={2025}>
+        It was a productive year of collaborations, advising, and teacher
+        partnerships, translating into <strong
+            >9 peer-reviewed publications</strong
+        > that advance knowledge about justice-centered aspects of assessment, pedagogy,
+        creativity, curriculum design, and programming languages.
+    </Annotation>
 
     {#each refereed as paper, index}
         {#if index === 0 || refereed[index - 1].year !== paper.year}
@@ -229,6 +249,7 @@
                 header={impact.title ?? ''}
                 two={impact.author}
                 three={impact.source}
+                annotation={impact.annotation}
             />
         {/each}
     </Wrap>
@@ -241,6 +262,7 @@
                 start={parseDate(keynote.date).getFullYear()}
                 header={keynote.title}
                 two={keynote.venue}
+                annotation={keynote.annotation}
             />
         {/each}
     </Wrap>
@@ -253,6 +275,7 @@
                 start={parseDate(keynote.date).getFullYear()}
                 header={keynote.title}
                 two={keynote.venue}
+                annotation={keynote.annotation}
             />
         {/each}
     </Wrap>
@@ -287,7 +310,7 @@
     <h3>Courses</h3>
 
     <Wrap>
-        {#each $profile.getClasses() as course}
+        {#each $profile.getClasses( () => true, (c) => -c.offerings[0].year, ) as course}
             <Item
                 start={course.offerings.sort((a, b) => a.year - b.year)[0].year}
                 stop={course.offerings.sort((a, b) => b.year - a.year)[0].year}
@@ -298,6 +321,7 @@
                     course.offerings.filter((offer) => offer.score !== null)
                         .length +
                     ' times'}
+                annotation={course.annotation}
             />
         {/each}
     </Wrap>
@@ -305,7 +329,7 @@
     <h3>Postdoc Supervision</h3>
 
     <Wrap>
-        {#each $profile.getPeople( (person) => person.level === 'postdoc', (person) => person.startdate, ) as person}
+        {#each $profile.getPeople( (person) => person.level === 'postdoc', (person) => -person.startdate, ) as person}
             <Item
                 start={person.startdate}
                 stop={person.enddate}
@@ -313,6 +337,7 @@
                 two={person.dept}
                 three={person.coadvisor ?? undefined}
                 four={person.achievements}
+                annotation={person.annotation}
             />
         {/each}
     </Wrap>
@@ -323,7 +348,7 @@
 
     <Wrap>
         {#each $profile
-            .getPeople( (person) => person.level === 'phd' && person.advised, (person) => person.startdate, )
+            .getPeople( (person) => person.level === 'phd' && person.advised, (person) => -(person.enddate ?? 3000), )
             .map((value) => {
                 if (value.coadvisor !== null) value.coadvisor = 'Co-advisor: ' + value.coadvisor;
                 return value;
@@ -335,6 +360,7 @@
                 two={person.dept}
                 three={person.coadvisor ?? undefined}
                 four={person.achievements}
+                annotation={person.annotation}
             />
         {/each}
     </Wrap>
@@ -350,6 +376,7 @@
                     header={person.name}
                     detail={person.institution}
                     extra={person.department}
+                    annotation={person.annotation}
                 />
             {/each}
         </tbody>
@@ -368,6 +395,7 @@
                     : parseDate(board.commitment.end).getFullYear()}
                 header={board.venue}
                 two={board.title}
+                annotation={board.annotation}
             />
         {/if}
     {/each}
@@ -383,6 +411,7 @@
                     : parseDate(board.commitment.end).getFullYear()}
                 header={$profile.getSourceName(board.venue)}
                 two={board.title}
+                annotation={board.annotation}
             />
         {/if}
     {/each}
@@ -398,6 +427,7 @@
                 stop={role.years.sort().reverse()[0]}
                 header={$profile.getSourceName(role.venue)}
                 two={role.title}
+                annotation={role.annotation}
             />
         {/each}
     </Wrap>
@@ -412,6 +442,7 @@
                 stop={role.years.sort().reverse()[0]}
                 header={$profile.getSourceName(role.venue)}
                 two={role.title}
+                annotation={role.annotation}
             />
         {/each}
     </Wrap>
@@ -427,6 +458,7 @@
                 stop={role.years.sort().reverse()[0]}
                 header={$profile.getSourceName(role.venue)}
                 two={role.title}
+                annotation={role.annotation}
             />
         {/each}
     </Wrap>
@@ -444,6 +476,7 @@
                     header={service.title}
                     two={service.committee}
                     three={service.description}
+                    annotation={service.annotation}
                 />
             {/if}
         {/each}
@@ -462,6 +495,7 @@
                     header={service.title}
                     two={service.committee}
                     three={service.description}
+                    annotation={service.annotation}
                 />
             {/if}
         {/each}
@@ -480,6 +514,7 @@
                     header={service.title}
                     two={service.committee}
                     three={service.description}
+                    annotation={service.annotation}
                 />
             {/if}
         {/each}
@@ -498,6 +533,7 @@
                     header={service.title}
                     two={service.committee}
                     three={service.description}
+                    annotation={service.annotation}
                 />
             {/if}
         {/each}
@@ -516,6 +552,7 @@
                     header={service.title}
                     two={service.committee}
                     three={service.description}
+                    annotation={service.annotation}
                 />
             {/if}
         {/each}
@@ -534,6 +571,7 @@
                     header={service.title}
                     two={service.committee}
                     three={service.description}
+                    annotation={service.annotation}
                 />
             {/if}
         {/each}
