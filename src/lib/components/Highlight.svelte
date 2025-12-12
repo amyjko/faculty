@@ -24,9 +24,8 @@
         padding: var(--padding) calc(var(--padding) * 2) var(--padding)
             calc(var(--padding) * 2);
         background: rgb(255 231 160);
-        box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
         border-radius: calc(var(--roundedness));
-        border-left: solid 4px rgb(253, 212, 89);
+        border: solid 4px rgb(253, 212, 89);
         font-style: italic;
         font-family: 'Nunito', sans-serif;
         max-width: 75%;
