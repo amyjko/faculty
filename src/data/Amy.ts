@@ -694,7 +694,7 @@ export const Amy: ProfileSpec = {
             enddate: 2024,
         },
         {
-            name: 'Anne Drew Hu',
+            name: 'Amber Hu',
             institution: 'Michigan State University',
             department: 'Education',
             startdate: 2024,
