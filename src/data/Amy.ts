@@ -439,6 +439,18 @@ export const Amy: ProfileSpec = {
             },
         },
         {
+            venue: 'MIT Press',
+            title: 'Book reviewer',
+            years: [2025],
+            level: 'reviewer',
+            commitment: {
+                start: '10-15',
+                end: '11-15',
+                hours: 4,
+                priority: 0,
+            },
+        },
+        {
             venue: 'Princeton University Press',
             title: 'Book reviewer',
             years: [2020],
@@ -446,7 +458,7 @@ export const Amy: ProfileSpec = {
             commitment: {
                 start: '10-15',
                 end: '11-15',
-                hours: 1,
+                hours: 3,
                 priority: 0,
             },
         },
