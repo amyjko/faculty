@@ -520,6 +520,24 @@
             {/if}
         {/each}
     </Wrap>
+
+    <h3>Open Source</h3>
+
+    <Wrap>
+        {#each $profile.getService( (service) => service.level === 'open source', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY), ) as service}
+            {#if service.commitment.start}
+                <Item
+                    start={parseDate(service.commitment.start).getFullYear()}
+                    stop={service.commitment.end === null
+                        ? null
+                        : parseDate(service.commitment.end).getFullYear()}
+                    header={service.title}
+                    two={service.committee}
+                    three={service.description}
+                />
+            {/if}
+        {/each}
+    </Wrap>
 </div>
 
 <style>

@@ -8,7 +8,8 @@ export type Service = {
         | 'university'
         | 'regional'
         | 'national'
-        | 'international';
+        | 'international'
+        | 'open source';
     description: string;
     commitment: Commitment;
 };

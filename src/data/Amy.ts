@@ -1052,11 +1052,50 @@ export const Amy: ProfileSpec = {
         {
             title: 'Co-director',
             committee: 'Reciprocal Reviews',
-            level: 'international',
+            level: 'open source',
             description:
                 'I lead a community of volunteers to create infrastructure for sustainable peer review labor markets.',
             commitment: {
                 start: '2023-01-04',
+                end: null,
+                hours: 1,
+                priority: 0,
+            },
+        },
+        {
+            title: 'Director',
+            committee: 'Wordplay',
+            level: 'open source',
+            description:
+                'I am the lead maintainer and faciliator of this community-engaged open source educational programming language.',
+            commitment: {
+                start: '2023-06-01',
+                end: null,
+                hours: 1,
+                priority: 0,
+            },
+        },
+        {
+            title: 'Director',
+            committee: 'Adminima',
+            level: 'open source',
+            description:
+                'I am the lead maintainer of this platform for organizing people, roles, processes, and change in organizations. I use this for my administrative work in the Information School.',
+            commitment: {
+                start: '2023-06-01',
+                end: null,
+                hours: 1,
+                priority: 0,
+            },
+        },
+        {
+            title: 'Director',
+            committee: 'Bookish',
+            level: 'open source',
+            description:
+                'I am the lead maintainer of this online book publishing platform. It is the key infrastructure for my textbooks, and for other authors globally looking for free platforms for sharing knowledge in book form.',
+            commitment: {
+                start: '2023-06-01',
                 end: null,
                 hours: 1,
                 priority: 0,
