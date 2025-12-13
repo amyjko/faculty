@@ -10,6 +10,7 @@
     import Table from '$lib/components/Table.svelte';
     import Title from '$lib/components/Title.svelte';
     import Annotation from '$lib/components/Highlight.svelte';
+    import Emoji from '$lib/components/Emoji.svelte';
 
     let refereed = $profile.getPublications(
         (pub) =>
@@ -18,6 +19,7 @@
         (pub) => -pub.year,
     );
 
+    /** Modify this on/off switch to show annotations. */
     let annotations = $state({ on: false, year: 2025 });
     setContext('annotations', annotations);
 </script>
@@ -26,8 +28,8 @@
     <Image url={'/images/headshots/ajko.jpg'} alt="Headshot of Amy J. Ko" />
 
     <Annotation year={2025}
-        >Hello Professors! Thanks for skimming. Look for these highlights for
-        context this year's updates.</Annotation
+        >Hello Professors! If you want a quick way to scan, search for this
+        check mark ✓.</Annotation
     >
 
     <Title text="Curriculum Vita" />
@@ -582,6 +584,7 @@
     .cv {
         font-size: 12pt;
         line-height: 1.5;
+        padding: 1em;
     }
 
     h1,

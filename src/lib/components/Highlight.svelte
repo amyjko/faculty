@@ -1,5 +1,6 @@
 <script lang="ts">
     import { getContext, type Snippet } from 'svelte';
+    import Emoji from './Emoji.svelte';
 
     interface Props {
         year: number;
@@ -12,12 +13,15 @@
 </script>
 
 {#if annotations.on && annotations.year === year}
-    <div class="annotation">{@render children()}</div>
+    <div class="annotation"><span>✓</span><span>{@render children()}</span></div
+    >
 {/if}
 
 <style>
     .annotation {
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        gap: var(--padding);
         margin-block-start: calc(2 * var(--padding));
         margin-inline-start: calc(2 * var(--padding));
         margin-block-end: var(--padding);
