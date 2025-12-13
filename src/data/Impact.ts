@@ -76,7 +76,7 @@ export const Impacts: Impact[] = [
         who: 'public',
         annotation: {
             year: 2025,
-            text: 'I was invited to speak with the State Superintended about AI in schools.',
+            text: 'I was invited to speak with the state Superintendent of Public Instruction about AI in schools.',
         },
     },
     {

@@ -574,7 +574,7 @@ export const Publications: Paper[] = [
             'A book for secondary educators who want to teach CS from critical lens, examining it from technical, sociotechnical, and sociopoitical stance.',
         annotation: {
             year: 2025,
-            text: 'This year, this book exceeded 12,000 teachers globally, and was translated into Portuguese and Spanish, with my coordination.',
+            text: 'This year, this book exceeded 12,000 readers globally, and was translated into Portuguese and Spanish, with my coordination.',
         },
     },
     {
