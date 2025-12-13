@@ -183,7 +183,7 @@
     <Annotation year={2025}>
         It was a productive year of collaborations, advising, and teacher
         partnerships, translating into <strong
-            >9 peer-reviewed publications</strong
+            >8 peer-reviewed publications</strong
         > that advance knowledge about justice-centered aspects of assessment, pedagogy,
         creativity, curriculum design, and programming languages.
     </Annotation>
