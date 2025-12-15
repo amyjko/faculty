@@ -8,6 +8,7 @@
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
     import Emoji from '$lib/components/Emoji.svelte';
+    import Alert from '$lib/components/Alert.svelte';
 
     onMount(() => {
         scrollToHash();

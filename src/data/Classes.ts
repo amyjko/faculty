@@ -4,7 +4,7 @@ const Classes: Class[] = [
     {
         id: 'info494',
         alt: 'A photograph of a group of students working on laptops',
-        link: 'https://canvas.uw.edu/courses/1786872',
+        link: 'https://canvas.uw.edu/courses/1863114',
         links: [],
         number: 'INFO 494',
         level: 'undergraduate',
