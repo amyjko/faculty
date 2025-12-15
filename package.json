@@ -2,7 +2,7 @@
     "name": "uw-faculty-page",
     "version": "1.1",
     "engines": {
-        "node": "22"
+        "node": "20"
     },
     "description": "The webpage for University of Washington Professor Amy J. Ko.",
     "license": "MIT License",

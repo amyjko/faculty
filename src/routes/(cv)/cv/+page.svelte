@@ -319,10 +319,10 @@
                 header={`${course.number} ${course.title}`}
                 two={course.level}
                 three={course.description}
-                four={'Taught ' +
-                    course.offerings.filter((offer) => offer.score !== null)
-                        .length +
-                    ' times'}
+                four={`Taught ${course.offerings.length} times, with student evaluations of ${course.offerings
+                    .map((o) => o.score)
+                    .filter((s) => s !== null)
+                    .join(', ')} out of 5.`}
                 annotation={course.annotation}
             />
         {/each}
