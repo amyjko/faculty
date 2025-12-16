@@ -82,4 +82,11 @@
             flex-basis: 100%;
         }
     }
+
+    @media print {
+        .chunk {
+            widows: 3;
+            orphans: 3;
+        }
+    }
 </style>

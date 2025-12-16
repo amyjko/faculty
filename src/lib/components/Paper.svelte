@@ -66,7 +66,7 @@
 {#if format === 'apa'}
     <APACitation {paper} />
 {:else if format === 'cv'}
-    <div class="ws-bottom">
+    <div class="paper">
         <strong>{paper.title}</strong> &sdot;
         {#if year}<small>{paper.year} &sdot;</small>{/if}
         <small><Authors {paper} /></small> &sdot;
@@ -89,7 +89,7 @@
         />
     {/snippet}
     <Block link={url} {image}>
-        <div id={paper.id} class="paper ws-bottom">
+        <div id={paper.id} class="paper">
             {#if paper.award && paper.award.length > 0}
                 <mark class="award">&#x2605; {paper.award.join(' + ')}</mark>
                 <br />
@@ -148,7 +148,7 @@
 {/if}
 
 <style>
-    .ws-bottom {
+    .paper {
         padding-bottom: 20px;
     }
 
@@ -158,5 +158,13 @@
         display: inline-block;
         margin-bottom: 3px;
         border-radius: 3px;
+    }
+
+    @media print {
+        .paper {
+            orphans: 2;
+            widows: 2;
+            break-inside: avoid;
+        }
     }
 </style>

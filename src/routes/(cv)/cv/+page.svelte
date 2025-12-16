@@ -584,7 +584,6 @@
     .cv {
         font-size: 12pt;
         line-height: 1.5;
-        padding: 1em;
     }
 
     h1,
@@ -603,5 +602,18 @@
 
     h3 {
         font-size: 12pt;
+    }
+
+    @media screen {
+        .cv {
+            margin: 1em;
+        }
+    }
+
+    @media print {
+        @page {
+            /* Sets a 1-inch margin on all sides of the printed page */
+            margin: 0.75in;
+        }
     }
 </style>
