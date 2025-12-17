@@ -4,6 +4,7 @@
     import { page } from '$app/stores';
     import { scrollToElement } from '../models/utilities';
     import { base } from '$app/paths';
+    import Emoji from './Emoji.svelte';
 
     interface Props {
         id: string;
@@ -31,7 +32,9 @@
 <h2 {id} class={`section ${isLinked() ? 'linked' : ''}`}>
     {@render children?.()}
     <!-- Remove the base from the pathname before Link reappends it. -->
-    <Link to={$page.url.pathname.replace(base, '') + '#' + id}>&#x1F517;</Link>
+    <Link to={$page.url.pathname.replace(base, '') + '#' + id}
+        ><Emoji symbol="🔗"></Emoji></Link
+    >
 </h2>
 
 <style>
