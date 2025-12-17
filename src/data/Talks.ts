@@ -8,7 +8,7 @@ const Talks: Talk[] = [
         slides: null,
         title: 'Love, Learning, and Computing Education',
         venue: '2026 ACM SIGCSE Technical Symposium',
-        url: null,
+        url: 'https://sigcse2026.sigcse.org/track/sigcse-ts-2026-keynotes',
         recording: null,
         practice: null,
         description:
