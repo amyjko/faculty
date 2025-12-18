@@ -18,12 +18,13 @@ import type { Class } from './Class';
 import type { CommitmentDetails } from './CommitmentDetails';
 import type { Panel } from './Panel';
 import type { Discovery } from './Discovery';
+import type { DiscoveryID } from '../../data/Discoveries';
 
 type ProfileSpec = {
     sources: Record<string, Source>;
     pubs: Paper[];
     people: readonly Person[];
-    discoveries: Discovery[];
+    discoveries: Record<DiscoveryID, Discovery>;
     impacts: Impact[];
     degrees: Degree[];
     patents: Patent[];

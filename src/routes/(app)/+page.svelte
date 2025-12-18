@@ -21,11 +21,12 @@
     I work with outstanding <Link to={'/lab'}
         >postdocs, doctoral students, undergraduates, teachers</Link
     > and <Link to={'/communities'}>communities</Link> on this vision. My current
-    projects within this goal are largely shaped by the faculty, students, and teachers
-    in the <Link to="https://computinged.uw.edu"
+    projects within this goal are shaped by the faculty, students, and teachers in
+    the <Link to="https://computinged.uw.edu"
         >Center for Learning, Computing, and Imagination</Link
-    >, our partner teachers, school leaders, and families, and to a lesser
-    extent, my <Link to="/funding">active grants</Link>.
+    >, our partner teachers, school leaders, and families, and generous external <Link
+        to="/funding">funding</Link
+    >.
 </p>
 
 <p>
@@ -35,17 +36,17 @@
     <External
         to="https://www.google.com/books/edition/Human_Computer_Interaction_Handbook/dVrRBQAAQBAJ?hl=en&gbpv=0"
         >Human-Computer Interaction</External
-    > and I work to broaden scholarly discourse as Editor-in-Chief of <Link
+    >. I also work to broaden research discourse as Editor-in-Chief of <Link
         to="https://dl.acm.org/journal/toce">ACM TOCE</Link
-    > and facilitating <Link to="https://reciprocal.reviews/"
+    > and sustain peer review with <Link to="https://reciprocal.reviews/"
         >Reciprocal Reviews</Link
-    >. More importantly, we share our discoveries broadly by <Link
-        to={'/essays'}>blogging</Link
-    >, <Link to={'/talks'}>presenting</Link>,
+    >. We share our discoveries by <Link to={'/essays'}>blogging</Link>, <Link
+        to={'/talks'}>presenting</Link
+    >,
     <Link to={'/classes'}>teaching</Link>, <Link to={'/books'}>writing</Link>,
     and and connecting with community, including the <Link
         to="https://csforallwa.org">CS for All Washington</Link
-    > advocacy community, the <Link to="https://www.pnwcsteach.org/"
+    > advocacy community and the <Link to="https://www.pnwcsteach.org/"
         >PNW CS Teach</Link
     > consortium of teacher educators.
 </p>
@@ -68,7 +69,8 @@
 <!-- Create a list of discoveries from bundles of papers, sorted by the most recent publication on the discovery. -->
 {#each $profile.getDiscoveries(undefined, (a) => -$profile.getDiscoveryRange(a)[1]) as discovery}
     {@const range = $profile.getDiscoveryRange(discovery)}
-    {@const keyPaper = $profile.getPublication(discovery.pubs[0])}
+    {@const papers = $profile.getDiscoveryPapers(discovery)}
+    {@const keyPaper = papers[0]}
     {#if keyPaper}
         <Block>
             {#snippet image()}
@@ -85,7 +87,7 @@
             >
             <br />{discovery.detail}
             <p>
-                {#each $profile.getPeopleFromPubs(discovery.pubs) as person}
+                {#each $profile.getPeopleFromPubs(papers.map((p) => p.id)) as person}
                     {#if person}
                         <Link
                             to={person.id === 'ajko'
@@ -117,14 +119,6 @@
                         <External to={discovery.demo}>demo</External>{/if}
                     {#if discovery.code}&nbsp;<code>{'{}'}</code>&nbsp;<External
                             to={discovery.code}>code</External
-                        >{/if}
-                    {#if discovery.tags.length > 0}&nbsp;<span class="emoji"
-                            >📄</span
-                        ><Link
-                            to={`/publications?${discovery.tags[0].replaceAll(
-                                ' ',
-                                '%20',
-                            )}`}>papers</Link
                         >{/if}
                 </small>
             </p>

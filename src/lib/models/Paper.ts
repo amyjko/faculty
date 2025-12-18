@@ -1,3 +1,4 @@
+import type { DiscoveryID } from '../../data/Discoveries';
 import type Annotation from './Annotation';
 
 type Paper = {
@@ -22,6 +23,7 @@ type Paper = {
     year: number;
     title: string;
     source: string;
+    discoveries: null | [DiscoveryID, ...DiscoveryID[]];
     volume?: number;
     issue?: number;
     article?: number;

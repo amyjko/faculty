@@ -15,6 +15,7 @@ export const Publications: Paper[] = [
         contribution:
             'Demonstrates the feasibility of combining LLM and psychometric analyses to model programming behavior.',
         annotation: { year: 2025, text: 'Jayne led this with my guidance.' },
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'llmpsych',
@@ -38,6 +39,7 @@ export const Publications: Paper[] = [
         contribution:
             'Demonstrates the feasibility of combining LLM and psychometric analyses to model programming behavior.',
         annotation: { year: 2025, text: 'Mo led this and I consulted.' },
+        discoveries: ['AssessmentUnfair'],
     },
     {
         id: 'dreamingjoy',
@@ -56,6 +58,7 @@ export const Publications: Paper[] = [
             year: 2025,
             text: 'Jayne and I envisioned this project together.',
         },
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'formativecodingassessment',
@@ -81,6 +84,7 @@ export const Publications: Paper[] = [
             year: 2025,
             text: 'Chen led this with my consultation.',
         },
+        discoveries: ['AssessmentUnfair'],
     },
     {
         id: 'justicecurriculum',
@@ -99,6 +103,7 @@ export const Publications: Paper[] = [
             year: 2025,
             text: 'Megumi envisioned this paper and I provided sustained consultation.',
         },
+        discoveries: ['JusticeHard'],
     },
     {
         id: 'scratchcopilot',
@@ -117,6 +122,7 @@ export const Publications: Paper[] = [
             year: 2025,
             text: "This was the culiminating work in Stef's dissertation, which I collaborated on with her.",
         },
+        discoveries: ['FamiliesHelp', 'ProbabilityIsHard'],
     },
     {
         id: 'psychometricassessment',
@@ -142,6 +148,7 @@ export const Publications: Paper[] = [
             year: 2025,
             text: 'Chen led this and I consulted.',
         },
+        discoveries: ['AssessmentUnfair'],
     },
     {
         id: 'wordplay',
@@ -161,6 +168,7 @@ export const Publications: Paper[] = [
             year: 2025,
             text: 'This was the culmination of my sabbatical work, which I led.',
         },
+        discoveries: ['EditorsCanBeCool', 'JusticeHard', 'LanguagesCanBeJust'],
     },
     {
         id: 'tseretro',
@@ -175,6 +183,7 @@ export const Publications: Paper[] = [
         local: 'Ko2025SeekRetrospective.pdf',
         contribution:
             'Looks back on a study I led 20 years ago on developer productivity in IDEs.',
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'criticalpedagogy',
@@ -189,6 +198,7 @@ export const Publications: Paper[] = [
         local: 'Salac2024CriticalPedagogy.pdf',
         contribution:
             "Finds tensions between participants' computing attitudes, knowledge, self-efficacy, and social consciousness, suggesting pathways for scaffolding the critical examination of technology in secondary education",
+        discoveries: ['CulturesShapesLearning', 'JusticeHard'],
     },
     {
         id: 'process1',
@@ -212,6 +222,7 @@ export const Publications: Paper[] = [
         local: 'Guo2024ProgrammingSkillOnline.pdf',
         contribution:
             "Examines fairness concerns and tradeoffs in scoring students' solutions to programming problems.",
+        discoveries: ['AssessmentUnfair'],
     },
     {
         id: 'neurotypes',
@@ -226,6 +237,7 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             "Finds that computing learning spaces legitimize hyper-focus, deep 'special' interests, and high organization, and that fitting these expectations was frequently required for persistence.",
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'recruitinginformal',
@@ -240,6 +252,7 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             'Discovers 18 different recruting practices, most with low levels of cultural compentence, resulting in inequities in participation.',
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'assessmentpolicy',
@@ -254,6 +267,7 @@ export const Publications: Paper[] = [
         local: 'Sherif2024AssessmentPolicies.pdf',
         contribution:
             "Reveals ten distinct ways policy and students' lives interacted to create or heighten inequities, which significantly shaped marginalized students' lives.",
+        discoveries: ['AssessmentUnfair'],
     },
     {
         id: 'teenethics2',
@@ -269,6 +283,7 @@ export const Publications: Paper[] = [
         contribution:
             'Students expressed their ethical sensemaking by considering multiple perspectives, questioning the status quo, wrestling with dissonance between their principles and actions, and rejecting the good/bad binary.',
         award: ['honorable mention'],
+        discoveries: ['JusticeHard'],
     },
     {
         id: 'tac',
@@ -287,6 +302,7 @@ export const Publications: Paper[] = [
             year: 2025,
             text: 'Alannah has continued to evolve this book with Richard and I as co-editors this year. It is now read by more than 10,000 CS faculty, with new chapters coming. It has been a key resource for transforming CS teaching about accessibility.',
         },
+        discoveries: ['TeachingInclusionHard'],
     },
     {
         id: 'teenethics',
@@ -301,6 +317,7 @@ export const Publications: Paper[] = [
         local: 'Landesman2024YesNoEthics.pdf',
         contribution:
             'Our preliminary analyses identified launchpads for ethical sensemaking, instances where students leveraged their lived experiences, community discussion, and ethical scaffolding to begin reasoning about moral dilemmas, and (2) expressions of ethical sensemaking, signals within students’ reasoning processes that indicated critical sensemaking was taking place',
+        discoveries: ['JusticeHard'],
     },
     {
         id: 'helpseeking',
@@ -315,6 +332,7 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             'Communication style, type of question being asked, cheating policy, competition, and feelings intimidation shape who students ask for help and whether they do at all.',
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'textiles',
@@ -330,6 +348,7 @@ export const Publications: Paper[] = [
         contribution:
             'Students enthusiastically engaged with the programming aspects of the course and sought to make complicated and beautiful work that interwove their diverse cultures and identities.',
         award: ['best paper'],
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'codereplay',
@@ -344,6 +363,7 @@ export const Publications: Paper[] = [
         local: 'Xie2023CodeReplay.pdf',
         contribution:
             'After watching code replays, learners more frequently interpreted problem prompts and planned their solutions, two crucial self-regulation behaviors that novices often overlook.',
+        discoveries: ['ScaffoldsHelpProblemSolving'],
     },
     {
         id: 'taexp',
@@ -358,6 +378,7 @@ export const Publications: Paper[] = [
         local: 'Perlmutter2023TABelonging.pdf',
         contribution:
             'Finds student and TA conceptions and narratives of belonging aligned with the three basic needs for wellness as described in Self-Determination Theory: relatedness, competence, and autonomy.',
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'hiringexp',
@@ -372,6 +393,7 @@ export const Publications: Paper[] = [
         local: 'Armstrong2023AutomatedHiring.pdf',
         contribution:
             "Finds that while manys students deemed automation a 'necessary evil' to combat scale, many struggled with the inequity automated hiring processes perpetuated",
+        discoveries: ['JusticeHard'],
     },
     {
         id: 'fundsfairness',
@@ -387,6 +409,7 @@ export const Publications: Paper[] = [
         contribution:
             "Finds that students use their cultural knowledge and experiences to situate their interpretation of three algorithms and how this can lead to teaching about algorithmic fairness (including challenging the notion of 'average use' in design",
         award: ['best paper'],
+        discoveries: ['JusticeHard'],
     },
     {
         id: 'twinelang',
@@ -401,6 +424,7 @@ export const Publications: Paper[] = [
         local: 'Kivuva2023SpanishLiterature.pdf',
         contribution:
             'Offers promising ideas for how to integrate computing concepts into language learning and language arts classes.',
+        discoveries: ['LanguagesCanBeJust'],
     },
     {
         id: 'childrenfairness',
@@ -415,6 +439,7 @@ export const Publications: Paper[] = [
         local: 'Salac2023ChildrenFairness.pdf',
         contribution:
             'Finds that youth use a tiered human lens and then technological lens to reason through fairness, often invoking identity.',
+        discoveries: ['JusticeHard'],
     },
     {
         id: 'aerarigor',
@@ -429,6 +454,7 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             'Finds widely varying and inconsistent definitions of rigor amongst CS educators and students across primary, secondary, and post-secondary settings.',
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'implementation',
@@ -444,6 +470,7 @@ export const Publications: Paper[] = [
         contribution:
             'Implementation design decisions, rather than being a natural outcome from higher levels of design, require constant monitoring and reconsideration of higher level design choices, such as requirements and architecture.',
         award: ['best paper'],
+        discoveries: ['ProgrammersAreHuman'],
     },
     {
         id: 'automata',
@@ -458,6 +485,7 @@ export const Publications: Paper[] = [
         local: 'KirdaniRyan2023Careers.pdf',
         contribution:
             'Finds that unspoken departmental capitalist norms and values strongly shape not only student career plans, but advising practices, teaching, and student identity.',
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'stepcs',
@@ -472,6 +500,7 @@ export const Publications: Paper[] = [
         local: 'Ko2023STEPCS.pdf',
         contribution:
             'Describes the administrative, fundraising, and pedagogical backstory behind the CS creation of a pre-service program.',
+        discoveries: ['JusticeHard'],
     },
     {
         id: 'cider',
@@ -487,6 +516,7 @@ export const Publications: Paper[] = [
         local: 'Oleson2022CIDER.pdf',
         contribution:
             'Contributes a teaching method for helping students identify design assumptions that exclude.',
+        discoveries: ['TeachingInclusionHard'],
     },
     {
         id: 'teachermotives',
@@ -502,6 +532,7 @@ export const Publications: Paper[] = [
         local: 'Everson2022TeacherMotivation.pdf',
         contribution:
             'Finds that teacher candidates displayed many conceptions of justice that motivated them to teach CS, including repairing past wrongs in education, improving representation, and expanding literacy, but fears of added course preparation and opportunity costs were signficant deterrents.',
+        discoveries: ['TeachingIsHard'],
     },
     {
         id: 'demographics',
@@ -518,6 +549,7 @@ export const Publications: Paper[] = [
         local: 'OlesonXie2022Demographics.pdf',
         contribution:
             'Finds that most computing education research studied adults, did not mention how demographics data was gathered, and used imprecise and sometimes hegemonic aggregate terms about diversity.',
+        discoveries: ['JusticeHard'],
     },
     {
         id: 'tilecode',
@@ -533,6 +565,7 @@ export const Publications: Paper[] = [
         local: 'Druga2022FamilyGameDesign.pdf',
         contribution:
             'Finds that inter-generational collaboration patterns and use of resources are distinct from individual and pair programming.',
+        discoveries: ['FamiliesHelp'],
     },
     {
         id: 'airesources',
@@ -548,6 +581,7 @@ export const Publications: Paper[] = [
         local: 'Druga2022AIResources.pdf',
         contribution:
             'Finds that most AI education resources do not consider teacher needs and do not align with emerging AI literacy standards.',
+        discoveries: ['ResourcesBad'],
     },
     {
         id: 'ccc',
@@ -576,6 +610,7 @@ export const Publications: Paper[] = [
             year: 2025,
             text: 'This year, this book exceeded 12,000 readers globally, and was translated into Portuguese and Spanish, with my coordination.',
         },
+        discoveries: ['JusticeHard', 'TeachingInclusionHard'],
     },
     {
         id: 'studentamp',
@@ -592,6 +627,7 @@ export const Publications: Paper[] = [
         contribution:
             'Developed and evaluated tool that contextualizes student feedback for teaching teams to identify equity issues.',
         award: ['diversity + inclusion award'],
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'strategywriting',
@@ -607,6 +643,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             'Finds that developers can share strategies for programming, but they struggle in choosing a level of detail and understanding the diversity of the potential audience, requiring substantial feedback, but also that developers struggle to give feedback on strategies.',
+        discoveries: ['ScaffoldsHelpProblemSolving'],
     },
     {
         id: 'aifamily',
@@ -622,6 +659,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             "Finds that parents mediate children's learning by taking on different roles, including mentor, student, collaborator, and tinkerer, and that family learning promotes new framings of consumer devices in homes.",
+        discoveries: ['FamiliesHelp', 'ProbabilityIsHard'],
     },
     {
         id: 'coconstructedcriticalcs',
@@ -638,6 +676,7 @@ export const Publications: Paper[] = [
         contribution:
             'Finds that before there is space for critical consciousness about CS, teachers have to navigate issues of trust, positionality, and inequitable systems of education.',
         award: ['best paper'],
+        discoveries: ['JusticeHard'],
     },
     {
         id: 'houseofcomputing',
@@ -653,6 +692,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             'Teaching computer systems through the lens of sociopolitical and historical choices can open space for student reexamination of technical knowledge and values.',
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'howtoo',
@@ -674,6 +714,7 @@ export const Publications: Paper[] = [
         publisher: 'IEEE',
         contribution:
             'Contributes HowToo, a system for encoding strategic programming knowledge as step-by-step procedures for structuring programming tasks. Finds that novice developers found the platform helpful for guiding their work, except when they were rushing toward deadlines.',
+        discoveries: ['ScaffoldsHelpProblemSolving'],
     },
     {
         id: 'codedif',
@@ -696,6 +737,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             "Finds systemtic test gender and bias in Code.org's assessments, but barriers to interpreting psychometric results.",
+        discoveries: ['AssessmentUnfair'],
     },
     {
         id: 'cognimates',
@@ -711,6 +753,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             'Discovers that children, after building and training small machine learned programs, come to view smart devices as less intelligent, shifting agency from the device to developers.',
+        discoveries: ['ProbabilityIsHard'],
     },
     {
         id: 'falx',
@@ -734,6 +777,7 @@ export const Publications: Paper[] = [
         award: ['best paper'],
         contribution:
             'Contributes a synthesizer-powered visualization tool that allows users to specify examples of how concrete data values should be rendered, and receive one or more data visualizations that transform data accordingly. Finds that users can effectively adopt Falx to create visualizations.',
+        discoveries: ['ProbabilityIsHard', 'GUIsAreMalleable'],
     },
     {
         id: 'robustapi',
@@ -749,6 +793,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             'Contributes a novel theory of robust API knowledge, including knowledge about the domain that an API models, knowledge of the semantics of API functionality, and knowledge of API usage patterns.',
+        discoveries: ['ProgrammersAreHuman', 'DevelopmentNeedsInfo'],
     },
     {
         id: 'gradingfeedback',
@@ -775,6 +820,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             'Finds that feedback addressing the gap between expected and actual outputs is critical to effective learning and that feedback lacking sufficient detail on these gaps leads to gaming behaviors.',
+        discoveries: ['AssessmentUnfair'],
     },
     {
         id: 'csdif',
@@ -790,6 +836,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             'Demonstrates how to conduct a DIF analysis through a case study of a particular large CS1 exam, which revealed some item bias.',
+        discoveries: ['AssessmentUnfair'],
     },
     {
         id: 'infobook',
@@ -805,6 +852,7 @@ export const Publications: Paper[] = [
         publisher: 'Self-published',
         contribution:
             'This book covers information, and all of the things that intersect with it: power, politics, oppression, data, knowledge, encoding, metadata; information technology, management, and policy; and the many domains in which information is crucial, including science, social media, automation, health, democracy, and sustainabiity. It serves as the foundation of our survey course on information, INFO 200 Intellectual Foundations of Informatics.',
+        discoveries: null,
     },
     {
         id: 'csdesignk12',
@@ -820,6 +868,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             'Disentangles the role of design in K-12 CS education, finding that design ideas are pervasive in curricula and standards, but conflict program space and problem space design, masking the distinct challenges of problem space design.',
+        discoveries: ['TeachingInclusionHard'],
     },
     {
         id: 'criticalcsed',
@@ -846,6 +895,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             'Argues that CS educators at all levels have the responsibility of the role of computing in injustice.',
+        discoveries: ['JusticeHard'],
     },
     {
         id: 'mladvocacy',
@@ -862,6 +912,7 @@ export const Publications: Paper[] = [
         blog: 'https://medium.com/@yimregister/how-to-teach-machine-learning-to-empower-learners-to-speak-up-for-themselves-35c505db941b',
         contribution:
             "Finds that teaching machine learning by tracing an algorithm with learners' personal data increases the extent to which they can identify bias in self-advocacy arguments.",
+        discoveries: ['ProbabilityIsHard'],
     },
     {
         id: 'codeitzagency',
@@ -878,6 +929,7 @@ export const Publications: Paper[] = [
         blog: 'https://medium.com/bits-and-behavior/designing-for-agency-in-online-learning-7632e6ac6f04',
         contribution:
             'Finds that affording more agency in learning environments may increase motivation, but may not improve learning because of the increased burden on decision-making.',
+        discoveries: ['AssessmentUnfair'],
     },
     {
         id: 'hcipckchallenge',
@@ -893,6 +945,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             "Discusses the need for research on HCI educator's pedagogical content knowledge.",
+        discoveries: ['TeachingInclusionHard'],
     },
     {
         id: 'hcidifficulties',
@@ -911,6 +964,7 @@ export const Publications: Paper[] = [
         blog: 'https://medium.com/bits-and-behavior/seven-tips-to-improve-hci-education-fa64db5da4f5',
         contribution:
             'Investigates the challenges that computing students face in learning HCI, finding challenges in understanding design as distinct from engineering, understanding design methods, finding resources to support design, interpreting feedback, scoping design problems, choosing between alternatives, and designing for diversity.',
+        discoveries: ['TeachingInclusionHard'],
     },
     {
         id: 'scout',
@@ -934,6 +988,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             'Presents a system to support designers ideation of user interface layouts, allowing designers to provide high-level preferences, obtain a set of layouts that meet those preferences, provide feedback on those preferences, and iteratively converge towards preferred layouts. An evaluation showed that designers who used Scout accelerated ideation and found more diverse designs that designers without it.',
+        discoveries: ['GUIsAreMalleable'],
     },
     {
         id: 'metajournaling',
@@ -951,6 +1006,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             'Presents evidence that self-regulation during programming is highly variable in practice, and that teaching self-regulation skills to improve programming outcomes may require differentiated instruction based on students self-awareness and existing programming practices.',
+        discoveries: ['ScaffoldsHelpProblemSolving'],
     },
     {
         id: 'programmingstrategies',
@@ -967,6 +1023,7 @@ export const Publications: Paper[] = [
         blog: 'https://medium.com/@latoza/solving-problems-strategically-aab8ed572cfb',
         contribution:
             'Presents the concept of explicit programming strategies, the idea of encoding manual procedures for solving programming programmers to accelerate software development problem solving. Presents a notation for encoding strategies and evidence that developers using explicit strategies, independent of expertise, were more successful at the design and debugging tasks.',
+        discoveries: ['ScaffoldsHelpProblemSolving'],
     },
     {
         id: 'greatengineer2',
@@ -982,6 +1039,7 @@ export const Publications: Paper[] = [
         publisher: 'Springer',
         contribution:
             'Via a survey of nearly 2,000 developers, finds that great engineers are distinguished by writing good code, adapting to future business value and costs, being great decision-makers, avoiding making others’ jobs harder, and continuously learning.',
+        discoveries: ['ExpertiseIsSocial'],
     },
     {
         id: 'traceassess',
@@ -997,6 +1055,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             'Contributes theoretical perspectives on how to assess program tracing skills, and how to think about assessment validity.',
+        discoveries: ['AssessmentUnfair'],
     },
     {
         id: 'replication',
@@ -1018,6 +1077,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             'Analyzed the replication rate and trends in computing education, finding that only about 2% of studies were replicated in the field in the last decade.',
+        discoveries: ['ProgrammersAreHuman'],
     },
     {
         id: 'studydesign',
@@ -1033,6 +1093,7 @@ export const Publications: Paper[] = [
         publisher: 'Cambridge Press',
         contribution:
             'Describes a process for designing studies in the domain of computing education research, though the process is more broadly useful for empirical study design in general.',
+        discoveries: ['ProgrammersAreHuman'],
     },
     {
         id: 'cerhandoutside',
@@ -1048,6 +1109,7 @@ export const Publications: Paper[] = [
         publisher: 'Cambridge Press',
         contribution:
             'Surveys the small but growing literature on informal learning of computing and the contexts, technologies, and skills that support it. Identifies a several open questions about how to support informal learning and integrate it with more formal learning.',
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'cerhandbooktools',
@@ -1063,6 +1125,7 @@ export const Publications: Paper[] = [
         publisher: 'Cambridge Press',
         contribution:
             'Surveys the role of tools in learning computing, and the genres of tools that researchers have explored, including IDEs, e-books, automated assessment and feedback, and visualization. Identifies a range of open questions.',
+        discoveries: ['ToolsAreHard', 'DevelopmentNeedsInfo'],
     },
     {
         id: 'cs1theory',
@@ -1090,6 +1153,7 @@ export const Publications: Paper[] = [
         blog: 'https://medium.com/bits-and-behavior/improving-intro-cs-by-explicitly-teaching-programming-skills-20641f920fa9',
         contribution:
             'Proposes a theory that identifies four distinct skills that novices learn incrementally: tracing, writing syntax, comprehending reusable abstractions of programming knowledge (templates). Demonstrates that teaching these skills incrementally can result in improved completion rate on practice exercises and decreased error rate and improved understanding of the post-test.',
+        discoveries: ['ReadingHelps'],
     },
     {
         id: 'boostingproductivity',
@@ -1105,6 +1169,7 @@ export const Publications: Paper[] = [
         publisher: 'Apress',
         contribution:
             'Describes several methods for understanding how to increase developer productivity.',
+        discoveries: ['ProgrammersAreHuman'],
     },
     {
         id: 'fourlenses',
@@ -1120,6 +1185,7 @@ export const Publications: Paper[] = [
         publisher: 'Apress',
         contribution:
             'Discusses several levels of abstraction useful for reasoning about software engineering productivity.',
+        discoveries: ['ProgrammersAreHuman'],
     },
     {
         id: 'noproductivity',
@@ -1135,6 +1201,7 @@ export const Publications: Paper[] = [
         publisher: 'Apress',
         contribution:
             'Presents several arguments for the dangers of measuring software developer productivity.',
+        discoveries: ['ProgrammersAreHuman'],
     },
     {
         id: 'teachingstrategies',
@@ -1160,6 +1227,7 @@ export const Publications: Paper[] = [
         local: 'Ko2019TeachingExplicitStrategies.pdf',
         contribution:
             'Attempts to teach explicit strategies for reuse and debugging, finding that adolescents struggle to follow systematic approaches to problem solving.',
+        discoveries: ['ScaffoldsHelpProblemSolving'],
     },
     {
         id: 'teachaccess2',
@@ -1176,6 +1244,11 @@ export const Publications: Paper[] = [
         local: 'Kawas2019AccessibilityMicroPD.pdf',
         contribution:
             'Describes and evaluates a vision for teaching higher education CS faculty how to integrate accessibility topics into their classes, discovering many personal and organizational barriers to adoption.',
+        discoveries: [
+            'TeachingInclusionHard',
+            'TeachingIsHard',
+            'AccessibilityIsHard',
+        ],
     },
     {
         id: 'irteval',
@@ -1193,6 +1266,7 @@ export const Publications: Paper[] = [
         blog: 'https://medium.com/bits-and-behavior/improving-cs-assessment-with-careful-data-analysis-10e1304de055',
         contribution:
             'Evaluates the SCS1 language independent concept inventory, demonstrating how to use IRT to evaluate assessments, and that the SCS1 has several items that may be too hard to be useful.',
+        discoveries: ['AssessmentUnfair'],
     },
     {
         id: 'higheredteaching',
@@ -1208,6 +1282,7 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             'Supports new higher education teachers, including new faculty, guest faculty, doctoral student teachers, and teaching assistants. It uses our undergraduate Informatics program for examples, but is in essence a practical, but also research-informed introduction to teaching in a university.',
+        discoveries: ['TeachingInclusionHard'],
     },
     {
         id: 'scoutdemo',
@@ -1223,6 +1298,7 @@ export const Publications: Paper[] = [
         local: 'Swearngin2018Scout.pdf',
         contribution:
             'Describes early work on a system to support rapid design exploration of user interface layouts.',
+        discoveries: ['GUIsAreMalleable'],
     },
     {
         id: 'certheory',
@@ -1241,6 +1317,7 @@ export const Publications: Paper[] = [
         award: ['best paper'],
         contribution:
             'Argues that our desire to both advance explanatory theory and advance design splits our attention, which prevents us from excelling at both; that our emphasis on applying and refining general theories of learning is done at the expense of domain-specific theories of computer science knowledge; and our use of theory as a critical lens in peer review prevents the publication of designs that may accelerate design progress.',
+        discoveries: ['ProgrammersAreHuman'],
     },
     {
         id: 'inclusivepck',
@@ -1266,6 +1343,7 @@ export const Publications: Paper[] = [
         local: 'Oleson2018InclusivePCK.pdf',
         contribution:
             'Through interviews and observations, identifies 11 components of pedagogical content knowledge required to teach inclusive design in HCI education, including strategies for anticipating and addressing resistance to the topic of inclusion, strategies for modeling and scaffolding perspective taking, and strategies for tailoring instruction to students’ prior beliefs and biases.',
+        discoveries: ['TeachingInclusionHard'],
     },
     {
         id: 'transfer',
@@ -1283,6 +1361,7 @@ export const Publications: Paper[] = [
         local: 'Kwik2018Transfers.pdf',
         contribution:
             'Finds that while transfer students in one university were more diverse demographically, the support of the university for transfer student orientation mitigated any social effects of transferring, but did not eliminate gaps in academic performance.',
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'rewire',
@@ -1306,6 +1385,7 @@ export const Publications: Paper[] = [
         local: 'Swearngin2018Rewire.pdf',
         contribution:
             'Presents a technique for automatically converting screenshots of imagines into vector representations for use by designers. Demonstrates that designers find the technique accurate enough and superior to replicating user interfaces manually.',
+        discoveries: ['GUIsAreMalleable'],
     },
     {
         id: 'ellblockstudio',
@@ -1334,6 +1414,7 @@ export const Publications: Paper[] = [
         award: ['honorable mention'],
         contribution:
             'Investigates how a programming-by-demonstration programming environment with no English text can facilitate joint-media engagement between children and their parents.',
+        discoveries: ['FamiliesHelp', 'CulturesShapesLearning'],
     },
     {
         id: 'mentors2',
@@ -1351,6 +1432,7 @@ export const Publications: Paper[] = [
         local: 'Ko2018Mentorship.pdf',
         contribution:
             'Investigates the nature of informal computing mentoring relationships amongst students seeking to be the first in their family to attend college. Demonstrates that mentorship occurs even in low-resource settings with little CS expertise, and most often amongst peers and siblings.',
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'tracing',
@@ -1368,6 +1450,7 @@ export const Publications: Paper[] = [
         local: 'Xie2018TracingStrategies.pdf',
         contribution:
             'Describes and evaluates a simple but powerful strategy for scaffolding the tracing of program execution. With less than 30 minutes of practice, novices in a CS1 course had midterm grades 7% higher.',
+        discoveries: ['ScaffoldsHelpProblemSolving'],
     },
     {
         id: 'teachaccess1',
@@ -1385,6 +1468,7 @@ export const Publications: Paper[] = [
         local: 'Shinohara2018AccessComputingSurvey.pdf',
         contribution:
             "Investigates the prevalence of instruction on accessibility among computing and information science faculty. Finds that nearly all HCI faculty teach something about accessibility, that most faculty want to teach it, but don't have the experience, and don't know how it fits into their course content.",
+        discoveries: ['TeachingInclusionHard', 'AccessibilityIsHard'],
     },
     {
         id: 'msrkeynote',
@@ -1400,6 +1484,7 @@ export const Publications: Paper[] = [
         local: 'Ko2018MiningMind.pdf',
         contribution:
             'Argues that program comprehension and mining software repositories research are mutually relevant in surprising ways.',
+        discoveries: ['DefectsCanBeMined'],
     },
     {
         id: 'pstutor1',
@@ -1415,6 +1500,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             'Briefly overviews a vision for programming process worked examples that demonstrate an expert working through a programming problem.',
+        discoveries: ['ScaffoldsHelpProblemSolving'],
     },
     {
         id: 'gidgetabandoment',
@@ -1431,6 +1517,7 @@ export const Publications: Paper[] = [
         local: 'Yan2017GidgetAbandonment.pdf',
         contribution:
             'Investigates the feasibility of predicting when a learner will abandon a coding tutorial, finding that account activation and help-seeking behavior predict continued learning, while tutorial features indicating struggle predicted abandonment.',
+        discoveries: ['AssessmentUnfair'],
     },
     {
         id: 'pltutor1',
@@ -1448,6 +1535,7 @@ export const Publications: Paper[] = [
         local: 'Nelson2017PLTutor.pdf',
         contribution:
             'Contributes a new theory of what it means to know a programming language, a novel pedagogy and computer-based tutorial for teaching this knowledge, and evidence that 1) the tutorial promotes significantly higher learning gains over conventional programming language tutorials, and 2) that these gains predict the majority of the variance in CS1 midterm grades.',
+        discoveries: ['ReadingHelps'],
     },
     {
         id: 'bootcamps',
@@ -1466,6 +1554,7 @@ export const Publications: Paper[] = [
         blog: 'https://medium.com/bits-and-behavior/what-i-learned-from-researching-coding-bootcamps-f594c15bd9e0',
         contribution:
             'Finds that bootcamps can be an alternate path into the software industry for people who missed earlier computing education opportunities, particularly for women, but students face great personal costs and risks, including significant time, money, and effort before, during, and after bootcamps.',
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'mentors1',
@@ -1483,6 +1572,7 @@ export const Publications: Paper[] = [
         local: 'Ko2017Mentorship.pdf',
         contribution:
             'Finds that interest in computing was strongly related to having a mentoring relationship and not to gender or socioeconomic status, that teens with mentors also engaged in significantly more computing education and had more diverse beliefs about peers who engaged in computing education, and that teens who took a class from an instructor who aimed to become students’ teacher-mentor had significantly greater positive changes in interest in computing than those who already had a mentor.',
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'nonengineers',
@@ -1499,6 +1589,7 @@ export const Publications: Paper[] = [
         blog: 'https://medium.com/bits-and-behavior/what-makes-software-developers-great-cross-disciplinary-collaborators-590f94f2f722',
         contribution:
             'Finds that non-software developers who collaborate with software developers described great software engineers as masters of their own technical domain, open-minded to the input of others, proactively informing everyone, and seeing the big picture of how pieces fit together.',
+        discoveries: ['ExpertiseIsSocial'],
     },
     {
         id: 'genie',
@@ -1516,6 +1607,7 @@ export const Publications: Paper[] = [
         blog: 'https://medium.com/bits-and-behavior/genie-input-retargeting-on-the-web-through-command-reverse-engineering-f9c7a294b23f',
         contribution:
             'Presents Genie, a system to reverse engineer and retarget interactive commands on a website, which allows users to engage with the web via arbitrary input modalities, including speech, keyboard, and command-line input.',
+        discoveries: ['GUIsAreMalleable'],
     },
     {
         id: 'answerdash',
@@ -1532,6 +1624,7 @@ export const Publications: Paper[] = [
         blog: 'https://medium.com/bits-and-behavior/nine-factors-that-shape-software-evolution-78112ee79b3c',
         contribution:
             'Describes an analysis my personal diary reflecting on 9,000 hours of software startup work, presenting nine claims about software engineering work.',
+        discoveries: ['ProgrammersAreHuman', 'ExpertiseIsSocial'],
     },
     {
         id: 'ideagardenjvlc',
@@ -1560,6 +1653,7 @@ export const Publications: Paper[] = [
         local: 'Jernigan2017IdeaGarden.pdf',
         contribution:
             "Describes the general architecture for the Idea Garden paradigm and a series of studies that suggest it's effectiveness at unblocking learners' problem solving.",
+        discoveries: ['ScaffoldsHelpProblemSolving'],
     },
     {
         id: 'tutorialeval',
@@ -1577,6 +1671,7 @@ export const Publications: Paper[] = [
         blog: 'https://medium.com/bits-and-behavior/coding-tutorials-the-good-the-bad-and-the-ugly-b45afc8821f6',
         contribution:
             'Using a set of pedagogical principles, evaluates the current state of tutorial instruction, finding that only a few tutorials follow best practices.',
+        discoveries: ['AssessmentUnfair', 'ResourcesBad'],
     },
     {
         id: 'uist',
@@ -1592,6 +1687,7 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             'An online, self-published book that surveys the past, present, and future of user interfaces from theoretical, practical, and ethical perspectives.',
+        discoveries: ['GUIsAreMalleable'],
     },
     {
         id: 'plreally',
@@ -1608,6 +1704,7 @@ export const Publications: Paper[] = [
         local: 'Ko2016WhatAreProgrammingLanguages.pdf',
         contribution:
             'Reflects on the implications of various definitions of programming languages on research and practice.',
+        discoveries: ['LanguagesCanBeJust'],
     },
     {
         id: 'accesscomputingteachaccess',
@@ -1624,6 +1721,7 @@ export const Publications: Paper[] = [
         local: 'Ko2016TeachingAccessibility.pdf',
         contribution:
             'Discusses AccessComputing efforts to implement and disseminate curriculum on accessibility into academia and industry.',
+        discoveries: ['AccessibilityIsHard'],
     },
     {
         id: 'csproblemsolving2',
@@ -1641,6 +1739,7 @@ export const Publications: Paper[] = [
         local: 'Loksa2016SelfRegulation.pdf',
         contribution:
             'Finds that while most novices engage in self-regulation to navigate and inform their problem solving efforts, these self-regulation efforts are only effective when accompanied by programming knowledge adequate to succeed at solving a given problem.',
+        discoveries: ['ScaffoldsHelpProblemSolving'],
     },
     {
         id: 'monitoring',
@@ -1656,6 +1755,7 @@ export const Publications: Paper[] = [
         doi: 'http://www.amazon.com/Perspectives-Data-Science-Software-Engineering/dp/0128042060/ref=sr_1_3?s=books&ie=UTF8&qid=1455825322&sr=1-3',
         contribution:
             'Discusses the importance of monitoring, bug reporting, and user feedback in verifying requirements.',
+        discoveries: ['DefectsCanBeMined'],
     },
     {
         id: 'studyingprogramming',
@@ -1671,6 +1771,7 @@ export const Publications: Paper[] = [
         local: 'Myers2016ProgrammersAreUsers.pdf',
         contribution:
             'Argues that HCI methods are directly applicable to designing and developing software development tools, and provides an overview of several methods that have been used in research to invent and evaluate new developer tools.',
+        discoveries: ['ProgrammersAreHuman'],
     },
     {
         id: 'csproblemsolving1',
@@ -1695,6 +1796,7 @@ export const Publications: Paper[] = [
         local: 'Loksa2016ProgrammingProblemSolving.pdf',
         contribution:
             'Teaching novice programmers the structure of programming problem solving activities and to be aware of which activity they are conducting and whether they are succeeding has a substantial impact on their productivity, self-efficacy, independence, and growth mindset.',
+        discoveries: ['ScaffoldsHelpProblemSolving'],
     },
     {
         id: 'ccccer',
@@ -1717,6 +1819,7 @@ export const Publications: Paper[] = [
         local: 'Cooper2016ImportanceofCSEd.pdf',
         contribution:
             'Argues for the foundational role of computing education research in computer science departments.',
+        discoveries: null,
     },
     {
         id: 'cooperativesoft',
@@ -1732,6 +1835,7 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             'An online, self-published book that covers software engineering fundamentals, but from a human, social, collaborative, and organizational perspective, rather than from a purely technical perspective.',
+        discoveries: ['ProgrammersAreHuman', 'ExpertiseIsSocial'],
     },
     {
         id: 'scry',
@@ -1748,6 +1852,7 @@ export const Publications: Paper[] = [
         local: 'Burg2015ExplainingWebChanges.pdf',
         contribution:
             'An algorithm and interface that allows web developers to select a before and after state of a web site to see the code that caused the changes.',
+        discoveries: ['GUIsAreMalleable'],
     },
     {
         id: 'gidget6',
@@ -1775,6 +1880,7 @@ export const Publications: Paper[] = [
         local: 'Jernigan2015PrincipledEvaluationIdeaGarden.pdf',
         contribution:
             'In-context help on programming problem solving helps learners with diverse learning strategies work more independently.',
+        discoveries: ['ScaffoldsHelpProblemSolving'],
     },
     {
         id: 'gidget5',
@@ -1792,6 +1898,7 @@ export const Publications: Paper[] = [
         local: 'Lee2015EvaluatingGidget.pdf',
         contribution:
             'Mastery learning approaches to teaching programming produce better skills in program tracing than task-free open-ended creative environments.',
+        discoveries: ['ReadingHelps'],
     },
     {
         id: 'greatengineer1',
@@ -1809,6 +1916,7 @@ export const Publications: Paper[] = [
         blog: 'https://medium.com/bits-and-behavior/what-makes-a-great-software-engineer-e8cbb25cfac0',
         contribution:
             'Software engineering expertise is much more about personality, interpersonal skills, and decision-making expertise than about technical knowledge and ability.',
+        discoveries: ['ExpertiseIsSocial', 'ProgrammersAreHuman'],
     },
     {
         id: 'lemonaid3',
@@ -1827,6 +1935,7 @@ export const Publications: Paper[] = [
         award: ['best paper'],
         contribution:
             'Research prototypes and evidence of their usability and usefulness are only a tiny part of creating a successful whole product.',
+        discoveries: ['PointingHelps'],
     },
     {
         id: 'designmethods',
@@ -1842,6 +1951,7 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             'An online, self-published book that surveys HCI and Design methods in a simple, accessible, and direct manner.',
+        discoveries: ['TeachingInclusionHard'],
     },
     {
         id: 'gidget4',
@@ -1873,6 +1983,7 @@ export const Publications: Paper[] = [
         contribution:
             'Teaching debugging first, while redirecting blame to the computer instead of the learner, can increase learning efficiency and engage learners of all genders equally.',
         award: ['most influential paper'],
+        discoveries: ['ReadingHelps'],
     },
     {
         id: 'newsproblems',
@@ -1889,6 +2000,7 @@ export const Publications: Paper[] = [
         local: 'Ko2014News.pdf',
         contribution:
             'Software failures reported in the news describe mostly minor consequences, though reports of death, injury, or loss of access to basic needs is increasing.',
+        discoveries: ['DefectsCanBeMined'],
     },
     {
         id: 'adultattitudes',
@@ -1906,6 +2018,7 @@ export const Publications: Paper[] = [
         local: 'Charters2014ChangingAttitudes.pdf',
         contribution:
             'Adult attitudes toward programming, while generally negative, can be quickly turned positive with a brief exposure to a debugging game.',
+        discoveries: ['ReadingHelps'],
     },
     {
         id: 'practicalguide',
@@ -1923,6 +2036,7 @@ export const Publications: Paper[] = [
         issue: 1,
         contribution:
             'Software engineering researchers rarely evaluate new tools with software developers, but there are several best practices that can make such evaluations less risky and difficult to conduct.',
+        discoveries: ['ProgrammersAreHuman'],
     },
     {
         id: 'timelapse',
@@ -1940,6 +2054,7 @@ export const Publications: Paper[] = [
         award: ['honorable mention'],
         contribution:
             'A system for recording inputs to a web application and replaying them deterministically with minimal time or space overhead.',
+        discoveries: ['ToolsAreHard', 'CanAskProgramsQuestions'],
     },
     {
         id: 'gidget3',
@@ -1958,6 +2073,7 @@ export const Publications: Paper[] = [
         award: ['best paper'],
         contribution:
             'Including brief assessments in a programming game improves engagement and learning efficiency.',
+        discoveries: ['ReadingHelps'],
     },
     {
         id: 'lemonaid2',
@@ -1975,6 +2091,7 @@ export const Publications: Paper[] = [
         local: 'Chilana2013LemonAidFieldStudy.pdf',
         contribution:
             'Contextual help is well-liked by both end-users and software teams in real world use.',
+        discoveries: ['PointingHelps'],
     },
     {
         id: 'lemonaidworkshop',
@@ -1989,6 +2106,7 @@ export const Publications: Paper[] = [
         pages: '',
         doi: null,
         contribution: 'Summarizes preliminary work on the LemonAid prototype.',
+        discoveries: ['PointingHelps'],
     },
     {
         id: 'lemonaid1',
@@ -2006,6 +2124,7 @@ export const Publications: Paper[] = [
         local: 'Chilana2012LemonAid.pdf',
         contribution:
             'A technique for extracting queries from selections of user interface elements that provides reliable, relevant help retrieval.',
+        discoveries: ['PointingHelps'],
     },
     {
         id: 'reflect',
@@ -2029,6 +2148,7 @@ export const Publications: Paper[] = [
         local: 'Kriplean2012Reflect.pdf',
         contribution:
             'A technique for demonstrating listening on the web through restatement that engages lurkers in supporting common ground in groups.',
+        discoveries: null,
     },
     {
         id: 'frictionary',
@@ -2045,6 +2165,7 @@ export const Publications: Paper[] = [
         local: 'Ko2012Frictionary.pdf',
         contribution:
             'A technique for extracting aggregate patterns in software problems by analyzing the natural language text of technical support discussion forums.',
+        discoveries: ['DefectsCanBeMined'],
     },
     {
         id: 'facebookcasestudy',
@@ -2066,11 +2187,12 @@ export const Publications: Paper[] = [
         local: 'Chilana2012Facebook.pdf',
         contribution:
             'Efforts to make a universal product can limit innovation, both because of the diversity of user knowledge and the limits of interpreting data science patterns.',
+        discoveries: ['DefectsCanBeMined', 'DomainMatters'],
     },
     {
         id: 'gidget1',
         kind: 'refereed conference paper',
-        authors: ['Michael J. Lee', '@ajko'],
+        authors: ['@mjslee', '@ajko'],
         deadname: false,
         year: 2011,
         title: "Personifying Programming Tool Feedback Improves Novice Programmers' Learning",
@@ -2083,6 +2205,7 @@ export const Publications: Paper[] = [
         local: 'Lee2011Gidget.pdf',
         contribution:
             'Giving a computer eyes and having it use personal pronouns that double the amount of time that learners engaging in discretionary computing education by focusing their attention on instructional material.',
+        discoveries: ['ErrorsMatter', 'ReadingHelps', 'LanguagesCanBeJust'],
     },
     {
         id: 'feedlack',
@@ -2100,6 +2223,7 @@ export const Publications: Paper[] = [
         local: 'Ko2011FeedLack.pdf',
         contribution:
             'A static program analysis for finding all inputs in a user interface that do not produce some form of feedback.',
+        discoveries: ['DefectsCanBeMined'],
     },
     {
         id: 'beta',
@@ -2125,6 +2249,7 @@ export const Publications: Paper[] = [
         local: 'Li2011PrePostDefects.pdf',
         contribution:
             'Beta-testers use more applications, engage in more self-install, come from non-representative countries, and use more advanced hardware, skewing data on crashes, hangs, and kernel panics that is used for bug triage.',
+        discoveries: ['DefectsCanBeMined'],
     },
     {
         id: 'openbugs2',
@@ -2142,6 +2267,7 @@ export const Publications: Paper[] = [
         local: 'Ko2011ContentiousBugReports.pdf',
         contribution:
             'Developers in open source can be passionate about making decisions that positively impact users, but often lack the information necessary to do this objectively, instead relying on anecdote, speculation, and hyperbole.',
+        discoveries: ['DefectsCanBeMined'],
     },
     {
         id: 'gestalt',
@@ -2166,6 +2292,7 @@ export const Publications: Paper[] = [
         local: 'Patel2010Gestalt.pdf',
         contribution:
             'A development environment that supports the translation of data into machine learned classifier  that improves the ability of developers to find and fix defects.',
+        discoveries: ['ProbabilityIsHard'],
     },
     {
         id: 'cleanroom',
@@ -2183,6 +2310,7 @@ export const Publications: Paper[] = [
         award: ['best paper'],
         contribution:
             'Detecting and highlighting identifiers that only appear once in dynamic languages helps developers find and fix challenging defects more quickly.',
+        discoveries: ['DefectsCanBeMined'],
     },
     {
         id: 'openbugs1',
@@ -2201,6 +2329,7 @@ export const Publications: Paper[] = [
         award: ['honorable mention'],
         contribution:
             'Most bug reports submitted from non-core open source contributors describe non-issues that devolve into technical support, providing little valuable information to the core community.',
+        discoveries: ['DefectsCanBeMined'],
     },
     {
         id: 'complexdomains',
@@ -2218,6 +2347,7 @@ export const Publications: Paper[] = [
         local: 'Chilana2010ComplexDomains.pdf',
         contribution:
             'Lack of domain expertise can be a significant hurdle for conducting effective user research and usability testing.',
+        discoveries: ['DomainMatters'],
     },
     {
         id: 'codebios',
@@ -2234,6 +2364,7 @@ export const Publications: Paper[] = [
         local: 'Ko2009CodeAutobiographies.pdf',
         contribution:
             'First encounters with code must be accessible, error-tolerant and socially engaging, and must occur repeatedly across a lifetime to lead to deeper investment in computing education.',
+        discoveries: ['CulturesShapesLearning'],
     },
     {
         id: 'whyline3',
@@ -2251,6 +2382,7 @@ export const Publications: Paper[] = [
         local: 'Ko2009JavaWhylineUI.pdf',
         contribution:
             'A user interface for debugging that supports why and why not questions that enables developers to localize faults significantly faster than breakpoint debuggers.',
+        discoveries: ['CanAskProgramsQuestions'],
     },
     {
         id: 'whydebugclassifier2',
@@ -2277,6 +2409,7 @@ export const Publications: Paper[] = [
         local: 'Kulesza2009FixingTheProgram.pdf',
         contribution:
             'Enabling end users to debug machined learned programs by asking why questions about classifications causes end-users to locally optimize one class at the expense of other classes.',
+        discoveries: ['ProbabilityIsHard'],
     },
     {
         id: 'interactivebehaviors',
@@ -2300,6 +2433,7 @@ export const Publications: Paper[] = [
         contribution:
             'Designers report that behavior is much more difficult to define than appearance, that it requires collaborating with developers, and that communicating behavior to developers is of particular difficulty.',
         award: ['most influential paper honorable mention'],
+        discoveries: ['DomainMatters'],
     },
     {
         id: 'whyline2',
@@ -2318,6 +2452,7 @@ export const Publications: Paper[] = [
         award: ['best paper', 'most influential paper'],
         contribution:
             'Static and dynamic program slicing algorithms for extracting and answering developers questions about program output that substantially decrease fault localization time.',
+        discoveries: ['CanAskProgramsQuestions'],
     },
     {
         id: 'informationneeds',
@@ -2334,6 +2469,7 @@ export const Publications: Paper[] = [
         local: 'Ko2007InformationNeeds.pdf',
         contribution:
             'Developers have many distinct information needs to be productive; some are frequent and well-served, such as information about changes to artifacts and coworker progress, but others are infrequent but critical, such as information about requirements, design rationale, and reproduction steps.',
+        discoveries: ['DevelopmentNeedsInfo'],
     },
     {
         id: 'devwhiteboards',
@@ -2351,6 +2487,7 @@ export const Publications: Paper[] = [
         local: 'Cherubini2007DevelopersDrawCode.pdf',
         contribution:
             'Most of the diagrams that software developers make are transient and facilitate interpersonal communication and decision making and not for specifying or documenting program behavior.',
+        discoveries: ['ProgrammersAreHuman'],
     },
     {
         id: 'linguisticbugs',
@@ -2367,6 +2504,7 @@ export const Publications: Paper[] = [
         local: 'Ko2006LinguisticsOfBugReports.pdf',
         contribution:
             'There is regularity in the grammar of bug report titles, suggesting the potential for applying natural language processing to searching, filtering, mining, and aggregating bug reports.',
+        discoveries: ['BugsAreHard'],
     },
     {
         id: 'crystal',
@@ -2389,6 +2527,7 @@ export const Publications: Paper[] = [
         local: 'Myers2006Crystal.pdf',
         contribution:
             "Algorithms and user interfaces that allow end users to ask 'why' questions about unexpected application behavior.",
+        discoveries: ['PointingHelps'],
     },
     {
         id: 'barista',
@@ -2406,6 +2545,7 @@ export const Publications: Paper[] = [
         local: 'Ko2006Barista.pdf',
         contribution:
             'Abstractions that make it easy to build rich multimedia interfaces in a code editor without sacrificing the ability to write code as text.',
+        discoveries: ['EditorsCanBeCool'],
     },
     {
         id: 'citrus',
@@ -2423,6 +2563,7 @@ export const Publications: Paper[] = [
         local: 'Ko2005Citrus.pdf',
         contribution:
             'A programming language and library with language-level support for constraints, restrictions and change notifications on primitive and aggregate data.',
+        discoveries: ['EditorsCanBeCool'],
     },
     {
         id: 'devinterrupt',
@@ -2448,6 +2589,7 @@ export const Publications: Paper[] = [
         award: ['best paper'],
         contribution:
             "Developers' interruptibility can be predicted with high certainty by observing and classifying features of programming activity.",
+        discoveries: ['ProbabilityIsHard'],
     },
     {
         id: 'maintenancetasks',
@@ -2466,6 +2608,7 @@ export const Publications: Paper[] = [
         award: ['best paper'],
         contribution:
             'When developers fix a big or enhance a feature, they find a set of task-relevant code fragments and navigate dependencies between these fragments, but spend up to 35% of their time simply operating navigational controls in IDEs.',
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'barriers',
@@ -2483,6 +2626,7 @@ export const Publications: Paper[] = [
         award: ['most influential paper'],
         contribution:
             'When people write programs, they face at least six distinct problems: 1) identifying a solution, 2) finding abstractions to implement the solution, 3) coordinating these abstractions, 4) properly configuring these abstractions, 5) identifying possible causes of program failures, and 6) getting information about program execution.',
+        discoveries: ['ToolsAreHard', 'BugsAreHard'],
     },
     {
         id: 'whyline1',
@@ -2500,6 +2644,7 @@ export const Publications: Paper[] = [
         local: 'Ko2004Whyline.pdf',
         contribution:
             'Algorithms and user interfaces for extracting and answering why and why not questions about program behavior.',
+        discoveries: ['CanAskProgramsQuestions'],
     },
     {
         id: 'errormodel',
@@ -2517,6 +2662,7 @@ export const Publications: Paper[] = [
         award: ['best paper', 'most influential paper'],
         contribution:
             'Software defects are caused by cognitive breakdowns in specification, implementation and debugging activities and analysis of these breakdowns can be used to identify tools that prevent these breakdowns.',
+        discoveries: ['BugsAreHard'],
     },
     {
         id: 'statscomprehension',
@@ -2533,6 +2679,7 @@ export const Publications: Paper[] = [
         local: 'Ko2003ComprehensionStrategies.pdf',
         contribution:
             'Programming expertise shapes strategy, but domain expertise is a better predictor of bug fixing success than strategy.',
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'visuallytesting',
@@ -2555,6 +2702,7 @@ export const Publications: Paper[] = [
         local: 'Burnett2001TestingVisualRecursion.pdf',
         contribution:
             'Two technique for testing recursive spreadsheets, neither of which can be understood by spreadsheet users.',
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'walkthrough1',
@@ -2571,6 +2719,7 @@ export const Publications: Paper[] = [
         local: 'Green2000UsingCWsForStudies.pdf',
         contribution:
             'An adaptation of the cognitive walkthrough technique that helps identify uncontrolled source of variations in experiments on developers tools.',
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'whydebugclassifier1',
@@ -2598,6 +2747,7 @@ export const Publications: Paper[] = [
         article: 2,
         contribution:
             'A technique that allows end-users to debug the underlying logic of machine learned classifiers.',
+        discoveries: ['ProbabilityIsHard'],
     },
     {
         id: 'eusessurvey',
@@ -2632,6 +2782,7 @@ export const Publications: Paper[] = [
         article: 21,
         contribution:
             'Defines end-user programming and end-user software engineering, then presents the extensive history of efforts to integrate software engineering activities into programming environments.',
+        discoveries: ['ToolsAreHard', 'BugsAreHard'],
     },
     {
         id: 'whyline4',
@@ -2651,6 +2802,7 @@ export const Publications: Paper[] = [
         article: 4,
         contribution:
             'An application of static and dynamic program slicing, precise call graphs, reachability analyses, and value provenance that enables developers to localize faults through why and why not questions.',
+        discoveries: ['CanAskProgramsQuestions'],
     },
     {
         id: 'seekrelatecollect',
@@ -2674,6 +2826,7 @@ export const Publications: Paper[] = [
         contribution:
             'Developers work on software maintenance tasks by searching for relevant code, navigating dependencies, and constructing a mental model of the dependencies of a feature, suggesting the need for environments that explicitly support feature location through dependency navigation.',
         award: ['most influential paper'],
+        discoveries: ['DevelopmentNeedsInfo', 'ToolsAreHard'],
     },
     {
         id: 'errorframework',
@@ -2691,6 +2844,7 @@ export const Publications: Paper[] = [
         issue: 1,
         contribution:
             'Software defects arise from latent errors in specifications, developer knowledge, tool support, and program implementation, ultimately producing runtime failures.',
+        discoveries: ['BrainsMakeDefects'],
     },
     {
         id: 'walkthrough2',
@@ -2713,6 +2867,7 @@ export const Publications: Paper[] = [
         volume: 13,
         contribution:
             'An adaption of the cognitive walkthrough for finding potential difficulties of novice users in an evaluation of a developer tool.',
+        discoveries: ['BrainsMakeDefects'],
     },
     {
         id: 'feasibility',
@@ -2729,6 +2884,7 @@ export const Publications: Paper[] = [
         local: 'Ko2011FeasibilityAssessments.pdf',
         contribution:
             'Test the feasibility of a feature in an API requires architectural and terminology knowledge of the API, which is often missing from documentation.',
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'postusability',
@@ -2752,6 +2908,7 @@ export const Publications: Paper[] = [
         local: 'Chilana2011PostDeploymentUsability.pdf',
         contribution:
             'Technical support and design are rarely linked in software companies despite significant opportunities for user research, usability feedback, and feature ideas.',
+        discoveries: ['DomainMatters'],
     },
     {
         id: 'openbugs3',
@@ -2768,6 +2925,7 @@ export const Publications: Paper[] = [
         local: 'Chilana2010ExpectationViolation.pdf',
         contribution:
             'The more a bug reporter expresses the issue in terms of a violation of community expectations of program behavior rather than individual expectations, the more likely it is to be fixed.',
+        discoveries: ['BugsAreHard'],
     },
     {
         id: 'futureofprogramming',
@@ -2783,6 +2941,7 @@ export const Publications: Paper[] = [
         local: 'Myers2009FutureOfProgrammingInHCI.pdf',
         contribution:
             'Summarizes past work on programming interfaces and open challenges in supporting the broader set of programming activities.',
+        discoveries: ['ProgrammersAreHuman'],
     },
     {
         id: 'infowork',
@@ -2798,6 +2957,7 @@ export const Publications: Paper[] = [
         local: 'Scaffidi2006InformationWorkers.pdf',
         contribution:
             'End user programmers use of programming is typically limited to one of three language features: macros for automation, linked structure queries, or imperative features.',
+        discoveries: ['ProgrammersAreHuman'],
     },
     {
         id: 'icsedc',
@@ -2814,6 +2974,7 @@ export const Publications: Paper[] = [
         local: 'Ko2006DoctoralConsortium.pdf',
         contribution:
             'A doctoral consortium abstract, summarizing progress on the Whyline for Java.',
+        discoveries: ['CanAskProgramsQuestions'],
     },
     {
         id: 'eupoverview',
@@ -2830,6 +2991,7 @@ export const Publications: Paper[] = [
         local: 'Myers2006ResearchOverview.pdf',
         contribution:
             'A brief summary of the research area of end-user programming.',
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'slate',
@@ -2845,6 +3007,7 @@ export const Publications: Paper[] = [
         local: 'Coblenz2005Slate.pdf',
         contribution:
             'A language feature for specifying the unit of analysis for values in a spreadsheet, allowing the language to identify type errors as unit of analysis mismatch.',
+        discoveries: ['DefectsCanBeMined'],
     },
     {
         id: 'textediting',
@@ -2861,6 +3024,7 @@ export const Publications: Paper[] = [
         local: 'Ko2005TextEditing.pdf',
         contribution:
             'When writing code in a text editor, developers regularly pass through invalid syntactic states, making strict structured editors infeasible.',
+        discoveries: ['EditorsCanBeCool'],
     },
     {
         id: 'vldcabstract2',
@@ -2876,6 +3040,7 @@ export const Publications: Paper[] = [
         local: 'Ko2004FlexibleAndSupportive.pdf',
         contribution:
             'Finds that structured editors need some room for passing between unstructured phases to flexibly support editing.',
+        discoveries: ['EditorsCanBeCool'],
     },
     {
         id: 'vldcabstract',
@@ -2891,6 +3056,7 @@ export const Publications: Paper[] = [
         local: 'Ko2003NonProgrammerMotivation.pdf',
         contribution:
             "Summarizes Amy's early thoughts on her dissertation work.",
+        discoveries: ['BrainsMakeDefects'],
     },
     {
         id: 'aliceinquiry',
@@ -2907,6 +3073,7 @@ export const Publications: Paper[] = [
         local: 'Ko2003AliceContextualInquiry.pdf',
         contribution:
             'Summarizes preliminary insights on debugging, showing that end-user programmers often start from faulty assumptions about runtime behavior.',
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'userfeedback',
@@ -2922,6 +3089,7 @@ export const Publications: Paper[] = [
         local: 'Lee2012UserFeedback.pdf',
         contribution:
             'As issues reported by end users are transformed from emails, to support ticket, to discussion, to bug report, to feature specification, information from the original request is lost, but remains in the distributed memory of the team.',
+        discoveries: ['BugsAreHard'],
     },
     {
         id: 'userfeedback2',
@@ -2938,6 +3106,7 @@ export const Publications: Paper[] = [
         local: 'Ko2011UserFeedbackTriage.pdf',
         contribution:
             'User feedback is often ignored in because software teams perceive most feedback as minority opinion that conflicts with prior architectural decisions.',
+        discoveries: ['BugsAreHard'],
     },
     {
         id: 'bioinformatics',
@@ -2953,6 +3122,7 @@ export const Publications: Paper[] = [
         local: 'Chilana2009BioinformaticsDevelopment.pdf',
         contribution:
             'Colleagues play a significant role in information seeking activities by developers in bioinformatics because of the high demand for domain knowledge.',
+        discoveries: ['DomainMatters'],
     },
     {
         id: 'jasper',
@@ -2969,6 +3139,7 @@ export const Publications: Paper[] = [
         local: 'Coblenz2006Jasper.pdf',
         contribution:
             'A tool for organizing related code fragments during software maintenance tasks.',
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'reflectbeta',
@@ -2990,6 +3161,7 @@ export const Publications: Paper[] = [
         local: 'Kriplean2011Reflect.pdf',
         contribution:
             'Shares preliminary work on a vision for an internet that incentivizes listening.',
+        discoveries: null,
     },
     {
         id: 'prelemonaid',
@@ -3004,6 +3176,7 @@ export const Publications: Paper[] = [
         pages: null,
         doi: null,
         contribution: 'Summarizes progress on the LemonAid help system.',
+        discoveries: ['PointingHelps'],
     },
     {
         id: 'talkingaboutusers',
@@ -3019,6 +3192,7 @@ export const Publications: Paper[] = [
         local: 'Ko2010HowDevelopersTalkAboutUsers.pdf',
         contribution:
             'Shows that many open source developers speak in generalities about users and their needs, leaning on stereotypes and instinct instead of evidence.',
+        discoveries: ['BugsAreHard'],
     },
     {
         id: 'unfamiliar',
@@ -3034,6 +3208,7 @@ export const Publications: Paper[] = [
         local: 'Chilana2009UnfamiliarDomains.pdf',
         contribution:
             'A brief abstract summarizing progress on how designers work with domain experts, finding that learning about a domain is the biggest challenge.',
+        discoveries: ['DomainMatters'],
     },
     {
         id: 'whylinebeta',
@@ -3050,6 +3225,7 @@ export const Publications: Paper[] = [
         local: 'Ko2008SourceLevelDebugging.pdf',
         contribution:
             'Describes a pilot study of the Whyline for Java, showing that users were twice as fast at fixing a particular defect than without the Whyline.',
+        discoveries: ['CanAskProgramsQuestions'],
     },
     {
         id: 'eupfactors',
@@ -3066,6 +3242,7 @@ export const Publications: Paper[] = [
         local: 'Ko2005HumanFactorsInEUP.pdf',
         contribution:
             'Enumerates many cognitive biases that shape the mistake that people make when engaging in end user programming.',
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'productivitytools',
@@ -3086,6 +3263,7 @@ export const Publications: Paper[] = [
         local: 'Ko2005ProductivityTools.pdf',
         contribution:
             'Shares examples of research from the Natural Programming project.',
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'morenaturaleuse',
@@ -3109,6 +3287,7 @@ export const Publications: Paper[] = [
         local: 'Myers2008MoreNaturalEUSE.pdf',
         contribution:
             'Shares recent progress on the Natural Programming project.',
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'morenaturalui',
@@ -3125,6 +3304,7 @@ export const Publications: Paper[] = [
         local: 'Myers2005InterfaceTools.pdf',
         contribution:
             "A 2 page abstract on progress on Brad Myer's Natural Programming project.",
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'softwarescience',
@@ -3140,6 +3320,7 @@ export const Publications: Paper[] = [
         local: 'Ko2006RoleOfScience.pdf',
         contribution:
             'Argues that progress on inventions requires scientific, theoretical explanations of their value.',
+        discoveries: ['ProgrammersAreHuman', 'DomainMatters'],
     },
     {
         id: 'sequalitative',
@@ -3155,6 +3336,7 @@ export const Publications: Paper[] = [
         publisher: "O'Reilly Media, Inc.",
         contribution:
             'Argues that qualitative methods are essential for understanding the dynamics of software engineering teamwork.',
+        discoveries: ['ProgrammersAreHuman'],
     },
     {
         id: 'ischoolmovement',
@@ -3173,6 +3355,7 @@ export const Publications: Paper[] = [
         issue: 5,
         contribution:
             'Presents a unification of information science and human-computer interaction concerns.',
+        discoveries: null,
     },
     {
         id: 'naturalprogramming',
@@ -3191,6 +3374,7 @@ export const Publications: Paper[] = [
         issue: 9,
         contribution:
             'Describes the Natural Programming project, which sought to make it possible for people to express their ideas in the same way they think about them.',
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'identifyingendusers',
@@ -3206,6 +3390,7 @@ export const Publications: Paper[] = [
         local: 'Scaffidi2005IdentifyingEndUsers.pdf',
         contribution:
             'Presents a clustering of end user programming activities, finding revealing variation in advanced feature usage.',
+        discoveries: null,
     },
     {
         id: 'gidget2',
@@ -3222,6 +3407,7 @@ export const Publications: Paper[] = [
         local: 'Lee2012GidgetGoals.pdf',
         contribution:
             'Representing data as animate, vertebrate objects instead of abstract, inanimate objects greatly increases engagement in online coding tutorials.',
+        discoveries: ['ReadingHelps', 'ToolsAreHard'],
     },
     {
         id: 'honorsthesis',
@@ -3237,6 +3423,7 @@ export const Publications: Paper[] = [
         local: 'Ko2002HonorsThesis.pdf',
         contribution:
             'Programming expertise shapes strategy, but domain expertise is a better predictor of bug fixing success than strategy',
+        discoveries: ['ToolsAreHard'],
     },
     {
         id: 'dissertationproposal',
@@ -3251,6 +3438,7 @@ export const Publications: Paper[] = [
         publisher: 'Carnegie Mellon University',
         local: 'Ko2006ThesisProposal.pdf',
         contribution: 'Proposes the Java Whyline.',
+        discoveries: ['CanAskProgramsQuestions', 'DevelopmentNeedsInfo'],
     },
     {
         id: 'dissertation',
@@ -3266,5 +3454,6 @@ export const Publications: Paper[] = [
         local: 'Ko2008Dissertation.pdf',
         contribution:
             'Describes the discoveries of several investigations into debugging and presents the concept, implementation, and evaluation of interrogtative debugging, and the several prototypes that embody it, including the Whyline for Alice, the Whyline for Java, and Crystal.',
+        discoveries: ['CanAskProgramsQuestions', 'DevelopmentNeedsInfo'],
     },
 ];

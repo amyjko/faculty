@@ -17,6 +17,7 @@ import type { Talk } from './Talk';
 import type { Travel } from './Travel';
 import type Commit from './Commit';
 import type { Discovery } from './Discovery';
+import { Discoveries, type DiscoveryID } from '../../data/Discoveries';
 
 export default class Profile {
     readonly json: ProfileSpec;
@@ -78,7 +79,10 @@ export default class Profile {
             // source: source ? [ source.short ] : [],
             // Add the paper's projects
             tag: this.getDiscoveries(
-                (discovery) => discovery.pubs.indexOf(paper.id) >= 0,
+                (discovery) =>
+                    this.getDiscoveryPapers(discovery)
+                        .map((p) => p.id)
+                        .indexOf(paper.id) >= 0,
             )
                 .map((discovery) => discovery.tags)
                 .reduce((allTags, tags) => [...allTags, ...tags], []),
@@ -117,7 +121,7 @@ export default class Profile {
         sort?: (p: Discovery) => number,
     ) {
         return this.cloneFilterSort(
-            this.json.discoveries.slice(),
+            Object.values(this.json.discoveries),
             filter,
             sort,
         );
@@ -125,7 +129,8 @@ export default class Profile {
 
     getDiscoveryRange(discovery: Discovery) {
         const years = [];
-        for (const id of discovery.pubs) {
+        const papers = this.getDiscoveryPapers(discovery);
+        for (const id of papers.map((p) => p.id)) {
             const paper = this.getPublication(id);
             if (paper) years.push(paper.year);
         }
@@ -198,6 +203,15 @@ export default class Profile {
 
     getPublication(id: string) {
         return this.json.pubs.find((p) => p.id === id);
+    }
+
+    getDiscoveryPapers(discovery: Discovery) {
+        const discoveryID = Object.entries(Discoveries).find(([, value]) => {
+            return value === discovery;
+        })?.[0] as DiscoveryID;
+        return this.getPublications().filter((paper) =>
+            paper.discoveries?.includes(discoveryID),
+        );
     }
 
     // Get the list of talks.
@@ -439,12 +453,10 @@ export default class Profile {
                                 false,
                                 new Date(
                                     year,
-                                    parseMonthDate(
-                                        reviewing.commitment.start,
-                                    ).month,
-                                    parseMonthDate(
-                                        reviewing.commitment.start,
-                                    ).date,
+                                    parseMonthDate(reviewing.commitment.start)
+                                        .month,
+                                    parseMonthDate(reviewing.commitment.start)
+                                        .date,
                                 ),
                                 // Handle the year wraparound for end months that are before start months.
                                 new Date(
@@ -457,12 +469,10 @@ export default class Profile {
                                         ).month
                                             ? 1
                                             : 0),
-                                    parseMonthDate(
-                                        reviewing.commitment.end,
-                                    ).month,
-                                    parseMonthDate(
-                                        reviewing.commitment.end,
-                                    ).date,
+                                    parseMonthDate(reviewing.commitment.end)
+                                        .month,
+                                    parseMonthDate(reviewing.commitment.end)
+                                        .date,
                                 ),
                             );
                     });
