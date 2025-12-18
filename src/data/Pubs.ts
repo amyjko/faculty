@@ -793,7 +793,7 @@ export const Publications: Paper[] = [
         publisher: 'ACM',
         contribution:
             'Contributes a novel theory of robust API knowledge, including knowledge about the domain that an API models, knowledge of the semantics of API functionality, and knowledge of API usage patterns.',
-        discoveries: ['ProgrammersAreHuman', 'DevelopmentNeedsInfo'],
+        discoveries: ['ProgrammersAreHuman', 'APIsAreHard'],
     },
     {
         id: 'gradingfeedback',
@@ -2626,7 +2626,7 @@ export const Publications: Paper[] = [
         award: ['most influential paper'],
         contribution:
             'When people write programs, they face at least six distinct problems: 1) identifying a solution, 2) finding abstractions to implement the solution, 3) coordinating these abstractions, 4) properly configuring these abstractions, 5) identifying possible causes of program failures, and 6) getting information about program execution.',
-        discoveries: ['ToolsAreHard', 'BugsAreHard'],
+        discoveries: ['ToolsAreHard', 'BugsAreHard', 'APIsAreHard'],
     },
     {
         id: 'whyline1',
@@ -2884,7 +2884,7 @@ export const Publications: Paper[] = [
         local: 'Ko2011FeasibilityAssessments.pdf',
         contribution:
             'Test the feasibility of a feature in an API requires architectural and terminology knowledge of the API, which is often missing from documentation.',
-        discoveries: ['ToolsAreHard'],
+        discoveries: ['APIsAreHard'],
     },
     {
         id: 'postusability',

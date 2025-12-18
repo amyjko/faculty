@@ -44,6 +44,12 @@ export const Discoveries = {
         detail: '',
         tags: ['accessibility', 'studies', 'teaching'],
     },
+    APIsAreHard: {
+        contribution:
+            'Learning APIs requires precise forms of knowledge that documentation often does not provide.',
+        detail: 'APIs are often poorly designed, documented, and supported, making them difficult for developers to learn and use effectively. These studies reveal the particular forms of knowledge documentation and tutorials need to provide for people to successfully use APIs.',
+        tags: ['APIs', 'tools', 'studies'],
+    },
     ReadingHelps: {
         contribution:
             'Teaching program reading before writing can promote more robust learning',
@@ -129,11 +135,6 @@ export const Discoveries = {
         contribution: 'Design skills depend greatly on domain expertise',
         detail: "We found through several studies that designers' productivity and careers are often limited by their lack of domain expertise.",
         tags: ['design', 'studies'],
-    },
-    APIsAreHard: {
-        contribution: 'APIs can be hard to learn and use effectively',
-        detail: 'APIs are often poorly designed, documented, and supported, making them difficult for developers to learn and use effectively.',
-        tags: ['programming', 'studies', 'tools'],
     },
     DevelopmentNeedsInfo: {
         contribution: 'Software engineering depends on information',
