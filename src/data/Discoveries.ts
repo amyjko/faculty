@@ -4,45 +4,40 @@ export const Discoveries = {
     LanguagesCanBeJust: {
         contribution:
             'Programming languages can be designed to include everyone',
-        detail: 'Programming languages can embody values of justice, equity, and inclusion, but it requires careful design and attention to ability, culture, language, and more.',
+        detail: 'Programming languages can embody values of diversity, equity, inclusion, justice, and accessibility, but it requires careful design and attention to ability, culture, language, and more. These papers deconstruct these nuances, while also offering novel designs, uses, and conceptions of programming languages',
         tags: ['programming languages', 'justice', 'tools'],
+        code: 'https://github.com/wordplaydev/wordplay',
     },
     FamiliesHelp: {
         contribution:
-            'Learning to code with families can enable rich new forms of intergenerational learning',
-        detail: 'But it requires careful attention to the design of learning technologies to facilitate facile role switching.',
+            'Learning to code as a family can enable rich learning that distrupts intergenerational hierarchies',
+        detail: 'These papers consider learning about programming and AI in the context of families, and how this differs from individual and classroom contexts.',
         tags: ['families', 'studies', 'learning'],
         video: ['https://www.youtube.com/watch?v=t56g4DYIuUA'],
     },
     AssessmentUnfair: {
         contribution:
-            "CS assessments aren't fair, but it's very hard to know how and why",
-        detail: 'Techniques from psychometrics can help, but they are far from usable by everyday CS teachers.',
+            "CS assessments can be biased, but it's hard to know how, why, and what to do about it",
+        detail: 'Across multiple studies, we have examined the use of psychometrics to understand bias in CS assessments, and contributed new methods and assessments to overcome bias.',
         tags: ['assessment', 'studies', 'tools'],
     },
     JusticeHard: {
         contribution:
-            'Justice-focused computing education requires trust, agency, respect, liberation, and courage',
-        detail: "Making room for conversations about computing, society, and fairness demands deep respect for students' limiting situations, but also liberatory pedagogies.",
+            'Teaching youth about the injustices of computing and society requires teacher transformation and liberatory pedagogies',
+        detail: "This work finds that making room for conversations about computing, society, and diversity demands deep respect for students' limiting situations, but also liberatory pedagogies and teacher courage.",
         tags: ['justice', 'studies'],
     },
     TeachingIsHard: {
         contribution:
-            'Equitable CS teaching requires equity and resources that CS culture resists',
-        detail: 'Teachers need time, resources, and community support to teach equitably, but CS culture often resists these needs in favor of individual achievement and technical prowess.',
+            'Becoming a CS teacher requires equity and resources that CS culture resists',
+        detail: 'Teachers need time, resources, and community support to teach equitably, but CS culture often resists these needs in favor of individual achievement and technical confidence, structuring who does and does not learn CS.',
         tags: ['teaching', 'studies'],
     },
     TeachingInclusionHard: {
         contribution:
-            'Teaching about diversity in CS is possible, but requires substantial professional development',
-        detail: 'The topic is largely ignored because of lack of teacher professional development, student resistance, and fear of failure, not disinterest.',
+            'Teaching CS students how to create inclusive, equitable software requires new pedagogies and methods, but also substantial teacher professional development',
+        detail: 'These works show that both teachers and learners often resist this topic due to fear of failure, not disinterest.',
         tags: ['diversity', 'studies'],
-    },
-    AccessibilityIsHard: {
-        contribution:
-            'Accessible computing can be taught as part of CS education',
-        detail: '',
-        tags: ['accessibility', 'studies', 'teaching'],
     },
     APIsAreHard: {
         contribution:
@@ -84,7 +79,7 @@ export const Discoveries = {
     ExpertiseIsSocial: {
         contribution:
             'Software engineering expertise is technical, but also social, organizational, and political',
-        detail: 'Across thousands of surveys and interviews, we found that expertise is far more than just knowing how to architect and build software.',
+        detail: 'Across thousands of surveys, interviews, and observations, we have found that software development expertise is far more than just knowing how to architect and build software.',
         tags: ['expertise', 'studies'],
     },
     PointingHelps: {
@@ -101,7 +96,7 @@ export const Discoveries = {
     },
     DefectsCanBeMined: {
         contribution:
-            'Some defects can be found by operationalizing principles of human communication',
+            'Some defects can be found by operationalizing regularities in human expression',
         detail: 'Many defects in dynamically typed programs can be found by operationalizing simple observations about how people write code, often forgetting to close the loop that statically typed programs can easily point out.',
         tags: ['verification', 'tools'],
         code: 'https://github.com/amyjko/feedlack',
@@ -109,7 +104,7 @@ export const Discoveries = {
     },
     BugsAreHard: {
         contribution:
-            'Bug reports are where developers and users engage in conflict around what software is for',
+            'Bug reports are where developers and users negotiate what "defective" means',
         detail: "The seeminly technical context of bug reports are where large communities of users and small teams of developers engage in power struggles about what software should and shouldn't do.",
         tags: ['issue tracking', 'studies'],
     },
@@ -121,8 +116,8 @@ export const Discoveries = {
     },
     CulturesShapesLearning: {
         contribution:
-            "People's interests in computing are intricately shaped by their social worlds",
-        detail: "We found across a series of reflective studies that people and events in people's lives come to shape their interest and disinterest in computing.",
+            "People's interests and learning of computing are intricately shaped by their social worlds and identities",
+        detail: "We have found across a series of reflective studies that students' identities and lived experiences intricately shape their interest and disinterest in computing.",
         tags: ['interest', 'studies'],
     },
     DomainMatters: {

@@ -15,7 +15,11 @@
     let { discovery }: Props = $props();
 
     let range = $derived($profile.getDiscoveryRange(discovery));
-    let papers = $derived($profile.getDiscoveryPapers(discovery));
+    let papers = $derived(
+        $profile
+            .getDiscoveryPapers(discovery)
+            .toSorted((a, b) => b.year - a.year),
+    );
     let keyPaper = $derived(papers[0]);
 
     let expanded = $state(false);
@@ -49,6 +53,26 @@
                     </Link>
                 {/if}
             {/each}
+        </p>
+        <p>
+            <small>
+                <!-- {#each discovery.tags as tag}<mark class={'topic'}
+                        ><Link to={`/(app)/publications`} query={tag}
+                            >{tag}</Link
+                        ></mark
+                    >{/each} -->
+                {#if discovery.video}
+                    {#each discovery.video as video}
+                        &nbsp; <span class="emoji">🎬</span>
+                        <External to={video}>video</External>&nbsp;
+                    {/each}
+                {/if}
+                {#if discovery.demo}&nbsp;<span class="emoji">🖥️</span>
+                    <External to={discovery.demo}>demo</External>{/if}
+                {#if discovery.code}&nbsp;<code>{'{}'}</code>&nbsp;<External
+                        to={discovery.code}>code</External
+                    >{/if}
+            </small>
         </p>
         <p>
             <button onclick={() => (expanded = !expanded)}

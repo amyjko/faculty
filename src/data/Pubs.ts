@@ -470,7 +470,7 @@ export const Publications: Paper[] = [
         contribution:
             'Implementation design decisions, rather than being a natural outcome from higher levels of design, require constant monitoring and reconsideration of higher level design choices, such as requirements and architecture.',
         award: ['best paper'],
-        discoveries: ['ProgrammersAreHuman'],
+        discoveries: ['ExpertiseIsSocial'],
     },
     {
         id: 'automata',
@@ -627,7 +627,7 @@ export const Publications: Paper[] = [
         contribution:
             'Developed and evaluated tool that contextualizes student feedback for teaching teams to identify equity issues.',
         award: ['diversity + inclusion award'],
-        discoveries: ['CulturesShapesLearning', 'TeachingInclusionHard'],
+        discoveries: ['CulturesShapesLearning', 'AssessmentUnfair'],
     },
     {
         id: 'strategywriting',
@@ -1244,11 +1244,7 @@ export const Publications: Paper[] = [
         local: 'Kawas2019AccessibilityMicroPD.pdf',
         contribution:
             'Describes and evaluates a vision for teaching higher education CS faculty how to integrate accessibility topics into their classes, discovering many personal and organizational barriers to adoption.',
-        discoveries: [
-            'TeachingInclusionHard',
-            'TeachingIsHard',
-            'AccessibilityIsHard',
-        ],
+        discoveries: ['TeachingInclusionHard', 'TeachingIsHard'],
     },
     {
         id: 'irteval',
@@ -1468,7 +1464,7 @@ export const Publications: Paper[] = [
         local: 'Shinohara2018AccessComputingSurvey.pdf',
         contribution:
             "Investigates the prevalence of instruction on accessibility among computing and information science faculty. Finds that nearly all HCI faculty teach something about accessibility, that most faculty want to teach it, but don't have the experience, and don't know how it fits into their course content.",
-        discoveries: ['TeachingInclusionHard', 'AccessibilityIsHard'],
+        discoveries: ['TeachingInclusionHard'],
     },
     {
         id: 'msrkeynote',
@@ -1721,7 +1717,7 @@ export const Publications: Paper[] = [
         local: 'Ko2016TeachingAccessibility.pdf',
         contribution:
             'Discusses AccessComputing efforts to implement and disseminate curriculum on accessibility into academia and industry.',
-        discoveries: ['AccessibilityIsHard'],
+        discoveries: ['TeachingInclusionHard'],
     },
     {
         id: 'csproblemsolving2',
@@ -2054,7 +2050,7 @@ export const Publications: Paper[] = [
         award: ['honorable mention'],
         contribution:
             'A system for recording inputs to a web application and replaying them deterministically with minimal time or space overhead.',
-        discoveries: ['ToolsAreHard', 'CanAskProgramsQuestions'],
+        discoveries: ['CanAskProgramsQuestions'],
     },
     {
         id: 'gidget3',
