@@ -5,6 +5,7 @@
     import Paper from '$lib/components/Paper.svelte';
     import { profile } from '$lib/models/stores';
     import Title from '$lib/components/Title.svelte';
+    import { asset } from '$app/paths';
 
     let guide = $derived($profile.getPublication('practicalguide'));
 </script>
@@ -168,9 +169,9 @@
 <Section id="goodquestion" header="What makes a good research paper?">
     <p>
         Learning to do research is hard! Developing good questions is just one
-        of the many challenges in research. I wrote a book chapter that <Link
-            to={'/papers/Ko2019StudyDesign.pdf'}
-            >covers many aspects of developing good research questions</Link
+        of the many challenges in research. I wrote a book chapter that <a
+            href={asset('/papers/Ko2019StudyDesign.pdf')}
+            >covers many aspects of developing good research questions</a
         >. I use the same practices with the students in my lab.
     </p>
 </Section>

@@ -8,5 +8,8 @@
 
 <svelte:head>
     <title>Amy J. Ko - {text}</title>
-    <meta property="og:description" content="Amy J. Ko - {text}" />
+    <meta
+        property="og:description"
+        content={`Amy J. Ko${text.length > 0 ? ' - ' + text : ''}`}
+    />
 </svelte:head>

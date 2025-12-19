@@ -1,8 +1,7 @@
 <script lang="ts">
+    import { asset } from '$app/paths';
     import type Person from '$lib/models/Person';
     import Block from './Block.svelte';
-    import External from './External.svelte';
-    import Link from './Link.svelte';
     import Image from './Thumbnail.svelte';
 
     interface Props {
@@ -16,15 +15,14 @@
 <div id={person.id}>
     <Block link={person.url}>
         {#snippet image()}
-                <Image
-                
+            <Image
                 url={`/images/headshots/${person.id}.jpg`}
                 alt={'Photograph of ' + person.name}
                 {highlight}
             />
-            {/snippet}
+        {/snippet}
         <span>
-            <External to={person.url}>{person.name}</External>
+            <a href={person.url}>{person.name}</a>
             &nbsp;
             <mark>{person.level}</mark>
             &nbsp;
@@ -41,8 +39,10 @@
                 {#if person.dissertation}
                     <li>
                         <small>
-                            <Link to={'/dissertations/' + person.dissertation}
-                                >Dissertation</Link
+                            <a
+                                href={asset(
+                                    '/dissertations/' + person.dissertation,
+                                )}>Dissertation</a
                             >
                         </small>
                     </li>

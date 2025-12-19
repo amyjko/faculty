@@ -15,7 +15,7 @@
     effort. Thank you to everyone who participated! We'll leave this here for
     others to reference in case they want to try a similar model in a different
     context. If you're looking for research opportunities, consider <Link
-        to="/wordplay">Wordplay</Link
+        to="/(app)/wordplay">Wordplay</Link
     >.
 </Alert>
 
@@ -90,9 +90,9 @@
         to="https://docs.google.com/spreadsheets/d/1ziwgmDBdCNY1AbhlQti8hgabwhVhwvRpL8xPjknywnQ/edit#gid=1849819586"
         >meeting templates</External
     > for many of the above activities to help you understand roles and expectations.
-    However, you're always welcome to deviate from them, or suggest improvements
-    to them, by writing Amy a DM in <External
-        to="http://computinged-uw.slack.com">Slack</External
+    However, you're always welcome to deviate from them, or suggest improvements to
+    them, by writing Amy a DM in <External to="http://computinged-uw.slack.com"
+        >Slack</External
     >.
 </p>
 
@@ -180,8 +180,8 @@
 <p>
     To encourage focus and discourage overcommitment, you can only be part of <strong
         >one</strong
-    > lablet at a time. But you can participate for as many quarters as you like
-    (assuming we're offering one every quarter.)
+    > lablet at a time. But you can participate for as many quarters as you like (assuming
+    we're offering one every quarter.)
 </p>
 
 <Linkable id="howmuchtime">How much time does a lablet require?</Linkable>
@@ -477,8 +477,8 @@
     >
     <li>
         If you <em>led</em> a lablet, Amy will meet with you, discuss your experiences
-        and interests, and write a short letter. This will be more valuable than
-        the templated letter above.
+        and interests, and write a short letter. This will be more valuable than the
+        templated letter above.
     </li>
 </ul>
 

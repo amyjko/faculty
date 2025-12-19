@@ -242,7 +242,7 @@ export const People: readonly Person[] = [
     {
         id: 'annes',
         name: 'Anne Beitlers',
-        active: true,
+        active: false,
         advised: false,
         level: 'faculty',
         dept: 'Education',

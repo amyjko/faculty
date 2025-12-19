@@ -1,7 +1,7 @@
 <script>
     // @ts-nocheck
 
-    import External from './External.svelte';
+    import Link from './Link.svelte';
 </script>
 
 <div>
@@ -37,8 +37,8 @@
                 about="https://faculty.washington.edu/ajko"
             >
                 United States</span
-            >. See <External to="https://github.com/amyjko/faculty"
-                >this site's GitHub repository</External
+            >. See <Link to="https://github.com/amyjko/faculty"
+                >this site's GitHub repository</Link
             > to view source and provide feedback.
         </p>
     </small>

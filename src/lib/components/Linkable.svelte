@@ -32,9 +32,7 @@
 <h2 {id} class={`section ${isLinked() ? 'linked' : ''}`}>
     {@render children?.()}
     <!-- Remove the base from the pathname before Link reappends it. -->
-    <Link to={$page.url.pathname.replace(base, '') + '#' + id}
-        ><Emoji symbol="🔗"></Emoji></Link
-    >
+    <Link to="" {id}><Emoji symbol="🔗"></Emoji></Link>
 </h2>
 
 <style>

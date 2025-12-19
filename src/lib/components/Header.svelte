@@ -1,12 +1,11 @@
 <script lang="ts">
-    import { base } from '$app/paths';
-    import { page } from '$app/stores';
-    import Alert from './Alert.svelte';
+    import { asset } from '$app/paths';
+    import { page } from '$app/state';
     import Emoji from './Emoji.svelte';
     import External from './External.svelte';
     import Link from './Link.svelte';
     import Social from './Social.svelte';
-    import Image from './Thumbnail.svelte';
+    import Thumbnail from './Thumbnail.svelte';
 
     interface Props {
         headers?: [string, string][];
@@ -72,63 +71,63 @@
 </script>
 
 <section class="info">
-    <a href="/ajko/"
-        ><Image
-            url={'/images/headshots/ajko.jpg'}
+    <Link to="/(app)"
+        ><Thumbnail
+            url="/images/headshots/ajko.jpg"
             alt="Headshot of Amy J. Ko"
-        /></a
+        /></Link
     >
     <h1>Amy J. Ko, Ph.D.</h1>
     <div class="metadata">
         <span class="small"
             ><em
-                ><External to="https://www.mypronouns.org/she-her"
-                    >she/her/hers</External
+                ><Link to="https://www.mypronouns.org/she-her"
+                    >she/her/hers</Link
                 ></em
             ></span
         >
         <strong
-            ><External
+            ><Link
                 to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/"
-                >Professor</External
+                >Professor</Link
             ></strong
         >
         <strong
-            ><External to="https://ischool.uw.edu/about/leadership"
-                >Associate Dean for Academics</External
+            ><Link to="https://ischool.uw.edu/about/leadership"
+                >Associate Dean for Academics</Link
             ></strong
         >
         <span>
-            <External to="http://ischool.uw.edu"
-                ><em>The Information School</em></External
+            <Link to="http://ischool.uw.edu"
+                ><em>The Information School</em></Link
             ></span
         >
         <span>
-            <External to="http://cs.uw.edu"
+            <Link to="http://cs.uw.edu"
                 ><em
                     >Paul G. Allen School of Computer Science &amp; Engineering</em
                 >
-                <span class="small"><em>courtesy</em></span></External
+                <span class="small"><em>courtesy</em></span></Link
             ></span
         >
-        <span
-            ><External to="http://www.washington.edu"
-                >University of Washington, Seattle</External
-            ></span
-        >
-        <span class="small"
-            >- <External to="https://dl.acm.org/journal/toce"
-                >Editor-in-Chief, <em>ACM TOCE</em></External
+        <span>
+            <Link to="http://www.washington.edu"
+                >University of Washington, Seattle</Link
             ></span
         >
         <span class="small"
-            >- <External to="https://csforallwa.org/"
-                >Co-Director, <em>CS for All Washington</em></External
+            >- <Link to="https://dl.acm.org/journal/toce"
+                >Editor-in-Chief, <em>ACM TOCE</em></Link
             ></span
         >
         <span class="small"
-            >- <External to="https://reciprocal.reviews/"
-                >Co-Director, <em>Reciprocal Reviews</em></External
+            >- <Link to="https://csforallwa.org/"
+                >Co-Director, <em>CS for All Washington</em></Link
+            ></span
+        >
+        <span class="small"
+            >- <Link to="https://reciprocal.reviews/"
+                >Co-Director, <em>Reciprocal Reviews</em></Link
             ></span
         >
         <Social />
@@ -142,30 +141,30 @@
     administration interested in the future.
 </Alert> -->
 
-<button onclick={replace}>CENSOR</button>
+<br /><button onclick={replace}>censor</button>
 
 <hr />
 <nav>
     <div class="links">
-        <Link to="/" at={'/'}>Research</Link>
-        <Link to="/lab" at={'/lab'}>Lab</Link>
-        <Link to="/communities" at={'/communities'}>Communities</Link>
-        <Link to="/publications" at={'/publications'}>Publications</Link>
-        <Link to="/essays" at={'/essays'}>Essays</Link>
-        <Link to="/talks" at={'/talks'}>Talks</Link>
-        <Link to="/classes" at={'/classes'}>Classes</Link>
-        <Link to="/books" at={'/books'}>Books</Link>
-        <Link to="/code" at={'/code'}>Code</Link>
-        <Link to="/impact" at={'/impact'}>Impact</Link>
-        <Link to="/funding" at={'/funding'}>Funding</Link>
-        <Link to="/travel" at={'/travel'}>Travel</Link>
-        <Link to="/bio" at={'/bio'}>Bio</Link>
-        <Link to="/commitments" at={'/commitments'}>Commitments</Link>
-        <Link to="/contact" at={'/contact'}>Contact</Link>
-        <Link to="/faq" at={'/faq'}>FAQ</Link>
-        <Link to="/cer" at={'/cer'}>CER FAQ</Link>
-        <Link to="/cv">CV</Link>
-        <br /><Link to="/wordplay" at={'/wordplay'}
+        <Link to="/(app)">Research</Link>
+        <Link to="/(app)/lab">Lab</Link>
+        <Link to="/(app)/communities">Communities</Link>
+        <Link to="/(app)/publications">Publications</Link>
+        <Link to="/(app)/essays">Essays</Link>
+        <Link to="/(app)/talks">Talks</Link>
+        <Link to="/(app)/classes">Classes</Link>
+        <Link to="/(app)/books">Books</Link>
+        <Link to="/(app)/code">Code</Link>
+        <Link to="/(app)/impact">Impact</Link>
+        <Link to="/(app)/funding">Funding</Link>
+        <Link to="/(app)/travel">Travel</Link>
+        <Link to="/(app)/bio">Bio</Link>
+        <Link to="/(app)/commitments">Commitments</Link>
+        <Link to="/(app)/contact">Contact</Link>
+        <Link to="/(app)/faq">FAQ</Link>
+        <Link to="/(app)/cer">CER FAQ</Link>
+        <Link to="/(cv)">CV</Link>
+        <br /><Link to="/(app)/wordplay"
             ><Emoji symbol="💬" /> <strong>Wordplay</strong></Link
         >
     </div>
@@ -174,9 +173,7 @@
             <ul>
                 {#each headers as [header, id]}
                     <li
-                        ><Link
-                            to={`${$page.url.pathname.replace(base, '')}#${id}`}
-                            active={id === activeid}
+                        ><Link to="" {id} active={id === activeid}
                             >{header.substring(0, 32) +
                                 (header.length > 32 ? '…' : '')}</Link
                         ></li
@@ -220,10 +217,6 @@
 
     :global(.links > a:hover) {
         background-color: var(--border-color);
-    }
-
-    :global(nav .at) {
-        background-color: var(--annotation-color);
     }
 
     .outline li {

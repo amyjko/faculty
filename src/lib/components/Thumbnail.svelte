@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { base } from '$app/paths';
+    import { asset } from '$app/paths';
 
     interface Props {
         url: string;
@@ -12,7 +12,7 @@
 
 <img
     class={`thumbnail ${highlight ? 'highlight' : ''}`}
-    src={`${base}${url}`}
+    src={asset(url)}
     {alt}
 />
 

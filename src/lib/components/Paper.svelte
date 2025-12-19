@@ -8,6 +8,7 @@
     import { profile } from '$lib/models/stores';
     import Image from './Thumbnail.svelte';
     import Highlight from './Highlight.svelte';
+    import { asset } from '$app/paths';
 
     interface Props {
         paper: Paper;
@@ -98,9 +99,9 @@
             <br />
             {#if url}
                 <span
-                    >{#if url.startsWith('http')}<External to={url}
-                            >{paper.title}</External
-                        >{:else}<Link to={url}>{paper.title}</Link>{/if}</span
+                    ><a href={url.startsWith('http') ? url : asset(url)}
+                        >{paper.title}</a
+                    ></span
                 >
             {:else}
                 <strong>{paper.title}</strong>
@@ -121,23 +122,23 @@
                         >{apa ? '▾ cite' : '▸ cite'}</span
                     >
                     {#if paper.local}<span>
-                            &sdot; <Link to={paperLocalURL}>pdf</Link></span
+                            &sdot; <a href={asset(paperLocalURL)}>pdf</a></span
                         >{/if}
                     {#if paper.doi}<span>
-                            &sdot; <External to={paper.doi}>doi</External></span
+                            &sdot; <a href={paper.doi}>doi</a></span
                         >{/if}
                     {#if paper.slides}<span>
-                            &sdot; <Link
-                                to={paper.slides.startsWith('http')
+                            &sdot; <a
+                                href={paper.slides.startsWith('http')
                                     ? paper.slides
-                                    : `/slides/${paper.slides}`}>slides</Link
+                                    : asset(`/slides/${paper.slides}`)}
+                                >slides</a
                             ></span
                         >{/if}
                     {#if paper.blog}<span>
-                            &sdot; <External to={paper.blog}>blog</External
-                            ></span
+                            &sdot; <a href={paper.blog}>blog</a></span
                         >{/if}
-                    &sdot; <Link to={'/publications/#' + paper.id}
+                    &sdot; <Link to={'/(app)/publications'} id={paper.id}
                         ><span class="emoji">&#x1F517;</span></Link
                     >
                 </small>

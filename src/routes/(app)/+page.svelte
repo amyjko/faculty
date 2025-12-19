@@ -7,10 +7,9 @@
     import getPersonImagePath from '$lib/components/getPersonImage';
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
-    import Alert from '$lib/components/Alert.svelte';
 </script>
 
-<Title text="Research" />
+<Title text="" />
 
 <h1>
     My research imagines and enables equitable, joyous, liberatory learning
@@ -18,21 +17,21 @@
 </h1>
 
 <p>
-    I work with outstanding <Link to={'/lab'}
+    I work with outstanding <Link to={'/(app)/lab'}
         >postdocs, doctoral students, undergraduates, teachers</Link
-    > and <Link to={'/communities'}>communities</Link> on this vision. My current
+    > and <Link to={'/(app)/communities'}>communities</Link> on this vision. My current
     projects within this goal are shaped by the faculty, students, and teachers in
     the <Link to="https://computinged.uw.edu"
         >Center for Learning, Computing, and Imagination</Link
     >, our partner teachers, school leaders, and families, and generous external <Link
-        to="/funding">funding</Link
+        to="/(app)/funding">funding</Link
     >.
 </p>
 
 <p>
     We
-    <Link to={'/publications'}>publish</Link>
-    primarily in <Link to={'/cer'}>Computing Education</Link> and
+    <Link to={'/(app)/publications'}>publish</Link>
+    primarily in <Link to={'/(app)/cer'}>Computing Education</Link> and
     <External
         to="https://www.google.com/books/edition/Human_Computer_Interaction_Handbook/dVrRBQAAQBAJ?hl=en&gbpv=0"
         >Human-Computer Interaction</External
@@ -40,11 +39,12 @@
         to="https://dl.acm.org/journal/toce">ACM TOCE</Link
     > and sustain peer review with <Link to="https://reciprocal.reviews/"
         >Reciprocal Reviews</Link
-    >. We share our discoveries by <Link to={'/essays'}>blogging</Link>, <Link
-        to={'/talks'}>presenting</Link
+    >. We share our discoveries by <Link to={'/(app)/essays'}>blogging</Link>, <Link
+        to={'/(app)/talks'}>presenting</Link
     >,
-    <Link to={'/classes'}>teaching</Link>, <Link to={'/books'}>writing</Link>,
-    and and connecting with community, including the <Link
+    <Link to={'/(app)/classes'}>teaching</Link>, <Link to={'/(app)/books'}
+        >writing</Link
+    >, and and connecting with community, including the <Link
         to="https://csforallwa.org">CS for All Washington</Link
     > advocacy community and the <Link to="https://www.pnwcsteach.org/"
         >PNW CS Teach</Link
@@ -53,8 +53,8 @@
 <p></p>
 
 <p>
-    Want to do research with me? Read about my <Link to="/lab">lab</Link>, and
-    join us in creating a more equitable future of computing that includes
+    Want to do research with me? Read about my <Link to="/(app)/lab">lab</Link>,
+    and join us in creating a more equitable future of computing that includes
     <em>everyone</em>.
 </p>
 
@@ -91,8 +91,9 @@
                     {#if person}
                         <Link
                             to={person.id === 'ajko'
-                                ? '/bio'
-                                : '/lab/#' + person.id}
+                                ? '/(app)/bio'
+                                : '/(app)/lab'}
+                            id={person.id === 'ajko' ? undefined : person.id}
                         >
                             <img
                                 src={`${getPersonImagePath(person.id)}`}
@@ -106,7 +107,8 @@
             <p>
                 <small>
                     {#each discovery.tags as tag}<mark class={'topic'}
-                            ><Link to={`/publications?${tag}`}>{tag}</Link
+                            ><Link to={`/(app)/publications`} query={tag}
+                                >{tag}</Link
                             ></mark
                         >{/each}
                     {#if discovery.video}

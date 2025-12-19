@@ -5,6 +5,7 @@
 
     import { profile } from '$lib/models/stores';
     import Title from '$lib/components/Title.svelte';
+    import { asset } from '$app/paths';
 
     let pubCount = $derived(
         Math.round(
@@ -60,10 +61,10 @@
     > (courtesy). She co-directs the UW Center for Learning, Computing, and Imagination,
     where she studies computing education, human-computer interaction, and humanity's
     individual and collective struggle to understand computing and harness it for
-    equity, justice, and liberation. With her collaborators, she's invented many
-    programming languages and tools to support debugging, program understanding,
-    reuse, and learning; founded and sold a <External
-        to="http://www.answerdash.com">venture-backed startup</External
+    equity, justice, and liberation. With her collaborators, she's invented many programming
+    languages and tools to support debugging, program understanding, reuse, and learning;
+    founded and sold a <External to="http://www.answerdash.com"
+        >venture-backed startup</External
     > focused on software troubleshooting; developed numerous ways to weave equity
     and justice into computing education pedagogy, culture, and technology; and impacted
     local, state, and federal K-12 CS education policy through community organizing
@@ -96,12 +97,12 @@
     > who has the privilege of being paid to follow her curiosity about computation,
     learning, and politics, and tell people what she finds in various rooms, physical
     and virtual. She likes working with students to wander about asking questions
-    about the ways that computation has and hasn't woven itself through people's
-    lives and learning. She started off inventing ways of making programming easier
-    for developers, but then got disillusioned with capitalism. She then got excited
-    about the ways that programmers interact with communities of people using their
-    code. After she returned from her profit-laced time as CTO, she decided to focus
-    on making people smarter instead of tools, and began studying what kinds of computing
+    about the ways that computation has and hasn't woven itself through people's lives
+    and learning. She started off inventing ways of making programming easier for
+    developers, but then got disillusioned with capitalism. She then got excited about
+    the ways that programmers interact with communities of people using their code.
+    After she returned from her profit-laced time as CTO, she decided to focus on
+    making people smarter instead of tools, and began studying what kinds of computing
     literacies might lead to a more just world, and what kinds of teachers, teaching,
     and tools we need to make that happen. She's grateful to <External
         to="http://www.cmu.edu">Carnegie Mellon University</External
@@ -201,27 +202,27 @@
 
 <ul>
     <li
-        ><Link to="/promotion/Assistant-Statements.pdf"
-            >Research and teaching statements</Link
+        ><a href={asset('/promotion/Assistant-Statements.pdf')}
+            >Research and teaching statements</a
         > for my 2008 academic job search.</li
     >
     <li
-        ><Link to="/promotion/Associate-Statements.pdf"
-            >Research, teaching, and service statements</Link
+        ><a href={asset('/promotion/Associate-Statements.pdf')}
+            >Research, teaching, and service statements</a
         > for tenure and promotion to Associate Professor.</li
     >
     <li
-        ><Link to="/promotion/Associate-CV.pdf">Curriculum vita</Link> for tenure
+        ><a href={asset('/promotion/Associate-CV.pdf')}>Curriculum vita</a> for tenure
         and promotion to Associate Professor.</li
     >
     <li
-        ><Link to="/promotion/Full-Statements.pdf"
-            >Research, teaching, service, and diversity statements</Link
+        ><a href={asset('/promotion/Full-Statements.pdf')}
+            >Research, teaching, service, and diversity statements</a
         > for tenure and promotion to Professor.</li
     >
     <li
-        ><Link to="/promotion/Full-CV.pdf">Curriculum vita</Link> for tenure and
-        promotion to Professor.</li
+        ><a href={asset('/promotion/Full-CV.pdf')}>Curriculum vita</a> for tenure
+        and promotion to Professor.</li
     >
 </ul>
 <Linkable id="identity">Identity</Linkable>
@@ -359,8 +360,8 @@
     > in the <External to="http://research.microsoft.com/en-us/groups/hip/"
         >Human Interactions in Programming</External
     > group, and became fascinated with the larger challenge of software design and
-    all of the human and cooperative issues that make it such a challenging form
-    of engineering practice. I graduated with my Ph.D. in Human-Computer Interaction
+    all of the human and cooperative issues that make it such a challenging form of
+    engineering practice. I graduated with my Ph.D. in Human-Computer Interaction
     in May of 2008.
 </p>
 

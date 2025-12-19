@@ -6,7 +6,6 @@
     import Paper from '$lib/components/Paper.svelte';
 
     import { profile } from '$lib/models/stores';
-    import { scrollToHash } from '$lib/models/utilities';
     import Alert from '../../../lib/components/Alert.svelte';
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
@@ -14,8 +13,6 @@
     let selection: Record<string, string> = $state({});
 
     onMount(() => {
-        scrollToHash();
-
         if (
             typeof window !== 'undefined' &&
             window.location.search.length > 0
@@ -31,27 +28,29 @@
     }
 
     // Sort the publications by decreasing year, then by decreasing pages
-    let pubs = $derived($profile
-        .getPublications((paper) =>
-            $profile.tagsMatch(selection, $profile.getPaperTags(paper))
-        )
-        .sort((a, b) =>
-            // First sort by year
-            b.year !== a.year
-                ? b.year - a.year
-                : // Put unpublished first
-                b.pages === 'to appear'
-                ? 1
-                : a.pages === 'to appear'
-                ? -1
-                : // If there's no DOI, put last
-                a.doi === null
-                ? 1
-                : b.doi === null
-                ? -1
-                : // Sort by DOI, since those are usually chronological
-                  -a.doi.localeCompare(b.doi)
-        ));
+    let pubs = $derived(
+        $profile
+            .getPublications((paper) =>
+                $profile.tagsMatch(selection, $profile.getPaperTags(paper)),
+            )
+            .sort((a, b) =>
+                // First sort by year
+                b.year !== a.year
+                    ? b.year - a.year
+                    : // Put unpublished first
+                      b.pages === 'to appear'
+                      ? 1
+                      : a.pages === 'to appear'
+                        ? -1
+                        : // If there's no DOI, put last
+                          a.doi === null
+                          ? 1
+                          : b.doi === null
+                            ? -1
+                            : // Sort by DOI, since those are usually chronological
+                              -a.doi.localeCompare(b.doi),
+            ),
+    );
 </script>
 
 <Title text="Publications" />

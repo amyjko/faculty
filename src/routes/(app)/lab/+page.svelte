@@ -3,16 +3,9 @@
     import Link from '$lib/components//Link.svelte';
     import { profile } from '$lib/models/stores';
     import External from '$lib/components/External.svelte';
-    import { onMount } from 'svelte';
-    import { scrollToHash } from '$lib/models/utilities';
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
     import Emoji from '$lib/components/Emoji.svelte';
-    import Alert from '$lib/components/Alert.svelte';
-
-    onMount(() => {
-        scrollToHash();
-    });
 
     function isPersonHighlighted(id: string) {
         return (
@@ -110,8 +103,8 @@
 </p>
 <p>
     <strong>Prospective UW Ph.D. student?</strong>
-    Read my <Link to="/cer">CER FAQ</Link> and <Link to="/publications"
-        >recent publications</Link
+    Read my <Link to="/(app)/cer">CER FAQ</Link> and <Link
+        to="/(app)/publications">recent publications</Link
     > to ensure we share interests. I'm recruiting students unless there is an alert
     on the top of my page. Don't ask me to evaluate your CV (I don't have capacity
     to evaluate your application twice). Don't ask me for a meeting (I can't meet
@@ -131,7 +124,7 @@
     Read about <External
         to="https://ischool.uw.edu/programs/informatics/research"
         >engaging in undergrad research</External
-    >. If that sounds interesting, read about <Link to={'/wordplay'}
+    >. If that sounds interesting, read about <Link to={'/(app)/wordplay'}
         >Wordplay</Link
     >, and follow the instructions there to join. I also recruit for full-time
     summer research assistants in Winter through the <External
@@ -173,6 +166,19 @@
 >
 
 {#each $profile.getPeople( (person) => person.active && person.level === 'faculty', (person) => -person.startdate, ) as person}
+    <Person {person} highlight={isPersonHighlighted(person.id)} />
+{/each}
+
+<Linkable id="collaborators">Former Faculty Collaborators</Linkable>
+
+<p
+    ><em
+        >It's been a while since I've collaborated with these folks, but I maybe
+        again someday!</em
+    ></p
+>
+
+{#each $profile.getPeople( (person) => !person.active && person.level === 'faculty', (person) => -person.startdate, ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 

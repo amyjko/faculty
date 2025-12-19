@@ -7,6 +7,7 @@
     import Link from '$lib/components/Link.svelte';
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
+    import { asset } from '$app/paths';
 
     let talks = $derived(
         $profile.getTalks(undefined, (talk) => -parseDate(talk.date).getTime()),
@@ -89,10 +90,10 @@
                         {#if talk.recording || talk.practice}
                             &sdot;
                         {/if}
-                        <Link
-                            to={talk.slides.startsWith('http')
+                        <a
+                            href={talk.slides.startsWith('http')
                                 ? talk.slides
-                                : `/slides/${talk.slides}`}>Slides</Link
+                                : asset(`/slides/${talk.slides}`)}>Slides</a
                         >
                     {/if}
                     {#if talk.blog}
