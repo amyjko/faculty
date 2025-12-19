@@ -34,9 +34,13 @@
 
 <style>
     .block {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: var(--margin);
+        margin-bottom: var(--margin);
         display: flex;
+    }
+
+    .block:first-child {
+        margin-top: 0;
     }
 
     .left {
@@ -47,5 +51,12 @@
         .left {
             flex: 0 0 5em;
         }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: var(--margin);
+        align-items: start;
     }
 </style>

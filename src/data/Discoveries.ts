@@ -6,14 +6,32 @@ export const Discoveries = {
             'Programming languages can be designed to include everyone',
         detail: 'Programming languages can embody values of diversity, equity, inclusion, justice, and accessibility, but it requires careful design and attention to ability, culture, language, and more. These papers deconstruct these nuances, while also offering novel designs, uses, and conceptions of programming languages',
         tags: ['programming languages', 'justice', 'tools'],
-        code: 'https://github.com/wordplaydev/wordplay',
+        resources: [
+            {
+                kind: 'code',
+                url: 'https://github.com/wordplaydev/wordplay',
+                label: 'Wordplay source',
+            },
+            { kind: 'demo', url: 'https://wordplay.dev', label: 'Wordplay' },
+        ],
     },
     FamiliesHelp: {
         contribution:
             'Learning to code as a family can enable rich learning that distrupts intergenerational hierarchies',
         detail: 'These papers consider learning about programming and AI in the context of families, and how this differs from individual and classroom contexts.',
         tags: ['families', 'studies', 'learning'],
-        video: ['https://www.youtube.com/watch?v=t56g4DYIuUA'],
+        resources: [
+            {
+                kind: 'video',
+                url: 'https://www.youtube.com/watch?v=t56g4DYIuUA',
+                label: 'WeCode',
+            },
+            {
+                kind: 'demo',
+                url: 'http://cognimatescopilot.com/',
+                label: 'Cognimates Copilot',
+            },
+        ],
     },
     AssessmentUnfair: {
         contribution:
@@ -50,18 +68,35 @@ export const Discoveries = {
             'Teaching program reading before writing can promote more robust learning',
         detail: 'This is because writing skills are dependent on reading skills. Unfortunately, learning to read code correctly can be boring.',
         tags: ['program reading', 'pedagogy', 'tools'],
-        demo: 'https://helpgidget.org',
+        resources: [
+            {
+                kind: 'video',
+                url: 'https://helpgidget.org',
+                label: 'Gidget',
+            },
+        ],
     },
     GUIsAreMalleable: {
         contribution:
             'It is possible to mine, transform, and synthesize interfaces to serve new use cases and users',
         detail: 'Reasoning about user interfaces in probabalistic and formal ways can enable new forms of accessibility and productivity.',
         tags: ['UI mining', 'tools'],
-        video: [
-            'https://www.youtube.com/watch?v=rQE0zrgzV6Y',
-            'https://www.youtube.com/watch?v=y8pTC6FEsKc',
-            'https://www.youtube.com/watch?v=Ivtvyy7m-qc',
-            'https://www.youtube.com/watch?v=9LA8feFOsOo',
+        resources: [
+            {
+                kind: 'video',
+                url: 'https://www.youtube.com/watch?v=rQE0zrgzV6Y',
+                label: 'Falx',
+            },
+            {
+                kind: 'video',
+                url: 'https://www.youtube.com/watch?v=Ivtvyy7m-qc',
+                label: 'Genie',
+            },
+            {
+                kind: 'video',
+                url: 'https://www.youtube.com/watch?v=9LA8feFOsOo',
+                label: 'Rewire',
+            },
         ],
     },
     ResourcesBad: {
@@ -86,12 +121,22 @@ export const Discoveries = {
         contribution: 'Finding help with software can be as simple as pointing',
         detail: 'Pointing to user interface elements can be a powerfully discrminating input into help retrieval algorithms.',
         tags: ['help', 'tools'],
-        code: 'https://github.com/amyjko/feedlack',
-        demo: 'http://faculty.uw.edu/ajko/demo/cleanroom',
-        video: [
-            'https://www.youtube.com/watch?v=XqkLlKHQeKI',
-            'https://www.youtube.com/watch?v=IkKObjGv42o',
-            'https://www.youtube.com/watch?v=Lay6EWYVhjY',
+        resources: [
+            {
+                kind: 'video',
+                url: 'https://www.youtube.com/watch?v=XqkLlKHQeKI',
+                label: 'Crystal',
+            },
+            {
+                kind: 'video',
+                url: 'https://www.youtube.com/watch?v=IkKObjGv42o',
+                label: 'LemonAid',
+            },
+            {
+                kind: 'video',
+                url: 'https://www.youtube.com/watch?v=Lay6EWYVhjY',
+                label: 'AnswerDash',
+            },
         ],
     },
     DefectsCanBeMined: {
@@ -99,8 +144,18 @@ export const Discoveries = {
             'Some defects can be found by operationalizing regularities in human expression',
         detail: 'Many defects in dynamically typed programs can be found by operationalizing simple observations about how people write code, often forgetting to close the loop that statically typed programs can easily point out.',
         tags: ['verification', 'tools'],
-        code: 'https://github.com/amyjko/feedlack',
-        demo: 'http://faculty.uw.edu/ajko/demo/cleanroom',
+        resources: [
+            {
+                kind: 'code',
+                url: 'https://github.com/amyjko/feedlack',
+                label: 'Feedlack',
+            },
+            {
+                kind: 'demo',
+                url: 'http://faculty.uw.edu/ajko/demo/cleanroom',
+                label: 'Cleanroom',
+            },
+        ],
     },
     BugsAreHard: {
         contribution:
@@ -134,7 +189,13 @@ export const Discoveries = {
         contribution: 'Text-based code editors can be richly interactive',
         detail: "The structured editors of the 1980's were hard to build and use; I invented ways of making both easier by viewing programs as user interfaces, not documents.",
         tags: ['editors', 'programming', 'tools'],
-        video: ['https://www.youtube.com/watch?v=rR8glIsliSo'],
+        resources: [
+            {
+                kind: 'video',
+                url: 'https://www.youtube.com/watch?v=rR8glIsliSo',
+                label: 'Barista',
+            },
+        ],
     },
     ToolsAreHard: {
         contribution:
@@ -152,11 +213,27 @@ export const Discoveries = {
         contribution: 'Programs can answer questions about their behavior',
         detail: "I invented tools and algorithms for deriving 'why' and 'why not' questions from programs and automatically answering those questions, helping people efficiently and interactively debug the root causes of program failures.",
         tags: ['debugging', 'tools'],
-        code: 'https://github.com/amyjko/whyline',
-        video: [
-            'https://www.youtube.com/watch?v=pbElN8nfe3k',
-            'https://www.youtube.com/watch?v=fP8swbzeDuY',
-            'https://www.youtube.com/watch?v=Uw0PP00xafs',
+        resources: [
+            {
+                kind: 'code',
+                url: 'https://github.com/amyjko/whyline',
+                label: 'Whyline Java',
+            },
+            {
+                kind: 'video',
+                url: 'https://www.youtube.com/watch?v=pbElN8nfe3k',
+                label: 'Whyline Java',
+            },
+            {
+                kind: 'video',
+                url: 'https://www.youtube.com/watch?v=fP8swbzeDuY',
+                label: 'Whyline Alice',
+            },
+            {
+                kind: 'video',
+                url: 'https://www.youtube.com/watch?v=Uw0PP00xafs',
+                label: 'Timelapse',
+            },
         ],
     },
     ProgrammersAreHuman: {

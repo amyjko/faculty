@@ -1,10 +1,12 @@
-import type { DiscoveryID } from '../../data/Discoveries';
+export type Resource = {
+    kind: 'code' | 'demo' | 'video';
+    url: string;
+    label: string;
+};
 
 export type Discovery = {
     contribution: string; // 1 punchy sentence
     detail: string; // 2-3 sentences
     tags: string[];
-    video?: string[];
-    demo?: string;
-    code?: string;
+    resources?: Resource[];
 };

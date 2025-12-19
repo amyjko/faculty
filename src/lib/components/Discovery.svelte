@@ -34,57 +34,111 @@
                 alt="A clip from the paper's text or figure"
             />
         {/snippet}
-        <strong>{discovery.contribution}</strong>
-        <small
-            >({range[0]}{range[0] !== range[1] ? ` — ${range[1]}` : ''})</small
-        >
-        <br />{discovery.detail}
-        <p>
-            {#each $profile.getPeopleFromPubs(papers.map((p) => p.id)) as person}
-                {#if person}
-                    <Link
-                        to={person.id === 'ajko' ? '/(app)/bio' : '/(app)/lab'}
-                        id={person.id === 'ajko' ? undefined : person.id}
-                    >
-                        <img
-                            src={`${getPersonImagePath(person.id)}`}
-                            alt={`${person.name} headshot`}
-                            class="mini-headshot"
-                        />
-                    </Link>
-                {/if}
-            {/each}
-        </p>
-        <p>
-            <small>
+        <div class="title">
+            <strong>{discovery.contribution}</strong>
+            <small
+                >({range[0]}{range[0] !== range[1]
+                    ? ` — ${range[1]}`
+                    : ''})</small
+            >
+        </div>
+        <div>
+            {discovery.detail}
+        </div>
+        <div class="meta">
+            <div>
+                {#each $profile.getPeopleFromPubs(papers.map((p) => p.id)) as person}
+                    {#if person}
+                        <Link
+                            to={person.id === 'ajko'
+                                ? '/(app)/bio'
+                                : '/(app)/lab'}
+                            id={person.id === 'ajko' ? undefined : person.id}
+                        >
+                            <img
+                                src={`${getPersonImagePath(person.id)}`}
+                                alt={`${person.name} headshot`}
+                                class="mini-headshot"
+                            />
+                        </Link>
+                    {/if}
+                {/each}
+            </div>
+            <div class="resources">
                 <!-- {#each discovery.tags as tag}<mark class={'topic'}
                         ><Link to={`/(app)/publications`} query={tag}
                             >{tag}</Link
                         ></mark
                     >{/each} -->
-                {#if discovery.video}
-                    {#each discovery.video as video}
-                        &nbsp; <span class="emoji">🎬</span>
-                        <External to={video}>video</External>&nbsp;
+                {#if discovery.resources}
+                    {#each discovery.resources as resource}
+                        {#if resource.kind === 'video'}
+                            <div class="item">
+                                <Emoji symbol="🎬"></Emoji>
+                                <External to={resource.url}
+                                    >{resource.label}</External
+                                >
+                            </div>
+                        {:else if resource.kind === 'demo'}
+                            <div class="item">
+                                <Emoji symbol="🖥️"></Emoji>
+                                <External to={resource.url}
+                                    >{resource.label}</External
+                                >
+                            </div>
+                        {:else if resource.kind === 'code'}
+                            <div class="item">
+                                <code>{'{}'}</code>
+                                <External to={resource.url}
+                                    >{resource.label}</External
+                                >
+                            </div>
+                        {/if}
                     {/each}
                 {/if}
-                {#if discovery.demo}&nbsp;<span class="emoji">🖥️</span>
-                    <External to={discovery.demo}>demo</External>{/if}
-                {#if discovery.code}&nbsp;<code>{'{}'}</code>&nbsp;<External
-                        to={discovery.code}>code</External
-                    >{/if}
-            </small>
-        </p>
-        <p>
+            </div>
             <button onclick={() => (expanded = !expanded)}
                 ><small>{expanded ? '–' : '+'}</small>
                 {papers.length} publications</button
             >
             {#if expanded}
-                {#each papers as paper}
-                    <Paper {paper} />
-                {/each}
+                <div class="papers">
+                    {#each papers as paper}
+                        <Paper {paper} />
+                    {/each}
+                </div>
             {/if}
-        </p>
+        </div>
     </Block>
 {/if}
+
+<style>
+    .title {
+        line-height: 1.4;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .resources {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: var(--small-font-size);
+        gap: var(--margin);
+        row-gap: var(--padding);
+    }
+
+    .meta {
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--margin) / 2);
+        align-items: start;
+    }
+
+    .papers {
+        margin-top: var(--margin);
+        border-left: solid 4px var(--border-color);
+        padding: 0;
+        padding-left: var(--margin);
+    }
+</style>
