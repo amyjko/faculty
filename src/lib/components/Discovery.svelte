@@ -7,6 +7,7 @@
     import External from './External.svelte';
     import getPersonImagePath from '$lib/components/getPersonImage';
     import Paper from './Paper.svelte';
+    import Emoji from './Emoji.svelte';
 
     interface Props {
         discovery: Discovery;
@@ -76,7 +77,7 @@
         </p>
         <p>
             <button onclick={() => (expanded = !expanded)}
-                ><small>{expanded ? '▼' : '▶'}</small>
+                ><small>{expanded ? '–' : '+'}</small>
                 {papers.length} publications</button
             >
             {#if expanded}
