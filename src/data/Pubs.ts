@@ -302,7 +302,7 @@ export const Publications: Paper[] = [
             year: 2025,
             text: 'Alannah has continued to evolve this book with Richard and I as co-editors this year. It is now read by more than 10,000 CS faculty, with new chapters coming. It has been a key resource for transforming CS teaching about accessibility.',
         },
-        discoveries: ['TeachingInclusionHard'],
+        discoveries: ['TeachingInclusionHard', 'TeachingIsHard'],
     },
     {
         id: 'teenethics',
@@ -454,7 +454,7 @@ export const Publications: Paper[] = [
         local: null,
         contribution:
             'Finds widely varying and inconsistent definitions of rigor amongst CS educators and students across primary, secondary, and post-secondary settings.',
-        discoveries: ['CulturesShapesLearning'],
+        discoveries: ['CulturesShapesLearning', 'TeachingIsHard'],
     },
     {
         id: 'implementation',
@@ -500,7 +500,7 @@ export const Publications: Paper[] = [
         local: 'Ko2023STEPCS.pdf',
         contribution:
             'Describes the administrative, fundraising, and pedagogical backstory behind the CS creation of a pre-service program.',
-        discoveries: ['JusticeHard'],
+        discoveries: ['JusticeHard', 'TeachingIsHard'],
     },
     {
         id: 'cider',
@@ -627,7 +627,7 @@ export const Publications: Paper[] = [
         contribution:
             'Developed and evaluated tool that contextualizes student feedback for teaching teams to identify equity issues.',
         award: ['diversity + inclusion award'],
-        discoveries: ['CulturesShapesLearning'],
+        discoveries: ['CulturesShapesLearning', 'TeachingInclusionHard'],
     },
     {
         id: 'strategywriting',
@@ -676,7 +676,7 @@ export const Publications: Paper[] = [
         contribution:
             'Finds that before there is space for critical consciousness about CS, teachers have to navigate issues of trust, positionality, and inequitable systems of education.',
         award: ['best paper'],
-        discoveries: ['JusticeHard'],
+        discoveries: ['JusticeHard', 'TeachingIsHard'],
     },
     {
         id: 'houseofcomputing',
@@ -929,7 +929,7 @@ export const Publications: Paper[] = [
         blog: 'https://medium.com/bits-and-behavior/designing-for-agency-in-online-learning-7632e6ac6f04',
         contribution:
             'Finds that affording more agency in learning environments may increase motivation, but may not improve learning because of the increased burden on decision-making.',
-        discoveries: ['AssessmentUnfair'],
+        discoveries: ['ResourcesBad'],
     },
     {
         id: 'hcipckchallenge',
@@ -2205,7 +2205,7 @@ export const Publications: Paper[] = [
         local: 'Lee2011Gidget.pdf',
         contribution:
             'Giving a computer eyes and having it use personal pronouns that double the amount of time that learners engaging in discretionary computing education by focusing their attention on instructional material.',
-        discoveries: ['ErrorsMatter', 'ReadingHelps', 'LanguagesCanBeJust'],
+        discoveries: ['ReadingHelps', 'LanguagesCanBeJust'],
     },
     {
         id: 'feedlack',

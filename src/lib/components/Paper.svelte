@@ -3,7 +3,6 @@
     import Authors from './Authors.svelte';
     import type Paper from '$lib/models/Paper';
     import Link from './Link.svelte';
-    import External from './External.svelte';
     import APACitation from './APACitation.svelte';
     import { profile } from '$lib/models/stores';
     import Image from './Thumbnail.svelte';

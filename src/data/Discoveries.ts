@@ -55,6 +55,7 @@ export const Discoveries = {
             'Teaching program reading before writing can promote more robust learning',
         detail: 'This is because writing skills are dependent on reading skills. Unfortunately, learning to read code correctly can be boring.',
         tags: ['program reading', 'pedagogy', 'tools'],
+        demo: 'https://helpgidget.org',
     },
     GUIsAreMalleable: {
         contribution:
@@ -85,13 +86,6 @@ export const Discoveries = {
             'Software engineering expertise is technical, but also social, organizational, and political',
         detail: 'Across thousands of surveys and interviews, we found that expertise is far more than just knowing how to architect and build software.',
         tags: ['expertise', 'studies'],
-    },
-    ErrorsMatter: {
-        contribution:
-            'Framing compilers as fallible, prosocial collaborators can facilitate learning',
-        detail: "Compiler feedback is usually impersonal and mean; we found that being nicer has powerful impacts on learners' attention, compelling them to pay attention to valuable direct instruction.",
-        tags: ['feedback', 'studies', 'tools'],
-        demo: 'https://helpgidget.org',
     },
     PointingHelps: {
         contribution: 'Finding help with software can be as simple as pointing',
