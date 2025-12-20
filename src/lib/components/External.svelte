@@ -8,9 +8,3 @@
 </script>
 
 <a href={to} target="_blank" rel="noreferrer">{@render children?.()}</a>
-
-<style>
-    a:hover {
-        text-decoration: underline;
-    }
-</style>

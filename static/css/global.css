@@ -122,7 +122,7 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: underline 3px;
 }
 
 mark {
