@@ -16,7 +16,7 @@
 
 <p>
     I work with outstanding <Link to={'/(app)/lab'}
-        >postdocs, doctoral students, undergraduates, teachers</Link
+        >postdocs, doctoral students, teachers, undergraduates</Link
     > and <Link to={'/(app)/communities'}>communities</Link> on this vision. My current
     projects within this goal are shaped by the faculty, students, and teachers in
     the <Link to="https://computinged.uw.edu"
