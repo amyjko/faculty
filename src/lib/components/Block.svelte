@@ -52,11 +52,4 @@
             flex: 0 0 5em;
         }
     }
-
-    .right {
-        display: flex;
-        flex-direction: column;
-        gap: var(--margin);
-        align-items: start;
-    }
 </style>

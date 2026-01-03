@@ -57,8 +57,7 @@
             <Image url={'/images/talks/' + talk.image} alt={talk.alt} />
         {/snippet}
         <span>
-            &nbsp; {#if talk.keynote}<span class="award">&#x2605; Keynote</span
-                >{/if}
+            {#if talk.keynote}<br /><mark>&#x2605; Keynote</mark>{/if}
             <br /><small
                 ><em
                     >{#if talk.url}<External to={talk.url}
