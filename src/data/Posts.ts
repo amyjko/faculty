@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/beyond-blight-in-2026-82a9ba79c86c',
+        title: 'Five F-words for 2026',
+        date: '2026.1',
+        tags: ['personal', 'gender', 'policy', 'society'],
+        img: 'fivefwords',
+        alt: "A messy brown overhead view with green tendrils and five capital F's at different orientations strewn about.",
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/pride-and-posting-abc07ac96b0d',
         title: 'Pride and posting',
         date: '2025.12',
