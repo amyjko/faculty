@@ -22,7 +22,7 @@ export const Impacts: Impact[] = [
         description:
             'I was interviewed by ACM Inroads about my effort to have impact on education through research.',
         title: 'Conversations with a Prominent Propagator: Amy Ko',
-        author: 's: David P. Bunde, Zack Butler, Christopher L. Hovey, Cynthia Taylor',
+        author: 'David P. Bunde, Zack Butler, Christopher L. Hovey, Cynthia Taylor',
         source: 'ACM Inroads',
         url: 'https://dl.acm.org/doi/10.1145/3756325',
         who: 'public',
