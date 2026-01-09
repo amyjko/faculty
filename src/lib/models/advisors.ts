@@ -128,6 +128,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'Sweden',
     ],
     [
+        'Veronica Cateté',
+        'https://go.ncsu.edu/catete',
+        'K-12 computing education, curriculum scaffolding, assessment, AI education, teacher preparation',
+        'Computer Science',
+        'North Carolina State University',
+        'USA',
+    ],
+    [
         'Cornelia Connolly',
         'https://www.universityofgalway.ie/colleges-and-schools/arts-social-sciences-and-celtic-studies/staffprofiles/corneliaconnolly/',
         'pedagogy, teacher education, computational thinking, design',
