@@ -163,7 +163,7 @@
         <Link to="/(app)/contact">Contact</Link>
         <Link to="/(app)/faq">FAQ</Link>
         <Link to="/(app)/cer">CER FAQ</Link>
-        <Link to="/(cv)">CV</Link>
+        <Link to="/(cv)/cv">CV</Link>
         <br /><Link to="/(app)/wordplay"
             ><Emoji symbol="💬" /> <strong>Wordplay</strong></Link
         >
