@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/five-years-of-justice-centered-secondary-cs-teacher-education-f25ef23d3a71?postPublishedType=initial',
+        title: 'Five years of justice-centered secondary CS teacher education',
+        date: '2026.1',
+        tags: ['grant report', 'computing education', 'K-12', 'diversity'],
+        img: 'stepcs',
+        alt: 'Eight people standing and looking down at a desk with a very small battery powered robot; smiles abound, and a snack cart in the background.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/beyond-blight-in-2026-82a9ba79c86c',
         title: 'Five F-words for 2026',
         date: '2026.1',
