@@ -4,12 +4,11 @@
     }
 
     let { text }: Props = $props();
+
+    const title = $derived(`Amy J. Ko${text.length > 0 ? ' - ' + text : ''}`);
 </script>
 
 <svelte:head>
-    <title>Amy J. Ko - {text}</title>
-    <meta
-        property="og:description"
-        content={`Amy J. Ko${text.length > 0 ? ' - ' + text : ''}`}
-    />
+    <title>{title}</title>
+    <meta property="og:description" content={title} />
 </svelte:head>
