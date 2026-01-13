@@ -2,6 +2,20 @@ import type { Impact } from '../lib/models/Impact';
 
 export const Impacts: Impact[] = [
     {
+        kind: 'press',
+        start: 2026,
+        end: 2026,
+        description:
+            'I contributed to investigative reporting on codoing bootcamp outcomes and inequities.',
+        title: 'Apple’s App Course Runs $20,000 a Student. Is It Really Worth It?',
+        url: 'https://www.wired.com/story/apple-app-making-course-michigan-state-university/',
+        who: 'public',
+        annotation: {
+            year: 2026,
+            text: 'This article investigated the outcomes of coding bootcamps, including inequities in outcomes. I contributed data and expertise to the article.',
+        },
+    },
+    {
         kind: 'community',
         start: 2025,
         end: 2025,
