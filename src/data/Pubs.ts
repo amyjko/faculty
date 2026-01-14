@@ -10,7 +10,7 @@ export const Publications: Paper[] = [
         source: '@cse',
         pages: null,
         publisher: 'Taylor and Francis',
-        doi: 'https://dl.acm.org/doi/10.1145/3776542',
+        doi: null,
         local: 'Everson2026Embroidery.pdf',
         contribution:
             'Finds that students leveraged computational embroidery in ways that richly entangled their identities and cultures, while also learning computing concepts.',
