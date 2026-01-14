@@ -2,6 +2,22 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'embroidery',
+        kind: 'journal article',
+        authors: ['@jayne', '@megumi', '@camilo', '@ajko'],
+        year: 2026,
+        title: 'Culture-Centric Computational Embroidery as a Medium for Learning Computer Science',
+        source: '@cse',
+        pages: null,
+        publisher: 'Taylor and Francis',
+        doi: 'https://dl.acm.org/doi/10.1145/3776542',
+        local: 'Everson2026Embroidery.pdf',
+        contribution:
+            'Finds that students leveraged computational embroidery in ways that richly entangled their identities and cultures, while also learning computing concepts.',
+        annotation: { year: 2026, text: 'Jayne led this with my guidance.' },
+        discoveries: ['CulturesShapesLearning', 'LanguagesCanBeJust'],
+    },
+    {
         id: 'rigor',
         kind: 'journal article',
         authors: ['@jayne', '@megumi', '@emans', '@olesona', '@ajko'],
