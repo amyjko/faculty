@@ -496,7 +496,7 @@ export const Amy: ProfileSpec = {
         {
             venue: '@icer',
             title: 'Senior Program Committee Member',
-            years: [2014, 2015, 2017, 2019],
+            years: [2014, 2015, 2017, 2019, 2024, 2026],
             level: 'pc',
         },
         {
