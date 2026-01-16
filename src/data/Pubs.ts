@@ -2,6 +2,29 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'abilityheuristics',
+        kind: 'refereed conference paper',
+        authors: [
+            'Claire L. Mitchell',
+            'Junhan Kong',
+            'Jesse J. Martinez',
+            'Shaun K. Kane',
+            '@ajko',
+            'Alexis Hiniker',
+            'Jacob O. Wobbrock',
+        ],
+        year: 2026,
+        title: 'Ability Heuristics for Conducting Accessibility Inspections',
+        source: '@chi',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            'Shares a set of nine “ability heuristics” that prompt designers to engage with accessibility throughout the design process. An evaluation found that they better emphasize the quality of accessibility than standarsd or other methods.',
+        discoveries: ['TeachingInclusionHard'],
+    },
+    {
         id: 'embroidery',
         kind: 'journal article',
         authors: ['@jayne', '@megumi', '@camilo', '@ajko'],
