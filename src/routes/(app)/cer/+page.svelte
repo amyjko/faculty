@@ -106,11 +106,11 @@
         research" to research about this teaching and learning. In contrast,
         "Computing education" generally refers to the teaching and learning of <em
             >any</em
-        > aspect of the use of computers and computational ideas, and "Computing
-        education research" to research about that teaching and learning. Because
-        I'm not interested in the historically narrow conception of computing, and
-        my research considers topics outside that narrow historical conception, I
-        use "Computing" instead of "CS".
+        > aspect of the use of computers and computational ideas, and "Computing education
+        research" to research about that teaching and learning. Because I'm not interested
+        in the historically narrow conception of computing, and my research considers
+        topics outside that narrow historical conception, I use "Computing" instead
+        of "CS".
     </p>
 </Section>
 
@@ -126,15 +126,15 @@
 
     <ul>
         <li>
-            <strong>Education research</strong> is broadly concerned with formal
-            systems of education, how to make those systems effective and just, how
-            to prepare teachers to make them effective and just. The field is interested
-            in general theories of learning, education, interest development, and
-            identity, and because of its focus on formal education, is often focused
-            on youth, who are the dominant age demographic engaged in formal education.
-            The phrase "Computing education" uses the word "education" in this same
-            way, but is more broadly concerned with teaching and learning in any
-            context (in principle, but often not in practice).
+            <strong>Education research</strong> is broadly concerned with formal systems
+            of education, how to make those systems effective and just, how to prepare
+            teachers to make them effective and just. The field is interested in general
+            theories of learning, education, interest development, and identity, and
+            because of its focus on formal education, is often focused on youth, who
+            are the dominant age demographic engaged in formal education. The phrase
+            "Computing education" uses the word "education" in this same way, but
+            is more broadly concerned with teaching and learning in any context (in
+            principle, but often not in practice).
         </li>
         <li>
             <strong>Educational psychology</strong> is focused on learning phenomena
@@ -148,15 +148,15 @@
         </li>
         <li>
             <strong>Learning sciences</strong> emerged in the 1990's as a reaction
-            to educational psychology's inattention to the setting, culture, and
-            social context of learning. Combining perspectives from cognition, cognitive
-            science, computer science, and design, like education research, it's
-            much more concerned with the sociocultural factors that shape learning,
-            and more than education and educational psychology, views design as a
-            means to articulating theories, a way of shaping theories, and a way
-            of testing theories. Because of the focus on context, in addition to
-            being concerned with formal systems of education, it is also concerned
-            with learning across the lifespan, at home, in families, and other settings.
+            to educational psychology's inattention to the setting, culture, and social
+            context of learning. Combining perspectives from cognition, cognitive
+            science, computer science, and design, like education research, it's much
+            more concerned with the sociocultural factors that shape learning, and
+            more than education and educational psychology, views design as a means
+            to articulating theories, a way of shaping theories, and a way of testing
+            theories. Because of the focus on context, in addition to being concerned
+            with formal systems of education, it is also concerned with learning across
+            the lifespan, at home, in families, and other settings.
         </li>
     </ul>
 
@@ -405,9 +405,9 @@
     <p>
         One note about selecting advisors: their disciplinary affiliation is
         just <em>one</em> indicator of the nature of the contributions they might
-        make (people in CS departments might built learning technologies, people
-        in colleges of education might focus on teacher training and pedagogy), but
-        this is not a perfect indicator. Look closely at researchers' recent publications;
+        make (people in CS departments might built learning technologies, people in
+        colleges of education might focus on teacher training and pedagogy), but this
+        is not a perfect indicator. Look closely at researchers' recent publications;
         and if their websites seem out of date, write them to ask what they're working
         on.
     </p>
@@ -674,6 +674,14 @@
             ways, but also about equity and justice.</li
         >
         <li
+            ><External
+                to="https://uk.sagepub.com/en-gb/eur/successful-qualitative-research/book233059"
+                >Successful qualitative research</External
+            > discusses foundational methods for qualitative methods and thematic
+            analysis in particular, a key approach to qualitative data anlysis frequently
+            used in computing education.</li
+        >
+        <li
             >There are also several notable commentaries on tensions between
             qualitative and quantitative data, including Hammer and Berland's
             arguments about <External
@@ -742,15 +750,14 @@
             ><External
                 to="https://www.amazon.com/dp/B07N45TH9R/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1"
                 >The Cambridge Handbook of Computing Education Research</External
-            > is a carefully edited synthesis of all of the major discoveries in
-            computing education research since its beginning as a field 50 years
-            ago up until 2018. I authored several chapters along with more than a
-            dozen other leading researchers with the goal of creating the definitive
-            introduction to the field. It is reflective of prior work, for better
-            or worse, going deeply into pedagogy, but only briefly (but elegantly)
-            addressing issues of racism, sexism, and inclusion. Therefore, it should
-            not be viewed as a vision for the future of the field, but rather a reflection
-            of its past.</li
+            > is a carefully edited synthesis of all of the major discoveries in computing
+            education research since its beginning as a field 50 years ago up until
+            2018. I authored several chapters along with more than a dozen other leading
+            researchers with the goal of creating the definitive introduction to the
+            field. It is reflective of prior work, for better or worse, going deeply
+            into pedagogy, but only briefly (but elegantly) addressing issues of racism,
+            sexism, and inclusion. Therefore, it should not be viewed as a vision
+            for the future of the field, but rather a reflection of its past.</li
         >
         <li
             ><External
@@ -758,8 +765,8 @@
                 >Learner-Centered Design of Computing Education: Research on
                 Computing for Everyone</External
             > is a wonderful synthesis of computing education research, with a focus
-            on pedagogy for anyone learning computing, rather than just computer
-            science students.</li
+            on pedagogy for anyone learning computing, rather than just computer science
+            students.</li
         >
         <li
             ><External
@@ -808,9 +815,9 @@
             ><External to="http://dl.acm.org/citation.cfm?id=1922658"
                 >The State of the Art in End-User Software Engineering</External
             > summarizes the literature on end-user programming, which is related,
-            but not the same as novice programming. It synthesizes of all of the
-            programming languages, environments, and tools that have helped people
-            learn to code while automating a task.</li
+            but not the same as novice programming. It synthesizes of all of the programming
+            languages, environments, and tools that have helped people learn to code
+            while automating a task.</li
         >
     </ul>
 
@@ -837,8 +844,8 @@
                 ><External
                     to="https://www.amazon.com/Mindstorms-Children-Computers-Powerful-Ideas/dp/0465046746"
                     >Mindstorms: Children, Computers, and Powerful Ideas</External
-                > is a classic book that envisions a theory of learning grounded
-                in the construction of knowledge through personally meaningful tinkering
+                > is a classic book that envisions a theory of learning grounded in
+                the construction of knowledge through personally meaningful tinkering
                 and creation, especially with computers. I <External
                     to="https://medium.com/bits-and-behavior/mindstorms-what-did-papert-argue-and-what-does-it-mean-for-learning-and-education-c8324b58aca4"
                     >summarized the book</External
@@ -850,9 +857,9 @@
                 ><External
                     to="https://mitpress.mit.edu/9780262514040/stuck-in-the-shallow-end/"
                     >Stuck in the Shallow End: Education, Race, and Computing
-                </External> illustrates the numerous racist structures, beliefs,
-                and practices in K-12 education that systematically exclude students
-                of color from CS education.</p
+                </External> illustrates the numerous racist structures, beliefs, and
+                practices in K-12 education that systematically exclude students of
+                color from CS education.</p
             >
         </li>
         <li>
@@ -860,9 +867,9 @@
                 ><External
                     to="https://mitpress.mit.edu/9780262632690/unlocking-the-clubhouse/"
                     >Unlocking the Clubhouse: Women in Computing</External
-                > examines how the culture of higher education CS systematically
-                excludes and deters women from participating in CS education, and
-                explores promising practices for changing this culture.</p
+                > examines how the culture of higher education CS systematically excludes
+                and deters women from participating in CS education, and explores
+                promising practices for changing this culture.</p
             >
         </li>
         <li>
@@ -898,10 +905,9 @@
             <p
                 ><External to="https://dl.acm.org/doi/10.1145/2538862.2538933"
                     >They can't find us: the search for informal CS education</External
-                > demonstrates how search engines, CS education terminology, and
-                culture interact to connect educated White families to informal CS
-                learning opportunities, while obscuring them from less privileged
-                families.</p
+                > demonstrates how search engines, CS education terminology, and culture
+                interact to connect educated White families to informal CS learning
+                opportunities, while obscuring them from less privileged families.</p
             >
         </li>
         <li>
@@ -939,8 +945,8 @@
                     >Halving fail rates using peer instruction: a study of four
                     computer science courses</External
                 > presents one of the few rigorously examined teaching methods that
-                promotes improved learning, especially for students marginalized
-                by CS education cultures.</p
+                promotes improved learning, especially for students marginalized by
+                CS education cultures.</p
             >
         </li>
         <li>
@@ -1055,9 +1061,9 @@
             > (Grover, 2020) includes 26 chapters featuring foundational programming
             concepts and practices, as well as well-researched pedagogies for teaching
             introductory programming. With chapter contributions from researchers
-            and classroom teachers, the book shares concrete examples as well as
-            abstract principles distilled from research studies and classroom practice
-            along with many illustrative examples (in block- and text-based programming)
+            and classroom teachers, the book shares concrete examples as well as abstract
+            principles distilled from research studies and classroom practice along
+            with many illustrative examples (in block- and text-based programming)
             that can be used in classrooms.</li
         >
         <li
@@ -1108,8 +1114,8 @@
                 >Guide to teaching computer science: An activity-based approach</External
             > (Hazzan et al. 2015). Includes detailed learning activities, curriculum
             reviews, CS education research, lesson planning, and course design. Some
-            pre-service CS teachers find the concrete examples help; others find
-            it jargony and overly complex.</li
+            pre-service CS teachers find the concrete examples help; others find it
+            jargony and overly complex.</li
         >
         <li
             ><External
@@ -1138,8 +1144,8 @@
             ><External
                 to="https://www.amazon.com/Teaching-Computing-Practitioners-Henry-Walker-ebook/dp/B07CMHSZ6T"
                 >Teaching Computing: A Practitioner's Perspective</External
-            > (Walker, 2018). Full of teaching tips for higher education faculty
-            teaching CS.</li
+            > (Walker, 2018). Full of teaching tips for higher education faculty teaching
+            CS.</li
         >
         <li
             ><External to="http://teachtogether.tech/en/"
@@ -1216,16 +1222,16 @@
             <p
                 ><External to="http://toce.acm.org">TOCE</External> (the ACM Transactions
                 on Computing Education) publishes research, and is similar in scope
-                to ICER, but in a journal format. Like ICER, the editorial board
-                and reviewers are all trained researchers.</p
+                to ICER, but in a journal format. Like ICER, the editorial board and
+                reviewers are all trained researchers.</p
             >
         </li>
         <li>
             <p
                 ><External to="https://www.tandfonline.com/journals/ncse20"
                     >CSE</External
-                > (the Journal of Computer Science Education) publishes research
-                and is similar to TOCE and ICER in its reviewing community and similar
+                > (the Journal of Computer Science Education) publishes research and
+                is similar to TOCE and ICER in its reviewing community and similar
                 in research rigor and prestige. However, unlike TOCE and ICER, publications
                 in CSE are generally expected to have more direct implications for
                 teachers.</p
@@ -1246,11 +1252,11 @@
             <p
                 ><External to="https://www.tandfonline.com/journals/hlns20"
                     >JLS</External
-                > (the Journal of Learning Sciences) is one of the top education
-                research journals and expects a strong connection to learning theory
-                and mostly wants empirical work. It is not a journal that publishes
-                HCI, so work must be connected to cognition, sociocultural context,
-                or other theory, and not system design.</p
+                > (the Journal of Learning Sciences) is one of the top education research
+                journals and expects a strong connection to learning theory and mostly
+                wants empirical work. It is not a journal that publishes HCI, so work
+                must be connected to cognition, sociocultural context, or other theory,
+                and not system design.</p
             >
         </li>
         <li>
@@ -1303,11 +1309,11 @@
         <li>
             <p
                 ><External to="http://chi.acm.org">CHI</External> (ACM SIGCHI Conference
-                on Human Factors in Computing) is an HCI conference with a focus
-                on any aspect of interactions between people and computers, including
-                programming. As one of the largest and broadest ACM conferences,
-                it's easy for research on learning to get lost here, but so does
-                every other topic!</p
+                on Human Factors in Computing) is an HCI conference with a focus on
+                any aspect of interactions between people and computers, including
+                programming. As one of the largest and broadest ACM conferences, it's
+                easy for research on learning to get lost here, but so does every
+                other topic!</p
             >
         </li>
         <li>
@@ -1315,9 +1321,9 @@
                 ><External
                     to="https://www.aera.net/Events-Meetings/Annual-Meeting"
                     >AERA</External
-                > (the American Education Research Association conference) has a
-                division for engineering and computing education that publishes papers
-                on computational thinking.</p
+                > (the American Education Research Association conference) has a division
+                for engineering and computing education that publishes papers on computational
+                thinking.</p
             >
         </li>
         <li>
@@ -1364,12 +1370,12 @@
                 >SIGCSE</External
             > (the SIGCSE Technical Symposium on Computer Science Education) publishes
             both research and practice papers in a short format, bringing together
-            researchers and teachers. This is the largest conference on computer
-            science education and generally attracts teachers. There is a dedicated
-            research track separate from experience reports, though the research
-            track has a 6-page limit, making it unsuitable for many forms of research,
-            such as qualitative work or more substantial quantitative work. Generally
-            held in North America.</li
+            researchers and teachers. This is the largest conference on computer science
+            education and generally attracts teachers. There is a dedicated research
+            track separate from experience reports, though the research track has
+            a 6-page limit, making it unsuitable for many forms of research, such
+            as qualitative work or more substantial quantitative work. Generally held
+            in North America.</li
         >
         <li
             ><External to="http://iticse.acm.org">ITiCSE</External> (the Annual Conference
@@ -1393,8 +1399,8 @@
             ><External to="https://aceconference.wordpress.com">ACE</External> (the
             Australasian Computing Education Conference) is a regional conference
             with a mix of research and practice papers, bringing together education
-            researchers and practitioners. Held in Australia or New Zealand, but
-            welcomes attendees from anywhere.</li
+            researchers and practitioners. Held in Australia or New Zealand, but welcomes
+            attendees from anywhere.</li
         >
         <li
             ><External to="http://www.latice-conference.org">LaTiCE</External> (the
@@ -1403,8 +1409,8 @@
         >
         <li
             ><External to="http://fie-conference.org">FIE</External> (the ASEE Frontiers
-            in Education conference) is more broad and more practitioner focused
-            than SIGCSE and occasionally has CER work.</li
+            in Education conference) is more broad and more practitioner focused than
+            SIGCSE and occasionally has CER work.</li
         >
     </ul>
 </Section>
