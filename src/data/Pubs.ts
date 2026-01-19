@@ -156,7 +156,7 @@ export const Publications: Paper[] = [
         doi: 'https://doi.org/10.1145/3713043.3727051',
         local: 'Druga2025ScratchCopilot.pdf',
         contribution:
-            'Explore opportunities and limitations of youth interactions with generative AI for creative coding.',
+            'Explores opportunities and limitations of youth interactions with generative AI for creative coding.',
         annotation: {
             year: 2025,
             text: "This was the culiminating work in Stef's dissertation, which I collaborated on with her.",
