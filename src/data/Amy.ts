@@ -670,6 +670,17 @@ export const Amy: ProfileSpec = {
         //     enddate: null,
         // },
         {
+            name: 'Daeun Hwang',
+            institution: 'University of Washington',
+            department: 'The Information School',
+            startdate: 2026,
+            enddate: null,
+            annotation: {
+                year: 2026,
+                text: "I joined Daeun's advisory committee in 2026",
+            },
+        },
+        {
             name: 'Melissa Chen',
             institution: 'Northwestern',
             department: 'Computer Science',
