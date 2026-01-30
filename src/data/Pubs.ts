@@ -238,6 +238,7 @@ export const Publications: Paper[] = [
         contribution:
             "Finds tensions between participants' computing attitudes, knowledge, self-efficacy, and social consciousness, suggesting pathways for scaffolding the critical examination of technology in secondary education",
         discoveries: ['CulturesShapesLearning', 'JusticeHard'],
+        award: ['best paper'],
     },
     {
         id: 'process1',
