@@ -21,10 +21,10 @@
         />
     {/snippet}
     &nbsp;(LCI, pronouned "Lacey") is the grassroots community of computing education
-    researchers and educators at the University of Washington, spanning the Paul
-    G. Allen School of Computer Science & Engineering, The Information School, the
-    College of Education, Human-Centered Design and Engineering, the Department of
-    Communication, and more.
+    researchers and educators at the University of Washington, spanning the Paul G.
+    Allen School of Computer Science & Engineering, The Information School, the College
+    of Education, Human-Centered Design and Engineering, the Department of Communication,
+    and more.
 </Block>
 
 <Block link="http://dub.uw.edu/" header="DUB">
@@ -42,8 +42,8 @@
         <Image url={'/images/communities/plse.jpg'} alt="The PLSE logo." />
     {/snippet}
     &nbsp;is the programming languages + software engineering researcher group in
-    the Paul G. Allen School of Computer Science & Engineering at the University
-    of Washington. Amy often advises or co-advises Ph.D. students in PLSE.
+    the Paul G. Allen School of Computer Science & Engineering at the University of
+    Washington. Amy often advises or co-advises Ph.D. students in PLSE.
 </Block>
 
 <Block link="https://digitalyouth.uw.edu/" header="The Digital Youth Lab">
@@ -57,27 +57,16 @@
     I collaborate with faculty in the lab.
 </Block>
 
-<Block link="http://soundcsed.org/" header="Sound CS Ed">
-    {#snippet image()}
-        <Image
-            url={'/images/communities/soundcsed.jpg'}
-            alt="The Sound CS Ed logo."
-        />
-    {/snippet}
-    &nbsp;is a community of CS teachers, researchers, makers, and advocates in Puget
-    Sound that I facilitate. It hosts a quarterly meetup and chats on Slack.
-</Block>
-
-<Block link="https://www.csforallwa.org" header="CS for All Washington">
+<Block link="https://www.csforallwa.org" header="CS for All WA">
     {#snippet image()}
         <Image
             url={'/images/communities/csforallwa.jpg'}
-            alt="The CS for All Washington logo."
+            alt="The CS for All WA logo."
         />
     {/snippet}
-    . I founded this coalition to advocate for universal K-12 CS education in Washington
-    state, bringing together CSTA chapters, the Washington State Office of the Superintendent
-    of Public Instruction, and several Educational Service Districts.
+    . I founded this coalition in 2016 to advocate for universal K-12 CS education
+    in Washington state, bringing together teacher, school leader, industry, student,
+    and non-profit advocates to shape state practices, policies, and budgets.
 </Block>
 
 <Block
@@ -92,9 +81,8 @@
     {/snippet}
     . First funded by NSF and led by Richard Ladner and Sheryl Burgstahler, AccessComputing
     creates pathways for students with disabilities into computing. I joined as a
-    co-PI in 2016, and brought leadership in teaching accessibility. I help make
-    strategic decision for the project and give talks regularly about the alliance's
-    activities.
+    co-PI in 2016, and brought leadership in teaching accessibility. I help make strategic
+    decision for the project and give talks regularly about the alliance's activities.
 </Block>
 
 <Block link="https://create.uw.edu" header="CREATE">
@@ -106,11 +94,11 @@
     {/snippet}
     . The Center for Research and Education on Accessible Technology and Experiences
     explores how to make technology and the world accessible. My work in the center
-    explores how to educate students and teachers about accessible computing, to
-    ensure future generations of technologists create a more accessible digital world.
+    explores how to educate students and teachers about accessible computing, to ensure
+    future generations of technologists create a more accessible digital world.
 </Block>
 
-<Block link="http://www.eusesconsortium.org" header="EUSES Consortium">
+<!-- <Block link="http://www.eusesconsortium.org" header="EUSES Consortium">
     {#snippet image()}
         <Image
             url={'/images/communities/euses.jpg'}
@@ -119,4 +107,4 @@
     {/snippet}
     &nbsp;is a former coalition of end-user programming and end-user software engineering
     researchers. I was its last director.
-</Block>
+</Block> -->
