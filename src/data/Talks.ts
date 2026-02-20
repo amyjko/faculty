@@ -3,14 +3,14 @@ import type { Talk } from '$lib/models/Talk';
 const Talks: Talk[] = [
     {
         date: '2026-02-18',
-        image: 'placeholder.jpg',
-        alt: 'forthcoming',
+        image: 'sigcse2026.jpg',
+        alt: 'love, learning, and computing education',
         slides: null,
         title: 'Love, Learning, and Computing Education',
         venue: '2026 ACM SIGCSE Technical Symposium',
         url: 'https://sigcse2026.sigcse.org/track/sigcse-ts-2026-keynotes',
         recording: null,
-        practice: null,
+        practice: 'https://www.youtube.com/watch?v=iaT_zvNN_zc',
         description:
             "I'll be giving a keynote broadly about equity and justice in computing education.",
         keynote: true,
