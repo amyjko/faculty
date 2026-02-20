@@ -13,13 +13,13 @@
 
 <h3>Upcoming trips</h3>
 
-{#each $profile.getTravel( (trip) => trip.commitment.end !== null && parseDate(trip.commitment.end).getTime() > Date.now(), (trip) => (trip.commitment.start === null ? Infinity : parseDate(trip.commitment.start).getTime()) ) as trip}
+{#each $profile.getTravel( (trip) => trip.commitment.end !== null && parseDate(trip.commitment.end).getTime() >= Date.now(), (trip) => (trip.commitment.start === null ? Infinity : parseDate(trip.commitment.start).getTime()), ) as trip}
     <Trip {trip} />
 {/each}
 
 <h3>Past trips</h3>
 
-{#each $profile.getTravel( (trip) => trip.commitment.end !== null && parseDate(trip.commitment.end).getTime() <= Date.now(), (trip) => (trip.commitment.start === null ? Infinity : -parseDate(trip.commitment.start).getTime()) ) as trip}
+{#each $profile.getTravel( (trip) => trip.commitment.end !== null && parseDate(trip.commitment.end).getTime() < Date.now(), (trip) => (trip.commitment.start === null ? Infinity : -parseDate(trip.commitment.start).getTime()), ) as trip}
     <Trip {trip} />
 {/each}
 

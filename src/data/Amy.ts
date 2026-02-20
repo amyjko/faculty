@@ -2213,13 +2213,49 @@ export const Amy: ProfileSpec = {
     ],
     travel: [
         {
+            url: 'https://chi2026.acm.org/',
+            title: 'ACM SIGCHI Conference on Human Factors in Computing Systems',
+            details: 'Networking',
+            category: 'research',
+            commitment: {
+                start: '2026-04-13',
+                end: '2026-04-17',
+                hours: 40,
+                priority: 1,
+            },
+        },
+        {
+            url: 'https://cse.umn.edu/cs/events/carlis-colloquium-love-learning-and-computing-education',
+            title: 'University of Minnessota Carlis Colloquium',
+            details: 'Visit and talk',
+            category: 'research',
+            commitment: {
+                start: '2026-03-23',
+                end: '2026-03-23',
+                hours: 16,
+                priority: 1,
+            },
+        },
+        {
+            url: 'https://sigcse2026.sigcse.org/',
+            title: '2026 ACM SIGCSE Technical Symposium',
+            details: 'Networking, keynoting, and facilitating.',
+            category: 'research',
+            commitment: {
+                start: '2026-02-17',
+                end: '2026-02-20',
+                hours: 40,
+                priority: 1,
+            },
+        },
+        {
             url: 'https://www.kolicalling.fi/',
             title: 'Koli Calling 2025',
             details: 'Networking and sharing my research.',
             category: 'research',
             commitment: {
-                start: '2024-11-11',
-                end: '2024-11-16',
+                start: '2025-11-11',
+                end: '2025-11-16',
                 hours: 40,
                 priority: 1,
             },
