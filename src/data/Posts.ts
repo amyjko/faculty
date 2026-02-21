@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/sigcse-2026-love-and-learning-cf5d52723f16',
+        title: 'SIGCSE 2026: Love and learning',
+        date: '2026.2',
+        tags: ['trip report', 'computing education', 'K-12', 'diversity'],
+        img: 'sigcse26',
+        alt: 'A brick, circular, windowed facade against a cloudy, sunny morning dawn.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/five-years-of-justice-centered-secondary-cs-teacher-education-f25ef23d3a71?postPublishedType=initial',
         title: 'Five years of justice-centered secondary CS teacher education',
         date: '2026.1',
