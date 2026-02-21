@@ -1520,6 +1520,11 @@
                 >Computer Science Teacher</External
             > blog covers a range of computing education, research, and policy issues.</li
         >
+        <li>
+            The <External to="https://cacm.acm.org/section/blogcacm/"
+                >CACM blog</External
+            > often has posts related to computing education.
+        </li>
     </ul>
 
     <p>Is this list missing you? Let me know!</p>
