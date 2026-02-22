@@ -12,7 +12,7 @@ const Talks: Talk[] = [
         recording: null,
         practice: 'https://www.youtube.com/watch?v=iaT_zvNN_zc',
         description:
-            "I'll be giving a keynote broadly about equity and justice in computing education.",
+            'I speak on the relationship between love, learning, and computing education, deconstructing its role in my learning, the meaning of love in education generally, the tensions between love and CS, and the many inspiring scholars who are showing what love in CS might look like. I end with a call to action for educators and researchers, to make the most of this fascist moment in U.S. history.',
         keynote: true,
         annotation: {
             year: 2025,
