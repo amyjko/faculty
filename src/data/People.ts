@@ -80,7 +80,7 @@ export const People: readonly Person[] = [
         dept: 'Paul G. Allen School of Computer Science & Engineering',
         coadvisor: 'R. Benjamin Shapiro, Mike Ernst',
         bio: 'Elli is a PhD student in a Computer Science in Engineering. I advised her for a year as she explored programming tools for scientists. She decided to pivot to genome sciences near the end of her first year.',
-        url: 'https://elliberes.me',
+        url: 'https://eleft.asia/',
         startdate: 2024,
         enddate: 2025,
         achievements: [],
