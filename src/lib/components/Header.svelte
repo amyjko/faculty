@@ -81,8 +81,7 @@
     <div class="metadata">
         <span class="small"
             ><em
-                ><Link to="https://www.mypronouns.org/she-her"
-                    >she/her/hers</Link
+                ><Link to="https://www.mypronouns.org/she-her">she/her</Link
                 ></em
             ></span
         >
