@@ -663,6 +663,13 @@ export const Amy: ProfileSpec = {
     ],
     doctoralCommittees: [
         {
+            name: 'Josh Horotwitz',
+            institution: 'University of Washington',
+            department: 'Computer Science & Engineering',
+            startdate: 2026,
+            enddate: null,
+        },
+        {
             name: 'Majeed Kazemitabaar',
             institution: 'University of Toronto',
             department: 'Computer Science',
