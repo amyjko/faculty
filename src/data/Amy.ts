@@ -1074,6 +1074,45 @@ export const Amy: ProfileSpec = {
     ],
     service: [
         {
+            title: 'Member',
+            committee: 'Accessibility Exceptions Review Panel',
+            level: 'university',
+            description:
+                'Evaluated faculty requests for exceptions to accessibility policies, ensuring compliance with legal and ethical standards.',
+            commitment: {
+                start: '2025-02-01',
+                end: '2026-06-15',
+                hours: 1,
+                priority: 0,
+            },
+        },
+        {
+            title: 'Member',
+            committee: 'Accessibility Sustainability Committee',
+            level: 'university',
+            description:
+                'Designed and informed policy related to digital content accessibility.',
+            commitment: {
+                start: '2025-09-01',
+                end: '2026-06-15',
+                hours: 1,
+                priority: 0,
+            },
+        },
+        {
+            title: 'Member',
+            committee: 'UW I&T Academic Services Board',
+            level: 'university',
+            description:
+                'Advised on student database information system policy and governance.',
+            commitment: {
+                start: '2025-09-01',
+                end: '2026-06-15',
+                hours: 1,
+                priority: 0,
+            },
+        },
+        {
             title: 'Subcommittee chair',
             committee:
                 'Washington State Board of Education FutureReady Technology, Media Literacy, and Computer Science Subcommittee',
