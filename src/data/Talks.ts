@@ -9,7 +9,7 @@ const Talks: Talk[] = [
         title: 'Love, Learning, and Computing Education',
         venue: '2026 ACM SIGCSE Technical Symposium',
         url: 'https://sigcse2026.sigcse.org/track/sigcse-ts-2026-keynotes',
-        recording: null,
+        recording: 'https://www.youtube.com/watch?v=FVrnZh_w-hY',
         practice: 'https://www.youtube.com/watch?v=iaT_zvNN_zc',
         description:
             'I speak on the relationship between love, learning, and computing education, deconstructing its role in my learning, the meaning of love in education generally, the tensions between love and CS, and the many inspiring scholars who are showing what love in CS might look like. I end with a call to action for educators and researchers, to make the most of this fascist moment in U.S. history.',
