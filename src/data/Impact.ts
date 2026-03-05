@@ -6,6 +6,16 @@ export const Impacts: Impact[] = [
         start: 2026,
         end: 2026,
         description:
+            'I was interviewed by Chris Stokel-Walker about the risks of vibe coding.',
+        title: 'Everything Feels More Glitchy Right Now and Everyone Is Blaming Vibe Coding. The Real Story Is More Complicated',
+        url: 'https://www.inc.com/chris-stokel-walker/everything-feels-more-glitchy-right-now-and-everyone-is-blaming-vibe-coding-the-real-story-is-more-complicated/91309771',
+        who: 'public',
+    },
+    {
+        kind: 'press',
+        start: 2026,
+        end: 2026,
+        description:
             'I contributed to investigative reporting on codoing bootcamp outcomes and inequities.',
         title: 'Apple’s App Course Runs $20,000 a Student. Is It Really Worth It?',
         url: 'https://www.wired.com/story/apple-app-making-course-michigan-state-university/',
