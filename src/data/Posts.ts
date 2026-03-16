@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/winter-wondering-de0165291534',
+        title: 'Winter wondering',
+        date: '2026.03',
+        tags: ['personal', 'gender', 'society', 'academia'],
+        img: 'wondering',
+        alt: "A tuxedo cat's symmetrically marked face stares intensely into the camera, with her tongue slightly out.",
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/sigcse-2026-love-and-learning-cf5d52723f16',
         title: 'SIGCSE 2026: Love and learning',
         date: '2026.2',
