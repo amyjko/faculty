@@ -98,7 +98,7 @@
                 {/if}
             </div>
             <button onclick={() => (expanded = !expanded)}
-                ><small>{expanded ? '–' : '+'}</small>
+                ><small>{expanded ? '▼' : '▶'}</small>
                 {papers.length} publications</button
             >
             {#if expanded}
