@@ -137,16 +137,16 @@
 </p>
 
 <p>
-    So how old am I? I was born in the summer of 1980. I am a Gen Xer. The
-    music of my childhood came with big hair and melodrama. I spent a whole
-    summer earning and saving $99 to buy a first generation Nintendo. Childhood
-    meant going wherever I wanted with whomever I wanted after school with no
-    parental consequences. I was one of the first people on the consumer
-    internet. My adolescence was defined by pervasive grunge, sadness, suicide,
-    comic book stores, arcades, and Magic the Gathering tournaments. I look back
-    to the 80's and 90's and wonder how the world got so complicated, so
-    quickly. And then I remember that it was always complicated, whiteness just
-    demanded we deny that.
+    So how old am I? I was born in the summer of 1980. I am a Gen Xer. The music
+    of my childhood came with big hair and melodrama. I spent a whole summer
+    earning and saving $99 to buy a first generation Nintendo. Childhood meant
+    going wherever I wanted with whomever I wanted after school with no parental
+    consequences. I was one of the first people on the consumer internet. My
+    adolescence was defined by pervasive grunge, sadness, suicide, comic book
+    stores, arcades, and Magic the Gathering tournaments. I look back to the
+    80's and 90's and wonder how the world got so complicated, so quickly. And
+    then I remember that it was always complicated, whiteness just demanded we
+    deny that.
 </p>
 
 <p>
@@ -228,8 +228,8 @@
 <Linkable id="identity">Identity</Linkable>
 
 <p>
-    Labels are often used to stereotype, categorize, and oppress. However,
-    when we use them to describe ourselves, they can be powerful ways to develop
+    Labels are often used to stereotype, categorize, and oppress. However, when
+    we use them to describe ourselves, they can be powerful ways to develop
     cultural humility, preventing stereotyping and assumptions, as well as
     signal safety. Here are a few labels that I use to describe myself and what
     they mean to me:
