@@ -118,7 +118,7 @@
 <p>
     <External to="https://en.wikipedia.org/wiki/Amy_J._Ko">Wikipedia</External> has
     a page about me. If you're so inclined, see if there's other notable information
-    its missing and add it.
+    it's missing and add it.
 </p>
 
 <Linkable id="age">Age</Linkable>
@@ -137,7 +137,7 @@
 </p>
 
 <p>
-    So how old am I? I was born in the summer of 1980. I am an Gen Xer. The
+    So how old am I? I was born in the summer of 1980. I am a Gen Xer. The
     music of my childhood came with big hair and melodrama. I spent a whole
     summer earning and saving $99 to buy a first generation Nintendo. Childhood
     meant going wherever I wanted with whomever I wanted after school with no
@@ -228,7 +228,7 @@
 <Linkable id="identity">Identity</Linkable>
 
 <p>
-    Labels are are often used to stereotype, categorize, and oppress. However,
+    Labels are often used to stereotype, categorize, and oppress. However,
     when we use them to describe ourselves, they can be powerful ways to develop
     cultural humility, preventing stereotyping and assumptions, as well as
     signal safety. Here are a few labels that I use to describe myself and what

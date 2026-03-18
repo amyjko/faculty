@@ -140,7 +140,7 @@ export const Posts: Post[] = [
         date: '2025.01',
         tags: ['personal', 'policy', 'gender'],
         img: 'horrorjoy',
-        alt: 'A stage with a Black woman and a keyboard in mics, shrounded in blue.',
+        alt: 'A stage with a Black woman and a keyboard in mics, surrounded in blue.',
     },
     {
         url: 'https://medium.com/bits-and-behavior/fragmentation-in-academic-leadership-8bae84ea3402',
@@ -492,7 +492,7 @@ export const Posts: Post[] = [
         date: '2022.12',
         tags: ['personal', 'academia'],
         img: 'huakai',
-        alt: 'Amy smiling with her hair down with a a sunset and beach in the background.',
+        alt: 'Amy smiling with her hair down with a sunset and beach in the background.',
     },
     {
         url: 'https://medium.com/bits-and-behavior/life-off-twitter-37f2b93f6f9b',

@@ -160,7 +160,7 @@ export const Discoveries = {
     BugsAreHard: {
         contribution:
             'Bug reports are where developers and users negotiate what "defective" means',
-        detail: "The seeminly technical context of bug reports are where large communities of users and small teams of developers engage in power struggles about what software should and shouldn't do.",
+        detail: "The seemingly technical context of bug reports are where large communities of users and small teams of developers engage in power struggles about what software should and shouldn't do.",
         tags: ['issue tracking', 'studies'],
     },
     ProbabilityIsHard: {
@@ -182,7 +182,7 @@ export const Discoveries = {
     },
     DevelopmentNeedsInfo: {
         contribution: 'Software engineering depends on information',
-        detail: 'Through a series of studies, I unconvered the many ways that developers depend on information from people and systems to make engineering decisions, and how some of the most crucial information is hard or impossible to find.',
+        detail: 'Through a series of studies, I uncovered the many ways that developers depend on information from people and systems to make engineering decisions, and how some of the most crucial information is hard or impossible to find.',
         tags: ['teams', 'studies'],
     },
     EditorsCanBeCool: {

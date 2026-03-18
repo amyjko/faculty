@@ -551,7 +551,7 @@ export default class Profile {
             // Which promises occur in this week?
             commitments.forEach((commitment) => {
                 if (commitment.start !== null) {
-                    // If this is an annual commitment, is this week in it's month range?
+                    // If this is an annual commitment, is this week in its month range?
                     if (commitment.annually) {
                         if (
                             commitment.end &&

@@ -571,7 +571,7 @@ export const Publications: Paper[] = [
         doi: 'https://doi.org/10.1145/3501385.3543966',
         local: 'Everson2022TeacherMotivation.pdf',
         contribution:
-            'Finds that teacher candidates displayed many conceptions of justice that motivated them to teach CS, including repairing past wrongs in education, improving representation, and expanding literacy, but fears of added course preparation and opportunity costs were signficant deterrents.',
+            'Finds that teacher candidates displayed many conceptions of justice that motivated them to teach CS, including repairing past wrongs in education, improving representation, and expanding literacy, but fears of added course preparation and opportunity costs were significant deterrents.',
         discoveries: ['TeachingIsHard'],
     },
     {

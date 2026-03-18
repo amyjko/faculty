@@ -1275,7 +1275,7 @@ export const Amy: ProfileSpec = {
             committee: 'iSchool Ph.D. Admissions Committee',
             level: 'departmental',
             description:
-                'I helped plan admissions policy, review Ph.D. applicaitons, and make final admissions recommendations.',
+                'I helped plan admissions policy, review Ph.D. applications, and make final admissions recommendations.',
             commitment: {
                 start: '2023-09-15',
                 end: '2023-12-15',
@@ -1614,7 +1614,7 @@ export const Amy: ProfileSpec = {
             committee: 'iSchool Ph.D. Admissions Committee',
             level: 'departmental',
             description:
-                'I helped plan admissions policy, review Ph.D. applicaitons, and make final admissions recommendations.',
+                'I helped plan admissions policy, review Ph.D. applications, and make final admissions recommendations.',
             commitment: {
                 start: '2009-09-15',
                 end: '2010-06-15',
@@ -1640,7 +1640,7 @@ export const Amy: ProfileSpec = {
             committee: 'iSchool Elected Faculty Council',
             level: 'departmental',
             description:
-                'I helped advance the interests of faculty in the school through policy change and advocacy to the dean, hepling to secure an annual dispursement of flexible funding.',
+                'I helped advance the interests of faculty in the school through policy change and advocacy to the dean, helping to secure an annual disbursement of flexible funding.',
             commitment: {
                 start: '2012-09-15',
                 end: '2013-06-15',

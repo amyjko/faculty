@@ -559,7 +559,7 @@ export const Impacts: Impact[] = [
         start: 2018,
         end: null,
         description:
-            "Greg Nelson's arguments about the role of theory in computing education research have spurred signfiicant debate in CS education. This debate was continued in a 60 minute panel session at ICER 2018 in Finland, an then another 90 minute panel session at SIGCSE in Minneapolis",
+            "Greg Nelson's arguments about the role of theory in computing education research have spurred significant debate in CS education. This debate was continued in a 60 minute panel session at ICER 2018 in Finland, and then another 90 minute panel session at SIGCSE in Minneapolis",
         url: null,
         who: 'cer',
     },
