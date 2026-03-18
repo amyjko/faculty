@@ -11,7 +11,7 @@ import type { Editing } from './Editing';
 import type { Reviewing } from './Reviewing';
 import type { DoctoralCommittee } from './DoctoralCommittee';
 import type { Funding } from './Funding';
-import type { Travel } from './Travel';
+import type { TravelInfo } from './Travel';
 import type { Service } from './Service';
 import type { Talk } from './Talk';
 import type { Class } from './Class';
@@ -35,7 +35,7 @@ type ProfileSpec = {
     doctoralCommittees: DoctoralCommittee[];
     funding: Funding[];
     posts: Post[];
-    travel: Travel[];
+    travel: TravelInfo[];
     service: Service[];
     talks: Talk[];
     classes: Class[];

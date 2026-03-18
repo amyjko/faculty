@@ -14,7 +14,7 @@ import type { Recognition } from './Recognition';
 import type { Reviewing } from './Reviewing';
 import type { Service } from './Service';
 import type { Talk } from './Talk';
-import type { Travel } from './Travel';
+import type { TravelInfo } from './Travel';
 import type Commit from './Commit';
 import type { Discovery } from './Discovery';
 import { Discoveries, type DiscoveryID } from '../../data/Discoveries';
@@ -110,8 +110,8 @@ export default class Profile {
 
     // Get a list of filtered and sorted travel.
     getTravel(
-        filter?: (travel: Travel) => boolean,
-        sort?: (travel: Travel) => number,
+        filter?: (travel: TravelInfo) => boolean,
+        sort?: (travel: TravelInfo) => number,
     ) {
         return this.cloneFilterSort(this.json.travel.slice(), filter, sort);
     }

@@ -1,11 +1,11 @@
 <script lang="ts">
-    import type { Travel } from '$lib/models/Travel';
+    import type { TravelInfo } from '$lib/models/Travel';
     import Block from '$lib/components/Block.svelte';
     import External from '$lib/components/External.svelte';
     import { parseDate } from './Profile';
 
     interface Props {
-        trip: Travel;
+        trip: TravelInfo;
     }
 
     let { trip }: Props = $props();
@@ -53,19 +53,17 @@
 
 <Block link={trip.url} header={trip.title}>
     {#snippet image()}
-    
-            <em
-                >{trip.commitment.start === null || trip.commitment.end === null
-                    ? 'TBD'
-                    : getDateString(
-                          parseDate(trip.commitment.start),
-                          parseDate(trip.commitment.end)
-                      )}</em
-            >
-            {#if trip.report}<span
-                    ><br /><External to={trip.report}>trip report</External></span
-                >{/if}
-        
+        <em
+            >{trip.commitment.start === null || trip.commitment.end === null
+                ? 'TBD'
+                : getDateString(
+                      parseDate(trip.commitment.start),
+                      parseDate(trip.commitment.end),
+                  )}</em
+        >
+        {#if trip.report}<span
+                ><br /><External to={trip.report}>trip report</External></span
+            >{/if}
     {/snippet}
     <br />{trip.details}
 </Block>
