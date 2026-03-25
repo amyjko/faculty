@@ -1,6 +1,7 @@
 <script lang="ts">
     import { asset } from '$app/paths';
     import { page } from '$app/state';
+    import Alert from './Alert.svelte';
     import Emoji from './Emoji.svelte';
     import External from './External.svelte';
     import Link from './Link.svelte';
@@ -133,12 +134,12 @@
     </div></section
 >
 
-<!-- <Alert
-    >I will not be recruiting new Ph.D. students for the 2026-27 academic year,
-    due to the U.S. government's grant terminations, research funding cuts, and
-    threats to university budgets. Progress will have to wait for an
-    administration interested in the future.
-</Alert> -->
+<Alert>
+    I do not know if I will be recruiting new Ph.D. students for the 2027-28
+    academic year. With grant terminations, research funding cuts, and the
+    politicization of federal funding, research funding for doctoral students is
+    volatile. If I decide to recruit, I will update with my plans here.
+</Alert>
 
 <br /><button onclick={replace}>censor</button>
 
