@@ -16,8 +16,9 @@ const Classes: Class[] = [
             { size: 13, term: 1, year: 2024, score: 4.7 },
             { size: 17, term: 2, year: 2025, score: 4.8 },
             { size: 13, term: 3, year: 2025, score: 4.8 },
-            { size: 7, term: 1, year: 2025, score: null },
-            { size: 7, term: 2, year: 2026, score: null },
+            { size: 7, term: 1, year: 2025, score: 4.5 },
+            { size: 7, term: 2, year: 2026, score: 4.6 },
+            { size: 30, term: 3, year: 2026, score: null },
         ],
         annotation: {
             year: 2025,
@@ -191,6 +192,7 @@ const Classes: Class[] = [
         ],
         hours: 6,
         offerings: [
+            { year: 2026, term: 3, size: 9, score: null },
             { year: 2025, term: 3, size: 9, score: 4.3 },
             { year: 2024, term: 3, size: 15, score: 4.9 },
             { year: 2023, term: 3, size: 14, score: 4.9 },
