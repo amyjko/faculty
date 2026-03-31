@@ -84,7 +84,7 @@ export const Publications: Paper[] = [
         ],
         year: 2025,
         title: "Integrating large language model and psychometric analysis to understand learners' coding behaviors",
-        source: 'nternational Conference on Education and New Learning Technologies (EDULEARN)',
+        source: 'International Conference on Education and New Learning Technologies (EDULEARN)',
         pages: null,
         publisher:
             'International Academy of Technology, Education and Development',
