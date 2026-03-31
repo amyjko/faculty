@@ -2,6 +2,21 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'refugeeorgs',
+        kind: 'refereed conference paper',
+        authors: ['@megumi', '@ajko'],
+        year: 2026,
+        title: 'Systems, values, and conceptions shaping computing education in refugee support organizations',
+        source: 'International Society of the Learning Sciences (ISLS)',
+        pages: null,
+        publisher: 'ISLS',
+        doi: null,
+        local: 'Kivuva2026RefugeeOrgs.pdf',
+        contribution:
+            'Finds that refugee support organizations’ conceptions of computing education are shaped by their values and the systems they operate within, which can create tensions and challenges for equitable computing education.',
+        discoveries: ['JusticeHard'],
+    },
+    {
         id: 'abilityheuristics',
         kind: 'refereed conference paper',
         authors: [
