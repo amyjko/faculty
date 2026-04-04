@@ -26,7 +26,6 @@
         "prettier-plugin-svelte": "^3",
         "svelte": "^5",
         "svelte-check": "^4",
-        "svelte-preprocess": "^6",
         "tslib": "^2",
         "typescript": "^6",
         "vite": "^8"
