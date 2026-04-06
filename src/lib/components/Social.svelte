@@ -10,7 +10,7 @@
         class="dot">&sdot;</span
     ><Link to="https://bsky.app/profile/amyko.phd"><Emoji symbol="🦋" /></Link
     ><span class="dot">&sdot;</span><Link
-        to="https://www.threads.net/@amyjensenko"><Emoji symbol="🧵" /></Link
+        to="https://www.threads.com/@amyjensenko"><Emoji symbol="🧵" /></Link
     ><span class="dot">&sdot;</span><Link to="https://hci.social/@amyjko"
         ><Emoji symbol="🐘" /></Link
     >
