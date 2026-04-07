@@ -2,6 +2,21 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'jcepl',
+        kind: 'journal article',
+        authors: ['@ajko', '@bshapiro', '@jayne', '@megumi'],
+        year: 2026,
+        title: 'Justice-Centered Educational Programming Languages',
+        source: '@toce',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: 'Ko2026PLJustice.pdf',
+        contribution:
+            'Proposes a framework for justice-centered educational programming languages as accessible, liberatory, cultural, transparent, obtainable, democratic, and enduring.',
+        discoveries: ['JusticeHard', 'LanguagesCanBeJust'],
+    },
+    {
         id: 'refugeeorgs',
         kind: 'refereed conference paper',
         authors: ['@megumi', '@ajko'],

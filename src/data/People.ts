@@ -2,6 +2,20 @@ import type Person from '../lib/models/Person';
 
 export const People: readonly Person[] = [
     {
+        id: 'bshapiro',
+        name: 'R. Ben Shapiro',
+        active: true,
+        advised: false,
+        level: 'faculty',
+        dept: 'Paul G. Allen School of Computer Science & Engineering',
+        coadvisor: null,
+        bio: 'Ben and I collaborate on many things, including co-directing the Center for Learning, Computing, and Imagination.',
+        url: 'https://benshapi.ro/',
+        startdate: 2023,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'rijul',
         name: 'Rijul Jain',
         active: true,
