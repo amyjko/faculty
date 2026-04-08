@@ -6,7 +6,7 @@ export const Publications: Paper[] = [
         kind: 'journal article',
         authors: ['@ajko', '@bshapiro', '@jayne', '@megumi'],
         year: 2026,
-        title: 'Justice-Centered Educational Programming Languages',
+        title: 'Justice-Centered Educational Programming Language Design',
         source: '@toce',
         pages: null,
         publisher: 'ACM',
