@@ -2,6 +2,21 @@ import type Paper from '$lib/models/Paper';
 
 export const Publications: Paper[] = [
     {
+        id: 'assessagency',
+        kind: 'refereed conference paper',
+        authors: ['@emans', 'Rayana Lyons', 'Isabel Amaya', '@ajko'],
+        year: 2026,
+        title: 'Reimagining Assessment: How Co-construction Shifts Agency in Computer Science Classrooms',
+        source: '@respect',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            "Finds that engaging youth in co-designing learning assessments requires an orchestration of instructor-student trust by legitmizing learners' lived experiences and navigating conflict",
+        discoveries: ['JusticeHard'],
+    },
+    {
         id: 'jcepl',
         kind: 'journal article',
         authors: ['@ajko', '@bshapiro', '@jayne', '@megumi'],
@@ -21,7 +36,7 @@ export const Publications: Paper[] = [
         kind: 'refereed conference paper',
         authors: ['@megumi', '@ajko'],
         year: 2026,
-        title: 'Systems, values, and conceptions shaping computing education in refugee support organizations',
+        title: 'Systems, Values, and Conceptions Shaping Computing Education in Refugee Support Organizations',
         source: 'International Society of the Learning Sciences (ISLS)',
         pages: null,
         publisher: 'ISLS',
