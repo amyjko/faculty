@@ -135,10 +135,11 @@
 >
 
 <Alert>
-    I do not know if I will be recruiting new Ph.D. students for the 2027-28
-    academic year. With grant terminations, research funding cuts, and the
-    politicization of federal funding, research funding for doctoral students is
-    volatile. If I decide to recruit, I will update with my plans here.
+    I will likely be recruiting one new Ph.D. student for the 2027-28 academic
+    year, either in the Information School or the Allen School. I generally do
+    not meet with prospective students outside of our admissions process and
+    season, but if you have questions that aren't answered on my website, feel
+    free to write me an email and ask.
 </Alert>
 
 <br /><button onclick={replace}>censor</button>
