@@ -2,6 +2,14 @@ import type Post from '../lib/models/Post';
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/p/250ad307d52d?postPublishedType=initial',
+        title: 'CHI 2026 trip report: ay ay AI',
+        date: '2026.04',
+        tags: ['trip report', 'HCI'],
+        img: 'chi26',
+        alt: 'wood latices hanging from the ceiling of a beige foyer.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/a-day-at-the-university-of-minnesota-dfb782352fb1',
         title: 'A day at the University of Minnesota',
         date: '2026.03',
