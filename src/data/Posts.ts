@@ -6,7 +6,7 @@ export const Posts: Post[] = [
         title: 'CHI 2026 trip report: ay ay AI',
         date: '2026.04',
         tags: ['trip report', 'HCI'],
-        img: 'chi26',
+        img: 'chi2026',
         alt: 'wood latices hanging from the ceiling of a beige foyer.',
     },
     {
