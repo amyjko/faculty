@@ -113,6 +113,7 @@ export const People: readonly Person[] = [
         enddate: null,
         achievements: [
             'PhD student, Computer Science, University of Illinois Urbana-Champaign (2025)',
+            'NSF Graduate Research Fellowship (2025)',
         ],
     },
     {
@@ -127,7 +128,7 @@ export const People: readonly Person[] = [
         url: 'https://janet-jiang.github.io/',
         startdate: 2024,
         enddate: null,
-        achievements: [],
+        achievements: ['NSF Graduate Research Fellowship (2026)'],
         annotation: {
             year: 2025,
             text: 'I welcomed Janet as my newest PhD student, helping her start work on multilingual learners in CS learning.',
