@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Trip from '$lib/models/Trip.svelte';
+    import Trip from '$lib/components/Trip.svelte';
     import { profile } from '$lib/models/stores';
     import { parseDate } from '$lib/models/Profile';
     import Title from '$lib/components/Title.svelte';

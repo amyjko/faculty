@@ -1,7 +1,7 @@
 <script lang="ts">
     import Block from './Block.svelte';
     import Authors from './Authors.svelte';
-    import type Paper from '$lib/models/Paper';
+    import type { Paper } from '../../data/Pubs';
     import Link from './Link.svelte';
     import APACitation from './APACitation.svelte';
     import { profile } from '$lib/models/stores';

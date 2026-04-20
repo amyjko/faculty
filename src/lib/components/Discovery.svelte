@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { Discovery } from '$lib/models/Discovery';
+    import type { Discovery } from '../../data/Discoveries';
     import { profile } from '$lib/models/stores';
     import Block from './Block.svelte';
     import Link from './Link.svelte';

@@ -1,4 +1,20 @@
-import type { Talk } from '$lib/models/Talk';
+import type Annotation from '$lib/models/Annotation';
+
+export type Talk = {
+    title: string;
+    date: string;
+    image: string;
+    alt: string;
+    slides: string | null;
+    venue: string;
+    url: string | null;
+    recording: string | null;
+    practice: string | null;
+    description: string;
+    keynote: boolean;
+    blog?: string;
+    annotation?: Annotation;
+};
 
 const Talks: Talk[] = [
     {

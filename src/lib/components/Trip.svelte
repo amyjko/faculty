@@ -1,8 +1,8 @@
 <script lang="ts">
-    import type { TravelInfo } from '$lib/models/Travel';
+    import type { TravelInfo } from '../../data/Travel';
     import Block from '$lib/components/Block.svelte';
     import External from '$lib/components/External.svelte';
-    import { parseDate } from './Profile';
+    import { parseDate } from '../models/Profile';
 
     interface Props {
         trip: TravelInfo;

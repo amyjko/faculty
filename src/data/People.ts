@@ -1,4 +1,28 @@
-import type Person from '../lib/models/Person';
+import type Annotation from '$lib/models/Annotation';
+
+export type Person = {
+    id: string;
+    name: string;
+    active: boolean;
+    advised: boolean;
+    level:
+        | 'undergrad'
+        | 'masters'
+        | 'phd'
+        | 'postdoc'
+        | 'faculty'
+        | 'director'
+        | 'teacher';
+    dept: string;
+    coadvisor: string | null;
+    bio: string;
+    url: string;
+    dissertation?: string;
+    startdate: number;
+    enddate: number | null;
+    achievements: readonly string[];
+    annotation?: Annotation;
+};
 
 export const People: readonly Person[] = [
     {

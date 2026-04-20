@@ -1,6 +1,6 @@
 <script lang="ts">
     import Link from '$lib/components/Link.svelte';
-    import type Paper from '$lib/models/Paper';
+    import type { Paper } from '../../data/Pubs';
     import { profile } from '$lib/models/stores';
 
     interface Props {

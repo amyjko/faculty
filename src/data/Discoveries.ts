@@ -1,4 +1,15 @@
-import type { Discovery } from '../lib/models/Discovery';
+export type Resource = {
+    kind: 'code' | 'demo' | 'video';
+    url: string;
+    label: string;
+};
+
+export type Discovery = {
+    contribution: string;
+    detail: string;
+    tags: string[];
+    resources?: Resource[];
+};
 
 export const Discoveries = {
     LanguagesCanBeJust: {

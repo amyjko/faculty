@@ -1,6 +1,6 @@
 <script lang="ts">
     import { asset } from '$app/paths';
-    import type Person from '$lib/models/Person';
+    import type { Person } from '../../data/People';
     import Block from './Block.svelte';
     import Image from './Thumbnail.svelte';
 

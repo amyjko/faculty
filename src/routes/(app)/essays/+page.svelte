@@ -4,7 +4,7 @@
     import Facets from '$lib/components/Facets.svelte';
     import { profile } from '$lib/models/stores';
     import Image from '$lib/components/Thumbnail.svelte';
-    import type { PostTagType } from '../../../lib/models/Post';
+    import type { PostTagType } from '../../../data/Posts';
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
 

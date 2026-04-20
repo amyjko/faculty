@@ -1,4 +1,4 @@
-import type { Commitment } from './Commitment';
+import type { Commitment } from '../lib/models/Commitment';
 
 export type TravelInfo = {
     url?: string;
