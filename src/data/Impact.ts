@@ -6,6 +6,16 @@ export const Impacts: Impact[] = [
         start: 2026,
         end: 2026,
         description:
+            'I was interviewed by Nature about the role of generative AI in data science',
+        title: 'Got bugs? Here’s how to catch the errors in your scientific software',
+        url: 'www.nature.com/articles/d41586-026-01261-w',
+        who: 'public',
+    },
+    {
+        kind: 'press',
+        start: 2026,
+        end: 2026,
+        description:
             'I was interviewed by Chris Stokel-Walker about the risks of vibe coding.',
         title: 'Everything Feels More Glitchy Right Now and Everyone Is Blaming Vibe Coding. The Real Story Is More Complicated',
         url: 'https://www.inc.com/chris-stokel-walker/everything-feels-more-glitchy-right-now-and-everyone-is-blaming-vibe-coding-the-real-story-is-more-complicated/91309771',
