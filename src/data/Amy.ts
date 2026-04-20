@@ -718,10 +718,10 @@ export const Amy: ProfileSpec = {
             institution: 'University of Pennsylvania',
             department: 'Graduate School of Education',
             startdate: 2024,
-            enddate: null,
+            enddate: 2026,
             annotation: {
                 year: 2025,
-                text: 'I advised Luis on his dissertation proposal.',
+                text: "I served on Luis's doctoral committee.",
             },
         },
         {
