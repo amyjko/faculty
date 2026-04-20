@@ -8,7 +8,7 @@ export const Impacts: Impact[] = [
         description:
             'I was interviewed by Nature about the role of generative AI in data science',
         title: 'Got bugs? Here’s how to catch the errors in your scientific software',
-        url: 'www.nature.com/articles/d41586-026-01261-w',
+        url: 'https://www.nature.com/articles/d41586-026-01261-w',
         who: 'public',
     },
     {
