@@ -71,7 +71,7 @@ export const Publications: Paper[] = [
         source: '@toce',
         pages: null,
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://doi.org/10.1145/3811022',
         local: 'Ko2026PLJustice.pdf',
         contribution:
             'Proposes a framework for justice-centered educational programming languages as accessible, liberatory, cultural, transparent, obtainable, democratic, and enduring.',
