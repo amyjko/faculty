@@ -225,7 +225,7 @@
 
     .outline li {
         font-style: italic;
-        font-size: 80%;
+        font-size: var(--extra-small-font-size);
         list-style-type: square;
     }
 

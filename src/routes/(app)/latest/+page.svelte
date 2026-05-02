@@ -22,29 +22,55 @@
     // Order determines display sequence within each year group
     const kinds: Record<string, { emoji: string; rank: number }> = {
         publication: { emoji: '📄', rank: 0 },
-        essay:       { emoji: '✍', rank: 1 },
-        travel:      { emoji: '✈', rank: 2 },
-        talk:        { emoji: '🎤', rank: 3 },
-        class:       { emoji: '🎓', rank: 4 },
-        impact:      { emoji: '🌱', rank: 5 },
+        essay: { emoji: '✍', rank: 1 },
+        travel: { emoji: '✈', rank: 2 },
+        talk: { emoji: '🎤', rank: 3 },
+        class: { emoji: '🎓', rank: 4 },
+        person: { emoji: '👤', rank: 5 },
+        impact: { emoji: '🌱', rank: 6 },
     };
 
     let feedByYear = $derived.by(() => {
         const byYear = new Map<number, FeedItem[]>();
 
-        function addExternal(year: number, label: string, url: string | null, kind: string) {
+        function addExternal(
+            year: number,
+            label: string,
+            url: string | null,
+            kind: string,
+        ) {
             if (year >= minYear && kind in kinds) {
                 if (!byYear.has(year)) byYear.set(year, []);
                 const { emoji, rank } = kinds[kind];
-                byYear.get(year)!.push({ label, emoji, kindRank: rank, externalUrl: url, route: null, anchor: null });
+                byYear.get(year)!.push({
+                    label,
+                    emoji,
+                    kindRank: rank,
+                    externalUrl: url,
+                    route: null,
+                    anchor: null,
+                });
             }
         }
 
-        function addInternal(year: number, label: string, route: string, anchor: string, kind: string) {
+        function addInternal(
+            year: number,
+            label: string,
+            route: string,
+            anchor: string,
+            kind: string,
+        ) {
             if (year >= minYear && kind in kinds) {
                 if (!byYear.has(year)) byYear.set(year, []);
                 const { emoji, rank } = kinds[kind];
-                byYear.get(year)!.push({ label, emoji, kindRank: rank, externalUrl: null, route, anchor });
+                byYear.get(year)!.push({
+                    label,
+                    emoji,
+                    kindRank: rank,
+                    externalUrl: null,
+                    route,
+                    anchor,
+                });
             }
         }
 
@@ -61,19 +87,36 @@
         }
 
         // Impact — year is the start field
-        for (const impact of $profile.getImpacts(() => true, () => 0)) {
-            addExternal(impact.start, impact.title ?? impact.description, impact.url, 'impact');
+        for (const impact of $profile.getImpacts(
+            () => true,
+            () => 0,
+        )) {
+            addExternal(
+                impact.start,
+                impact.title ?? impact.description,
+                impact.url,
+                'impact',
+            );
         }
 
         // Posts — year parsed from YYYY.MM date string
-        for (const post of $profile.getPosts(() => true, () => 0)) {
+        for (const post of $profile.getPosts(
+            () => true,
+            () => 0,
+        )) {
             const { year } = $profile.getPostMonthYear(post);
             addExternal(year, post.title, post.url, 'essay');
         }
 
         // Publications — deep-link to the anchor on the publications page
         for (const pub of $profile.getPublications()) {
-            addInternal(pub.year, pub.title, '/(app)/publications', pub.id, 'publication');
+            addInternal(
+                pub.year,
+                pub.title,
+                '/(app)/publications',
+                pub.id,
+                'publication',
+            );
         }
 
         // Talks — prefer recording, then practice recording, then slides URL, then event URL
@@ -86,6 +129,16 @@
                 talk.url ??
                 null;
             addExternal(year, talk.title, url, 'talk');
+        }
+
+        // People — postdocs, PhD students, and undergrads who completed in range
+        for (const person of $profile.getPeople(
+            (p) =>
+                p.advised &&
+                p.enddate !== null &&
+                ['phd', 'postdoc', 'undergrad'].includes(p.level),
+        )) {
+            addExternal(person.enddate!, person.name, person.url, 'person');
         }
 
         // Travel — year from commitment start date
@@ -122,7 +175,9 @@
                 {#if item.externalUrl}
                     <External to={item.externalUrl}>{item.label}</External>
                 {:else if item.route}
-                    <Link to={item.route as any} id={item.anchor ?? undefined}>{item.label}</Link>
+                    <Link to={item.route as any} id={item.anchor ?? undefined}
+                        >{item.label}</Link
+                    >
                 {:else}
                     {item.label}
                 {/if}
@@ -137,7 +192,7 @@
         flex-wrap: wrap;
         align-items: baseline;
         gap: 0.25em 0.75em;
-        font-size: var(--small-font-size);
+        font-size: var(--extra-small-font-size);
         margin-bottom: 2em;
     }
 
@@ -145,5 +200,6 @@
         display: inline-flex;
         align-items: baseline;
         gap: 0.2em;
+        line-height: 1.4;
     }
 </style>
