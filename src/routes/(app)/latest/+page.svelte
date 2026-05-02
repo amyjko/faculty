@@ -18,19 +18,20 @@
         externalUrl: string | null;
         route: string | null;
         anchor: string | null;
+        fallbackRoute: string;
         imageUrl: string | null;
         imageAlt: string | null;
     };
 
     // Order determines display sequence within each year group
-    const kinds: Record<string, { emoji: string; rank: number }> = {
-        publication: { emoji: '📄', rank: 0 },
-        essay: { emoji: '✍', rank: 1 },
-        travel: { emoji: '✈', rank: 2 },
-        talk: { emoji: '🎤', rank: 3 },
-        class: { emoji: '🎓', rank: 4 },
-        person: { emoji: '👤', rank: 5 },
-        impact: { emoji: '🌱', rank: 6 },
+    const kinds: Record<string, { emoji: string; rank: number; fallbackRoute: string }> = {
+        publication: { emoji: '📄', rank: 0, fallbackRoute: '/(app)/publications' },
+        essay: { emoji: '✍', rank: 1, fallbackRoute: '/(app)/essays' },
+        travel: { emoji: '✈', rank: 2, fallbackRoute: '/(app)/travel' },
+        talk: { emoji: '🎤', rank: 3, fallbackRoute: '/(app)/talks' },
+        class: { emoji: '🎓', rank: 4, fallbackRoute: '/(app)/classes' },
+        person: { emoji: '👤', rank: 5, fallbackRoute: '/(app)/lab' },
+        impact: { emoji: '📢', rank: 6, fallbackRoute: '/(app)/impact' },
     };
 
     let feedByYear = $derived.by(() => {
@@ -54,6 +55,7 @@
                     externalUrl: url,
                     route: null,
                     anchor: null,
+                    fallbackRoute: kinds[kind].fallbackRoute,
                     imageUrl,
                     imageAlt,
                 });
@@ -79,6 +81,7 @@
                     externalUrl: null,
                     route,
                     anchor,
+                    fallbackRoute: kinds[kind].fallbackRoute,
                     imageUrl,
                     imageAlt,
                 });
@@ -222,7 +225,7 @@
                         >{item.label}</Link
                     >
                 {:else}
-                    {item.label}
+                    <Link to={item.fallbackRoute as any}>{item.label}</Link>
                 {/if}
             </span>
         {/each}
@@ -257,5 +260,6 @@
         height: 1em;
         object-fit: cover;
         border-radius: 2px;
+        filter: grayscale(100%);
     }
 </style>
