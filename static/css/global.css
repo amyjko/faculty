@@ -103,17 +103,17 @@ h1 {
 }
 
 h2 {
-	font-size: calc(var(--header-size) - 3pt);
+	font-size: calc(var(--header-size) - 4pt);
 	margin-bottom: var(--margin);
 }
 
 h3 {
-	font-size: calc(var(--header-size) - 6pt);
+	font-size: calc(var(--header-size) - 8pt);
 	margin-bottom: var(--margin);
 }
 
 h4 {
-	font-size: calc(var(--header-size) - 9pt);
+	font-size: calc(var(--header-size) - 12pt);
 	margin-bottom: var(--margin);
 }
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { asset } from '$app/paths';
+    import { asset, resolve } from '$app/paths';
     import { page } from '$app/state';
     import Emoji from './Emoji.svelte';
     import External from './External.svelte';
@@ -71,7 +71,7 @@
 </script>
 
 <section class="info">
-    <Link to="/(app)"
+    <Link to="/(app)" plain
         ><Thumbnail
             url="/images/headshots/ajko.jpg"
             alt="Headshot of Amy J. Ko"
@@ -140,6 +140,9 @@
     <div class="links">
         <Link to="/(app)/latest"><em>Latest</em></Link>
         <Link to="/(app)">Research</Link>
+        <Link to="/(app)/wordplay"
+            ><Emoji symbol="💬" /> <strong>Wordplay</strong></Link
+        >
         <Link to="/(app)/lab">Lab</Link>
         <Link to="/(app)/communities">Communities</Link>
         <Link to="/(app)/publications">Publications</Link>
@@ -156,10 +159,7 @@
         <Link to="/(app)/contact">Contact</Link>
         <Link to="/(app)/faq">FAQ</Link>
         <Link to="/(app)/cer">CER FAQ</Link>
-        <Link to="/(cv)/cv">CV</Link>
-        <br /><Link to="/(app)/wordplay"
-            ><Emoji symbol="💬" /> <strong>Wordplay</strong></Link
-        >
+        <External to={resolve('/(cv)/cv')}>CV</External>
     </div>
     {#if headers.length > 1}
         <div class="outline">
@@ -210,6 +210,12 @@
 
     :global(.links > a:hover) {
         background-color: var(--border-color);
+    }
+
+    :global(.links > span.at) {
+        background-color: transparent;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
     }
 
     .outline li {

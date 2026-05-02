@@ -13,19 +13,24 @@
         id?: string;
         query?: string;
         active?: boolean;
+        plain?: boolean;
         children?: import('svelte').Snippet;
     }
 
-    let { to, id, query, active = false, children }: Props = $props();
+    let { to, id, query, active = false, plain = false, children }: Props = $props();
 
     let path = $derived(page.url.pathname);
 
     function isExternal(url: string): url is ExternalPath {
         return url.startsWith('http://') || url.startsWith('https://');
     }
+
+    let isCurrentRoute = $derived(
+        !plain && !isExternal(to) && to !== '' && resolve(to) === path,
+    );
 </script>
 
-{#if to === path}
+{#if isCurrentRoute}
     <span class="at">{@render children?.()}</span>
 {:else if isExternal(to)}
     <a href={to} target="_blank" rel="noreferrer">{@render children?.()}</a>
