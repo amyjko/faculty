@@ -205,15 +205,16 @@
     <div class="cluster">
         {#each items as item}
             <span class="item">
-                {#if item.imageUrl}
-                    <img
-                        class="item-image"
-                        src={asset(item.imageUrl)}
-                        alt={item.imageAlt ?? ''}
-                    />
-                {:else}
+                <span class="item-icons">
                     <Emoji symbol={item.emoji} />
-                {/if}
+                    {#if item.imageUrl}
+                        <img
+                            class="item-image"
+                            src={asset(item.imageUrl)}
+                            alt={item.imageAlt ?? ''}
+                        />
+                    {/if}
+                </span>
                 {#if item.externalUrl}
                     <External to={item.externalUrl}>{item.label}</External>
                 {:else if item.route}
@@ -245,11 +246,16 @@
         line-height: 1.4;
     }
 
+    .item-icons {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.2em;
+    }
+
     .item-image {
         width: 1em;
         height: 1em;
         object-fit: cover;
         border-radius: 2px;
-        align-self: center;
     }
 </style>
