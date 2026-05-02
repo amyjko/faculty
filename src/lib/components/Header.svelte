@@ -106,7 +106,7 @@
                 ><em
                     >Paul G. Allen School of Computer Science &amp; Engineering</em
                 >
-                <span class="small"><em>courtesy</em></span></Link
+                <span class="small">[<em>courtesy</em>]</span></Link
             ></span
         >
         <span>
@@ -115,18 +115,18 @@
             ></span
         >
         <span class="small"
-            >- <Link to="https://dl.acm.org/journal/toce"
-                >Editor-in-Chief, <em>ACM TOCE</em></Link
+            >- Editor-in-Chief, <Link to="https://dl.acm.org/journal/toce"
+                >ACM TOCE</Link
             ></span
         >
         <span class="small"
-            >- <Link to="https://csforallwa.org/"
-                >Co-Director, <em>CS for All Washington</em></Link
+            >- Co-Director, <Link to="https://csforallwa.org/"
+                >CS for All WA</Link
             ></span
         >
         <span class="small"
-            >- <Link to="https://reciprocal.reviews/"
-                >Co-Director, <em>Reciprocal Reviews</em></Link
+            >- Co-Director, <Link to="https://reciprocal.reviews/"
+                >Reciprocal Reviews</Link
             ></span
         >
         <Social />
