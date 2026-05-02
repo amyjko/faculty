@@ -22,6 +22,8 @@ import Talks from './Talks';
 import { Years } from './Years';
 
 export const Amy: ProfileSpec = {
+    announcement:
+        "I will likely recruit an iSchool or CSE Ph.D. student this Autumn 2026, focused on critical, liberatory CS and AI education. Have questions that aren't answered here? Write me.",
     sources: Sources,
     pubs: Publications,
     talks: Talks,

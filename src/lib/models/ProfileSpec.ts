@@ -21,6 +21,7 @@ import type { Discovery } from '../../data/Discoveries';
 import type { DiscoveryID } from '../../data/Discoveries';
 
 type ProfileSpec = {
+    announcement: string | undefined;
     sources: Record<string, Source>;
     pubs: Paper[];
     people: readonly Person[];

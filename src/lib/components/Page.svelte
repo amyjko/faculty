@@ -6,6 +6,7 @@
     import { navigating } from '$app/stores';
     import { browser } from '$app/environment';
     import SpeechBubble from './SpeechBubble.svelte';
+    import { profile } from '$lib/models/stores';
     interface Props {
         children?: import('svelte').Snippet;
     }
@@ -44,14 +45,11 @@
     <div class="columns">
         <div class="header"><Header {headers} activeid={closestID} /></div>
         <div class="content">
-            <div class="desktop-bubble">
-                <SpeechBubble>
-                    I will likely recruit one new iSchool or CSE Ph.D. student
-                    this Autumn on critical, liberatory CS education and AI. If
-                    you have questions that aren't answered here, write and we
-                    can chat.
-                </SpeechBubble>
-            </div>
+            {#if $profile.json.announcement}
+                <div class="desktop-bubble">
+                    <SpeechBubble>{$profile.json.announcement}</SpeechBubble>
+                </div>
+            {/if}
             {@render children?.()}
             <Footer />
         </div>

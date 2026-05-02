@@ -5,6 +5,7 @@
     import Social from './Social.svelte';
     import Thumbnail from './Thumbnail.svelte';
     import SpeechBubble from './SpeechBubble.svelte';
+    import { profile } from '$lib/models/stores';
 
     interface Props {
         headers?: [string, string][];
@@ -76,13 +77,11 @@
             alt="Headshot of Amy J. Ko"
         /></Link
     >
-    <div class="mobile-bubble">
-        <SpeechBubble>
-            I will likely recruit one new iSchool or CSE Ph.D. student this
-            Autumn on critical, liberatory CS education and AI. If you have
-            questions that aren't answered here, write and we can chat.
-        </SpeechBubble>
-    </div>
+    {#if $profile.json.announcement}
+        <div class="mobile-bubble">
+            <SpeechBubble>{$profile.json.announcement}</SpeechBubble>
+        </div>
+    {/if}
     <h1>Amy J. Ko, Ph.D.</h1>
     <div class="metadata">
         <span class="small"
