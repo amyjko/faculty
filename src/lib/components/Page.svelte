@@ -41,10 +41,19 @@
 </script>
 
 <div class="page">
-    <div class="header"><Header {headers} activeid={closestID} /></div>
-    <div class="content">
-        {@render children?.()}
-        <Footer />
+    <div class="alert">
+        <Alert>
+            I will likely recruit one new iSchool or CSE Ph.D. student this
+            Autumn on critical, liberatory CS education and AI. If you have
+            questions that aren't answered here, write and we can chat.
+        </Alert>
+    </div>
+    <div class="columns">
+        <div class="header"><Header {headers} activeid={closestID} /></div>
+        <div class="content">
+            {@render children?.()}
+            <Footer />
+        </div>
     </div>
 </div>
 
@@ -71,8 +80,20 @@
 
         .page {
             margin: 3em;
+        }
+
+        .alert {
+            max-width: 56em;
+        }
+
+        .columns {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .columns > :global(.alert) {
+            flex: 0 0 100%;
         }
 
         .header {

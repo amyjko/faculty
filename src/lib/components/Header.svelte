@@ -1,7 +1,6 @@
 <script lang="ts">
     import { asset } from '$app/paths';
     import { page } from '$app/state';
-    import Alert from './Alert.svelte';
     import Emoji from './Emoji.svelte';
     import External from './External.svelte';
     import Link from './Link.svelte';
@@ -133,16 +132,6 @@
         <Social />
     </div></section
 >
-
-<Alert>
-    I will likely be recruiting one new Ph.D. student for the 2027-28 academic
-    year, either in the Information School or the Allen School, and likely on
-    the topic of K-12 CS education, generative AI, and critical, liberatory
-    pedagogy. I generally do not meet with prospective students outside of our
-    admissions process and season, but if that topic sounds interesting to you,
-    and you have questions that aren't answered on my website, feel free to
-    write me an email and we can chat.
-</Alert>
 
 <br /><button onclick={replace}>censor</button>
 
