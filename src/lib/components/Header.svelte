@@ -149,6 +149,7 @@
 <hr />
 <nav>
     <div class="links">
+        <Link to="/(app)/latest"><em>Latest</em></Link>
         <Link to="/(app)">Research</Link>
         <Link to="/(app)/lab">Lab</Link>
         <Link to="/(app)/communities">Communities</Link>
