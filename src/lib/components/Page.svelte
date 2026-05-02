@@ -5,7 +5,7 @@
     import Footer from '$lib/components/Footer.svelte';
     import { navigating } from '$app/stores';
     import { browser } from '$app/environment';
-    import Alert from './Alert.svelte';
+    import SpeechBubble from './SpeechBubble.svelte';
     interface Props {
         children?: import('svelte').Snippet;
     }
@@ -41,16 +41,17 @@
 </script>
 
 <div class="page">
-    <div class="alert">
-        <Alert>
-            I will likely recruit one new iSchool or CSE Ph.D. student this
-            Autumn on critical, liberatory CS education and AI. If you have
-            questions that aren't answered here, write and we can chat.
-        </Alert>
-    </div>
     <div class="columns">
         <div class="header"><Header {headers} activeid={closestID} /></div>
         <div class="content">
+            <div class="desktop-bubble">
+                <SpeechBubble>
+                    I will likely recruit one new iSchool or CSE Ph.D. student
+                    this Autumn on critical, liberatory CS education and AI. If
+                    you have questions that aren't answered here, write and we
+                    can chat.
+                </SpeechBubble>
+            </div>
             {@render children?.()}
             <Footer />
         </div>
@@ -69,6 +70,10 @@
         .page {
             display: block;
         }
+
+        .desktop-bubble {
+            display: none;
+        }
     }
 
     /* Large */
@@ -82,28 +87,24 @@
             margin: 3em;
         }
 
-        .alert {
-            max-width: 56em;
-        }
-
         .columns {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
         }
 
-        .columns > :global(.alert) {
-            flex: 0 0 100%;
-        }
-
         .header {
             margin-right: var(--margin);
-            flex: 0 0 15em;
+            flex: 0 0 12em;
         }
 
         .content {
-            margin-top: 10em;
+            flex: 1;
             max-width: 40em;
+        }
+
+        .desktop-bubble {
+            display: block;
         }
     }
 </style>

@@ -4,6 +4,7 @@
     import Link from './Link.svelte';
     import Social from './Social.svelte';
     import Thumbnail from './Thumbnail.svelte';
+    import SpeechBubble from './SpeechBubble.svelte';
 
     interface Props {
         headers?: [string, string][];
@@ -75,6 +76,13 @@
             alt="Headshot of Amy J. Ko"
         /></Link
     >
+    <div class="mobile-bubble">
+        <SpeechBubble>
+            I will likely recruit one new iSchool or CSE Ph.D. student this
+            Autumn on critical, liberatory CS education and AI. If you have
+            questions that aren't answered here, write and we can chat.
+        </SpeechBubble>
+    </div>
     <h1>Amy J. Ko, Ph.D.</h1>
     <div class="metadata">
         <span class="small"
@@ -184,6 +192,16 @@
 <hr class="small-hr" />
 
 <style>
+    .mobile-bubble {
+        display: none;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .mobile-bubble {
+            display: block;
+        }
+    }
+
     nav,
     .metadata {
         font-size: var(--small-font-size);
@@ -238,6 +256,9 @@
             top: var(--margin);
         }
         .small-hr {
+            display: none;
+        }
+        .mobile-bubble {
             display: none;
         }
     }
