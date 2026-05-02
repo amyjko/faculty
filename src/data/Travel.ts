@@ -11,8 +11,44 @@ export type TravelInfo = {
 
 const Travel: TravelInfo[] = [
     {
+        url: 'https://www.dagstuhl.de/seminars/seminar-calendar/seminar-details/27062',
+        title: 'Dagstuhl: What Should We Teach Computer Science Students in the Age of AI?',
+        details: 'Week-long workshop on reimagining CS learning standards.',
+        category: 'research',
+        commitment: {
+            start: '2027-02-07',
+            end: '2027-02-12',
+            hours: 48,
+            priority: 1,
+        },
+    },
+    {
+        url: 'https://icer2026.acm.org/',
+        title: 'ICER 2026',
+        details: 'Networking and sharing our three accepted papers.',
+        category: 'research',
+        commitment: {
+            start: '2026-08-11',
+            end: '2026-08-14',
+            hours: 32,
+            priority: 1,
+        },
+    },
+    {
+        url: 'https://conference.csteachers.org/event/CSTA2026',
+        title: 'CSTA 2026',
+        details: 'Networking with K-12 Computer Science teachers.',
+        category: 'service',
+        commitment: {
+            start: '2026-07-13',
+            end: '2026-07-15',
+            hours: 24,
+            priority: 1,
+        },
+    },
+    {
         url: 'https://chi2026.acm.org/',
-        title: 'ACM SIGCHI Conference on Human Factors in Computing Systems',
+        title: 'ACM CHI 2026',
         details: 'Networking',
         category: 'research',
         commitment: {
@@ -36,7 +72,7 @@ const Travel: TravelInfo[] = [
     },
     {
         url: 'https://sigcse2026.sigcse.org/',
-        title: '2026 ACM SIGCSE Technical Symposium',
+        title: 'ACM SIGCSE 2026',
         details: 'Networking, keynoting, and facilitating.',
         category: 'research',
         commitment: {
@@ -48,7 +84,7 @@ const Travel: TravelInfo[] = [
     },
     {
         url: 'https://www.kolicalling.fi/',
-        title: 'Koli Calling 2025',
+        title: 'ACM Koli Calling 2025',
         details: 'Networking and sharing my research.',
         category: 'research',
         commitment: {
@@ -72,7 +108,7 @@ const Travel: TravelInfo[] = [
     },
     {
         url: 'https://chi2025.acm.org/',
-        title: 'CHI 2025',
+        title: 'ACM CHI 2025',
         details: 'Networking and sharing my research.',
         category: 'research',
         commitment: {
