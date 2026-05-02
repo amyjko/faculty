@@ -1,5 +1,4 @@
 <script lang="ts">
-    import External from '$lib/components/External.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
     import Alert from '$lib/components/Alert.svelte';
     import Link from '$lib/components/Link.svelte';
@@ -86,13 +85,13 @@
     Lablets run separately from the main lab meetings. Activities include weekly
     meetings, reading groups, activism, tutorials, and discussion. It's up to
     the leader and supervisor to ensure meaningful activities, maintaining a
-    weekly agenda. We provide <External
+    weekly agenda. We provide <Link
         to="https://docs.google.com/spreadsheets/d/1ziwgmDBdCNY1AbhlQti8hgabwhVhwvRpL8xPjknywnQ/edit#gid=1849819586"
-        >meeting templates</External
+        >meeting templates</Link
     > for many of the above activities to help you understand roles and expectations.
     However, you're always welcome to deviate from them, or suggest improvements to
-    them, by writing Amy a DM in <External to="http://computinged-uw.slack.com"
-        >Slack</External
+    them, by writing Amy a DM in <Link to="http://computinged-uw.slack.com"
+        >Slack</Link
     >.
 </p>
 
@@ -112,9 +111,9 @@
     You can see when the lablets (and main lab meeting) are scheduled by
     subscribing to our lab calendar (add <strong>codeandcognition@uw.edu</strong
     >
-    if using UW G Suite, download this <External
+    if using UW G Suite, download this <Link
         to="https://calendar.google.com/calendar/ical/codeandcognition%40uw.edu/public/basic.ics"
-        >ICS file</External
+        >ICS file</Link
     > otherwise).
 </p>
 
@@ -161,17 +160,17 @@
         rest of her lab.</li
     >
     <li
-        >Post in <External to="http://computinged-uw.slack.com"
-            >ComputingEd@UW Slack</External
+        >Post in <Link to="http://computinged-uw.slack.com"
+            >ComputingEd@UW Slack</Link
         > #codeandcognitionlab</li
     >
     <li>
-        Earn 1 credit by registering for <External
+        Earn 1 credit by registering for <Link
             to="https://ischool.uw.edu/programs/informatics/curriculum/experiential-learning/independent-study"
-            >INFO 499 Independent Study</External
-        > with Amy. To sign up, follow the <External
+            >INFO 499 Independent Study</Link
+        > with Amy. To sign up, follow the <Link
             to="https://ischool.uw.edu/programs/informatics/curriculum/experiential-learning/independent-study"
-            >instructions for registering for INFO 499</External
+            >instructions for registering for INFO 499</Link
         >; your proposal only needs to mention that you'll be participating in a
         lablet and the required reflection.
     </li>
@@ -210,14 +209,14 @@
 
 <ol>
     <li
-        >Review the <External
+        >Review the <Link
             to="https://docs.google.com/spreadsheets/d/1ziwgmDBdCNY1AbhlQti8hgabwhVhwvRpL8xPjknywnQ/edit#gid=0"
-            >active lablets</External
+            >active lablets</Link
         >.</li
     >
     <li
-        >Join the <External to="http://computinged-uw.slack.com"
-            >ComputingEd@UW Slack</External
+        >Join the <Link to="http://computinged-uw.slack.com"
+            >ComputingEd@UW Slack</Link
         > (follow this link and use your UW address to create an account on the Slack).</li
     >
     <li
@@ -236,9 +235,9 @@
         folder in Google Drive, which will give you edit access.
     </li>
     <li
-        >Once you have access, add your name to the <External
+        >Once you have access, add your name to the <Link
             to="https://docs.google.com/spreadsheets/d/1ziwgmDBdCNY1AbhlQti8hgabwhVhwvRpL8xPjknywnQ/edit#gid=772195334"
-            >students</External
+            >students</Link
         > sheet.</li
     >
     <li
@@ -283,9 +282,9 @@
 <ol>
     <li>First join a lablet. (There's always at least one.)</li>
     <li
-        >First check the <External
+        >First check the <Link
             to="https://docs.google.com/spreadsheets/d/1ziwgmDBdCNY1AbhlQti8hgabwhVhwvRpL8xPjknywnQ/edit#gid=0"
-            >active lablets</External
+            >active lablets</Link
         > to ensure there isn't a suitable lablet to join already.</li
     >
     <li
@@ -301,9 +300,9 @@
         introduce you to your supervisor, who will share an onboarding.</li
     >
     <li
-        >Ask your supervisor to create a room in the <External
+        >Ask your supervisor to create a room in the <Link
             to="https://ohyay.co/s/codeandcognition"
-            >Code and Cognition Ohyay</External
+            >Code and Cognition Ohyay</Link
         > and give you admin permissions to design it.</li
     >
     <li
@@ -493,9 +492,9 @@
 <ul>
     <li>
         We recruit undergraduates for full-time paid summer research positions
-        each Winter through the <External
+        each Winter through the <Link
             to="https://dub.washington.edu/gettinginvolved.html#tab_prospective"
-            >DUB REU program</External
+            >DUB REU program</Link
         >. Participating in a lablet is a great way to be competitive for one of
         those slots.
     </li>

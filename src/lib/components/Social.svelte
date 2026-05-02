@@ -6,13 +6,19 @@
 <div class="emoji">
     <a href="mailto:ajko@uw.edu"><Emoji symbol="📧" /></a><span class="dot"
         >&sdot;</span
-    ><Link to="https://amyjko.medium.com"><Emoji symbol="📝" /></Link><span
-        class="dot">&sdot;</span
-    ><Link to="https://bsky.app/profile/amyko.phd"><Emoji symbol="🦋" /></Link
+    ><Link to="https://amyjko.medium.com" annotate={false}
+        ><Emoji symbol="📝" /></Link
     ><span class="dot">&sdot;</span><Link
-        to="https://www.threads.com/@amyjensenko"><Emoji symbol="🧵" /></Link
-    ><span class="dot">&sdot;</span><Link to="https://hci.social/@amyjko"
-        ><Emoji symbol="🐘" /></Link
+        to="https://bsky.app/profile/amyko.phd"
+        annotate={false}><Emoji symbol="🦋" /></Link
+    ><span class="dot">&sdot;</span><Link
+        to="https://www.threads.com/@amyjensenko"
+        annotate={false}><Emoji symbol="🧵" /></Link
+    ><span class="dot">&sdot;</span><Link
+        to="https://hci.social/@amyjko"
+        annotate={false}
+    >
+        <Emoji symbol="🐘" /></Link
     >
 </div>
 

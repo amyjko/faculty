@@ -1,6 +1,5 @@
 <script lang="ts">
     import Link from '$lib/components/Link.svelte';
-    import External from '$lib/components/External.svelte';
     import { profile } from '$lib/models/stores';
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
@@ -30,9 +29,9 @@
     We
     <Link to={'/(app)/publications'}>publish</Link>
     primarily in <Link to={'/(app)/cer'}>Computing Education</Link> and
-    <External
+    <Link
         to="https://www.google.com/books/edition/Human_Computer_Interaction_Handbook/dVrRBQAAQBAJ?hl=en&gbpv=0"
-        >Human-Computer Interaction</External
+        >Human-Computer Interaction</Link
     >. I also work to broaden research discourse as Editor-in-Chief of <Link
         to="https://dl.acm.org/journal/toce">ACM TOCE</Link
     > and sustain peer review with <Link to="https://reciprocal.reviews/"

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import External from '$lib/components/External.svelte';
+    import Link from '$lib/components/Link.svelte';
     import { profile } from '$lib/models/stores';
     import Table from '$lib/components/Table.svelte';
     import Bar from './Bar.svelte';
@@ -82,9 +82,9 @@
 <p>
     I use it to estimate how much work I've promised to do in the next few
     years. I use this to decide whether to say yes to new opportunities and
-    brace myself for busy periods. I have a <External
+    brace myself for busy periods. I have a <Link
         to="https://github.com/amyjko/faculty/blob/main/src/lib/models/Amy.ts"
-        >list of commitments</External
+        >list of commitments</Link
     > with date ranges, from which I generate this page. You can use it to decide
     whether to ask me to do something :)
 </p>

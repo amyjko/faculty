@@ -1,5 +1,4 @@
 <script lang="ts">
-    import External from '$lib/components/External.svelte';
     import Link from '../../../lib/components/Link.svelte';
     import Emoji from '$lib/components/Emoji.svelte';
     import Title from '$lib/components/Title.svelte';
@@ -12,8 +11,8 @@
 </h1>
 
 <p
-    >We're creating <External to="https://wordplay.dev"
-        ><Emoji symbol="💬" /> Wordplay</External
+    >We're creating <Link to="https://wordplay.dev"
+        ><Emoji symbol="💬" /> Wordplay</Link
     >, a coding platform for creating accessible, multilingual, interactive
     typography that celebrates the world's diversity. Our goal is to support
     ability, language, culture, and class diverse secondary computing classrooms
@@ -21,8 +20,8 @@
 </p>
 
 <p
-    >Want to learn more? Try <External to="https://wordplay.dev"
-        ><Emoji symbol="💬" /> Wordplay</External
+    >Want to learn more? Try <Link to="https://wordplay.dev"
+        ><Emoji symbol="💬" /> Wordplay</Link
     >, or read our project wiki to <Link
         to="https://github.com/wordplaydev/wordplay/wiki/contribute"
         >learn how to contribute</Link

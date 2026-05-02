@@ -1,6 +1,5 @@
 <script lang="ts">
     import Linkable from '$lib/components/Linkable.svelte';
-    import External from '$lib/components/External.svelte';
     import Link from '$lib/components/Link.svelte';
 
     import { profile } from '$lib/models/stores';
@@ -42,29 +41,29 @@
     information, in schools and beyond, drawing from human-computer interaction,
     computing education, software engineering, programming languages, learning
     sciences, behavioral sciences, sociology, and more. She is a Professor and
-    Associate Dean for Academics at the <External to="http://www.washington.edu"
-        >University of Washington</External
+    Associate Dean for Academics at the <Link to="http://www.washington.edu"
+        >University of Washington</Link
     >
-    <External to="http://ischool.uw.edu/">Information School</External>, with a
+    <Link to="http://ischool.uw.edu/">Information School</Link>, with a
     courtesy appointment in Computer Science & Engineering.
 </p>
 
 <Linkable id="short">Short Bio</Linkable>
 
 <p>
-    Amy J. Ko is a Professor at the <External to="http://www.washington.edu"
-        >University of Washington</External
+    Amy J. Ko is a Professor at the <Link to="http://www.washington.edu"
+        >University of Washington</Link
     >
-    <External to="http://ischool.uw.edu/">Information School</External> and the <External
+    <Link to="http://ischool.uw.edu/">Information School</Link> and the <Link
         to="http://cs.washington.edu"
-        >Paul G. Allen School of Computer Science and Engineering</External
+        >Paul G. Allen School of Computer Science and Engineering</Link
     > (courtesy). She co-directs the UW Center for Learning, Computing, and Imagination,
     where she studies computing education, human-computer interaction, and humanity's
     individual and collective struggle to understand computing and harness it for
     equity, justice, and liberation. With her collaborators, she's invented many programming
     languages and tools to support debugging, program understanding, reuse, and learning;
-    founded and sold a <External to="http://www.answerdash.com"
-        >venture-backed startup</External
+    founded and sold a <Link to="http://www.answerdash.com"
+        >venture-backed startup</Link
     > focused on software troubleshooting; developed numerous ways to weave equity
     and justice into computing education pedagogy, culture, and technology; and impacted
     local, state, and federal K-12 CS education policy through community organizing
@@ -74,26 +73,26 @@
     <!-- Compute number of best papers -->
     {bestAwardCount} receiving distinguished paper awards and
     <!-- Compute number of most influential papers. -->
-    {mipAwardCount} receiving most influential paper awards. She is an <External
+    {mipAwardCount} receiving most influential paper awards. She is an <Link
         to="https://awards.acm.org/distinguished-members"
-        >ACM Distinguished Member</External
-    > and a member of the <External to="https://sigchi.org/awards/"
-        >SIGCHI Academy</External
+        >ACM Distinguished Member</Link
+    > and a member of the <Link to="https://sigchi.org/awards/"
+        >SIGCHI Academy</Link
     >, for her substantial contributions to the field of human-computer
     interaction, computing education, and software engineering. She received her
-    Ph.D. at the <External to="http://hcii.cs.cmu.edu"
-        >Human-Computer Interaction Institute</External
-    > at <External to="http://www.cmu.edu">Carnegie Mellon University</External>
-    in 2008, and degrees in Computer Science and Psychology with Honors from <External
-        to="http://www.oregonstate.edu">Oregon State University</External
+    Ph.D. at the <Link to="http://hcii.cs.cmu.edu"
+        >Human-Computer Interaction Institute</Link
+    > at <Link to="http://www.cmu.edu">Carnegie Mellon University</Link>
+    in 2008, and degrees in Computer Science and Psychology with Honors from <Link
+        to="http://www.oregonstate.edu">Oregon State University</Link
     > in 2002.
 </p>
 
 <Linkable id="irreverent">Irreverent Bio</Linkable>
 
 <p>
-    Amy J. Ko is a queer, trans anti-disciplinary weirdo at the <External
-        to="http://www.washington.edu">University of Washington</External
+    Amy J. Ko is a queer, trans anti-disciplinary weirdo at the <Link
+        to="http://www.washington.edu">University of Washington</Link
     > who has the privilege of being paid to follow her curiosity about computation,
     learning, and politics, and tell people what she finds in various rooms, physical
     and virtual. She likes working with students to wander about asking questions
@@ -104,10 +103,10 @@
     After she returned from her profit-laced time as CTO, she decided to focus on
     making people smarter instead of tools, and began studying what kinds of computing
     literacies might lead to a more just world, and what kinds of teachers, teaching,
-    and tools we need to make that happen. She's grateful to <External
-        to="http://www.cmu.edu">Carnegie Mellon University</External
+    and tools we need to make that happen. She's grateful to <Link
+        to="http://www.cmu.edu">Carnegie Mellon University</Link
     > and
-    <External to="http://www.oregonstate.edu">Oregon State University</External>
+    <Link to="http://www.oregonstate.edu">Oregon State University</Link>
     for being reasonably safe spaces to bumble through the world's endless expanse
     of mysteries as a student, and to the many students and taxpayers that pay her
     to keep doing it as a professor in Seattle.
@@ -116,7 +115,7 @@
 <Linkable id="wikipedia">Wikipedia</Linkable>
 
 <p>
-    <External to="https://en.wikipedia.org/wiki/Amy_J._Ko">Wikipedia</External> has
+    <Link to="https://en.wikipedia.org/wiki/Amy_J._Ko">Wikipedia</Link> has
     a page about me. If you're so inclined, see if there's other notable information
     it's missing and add it.
 </p>
@@ -159,17 +158,17 @@
 <p>I have a relatively short academic lineage. I was advised by...</p>
 <ul>
     <li
-        ><External to="http://www.cs.cmu.edu/~bam/">Brad Myers</External>,
+        ><Link to="http://www.cs.cmu.edu/~bam/">Brad Myers</Link>,
         (Ph.D., University of Toronto), who was advised by...</li
     >
     <li
-        ><External to="http://ron.taglab.ca/">Ronald Baecker</External>, (Ph.D.,
-        MIT) and <External to="https://www.billbuxton.com">Bill Buxton</External
+        ><Link to="http://ron.taglab.ca/">Ronald Baecker</Link>, (Ph.D.,
+        MIT) and <Link to="https://www.billbuxton.com">Bill Buxton</Link
         > (unofficially), who was advised by...</li
     >
     <li
-        ><External to="https://www.nap.edu/read/4779/chapter/21#93"
-            >Edward L. Glaser</External
+        ><Link to="https://www.nap.edu/read/4779/chapter/21#93"
+            >Edward L. Glaser</Link
         > (A.B., Dartmouth College), who taught Ron at MIT, who had highly interdisciplinary
         interests, and who was blind.</li
     >
@@ -178,13 +177,13 @@
 <p>As an undergraduate, I was also advised by...</p>
 <ul>
     <li
-        ><External to="http://web.engr.oregonstate.edu/~burnett/"
-            >Margaret Burnett</External
+        ><Link to="http://web.engr.oregonstate.edu/~burnett/"
+            >Margaret Burnett</Link
         > (Ph.D., University of Kansas), who was advised by...</li
     >
     <li
-        ><External to="https://www.mathgenealogy.org/id.php?id=82631"
-            >Allen Ambler</External
+        ><Link to="https://www.mathgenealogy.org/id.php?id=82631"
+            >Allen Ambler</Link
         > (Ph.D., University of Wisconsin-Madison).</li
     >
 </ul>
@@ -308,14 +307,14 @@
 <Linkable id="long">Long Bio</Linkable>
 
 <p>
-    I was born in <External
+    I was born in <Link
         to="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Ontario,+Oregon&sll=37.788081,-104.501953&sspn=38.763291,54.931641&ie=UTF8&z=13&iwloc=addr"
-        >Ontario, Oregon</External
-    >, but grew up primarily in <External
+        >Ontario, Oregon</Link
+    >, but grew up primarily in <Link
         to="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=west+linn&sll=44.024804,-116.975703&sspn=0.069492,0.107288&ie=UTF8&z=12&iwloc=addr"
-        >West Linn, Oregon</External
-    >, a suburb of Portland, and went to <External
-        to="http://www.wlhs.wlwv.k12.or.us/">West Linn High School</External
+        >West Linn, Oregon</Link
+    >, a suburb of Portland, and went to <Link
+        to="http://www.wlhs.wlwv.k12.or.us/">West Linn High School</Link
     >. The school was fantastic and I had wonderful teachers, especially in
     math, science, and English. I spent much of my free time playing video games
     with friends, drawing, and writing code in BASIC, Pascal, C, and my TI-85 to
@@ -325,40 +324,40 @@
 
 <p>
     I was a strong student and was admitted to several great universities out of
-    state, but I couldn't afford any of them. I attended <External
-        to="http://oregonstate.edu/">Oregon State University</External
-    >, where I majored in <External to="http://eecs.oregonstate.edu/"
-        >Computer Science</External
-    > and <External to="http://oregonstate.edu/cla/psychology/"
-        >Psychology</External
+    state, but I couldn't afford any of them. I attended <Link
+        to="http://oregonstate.edu/">Oregon State University</Link
+    >, where I majored in <Link to="http://eecs.oregonstate.edu/"
+        >Computer Science</Link
+    > and <Link to="http://oregonstate.edu/cla/psychology/"
+        >Psychology</Link
     >. Early on, I got involved in the budding student chapter of the ACM, and
     after my first year, helped run the club and its activities around campus,
     including the ACM International Collegiate Programming Contest, a statewide
     software engineering contest, and a student taught course on 2D graphics
-    rendering algorithms. At the same time, I joined <External
+    rendering algorithms. At the same time, I joined <Link
         to="http://web.engr.oregonstate.edu/~burnett/"
-        >Margaret Burnett</External
+        >Margaret Burnett</Link
     >'s research group, and stayed for two years. In my senior year, I focused
-    on my honors thesis project, advised largely by <External
-        to="http://www.docbob.ca/">Bob Uttl</External
+    on my honors thesis project, advised largely by <Link
+        to="http://www.docbob.ca/">Bob Uttl</Link
     >. I'd enjoyed doing research in computer science and psychology so much, I
     decided to apply to several graduate schools with a slant towards
     Human-Computer Interaction.
 </p>
 
 <p>
-    Of all of the schools, the <External to="http://hcii.cmu.edu/"
-        >Human-Computer Interaction Institute</External
-    > at <External to="http://www.cmu.edu">Carnegie Mellon University</External>
-    was the best fit, and I started work right away with <External
-        to="http://www.cs.cmu.edu/~bam/">Brad Myers</External
+    Of all of the schools, the <Link to="http://hcii.cmu.edu/"
+        >Human-Computer Interaction Institute</Link
+    > at <Link to="http://www.cmu.edu">Carnegie Mellon University</Link>
+    was the best fit, and I started work right away with <Link
+        to="http://www.cs.cmu.edu/~bam/">Brad Myers</Link
     >. I started by investigating what made debugging so difficult, and
     inventing technologies to make it easier. Just after proposing in 2006, I
-    did a fantastic internship at <External
+    did a fantastic internship at <Link
         to="http://research.microsoft.com/en-us/default.aspx"
-        >Microsoft Research</External
-    > in the <External to="http://research.microsoft.com/en-us/groups/hip/"
-        >Human Interactions in Programming</External
+        >Microsoft Research</Link
+    > in the <Link to="http://research.microsoft.com/en-us/groups/hip/"
+        >Human Interactions in Programming</Link
     > group, and became fascinated with the larger challenge of software design and
     all of the human and cooperative issues that make it such a challenging form of
     engineering practice. I graduated with my Ph.D. in Human-Computer Interaction
@@ -368,17 +367,17 @@
 <p>
     Just prior to graduating, I toured the country, giving invited talks and job
     interviews at labs and universities for about eight weeks. I interviewed at
-    a range of places, including from conservative CS departments like <External
-        to="http://www.eecs.berkeley.edu/">Berkeley EECS</External
-    > to much broader places like the <External to="http://ischool.uw.edu/"
-        >University of Washington Information School</External
-    >, as well as <External
+    a range of places, including from conservative CS departments like <Link
+        to="http://www.eecs.berkeley.edu/">Berkeley EECS</Link
+    > to much broader places like the <Link to="http://ischool.uw.edu/"
+        >University of Washington Information School</Link
+    >, as well as <Link
         to="http://research.microsoft.com/en-us/default.aspx"
-        >Microsoft Research</External
+        >Microsoft Research</Link
     >, Redmond. In the end, I wanted to be in the Pacific Northwest, I wanted a
     strong mix of teaching and research, and I was fascinated by the challenge
-    of helping to grow and envision a new academic unit, so I chose the <External
-        to="http://ischool.uw.edu/">Information School</External
+    of helping to grow and envision a new academic unit, so I chose the <Link
+        to="http://ischool.uw.edu/">Information School</Link
     > as my new home.
 </p>
 
@@ -392,8 +391,8 @@
     open source, Agile teams, and private industry. While I did this work, I
     also developed a growing passion for research on the learning and teaching
     of computing, investigating new learning technologies and aspects of
-    software engineering expertise. In 2013, I co-founded <External
-        to="http://www.answerdash.com">AnswerDash</External
+    software engineering expertise. In 2013, I co-founded <Link
+        to="http://www.answerdash.com">AnswerDash</Link
     > with Jake Wobbrock and Parmit Chilana. AnswerDash offered instant answers on
     websites using a selection-based search technology that was the centerpiece of
     Parmit's dissertation work.
@@ -421,13 +420,13 @@
 </p>
 
 <p>
-    In Autumn 2019, I <External
+    In Autumn 2019, I <Link
         to="https://medium.com/bits-and-behavior/im-trans-call-me-amy-8a72a3951964"
-        >came out as a trans woman</External
+        >came out as a trans woman</Link
     >, finally accepting my gender identity and having the confidence to share
-    it with the world. My academic communities were <External
+    it with the world. My academic communities were <Link
         to="https://medium.com/bits-and-behavior/what-coming-out-as-trans-should-look-like-395f31beeddb"
-        >incredibly supportive</External
+        >incredibly supportive</Link
     >, which gave me to confidence to be out and proud. That same year, I was
     promoted to Professor, and pivoted my research to have a more critical
     stance, exploring literacies in both the powers and perils of computing and
@@ -441,8 +440,8 @@
     very much needed after sabbatical and administrative stress, an empty nest,
     and far too much personal and professional isolation. What I wanted most
     from it was unconstrained time to find myself and create art. I spent most
-    of it traveling solo and creating <External to="https://wordplay.dev"
-        >Wordplay</External
+    of it traveling solo and creating <Link to="https://wordplay.dev"
+        >Wordplay</Link
     >. After a summer, an academic year, and another summer, I returned, mostly
     refreshed, and with a renewed sense of purpose and self, ready for another 6
     years of fragmented attention and public service. My Dean welcomed me back

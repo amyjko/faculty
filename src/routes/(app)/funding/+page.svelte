@@ -1,5 +1,4 @@
 <script lang="ts">
-    import External from '$lib/components/External.svelte';
     import Block from '$lib/components/Block.svelte';
     import { profile } from '$lib/models/stores';
     import { parseDate } from '$lib/models/Profile';
@@ -44,7 +43,7 @@
         {#each $profile.getFunding( (funding) => funding.funder === 'National Science Foundation' && !funding.private, (funding) => (funding.commitment.end === null ? -Infinity : -parseDate(funding.commitment.end).getFullYear()), ) as award}
             <li>
                 {#if award.url}
-                    <External to={award.url}>{award.title}</External>
+                    <Link to={award.url}>{award.title}</Link>
                 {:else}
                     {award.title}
                 {/if}

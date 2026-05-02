@@ -4,7 +4,6 @@
     import { asset } from '$app/paths';
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
-    import External from '$lib/components/External.svelte';
     import Link from '$lib/components/Link.svelte';
     import Emoji from '$lib/components/Emoji.svelte';
 
@@ -219,7 +218,7 @@
                     {/if}
                 </span>
                 {#if item.externalUrl}
-                    <External to={item.externalUrl}>{item.label}</External>
+                    <Link to={item.externalUrl}>{item.label}</Link>
                 {:else if item.route}
                     <Link to={item.route as any} id={item.anchor ?? undefined}
                         >{item.label}</Link

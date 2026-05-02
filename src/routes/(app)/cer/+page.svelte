@@ -1,6 +1,6 @@
 <script lang="ts">
     import Section from '$lib/components/Section.svelte';
-    import External from '$lib/components/External.svelte';
+    import Link from '$lib/components/Link.svelte';
     import advisors from '$lib/models/advisors';
     import Table from '../../../lib/components/Table.svelte';
     import Title from '$lib/components/Title.svelte';
@@ -13,11 +13,11 @@
 <p>
     I started it with the help of several computing education researchers at a
     Dagstuhl retreat in 2016. I consider it a community resource, so if you see
-    something to add, fix, or improve, write me, or submit <External
-        to="https://github.com/amyjko/faculty/issues">an issue</External
+    something to add, fix, or improve, write me, or submit <Link
+        to="https://github.com/amyjko/faculty/issues">an issue</Link
     > or
-    <External to="https://github.com/amyjko/faculty/pulls"
-        >pull request</External
+    <Link to="https://github.com/amyjko/faculty/pulls"
+        >pull request</Link
     >.
 </p>
 
@@ -35,9 +35,9 @@
         and invention. Teachers teach computing, whereas computing education
         researchers make discoveries about this teaching and learning, and
         invent new ways for these teaching and learning to occur. CER is an
-        example of <External
+        example of <Link
             to="https://www.nap.edu/catalog/13362/discipline-based-education-research-understanding-and-improving-learning-in-undergraduate"
-            >discipline-based education research</External
+            >discipline-based education research</Link
         >, like math education research or science education research, all of
         which are part of the broader field of education and learning sciences
         research.
@@ -161,16 +161,16 @@
     </ul>
 
     <p>
-        (Shayan Doroudi provides a nice <External
+        (Shayan Doroudi provides a nice <Link
             to="https://sites.google.com/uci.edu/shayan-doroudi/blog/learning-theories"
-            >primer on learning theories</External
+            >primer on learning theories</Link
         > and their disciplinary origins.)
     </p>
 
     <p>
-        How does computing education fit in to all of this? Like other <External
+        How does computing education fit in to all of this? Like other <Link
             to="https://www.nap.edu/catalog/13362/discipline-based-education-research-understanding-and-improving-learning-in-undergraduate"
-            >discipline-based education research (DBER)</External
+            >discipline-based education research (DBER)</Link
         > such as math and physics education, it draws upon all three of the fields
         above, using theories and ideas from those fields. However, because it is
         focused on a discipline, it is specifically concerned with the content of
@@ -242,32 +242,32 @@
             The field discovered that diversity in computing education is low
             because of the narrow, exclusionary nature of computing cultures,
             not because of inherent disinterest or inability on the part of
-            diverse learners (e.g., <External
+            diverse learners (e.g., <Link
                 to="https://doi.org/10.1145/543812.543836"
-                >Fisher &amp; Margolis 2002</External
-            >, <External
+                >Fisher &amp; Margolis 2002</Link
+            >, <Link
                 to="https://books.google.com/books?id=WOI9rGJSFCcC&amp;lpg=PR5&amp;ots=LaGMwwGOZl&amp;dq=swimming%20in%20the%20shallow%20end&amp;lr&amp;pg=PR5#v=onepage&amp;q=swimming%20in%20the%20shallow%20end&amp;f=false"
-                >Margolis 2010</External
+                >Margolis 2010</Link
             >).
         </li>
         <li>
             The field invented contextualized computing ed pedagogy (e.g., Mark
-            Guzdial's <External to="https://doi.org/10.1145/961290.961542"
-                >media computation</External
+            Guzdial's <Link to="https://doi.org/10.1145/961290.961542"
+                >media computation</Link
             >), which has greatly increased the diversity of computer science
             graduates, and spread to many universities.
         </li>
         <li>
-            The field built upon the earliest structured editors like the <External
+            The field built upon the earliest structured editors like the <Link
                 to="https://dl.acm.org/citation.cfm?id=358755"
-                >Cornell Program Synthesizer</External
+                >Cornell Program Synthesizer</Link
             >, eventually maturing them into block-based editing environments
-            like <External to="https://doi.org/10.1145/259963.260503"
-                >Alice</External
-            >, <External to="https://doi.org/10.1145/1592761.1592779"
-                >Scratch</External
-            > and <External to="https://developers.google.com/blockly/"
-                >Blockly</External
+            like <Link to="https://doi.org/10.1145/259963.260503"
+                >Alice</Link
+            >, <Link to="https://doi.org/10.1145/1592761.1592779"
+                >Scratch</Link
+            > and <Link to="https://developers.google.com/blockly/"
+                >Blockly</Link
             >. These editors greatly increased engagement in computing
             education, and greatly reduced barriers to learning programming
             languages.
@@ -275,16 +275,16 @@
         <li>
             Seymour Papert, who was broadly concerned with learning, but also
             the learning of computing, contributed constructionism, a new theory
-            of learning (<External
+            of learning (<Link
                 to="https://dl.acm.org/citation.cfm?id=1095592"
-                >Papert 1980</External
+                >Papert 1980</Link
             >).
         </li>
         <li>
             Alan Kay, one of the earliest researchers to investigate the
-            learning of computing, helped <External
+            learning of computing, helped <Link
                 to="https://worrydream.com/EarlyHistoryOfSmalltalk/"
-                >build upon ideas of object-orientation from Simula</External
+                >build upon ideas of object-orientation from Simula</Link
             >, which inspired Smalltalk, which along with other languages such
             as C++, inspired the modern object-oriented programming languages
             and IDEs we use today.
@@ -348,9 +348,9 @@
         programs. Undergraduates can help accelerate research projects, and even
         lead their own projects, helping with admission to Ph.D. programs
         (especially if you publish, which demonstrates your interest and ability
-        in conducting research). See the <External
+        in conducting research). See the <Link
             to="https://cra.org/crae/wp-content/uploads/sites/3/2020/10/Resources-for-Scaling-Undergraduate-Research.pdf"
-            >CRA-E best practices guide on undergraduate CS research</External
+            >CRA-E best practices guide on undergraduate CS research</Link
         > for a glimpse into how effective undergraduate research experiences should
         work.
     </p>
@@ -438,7 +438,7 @@
         <tbody>
             {#each advisors as advisor}
                 <tr>
-                    <td><External to={advisor[1]}>{advisor[0]}</External></td>
+                    <td><Link to={advisor[1]}>{advisor[0]}</Link></td>
                     <td>{advisor[2]}</td>
                     <td>{advisor[3]}</td>
                     <td>{advisor[4]}</td>
@@ -497,36 +497,36 @@
 
     <ul>
         <li
-            >The #jobpostings channel on the <External
-                to="https://csforall.slack.com">CSforAll Slack</External
+            >The #jobpostings channel on the <Link
+                to="https://csforall.slack.com">CSforAll Slack</Link
             >:</li
         >
         <li
-            >The <External to="https://cra.org/ads/">CRA Jobs website</External
+            >The <Link to="https://cra.org/ads/">CRA Jobs website</Link
             ></li
         >
         <li
-            >The <External to="https://sigcse.org/membership/mailing-lists.html"
-                >SIGCSE-jobs mailing list</External
+            >The <Link to="https://sigcse.org/membership/mailing-lists.html"
+                >SIGCSE-jobs mailing list</Link
             ></li
         >
         <li
-            >The <External to="https://www.higheredjobs.com"
-                >Higher Ed Jobs</External
+            >The <Link to="https://www.higheredjobs.com"
+                >Higher Ed Jobs</Link
             ></li
         >
-        <li><External to="https://www.edjoin.org">EdJoin</External></li>
+        <li><Link to="https://www.edjoin.org">EdJoin</Link></li>
         <li
-            >Evan Peck maintains a list of <External
+            >Evan Peck maintains a list of <Link
                 to="https://cs-pui.github.io/"
-                >CS faculty postings from "PUIs"</External
+                >CS faculty postings from "PUIs"</Link
             > (primarily undergraduate institutions).</li
         >
         <li
             >Many organizations, including non-universities, hire postdocs
-            (e.g., Quinn Burke at <External
+            (e.g., Quinn Burke at <Link
                 to="https://digitalpromise.org/our-team/quinn-burke/"
-                >Digital Promise</External
+                >Digital Promise</Link
             >, has hired postdocs and consultants)</li
         >
     </ul>
@@ -546,9 +546,9 @@
         Research Fellowships, which cover three years of tuition and stipend.
         Undergraduates can participate in NSF-sponsored Research Experience for
         Undergraduate projects that faculty sponsor. CER faculty can also apply
-        for NSF CAREER grants on computing education research, or an <External
+        for NSF CAREER grants on computing education research, or an <Link
             to="http://www.nsf.gov/pubs/2015/nsf15569/nsf15569.htm"
-            >NSF Research Initiation Initiative</External
+            >NSF Research Initiation Initiative</Link
         > for new faculty. Most Ph.D. granting institutions also offer teaching assistantships.
         In the United States, there are also regularly programs that fund CER. This
         changes frequently, but here is a current snapshot as of 2016:
@@ -556,52 +556,52 @@
 
     <ul>
         <li
-            ><External
+            ><Link
                 to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505359"
-                >NSF CS for All</External
+                >NSF CS for All</Link
             >. Funds basic research on CS education as well as
             researcher-practitioner partnerships focused on building K-12 CS
             education capacity, access, participation, and engagement.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505082"
-                >NSF IUSE</External
+                >NSF IUSE</Link
             >. Funds programs that improve the quality of and access to STEM
             education in undergraduate programs. Does not directly fund basic
             research.</li
         >
         <li
-            ><External to="https://www.nsf.gov/div/index.jsp?div=DUE"
-                >NSF DUE</External
+            ><Link to="https://www.nsf.gov/div/index.jsp?div=DUE"
+                >NSF DUE</Link
             >. Funds innovations in STEM education at 2- and 4-year colleges.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=5467"
-                >NSF ITEST</External
+                >NSF ITEST</Link
             >. Funds programs that broaden participation in STEM. Does not
             directly fund basic research.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=500047"
-                >NSF DRK-12</External
+                >NSF DRK-12</Link
             >. Funds projects that enhance the quality of and access to STEM
             education in K-12, including basic research.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504984"
-                >NSF RETTL</External
+                >NSF RETTL</Link
             >. Funds projects on Emerging Technologies for Teaching and
             Learning, including intelligent tutors, computer-based instruction,
             computational tools for learning, etc.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504924"
-                >NSF EHR CORE Research</External
+                >NSF EHR CORE Research</Link
             >. Funds basic education research. Not CS specific, but it has
             separate tracks within its reviewing structure for CS and
             engineering.</li
@@ -627,9 +627,9 @@
     <p>
         Another thing to know is what makes good computing education research.
         One guide is to read peer review criteria. For example, ACM TOCE
-        maintains and evolves a list of <External
+        maintains and evolves a list of <Link
             to="https://github.com/acm-toce/documentation/wiki/Reviewing-Criteria"
-            >nuanced and pluralist peer review criteria</External
+            >nuanced and pluralist peer review criteria</Link
         > that cover many kinds of research.
     </p>
 
@@ -649,34 +649,34 @@
 
     <ul>
         <li
-            ><External
+            ><Link
                 to="http://www.nap.edu/catalog/9853/how-people-learn-brain-mind-experience-and-school-expanded-edition"
-                >How People Learn: Brain, Mind, Experience, and School</External
-            > and <External
+                >How People Learn: Brain, Mind, Experience, and School</Link
+            > and <Link
                 to="https://www.nap.edu/catalog/24783/how-people-learn-ii-learners-contexts-and-cultures"
-                >How People Learn II: Learners, Contexts, and Cultures</External
+                >How People Learn II: Learners, Contexts, and Cultures</Link
             > provide an essential foundation in the major discoveries and theories
             of learning sciences and education research. Anyone doing research on
             learning should know everything in these books.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.routledge.com/Power-and-Privilege-in-the-Learning-Sciences-Critical-and-Sociocultural/Esmonde-Booker/p/book/9781138922631"
                 >Power and Privilege in the Learning Sciences: Critical and
-                Socialcultural Theories of Learning</External
+                Socialcultural Theories of Learning</Link
             > presents foundational theories of learning that powerfully shape who
             learns.</li
         >
         <li
-            ><External to="https://www.palgrave.com/gp/book/9783030058999"
-                >Research Methods for Social Justice and Equity in Education</External
+            ><Link to="https://www.palgrave.com/gp/book/9783030058999"
+                >Research Methods for Social Justice and Equity in Education</Link
             > presents key methods for conducting education research in equitable
             ways, but also about equity and justice.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://uk.sagepub.com/en-gb/eur/successful-qualitative-research/book233059"
-                >Successful qualitative research</External
+                >Successful qualitative research</Link
             > discusses foundational methods for qualitative methods and thematic
             analysis in particular, a key approach to qualitative data anlysis frequently
             used in computing education.</li
@@ -684,25 +684,25 @@
         <li
             >There are also several notable commentaries on tensions between
             qualitative and quantitative data, including Hammer and Berland's
-            arguments about <External
+            arguments about <Link
                 to="https://doi.org/10.1080/10508406.2013.802652"
-                >qualitative coding as generating claims</External
-            >, McDonald et al's guidelines for <External
+                >qualitative coding as generating claims</Link
+            >, McDonald et al's guidelines for <Link
                 to="https://doi.org/10.1145/3359174"
-                >inter-rater reliability practices</External
-            >, Soden, et al's guide for how to <External
+                >inter-rater reliability practices</Link
+            >, Soden, et al's guide for how to <Link
                 to="http://dx.doi.org/10.1145/3633200"
-                >evaluate interpretive research</External
-            >, and Chi's classic guide for <External
+                >evaluate interpretive research</Link
+            >, and Chi's classic guide for <Link
                 to="https://doi.org/10.1207/s15327809jls0603_1"
-                >quantifying verbal data</External
+                >quantifying verbal data</Link
             >.
         </li>
         <li
             >For any scholars marginalized in CS or society more broadly, and
-            studying marginalization, a must read is <External
+            studying marginalization, a must read is <Link
                 to="https://journals.sagepub.com/doi/full/10.1177/0038038520904918"
-                >A Methodology for the Marginalized</External
+                >A Methodology for the Marginalized</Link
             >. It deconstructs the complex dynamics of managing secondary
             trauma.</li
         >
@@ -721,16 +721,16 @@
 
     <ul>
         <li>
-            <External to="https://www.ruhabenjamin.com/race-after-technology"
-                >Race After Technology</External
+            <Link to="https://www.ruhabenjamin.com/race-after-technology"
+                >Race After Technology</Link
             > examines how racism is embedded in software and the role of computer
             scientists and the software industry in reinforcing racism.
         </li>
         <li>
-            <External
+            <Link
                 to="https://www.amazon.com/Black-Software-Internet-Justice-AfroNet/dp/0190863846"
                 >Black Software: The Internet and Racial Justice, from the
-                AfroNet to Black Lives Matter</External
+                AfroNet to Black Lives Matter</Link
             > explores the long history of racial justice movements organized online
             and how the impact of their innovations have been erased with false narratives
             social media company innovation.
@@ -747,9 +747,9 @@
 
     <ul>
         <li
-            ><External
+            ><Link
                 to="https://www.amazon.com/dp/B07N45TH9R/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1"
-                >The Cambridge Handbook of Computing Education Research</External
+                >The Cambridge Handbook of Computing Education Research</Link
             > is a carefully edited synthesis of all of the major discoveries in computing
             education research since its beginning as a field 50 years ago up until
             2018. I authored several chapters along with more than a dozen other leading
@@ -760,60 +760,60 @@
             for the future of the field, but rather a reflection of its past.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.morganclaypool.com/doi/abs/10.2200/S00684ED1V01Y201511HCI033"
                 >Learner-Centered Design of Computing Education: Research on
-                Computing for Everyone</External
+                Computing for Everyone</Link
             > is a wonderful synthesis of computing education research, with a focus
             on pedagogy for anyone learning computing, rather than just computer science
             students.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://journals.sagepub.com/doi/abs/10.3102/0013189x12463051"
                 >Computational Thinking in K-12 A Review of the State of the
-                Field</External
+                Field</Link
             > examines the state of discourse about "Computational Thinking", a contested
             idea that has spread broadly throughout K-12 CS education, despite its
             questionable soundness as an idea.</li
         >
         <li
-            ><External to="https://doi.org/10.1145/3293881.3295779"
-                >Introductory programming: a systematic literature review</External
+            ><Link to="https://doi.org/10.1145/3293881.3295779"
+                >Introductory programming: a systematic literature review</Link
             >. The result of an ITiCSE working group, analyzes the literature
             along many facets: students, teachings, the curriculum, and
             assessment, and surfacing directions for future research.</li
         >
         <li
-            ><External to="http://dl.acm.org/citation.cfm?id=1345441"
+            ><Link to="http://dl.acm.org/citation.cfm?id=1345441"
                 >A survey of literature on the teaching of introductory
-                programming</External
+                programming</Link
             > summarizes papers on classroom instruction in introductory programming
             courses in higher education.</li
         >
         <li
-            ><External to="http://dl.acm.org/citation.cfm?id=1113893"
-                >Constructing a core literature for computing education research</External
+            ><Link to="http://dl.acm.org/citation.cfm?id=1113893"
+                >Constructing a core literature for computing education research</Link
             > presents an appendix of impactful papers published before 2005.</li
         >
         <li
-            ><External to="https://dl.acm.org/citation.cfm?id=3077618"
-                >Misconceptions in programming</External
+            ><Link to="https://dl.acm.org/citation.cfm?id=3077618"
+                >Misconceptions in programming</Link
             > is a great review of the broad literature on misconceptions that people
             form about programming languages.</li
         >
         <li
-            ><External to="https://dl.acm.org/doi/10.1145/1089733.1089734"
+            ><Link to="https://dl.acm.org/doi/10.1145/1089733.1089734"
                 >Lowering the Barriers to Programming: A Taxonomy of Programming
-                Environments and Languages for Novice Programmers</External
+                Environments and Languages for Novice Programmers</Link
             > surveys hundreds of programming languages and environments intended
             to support learning to code. There have been many more since its publishing
             in 2005, but before ever inventing one of your own, it's important to
             know what's been invented already.</li
         >
         <li
-            ><External to="http://dl.acm.org/citation.cfm?id=1922658"
-                >The State of the Art in End-User Software Engineering</External
+            ><Link to="http://dl.acm.org/citation.cfm?id=1922658"
+                >The State of the Art in End-User Software Engineering</Link
             > summarizes the literature on end-user programming, which is related,
             but not the same as novice programming. It synthesizes of all of the programming
             languages, environments, and tools that have helped people learn to code
@@ -831,42 +831,42 @@
     <ul>
         <li>
             <p
-                ><External
+                ><Link
                     to="https://cacm.acm.org/blogs/blog-cacm/245710-underrepresented-minority-considered-harmful-racist-language/fulltext"
                     >'Underrepresented Minority' Considered Harmful, Racist
-                    Language</External
+                    Language</Link
                 > is a short blog post that discusses the terminology we use when
                 we discuss diversity in computer science.</p
             >
         </li>
         <li>
             <p
-                ><External
+                ><Link
                     to="https://www.amazon.com/Mindstorms-Children-Computers-Powerful-Ideas/dp/0465046746"
-                    >Mindstorms: Children, Computers, and Powerful Ideas</External
+                    >Mindstorms: Children, Computers, and Powerful Ideas</Link
                 > is a classic book that envisions a theory of learning grounded in
                 the construction of knowledge through personally meaningful tinkering
-                and creation, especially with computers. I <External
+                and creation, especially with computers. I <Link
                     to="https://medium.com/bits-and-behavior/mindstorms-what-did-papert-argue-and-what-does-it-mean-for-learning-and-education-c8324b58aca4"
-                    >summarized the book</External
+                    >summarized the book</Link
                 > in a blog post.</p
             >
         </li>
         <li>
             <p
-                ><External
+                ><Link
                     to="https://mitpress.mit.edu/9780262514040/stuck-in-the-shallow-end/"
                     >Stuck in the Shallow End: Education, Race, and Computing
-                </External> illustrates the numerous racist structures, beliefs, and
+                </Link> illustrates the numerous racist structures, beliefs, and
                 practices in K-12 education that systematically exclude students of
                 color from CS education.</p
             >
         </li>
         <li>
             <p
-                ><External
+                ><Link
                     to="https://mitpress.mit.edu/9780262632690/unlocking-the-clubhouse/"
-                    >Unlocking the Clubhouse: Women in Computing</External
+                    >Unlocking the Clubhouse: Women in Computing</Link
                 > examines how the culture of higher education CS systematically excludes
                 and deters women from participating in CS education, and explores
                 promising practices for changing this culture.</p
@@ -874,18 +874,18 @@
         </li>
         <li>
             <p
-                ><External to="https://www.jstor.org/stable/3174610"
+                ><Link to="https://www.jstor.org/stable/3174610"
                     >Epistemological Pluralism: Styles and Voices Within the
-                    Computer Culture</External
+                    Computer Culture</Link
                 > presents a critique of academic computing culture for is exclusion
                 of diverse interests and ways of knowing.</p
             >
         </li>
         <li>
             <p
-                ><External to="https://dl.acm.org/doi/10.1145/3328778.3366792"
+                ><Link to="https://dl.acm.org/doi/10.1145/3328778.3366792"
                     >When Twice as Good Isn't Enough: The Case for Cultural
-                    Competence in Computing</External
+                    Competence in Computing</Link
                 > critiques CS departments for being uncritical of themselves, their
                 curricula, and the software industry, advocating for cultural competence
                 amongst faculty and students.</p
@@ -893,18 +893,18 @@
         </li>
         <li>
             <p
-                ><External
+                ><Link
                     to="https://journals.sagepub.com/doi/pdf/10.1177/0306312709334636?casa_token=IStezh3LqcEAAAAA:cI1RxK9s3T26UfH5d38aj8zO8yRTUaIEkMbQodbMgVJ-eLK3Pu9_uLGw5drx1VtVL8Kf2KVKgmVMpUM"
                     >The Intersection of Gender, Race and Cultural Boundaries,
-                    or Why is Computer Science in Malaysia Dominated by Women?</External
+                    or Why is Computer Science in Malaysia Dominated by Women?</Link
                 > examines the inherent intersectional complexity of race, gender,
                 and culture that shapes participation in computing education.</p
             >
         </li>
         <li>
             <p
-                ><External to="https://dl.acm.org/doi/10.1145/2538862.2538933"
-                    >They can't find us: the search for informal CS education</External
+                ><Link to="https://dl.acm.org/doi/10.1145/2538862.2538933"
+                    >They can't find us: the search for informal CS education</Link
                 > demonstrates how search engines, CS education terminology, and culture
                 interact to connect educated White families to informal CS learning
                 opportunities, while obscuring them from less privileged families.</p
@@ -912,38 +912,38 @@
         </li>
         <li>
             <p
-                ><External to="https://dl.acm.org/doi/10.1145/3017680.3017755"
+                ><Link to="https://dl.acm.org/doi/10.1145/3017680.3017755"
                     >Visions of Computer Science Education: Unpacking Arguments
-                    for and Projected Impacts of CS4All Initiatives</External
+                    for and Projected Impacts of CS4All Initiatives</Link
                 > analyzes the abundance of arguments for K-12 CS for All efforts,
                 and how they intersect with varying political ideologies.</p
             >
         </li>
         <li>
             <p
-                ><External
+                ><Link
                     to="https://dl.acm.org/citation.cfm?doid=3230977.3230992"
-                    >On Theory Use in Computing Education Research</External
+                    >On Theory Use in Computing Education Research</Link
                 > examines the use of theory in computing education and how it is
                 often weaponized to prevent the publication of new ideas.</p
             >
         </li>
         <li>
             <p
-                ><External to="https://doi.org/10.17763/1943-5045-88.1.26"
+                ><Link to="https://doi.org/10.17763/1943-5045-88.1.26"
                     >Ethics, Identity, and Political Vision: Toward a
                     Justice-Centered Approach to Equity in Computer Science
-                    Education</External
+                    Education</Link
                 > advocates for CS education researchers and teachers to more directly
                 engage the sociopolitical context of CS education curricula and teaching.</p
             >
         </li>
         <li>
             <p
-                ><External
+                ><Link
                     to="https://dl.acm.org/doi/abs/10.1145/2445196.2445250"
                     >Halving fail rates using peer instruction: a study of four
-                    computer science courses</External
+                    computer science courses</Link
                 > presents one of the few rigorously examined teaching methods that
                 promotes improved learning, especially for students marginalized by
                 CS education cultures.</p
@@ -951,9 +951,9 @@
         </li>
         <li>
             <p
-                ><External
+                ><Link
                     to="https://dl.acm.org/doi/abs/10.1145/1978942.1979381"
-                    >African American men constructing computing identity</External
+                    >African American men constructing computing identity</Link
                 > examines how race, culture, and stigma can warp genuine interests
                 in computing, and how informal learning interventions can counter
                 these forces.</p
@@ -961,29 +961,29 @@
         </li>
         <li>
             <p
-                ><External to="https://doi.org/10.1177%2F0042085913491219"
+                ><Link to="https://doi.org/10.1177%2F0042085913491219"
                     >COMPUGIRLS’ Standpoint: Culturally Responsive Computing and
-                    Its Effect on Girls of Color</External
+                    Its Effect on Girls of Color</Link
                 > illustrates the impact of culturally repsonsive computing on girls
                 of color.</p
             >
         </li>
         <li>
             <p
-                ><External
+                ><Link
                     to="https://www.tandfonline.com/doi/abs/10.1080/10508406.2017.1307199?casa_token=-YvaFyMYanAAAAAA:VfyZ6I7V3qdbaMFnkivanvj5Z76Jg4nZ-RBnCm0fYR4hc_vkNOvwSKR_WPtj9O9OyWPd4DJOz7Cp"
                     >Digital Youth Divas: Exploring Narrative-Driven Curriculum
                     to Spark Middle School Girls’ Interest in Computational
-                    Activities</External
+                    Activities</Link
                 > explores how to engage girls of color by centering their stories.</p
             >
         </li>
         <li>
             <p
-                ><External to="https://doi.org/10.1080/10508406.2017.1307199"
+                ><Link to="https://doi.org/10.1080/10508406.2017.1307199"
                     >Becoming Technosocial Change Agents: Intersectionality and
                     Culturally Responsive Pedagogies as Vital Resources for
-                    Increasing Girls’ Participation in Computing</External
+                    Increasing Girls’ Participation in Computing</Link
                 > explores the importanc of intersectional views on culturally responsive
                 pedagogy.</p
             >
@@ -993,10 +993,10 @@
     <p
         >If you've read all of the above and are looking for more literature, be
         sure to follow all of the SIGCSE conferences, and other relevant
-        education and learning science journals, monitoring the <External
-            to="http://acm.org/dl">ACM Digital Library</External
-        > and the NSF funded website <External to="https://csedresearch.org"
-            >CSEdResearch.org</External
+        education and learning science journals, monitoring the <Link
+            to="http://acm.org/dl">ACM Digital Library</Link
+        > and the NSF funded website <Link to="https://csedresearch.org"
+            >CSEdResearch.org</Link
         >, which surveys the broad expanse of CS education research, including
         article summaries and evaluation instruments.</p
     >
@@ -1010,54 +1010,54 @@
         While there are many books that provide guidance on teaching in general
         (e.g., Tools for teaching (Davis, 2009), How learning works: Seven
         research-based principles for smart teaching (Ambrose et al., 2010),
-        Teaching what you don’t know (Huston, 2009), <External
+        Teaching what you don’t know (Huston, 2009), <Link
             to="https://ies.ed.gov/ncee/wwc/practiceguide/1"
-            >What Works Clearinghouse</External
+            >What Works Clearinghouse</Link
         >), there are only a handful of books written to guide CS educators
         (alphabetically):
     </p>
 
     <ul>
         <li
-            ><External
+            ><Link
                 to="https://helloworld.raspberrypi.org/books/big_book_of_pedagogy"
-                >The Big Book of Computing Pedagogy</External
+                >The Big Book of Computing Pedagogy</Link
             > offers a collection of CS teaching practices and methods written by
             CS educators and CS education researchers.
         </li>
         <li
-            ><External
+            ><Link
                 to="https://www.amazon.com/Coding-Playground-Marina-Umaschi-Bers/dp/1138225622"
                 >Coding as a playground: Programming and computational thinking
-                in the early childhood classroom</External
+                in the early childhood classroom</Link
             > (Bers, 2017). A review of the opportunities in teaching younger children
             to code.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://mitpress.mit.edu/books/computational-thinking"
-                >Computational Thinking</External
+                >Computational Thinking</Link
             > (Denning &amp; Tedre, 2019). A historical introduction to computational
             thinking.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.amazon.com/Computational-Thinking-Coding-Every-Student/dp/1506341284"
-                >Computational thinking and coding for every student</External
+                >Computational thinking and coding for every student</Link
             > (Krauss and Prottsman, 2016). Includes strategies and activities for
             teaching computational thinking, with several lessons and annotated resources.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.amazon.com/Computer-Science-K-12-possibilities-innovative/dp/1986171817"
-                >Computer Science K-12: Imagining the Possibilities!</External
+                >Computer Science K-12: Imagining the Possibilities!</Link
             > (Bergman, 2018). Full of rich case studies, activities, projects, and
             practical guidance on organizing and managing CS classrooms.</li
         >
         <li
-            ><External to="https://www.shuchigrover.com/atozk12cs/about/"
+            ><Link to="https://www.shuchigrover.com/atozk12cs/about/"
                 >Computer Science in K-12: An A-Z Handbook on Teaching
-                Programming</External
+                Programming</Link
             > (Grover, 2020) includes 26 chapters featuring foundational programming
             concepts and practices, as well as well-researched pedagogies for teaching
             introductory programming. With chapter contributions from researchers
@@ -1067,34 +1067,34 @@
             that can be used in classrooms.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.amazon.co.uk/Computer-Science-Teacher-computing-classroom/dp/1780173946"
-                >Computer Science Teacher: Insight Into the Computing Classroom</External
+                >Computer Science Teacher: Insight Into the Computing Classroom</Link
             > (Clark, 2017). Focuses on secondary CS teaching and what the role entails,
             providing a rich set of case studies and quotes.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.routledge.com/Computational-Thinking-in-Education-A-Pedagogical-Perspective/Yadav-Berthelsen/p/book/9780367610357"
-                >Computational Thinking in Education: A Pedagogical Perspective</External
+                >Computational Thinking in Education: A Pedagogical Perspective</Link
             > (Yadav and Berthelsen, 2022), explores the relevance of computational
             thinking in primary and secondary education, giving an overview of what
             computational thinking is and how to integrate it into learning, instruction,
             and assessment.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.amazon.com/Computer-Science-Education-Perspectives-Teaching/dp/1350057118"
                 >Computer Science Education: Perspectives on teaching and
-                learning in school</External
+                learning in school</Link
             > (Sentance et al. 2018). An edited book full of rich summaries about
             CS education research, but written less for teachers and more for those
             interested in research.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.amazon.com/Connected-Code-Programming-Catherine-Foundation/dp/0262027755_"
-                >Connected Code: Why Children Need to Learn Programming</External
+                >Connected Code: Why Children Need to Learn Programming</Link
             > (Kafai et al., 2016). Argues for moving beyond computational thinking
             to computational participation, leveraging social networks and digital
             making. Discusses examples of youth participation with programmable toys,
@@ -1102,82 +1102,82 @@
             contexts.</li
         >
         <li
-            ><External to="https://criticallyconsciouscomputing.org"
-                >Critically Conscious Computing: Methods for Secondary Education</External
+            ><Link to="https://criticallyconsciouscomputing.org"
+                >Critically Conscious Computing: Methods for Secondary Education</Link
             > (Ko et al., 2021). A critical survey of CS and CS education foundations
             and a collection of dialogic teaching methods for promoting student critical
             consciousnes about computing and society.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.amazon.com/Guide-Teaching-Computer-Science-Activity-Based/dp/144716069X"
-                >Guide to teaching computer science: An activity-based approach</External
+                >Guide to teaching computer science: An activity-based approach</Link
             > (Hazzan et al. 2015). Includes detailed learning activities, curriculum
             reviews, CS education research, lesson planning, and course design. Some
             pre-service CS teachers find the concrete examples help; others find it
             jargony and overly complex.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.amazon.com/Invent-Learn-Tinkering-Engineering-Classroom/dp/0989151107"
                 >Invent to learn: Making, tinkering, and engineering in the
-                classroom</External
+                classroom</Link
             > (Martinez and Stager, 2013). A practical guide to bringing tinkering
             into the classroom via project-based learning.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.infoagepub.com/products/Preparing-Pre-Service-Teachers-to-Teach-Computer-Science"
                 >Preparing Pre-Service Teachers to Teach Computer Science:
-                Models, Pracitces, and Policies</External
+                Models, Pracitces, and Policies</Link
             > (Mouza, Yadav, Ottenbreit-Leftwich, 2021). An edited volume surveying
             research on CS teacher education, offering examples for how to design
             and deliver effective teacher preparation.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.amazon.com/Teaching-Computing-Secondary-Schools-Practical/dp/1138238066"
-                >Teaching Computing in Secondary Schools</External
+                >Teaching Computing in Secondary Schools</Link
             > (Lau, 2017). Offers a framework for planning and delivering CS curricula.</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.amazon.com/Teaching-Computing-Practitioners-Henry-Walker-ebook/dp/B07CMHSZ6T"
-                >Teaching Computing: A Practitioner's Perspective</External
+                >Teaching Computing: A Practitioner's Perspective</Link
             > (Walker, 2018). Full of teaching tips for higher education faculty teaching
             CS.</li
         >
         <li
-            ><External to="http://teachtogether.tech/en/"
-                >Teaching tech together</External
+            ><Link to="http://teachtogether.tech/en/"
+                >Teaching tech together</Link
             >. This is an informal survey of research useful for teaching
             programming. Greg put it together to help others become better
             teachers of computing.</li
         >
         <li>
-            <External to="https://yourfirstyearteaching.com/"
-                >Your First year teaching computer science</External
+            <Link to="https://yourfirstyearteaching.com/"
+                >Your First year teaching computer science</Link
             > (Gregg, 2021).
         </li>
         <li
-            ><External
+            ><Link
                 to="https://www.amazon.com/Code-Every-Class-Kevin-Brookhouser/dp/1945167211"
-                >Code in Every Class</External
+                >Code in Every Class</Link
             >
             (Brookhouser and Megnin, 2017).</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.amazon.com/Integrating-Computer-Science-Across-Core/dp/0367198649"
                 >Integrting Computer Science Across the Core: Strategies for
-                K-12 Districts</External
+                K-12 Districts</Link
             >(Lynch and Ardito, 2020).</li
         >
         <li
-            ><External
+            ><Link
                 to="https://www.amazon.com/Creative-Coding-Strategies-Integrate-Curriculum/dp/1564846768"
                 >Creative Coding: Lessons and Strategies to Integrate Computer
-                Science Across the 6-8 Curriculum</External
+                Science Across the 6-8 Curriculum</Link
             > (Caldwell, 2018)</li
         >
     </ul>
@@ -1196,9 +1196,9 @@
         fortunate) in that practitioners are deeply involved in the academic
         research community (partly because most faculty conducting research are
         teachers themselves). Below I note several conferences and journals
-        where you can publish computing education research (see SIGCSE for <External
+        where you can publish computing education research (see SIGCSE for <Link
             to="http://sigcse.org/sigcse/resources/publish"
-            >a broader list</External
+            >a broader list</Link
         >). Note that I separate the pure research venues from the venues that
         combine both research and practice since the combined venues are often
         dominated by practioners, which can make it hard to have focused
@@ -1209,7 +1209,7 @@
     <ul>
         <li>
             <p
-                ><External to="http://icer.acm.org">ICER</External> (the ACM International
+                ><Link to="http://icer.acm.org">ICER</Link> (the ACM International
                 Computing Education Research conference) is the only academic conference
                 that strictly publishes research. All of the reviewers who peer review
                 submissions are trained researchers with Ph.D.s. ICER tends to focus
@@ -1220,7 +1220,7 @@
         </li>
         <li>
             <p
-                ><External to="http://toce.acm.org">TOCE</External> (the ACM Transactions
+                ><Link to="http://toce.acm.org">TOCE</Link> (the ACM Transactions
                 on Computing Education) publishes research, and is similar in scope
                 to ICER, but in a journal format. Like ICER, the editorial board and
                 reviewers are all trained researchers.</p
@@ -1228,8 +1228,8 @@
         </li>
         <li>
             <p
-                ><External to="https://www.tandfonline.com/journals/ncse20"
-                    >CSE</External
+                ><Link to="https://www.tandfonline.com/journals/ncse20"
+                    >CSE</Link
                 > (the Journal of Computer Science Education) publishes research and
                 is similar to TOCE and ICER in its reviewing community and similar
                 in research rigor and prestige. However, unlike TOCE and ICER, publications
@@ -1239,8 +1239,8 @@
         </li>
         <li>
             <p
-                ><External to="https://www.isls.org/annual-meeting/icls/"
-                    >ICLS</External
+                ><Link to="https://www.isls.org/annual-meeting/icls/"
+                    >ICLS</Link
                 > (the International Conference on Learning Sciences) does not strictly
                 focus on computing education, but publishes high quality research
                 on learning sciences. Accepts both qualitative and quantitative work,
@@ -1250,8 +1250,8 @@
         </li>
         <li>
             <p
-                ><External to="https://www.tandfonline.com/journals/hlns20"
-                    >JLS</External
+                ><Link to="https://www.tandfonline.com/journals/hlns20"
+                    >JLS</Link
                 > (the Journal of Learning Sciences) is one of the top education research
                 journals and expects a strong connection to learning theory and mostly
                 wants empirical work. It is not a journal that publishes HCI, so work
@@ -1261,8 +1261,8 @@
         </li>
         <li>
             <p
-                ><External to="https://www.isls.org/annual-meeting/cscl/"
-                    >CSCL</External
+                ><Link to="https://www.isls.org/annual-meeting/cscl/"
+                    >CSCL</Link
                 > (the International Conference on Computer-Supported Collaborative
                 Learning) focuses on issues related to learning through collaboration
                 and promoting productive collaborative discourse with the help of
@@ -1271,14 +1271,14 @@
         </li>
         <li>
             <p
-                ><External to="https://ijcscl.org">IJCSCL</External> (the International
+                ><Link to="https://ijcscl.org">IJCSCL</Link> (the International
                 Journal of Computer-Supported Collaborative Learning), like CSCL,
                 focuses on learning through collaboration.</p
             >
         </li>
         <li>
             <p
-                ><External to="http://learningatscale.acm.org">L@S</External> (the
+                ><Link to="http://learningatscale.acm.org">L@S</Link> (the
                 ACM Conference on Learning at Scale) is a computer science conference
                 that focuses on techniques for scaling instruction. Some of the work
                 published here concerns computing education, but many other domains
@@ -1288,9 +1288,9 @@
         </li>
         <li>
             <p
-                ><External
+                ><Link
                     to="https://www.computer.org/csdl/proceedings/1809604"
-                    >RESPECT</External
+                    >RESPECT</Link
                 > (the IEEE Conference on Research on Equity and Sustained Participation
                 in Engineering, Computing, and Technology) is a conference focused
                 on engagement, participation, and equity in STEM fields. It has research
@@ -1300,7 +1300,7 @@
         </li>
         <li>
             <p
-                ><External to="http://idc.acm.org">IDC</External> (ACM SIGCHI Interaction
+                ><Link to="http://idc.acm.org">IDC</Link> (ACM SIGCHI Interaction
                 Design and Children) is an HCI conference with a focus on children,
                 focusing on design artifacts for kids and enabling kids to be designers,
                 with a special focus on participatory design as a methodology.</p
@@ -1308,7 +1308,7 @@
         </li>
         <li>
             <p
-                ><External to="http://chi.acm.org">CHI</External> (ACM SIGCHI Conference
+                ><Link to="http://chi.acm.org">CHI</Link> (ACM SIGCHI Conference
                 on Human Factors in Computing) is an HCI conference with a focus on
                 any aspect of interactions between people and computers, including
                 programming. As one of the largest and broadest ACM conferences, it's
@@ -1318,9 +1318,9 @@
         </li>
         <li>
             <p
-                ><External
+                ><Link
                     to="https://www.aera.net/Events-Meetings/Annual-Meeting"
-                    >AERA</External
+                    >AERA</Link
                 > (the American Education Research Association conference) has a division
                 for engineering and computing education that publishes papers on computational
                 thinking.</p
@@ -1328,8 +1328,8 @@
         </li>
         <li>
             <p
-                ><External to="https://onlinelibrary.wiley.com/journal/21689830"
-                    >JEE</External
+                ><Link to="https://onlinelibrary.wiley.com/journal/21689830"
+                    >JEE</Link
                 > (the Journal of Engineering Education). High-quality but with few
                 international collaborations (like the MIMN studies in CER). Occasionally
                 has papers related to computing.</p
@@ -1337,15 +1337,15 @@
         </li>
         <li>
             <p
-                ><External to="https://ieee-edusociety.org/publication/ieee-toe"
-                    >IEEE Transactions on Education</External
+                ><Link to="https://ieee-edusociety.org/publication/ieee-toe"
+                    >IEEE Transactions on Education</Link
                 >. I know little about this journal. Feel free to share
                 opinions!</p
             >
         </li>
         <li>
             <p
-                ><External to="https://educationaldatamining.org/">EDM</External
+                ><Link to="https://educationaldatamining.org/">EDM</Link
                 >
                 (the International Conference on Educational Data Mining). Explores
                 using educational data to understand student learning.
@@ -1353,9 +1353,9 @@
         </li>
         <li>
             <p
-                ><External
+                ><Link
                     to="https://jedm.educationaldatamining.org/index.php/JEDM"
-                    >JEDM</External
+                    >JEDM</Link
                 > (the Journal of Educational Data Mining). Publishes research on
                 the use of data mining in education.</p
             >
@@ -1366,8 +1366,8 @@
 
     <ul>
         <li
-            ><External to="https://sigcse.org/events/symposia/index.html"
-                >SIGCSE</External
+            ><Link to="https://sigcse.org/events/symposia/index.html"
+                >SIGCSE</Link
             > (the SIGCSE Technical Symposium on Computer Science Education) publishes
             both research and practice papers in a short format, bringing together
             researchers and teachers. This is the largest conference on computer science
@@ -1378,37 +1378,37 @@
             in North America.</li
         >
         <li
-            ><External to="http://iticse.acm.org">ITiCSE</External> (the Annual Conference
+            ><Link to="http://iticse.acm.org">ITiCSE</Link> (the Annual Conference
             on Innovation and Technology in Computer Science Education) publishes
             both research and practice papers, with a focus on practice. Generally
             held in Europe.</li
         >
         <li
-            ><External to="https://www.kolicalling.fi">Koli Calling</External> (International
+            ><Link to="https://www.kolicalling.fi">Koli Calling</Link> (International
             Conference on Computing Education Research), held in Finland every year,
             publishes research and practice papers with a focus on qualitative research.
             A small but dedicated community.</li
         >
         <li
-            ><External to="https://www.wipsce.org">WiPSCE</External> (Workshop in
+            ><Link to="https://www.wipsce.org">WiPSCE</Link> (Workshop in
             Primary and Secondary Computing Education) aims to bring together researchers
             and practitioners, and publishes both research and practice papers. It
             is generally held in Europe.</li
         >
         <li
-            ><External to="https://aceconference.wordpress.com">ACE</External> (the
+            ><Link to="https://aceconference.wordpress.com">ACE</Link> (the
             Australasian Computing Education Conference) is a regional conference
             with a mix of research and practice papers, bringing together education
             researchers and practitioners. Held in Australia or New Zealand, but welcomes
             attendees from anywhere.</li
         >
         <li
-            ><External to="http://www.latice-conference.org">LaTiCE</External> (the
+            ><Link to="http://www.latice-conference.org">LaTiCE</Link> (the
             International Conference on Learning and Teaching in Computing and Engineering)
             publishes both research and practice papers. Held primarily in Asia.</li
         >
         <li
-            ><External to="http://fie-conference.org">FIE</External> (the ASEE Frontiers
+            ><Link to="http://fie-conference.org">FIE</Link> (the ASEE Frontiers
             in Education conference) is more broad and more practitioner focused than
             SIGCSE and occasionally has CER work.</li
         >
@@ -1417,7 +1417,7 @@
 
 <Section id="sigcse" header="What is SIGCSE?">
     <p>
-        <External to="http://sigcse.org/">SIGCSE</External>, like other ACM
+        <Link to="http://sigcse.org/">SIGCSE</Link>, like other ACM
         Special Interest Groups (SIGs), is an organization that focuses on a
         particular topic within ACM, namely computer science education. It
         sponsors ACM conferences (e.g., the SIGCSE Technical Symposium and ICER)
@@ -1480,49 +1480,49 @@
 
     <ul>
         <li
-            >Mark Guzdial's <External to="https://computinged.wordpress.com/"
-                >Computing Education Research</External
+            >Mark Guzdial's <Link to="https://computinged.wordpress.com/"
+                >Computing Education Research</Link
             > blog has been active since 2009 and contains thousands of posts that
             explain computing education research to a broader community.</li
         >
         <li
-            >Felienne Hermans has a blog about <External
+            >Felienne Hermans has a blog about <Link
                 to="http://www.felienne.com/archives/category/blog"
-                >programming and inclusion</External
+                >programming and inclusion</Link
             >.</li
         >
         <li
-            >Amy Ko's <External to="https://medium.com/bits-and-behavior"
-                >Bits &amp; Behavior</External
+            >Amy Ko's <Link to="https://medium.com/bits-and-behavior"
+                >Bits &amp; Behavior</Link
             > publication at Medium covers CER, software engineering, HCI, and broader
             issues in academia.</li
         >
         <li
-            >Shriram Krishnamurthi's <External
+            >Shriram Krishnamurthi's <Link
                 to="https://parentheticallyspeaking.org/articles/"
-                >Parenthetically Speaking</External
+                >Parenthetically Speaking</Link
             > discussions a range of topics on academia, programming languages, and
             computing education.</li
         >
         <li
-            >William Lau's blog on <External to="http://www.mrlaulearning.com/"
-                >CS education and teaching more broadly</External
+            >William Lau's blog on <Link to="http://www.mrlaulearning.com/"
+                >CS education and teaching more broadly</Link
             >.</li
         >
         <li
-            ><External to="https://laurenmarg.com/leetblog/"
-                >Lauren Margulieux's blog</External
+            ><Link to="https://laurenmarg.com/leetblog/"
+                >Lauren Margulieux's blog</Link
             > discusses learning sciences, discipline-based education reseach, and
             computing education.</li
         >
         <li
-            >Alfred Thompson's <External to="http://blog.acthompson.net/"
-                >Computer Science Teacher</External
+            >Alfred Thompson's <Link to="http://blog.acthompson.net/"
+                >Computer Science Teacher</Link
             > blog covers a range of computing education, research, and policy issues.</li
         >
         <li>
-            The <External to="https://cacm.acm.org/section/blogcacm/"
-                >CACM blog</External
+            The <Link to="https://cacm.acm.org/section/blogcacm/"
+                >CACM blog</Link
             > often has posts related to computing education.
         </li>
     </ul>
@@ -1538,16 +1538,16 @@
 
     <ul>
         <li
-            >The CS for All Consortium maintains <External
-                to="https://csforall.slack.com">a Slack team</External
-            >. <External to="https://www.csforall.org/become_a_member/"
-                >Join as a member</External
+            >The CS for All Consortium maintains <Link
+                to="https://csforall.slack.com">a Slack team</Link
+            >. <Link to="https://www.csforall.org/become_a_member/"
+                >Join as a member</Link
             > to access it.</li
         >
         <li
-            >There's a private group on Facebook called <External
+            >There's a private group on Facebook called <Link
                 to="https://www.facebook.com/groups/1546763215587966"
-                >Computer Science Education: Researchers and Practitioners</External
+                >Computer Science Education: Researchers and Practitioners</Link
             >.</li
         >
     </ul>

@@ -1,6 +1,6 @@
 <script lang="ts">
     import Block from '$lib/components/Block.svelte';
-    import External from '$lib/components/External.svelte';
+    import Link from '$lib/components/Link.svelte';
     import { profile } from '$lib/models/stores';
     import Image from '$lib/components/Thumbnail.svelte';
     import Title from '$lib/components/Title.svelte';
@@ -70,7 +70,7 @@
             <ul>
                 {#each offering.course.links as link}
                     <li>
-                        <External to={link.link}>{link.description}</External>
+                        <Link to={link.link}>{link.description}</Link>
                     </li>
                 {/each}
             </ul>

@@ -124,18 +124,13 @@
                             &sdot; <a href={asset(paperLocalURL)}>pdf</a></span
                         >{/if}
                     {#if paper.doi}<span>
-                            &sdot; <a href={paper.doi}>doi</a></span
+                            &sdot; <Link to={paper.doi}>doi</Link></span
                         >{/if}
                     {#if paper.slides}<span>
-                            &sdot; <a
-                                href={paper.slides.startsWith('http')
-                                    ? paper.slides
-                                    : asset(`/slides/${paper.slides}`)}
-                                >slides</a
-                            ></span
+                            &sdot; <Link to={paper.slides}>slides</Link></span
                         >{/if}
                     {#if paper.blog}<span>
-                            &sdot; <a href={paper.blog}>blog</a></span
+                            &sdot; <Link to={paper.blog}>blog</Link></span
                         >{/if}
                     &sdot; <Link to={'/(app)/publications'} id={paper.id}
                         ><span class="emoji">&#x1F517;</span></Link

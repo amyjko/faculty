@@ -1,5 +1,4 @@
 <script lang="ts">
-    import External from '$lib/components/External.svelte';
     import Block from '$lib/components/Block.svelte';
     import { profile } from '$lib/models/stores';
     import { parseDate } from '$lib/models/Profile';
@@ -60,8 +59,8 @@
             {#if talk.keynote}<br /><mark>&#x2605; Keynote</mark>{/if}
             <br /><small
                 ><em
-                    >{#if talk.url}<External to={talk.url}
-                            >{talk.venue}</External
+                    >{#if talk.url}<Link to={talk.url}
+                            >{talk.venue}</Link
                         >{:else}{talk.venue}{/if}</em
                 ></small
             >
@@ -77,13 +76,13 @@
             <div>
                 <small>
                     {#if talk.recording}
-                        <External to={talk.recording}>Recording</External>
+                        <Link to={talk.recording}>Recording</Link>
                     {/if}
                     {#if talk.practice}
                         {#if talk.recording}
                             &sdot;
                         {/if}
-                        <External to={talk.practice}>Rehearsal</External>
+                        <Link to={talk.practice}>Rehearsal</Link>
                     {/if}
                     {#if talk.slides}
                         {#if talk.recording || talk.practice}
@@ -99,7 +98,7 @@
                         {#if talk.recording || talk.practice || talk.slides}
                             &sdot;
                         {/if}
-                        <External to={talk.blog}>Blog</External>
+                        <Link to={talk.blog}>Blog</Link>
                     {/if}
                 </small>
             </div>

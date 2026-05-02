@@ -1,42 +1,60 @@
-<script module lang="ts">
-    type ExternalPath = `http://${string}` | `https://${string}`;
-    type Path = RouteId | '' | ExternalPath;
-</script>
-
 <script lang="ts">
-    import { resolve } from '$app/paths';
     import { page } from '$app/state';
-    import type { RouteId } from '$app/types';
+    import Emoji from './Emoji.svelte';
 
     interface Props {
-        to: Path;
+        to: string;
         id?: string;
         query?: string;
         active?: boolean;
         plain?: boolean;
+        newTab?: boolean;
+        annotate?: boolean;
         children?: import('svelte').Snippet;
     }
 
-    let { to, id, query, active = false, plain = false, children }: Props = $props();
+    let {
+        to,
+        id,
+        query,
+        active = false,
+        plain = false,
+        newTab = false,
+        annotate = true,
+        children,
+    }: Props = $props();
 
-    let path = $derived(page.url.pathname);
-
-    function isExternal(url: string): url is ExternalPath {
+    function isExternal(url: string): boolean {
         return url.startsWith('http://') || url.startsWith('https://');
     }
 
+    function resolveRoute(route: string): string {
+        const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+        return base + (route.replace(/\/\([^)]+\)/g, '') || '/');
+    }
+
     let isCurrentRoute = $derived(
-        !plain && !isExternal(to) && to !== '' && resolve(to) === path,
+        !plain &&
+            !newTab &&
+            !isExternal(to) &&
+            to !== '' &&
+            to === page.route.id,
     );
 </script>
 
 {#if isCurrentRoute}
     <span class="at">{@render children?.()}</span>
 {:else if isExternal(to)}
-    <a href={to} target="_blank" rel="noreferrer">{@render children?.()}</a>
+    <a href={to} target="_blank" rel="noreferrer"
+        >{@render children?.()}{#if annotate}<sub class="external"
+                ><Emoji symbol="🔗" /></sub
+            >{/if}</a
+    >
 {:else}
     <a
-        href={`${to === '' ? page.url.pathname : resolve(to)}${id ? `#${id}` : ''}${query ? `/?${query}` : ''}`}
+        href={`${to === '' ? page.url.pathname : resolveRoute(to)}${id ? `#${id}` : ''}${query ? `/?${query}` : ''}`}
+        target={newTab ? '_blank' : undefined}
+        rel={newTab ? 'noreferrer' : undefined}
         class={active ? 'at' : ''}>{@render children?.()}</a
     >
 {/if}
@@ -49,5 +67,11 @@
 
     .at {
         background-color: var(--annotation-color);
+    }
+
+    .external {
+        font-size: 0.5em;
+        vertical-align: sub;
+        margin-left: 0.1em;
     }
 </style>

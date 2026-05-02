@@ -1,8 +1,6 @@
 <script lang="ts">
-    import { asset, resolve } from '$app/paths';
     import { page } from '$app/state';
     import Emoji from './Emoji.svelte';
-    import External from './External.svelte';
     import Link from './Link.svelte';
     import Social from './Social.svelte';
     import Thumbnail from './Thumbnail.svelte';
@@ -81,28 +79,32 @@
     <div class="metadata">
         <span class="small"
             ><em
-                ><Link to="https://www.mypronouns.org/she-her">she/her</Link
+                ><Link to="https://www.mypronouns.org/she-her" annotate={false}
+                    >she/her</Link
                 ></em
             ></span
         >
         <strong
             ><Link
                 to="https://ap.washington.edu/ahr/academic-titles-ranks/professor/"
-                >Professor</Link
+                annotate={false}>Professor</Link
             ></strong
         >
         <strong
-            ><Link to="https://ischool.uw.edu/about/leadership"
-                >Associate Dean for Academics</Link
+            ><Link
+                to="https://ischool.uw.edu/about/leadership"
+                annotate={false}
+            >
+                Associate Dean for Academics</Link
             ></strong
         >
         <span>
-            <Link to="http://ischool.uw.edu"
+            <Link to="http://ischool.uw.edu" annotate={false}
                 ><em>The Information School</em></Link
             ></span
         >
         <span>
-            <Link to="http://cs.uw.edu"
+            <Link to="http://cs.uw.edu" annotate={false}
                 ><em
                     >Paul G. Allen School of Computer Science &amp; Engineering</em
                 >
@@ -110,23 +112,25 @@
             ></span
         >
         <span>
-            <Link to="http://www.washington.edu"
+            <Link to="http://www.washington.edu" annotate={false}
                 >University of Washington, Seattle</Link
             ></span
         >
         <span class="small"
-            >- Editor-in-Chief, <Link to="https://dl.acm.org/journal/toce"
-                >ACM TOCE</Link
+            >- Editor-in-Chief, <Link
+                to="https://dl.acm.org/journal/toce"
+                annotate={false}>ACM TOCE</Link
             ></span
         >
         <span class="small"
-            >- Co-Director, <Link to="https://csforallwa.org/"
+            >- Co-Director, <Link to="https://csforallwa.org/" annotate={false}
                 >CS for All WA</Link
             ></span
         >
         <span class="small"
-            >- Co-Director, <Link to="https://reciprocal.reviews/"
-                >Reciprocal Reviews</Link
+            >- Co-Director, <Link
+                to="https://reciprocal.reviews/"
+                annotate={false}>Reciprocal Reviews</Link
             ></span
         >
         <Social />
@@ -159,7 +163,7 @@
         <Link to="/(app)/contact">Contact</Link>
         <Link to="/(app)/faq">FAQ</Link>
         <Link to="/(app)/cer">CER FAQ</Link>
-        <External to={resolve('/(cv)/cv')}>CV</External>
+        <Link to="/(cv)/cv" newTab>CV</Link>
     </div>
     {#if headers.length > 1}
         <div class="outline">

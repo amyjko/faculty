@@ -1,6 +1,5 @@
 <script lang="ts">
     import Section from '$lib/components/Section.svelte';
-    import External from '$lib/components/External.svelte';
     import Link from '$lib/components/Link.svelte';
     import Paper from '$lib/components/Paper.svelte';
     import { profile } from '$lib/models/stores';
@@ -113,9 +112,9 @@
 
     <p>
         You can read more about my view of information and computing in a blog
-        post I wrote about <External
+        post I wrote about <Link
             to="https://medium.com/bits-and-behavior/big-ideas-about-information-c09e4d9c60bd"
-            >big ideas about information</External
+            >big ideas about information</Link
         >.
     </p>
 </Section>
@@ -127,40 +126,40 @@
     <p> There are many great resources on this: </p>
     <ul>
         <li
-            >CRA has a great collection of FAQs called <External
-                to="https://sparc.cra.org/">SPARC</External
+            >CRA has a great collection of FAQs called <Link
+                to="https://sparc.cra.org/">SPARC</Link
             > about doing research and applying to PhD programs. I helped create it.</li
         >
         <li>
-            Shriram Krishnamurthi has a wonderful guide on <External
+            Shriram Krishnamurthi has a wonderful guide on <Link
                 to="https://parentheticallyspeaking.org/articles/us-cs-phd-faq/"
-                >Getting a Computer Science PhD</External
+                >Getting a Computer Science PhD</Link
             >. It's focused on CS programs, but much of the advice is good for
             any discipline.
         </li>
         <li
-            ><External
+            ><Link
                 to="http://matt.might.net/articles/successful-phd-students/"
-                >Matt Might's advice</External
-            > has a sobering but practical look, including a <External
+                >Matt Might's advice</Link
+            > has a sobering but practical look, including a <Link
                 to="https://matt.might.net/articles/phd-school-in-pictures/"
-                >fun visual metaphor</External
+                >fun visual metaphor</Link
             > of what it means to do a PhD.</li
         ><li
-            >I also like <External
+            >I also like <Link
                 to="https://freedom-to-tinker.com/2010/09/27/advice-new-graduate-students/"
                 >Jennifer Rexford's view of Ph.D. life as individual growth by
-                leveraging the group</External
+                leveraging the group</Link
             >, because it complements more pragmatic views.</li
         >
         <li
-            >The Economist also has some practical advice on <External
+            >The Economist also has some practical advice on <Link
                 to="http://www.economist.com/node/17723223?fsrc=scn/fb/wl/ar/mr/disposableacademic"
-                >Why doing a PhD is often a waste of time</External
+                >Why doing a PhD is often a waste of time</Link
             >.</li
         ><li
-            >For a lighter glimpse into Ph.D. life, there is always <External
-                to="http://www.phdcomics.com/comics.php">Ph.D. comics</External
+            >For a lighter glimpse into Ph.D. life, there is always <Link
+                to="http://www.phdcomics.com/comics.php">Ph.D. comics</Link
             >.
         </li>
     </ul>
@@ -243,32 +242,32 @@
 
     <ul>
         <li>
-            Shomir Wilson's <External to="https://shomir.net/advice"
-                >advice page</External
+            Shomir Wilson's <Link to="https://shomir.net/advice"
+                >advice page</Link
             >, which spans hidden curricula in CS.
         </li>
         <li
-            >Matt Might's <External
+            >Matt Might's <Link
                 to="http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/"
-                >advice on technical writing</External
+                >advice on technical writing</Link
             > is a helpful guide</li
         >
         <li
-            >I like Niklas Elmqvist's deconstruction of <External
+            >I like Niklas Elmqvist's deconstruction of <Link
                 to="https://sites.umiacs.umd.edu/elm/2016/11/19/writing-rebuttals/"
-                >what makes a good rebuttal to conference reviews</External
+                >what makes a good rebuttal to conference reviews</Link
             >.</li
         >
         <li
-            >Chris Parnin's <External
+            >Chris Parnin's <Link
                 to="https://medium.com/@gameweld/error-codes-for-paper-introductions-8deb0d6825c2?fbclid=IwAR0SziEHps-ZD24FqLzG-yAGbk0wMblZ8dmC3r8KwsRsYdthVC6R0ylvWSg"
-                >Error Codes for Paper Introductions</External
+                >Error Codes for Paper Introductions</Link
             > is a fun and helpful guide.</li
         >
         <li
-            >Morgan Klause Scheuerman has an excellent guide on <External
+            >Morgan Klause Scheuerman has an excellent guide on <Link
                 to="https://www.morgan-klaus.com/gender-guidelines.html"
-                >reporting gender</External
+                >reporting gender</Link
             >.</li
         >
     </ul>
@@ -320,15 +319,15 @@
     <p>
         I often get questions from researchers asking for help to design studies
         to evaluate the developer tool what they've built. I could write a whole
-        book on this (and <External
+        book on this (and <Link
             to="http://www.amazon.com/Research-Methods-Statistics-Psychology-Coolican/dp/0340812583"
-            >several</External
+            >several</Link
         >
-        <External
+        <Link
             to="http://www.amazon.com/Research-Methods-Psychology-John-Shaughnessy/dp/007128351X/ref=sr_1_1?s=books&ie=UTF8&qid=1281625862&sr=1-1"
-            >people</External
+            >people</Link
         >
-        <External to="http://www.socialresearchmethods.net/">have</External>,
+        <Link to="http://www.socialresearchmethods.net/">have</Link>,
         just not on the topic of CS research).
     </p>
 
@@ -346,10 +345,10 @@
     <p>
         Several of my colleagues in software engineering and programming
         languages also wrote a well reasoned analysis of <em>claims</em> in
-        evaluations called <External
+        evaluations called <Link
             to="http://dl.acm.org/citation.cfm?id=2983574"
             >The Truth, The Whole Truth, and Nothing But the Truth: A Pragmatic
-            Guide to Assessing Empirical Evaluations</External
+            Guide to Assessing Empirical Evaluations</Link
         >. This is a great lens through which to evaluate the validity of your
         evaluation.
     </p>
@@ -357,9 +356,9 @@
 
 <Section id="copyright" header="Which ACM copyright option should I choose?">
     <p>
-        Casey Fiesler has <External
+        Casey Fiesler has <Link
             to="http://caseyfiesler.com/2014/10/02/acm-publication-copyright/"
-            >a helpful blog post</External
+            >a helpful blog post</Link
         > about this decision. My own policy is to pay for open access if I believe
         it will actually increase access to audiences without digital library access.
         I always post a copy on my website so that search engines can find it.

@@ -1,6 +1,6 @@
 <script lang="ts">
     import Block from '$lib/components/Block.svelte';
-    import External from '$lib/components/External.svelte';
+    import Link from '$lib/components/Link.svelte';
     import Facets from '$lib/components/Facets.svelte';
     import { profile } from '$lib/models/stores';
     import Image from '$lib/components/Thumbnail.svelte';
@@ -27,9 +27,9 @@
 <Title text="Essays" />
 
 <h1>
-    I <External to="https://amyjko.medium.com">blog</External> on my lab's Medium
-    publication, <External to="https://medium.com/bits-and-behavior"
-        >Bits and Behavior</External
+    I <Link to="https://amyjko.medium.com">blog</Link> on my lab's Medium
+    publication, <Link to="https://medium.com/bits-and-behavior"
+        >Bits and Behavior</Link
     >.
 </h1>
 

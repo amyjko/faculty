@@ -1,7 +1,6 @@
 <script lang="ts">
     import Alert from '$lib/components/Alert.svelte';
     import Block from '$lib/components/Block.svelte';
-    import External from '$lib/components/External.svelte';
     import Link from '$lib/components/Link.svelte';
     import Image from '$lib/components/Thumbnail.svelte';
     import Title from '$lib/components/Title.svelte';
@@ -90,12 +89,12 @@
         Slacks and DM me. I'm usually pretty responsive throughout the day.
         <ul>
             <li
-                ><External to="https://computinged-uw.slack.com"
-                    >ComputingEd@UW Slack</External
+                ><Link to="https://computinged-uw.slack.com"
+                    >ComputingEd@UW Slack</Link
                 >. Our Computing Education community.</li
             >
             <li
-                ><External to="https://uwdub.slack.com">DUB Slack</External>.
+                ><Link to="https://uwdub.slack.com">DUB Slack</Link>.
                 Our HCI + Design community.</li
             >
         </ul>
@@ -107,10 +106,10 @@
         <Image url={'/images/contact/twitter.jpg'} alt="The Twitter logo." />
     {/snippet}
     &mdash; I used to be fairly active on Twitter, but mostly left in June 2022.
-    You can find me on <External to="https://bsky.app/profile/amyko.phd"
-        >Bluesky</External
-    >, Mastodon <External to="https://hci.social/@amyjko"
-        >@amyjko@hci.social</External
+    You can find me on <Link to="https://bsky.app/profile/amyko.phd"
+        >Bluesky</Link
+    >, Mastodon <Link to="https://hci.social/@amyjko"
+        >@amyjko@hci.social</Link
     >. I mostly post on Bluesky, and mostly just links to my writing.
 </Block>
 

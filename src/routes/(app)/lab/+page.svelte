@@ -2,7 +2,6 @@
     import Person from '$lib/components/Person.svelte';
     import Link from '$lib/components//Link.svelte';
     import { profile } from '$lib/models/stores';
-    import External from '$lib/components/External.svelte';
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
     import Emoji from '$lib/components/Emoji.svelte';
@@ -43,20 +42,20 @@
 </h1>
 
 <p>
-    My students are typically from <External to="http://ischool.uw.edu"
-        >The Information School</External
+    My students are typically from <Link to="http://ischool.uw.edu"
+        >The Information School</Link
     >,
-    <External to="http://cs.washington.edu"
-        >The Paul G. Allen School of Computer Science & Engineering</External
-    >, the <External to="https://education.uw.edu"
-        >College of Education</External
+    <Link to="http://cs.washington.edu"
+        >The Paul G. Allen School of Computer Science & Engineering</Link
+    >, the <Link to="https://education.uw.edu"
+        >College of Education</Link
     >, and occasionally other units on campus. I run the lab in a doctoral
     student-centered manner: students define their own projects within the scope
     of my interests, and often move me into new research areas. I work hard to
     be a better mentor and advisor every year. In fact, in 2021, my students
-    nominated me for the <External
+    nominated me for the <Link
         to="https://grad.uw.edu/for-faculty-and-staff/list-of-recipients/"
-        >Marsha L. Landolt Distinguished Graduate Mentor Award</External
+        >Marsha L. Landolt Distinguished Graduate Mentor Award</Link
     >, and I won honorable mention.
 </p>
 
@@ -68,8 +67,8 @@
             >How can programmable media support all learners' abilities and
             language fluencies?</em
         >
-        For example, I work on <External to="https://wordplay.dev"
-            ><Emoji symbol="💬" /> <strong>Wordplay</strong></External
+        For example, I work on <Link to="https://wordplay.dev"
+            ><Emoji symbol="💬" /> <strong>Wordplay</strong></Link
         >, an accessible, multilingual educational programming language for
         creating interactive typography. I'd love to collaborate with you on
         that, or create new media with you, in partnership with teachers.</li
@@ -86,19 +85,19 @@
 </ul>
 
 <p
-    >Read my <External
+    >Read my <Link
         to="https://docs.google.com/document/d/1LMHv0HdxXEgSNqICt3wtq8xWuH73kP7plZ_KeXyP6qM/edit?usp=sharing"
-        >advising guide</External
+        >advising guide</Link
     > for context on how I advise and support students.</p
 >
 
 <p>
     <strong>Current UW Ph.D. student?</strong> Lurk in
     <i>#research</i>
-    on <External to="https://computinged-uw.slack.com">LCI</External> Slack. DM or
+    on <Link to="https://computinged-uw.slack.com">LCI</Link> Slack. DM or
     email me about your interests. I'm always open to chatting, collaborating, serving
     on committees, and when I have capacity, advising. You're also welcome to visit
-    a <External to="https://computinged.uw.edu/">LCI research meeting</External
+    a <Link to="https://computinged.uw.edu/">LCI research meeting</Link
     >, meeting the many computing education scholars on campus.
 </p>
 <p>
@@ -112,24 +111,24 @@
     <em>and</em>
     meet with students during our review process.) <em>Do</em> write if you have
     specific questions about my lab's recent research that aren't answered on my
-    website. Apply to the <External to="http://ischool.uw.edu/phd"
-        >iSchool</External
-    > or <External
+    website. Apply to the <Link to="http://ischool.uw.edu/phd"
+        >iSchool</Link
+    > or <Link
         to="http://www.cs.washington.edu/education/grad/prospective.html"
-        >CSE</External
+        >CSE</Link
     > in Autumn.
 </p>
 <p>
     <strong>Current UW undergrad or masters student?</strong>
-    Read about <External
+    Read about <Link
         to="https://ischool.uw.edu/programs/informatics/research"
-        >engaging in undergrad research</External
+        >engaging in undergrad research</Link
     >. If that sounds interesting, read about <Link to={'/(app)/wordplay'}
         >Wordplay</Link
     >, and follow the instructions there to join. I also recruit for full-time
-    summer research assistants in Winter through the <External
+    summer research assistants in Winter through the <Link
         to="https://dub.washington.edu/gettinginvolved.html#tab_prospective"
-        >DUB REU program</External
+        >DUB REU program</Link
     >.
 </p>
 

@@ -4,7 +4,6 @@
     import Block from './Block.svelte';
     import Link from './Link.svelte';
     import Thumbnail from './Thumbnail.svelte';
-    import External from './External.svelte';
     import getPersonImagePath from '$lib/components/getPersonImage';
     import Paper from './Paper.svelte';
     import Emoji from './Emoji.svelte';
@@ -75,22 +74,22 @@
                         {#if resource.kind === 'video'}
                             <div class="item">
                                 <Emoji symbol="🎬"></Emoji>
-                                <External to={resource.url}
-                                    >{resource.label}</External
+                                <Link to={resource.url}
+                                    >{resource.label}</Link
                                 >
                             </div>
                         {:else if resource.kind === 'demo'}
                             <div class="item">
                                 <Emoji symbol="🖥️"></Emoji>
-                                <External to={resource.url}
-                                    >{resource.label}</External
+                                <Link to={resource.url}
+                                    >{resource.label}</Link
                                 >
                             </div>
                         {:else if resource.kind === 'code'}
                             <div class="item">
                                 <code>{'{}'}</code>
-                                <External to={resource.url}
-                                    >{resource.label}</External
+                                <Link to={resource.url}
+                                    >{resource.label}</Link
                                 >
                             </div>
                         {/if}

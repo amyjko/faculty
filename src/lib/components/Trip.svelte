@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { TravelInfo } from '../../data/Travel';
     import Block from '$lib/components/Block.svelte';
-    import External from '$lib/components/External.svelte';
+    import Link from '$lib/components/Link.svelte';
     import { parseDate } from '../models/Profile';
 
     interface Props {
@@ -62,7 +62,7 @@
                   )}</em
         >
         {#if trip.report}<span
-                ><br /><External to={trip.report}>trip report</External></span
+                ><br /><Link to={trip.report}>trip report</Link></span
             >{/if}
     {/snippet}
     <br />{trip.details}

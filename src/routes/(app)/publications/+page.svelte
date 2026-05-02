@@ -1,7 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
 
-    import External from '$lib/components/External.svelte';
+    import Link from '$lib/components/Link.svelte';
     import Facets from '$lib/components/Facets.svelte';
     import Paper from '$lib/components/Paper.svelte';
 
@@ -60,13 +60,13 @@
 <p>
     For the bean counters, there are {$profile.getPublications().length} of them.
     You can see who's citing them on
-    <External to="https://scholar.google.com/citations?user=otmdDLoAAAAJ&hl=en"
-        >Google Scholar</External
+    <Link to="https://scholar.google.com/citations?user=otmdDLoAAAAJ&hl=en"
+        >Google Scholar</Link
     >,
-    <External to="https://www.semanticscholar.org/author/Amy-J.-Ko/1441987875"
-        >Semantic Scholar</External
+    <Link to="https://www.semanticscholar.org/author/Amy-J.-Ko/1441987875"
+        >Semantic Scholar</Link
     >, or
-    <External to="https://dl.acm.org/profile/81100500360">ACM</External>. Note
+    <Link to="https://dl.acm.org/profile/81100500360">ACM</Link>. Note
     that {$profile.getPublications((pub) => pub.deadname === true).length} are still
     under my deadname, and thousands cite me by my deadname. Publishers refuse to
     fix these citations, so please cite me

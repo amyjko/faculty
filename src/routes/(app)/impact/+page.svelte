@@ -1,6 +1,6 @@
 <script lang="ts">
     import Block from '$lib/components/Block.svelte';
-    import External from '$lib/components/External.svelte';
+    import Link from '$lib/components/Link.svelte';
     import { profile } from '$lib/models/stores';
     import Image from '$lib/components/Thumbnail.svelte';
     import Title from '$lib/components/Title.svelte';
@@ -32,7 +32,7 @@
                   : ''})</small
         >
         {#if impact.url}<small
-                ><External to={impact.url}>evidence</External></small
+                ><Link to={impact.url}>evidence</Link></small
             >{/if}
         <br />{impact.description}
     </p>
