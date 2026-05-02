@@ -127,7 +127,7 @@
                             &sdot; <Link to={paper.doi}>doi</Link></span
                         >{/if}
                     {#if paper.slides}<span>
-                            &sdot; <Link to={paper.slides}>slides</Link></span
+                            &sdot; <a href={asset(`/slides/${paper.slides}`)}>slides</a></span
                         >{/if}
                     {#if paper.blog}<span>
                             &sdot; <Link to={paper.blog}>blog</Link></span
