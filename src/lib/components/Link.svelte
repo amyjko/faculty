@@ -46,8 +46,8 @@
     <span class="at">{@render children?.()}</span>
 {:else if isExternal(to)}
     <a href={to} target="_blank" rel="noreferrer"
-        >{@render children?.()}{#if annotate}<sub class="external"
-                ><Emoji symbol="🔗" /></sub
+        >{@render children?.()}{#if annotate}<span class="external"
+                ><Emoji symbol="🔗" /></span
             >{/if}</a
     >
 {:else}
@@ -71,7 +71,8 @@
 
     .external {
         font-size: 0.5em;
-        vertical-align: sub;
+        vertical-align: baseline;
         margin-left: 0.1em;
+        line-height: 0;
     }
 </style>
