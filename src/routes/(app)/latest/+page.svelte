@@ -1,6 +1,7 @@
 <script lang="ts">
     import { profile } from '$lib/models/stores';
     import { parseDate } from '$lib/models/Profile';
+    import { asset } from '$app/paths';
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
     import External from '$lib/components/External.svelte';
@@ -17,6 +18,8 @@
         externalUrl: string | null;
         route: string | null;
         anchor: string | null;
+        imageUrl: string | null;
+        imageAlt: string | null;
     };
 
     // Order determines display sequence within each year group
@@ -38,6 +41,8 @@
             label: string,
             url: string | null,
             kind: string,
+            imageUrl: string | null = null,
+            imageAlt: string | null = null,
         ) {
             if (year >= minYear && kind in kinds) {
                 if (!byYear.has(year)) byYear.set(year, []);
@@ -49,6 +54,8 @@
                     externalUrl: url,
                     route: null,
                     anchor: null,
+                    imageUrl,
+                    imageAlt,
                 });
             }
         }
@@ -59,6 +66,8 @@
             route: string,
             anchor: string,
             kind: string,
+            imageUrl: string | null = null,
+            imageAlt: string | null = null,
         ) {
             if (year >= minYear && kind in kinds) {
                 if (!byYear.has(year)) byYear.set(year, []);
@@ -70,6 +79,8 @@
                     externalUrl: null,
                     route,
                     anchor,
+                    imageUrl,
+                    imageAlt,
                 });
             }
         }
@@ -105,7 +116,14 @@
             () => 0,
         )) {
             const { year } = $profile.getPostMonthYear(post);
-            addExternal(year, post.title, post.url, 'essay');
+            addExternal(
+                year,
+                post.title,
+                post.url,
+                'essay',
+                post.img ? `/images/posts/post-${post.img}.jpg` : null,
+                post.alt ?? null,
+            );
         }
 
         // Publications — deep-link to the anchor on the publications page
@@ -128,7 +146,14 @@
                 (talk.slides?.startsWith('http') ? talk.slides : null) ??
                 talk.url ??
                 null;
-            addExternal(year, talk.title, url, 'talk');
+            addExternal(
+                year,
+                talk.title,
+                url,
+                'talk',
+                talk.image ? `/images/talks/${talk.image}` : null,
+                talk.alt ?? null,
+            );
         }
 
         // People — postdocs, PhD students, and undergrads who completed in range
@@ -138,7 +163,14 @@
                 p.enddate !== null &&
                 ['phd', 'postdoc', 'undergrad'].includes(p.level),
         )) {
-            addExternal(person.enddate!, person.name, person.url, 'person');
+            addExternal(
+                person.enddate!,
+                person.name,
+                person.url,
+                'person',
+                `/images/headshots/${person.id}.jpg`,
+                `Photograph of ${person.name}`,
+            );
         }
 
         // Travel — year from commitment start date
@@ -171,7 +203,15 @@
     <div class="cluster">
         {#each items as item}
             <span class="item">
-                <Emoji symbol={item.emoji} />
+                {#if item.imageUrl}
+                    <img
+                        class="item-image"
+                        src={asset(item.imageUrl)}
+                        alt={item.imageAlt ?? ''}
+                    />
+                {:else}
+                    <Emoji symbol={item.emoji} />
+                {/if}
                 {#if item.externalUrl}
                     <External to={item.externalUrl}>{item.label}</External>
                 {:else if item.route}
@@ -201,5 +241,13 @@
         align-items: baseline;
         gap: 0.2em;
         line-height: 1.4;
+    }
+
+    .item-image {
+        width: 1em;
+        height: 1em;
+        object-fit: cover;
+        border-radius: 2px;
+        align-self: center;
     }
 </style>
