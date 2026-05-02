@@ -134,6 +134,8 @@
                 '/(app)/publications',
                 pub.id,
                 'publication',
+                `/images/papers/paper-${pub.id}.jpg`,
+                pub.title,
             );
         }
 
