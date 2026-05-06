@@ -199,6 +199,12 @@
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
+<Linkable id="former-teachers">Former Teacher Collaborators</Linkable>
+
+{#each $profile.getPeople( (person) => !person.active && person.level === 'teacher', (person) => (person.enddate === null ? -Infinity : -person.enddate), ) as person}
+    <Person {person} highlight={isPersonHighlighted(person.id)} />
+{/each}
+
 <Linkable id="former-masters">Former Masters</Linkable>
 
 {#each $profile.getPeople( (person) => !person.active && person.level === 'masters', (person) => -person.startdate, ) as person}

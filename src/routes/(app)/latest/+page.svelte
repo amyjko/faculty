@@ -139,7 +139,10 @@
             () => 0,
         )) {
             const { year, month } = $profile.getPostMonthYear(post);
-            if (year > currentYear || (year === currentYear && month > currentMonth))
+            if (
+                year > currentYear ||
+                (year === currentYear && month > currentMonth)
+            )
                 continue;
             addExternal(
                 year,
@@ -209,7 +212,12 @@
             if (trip.commitment.start) {
                 const start = parseDate(trip.commitment.start);
                 if (start > now) continue;
-                addExternal(start.getFullYear(), trip.title, trip.url ?? null, 'travel');
+                addExternal(
+                    start.getFullYear(),
+                    trip.title,
+                    trip.url ?? null,
+                    'travel',
+                );
             }
         }
 
@@ -238,7 +246,7 @@
 
 <Title text="Latest" />
 
-<h1>Here is what I've been up to in the past three years.</h1>
+<h1>Here is what I've been up to in the past five years.</h1>
 
 {#each feedByYear as { year, context, groups }}
     <Linkable id={`${year}`}>
