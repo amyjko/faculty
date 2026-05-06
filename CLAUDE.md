@@ -1,1 +1,3 @@
 This static website is built using Svelte and SvelteKit. It has precise histories of my research, teaching, and service, and utmost care should be taken when maniuplating data records to not hallucinate names, sources, URLs, or other metadata.
+
+Verify builds after edges with `npm run build`.
