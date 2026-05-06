@@ -16,9 +16,7 @@
     something to add, fix, or improve, write me, or submit <Link
         to="https://github.com/amyjko/faculty/issues">an issue</Link
     > or
-    <Link to="https://github.com/amyjko/faculty/pulls"
-        >pull request</Link
-    >.
+    <Link to="https://github.com/amyjko/faculty/pulls">pull request</Link>.
 </p>
 
 <p>
@@ -262,10 +260,8 @@
                 to="https://dl.acm.org/citation.cfm?id=358755"
                 >Cornell Program Synthesizer</Link
             >, eventually maturing them into block-based editing environments
-            like <Link to="https://doi.org/10.1145/259963.260503"
-                >Alice</Link
-            >, <Link to="https://doi.org/10.1145/1592761.1592779"
-                >Scratch</Link
+            like <Link to="https://doi.org/10.1145/259963.260503">Alice</Link>, <Link
+                to="https://doi.org/10.1145/1592761.1592779">Scratch</Link
             > and <Link to="https://developers.google.com/blockly/"
                 >Blockly</Link
             >. These editors greatly increased engagement in computing
@@ -275,8 +271,7 @@
         <li>
             Seymour Papert, who was broadly concerned with learning, but also
             the learning of computing, contributed constructionism, a new theory
-            of learning (<Link
-                to="https://dl.acm.org/citation.cfm?id=1095592"
+            of learning (<Link to="https://dl.acm.org/citation.cfm?id=1095592"
                 >Papert 1980</Link
             >).
         </li>
@@ -501,24 +496,19 @@
                 to="https://csforall.slack.com">CSforAll Slack</Link
             >:</li
         >
-        <li
-            >The <Link to="https://cra.org/ads/">CRA Jobs website</Link
-            ></li
-        >
+        <li>The <Link to="https://cra.org/ads/">CRA Jobs website</Link></li>
         <li
             >The <Link to="https://sigcse.org/membership/mailing-lists.html"
                 >SIGCSE-jobs mailing list</Link
             ></li
         >
         <li
-            >The <Link to="https://www.higheredjobs.com"
-                >Higher Ed Jobs</Link
+            >The <Link to="https://www.higheredjobs.com">Higher Ed Jobs</Link
             ></li
         >
         <li><Link to="https://www.edjoin.org">EdJoin</Link></li>
         <li
-            >Evan Peck maintains a list of <Link
-                to="https://cs-pui.github.io/"
+            >Evan Peck maintains a list of <Link to="https://cs-pui.github.io/"
                 >CS faculty postings from "PUIs"</Link
             > (primarily undergraduate institutions).</li
         >
@@ -556,51 +546,44 @@
 
     <ul>
         <li
-            ><Link
-                to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505359"
+            ><Link to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505359"
                 >NSF CS for All</Link
             >. Funds basic research on CS education as well as
             researcher-practitioner partnerships focused on building K-12 CS
             education capacity, access, participation, and engagement.</li
         >
         <li
-            ><Link
-                to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505082"
+            ><Link to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505082"
                 >NSF IUSE</Link
             >. Funds programs that improve the quality of and access to STEM
             education in undergraduate programs. Does not directly fund basic
             research.</li
         >
         <li
-            ><Link to="https://www.nsf.gov/div/index.jsp?div=DUE"
-                >NSF DUE</Link
+            ><Link to="https://www.nsf.gov/div/index.jsp?div=DUE">NSF DUE</Link
             >. Funds innovations in STEM education at 2- and 4-year colleges.</li
         >
         <li
-            ><Link
-                to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=5467"
+            ><Link to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=5467"
                 >NSF ITEST</Link
             >. Funds programs that broaden participation in STEM. Does not
             directly fund basic research.</li
         >
         <li
-            ><Link
-                to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=500047"
+            ><Link to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=500047"
                 >NSF DRK-12</Link
             >. Funds projects that enhance the quality of and access to STEM
             education in K-12, including basic research.</li
         >
         <li
-            ><Link
-                to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504984"
+            ><Link to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504984"
                 >NSF RETTL</Link
             >. Funds projects on Emerging Technologies for Teaching and
             Learning, including intelligent tutors, computer-based instruction,
             computational tools for learning, etc.</li
         >
         <li
-            ><Link
-                to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504924"
+            ><Link to="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504924"
                 >NSF EHR CORE Research</Link
             >. Funds basic education research. Not CS specific, but it has
             separate tracks within its reviewing structure for CS and
@@ -679,7 +662,11 @@
                 >Successful qualitative research</Link
             > discusses foundational methods for qualitative methods and thematic
             analysis in particular, a key approach to qualitative data anlysis frequently
-            used in computing education.</li
+            used in computing education. A good companion to this is Padiyath and
+            Nelson-Fromm's <Link to="https://doi.org/10.1145/3770762.3772512"
+                >reflection on thematic analysis</Link
+            >, which dispells some common misuses and misunderstandings about
+            interpretative epistemic frames.</li
         >
         <li
             >There are also several notable commentaries on tensions between
@@ -857,9 +844,9 @@
                 ><Link
                     to="https://mitpress.mit.edu/9780262514040/stuck-in-the-shallow-end/"
                     >Stuck in the Shallow End: Education, Race, and Computing
-                </Link> illustrates the numerous racist structures, beliefs, and
-                practices in K-12 education that systematically exclude students of
-                color from CS education.</p
+                </Link> illustrates the numerous racist structures, beliefs, and practices
+                in K-12 education that systematically exclude students of color from
+                CS education.</p
             >
         </li>
         <li>
@@ -921,8 +908,7 @@
         </li>
         <li>
             <p
-                ><Link
-                    to="https://dl.acm.org/citation.cfm?doid=3230977.3230992"
+                ><Link to="https://dl.acm.org/citation.cfm?doid=3230977.3230992"
                     >On Theory Use in Computing Education Research</Link
                 > examines the use of theory in computing education and how it is
                 often weaponized to prevent the publication of new ideas.</p
@@ -940,8 +926,7 @@
         </li>
         <li>
             <p
-                ><Link
-                    to="https://dl.acm.org/doi/abs/10.1145/2445196.2445250"
+                ><Link to="https://dl.acm.org/doi/abs/10.1145/2445196.2445250"
                     >Halving fail rates using peer instruction: a study of four
                     computer science courses</Link
                 > presents one of the few rigorously examined teaching methods that
@@ -951,8 +936,7 @@
         </li>
         <li>
             <p
-                ><Link
-                    to="https://dl.acm.org/doi/abs/10.1145/1978942.1979381"
+                ><Link to="https://dl.acm.org/doi/abs/10.1145/1978942.1979381"
                     >African American men constructing computing identity</Link
                 > examines how race, culture, and stigma can warp genuine interests
                 in computing, and how informal learning interventions can counter
@@ -1034,8 +1018,7 @@
             to code.</li
         >
         <li
-            ><Link
-                to="https://mitpress.mit.edu/books/computational-thinking"
+            ><Link to="https://mitpress.mit.edu/books/computational-thinking"
                 >Computational Thinking</Link
             > (Denning &amp; Tedre, 2019). A historical introduction to computational
             thinking.</li
@@ -1197,8 +1180,7 @@
         research community (partly because most faculty conducting research are
         teachers themselves). Below I note several conferences and journals
         where you can publish computing education research (see SIGCSE for <Link
-            to="http://sigcse.org/sigcse/resources/publish"
-            >a broader list</Link
+            to="http://sigcse.org/sigcse/resources/publish">a broader list</Link
         >). Note that I separate the pure research venues from the venues that
         combine both research and practice since the combined venues are often
         dominated by practioners, which can make it hard to have focused
@@ -1239,8 +1221,7 @@
         </li>
         <li>
             <p
-                ><Link to="https://www.isls.org/annual-meeting/icls/"
-                    >ICLS</Link
+                ><Link to="https://www.isls.org/annual-meeting/icls/">ICLS</Link
                 > (the International Conference on Learning Sciences) does not strictly
                 focus on computing education, but publishes high quality research
                 on learning sciences. Accepts both qualitative and quantitative work,
@@ -1261,8 +1242,7 @@
         </li>
         <li>
             <p
-                ><Link to="https://www.isls.org/annual-meeting/cscl/"
-                    >CSCL</Link
+                ><Link to="https://www.isls.org/annual-meeting/cscl/">CSCL</Link
                 > (the International Conference on Computer-Supported Collaborative
                 Learning) focuses on issues related to learning through collaboration
                 and promoting productive collaborative discourse with the help of
@@ -1271,25 +1251,23 @@
         </li>
         <li>
             <p
-                ><Link to="https://ijcscl.org">IJCSCL</Link> (the International
-                Journal of Computer-Supported Collaborative Learning), like CSCL,
-                focuses on learning through collaboration.</p
+                ><Link to="https://ijcscl.org">IJCSCL</Link> (the International Journal
+                of Computer-Supported Collaborative Learning), like CSCL, focuses
+                on learning through collaboration.</p
             >
         </li>
         <li>
             <p
-                ><Link to="http://learningatscale.acm.org">L@S</Link> (the
-                ACM Conference on Learning at Scale) is a computer science conference
-                that focuses on techniques for scaling instruction. Some of the work
-                published here concerns computing education, but many other domains
-                are represented as well. Often focuses on MOOCs and other forms of
-                online learning.</p
+                ><Link to="http://learningatscale.acm.org">L@S</Link> (the ACM Conference
+                on Learning at Scale) is a computer science conference that focuses
+                on techniques for scaling instruction. Some of the work published
+                here concerns computing education, but many other domains are represented
+                as well. Often focuses on MOOCs and other forms of online learning.</p
             >
         </li>
         <li>
             <p
-                ><Link
-                    to="https://www.computer.org/csdl/proceedings/1809604"
+                ><Link to="https://www.computer.org/csdl/proceedings/1809604"
                     >RESPECT</Link
                 > (the IEEE Conference on Research on Equity and Sustained Participation
                 in Engineering, Computing, and Technology) is a conference focused
@@ -1308,18 +1286,16 @@
         </li>
         <li>
             <p
-                ><Link to="http://chi.acm.org">CHI</Link> (ACM SIGCHI Conference
-                on Human Factors in Computing) is an HCI conference with a focus on
-                any aspect of interactions between people and computers, including
-                programming. As one of the largest and broadest ACM conferences, it's
-                easy for research on learning to get lost here, but so does every
-                other topic!</p
+                ><Link to="http://chi.acm.org">CHI</Link> (ACM SIGCHI Conference on
+                Human Factors in Computing) is an HCI conference with a focus on any
+                aspect of interactions between people and computers, including programming.
+                As one of the largest and broadest ACM conferences, it's easy for
+                research on learning to get lost here, but so does every other topic!</p
             >
         </li>
         <li>
             <p
-                ><Link
-                    to="https://www.aera.net/Events-Meetings/Annual-Meeting"
+                ><Link to="https://www.aera.net/Events-Meetings/Annual-Meeting"
                     >AERA</Link
                 > (the American Education Research Association conference) has a division
                 for engineering and computing education that publishes papers on computational
@@ -1345,8 +1321,7 @@
         </li>
         <li>
             <p
-                ><Link to="https://educationaldatamining.org/">EDM</Link
-                >
+                ><Link to="https://educationaldatamining.org/">EDM</Link>
                 (the International Conference on Educational Data Mining). Explores
                 using educational data to understand student learning.
             </p>
@@ -1390,26 +1365,26 @@
             A small but dedicated community.</li
         >
         <li
-            ><Link to="https://www.wipsce.org">WiPSCE</Link> (Workshop in
-            Primary and Secondary Computing Education) aims to bring together researchers
+            ><Link to="https://www.wipsce.org">WiPSCE</Link> (Workshop in Primary
+            and Secondary Computing Education) aims to bring together researchers
             and practitioners, and publishes both research and practice papers. It
             is generally held in Europe.</li
         >
         <li
-            ><Link to="https://aceconference.wordpress.com">ACE</Link> (the
-            Australasian Computing Education Conference) is a regional conference
-            with a mix of research and practice papers, bringing together education
-            researchers and practitioners. Held in Australia or New Zealand, but welcomes
-            attendees from anywhere.</li
+            ><Link to="https://aceconference.wordpress.com">ACE</Link> (the Australasian
+            Computing Education Conference) is a regional conference with a mix of
+            research and practice papers, bringing together education researchers
+            and practitioners. Held in Australia or New Zealand, but welcomes attendees
+            from anywhere.</li
         >
         <li
-            ><Link to="http://www.latice-conference.org">LaTiCE</Link> (the
-            International Conference on Learning and Teaching in Computing and Engineering)
-            publishes both research and practice papers. Held primarily in Asia.</li
+            ><Link to="http://www.latice-conference.org">LaTiCE</Link> (the International
+            Conference on Learning and Teaching in Computing and Engineering) publishes
+            both research and practice papers. Held primarily in Asia.</li
         >
         <li
-            ><Link to="http://fie-conference.org">FIE</Link> (the ASEE Frontiers
-            in Education conference) is more broad and more practitioner focused than
+            ><Link to="http://fie-conference.org">FIE</Link> (the ASEE Frontiers in
+            Education conference) is more broad and more practitioner focused than
             SIGCSE and occasionally has CER work.</li
         >
     </ul>
@@ -1417,11 +1392,11 @@
 
 <Section id="sigcse" header="What is SIGCSE?">
     <p>
-        <Link to="http://sigcse.org/">SIGCSE</Link>, like other ACM
-        Special Interest Groups (SIGs), is an organization that focuses on a
-        particular topic within ACM, namely computer science education. It
-        sponsors ACM conferences (e.g., the SIGCSE Technical Symposium and ICER)
-        and influences their structure and focus. Note that SIGCSE the group
+        <Link to="http://sigcse.org/">SIGCSE</Link>, like other ACM Special
+        Interest Groups (SIGs), is an organization that focuses on a particular
+        topic within ACM, namely computer science education. It sponsors ACM
+        conferences (e.g., the SIGCSE Technical Symposium and ICER) and
+        influences their structure and focus. Note that SIGCSE the group
         organizes SIGCSE the conference. I know, it's confusing, but aren't you
         glad you read this?
     </p>
