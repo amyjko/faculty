@@ -48,6 +48,21 @@ export type Paper = {
 
 export const Publications: Paper[] = [
     {
+        id: 'creativewriting',
+        kind: 'refereed conference paper',
+        authors: ['@gifford', '@sophie', '@cara', '@ajko'],
+        year: 2026,
+        title: 'Adolescent Identity Expression through Transdisciplinary, Computational, Creative Writing',
+        source: '@icer',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: 'Gifford2026CreativeWriting.pdf',
+        contribution:
+            ' Finds that students employed code to express their identity in ways that text alone could not capture and that disciplinary writing practices around outlining and planning mutually reinforced cross-disciplinary learning.',
+        discoveries: ['JusticeHard'],
+    },
+    {
         id: 'assessagency',
         kind: 'refereed conference paper',
         authors: ['@emans', 'Rayana Lyons', 'Isabel Amaya', '@ajko'],
