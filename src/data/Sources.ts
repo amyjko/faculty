@@ -88,4 +88,8 @@ export const Sources: Record<string, Source> = {
         name: 'Proceedings of the ACM on Human-Computer Interaction',
         short: 'PACMHCI',
     },
+    isls: {
+        name: 'International Society of the Learning Sciences',
+        short: 'ISLS',
+    },
 };
