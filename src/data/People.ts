@@ -64,7 +64,7 @@ export const People: readonly Person[] = [
         bio: 'Belén is an undergraduate student studying computer science. She is interested in culturally responsive pedagogy to support inclusive and accessible CS education',
         url: 'http://belenedgar.github.io/',
         startdate: 2025,
-        enddate: null,
+        enddate: 2026,
         achievements: [],
     },
     {
@@ -134,7 +134,7 @@ export const People: readonly Person[] = [
         bio: "Carlos is an undergraduate student at Middle Tennessee State University studying Computer Science and Interactive Media. He additionally studies computing education and the learning sciences for his undergraduate research work and aims to center learners' existing conceptual, strategic, and epistemological resources in the development of effective, inclusive pedagogy.",
         url: 'https://aldats.dev/',
         startdate: 2024,
-        enddate: null,
+        enddate: 2025,
         achievements: [
             'PhD student, Computer Science, University of Illinois Urbana-Champaign (2025)',
             'NSF Graduate Research Fellowship (2025)',
@@ -183,7 +183,7 @@ export const People: readonly Person[] = [
         bio: 'Rayana is an undergraduate studying Computer Science. She is interested in dismantling barriers in computing education and expanding minority participation in CS.',
         url: 'https://www.linkedin.com/in/rayanalyons/',
         startdate: 2024,
-        enddate: null,
+        enddate: 2024,
         achievements: [],
     },
     {
@@ -233,20 +233,6 @@ export const People: readonly Person[] = [
         achievements: [],
     },
     {
-        id: 'rbs',
-        name: 'R. Ben Shapiro',
-        active: true,
-        advised: false,
-        level: 'faculty',
-        dept: 'Paul G. Allen School of Computer Science & Engineering',
-        coadvisor: null,
-        bio: 'Ben designs new learning technologies and experiences that enable people, especially youth, to make new computational systems that help them to understand the world around themselves, express themselves creatively, and care for human and non-human others.',
-        url: 'https://benshapi.ro/',
-        startdate: 2023,
-        enddate: null,
-        achievements: [],
-    },
-    {
         id: 'camilo',
         name: 'Camilo Montes de Haro',
         active: false,
@@ -257,7 +243,7 @@ export const People: readonly Person[] = [
         bio: 'Camilo is an undergraduate student at Bellevue College. He is interested in broadening participation in CS by leveraging and innovating new technologies.',
         url: 'http://www.linkedin.com/in/camilomontesdeharo',
         startdate: 2023,
-        enddate: null,
+        enddate: 2024,
         achievements: [],
     },
     {
@@ -289,7 +275,7 @@ export const People: readonly Person[] = [
         bio: 'Anne is faculty in the College of Education. We often collaborate on teacher education research, teaching, and administration.',
         url: 'https://www.linkedin.com/in/anne-beitlers-241a3939/',
         startdate: 2016,
-        enddate: null,
+        enddate: 2025,
         achievements: [],
     },
     {
@@ -397,7 +383,7 @@ export const People: readonly Person[] = [
         bio: 'Avery is a PhD student in Computer Science and Engineering exploring how to make accessible technology to support people with disabilities, especially in the context of higher education.',
         url: 'https://kmack3.github.io/',
         startdate: 2022,
-        enddate: null,
+        enddate: 2023,
         achievements: [],
     },
     {
@@ -445,7 +431,7 @@ export const People: readonly Person[] = [
         bio: 'Fee is an undergraduate at the University of Michigan, finishing up her degrees in Computer Science and Interarts Performance. She is interested in interdisciplinary education, and the ways in which diverse fields of study can enhance and complement one another. Some of her main focuses include broadening participation in computing, empowering students to critique the current state of computing, and collaboratively imagining alternatives to computing.',
         url: 'https://feechristoph.com/',
         startdate: 2021,
-        enddate: null,
+        enddate: 2022,
         achievements: [],
     },
     {
@@ -459,7 +445,7 @@ export const People: readonly Person[] = [
         bio: 'Ashley was an undergraduate in Design, interested in designing tools that emphasize equity and accessibility. They helped create illustrations and design language for the Critically Conscious Computing book.',
         url: 'https://www.ashleyewang.com/',
         startdate: 2021,
-        enddate: null,
+        enddate: 2022,
         achievements: [],
     },
     {
@@ -473,7 +459,7 @@ export const People: readonly Person[] = [
         bio: 'Jessie is an undergraduate in the Design division in the School of Art + Art History + Design, and contributes to the STEP CS book.',
         url: 'https://www.jessiehuynh.com',
         startdate: 2021,
-        enddate: null,
+        enddate: 2022,
         achievements: [],
     },
     {
@@ -515,7 +501,7 @@ export const People: readonly Person[] = [
         bio: "Thomas is faculty at George Mason University's Department of Computer Science. We've collaborated heavily on methods, programming strategies, and tools.",
         url: 'https://cs.gmu.edu/~tlatoza/',
         startdate: 2004,
-        enddate: null,
+        enddate: 2024,
         achievements: [],
     },
     {
@@ -665,7 +651,7 @@ export const People: readonly Person[] = [
         bio: "Emilia was an undergraduate student pursuing Informatics and helped with Mara's research on understanding the personal and interpersonal factors influencing computing career choices.",
         url: 'https://www.linkedin.com/in/emilia-borisova',
         startdate: 2020,
-        enddate: null,
+        enddate: 2021,
         achievements: [],
     },
     {
@@ -767,7 +753,7 @@ export const People: readonly Person[] = [
         bio: 'Meron is an undergraduate who helped design and teach an innovative new computing course to Upward Bound students in 2019.',
         url: 'https://www.linkedin.com/in/meron-solomon-aa81a5169/',
         startdate: 2019,
-        enddate: null,
+        enddate: 2022,
         achievements: [],
     },
     {

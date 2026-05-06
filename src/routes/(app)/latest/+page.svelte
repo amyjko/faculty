@@ -222,6 +222,10 @@
         }
 
         const yearContexts = $profile.getYearContexts();
+        const everyone = $profile.getPeople(
+            (p) => p.id !== 'ajko',
+            (p) => p.name.toLowerCase().charCodeAt(0),
+        );
         return Array.from(byYear.entries())
             .sort(([a], [b]) => b - a)
             .map(([year, items]) => {
@@ -235,10 +239,21 @@
                         last.push(item);
                     else groups.push([item]);
                 }
+                const people = everyone
+                    .filter(
+                        (p) =>
+                            p.startdate <= year &&
+                            (p.enddate === null || p.enddate >= year),
+                    )
+                    .sort((a, b) => {
+                        if (a.advised !== b.advised) return a.advised ? -1 : 1;
+                        return a.name.localeCompare(b.name);
+                    });
                 return {
                     year,
                     context: yearContexts[year] ?? null,
                     groups,
+                    people,
                 };
             });
     });
@@ -248,10 +263,29 @@
 
 <h1>Here is what I've been up to in the past five years.</h1>
 
-{#each feedByYear as { year, context, groups }}
+{#each feedByYear as { year, context, groups, people }}
     <Linkable id={`${year}`}>
         {year}{#if context}<small> &ndash; <em>{context}</em></small>{/if}
     </Linkable>
+    {#if people.length > 0}
+        <div class="people-row">
+            {#each people as person}
+                <a
+                    class="person-tile"
+                    href={person.url}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <img
+                        class="person-photo"
+                        src={asset(`/images/headshots/${person.id}.jpg`)}
+                        alt={'Photograph of ' + person.name}
+                    />
+                    <span class="person-name">{person.name}</span>
+                </a>
+            {/each}
+        </div>
+    {/if}
     <div class="cluster">
         {#each groups as group, groupIndex}
             {#if groupIndex > 0}<span class="break"></span>{/if}
@@ -318,5 +352,34 @@
         flex-basis: 100%;
         height: 0;
         margin-top: 0.5em;
+    }
+
+    .people-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4em 1em;
+        margin: 0.5em 0 1em 0;
+    }
+
+    .person-tile {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4em;
+        text-decoration: none;
+        font-size: var(--extra-small-font-size);
+        line-height: 1.2;
+    }
+
+    .person-photo {
+        width: 1.5em;
+        height: 1.5em;
+        object-fit: cover;
+        border-radius: 50%;
+        filter: grayscale(100%);
+        flex-shrink: 0;
+    }
+
+    .person-tile:hover .person-photo {
+        filter: none;
     }
 </style>
