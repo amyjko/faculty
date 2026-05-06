@@ -7,8 +7,17 @@
     import Link from '$lib/components/Link.svelte';
     import Emoji from '$lib/components/Emoji.svelte';
 
-    const currentYear = new Date().getFullYear();
-    const minYear = currentYear - 2;
+    const now = new Date();
+    const currentYear = now.getFullYear();
+    const currentMonth = now.getMonth() + 1;
+    const minYear = currentYear - 4;
+
+    // Term 1=Autumn (starts Sept 15), 2=Winter (Jan 1), 3=Spring (Apr 1)
+    function termStart(year: number, term: number) {
+        const month = [8, 0, 3][term - 1];
+        const day = [15, 1, 1][term - 1];
+        return new Date(year, month, day);
+    }
 
     type FeedItem = {
         label: string;
@@ -23,8 +32,15 @@
     };
 
     // Order determines display sequence within each year group
-    const kinds: Record<string, { emoji: string; rank: number; fallbackRoute: string }> = {
-        publication: { emoji: '📄', rank: 0, fallbackRoute: '/(app)/publications' },
+    const kinds: Record<
+        string,
+        { emoji: string; rank: number; fallbackRoute: string }
+    > = {
+        publication: {
+            emoji: '📄',
+            rank: 0,
+            fallbackRoute: '/(app)/publications',
+        },
         essay: { emoji: '✍', rank: 1, fallbackRoute: '/(app)/essays' },
         travel: { emoji: '✈', rank: 2, fallbackRoute: '/(app)/travel' },
         talk: { emoji: '🎤', rank: 3, fallbackRoute: '/(app)/talks' },
@@ -92,7 +108,11 @@
         for (const cls of $profile.getClasses()) {
             for (const offering of cls.offerings) {
                 const key = `${cls.id}-${offering.year}`;
-                if (offering.year >= minYear && !seenClasses.has(key)) {
+                if (
+                    offering.year >= minYear &&
+                    !seenClasses.has(key) &&
+                    termStart(offering.year, offering.term) <= now
+                ) {
                     seenClasses.add(key);
                     addExternal(offering.year, cls.title, cls.link, 'class');
                 }
@@ -104,6 +124,7 @@
             () => true,
             () => 0,
         )) {
+            if (impact.start > currentYear) continue;
             addExternal(
                 impact.start,
                 impact.title ?? impact.description,
@@ -117,7 +138,9 @@
             () => true,
             () => 0,
         )) {
-            const { year } = $profile.getPostMonthYear(post);
+            const { year, month } = $profile.getPostMonthYear(post);
+            if (year > currentYear || (year === currentYear && month > currentMonth))
+                continue;
             addExternal(
                 year,
                 post.title,
@@ -130,6 +153,7 @@
 
         // Publications — deep-link to the anchor on the publications page
         for (const pub of $profile.getPublications()) {
+            if (pub.year > currentYear) continue;
             addInternal(
                 pub.year,
                 pub.title,
@@ -143,7 +167,9 @@
 
         // Talks — prefer recording, then practice recording, then slides URL, then event URL
         for (const talk of $profile.getTalks()) {
-            const year = parseDate(talk.date).getFullYear();
+            const date = parseDate(talk.date);
+            if (date > now) continue;
+            const year = date.getFullYear();
             const url =
                 talk.recording ??
                 talk.practice ??
@@ -167,6 +193,7 @@
                 p.enddate !== null &&
                 ['phd', 'postdoc', 'undergrad'].includes(p.level),
         )) {
+            if (person.enddate! > currentYear) continue;
             addExternal(
                 person.enddate!,
                 person.name,
@@ -180,19 +207,32 @@
         // Travel — year from commitment start date
         for (const trip of $profile.getTravel()) {
             if (trip.commitment.start) {
-                const year = parseDate(trip.commitment.start).getFullYear();
-                addExternal(year, trip.title, trip.url ?? null, 'travel');
+                const start = parseDate(trip.commitment.start);
+                if (start > now) continue;
+                addExternal(start.getFullYear(), trip.title, trip.url ?? null, 'travel');
             }
         }
 
         const yearContexts = $profile.getYearContexts();
         return Array.from(byYear.entries())
             .sort(([a], [b]) => b - a)
-            .map(([year, items]) => ({
-                year,
-                context: yearContexts[year] ?? null,
-                items: items.slice().sort((a, b) => a.kindRank - b.kindRank),
-            }));
+            .map(([year, items]) => {
+                const sorted = items
+                    .slice()
+                    .sort((a, b) => a.kindRank - b.kindRank);
+                const groups: FeedItem[][] = [];
+                for (const item of sorted) {
+                    const last = groups[groups.length - 1];
+                    if (last && last[0].kindRank === item.kindRank)
+                        last.push(item);
+                    else groups.push([item]);
+                }
+                return {
+                    year,
+                    context: yearContexts[year] ?? null,
+                    groups,
+                };
+            });
     });
 </script>
 
@@ -200,33 +240,37 @@
 
 <h1>Here is what I've been up to in the past three years.</h1>
 
-{#each feedByYear as { year, context, items }}
+{#each feedByYear as { year, context, groups }}
     <Linkable id={`${year}`}>
         {year}{#if context}<small> &ndash; <em>{context}</em></small>{/if}
     </Linkable>
     <div class="cluster">
-        {#each items as item}
-            <span class="item">
-                <span class="item-icons">
-                    <Emoji symbol={item.emoji} />
-                    {#if item.imageUrl}
-                        <img
-                            class="item-image"
-                            src={asset(item.imageUrl)}
-                            alt={item.imageAlt ?? ''}
-                        />
+        {#each groups as group, groupIndex}
+            {#if groupIndex > 0}<span class="break"></span>{/if}
+            {#each group as item}
+                <span class="item">
+                    <span class="item-icons">
+                        <Emoji symbol={item.emoji} />
+                        {#if item.imageUrl}
+                            <img
+                                class="item-image"
+                                src={asset(item.imageUrl)}
+                                alt={item.imageAlt ?? ''}
+                            />
+                        {/if}
+                    </span>
+                    {#if item.externalUrl}
+                        <Link to={item.externalUrl}>{item.label}</Link>
+                    {:else if item.route}
+                        <Link
+                            to={item.route as any}
+                            id={item.anchor ?? undefined}>{item.label}</Link
+                        >
+                    {:else}
+                        <Link to={item.fallbackRoute as any}>{item.label}</Link>
                     {/if}
                 </span>
-                {#if item.externalUrl}
-                    <Link to={item.externalUrl}>{item.label}</Link>
-                {:else if item.route}
-                    <Link to={item.route as any} id={item.anchor ?? undefined}
-                        >{item.label}</Link
-                    >
-                {:else}
-                    <Link to={item.fallbackRoute as any}>{item.label}</Link>
-                {/if}
-            </span>
+            {/each}
         {/each}
     </div>
 {/each}
@@ -260,5 +304,11 @@
         object-fit: cover;
         border-radius: 2px;
         filter: grayscale(100%);
+    }
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
+        margin-top: 0.5em;
     }
 </style>
