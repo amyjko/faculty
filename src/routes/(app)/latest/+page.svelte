@@ -45,8 +45,7 @@
         travel: { emoji: '✈', rank: 2, fallbackRoute: '/(app)/travel' },
         talk: { emoji: '🎤', rank: 3, fallbackRoute: '/(app)/talks' },
         class: { emoji: '🎓', rank: 4, fallbackRoute: '/(app)/classes' },
-        person: { emoji: '👤', rank: 5, fallbackRoute: '/(app)/lab' },
-        impact: { emoji: '📢', rank: 6, fallbackRoute: '/(app)/impact' },
+        impact: { emoji: '📢', rank: 5, fallbackRoute: '/(app)/impact' },
     };
 
     let feedByYear = $derived.by(() => {
@@ -186,24 +185,6 @@
                 'talk',
                 talk.image ? `/images/talks/${talk.image}` : null,
                 talk.alt ?? null,
-            );
-        }
-
-        // People — postdocs, PhD students, and undergrads who completed in range
-        for (const person of $profile.getPeople(
-            (p) =>
-                p.advised &&
-                p.enddate !== null &&
-                ['phd', 'postdoc', 'undergrad'].includes(p.level),
-        )) {
-            if (person.enddate! > currentYear) continue;
-            addExternal(
-                person.enddate!,
-                person.name,
-                person.url,
-                'person',
-                `/images/headshots/${person.id}.jpg`,
-                `Photograph of ${person.name}`,
             );
         }
 
