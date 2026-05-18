@@ -20,6 +20,7 @@
         "@sveltejs/adapter-static": "^3",
         "@sveltejs/kit": "^2",
         "@sveltejs/vite-plugin-svelte": "^7",
+        "@types/node": "^25.9.0",
         "ajv-cli": "^5",
         "ajv-formats": "^3",
         "prettier": "^3",
