@@ -38,7 +38,9 @@
             !newTab &&
             !isExternal(to) &&
             to !== '' &&
-            to === page.route.id,
+            to === page.route.id &&
+            // Still render an anchor when linking to a specific id on the current page.
+            !id,
     );
 </script>
 
