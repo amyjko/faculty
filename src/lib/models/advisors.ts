@@ -376,6 +376,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'Canada',
     ],
     [
+        'Majeed Kazemitabaar',
+        'http://majeed.cc',
+        'HCI, human-AI interaction, AI-assisted programming, and CS education',
+        'Computer Science',
+        'University of Alberta',
+        'Canada',
+    ],
+    [
         'Philip Guo',
         'https://pg.ucsd.edu/',
         'HCI, learning at scale',
