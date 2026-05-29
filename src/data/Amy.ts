@@ -23,7 +23,7 @@ import { Years } from './Years';
 
 export const Amy: ProfileSpec = {
     announcement:
-        "I will likely recruit an iSchool or CSE Ph.D. student this Autumn 2026, focused on critical, liberatory CS and AI education. Have questions that aren't answered here? Write me.",
+        "I will be recruiting an iSchool or CSE Ph.D. student during the Autumn 2026 admissions cycle, to start Autumn 2027. I'm excited to work with students interested in critical, liberatory CS and AI education. Have questions that aren't answered here? Write me.",
     sources: Sources,
     pubs: Publications,
     talks: Talks,
