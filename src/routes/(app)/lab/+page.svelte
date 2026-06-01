@@ -47,9 +47,8 @@
     >,
     <Link to="http://cs.washington.edu"
         >The Paul G. Allen School of Computer Science & Engineering</Link
-    >, the <Link to="https://education.uw.edu"
-        >College of Education</Link
-    >, and occasionally other units on campus. I run the lab in a doctoral
+    >, the <Link to="https://education.uw.edu">College of Education</Link>, and
+    occasionally other units on campus. I run the lab in a doctoral
     student-centered manner: students define their own projects within the scope
     of my interests, and often move me into new research areas. I work hard to
     be a better mentor and advisor every year. In fact, in 2021, my students
@@ -94,10 +93,10 @@
 <p>
     <strong>Current UW Ph.D. student?</strong> Lurk in
     <i>#research</i>
-    on <Link to="https://computinged-uw.slack.com">LCI</Link> Slack. DM or
-    email me about your interests. I'm always open to chatting, collaborating, serving
-    on committees, and when I have capacity, advising. You're also welcome to visit
-    a <Link to="https://computinged.uw.edu/">LCI research meeting</Link
+    on <Link to="https://computinged-uw.slack.com">LCI</Link> Slack. DM or email me
+    about your interests. I'm always open to chatting, collaborating, serving on committees,
+    and when I have capacity, advising. You're also welcome to visit a <Link
+        to="https://computinged.uw.edu/">LCI research meeting</Link
     >, meeting the many computing education scholars on campus.
 </p>
 <p>
@@ -111,17 +110,14 @@
     <em>and</em>
     meet with students during our review process.) <em>Do</em> write if you have
     specific questions about my lab's recent research that aren't answered on my
-    website. Apply to the <Link to="http://ischool.uw.edu/phd"
-        >iSchool</Link
-    > or <Link
+    website. Apply to the <Link to="http://ischool.uw.edu/phd">iSchool</Link> or <Link
         to="http://www.cs.washington.edu/education/grad/prospective.html"
         >CSE</Link
     > in Autumn.
 </p>
 <p>
     <strong>Current UW undergrad or masters student?</strong>
-    Read about <Link
-        to="https://ischool.uw.edu/programs/informatics/research"
+    Read about <Link to="https://ischool.uw.edu/programs/informatics/research"
         >engaging in undergrad research</Link
     >. If that sounds interesting, read about <Link to={'/(app)/wordplay'}
         >Wordplay</Link
@@ -130,6 +126,16 @@
         to="https://dub.washington.edu/gettinginvolved.html#tab_prospective"
         >DUB REU program</Link
     >.
+</p>
+<p>
+    <strong>High school student?</strong>
+    First, you do not do research to get into college; that is a myth. I'm of the
+    opinion that you should be spending time taking risks, learning about yourself
+    and the world, and exploring what kind of adult you want to be. Because of this,
+    I generally do not work with high school students on reesarch, except when a research
+    project is specifically about youth perspectives.
+    <Link to={'/(app)/wordplay'}>Wordplay</Link> is one of those projects, and you're
+    welcome to volunteer as a contributor.
 </p>
 
 {#if activePostdocs.length > 0}
