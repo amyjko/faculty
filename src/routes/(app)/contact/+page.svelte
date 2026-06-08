@@ -20,7 +20,7 @@
     <li
         >I am one of the school's <Link
             to="https://www.washington.edu/cssc/facultystaff/academic-misconduct/"
-            >academic conduct officer</Link
+            >academic conduct officers</Link
         >. I fact find and make judgements about instructors' reports of
         cheating.</li
     >
@@ -28,7 +28,8 @@
         >I am one of the school's <Link
             to="https://ischool.uw.edu/about/conflict-resolution"
             >conflict facilitators</Link
-        >. If you're facing conflict in the school, review the link above.</li
+        >. If you're facing conflict in the school, review the link above, and
+        see if I'm the best person to reach out to for help.</li
     >
     <li
         >I am one of the iSchool's Title IX
@@ -94,8 +95,8 @@
                 >. Our Computing Education community.</li
             >
             <li
-                ><Link to="https://uwdub.slack.com">DUB Slack</Link>.
-                Our HCI + Design community.</li
+                ><Link to="https://uwdub.slack.com">DUB Slack</Link>. Our HCI +
+                Design community.</li
             >
         </ul>
     </span>
@@ -105,11 +106,11 @@
     {#snippet image()}
         <Image url={'/images/contact/twitter.jpg'} alt="The Twitter logo." />
     {/snippet}
-    &mdash; I used to be fairly active on Twitter, but mostly left in June 2022.
-    You can find me on <Link to="https://bsky.app/profile/amyko.phd"
-        >Bluesky</Link
-    >, Mastodon <Link to="https://hci.social/@amyjko"
-        >@amyjko@hci.social</Link
+    &mdash; I used to be fairly active on Twitter, but mostly left in June 2022, when
+    Elon Musk bought it as a way to hate on trans people, particularly his trans daughter.
+    You can find me on
+    <Link to="https://bsky.app/profile/amyko.phd">Bluesky</Link>, Mastodon <Link
+        to="https://hci.social/@amyjko">@amyjko@hci.social</Link
     >. I mostly post on Bluesky, and mostly just links to my writing.
 </Block>
 
@@ -119,8 +120,8 @@
     {/snippet}
     &mdash; I use LinkedIn as my primary contact manager. I usually only accept connections
     from people I've met IRL and have a professional relationship with (students,
-    collaborators, professional colleagues). I read my LinkedIn messages as part
-    of my morning email routine.
+    collaborators, professional colleagues). I read my LinkedIn messages as part of
+    my morning email routine.
 </Block>
 
 <Block link="https://www.facebook.com/amyjko" header="Facebook">
@@ -147,6 +148,5 @@
         <Image url={'/images/contact/phone.jpg'} alt="A telephone." />
     {/snippet}
     &mdash; Don't call me on the phone. It's never the right time. Write me on one
-    of the platforms above first and we can schedule a call if necessary. If you
-    somehow find my office phone number and leave a voicemail, I will get it eventually.
+    of the platforms above first and we can schedule a call if necessary.
 </Block>
