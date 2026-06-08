@@ -123,7 +123,7 @@ export const Publications: Paper[] = [
         source: '@respect',
         pages: null,
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://doi.org/10.1145/3796496.3811802',
         local: 'Sherif2026AssessmentCoconstruction.pdf',
         contribution:
             "Finds that engaging youth in co-designing learning assessments requires an orchestration of instructor-student trust by legitmizing learners' lived experiences and navigating conflict",
