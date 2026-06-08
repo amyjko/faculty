@@ -39,13 +39,13 @@
 <p>
     Amy J. Ko studies equitable, liberatory learning about computing and
     information, in schools and beyond, drawing from human-computer interaction,
-    computing education, software engineering, programming languages, learning
-    sciences, behavioral sciences, sociology, and more. She is a Professor and
-    Associate Dean for Academics at the <Link to="http://www.washington.edu"
+    computing education, learning sciences, behavioral sciences, sociology,
+    software engineering, programming languages, and more. She is a Professor
+    and Associate Dean for Academics at the <Link to="http://www.washington.edu"
         >University of Washington</Link
     >
-    <Link to="http://ischool.uw.edu/">Information School</Link>, with a
-    courtesy appointment in Computer Science & Engineering.
+    <Link to="http://ischool.uw.edu/">Information School</Link>, with a courtesy
+    appointment in Computer Science & Engineering.
 </p>
 
 <Linkable id="short">Short Bio</Linkable>
@@ -57,12 +57,13 @@
     <Link to="http://ischool.uw.edu/">Information School</Link> and the <Link
         to="http://cs.washington.edu"
         >Paul G. Allen School of Computer Science and Engineering</Link
-    > (courtesy). She co-directs the UW Center for Learning, Computing, and Imagination,
-    where she studies computing education, human-computer interaction, and humanity's
-    individual and collective struggle to understand computing and harness it for
-    equity, justice, and liberation. With her collaborators, she's invented many programming
-    languages and tools to support debugging, program understanding, reuse, and learning;
-    founded and sold a <Link to="http://www.answerdash.com"
+    > (courtesy). She co-directs the
+    <em>UW Center for Learning, Computing, and Imagination</em>, where she
+    studies computing education, human-computer interaction, and humanity's
+    individual and collective struggle to understand computing and harness it
+    for equity, justice, and liberation. With her collaborators, she's invented
+    programming languages and tools to support debugging, program understanding,
+    reuse, and learning; founded and sold a <Link to="http://www.answerdash.com"
         >venture-backed startup</Link
     > focused on software troubleshooting; developed numerous ways to weave equity
     and justice into computing education pedagogy, culture, and technology; and impacted
@@ -94,18 +95,17 @@
     Amy J. Ko is a queer, trans anti-disciplinary weirdo at the <Link
         to="http://www.washington.edu">University of Washington</Link
     > who has the privilege of being paid to follow her curiosity about computation,
-    learning, and politics, and tell people what she finds in various rooms, physical
-    and virtual. She likes working with students to wander about asking questions
-    about the ways that computation has and hasn't woven itself through people's lives
-    and learning. She started off inventing ways of making programming easier for
-    developers, but then got disillusioned with capitalism. She then got excited about
-    the ways that programmers interact with communities of people using their code.
-    After she returned from her profit-laced time as CTO, she decided to focus on
-    making people smarter instead of tools, and began studying what kinds of computing
-    literacies might lead to a more just world, and what kinds of teachers, teaching,
-    and tools we need to make that happen. She's grateful to <Link
-        to="http://www.cmu.edu">Carnegie Mellon University</Link
-    > and
+    learning, and politics, and tell people what she finds. She likes working with
+    students to wander about, asking questions about the ways that computation has
+    and hasn't woven itself through people's lives and learning. She started off inventing
+    ways of making programming easier for professional software developers, but then
+    got disillusioned with capitalism's dehumanizing, expolitative foundations. She
+    then got excited about the ways that programmers interact with communities of
+    people using their code. After she returned from her profit-laced time as CTO,
+    she decided to focus on making people smarter instead of tools, and began studying
+    what kinds of computing literacies might lead to a more just world, and what kinds
+    of teachers, teaching, and tools we need to make that happen. She's grateful to
+    <Link to="http://www.cmu.edu">Carnegie Mellon University</Link> and
     <Link to="http://www.oregonstate.edu">Oregon State University</Link>
     for being reasonably safe spaces to bumble through the world's endless expanse
     of mysteries as a student, and to the many students and taxpayers that pay her
@@ -115,42 +115,42 @@
 <Linkable id="wikipedia">Wikipedia</Linkable>
 
 <p>
-    <Link to="https://en.wikipedia.org/wiki/Amy_J._Ko">Wikipedia</Link> has
-    a page about me. If you're so inclined, see if there's other notable information
-    it's missing and add it.
+    <Link to="https://en.wikipedia.org/wiki/Amy_J._Ko">Wikipedia</Link> has a page
+    about me. If you're so inclined, see if there's other notable information it's
+    missing and add it.
 </p>
 
 <Linkable id="age">Age</Linkable>
 
 <p>
-    Why would I put a section on this page about my age? There are so many
-    reasons. First, people are constantly assuming I'm much younger than I am
-    (which I guess is to be expected, since I have a young face, but must we
-    really assume?) Second, when I tell people my age, they're often skeptical
-    (which is ridiculous, because I'm pretty sure I know my age better than they
-    do). Third, in ageist academia, much of how I'm treated and how my ideas are
-    treated are dependent on how people perceive my expertise, experience, and
-    wisdom. Looking young is almost guaranteed to lead less thoughtful academics
-    to assume I'm a student, that I know nothing, and that I have no expertise
-    to share. Hence this section on this page.
+    People are constantly assuming I'm much younger than I am. When I tell
+    people my age, they're often skeptical. Because of this, in ageist academia,
+    much of how I'm treated and how my ideas are treated are dependent on how
+    people perceive my expertise, experience, and wisdom. Looking young is
+    almost guaranteed to lead less thoughtful academics to assume I'm a student
+    or the wife of a professor, that I know nothing, and that I have no
+    expertise to share. Hence this section on this page.
 </p>
 
 <p>
     So how old am I? I was born in the summer of 1980. I am a Gen Xer. The music
-    of my childhood came with big hair and melodrama. I spent a whole summer
-    earning and saving $99 to buy a first generation Nintendo. Childhood meant
-    going wherever I wanted with whomever I wanted after school with no parental
-    consequences. I was one of the first people on the consumer internet. My
-    adolescence was defined by pervasive grunge, sadness, suicide, comic book
-    stores, arcades, and Magic the Gathering tournaments. I look back to the
-    80's and 90's and wonder how the world got so complicated, so quickly. And
-    then I remember that it was always complicated, whiteness just demanded we
-    deny that.
+    of my childhood came with big hair, melodrama, and angst. I spent a whole
+    summer earning and saving $99 to buy a first generation Nintendo. Childhood
+    meant going wherever I wanted with whomever I wanted after school with no
+    parental consequences. I was one of the first people on the consumer
+    internet. My adolescence was defined by pervasive grunge, sadness, suicide,
+    comic book stores, arcades, and Magic the Gathering tournaments. I learned
+    to repress my transness after realizing that being trans was at best a joke,
+    and at worst, justification for murder. I look back to the 80's and 90's and
+    wonder how the world got so complicated, so quickly. And then I remember
+    that it was always complicated &emdash; patriarchy, white supremacy, and
+    greed just demanded we deny that.
 </p>
 
 <p>
     So let my face be a reminder: you <em>cannot</em> judge someone's age, life experience,
-    expertise, or wisdom from their face.
+    expertise, wisdom, or gender from their face. Instead, listen to their words and
+    watch their actions.
 </p>
 
 <Linkable id="lineage">Academic Lineage</Linkable>
@@ -158,13 +158,13 @@
 <p>I have a relatively short academic lineage. I was advised by...</p>
 <ul>
     <li
-        ><Link to="http://www.cs.cmu.edu/~bam/">Brad Myers</Link>,
-        (Ph.D., University of Toronto), who was advised by...</li
+        ><Link to="http://www.cs.cmu.edu/~bam/">Brad Myers</Link>, (Ph.D.,
+        University of Toronto), who was advised by...</li
     >
     <li
-        ><Link to="http://ron.taglab.ca/">Ronald Baecker</Link>, (Ph.D.,
-        MIT) and <Link to="https://www.billbuxton.com">Bill Buxton</Link
-        > (unofficially), who was advised by...</li
+        ><Link to="http://ron.taglab.ca/">Ronald Baecker</Link>, (Ph.D., MIT)
+        and <Link to="https://www.billbuxton.com">Bill Buxton</Link> (unofficially),
+        who was advised by...</li
     >
     <li
         ><Link to="https://www.nap.edu/read/4779/chapter/21#93"
@@ -328,15 +328,13 @@
         to="http://oregonstate.edu/">Oregon State University</Link
     >, where I majored in <Link to="http://eecs.oregonstate.edu/"
         >Computer Science</Link
-    > and <Link to="http://oregonstate.edu/cla/psychology/"
-        >Psychology</Link
-    >. Early on, I got involved in the budding student chapter of the ACM, and
+    > and <Link to="http://oregonstate.edu/cla/psychology/">Psychology</Link>.
+    Early on, I got involved in the budding student chapter of the ACM, and
     after my first year, helped run the club and its activities around campus,
     including the ACM International Collegiate Programming Contest, a statewide
     software engineering contest, and a student taught course on 2D graphics
     rendering algorithms. At the same time, I joined <Link
-        to="http://web.engr.oregonstate.edu/~burnett/"
-        >Margaret Burnett</Link
+        to="http://web.engr.oregonstate.edu/~burnett/">Margaret Burnett</Link
     >'s research group, and stayed for two years. In my senior year, I focused
     on my honors thesis project, advised largely by <Link
         to="http://www.docbob.ca/">Bob Uttl</Link
@@ -371,8 +369,7 @@
         to="http://www.eecs.berkeley.edu/">Berkeley EECS</Link
     > to much broader places like the <Link to="http://ischool.uw.edu/"
         >University of Washington Information School</Link
-    >, as well as <Link
-        to="http://research.microsoft.com/en-us/default.aspx"
+    >, as well as <Link to="http://research.microsoft.com/en-us/default.aspx"
         >Microsoft Research</Link
     >, Redmond. In the end, I wanted to be in the Pacific Northwest, I wanted a
     strong mix of teaching and research, and I was fascinated by the challenge
