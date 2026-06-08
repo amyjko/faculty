@@ -48,6 +48,28 @@ export type Paper = {
 
 export const Publications: Paper[] = [
     {
+        id: 'preserviceprograms',
+        kind: 'journal article',
+        authors: [
+            '@hardin',
+            'Noah Dougen',
+            '@ajko',
+            '@jayne',
+            'Pete Tucker',
+            'Mark Oursland',
+        ],
+        year: 2026,
+        title: '“The Spark Fizzles Out: Barriers and Strategies in Computer Science Teacher Preparation Program Design”',
+        source: '@cse',
+        pages: null,
+        publisher: 'Taylor & Francis',
+        doi: null,
+        local: null,
+        contribution:
+            'Finds ill-fitting state policies, institutional hurdles, and a lack of computer science teacher preparation resources compound the sustainability of CS pre-service pathways.',
+        discoveries: ['TeachingIsHard'],
+    },
+    {
         id: 'creativewriting',
         kind: 'refereed conference paper',
         authors: ['@gifford', '@sophie', '@cara', '@ajko'],
