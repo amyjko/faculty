@@ -48,37 +48,12 @@
         nothing to write in my recommendation.
     </p>
 
-    <p>If you satisfy these requirements, write me with the following:</p>
-
-    <ul>
-        <li
-            >Remind me how we know each other, in case I don't recognize your
-            name.
-        </li>
-        <li
-            >You've shared with me why you need the letter. What programs, jobs,
-            or opportunities are you applying to and why?</li
-        >
-        <li
-            >Provide me with specific details about these collaborations and
-            conversations we've had, so I can write a letter that is specific
-            about our interactions. The more detail, the better, as I cannot
-            remember the details of all of our interactions, especially if our
-            interactions were long ago or minimal, and a vague high level letter
-            will hurt your prospects.</li
-        >
-        <li>When is the letter (or first letter in a batch) due?</li>
-        <li
-            >Many students requests a letter for "graduate school". There are
-            two kinds of graduate school, masters programs and PhD programs.
-            Please specify which kind of graduate school you are applying to.</li
-        >
-        <li
-            >If there is a specific location to upload the letter, provide the
-            location. (Most are invitations sent to me that I fill out
-            independently, and this is not necessary in this case)</li
-        >
-    </ul>
+    <p
+        >If you satisfy these requirements, submit a request to this <Link
+            to="https://docs.google.com/forms/d/e/1FAIpQLScMJT2PyNxiYhPRyMZsq-dLUpJXxJ-spUKR-L7EpWk-a-QkRQ/viewform?usp=dialog"
+            >request form</Link
+        > so I can track it.</p
+    >
 
     <p>
         There are some exceptions to the policy above. If the "letter" you need
@@ -138,8 +113,7 @@
             any discipline.
         </li>
         <li
-            ><Link
-                to="http://matt.might.net/articles/successful-phd-students/"
+            ><Link to="http://matt.might.net/articles/successful-phd-students/"
                 >Matt Might's advice</Link
             > has a sobering but practical look, including a <Link
                 to="https://matt.might.net/articles/phd-school-in-pictures/"
@@ -327,8 +301,8 @@
             to="http://www.amazon.com/Research-Methods-Psychology-John-Shaughnessy/dp/007128351X/ref=sr_1_1?s=books&ie=UTF8&qid=1281625862&sr=1-1"
             >people</Link
         >
-        <Link to="http://www.socialresearchmethods.net/">have</Link>,
-        just not on the topic of CS research).
+        <Link to="http://www.socialresearchmethods.net/">have</Link>, just not
+        on the topic of CS research).
     </p>
 
     <p>
@@ -345,8 +319,7 @@
     <p>
         Several of my colleagues in software engineering and programming
         languages also wrote a well reasoned analysis of <em>claims</em> in
-        evaluations called <Link
-            to="http://dl.acm.org/citation.cfm?id=2983574"
+        evaluations called <Link to="http://dl.acm.org/citation.cfm?id=2983574"
             >The Truth, The Whole Truth, and Nothing But the Truth: A Pragmatic
             Guide to Assessing Empirical Evaluations</Link
         >. This is a great lens through which to evaluate the validity of your
