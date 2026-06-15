@@ -37,7 +37,7 @@ const Classes: Class[] = [
             { size: 13, term: 3, year: 2025, score: 4.8 },
             { size: 7, term: 1, year: 2025, score: 4.5 },
             { size: 7, term: 2, year: 2026, score: 4.6 },
-            { size: 30, term: 3, year: 2026, score: null },
+            { size: 22, term: 3, year: 2026, score: null },
         ],
         annotation: {
             year: 2025,
