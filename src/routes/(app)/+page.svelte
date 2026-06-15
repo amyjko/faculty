@@ -42,7 +42,7 @@
     <Link to={'/(app)/classes'}>teaching</Link>, <Link to={'/(app)/books'}
         >writing</Link
     >, and connecting with community, including the <Link
-        to="https://csforallwa.org">CS for All Washington</Link
+        to="https://csforallwa.org">CS for All WA</Link
     > advocacy community and the <Link to="https://www.pnwcsteach.org/"
         >PNW CS Teach</Link
     > consortium of teacher educators.

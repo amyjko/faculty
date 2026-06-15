@@ -272,7 +272,7 @@ export const ServiceRoles: Service[] = [
     },
     {
         title: 'Director',
-        committee: 'CS for All Washington',
+        committee: 'CS for All WA',
         level: 'regional',
         description:
             "I organize the group, which meets  monthly to inform policy, organize community, and centralize information about about Washington state's K-12 CS for All efforts on the web (https://cseforallwa.org). Supported by the NSF-funded Exploring Computing Education Pathways project (https://ecepalliance.org).",
@@ -305,8 +305,7 @@ export const ServiceRoles: Service[] = [
         title: 'Advisory Board Member',
         committee: 'ITU Center for Computing Education',
         level: 'international',
-        description:
-            'I advice on the research centers scope and priorities.',
+        description: 'I advice on the research centers scope and priorities.',
         commitment: {
             start: '2021-12-15',
             end: '2022-01-01',
@@ -371,8 +370,7 @@ export const ServiceRoles: Service[] = [
         committee:
             'Computing Research Association (CRA) Undergraduate Research Award Committee',
         level: 'international',
-        description:
-            'I helped select finalists and winners for the CRA award.',
+        description: 'I helped select finalists and winners for the CRA award.',
         commitment: {
             start: '2018-01-01',
             end: '2019-03-01',
@@ -421,8 +419,7 @@ export const ServiceRoles: Service[] = [
     },
     {
         title: 'Curriculum design committee member',
-        committee:
-            'Global Innovation Exchange (GIX), University of Washington',
+        committee: 'Global Innovation Exchange (GIX), University of Washington',
         level: 'university',
         description:
             'I helped design and structure the The UW Master of Science in Technology Innovation Program.',
@@ -477,8 +474,7 @@ export const ServiceRoles: Service[] = [
         title: 'Co-organizer',
         committee: 'Dagstuhl on Human-Centered Software Development Tools',
         level: 'international',
-        description:
-            'I helped propose, plan, and run the weeklong workshop',
+        description: 'I helped propose, plan, and run the weeklong workshop',
         commitment: {
             start: '2014-03-01',
             end: '2015-08-01',

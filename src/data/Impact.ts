@@ -754,7 +754,7 @@ export const Impacts: Impact[] = [
         start: 2017,
         end: null,
         description:
-            'The CS for All Washington advocacy group I direct has used our research to affect statewide CS education policy',
+            'The CS for All WA advocacy group I direct has used our research to affect statewide CS education policy',
         url: 'http://csforallwa.org',
         who: 'k12cswa',
     },
