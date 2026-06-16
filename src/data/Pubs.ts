@@ -198,7 +198,7 @@ export const Publications: Paper[] = [
         source: '@chi',
         pages: null,
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://doi.org/10.1145/3772318.3791504',
         local: 'Mitchell2026AccessHeuristics.pdf',
         contribution:
             'Shares a set of nine “ability heuristics” that prompt designers to engage with accessibility throughout the design process. An evaluation found that they better emphasize the quality of accessibility than standarsd or other methods.',
