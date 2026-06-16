@@ -57,7 +57,7 @@ export const Impacts: Impact[] = [
         start: 2026,
         end: 2026,
         description:
-            'I contributed to investigative reporting on codoing bootcamp outcomes and inequities.',
+            'I contributed to investigative reporting on coding bootcamp outcomes and inequities.',
         title: 'Apple’s App Course Runs $20,000 a Student. Is It Really Worth It?',
         url: 'https://www.wired.com/story/apple-app-making-course-michigan-state-university/',
         who: 'public',
