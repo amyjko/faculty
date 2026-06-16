@@ -42,7 +42,15 @@ export type Post = {
 
 export const Posts: Post[] = [
     {
-        url: 'https://medium.com/p/250ad307d52d?postPublishedType=initial',
+        url: 'https://medium.com/bits-and-behavior/an-academic-year-aburst-2c5e4d5cd1d0',
+        title: 'An academic year aburst',
+        date: '2026.06',
+        tags: ['academia', 'gender', 'computing education'],
+        img: '2026recap',
+        alt: 'An orange and blue sunset against the Puget Sound.',
+    },
+    {
+        url: 'https://medium.com/bits-and-behavior/chi-2026-trip-report-ay-ay-ai-250ad307d52d',
         title: 'CHI 2026 trip report: ay ay AI',
         date: '2026.04',
         tags: ['trip report', 'HCI'],
