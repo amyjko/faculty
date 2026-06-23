@@ -76,5 +76,7 @@
         vertical-align: baseline;
         margin-left: 0.1em;
         line-height: 0;
+        -webkit-user-select: none;
+        user-select: none;
     }
 </style>
