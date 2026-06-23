@@ -211,7 +211,7 @@ const Classes: Class[] = [
         ],
         hours: 6,
         offerings: [
-            { year: 2026, term: 3, size: 9, score: null },
+            { year: 2026, term: 3, size: 9, score: 5.0 },
             { year: 2025, term: 3, size: 9, score: 4.3 },
             { year: 2024, term: 3, size: 15, score: 4.9 },
             { year: 2023, term: 3, size: 14, score: 4.9 },
