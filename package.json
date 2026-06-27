@@ -1,6 +1,6 @@
 {
     "name": "uw-faculty-page",
-    "version": "1.1",
+    "version": "1.1.1",
     "engines": {
         "node": "22"
     },
@@ -24,7 +24,7 @@
         "ajv-cli": "^5",
         "ajv-formats": "^3",
         "prettier": "^3",
-        "prettier-plugin-svelte": "^3",
+        "prettier-plugin-svelte": "^4",
         "svelte": "^5",
         "svelte-check": "^4",
         "tslib": "^2",
