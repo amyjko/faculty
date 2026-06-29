@@ -63,7 +63,7 @@ export const Publications: Paper[] = [
         source: '@cse',
         pages: null,
         publisher: 'Taylor & Francis',
-        doi: null,
+        doi: 'https://doi.org/10.1080/08993408.2026.2694765',
         local: null,
         contribution:
             'Finds ill-fitting state policies, institutional hurdles, and a lack of computer science teacher preparation resources compound the sustainability of CS pre-service pathways.',
