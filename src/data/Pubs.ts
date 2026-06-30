@@ -79,7 +79,7 @@ export const Publications: Paper[] = [
         pages: null,
         publisher: 'ACM',
         doi: null,
-        local: 'Gifford2026CreativeWriting.pdf',
+        local: 'Gifford2026IdentityExpression.pdf',
         contribution:
             'Finds that students employed code to express their identity in ways that text alone could not capture and that disciplinary writing practices around outlining and planning mutually reinforced cross-disciplinary learning.',
         discoveries: ['JusticeHard'],
