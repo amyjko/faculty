@@ -37,6 +37,16 @@ export const Impacts: Impact[] = [
         start: 2026,
         end: 2026,
         description:
+            'I had a conversation with ACM-W about visibility and belonging in computing',
+        title: 'A Fireside Chat with Prof Amy J Ko: On visibility, belonging, and reimagining computing for everyone',
+        url: 'https://women.acm.org/a-fireside-chat-with-prof-amy-j-ko/',
+        who: 'public',
+    },
+    {
+        kind: 'press',
+        start: 2026,
+        end: 2026,
+        description:
             'I was interviewed by Nature about the role of generative AI in data science',
         title: 'Got bugs? Here’s how to catch the errors in your scientific software',
         url: 'https://www.nature.com/articles/d41586-026-01261-w',
