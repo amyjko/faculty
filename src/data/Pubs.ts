@@ -295,7 +295,7 @@ export const Publications: Paper[] = [
         source: 'International Conference on Data Science',
         pages: null,
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://doi.org/10.1007/978-3-032-22196-4_18',
         local: null,
         contribution:
             'Through keystroke feature and keystroke burst analysis, we found that harder items were associated with longer, more continuous typing bursts and fewer pauses, indicating deeper cognitive engagement.',
