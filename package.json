@@ -28,7 +28,7 @@
         "svelte": "^5",
         "svelte-check": "^4",
         "tslib": "^2",
-        "typescript": "^6",
+        "typescript": "^7",
         "vite": "^8"
     },
     "type": "module"
