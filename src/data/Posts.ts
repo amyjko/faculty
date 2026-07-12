@@ -42,6 +42,14 @@ export type Post = {
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/know-thine-enemy-a-critical-engagement-with-ai-assisted-software-development-e41d9b058ab1',
+        title: 'A critical engagement with AI-assisted software development',
+        date: '2026.07',
+        tags: ['computing education', 'software engineering', 'automation'],
+        img: 'criticaldev',
+        alt: 'An illustrated black and white pig in prison clothing peeing into a urinal.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/an-academic-year-aburst-2c5e4d5cd1d0',
         title: 'An academic year aburst',
         date: '2026.06',
