@@ -83,7 +83,7 @@
 {:else}
     {#snippet image()}
         <Image
-            url={'/images/papers/paper-' + paper.id + '.jpg'}
+            url={'/images/papers/' + paper.id + '.jpg'}
             alt="A clip from the paper's PDF."
             {highlight}
         />

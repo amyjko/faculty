@@ -55,7 +55,7 @@
             
                 {#if post.img}
                     <Image
-                        url={'/images/posts/post-' + post.img + '.jpg'}
+                        url={'/images/posts/' + post.img + '.jpg'}
                         alt={post.alt ??
                             'Sorry, no description for this image yet!'}
                     />

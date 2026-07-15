@@ -148,7 +148,7 @@
                 post.title,
                 post.url,
                 'essay',
-                post.img ? `/images/posts/post-${post.img}.jpg` : null,
+                post.img ? `/images/posts/${post.img}.jpg` : null,
                 post.alt ?? null,
             );
         }
@@ -162,7 +162,7 @@
                 '/(app)/publications',
                 pub.id,
                 'publication',
-                `/images/papers/paper-${pub.id}.jpg`,
+                `/images/papers/${pub.id}.jpg`,
                 pub.title,
             );
         }

@@ -29,7 +29,7 @@
     <Block>
         {#snippet image()}
             <Thumbnail
-                url={`/images/papers/paper-${keyPaper.id}.jpg`}
+                url={`/images/papers/${keyPaper.id}.jpg`}
                 alt="A clip from the paper's text or figure"
             />
         {/snippet}

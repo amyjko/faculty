@@ -21,7 +21,7 @@
         {#snippet image()}
                 <Image
                 
-                url={'/images/papers/paper-' + book.id + '.jpg'}
+                url={'/images/papers/' + book.id + '.jpg'}
                 alt={'No book cover description, sorry'}
             />
             {/snippet}
