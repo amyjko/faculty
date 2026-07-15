@@ -42,6 +42,14 @@ export type Post = {
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/csta-2026-cs-teaching-2-0-118555613a4c',
+        title: 'CSTA 2026: CS teaching 2.0',
+        date: '2026.07',
+        tags: ['trip report', 'computing education'],
+        img: 'csta2026',
+        alt: 'Rows of K-12 CS teachers, arms locked, with a passionate teacher rallying the crowd on stage.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/know-thine-enemy-a-critical-engagement-with-ai-assisted-software-development-e41d9b058ab1',
         title: 'A critical engagement with AI-assisted software development',
         date: '2026.07',
