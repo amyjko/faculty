@@ -88,7 +88,6 @@
         .columns {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
         }
 
         .header {
@@ -98,6 +97,7 @@
 
         .content {
             flex: 1;
+            min-width: 0;
             max-width: 40em;
         }
 
