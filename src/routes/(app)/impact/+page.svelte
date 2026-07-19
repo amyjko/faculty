@@ -4,6 +4,17 @@
     import { profile } from '$lib/models/stores';
     import Image from '$lib/components/Thumbnail.svelte';
     import Title from '$lib/components/Title.svelte';
+    import { impactID, unique } from '$lib/models/anchors';
+
+    let impacts = $derived(
+        $profile.getImpacts(
+            () => true,
+            (impact) => -impact.start,
+        ),
+    );
+
+    /** Anchors so search results and links can reach a specific impact. */
+    let ids = $derived(unique(impacts.map(impactID)));
 </script>
 
 <Title text="Impact" />
@@ -21,8 +32,8 @@
 
 <hr />
 
-{#each $profile.getImpacts( () => true, (impact) => -impact.start, ) as impact}
-    <p>
+{#each impacts as impact, index}
+    <p id={ids[index]}>
         <span style="font-variant: small-caps">{impact.kind}</span>
         <small
             >({impact.start}{impact.end == null
@@ -31,8 +42,7 @@
                   ? '-' + impact.end
                   : ''})</small
         >
-        {#if impact.url}<small
-                ><Link to={impact.url}>evidence</Link></small
+        {#if impact.url}<small><Link to={impact.url}>evidence</Link></small
             >{/if}
         <br />{impact.description}
     </p>

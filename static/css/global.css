@@ -12,6 +12,12 @@
 
 	--annotation-color: rgb(234, 234, 255);
 
+	/* UW Husky Gold, for search matches. Deliberately identical in dark mode: a
+	   highlight reads as a marker over the text rather than part of the theme,
+	   and pinning the foreground keeps it at 8.7:1 contrast either way. */
+	--highlight-color: #B7A57A;
+	--highlight-text-color: #000000;
+
 	--link-color: rgb(0 0 184);
 
 	--text-font-family: "Nunito Sans", sans-serif;
@@ -199,4 +205,9 @@ hr {
 
 .emoji {
 	font-family: "Noto Emoji";
+}
+/* Matches highlighted after arriving from a search result. See src/lib/models/highlight.ts. */
+::highlight(search) {
+	background-color: var(--highlight-color);
+	color: var(--highlight-text-color);
 }

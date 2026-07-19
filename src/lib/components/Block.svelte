@@ -5,16 +5,18 @@
     interface Props {
         header?: string | null;
         link?: string | null;
+        /** An anchor for the record this block renders, for deep linking. */
+        id?: string;
         image?: Snippet;
         children?: Snippet;
     }
 
-    let { header = null, link = null, image, children }: Props = $props();
+    let { header = null, link = null, id, image, children }: Props = $props();
 
     let url = $derived(link?.startsWith('/') ? asset(link) : link);
 </script>
 
-<div class="block">
+<div class="block" {id}>
     <div class="left">
         {#if url}
             <a href={url} target="_blank" rel="noreferrer"

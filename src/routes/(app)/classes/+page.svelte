@@ -11,8 +11,8 @@
             (c) =>
                 -Math.max.apply(
                     undefined,
-                    c.offerings.map((o) => o.year)
-                )
+                    c.offerings.map((o) => o.year),
+                ),
         )
         .map((course) => {
             return {
@@ -20,12 +20,12 @@
                 next: course.offerings
                     .filter((offer) => offer.score === null)
                     .sort((a, b) =>
-                        a.year === b.year ? a.term - b.term : a.year - b.year
+                        a.year === b.year ? a.term - b.term : a.year - b.year,
                     ),
                 latest: course.offerings
                     .filter((offer) => offer.score !== null)
                     .sort((a, b) =>
-                        a.year === b.year ? b.term - a.term : b.year - a.year
+                        a.year === b.year ? b.term - a.term : b.year - a.year,
                     ),
             };
         });
@@ -37,16 +37,16 @@
 
 {#each offerings as offering}
     <Block
+        id={offering.course.id}
         link={offering.course.link}
         header={offering.course.number + ' ' + offering.course.title}
     >
         {#snippet image()}
-                <Image
-                
+            <Image
                 url={'/images/courses/' + offering.course.id + '.png'}
                 alt={offering.course.alt}
             />
-            {/snippet}
+        {/snippet}
         <span>
             <em>
                 &nbsp;({#if offering.latest.length > 0}{'last taught ' +

@@ -4,6 +4,17 @@
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
     import Discovery from '$lib/components/Discovery.svelte';
+    import { discoveryID, unique } from '$lib/models/anchors';
+
+    let discoveries = $derived(
+        $profile.getDiscoveries(
+            undefined,
+            (a) => -$profile.getDiscoveryRange(a)[1],
+        ),
+    );
+
+    /** Anchors so search results and links can reach a specific discovery. */
+    let ids = $derived(unique(discoveries.map(discoveryID)));
 </script>
 
 <Title text="" />
@@ -64,6 +75,6 @@
 </p>
 
 <!-- Create a list of discoveries from bundles of papers, sorted by the most recent publication on the discovery. -->
-{#each $profile.getDiscoveries(undefined, (a) => -$profile.getDiscoveryRange(a)[1]) as discovery}
-    <Discovery {discovery} />
+{#each discoveries as discovery, index}
+    <Discovery {discovery} id={ids[index]} />
 {/each}

@@ -7,6 +7,7 @@
     import months from './months';
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
+    import { commitID, uniquer } from '$lib/models/anchors';
 
     let commits = $profile.getCommits();
     let weeks = $profile.getWeeklyCommits();
@@ -15,21 +16,21 @@
     let indefiniteWeekly = commits
         .filter(
             (commitment) =>
-                commitment.end === null && commitment.category !== 'personal'
+                commitment.end === null && commitment.category !== 'personal',
         )
         .sort((a, b) => b.hours - a.hours);
 
     let indefiniteAnnually = commits
         .filter(
             (commitment) =>
-                commitment.annually && commitment.category !== 'personal'
+                commitment.annually && commitment.category !== 'personal',
         )
         .sort((a, b) =>
             a.start && 'month' in a.start && b.start && 'month' in b.start
                 ? a.start.month * 12 +
                   a.start.date -
                   (b.start.month * 12 + b.start.date)
-                : 0
+                : 0,
         );
 
     let definiteResearch = commits
@@ -38,12 +39,12 @@
                 !commitment.annually &&
                 commitment.end instanceof Date &&
                 commitment.category === 'research' &&
-                commitment.end.getTime() > Date.now()
+                commitment.end.getTime() > Date.now(),
         )
         .sort(
             (a, b) =>
                 (a.start instanceof Date ? a.start.getTime() : Infinity) -
-                (b.start instanceof Date ? b.start.getTime() : Infinity)
+                (b.start instanceof Date ? b.start.getTime() : Infinity),
         );
 
     let definiteTeaching = commits
@@ -52,12 +53,12 @@
                 !commitment.annually &&
                 commitment.end instanceof Date &&
                 commitment.category === 'teaching' &&
-                commitment.end.getTime() > Date.now()
+                commitment.end.getTime() > Date.now(),
         )
         .sort(
             (a, b) =>
                 (a.start instanceof Date ? a.start.getTime() : Infinity) -
-                (b.start instanceof Date ? b.start.getTime() : Infinity)
+                (b.start instanceof Date ? b.start.getTime() : Infinity),
         );
 
     let definiteService = commits
@@ -66,13 +67,26 @@
                 !commitment.annually &&
                 commitment.end instanceof Date &&
                 commitment.category === 'service' &&
-                commitment.end.getTime() > Date.now()
+                commitment.end.getTime() > Date.now(),
         )
         .sort(
             (a, b) =>
                 (a.start instanceof Date ? a.start.getTime() : Infinity) -
-                (b.start instanceof Date ? b.start.getTime() : Infinity)
+                (b.start instanceof Date ? b.start.getTime() : Infinity),
         );
+
+    /**
+     * Anchors for every commitment the page lists. One allocator across all
+     * five lists, because a commitment that is both indefinite and annual is
+     * rendered in two of them and each row needs its own anchor. The weekly
+     * workload table below repeats these commitments and so gets none.
+     */
+    let nextID = uniquer();
+    let weeklyIDs = indefiniteWeekly.map((c) => nextID(commitID(c)));
+    let annualIDs = indefiniteAnnually.map((c) => nextID(commitID(c)));
+    let researchIDs = definiteResearch.map((c) => nextID(commitID(c)));
+    let teachingIDs = definiteTeaching.map((c) => nextID(commitID(c)));
+    let serviceIDs = definiteService.map((c) => nextID(commitID(c)));
 </script>
 
 <Title text="Commitments" />
@@ -99,8 +113,8 @@
                 ></td
             ></tr
         >
-        {#each indefiniteWeekly as commitment}
-            <tr>
+        {#each indefiniteWeekly as commitment, index}
+            <tr id={weeklyIDs[index]}>
                 <td>
                     <em class={commitment.category}>{commitment.name}</em>
                     <br /><small>{commitment.description}</small>
@@ -118,8 +132,8 @@
                 ><Linkable id="annual">Annual commitments</Linkable></td
             ></tr
         >
-        {#each indefiniteAnnually as commitment}
-            <tr>
+        {#each indefiniteAnnually as commitment, index}
+            <tr id={annualIDs[index]}>
                 <td>
                     <em class={commitment.category}>{commitment.name}</em>
                     <br /><small>{commitment.description}</small>
@@ -147,8 +161,8 @@
             ></tr
         >
         <tr><td colSpan="3"><h4>Research</h4></td></tr>
-        {#each definiteResearch as commitment}
-            <tr>
+        {#each definiteResearch as commitment, index}
+            <tr id={researchIDs[index]}>
                 <td>
                     <em class={commitment.category}>{commitment.name}</em>
                     <br /><small>{commitment.description}</small>
@@ -167,8 +181,8 @@
             </tr>
         {/each}
         <tr><td colSpan="3"><h4>Teaching</h4></td></tr>
-        {#each definiteTeaching as commitment}
-            <tr>
+        {#each definiteTeaching as commitment, index}
+            <tr id={teachingIDs[index]}>
                 <td>
                     <em class={commitment.category}>{commitment.name}</em>
                     <br /><small>{commitment.description}</small>
@@ -187,8 +201,8 @@
             </tr>
         {/each}
         <tr><td colSpan="3"><h4>Service</h4></td></tr>
-        {#each definiteService as commitment}
-            <tr>
+        {#each definiteService as commitment, index}
+            <tr id={serviceIDs[index]}>
                 <td>
                     <em class={commitment.category}>{commitment.name}</em>
                     <br /><small>{commitment.description}</small>
@@ -239,9 +253,9 @@
                     (intersect.commitment.category === 'personal'
                         ? 0
                         : Math.round(
-                              intersect.commitment.hours * intersect.overlap
+                              intersect.commitment.hours * intersect.overlap,
                           )),
-                0
+                0,
             )}
             <tr>
                 <td>

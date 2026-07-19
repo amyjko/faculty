@@ -149,7 +149,7 @@
 
 {#each $profile.getPeople( (person) => person.active && person.advised && person.id !== 'ajko' && person.level !== 'faculty' && person.level !== 'postdoc', (person) => {
         return { undergrad: 6, masters: 5, teacher: 4, phd: 3, postdoc: 2, faculty: 1, director: 0 }[person.level] * 10000 + person.startdate;
-    }, ) as person}
+    } ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
@@ -170,11 +170,11 @@
     ></p
 >
 
-{#each $profile.getPeople( (person) => person.active && person.level === 'faculty', (person) => -person.startdate, ) as person}
+{#each $profile.getPeople( (person) => person.active && person.level === 'faculty', (person) => -person.startdate ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
-<Linkable id="collaborators">Former Faculty Collaborators</Linkable>
+<Linkable id="former-collaborators">Former Faculty Collaborators</Linkable>
 
 <p
     ><em
@@ -183,41 +183,41 @@
     ></p
 >
 
-{#each $profile.getPeople( (person) => !person.active && person.level === 'faculty', (person) => -person.startdate, ) as person}
+{#each $profile.getPeople( (person) => !person.active && person.level === 'faculty', (person) => -person.startdate ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
 <Linkable id="former-phd">Former Ph.D. students</Linkable>
 
-{#each $profile.getPeople( (person) => !person.active && person.advised && person.level === 'phd', (person) => (person.enddate === null ? -Infinity : -person.enddate), ) as person}
+{#each $profile.getPeople( (person) => !person.active && person.advised && person.level === 'phd', (person) => (person.enddate === null ? -Infinity : -person.enddate) ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
 <Linkable id="former-affiliated-phd">Former Affiliated Ph.D. students</Linkable>
 
-{#each $profile.getPeople( (person) => !person.active && !person.advised && person.level === 'phd', (person) => -person.startdate, ) as person}
+{#each $profile.getPeople( (person) => !person.active && !person.advised && person.level === 'phd', (person) => -person.startdate ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
 <Linkable id="former-postdoc">Former Postdocs</Linkable>
 
-{#each $profile.getPeople( (person) => !person.active && person.level === 'postdoc', (person) => -person.startdate, ) as person}
+{#each $profile.getPeople( (person) => !person.active && person.level === 'postdoc', (person) => -person.startdate ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
 <Linkable id="former-teachers">Former Teacher Collaborators</Linkable>
 
-{#each $profile.getPeople( (person) => !person.active && person.level === 'teacher', (person) => (person.enddate === null ? -Infinity : -person.enddate), ) as person}
+{#each $profile.getPeople( (person) => !person.active && person.level === 'teacher', (person) => (person.enddate === null ? -Infinity : -person.enddate) ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
 <Linkable id="former-masters">Former Masters</Linkable>
 
-{#each $profile.getPeople( (person) => !person.active && person.level === 'masters', (person) => -person.startdate, ) as person}
+{#each $profile.getPeople( (person) => !person.active && person.level === 'masters', (person) => -person.startdate ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
 
 <Linkable id="former-undergrad">Former Undergrads</Linkable>
-{#each $profile.getPeople( (person) => !person.active && person.level === 'undergrad', (person) => -person.startdate, ) as person}
+{#each $profile.getPeople( (person) => !person.active && person.level === 'undergrad', (person) => -person.startdate ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}

@@ -66,10 +66,10 @@
     <Link to="https://www.semanticscholar.org/author/Amy-J.-Ko/1441987875"
         >Semantic Scholar</Link
     >, or
-    <Link to="https://dl.acm.org/profile/81100500360">ACM</Link>. Note
-    that {$profile.getPublications((pub) => pub.deadname === true).length} are still
-    under my deadname, and thousands cite me by my deadname. Publishers refuse to
-    fix these citations, so please cite me
+    <Link to="https://dl.acm.org/profile/81100500360">ACM</Link>. Note that {$profile.getPublications(
+        (pub) => pub.deadname === true,
+    ).length} are still under my deadname, and thousands cite me by my deadname. Publishers
+    refuse to fix these citations, so please cite me
     <strong>Amy J. Ko</strong>, regardless of how you might find my prior work
     in reference lists and scholarly search engines. And if you're reviewing a
     paper that cites me incorrectly, please demand they fix it.
@@ -92,13 +92,13 @@
         >
     {/if}
 
-    <div id={pub.id}>
-        <Paper
-            paper={pub}
-            highlight={typeof window !== 'undefined' &&
-                window.location.hash.substring(1) === pub.id}
-        />
-    </div>
+    <!-- No id wrapper here: Paper renders its own <div id={paper.id}>, which is
+         what its self-link and citation toggle target. -->
+    <Paper
+        paper={pub}
+        highlight={typeof window !== 'undefined' &&
+            window.location.hash.substring(1) === pub.id}
+    />
 {:else}
     <Alert>No matching publications.</Alert>
 {/each}

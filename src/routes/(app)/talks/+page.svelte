@@ -7,10 +7,14 @@
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
     import { asset } from '$app/paths';
+    import { talkID, unique } from '$lib/models/anchors';
 
     let talks = $derived(
         $profile.getTalks(undefined, (talk) => -parseDate(talk.date).getTime()),
     );
+
+    /** Anchors so search results and links can reach a specific talk. */
+    let ids = $derived(unique(talks.map(talkID)));
 
     const months = [
         'Jan',
@@ -41,6 +45,7 @@
     {/if}
 
     <Block
+        id={ids[index]}
         link={talk.recording
             ? talk.recording
             : talk.practice
@@ -59,8 +64,7 @@
             {#if talk.keynote}<br /><mark>&#x2605; Keynote</mark>{/if}
             <br /><small
                 ><em
-                    >{#if talk.url}<Link to={talk.url}
-                            >{talk.venue}</Link
+                    >{#if talk.url}<Link to={talk.url}>{talk.venue}</Link
                         >{:else}{talk.venue}{/if}</em
                 ></small
             >

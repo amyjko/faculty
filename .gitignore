@@ -1,6 +1,7 @@
 /books/
 /courses/
 /node_modules/
+/static/search-index.json
 app.min.js
 .DS_Store
 ajko

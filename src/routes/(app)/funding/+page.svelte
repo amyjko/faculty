@@ -40,8 +40,8 @@
     graduate research fellowships to support the first 3 years of their doctoral work.
     My NSF awards include:
     <ul>
-        {#each $profile.getFunding( (funding) => funding.funder === 'National Science Foundation' && !funding.private, (funding) => (funding.commitment.end === null ? -Infinity : -parseDate(funding.commitment.end).getFullYear()), ) as award}
-            <li>
+        {#each $profile.getFunding( (funding) => funding.funder === 'National Science Foundation' && !funding.private, (funding) => (funding.commitment.end === null ? -Infinity : -parseDate(funding.commitment.end).getFullYear()) ) as award}
+            <li id={award.id}>
                 {#if award.url}
                     <Link to={award.url}>{award.title}</Link>
                 {:else}

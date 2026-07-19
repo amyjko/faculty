@@ -10,9 +10,11 @@
 
     interface Props {
         discovery: Discovery;
+        /** An anchor for this discovery, for deep linking. */
+        id?: string;
     }
 
-    let { discovery }: Props = $props();
+    let { discovery, id }: Props = $props();
 
     let range = $derived($profile.getDiscoveryRange(discovery));
     let papers = $derived(
@@ -26,7 +28,7 @@
 </script>
 
 {#if keyPaper}
-    <Block>
+    <Block {id}>
         {#snippet image()}
             <Thumbnail
                 url={`/images/papers/${keyPaper.id}.jpg`}
@@ -74,23 +76,17 @@
                         {#if resource.kind === 'video'}
                             <div class="item">
                                 <Emoji symbol="🎬"></Emoji>
-                                <Link to={resource.url}
-                                    >{resource.label}</Link
-                                >
+                                <Link to={resource.url}>{resource.label}</Link>
                             </div>
                         {:else if resource.kind === 'demo'}
                             <div class="item">
                                 <Emoji symbol="🖥️"></Emoji>
-                                <Link to={resource.url}
-                                    >{resource.label}</Link
-                                >
+                                <Link to={resource.url}>{resource.label}</Link>
                             </div>
                         {:else if resource.kind === 'code'}
                             <div class="item">
                                 <code>{'{}'}</code>
-                                <Link to={resource.url}
-                                    >{resource.label}</Link
-                                >
+                                <Link to={resource.url}>{resource.label}</Link>
                             </div>
                         {/if}
                     {/each}

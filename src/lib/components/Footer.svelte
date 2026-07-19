@@ -4,7 +4,7 @@
     import Link from './Link.svelte';
 </script>
 
-<div>
+<div class="footer">
     <hr />
     <small>
         <p

@@ -252,7 +252,7 @@
     >
 </ol>
 
-<Linkable id="howtocreate">When do lablets run?</Linkable>
+<Linkable id="when">When do lablets run?</Linkable>
 
 <p>
     We will try to have at least one lablet each Autumn, Winter, and Spring
@@ -267,7 +267,7 @@
     aren't classes, just informal gatherings.
 </p>
 
-<Linkable id="howtocreate">Do lablet topics change?</Linkable>
+<Linkable id="topics">Do lablet topics change?</Linkable>
 
 <p>
     Always! They shift based on the interests of the supervisor and of the

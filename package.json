@@ -9,7 +9,7 @@
     "repository": "https://github.com/amyjko/faculty.git",
     "scripts": {
         "dev": "vite dev",
-        "build": "vite build",
+        "build": "vite build && tsx scripts/build-search-index.ts",
         "preview": "vite preview",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json build --watch",
         "dry": "rsync --dry-run -vzripc --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html",
@@ -23,13 +23,18 @@
         "@types/node": "^26.1.0",
         "ajv-cli": "^5",
         "ajv-formats": "^3",
+        "node-html-parser": "^9.0.0",
         "prettier": "^3",
         "prettier-plugin-svelte": "^4",
         "svelte": "^5",
         "svelte-check": "^4",
         "tslib": "^2",
+        "tsx": "^4.23.1",
         "typescript": "^6",
         "vite": "^8"
     },
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "fuse.js": "^7.5.0"
+    }
 }

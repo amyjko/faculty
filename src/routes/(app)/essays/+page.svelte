@@ -7,17 +7,23 @@
     import type { PostTagType } from '../../../data/Posts';
     import Title from '$lib/components/Title.svelte';
     import Linkable from '$lib/components/Linkable.svelte';
+    import { postID, unique } from '$lib/models/anchors';
 
     let filter: Record<string, PostTagType> = $state({});
 
-    let posts = $derived($profile.getPosts(
-        (post) => !('topic' in filter) || post.tags.includes(filter.topic),
-        (post) =>
-            -(
-                $profile.getPostMonthYear(post).year * 12 +
-                $profile.getPostMonthYear(post).month
-            )
-    ));
+    let posts = $derived(
+        $profile.getPosts(
+            (post) => !('topic' in filter) || post.tags.includes(filter.topic),
+            (post) =>
+                -(
+                    $profile.getPostMonthYear(post).year * 12 +
+                    $profile.getPostMonthYear(post).month
+                ),
+        ),
+    );
+
+    /** Anchors so search results and links can reach a specific essay. */
+    let ids = $derived(unique(posts.map(postID)));
 
     function setFilter(tag: Record<string, PostTagType>) {
         filter = tag;
@@ -27,10 +33,8 @@
 <Title text="Essays" />
 
 <h1>
-    I <Link to="https://amyjko.medium.com">blog</Link> on my lab's Medium
-    publication, <Link to="https://medium.com/bits-and-behavior"
-        >Bits and Behavior</Link
-    >.
+    I <Link to="https://amyjko.medium.com">blog</Link> on my lab's Medium publication,
+    <Link to="https://medium.com/bits-and-behavior">Bits and Behavior</Link>.
 </h1>
 
 <p
@@ -50,18 +54,16 @@
     {#if index === 0 || date.year !== $profile.getPostMonthYear(posts[index - 1]).year}
         <Linkable id={`${date.year}`}>{date.year}</Linkable>
     {/if}
-    <Block link={post.url} header={post.title}>
+    <Block id={ids[index]} link={post.url} header={post.title}>
         {#snippet image()}
-            
-                {#if post.img}
-                    <Image
-                        url={'/images/posts/' + post.img + '.jpg'}
-                        alt={post.alt ??
-                            'Sorry, no description for this image yet!'}
-                    />
-                {/if}
-            
-            {/snippet}
+            {#if post.img}
+                <Image
+                    url={'/images/posts/' + post.img + '.jpg'}
+                    alt={post.alt ??
+                        'Sorry, no description for this image yet!'}
+                />
+            {/if}
+        {/snippet}
         <br /><small>{date.month + '/' + date.year}</small>
         <br />
         {#each post.tags as tag}

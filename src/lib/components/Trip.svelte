@@ -3,6 +3,7 @@
     import Block from '$lib/components/Block.svelte';
     import Link from '$lib/components/Link.svelte';
     import { parseDate } from '../models/Profile';
+    import { travelID } from '../models/anchors';
 
     interface Props {
         trip: TravelInfo;
@@ -51,7 +52,7 @@
     }
 </script>
 
-<Block link={trip.url} header={trip.title}>
+<Block id={travelID(trip)} link={trip.url} header={trip.title}>
     {#snippet image()}
         <em
             >{trip.commitment.start === null || trip.commitment.end === null
