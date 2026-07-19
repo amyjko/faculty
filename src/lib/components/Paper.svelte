@@ -66,7 +66,9 @@
 {#if format === 'apa'}
     <APACitation {paper} />
 {:else if format === 'cv'}
-    <div class="paper">
+    <!-- Each paper renders once in this format, under exactly one kind
+         section, so the paper's own id is unique on the page. -->
+    <div class="paper" id={paper.id}>
         <strong>{paper.title}</strong> &sdot;
         {#if year}<small>{paper.year} &sdot;</small>{/if}
         <small><Authors {paper} /></small> &sdot;
@@ -127,7 +129,9 @@
                             &sdot; <Link to={paper.doi}>doi</Link></span
                         >{/if}
                     {#if paper.slides}<span>
-                            &sdot; <a href={asset(`/slides/${paper.slides}`)}>slides</a></span
+                            &sdot; <a href={asset(`/slides/${paper.slides}`)}
+                                >slides</a
+                            ></span
                         >{/if}
                     {#if paper.blog}<span>
                             &sdot; <Link to={paper.blog}>blog</Link></span

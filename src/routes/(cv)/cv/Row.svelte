@@ -8,6 +8,8 @@
         header: string;
         detail: string;
         extra?: string | null;
+        /** An anchor for the record this renders, for deep linking. */
+        id?: string;
         annotation?: Annotation;
     }
 
@@ -17,11 +19,12 @@
         header,
         detail,
         extra = null,
+        id = undefined,
         annotation,
     }: Props = $props();
 </script>
 
-<tr>
+<tr {id}>
     <td
         ><small class="date"
             >{start}{start === end

@@ -17,6 +17,15 @@ import type { TravelInfo } from '../../data/Travel';
 import type { Impact } from '../../data/Impact';
 import type Commit from './Commit';
 import type { Discovery } from '../../data/Discoveries';
+import type { Degree } from '../../data/Degrees';
+import type { Job } from '../../data/Jobs';
+import type { Recognition } from '../../data/Recognitions';
+import type { Panel } from '../../data/Panels';
+import type { Patent } from '../../data/Patents';
+import type { DoctoralCommittee } from '../../data/DoctoralCommittees';
+import type { Editing } from '../../data/EditingRoles';
+import type { Reviewing } from '../../data/ReviewingRoles';
+import type { Service } from '../../data/ServiceRoles';
 
 /** The longest a slug may be, so that URLs stay readable. */
 const MAX = 60;
@@ -68,6 +77,54 @@ export function commitID(commit: Commit): string {
  */
 export function discoveryID(discovery: Discovery): string {
     return slug(discovery.contribution);
+}
+
+// The types below are rendered only on the CV, so these are their only anchors
+// anywhere on the site. Several have highly repetitive titles, so the key is
+// built from whichever field actually distinguishes the records.
+
+export function degreeID(degree: Degree): string {
+    return slug(`${degree.institution}-${degree.degree}`);
+}
+
+export function jobID(job: Job): string {
+    return slug(`${job.organization}-${job.title}`);
+}
+
+/** Recognition titles repeat across years, so the year is part of the id. */
+export function recognitionID(recognition: Recognition): string {
+    return `${slug(recognition.title)}-${recognition.year}`;
+}
+
+export function panelID(panel: Panel): string {
+    return `${panel.date}-${slug(panel.title)}`;
+}
+
+/** A patent number is globally unique, so nothing else is needed. */
+export function patentID(patent: Patent): string {
+    return slug(patent.number);
+}
+
+export function committeeID(committee: DoctoralCommittee): string {
+    return `${slug(committee.name)}-${committee.startdate}`;
+}
+
+/** Editing titles repeat ("Associate Editor"), so the venue distinguishes. */
+export function editingID(editing: Editing): string {
+    return slug(`${editing.venue}-${editing.title}`);
+}
+
+/**
+ * Reviewing commitments store bare `MM-DD` strings rather than full dates, so
+ * the level, not a date, separates the same venue across roles.
+ */
+export function reviewingID(reviewing: Reviewing): string {
+    return slug(`${reviewing.venue}-${reviewing.level}`);
+}
+
+/** Service titles are usually just "Member", so the committee distinguishes. */
+export function serviceID(service: Service): string {
+    return slug(`${service.committee}-${service.title}`);
 }
 
 /**

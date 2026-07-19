@@ -6,6 +6,9 @@
  * elements, so that it never mutates DOM that Svelte owns. See ::highlight() in
  * static/css/global.css for the styling.
  */
+/** Breathing room above a match scrolled into view, in pixels. */
+const MARGIN = 100;
+
 export default function highlight(query: string | null): void {
     if (typeof CSS === 'undefined' || !('highlights' in CSS)) return;
 
@@ -14,7 +17,14 @@ export default function highlight(query: string | null): void {
     const text = query?.trim().toLowerCase();
     if (text === undefined || text.length === 0) return;
 
-    const content = document.querySelector('.content');
+    // The same fallback chain the indexer uses to pick a page's content root
+    // (see scripts/build-search-index.ts). The two must agree: the indexer
+    // decides what is searchable and this decides what is highlightable, so a
+    // page covered by one and not the other yields results that do nothing.
+    const content =
+        document.querySelector('.content') ??
+        document.querySelector('.container') ??
+        document.body;
     if (content === null) return;
 
     const ranges: Range[] = [];
@@ -33,6 +43,19 @@ export default function highlight(query: string | null): void {
         }
     }
 
-    if (ranges.length > 0)
-        CSS.highlights.set('search', new Highlight(...ranges));
+    if (ranges.length === 0) return;
+
+    CSS.highlights.set('search', new Highlight(...ranges));
+
+    // Bring the first match into view, but only when no fragment was given:
+    // with one, Linkable's on-mount scroll owns the scroll position and the
+    // two would fight over it. This is what makes results useful on pages
+    // whose records have no anchor of their own.
+    if (window.location.hash.length === 0) {
+        const top = ranges[0].getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+            top: Math.max(0, top - MARGIN),
+            behavior: 'smooth',
+        });
+    }
 }

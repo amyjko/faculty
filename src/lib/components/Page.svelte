@@ -4,9 +4,7 @@
     import Header from '$lib/components/Header.svelte';
     import Footer from '$lib/components/Footer.svelte';
     import { navigating } from '$app/stores';
-    import { page } from '$app/state';
     import { browser } from '$app/environment';
-    import highlight from '$lib/models/highlight';
     import SpeechBubble from './SpeechBubble.svelte';
     import { profile } from '$lib/models/stores';
     interface Props {
@@ -18,11 +16,6 @@
     let headers: [string, string][] = $state([]);
     let closestID: string | undefined = $state(undefined);
     let scrollY: number = $state(0);
-
-    // Arriving from a search result? Show what matched.
-    $effect(() => {
-        if (browser) highlight(page.url.searchParams.get('q'));
-    });
 
     $effect(() => {
         if (scrollY >= 0) {

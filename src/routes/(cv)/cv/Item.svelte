@@ -6,6 +6,8 @@
         start: number;
         stop?: number | null | false;
         header: string;
+        /** An anchor for the record this renders, for deep linking. */
+        id?: string;
         two?: string | undefined;
         three?: string | undefined;
         four?: string | readonly string[] | undefined;
@@ -18,6 +20,7 @@
         start,
         stop = false,
         header,
+        id = undefined,
         two = undefined,
         three = undefined,
         four = undefined,
@@ -37,7 +40,7 @@
     );
 </script>
 
-<div class="chunk">
+<div class="chunk" {id}>
     <small class="date">
         {start + (end ? '-' : '')}{end}
     </small>

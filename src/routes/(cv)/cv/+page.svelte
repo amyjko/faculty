@@ -11,6 +11,31 @@
     import Title from '$lib/components/Title.svelte';
     import Annotation from '$lib/components/Highlight.svelte';
     import Emoji from '$lib/components/Emoji.svelte';
+    import {
+        uniquer,
+        degreeID,
+        jobID,
+        recognitionID,
+        panelID,
+        patentID,
+        committeeID,
+        editingID,
+        reviewingID,
+        serviceID,
+        talkID,
+        impactID,
+    } from '$lib/models/anchors';
+
+    /**
+     * One allocator for the whole page, so no two records share an anchor
+     * across the CV's ~20 sections. The page's data is static, so the ids are
+     * assigned once in document order and are stable between server and client.
+     *
+     * Papers rendered by `Paper format="cv"` carry their own `paper.id` and are
+     * outside this allocator, which is why the two award sections below prefix
+     * theirs — otherwise they would collide with the publication sections.
+     */
+    const nextID = uniquer();
 
     let refereed = $profile.getPublications(
         (pub) =>
@@ -55,6 +80,7 @@
     <Wrap>
         {#each $profile.getDegrees() as degree}
             <Item
+                id={nextID(degreeID(degree))}
                 start={degree.start}
                 stop={degree.end}
                 header={degree.institution}
@@ -68,8 +94,9 @@
     <h2>Academic appointments</h2>
 
     <Wrap>
-        {#each $profile.getJobs( (job) => job.academic, (job) => -job.startdate, ) as job}
+        {#each $profile.getJobs( (job) => job.academic, (job) => -job.startdate ) as job}
             <Item
+                id={nextID(jobID(job))}
                 start={job.startdate}
                 stop={job.enddate}
                 header={job.title}
@@ -83,8 +110,9 @@
     <h2>Industry appointments</h2>
 
     <Wrap>
-        {#each $profile.getJobs( (job) => !job.academic, (job) => -job.startdate, ) as job}
+        {#each $profile.getJobs( (job) => !job.academic, (job) => -job.startdate ) as job}
             <Item
+                id={nextID(jobID(job))}
                 start={job.startdate}
                 stop={job.enddate}
                 header={job.title}
@@ -99,8 +127,9 @@
     <h3>Most Influential Paper Awards</h3>
 
     <Wrap>
-        {#each $profile.getPublications( (pub) => pub.award !== undefined && pub.award.filter( (award) => award.includes('most influential paper'), ).length > 0, (pub) => -pub.year, ) as pub}
+        {#each $profile.getPublications( (pub) => pub.award !== undefined && pub.award.filter( (award) => award.includes('most influential paper') ).length > 0, (pub) => -pub.year ) as pub}
             <Item
+                id={nextID('influential-' + pub.id)}
                 start={pub.year}
                 header={pub.title}
                 two={pub.award?.join(', ')}
@@ -112,8 +141,9 @@
     <h3>Best Paper Awards</h3>
 
     <Wrap>
-        {#each $profile.getPublications( (pub) => pub.award !== undefined && pub.award.filter((award) => award.includes('best paper') || award.includes('honorable mention')).length > 0, (pub) => -pub.year, ) as pub}
+        {#each $profile.getPublications( (pub) => pub.award !== undefined && pub.award.filter((award) => award.includes('best paper') || award.includes('honorable mention')).length > 0, (pub) => -pub.year ) as pub}
             <Item
+                id={nextID('best-' + pub.id)}
                 start={pub.year}
                 header={pub.title}
                 two={pub.award?.join(', ')}
@@ -126,8 +156,9 @@
 
     <Table>
         <tbody>
-            {#each $profile.getRecognitions( () => true, (rec) => -rec.year, ) as rec}
+            {#each $profile.getRecognitions( () => true, (rec) => -rec.year ) as rec}
                 <Row
+                    id={nextID(recognitionID(rec))}
                     start={rec.year}
                     end={rec.year}
                     header={rec.title}
@@ -140,9 +171,10 @@
     <h2>Funding</h2>
 
     <Wrap>
-        {#each $profile.getFunding( (funding) => !funding.private, (funding) => (funding.commitment.end === null ? -Infinity : -parseDate(funding.commitment.end).getFullYear()), ) as funding}
+        {#each $profile.getFunding( (funding) => !funding.private, (funding) => (funding.commitment.end === null ? -Infinity : -parseDate(funding.commitment.end).getFullYear()) ) as funding}
             {#if funding.commitment.start}
                 <Item
+                    id={nextID(funding.id)}
                     start={parseDate(funding.commitment.start).getFullYear()}
                     stop={funding.commitment.end === null
                         ? null
@@ -199,43 +231,43 @@
 
     <h2>Refereed Workshop Papers</h2>
 
-    {#each $profile.getPublications( (pub) => pub.kind === 'refereed workshop paper', (pub) => -pub.year, ) as paper}
+    {#each $profile.getPublications( (pub) => pub.kind === 'refereed workshop paper', (pub) => -pub.year ) as paper}
         <Paper {paper} format="cv" />
     {/each}
 
     <h2>Books</h2>
 
-    {#each $profile.getPublications( (pub) => pub.kind === 'book', (pub) => -pub.year, ) as paper}
+    {#each $profile.getPublications( (pub) => pub.kind === 'book', (pub) => -pub.year ) as paper}
         <Paper {paper} format="cv" />
     {/each}
 
     <h2>Book Chapters</h2>
 
-    {#each $profile.getPublications( (pub) => pub.kind === 'book chapter', (pub) => -pub.year, ) as paper}
+    {#each $profile.getPublications( (pub) => pub.kind === 'book chapter', (pub) => -pub.year ) as paper}
         <Paper {paper} format="cv" />
     {/each}
 
     <h2>Refereed Magazine Articles</h2>
 
-    {#each $profile.getPublications( (pub) => pub.kind === 'refereed magazine article', (pub) => -pub.year, ) as paper}
+    {#each $profile.getPublications( (pub) => pub.kind === 'refereed magazine article', (pub) => -pub.year ) as paper}
         <Paper {paper} format="cv" />
     {/each}
 
     <h2>Juried Conference Papers</h2>
 
-    {#each $profile.getPublications( (pub) => pub.kind === 'juried conference paper', (pub) => -pub.year, ) as paper}
+    {#each $profile.getPublications( (pub) => pub.kind === 'juried conference paper', (pub) => -pub.year ) as paper}
         <Paper {paper} format="cv" />
     {/each}
 
     <h2>Juried workshop papers</h2>
 
-    {#each $profile.getPublications( (pub) => pub.kind === 'juried workshop paper', (pub) => -pub.year, ) as paper}
+    {#each $profile.getPublications( (pub) => pub.kind === 'juried workshop paper', (pub) => -pub.year ) as paper}
         <Paper {paper} format="cv" />
     {/each}
 
     <h2>Technical Reports</h2>
 
-    {#each $profile.getPublications( (pub) => pub.kind === 'technical report', (pub) => -pub.year, ) as paper}
+    {#each $profile.getPublications( (pub) => pub.kind === 'technical report', (pub) => -pub.year ) as paper}
         <Paper {paper} format="cv" />
     {/each}
 
@@ -244,8 +276,9 @@
     <h3>Press</h3>
 
     <Wrap>
-        {#each $profile.getImpacts( (impact) => impact.kind === 'press', (impact) => -impact.start, ) as impact}
+        {#each $profile.getImpacts( (impact) => impact.kind === 'press', (impact) => -impact.start ) as impact}
             <Item
+                id={nextID(impactID(impact))}
                 start={impact.start}
                 stop={impact.end}
                 header={impact.title ?? ''}
@@ -261,6 +294,7 @@
     <Wrap>
         {#each $profile.getTalks().filter((talk) => talk.keynote) as keynote}
             <Item
+                id={nextID(talkID(keynote))}
                 start={parseDate(keynote.date).getFullYear()}
                 header={keynote.title}
                 two={keynote.venue}
@@ -274,6 +308,7 @@
     <Wrap>
         {#each $profile.getTalks().filter((talk) => !talk.keynote) as keynote}
             <Item
+                id={nextID(talkID(keynote))}
                 start={parseDate(keynote.date).getFullYear()}
                 header={keynote.title}
                 two={keynote.venue}
@@ -287,6 +322,7 @@
     <Wrap>
         {#each $profile.getPanels() as panel}
             <Item
+                id={nextID(panelID(panel))}
                 start={parseDate(panel.date).getFullYear()}
                 header={panel.title}
                 two={panel.venue}
@@ -299,6 +335,7 @@
     <Wrap>
         {#each $profile.getPatents() as patent}
             <Item
+                id={nextID(patentID(patent))}
                 start={parseInt(patent.year)}
                 header={patent.title}
                 two={patent.number}
@@ -312,8 +349,9 @@
     <h3>Courses</h3>
 
     <Wrap>
-        {#each $profile.getClasses( () => true, (c) => -c.offerings[0].year, ) as course}
+        {#each $profile.getClasses( () => true, (c) => -c.offerings[0].year ) as course}
             <Item
+                id={nextID(course.id)}
                 start={course.offerings.sort((a, b) => a.year - b.year)[0].year}
                 stop={course.offerings.sort((a, b) => b.year - a.year)[0].year}
                 header={`${course.number} ${course.title}`}
@@ -331,8 +369,9 @@
     <h3>Postdoc Supervision</h3>
 
     <Wrap>
-        {#each $profile.getPeople( (person) => person.level === 'postdoc', (person) => -person.startdate, ) as person}
+        {#each $profile.getPeople( (person) => person.level === 'postdoc', (person) => -person.startdate ) as person}
             <Item
+                id={nextID(person.id)}
                 start={person.startdate}
                 stop={person.enddate}
                 header={person.name}
@@ -350,12 +389,13 @@
 
     <Wrap>
         {#each $profile
-            .getPeople( (person) => person.level === 'phd' && person.advised, (person) => -(person.enddate ?? 3000), )
+            .getPeople( (person) => person.level === 'phd' && person.advised, (person) => -(person.enddate ?? 3000) )
             .map((value) => {
                 if (value.coadvisor !== null) value.coadvisor = 'Co-advisor: ' + value.coadvisor;
                 return value;
             }) as person}
             <Item
+                id={nextID(person.id)}
                 start={person.startdate}
                 stop={person.enddate}
                 header={person.name}
@@ -373,6 +413,7 @@
         <tbody>
             {#each $profile.getDoctoralCommmitees() as person}
                 <Row
+                    id={nextID(committeeID(person))}
                     start={person.startdate}
                     end={person.enddate}
                     header={person.name}
@@ -388,9 +429,10 @@
 
     <h3>Journal Editorial Boards</h3>
 
-    {#each $profile.getEditing( (role) => role.type === 'journal', (role) => (role.commitment.start === null ? -Infinity : -parseDate(role.commitment.start).getFullYear()), ) as board}
+    {#each $profile.getEditing( (role) => role.type === 'journal', (role) => (role.commitment.start === null ? -Infinity : -parseDate(role.commitment.start).getFullYear()) ) as board}
         {#if board.commitment.start}
             <Item
+                id={nextID(editingID(board))}
                 start={parseDate(board.commitment.start).getFullYear()}
                 stop={board.commitment.end === null
                     ? null
@@ -404,9 +446,10 @@
 
     <h3>Conference Program Chair</h3>
 
-    {#each $profile.getEditing( (role) => role.type === 'conference', (role) => (role.commitment.start === null ? -Infinity : -parseDate(role.commitment.start).getFullYear()), ) as board}
+    {#each $profile.getEditing( (role) => role.type === 'conference', (role) => (role.commitment.start === null ? -Infinity : -parseDate(role.commitment.start).getFullYear()) ) as board}
         {#if board.commitment.start}
             <Item
+                id={nextID(editingID(board))}
                 start={parseDate(board.commitment.start).getFullYear()}
                 stop={board.commitment.end === null
                     ? null
@@ -423,8 +466,9 @@
     <Wrap>
         {#each $profile.getReviewing( (role) => role.level === 'pc', (role) => -role.years
                     .sort()
-                    .reverse()[0], ) as role}
+                    .reverse()[0] ) as role}
             <Item
+                id={nextID(reviewingID(role))}
                 start={role.years.sort()[0]}
                 stop={role.years.sort().reverse()[0]}
                 header={$profile.getSourceName(role.venue)}
@@ -438,8 +482,9 @@
     <Wrap>
         {#each $profile.getReviewing( (role) => role.level === 'reviewer', (role) => -role.years
                     .sort()
-                    .reverse()[0], ) as role}
+                    .reverse()[0] ) as role}
             <Item
+                id={nextID(reviewingID(role))}
                 start={role.years.sort()[0]}
                 stop={role.years.sort().reverse()[0]}
                 header={$profile.getSourceName(role.venue)}
@@ -454,8 +499,9 @@
     <Wrap>
         {#each $profile.getReviewing( (role) => role.level === 'panelist', (role) => -role.years
                     .sort()
-                    .reverse()[0], ) as role}
+                    .reverse()[0] ) as role}
             <Item
+                id={nextID(reviewingID(role))}
                 start={role.years.sort()[0]}
                 stop={role.years.sort().reverse()[0]}
                 header={$profile.getSourceName(role.venue)}
@@ -468,9 +514,10 @@
     <h3>International Service</h3>
 
     <Wrap>
-        {#each $profile.getService( (service) => service.level === 'international', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY), ) as service}
+        {#each $profile.getService( (service) => service.level === 'international', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY) ) as service}
             {#if service.commitment.start}
                 <Item
+                    id={nextID(serviceID(service))}
                     start={parseDate(service.commitment.start).getFullYear()}
                     stop={service.commitment.end === null
                         ? null
@@ -487,9 +534,10 @@
     <h3>National Service</h3>
 
     <Wrap>
-        {#each $profile.getService( (service) => service.level === 'national', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY), ) as service}
+        {#each $profile.getService( (service) => service.level === 'national', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY) ) as service}
             {#if service.commitment.start}
                 <Item
+                    id={nextID(serviceID(service))}
                     start={parseDate(service.commitment.start).getFullYear()}
                     stop={service.commitment.end === null
                         ? null
@@ -506,9 +554,10 @@
     <h3>Regional Service</h3>
 
     <Wrap>
-        {#each $profile.getService( (service) => service.level === 'regional', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY), ) as service}
+        {#each $profile.getService( (service) => service.level === 'regional', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY) ) as service}
             {#if service.commitment.start}
                 <Item
+                    id={nextID(serviceID(service))}
                     start={parseDate(service.commitment.start).getFullYear()}
                     stop={service.commitment.end === null
                         ? null
@@ -525,9 +574,10 @@
     <h3>University Service</h3>
 
     <Wrap>
-        {#each $profile.getService( (service) => service.level === 'university', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY), ) as service}
+        {#each $profile.getService( (service) => service.level === 'university', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY) ) as service}
             {#if service.commitment.start}
                 <Item
+                    id={nextID(serviceID(service))}
                     start={parseDate(service.commitment.start).getFullYear()}
                     stop={service.commitment.end === null
                         ? null
@@ -544,9 +594,10 @@
     <h3>Departmental Service</h3>
 
     <Wrap>
-        {#each $profile.getService( (service) => service.level === 'departmental', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY), ) as service}
+        {#each $profile.getService( (service) => service.level === 'departmental', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY) ) as service}
             {#if service.commitment.start}
                 <Item
+                    id={nextID(serviceID(service))}
                     start={parseDate(service.commitment.start).getFullYear()}
                     stop={service.commitment.end === null
                         ? null
@@ -563,9 +614,10 @@
     <h3>Open Source</h3>
 
     <Wrap>
-        {#each $profile.getService( (service) => service.level === 'open source', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY), ) as service}
+        {#each $profile.getService( (service) => service.level === 'open source', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY) ) as service}
             {#if service.commitment.start}
                 <Item
+                    id={nextID(serviceID(service))}
                     start={parseDate(service.commitment.start).getFullYear()}
                     stop={service.commitment.end === null
                         ? null
