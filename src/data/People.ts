@@ -26,6 +26,20 @@ export type Person = {
 
 export const People: readonly Person[] = [
     {
+        id: 'khayri',
+        name: 'Khayri White',
+        active: true,
+        advised: true,
+        level: 'undergrad',
+        dept: 'The Information School',
+        coadvisor: null,
+        bio: 'Khayri is an undergraduate student at Howard University, studying Computer Engineering. He is interested in co-designing AI and learning technologies to enable equitable and empowering computing education in K-12.',
+        url: 'https://www.linkedin.com/in/khayri-white/',
+        startdate: 2026,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'bshapiro',
         name: 'R. Ben Shapiro',
         active: true,
