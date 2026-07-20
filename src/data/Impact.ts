@@ -33,6 +33,16 @@ export type Impact = {
 
 export const Impacts: Impact[] = [
     {
+        kind: 'policy',
+        start: 2026,
+        end: 2026,
+        description:
+            'Our critique and suggestions of the original CSTA stanrds published in Critically Conscious Computing shaped how the standards revision process engages social impacts of computing and the final standards themselves.',
+        title: 'CSTA PK-12 CS Standards',
+        url: 'https://csteachers.org/pk12standards/',
+        who: 'k12cs',
+    },
+    {
         kind: 'press',
         start: 2026,
         end: 2026,
