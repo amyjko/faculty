@@ -26,6 +26,20 @@ export type Person = {
 
 export const People: readonly Person[] = [
     {
+        id: 'pluto',
+        name: 'Pluto Hassan',
+        active: true,
+        advised: true,
+        level: 'undergrad',
+        dept: 'The Information School',
+        coadvisor: null,
+        bio: 'Pluto is a Computer Science undergraduate at the University of Denver. He is interested in creating more critically conscious STEM professionals by integrating social justice into STEM curricula and conversations.',
+        url: 'https://www.linkedin.com/in/pluto-hassan/',
+        startdate: 2026,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'khayri',
         name: 'Khayri White',
         active: true,
