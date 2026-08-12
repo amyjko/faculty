@@ -78,7 +78,7 @@ export const Publications: Paper[] = [
         source: '@icer',
         pages: null,
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://doi.org/10.1145/3765964.3811642',
         local: 'Gifford2026IdentityExpression.pdf',
         contribution:
             'Finds that students employed code to express their identity in ways that text alone could not capture and that disciplinary writing practices around outlining and planning mutually reinforced cross-disciplinary learning.',
@@ -93,7 +93,7 @@ export const Publications: Paper[] = [
         source: '@icer',
         pages: null,
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://doi.org/10.1145/3765964.3811661',
         local: 'Sherif2026HelpSeekingVisions.pdf',
         contribution:
             'Finds that marginalized students wanted help-seeking that was more psychologically safe, centered agency and autonomy, encourage practice and failure, and support community building.',
@@ -108,7 +108,7 @@ export const Publications: Paper[] = [
         source: '@icer',
         pages: null,
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://doi.org/10.1145/3765964.3811650',
         local: 'Everson2026Joyful.pdf',
         contribution:
             'Finds four elements of joy: teachers worked to relate to students, prioritize a relationship with learning, framed CS with purpose, and reified a joyful CS experience.',
