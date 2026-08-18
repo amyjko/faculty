@@ -113,7 +113,12 @@
                     termStart(offering.year, offering.term) <= now
                 ) {
                     seenClasses.add(key);
-                    addExternal(offering.year, cls.title, cls.link, 'class');
+                    addExternal(
+                        offering.year,
+                        `${cls.number}: ${cls.title}`,
+                        cls.link,
+                        'class',
+                    );
                 }
             }
         }
