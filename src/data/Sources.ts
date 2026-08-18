@@ -92,4 +92,8 @@ export const Sources: Record<string, Source> = {
         name: 'International Society of the Learning Sciences',
         short: 'ISLS',
     },
+    aies: {
+        name: 'AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society',
+        short: 'AIES',
+    },
 };

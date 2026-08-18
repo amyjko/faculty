@@ -26,6 +26,20 @@ export type Person = {
 
 export const People: readonly Person[] = [
     {
+        id: 'jaemarie',
+        name: 'Jaemarie Solyst',
+        active: true,
+        advised: false,
+        level: 'postdoc',
+        dept: 'Paul G. Allen School of Computer Science & Engineering',
+        coadvisor: null,
+        bio: 'Jaemarie is a postdoc in the Paul G. Allen School of Computer Science & Engineering.',
+        url: 'https://www.jaemariesolyst.com/',
+        startdate: 2025,
+        enddate: null,
+        achievements: [],
+    },
+    {
         id: 'pluto',
         name: 'Pluto Hassan',
         active: true,

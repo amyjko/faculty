@@ -48,6 +48,21 @@ export type Paper = {
 
 export const Publications: Paper[] = [
     {
+        id: 'aiedimpacts',
+        kind: 'refereed conference paper',
+        authors: ['@jaemarie', '@bshapiro', '@ajko'],
+        year: 2026,
+        title: 'Visions of Disciplinary and Education Futures with Generative AI',
+        source: '@aies',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: 'Soylst26Visions.pdf',
+        contribution:
+            "Finds that higher education researchers and educators have widely varying visions of generative AI's impact on their disciplines, but agree that they have no capacity to realize them.",
+        discoveries: ['TeachingIsHard'],
+    },
+    {
         id: 'preserviceprograms',
         kind: 'journal article',
         authors: [
