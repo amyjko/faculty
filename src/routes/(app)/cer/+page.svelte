@@ -592,10 +592,7 @@
     </ul>
 </Section>
 
-<Section
-    id="being-impactful"
-    header="What do I need to know to be an effective researcher?"
->
+<Section id="being-impactful" header="What are key works to know about?">
     <p>
         First, you need to know some computing yourself. That doesn't mean you
         need an entire computer science degree, but it helps to have learned to
@@ -805,6 +802,29 @@
             but not the same as novice programming. It synthesizes of all of the programming
             languages, environments, and tools that have helped people learn to code
             while automating a task.</li
+        >
+    </ul>
+
+    <h4 id="ai-ed-tech">Learning technologies (including AI)</h4>
+
+    <p>
+        Computing education research is a field that is particularly interested
+        in applying computing to the learning of computing. That broader
+        enterprise of learning technologies research is a separate field, but it
+        has much to teach us about learning about computing. I curate articles
+        from the field that I think have something to teach us about computing
+        education in particular.
+    </p>
+
+    <ul>
+        <li
+            ><Link
+                to="https://journals.sagepub.com/doi/full/10.3102/0013189X261466234#bibr25-0013189X261466234"
+                >Refusing Educational Technology: Artificial Intelligence,
+                Inequity, and the Problem of Critical Optimism</Link
+            > examines the history and political economy of learning technologies
+            to examine what range of possible responses to generative AI in schools
+            are possible. It advocates for including refusal of many forms among them.</li
         >
     </ul>
 
