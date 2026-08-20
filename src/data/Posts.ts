@@ -42,6 +42,14 @@ export type Post = {
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/a-week-of-fika-acm-icer-2026-cc19fc32a92d',
+        title: 'A week of fika: ACM ICER 2026',
+        date: '2026.08',
+        tags: ['trip report', 'computing education'],
+        img: 'icer2026',
+        alt: 'A bright and somewhat sunny sky, with church spires and a flock of birds flying toward the sun.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/csta-2026-cs-teaching-2-0-118555613a4c',
         title: 'CSTA 2026: CS teaching 2.0',
         date: '2026.07',
