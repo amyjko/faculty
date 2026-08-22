@@ -1,6 +1,6 @@
 {
     "name": "uw-faculty-page",
-    "version": "1.1.1",
+    "version": "1.2.0",
     "engines": {
         "node": "22"
     },
@@ -14,7 +14,10 @@
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json build --watch",
         "dry": "rsync --dry-run -vzripc --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html",
         "sync": "rsync -vzripc --delete --exclude-from='deploy-excludes' build/ ajko@ovid.u.washington.edu:~/public_html",
-        "ship": "npm run build && npm run sync"
+        "ship": "npm run build && npm run sync",
+        "major": "tsx scripts/release.ts major",
+        "minor": "tsx scripts/release.ts minor",
+        "patch": "tsx scripts/release.ts patch"
     },
     "devDependencies": {
         "@sveltejs/adapter-static": "^3",

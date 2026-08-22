@@ -1,0 +1,4 @@
+#!/bin/sh
+# Releases a patch version. See scripts/release.ts.
+cd "$(dirname "$0")" || exit 1
+exec npx tsx scripts/release.ts patch "$@"
