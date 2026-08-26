@@ -41,30 +41,32 @@
     information, in schools and beyond, drawing from human-computer interaction,
     computing education, learning sciences, behavioral sciences, sociology,
     software engineering, programming languages, and more. She is a Professor
-    and Associate Dean for Academics at the <Link to="http://www.washington.edu"
-        >University of Washington</Link
+    and Associate Dean for Academics at the <Link
+        to="https://www.washington.edu">University of Washington</Link
     >
-    <Link to="http://ischool.uw.edu/">Information School</Link>, with a courtesy
-    appointment in Computer Science & Engineering.
+    <Link to="https://ischool.uw.edu/">Information School</Link>, with courtesy
+    appointments in Computer Science & Engineering and the College of Education.
 </p>
 
 <Linkable id="short">Short Bio</Linkable>
 
 <p>
-    Amy J. Ko is a Professor at the <Link to="http://www.washington.edu"
+    Amy J. Ko is a Professor at the <Link to="https://www.washington.edu"
         >University of Washington</Link
     >
-    <Link to="http://ischool.uw.edu/">Information School</Link> and the <Link
-        to="http://cs.washington.edu"
+    <Link to="https://ischool.uw.edu/">Information School</Link> with courtesy appointments
+    in the <Link to="https://cs.washington.edu"
         >Paul G. Allen School of Computer Science and Engineering</Link
+    > and the <Link to="https://education.washington.edu"
+        >College of Education</Link
     > (courtesy). She co-directs the
     <em>UW Center for Learning, Computing, and Imagination</em>, where she
     studies computing education, human-computer interaction, and humanity's
     individual and collective struggle to understand computing and harness it
     for equity, justice, and liberation. With her collaborators, she's invented
     programming languages and tools to support debugging, program understanding,
-    reuse, and learning; founded and sold a <Link to="http://www.answerdash.com"
-        >venture-backed startup</Link
+    reuse, and learning; founded and sold a <Link
+        to="https://www.answerdash.com">venture-backed startup</Link
     > focused on software troubleshooting; developed numerous ways to weave equity
     and justice into computing education pedagogy, culture, and technology; and impacted
     local, state, and federal K-12 CS education policy through community organizing
