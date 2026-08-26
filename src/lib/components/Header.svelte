@@ -220,11 +220,17 @@
                 ><em>The Information School</em></Link
             ></span
         >
-        <span>
+        <span style:font-size="0.8em">
             <Link to="http://cs.uw.edu" annotate={false}
                 ><em
                     >Paul G. Allen School of Computer Science &amp; Engineering</em
                 >
+                <span class="small">[<em>courtesy</em>]</span></Link
+            ></span
+        >
+        <span style:font-size="0.8em">
+            <Link to="http://education.uw.edu" annotate={false}
+                ><em>College of Education</em>
                 <span class="small">[<em>courtesy</em>]</span></Link
             ></span
         >
