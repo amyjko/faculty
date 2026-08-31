@@ -16,7 +16,15 @@
     let affiliated = $derived(
         $profile.getPeople(
             (person) =>
-                person.active && !person.advised && person.level !== 'faculty',
+                person.active && !person.advised && person.level === 'phd',
+            (person) => -person.startdate,
+        ),
+    );
+
+    let affiliatedPostdocs = $derived(
+        $profile.getPeople(
+            (person) =>
+                person.active && !person.advised && person.level === 'postdoc',
             (person) => -person.startdate,
         ),
     );
@@ -152,6 +160,14 @@
     } ) as person}
     <Person {person} highlight={isPersonHighlighted(person.id)} />
 {/each}
+
+{#if affiliatedPostdocs.length > 0}
+    <Linkable id="affiliate-postdoc">Affiliated Postdocs</Linkable>
+
+    {#each affiliatedPostdocs as person}
+        <Person {person} highlight={isPersonHighlighted(person.id)} />
+    {/each}
+{/if}
 
 {#if affiliated.length > 0}
     <Linkable id="affiliate-phd">Affiliated Ph.D. students</Linkable>
