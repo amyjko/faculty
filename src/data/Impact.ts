@@ -33,6 +33,19 @@ export type Impact = {
 
 export const Impacts: Impact[] = [
     {
+        kind: 'knowledge',
+        start: 2025,
+        end: 2026,
+        description: 'I consulted with Natasha Singer on her 2026 book',
+        title: "Coding Kids: Big Tech's Battle to Remake Public Schools",
+        url: 'https://wwnorton.com/books/9780393881943',
+        who: 'public',
+        annotation: {
+            year: 2026,
+            text: 'This was a fun off and on informal consulting to help inform her book.',
+        },
+    },
+    {
         kind: 'policy',
         start: 2026,
         end: 2026,
