@@ -88,11 +88,11 @@ export const ServiceRoles: Service[] = [
         },
     },
     {
-        title: 'Co-director',
+        title: 'Co-director and maintainer',
         committee: 'Reciprocal Reviews',
         level: 'open source',
         description:
-            'I lead a community of volunteers to create infrastructure for sustainable peer review labor markets.',
+            'I lead a community of volunteers that design, built, and maintains infrastructure for sustainable peer review labor markets by creating "review tokens" that are used for payment for peer review.',
         commitment: {
             start: '2023-01-04',
             end: null,
@@ -100,8 +100,8 @@ export const ServiceRoles: Service[] = [
             priority: 0,
         },
         annotation: {
-            year: 2025,
-            text: 'This platform ties publishing labor to reviewing labor through a currency system. I organize a community of maintainers and am launching a pilot for ACM TOCE in 2026. 80+ editors are waiting for our results across academia, hoping for more sustainable peer review.',
+            year: 2026,
+            text: 'We launched this! We are piloting it on the journal I am Editor-in-Chief of, ACM TOCE.',
         },
     },
     {
