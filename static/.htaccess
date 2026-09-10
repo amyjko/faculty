@@ -36,9 +36,31 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*?)/$ $1 [R=301,L]
 
 # Append .html to any requests with or without a trailing slash that resolve to a file with .html.
+#
+# The lookahead is what keeps this from looping. Apache stops its directory walk
+# at the first component that isn't a directory, so /publications/books arrives
+# here as REQUEST_FILENAME=.../publications with PATH_INFO=/books. The condition
+# then sees publications.html, rewrites to publications/books.html, and that
+# resolves the same way and matches again, recursing until Apache gives up with a
+# 500. Refusing to append to a path that already ends in .html stops it after one
+# pass, and the rule below then answers 404. The guard has to be in the pattern
+# rather than a condition, because the pattern is matched against the current
+# path, which is the only thing that changes between passes.
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html [L,QSA]
+RewriteRule ^(?!.*\.html$)(.*)$ $1.html [L,QSA]
 
-# If we're processing a path that isn't a file or a directory, rewrite to index but preserve the query string.
+# The site root is the home page. This has to be said explicitly, because the
+# request resolves to the directory rather than to a file, so the rule below
+# would otherwise decide the home page doesn't exist.
+RewriteRule ^$ index.html [L,QSA]
+
+# Anything left doesn't exist. Answer 404 and let the ErrorDocument below render
+# the app's own not-found page, rather than handing back index.html with a 200 --
+# which quietly served the home page for every mistyped or stale URL, telling
+# readers nothing was wrong and telling crawlers the page was real.
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule (.*) index.html [L,QSA]
+RewriteRule (.*) - [R=404,L]
+
+# The prerendered not-found page: the site's usual navigation, with an
+# explanation in the body. Built from src/routes/(app)/404/+page.svelte.
+ErrorDocument 404 /ajko/404.html

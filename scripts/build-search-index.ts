@@ -53,9 +53,10 @@ const STRUCTURE = ['[id]', ...BLOCK, ...HEADING].join(', ');
 
 /**
  * Prerendered research prototypes under static/demo, which aren't authored site
- * content, and the search page itself, which has no content of its own.
+ * content, the search page itself, which has no content of its own, and the
+ * not-found page, whose apology isn't something anyone should find by searching.
  */
-const EXCLUDE = /^(demo\/|search\.html$)/;
+const EXCLUDE = /^(demo\/|search\.html$|404\.html$)/;
 
 /** Chunks longer than this are split on sentence boundaries. */
 const MAX_CHUNK = 500;
