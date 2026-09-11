@@ -1,6 +1,5 @@
 <script lang="ts">
     import { page } from '$app/state';
-    import Emoji from './Emoji.svelte';
 
     interface Props {
         to: string;
@@ -10,6 +9,8 @@
         plain?: boolean;
         newTab?: boolean;
         annotate?: boolean;
+        /** An accessible name, for links with no text content. */
+        label?: string;
         children?: import('svelte').Snippet;
     }
 
@@ -21,6 +22,7 @@
         plain = false,
         newTab = false,
         annotate = true,
+        label,
         children,
     }: Props = $props();
 
@@ -47,16 +49,16 @@
 {#if isCurrentRoute}
     <span class="at">{@render children?.()}</span>
 {:else if isExternal(to)}
-    <a href={to} target="_blank" rel="noreferrer"
-        >{@render children?.()}{#if annotate}<span class="external"
-                ><Emoji symbol="🔗" /></span
-            >{/if}</a
+    <!-- The annotation is a pseudo-element so that it stays out of text selections. -->
+    <a href={to} target="_blank" rel="noreferrer" class:annotated={annotate}
+        >{@render children?.()}</a
     >
 {:else}
     <a
         href={`${to === '' ? page.url.pathname : resolveRoute(to)}${id ? `#${id}` : ''}${query ? `/?${query}` : ''}`}
         target={newTab ? '_blank' : undefined}
         rel={newTab ? 'noreferrer' : undefined}
+        aria-label={label}
         class={active ? 'at' : ''}>{@render children?.()}</a
     >
 {/if}
@@ -71,12 +73,16 @@
         background-color: var(--annotation-color);
     }
 
-    .external {
+    /* A link glyph, drawn with generated content so that it is invisible to
+       text selection: it is never copied, and it does not fragment the
+       paragraph-granularity selection of a triple click. */
+    .annotated::after {
+        content: '\01F517\00FE0E';
+        font-family: 'Noto Emoji', emoji;
+        display: inline-block;
         font-size: 0.5em;
         vertical-align: baseline;
         margin-left: 0.1em;
         line-height: 0;
-        -webkit-user-select: none;
-        user-select: none;
     }
 </style>

@@ -4,7 +4,6 @@
     import { page } from '$app/stores';
     import { scrollToElement } from '../models/utilities';
     import { base } from '$app/paths';
-    import Emoji from './Emoji.svelte';
 
     interface Props {
         id: string;
@@ -31,12 +30,18 @@
 
 <h2 {id} class={`section ${isLinked() ? 'linked' : ''}`}>
     {@render children?.()}
-    <!-- Remove the base from the pathname before Link reappends it. -->
-    <Link to="" {id}><Emoji symbol="🔗"></Emoji></Link>
+    <!-- Remove the base from the pathname before Link reappends it. The link
+         glyph is a pseudo-element below, so that it stays out of text selections. -->
+    <span class="anchor"><Link to="" {id} label="Link to this section" /></span>
 </h2>
 
 <style>
     .linked {
         border-bottom: 4px solid var(--annotation-color);
+    }
+
+    .anchor :global(a)::after {
+        content: '\01F517\00FE0E';
+        font-family: 'Noto Emoji', emoji;
     }
 </style>
