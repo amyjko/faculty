@@ -20,6 +20,16 @@
 
 	--link-color: rgb(0 0 184);
 
+	/* For marks flagging a value below a threshold, such as a course evaluation
+	   under 4 out of 5. Dark on light and light on dark, so it reads as a mark
+	   against either background rather than vibrating on one of them. */
+	--alert-color: rgb(190 30 45);
+
+	/* Table banding: the faintest step off the background that still reads as a
+	   band. --border-color is tuned for hairlines and is too strong as a fill in
+	   dark mode. */
+	--stripe-color: #F4F4F4;
+
 	--text-font-family: "Nunito Sans", sans-serif;
 	--extra-small-font-size: 12pt;
 	--small-font-size: 14pt;
@@ -54,6 +64,9 @@
 		--border-color: rgb(50 50 50);
 
 		--annotation-color: rgb(35 35 71);
+
+		--alert-color: rgb(255 122 122);
+		--stripe-color: rgb(24 24 24);
 	}
 
 	img {

@@ -162,9 +162,13 @@ function index(file: string): SearchEntry[] {
         root.querySelector('body');
     if (content === null) return [];
     // The footer and announcement bubble repeat on every page, and interactive
-    // controls — facet filters, "cite" toggles — are chrome, not content.
+    // controls — facet filters, "cite" toggles — are chrome, not content. SVGs
+    // go too: SKIP keeps the traversal from descending into one, but an element
+    // whose only child is an SVG is a leaf, and a leaf's text includes its
+    // descendants — so axis labels would otherwise be indexed as that element's
+    // prose. Charts carry their text alternative in an attribute instead.
     for (const el of content.querySelectorAll(
-        '.footer, .desktop-bubble, .mobile-bubble, button, select, [role="radiogroup"], [role="button"]',
+        '.footer, .desktop-bubble, .mobile-bubble, button, select, [role="radiogroup"], [role="button"], svg',
     ))
         el.remove();
 

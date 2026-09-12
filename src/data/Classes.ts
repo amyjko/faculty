@@ -14,6 +14,13 @@ export type Class = {
         term: 1 | 2 | 3;
         size: number;
         year: number;
+        /**
+         * The median student evaluation score out of 5, `null` if the offering
+         * has no score on record, or a short string naming why there is no
+         * score (e.g. 'COVID-19'), which the CV's plot draws in place of a
+         * mark. Keep such strings under about 14 characters: the plot rotates
+         * them into the height of the 0-5 range.
+         */
         score: number | null | string;
     }[];
     annotation?: Annotation;
@@ -66,8 +73,8 @@ const Classes: Class[] = [
         ],
         offerings: [
             { size: 200, term: 1, year: 2023, score: null },
-            { size: 200, term: 3, year: 2022, score: 'N/A' },
-            { size: 200, term: 3, year: 2021, score: 'N/A' },
+            { size: 200, term: 3, year: 2022, score: 'COVID-19' },
+            { size: 200, term: 3, year: 2021, score: 'COVID-19' },
             { size: 208, term: 2, year: 2020, score: 4.8 },
             { size: 150, term: 1, year: 2018, score: 4.8 },
         ],

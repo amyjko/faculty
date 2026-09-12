@@ -7,6 +7,7 @@
     import Paper from '$lib/components/Paper.svelte';
     import Image from '$lib/components/Thumbnail.svelte';
     import Wrap from './Wrap.svelte';
+    import Courses from './Courses.svelte';
     import Table from '$lib/components/Table.svelte';
     import Title from '$lib/components/Title.svelte';
     import Annotation from '$lib/components/Highlight.svelte';
@@ -348,23 +349,14 @@
 
     <h3>Courses</h3>
 
-    <Wrap>
-        {#each $profile.getClasses( () => true, (c) => -c.offerings[0].year ) as course}
-            <Item
-                id={nextID(course.id)}
-                start={course.offerings.sort((a, b) => a.year - b.year)[0].year}
-                stop={course.offerings.sort((a, b) => b.year - a.year)[0].year}
-                header={`${course.number} ${course.title}`}
-                two={course.level}
-                three={course.description}
-                four={`Taught ${course.offerings.length} times, with student evaluations of ${course.offerings
-                    .map((o) => o.score)
-                    .filter((s) => s !== null)
-                    .join(', ')} out of 5.`}
-                annotation={course.annotation}
-            />
-        {/each}
-    </Wrap>
+    <Courses
+        courses={$profile.getClasses(
+            undefined,
+            (course) =>
+                -Math.max(...course.offerings.map((offering) => offering.year)),
+        )}
+        anchor={nextID}
+    />
 
     <h3>Postdoc Supervision</h3>
 
