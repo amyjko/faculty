@@ -61,11 +61,11 @@
         >College of Education</Link
     > (courtesy). She co-directs the
     <em>UW Center for Learning, Computing, and Imagination</em>, where she
-    studies computing education, human-computer interaction, and humanity's
-    individual and collective struggle to understand computing and harness it
-    for equity, justice, and liberation. With her collaborators, she's invented
-    programming languages and tools to support debugging, program understanding,
-    reuse, and learning; founded and sold a <Link
+    studies computing education, human-computer interaction, software
+    engineering,and humanity's individual and collective struggle to equitably
+    use or resist computing for equity, justice, and liberation. With her
+    collaborators, she's invented programming languages and tools to support
+    debugging, program understanding, reuse, and learning; founded and sold a <Link
         to="https://www.answerdash.com">venture-backed startup</Link
     > focused on software troubleshooting; developed numerous ways to weave equity
     and justice into computing education pedagogy, culture, and technology; and impacted
@@ -94,9 +94,9 @@
 <Linkable id="irreverent">Irreverent Bio</Linkable>
 
 <p>
-    Amy J. Ko is a queer, trans anti-disciplinary weirdo at the <Link
+    Amy J. Ko is a queer, trans, anti-disciplinary weirdo at the <Link
         to="http://www.washington.edu">University of Washington</Link
-    > who has the privilege of being paid to follow her curiosity about computation,
+    > who has the privilege of being paid to follow her curiosity in computation,
     learning, and politics, and tell people what she finds. She likes working with
     students to wander about, asking questions about the ways that computation has
     and hasn't woven itself through people's lives and learning. She started off inventing
