@@ -51,6 +51,22 @@ export type Paper = {
 
 export const Publications: Paper[] = [
     {
+        id: 'sustainablecsteaching',
+        image: false,
+        kind: 'refereed conference paper',
+        authors: ['@ajko', '@gifford'],
+        year: 2026,
+        title: 'An Autoethnography of Culturally Sustaining CS Teaching in a Multilingual, Multicultural Middle School Classroom',
+        source: '@sigcse',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            'Teacher learning about student identity shapes reflection and instruction, leading to continual discovery of opportunities for identity expression and community.',
+        discoveries: ['TeachingIsHard', 'CulturesShapesLearning'],
+    },
+    {
         id: 'accesscscontent',
         image: false,
         kind: 'refereed conference paper',
