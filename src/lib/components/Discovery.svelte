@@ -23,6 +23,9 @@
             .toSorted((a, b) => b.year - a.year),
     );
     let keyPaper = $derived(papers[0]);
+    // The most recent paper that actually has an image, which may not be the
+    // key paper: papers that aren't published yet declare image: false.
+    let imagePaper = $derived(papers.find((p) => p.image !== false));
 
     let expanded = $state(false);
 </script>
@@ -30,10 +33,12 @@
 {#if keyPaper}
     <Block {id}>
         {#snippet image()}
-            <Thumbnail
-                url={`/images/papers/${keyPaper.id}.jpg`}
-                alt="A clip from the paper's text or figure"
-            />
+            {#if imagePaper}
+                <Thumbnail
+                    url={`/images/papers/${imagePaper.id}.jpg`}
+                    alt="A clip from the paper's text or figure"
+                />
+            {/if}
         {/snippet}
         <div class="title">
             <strong>{discovery.contribution}</strong>

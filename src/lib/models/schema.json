@@ -129,6 +129,10 @@
                         "type": "boolean",
                         "description": "True if the publisher hasn't updated my name"
                     },
+                    "image": {
+                        "type": "boolean",
+                        "description": "False if there's no image at static/images/papers/{id}.jpg, e.g. for papers not yet published"
+                    },
                     "year": {
                         "type": "integer",
                         "description": "The year of publication"

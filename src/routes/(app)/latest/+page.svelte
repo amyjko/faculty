@@ -167,7 +167,7 @@
                 '/(app)/publications',
                 pub.id,
                 'publication',
-                `/images/papers/${pub.id}.jpg`,
+                pub.image === false ? null : `/images/papers/${pub.id}.jpg`,
                 pub.title,
             );
         }

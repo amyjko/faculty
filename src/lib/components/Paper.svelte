@@ -84,11 +84,13 @@
     </div>
 {:else}
     {#snippet image()}
-        <Image
-            url={'/images/papers/' + paper.id + '.jpg'}
-            alt="A clip from the paper's PDF."
-            {highlight}
-        />
+        {#if paper.image !== false}
+            <Image
+                url={'/images/papers/' + paper.id + '.jpg'}
+                alt="A clip from the paper's PDF."
+                {highlight}
+            />
+        {/if}
     {/snippet}
     <Block link={url} {image}>
         <div id={paper.id} class="paper">

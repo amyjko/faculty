@@ -20,6 +20,9 @@ export type Paper = {
     authors: string[];
     equalfirst?: boolean;
     deadname?: boolean;
+    /** False when there's no image in static/images/papers/{id}.jpg,
+        e.g. for papers not yet published. Absent means there is one. */
+    image?: false;
     year: number;
     title: string;
     source: string;
@@ -47,6 +50,28 @@ export type Paper = {
 };
 
 export const Publications: Paper[] = [
+    {
+        id: 'accesscscontent',
+        image: false,
+        kind: 'refereed conference paper',
+        authors: [
+            '@ajko',
+            'Jennifer Mankoff',
+            'Mumina Guled',
+            'Kevin Lin',
+            'Matt X. Wang',
+        ],
+        year: 2026,
+        title: 'A Two-Year Case Study of Accessibility Systems Change in Post-Secondary Computing Education',
+        source: '@sigcse',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            'Finds that accessibility systems change in post-secondary computing education is a long-term, multi-year process that requires sustained effort and engagement from multiple stakeholders, and that CS content, pedagogy, and culture is a major barrier to this change.',
+        discoveries: ['TeachingInclusionHard'],
+    },
     {
         id: 'aiedimpacts',
         kind: 'refereed conference paper',
