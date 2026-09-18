@@ -18,6 +18,20 @@ export type Talk = {
 
 const Talks: Talk[] = [
     {
+        date: '2026-09-18',
+        image: 'wesleyan2026.jpg',
+        alt: 'a thinking emoji and the phrase "histories of knowing"',
+        slides: 'Wesleyan2026MeansToKnowEnd.pdf',
+        title: 'A Means to Know End: Generative AI and the Many Futures of Learning',
+        url: 'https://wesleyan.campuslabs.com/engage/event/12587138',
+        venue: 'Wesleyan University',
+        recording: null,
+        practice: null,
+        description:
+            'I share a historized account of moral panics about information technology, what they mean for our current moral panic about AI and learning, and what we have found youth have to say about all of it.',
+        keynote: false,
+    },
+    {
         date: '2026-02-18',
         image: 'sigcse2026.jpg',
         alt: 'love, learning, and computing education',

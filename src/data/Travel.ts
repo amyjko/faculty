@@ -23,6 +23,18 @@ const Travel: TravelInfo[] = [
         },
     },
     {
+        url: 'https://wesleyan.campuslabs.com/engage/event/12587138',
+        title: 'Wesleyan University',
+        details: 'A one day visit for networking and an invited talk',
+        category: 'research',
+        commitment: {
+            start: '2026-09-18',
+            end: '2026-09-18',
+            hours: 16,
+            priority: 1,
+        },
+    },
+    {
         url: 'https://icer2026.acm.org/',
         title: 'ICER 2026',
         details: 'Networking and sharing our three accepted papers.',
