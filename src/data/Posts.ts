@@ -42,6 +42,14 @@ export type Post = {
 
 export const Posts: Post[] = [
     {
+        url: 'https://amyjko.medium.com/flawed-premises-in-ai-doomerism-68d01677f564',
+        title: 'Flawed premises in “AI” doomerism',
+        date: '2026.09',
+        tags: ['personal', 'society', 'automation'],
+        img: 'doomerism',
+        alt: 'A stack of wavy lines, some more angular waves, a vertical barrier, lots of pastel ellipses, and a brown ground, with a mechanical flower in the middle and some random transparent grid overlaid the ellipses.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/a-week-of-fika-acm-icer-2026-cc19fc32a92d',
         title: 'A week of fika: ACM ICER 2026',
         date: '2026.08',
