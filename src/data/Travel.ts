@@ -11,14 +11,38 @@ export type TravelInfo = {
 
 const Travel: TravelInfo[] = [
     {
+        url: 'https://2027.sigcse-ts.acm.org/',
+        title: '2017 SIGCSE Technical Symposium',
+        details: 'Research presentations and networking',
+        category: 'research',
+        commitment: {
+            start: '2027-02-16',
+            end: '2027-02-20',
+            hours: 120,
+            priority: 1,
+        },
+    },
+    {
         url: 'https://www.dagstuhl.de/seminars/seminar-calendar/seminar-details/27062',
-        title: 'Dagstuhl: What Should We Teach Computer Science Students in the Age of AI?',
-        details: 'Week-long workshop on reimagining CS learning standards.',
+        title: 'What Should We Teach Computer Science Students in the Age of AI?',
+        details: 'Research retreat',
         category: 'research',
         commitment: {
             start: '2027-02-07',
-            end: '2027-02-12',
-            hours: 48,
+            end: '2027-02-13',
+            hours: 120,
+            priority: 1,
+        },
+    },
+    {
+        url: 'https://www.mtholyoke.edu/directory/departments-offices-centers/computer-science',
+        title: 'Mount Holyoke Program Evaluation',
+        details: 'Program evaluation committee',
+        category: 'service',
+        commitment: {
+            start: '2026-10-17',
+            end: '2027-10-21',
+            hours: 32,
             priority: 1,
         },
     },
