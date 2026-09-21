@@ -994,6 +994,44 @@
         </li>
     </ul>
 
+    <h4 id="frameworks">Frameworks</h4>
+
+    <p
+        >There are several frameworks that both synthesize and guide CS
+        education research and practice.</p
+    >
+
+    <ul>
+        <li>
+            <p
+                >Kapor's <Link
+                    to="https://www.kaporcenter.org/culturally-responsive-sustaining-computer-science-education-a-framework/"
+                    >Culturally Responsive and Sustaining Computer Science
+                    Education Framework</Link
+                >. This framework offers an equity and identity inclusive take
+                on what people should know about computer science.</p
+            >
+        </li>
+        <li>
+            <p
+                >Kapor's <Link
+                    to="https://kaporcenter.org/responsible-ai-and-tech-justice-for-k12-education/"
+                    >Responsible AI and Tech Justice for K12 Education</Link
+                >. This framework offers an equity-centered organization of key
+                concepts and competencies for navigating generative AI in life
+                and society.</p
+            >
+        </li>
+        <li>
+            <p>
+                CSTA's <Link to="https://csteachers.org/pk12standards/"
+                    >PK-12 Computer Science Standards</Link
+                >. These standards are the foundation for many state and
+                country's school learning standards, informed by research.
+            </p>
+        </li>
+    </ul>
+
     <p
         >If you've read all of the above and are looking for more literature, be
         sure to follow all of the SIGCSE conferences, and other relevant
