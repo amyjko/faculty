@@ -51,6 +51,21 @@ export type Paper = {
 
 export const Publications: Paper[] = [
     {
+        id: 'joyfulcsteaching',
+        kind: 'refereed conference paper',
+        authors: ['@jayne', '@rotem', '@ajko'],
+        year: 2027,
+        title: 'Notes from the Field: Teachers’ Perceptions of Joyful Secondary Computing',
+        source: '@sigcse',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            'Teachers conceptualized joy in six distinct , from meeting student needs, relationality, problem solving, outcomes, and student agency and ownership.',
+        discoveries: ['TeachingIsHard'],
+    },
+    {
         id: 'itemstereotypethreat',
         kind: 'refereed conference paper',
         authors: ['@janet', '@ajko', 'Mo Zhang', 'Kefan Yu', 'Min Li'],
