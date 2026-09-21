@@ -33,6 +33,19 @@ export type Impact = {
 
 export const Impacts: Impact[] = [
     {
+        kind: 'press',
+        start: 2026,
+        end: 2026,
+        description: 'I was interviewed by Logan Kugler on the end of coding.',
+        title: 'The End of the Coder?',
+        url: 'https://cacm.acm.org/news/the-end-of-the-coder/',
+        who: 'public',
+        annotation: {
+            year: 2026,
+            text: 'This was an interview about the future of programming.',
+        },
+    },
+    {
         kind: 'knowledge',
         start: 2025,
         end: 2026,
