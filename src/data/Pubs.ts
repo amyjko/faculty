@@ -51,8 +51,22 @@ export type Paper = {
 
 export const Publications: Paper[] = [
     {
+        id: 'itemstereotypethreat',
+        kind: 'refereed conference paper',
+        authors: ['@janet', '@ajko', 'Mo Zhang', 'Kefan Yu', 'Min Li'],
+        year: 2027,
+        title: 'Effect of Gender Stereotypes in Programming Assessments on Student Performance',
+        source: '@sigcse',
+        pages: null,
+        publisher: 'ACM',
+        doi: null,
+        local: null,
+        contribution:
+            'Referencing gender stereotypes in programming problems can impact some aspects of student performance, but may not result in significant differences overall.',
+        discoveries: ['AssessmentUnfair'],
+    },
+    {
         id: 'sustainablecsteaching',
-        image: false,
         kind: 'refereed conference paper',
         authors: ['@ajko', '@gifford'],
         year: 2027,
@@ -68,7 +82,6 @@ export const Publications: Paper[] = [
     },
     {
         id: 'accesscscontent',
-        image: false,
         kind: 'refereed conference paper',
         authors: [
             '@ajko',
