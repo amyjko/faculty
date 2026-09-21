@@ -179,7 +179,7 @@ export const ServiceRoles: Service[] = [
             "I serve as the iSchool's Associate Dean for Academics (40% time).",
         commitment: {
             start: '2024-07-01',
-            end: '2027-06-30',
+            end: '2030-06-30',
             hours: 16,
             priority: 0,
         },
