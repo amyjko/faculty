@@ -353,14 +353,14 @@
 
 <Section id="getting-a-phd" header="Where can I get a Ph.D. in CER?">
     <p>
-        You need to find a university that grants Ph.D.s and has tenure-track
-        faculty who do research in CER on a topic that you're interested in. The
-        alphabetical list below contains some of the many faculty who advise
-        Ph.D. students on computing education research, or who can serve on PhD
-        committees. Find them online and see what kind of research they're
-        doing. (This list may be out of date, as faculty sometimes move
-        universities, retire, go to industry, or change research areas, so be
-        sure to check their website for the latest information).
+        You need to find a university that grants Ph.D.s and has faculty who do
+        research in CER on a topic that you're interested in who can advise
+        Ph.D. students. The alphabetical list below contains some of the many
+        faculty who advise Ph.D. students on computing education research, or
+        who can serve on PhD committees. Find them online and see what kind of
+        research they're doing. (This list may be out of date, as faculty
+        sometimes move universities, retire, go to industry, or change research
+        areas, so be sure to check their website for the latest information).
     </p>
 
     <p>
