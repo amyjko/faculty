@@ -2,7 +2,7 @@
     import Section from '$lib/components/Section.svelte';
     import Link from '$lib/components/Link.svelte';
     import advisors from '$lib/models/advisors';
-    import Table from '../../../lib/components/Table.svelte';
+    import SortableTable from '$lib/components/SortableTable.svelte';
     import Title from '$lib/components/Title.svelte';
 </script>
 
@@ -420,28 +420,30 @@
         do).
     </p>
 
-    <Table>
-        <thead>
+    <SortableTable
+        rows={advisors}
+        label="Filter by expertise"
+        sorted={0}
+        columns={[
+            // The list is curated in surname order, so its order is the name order.
+            { label: 'Name', key: (a) => advisors.indexOf(a) },
+            { label: 'Expertise', key: (a) => a[2] },
+            { label: 'Unit', key: (a) => a[3] },
+            { label: 'University', key: (a) => a[4] },
+            { label: 'Country', key: (a) => a[5] },
+        ]}
+        filter={(a) => a[2]}
+    >
+        {#snippet row(advisor)}
             <tr>
-                <th>Name</th>
-                <th>Expertise</th>
-                <th>Unit</th>
-                <th>University</th>
-                <th>Country</th>
+                <td><Link to={advisor[1]}>{advisor[0]}</Link></td>
+                <td>{advisor[2]}</td>
+                <td>{advisor[3]}</td>
+                <td>{advisor[4]}</td>
+                <td>{advisor[5]}</td>
             </tr>
-        </thead>
-        <tbody>
-            {#each advisors as advisor}
-                <tr>
-                    <td><Link to={advisor[1]}>{advisor[0]}</Link></td>
-                    <td>{advisor[2]}</td>
-                    <td>{advisor[3]}</td>
-                    <td>{advisor[4]}</td>
-                    <td>{advisor[5]}</td>
-                </tr>
-            {/each}
-        </tbody>
-    </Table>
+        {/snippet}
+    </SortableTable>
 </Section>
 
 <Section

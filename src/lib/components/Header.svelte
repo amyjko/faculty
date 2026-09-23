@@ -18,6 +18,7 @@
     import SpeechBubble from './SpeechBubble.svelte';
     import { profile } from '$lib/models/stores';
     import loadSearch from '$lib/models/searchIndex';
+    import SearchField from './SearchField.svelte';
 
     interface Props {
         headers?: [string, string][];
@@ -80,20 +81,6 @@
         if (q === current) return;
         pending = setTimeout(() => navigate(q), DWELL);
         return () => clearTimeout(pending);
-    });
-
-    let field: HTMLInputElement | undefined = $state(undefined);
-
-    /**
-     * Clicking the field's clear button fires a `search` event, which Svelte
-     * doesn't type, so it's bound here. Without it, clearing the field would
-     * leave the stale results on screen.
-     */
-    $effect(() => {
-        const input = field;
-        if (input === undefined) return;
-        input.addEventListener('search', search);
-        return () => input.removeEventListener('search', search);
     });
 
     /** A page's address without the search query, which is ours to manage. */
@@ -289,14 +276,15 @@
         <Link to="/(cv)/cv" newTab>CV</Link>
     </div>
     <form class="search" onsubmit={search}>
-        <label for="search">Search this site</label>
-        <input
+        <!-- The clear button's search event keeps stale results from
+             lingering once the field is emptied. -->
+        <SearchField
             id="search"
-            type="search"
+            label="Search this site"
             placeholder="search"
             bind:value={query}
             onfocus={() => loadSearch().catch(() => undefined)}
-            bind:this={field}
+            onsearch={search}
         />
     </form>
     {#if headers.length > 1}
@@ -367,56 +355,9 @@
     }
 
     .search {
-        --clear-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 3L13 13M13 3L3 13' stroke='%23000' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E");
         margin-top: calc(var(--padding) * 2);
         padding-left: var(--padding);
         padding-right: var(--padding);
-    }
-
-    /* Visible to screen readers only; the placeholder labels it visually. */
-    .search label {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        clip-path: inset(50%);
-        white-space: nowrap;
-    }
-
-    .search input {
-        width: 100%;
-        box-sizing: border-box;
-        font-family: inherit;
-        font-size: var(--small-font-size);
-        padding: calc(var(--padding) / 2);
-        border: 1px solid var(--border-color);
-        border-radius: var(--roundedness);
-        background: none;
-        color: inherit;
-    }
-
-    /* The browser default ring doesn't match anything else here. This borrows
-       the link color, which is the site's existing "this is interactive" cue,
-       and stays visible in both light and dark themes. */
-    .search input:focus-visible {
-        outline: 2px solid var(--link-color);
-        /* Zero, so the border and outline read as one ring rather than two
-           lines with a strip of background between them. */
-        outline-offset: 0;
-        border-color: var(--link-color);
-    }
-
-    /* WebKit's clear button is a grey circled x that matches nothing on the
-       site. This replaces it with a plain stroke in the site's text color. */
-    .search input::-webkit-search-cancel-button {
-        -webkit-appearance: none;
-        appearance: none;
-        height: 0.7em;
-        width: 0.7em;
-        cursor: pointer;
-        background-color: var(--text-color);
-        -webkit-mask: var(--clear-icon) center / contain no-repeat;
-        mask: var(--clear-icon) center / contain no-repeat;
     }
 
     .outline li {
