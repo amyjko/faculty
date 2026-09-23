@@ -48,6 +48,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'USA',
     ],
     [
+        'Lina Battestilli*',
+        'https://battestilli.wordpress.ncsu.edu/',
+        'Computing education innovation, teaching computing to non-majors, broadening participation',
+        'Computer Science',
+        'North Carolina State University',
+        'USA',
+    ],
+    [
         'Tim Bell',
         'http://www.cosc.canterbury.ac.nz/tim.bell/',
         'CS unplugged, curriculum',
