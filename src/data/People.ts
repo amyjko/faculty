@@ -1025,6 +1025,7 @@ export const People: readonly Person[] = [
             'Assistant Professor, Computer Science, University of Maine (2022)',
             'ACM ICER John Henry Best Paper Award (2018)',
             'NSF Graduate Research Fellowship (2015)',
+            'NSF CAREER (2026)',
         ],
     },
     {
