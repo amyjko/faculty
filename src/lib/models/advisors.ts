@@ -936,6 +936,14 @@ const advisors: [string, string, string, string, string, string][] = [
         'USA',
     ],
     [
+        'Kristin Stephens-Martinez*',
+        'https://users.cs.duke.edu/~ksm/',
+        'Computing education, student learning and engagement in computing courses, classroom data to inform teaching',
+        'Computer Science',
+        'Duke University',
+        'USA',
+    ],
+    [
         'Nicolas Tanchuk',
         'https://education.illinois.edu/profile/nicolas-tanchuk',
         'AI Ed ethics, philosophy of educational technology, critical education policy analysis',
