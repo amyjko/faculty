@@ -1,10 +1,10 @@
 <script lang="ts">
     import type { Discovery } from '../../data/Discoveries';
-    import { profile } from '$lib/models/stores';
+    import { profile } from '#lib/models/stores.ts';
     import Block from './Block.svelte';
     import Link from './Link.svelte';
     import Thumbnail from './Thumbnail.svelte';
-    import getPersonImagePath from '$lib/components/getPersonImage';
+    import getPersonImagePath from '#lib/components/getPersonImage.ts';
     import Paper from './Paper.svelte';
     import Emoji from './Emoji.svelte';
 

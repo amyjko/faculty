@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type Annotation from '$lib/models/Annotation';
-    import Highlight from '$lib/components/Highlight.svelte';
+    import type Annotation from '#lib/models/Annotation.ts';
+    import Highlight from '#lib/components/Highlight.svelte';
 
     interface Props {
         start: string | number;

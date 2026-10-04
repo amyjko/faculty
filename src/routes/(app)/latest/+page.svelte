@@ -1,11 +1,11 @@
 <script lang="ts">
-    import { profile } from '$lib/models/stores';
-    import { parseDate } from '$lib/models/Profile';
-    import { asset } from '$app/paths';
-    import Title from '$lib/components/Title.svelte';
-    import Linkable from '$lib/components/Linkable.svelte';
-    import Link from '$lib/components/Link.svelte';
-    import Emoji from '$lib/components/Emoji.svelte';
+    import { profile } from '#lib/models/stores.ts';
+    import { parseDate } from '#lib/models/Profile.ts';
+    import localAsset from '#lib/components/localAsset.ts';
+    import Title from '#lib/components/Title.svelte';
+    import Linkable from '#lib/components/Linkable.svelte';
+    import Link from '#lib/components/Link.svelte';
+    import Emoji from '#lib/components/Emoji.svelte';
 
     const now = new Date();
     const currentYear = now.getFullYear();
@@ -264,7 +264,7 @@
                 >
                     <img
                         class="person-photo"
-                        src={asset(`/images/headshots/${person.id}.jpg`)}
+                        src={localAsset(`images/headshots/${person.id}.jpg`)}
                         alt={'Photograph of ' + person.name}
                     />
                     <span class="person-name">{person.name}</span>
@@ -282,7 +282,7 @@
                         {#if item.imageUrl}
                             <img
                                 class="item-image"
-                                src={asset(item.imageUrl)}
+                                src={localAsset(item.imageUrl)}
                                 alt={item.imageAlt ?? ''}
                             />
                         {/if}

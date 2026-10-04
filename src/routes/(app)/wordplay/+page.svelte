@@ -1,7 +1,7 @@
 <script lang="ts">
     import Link from '../../../lib/components/Link.svelte';
-    import Emoji from '$lib/components/Emoji.svelte';
-    import Title from '$lib/components/Title.svelte';
+    import Emoji from '#lib/components/Emoji.svelte';
+    import Title from '#lib/components/Title.svelte';
 </script>
 
 <Title text="Wordplay" />

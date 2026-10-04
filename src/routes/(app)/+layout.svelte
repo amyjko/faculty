@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Page from '$lib/components/Page.svelte';
+    import Page from '#lib/components/Page.svelte';
     interface Props {
         children?: import('svelte').Snippet;
     }

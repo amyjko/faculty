@@ -1,13 +1,13 @@
 <script lang="ts">
-    import Link from '$lib/components/Link.svelte';
-    import { profile } from '$lib/models/stores';
-    import Table from '$lib/components/Table.svelte';
+    import Link from '#lib/components/Link.svelte';
+    import { profile } from '#lib/models/stores.ts';
+    import Table from '#lib/components/Table.svelte';
     import Bar from './Bar.svelte';
     import DateRange from './DateRange.svelte';
     import months from './months';
-    import Title from '$lib/components/Title.svelte';
-    import Linkable from '$lib/components/Linkable.svelte';
-    import { commitID, uniquer } from '$lib/models/anchors';
+    import Title from '#lib/components/Title.svelte';
+    import Linkable from '#lib/components/Linkable.svelte';
+    import { commitID, uniquer } from '#lib/models/anchors.ts';
 
     let commits = $profile.getCommits();
     let weeks = $profile.getWeeklyCommits();

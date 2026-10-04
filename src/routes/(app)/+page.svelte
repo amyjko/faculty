@@ -1,10 +1,10 @@
 <script lang="ts">
-    import Link from '$lib/components/Link.svelte';
-    import { profile } from '$lib/models/stores';
-    import Title from '$lib/components/Title.svelte';
-    import Linkable from '$lib/components/Linkable.svelte';
-    import Discovery from '$lib/components/Discovery.svelte';
-    import { discoveryID, unique } from '$lib/models/anchors';
+    import Link from '#lib/components/Link.svelte';
+    import { profile } from '#lib/models/stores.ts';
+    import Title from '#lib/components/Title.svelte';
+    import Linkable from '#lib/components/Linkable.svelte';
+    import Discovery from '#lib/components/Discovery.svelte';
+    import { discoveryID, unique } from '#lib/models/anchors.ts';
 
     let discoveries = $derived(
         $profile.getDiscoveries(

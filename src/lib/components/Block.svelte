@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { asset } from '$app/paths';
+    import localAsset from './localAsset';
     import { type Snippet } from 'svelte';
 
     interface Props {
@@ -13,7 +13,7 @@
 
     let { header = null, link = null, id, image, children }: Props = $props();
 
-    let url = $derived(link?.startsWith('/') ? asset(link) : link);
+    let url = $derived(link?.startsWith('/') ? localAsset(link) : link);
 </script>
 
 <div class="block" {id}>

@@ -1,12 +1,12 @@
 <script lang="ts">
     import { run } from 'svelte/legacy';
 
-    import Header from '$lib/components/Header.svelte';
-    import Footer from '$lib/components/Footer.svelte';
-    import { navigating } from '$app/stores';
-    import { browser } from '$app/environment';
+    import Header from '#lib/components/Header.svelte';
+    import Footer from '#lib/components/Footer.svelte';
+    import { navigating } from '$app/state';
+    import { browser } from '$app/env';
     import SpeechBubble from './SpeechBubble.svelte';
-    import { profile } from '$lib/models/stores';
+    import { profile } from '#lib/models/stores.ts';
     interface Props {
         children?: import('svelte').Snippet;
     }
@@ -22,7 +22,7 @@
             if (
                 browser &&
                 typeof document !== undefined &&
-                $navigating === null
+                navigating.to === null
             ) {
                 headers = Array.from(document.getElementsByTagName('h2'))
                     .map((a) =>

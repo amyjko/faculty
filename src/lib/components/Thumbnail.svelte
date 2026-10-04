@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { asset } from '$app/paths';
+    import localAsset from './localAsset';
 
     interface Props {
         url: string;
@@ -12,7 +12,7 @@
 
 <img
     class={`thumbnail ${highlight ? 'highlight' : ''}`}
-    src={asset(url)}
+    src={localAsset(url)}
     {alt}
 />
 

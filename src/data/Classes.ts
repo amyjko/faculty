@@ -1,4 +1,4 @@
-import type Annotation from '$lib/models/Annotation';
+import type Annotation from '#lib/models/Annotation.ts';
 
 export type Class = {
     id: string;

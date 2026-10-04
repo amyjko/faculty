@@ -1,9 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import Link from './Link.svelte';
-    import { page } from '$app/stores';
     import { scrollToElement } from '../models/utilities';
-    import { base } from '$app/paths';
 
     interface Props {
         id: string;

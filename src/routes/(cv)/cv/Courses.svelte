@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { Class } from '../../../data/Classes';
-    import Highlight from '$lib/components/Highlight.svelte';
+    import Highlight from '#lib/components/Highlight.svelte';
     import Evaluations from './Evaluations.svelte';
 
     interface Props {

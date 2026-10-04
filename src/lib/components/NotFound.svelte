@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Alert from '$lib/components/Alert.svelte';
-    import Title from '$lib/components/Title.svelte';
+    import Alert from '#lib/components/Alert.svelte';
+    import Title from '#lib/components/Title.svelte';
 </script>
 
 <Title text="Page Not Found" />

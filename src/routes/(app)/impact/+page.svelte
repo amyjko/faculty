@@ -1,10 +1,10 @@
 <script lang="ts">
-    import Block from '$lib/components/Block.svelte';
-    import Link from '$lib/components/Link.svelte';
-    import { profile } from '$lib/models/stores';
-    import Image from '$lib/components/Thumbnail.svelte';
-    import Title from '$lib/components/Title.svelte';
-    import { impactID, unique } from '$lib/models/anchors';
+    import Block from '#lib/components/Block.svelte';
+    import Link from '#lib/components/Link.svelte';
+    import { profile } from '#lib/models/stores.ts';
+    import Image from '#lib/components/Thumbnail.svelte';
+    import Title from '#lib/components/Title.svelte';
+    import { impactID, unique } from '#lib/models/anchors.ts';
 
     let impacts = $derived(
         $profile.getImpacts(

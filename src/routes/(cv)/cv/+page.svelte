@@ -1,17 +1,17 @@
 <script lang="ts">
     import { setContext } from 'svelte';
-    import { profile } from '$lib/models/stores';
-    import { parseDate } from '$lib/models/Profile';
+    import { profile } from '#lib/models/stores.ts';
+    import { parseDate } from '#lib/models/Profile.ts';
     import Item from './Item.svelte';
     import Row from './Row.svelte';
-    import Paper from '$lib/components/Paper.svelte';
-    import Image from '$lib/components/Thumbnail.svelte';
+    import Paper from '#lib/components/Paper.svelte';
+    import Image from '#lib/components/Thumbnail.svelte';
     import Wrap from './Wrap.svelte';
     import Courses from './Courses.svelte';
-    import Table from '$lib/components/Table.svelte';
-    import Title from '$lib/components/Title.svelte';
-    import Annotation from '$lib/components/Highlight.svelte';
-    import Emoji from '$lib/components/Emoji.svelte';
+    import Table from '#lib/components/Table.svelte';
+    import Title from '#lib/components/Title.svelte';
+    import Annotation from '#lib/components/Highlight.svelte';
+    import Emoji from '#lib/components/Emoji.svelte';
     import {
         uniquer,
         degreeID,
@@ -25,7 +25,7 @@
         serviceID,
         talkID,
         impactID,
-    } from '$lib/models/anchors';
+    } from '#lib/models/anchors.ts';
 
     /**
      * One allocator for the whole page, so no two records share an anchor

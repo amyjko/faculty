@@ -1,9 +1,9 @@
 <script lang="ts">
-    import Linkable from '$lib/components/Linkable.svelte';
-    import Link from '$lib/components/Link.svelte';
+    import Linkable from '#lib/components/Linkable.svelte';
+    import Link from '#lib/components/Link.svelte';
 
-    import { profile } from '$lib/models/stores';
-    import Title from '$lib/components/Title.svelte';
+    import { profile } from '#lib/models/stores.ts';
+    import Title from '#lib/components/Title.svelte';
     import { asset } from '$app/paths';
 
     let pubCount = $derived(
@@ -203,26 +203,26 @@
 
 <ul>
     <li
-        ><a href={asset('/promotion/Assistant-Statements.pdf')}
+        ><a href={asset('promotion/Assistant-Statements.pdf')}
             >Research and teaching statements</a
         > for my 2008 academic job search.</li
     >
     <li
-        ><a href={asset('/promotion/Associate-Statements.pdf')}
+        ><a href={asset('promotion/Associate-Statements.pdf')}
             >Research, teaching, and service statements</a
         > for tenure and promotion to Associate Professor.</li
     >
     <li
-        ><a href={asset('/promotion/Associate-CV.pdf')}>Curriculum vita</a> for tenure
+        ><a href={asset('promotion/Associate-CV.pdf')}>Curriculum vita</a> for tenure
         and promotion to Associate Professor.</li
     >
     <li
-        ><a href={asset('/promotion/Full-Statements.pdf')}
+        ><a href={asset('promotion/Full-Statements.pdf')}
             >Research, teaching, service, and diversity statements</a
         > for tenure and promotion to Professor.</li
     >
     <li
-        ><a href={asset('/promotion/Full-CV.pdf')}>Curriculum vita</a> for tenure
+        ><a href={asset('promotion/Full-CV.pdf')}>Curriculum vita</a> for tenure
         and promotion to Professor.</li
     >
 </ul>

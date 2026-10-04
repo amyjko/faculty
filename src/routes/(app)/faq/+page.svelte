@@ -1,9 +1,9 @@
 <script lang="ts">
-    import Section from '$lib/components/Section.svelte';
-    import Link from '$lib/components/Link.svelte';
-    import Paper from '$lib/components/Paper.svelte';
-    import { profile } from '$lib/models/stores';
-    import Title from '$lib/components/Title.svelte';
+    import Section from '#lib/components/Section.svelte';
+    import Link from '#lib/components/Link.svelte';
+    import Paper from '#lib/components/Paper.svelte';
+    import { profile } from '#lib/models/stores.ts';
+    import Title from '#lib/components/Title.svelte';
     import { asset } from '$app/paths';
 
     let guide = $derived($profile.getPublication('practicalguide'));
@@ -143,7 +143,7 @@
     <p>
         Learning to do research is hard! Developing good questions is just one
         of the many challenges in research. I wrote a book chapter that <a
-            href={asset('/papers/Ko2019StudyDesign.pdf')}
+            href={asset('papers/Ko2019StudyDesign.pdf')}
             >covers many aspects of developing good research questions</a
         >. I use the same practices with the students in my lab.
     </p>

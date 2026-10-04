@@ -1,7 +1,7 @@
 <script>
     import { page } from '$app/state';
-    import { browser } from '$app/environment';
-    import highlight from '$lib/models/highlight';
+    import { browser } from '$app/env';
+    import highlight from '#lib/models/highlight.ts';
 
     /** @type {{children?: import('svelte').Snippet}} */
     let { children } = $props();

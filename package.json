@@ -1,6 +1,6 @@
 {
     "name": "uw-faculty-page",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "engines": {
         "node": "22"
     },
@@ -20,8 +20,8 @@
         "patch": "tsx scripts/release.ts patch"
     },
     "devDependencies": {
-        "@sveltejs/adapter-static": "^3",
-        "@sveltejs/kit": "^2",
+        "@sveltejs/adapter-static": "^4",
+        "@sveltejs/kit": "^3",
         "@sveltejs/vite-plugin-svelte": "^7",
         "@types/node": "^26.1.0",
         "ajv-cli": "^5",
@@ -37,6 +37,9 @@
         "vite": "^8"
     },
     "type": "module",
+    "imports": {
+        "#lib/*": "./src/lib/*"
+    },
     "dependencies": {
         "fuse.js": "^7.5.0"
     }

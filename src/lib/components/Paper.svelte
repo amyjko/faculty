@@ -4,10 +4,10 @@
     import type { Paper } from '../../data/Pubs';
     import Link from './Link.svelte';
     import APACitation from './APACitation.svelte';
-    import { profile } from '$lib/models/stores';
+    import { profile } from '#lib/models/stores.ts';
     import Image from './Thumbnail.svelte';
     import Highlight from './Highlight.svelte';
-    import { asset } from '$app/paths';
+    import localAsset from './localAsset';
 
     interface Props {
         paper: Paper;
@@ -102,7 +102,7 @@
             <br />
             {#if url}
                 <span
-                    ><a href={url.startsWith('http') ? url : asset(url)}
+                    ><a href={url.startsWith('http') ? url : localAsset(url)}
                         >{paper.title}</a
                     ></span
                 >
@@ -125,13 +125,13 @@
                         >{apa ? '▾ cite' : '▸ cite'}</span
                     >
                     {#if paper.local}<span>
-                            &sdot; <a href={asset(paperLocalURL)}>pdf</a></span
+                            &sdot; <a href={localAsset(paperLocalURL)}>pdf</a></span
                         >{/if}
                     {#if paper.doi}<span>
                             &sdot; <Link to={paper.doi}>doi</Link></span
                         >{/if}
                     {#if paper.slides}<span>
-                            &sdot; <a href={asset(`/slides/${paper.slides}`)}
+                            &sdot; <a href={localAsset(`slides/${paper.slides}`)}
                                 >slides</a
                             ></span
                         >{/if}

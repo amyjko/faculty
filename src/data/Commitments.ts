@@ -1,5 +1,5 @@
-import type { Commitment } from '$lib/models/Commitment';
-import type { CommitmentCategory } from '$lib/models/CommitmentCategory';
+import type { Commitment } from '#lib/models/Commitment.ts';
+import type { CommitmentCategory } from '#lib/models/CommitmentCategory.ts';
 
 export type CommitmentDetails = {
     title: string;
@@ -34,8 +34,7 @@ export const Commitments: CommitmentDetails[] = [
     },
     {
         title: 'Advising',
-        description:
-            'Doctoral student meetings, feedback, and collaboration',
+        description: 'Doctoral student meetings, feedback, and collaboration',
         category: 'research',
         annually: false,
         commitment: { start: null, end: null, hours: 6, priority: 0 },

@@ -1,10 +1,10 @@
 <script lang="ts">
-    import Block from '$lib/components/Block.svelte';
-    import { profile } from '$lib/models/stores';
-    import { parseDate } from '$lib/models/Profile';
-    import Image from '$lib/components/Thumbnail.svelte';
-    import Link from '$lib/components/Link.svelte';
-    import Title from '$lib/components/Title.svelte';
+    import Block from '#lib/components/Block.svelte';
+    import { profile } from '#lib/models/stores.ts';
+    import { parseDate } from '#lib/models/Profile.ts';
+    import Image from '#lib/components/Thumbnail.svelte';
+    import Link from '#lib/components/Link.svelte';
+    import Title from '#lib/components/Title.svelte';
     import { asset } from '$app/paths';
 </script>
 
@@ -56,7 +56,7 @@
     <br />
     <br />
     For those preparing CAREER proposals looking for a exemplars, here is my
-    <a href={asset('/papers/Ko2009CAREER.pdf')}>awarded proposal</a>.
+    <a href={asset('papers/Ko2009CAREER.pdf')}>awarded proposal</a>.
 </Block>
 <Block link="https://microsoft.com" header="Microsoft">
     {#snippet image()}

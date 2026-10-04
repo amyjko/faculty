@@ -1,4 +1,4 @@
-import type Annotation from '$lib/models/Annotation';
+import type Annotation from '#lib/models/Annotation.ts';
 import type { DiscoveryID } from './Discoveries';
 
 export type Paper = {

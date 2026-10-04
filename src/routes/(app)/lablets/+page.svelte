@@ -1,8 +1,8 @@
 <script lang="ts">
-    import Linkable from '$lib/components/Linkable.svelte';
-    import Alert from '$lib/components/Alert.svelte';
-    import Link from '$lib/components/Link.svelte';
-    import Title from '$lib/components/Title.svelte';
+    import Linkable from '#lib/components/Linkable.svelte';
+    import Alert from '#lib/components/Alert.svelte';
+    import Link from '#lib/components/Link.svelte';
+    import Title from '#lib/components/Title.svelte';
 </script>
 
 <Alert>

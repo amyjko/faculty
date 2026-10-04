@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Paper } from '../../data/Pubs';
     import Authors from './Authors.svelte';
-    import { profile } from '$lib/models/stores';
+    import { profile } from '#lib/models/stores.ts';
 
     interface Props {
         paper: Paper;

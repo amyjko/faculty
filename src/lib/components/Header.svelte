@@ -9,15 +9,15 @@
 
 <script lang="ts">
     import { page } from '$app/state';
-    import { base } from '$app/paths';
+    import { resolve } from '$app/paths';
     import { goto } from '$app/navigation';
     import Emoji from './Emoji.svelte';
     import Link from './Link.svelte';
     import Social from './Social.svelte';
     import Thumbnail from './Thumbnail.svelte';
     import SpeechBubble from './SpeechBubble.svelte';
-    import { profile } from '$lib/models/stores';
-    import loadSearch from '$lib/models/searchIndex';
+    import { profile } from '#lib/models/stores.ts';
+    import loadSearch from '#lib/models/searchIndex.ts';
     import SearchField from './SearchField.svelte';
 
     interface Props {
@@ -59,7 +59,7 @@
         query = page.url.searchParams.get('q') ?? '';
     });
 
-    let searching = $derived(page.url.pathname === `${base}/search`);
+    let searching = $derived(page.url.pathname === resolve('/(app)/search'));
 
     /** How long typing has to settle before searching. */
     const DWELL = 250;
@@ -84,8 +84,8 @@
     });
 
     /** A page's address without the search query, which is ours to manage. */
-    function withoutQuery(url: URL): string {
-        const params = new URLSearchParams(url.searchParams);
+    function withoutQuery(url: typeof page.url): string {
+        const params = new URLSearchParams(url.search);
         params.delete('q');
         const rest = params.toString();
         return url.pathname + (rest.length > 0 ? `?${rest}` : '');
@@ -102,27 +102,24 @@
      */
     function navigate(q: string) {
         if (q.length > 0) {
-            const replaceState = searching;
+            const replace = searching;
             if (!searching) origin = withoutQuery(page.url);
-            goto(`${base}/search?q=${encodeURIComponent(q)}`, {
-                keepFocus: true,
-                noScroll: true,
-                replaceState,
+            goto(resolve(`search?q=${encodeURIComponent(q)}`), {
+                reset: false,
+                replace,
             });
         } else if (searching) {
             // Emptied on the results page: go back where the search began.
-            goto(origin ?? base ?? '/', {
-                keepFocus: true,
-                noScroll: true,
-                replaceState: true,
+            goto(origin ?? resolve('/(app)'), {
+                reset: false,
+                replace: true,
             });
             origin = undefined;
         } else if (page.url.searchParams.has('q')) {
             // Emptied on a page reached from a result: drop its highlight.
             goto(withoutQuery(page.url), {
-                keepFocus: true,
-                noScroll: true,
-                replaceState: true,
+                reset: false,
+                replace: true,
             });
         }
     }

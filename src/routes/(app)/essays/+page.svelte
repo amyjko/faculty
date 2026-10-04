@@ -1,13 +1,13 @@
 <script lang="ts">
-    import Block from '$lib/components/Block.svelte';
-    import Link from '$lib/components/Link.svelte';
-    import Facets from '$lib/components/Facets.svelte';
-    import { profile } from '$lib/models/stores';
-    import Image from '$lib/components/Thumbnail.svelte';
+    import Block from '#lib/components/Block.svelte';
+    import Link from '#lib/components/Link.svelte';
+    import Facets from '#lib/components/Facets.svelte';
+    import { profile } from '#lib/models/stores.ts';
+    import Image from '#lib/components/Thumbnail.svelte';
     import type { PostTagType } from '../../../data/Posts';
-    import Title from '$lib/components/Title.svelte';
-    import Linkable from '$lib/components/Linkable.svelte';
-    import { postID, unique } from '$lib/models/anchors';
+    import Title from '#lib/components/Title.svelte';
+    import Linkable from '#lib/components/Linkable.svelte';
+    import { postID, unique } from '#lib/models/anchors.ts';
 
     let filter: Record<string, PostTagType> = $state({});
 

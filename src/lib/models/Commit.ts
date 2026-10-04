@@ -1,4 +1,4 @@
-import type { MonthDate } from '$lib/models/Profile';
+import type { MonthDate } from '#lib/models/Profile.ts';
 
 type Commit = {
     name: string;

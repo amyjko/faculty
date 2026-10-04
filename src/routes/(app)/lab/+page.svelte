@@ -1,10 +1,10 @@
 <script lang="ts">
-    import Person from '$lib/components/Person.svelte';
-    import Link from '$lib/components//Link.svelte';
-    import { profile } from '$lib/models/stores';
-    import Title from '$lib/components/Title.svelte';
-    import Linkable from '$lib/components/Linkable.svelte';
-    import Emoji from '$lib/components/Emoji.svelte';
+    import Person from '#lib/components/Person.svelte';
+    import Link from '#lib/components/Link.svelte';
+    import { profile } from '#lib/models/stores.ts';
+    import Title from '#lib/components/Title.svelte';
+    import Linkable from '#lib/components/Linkable.svelte';
+    import Emoji from '#lib/components/Emoji.svelte';
 
     function isPersonHighlighted(id: string) {
         return (

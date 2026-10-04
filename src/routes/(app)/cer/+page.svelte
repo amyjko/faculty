@@ -1,9 +1,9 @@
 <script lang="ts">
-    import Section from '$lib/components/Section.svelte';
-    import Link from '$lib/components/Link.svelte';
-    import advisors from '$lib/models/advisors';
-    import SortableTable from '$lib/components/SortableTable.svelte';
-    import Title from '$lib/components/Title.svelte';
+    import Section from '#lib/components/Section.svelte';
+    import Link from '#lib/components/Link.svelte';
+    import advisors from '#lib/models/advisors.ts';
+    import SortableTable from '#lib/components/SortableTable.svelte';
+    import Title from '#lib/components/Title.svelte';
 </script>
 
 <Title text="CER FAQ" />

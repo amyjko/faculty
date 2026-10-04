@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { asset } from '$app/paths';
+    import localAsset from './localAsset';
     import type { Person } from '../../data/People';
     import Block from './Block.svelte';
     import Image from './Thumbnail.svelte';
@@ -40,8 +40,8 @@
                     <li>
                         <small>
                             <a
-                                href={asset(
-                                    '/dissertations/' + person.dissertation,
+                                href={localAsset(
+                                    'dissertations/' + person.dissertation,
                                 )}>Dissertation</a
                             >
                         </small>

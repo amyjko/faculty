@@ -1,6 +1,6 @@
-import type Annotation from '$lib/models/Annotation';
-import type { Commitment } from '$lib/models/Commitment';
-import type { CommitmentCategory } from '$lib/models/CommitmentCategory';
+import type Annotation from '#lib/models/Annotation.ts';
+import type { Commitment } from '#lib/models/Commitment.ts';
+import type { CommitmentCategory } from '#lib/models/CommitmentCategory.ts';
 
 export type Funding = {
     id: string;

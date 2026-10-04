@@ -1,13 +1,13 @@
 <script lang="ts">
-    import Block from '$lib/components/Block.svelte';
-    import { profile } from '$lib/models/stores';
-    import { parseDate } from '$lib/models/Profile';
-    import Image from '$lib/components/Thumbnail.svelte';
-    import Link from '$lib/components/Link.svelte';
-    import Title from '$lib/components/Title.svelte';
-    import Linkable from '$lib/components/Linkable.svelte';
-    import { asset } from '$app/paths';
-    import { talkID, unique } from '$lib/models/anchors';
+    import Block from '#lib/components/Block.svelte';
+    import { profile } from '#lib/models/stores.ts';
+    import { parseDate } from '#lib/models/Profile.ts';
+    import Image from '#lib/components/Thumbnail.svelte';
+    import Link from '#lib/components/Link.svelte';
+    import Title from '#lib/components/Title.svelte';
+    import Linkable from '#lib/components/Linkable.svelte';
+    import localAsset from '#lib/components/localAsset.ts';
+    import { talkID, unique } from '#lib/models/anchors.ts';
 
     let talks = $derived(
         $profile.getTalks(undefined, (talk) => -parseDate(talk.date).getTime()),
@@ -95,7 +95,7 @@
                         <a
                             href={talk.slides.startsWith('http')
                                 ? talk.slides
-                                : asset(`/slides/${talk.slides}`)}>Slides</a
+                                : localAsset(`slides/${talk.slides}`)}>Slides</a
                         >
                     {/if}
                     {#if talk.blog}

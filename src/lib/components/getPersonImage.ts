@@ -1,5 +1,5 @@
-import { base } from '$app/paths';
+import localAsset from './localAsset';
 
 export default function getPersonImage(id: string) {
-    return `${base}/images/headshots/${id}.jpg`;
+    return localAsset(`images/headshots/${id}.jpg`);
 }

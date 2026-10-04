@@ -1,4 +1,4 @@
-import { base } from '$app/paths';
+import { asset } from '$app/paths';
 // Type only; Fuse itself is imported dynamically below, so that neither it nor
 // the index is downloaded until someone actually searches.
 import type Fuse from 'fuse.js';
@@ -24,7 +24,7 @@ export default function loadSearch(): Promise<Fuse<SearchEntry>> {
 async function load(): Promise<Fuse<SearchEntry>> {
     const [{ default: Fuse }, response] = await Promise.all([
         import('fuse.js'),
-        fetch(`${base}/search-index.json`),
+        fetch(asset('search-index.json')),
     ]);
     if (!response.ok) throw new Error(`No search index (${response.status}).`);
     const entries: SearchEntry[] = await response.json();

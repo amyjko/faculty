@@ -1,7 +1,7 @@
 <script lang="ts">
-    import Link from '$lib/components/Link.svelte';
+    import Link from '#lib/components/Link.svelte';
     import type { Paper } from '../../data/Pubs';
-    import { profile } from '$lib/models/stores';
+    import { profile } from '#lib/models/stores.ts';
 
     interface Props {
         link?: boolean;

@@ -1,14 +1,14 @@
 <script lang="ts">
     import { onMount } from 'svelte';
 
-    import Link from '$lib/components/Link.svelte';
-    import Facets from '$lib/components/Facets.svelte';
-    import Paper from '$lib/components/Paper.svelte';
+    import Link from '#lib/components/Link.svelte';
+    import Facets from '#lib/components/Facets.svelte';
+    import Paper from '#lib/components/Paper.svelte';
 
-    import { profile } from '$lib/models/stores';
+    import { profile } from '#lib/models/stores.ts';
     import Alert from '../../../lib/components/Alert.svelte';
-    import Title from '$lib/components/Title.svelte';
-    import Linkable from '$lib/components/Linkable.svelte';
+    import Title from '#lib/components/Title.svelte';
+    import Linkable from '#lib/components/Linkable.svelte';
 
     let selection: Record<string, string> = $state({});
 

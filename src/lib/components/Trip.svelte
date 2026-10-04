@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { TravelInfo } from '../../data/Travel';
-    import Block from '$lib/components/Block.svelte';
-    import Link from '$lib/components/Link.svelte';
+    import Block from '#lib/components/Block.svelte';
+    import Link from '#lib/components/Link.svelte';
     import { parseDate } from '../models/Profile';
     import { travelID } from '../models/anchors';
 

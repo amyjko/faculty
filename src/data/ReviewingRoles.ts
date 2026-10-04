@@ -1,5 +1,5 @@
-import type Annotation from '$lib/models/Annotation';
-import type { Commitment } from '$lib/models/Commitment';
+import type Annotation from '#lib/models/Annotation.ts';
+import type { Commitment } from '#lib/models/Commitment.ts';
 
 export type Reviewing = {
     venue: string;
@@ -160,8 +160,8 @@ export const ReviewingRoles: Reviewing[] = [
     {
         venue: '@chi',
         years: [
-            2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014,
-            2015, 2016, 2017, 2018, 2019, 2020, 2021, 2023, 2024, 2025,
+            2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015,
+            2016, 2017, 2018, 2019, 2020, 2021, 2023, 2024, 2025,
         ],
         level: 'reviewer',
         commitment: {

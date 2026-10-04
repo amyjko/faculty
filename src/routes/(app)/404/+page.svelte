@@ -7,7 +7,7 @@
      * It shares its wording with +error.svelte, which covers the same case for
      * links followed inside the app.
      */
-    import NotFound from '$lib/components/NotFound.svelte';
+    import NotFound from '#lib/components/NotFound.svelte';
 </script>
 
 <NotFound />

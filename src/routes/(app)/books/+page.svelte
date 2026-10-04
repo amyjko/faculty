@@ -1,8 +1,8 @@
 <script lang="ts">
-    import Block from '$lib/components/Block.svelte';
-    import Image from '$lib/components/Thumbnail.svelte';
-    import { profile } from '$lib/models/stores';
-    import Link from '$lib/components/Link.svelte';
+    import Block from '#lib/components/Block.svelte';
+    import Image from '#lib/components/Thumbnail.svelte';
+    import { profile } from '#lib/models/stores.ts';
+    import Link from '#lib/components/Link.svelte';
 </script>
 
 <h1> These are books I've authored or edited. </h1>

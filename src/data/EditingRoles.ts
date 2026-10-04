@@ -1,5 +1,5 @@
-import type Annotation from '$lib/models/Annotation';
-import type { Commitment } from '$lib/models/Commitment';
+import type Annotation from '#lib/models/Annotation.ts';
+import type { Commitment } from '#lib/models/Commitment.ts';
 
 export type Editing = {
     title: string;

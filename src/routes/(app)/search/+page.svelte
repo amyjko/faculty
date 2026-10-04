@@ -1,8 +1,8 @@
 <script lang="ts">
     import { page } from '$app/state';
-    import { browser } from '$app/environment';
-    import loadSearch from '$lib/models/searchIndex';
-    import type SearchEntry from '$lib/models/SearchEntry';
+    import { browser } from '$app/env';
+    import loadSearch from '#lib/models/searchIndex.ts';
+    import type SearchEntry from '#lib/models/SearchEntry.ts';
 
     const LIMIT = 50;
 
