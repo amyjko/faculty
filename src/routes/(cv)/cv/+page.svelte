@@ -87,7 +87,7 @@
 
     /** Modify this on/off switch to show annotations. */
     const annotationYear = 2026;
-    let annotations = $state({ on: true, year: annotationYear });
+    let annotations = $state({ on: false, year: annotationYear });
     setContext('annotations', annotations);
 </script>
 
