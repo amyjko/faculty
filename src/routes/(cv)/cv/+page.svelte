@@ -98,7 +98,7 @@
         <img
             class="headshot"
             src={localAsset('/images/headshots/ajko.jpg')}
-            alt="Headshot of Amy J. Ko"
+            alt="Headshot of Amy J. Ko smiling, wearing a sweater, in front of blurred greenery."
         />
         <div class="identity">
             <h1>Amy J. Ko, Ph.D.</h1>
@@ -767,26 +767,34 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        text-align: right;
         line-height: 1.6;
+    }
+
+    /* Each line ends in its icon, so the icons form a column at the right. */
+    .contact li {
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        gap: var(--padding);
     }
 
     .statement {
         font-size: 115%;
     }
 
-    /* On a phone the contact lines move under the name, left-aligned. */
+    /* On a phone the contact lines move under the name, in its column, with
+       the icons first so they still form a column. */
     @media only screen and (max-width: 600px) {
         .masthead {
             grid-template-columns: auto 1fr;
             grid-template-areas:
                 'headshot identity'
-                'contact contact';
+                '. contact';
             row-gap: var(--margin);
         }
 
-        .contact {
-            text-align: left;
+        .contact li {
+            flex-direction: row-reverse;
         }
 
         .masthead h1 {

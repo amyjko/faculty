@@ -69,8 +69,9 @@
 		--stripe-color: rgb(24 24 24);
 	}
 
+	/* Softens images against the black background without making them murky. */
 	img {
-		opacity: 0.5;
+		opacity: 0.8;
 		background-color: var(--border-color);
 	}
 }
