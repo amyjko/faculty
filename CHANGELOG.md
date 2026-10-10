@@ -2,6 +2,10 @@
 
 Entries begin at 1.1.2. Earlier history is in `git log`.
 
+## 1.3.2 — 2026-10-10
+
+- Updated dependencies to their latest patch releases.
+
 ## 1.3.1 — 2026-10-03
 
 - Updated dependencies, including SvelteKit 3.
