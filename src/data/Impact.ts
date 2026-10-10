@@ -1,6 +1,17 @@
 import type Annotation from '#lib/models/Annotation.ts';
 
-export type Impact = {
+/** Press coverage must name its outlet and title, since the CV lists them first. */
+export type Impact =
+    | (ImpactDetails & {
+          kind: 'press';
+          title: string;
+          source: string;
+      })
+    | (ImpactDetails & {
+          kind: Exclude<ImpactDetails['kind'], 'press'>;
+      });
+
+type ImpactDetails = {
     kind:
         | 'press'
         | 'product'
@@ -38,6 +49,8 @@ export const Impacts: Impact[] = [
         end: 2026,
         description: 'I was interviewed by Logan Kugler on the end of coding.',
         title: 'The End of the Coder?',
+        author: 'Logan Kugler',
+        source: 'Communications of the ACM',
         url: 'https://cacm.acm.org/news/the-end-of-the-coder/',
         who: 'public',
         annotation: {
@@ -75,6 +88,8 @@ export const Impacts: Impact[] = [
         description:
             'I had a conversation with ACM-W about visibility and belonging in computing',
         title: 'A Fireside Chat with Prof Amy J Ko: On visibility, belonging, and reimagining computing for everyone',
+        author: 'Adriana Wilde',
+        source: 'ACM-W',
         url: 'https://women.acm.org/a-fireside-chat-with-prof-amy-j-ko/',
         who: 'public',
     },
@@ -85,6 +100,7 @@ export const Impacts: Impact[] = [
         description:
             'I was interviewed by Nature about the role of generative AI in data science',
         title: 'Got bugs? Here’s how to catch the errors in your scientific software',
+        source: 'Nature',
         url: 'https://www.nature.com/articles/d41586-026-01261-w',
         who: 'public',
     },
@@ -95,16 +111,19 @@ export const Impacts: Impact[] = [
         description:
             'I was interviewed by Chris Stokel-Walker about the risks of vibe coding.',
         title: 'Everything Feels More Glitchy Right Now and Everyone Is Blaming Vibe Coding. The Real Story Is More Complicated',
+        author: 'Chris Stokel-Walker',
+        source: 'Inc.',
         url: 'https://www.inc.com/chris-stokel-walker/everything-feels-more-glitchy-right-now-and-everyone-is-blaming-vibe-coding-the-real-story-is-more-complicated/91309771',
         who: 'public',
     },
     {
         kind: 'press',
-        start: 2026,
-        end: 2026,
+        start: 2025,
+        end: 2025,
         description:
             'I contributed to investigative reporting on coding bootcamp outcomes and inequities.',
         title: 'Apple’s App Course Runs $20,000 a Student. Is It Really Worth It?',
+        source: 'WIRED',
         url: 'https://www.wired.com/story/apple-app-making-course-michigan-state-university/',
         who: 'public',
         annotation: {
@@ -250,6 +269,7 @@ export const Impacts: Impact[] = [
             'I was interviewed by Dave Levine for the KZSU Stanford Radio 90.1FM show Hearsay Culture on the topic of generative AI and education.',
         title: 'Hearsay Culture',
         author: 'Dave Levine',
+        source: 'KZSU Stanford Radio',
         url: 'https://kzsu.stanford.edu/',
         who: 'public',
     },
@@ -439,8 +459,9 @@ export const Impacts: Impact[] = [
         end: 2016,
         description:
             'I was interviewed by Jeff Meyerson for the Software Engineering Daily podcast on February 24 about research, reaching tens of thousands of engineers',
-        title: 'Academia to Industry in Computer Science',
+        title: 'Applying Software Research to Industry with Amy Ko',
         author: 'Jeff Meyerson',
+        source: 'Software Engineering Daily',
         url: 'https://softwareengineeringdaily.com/2016/02/24/academia-to-industry-in-computer-science-with-andy-ko/',
         who: 'engineers',
     },
@@ -739,6 +760,7 @@ export const Impacts: Impact[] = [
             "I was interviewed by Jared O'Leary on their BootUP CS podcast, where I talked about reflection, mentorship, and vulnerability.",
         title: 'Vulnerability, Reflection, and CS Education with Amy Ko',
         author: "Jared O'Leary",
+        source: 'CSK8 Podcast',
         url: 'https://jaredoleary.com/csk8feed/73',
         who: 'k12cs',
     },

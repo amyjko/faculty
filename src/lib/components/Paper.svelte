@@ -8,6 +8,8 @@
     import Image from './Thumbnail.svelte';
     import Highlight from './Highlight.svelte';
     import localAsset from './localAsset';
+    import AwardTag from './AwardTag.svelte';
+    import { paperURL, paperHref } from './paperURL';
 
     interface Props {
         paper: Paper;
@@ -49,18 +51,8 @@
 
     let paperLocalURL = $derived(`/papers/${paper.local}`);
 
-    let url = $derived(
-        // If there's a local, show it first, since digital libraries have my deadname.
-        paper.local
-            ? paperLocalURL
-            : // If we don't have one, but there's an ACM authorizer URL, return it, because visitors will be able to bypass the paywall.
-              paper.authorizer
-              ? paper.authorizer
-              : // Lastly, include the doi, which will not be as easily accessible.
-                paper.doi
-                ? paper.doi
-                : '',
-    );
+    let url = $derived(paperURL(paper));
+    let href = $derived(paperHref(paper));
 </script>
 
 {#if format === 'apa'}
@@ -69,13 +61,15 @@
     <!-- Each paper renders once in this format, under exactly one kind
          section, so the paper's own id is unique on the page. -->
     <div class="paper" id={paper.id}>
-        <strong>{paper.title}</strong> &sdot;
-        {#if year}<small>{paper.year} &sdot;</small>{/if}
-        <small><Authors {paper} /></small> &sdot;
-        <small><em>{$profile.getSourceName(paper.source)}</em></small>
         {#if paper.award && paper.award.length > 0}
-            <mark class="award">{paper.award.join(' + ')}</mark>
+            <div><AwardTag awards={paper.award} /></div>
         {/if}
+        <strong
+            >{#if href}<a {href}>{paper.title}</a>{:else}{paper.title}{/if}</strong
+        > &sdot;
+        {#if year}<small>{paper.year} &sdot;</small>{/if}
+        <small><Authors {paper} students /></small> &sdot;
+        <small><em>{$profile.getSourceName(paper.source)}</em></small>
         {#if paper.annotation}
             <br /><Highlight year={paper.annotation.year}
                 >{paper.annotation.text}</Highlight
@@ -100,12 +94,8 @@
             {/if}
             <small><Authors {paper} link /> ({paper.year})</small>
             <br />
-            {#if url}
-                <span
-                    ><a href={url.startsWith('http') ? url : localAsset(url)}
-                        >{paper.title}</a
-                    ></span
-                >
+            {#if href}
+                <span><a {href}>{paper.title}</a></span>
             {:else}
                 <strong>{paper.title}</strong>
             {/if}

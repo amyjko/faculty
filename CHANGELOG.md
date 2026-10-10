@@ -2,6 +2,10 @@
 
 Entries begin at 1.1.2. Earlier history is in `git log`.
 
+## 1.4.0 — 2026-10-10
+
+- Redesigned the CV with years on the left, tables for awards and doctoral students, book cards, year-grouped impact, underlined student authors, monochrome award tags and annotation markers, a service timeline, clickable links, and tighter print layout.
+
 ## 1.3.2 — 2026-10-10
 
 - Updated dependencies to their latest patch releases.

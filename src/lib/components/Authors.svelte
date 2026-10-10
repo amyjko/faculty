@@ -6,22 +6,34 @@
     interface Props {
         link?: boolean;
         paper: Paper;
+        /** Underline authors who were my students at the time of the paper. */
+        students?: boolean;
     }
 
-    let { link = false, paper }: Props = $props();
+    let { link = false, paper, students = false }: Props = $props();
 
     let equalFirst = $derived(paper.equalfirst && paper.authors.length >= 2);
 </script>
 
 {#each paper.authors as author, index}
     {@const person = $profile.getPerson(author)}
+    {@const student =
+        students && $profile.isStudentAuthor(author, paper.year)}
     {#if person === undefined}{author}{:else if link}<Link
             to={person.id === 'ajko' ? '/(app)/bio' : '/(app)/lab'}
             id={person.id === 'ajko' ? undefined : person.id}
             >{person.name}</Link
+        >{:else if student}<span class="student">{person.name}</span
         >{:else}{person.name}{/if}{index < paper.authors.length - 1
         ? equalFirst && index === 0
             ? ' + '
             : ', '
         : ''}
 {/each}
+
+<style>
+    .student {
+        text-decoration: underline;
+        text-underline-offset: 0.15em;
+    }
+</style>

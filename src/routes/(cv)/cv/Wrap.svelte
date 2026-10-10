@@ -10,7 +10,6 @@
 <style>
     div {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 </style>

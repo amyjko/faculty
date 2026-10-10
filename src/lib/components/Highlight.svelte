@@ -13,7 +13,7 @@
 </script>
 
 {#if annotations.on && annotations.year === year}
-    <div class="annotation"><span>✓</span><span>{@render children()}</span></div
+    <div class="annotation"><span><Emoji symbol="💡" /></span><span>{@render children()}</span></div
     >
 {/if}
 
@@ -28,6 +28,9 @@
         padding: var(--padding) calc(var(--padding) * 2) var(--padding)
             calc(var(--padding) * 2);
         background: rgb(255 231 160);
+        /* The background is yellow in every theme, so the text can't inherit
+           the theme's color, which is light in dark mode. */
+        color: rgb(40 32 0);
         border-radius: calc(var(--roundedness));
         border: solid 4px rgb(253, 212, 89);
         font-style: italic;

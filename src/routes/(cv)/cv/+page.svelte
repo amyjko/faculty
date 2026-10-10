@@ -7,6 +7,11 @@
     import Paper from '#lib/components/Paper.svelte';
     import Image from '#lib/components/Thumbnail.svelte';
     import Wrap from './Wrap.svelte';
+    import Cards from './Cards.svelte';
+    import PaperCard from './PaperCard.svelte';
+    import Entry from './Entry.svelte';
+    import Timeline from './Timeline.svelte';
+    import TimelineRow from './TimelineRow.svelte';
     import Courses from './Courses.svelte';
     import Table from '#lib/components/Table.svelte';
     import Title from '#lib/components/Title.svelte';
@@ -45,17 +50,52 @@
         (pub) => -pub.year,
     );
 
+    /** The year of a YYYY-MM-DD date, for grouping entries under year headings. */
+    function year(date: string): number {
+        return parseDate(date).getFullYear();
+    }
+
+    /** Newest first, so year headings appear in descending order. */
+    function newest(a: { date: string }, b: { date: string }): number {
+        return parseDate(b.date).getTime() - parseDate(a.date).getTime();
+    }
+
+    const press = $profile.getImpacts(
+        (impact) => impact.kind === 'press',
+        (impact) => -impact.start,
+    );
+    const keynotes = $profile.getTalks((talk) => talk.keynote).sort(newest);
+    const talks = $profile.getTalks((talk) => !talk.keynote).sort(newest);
+    const panels = $profile.getPanels().sort(newest);
+
+    /**
+     * One axis for every Service timeline, so bars line up across subsections:
+     * from the earliest year of any role to this year, or a later end year if
+     * a role is recorded as ending in the future.
+     */
+    const serviceYears = [
+        ...[...$profile.getEditing(), ...$profile.getService()].flatMap(
+            (role) =>
+                [role.commitment.start, role.commitment.end]
+                    .filter((date) => date !== null)
+                    .map(year),
+        ),
+        ...$profile.getReviewing().flatMap((role) => role.years),
+    ];
+    const serviceFrom = Math.min(...serviceYears);
+    const serviceTo = Math.max(new Date().getFullYear(), ...serviceYears);
+
     /** Modify this on/off switch to show annotations. */
-    let annotations = $state({ on: false, year: 2025 });
+    const annotationYear = 2026;
+    let annotations = $state({ on: true, year: annotationYear });
     setContext('annotations', annotations);
 </script>
 
 <div class="cv">
     <Image url={'/images/headshots/ajko.jpg'} alt="Headshot of Amy J. Ko" />
 
-    <Annotation year={2025}
-        >Hello Professors! If you want a quick way to scan, search for this
-        check mark ✓.</Annotation
+    <Annotation year={annotationYear}
+        >If you want a quick way to scan, search the light bulb.</Annotation
     >
 
     <Title text="Curriculum Vita" />
@@ -127,46 +167,46 @@
 
     <h3>Most Influential Paper Awards</h3>
 
-    <Wrap>
+    <Table stack>
         {#each $profile.getPublications( (pub) => pub.award !== undefined && pub.award.filter( (award) => award.includes('most influential paper') ).length > 0, (pub) => -pub.year ) as pub}
-            <Item
+            <Row
                 id={nextID('influential-' + pub.id)}
                 start={pub.year}
+                end={pub.year}
                 header={pub.title}
-                two={pub.award?.join(', ')}
-                three={$profile.getSourceName(pub.source)}
+                detail={pub.award?.join(', ') ?? ''}
+                extra={$profile.getSourceName(pub.source)}
             />
         {/each}
-    </Wrap>
+    </Table>
 
     <h3>Best Paper Awards</h3>
 
-    <Wrap>
+    <Table stack>
         {#each $profile.getPublications( (pub) => pub.award !== undefined && pub.award.filter((award) => award.includes('best paper') || award.includes('honorable mention')).length > 0, (pub) => -pub.year ) as pub}
-            <Item
+            <Row
                 id={nextID('best-' + pub.id)}
                 start={pub.year}
+                end={pub.year}
                 header={pub.title}
-                two={pub.award?.join(', ')}
-                three={$profile.getSourceName(pub.source)}
+                detail={pub.award?.join(', ') ?? ''}
+                extra={$profile.getSourceName(pub.source)}
             />
         {/each}
-    </Wrap>
+    </Table>
 
     <h3>Recognitions</h3>
 
-    <Table>
-        <tbody>
-            {#each $profile.getRecognitions( () => true, (rec) => -rec.year ) as rec}
-                <Row
-                    id={nextID(recognitionID(rec))}
-                    start={rec.year}
-                    end={rec.year}
-                    header={rec.title}
-                    detail={rec.description}
-                />
-            {/each}
-        </tbody>
+    <Table stack>
+        {#each $profile.getRecognitions( () => true, (rec) => -rec.year ) as rec}
+            <Row
+                id={nextID(recognitionID(rec))}
+                start={rec.year}
+                end={rec.year}
+                header={rec.title}
+                detail={rec.description}
+            />
+        {/each}
     </Table>
 
     <h2>Funding</h2>
@@ -181,6 +221,7 @@
                         ? null
                         : parseDate(funding.commitment.end).getFullYear()}
                     header={funding.title}
+                    url={funding.url}
                     two={funding.amount}
                     three={funding.funder}
                     four={funding.award ?? ''}
@@ -209,7 +250,8 @@
             Authorship order indicates the scope of my intellectual contribution
             to the work. However, because I collaborate closely with my Ph.D.
             students on research, they are first author on many of my key
-            publications.
+            publications. <u>Underlined</u> authors were students I mentored at the
+            time of the work.
         </small>
     </p>
 
@@ -238,21 +280,27 @@
 
     <h2>Books</h2>
 
-    {#each $profile.getPublications( (pub) => pub.kind === 'book', (pub) => -pub.year ) as paper}
-        <Paper {paper} format="cv" />
-    {/each}
+    <Cards>
+        {#each $profile.getPublications( (pub) => pub.kind === 'book', (pub) => -pub.year ) as paper}
+            <PaperCard {paper} />
+        {/each}
+    </Cards>
 
     <h2>Book Chapters</h2>
 
-    {#each $profile.getPublications( (pub) => pub.kind === 'book chapter', (pub) => -pub.year ) as paper}
-        <Paper {paper} format="cv" />
-    {/each}
+    <Cards>
+        {#each $profile.getPublications( (pub) => pub.kind === 'book chapter', (pub) => -pub.year ) as paper}
+            <PaperCard {paper} />
+        {/each}
+    </Cards>
 
     <h2>Refereed Magazine Articles</h2>
 
-    {#each $profile.getPublications( (pub) => pub.kind === 'refereed magazine article', (pub) => -pub.year ) as paper}
-        <Paper {paper} format="cv" />
-    {/each}
+    <Cards>
+        {#each $profile.getPublications( (pub) => pub.kind === 'refereed magazine article', (pub) => -pub.year ) as paper}
+            <PaperCard {paper} />
+        {/each}
+    </Cards>
 
     <h2>Juried Conference Papers</h2>
 
@@ -276,60 +324,62 @@
 
     <h3>Press</h3>
 
-    <Wrap>
-        {#each $profile.getImpacts( (impact) => impact.kind === 'press', (impact) => -impact.start ) as impact}
-            <Item
-                id={nextID(impactID(impact))}
-                start={impact.start}
-                stop={impact.end}
-                header={impact.title ?? ''}
-                two={impact.author}
-                three={impact.source}
-                annotation={impact.annotation}
-            />
-        {/each}
-    </Wrap>
+    {#each press as impact, index}
+        {#if index === 0 || press[index - 1].start !== impact.start}
+            <h4>{impact.start}</h4>
+        {/if}
+        <Entry
+            id={nextID(impactID(impact))}
+            venue={impact.source}
+            title={impact.title}
+            author={impact.author}
+            url={impact.url}
+            annotation={impact.annotation}
+        />
+    {/each}
 
     <h3>Invited Keynotes</h3>
 
-    <Wrap>
-        {#each $profile.getTalks().filter((talk) => talk.keynote) as keynote}
-            <Item
-                id={nextID(talkID(keynote))}
-                start={parseDate(keynote.date).getFullYear()}
-                header={keynote.title}
-                two={keynote.venue}
-                annotation={keynote.annotation}
-            />
-        {/each}
-    </Wrap>
+    {#each keynotes as talk, index}
+        {#if index === 0 || year(keynotes[index - 1].date) !== year(talk.date)}
+            <h4>{year(talk.date)}</h4>
+        {/if}
+        <Entry
+            id={nextID(talkID(talk))}
+            venue={talk.venue}
+            title={talk.title}
+            url={talk.url}
+            annotation={talk.annotation}
+        />
+    {/each}
 
     <h3>Invited Talks</h3>
 
-    <Wrap>
-        {#each $profile.getTalks().filter((talk) => !talk.keynote) as keynote}
-            <Item
-                id={nextID(talkID(keynote))}
-                start={parseDate(keynote.date).getFullYear()}
-                header={keynote.title}
-                two={keynote.venue}
-                annotation={keynote.annotation}
-            />
-        {/each}
-    </Wrap>
+    {#each talks as talk, index}
+        {#if index === 0 || year(talks[index - 1].date) !== year(talk.date)}
+            <h4>{year(talk.date)}</h4>
+        {/if}
+        <Entry
+            id={nextID(talkID(talk))}
+            venue={talk.venue}
+            title={talk.title}
+            url={talk.url}
+            annotation={talk.annotation}
+        />
+    {/each}
 
     <h3>Invited Panels</h3>
 
-    <Wrap>
-        {#each $profile.getPanels() as panel}
-            <Item
-                id={nextID(panelID(panel))}
-                start={parseDate(panel.date).getFullYear()}
-                header={panel.title}
-                two={panel.venue}
-            />
-        {/each}
-    </Wrap>
+    {#each panels as panel, index}
+        {#if index === 0 || year(panels[index - 1].date) !== year(panel.date)}
+            <h4>{year(panel.date)}</h4>
+        {/if}
+        <Entry
+            id={nextID(panelID(panel))}
+            venue={panel.venue}
+            title={panel.title}
+        />
+    {/each}
 
     <h3>Patents</h3>
 
@@ -367,6 +417,7 @@
                 start={person.startdate}
                 stop={person.enddate}
                 header={person.name}
+                url={person.url}
                 two={person.dept}
                 three={person.coadvisor ?? undefined}
                 four={person.achievements}
@@ -379,139 +430,145 @@
 
     <h4>Committee Chair</h4>
 
-    <Wrap>
-        {#each $profile
-            .getPeople( (person) => person.level === 'phd' && person.advised, (person) => -(person.enddate ?? 3000) )
-            .map((value) => {
-                if (value.coadvisor !== null) value.coadvisor = 'Co-advisor: ' + value.coadvisor;
-                return value;
-            }) as person}
-            <Item
+    <Table stack>
+        {#each $profile.getPeople( (person) => person.level === 'phd' && person.advised, (person) => -(person.enddate ?? 3000) ) as person}
+            <Row
                 id={nextID(person.id)}
                 start={person.startdate}
-                stop={person.enddate}
+                end={person.enddate}
                 header={person.name}
-                two={person.dept}
-                three={person.coadvisor ?? undefined}
-                four={person.achievements}
+                url={person.url}
+                items={person.achievements}
+                detail={person.dept}
+                extra={person.coadvisor === null
+                    ? null
+                    : 'Co-advisor: ' + person.coadvisor}
                 annotation={person.annotation}
             />
         {/each}
-    </Wrap>
+    </Table>
 
     <h4>Committee Member</h4>
 
-    <Table>
-        <tbody>
-            {#each $profile.getDoctoralCommmitees() as person}
-                <Row
-                    id={nextID(committeeID(person))}
-                    start={person.startdate}
-                    end={person.enddate}
-                    header={person.name}
-                    detail={person.institution}
-                    extra={person.department}
-                    annotation={person.annotation}
-                />
-            {/each}
-        </tbody>
+    <Table stack>
+        {#each $profile.getDoctoralCommmitees() as person}
+            <Row
+                id={nextID(committeeID(person))}
+                start={person.startdate}
+                end={person.enddate}
+                header={person.name}
+                detail={person.institution}
+                extra={person.department}
+                annotation={person.annotation}
+            />
+        {/each}
     </Table>
 
     <h2>Service</h2>
 
+    <p>
+        <small>
+            Bars show each role's span of years on a shared timeline; an arrow
+            marks a role that continues. Dots mark the individual years of
+            recurring reviewing roles.
+        </small>
+    </p>
+
     <h3>Journal Editorial Boards</h3>
 
-    {#each $profile.getEditing( (role) => role.type === 'journal', (role) => (role.commitment.start === null ? -Infinity : -parseDate(role.commitment.start).getFullYear()) ) as board}
-        {#if board.commitment.start}
-            <Item
-                id={nextID(editingID(board))}
-                start={parseDate(board.commitment.start).getFullYear()}
-                stop={board.commitment.end === null
-                    ? null
-                    : parseDate(board.commitment.end).getFullYear()}
-                header={board.venue}
-                two={board.title}
-                annotation={board.annotation}
-            />
-        {/if}
-    {/each}
+    <Timeline from={serviceFrom} to={serviceTo}>
+        {#each $profile.getEditing( (role) => role.type === 'journal', (role) => (role.commitment.start === null ? -Infinity : -parseDate(role.commitment.start).getFullYear()) ) as board}
+            {#if board.commitment.start}
+                <TimelineRow
+                    id={nextID(editingID(board))}
+                    start={parseDate(board.commitment.start).getFullYear()}
+                    end={board.commitment.end === null
+                        ? null
+                        : parseDate(board.commitment.end).getFullYear()}
+                    header={board.venue}
+                    two={board.title}
+                    annotation={board.annotation}
+                />
+            {/if}
+        {/each}
+    </Timeline>
 
     <h3>Conference Program Chair</h3>
 
-    {#each $profile.getEditing( (role) => role.type === 'conference', (role) => (role.commitment.start === null ? -Infinity : -parseDate(role.commitment.start).getFullYear()) ) as board}
-        {#if board.commitment.start}
-            <Item
-                id={nextID(editingID(board))}
-                start={parseDate(board.commitment.start).getFullYear()}
-                stop={board.commitment.end === null
-                    ? null
-                    : parseDate(board.commitment.end).getFullYear()}
-                header={$profile.getSourceName(board.venue)}
-                two={board.title}
-                annotation={board.annotation}
-            />
-        {/if}
-    {/each}
+    <Timeline from={serviceFrom} to={serviceTo}>
+        {#each $profile.getEditing( (role) => role.type === 'conference', (role) => (role.commitment.start === null ? -Infinity : -parseDate(role.commitment.start).getFullYear()) ) as board}
+            {#if board.commitment.start}
+                <TimelineRow
+                    id={nextID(editingID(board))}
+                    start={parseDate(board.commitment.start).getFullYear()}
+                    end={board.commitment.end === null
+                        ? null
+                        : parseDate(board.commitment.end).getFullYear()}
+                    header={$profile.getSourceName(board.venue)}
+                    two={board.title}
+                    annotation={board.annotation}
+                />
+            {/if}
+        {/each}
+    </Timeline>
 
     <h3>Conference Program Committee Member</h3>
 
-    <Wrap>
-        {#each $profile.getReviewing( (role) => role.level === 'pc', (role) => -role.years
-                    .sort()
-                    .reverse()[0] ) as role}
-            <Item
+    <Timeline from={serviceFrom} to={serviceTo}>
+        {#each $profile.getReviewing( (role) => role.level === 'pc', (role) => -Math.max(...role.years) ) as role}
+            <TimelineRow
                 id={nextID(reviewingID(role))}
-                start={role.years.sort()[0]}
-                stop={role.years.sort().reverse()[0]}
+                start={Math.min(...role.years)}
+                end={Math.max(...role.years)}
+                years={role.years}
                 header={$profile.getSourceName(role.venue)}
                 two={role.title}
                 annotation={role.annotation}
             />
         {/each}
-    </Wrap>
+    </Timeline>
+
     <h3>Conference Reviewer</h3>
 
-    <Wrap>
-        {#each $profile.getReviewing( (role) => role.level === 'reviewer', (role) => -role.years
-                    .sort()
-                    .reverse()[0] ) as role}
-            <Item
+    <Timeline from={serviceFrom} to={serviceTo}>
+        {#each $profile.getReviewing( (role) => role.level === 'reviewer', (role) => -Math.max(...role.years) ) as role}
+            <TimelineRow
                 id={nextID(reviewingID(role))}
-                start={role.years.sort()[0]}
-                stop={role.years.sort().reverse()[0]}
+                start={Math.min(...role.years)}
+                end={Math.max(...role.years)}
+                years={role.years}
                 header={$profile.getSourceName(role.venue)}
                 two={role.title}
                 annotation={role.annotation}
             />
         {/each}
-    </Wrap>
+    </Timeline>
 
     <h3>Proposal Reviewer</h3>
 
-    <Wrap>
-        {#each $profile.getReviewing( (role) => role.level === 'panelist', (role) => -role.years
-                    .sort()
-                    .reverse()[0] ) as role}
-            <Item
+    <Timeline from={serviceFrom} to={serviceTo}>
+        {#each $profile.getReviewing( (role) => role.level === 'panelist', (role) => -Math.max(...role.years) ) as role}
+            <TimelineRow
                 id={nextID(reviewingID(role))}
-                start={role.years.sort()[0]}
-                stop={role.years.sort().reverse()[0]}
+                start={Math.min(...role.years)}
+                end={Math.max(...role.years)}
+                years={role.years}
                 header={$profile.getSourceName(role.venue)}
                 two={role.title}
                 annotation={role.annotation}
             />
         {/each}
-    </Wrap>
+    </Timeline>
 
     <h3>International Service</h3>
 
-    <Wrap>
+    <Timeline from={serviceFrom} to={serviceTo}>
         {#each $profile.getService( (service) => service.level === 'international', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY) ) as service}
             {#if service.commitment.start}
-                <Item
+                <TimelineRow
                     id={nextID(serviceID(service))}
                     start={parseDate(service.commitment.start).getFullYear()}
-                    stop={service.commitment.end === null
+                    end={service.commitment.end === null
                         ? null
                         : parseDate(service.commitment.end).getFullYear()}
                     header={service.title}
@@ -521,17 +578,17 @@
                 />
             {/if}
         {/each}
-    </Wrap>
+    </Timeline>
 
     <h3>National Service</h3>
 
-    <Wrap>
+    <Timeline from={serviceFrom} to={serviceTo}>
         {#each $profile.getService( (service) => service.level === 'national', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY) ) as service}
             {#if service.commitment.start}
-                <Item
+                <TimelineRow
                     id={nextID(serviceID(service))}
                     start={parseDate(service.commitment.start).getFullYear()}
-                    stop={service.commitment.end === null
+                    end={service.commitment.end === null
                         ? null
                         : parseDate(service.commitment.end).getFullYear()}
                     header={service.title}
@@ -541,17 +598,17 @@
                 />
             {/if}
         {/each}
-    </Wrap>
+    </Timeline>
 
     <h3>Regional Service</h3>
 
-    <Wrap>
+    <Timeline from={serviceFrom} to={serviceTo}>
         {#each $profile.getService( (service) => service.level === 'regional', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY) ) as service}
             {#if service.commitment.start}
-                <Item
+                <TimelineRow
                     id={nextID(serviceID(service))}
                     start={parseDate(service.commitment.start).getFullYear()}
-                    stop={service.commitment.end === null
+                    end={service.commitment.end === null
                         ? null
                         : parseDate(service.commitment.end).getFullYear()}
                     header={service.title}
@@ -561,17 +618,17 @@
                 />
             {/if}
         {/each}
-    </Wrap>
+    </Timeline>
 
     <h3>University Service</h3>
 
-    <Wrap>
+    <Timeline from={serviceFrom} to={serviceTo}>
         {#each $profile.getService( (service) => service.level === 'university', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY) ) as service}
             {#if service.commitment.start}
-                <Item
+                <TimelineRow
                     id={nextID(serviceID(service))}
                     start={parseDate(service.commitment.start).getFullYear()}
-                    stop={service.commitment.end === null
+                    end={service.commitment.end === null
                         ? null
                         : parseDate(service.commitment.end).getFullYear()}
                     header={service.title}
@@ -581,17 +638,17 @@
                 />
             {/if}
         {/each}
-    </Wrap>
+    </Timeline>
 
     <h3>Departmental Service</h3>
 
-    <Wrap>
+    <Timeline from={serviceFrom} to={serviceTo}>
         {#each $profile.getService( (service) => service.level === 'departmental', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY) ) as service}
             {#if service.commitment.start}
-                <Item
+                <TimelineRow
                     id={nextID(serviceID(service))}
                     start={parseDate(service.commitment.start).getFullYear()}
-                    stop={service.commitment.end === null
+                    end={service.commitment.end === null
                         ? null
                         : parseDate(service.commitment.end).getFullYear()}
                     header={service.title}
@@ -601,17 +658,17 @@
                 />
             {/if}
         {/each}
-    </Wrap>
+    </Timeline>
 
     <h3>Open Source</h3>
 
-    <Wrap>
+    <Timeline from={serviceFrom} to={serviceTo}>
         {#each $profile.getService( (service) => service.level === 'open source', (service) => (service.commitment.end ? -parseDate(service.commitment.end).getTime() : Number.NEGATIVE_INFINITY) ) as service}
             {#if service.commitment.start}
-                <Item
+                <TimelineRow
                     id={nextID(serviceID(service))}
                     start={parseDate(service.commitment.start).getFullYear()}
-                    stop={service.commitment.end === null
+                    end={service.commitment.end === null
                         ? null
                         : parseDate(service.commitment.end).getFullYear()}
                     header={service.title}
@@ -621,7 +678,7 @@
                 />
             {/if}
         {/each}
-    </Wrap>
+    </Timeline>
 </div>
 
 <style>
@@ -630,9 +687,12 @@
         line-height: 1.5;
     }
 
+    /* Keep every heading, including the year headings, with what follows. */
     h1,
     h2,
-    h3 {
+    h3,
+    h4 {
+        break-after: avoid;
         page-break-after: avoid;
     }
 
@@ -656,8 +716,36 @@
 
     @media print {
         @page {
-            /* Sets a 1-inch margin on all sides of the printed page */
             margin: 0.75in;
+        }
+
+        /* Two points smaller than on screen, which reads well on paper. Sizes
+           elsewhere are in em, so they follow. */
+        .cv {
+            font-size: 10pt;
+        }
+
+        h1 {
+            font-size: 14pt;
+        }
+
+        h2 {
+            font-size: 12pt;
+        }
+
+        h3 {
+            font-size: 10pt;
+        }
+
+        h4 {
+            font-size: 10pt;
+        }
+
+        /* On paper a link is just text: no color or underline to suggest it
+           can be followed. (A saved PDF still keeps them clickable.) */
+        .cv :global(a) {
+            color: inherit;
+            text-decoration: none;
         }
     }
 </style>

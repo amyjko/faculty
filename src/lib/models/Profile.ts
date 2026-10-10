@@ -66,6 +66,24 @@ export default class Profile {
         return this.json.people.find((person) => person.id === id);
     }
 
+    /**
+     * True if the author was a student I mentored when the work was done:
+     * someone in People with a student level whose time with me covers the
+     * publication year, allowing one extra year for publication lag. Authors
+     * who aren't @-linked to People can't be known, so they are never students.
+     */
+    isStudentAuthor(author: string, year: number): boolean {
+        if (!author.startsWith('@')) return false;
+        const person = this.getPerson(author);
+        if (person === undefined) return false;
+        if (!['undergrad', 'masters', 'phd'].includes(person.level))
+            return false;
+        return (
+            person.startdate <= year &&
+            (person.enddate === null || year <= person.enddate + 1)
+        );
+    }
+
     getPersonName(id: string) {
         const person = this.getPerson(id);
         return person ? person.name : id;
