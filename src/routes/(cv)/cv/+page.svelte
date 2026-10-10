@@ -5,7 +5,7 @@
     import Item from './Item.svelte';
     import Row from './Row.svelte';
     import Paper from '#lib/components/Paper.svelte';
-    import Image from '#lib/components/Thumbnail.svelte';
+    import localAsset from '#lib/components/localAsset.ts';
     import Wrap from './Wrap.svelte';
     import Cards from './Cards.svelte';
     import PaperCard from './PaperCard.svelte';
@@ -92,20 +92,38 @@
 </script>
 
 <div class="cv">
-    <Image url={'/images/headshots/ajko.jpg'} alt="Headshot of Amy J. Ko" />
+    <Title text="Curriculum Vita" />
+
+    <header class="masthead">
+        <img
+            class="headshot"
+            src={localAsset('/images/headshots/ajko.jpg')}
+            alt="Headshot of Amy J. Ko"
+        />
+        <div class="identity">
+            <h1>Amy J. Ko, Ph.D.</h1>
+            <div class="role">Professor</div>
+            <div>The Information School</div>
+            <div>University of Washington, Seattle</div>
+        </div>
+        <!-- The addresses are spelled out, so they still work on paper. -->
+        <ul class="contact">
+            <li
+                ><a href="mailto:ajko@uw.edu">ajko@uw.edu</a>
+                <Emoji symbol="📧" /></li
+            >
+            <li
+                ><a href="https://amyko.phd">amyko.phd</a>
+                <Emoji symbol="🌐" /></li
+            >
+        </ul>
+    </header>
 
     <Annotation year={annotationYear}
         >If you want a quick way to scan, search the light bulb.</Annotation
     >
 
-    <Title text="Curriculum Vita" />
-
-    <h1>Amy J. Ko, Ph.D.</h1>
-    <span style="font-size: 125%">Professor</span>
-    <br />The Information School
-    <br />University of Washington, Seattle
-
-    <p style="font-size: 125%"
+    <p class="statement"
         ><em
             >I study how people learn about computing and information, in
             schools and beyond, and invent new methods and tools for teaching
@@ -685,6 +703,9 @@
     .cv {
         font-size: 12pt;
         line-height: 1.5;
+        /* The width of the years column in Item. The headshot shares it, so
+           the name lines up with the content beside the years. */
+        --date-column: 4em;
     }
 
     /* Keep every heading, including the year headings, with what follows. */
@@ -698,6 +719,79 @@
 
     h1 {
         font-size: 16pt;
+    }
+
+    /* A conventional CV top: who, then how to reach them, over a rule. */
+    .masthead {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 'headshot identity contact';
+        /* The name starts level with the top of the headshot. */
+        align-items: start;
+        column-gap: var(--margin);
+        padding-bottom: var(--margin);
+        border-bottom: 2px solid currentColor;
+        margin-bottom: var(--margin);
+    }
+
+    .headshot {
+        grid-area: headshot;
+        display: block;
+        width: var(--date-column);
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        border-radius: var(--roundedness);
+    }
+
+    .identity {
+        grid-area: identity;
+        line-height: 1.3;
+    }
+
+    .masthead h1 {
+        font-size: 22pt;
+        margin: 0 0 var(--padding) 0;
+        /* Trims the leading above the capitals, so their tops, not the line
+           box's, meet the headshot's top. Ignored where unsupported. */
+        text-box: trim-start cap alphabetic;
+    }
+
+    .role {
+        font-size: 125%;
+    }
+
+    .contact {
+        grid-area: contact;
+        /* Contact sits down by the rule. */
+        align-self: end;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+        line-height: 1.6;
+    }
+
+    .statement {
+        font-size: 115%;
+    }
+
+    /* On a phone the contact lines move under the name, left-aligned. */
+    @media only screen and (max-width: 600px) {
+        .masthead {
+            grid-template-columns: auto 1fr;
+            grid-template-areas:
+                'headshot identity'
+                'contact contact';
+            row-gap: var(--margin);
+        }
+
+        .contact {
+            text-align: left;
+        }
+
+        .masthead h1 {
+            font-size: 18pt;
+        }
     }
 
     h2 {
@@ -725,8 +819,9 @@
             font-size: 10pt;
         }
 
-        h1 {
-            font-size: 14pt;
+        h1,
+        .masthead h1 {
+            font-size: 18pt;
         }
 
         h2 {

@@ -68,7 +68,7 @@
        eye can run down the dates without reading each block. */
     .chunk {
         display: grid;
-        grid-template-columns: 4em 1fr;
+        grid-template-columns: var(--date-column, 4em) 1fr;
         column-gap: var(--margin);
         /* Puts the smaller years on the header's baseline. */
         align-items: first baseline;
