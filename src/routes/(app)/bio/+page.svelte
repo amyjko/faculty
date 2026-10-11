@@ -5,6 +5,7 @@
     import { profile } from '#lib/models/stores.ts';
     import Title from '#lib/components/Title.svelte';
     import { asset } from '$app/paths';
+    import { headshotSrcset } from '#lib/components/headshot.ts';
 
     let pubCount = $derived(
         Math.round(
@@ -90,6 +91,25 @@
         to="http://www.oregonstate.edu">Oregon State University</Link
     > in 2002.
 </p>
+
+<Linkable id="headshot">Headshot</Linkable>
+
+<p>
+    Need a photo for an event or publication? Here's my <a
+        href={asset('images/headshots/ajko-full.jpg')}
+        >full-resolution headshot</a
+    >.
+</p>
+
+<a href={asset('images/headshots/ajko-full.jpg')}
+    ><img
+        class="headshot"
+        src={asset('images/headshots/ajko.jpg')}
+        srcset={headshotSrcset}
+        sizes="15em"
+        alt="Headshot of Amy J. Ko smiling, wearing glasses, in front of a blue sky and autumn leaves."
+    /></a
+>
 
 <Linkable id="irreverent">Irreverent Bio</Linkable>
 
@@ -450,3 +470,12 @@
     students, faculty, staff, and academics programs, while (trying to) maintain
     my research activity.
 </p>
+
+<style>
+    .headshot {
+        display: block;
+        width: 100%;
+        max-width: 15em;
+        border-radius: var(--roundedness);
+    }
+</style>

@@ -15,6 +15,7 @@
     import Link from './Link.svelte';
     import Social from './Social.svelte';
     import Thumbnail from './Thumbnail.svelte';
+    import { headshotSrcset } from './headshot';
     import SpeechBubble from './SpeechBubble.svelte';
     import { profile } from '#lib/models/stores.ts';
     import loadSearch from '#lib/models/searchIndex.ts';
@@ -167,11 +168,18 @@
 <section class="info">
     <!-- Only a link away from home, since on home it would go nowhere. -->
     {#if page.route.id === '/(app)'}
-        <Thumbnail url="/images/headshots/ajko.jpg" alt="Headshot of Amy J. Ko" />
+        <Thumbnail
+            url="/images/headshots/ajko.jpg"
+            srcset={headshotSrcset}
+            sizes="10em"
+            alt="Headshot of Amy J. Ko"
+        />
     {:else}
         <Link to="/(app)" plain
             ><Thumbnail
                 url="/images/headshots/ajko.jpg"
+                srcset={headshotSrcset}
+                sizes="10em"
                 alt="Headshot of Amy J. Ko"
             /></Link
         >

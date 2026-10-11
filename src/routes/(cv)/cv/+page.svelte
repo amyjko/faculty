@@ -6,6 +6,7 @@
     import Row from './Row.svelte';
     import Paper from '#lib/components/Paper.svelte';
     import localAsset from '#lib/components/localAsset.ts';
+    import { headshotSrcset } from '#lib/components/headshot.ts';
     import Wrap from './Wrap.svelte';
     import Cards from './Cards.svelte';
     import PaperCard from './PaperCard.svelte';
@@ -98,7 +99,9 @@
         <img
             class="headshot"
             src={localAsset('/images/headshots/ajko.jpg')}
-            alt="Headshot of Amy J. Ko smiling, wearing a sweater, in front of blurred greenery."
+            srcset={headshotSrcset}
+            sizes="4em"
+            alt="Headshot of Amy J. Ko smiling, wearing glasses, in front of a blue sky and autumn leaves."
         />
         <div class="identity">
             <h1>Amy J. Ko, Ph.D.</h1>

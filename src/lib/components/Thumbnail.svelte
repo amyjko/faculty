@@ -5,14 +5,19 @@
         url: string;
         alt: string;
         highlight?: boolean;
+        /** Alternative sizes of the image, already resolved, with sizes for choosing among them. */
+        srcset?: string;
+        sizes?: string;
     }
 
-    let { url, alt, highlight = false }: Props = $props();
+    let { url, alt, highlight = false, srcset, sizes }: Props = $props();
 </script>
 
 <img
     class={`thumbnail ${highlight ? 'highlight' : ''}`}
     src={localAsset(url)}
+    {srcset}
+    {sizes}
     {alt}
 />
 
