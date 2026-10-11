@@ -165,12 +165,17 @@
 </script>
 
 <section class="info">
-    <Link to="/(app)" plain
-        ><Thumbnail
-            url="/images/headshots/ajko.jpg"
-            alt="Headshot of Amy J. Ko"
-        /></Link
-    >
+    <!-- Only a link away from home, since on home it would go nowhere. -->
+    {#if page.route.id === '/(app)'}
+        <Thumbnail url="/images/headshots/ajko.jpg" alt="Headshot of Amy J. Ko" />
+    {:else}
+        <Link to="/(app)" plain
+            ><Thumbnail
+                url="/images/headshots/ajko.jpg"
+                alt="Headshot of Amy J. Ko"
+            /></Link
+        >
+    {/if}
     {#if $profile.json.announcement}
         <div class="mobile-bubble">
             <SpeechBubble>{$profile.json.announcement}</SpeechBubble>

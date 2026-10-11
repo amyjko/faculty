@@ -2,6 +2,7 @@
     import Block from '#lib/components/Block.svelte';
     import Link from '#lib/components/Link.svelte';
     import Facets from '#lib/components/Facets.svelte';
+    import Tag from '#lib/components/Tag.svelte';
     import { profile } from '#lib/models/stores.ts';
     import Image from '#lib/components/Thumbnail.svelte';
     import type { PostTagType } from '../../../data/Posts';
@@ -67,9 +68,7 @@
         <br /><small>{date.month + '/' + date.year}</small>
         <br />
         {#each post.tags as tag}
-            <mark class={'topic' + (filter.topic === tag ? ' selected' : '')}>
-                <small>{tag}</small>
-            </mark>
+            <Tag label={tag} selected={filter.topic === tag} />
         {/each}
     </Block>
 {/each}

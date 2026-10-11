@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Tag from './Tag.svelte';
+
     interface Props {
         facets: Record<string, string[]>;
         update: (selection: {}) => void;
@@ -21,40 +23,11 @@
 {#each Object.keys(facets) as facet}
     <div role="radiogroup" aria-label="Filter">
         {#each facets[facet].sort() as value}
-            <span
-                role="radio"
-                tabindex="0"
-                aria-checked={facet in selection && selection[facet] === value}
-                aria-label={'Filter by ' + value}
-                class={'annotation clickable topic' +
-                    (facet in selection && selection[facet] === value
-                        ? ' selected'
-                        : '')}
-                onclick={() => selectValue(facet, value)}
-                onkeydown={(event) =>
-                    event.key === 'Enter'
-                        ? selectValue(facet, value)
-                        : undefined}
-            >
-                {value}
-            </span>
+            <Tag
+                label={value}
+                selected={facet in selection && selection[facet] === value}
+                onselect={() => selectValue(facet, value)}
+            />
         {/each}
     </div>
 {/each}
-
-<style>
-    .topic {
-        display: inline-block;
-        margin-right: var(--padding);
-        margin-bottom: var(--padding);
-        background-color: var(--border-color);
-        padding: var(--padding);
-        border-radius: var(--roundedness);
-        font-family: var(--text-font-family);
-        font-size: var(--annotation-size);
-    }
-
-    .topic.selected {
-        background-color: var(--annotation-color);
-    }
-</style>
