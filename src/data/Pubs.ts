@@ -125,7 +125,7 @@ export const Publications: Paper[] = [
         source: '@aies',
         pages: null,
         publisher: 'ACM',
-        doi: null,
+        doi: 'https://doi.org/10.1609/aies.v9i4.43315',
         local: 'Soylst26Visions.pdf',
         contribution:
             "Finds that higher education researchers and educators have widely varying visions of generative AI's impact on their disciplines, but agree that they have no capacity to realize them.",
