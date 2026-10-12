@@ -83,7 +83,7 @@ export const Publications: Paper[] = [
     {
         id: 'sustainablecsteaching',
         kind: 'refereed conference paper',
-        authors: ['@ajko', '@gifford'],
+        authors: ['@gifford', '@ajko'],
         year: 2027,
         title: 'An Autoethnography of Culturally Sustaining CS Teaching in a Multilingual, Multicultural Middle School Classroom',
         source: '@sigcse',
