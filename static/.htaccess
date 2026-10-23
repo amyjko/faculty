@@ -2,9 +2,6 @@ ExpiresActive On
 ExpiresDefault "access"
 Options -Multiviews -Indexes
 
-# Support cache manifest for the Budget app.
-AddType text/cache-manifest .manifest
-
 # Rewrite any non-existent files and directories to the index.html file, allowing
 # our single page web app to do the routing on the front end.
 
