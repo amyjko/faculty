@@ -51,6 +51,21 @@ export type Paper = {
 
 export const Publications: Paper[] = [
     {
+        id: 'lovelearning',
+        kind: 'refereed magazine article',
+        authors: ['@ajko'],
+        year: 2026,
+        title: 'Love, Learning, and Computing Education',
+        source: '@inroads',
+        pages: '14-18',
+        publisher: 'ACM',
+        doi: 'https://dl.acm.org/doi/10.1145/3831371',
+        local: null,
+        contribution:
+            'Argues for love as a foundational value in teaching computing, and complicates what that might mean.',
+        discoveries: ['TeachingIsHard'],
+    },
+    {
         id: 'joyfulcsteaching',
         kind: 'refereed conference paper',
         authors: ['@jayne', '@rotem', '@ajko'],
