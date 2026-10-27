@@ -105,7 +105,7 @@ export const Publications: Paper[] = [
         pages: null,
         publisher: 'ACM',
         doi: null,
-        local: null,
+        local: 'Gifford2027CulturallySustaining.pdf',
         contribution:
             'Teacher learning about student identity shapes reflection and instruction, leading to continual discovery of opportunities for identity expression and community.',
         discoveries: ['TeachingIsHard', 'CulturesShapesLearning'],
