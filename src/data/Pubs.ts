@@ -126,7 +126,7 @@ export const Publications: Paper[] = [
         pages: null,
         publisher: 'ACM',
         doi: null,
-        local: null,
+        local: 'Ko2027AccessibilityChange.pdf',
         contribution:
             'Finds that accessibility systems change in post-secondary computing education is a long-term, multi-year process that requires sustained effort and engagement from multiple stakeholders, and that CS content, pedagogy, and culture is a major barrier to this change.',
         discoveries: ['TeachingInclusionHard'],
