@@ -90,7 +90,7 @@ export const Publications: Paper[] = [
         pages: null,
         publisher: 'ACM',
         doi: null,
-        local: null,
+        local: 'Jiang2027StereotypeAssessments.pdf',
         contribution:
             'Referencing gender stereotypes in programming problems can impact some aspects of student performance, but may not result in significant differences overall.',
         discoveries: ['AssessmentUnfair'],
