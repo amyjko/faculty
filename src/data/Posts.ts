@@ -42,6 +42,14 @@ export type Post = {
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/bits-and-behavior/how-to-drown-an-expert-b2a7f35274b8',
+        title: 'How to drown an expert',
+        date: '2026.11',
+        tags: ['academia', 'automation', 'society'],
+        img: 'drown',
+        alt: 'A small stick figure sits cross-legged, hand on head, looking distressed, beneath washes of purple watercolor streaks and a flood of scribbled letters, boxes, blue slashes, and yellow squiggles.',
+    },
+    {
         url: 'https://amyjko.medium.com/flawed-premises-in-ai-doomerism-68d01677f564',
         title: 'Flawed premises in “AI” doomerism',
         date: '2026.09',
