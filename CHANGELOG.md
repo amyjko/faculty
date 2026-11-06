@@ -2,6 +2,10 @@
 
 Entries begin at 1.1.2. Earlier history is in `git log`.
 
+## 1.4.2 — 2026-11-06
+
+- Updated minor dependencies.
+
 ## 1.4.1 — 2026-10-31
 
 - Updated minor dependencies.
