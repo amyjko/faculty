@@ -42,6 +42,14 @@ export type Post = {
 
 export const Posts: Post[] = [
     {
+        url: 'https://medium.com/@amyjko/a-contrarian-take-on-american-ills-1e64c598de3c',
+        title: 'A contrarian take on American ills',
+        date: '2026.11',
+        tags: ['society', 'policy', 'personal'],
+        img: 'ills',
+        alt: 'A crayon skyline rising from small red houses at the edges, to purple low-rise buildings, to tall blue towers in the center, with dark curved lines arcing underground to connect distant parts of the city.',
+    },
+    {
         url: 'https://medium.com/bits-and-behavior/how-to-drown-an-expert-b2a7f35274b8',
         title: 'How to drown an expert',
         date: '2026.11',
