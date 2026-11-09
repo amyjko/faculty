@@ -146,7 +146,7 @@ export const People: readonly Person[] = [
         level: 'teacher',
         dept: 'Open Window School',
         bio: 'Adrienne is a Middle School Innovation & Technology Teacher at Open Window School and has been engaged on research about culturally responsive pedagogy.',
-        url: 'https://www.linkedin.com/in/adrienne-g-b029711b8/',
+        url: 'http://adriennegifford.com/',
         startdate: 2024,
         enddate: null,
         achievements: [],
