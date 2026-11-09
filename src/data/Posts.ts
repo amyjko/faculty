@@ -42,7 +42,7 @@ export type Post = {
 
 export const Posts: Post[] = [
     {
-        url: 'https://medium.com/@amyjko/a-contrarian-take-on-american-ills-1e64c598de3c',
+        url: 'https://amyjko.medium.com/a-contrarian-take-on-american-ills-1e64c598de3c',
         title: 'A contrarian take on American ills',
         date: '2026.11',
         tags: ['society', 'policy', 'personal'],
