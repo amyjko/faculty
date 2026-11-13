@@ -209,7 +209,7 @@ export const Publications: Paper[] = [
         pages: null,
         publisher: 'ACM',
         doi: 'https://doi.org/10.1145/3765964.3811650',
-        local: 'Everson2026Joyful.pdf',
+        local: 'Everson2026JoyfulTeaching.pdf',
         contribution:
             'Finds four elements of joy: teachers worked to relate to students, prioritize a relationship with learning, framed CS with purpose, and reified a joyful CS experience.',
         discoveries: ['TeachingIsHard'],
